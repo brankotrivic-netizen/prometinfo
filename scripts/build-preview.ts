@@ -11,6 +11,7 @@ import { HAK_CAM_IMAGES } from "../lib/hak-cam-images";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
 import { SI_CAMS } from "../lib/si-road-cameras";
 import { BIHAMK_CAMS } from "../lib/bihamk-cameras";
+import { AMSRS_CAMS } from "../lib/amsrs-cameras";
 import { AMSM_CAMS } from "../lib/amsm-cameras";
 import { COUNTRY_BORDERS } from "../lib/country-borders";
 import { HAK_REPORTS } from "../lib/hak-reports";
@@ -187,6 +188,16 @@ async function main() {
       </div>
     </section>`;
 
+  // AMS-RS kamere mejnih prehodov (Republika Srpska / BiH) — zive slike
+  const amsrsCamPoints = AMSRS_CAMS.filter((c) => c.lat != null && c.lng != null);
+  const amsrsCamHtml = `
+    <section class="country-group" data-countries="BA">
+      <h2>🇧🇦 Kamere mejnih prehodov <span class="cnt">${AMSRS_CAMS.length}</span> <span class="src">· vir: AMS-RS (žive slike)</span></h2>
+      <div class="camgrid">
+        ${AMSRS_CAMS.map((c) => `<a class="camshot" href="${c.image}" target="_blank" rel="noopener" title="${esc(c.name)}"><img class="snap" data-base="${c.image}" src="${c.image}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)}</span></a>`).join("")}
+      </div>
+    </section>`;
+
   // Pisna prometna porocila (HAK + AMSS + BIHAMK)
   const reportCard = (title: string, text: string, time?: string) =>
     `<article class="report"><div class="report-head"><b>${esc(title)}</b>${time ? `<span class="report-time">${esc(time)}</span>` : ""}</div><div class="report-text">${esc(text)}</div></article>`;
@@ -243,8 +254,8 @@ async function main() {
     </section>`;
 
   const chipCountries = ["BA", "HR", "RS", "ME", "MK", "SI"] as Country[];
-  const camCount: Record<string, number> = { HR: roadTotal, RS: RS_ROAD_CAMS.length, SI: siTotalCams, BA: BIHAMK_CAMS.length, MK: AMSM_CAMS.length };
-  const totalCams = roadTotal + RS_ROAD_CAMS.length + siTotalCams + BIHAMK_CAMS.length + AMSM_CAMS.length;
+  const camCount: Record<string, number> = { HR: roadTotal, RS: RS_ROAD_CAMS.length, SI: siTotalCams, BA: BIHAMK_CAMS.length + AMSRS_CAMS.length, MK: AMSM_CAMS.length };
+  const totalCams = roadTotal + RS_ROAD_CAMS.length + siTotalCams + BIHAMK_CAMS.length + AMSRS_CAMS.length + AMSM_CAMS.length;
   const chips =
     `<button class="chip active" onclick="filterCountry('all',this)">🗺️ Vse <em>${items.length + totalCams}</em></button>` +
     chipCountries.map((c) => {
@@ -449,6 +460,7 @@ ${sections}
   <p class="meta favhint" id="favHint">Klikni zvezdico ⭐ na kateri koli kameri spodaj — prikaže se tukaj na vrhu, da jo odpreš brez iskanja. Shrani se v tej napravi.</p>
 </section>
 ${bihCamHtml}
+${amsrsCamHtml}
 ${roadsHtml}
 ${rsRoadHtml}
 ${siCamHtml}
@@ -502,6 +514,7 @@ const ROADPTS=${JSON.stringify(roadPoints)};
 const RSROADPTS=${JSON.stringify(rsRoadPoints)};
 const SIPTS=${JSON.stringify(siPoints)};
 const BIHCAMPTS=${JSON.stringify(bihCamPoints)};
+const AMSRSCAMPTS=${JSON.stringify(amsrsCamPoints)};
 const TRUCKPTS=${JSON.stringify(TRUCK_PARKING)};
 const BORDERS=${JSON.stringify(COUNTRY_BORDERS)};
 const COL={none:"#2dd4a7",low:"#5fd35f",moderate:"#e7c84b",high:"#f29c3e",severe:"#ef4d56",unknown:"#6b7a8d"};
@@ -527,6 +540,7 @@ ROADPTS.forEach(function(p){ var im=p.image?'<br><img src="'+p.image+'" referrer
 RSROADPTS.forEach(function(p){ addCam(p.lat,p.lng,'RS',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.poster+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>Putevi Srbije</small>'); });
 SIPTS.forEach(function(p){ addCam(p.lat,p.lng,'SI',p.title,'<b>📷 '+p.title+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>DARS</small>'); });
 BIHCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>BIHAMK</small>'); });
+AMSRSCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>AMS-RS</small>'); });
 camCluster.addTo(map);
 var _filter='all';
 var CAM_MIN_ZOOM=9;
