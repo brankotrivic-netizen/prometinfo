@@ -527,7 +527,7 @@ const TRUCKPTS=${JSON.stringify(TRUCK_PARKING)};
 const BORDERS=${JSON.stringify(COUNTRY_BORDERS)};
 const COL={none:"#2dd4a7",low:"#5fd35f",moderate:"#e7c84b",high:"#f29c3e",severe:"#ef4d56",unknown:"#6b7a8d"};
 const FLAGJS=${JSON.stringify(FLAG)};
-const map=L.map('map',{scrollWheelZoom:false}).setView([45.0,16.6],6);
+const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
 try{ L.geoJSON(BORDERS,{interactive:false,style:{color:'#475569',weight:1.2,opacity:0.7,fill:false,dashArray:'5 4'}}).addTo(map); }catch(e){}
 const crossingLayer=L.layerGroup().addTo(map);
