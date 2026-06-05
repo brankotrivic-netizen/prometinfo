@@ -1,0 +1,33 @@
+{
+  "name": "prometinfo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prometne informacije za drzave bivse Jugoslavije - cakanje na mejnih prehodih, kamere, gostota prometa, novice.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "scrape": "tsx scripts/test-scrape.ts",
+    "preview": "tsx scripts/build-preview.ts",
+    "dist": "tsx scripts/build-preview.ts && node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('osnutek-preview.html','dist/index.html');console.log('dist/index.html posodobljen')\"",
+    "refresh": "node scripts/refresh.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "leaflet": "^1.9.4",
+    "next": "^15.5.19",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "^20.17.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "playwright": "^1.60.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  }
+}

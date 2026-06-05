@@ -1,0 +1,69 @@
+name: Osvežitev podatkov in objava
+
+# Samodejno osveži cene goriv (AMZS) + prometna poročila (HAK, AMSS, BIHAMK),
+# znova zgradi stran in jo objavi na GitHub Pages.
+on:
+  schedule:
+    - cron: "30 4 * * *"    # vsak dan ~06:30 po slovenskem času (poletni)
+    - cron: "30 13 * * *"   # vsak dan ~15:30 po slovenskem času (poletni)
+  workflow_dispatch:          # ročni gumb "Run workflow"
+  push:
+    branches: [main]          # ob vsaki spremembi kode na main znova objavi
+
+permissions:
+  contents: write   # da lahko bot shrani osvežene podatke nazaj v repo
+  pages: write      # objava na GitHub Pages
+  id-token: write   # zahteva deploy-pages
+
+concurrency:
+  group: prometinfo-objava
+  cancel-in-progress: false
+
+env:
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"   # ni potreben pri npm run refresh
+
+jobs:
+  osvezi-in-objavi:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Prevzem kode
+        uses: actions/checkout@v4
+
+      - name: Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Namestitev odvisnosti
+        run: npm ci
+
+      - name: Osveži podatke in zgradi stran
+        run: npm run refresh
+
+      - name: Shrani osvežene podatke v repo
+        run: |
+          git config user.name "prometinfo-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Ni novih podatkov za shranjevanje."
+          else
+            git commit -m "chore: samodejna osvežitev podatkov [skip ci]"
+            git push
+          fi
+
+      - name: Priprava GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Naloži stran (dist)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Objava na GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,110 @@
+:root {
+  --bg: #0b0f15;
+  --panel: #131a24;
+  --panel-2: #1a2330;
+  --border: #243040;
+  --text: #e6edf5;
+  --muted: #8aa0b8;
+  --none: #2dd4a7;
+  --low: #5fd35f;
+  --moderate: #e7c84b;
+  --high: #f29c3e;
+  --severe: #ef4d56;
+  --unknown: #6b7a8d;
+  --accent: #4c8dff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+
+header.top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 4px; }
+header.top h1 { font-size: 22px; margin: 0; letter-spacing: -0.02em; }
+header.top h1 span { color: var(--accent); }
+.subtitle { color: var(--muted); font-size: 13px; margin: 2px 0 20px; }
+
+.meta { color: var(--muted); font-size: 12px; }
+.meta.stale { color: var(--high); }
+
+.country-group { margin-top: 26px; }
+.country-group h2 { font-size: 15px; margin: 0 0 10px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+.country-group h2 .src { font-size: 11px; color: var(--muted); font-weight: 400; }
+
+.source-error {
+  background: rgba(239, 77, 86, 0.08);
+  border: 1px solid rgba(239, 77, 86, 0.3);
+  color: #ffb4b9;
+  padding: 10px 12px; border-radius: 8px; font-size: 13px;
+}
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.card .name { font-weight: 600; font-size: 14px; }
+.card .wait { font-size: 13px; margin-top: 6px; display: flex; align-items: center; gap: 8px; }
+.badge { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; color: #08111c; }
+.card .raw { color: var(--muted); font-size: 11px; margin-top: 8px; line-height: 1.35; }
+
+.lvl-none { border-left-color: var(--none); } .b-none { background: var(--none); }
+.lvl-low { border-left-color: var(--low); } .b-low { background: var(--low); }
+.lvl-moderate { border-left-color: var(--moderate); } .b-moderate { background: var(--moderate); }
+.lvl-high { border-left-color: var(--high); } .b-high { background: var(--high); }
+.lvl-severe { border-left-color: var(--severe); } .b-severe { background: var(--severe); }
+.lvl-unknown { border-left-color: var(--unknown); } .b-unknown { background: var(--unknown); color: #d6deea; }
+
+.legend { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 4px; font-size: 12px; color: var(--muted); }
+.legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+
+footer.note { margin-top: 40px; color: var(--muted); font-size: 12px; line-height: 1.5; border-top: 1px solid var(--border); padding-top: 16px; }
+a { color: var(--accent); }
+code { background: var(--panel-2); padding: 1px 6px; border-radius: 5px; font-size: 12px; }
+
+/* Povzetek */
+.stats { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 16px; }
+.stat { flex: 1 1 90px; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
+.stat b { display: block; font-size: 22px; line-height: 1.1; letter-spacing: -0.02em; }
+.stat span { font-size: 11px; color: var(--muted); }
+.stat.ok b { color: var(--low); }
+.stat.warn b { color: var(--high); }
+.stat.bad b { color: var(--severe); }
+.stat.muted b { color: var(--unknown); }
+
+/* Chipi drzav */
+.chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); background: var(--panel); }
+.chip.active { border-color: var(--accent); }
+.chip.soon { opacity: 0.6; }
+.chip em { font-style: normal; font-size: 11px; background: var(--panel-2); padding: 1px 7px; border-radius: 999px; color: var(--muted); }
+.chip.active em { background: var(--accent); color: #08111c; font-weight: 700; }
+.chip .soon-tag { color: var(--muted); }
+
+/* Zemljevid */
+.map-wrap { height: 420px; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); margin-bottom: 4px; }
+.map-loading { display: flex; align-items: center; justify-content: center; height: 100%; color: var(--muted); font-size: 13px; }
+.leaflet-container { font: inherit; }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #fff; color: #08111c; }
+
+/* Skupine po sosednji drzavi */
+.neighbor-block { margin-bottom: 18px; }
+.neighbor-title { font-size: 13px; color: var(--muted); font-weight: 600; margin: 0 0 8px; display: flex; align-items: center; gap: 8px; }
+.neighbor-title .cnt { background: var(--panel-2); color: var(--muted); font-size: 11px; padding: 1px 7px; border-radius: 999px; }
+
+/* Viri v pripravi */
+.pending-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.pending-card { background: var(--panel); border: 1px dashed var(--border); border-radius: 10px; padding: 12px 14px; }
+.pending-card .name { font-weight: 600; font-size: 14px; margin-bottom: 6px; }
