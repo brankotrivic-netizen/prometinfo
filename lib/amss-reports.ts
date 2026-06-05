@@ -202,10 +202,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 3. 6. do 14. 6. 2026. godine na snazi će biti obustava saobraćaja zbog radova na rehabilitaciji kolovoza na državnom putu II A reda broj 167, deonica Kladovo Milutinovac. Alternativni putni pravac je preko državnog puta I B reda broj 35, preko Kladova i Milutinovca. Izvor: Putevi Srbije"
  },
  {
-  "title": "Kuzmin-Batrovci, radovi",
-  "text": "Od 2. 6. 2026. do 5. 6. 2026. godine, u toku svetlog dela dana, izvoditi radovi na izgradnji auto-puta i mosta preko reke Save, na državnom putu I A reda broj 3, na deonici Kuzmin Batrovci, u oba smera. Radovi će se izvoditi uz zauzeće zaustavnih saobraćajnih traka. Izvor Putevi Srbije"
- },
- {
   "title": "Petlja Niš sever, radovi",
   "text": "Do 12. 6. 2026. do 15 časova izvode se radovi na rehabilitaciji mosta u sklopu petlje Niš sever Objekat mosta je otvoren za saobraćaj, s tim da je na mostu u smeru ka bočnoj naplatnoj stanici Niš sever zatvorena leva traka i saobraćaj se odvija desnom saobraćajnom trakom. Na državnom putu I A reda broj 4 za saobraćaj su zatvorene zaustavne trake u zoni stubova mosta u oba smera, a saobraćaj preko nadvožnjaka petlje je uspostavljen sa po jednom trakom u svakom smeru. Zatvaranjem zaustavnih traka …"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Takovo-petlja Preljina, radovi",
   "text": "Dana 1. 6. 2026. godine, u periodu od 10 do 18 časova i 2. 6. 2026. godine, u periodu od 9 do 17 časova, izvodiće seradovi na održavanju ITS opreme i sistema za upravljanje tunelima, na državnom putu I A reda broj 2, na deonici petlja Takovo petlja Preljina, u tunelima Savinac i šarani, u smeru ka Čačku. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Pančevo, radovi na mostu preko Tamiša",
+  "text": "Do 8. 6. 2026. godine, u periodu od 8 do 16 časova, ukoliko vremenski uslovi dozvole, na državnom putu I B reda broj 13, na deonici Luka Pančevo šljunkara , u dužini od oko 2,6 km, obustavljen saobraćaj u kolovoznoj traci za smer Pančevo Beograd, zbog izvođenja radova. Saobraćaj iz smera Pančevo Beograd se preusmerava na suprotnu kolovoznu traku, odnosno na traku za smer Beograd Pančevo, na kojoj se saobraćaj odvija dvosmerno. Preusmerenje saobraćaja izvršeno je na službenom prolazu Luka (Pančev…"
  }
 ];
