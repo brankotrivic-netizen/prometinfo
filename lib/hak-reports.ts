@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.6.2026. 09:45",
-  "text": "Kolnici su mjestimice mokri ili vlažni te skliski. Mogući su odroni. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI : - AUTOCESTE A1 Zagreb-Ploče-Karamatići d o 12. lipnja zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (izlaz sa autoceste A1)-DC220-ŽC6260-ŽC6145-DC1-Dugopolje/Split. Na naplatnoj postaji Dugopolje moguće se uključiti na autocestu A1 u smjeru Zagreba ili nastaviti državnom cestom DC1 prema ulazu u grad Split. Na…"
+  "updated": "5.6.2026. 13:10",
+  "text": "Kolnici su mjestimice mokri ili vlažni te skliski. Mogući su odroni. Pojačan je promet na gradskim cestama i obilaznicama te na važnijim cestama, osobito na Istarskom ipsilonu (A8/A9) između tunela i čvora Učka, te na Jadranskoj magistrali u Crikvenici, Solinu, Splitu i Stobreču te Krčkome mostu (DC102) u smjeru kopna. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI : vožnja u suprotnom smjeru na autocesti A5 između čvora Beli Manastir i čvora Čepin na kolniku u smjeru BiH - vozi se uz ograničenje brzine od 40 km/h zbog v…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "5.6.2026. 09:42",
+  "updated": "5.6.2026. 13:10",
   "text": "Zbog uvođenja novog sustava carine duža su čekanja od uobičajenih u prometu teretnih vozila na ulasku u Hrvatsku. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska …"
  },
  {
   "title": "Pomorski promet",
-  "updated": "5.6.2026. 09:42",
+  "updated": "5.6.2026. 13:10",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 7. lipnja trajekt na liniji Preko-Ošljak-Zadar (Gaženica) održat će sva putovanja osim polaska u 05:00 sati iz Zadra (Gaženice) i u 05:30 sati iz Preka 7. lipnja trajekt će iz luke Iž Mali/Bršanj za luku Zadar/Gaženica isploviti u 16:50 sati, a iz luke Zadar/Gaženica za luku Iž Mali/Bršanj isploviti u 18:10 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "5.6.2026. 09:37",
+  "updated": "5.6.2026. 13:10",
   "text": "Stanje u željezničkom putničkom prometu 3. lipnja 2026. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloštar i Koprivnica te između kolodvora Osijek i Bizovac na pruzi Koprivnica – Dalj - između kolodvora Novska i Sisak Caprag na pruzi Zagreb GK – Sisak – Novska - izme…"
  },
  {
