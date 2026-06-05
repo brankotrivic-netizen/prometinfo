@@ -62,6 +62,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U toku su radovi na zamjeni dilatacije na Ribićkom mostu, u dužini od 20m saobraća se usporeno-jednom trakom"
    },
    {
+    "title": "Glamoč-Mlinište",
+    "text": "Zbog saobraćajne nezgode obustavljen je saobraćaj na magistralnoj cesti Glamoč-Mlinište."
+   },
+   {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
     "text": "Zbog brojnih odrona i opasnosti od klizišta na magistralnom putu Brod na Drini-GP Hum/Šćepan Polje putnička vozila saobraćaju otežano, dok teretna ne mogu proći."
    },
