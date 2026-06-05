@@ -90,10 +90,26 @@ async function main() {
     ...BIHAMK_CAMS.filter((c) => c.lat != null && c.lng != null).map((c) => ({ name: c.name, image: c.image, lat: c.lat as number, lng: c.lng as number })),
   ];
   for (const p of points) {
-    (p as unknown as { images: { name: string; url: string }[] }).images = directCams
+    const coordImgs = directCams
       .filter((d) => Math.abs(d.lat - (p.lat as number)) < 0.03 && Math.abs(d.lng - (p.lng as number)) < 0.03)
-      .map((d) => ({ name: d.name, url: d.image }))
-      .slice(0, 6);
+      .map((d) => ({ name: d.name, url: d.image }));
+    // HR stran (HAK): iz povezave kamere izlušči k=<id> -> direktne slike HAK_CAM_IMAGES
+    const hakImgs: { name: string; url: string }[] = [];
+    for (const cam of p.cameras || []) {
+      const mk = /[?&]k=(\d+)/.exec(cam.url || "");
+      if (!mk) continue;
+      const imgs = HAK_CAM_IMAGES[Number(mk[1])];
+      if (!imgs || !imgs.length) continue;
+      imgs.slice(0, 2).forEach((u, i) => hakImgs.push({ name: cam.source + (imgs.length > 1 ? ` · kam ${i + 1}` : ""), url: u }));
+    }
+    const merged: { name: string; url: string }[] = [];
+    const seen = new Set<string>();
+    for (const im of [...coordImgs, ...hakImgs]) {
+      if (seen.has(im.url)) continue;
+      seen.add(im.url);
+      merged.push(im);
+    }
+    (p as unknown as { images: { name: string; url: string }[] }).images = merged.slice(0, 6);
   }
 
   // Podatki o zivih tokovih (za vgrajeni HLS predvajalnik).
