@@ -100,7 +100,7 @@ async function main() {
 
   const camBtn = (cams: CameraLink[], streams: StreamLink[], id: string) => {
     const live = streams.length ? `<button class="cam live" onclick="openStream('${id}')">▶ AMSS v živo</button>` : "";
-    const links = cams.map((c) => `<a class="cam" href="${c.url}" target="_blank" rel="noopener">📷 ${c.source} ↗</a>`).join("");
+    const links = cams.map((c) => `<a class="cam" href="${c.url}" target="_blank" rel="noopener noreferrer">📷 ${c.source} ↗</a>`).join("");
     return live || links ? `<div class="cams">${live}${links}</div>` : "";
   };
 
@@ -129,8 +129,8 @@ async function main() {
           <summary>${esc(gr.name)} <span class="cnt">${gr.cams.length}</span></summary>
           <div class="camgrid">
             ${gr.cams.map((c) => { const img = HAK_CAM_IMAGES[c.k] && HAK_CAM_IMAGES[c.k][0]; const link = hakRoadLink(gr.g, c.k); return img
-              ? `<a class="camshot" href="${link}" target="_blank" rel="noopener" title="${esc(c.name)}"><img class="snap" data-base="${img}" src="${img}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)}</span></a>`
-              : `<a class="camshot nolink" href="${link}" target="_blank" rel="noopener"><span>📷 ${esc(c.name)} ↗</span></a>`; }).join("")}
+              ? `<a class="camshot" href="${link}" target="_blank" rel="noopener noreferrer" title="${esc(c.name)}"><img class="snap" data-base="${img}" src="${img}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)}</span></a>`
+              : `<a class="camshot nolink" href="${link}" target="_blank" rel="noopener noreferrer"><span>📷 ${esc(c.name)} ↗</span></a>`; }).join("")}
           </div>
         </details>`).join("")}
     </section>`;
@@ -148,7 +148,7 @@ async function main() {
     <section class="country-group" data-countries="RS">
       <h2>🇷🇸 Cestne kamere <span class="cnt">${RS_ROAD_CAMS.length}</span> <span class="src">· vir: Putevi Srbije (žive slike)</span></h2>
       <div class="camgrid">
-        ${RS_ROAD_CAMS.map((c) => `<a class="camshot" href="${c.poster}" target="_blank" rel="noopener" title="${c.name}"><img class="snap" data-base="${c.poster}" src="${c.poster}" loading="lazy" referrerpolicy="no-referrer" alt="${c.name}"><span>${c.name}</span></a>`).join("")}
+        ${RS_ROAD_CAMS.map((c) => `<a class="camshot" href="${c.poster}" target="_blank" rel="noopener noreferrer" title="${c.name}"><img class="snap" data-base="${c.poster}" src="${c.poster}" loading="lazy" referrerpolicy="no-referrer" alt="${c.name}"><span>${c.name}</span></a>`).join("")}
       </div>
     </section>`;
 
@@ -163,7 +163,7 @@ async function main() {
         <details class="roadgroup">
           <summary>${esc(region)} <span class="cnt">${gs.reduce((s, g) => s + g.cams.length, 0)}</span></summary>
           <div class="camgrid">
-            ${gs.flatMap((g) => g.cams).map((c) => `<a class="camshot" href="${c.image}" target="_blank" rel="noopener" title="${esc(c.name)}"><img class="snap" data-base="${c.image}" src="${c.image}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)}</span></a>`).join("")}
+            ${gs.flatMap((g) => g.cams).map((c) => `<a class="camshot" href="${c.image}" target="_blank" rel="noopener noreferrer" title="${esc(c.name)}"><img class="snap" data-base="${c.image}" src="${c.image}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)}</span></a>`).join("")}
           </div>
         </details>`).join("")}
     </section>`;
@@ -174,7 +174,7 @@ async function main() {
     <section class="country-group" data-countries="MK">
       <h2>🇲🇰 Kamere <span class="cnt">${AMSM_CAMS.length}</span> <span class="src">· vir: AMSM / roads.org.mk</span></h2>
       <div class="camgrid">
-        ${AMSM_CAMS.map((c) => `<a class="camshot nolink" href="${c.url}" target="_blank" rel="noopener"><span>📷 ${esc(c.name)} ↗</span></a>`).join("")}
+        ${AMSM_CAMS.map((c) => `<a class="camshot nolink" href="${c.url}" target="_blank" rel="noopener noreferrer"><span>📷 ${esc(c.name)} ↗</span></a>`).join("")}
       </div>
     </section>`;
 
@@ -184,7 +184,7 @@ async function main() {
     <section class="country-group" data-countries="BA">
       <h2>🇧🇦 Kamere <span class="cnt">${BIHAMK_CAMS.length}</span> <span class="src">· vir: BIHAMK (žive slike)</span></h2>
       <div class="camgrid">
-        ${BIHAMK_CAMS.map((c) => `<a class="camshot" href="${c.image}" target="_blank" rel="noopener" title="${esc(c.name)}"><img class="snap" data-base="${c.image}" src="${c.image}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)}</span></a>`).join("")}
+        ${BIHAMK_CAMS.map((c) => `<a class="camshot" href="${c.image}" target="_blank" rel="noopener noreferrer" title="${esc(c.name)}"><img class="snap" data-base="${c.image}" src="${c.image}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)}</span></a>`).join("")}
       </div>
     </section>`;
 
@@ -194,7 +194,7 @@ async function main() {
     <section class="country-group" data-countries="BA">
       <h2>🇧🇦 Kamere mejnih prehodov <span class="cnt">${AMSRS_CAMS.length}</span> <span class="src">· vir: AMS-RS (žive slike)</span></h2>
       <div class="camgrid">
-        ${AMSRS_CAMS.map((c) => `<a class="camshot" href="${c.image}" target="_blank" rel="noopener" title="${esc(c.name)}"><img class="snap" data-base="${c.image}" src="${c.image}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)}</span></a>`).join("")}
+        ${AMSRS_CAMS.map((c) => `<a class="camshot" href="${c.image}" target="_blank" rel="noopener noreferrer" title="${esc(c.name)}"><img class="snap" data-base="${c.image}" src="${c.image}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)}</span></a>`).join("")}
       </div>
     </section>`;
 
@@ -240,7 +240,7 @@ async function main() {
           </tbody>
         </table>
       </div>
-      <p class="meta" style="margin-top:8px">Realne cene (nacionalna valuta + EUR) · vir: <a href="https://www.amzs.si/na-poti/cene-goriv-po-evropi" target="_blank" rel="noopener">AMZS</a> · osveženo ${esc(FUEL_UPDATED)}. 🇪🇺 ex-YU države na vrhu.</p>
+      <p class="meta" style="margin-top:8px">Realne cene (nacionalna valuta + EUR) · vir: <a href="https://www.amzs.si/na-poti/cene-goriv-po-evropi" target="_blank" rel="noopener noreferrer">AMZS</a> · osveženo ${esc(FUEL_UPDATED)}. 🇪🇺 ex-YU države na vrhu.</p>
     </section>`;
   const truckHtml = `
     <section class="country-group">
@@ -419,6 +419,7 @@ h1{font-size:24px}
 .vwrap .vlab{font-size:12px;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
 .vwrap video{width:100%;border-radius:8px;background:#000;aspect-ratio:16/9}
 .modalfoot{margin-top:12px;color:var(--muted);font-size:11px}
+#camBig{width:100%;border-radius:10px;background:#000;display:block;min-height:200px;object-fit:contain;max-height:80vh}
 .lvl-none{border-left-color:var(--none)}.b-none{background:var(--none)}.lvl-low{border-left-color:var(--low)}.b-low{background:var(--low)}
 .lvl-moderate{border-left-color:var(--moderate)}.b-moderate{background:var(--moderate)}.lvl-high{border-left-color:var(--high)}.b-high{background:var(--high)}
 .lvl-severe{border-left-color:var(--severe)}.b-severe{background:var(--severe);color:#fff}.lvl-unknown{border-left-color:var(--unknown)}.b-unknown{background:var(--unknown);color:#16202b}
@@ -484,6 +485,13 @@ ${fuelHtml}
     <div class="modalfoot">Vir: AMSS (kamere.amss.org.rs) · živ prenos v aplikaciji</div>
   </div>
 </div>
+<div id="camModal" class="modal" onclick="if(event.target===this)closeCam()">
+  <div class="modalbox">
+    <div class="modalhead"><span id="camTitle"></span><button onclick="closeCam()">✕</button></div>
+    <div><img id="camBig" referrerpolicy="no-referrer" alt=""></div>
+    <div class="modalfoot">Živa slika (osvežuje se) · <a id="camOpen" href="#" target="_blank" rel="noopener noreferrer">odpri v novem zavihku ↗</a></div>
+  </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
@@ -525,7 +533,7 @@ try{ L.geoJSON(BORDERS,{interactive:false,style:{color:'#475569',weight:1.2,opac
 const crossingLayer=L.layerGroup().addTo(map);
 function crossingIcon(level){ return L.divIcon({className:'carinadiv',html:'<div class="carina"><div class="csign">CARINA<span>DOUANE</span></div><span class="cdot cd-'+level+'"></span></div>',iconSize:[38,38],iconAnchor:[19,19]}); }
 const MARKERS=[];
-PTS.forEach(p=>{const cam=(p.cameras&&p.cameras.length)?'<br>'+p.cameras.map(c=>'<a href="'+c.url+'" target="_blank" rel="noopener">📷 '+c.source+' ↗</a>').join(' · '):'';
+PTS.forEach(p=>{const cam=(p.cameras&&p.cameras.length)?'<br>'+p.cameras.map(c=>'<a href="'+c.url+'" target="_blank" rel="noopener noreferrer">📷 '+c.source+' ↗</a>').join(' · '):'';
  const live=(p.streams&&p.streams.length)?'<br><b style="cursor:pointer;color:#c0392b" onclick="openStream(\\''+p.id+'\\')">▶ AMSS v živo</b>':'';
  const mk=L.marker([p.lat,p.lng],{icon:crossingIcon(p.level)})
  .bindTooltip('<b>'+p.name+'</b> '+FLAGJS[p.country]+'↔'+FLAGJS[p.neighbor])
@@ -536,7 +544,7 @@ const camIcon=L.divIcon({className:'camdiv',html:'<div class="campin">📷</div>
 const camCluster=L.layerGroup();
 const CAMS=[];
 function addCam(lat,lng,country,name,popupHtml){ var m=L.marker([lat,lng],{icon:camIcon}).bindTooltip('📷 '+name).bindPopup(popupHtml); CAMS.push({m:m,country:country,name:name,lat:lat,lng:lng}); }
-ROADPTS.forEach(function(p){ var im=p.image?'<br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px">':''; addCam(p.lat,p.lng,'HR',p.name,'<b>📷 '+p.name+'</b><br><small>'+p.road+'</small>'+im+'<br><a href="'+p.url+'" target="_blank" rel="noopener">odpri na HAK ↗</a>'); });
+ROADPTS.forEach(function(p){ var im=p.image?'<br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px">':''; addCam(p.lat,p.lng,'HR',p.name,'<b>📷 '+p.name+'</b><br><small>'+p.road+'</small>'+im+'<br><a href="'+p.url+'" target="_blank" rel="noopener noreferrer">odpri na HAK ↗</a>'); });
 RSROADPTS.forEach(function(p){ addCam(p.lat,p.lng,'RS',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.poster+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>Putevi Srbije</small>'); });
 SIPTS.forEach(function(p){ addCam(p.lat,p.lng,'SI',p.title,'<b>📷 '+p.title+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>DARS</small>'); });
 BIHCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>BIHAMK</small>'); });
@@ -600,7 +608,12 @@ function favBtn(key,on){ var b=document.createElement('button'); b.type='button'
 function favSync(){ var bs=document.querySelectorAll('.favbtn[data-k]'); for(var i=0;i<bs.length;i++){ bs[i].classList.toggle('on', FAVS.has(bs[i].getAttribute('data-k'))); } }
 function favRebuild(){ var grid=document.getElementById('favGrid'); if(!grid) return; grid.innerHTML=''; var seen={}; var list=document.querySelectorAll('#view-cams .camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k||!FAVS.has(k)||seen[k]) continue; seen[k]=1; var c=a.cloneNode(true); var ob=c.querySelector('.favbtn'); if(ob)ob.parentNode.removeChild(ob); c.appendChild(favBtn(k,true)); grid.appendChild(c); } var n=grid.children.length; var cnt=document.getElementById('favCnt'); if(cnt)cnt.textContent=n; var hint=document.getElementById('favHint'); if(hint)hint.style.display=n?'none':''; }
 function favToggle(k){ if(FAVS.has(k))FAVS.delete(k); else FAVS.add(k); favSave(); favSync(); favRebuild(); }
-(function favInit(){ var view=document.getElementById('view-cams'); if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); } view.addEventListener('click',function(e){ var t=e.target; var b=(t&&t.classList&&t.classList.contains('favbtn'))?t:(t&&t.closest?t.closest('.favbtn'):null); if(!b)return; e.preventDefault(); e.stopPropagation(); favToggle(b.getAttribute('data-k')); }); favRebuild(); })();
+var _camTimer=null;
+function camBust(u){ return u+(u.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }
+function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
+function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; }
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
+(function favInit(){ var view=document.getElementById('view-cams'); if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); } view.addEventListener('click',function(e){ var t=e.target; var b=(t&&t.classList&&t.classList.contains('favbtn'))?t:(t&&t.closest?t.closest('.favbtn'):null); if(b){ e.preventDefault(); e.stopPropagation(); favToggle(b.getAttribute('data-k')); return; } var a=t&&t.closest?t.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); var nm=a.getAttribute('title')||(a.querySelector('span')?a.querySelector('span').textContent:''); openCam(im.getAttribute('data-base')||im.src, nm); } } }); favRebuild(); })();
 setInterval(function(){ document.querySelectorAll('img.snap').forEach(function(im){ var b=im.getAttribute('data-base'); if(b) im.src=b+(b.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }); }, 60000);
 </script></body></html>`;
 
