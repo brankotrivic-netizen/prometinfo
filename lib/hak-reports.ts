@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.6.2026. 14:28",
-  "text": "Kolnici su mjestimice mokri ili vlažni te skliski. Mogući su odroni. Pojačan je promet na gradskim cestama i obilaznicama te na važnijim cestama, osobito na zagrebačkoj obilaznici (A3), Istarskom ipsilonu (A8/A9) između tunela i čvora Učka, Jadranskoj magistrali (DC8) u Crikvenici, Solinu, Splitu i Stobreču. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI : vožnja u suprotnom smjeru na autocesti A3 Bregana-Lipovac između čvora Sveta Nedelja i čvora Samobor na kolniku u smjeru Lipovca - vozi se uz ograničenje brzine od 40 …"
+  "updated": "5.6.2026. 14:35",
+  "text": "Kolnici su mjestimice mokri ili vlažni te skliski. Mogući su odroni. Pojačan je promet na gradskim cestama i obilaznicama te na važnijim cestama, osobito na zagrebačkoj obilaznici (A3), Istarskom ipsilonu (A8/A9) između tunela i čvora Učka, Jadranskoj magistrali (DC8) u Crikvenici, Solinu, Splitu i Stobreču. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI : povećana je gustoća prometa na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u smjeru Bregane, vozi se usporeno uz povremene zastoje AUTOCESTE A1 Zagreb-P…"
  },
  {
   "title": "Granični prijelazi",
