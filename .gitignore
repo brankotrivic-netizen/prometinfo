@@ -10,7 +10,8 @@ npm-debug.log*
 /.vercel
 *.tsbuildinfo
 next-env.d.ts
-# generiran vmesni artefakt (objavi se dist/index.html)
+# generirana stran — zgradi se v CI (npm run refresh) ob vsaki objavi
 /osnutek-preview.html
+/dist/
 # zacasne datoteke skript (cache, prenosi, logi)
 scripts/.*
