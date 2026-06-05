@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.6.2026. 17:54",
-  "text": "U Zagrebu, u zoni čvora Zagreb istok (A3/A4) onemogućeno je spajanje na autocestu A4 Goričan-Zagreb iz smjera Slavonske avenije, kao i iz smjera Rugvice na autocesti A3 Bregana-Lipovac (u smjeru Varaždina). Obilazak je kroz Sesvete. Korisnike molimo za strpljenje i razumijevanje (zone radova). Kolnici su mjestimice mokri ili vlažni te skliski. Mogući su odroni. Pojačan je promet na gradskim cestama i obilaznicama te na važnijim cestama, osobito na zagrebačkoj obilaznici (A3), Istarskom ipsilonu (A8/A9) između tunela i čvora Učka, Jadranskoj magistrali (DC8) u Crikvenici, Solinu, Splitu i Stobreču. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozače upozoravamo da p…"
+  "updated": "5.6.2026. 21:13",
+  "text": "U Zagrebu, u zoni čvora Zagreb istok (A3/A4) nije moguće uključivanje na autocestu A4 Goričan-Zagreb iz smjera Slavonske avenije, kao i iz smjera Rugvice (A3) u smjeru Varaždina. Obilazak je kroz Sesvete. http://go.hak.hr/stanjehakkarta Kolnici su mjestimice mokri ili vlažni te skliski. Mogući su odroni. Pojačan je promet na gradskim cestama i obilaznicama te na važnijim cestama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI : večeras od 19:00 do 07:00 zbog radova je zatvorena dionica autoceste A6 Rijeka-Zagreb između č…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "5.6.2026. 17:31",
+  "updated": "5.6.2026. 21:14",
   "text": "Zbog uvođenja novog sustava carine duža su čekanja od uobičajenih u prometu teretnih vozila na ulasku u Hrvatsku. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska …"
  },
  {
   "title": "Pomorski promet",
-  "updated": "5.6.2026. 17:31",
+  "updated": "5.6.2026. 21:14",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 7. lipnja trajekt na liniji Preko-Ošljak-Zadar (Gaženica) održat će sva putovanja osim polaska u 05:00 sati iz Zadra (Gaženice) i u 05:30 sati iz Preka 7. lipnja trajekt će iz luke Iž Mali/Bršanj za luku Zadar/Gaženica isploviti u 16:50 sati, a iz luke Zadar/Gaženica za luku Iž Mali/Bršanj isploviti u 18:10 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični…"
  },
  {
