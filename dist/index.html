@@ -44,11 +44,17 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .roadgroup .cams{padding:0 0 12px}
 .roadgroup .cnt{background:var(--panel-2);color:var(--muted);font-size:11px;padding:1px 7px;border-radius:999px;font-weight:400}
 .camgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
-.camshot{display:block;background:var(--panel);border:1px solid var(--border);border-radius:10px;overflow:hidden;text-decoration:none;color:var(--text);box-shadow:0 1px 3px rgba(16,32,43,.05)}
+.camshot{position:relative;display:block;background:var(--panel);border:1px solid var(--border);border-radius:10px;overflow:hidden;text-decoration:none;color:var(--text);box-shadow:0 1px 3px rgba(16,32,43,.05)}
 .camshot img{width:100%;height:108px;object-fit:cover;display:block;background:var(--panel-2)}
 .camshot span{display:block;padding:6px 9px;font-size:12px;font-weight:600}
 .camshot:hover{border-color:var(--accent)}
-.camshot.nolink{display:flex;align-items:center;justify-content:center;min-height:64px;color:var(--accent);font-weight:600;font-size:12px;text-align:center;padding:10px}
+.camshot.nolink{display:flex;align-items:center;justify-content:center;min-height:64px;color:var(--accent);font-weight:600;font-size:12px;text-align:center;padding:10px 40px 10px 10px}
+.favbtn{position:absolute;top:6px;right:6px;width:30px;height:30px;padding:0;border:none;border-radius:50%;background:rgba(255,255,255,.88);color:#b3bac6;font-size:18px;line-height:30px;text-align:center;cursor:pointer;box-shadow:0 1px 3px rgba(16,32,43,.28);z-index:2;transition:transform .08s}
+.favbtn:hover{background:#fff;transform:scale(1.12)}
+.favbtn.on{color:#f5a623}
+#favSection h2 .cnt{background:#fff7e6;color:#b9770e}
+#favGrid:empty{display:none}
+.favhint{margin:4px 0 0}
 .campin{font-size:15px;line-height:20px;text-align:center;filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}
 .carina{position:relative;width:38px;height:38px}
 .csign{width:34px;height:34px;border-radius:50%;background:#fff;border:3px solid #d32f2f;color:#c62828;font-size:7px;font-weight:800;line-height:1.05;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.45);text-align:center}
@@ -145,7 +151,7 @@ h1{font-size:24px}
 footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-top:1px solid var(--border);padding-top:16px}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#08111c}.leaflet-popup-content a{color:#1a55c8;font-weight:600}
 </style></head><body><div class="wrap">
-<div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><span class="meta">OSNUTEK · 5. 6. 2026, 12:21:36</span></div>
+<div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><span class="meta">OSNUTEK · 5. 6. 2026, 14:32:28</span></div>
 <div class="stats">
 <div class="stat"><b>74</b><span>prehodov</span></div>
 <div class="stat ok"><b>46</b><span>prevozno</span></div>
@@ -720,6 +726,11 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
     </section>
 </div>
 <div class="view" id="view-cams" style="display:none">
+<section class="country-group" id="favSection">
+  <h2>⭐ Moje priljubljene kamere <span class="cnt" id="favCnt">0</span></h2>
+  <div class="camgrid" id="favGrid"></div>
+  <p class="meta favhint" id="favHint">Klikni zvezdico ⭐ na kateri koli kameri spodaj — prikaže se tukaj na vrhu, da jo odpreš brez iskanja. Shrani se v tej napravi.</p>
+</section>
 
     <section class="country-group" data-countries="BA">
       <h2>🇧🇦 Kamere <span class="cnt">10</span> <span class="src">· vir: BIHAMK (žive slike)</span></h2>
@@ -1009,5 +1020,16 @@ function showView(v, btn){
  if(v==='map'){ setTimeout(function(){ map.invalidateSize(); }, 60); }
 }
 (function(){ var tt=document.getElementById('trafficToggle'); if(tt&&tt.checked&&TOMTOM_KEY) toggleTraffic(tt); })();
+/* ⭐ Priljubljene kamere — shranjeno v napravi (localStorage) */
+var FAVKEY='promet_favs';
+function favGet(){ try{ return new Set(JSON.parse(localStorage.getItem(FAVKEY)||'[]')); }catch(e){ return new Set(); } }
+function favSave(){ try{ localStorage.setItem(FAVKEY, JSON.stringify(Array.from(FAVS))); }catch(e){} }
+var FAVS=favGet();
+function camKey(a){ var im=a.querySelector('img.snap'); var b=im&&im.getAttribute('data-base'); return b||a.getAttribute('href')||''; }
+function favBtn(key,on){ var b=document.createElement('button'); b.type='button'; b.className='favbtn'+(on?' on':''); b.textContent='\u2605'; b.title='Dodaj/odstrani med priljubljene'; b.setAttribute('aria-label','Priljubljena kamera'); b.setAttribute('data-k',key); return b; }
+function favSync(){ var bs=document.querySelectorAll('.favbtn[data-k]'); for(var i=0;i<bs.length;i++){ bs[i].classList.toggle('on', FAVS.has(bs[i].getAttribute('data-k'))); } }
+function favRebuild(){ var grid=document.getElementById('favGrid'); if(!grid) return; grid.innerHTML=''; var seen={}; var list=document.querySelectorAll('#view-cams .camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k||!FAVS.has(k)||seen[k]) continue; seen[k]=1; var c=a.cloneNode(true); var ob=c.querySelector('.favbtn'); if(ob)ob.parentNode.removeChild(ob); c.appendChild(favBtn(k,true)); grid.appendChild(c); } var n=grid.children.length; var cnt=document.getElementById('favCnt'); if(cnt)cnt.textContent=n; var hint=document.getElementById('favHint'); if(hint)hint.style.display=n?'none':''; }
+function favToggle(k){ if(FAVS.has(k))FAVS.delete(k); else FAVS.add(k); favSave(); favSync(); favRebuild(); }
+(function favInit(){ var view=document.getElementById('view-cams'); if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); } view.addEventListener('click',function(e){ var t=e.target; var b=(t&&t.classList&&t.classList.contains('favbtn'))?t:(t&&t.closest?t.closest('.favbtn'):null); if(!b)return; e.preventDefault(); e.stopPropagation(); favToggle(b.getAttribute('data-k')); }); favRebuild(); })();
 setInterval(function(){ document.querySelectorAll('img.snap').forEach(function(im){ var b=im.getAttribute('data-base'); if(b) im.src=b+(b.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }); }, 60000);
 </script></body></html>
