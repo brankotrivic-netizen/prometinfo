@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "6.6.2026. 09:29",
-  "text": "Kolnici su mjestimice mokri ili vlažni i skliski na istoku zemlje. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI : - AUTOCESTE A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (izlaz sa autoceste A1)-DC220-ŽC6260-ŽC6145-DC1-Dugopolje/Split. Na naplatnoj postaji Dugopolje moguće se uključiti na autocestu A1 u smjeru Zagreba ili nastaviti državnom cestom DC1 prema ulazu u grad Split. Na čvoru Bisko nije moguće uključenje na autocestu A1 u smjeru Zagreba. Iz smjera Zagreba u smjeru Dubrovnika vozila izlaze s autoceste…"
+  "updated": "6.6.2026. 16:51",
+  "text": "Vremenski uvjeti u većem dijelu zemlje povoljni su za vožnju. Pojačan je promet na važnijim cestama, prilazima turističkim središtima te trajektnim lukama i pristaništima. Povremeni zastoji i usporavanja mogući su u zonama radova i privremene regulacije prometa. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI : zbog prometne nesreće prekinut je promet na Jadranskoj magistrali (DC8) u mjestu Murvica kod Zadra AUTOCESTE A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (izlaz sa autoceste A1)-DC220-ŽC6260-ŽC6145-DC1-Dug…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "6.6.2026. 09:27",
+  "updated": "6.6.2026. 16:51",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "6.6.2026. 09:27",
+  "updated": "6.6.2026. 16:51",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 7. lipnja trajekt na liniji Preko-Ošljak-Zadar (Gaženica) održat će sva putovanja osim polaska u 05:00 sati iz Zadra (Gaženice) i u 05:30 sati iz Preka 7. lipnja trajekt će iz luke Iž Mali/Bršanj za luku Zadar/Gaženica isploviti u 16:50 sati, a iz luke Zadar/Gaženica za luku Iž Mali/Bršanj isploviti u 18:10 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "5.6.2026. 08:45",
-  "text": "Prometna prognoza za Hrvatsku za 6. lipnja 2026. Vremenski uvjeti bit će povoljni za vožnju u većem dijelu zemlje. Pojačan promet očekuje se na gradskim cestama i obilaznicama, na pojedinim dionicama autocesta, duž Jadranske magistrale te povremeno u trajektnim lukama. Zastoji su mogući u zonama radova i privremene regulacije prometa. Čekanja u putničkom i teretnom prometu bit će na pojedinim graničnim prijelazima s Bosnom i Hercegovinom i Srbijom. U pomorskom prometu ne očekuju se poteškoće. Hrvatski autoklub želi vam sretan put i ugodnu vožnju! Prognoza prometa HAK-a za blagdan Tijelova - produženi vikend 4.-7. lipnja 2026. Blagdan Tijelova ove godine pada u četvrtak, 4. lipnja 2026. Već u…"
+  "updated": "6.6.2026. 13:28",
+  "text": "Prometna prognoza za Hrvatsku za 7. lipnja 2026. U jutarnjim će satima na cestama u unutrašnjosti vidljivost mjestimice biti smanjena zbog magle. No, tijekom dana, vremenski će uvjeti u glavnom biti povoljni za vožnju. Budući da je sutra zadnji dan produženog vikenda, poslijepodne i navečer očekuje se vrlo gust promet u smjeru unutrašnjosti, posebice na autocestama A1 Zagreb – Ploče - Karamatići i A6 Rijeka - Zagreb te na državnoj cesti DC1 kroz Liku. Kolone i dulja čekanja osobito su moguća na autocesti A1 između Ogulina i Zagreba, na naplatnim postajama Lučko i Demerje te u zonama odmorišta i tunela. Kolone i zastoji također se očekuju na Krčkom mostu. Na graničnim prijelazima s Bosnom i H…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",

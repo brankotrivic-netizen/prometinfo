@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Naplatna stanica Vrnjačka banja, radovi",
+  "text": "Do 12. 6. 2026. godine, u toku radovi na kolovozu i razdelnom ostrvu, na državnom putu I A reda broj 5, na naplatnoj stanici Vrnjačka Banja, u oba smera. Tokom izvođenja radova, zatvoreni su prvi unutrašnji kanali na naplatnoj stanici, dok se saobraćaj odvija slobodnim kanalima, u jednom smeru a potom i u drugom. Izvor Putevi Srbije"
+ },
+ {
   "title": "Petlja Vrčin, radovi",
   "text": "Od 15. 6. 2026. godine od 8 časova do 20. 6. 2026.godine do 17 časova izvoditi radovi na rehabilitaciji petlje Vrčin sa rehabilitacijom ulivno-izlivnih traka leve strana u smeru Niš - Beograd na državnom putu I A reda broj 1 (Faza 2). Za vreme izvođenja radova u smeru Niš - Beograd zatvorena je petlja Vrčin. U smeru Beograd-Niš normalno odvijanje saobraćaja. Izliv za Vrčin i uliv za Beograd zatvoreni su za saobraćaj. Od Vrčina ka Beogradu može se doći: 1. Vrčin - naselje Tranšped - petlja Tranšp…"
  },
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petrovaradin-Paragovo, radovi",
   "text": "Do 29. 4. 2026.godine izvode se radovi na redovnom održavanju na državnom putudeonica izlaz iz Petrovaradina - Paragovo. Saobraćaj se odvija naizmeničnim propuštanjem vozila. Radovi se neće izvoditi u subotu i nedelju. Izvor: Putevi Srbije"
- },
- {
-  "title": "Biciklistička trasa kroz Srbiju GVOZDENA ZAVESA 13",
-  "text": "Biciklistička trasa kroz Srbiju Gvozdena zavesa . Biciklistička ruta vodi od GP Kelebija putem IB reda na put IIA reda br 100 do Srbobrana - Siriga - Novog Sada - Srmskih Karlovaca - Inđija - Stara Pazova - Beograd - Pančevo, putem IB reda br 14, do Kovina- putem IIA reda 134 do Banatske Palanke - Rama - Velikog Gradišta - Golupca - Donjeg Milanovca - Kladova - Negotina - Zaječara - Knjaževca - Kalne - putem IIB reda br 221 do Pirota, a zatim istim putem do graničnog prelaza sa Bugarskom Gradina"
  }
 ];
