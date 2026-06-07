@@ -2,16 +2,20 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Kruševac zapad, radovi",
+  "text": "Od 9.6.2026.godine izvoditi radovi na državnom putu I A reda broj 5 Petlja Kruševac Zapad Rampa 1 i nadvožnjak (desna strana), u pravcu ka Vrnjačkoj Banji. Za vreme izvođenja radova biće zatvorena naplatna stanica Kruševac Zapad u pravcu ka Vrbi. Vozila će se usmeravati na najbližu naplatnu stanicu Koševi. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Kovilovo-Beograd, radovi",
+  "text": "Dana 7.6. i 8.6.2026.godine, u periodu od 7 do 17 časova, izvoditi radovi na zameni oštećene zaštitne ograde na deonici petlja Kovilovo - Beograd (štamparija), u smeru ka Kovilovu. U zoni radova za saobraćaj će biti zatvorena leva saobraćajna traka u dužini od 100 metara, dok će se saobraćaj odvijati srednjom i desnom saobraćajnom trakom. Izvor. Putevi Srbije"
+ },
+ {
   "title": "Naplatna stanica Vrnjačka banja, radovi",
   "text": "Do 12. 6. 2026. godine, u toku radovi na kolovozu i razdelnom ostrvu, na državnom putu I A reda broj 5, na naplatnoj stanici Vrnjačka Banja, u oba smera. Tokom izvođenja radova, zatvoreni su prvi unutrašnji kanali na naplatnoj stanici, dok se saobraćaj odvija slobodnim kanalima, u jednom smeru a potom i u drugom. Izvor Putevi Srbije"
  },
  {
   "title": "Petlja Vrčin, radovi",
   "text": "Od 15. 6. 2026. godine od 8 časova do 20. 6. 2026.godine do 17 časova izvoditi radovi na rehabilitaciji petlje Vrčin sa rehabilitacijom ulivno-izlivnih traka leve strana u smeru Niš - Beograd na državnom putu I A reda broj 1 (Faza 2). Za vreme izvođenja radova u smeru Niš - Beograd zatvorena je petlja Vrčin. U smeru Beograd-Niš normalno odvijanje saobraćaja. Izliv za Vrčin i uliv za Beograd zatvoreni su za saobraćaj. Od Vrčina ka Beogradu može se doći: 1. Vrčin - naselje Tranšped - petlja Tranšp…"
- },
- {
-  "title": "Kovilovo-Beograd, radovi",
-  "text": "Do 19. 6. 2026. godine, u periodu od 7 do 17 časova, izvodi se treća faza radova na rehabilitaciji na deonici Beograd (štamparija) - petlja Kovilovo. Radovi se izvode u srednjoj i desnoj saobraćajnoj traci, dok se saobraćaj odvija krajnjom levom saobraćajnom trakom. Izvor. Putevi Srbije"
  },
  {
   "title": "Sombor - Kljajićevo, radovi",
@@ -84,10 +88,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "petlja Sirig-petlja Novi Sad centar, radovi",
   "text": "Od 27. 5. do 17. 6. 2026. godine, izvodiće se radovi na rehabilitaciji kolovoza, na deonici petlja Sirig petlja Novi Sad centar, u smeru ka Beogradu. Tokom izvođenja radova u dve faze saobraćaj će se odvijati na sledeći način: Faza 1: Saobraćaj će biti preusmeren preko službenih prolaza u dužini 2,8 km. Saobraćaj u smeru Beograd - Subotica će se odvijati voznom i zaustavnom trakom u smeru kretanja. Saobraćaj u smeru Subotica - Beograd biće prerusmeren kroz službene prolaze u preticajnu traku sup…"
- },
- {
-  "title": "Petlja Kruševac zapad-petlja Vrnjačka banja, radovi",
-  "text": "Od 28. 5. do 11. 6. 2026. godine, izvodiće se radovi na sanaciji betona spoja šahta i mosta na sekcijama 4 i 5, na deonici petlja Kruševac zapad - petlja Vrnjačka Banja u oba smera. U zoni radova tokom zatvaranja zaustavne trake, njena dužina biće 200 metara, dok će se saobraćaj odvijati preticajnom i voznom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
  {
   "title": "Sremska Mitrovica, radovi",
