@@ -2,6 +2,14 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Vranje- petlja Vladičin Han, radovi",
+  "text": "Od danas 7. 6. 2026. godine, od 15 časova, do 10. 6. 2026. godine, doći do promene režima saobraćaja usled radova na popravci dilatacije mosta, na državnom putu I A reda broj 1, na deonici petlja Vladičin Han petlja Vranje (na km 531+143), u smeru ka Vranju. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka. Izvor Putevi Srbije"
+ },
+ {
+  "title": "Petlja Nova Pazova- Novi Banovci, radovi",
+  "text": "Od 8. 6. 2026. godine, od 11 časova, do 18. 6. 2026. godine, izvodiće se radovi u razdelnom pojasu i preticajnoj saobraćajnoj traci, na državnom putu I A reda broj 1, na deonici Nova Pazova Novi Banovci (od km 165+740 do km 168+750), u smeru ka Beogradu. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka, dok će se saobraćaj odvijati u voznoj i zaustavnoj saobraćajnoj traci. Izvor: Putevi Srbije"
+ },
+ {
   "title": "Petlja Kruševac zapad, radovi",
   "text": "Od 9.6.2026.godine izvoditi radovi na državnom putu I A reda broj 5 Petlja Kruševac Zapad Rampa 1 i nadvožnjak (desna strana), u pravcu ka Vrnjačkoj Banji. Za vreme izvođenja radova biće zatvorena naplatna stanica Kruševac Zapad u pravcu ka Vrbi. Vozila će se usmeravati na najbližu naplatnu stanicu Koševi. Izvor: Putevi Srbije"
  },
@@ -232,13 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Kuzmin-granica SRB/BiH, radovi",
   "text": "Do 1. 7. 2026.godine, na snazi će biti izmenjen režim saobraćaja na državnom putu , deonica Kuzmin (Sr.Mitrovica) - granica SRB/BiH (Sremska Rača), zbog izvođenja radova na izgradnji novog graničnog prelaza. Za vreme izvođenja radova, postavljena saobraćajna signalizacija blagovremeno upozorava na opasnost zbog spajanja sporednog puta sa državnim putem i na suženje kolovoza. Izvor: Putevi Srbije"
- },
- {
-  "title": "Obustava sabraćaja Novi Sad, biciklističke trke",
-  "text": "Dana 7. 6. 2026. godine, u periodu od 9 do 14.30 časova, doći do obustave saobraćaja, zbog sportske manifestacije u pokretu - biciklistička trka Gran Fondo Novi Sad 2026 , na sledećim putnim pravcima: - kroz naseljeno mesto Petrovaradin, - deonica Maradik (Beška) Rakovac, - , deonica Petrovaradin(Račkog) - Irig (Vrdnik), Tokom održavanja manifestacije, dolaziće do kratkotrajnih obustava saobraćaja na pomenutim deonicama, uz asistenciju saobraćajne policije. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petrovaradin-Paragovo, radovi",
-  "text": "Do 29. 4. 2026.godine izvode se radovi na redovnom održavanju na državnom putudeonica izlaz iz Petrovaradina - Paragovo. Saobraćaj se odvija naizmeničnim propuštanjem vozila. Radovi se neće izvoditi u subotu i nedelju. Izvor: Putevi Srbije"
  }
 ];
