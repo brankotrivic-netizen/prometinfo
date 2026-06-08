@@ -10,6 +10,7 @@ const steps = [
   ["HAK poročila (HR)", "node", ["scripts/build-hak-reports.mjs"]],
   ["AMSS poročila (RS)", "node", ["scripts/build-amss-reports.mjs"]],
   ["BIHAMK poročila (BiH)", "node", ["scripts/build-bihamk-reports.mjs"]],
+  ["AI ocena gneče (vision)", "node", ["scripts/build-ai-congestion.mjs"]],
 ];
 
 let failed = 0;

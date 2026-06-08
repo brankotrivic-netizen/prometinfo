@@ -13,6 +13,7 @@ import { SI_CAMS } from "../lib/si-road-cameras";
 import { BIHAMK_CAMS } from "../lib/bihamk-cameras";
 import { AMSRS_CAMS } from "../lib/amsrs-cameras";
 import { AMSM_CAMS } from "../lib/amsm-cameras";
+import { AI_CONGESTION } from "../lib/ai-congestion";
 import { COUNTRY_BORDERS } from "../lib/country-borders";
 import { HAK_REPORTS } from "../lib/hak-reports";
 import { AMSS_REPORTS } from "../lib/amss-reports";
@@ -113,6 +114,16 @@ async function main() {
       merged.push(im);
     }
     (p as unknown as { images: { name: string; url: string }[] }).images = merged.slice(0, 10);
+
+    // AI ocena gnece (Claude vision) — pripni najblizjo po koordinatah.
+    const aiHit = AI_CONGESTION.find((a) => Math.abs(a.lat - (p.lat as number)) < 0.03 && Math.abs(a.lng - (p.lng as number)) < 0.03);
+    if (aiHit) {
+      (p as unknown as { ai: typeof aiHit }).ai = {
+        key: aiHit.key, name: aiHit.name, lat: aiHit.lat, lng: aiHit.lng, image: aiHit.image,
+        level: aiHit.level, vehicles: aiHit.vehicles, waitMin: aiHit.waitMin, note: aiHit.note,
+        readable: aiHit.readable, ts: aiHit.ts,
+      };
+    }
   }
 
   // Podatki o zivih tokovih (za vgrajeni HLS predvajalnik).
@@ -455,6 +466,8 @@ h1{font-size:24px}
 .popcams{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:5px;margin:7px 0 4px}
 .popcam{width:100%;height:82px;object-fit:cover;border-radius:6px;cursor:zoom-in;display:block;background:#000}
 .popsrc{font-size:11px;color:var(--muted)}
+.aibadge{margin:8px 0 4px;padding:6px 8px;background:#f8fafc;border-radius:6px;line-height:1.35}
+.aitag{font-size:10px;font-weight:700;letter-spacing:.4px;color:#6366f1;text-transform:uppercase}
 .lvl-none{border-left-color:var(--none)}.b-none{background:var(--none)}.lvl-low{border-left-color:var(--low)}.b-low{background:var(--low)}
 .lvl-moderate{border-left-color:var(--moderate)}.b-moderate{background:var(--moderate)}.lvl-high{border-left-color:var(--high)}.b-high{background:var(--high)}
 .lvl-severe{border-left-color:var(--severe)}.b-severe{background:var(--severe);color:#fff}.lvl-unknown{border-left-color:var(--unknown)}.b-unknown{background:var(--unknown);color:#16202b}
@@ -568,12 +581,23 @@ try{ L.geoJSON(BORDERS,{interactive:false,style:{color:'#475569',weight:1.2,opac
 const crossingLayer=L.layerGroup().addTo(map);
 function crossingIcon(level){ return L.divIcon({className:'carinadiv',html:'<div class="carina"><div class="csign">CARINA<span>DOUANE</span></div><span class="cdot cd-'+level+'"></span></div>',iconSize:[38,38],iconAnchor:[19,19]}); }
 const MARKERS=[];
+function aiAgo(ts){ try{ var d=(Date.now()-new Date(ts).getTime())/60000; if(d<1)return 'pravkar'; if(d<60)return Math.round(d)+' min nazaj'; var h=d/60; if(h<24)return Math.round(h)+' h nazaj'; return Math.round(h/24)+' dni nazaj'; }catch(e){return '';} }
+function aiHtml(a){ if(!a)return '';
+ var M={prosto:['🟢','Prosto','#16a34a'],zmerno:['🟡','Zmerno','#ca8a04'],gneca:['🟠','Gneča','#ea580c'],zastoj:['🔴','Zastoj','#dc2626'],neznano:['⚪','Neznano','#64748b']};
+ var m=M[a.level]||M.neznano;
+ var det=[]; if(a.vehicles!=null)det.push('~'+a.vehicles+' vozil'); if(a.waitMin)det.push(a.waitMin+' min');
+ var sub=det.length?'<br><span style="font-size:12px">'+det.join(' · ')+'</span>':'';
+ var note=a.note?'<br><span style="font-size:11px;color:#64748b">'+a.note+'</span>':'';
+ var warn=a.readable===false?'<br><span style="font-size:11px;color:#b45309">⚠ slika slabo vidna</span>':'';
+ return '<div class="aibadge" style="border-left:3px solid '+m[2]+'"><span class="aitag">🤖 AI ocena gneče</span><br><b style="color:'+m[2]+'">'+m[0]+' '+m[1]+'</b>'+sub+note+warn+'<br><span style="font-size:10px;color:#94a3b8">'+aiAgo(a.ts)+' · približek iz slike</span></div>';
+}
 PTS.forEach(p=>{const cam=(p.cameras&&p.cameras.length)?'<br><span class="popsrc">uradni vir: '+p.cameras.map(c=>'<a href="'+c.url+'" target="_blank" rel="noopener noreferrer">'+c.source+' ↗</a>').join(' · ')+'</span>':'';
  var imgs=(p.images&&p.images.length)?'<div class="popcams">'+p.images.map(function(u){return '<img class="popcam snap" src="'+u.url+'" data-base="'+u.url+'" data-name="'+u.name+'" referrerpolicy="no-referrer" alt="'+u.name+'" title="'+u.name+'">';}).join('')+'</div>':'';
  const live=(p.streams&&p.streams.length)?'<br><b style="cursor:pointer;color:#c0392b" onclick="openStream(\\''+p.id+'\\')">▶ AMSS v živo</b>':'';
+ var aiBadge=aiHtml(p.ai);
  const mk=L.marker([p.lat,p.lng],{icon:crossingIcon(p.level)})
  .bindTooltip('<b>'+p.name+'</b> '+FLAGJS[p.country]+'↔'+FLAGJS[p.neighbor])
- .bindPopup('<b>'+FLAGJS[p.country]+' '+p.name+' → '+FLAGJS[p.neighbor]+'</b><br>'+(p.waitMinutes==null?'čakanje: ni podatka':(p.waitMinutes<=0?'brez zadrževanja':'~'+p.waitMinutes+' min'))+'<br><small>'+p.rawStatus+'</small>'+imgs+cam+live,{maxWidth:280});
+ .bindPopup('<b>'+FLAGJS[p.country]+' '+p.name+' → '+FLAGJS[p.neighbor]+'</b><br>'+(p.waitMinutes==null?'čakanje: ni podatka':(p.waitMinutes<=0?'brez zadrževanja':'~'+p.waitMinutes+' min'))+'<br><small>'+p.rawStatus+'</small>'+aiBadge+imgs+cam+live,{maxWidth:280});
  mk.addTo(crossingLayer); MARKERS.push({mk:mk, cs:[p.country,p.neighbor], name:p.name, lat:p.lat, lng:p.lng});
 });
 document.addEventListener('click',function(e){ var t=e.target; if(t&&t.classList&&t.classList.contains('popcam')){ e.preventDefault(); openCam(t.getAttribute('data-base'), t.getAttribute('data-name')); } });

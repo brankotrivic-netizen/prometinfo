@@ -3,9 +3,13 @@ name: Osvežitev podatkov in objava
 # Samodejno osveži cene goriv (AMZS) + prometna poročila (HAK, AMSS, BIHAMK),
 # znova zgradi stran in jo objavi na GitHub Pages.
 on:
-  schedule:
-    - cron: "30 4 * * *"    # vsak dan ~06:30 po slovenskem času (poletni)
-    - cron: "30 13 * * *"   # vsak dan ~15:30 po slovenskem času (poletni)
+  schedule:                 # ure UTC; poletni SLO čas = +2h
+    - cron: "30 4 * * *"    # ~06:30 SLO
+    - cron: "30 7 * * *"    # ~09:30 SLO
+    - cron: "30 10 * * *"   # ~12:30 SLO
+    - cron: "30 13 * * *"   # ~15:30 SLO
+    - cron: "30 16 * * *"   # ~18:30 SLO
+    - cron: "30 19 * * *"   # ~21:30 SLO
   workflow_dispatch:          # ročni gumb "Run workflow"
   push:
     branches: [main]          # ob vsaki spremembi kode na main znova objavi
@@ -43,6 +47,8 @@ jobs:
 
       - name: Osveži podatke in zgradi stran
         run: npm run refresh
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Shrani osvežene podatke v repo
         run: |
