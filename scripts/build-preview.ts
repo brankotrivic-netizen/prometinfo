@@ -117,9 +117,12 @@ async function main() {
 
     // AI ocena gnece (Claude vision) — pripni vse kamere prehoda (po crId; obe strani).
     const pid = (p as unknown as { id: string }).id;
-    const aiHits = AI_CONGESTION
+    let aiHits = AI_CONGESTION
       .filter((a) => a.crId === pid)
       .sort((a, b) => a.enter.localeCompare(b.enter) || a.side.localeCompare(b.side));
+    // skrij prazne "smer neznana" (nejasne kamere), ce so na voljo uporabne ocene
+    const useful = aiHits.filter((a) => a.enter !== "neznano" || (a.vehicles || 0) > 0);
+    if (useful.length) aiHits = useful;
     if (aiHits.length) {
       (p as unknown as { aiCams: unknown[] }).aiCams = aiHits.map((a) => ({
         enter: a.enter, dirLabel: a.dirLabel, level: a.level, vehicles: a.vehicles,
@@ -597,9 +600,10 @@ function aiRow(a){ var m=AIM[a.level]||AIM.neznano;
  var dir=a.dirLabel?'<span style="font-size:11px;font-weight:600;color:#334155">▸ '+a.dirLabel+'</span> ':'';
  var det=[]; if(a.vehicles!=null)det.push('~'+a.vehicles+' v koloni'); if(a.waitMin)det.push(a.waitMin+' min');
  var sub=det.length?' <span style="font-size:12px;color:#475569">· '+det.join(' · ')+'</span>':'';
+ var camlbl=a.cam?'<br><span style="font-size:10px;color:#94a3b8">📷 '+a.cam+'</span>':'';
  var note=a.note?'<br><span style="font-size:11px;color:#64748b">'+a.note+'</span>':'';
  var warn=a.readable===false?' <span style="font-size:10px;color:#b45309">⚠ slabo vidno</span>':'';
- return '<div style="margin:3px 0;padding-left:7px;border-left:3px solid '+m[2]+'">'+dir+'<b style="color:'+m[2]+'">'+m[0]+' '+m[1]+'</b>'+sub+warn+note+'</div>';
+ return '<div style="margin:3px 0;padding-left:7px;border-left:3px solid '+m[2]+'">'+dir+'<b style="color:'+m[2]+'">'+m[0]+' '+m[1]+'</b>'+sub+warn+note+camlbl+'</div>';
 }
 function aiOne(url){ var a=AIIMG[url]; return a?'<div class="aibadge" style="margin-top:6px">'+'<span class="aitag">🤖 AI ocena gneče</span>'+aiRow(a)+'<span style="font-size:10px;color:#94a3b8">'+aiAgo(a.ts)+' · približek iz slike, brez parkiranih</span></div>':''; }
 function aiHtml(cams){ if(!cams||!cams.length)return '';

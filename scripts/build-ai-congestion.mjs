@@ -12,8 +12,8 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const KEY = process.env.ANTHROPIC_API_KEY;
 const MODEL = "claude-haiku-4-5-20251001";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36";
-const MAX_BA = 2;   // do 2 kameri BiH strani na prehod
-const MAX_OTHER = 3; // do 3 kamere druge strani (HAK) na prehod (npr. Gradiška: Gornji Varoš + Stara + Bosanska)
+const MAX_BA = 2;        // do 2 kameri BiH strani na prehod
+const MAX_OTHER_CAMS = 3; // do 3 HAK kamere na prehod (vsaka do 2 sliki = obe smeri)
 
 const CNAME = { BA: "BiH", HR: "Hrvaško", RS: "Srbijo", SI: "Slovenijo", ME: "Črno goro", MK: "S. Makedonijo", AT: "Avstrijo", HU: "Madžarsko", RO: "Romunijo", BG: "Bolgarijo", AL: "Albanijo", GR: "Grčijo", XK: "Kosovo" };
 
@@ -62,7 +62,10 @@ const hakCamsRaw = [];
     const k = /k:\s*(\d+)/.exec(o); if (!k) continue;
     const arr = imgs[k[1]]; if (!arr || !arr.length) continue;
     const nm = /name:\s*"([^"]+)"/.exec(o); const lat = /lat:\s*([\d.]+)/.exec(o); const lng = /lng:\s*([\d.]+)/.exec(o);
-    hakCamsRaw.push({ image: arr[0], name: nm ? nm[1] : "HAK", lat: lat ? +lat[1] : null, lng: lng ? +lng[1] : null, side: "HAK", crossingId: cid[1] });
+    const base = nm ? nm[1] : "HAK";
+    arr.slice(0, 2).forEach((img, ix) => {
+      hakCamsRaw.push({ image: img, name: arr.length > 1 ? `${base} · kam ${ix + 1}` : base, lat: lat ? +lat[1] : null, lng: lng ? +lng[1] : null, side: "HAK", k: k[1], crossingId: cid[1] });
+    });
   }
 }
 
@@ -71,10 +74,10 @@ const groups = new Map();
 function addToGroup(cam) {
   const cr = crossingAt(cam.lat, cam.lng);
   if (!cr) return;
-  if (!groups.has(cr.id)) groups.set(cr.id, { cr, ba: [], other: [] });
+  if (!groups.has(cr.id)) groups.set(cr.id, { cr, ba: [], other: [], otherKs: new Set() });
   const g = groups.get(cr.id);
   if (cam.side === "BA") { if (g.ba.length < MAX_BA) g.ba.push(cam); }
-  else { if (g.other.length < MAX_OTHER) g.other.push(cam); }
+  else { if (g.otherKs.has(cam.k) || g.otherKs.size < MAX_OTHER_CAMS) { g.otherKs.add(cam.k); g.other.push(cam); } }
 }
 baCams.forEach(addToGroup);
 hakCamsRaw.forEach(addToGroup);
@@ -89,6 +92,7 @@ function basePrompt(cr) {
 Štej SAMO vozila, ki čakajo V KOLONI proti mejni rampi/kabinam. NE štej parkiranih vozil, vozil ob strani ali na parkirišču.
 Če jasne kolone proti rampi NI, vrni vehicles:0 in level "prosto".
 Določi, v katero državo glavna kolona VSTOPA (čaka na vstopno kontrolo): "${cr.country}" (=${X}) ali "${cr.neighbor}" (=${Y}); če ni jasno, "neznano".
+POMEMBNO: če so na sliki napisane oznake smeri (puščice z imeni držav, npr. "▲ BiH ▲", "▼ HR ▼", "BIH", "HR"), jih UPOŠTEVAJ — kolona pelje proti označeni državi tiste strani ceste.
 Odgovori SAMO z JSON: {"level":"prosto|zmerno|gneca|zastoj","vehicles":<int>,"enter":"${cr.country}|${cr.neighbor}|neznano","waitMin":"<npr. 0-5, 10-20, 30+>","note":"<kratka opomba slo, max 8 besed>","readable":<true|false>}
 Lestvica: prosto=0-3, zmerno=4-10, gneca=11-25, zastoj=26+.`;
 }
