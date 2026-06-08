@@ -115,19 +115,16 @@ async function main() {
     }
     (p as unknown as { images: { name: string; url: string }[] }).images = merged.slice(0, 10);
 
-    // AI ocena gnece (Claude vision) — pripni vse kamere prehoda (obe smeri).
-    const lvlRank: Record<string, number> = { prosto: 0, zmerno: 1, gneca: 2, zastoj: 3, neznano: -1 };
+    // AI ocena gnece (Claude vision) — pripni vse kamere prehoda (po crId; obe strani).
+    const pid = (p as unknown as { id: string }).id;
     const aiHits = AI_CONGESTION
-      .filter((a) => Math.abs(a.lat - (p.lat as number)) < 0.03 && Math.abs(a.lng - (p.lng as number)) < 0.03)
-      .sort((a, b) => (a.dir === "vstop" ? 0 : a.dir === "izstop" ? 1 : 2) - (b.dir === "vstop" ? 0 : b.dir === "izstop" ? 1 : 2));
+      .filter((a) => a.crId === pid)
+      .sort((a, b) => a.enter.localeCompare(b.enter) || a.side.localeCompare(b.side));
     if (aiHits.length) {
-      (p as unknown as { aiCams: typeof aiHits }).aiCams = aiHits.map((a) => ({
-        dir: a.dir, dirLabel: a.dirLabel, level: a.level, vehicles: a.vehicles,
-        waitMin: a.waitMin, note: a.note, readable: a.readable, ts: a.ts, image: a.image,
-      })) as typeof aiHits;
-      // najhujsa smer (za morebiten povzetek)
-      const worst = aiHits.reduce((w, a) => (lvlRank[a.level] > lvlRank[w.level] ? a : w), aiHits[0]);
-      (p as unknown as { aiWorst: string }).aiWorst = worst.level;
+      (p as unknown as { aiCams: unknown[] }).aiCams = aiHits.map((a) => ({
+        enter: a.enter, dirLabel: a.dirLabel, level: a.level, vehicles: a.vehicles,
+        waitMin: a.waitMin, note: a.note, readable: a.readable, ts: a.ts, image: a.image, cam: a.crossing,
+      }));
     }
   }
 
@@ -587,6 +584,7 @@ const TRUCKPTS=${JSON.stringify(TRUCK_PARKING)};
 const BORDERS=${JSON.stringify(COUNTRY_BORDERS)};
 const COL={none:"#2dd4a7",low:"#5fd35f",moderate:"#e7c84b",high:"#f29c3e",severe:"#ef4d56",unknown:"#6b7a8d"};
 const FLAGJS=${JSON.stringify(FLAG)};
+const AIIMG=${JSON.stringify(Object.fromEntries(AI_CONGESTION.map((a) => [a.image, { dirLabel: a.dirLabel, level: a.level, vehicles: a.vehicles, waitMin: a.waitMin, note: a.note, readable: a.readable, ts: a.ts }])))};
 const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
 try{ L.geoJSON(BORDERS,{interactive:false,style:{color:'#475569',weight:1.2,opacity:0.7,fill:false,dashArray:'5 4'}}).addTo(map); }catch(e){}
@@ -596,13 +594,14 @@ const MARKERS=[];
 function aiAgo(ts){ try{ var d=(Date.now()-new Date(ts).getTime())/60000; if(d<1)return 'pravkar'; if(d<60)return Math.round(d)+' min nazaj'; var h=d/60; if(h<24)return Math.round(h)+' h nazaj'; return Math.round(h/24)+' dni nazaj'; }catch(e){return '';} }
 var AIM={prosto:['🟢','Prosto','#16a34a'],zmerno:['🟡','Zmerno','#ca8a04'],gneca:['🟠','Gneča','#ea580c'],zastoj:['🔴','Zastoj','#dc2626'],neznano:['⚪','Neznano','#64748b']};
 function aiRow(a){ var m=AIM[a.level]||AIM.neznano;
- var dir=a.dirLabel?'<span style="font-size:11px;font-weight:600;color:#334155">'+(a.dir==='vstop'?'➡ ':a.dir==='izstop'?'⬅ ':'')+a.dirLabel+'</span> ':'';
+ var dir=a.dirLabel?'<span style="font-size:11px;font-weight:600;color:#334155">▸ '+a.dirLabel+'</span> ':'';
  var det=[]; if(a.vehicles!=null)det.push('~'+a.vehicles+' v koloni'); if(a.waitMin)det.push(a.waitMin+' min');
  var sub=det.length?' <span style="font-size:12px;color:#475569">· '+det.join(' · ')+'</span>':'';
  var note=a.note?'<br><span style="font-size:11px;color:#64748b">'+a.note+'</span>':'';
  var warn=a.readable===false?' <span style="font-size:10px;color:#b45309">⚠ slabo vidno</span>':'';
  return '<div style="margin:3px 0;padding-left:7px;border-left:3px solid '+m[2]+'">'+dir+'<b style="color:'+m[2]+'">'+m[0]+' '+m[1]+'</b>'+sub+warn+note+'</div>';
 }
+function aiOne(url){ var a=AIIMG[url]; return a?'<div class="aibadge" style="margin-top:6px">'+'<span class="aitag">🤖 AI ocena gneče</span>'+aiRow(a)+'<span style="font-size:10px;color:#94a3b8">'+aiAgo(a.ts)+' · približek iz slike, brez parkiranih</span></div>':''; }
 function aiHtml(cams){ if(!cams||!cams.length)return '';
  var rows=cams.map(aiRow).join('');
  var ts=cams[0]?aiAgo(cams[0].ts):'';
@@ -625,8 +624,8 @@ function addCam(lat,lng,country,name,popupHtml){ var m=L.marker([lat,lng],{icon:
 ROADPTS.forEach(function(p){ var im=p.image?'<br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px">':''; addCam(p.lat,p.lng,'HR',p.name,'<b>📷 '+p.name+'</b><br><small>'+p.road+'</small>'+im+'<br><a href="'+p.url+'" target="_blank" rel="noopener noreferrer">odpri na HAK ↗</a>'); });
 RSROADPTS.forEach(function(p){ addCam(p.lat,p.lng,'RS',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.poster+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>Putevi Srbije</small>'); });
 SIPTS.forEach(function(p){ addCam(p.lat,p.lng,'SI',p.title,'<b>📷 '+p.title+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>DARS</small>'); });
-BIHCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>BIHAMK</small>'); });
-AMSRSCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>AMS-RS</small>'); });
+BIHCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>BIHAMK</small>'+aiOne(p.image)); });
+AMSRSCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>AMS-RS</small>'+aiOne(p.image)); });
 camCluster.addTo(map);
 var _filter='all';
 var CAM_MIN_ZOOM=9;
