@@ -11,9 +11,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "vehicles": 8,
   "waitMin": "5-10",
-  "note": "Zmerna gnecha pri rampi, počasna gibanja",
+  "note": "Normalen promet, manjša kolona tovornjakov",
   "readable": true,
-  "ts": "2026-06-08T11:39:06.351Z"
+  "ts": "2026-06-08T11:55:41.002Z"
  },
  {
   "key": "45.14,17.99",
@@ -21,12 +21,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 45.14,
   "lng": 17.99,
   "image": "https://gp.satwork.net/AMSRS_04_GP_BR02/slika.jpg",
-  "level": "zmerno",
-  "vehicles": 12,
-  "waitMin": "5-10",
-  "note": "Kolona vozil pod mostom, počasen promet",
+  "level": "gneca",
+  "vehicles": 20,
+  "waitMin": "10-20",
+  "note": "Dolga kolona vozil pred mejnim prehodom",
   "readable": true,
-  "ts": "2026-06-08T11:38:58.408Z"
+  "ts": "2026-06-08T11:55:29.688Z"
  },
  {
   "key": "43.20,17.65",
@@ -37,9 +37,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 1,
   "waitMin": "0-5",
-  "note": "Prehod popolnoma prost, samo eno vozilo.",
+  "note": "Kolona prazna, samo eno vozilo na parkingu",
   "readable": true,
-  "ts": "2026-06-08T11:39:04.949Z"
+  "ts": "2026-06-08T11:55:39.432Z"
  },
  {
   "key": "43.02,17.55",
@@ -47,12 +47,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 43.02,
   "lng": 17.55,
   "image": "https://video-nadzor.bihamk.ba/videosurveillence/DOLJANI.jpg",
-  "level": "zmerno",
-  "vehicles": 6,
+  "level": "prosto",
+  "vehicles": 1,
   "waitMin": "0-5",
-  "note": "Nemoten promet, vozila razporejena.",
+  "note": "Ena osebna vozila, redek promet.",
   "readable": true,
-  "ts": "2026-06-08T11:39:05.522Z"
+  "ts": "2026-06-08T11:55:40.047Z"
  },
  {
   "key": "45.27,16.93",
@@ -61,11 +61,11 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lng": 16.93,
   "image": "https://gp.satwork.net/AMSRS_08_GP_GD02/slika.jpg",
   "level": "zmerno",
-  "vehicles": 12,
+  "vehicles": 8,
   "waitMin": "5-10",
-  "note": "Zmerna gnecha pri mejnem prehodu, organizirana kolona",
+  "note": "Vozila v koloni pred rampo, normalen pretok",
   "readable": true,
-  "ts": "2026-06-08T11:38:55.021Z"
+  "ts": "2026-06-08T11:55:27.161Z"
  },
  {
   "key": "45.14,17.25",
@@ -76,9 +76,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 3,
   "waitMin": "0-5",
-  "note": "Promet tekoč, malo vozil v redu.",
+  "note": "Rampa skoraj prazna, minimalna gnečа.",
   "readable": true,
-  "ts": "2026-06-08T11:38:54.985Z"
+  "ts": "2026-06-08T11:55:28.690Z"
  },
  {
   "key": "43.34,18.84",
@@ -86,12 +86,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 43.34,
   "lng": 18.84,
   "image": "https://gp.satwork.net/AMSRS_13_GP_SP01/slika.jpg",
-  "level": "zmerno",
-  "vehicles": 5,
+  "level": "prosto",
+  "vehicles": 1,
   "waitMin": "0-5",
-  "note": "Vozila v razmaknjeni koloni, normalen pretok.",
+  "note": "Eno vozilo, prost prehod.",
   "readable": true,
-  "ts": "2026-06-08T11:39:01.496Z"
+  "ts": "2026-06-08T11:55:33.873Z"
  },
  {
   "key": "44.85,15.78",
@@ -100,11 +100,11 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lng": 15.78,
   "image": "https://video-nadzor.bihamk.ba/videosurveillence/IZACIC.jpg",
   "level": "zmerno",
-  "vehicles": 8,
+  "vehicles": 12,
   "waitMin": "5-10",
-  "note": "Kolona vozil pred rampo, normalen pretok",
+  "note": "Kolona tovornjakov in avtomobilov pred rampo",
   "readable": true,
-  "ts": "2026-06-08T11:39:06.757Z"
+  "ts": "2026-06-08T11:55:41.612Z"
  },
  {
   "key": "43.65,16.86",
@@ -113,11 +113,11 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lng": 16.86,
   "image": "https://video-nadzor.bihamk.ba/videosurveillence/KAMENSKO.jpg",
   "level": "zmerno",
-  "vehicles": 8,
+  "vehicles": 6,
   "waitMin": "5-10",
-  "note": "Tovornjaki v koloni, normalen pretok",
+  "note": "Manjša kolona vozil pred rampo.",
   "readable": true,
-  "ts": "2026-06-08T11:39:04.808Z"
+  "ts": "2026-06-08T11:55:38.982Z"
  },
  {
   "key": "44.40,19.13",
@@ -125,12 +125,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 44.4,
   "lng": 19.13,
   "image": "https://gp.satwork.net/AMSRS_07_GP_KA02/slika.jpg",
-  "level": "zmerno",
-  "vehicles": 8,
+  "level": "prosto",
+  "vehicles": 1,
   "waitMin": "0-5",
-  "note": "Tractor v koloni, normalen pretok vozil.",
+  "note": "Prazna rampa, le eno vozilo vidno.",
   "readable": true,
-  "ts": "2026-06-08T11:38:58.312Z"
+  "ts": "2026-06-08T11:55:31.366Z"
  },
  {
   "key": "42.92,18.45",
@@ -138,12 +138,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 42.92,
   "lng": 18.45,
   "image": "https://gp.satwork.net/AMSRS_12_GP_KL02/slika.jpg",
-  "level": "zmerno",
-  "vehicles": 6,
+  "level": "prosto",
+  "vehicles": 1,
   "waitMin": "0-5",
-  "note": "Manjša kolona vozil pred rampo",
+  "note": "Ena tovorna vozila, promet tekoč.",
   "readable": true,
-  "ts": "2026-06-08T11:39:01.148Z"
+  "ts": "2026-06-08T11:55:33.448Z"
  },
  {
   "key": "45.22,16.55",
@@ -152,11 +152,11 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lng": 16.55,
   "image": "https://gp.satwork.net/AMSRS_11_GP_KO02/slika.jpg",
   "level": "prosto",
-  "vehicles": 2,
+  "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Majhna gneča, normalen pretok prometa",
+  "note": "Prehod prazen, brez vozil v koloni",
   "readable": true,
-  "ts": "2026-06-08T11:39:00.367Z"
+  "ts": "2026-06-08T11:55:33.601Z"
  },
  {
   "key": "45.18,16.81",
@@ -165,11 +165,11 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lng": 16.81,
   "image": "https://gp.satwork.net/AMSRS_09_GP_KD02/slika.jpg",
   "level": "prosto",
-  "vehicles": 1,
+  "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ena vozila na rampi, prevoz prost",
+  "note": "Prehod je popolnoma prost, brez vozil.",
   "readable": true,
-  "ts": "2026-06-08T11:38:58.903Z"
+  "ts": "2026-06-08T11:55:31.578Z"
  },
  {
   "key": "45.05,16.38",
@@ -180,9 +180,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 1,
   "waitMin": "0-5",
-  "note": "Prazna rampa, minimalno prometa.",
+  "note": "Ena vozila vidna, promet tekoč.",
   "readable": true,
-  "ts": "2026-06-08T11:38:59.855Z"
+  "ts": "2026-06-08T11:55:32.000Z"
  },
  {
   "key": "45.03,18.69",
@@ -193,9 +193,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "vehicles": 8,
   "waitMin": "5-10",
-  "note": "Tovornjaki in osebni avtomobili v koloni",
+  "note": "Kolona tovornjakov pred rampo, normalen pretok",
   "readable": true,
-  "ts": "2026-06-08T11:39:04.182Z"
+  "ts": "2026-06-08T11:55:37.804Z"
  },
  {
   "key": "44.73,19.31",
@@ -203,12 +203,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 44.73,
   "lng": 19.31,
   "image": "https://gp.satwork.net/AMSRS_05_GP_PM02/slika.jpg",
-  "level": "zmerno",
-  "vehicles": 8,
-  "waitMin": "5-10",
-  "note": "Normalen promet na mejnem prehodu",
+  "level": "prosto",
+  "vehicles": 1,
+  "waitMin": "0-5",
+  "note": "Eno vozilo v koloni, prost prehod.",
   "readable": true,
-  "ts": "2026-06-08T11:39:02.895Z"
+  "ts": "2026-06-08T11:55:36.153Z"
  },
  {
   "key": "43.45,17.28",
@@ -217,11 +217,11 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lng": 17.28,
   "image": "https://video-nadzor.bihamk.ba/videosurveillence/PRISIKA.jpg",
   "level": "prosto",
-  "vehicles": 1,
+  "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ena vozila vidna, čista cesta.",
+  "note": "Prazna cesta, brez vozil v koloni",
   "readable": true,
-  "ts": "2026-06-08T11:39:06.241Z"
+  "ts": "2026-06-08T11:55:40.398Z"
  },
  {
   "key": "44.90,19.32",
@@ -232,22 +232,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "vehicles": 6,
   "waitMin": "0-5",
-  "note": "Normalen promet, redka vozila v koloni",
+  "note": "Počasna kolona pred rampo, normalen pretok",
   "readable": true,
-  "ts": "2026-06-08T11:38:55.363Z"
- },
- {
-  "key": "45.10,18.18",
-  "name": "GP Svilaj",
-  "lat": 45.1,
-  "lng": 18.18,
-  "image": "https://gp.satwork.net/AMSRS_14_GP_SV02/slika.jpg",
-  "level": "prosto",
-  "vehicles": 1,
-  "waitMin": "0-5",
-  "note": "Avtocesta praktično prazna, normalen promet.",
-  "readable": true,
-  "ts": "2026-06-08T11:39:02.254Z"
+  "ts": "2026-06-08T11:55:27.622Z"
  },
  {
   "key": "45.06,18.46",
@@ -256,11 +243,11 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lng": 18.46,
   "image": "https://gp.satwork.net/AMSRS_15_GP_SA02/slika.jpg",
   "level": "prosto",
-  "vehicles": 1,
+  "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ena tovornjak, čista rampa, prosto.",
+  "note": "Prazna rampa, nobenih vozil v koloni",
   "readable": true,
-  "ts": "2026-06-08T11:39:02.548Z"
+  "ts": "2026-06-08T11:55:35.613Z"
  },
  {
   "key": "44.55,19.18",
@@ -268,12 +255,25 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 44.55,
   "lng": 19.18,
   "image": "https://gp.satwork.net/AMSRS_06_GP_SP02/slika.jpg",
-  "level": "zmerno",
-  "vehicles": 8,
-  "waitMin": "5-10",
-  "note": "Zmerna prometna obtežba, vidna megla",
+  "level": "gneca",
+  "vehicles": 15,
+  "waitMin": "10-20",
+  "note": "Megla zmanjšuje vidnost, zastoj na rampi",
+  "readable": false,
+  "ts": "2026-06-08T11:55:30.413Z"
+ },
+ {
+  "key": "45.10,18.18",
+  "name": "GP Svilaj",
+  "lat": 45.1,
+  "lng": 18.18,
+  "image": "https://gp.satwork.net/AMSRS_14_GP_SV02/slika.jpg",
+  "level": "prosto",
+  "vehicles": 2,
+  "waitMin": "0-5",
+  "note": "Avtocesta prosta, le tovornjaka na rampi",
   "readable": true,
-  "ts": "2026-06-08T11:38:56.746Z"
+  "ts": "2026-06-08T11:55:35.544Z"
  },
  {
   "key": "43.78,19.40",
@@ -284,9 +284,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "vehicles": 6,
   "waitMin": "0-5",
-  "note": "Manjša kolona pri mejnem prehodu.",
+  "note": "Normalen promet, manjša kolona pred rampo",
   "readable": true,
-  "ts": "2026-06-08T11:39:03.618Z"
+  "ts": "2026-06-08T11:55:38.288Z"
  },
  {
   "key": "42.68,18.40",
@@ -295,10 +295,10 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lng": 18.4,
   "image": "https://gp.satwork.net/AMSRS_03_GP_TB02/slika.jpg",
   "level": "zmerno",
-  "vehicles": 8,
+  "vehicles": 12,
   "waitMin": "5-10",
-  "note": "Normalen promet na mejnem prehodu",
+  "note": "Tovorna vozila in osebni avtomobili v koloni",
   "readable": true,
-  "ts": "2026-06-08T11:38:56.696Z"
+  "ts": "2026-06-08T11:55:29.425Z"
  }
 ];
