@@ -343,7 +343,7 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .chip.active{border-color:var(--accent);background:var(--accent);color:#fff}
 .chip em{font-style:normal;font-size:11px;background:var(--panel-2);padding:1px 7px;border-radius:999px;color:var(--muted)}
 .chip.active em{background:rgba(255,255,255,.25);color:#fff;font-weight:700}
-#map{height:440px;border-radius:14px;border:1px solid var(--border);margin-bottom:4px;background:var(--panel-2)}
+#map{height:640px;border-radius:14px;border:1px solid var(--border);margin-bottom:4px;background:var(--panel-2)}
 .legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0;font-size:12px;color:var(--muted)}
 .legend .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .country-group{margin-top:24px}.country-group h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
@@ -393,7 +393,7 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .marker-cluster-small,.marker-cluster-medium,.marker-cluster-large{background:rgba(37,99,235,.25)}
 .marker-cluster-small div,.marker-cluster-medium div,.marker-cluster-large div{background:rgba(37,99,235,.9);color:#fff;font-weight:700}
 /* --- preglednost --- */
-.wrap{max-width:1000px}
+.wrap{max-width:1240px}
 .filterbar{position:sticky;top:0;z-index:550;background:var(--bg);padding:10px 0 12px;margin-bottom:14px;border-bottom:1px solid var(--border)}
 .filterbar .searchwrap{margin-bottom:9px}
 .filterbar .chips{margin-bottom:0}
@@ -412,13 +412,24 @@ h1{font-size:24px}
 #view-map{position:relative}
 .zoomhint{display:none;position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:500;background:rgba(22,32,43,.86);color:#fff;padding:6px 13px;border-radius:999px;font-size:12px;font-weight:600;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .view>.country-group:first-child{margin-top:8px}
-.countrytiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:14px}
-.ctile{display:flex;flex-direction:column;align-items:center;gap:3px;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:12px 8px;cursor:pointer;font-family:inherit;color:var(--text)}
+/* dvostolpčna postavitev: levo ploščice (navpično), desno večji zemljevid */
+.layout{display:flex;gap:18px;align-items:flex-start}
+.sidebar{flex:0 0 174px;position:sticky;top:10px}
+.main{flex:1;min-width:0}
+.countrytiles{display:flex;flex-direction:column;gap:7px;margin:0}
+.ctile{display:grid;grid-template-columns:auto 1fr;column-gap:10px;align-items:center;text-align:left;background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:9px 11px;cursor:pointer;font-family:inherit;color:var(--text);width:100%}
 .ctile:hover{border-color:var(--accent)}
 .ctile.active{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
-.ctile .cflag{font-size:26px;line-height:1}
-.ctile .cname{font-size:13px;font-weight:700;text-align:center}
-.ctile .cstat{font-size:11px;color:var(--muted)}
+.ctile .cflag{grid-row:1/3;font-size:22px;line-height:1}
+.ctile .cname{font-size:13px;font-weight:700}
+.ctile .cstat{font-size:10.5px;color:var(--muted)}
+@media(max-width:860px){
+ .layout{flex-direction:column;gap:12px}
+ .sidebar{position:static;flex:none;width:auto}
+ .countrytiles{flex-direction:row;flex-wrap:wrap}
+ .ctile{flex:1 1 130px}
+ #map{height:440px}
+}
 @media(max-width:640px){
  .wrap{padding:12px 10px 48px}
  h1{font-size:20px}
@@ -480,7 +491,9 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#08111c}.leaflet-popup-content a{color:#1a55c8;font-weight:600}
 </style></head><body><div class="wrap">
 <div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><span class="meta">OSNUTEK · ${new Date().toLocaleString("sl-SI")}</span></div>
-<div class="countrytiles">${tiles}</div>
+<div class="layout">
+<aside class="sidebar"><div class="countrytiles">${tiles}</div></aside>
+<div class="main">
 <div class="filterbar">
   <div class="searchwrap"><input id="search" type="text" autocomplete="off" placeholder="🔍 Išči mejni prehod ali kamero…" oninput="doSearch(this.value)"><div id="searchResults"></div></div>
 </div>
@@ -523,6 +536,7 @@ ${truckHtml}
 ${fuelHtml}
 </div>
 <footer><strong>Opomba:</strong> žive čakalne dobe trenutno iz BIHAMK (BiH); ostali prehodi prikazani z lokacijo + povezavo na uradno kamero (klik = uradni vir). 🔴 „AMSS v živo" predvaja uradni HLS tok kamere v aplikaciji. Čakalne dobe so pogosto opisne ocene. Koordinate približne (osnutek).</footer>
+</div></div>
 </div>
 <div id="modal" class="modal" onclick="if(event.target===this)closeStream()">
   <div class="modalbox">
