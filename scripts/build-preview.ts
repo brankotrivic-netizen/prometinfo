@@ -115,14 +115,19 @@ async function main() {
     }
     (p as unknown as { images: { name: string; url: string }[] }).images = merged.slice(0, 10);
 
-    // AI ocena gnece (Claude vision) — pripni najblizjo po koordinatah.
-    const aiHit = AI_CONGESTION.find((a) => Math.abs(a.lat - (p.lat as number)) < 0.03 && Math.abs(a.lng - (p.lng as number)) < 0.03);
-    if (aiHit) {
-      (p as unknown as { ai: typeof aiHit }).ai = {
-        key: aiHit.key, name: aiHit.name, lat: aiHit.lat, lng: aiHit.lng, image: aiHit.image,
-        level: aiHit.level, vehicles: aiHit.vehicles, waitMin: aiHit.waitMin, note: aiHit.note,
-        readable: aiHit.readable, ts: aiHit.ts,
-      };
+    // AI ocena gnece (Claude vision) — pripni vse kamere prehoda (obe smeri).
+    const lvlRank: Record<string, number> = { prosto: 0, zmerno: 1, gneca: 2, zastoj: 3, neznano: -1 };
+    const aiHits = AI_CONGESTION
+      .filter((a) => Math.abs(a.lat - (p.lat as number)) < 0.03 && Math.abs(a.lng - (p.lng as number)) < 0.03)
+      .sort((a, b) => (a.dir === "vstop" ? 0 : a.dir === "izstop" ? 1 : 2) - (b.dir === "vstop" ? 0 : b.dir === "izstop" ? 1 : 2));
+    if (aiHits.length) {
+      (p as unknown as { aiCams: typeof aiHits }).aiCams = aiHits.map((a) => ({
+        dir: a.dir, dirLabel: a.dirLabel, level: a.level, vehicles: a.vehicles,
+        waitMin: a.waitMin, note: a.note, readable: a.readable, ts: a.ts, image: a.image,
+      })) as typeof aiHits;
+      // najhujsa smer (za morebiten povzetek)
+      const worst = aiHits.reduce((w, a) => (lvlRank[a.level] > lvlRank[w.level] ? a : w), aiHits[0]);
+      (p as unknown as { aiWorst: string }).aiWorst = worst.level;
     }
   }
 
@@ -475,13 +480,6 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#08111c}.leaflet-popup-content a{color:#1a55c8;font-weight:600}
 </style></head><body><div class="wrap">
 <div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><span class="meta">OSNUTEK · ${new Date().toLocaleString("sl-SI")}</span></div>
-<div class="stats">
-<div class="stat"><b>${items.length}</b><span>prehodov</span></div>
-<div class="stat ok"><b>${counts.none + counts.low}</b><span>prevozno</span></div>
-<div class="stat warn"><b>${counts.moderate + counts.high}</b><span>zastoji</span></div>
-<div class="stat bad"><b>${counts.severe}</b><span>daljša čakanja</span></div>
-<div class="stat muted"><b>${counts.unknown}</b><span>kamera / ni podatka</span></div>
-<div class="stat"><b>${roadTotal + RS_ROAD_CAMS.length + siTotalCams}</b><span>cestne kamere</span></div></div>
 <div class="countrytiles">${tiles}</div>
 <div class="filterbar">
   <div class="searchwrap"><input id="search" type="text" autocomplete="off" placeholder="🔍 Išči mejni prehod ali kamero…" oninput="doSearch(this.value)"><div id="searchResults"></div></div>
@@ -582,19 +580,24 @@ const crossingLayer=L.layerGroup().addTo(map);
 function crossingIcon(level){ return L.divIcon({className:'carinadiv',html:'<div class="carina"><div class="csign">CARINA<span>DOUANE</span></div><span class="cdot cd-'+level+'"></span></div>',iconSize:[38,38],iconAnchor:[19,19]}); }
 const MARKERS=[];
 function aiAgo(ts){ try{ var d=(Date.now()-new Date(ts).getTime())/60000; if(d<1)return 'pravkar'; if(d<60)return Math.round(d)+' min nazaj'; var h=d/60; if(h<24)return Math.round(h)+' h nazaj'; return Math.round(h/24)+' dni nazaj'; }catch(e){return '';} }
-function aiHtml(a){ if(!a)return '';
- var M={prosto:['🟢','Prosto','#16a34a'],zmerno:['🟡','Zmerno','#ca8a04'],gneca:['🟠','Gneča','#ea580c'],zastoj:['🔴','Zastoj','#dc2626'],neznano:['⚪','Neznano','#64748b']};
- var m=M[a.level]||M.neznano;
- var det=[]; if(a.vehicles!=null)det.push('~'+a.vehicles+' vozil'); if(a.waitMin)det.push(a.waitMin+' min');
- var sub=det.length?'<br><span style="font-size:12px">'+det.join(' · ')+'</span>':'';
+var AIM={prosto:['🟢','Prosto','#16a34a'],zmerno:['🟡','Zmerno','#ca8a04'],gneca:['🟠','Gneča','#ea580c'],zastoj:['🔴','Zastoj','#dc2626'],neznano:['⚪','Neznano','#64748b']};
+function aiRow(a){ var m=AIM[a.level]||AIM.neznano;
+ var dir=a.dirLabel?'<span style="font-size:11px;font-weight:600;color:#334155">'+(a.dir==='vstop'?'➡ ':a.dir==='izstop'?'⬅ ':'')+a.dirLabel+'</span> ':'';
+ var det=[]; if(a.vehicles!=null)det.push('~'+a.vehicles+' v koloni'); if(a.waitMin)det.push(a.waitMin+' min');
+ var sub=det.length?' <span style="font-size:12px;color:#475569">· '+det.join(' · ')+'</span>':'';
  var note=a.note?'<br><span style="font-size:11px;color:#64748b">'+a.note+'</span>':'';
- var warn=a.readable===false?'<br><span style="font-size:11px;color:#b45309">⚠ slika slabo vidna</span>':'';
- return '<div class="aibadge" style="border-left:3px solid '+m[2]+'"><span class="aitag">🤖 AI ocena gneče</span><br><b style="color:'+m[2]+'">'+m[0]+' '+m[1]+'</b>'+sub+note+warn+'<br><span style="font-size:10px;color:#94a3b8">'+aiAgo(a.ts)+' · približek iz slike</span></div>';
+ var warn=a.readable===false?' <span style="font-size:10px;color:#b45309">⚠ slabo vidno</span>':'';
+ return '<div style="margin:3px 0;padding-left:7px;border-left:3px solid '+m[2]+'">'+dir+'<b style="color:'+m[2]+'">'+m[0]+' '+m[1]+'</b>'+sub+warn+note+'</div>';
+}
+function aiHtml(cams){ if(!cams||!cams.length)return '';
+ var rows=cams.map(aiRow).join('');
+ var ts=cams[0]?aiAgo(cams[0].ts):'';
+ return '<div class="aibadge"><span class="aitag">🤖 AI ocena gneče (kolona proti rampi)</span>'+rows+'<span style="font-size:10px;color:#94a3b8">'+ts+' · približek iz slike, brez parkiranih</span></div>';
 }
 PTS.forEach(p=>{const cam=(p.cameras&&p.cameras.length)?'<br><span class="popsrc">uradni vir: '+p.cameras.map(c=>'<a href="'+c.url+'" target="_blank" rel="noopener noreferrer">'+c.source+' ↗</a>').join(' · ')+'</span>':'';
  var imgs=(p.images&&p.images.length)?'<div class="popcams">'+p.images.map(function(u){return '<img class="popcam snap" src="'+u.url+'" data-base="'+u.url+'" data-name="'+u.name+'" referrerpolicy="no-referrer" alt="'+u.name+'" title="'+u.name+'">';}).join('')+'</div>':'';
  const live=(p.streams&&p.streams.length)?'<br><b style="cursor:pointer;color:#c0392b" onclick="openStream(\\''+p.id+'\\')">▶ AMSS v živo</b>':'';
- var aiBadge=aiHtml(p.ai);
+ var aiBadge=aiHtml(p.aiCams);
  const mk=L.marker([p.lat,p.lng],{icon:crossingIcon(p.level)})
  .bindTooltip('<b>'+p.name+'</b> '+FLAGJS[p.country]+'↔'+FLAGJS[p.neighbor])
  .bindPopup('<b>'+FLAGJS[p.country]+' '+p.name+' → '+FLAGJS[p.neighbor]+'</b><br>'+(p.waitMinutes==null?'čakanje: ni podatka':(p.waitMinutes<=0?'brez zadrževanja':'~'+p.waitMinutes+' min'))+'<br><small>'+p.rawStatus+'</small>'+aiBadge+imgs+cam+live,{maxWidth:280});
