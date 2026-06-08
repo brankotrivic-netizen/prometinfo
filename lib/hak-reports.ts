@@ -8,12 +8,12 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Granični prijelazi",
-  "updated": "8.6.2026. 21:07",
+  "updated": "8.6.2026. 22:00",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "8.6.2026. 21:07",
+  "updated": "8.6.2026. 22:00",
   "text": "U pomorskom prometu nema poteškoća. Obavijest za trajektnu liniju 636 Split-Rogač: u periodu od 14.06. do 28.06.2026. godine nedjeljom i blagdanima uvodi se dodatno putovanje: polazak iz luke Rogač u 17:30 sati, polazak iz luke Split u 18:45 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-B…"
  },
  {
