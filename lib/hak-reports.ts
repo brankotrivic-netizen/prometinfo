@@ -3,33 +3,33 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.6.2026. 13:40",
-  "text": "Od 13:03 sati otvorena je dionica autoceste A4 Goričan-Zagreb između čvorova Varaždinske Toplice i Varaždin u oba smjera, nakon uklanjanja vozila iz prometne nesreće na 35. km. IZVANREDNI PROMETNI DOGAĐAJI: životinja (pas) na autocesti A3 Bregana-Lipovac kod odmorišta Spačvanska šuma predmet na autocesti A1 između čvora Donja Zdenčina i naplatne postaje ČCP Demerje na kolniku u smjeru Zagreba. Vozi se uz ograničenje brzine od 80 km/h prometna nesreća na autocesti A1 na 252.+600 km između čvorova Posedarje i Zadar centar u smjeru Dubrovnika - vozi se jednim prometnim trakom uz ograničenje brzine od 40 km/h Na pojedinim dionicama autocesta i ostalih cesta u tijeku su radovi na obnovi ili izgra…"
+  "updated": "8.6.2026. 18:28",
+  "text": "Pojačan je promet na gradskim prometnicama i obilaznicama. Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog radova na autocesti A3 Bregana-Lipovac između 45. i 52. km između čvorova Otok Svibovski i Ivanić Grad u smjeru Lipovca, vozi se jednim prometnim trakom, usporeno teretno vozilo u kvaru na autocesti A6 u tunelu Sopač u smjeru Rijeke, vozi se jednim prometnim trakom uz ograničenje brzine 60 km/h AUTOCESTE A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica između čvorova Bisko i Split u smje…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "8.6.2026. 13:11",
+  "updated": "8.6.2026. 18:28",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "8.6.2026. 13:11",
+  "updated": "8.6.2026. 18:28",
   "text": "U pomorskom prometu nema poteškoća. Obavijest za trajektnu liniju 636 Split-Rogač: u periodu od 14.06. do 28.06.2026. godine nedjeljom i blagdanima uvodi se dodatno putovanje: polazak iz luke Rogač u 17:30 sati, polazak iz luke Split u 18:45 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-B…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "8.6.2026. 10:34",
+  "updated": "8.6.2026. 15:13",
   "text": "Stanje u željezničkom putničkom prometu 8. lipnja 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Dugo Selo i Vrbovec te Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Nova Kapela-Batrina i Pleternica na pruzi Nova Kapela-Batrina – Našice - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloštar i Koprivnica te između kolodvora Os…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "7.6.2026. 13:00",
+  "updated": "8.6.2026. 15:13",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "8.6.2026. 08:13",
-  "text": "Prometna prognoza za Hrvatsku za 8. lipnja 2026. Ujutro će na cestama u unutrašnjosti mjestimice biti magle, a u poslijepodnevnim satima, u Gorskoj Hrvatskoj i unutrašnjosti Dalmacije vozit će se po vlažnim i skliskim kolnicima. Pojačan promet očekuje se na gradskim cestama i obilaznicama, osobito u jutarnjim i poslijepodnevnim satima. Zastoji i kolone mogući su u zonama radova i privremene regulacije prometa. Čekanja za teretni promet bit će na pojedinim graničnim prijelazima s Bosnom i Hercegovinom i Srbijom. U pomorskom prometu ne očekuju se poteškoće. Hrvatski autoklub želi vam sretan put i ugodnu vožnju!"
+  "updated": "8.6.2026. 17:26",
+  "text": "Prometna prognoza za Hrvatsku za 9. lipnja 2026. U većem dijelu zemlje, vozit će se uz povoljne vremenske uvjete. Zbog lokalnih pljuskova, u drugom dijelu dana i navečer na cestama u unutrašnjosti kolnici će mjestimice biti mokri i skliski. Pojačan promet očekuje se na gradskim cestama i obilaznicama, osobito zagrebačkoj i to u jutarnjim i poslijepodnevnim satima. Zastoji i kolone mogući su u zonama radova i privremene regulacije prometa. Večeras i sutra, od 22:00 do 05:00 sati ujutro, bit će zatvorena omiška obilaznica. Dulja čekanja u teretnom prometu očekuju se na većini graničnih prijelaza s Bosnom i Hercegovinom, Srbijom i Crnom Gorom, osobito na ulasku u zemlju. U pomorskom prometu ne …"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",

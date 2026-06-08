@@ -2,6 +2,26 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Rogačica - Debelo brdo, radovi",
+  "text": "Do 1. 11. 2026. godine, izvode se radovi na rehabilitaciji kolovoza na deonici Rogačica Debelo brdo. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Zona petlje Ruma, radovi",
+  "text": "Dana 9. 6. i 10. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radova na održavanju javne rasvete na državnom putu I A reda broj 3, u zoni petlje Ruma, u smeru ka Batrovcima. U zavisnosti od lokacije izvođenja radova, preticajna saobraćajna traka biće zatvorena za saobraćaj do 2 km. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Zona naplatne stanice Novi Sad Jug, radovi",
+  "text": "Izvode se radovi na presvlačenju kolovoza na deonici Novi Sad-Jug petlja Kovilj, u zoni naplatne stanice Novi Sad Jug, smer Novi Sad-Beograd i to u dve faze: Faza 1 od 08.06.2026 do 09.06.2026. godine radovi se izvode na jednoj polovini kolovoza panoa iza naplatnih kabina i deo ulivne trake, pri čemu će biti zauzeta krajnja desna saobraćajna traka Faza 2 od 10.06.2026 do 11.06.2026. godine - radovi se izvode na drugoj polovini kolovoza panoa iza naplatnih kabina i deo ulivne trake, pri čemu će b…"
+ },
+ {
+  "title": "Petlja Vrnjačka banja, radovi",
+  "text": "Od 10. 6. 2026.godine izvodiće se radovi na sečenju asfalta i ugradnji asfalta na petlji Vrnjačka Banja i pristupnim putevima. Za vreme izvođenja radova petlja Vrnjačka Banja i pristupni putevi biće privremeno zatvoreni za saobraćaj motornih vozila. Vozila koja idu za Vrnjačku banju će se usmeravati na naplatnu stanicu Trstenik ili na naplatnu stanicu Vrba. Radovi će biti obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom i trajaće 21 dan, ukoliko vremenski uslovi to dozvole…"
+ },
+ {
+  "title": "Pakovraće-Požega, tunel Laz, radovi",
+  "text": "Od 12. 6. do 18. 6. 2026. godine izvodiće se radovi u desnoj tunelskoj cevi tunela Laz, na državnom putu I A reda broj 2, na deonici Pakovraće Požega. Tokom izvođenja radova, za saobraćaj će biti zatvorena desna tunelska cev (smer ka Beogradu), dok će se saobraćaj odvijati dvosmerno kroz levu tunelsku cev, uz korišće službenih prolaza. Izvor Putevi Srbije"
+ },
+ {
   "title": "Petlja Vranje- petlja Vladičin Han, radovi",
   "text": "Od danas 7. 6. 2026. godine, od 15 časova, do 10. 6. 2026. godine, doći do promene režima saobraćaja usled radova na popravci dilatacije mosta, na državnom putu I A reda broj 1, na deonici petlja Vladičin Han petlja Vranje (na km 531+143), u smeru ka Vranju. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka. Izvor Putevi Srbije"
  },
@@ -220,25 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Sušica-Kremna, radovi",
   "text": "Do 16. 3. 2026. godine izvode se radovi na rekonstrukciji mosta preko reke Sušica Sušica 3 (na km 121+540), na državnom putu I B reda broj 28, deonica Sušica - Kremna. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
- },
- {
-  "title": "Družetić-Joševa, radovi",
-  "text": "Produžavaju se radovi na uklanjanju oštećenog pločastog propusta i izgradnji novog propusta na deonici državnog puta Družetić (Joševa) Joševa (Gola Glava), u mestu Družetić (opština Koceljeva). U zoni radova, saobraćaj će biti prusmeren na privremenu devijaciju, gde će se odvijati naizmeničnim propuštanjem vozila. Planirani rok za završetak radova je 16.02.2026. godine. Izvor: Putevi Srbije"
- },
- {
-  "title": "Veliko Gradište-Golubac, radovi",
-  "text": "Od 7. 10. 2024. godine, biće izmenjen režim saobraćaja na državnom putu I B reda broj 34, deonica Veliko Gradište - Golubac zbog izvođenja radova na izgradnji brze saobraćajnice petlja Požarevac Golubac, saobraćaj će biti preusmeren preko novoizgrađenog nadvožnjaka neposredno posle naselja Braničevo u smeru ka Golupcu. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petlja Mala Krsna - Ralja",
-  "text": "Obustava saobraćaja od 05.05.2025.godine od 14 časova na državnom putu I B reda broj 33, neposredno nakon naplatne stanice Požarevac, zbog izvođenja radova na izgradnji brze saobraćajnice, državni put I M reda broj 7 (državni put I A reda broj 1, Beograd - Niš (petlja Požarevac) - Požarevac (obilaznica) - Veliko Gradište Golubac ). Tokom izvođenja radova saobraćaj će biti preusmeren na državni put I B reda broj 14 - put ka Smederevu, a zatim preko lokalnog puta ka Vranovu i dalje lokalnim putem …"
- },
- {
-  "title": "Zona petlje Pećinci, obustava i radovi na nadvoznjaku",
-  "text": "Od 28. 6. 2025. od 16 č izvodiće se radovi na nadvožnjaku na državnom putu I A reda broj 3, deonica petlja Ruma - petlja Pećinci. Tokom izvođenja radova, na nadvožnjaku će biti obustavljen saobraćaj i neće biti moguće isključenje na petlju Pećinci iz pravca Beograda, kao ni uključenje sa petlje Pećinci prema Sremskoj Mitrovici i šidu. Obilazak za Pećince vršiće se preko petlje šimanovci. Izvor: Putevi Srbije"
- },
- {
-  "title": "Kuzmin-granica SRB/BiH, radovi",
-  "text": "Do 1. 7. 2026.godine, na snazi će biti izmenjen režim saobraćaja na državnom putu , deonica Kuzmin (Sr.Mitrovica) - granica SRB/BiH (Sremska Rača), zbog izvođenja radova na izgradnji novog graničnog prelaza. Za vreme izvođenja radova, postavljena saobraćajna signalizacija blagovremeno upozorava na opasnost zbog spajanja sporednog puta sa državnim putem i na suženje kolovoza. Izvor: Putevi Srbije"
  }
 ];
