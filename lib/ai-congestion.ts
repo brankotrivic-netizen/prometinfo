@@ -15,9 +15,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ni vidne kolone proti rampi",
+  "note": "Jasna rampa, nobena kolona",
   "readable": true,
-  "ts": "2026-06-08T16:57:11.658Z"
+  "ts": "2026-06-08T18:43:29.326Z"
  },
  {
   "key": "45.14,17.99",
@@ -31,9 +31,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ni kolone pri rampi, promet teče",
+  "note": "Ni vidne kolone pri rampi",
   "readable": true,
-  "ts": "2026-06-08T16:56:53.520Z"
+  "ts": "2026-06-08T18:43:12.354Z"
  },
  {
   "key": "45.14,17.99",
@@ -44,12 +44,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_04_GP_BR02/slika.jpg",
   "dir": "vstop",
   "dirLabel": "vstop v BiH",
-  "level": "prosto",
-  "vehicles": 1,
-  "waitMin": "0-5",
-  "note": "Eno vozilo v pristopi, brez kolone",
+  "level": "zmerno",
+  "vehicles": 8,
+  "waitMin": "10-20",
+  "note": "Kolona vozil proti mejni rampi",
   "readable": true,
-  "ts": "2026-06-08T16:56:53.203Z"
+  "ts": "2026-06-08T18:43:10.898Z"
  },
  {
   "key": "43.20,17.65",
@@ -63,9 +63,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobena vozila v koloni.",
+  "note": "Nobena kolona, promet nemoten",
   "readable": true,
-  "ts": "2026-06-08T16:57:09.816Z"
+  "ts": "2026-06-08T18:43:27.936Z"
  },
  {
   "key": "43.02,17.55",
@@ -79,9 +79,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobenih vozil v koloni pred rampo",
+  "note": "Nobene kolone pred mejno rampo",
   "readable": true,
-  "ts": "2026-06-08T16:57:10.201Z"
+  "ts": "2026-06-08T18:43:27.961Z"
  },
  {
   "key": "45.27,16.93",
@@ -92,12 +92,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_08_GP_GD01/slika.jpg",
   "dir": "izstop",
   "dirLabel": "izstop iz BiH",
-  "level": "zmerno",
-  "vehicles": 5,
-  "waitMin": "5-10",
-  "note": "Kolona tovornjakov proti mejni rampi",
+  "level": "prosto",
+  "vehicles": 0,
+  "waitMin": "0-5",
+  "note": "Nobena kolona proti rampi",
   "readable": true,
-  "ts": "2026-06-08T16:56:51.266Z"
+  "ts": "2026-06-08T18:43:09.191Z"
  },
  {
   "key": "45.27,16.93",
@@ -111,9 +111,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobena kolona pri rampi",
+  "note": "Nobene kolone proti rampi",
   "readable": true,
-  "ts": "2026-06-08T16:56:49.510Z"
+  "ts": "2026-06-08T18:43:08.075Z"
  },
  {
   "key": "45.14,17.25",
@@ -127,25 +127,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobena kolona pred rampo, cesta prazna",
+  "note": "Nobena kolona proti rampi. Prosto.",
   "readable": true,
-  "ts": "2026-06-08T16:56:50.121Z"
- },
- {
-  "key": "45.14,17.25",
-  "crossing": "GP Gradiška",
-  "camName": "GP Gradiška · vstop v BiH",
-  "lat": 45.14,
-  "lng": 17.25,
-  "image": "https://gp.satwork.net/AMSRS_17_GP_CA02/slika.jpg",
-  "dir": "vstop",
-  "dirLabel": "vstop v BiH",
-  "level": "prosto",
-  "vehicles": 0,
-  "waitMin": "0-5",
-  "note": "Nobena kolona proti rampi",
-  "readable": true,
-  "ts": "2026-06-08T16:56:49.852Z"
+  "ts": "2026-06-08T18:43:08.200Z"
  },
  {
   "key": "43.34,18.84",
@@ -159,9 +143,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobena vidna kolona pred rampo",
+  "note": "Nobena kolona proti rampi",
   "readable": true,
-  "ts": "2026-06-08T16:57:02.196Z"
+  "ts": "2026-06-08T18:43:19.404Z"
  },
  {
   "key": "44.85,15.78",
@@ -175,9 +159,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Jasna rampa, ni kolone pred mejnim prehodom",
+  "note": "Nobene kolone pred mejno rampo",
   "readable": true,
-  "ts": "2026-06-08T16:57:14.432Z"
+  "ts": "2026-06-08T18:43:30.560Z"
  },
  {
   "key": "43.65,16.86",
@@ -191,9 +175,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ni kolone proti rampi, promet tekoč",
+  "note": "Nobena jasna kolona proti rampi.",
   "readable": true,
-  "ts": "2026-06-08T16:57:08.713Z"
+  "ts": "2026-06-08T18:43:26.321Z"
  },
  {
   "key": "44.40,19.13",
@@ -204,12 +188,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_07_GP_KA01/slika.jpg",
   "dir": "izstop",
   "dirLabel": "izstop iz BiH",
-  "level": "prosto",
-  "vehicles": 0,
-  "waitMin": "0-5",
-  "note": "Ni kolone pri rampi",
+  "level": "zmerno",
+  "vehicles": 6,
+  "waitMin": "5-10",
+  "note": "Vozila čakajo v koloni proti mejnim kabinama",
   "readable": true,
-  "ts": "2026-06-08T16:56:55.280Z"
+  "ts": "2026-06-08T18:43:14.220Z"
  },
  {
   "key": "44.40,19.13",
@@ -223,9 +207,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ni kolone proti rampi, promet tekoč",
+  "note": "Brez čakajočih vozil v koloni",
   "readable": true,
-  "ts": "2026-06-08T16:56:55.344Z"
+  "ts": "2026-06-08T18:43:13.952Z"
  },
  {
   "key": "42.92,18.45",
@@ -239,9 +223,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobene kolone pred rampo, promet brez ovir",
+  "note": "Ni kolone pred mejno rampo",
   "readable": true,
-  "ts": "2026-06-08T16:57:01.087Z"
+  "ts": "2026-06-08T18:43:20.567Z"
  },
  {
   "key": "42.92,18.45",
@@ -255,9 +239,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobena kolona pred rampo",
+  "note": "Eno vozilo v vožnji, brez kolone",
   "readable": true,
-  "ts": "2026-06-08T16:57:00.943Z"
+  "ts": "2026-06-08T18:43:18.980Z"
  },
  {
   "key": "45.22,16.55",
@@ -271,9 +255,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobena kolona pred rampo",
+  "note": "Nobena kolona pred mejno rampo",
   "readable": true,
-  "ts": "2026-06-08T16:56:59.505Z"
+  "ts": "2026-06-08T18:43:17.820Z"
  },
  {
   "key": "45.22,16.55",
@@ -287,9 +271,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ni vidne kolone, pot je prost.",
+  "note": "Nobena kolona proti rampi, promet prost",
   "readable": true,
-  "ts": "2026-06-08T16:56:59.132Z"
+  "ts": "2026-06-08T18:43:17.821Z"
  },
  {
   "key": "45.18,16.81",
@@ -303,9 +287,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Brez kolone, promet teče",
+  "note": "Cesta je prazna, brez vozil v koloni",
   "readable": true,
-  "ts": "2026-06-08T16:56:57.629Z"
+  "ts": "2026-06-08T18:43:15.837Z"
  },
  {
   "key": "45.18,16.81",
@@ -319,9 +303,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Megla, kolone ni vidna jasno",
+  "note": "Megleno. Nobena očitna kolona.",
   "readable": false,
-  "ts": "2026-06-08T16:56:56.502Z"
+  "ts": "2026-06-08T18:43:14.594Z"
  },
  {
   "key": "45.05,16.38",
@@ -335,9 +319,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobene kolone pred rampo, promet tekoč",
+  "note": "Nobene kolone pred mejno rampo",
   "readable": true,
-  "ts": "2026-06-08T16:56:58.953Z"
+  "ts": "2026-06-08T18:43:15.892Z"
  },
  {
   "key": "45.05,16.38",
@@ -351,9 +335,25 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Megla, kamere neslika vozil jasno",
+  "note": "Cesta prazna, brez kolone vozil",
   "readable": false,
-  "ts": "2026-06-08T16:56:57.742Z"
+  "ts": "2026-06-08T18:43:15.991Z"
+ },
+ {
+  "key": "45.03,18.69",
+  "crossing": "GP Orašje",
+  "camName": "GP Orašje - izlaz iz BIH",
+  "lat": 45.03,
+  "lng": 18.69,
+  "image": "https://video-nadzor.bihamk.ba/videosurveillence/ORASJE.jpg",
+  "dir": "izstop",
+  "dirLabel": "izstop iz BiH",
+  "level": "zmerno",
+  "vehicles": 6,
+  "waitMin": "5-10",
+  "note": "Tovornjaki čakajo pred mejno rampo",
+  "readable": true,
+  "ts": "2026-06-08T18:43:31.664Z"
  },
  {
   "key": "44.73,19.31",
@@ -367,9 +367,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ni kolone, promet teče nemoteno",
+  "note": "Ena vozila v prometnem toku, brez kolone",
   "readable": true,
-  "ts": "2026-06-08T16:57:06.786Z"
+  "ts": "2026-06-08T18:43:24.536Z"
  },
  {
   "key": "44.73,19.31",
@@ -381,11 +381,11 @@ export const AI_CONGESTION: AiCongestion[] = [
   "dir": "vstop",
   "dirLabel": "vstop v BiH",
   "level": "zmerno",
-  "vehicles": 5,
+  "vehicles": 6,
   "waitMin": "10-20",
-  "note": "Kolona vozil proti mejni rampi",
+  "note": "Kolona proti mejni rampi, večer",
   "readable": true,
-  "ts": "2026-06-08T16:57:05.126Z"
+  "ts": "2026-06-08T18:43:22.710Z"
  },
  {
   "key": "43.45,17.28",
@@ -399,9 +399,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Slika je temna, brez vidnih vozil",
+  "note": "Slika premračna, kamera ne deluje",
   "readable": false,
-  "ts": "2026-06-08T16:57:11.345Z"
+  "ts": "2026-06-08T18:43:29.091Z"
  },
  {
   "key": "44.90,19.32",
@@ -415,9 +415,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "vehicles": 6,
   "waitMin": "10-20",
-  "note": "Kolona vozil proti mejni rampi",
+  "note": "Kolona tovornjakov proti mejni rampi",
   "readable": true,
-  "ts": "2026-06-08T16:56:52.078Z"
+  "ts": "2026-06-08T18:43:10.067Z"
  },
  {
   "key": "44.90,19.32",
@@ -431,9 +431,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Vozila parkirana, brez kolone",
+  "note": "Nobene kolone pred mejno rampo",
   "readable": true,
-  "ts": "2026-06-08T16:56:51.772Z"
+  "ts": "2026-06-08T18:43:09.606Z"
  },
  {
   "key": "45.06,18.46",
@@ -447,9 +447,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Ni vidne kolone proti rampi",
+  "note": "Vozila parkirana, ni aktivne kolone",
   "readable": true,
-  "ts": "2026-06-08T16:57:04.827Z"
+  "ts": "2026-06-08T18:43:22.418Z"
  },
  {
   "key": "45.06,18.46",
@@ -463,9 +463,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobena kolona proti rampi.",
+  "note": "Nobena kolona proti rampi, promet tečen",
   "readable": true,
-  "ts": "2026-06-08T16:57:03.615Z"
+  "ts": "2026-06-08T18:43:22.611Z"
  },
  {
   "key": "44.55,19.18",
@@ -479,9 +479,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Avtobuser v vnosu, ni kolone vozil",
+  "note": "Nobena kolona pred mejno rampo",
   "readable": true,
-  "ts": "2026-06-08T16:56:54.614Z"
+  "ts": "2026-06-08T18:43:13.430Z"
  },
  {
   "key": "44.55,19.18",
@@ -495,9 +495,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Megla, kolona ni vidna jasno",
+  "note": "Megla, slaba vidljivost, ni kolone",
   "readable": false,
-  "ts": "2026-06-08T16:56:53.980Z"
+  "ts": "2026-06-08T18:43:12.943Z"
  },
  {
   "key": "45.10,18.18",
@@ -508,12 +508,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_14_GP_SV01/slika.jpg",
   "dir": "izstop",
   "dirLabel": "izstop iz BiH",
-  "level": "zmerno",
-  "vehicles": 8,
-  "waitMin": "10-20",
-  "note": "Kolona čaka na mejni rampi proti BiH",
+  "level": "prosto",
+  "vehicles": 0,
+  "waitMin": "0-5",
+  "note": "Ni vidne kolone proti rampi",
   "readable": true,
-  "ts": "2026-06-08T16:57:03.068Z"
+  "ts": "2026-06-08T18:43:20.521Z"
  },
  {
   "key": "45.10,18.18",
@@ -524,12 +524,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_14_GP_SV02/slika.jpg",
   "dir": "vstop",
   "dirLabel": "vstop v BiH",
-  "level": "prosto",
-  "vehicles": 0,
-  "waitMin": "0-5",
-  "note": "Nobene kolone pred rampo",
+  "level": "zmerno",
+  "vehicles": 8,
+  "waitMin": "10-20",
+  "note": "Kolona tovornjakov pred mejnimi kabinami",
   "readable": true,
-  "ts": "2026-06-08T16:57:03.341Z"
+  "ts": "2026-06-08T18:43:20.435Z"
  },
  {
   "key": "43.78,19.40",
@@ -540,12 +540,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_16_GP_VA01/slika.jpg",
   "dir": "izstop",
   "dirLabel": "izstop iz BiH",
-  "level": "prosto",
-  "vehicles": 0,
-  "waitMin": "0-5",
-  "note": "Ni kolone proti rampi. Promet prosto.",
+  "level": "zmerno",
+  "vehicles": 4,
+  "waitMin": "5-10",
+  "note": "Štiri vozila v koloni pred mejno rampo",
   "readable": true,
-  "ts": "2026-06-08T16:57:07.461Z"
+  "ts": "2026-06-08T18:43:25.094Z"
  },
  {
   "key": "43.78,19.40",
@@ -559,9 +559,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "vehicles": 0,
   "waitMin": "0-5",
-  "note": "Nobene kolone pred mejno rampo",
+  "note": "Brez kolone proti rampi",
   "readable": true,
-  "ts": "2026-06-08T16:57:06.625Z"
+  "ts": "2026-06-08T18:43:24.444Z"
  },
  {
   "key": "42.68,18.40",
@@ -572,11 +572,11 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_03_GP_TB02/slika.jpg",
   "dir": "izstop",
   "dirLabel": "izstop iz BiH",
-  "level": "zmerno",
-  "vehicles": 6,
-  "waitMin": "10-20",
-  "note": "Kolona vozil čaka na mejni rampi",
+  "level": "prosto",
+  "vehicles": 0,
+  "waitMin": "0-5",
+  "note": "Ni kolone proti rampi",
   "readable": true,
-  "ts": "2026-06-08T16:56:52.745Z"
+  "ts": "2026-06-08T18:43:11.113Z"
  }
 ];
