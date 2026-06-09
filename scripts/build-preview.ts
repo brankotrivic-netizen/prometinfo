@@ -589,6 +589,7 @@ const BORDERS=${JSON.stringify(COUNTRY_BORDERS)};
 const COL={none:"#2dd4a7",low:"#5fd35f",moderate:"#e7c84b",high:"#f29c3e",severe:"#ef4d56",unknown:"#6b7a8d"};
 const FLAGJS=${JSON.stringify(FLAG)};
 const AIIMG=${JSON.stringify(Object.fromEntries(AI_CONGESTION.map((a) => [a.image, { dirLabel: a.dirLabel, level: a.level, extent: a.extent, lanes: a.lanes, note: a.note, readable: a.readable, ts: a.ts }])))};
+const AISEARCH=${JSON.stringify(AI_CONGESTION.map((a) => ({ name: a.crossing, img: a.image, lat: a.lat, lng: a.lng })))};
 const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
 try{ L.geoJSON(BORDERS,{interactive:false,style:{color:'#475569',weight:1.2,opacity:0.7,fill:false,dashArray:'5 4'}}).addTo(map); }catch(e){}
@@ -626,12 +627,12 @@ document.addEventListener('click',function(e){ var t=e.target; if(t&&t.classList
 const camIcon=L.divIcon({className:'camdiv',html:'<div class="campin">📷</div>',iconSize:[20,20],iconAnchor:[10,10]});
 const camCluster=L.layerGroup();
 const CAMS=[];
-function addCam(lat,lng,country,name,popupHtml){ var m=L.marker([lat,lng],{icon:camIcon}).bindTooltip('📷 '+name).bindPopup(popupHtml); CAMS.push({m:m,country:country,name:name,lat:lat,lng:lng}); }
-ROADPTS.forEach(function(p){ var im=p.image?'<br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px">':''; addCam(p.lat,p.lng,'HR',p.name,'<b>📷 '+p.name+'</b><br><small>'+p.road+'</small>'+im+'<br><a href="'+p.url+'" target="_blank" rel="noopener noreferrer">odpri na HAK ↗</a>'); });
-RSROADPTS.forEach(function(p){ addCam(p.lat,p.lng,'RS',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.poster+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>Putevi Srbije</small>'); });
-SIPTS.forEach(function(p){ addCam(p.lat,p.lng,'SI',p.title,'<b>📷 '+p.title+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>DARS</small>'); });
-BIHCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>BIHAMK</small>'+aiOne(p.image)); });
-AMSRSCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>AMS-RS</small>'+aiOne(p.image)); });
+function addCam(lat,lng,country,name,popupHtml,image){ var m=L.marker([lat,lng],{icon:camIcon}).bindTooltip('📷 '+name).bindPopup(popupHtml); CAMS.push({m:m,country:country,name:name,lat:lat,lng:lng,image:image||''}); }
+ROADPTS.forEach(function(p){ var im=p.image?'<br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px">':''; addCam(p.lat,p.lng,'HR',p.name,'<b>📷 '+p.name+'</b><br><small>'+p.road+'</small>'+im+'<br><a href="'+p.url+'" target="_blank" rel="noopener noreferrer">odpri na HAK ↗</a>',p.image); });
+RSROADPTS.forEach(function(p){ addCam(p.lat,p.lng,'RS',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.poster+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>Putevi Srbije</small>',p.poster); });
+SIPTS.forEach(function(p){ addCam(p.lat,p.lng,'SI',p.title,'<b>📷 '+p.title+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>DARS</small>',p.image); });
+BIHCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>BIHAMK</small>'+aiOne(p.image),p.image); });
+AMSRSCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>AMS-RS</small>'+aiOne(p.image),p.image); });
 camCluster.addTo(map);
 var _filter='all';
 var CAM_MIN_ZOOM=9;
@@ -652,8 +653,24 @@ function filterCountry(c, btn){
    rebuildCams();
  }, 130);
 }
-var SEARCH=MARKERS.map(function(o){return {name:o.name,lat:o.lat,lng:o.lng,t:'🚧'};}).concat(CAMS.map(function(o){return {name:o.name,lat:o.lat,lng:o.lng,t:'📷'};}));
-function doSearch(q){ q=(q||'').toLowerCase().trim(); var box=document.getElementById('searchResults'); if(!box) return; if(!q){box.style.display='none';box.innerHTML='';return;} var hits=SEARCH.filter(function(s){return s.name&&s.name.toLowerCase().indexOf(q)>=0;}).slice(0,8); box.innerHTML=hits.length?hits.map(function(h){return '<div class="sr" onclick="gotoPoint('+h.lat+','+h.lng+')">'+h.t+' '+h.name+'</div>';}).join(''):'<div class="sr" style="color:#94a3b8">ni zadetkov</div>'; box.style.display='block'; }
+function nrm(s){ return (s||'').toLowerCase().normalize('NFD').replace(new RegExp('[\\u0300-\\u036f]','g'),''); }
+var SEARCH=[];
+MARKERS.forEach(function(o){ SEARCH.push({name:o.name,lat:o.lat,lng:o.lng,t:'🚧',kind:'crossing',mk:o.mk}); });
+var _imgseen={};
+CAMS.forEach(function(o){ SEARCH.push({name:o.name,lat:o.lat,lng:o.lng,t:'📷',kind:'cam',img:o.image}); if(o.image)_imgseen[o.image]=1; });
+// AI-kamere, ki niso samostojne tocke (npr. Gornji Varos, Stara Gradiska) -> v iskanje
+AISEARCH.forEach(function(a){ if(a.img && !_imgseen[a.img]){ _imgseen[a.img]=1; SEARCH.push({name:a.name,lat:a.lat,lng:a.lng,t:'📷',kind:'cam',img:a.img}); } });
+SEARCH.forEach(function(s,i){ s.id=i; s._n=nrm(s.name); });
+function doSearch(q){ var nq=nrm(q); var box=document.getElementById('searchResults'); if(!box) return; if(!nq){box.style.display='none';box.innerHTML='';return;}
+ var hits=SEARCH.filter(function(s){return s._n.indexOf(nq)>=0;});
+ hits.sort(function(a,b){ return (a._n.indexOf(nq)) - (b._n.indexOf(nq)); }); // zadetki na zacetku imena prej
+ hits=hits.slice(0,10);
+ box.innerHTML=hits.length?hits.map(function(h){return '<div class="sr" onmousedown="gotoHit('+h.id+')">'+h.t+' '+h.name+'</div>';}).join(''):'<div class="sr" style="color:#94a3b8">ni zadetkov</div>';
+ box.style.display='block'; }
+function gotoHit(i){ var s=SEARCH[i]; if(!s) return; var box=document.getElementById('searchResults'); if(box)box.style.display='none'; var inp=document.getElementById('search'); if(inp)inp.value='';
+ if(s.kind==='cam' && s.img){ openCam(s.img, s.name); return; }
+ showView('map', document.querySelectorAll('.tab')[0]);
+ setTimeout(function(){ try{ map.invalidateSize(); map.setView([s.lat,s.lng],12); if(s.mk) s.mk.openPopup(); }catch(e){} }, 140); }
 function gotoPoint(lat,lng){ map.setView([lat,lng],13); var b=document.getElementById('searchResults'); if(b)b.style.display='none'; var s=document.getElementById('search'); if(s)s.value=''; }
 var truckPark=L.layerGroup();
 var truckIcon=L.divIcon({className:'tpdiv',html:'🅿️',iconSize:[18,18],iconAnchor:[9,9]});
