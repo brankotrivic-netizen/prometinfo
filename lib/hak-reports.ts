@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.6.2026. 10:24",
-  "text": "Pojačan je promet na gradskim cestama i obilaznicama, a zastoji su mogući u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu (A8) između čvora i tunela Učka te na nekoliko dionica Ličke (DC1) i Jadranske (DC8) magistrale. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na državnoj cesti DC106 na otoku Pagu između mjesta Dinjiška i Miškovići prometna nesreća na autocesti A1 između čvorova Prgomet i Danilo (348.+700 km) u smjeru Zagreba. Vozi se jednim trakom uz ograničenje brzine od 60 km/h na autocesti A4 Goričan-Zagreb u z…"
+  "updated": "9.6.2026. 10:36",
+  "text": "Pojačan je promet na gradskim cestama i obilaznicama, a zastoji su mogući u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu (A8) između čvora i tunela Učka te na nekoliko dionica Ličke (DC1) i Jadranske (DC8) magistrale. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na državnoj cesti DC106 na otoku Pagu između mjesta Dinjiška i Miškovići prometna nesreća na autocesti A1 između čvorova Prgomet i Danilo (348.+700 km) u smjeru Zagreba - vozi se jednim trakom uz ograničenje brzine od 60 km/h zbog prometne nesreće na državnoj…"
  },
  {
   "title": "Granični prijelazi",
