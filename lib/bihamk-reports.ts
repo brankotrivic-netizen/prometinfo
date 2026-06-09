@@ -62,6 +62,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U toku su radovi na zamjeni dilatacije na Ribićkom mostu, u dužini od 20m saobraća se usporeno-jednom trakom"
    },
    {
+    "title": "Bihać-Ripač (Orljani)",
+    "text": "Zbog radova na sanaciji nadvožnjaka na lokalitetu Orljani na magistralnoj cesti Bihać-Ripač, zatvoreno je skretanje sa magistralne ceste prema naselju Ribić-Orljani."
+   },
+   {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
     "text": "Zbog brojnih odrona i opasnosti od klizišta na magistralnom putu Brod na Drini-GP Hum/Šćepan Polje putnička vozila saobraćaju otežano, dok teretna ne mogu proći."
    },

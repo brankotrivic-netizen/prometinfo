@@ -21,9 +21,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Avstrija",
   "flag": "🇦🇹",
-  "p95": "1,795 EUR",
-  "p98": "2,039 EUR",
-  "diesel": "1,916 EUR",
+  "p95": "1,792 EUR",
+  "p98": "2,036 EUR",
+  "diesel": "1,913 EUR",
   "date": "9. 6. 2026"
  },
  {
@@ -102,15 +102,15 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "Francija",
   "flag": "🇫🇷",
   "p95": "2,055 EUR",
-  "p98": "2,090 EUR",
-  "diesel": "2,103 EUR",
+  "p98": "2,089 EUR",
+  "diesel": "2,102 EUR",
   "date": "9. 6. 2026"
  },
  {
   "country": "Grčija",
   "flag": "🇬🇷",
-  "p95": "2,041 EUR",
-  "p98": "2,225 EUR",
+  "p95": "2,040 EUR",
+  "p98": "2,224 EUR",
   "diesel": "1,710 EUR",
   "date": "9. 6. 2026"
  },
@@ -149,9 +149,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Kosovo",
   "flag": "🇽🇰",
-  "p95": "1,301 EUR",
+  "p95": "1,300 EUR",
   "p98": "",
-  "diesel": "1,489 EUR",
+  "diesel": "1,488 EUR",
   "date": "9. 6. 2026"
  },
  {
@@ -205,9 +205,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Nemčija",
   "flag": "🇩🇪",
-  "p95": "1,956 EUR",
-  "p98": "2,036 EUR",
-  "diesel": "1,878 EUR",
+  "p95": "1,953 EUR",
+  "p98": "2,032 EUR",
+  "diesel": "1,875 EUR",
   "date": "9. 6. 2026"
  },
  {
@@ -301,9 +301,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Švedska",
   "flag": "🇸🇪",
-  "p95": "18,682 SEK (1,72 EUR)",
-  "p98": "20,215 SEK (1,86 EUR)",
-  "diesel": "22,918 SEK (2,11 EUR)",
+  "p95": "18,710 SEK (1,72 EUR)",
+  "p98": "20,246 SEK (1,86 EUR)",
+  "diesel": "22,952 SEK (2,11 EUR)",
   "date": "9. 6. 2026"
  },
  {
@@ -333,9 +333,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "V. Britanija",
   "flag": "🇬🇧",
-  "p95": "1,570 GBP (1,82 EUR)",
-  "p98": "1,730 GBP (2,00 EUR)",
-  "diesel": "1,870 GBP (2,17 EUR)",
-  "date": "25. 5. 2026"
+  "p95": "1,590 GBP (1,84 EUR)",
+  "p98": "1,750 GBP (2,03 EUR)",
+  "diesel": "1,840 GBP (2,13 EUR)",
+  "date": "9. 6. 2026"
  }
 ];
