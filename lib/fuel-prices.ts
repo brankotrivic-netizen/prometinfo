@@ -1,38 +1,38 @@
 // REALNE cene goriv (95/98/Diesel) — vir: AMZS (amzs.si/na-poti/cene-goriv-po-evropi).
 export interface FuelRow { country: string; flag: string; p95: string; p98: string; diesel: string; date: string }
-export const FUEL_UPDATED = "2. 6. 2026";
+export const FUEL_UPDATED = "9. 6. 2026";
 export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Albanija",
   "flag": "🇦🇱",
-  "p95": "179,258 ALL (1,88 EUR)",
+  "p95": "171,324 ALL (1,79 EUR)",
   "p98": "",
-  "diesel": "186,886 ALL (1,96 EUR)",
-  "date": "2. 6. 2026"
+  "diesel": "177,987 ALL (1,86 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Andora",
   "flag": "🇦🇩",
-  "p95": "1,490 EUR",
-  "p98": "1,522 EUR",
-  "diesel": "1,500 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,470 EUR",
+  "p98": "1,502 EUR",
+  "diesel": "1,470 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Avstrija",
   "flag": "🇦🇹",
-  "p95": "1,796 EUR",
-  "p98": "2,037 EUR",
-  "diesel": "1,929 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,795 EUR",
+  "p98": "2,039 EUR",
+  "diesel": "1,916 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Belgija",
   "flag": "🇧🇪",
-  "p95": "1,932 EUR",
-  "p98": "2,017 EUR",
-  "diesel": "2,051 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,923 EUR",
+  "p98": "1,932 EUR",
+  "diesel": "2,008 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Belorusija",
@@ -45,34 +45,34 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "BIH",
   "flag": "🇧🇦",
-  "p95": "2,990 BAM (1,53 EUR)",
-  "p98": "3,100 BAM (1,59 EUR)",
-  "diesel": "3,180 BAM (1,63 EUR)",
-  "date": "2. 6. 2026"
+  "p95": "2,950 BAM (1,51 EUR)",
+  "p98": "3,120 BAM (1,60 EUR)",
+  "diesel": "3,060 BAM (1,56 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Bolgarija",
   "flag": "🇧🇬",
-  "p95": "1,550 EUR",
-  "p98": "1,760 EUR",
-  "diesel": "1,690 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,540 EUR",
+  "p98": "1,750 EUR",
+  "diesel": "1,620 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Češka",
   "flag": "🇨🇿",
-  "p95": "43,840 CZK (1,81 EUR)",
-  "p98": "40,950 CZK (1,69 EUR)",
-  "diesel": "41,440 CZK (1,71 EUR)",
-  "date": "2. 6. 2026"
+  "p95": "43,320 CZK (1,79 EUR)",
+  "p98": "40,540 CZK (1,67 EUR)",
+  "diesel": "40,490 CZK (1,67 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Črna gora",
   "flag": "🇲🇪",
   "p95": "1,650 EUR",
-  "p98": "1,680 EUR",
-  "diesel": "1,690 EUR",
-  "date": "25. 5. 2026"
+  "p98": "1,690 EUR",
+  "diesel": "1,660 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Danska",
@@ -85,74 +85,74 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Estonija",
   "flag": "🇪🇪",
-  "p95": "1,801 EUR",
-  "p98": "1,844 EUR",
-  "diesel": "1,827 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,779 EUR",
+  "p98": "1,826 EUR",
+  "diesel": "1,795 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Finska",
   "flag": "🇫🇮",
-  "p95": "2,046 EUR",
-  "p98": "2,147 EUR",
-  "diesel": "2,143 EUR",
-  "date": "2. 6. 2026"
+  "p95": "2,029 EUR",
+  "p98": "2,132 EUR",
+  "diesel": "2,090 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Francija",
   "flag": "🇫🇷",
-  "p95": "2,074 EUR",
-  "p98": "2,124 EUR",
-  "diesel": "2,119 EUR",
-  "date": "2. 6. 2026"
+  "p95": "2,055 EUR",
+  "p98": "2,090 EUR",
+  "diesel": "2,103 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Grčija",
   "flag": "🇬🇷",
-  "p95": "2,078 EUR",
-  "p98": "2,237 EUR",
-  "diesel": "1,721 EUR",
-  "date": "2. 6. 2026"
+  "p95": "2,041 EUR",
+  "p98": "2,225 EUR",
+  "diesel": "1,710 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Hrvaška",
   "flag": "🇭🇷",
   "p95": "1,610 EUR",
-  "p98": "2,000 EUR",
+  "p98": "1,990 EUR",
   "diesel": "1,610 EUR",
-  "date": "2. 6. 2026"
+  "date": "9. 6. 2026"
  },
  {
   "country": "Irska",
   "flag": "🇮🇪",
-  "p95": "1,734 EUR",
+  "p95": "1,740 EUR",
   "p98": "",
-  "diesel": "1,717 EUR",
-  "date": "2. 6. 2026"
+  "diesel": "1,718 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Islandija",
   "flag": "🇮🇸",
-  "p95": "230,108 ISK (1,60 EUR)",
+  "p95": "228,226 ISK (1,59 EUR)",
   "p98": "",
-  "diesel": "264,872 ISK (1,84 EUR)",
-  "date": "19. 5. 2026"
+  "diesel": "260,854 ISK (1,82 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Italija",
   "flag": "🇮🇹",
-  "p95": "2,028 EUR",
-  "p98": "2,247 EUR",
-  "diesel": "2,090 EUR",
-  "date": "2. 6. 2026"
+  "p95": "2,007 EUR",
+  "p98": "2,229 EUR",
+  "diesel": "2,110 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Kosovo",
   "flag": "🇽🇰",
-  "p95": "1,300 EUR",
+  "p95": "1,301 EUR",
   "p98": "",
-  "diesel": "1,488 EUR",
-  "date": "2. 6. 2026"
+  "diesel": "1,489 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Latvija",
@@ -165,161 +165,161 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Liechtenstein",
   "flag": "🇱🇮",
-  "p95": "1,943 CHF (2,12 EUR)",
+  "p95": "1,945 CHF (2,12 EUR)",
   "p98": "",
-  "diesel": "2,100 CHF (2,29 EUR)",
-  "date": "2. 6. 2026"
+  "diesel": "2,077 CHF (2,26 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Litva",
   "flag": "🇱🇹",
-  "p95": "1,807 EUR",
-  "p98": "1,912 EUR",
-  "diesel": "1,949 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,797 EUR",
+  "p98": "1,890 EUR",
+  "diesel": "1,905 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Luksemburg",
   "flag": "🇱🇺",
-  "p95": "1,704 EUR",
-  "p98": "1,814 EUR",
-  "diesel": "1,730 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,720 EUR",
+  "p98": "1,848 EUR",
+  "diesel": "1,782 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Madžarska",
   "flag": "🇭🇺",
-  "p95": "674,400 HUF (1,90 EUR)",
+  "p95": "662,000 HUF (1,86 EUR)",
   "p98": "",
-  "diesel": "685,500 HUF (1,94 EUR)",
-  "date": "2. 6. 2026"
+  "diesel": "670,900 HUF (1,89 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Moldavija",
   "flag": "🇲🇩",
-  "p95": "31,400 MDL (1,56 EUR)",
+  "p95": "30,030 MDL (1,49 EUR)",
   "p98": "",
-  "diesel": "29,220 MDL (1,45 EUR)",
-  "date": "2. 6. 2026"
+  "diesel": "27,720 MDL (1,38 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Nemčija",
   "flag": "🇩🇪",
-  "p95": "1,978 EUR",
-  "p98": "2,059 EUR",
-  "diesel": "1,882 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,956 EUR",
+  "p98": "2,036 EUR",
+  "diesel": "1,878 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Nizozemska",
   "flag": "🇳🇱",
-  "p95": "2,511 EUR",
-  "p98": "2,538 EUR",
-  "diesel": "2,407 EUR",
-  "date": "2. 6. 2026"
+  "p95": "2,499 EUR",
+  "p98": "2,508 EUR",
+  "diesel": "2,391 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Norveška",
   "flag": "🇳🇴",
-  "p95": "22,680 NOK (2,09 EUR)",
+  "p95": "21,240 NOK (1,95 EUR)",
   "p98": "",
-  "diesel": "19,880 NOK (1,83 EUR)",
-  "date": "2. 6. 2026"
+  "diesel": "19,130 NOK (1,75 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Poljska",
   "flag": "🇵🇱",
-  "p95": "6,330 PLN (1,50 EUR)",
-  "p98": "6,870 PLN (1,62 EUR)",
-  "diesel": "6,790 PLN (1,60 EUR)",
-  "date": "2. 6. 2026"
+  "p95": "6,210 PLN (1,46 EUR)",
+  "p98": "6,780 PLN (1,60 EUR)",
+  "diesel": "6,650 PLN (1,57 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Portugalska",
   "flag": "🇵🇹",
   "p95": "2,082 EUR",
   "p98": "2,114 EUR",
-  "diesel": "2,071 EUR",
-  "date": "2. 6. 2026"
+  "diesel": "2,048 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Romunija",
   "flag": "🇷🇴",
-  "p95": "9,060 RON (1,73 EUR)",
-  "p98": "9,420 RON (1,80 EUR)",
-  "diesel": "9,730 RON (1,85 EUR)",
-  "date": "2. 6. 2026"
+  "p95": "9,450 RON (1,80 EUR)",
+  "p98": "9,800 RON (1,87 EUR)",
+  "diesel": "9,520 RON (1,82 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Rusija",
   "flag": "🇷🇺",
-  "p95": "69,060 RUB (0,84 EUR)",
-  "p98": "88,790 RUB (1,08 EUR)",
-  "diesel": "78,450 RUB (0,95 EUR)",
-  "date": "2. 6. 2026"
+  "p95": "69,440 RUB (0,84 EUR)",
+  "p98": "89,200 RUB (1,08 EUR)",
+  "diesel": "79,320 RUB (0,96 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Severna Makedonija",
   "flag": "🇲🇰",
-  "p95": "87,500 MKD (1,42 EUR)",
-  "p98": "89,500 MKD (1,45 EUR)",
-  "diesel": "92,000 MKD (1,49 EUR)",
-  "date": "2. 6. 2026"
+  "p95": "84,000 MKD (1,36 EUR)",
+  "p98": "86,000 MKD (1,40 EUR)",
+  "diesel": "87,000 MKD (1,41 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Slovaška",
   "flag": "🇸🇰",
-  "p95": "1,794 EUR",
-  "p98": "1,860 EUR",
-  "diesel": "1,737 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,770 EUR",
+  "p98": "1,822 EUR",
+  "diesel": "1,719 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Slovenija",
   "flag": "🇸🇮",
-  "p95": "1,603 EUR",
-  "p98": "1,904 EUR",
-  "diesel": "1,647 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,592 EUR",
+  "p98": "1,902 EUR",
+  "diesel": "1,685 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Španija",
   "flag": "🇪🇸",
-  "p95": "1,625 EUR",
-  "p98": "1,737 EUR",
-  "diesel": "1,705 EUR",
-  "date": "2. 6. 2026"
+  "p95": "1,601 EUR",
+  "p98": "1,709 EUR",
+  "diesel": "1,676 EUR",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Srbija",
   "flag": "🇷🇸",
-  "p95": "193,730 RSD (1,65 EUR)",
+  "p95": "193,750 RSD (1,65 EUR)",
   "p98": "220,080 RSD (1,87 EUR)",
   "diesel": "221,680 RSD (1,89 EUR)",
-  "date": "2. 6. 2026"
+  "date": "9. 6. 2026"
  },
  {
   "country": "Švedska",
   "flag": "🇸🇪",
-  "p95": "19,049 SEK (1,75 EUR)",
-  "p98": "20,613 SEK (1,90 EUR)",
-  "diesel": "23,054 SEK (2,12 EUR)",
-  "date": "2. 6. 2026"
+  "p95": "18,682 SEK (1,72 EUR)",
+  "p98": "20,215 SEK (1,86 EUR)",
+  "diesel": "22,918 SEK (2,11 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Švica",
   "flag": "🇨🇭",
-  "p95": "1,953 CHF (2,13 EUR)",
+  "p95": "1,955 CHF (2,13 EUR)",
   "p98": "",
-  "diesel": "2,110 CHF (2,30 EUR)",
-  "date": "2. 6. 2026"
+  "diesel": "2,087 CHF (2,27 EUR)",
+  "date": "9. 6. 2026"
  },
  {
   "country": "Turčija",
   "flag": "🇹🇷",
-  "p95": "55,300 TRY (1,03 EUR)",
-  "p98": "55,750 TRY (1,04 EUR)",
-  "diesel": "57,570 TRY (1,07 EUR)",
+  "p95": "55,300 TRY (1,04 EUR)",
+  "p98": "55,750 TRY (1,05 EUR)",
+  "diesel": "57,570 TRY (1,08 EUR)",
   "date": "10. 2. 2026"
  },
  {
@@ -335,7 +335,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇬🇧",
   "p95": "1,570 GBP (1,82 EUR)",
   "p98": "1,730 GBP (2,00 EUR)",
-  "diesel": "1,870 GBP (2,16 EUR)",
+  "diesel": "1,870 GBP (2,17 EUR)",
   "date": "25. 5. 2026"
  }
 ];
