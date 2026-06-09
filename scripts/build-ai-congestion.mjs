@@ -97,9 +97,10 @@ Upoštevaj LE vozila v koloni proti rampi — NE parkiranih, NE vozil na parkiri
   - "srednja" = kolona sega do ~polovice vidne dovozne ceste
   - "dolga" = kolona čez skoraj cel viden del ceste ali do roba slike
 "level" izhaja iz extent: brez=prosto, kratka=zmerno, srednja=gneca, dolga=zastoj.
+Preštej tudi "lanes" = koliko VZPOREDNIH KOLON (pasov) stoječih/čakajočih vozil je v koloni (0 če prazno).
 Določi, v katero državo kolona VSTOPA (čaka na kontrolo): "${cr.country}" (=${X}) ali "${cr.neighbor}" (=${Y}); če ni jasno, "neznano".
 POMEMBNO: če so na sliki oznake smeri (puščice z imeni držav, npr. "▲ BiH ▲", "▼ HR ▼"), jih UPOŠTEVAJ — kolona pelje proti označeni državi tiste strani ceste.
-Odgovori SAMO z JSON: {"level":"prosto|zmerno|gneca|zastoj","extent":"brez|kratka|srednja|dolga","enter":"${cr.country}|${cr.neighbor}|neznano","note":"<kratka opomba slo, max 8 besed>","readable":<true|false>}`;
+Odgovori SAMO z JSON: {"level":"prosto|zmerno|gneca|zastoj","extent":"brez|kratka|srednja|dolga","lanes":<int>,"enter":"${cr.country}|${cr.neighbor}|neznano","note":"<kratka opomba slo, max 8 besed>","readable":<true|false>}`;
 }
 
 async function analyze(t) {
@@ -140,11 +141,14 @@ async function analyze(t) {
     let enter = null;
     if (cam.side === "BA" && cam.baDir) enter = cam.baDir === "vstop" ? cr.country : cr.neighbor; // ulaz=v BA, izlaz=v sosednjo
     if (!enter) enter = [cr.country, cr.neighbor].includes(o.enter) ? o.enter : null;
+    // Gornji Varos (HAK, HR stran) -> obe kameri kazeta kolono PROTI Hrvaski
+    if (/gornji varo/i.test(cam.name)) enter = cr.neighbor; // ba-gradiska: neighbor = HR
     const dirLabel = enter ? `vstop v ${CNAME[enter] || enter}` : "smer neznana";
 
     return {
       crId: cr.id, crossing: cam.name, side: cam.side, lat: cam.lat, lng: cam.lng, image: cam.image,
       enter: enter || "neznano", dirLabel, level: lvl, extent,
+      lanes: Number.isFinite(o.lanes) ? o.lanes : null,
       note: typeof o.note === "string" ? o.note.slice(0, 60) : "",
       readable: o.readable !== false,
       ts: new Date().toISOString(),
@@ -158,7 +162,7 @@ async function worker() {
   while (i < tasks.length) {
     const t = tasks[i++];
     const res = await analyze(t);
-    if (res) { results.push(res); console.log(`  ✓ ${res.crossing} [${res.dirLabel}]: ${res.level} · kolona: ${res.extent}${res.readable ? "" : " (slabo vidno)"}`); }
+    if (res) { results.push(res); console.log(`  ✓ ${res.crossing} [${res.dirLabel}]: ${res.level} · kolona: ${res.extent}${res.lanes != null ? " · " + res.lanes + " pas" : ""}${res.readable ? "" : " (slabo vidno)"}`); }
   }
 }
 
@@ -173,7 +177,7 @@ const ts =
   "// SAMODEJNO ZAJETO: AI ocena gnece na mejnih prehodih (Claude Haiku 4.5 vision).\n" +
   "// Viri: AMS-RS + BIHAMK (BiH stran) in HAK (HR stran). Steje le kolono proti rampi (ne parkiranih).\n" +
   "// 'enter' = koda drzave, v katero kolona vstopa. OPOMBA: priblizek iz slike, ni uradni podatek.\n" +
-  "export interface AiCongestion { crId: string; crossing: string; side: string; lat: number; lng: number; image: string; enter: string; dirLabel: string; level: string; extent: string; note: string; readable: boolean; ts: string }\n" +
+  "export interface AiCongestion { crId: string; crossing: string; side: string; lat: number; lng: number; image: string; enter: string; dirLabel: string; level: string; extent: string; lanes: number | null; note: string; readable: boolean; ts: string }\n" +
   "export const AI_CONGESTION: AiCongestion[] = " + JSON.stringify(results, null, 1) + ";\n";
 
 safeWriteTs(resolve(ROOT, "lib/ai-congestion.ts"), ts, results.length, 3, "lib/ai-congestion.ts (AI gneca)");
