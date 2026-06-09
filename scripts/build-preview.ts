@@ -121,12 +121,12 @@ async function main() {
       .filter((a) => a.crId === pid)
       .sort((a, b) => a.enter.localeCompare(b.enter) || a.side.localeCompare(b.side));
     // skrij prazne "smer neznana" (nejasne kamere), ce so na voljo uporabne ocene
-    const useful = aiHits.filter((a) => a.enter !== "neznano" || (a.vehicles || 0) > 0);
+    const useful = aiHits.filter((a) => a.enter !== "neznano" || a.level !== "prosto");
     if (useful.length) aiHits = useful;
     if (aiHits.length) {
       (p as unknown as { aiCams: unknown[] }).aiCams = aiHits.map((a) => ({
-        enter: a.enter, dirLabel: a.dirLabel, level: a.level, vehicles: a.vehicles,
-        waitMin: a.waitMin, note: a.note, readable: a.readable, ts: a.ts, image: a.image, cam: a.crossing,
+        enter: a.enter, dirLabel: a.dirLabel, level: a.level, extent: a.extent,
+        note: a.note, readable: a.readable, ts: a.ts, image: a.image, cam: a.crossing,
       }));
     }
   }
@@ -587,7 +587,7 @@ const TRUCKPTS=${JSON.stringify(TRUCK_PARKING)};
 const BORDERS=${JSON.stringify(COUNTRY_BORDERS)};
 const COL={none:"#2dd4a7",low:"#5fd35f",moderate:"#e7c84b",high:"#f29c3e",severe:"#ef4d56",unknown:"#6b7a8d"};
 const FLAGJS=${JSON.stringify(FLAG)};
-const AIIMG=${JSON.stringify(Object.fromEntries(AI_CONGESTION.map((a) => [a.image, { dirLabel: a.dirLabel, level: a.level, vehicles: a.vehicles, waitMin: a.waitMin, note: a.note, readable: a.readable, ts: a.ts }])))};
+const AIIMG=${JSON.stringify(Object.fromEntries(AI_CONGESTION.map((a) => [a.image, { dirLabel: a.dirLabel, level: a.level, extent: a.extent, note: a.note, readable: a.readable, ts: a.ts }])))};
 const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
 try{ L.geoJSON(BORDERS,{interactive:false,style:{color:'#475569',weight:1.2,opacity:0.7,fill:false,dashArray:'5 4'}}).addTo(map); }catch(e){}
@@ -596,14 +596,14 @@ function crossingIcon(level){ return L.divIcon({className:'carinadiv',html:'<div
 const MARKERS=[];
 function aiAgo(ts){ try{ var d=(Date.now()-new Date(ts).getTime())/60000; if(d<1)return 'pravkar'; if(d<60)return Math.round(d)+' min nazaj'; var h=d/60; if(h<24)return Math.round(h)+' h nazaj'; return Math.round(h/24)+' dni nazaj'; }catch(e){return '';} }
 var AIM={prosto:['🟢','Prosto','#16a34a'],zmerno:['🟡','Zmerno','#ca8a04'],gneca:['🟠','Gneča','#ea580c'],zastoj:['🔴','Zastoj','#dc2626'],neznano:['⚪','Neznano','#64748b']};
+var AIEXT={brez:'brez kolone',kratka:'kratka kolona',srednja:'srednja kolona',dolga:'dolga kolona'};
 function aiRow(a){ var m=AIM[a.level]||AIM.neznano;
  var dir=a.dirLabel?'<span style="font-size:11px;font-weight:600;color:#334155">▸ '+a.dirLabel+'</span> ':'';
- var det=[]; if(a.vehicles!=null)det.push('~'+a.vehicles+' v koloni'); if(a.waitMin)det.push(a.waitMin+' min');
- var sub=det.length?' <span style="font-size:12px;color:#475569">· '+det.join(' · ')+'</span>':'';
+ var ext=a.extent&&AIEXT[a.extent]?' <span style="font-size:12px;color:#475569">· '+AIEXT[a.extent]+'</span>':'';
  var camlbl=a.cam?'<br><span style="font-size:10px;color:#94a3b8">📷 '+a.cam+'</span>':'';
  var note=a.note?'<br><span style="font-size:11px;color:#64748b">'+a.note+'</span>':'';
  var warn=a.readable===false?' <span style="font-size:10px;color:#b45309">⚠ slabo vidno</span>':'';
- return '<div style="margin:3px 0;padding-left:7px;border-left:3px solid '+m[2]+'">'+dir+'<b style="color:'+m[2]+'">'+m[0]+' '+m[1]+'</b>'+sub+warn+note+camlbl+'</div>';
+ return '<div style="margin:3px 0;padding-left:7px;border-left:3px solid '+m[2]+'">'+dir+'<b style="color:'+m[2]+'">'+m[0]+' '+m[1]+'</b>'+ext+warn+note+camlbl+'</div>';
 }
 function aiOne(url){ var a=AIIMG[url]; return a?'<div class="aibadge" style="margin-top:6px">'+'<span class="aitag">🤖 AI ocena gneče</span>'+aiRow(a)+'<span style="font-size:10px;color:#94a3b8">'+aiAgo(a.ts)+' · približek iz slike, brez parkiranih</span></div>':''; }
 function aiHtml(cams){ if(!cams||!cams.length)return '';

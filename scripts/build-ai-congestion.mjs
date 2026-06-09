@@ -89,12 +89,17 @@ console.log(`Prehodov: ${groups.size} | kamer za oceno: ${tasks.length}`);
 function basePrompt(cr) {
   const X = CNAME[cr.country] || cr.country, Y = CNAME[cr.neighbor] || cr.neighbor;
   return `Si prometni analitik. Slika je s cestne kamere na mejnem prehodu med ${X} in ${Y}.
-Štej SAMO vozila, ki čakajo V KOLONI proti mejni rampi/kabinam. NE štej parkiranih vozil, vozil ob strani ali na parkirišču.
-Če jasne kolone proti rampi NI, vrni vehicles:0 in level "prosto".
-Določi, v katero državo glavna kolona VSTOPA (čaka na vstopno kontrolo): "${cr.country}" (=${X}) ali "${cr.neighbor}" (=${Y}); če ni jasno, "neznano".
-POMEMBNO: če so na sliki napisane oznake smeri (puščice z imeni držav, npr. "▲ BiH ▲", "▼ HR ▼", "BIH", "HR"), jih UPOŠTEVAJ — kolona pelje proti označeni državi tiste strani ceste.
-Odgovori SAMO z JSON: {"level":"prosto|zmerno|gneca|zastoj","vehicles":<int>,"enter":"${cr.country}|${cr.neighbor}|neznano","waitMin":"<npr. 0-5, 10-20, 30+>","note":"<kratka opomba slo, max 8 besed>","readable":<true|false>}
-Lestvica: prosto=0-3, zmerno=4-10, gneca=11-25, zastoj=26+.`;
+Predstavljaj si REFERENČNO ČRTO čez cesto pri mejni rampi/kabinah. Oceni, KAKO DALEČ NAZAJ od rampe sega KOLONA stoječih/čakajočih vozil na dovozni cesti.
+Upoštevaj LE vozila v koloni proti rampi — NE parkiranih, NE vozil na parkirišču ali ob strani.
+"extent" (dolžina kolone):
+  - "brez" = ni kolone, cesta prosta (morda posamezno vozilo pri rampi)
+  - "kratka" = kratka kolona tik pri rampi (vozila do ~četrtine vidne ceste)
+  - "srednja" = kolona sega do ~polovice vidne dovozne ceste
+  - "dolga" = kolona čez skoraj cel viden del ceste ali do roba slike
+"level" izhaja iz extent: brez=prosto, kratka=zmerno, srednja=gneca, dolga=zastoj.
+Določi, v katero državo kolona VSTOPA (čaka na kontrolo): "${cr.country}" (=${X}) ali "${cr.neighbor}" (=${Y}); če ni jasno, "neznano".
+POMEMBNO: če so na sliki oznake smeri (puščice z imeni držav, npr. "▲ BiH ▲", "▼ HR ▼"), jih UPOŠTEVAJ — kolona pelje proti označeni državi tiste strani ceste.
+Odgovori SAMO z JSON: {"level":"prosto|zmerno|gneca|zastoj","extent":"brez|kratka|srednja|dolga","enter":"${cr.country}|${cr.neighbor}|neznano","note":"<kratka opomba slo, max 8 besed>","readable":<true|false>}`;
 }
 
 async function analyze(t) {
@@ -124,7 +129,12 @@ async function analyze(t) {
     const text = (j.content || []).map((c) => c.text || "").join("");
     const mm = /\{[\s\S]*\}/.exec(text); if (!mm) throw new Error("ni JSON");
     const o = JSON.parse(mm[0]);
-    const lvl = ["prosto", "zmerno", "gneca", "zastoj"].includes(o.level) ? o.level : "neznano";
+    const EXT = ["brez", "kratka", "srednja", "dolga"];
+    const extent = EXT.includes(o.extent) ? o.extent : "brez";
+    // level izpeljemo iz extent (zanesljiveje kot da ga AI poda posebej)
+    const EXT2LVL = { brez: "prosto", kratka: "zmerno", srednja: "gneca", dolga: "zastoj" };
+    let lvl = EXT2LVL[extent];
+    if (!lvl) lvl = ["prosto", "zmerno", "gneca", "zastoj"].includes(o.level) ? o.level : "neznano";
 
     // doloci v katero drzavo vstopa
     let enter = null;
@@ -134,9 +144,7 @@ async function analyze(t) {
 
     return {
       crId: cr.id, crossing: cam.name, side: cam.side, lat: cam.lat, lng: cam.lng, image: cam.image,
-      enter: enter || "neznano", dirLabel, level: lvl,
-      vehicles: Number.isFinite(o.vehicles) ? o.vehicles : null,
-      waitMin: typeof o.waitMin === "string" ? o.waitMin.slice(0, 12) : "",
+      enter: enter || "neznano", dirLabel, level: lvl, extent,
       note: typeof o.note === "string" ? o.note.slice(0, 60) : "",
       readable: o.readable !== false,
       ts: new Date().toISOString(),
@@ -150,7 +158,7 @@ async function worker() {
   while (i < tasks.length) {
     const t = tasks[i++];
     const res = await analyze(t);
-    if (res) { results.push(res); console.log(`  ✓ ${res.crossing} [${res.dirLabel}]: ${res.level}${res.vehicles != null ? " · " + res.vehicles + " voz." : ""} · ${res.waitMin || "?"}${res.readable ? "" : " (slabo vidno)"}`); }
+    if (res) { results.push(res); console.log(`  ✓ ${res.crossing} [${res.dirLabel}]: ${res.level} · kolona: ${res.extent}${res.readable ? "" : " (slabo vidno)"}`); }
   }
 }
 
@@ -165,7 +173,7 @@ const ts =
   "// SAMODEJNO ZAJETO: AI ocena gnece na mejnih prehodih (Claude Haiku 4.5 vision).\n" +
   "// Viri: AMS-RS + BIHAMK (BiH stran) in HAK (HR stran). Steje le kolono proti rampi (ne parkiranih).\n" +
   "// 'enter' = koda drzave, v katero kolona vstopa. OPOMBA: priblizek iz slike, ni uradni podatek.\n" +
-  "export interface AiCongestion { crId: string; crossing: string; side: string; lat: number; lng: number; image: string; enter: string; dirLabel: string; level: string; vehicles: number | null; waitMin: string; note: string; readable: boolean; ts: string }\n" +
+  "export interface AiCongestion { crId: string; crossing: string; side: string; lat: number; lng: number; image: string; enter: string; dirLabel: string; level: string; extent: string; note: string; readable: boolean; ts: string }\n" +
   "export const AI_CONGESTION: AiCongestion[] = " + JSON.stringify(results, null, 1) + ";\n";
 
 safeWriteTs(resolve(ROOT, "lib/ai-congestion.ts"), ts, results.length, 3, "lib/ai-congestion.ts (AI gneca)");
