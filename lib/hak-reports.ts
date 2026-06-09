@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.6.2026. 10:05",
-  "text": "Pojačan je promet na gradskim cestama i obilaznicama, a zastoji su mogući u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu (A8) između čvora i tunela Učka te na nekoliko dionica Ličke (DC1) i Jadranske (DC8) magistrale. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: na autocesti A4 Goričan-Zagreb u zoni radova između čvorova Sveta Helena i Popovec u smjeru Zagreba vozi se u koloni od oko 1 km pješak na autocesti A1 na 5.km u smjeru Zagreba. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h AUTOCESTE A1 Zagreb-Ploče-Karamatići d o 19. lipnj…"
+  "updated": "9.6.2026. 10:24",
+  "text": "Pojačan je promet na gradskim cestama i obilaznicama, a zastoji su mogući u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu (A8) između čvora i tunela Učka te na nekoliko dionica Ličke (DC1) i Jadranske (DC8) magistrale. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na državnoj cesti DC106 na otoku Pagu između mjesta Dinjiška i Miškovići prometna nesreća na autocesti A1 između čvorova Prgomet i Danilo (348.+700 km) u smjeru Zagreba. Vozi se jednim trakom uz ograničenje brzine od 60 km/h na autocesti A4 Goričan-Zagreb u z…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "9.6.2026. 09:56",
+  "updated": "9.6.2026. 10:08",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "9.6.2026. 09:56",
-  "text": "U pomorskom prometu nema poteškoća. Obavijest za trajektnu liniju 636 Split-Rogač: u periodu od 14.06. do 28.06.2026. godine nedjeljom i blagdanima uvodi se dodatno putovanje: polazak iz luke Rogač u 17:30 sati, polazak iz luke Split u 18:45 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-B…"
+  "updated": "9.6.2026. 10:09",
+  "text": "U pomorskom prometu nema poteškoća. Od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati . Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međuna…"
  },
  {
   "title": "Željeznički promet",
