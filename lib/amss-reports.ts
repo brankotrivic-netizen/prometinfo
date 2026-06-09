@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Novi Sad - Centar, radovi na petlji OBUSTAVA",
+  "text": "Od 10. 6. 2026. od 12 č, do 15. 6. 2026. do 12 č, ukoliko vremenski uslovi dozvole, izvoditi radovi na autoputu drž.putu IA reda br.1, na petlji Novi Sad Centar, na rehabilitaciji kolovoza leve servisne saobraćajnice, u smeru ka Subotici. Na petlji Novi Sad Centar, u smeru Beograd Subotica, za saobraćaj će biti zatvorena isključenja sa državnog puta I A reda br. 1, ka Novom Sadu i Temerinu, i uključenje na državni put I A reda broj 1, ka Subotici. Aleternativa: -za isključenje ka Novom Sadu je p…"
+ },
+ {
   "title": "Ćičevac- naplatna rampa, radovi",
   "text": "Od 9. 6. do 16. 6. 2026. u toku svetlog dela dana, izvodiće se radovi na sanaciji betonskog kolovoza (rigidnog kolovoza), na državnom putu I A reda broj 5, na naplatnoj stanici Ćićevac, u oba smera. Tokom izvođenja radova, za saobraćaj će biti zatvoren po jedan naplatni kanal po smeru. Ostali naplatni kanali funkcionisaće u redovnom režimu. Izvor: Putevi Srbije"
  },
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Mijoska- granica SRB-CG",
   "text": "Na snazi je izmena režima saobraćaja do 30.06.2026. godine, zbog izvođenja radova na sanaciji nestabilne kamene kosine na državnom putu I B reda broj 23, deonica Mijoska državna granica SRB/CG (Gostun) na km 250+447. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
- },
- {
-  "title": "Ivanjica-Arilje, radovi",
-  "text": "U okviru preostalih radova na pojačanom održavanju državnog puta I B reda broj 21, deonica Požega - Ivanjica, od km 209+141.00 do km 248+079.38, u periodu od 19.10.2025. do 01.10.2026. godine, izvodiće se radovi na asfaltiranju kolovoza na deonicama Arilje - Prilike i Prilike Ivanjica. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
  }
 ];

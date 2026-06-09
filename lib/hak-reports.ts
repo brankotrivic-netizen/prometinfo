@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.6.2026. 15:23",
-  "text": "Pojačan je promet na gradskim cestama i obilaznicama, a zastoji su mogući u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu (A8) između čvora i tunela Učka te na nekoliko dionica Ličke (DC1) i Jadranske (DC8) magistrale. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na zagrebačkoj obilaznici (A3) između čvorova Kopsnica i Zagreb istok, na Mostu Sava u smjeru Lipovca, vozi se jednim trakom usporeno u koloni od oko 4 km na zagrebačkoj obilaznici (A3) između čvorova Lučko i Zagreb zapad u smjeru Bregane vozi se usporeno uz povremene zastoje A…"
+  "updated": "9.6.2026. 18:05",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: zbog prometnih nesreća i povećane gustoće prometa na zagrebačkoj obilaznici (A3) između čvorova Buzin i Zagreb istok u smjeru Lipovca (istoka) vozi se usporeno u koloni, uz povremene zastoje predmet na autocesti A1 oko 139. km između čvora Perušić i čvora Otočac na kolniku u smjeru Zagreba. Vozi se uz ograničenje brzine od 60 km/h A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (izlaz sa autoceste A1)-DC220-ŽC6260-ŽC6145-DC1-Dugopolje/Split. Na naplatnoj postaji Dugopolje moguće se uključiti na autocestu A1 u smjeru Zagreba ili nastaviti državnom cestom DC1 prema ulazu u grad Spli…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "9.6.2026. 15:15",
+  "updated": "9.6.2026. 18:02",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "9.6.2026. 15:15",
+  "updated": "9.6.2026. 18:02",
   "text": "U pomorskom prometu nema poteškoća. Od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati . Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međuna…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "9.6.2026. 15:15",
+  "updated": "9.6.2026. 17:41",
   "text": "Stanje u željezničkom putničkom prometu 9. lipnja 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Čakovec i Središče (SŽ) na pruzi državna granica – Čakovec - između kolodvora Donji Kraljevec i Kotoriba na pruzi Čakovec – Kotoriba – državna granica - između kolodvora Dugo Selo i Vrbovec te Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Nova Kapela-Batrina i Pleternica na…"
  },
  {
