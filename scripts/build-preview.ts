@@ -173,7 +173,7 @@ async function main() {
     <section class="country-group" data-countries="HR">
       <h2>🇭🇷 Prometne kamere po cestah <span class="cnt">${roadTotal}</span> <span class="src">· vir: HAK (žive slike)</span></h2>
       ${HAK_ROADS.map((gr) => `
-        <details class="roadgroup">
+        <details class="roadgroup" open>
           <summary>${esc(gr.name)} <span class="cnt">${gr.cams.length}</span></summary>
           <div class="camgrid">
             ${gr.cams.map((c) => { const img = HAK_CAM_IMAGES[c.k] && HAK_CAM_IMAGES[c.k][0]; const link = hakRoadLink(gr.g, c.k); return img
