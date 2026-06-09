@@ -7,6 +7,7 @@ import { allCrossings } from "../lib/crossings";
 import { standaloneHakCameras, hakLink } from "../lib/hak-cameras";
 import { amssStreamsForCrossing, type StreamLink } from "../lib/amss-cameras";
 import { HAK_ROADS, hakRoadLink } from "../lib/hak-road-cameras";
+import { HAK_CAMERAS, hakLink } from "../lib/hak-cameras";
 import { HAK_CAM_IMAGES } from "../lib/hak-cam-images";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
 import { SI_CAMS } from "../lib/si-road-cameras";
@@ -169,11 +170,22 @@ async function main() {
   // Prometne kamere po cestah (HAK avtoceste) — zlozljivo po avtocesti.
   const esc = (s: string) => String(s).replace(/"/g, "&quot;").replace(/</g, "&lt;");
   const roadTotal = HAK_ROADS.reduce((s, g) => s + g.cams.length, 0);
+
+  // HAK mejni prehodi (granicni prijelazi) — vedno odprta mreza slicic
+  const hakBorderCams = HAK_CAMERAS.filter((c) => HAK_CAM_IMAGES[c.k] && HAK_CAM_IMAGES[c.k].length);
+  const hakBorderHtml = `
+    <section class="country-group" data-countries="HR">
+      <h2>🇭🇷 HAK — mejni prehodi <span class="cnt">${hakBorderCams.length}</span> <span class="src">· vir: HAK (žive slike)</span></h2>
+      <div class="camgrid">
+        ${hakBorderCams.map((c) => { const img = HAK_CAM_IMAGES[c.k][0]; const link = hakLink(c.k); const fl = FLAG[c.neighbor] || ""; return `<a class="camshot" href="${link}" target="_blank" rel="noopener noreferrer" title="${esc(c.name)}"><img class="snap" data-base="${img}" src="${img}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)} ${fl}</span></a>`; }).join("")}
+      </div>
+    </section>`;
+
   const roadsHtml = `
     <section class="country-group" data-countries="HR">
       <h2>🇭🇷 Prometne kamere po cestah <span class="cnt">${roadTotal}</span> <span class="src">· vir: HAK (žive slike)</span></h2>
       ${HAK_ROADS.map((gr) => `
-        <details class="roadgroup" open>
+        <details class="roadgroup">
           <summary>${esc(gr.name)} <span class="cnt">${gr.cams.length}</span></summary>
           <div class="camgrid">
             ${gr.cams.map((c) => { const img = HAK_CAM_IMAGES[c.k] && HAK_CAM_IMAGES[c.k][0]; const link = hakRoadLink(gr.g, c.k); return img
@@ -521,6 +533,7 @@ ${sections}
 </section>
 ${bihCamHtml}
 ${amsrsCamHtml}
+${hakBorderHtml}
 ${roadsHtml}
 ${rsRoadHtml}
 ${siCamHtml}
