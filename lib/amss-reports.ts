@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Ćičevac- naplatna rampa, radovi",
+  "text": "Od 9. 6. do 16. 6. 2026. u toku svetlog dela dana, izvodiće se radovi na sanaciji betonskog kolovoza (rigidnog kolovoza), na državnom putu I A reda broj 5, na naplatnoj stanici Ćićevac, u oba smera. Tokom izvođenja radova, za saobraćaj će biti zatvoren po jedan naplatni kanal po smeru. Ostali naplatni kanali funkcionisaće u redovnom režimu. Izvor: Putevi Srbije"
+ },
+ {
   "title": "Novi Beograd (Vojvođanska ulica) - petlja Surčin jug, radovi",
   "text": "Od 9. 6. do 4. 8. 2026. izmenjen je režim saobraćaja zbog radova na rehabilitaciji kolovoza mosta na državnom putu II B reda broj 475 deonica Novi Beograd (Vojvođanska ulica) - petlja Surčin jug. Tokom izvođenja radova , za saobraćaj su zatvorene saobraćajne trake uz razdelno ostrvo. Izvor: Putevi Srbije"
  },
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Ivanjica-Arilje, radovi",
   "text": "U okviru preostalih radova na pojačanom održavanju državnog puta I B reda broj 21, deonica Požega - Ivanjica, od km 209+141.00 do km 248+079.38, u periodu od 19.10.2025. do 01.10.2026. godine, izvodiće se radovi na asfaltiranju kolovoza na deonicama Arilje - Prilike i Prilike Ivanjica. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
- },
- {
-  "title": "Sušica-Kremna, radovi",
-  "text": "Do 16. 3. 2026. godine izvode se radovi na rekonstrukciji mosta preko reke Sušica Sušica 3 (na km 121+540), na državnom putu I B reda broj 28, deonica Sušica - Kremna. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  }
 ];
