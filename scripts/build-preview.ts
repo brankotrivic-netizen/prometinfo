@@ -175,9 +175,9 @@ async function main() {
   const hakBorderCams = HAK_CAMERAS.filter((c) => HAK_CAM_IMAGES[c.k] && HAK_CAM_IMAGES[c.k].length);
   const hakBorderHtml = `
     <section class="country-group" data-countries="HR">
-      <h2>🇭🇷 HAK — mejni prehodi <span class="cnt">${hakBorderCams.length}</span> <span class="src">· vir: HAK (žive slike)</span></h2>
+      <h2>🇭🇷 HAK — mejni prehodi <span class="cnt">${hakBorderCams.reduce((s, c) => s + HAK_CAM_IMAGES[c.k].length, 0)}</span> <span class="src">· vir: HAK (žive slike)</span></h2>
       <div class="camgrid">
-        ${hakBorderCams.map((c) => { const img = HAK_CAM_IMAGES[c.k][0]; const link = hakLink(c.k); const fl = FLAG[c.neighbor] || ""; return `<a class="camshot" href="${link}" target="_blank" rel="noopener noreferrer" title="${esc(c.name)}"><img class="snap" data-base="${img}" src="${img}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(c.name)}"><span>${esc(c.name)} ${fl}</span></a>`; }).join("")}
+        ${hakBorderCams.map((c) => { const arr = HAK_CAM_IMAGES[c.k]; const link = hakLink(c.k); const fl = FLAG[c.neighbor] || ""; return arr.map((img, i) => { const label = arr.length > 1 ? `${c.name} · kam ${i + 1}` : c.name; return `<a class="camshot" href="${link}" target="_blank" rel="noopener noreferrer" title="${esc(label)}"><img class="snap" data-base="${img}" src="${img}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(label)}"><span>${esc(label)} ${fl}</span></a>`; }).join(""); }).join("")}
       </div>
     </section>`;
 
