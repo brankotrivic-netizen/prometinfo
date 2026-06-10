@@ -66,6 +66,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na sanaciji nadvožnjaka na lokalitetu Orljani na magistralnoj cesti Bihać-Ripač, zatvoreno je skretanje sa magistralne ceste prema naselju Ribić-Orljani."
    },
    {
+    "title": "Ortiješ (Mostar-Buna)",
+    "text": "Zbog radova na izgradnji rasvjete danas od 08 do 12 sati vozila će saobraćati usporeno, jednom trakom, na magistralnoj cesti Mostar-Buna, na lokaciji Ortiješ."
+   },
+   {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
     "text": "Zbog brojnih odrona i opasnosti od klizišta na magistralnom putu Brod na Drini-GP Hum/Šćepan Polje putnička vozila saobraćaju otežano, dok teretna ne mogu proći."
    },
