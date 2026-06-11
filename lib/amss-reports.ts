@@ -2,6 +2,14 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Naplatna stanica Trstenik, radovi",
+  "text": "Od 13. 6. 2026. do 23. 6. 2026. godine, izvode radovi na sanaciji rigidnog kolovoza, na državnom putu I A reda broj 5, na naplatnoj stanici Trstenik, u oba smera. Tokom izvođenja radova, doći će do zatvaranja jednog kanala naplatne stanice, dok će se saobraćaj odvijati slobodnim kanalima. Izvor : Putevi Srbije"
+ },
+ {
+  "title": "Tunel Manajle,radovi",
+  "text": "Od 12. 6. 2026. godine, od 9 časova, do 20. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radovi na redovnom održavanju pranje desne tunelske cevi, , na deonici petlja Predejane petlja Vladičin Han, u tunelu Manajle, smer ka Vranju. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka desne tunelske cevi, dok će se saobraćaj odvijati voznom saobraćajnom trakom. Izvor Putevi Srbije"
+ },
+ {
   "title": "Mokroluško brdo, radovi",
   "text": "Od 15. 6. 2026. godine, od 11 časova, do 10. 7. 2026. godine, do 16 časova, izvodiće se radovi na instalacijama javnog osvetljenja, na državnom putu I M reda broj 11, na deonici petlja Lasta - petlja Bubanj Potok, Mokroluško brdo, u smeru ka Beogradu (Faza 3) . U zoni radova za saobraćaj će biti zatvorena krajnja desna saobraćajna traka. Saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvbor: Putevi Srbije"
  },
@@ -232,13 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Sušica-Kremna, radovi",
   "text": "Do 16. 3. 2026. godine izvode se radovi na rekonstrukciji mosta preko reke Sušica Sušica 3 (na km 121+540), na državnom putu I B reda broj 28, deonica Sušica - Kremna. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
- },
- {
-  "title": "Družetić-Joševa, radovi",
-  "text": "Produžavaju se radovi na uklanjanju oštećenog pločastog propusta i izgradnji novog propusta na deonici državnog puta Družetić (Joševa) Joševa (Gola Glava), u mestu Družetić (opština Koceljeva). U zoni radova, saobraćaj će biti prusmeren na privremenu devijaciju, gde će se odvijati naizmeničnim propuštanjem vozila. Planirani rok za završetak radova je 16.02.2026. godine. Izvor: Putevi Srbije"
- },
- {
-  "title": "Veliko Gradište-Golubac, radovi",
-  "text": "Od 7. 10. 2024. godine, biće izmenjen režim saobraćaja na državnom putu I B reda broj 34, deonica Veliko Gradište - Golubac zbog izvođenja radova na izgradnji brze saobraćajnice petlja Požarevac Golubac, saobraćaj će biti preusmeren preko novoizgrađenog nadvožnjaka neposredno posle naselja Braničevo u smeru ka Golupcu. Izvor: Putevi Srbije"
  }
 ];
