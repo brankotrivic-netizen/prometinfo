@@ -3,32 +3,32 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "10.6.2026. 23:29",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: na autocesti A6 Rijeka-Zagreb do 04:00 ujutro zbog izvođenja sveobuhvatne vježbe u tunelu Tuhobić, za sav promet bit će zatvorena dionica između čvorova Delnice i Oštrovica, u oba smjera. Obilazak za smjer Rijeka: čvor Delnice (A6)-DC3-DC501-čvor Oštrovica (A6); za smjer Zagreb: čvor Oštrovica (A6)- DC501-DC3 - čvor Delnice (A6). A1 Zagreb-Ploče-Karamatići radovi na održavanju između čvorova Ogulin i Brinje, uključujući tunel Mala Kapela, u smjeru Dubrovnika - vozi se jednim prometnim trakom …"
+  "updated": "11.6.2026. 10:47",
+  "text": "Kolnici su mjestimice mokri i skliski. Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (opširnije u izvješću) . Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: . A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (izlaz sa autoceste A1)-DC220-ŽC6260-ŽC6145-DC1-Dugopolje/Split. Na naplatnoj postaji Dugopolje moguće se uključiti na autocestu A1 u smjeru Zagreba ili nastaviti državnom cestom DC1 prema ulazu u grad Split. Na…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "10.6.2026. 23:29",
+  "updated": "11.6.2026. 10:30",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "10.6.2026. 23:29",
-  "text": "U pomorskom prometu nema poteškoća. Od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati . U ponedjeljak 15. lipnja uspostavlja se komercijalna linija br. 661 Split - Hvar - Korčula isplovljenjem iz luke Split u 12:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i …"
+  "updated": "11.6.2026. 10:52",
+  "text": "U pomorskom prometu nema poteškoća. Katamaran Pula-Zadar-Pula krenut će sutra, 12. lipnja, u 16:00 sati iz Zadra. Od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati . U ponedjeljak 15. lipnja uspostavlja se komercijalna linija br. 661 Split - Hvar - Korčula isplovljenjem iz luke Split u 12:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "10.6.2026. 22:22",
-  "text": "Stanje u željezničkom putničkom prometu 10. lipnja 2026. u 8.00 sati Danas, 10. lipnja 2026. putnike prevozi autobus umjesto vlaka br. 4705 (Buzet 6.54 – Pula 9.05). Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Čakovec i Središče (SŽ) na pruzi državna granica – Čakovec - između kolodvora Donji Kraljevec i Kotoriba na pruzi Čakovec – Kotoriba – državna granica - između kolodvora Križevci i Gyekenyes na pruzi državna granica …"
+  "updated": "11.6.2026. 10:30",
+  "text": "Stanje u željezničkom putničkom prometu 11. lipnja 2026. u 8.00 sati Danas, 11. lipnja 2026. putnici će biti prevezeni autobusima umjesto vlakova: - 5405 Ogulin 12.35 – Plaški 13.05 - 5404 Plaški 13.15 – Ogulin 13.45 - 5407 Ogulin 14.25 – Plaški 14.55 - 5406 Plaški 15.05 – Ogulin 15.35 Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Čakovec i Središče (SŽ) na pruzi državna granica – Čakovec - između kolodvora Donji Kraljevec i…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "10.6.2026. 22:21",
+  "updated": "11.6.2026. 10:30",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "10.6.2026. 22:21",
+  "updated": "11.6.2026. 10:30",
   "text": "Prometna prognoza za Hrvatsku za 11. lipnja 2026. U većem dijelu zemlje vozit će se po mokrim te vlažnim i skliskim kolnicima, a zbog mjestimice obilnijih padalina moguće je zadržavanje veće količine vode na kolnicima. Upozoravamo na moguće odrone duž Jadranske magistrale (DC8) i na cestama u gorju. Zbog jake i olujne bure moguća su ograničenja u prometu za pojedine skupine vozila na cestama u podvelebitskom području, osobito na Jadranskoj magistrali (DC8). Pojačan promet očekuje se na gradskim cestama i obilaznicama, osobito zagrebačkoj i riječkoj, u jutarnjim i poslijepodnevnim satima. Zastoji i kolone mogući su u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu…"
  },
  {
