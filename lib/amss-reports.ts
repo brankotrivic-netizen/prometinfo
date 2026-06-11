@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Mokroluško brdo, radovi",
+  "text": "Od 15. 6. 2026. godine, od 11 časova, do 10. 7. 2026. godine, do 16 časova, izvodiće se radovi na instalacijama javnog osvetljenja, na državnom putu I M reda broj 11, na deonici petlja Lasta - petlja Bubanj Potok, Mokroluško brdo, u smeru ka Beogradu (Faza 3) . U zoni radova za saobraćaj će biti zatvorena krajnja desna saobraćajna traka. Saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvbor: Putevi Srbije"
+ },
+ {
   "title": "Sremska Mitrovica- Ruma, radovi",
   "text": "Od 11. 6. od 14 časova do 22. 6. 2026. izvodiće se radovi na rehabilitaciji kolovoza na državnom putu I A reda broj 3, deonica Sremska Mitrovica - Ruma, u smeru ka Beogradu. U zoni radova, za saobraćaj će biti zatvorena kolovozna traka u smeru ka Beogradu i saobraćaj će se odvijati dvosmerno na levoj kolovoznoj traci u smeru ka šidu, na sledeći način: -U smeru ka Beogradu - saobraćaj će se odvijati preticajnom saobraćajnom trakom -U smeru ka šidu saobraćaj će se odvijati voznom i zaustavnom saob…"
  },
@@ -124,10 +128,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Mali Požarevac- petlja Pojate, radovi",
   "text": "Od 25. 5. do 6. 6. 2026. u periodu od 7 do 15 časova, izvode se radovi na postavljanju vertikalne saobraćajne signalizacije ( turističke signalizacije ) na prilazima petljama na državnom putu I A reda broj 1, deonica petlja Požarevac- petlja Pojate, u oba smera. U zoni radova zatvorena je zaustavna saobraćajna traka. Izvor: Putevi Srbije"
- },
- {
-  "title": "Mokroluško brdo, radovi",
-  "text": "U toku su radovi na instalacijama javnog osvetljenja, na moto-putu, na deonici petlja Lasta - petlja Bubanj Potok, Mokroluško brdo, u smeru ka Nišu.U zoni radova za saobraćaj je zatvorena krajnja desna saobraćajna traka. Saobraćaj se odvija voznom i preticajnom saobraćajnom trakom. Radovi se izvode u fazama. Faza 2 izvodiće se do 27. 5. 2026. godine. Faza 3 počinje 27. 5. 2026. godine od 11 časova i trajaće do 15.6.2026. godine. Izvbor: Putevi Srbije"
  },
  {
   "title": "petlja Aerodrom, radovi",
