@@ -3,23 +3,23 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.6.2026. 10:45",
-  "text": "Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, pojedinim graničnim prijelazima te trajektnim lukama i pristaništima. Zbog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (opširnije niže u izvješću) . Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: predmet na autocesti A3 između čvorova Novska i Okučani u smjeru Lipovca - vozi se uz ograničenje brzine od 100 km/h zbog prometne nesreće na autocesti A1 između čvorova Rovanjska i Sveti Rok, na 236.+500 km u smjeru Zagreba, vozi se po dva prometna traka usporeno zbog vozila u kvaru na autocesti A7 između č…"
+  "updated": "12.6.2026. 13:08",
+  "text": "Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, pojedinim graničnim prijelazima te trajektnim lukama i pristaništima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Zbog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (opširnije niže u izvješću) . Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A1 između čvorova Brinje i Ogulin, na 95. km u smjeru Zagreba, vozi se uz ograničenje brzine od 80 km/h zbog prometne nesreće na državnoj cesti DC3 u mjestu Paka vozi se uz privremenu regulaciju pr…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "12.6.2026. 10:07",
+  "updated": "12.6.2026. 12:58",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.6.2026. 10:07",
+  "updated": "12.6.2026. 12:58",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: katamaran Pula-Zadar-Pula krenut će danas, 12. lipnja, u 16:00 sati iz Zadra od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati u ponedjeljak 15. lipnja uspostavlja se komercijalna linija br. 661 Split - Hvar - Korčula isplovljenjem iz luke Split u 12:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "12.6.2026. 10:07",
-  "text": "Stanje u željezničkom putničkom prometu 12. lipnja 2026. u 8.30 sati Između kolodvora Podsused Tvornica i Zaprešić promet teče jednim kolosijekom te se očekuju kašnjenja. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloštar i Koprivnica te između kolodvora Osijek i Biz…"
+  "updated": "12.6.2026. 12:58",
+  "text": "Stanje u željezničkom putničkom prometu 12. lipnja 2026. u 11.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloštar i Koprivnica te između kolodvora Osijek i Bizovac na pruzi Koprivnica – Dalj - između kolodvora Novska i Sisak Caprag na pruzi Zagreb GK – Sisak –…"
  },
  {
   "title": "Ograničenja za teretna vozila",
