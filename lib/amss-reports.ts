@@ -2,32 +2,8 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
-  "title": "Prilike - Ivanjica, Bogojevići",
-  "text": "Od 14. 6. od 8 časova do 15. 6. 2026. do 6 časova zbog radova na asfaltiranju, biće obustavljen saobraćaj na deonici državnog puta I B reda broj 21, Arilje - Prilike, u mestu Bogojevići, od marketa Livade do firme Agro-Grk. Alternativni putni pravac je Arilje Guča Kotraža Ivanjica Prilike. Izvor: Putevi Srbije"
- },
- {
-  "title": "Arilje- Prilike, OBUSTAVA mesto Stupčević",
-  "text": "Od 7. 6. od 8 časova, do 8. 6. 2026. godine, do 6 časova, na snazi će biti obustava saobraćaja zbog radova na asfaltiranju kolovoza, na državnom putu I B reda broj 21, deonica Arilje - Prilike, u mestu Stupčevići. Deonica na kojoj se izvode radovi je od firme Frigo Lukić do firme Moravica. Alternativni putni pravac je Arilje Guča Kotraža Ivanjica Prilike."
- },
- {
-  "title": "Boturići- Vitkovo, OBUSTAVA na mostu preko Kožetinske reke",
-  "text": "Od 8. 5. do 1. 11. 2026. saobraćaj će biti obustavljen zgog radova na popravci mosta preko Kožetinske reke na državnom putu II A reda broj 207, deonica Boturići Vitkovo. Alternativni putni pravac tokom obustave za vozila preko 3,5 tona su: državni putII A reda broj 207 (Vitkovo), državni put II A reda broj 208 (Boturići) i državni put II A reda broj 211 (Brus). Od 6.5. do 8.5.2026. godine, izvršiće se postavljanje privremene saobraćajne signalizacije za potrebe izvođenja radova na popravci mosta…"
- },
- {
-  "title": "Markovac-Svilajnac obustava na mostu V.Morava",
-  "text": "Od 07.07.2025. godine, biće postavljena saobraćajna signalizacija i na snazi će biti obustava saobraćaja na deonici državnog puta I B reda broj 27, petlja Markovac - Svilajnac, na mostu preko Velike Morave. Saobraćaj će se preusmeravati na alternativne putne pravce, i to: - za vozila koja se kreću iz pravca Beograda, državni put II A reda broj 147, petlja Velika Plana Žabari, zatim državni put II A reda broj 160, Žabari - Svilajnac, - za vozila koja se kreću iz pravca Niša, državni put II A reda…"
- },
- {
-  "title": "Od petlje Požarevac ka Požarevcu, obustava saobraćaja",
-  "text": "Obustava saobraćaja od 5. 5. 2025. od 14 č na državnom putu I B reda broj 33, neposredno nakon naplatne stanice Požarevac, zbog izvođenja radova na izgradnji brze saobraćajnice, državni put I M reda broj 7 (državni put I A reda broj 1, Beograd - Niš (petlja Požarevac) - Požarevac (obilaznica) - Veliko Gradište Golubac ). Tokom izvođenja radova saobraćaj će biti preusmeren na državni put I B reda broj 14 - put ka Smederevu, a zatim preko lokalnog puta ka Vranovu i dalje lokalnim putem ka Maloj Kr…"
- },
- {
-  "title": "Veliko Gradište-Makce, OBUSTAVA",
-  "text": "Obustava saobraćaja na državnom putu II A reda broj 162, na deonici Veliko Gradište Makce, neposredno nakon račvanja sa državnim putem I B reda broj 34, (nakon naselja Kusiće), zbog potreba izvođenja radova na izgradnji moto puta I M reda broj 7, deonica: državni put I A reda broj 1 (E-75) Beograd - Niš (petlja Požarevac) Požarevac (obilaznica) - Veliko Gradište - Golubac. Alternativni pravac je državni put II B reda broj 374, Miljević Donja Kruševica Braničevo Kusiće. Izvor: Putevi Srbije"
- },
- {
-  "title": "Orlovat, most preko reke Tamiš, OBUSTAVA",
-  "text": "Od 21.03.2020. godine na snazi je obustava saobraćaja zbog radova na redovnom održavanju, na državnom putu II A reda broj 130, most preko reke Tamiš, kod mesta Orlovat. Alternativni putni pravci za vozila koja se kreću iz pravca Zrenjanina i Perleza ka Tomaševcu, Uzdinu i Kovačice preko mesta Orlovat, upućuju se na državni put II A reda broj 129, Farkaždin -Kovačica, a vozila koja se kreću iz pravca Padine i Kovačice ka mestu Orlovat, i dalje prema Zrenjaninu, upućuju se na državni put II A reda…"
+  "title": "NR Preljina radovi - obustava saobraćaja",
+  "text": "Od 16. 6. 2026. godine, od 6 časova, zbog izvođenja završnih radova na saobraćajnom povezivanju dva auto-puta: državnog puta I A reda broj 2 ( Miloš Veliki ) i državnog puta I A reda broj 5 ( Moravski koridor ), planirano je zatvaranje denivelisane raskrsnice Preljina (Čačak - Sever). Naplatna stanica Preljina neće biti u funkciji tj. neće biti moguće isključenje i uključenje na auto-put Miloš Veliki Tokom zatvaranja denivelisane raskrsnice, saobraćaj će se, ka odredištima Čačak i Kraljevo, odvi…"
  },
  {
   "title": "Povezivanjue auto-puta „Miloš Veliki“ i „Moravskog koridora“",
@@ -240,5 +216,29 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Glogonj-Jabuka, radovi",
   "text": "Od 5. 3. 2026. godine biće izmenjen režim saobraćaja na državnom putu Glogonj Jabuka, na km 0+000 do km 25+407. Izmena režima saobraćaja vrši se radi obezbeđivanja priključka gradilištu, a za potrebe izvođenja pripremnih radova na izgradnji auto-puta Beograd Zrenjanin Novi Sad, deonica 1: Beograd Zrenjanin. U zoni radova, saobraćaj će se odvijati shodno privremenoj saobraćajnoj signalizaciji i opremi. Na rastojanju od 100 m od nailaznog priključka postavljena je signalizacija ograničenje brzine …"
+ },
+ {
+  "title": "Petlja Aerodrom-petlja Bubanj Potok, u zoni petlje Autokomande, radovi",
+  "text": "Deonica petlja Aerodrom petlja Bubanj Potok, zbog izvođenja radova na redovnom održavanju - sanaciji stubova nadvožnjaka u zoni petlje Autokomanda, zauzeta krajnja desna saobraćajna traka, u smeru ka Novom Beogradu. Režim saobraćaja: Smer Niš Beograd: saobraćaj se odvija preticajnom saobraćajnom trakom i preticajnom saobraćajnom trakom suprotnog smera. Smer Beograd Niš : saobraćaj se odvija voznom saobraćajnom trakom i krajnjom desnom saobraćajnom trakom. Planirani rok za zavreštak radova je 24.…"
+ },
+ {
+  "title": "Petlja Pećinci, radovi",
+  "text": "Od 21. 2. 2026. godine, doći će do izmene režima saobraćaja u okviru radova na rekonstrukciji natputnjaka na petlji Pećinci na državnom putu A reda broj 3. Za saobraćaj će biti zatvorena leva kolovozna traka, dok će saobraćaj iz pravca Beograd - Šid biti preusmeren na desnu kolovoznu traku, gde će se odvijati dvosmerno. Za saobraćaj je zatvoreno isključenje na petlji Pećinci iz pravca Beograda i uključenje sa petlje Pećinci prema Sremskoj Mitrovici i Šidu. Obilazak za Pećince je preko petlje Šim…"
+ },
+ {
+  "title": "Valjevo-Iverak radovi na obilaznici i kružnoj raskrsnici",
+  "text": "OD 2.12. 2025. izvodiće se radovi na državnom putu I B reda broj 27, deonica Valjevo (obilaznica) - Iverak, na delu četvorokrake semaforisane raskrsnice u smeru od Valjeva ka Lajkovcu. Izmenom režima saobraćaja u fazi II, predviđeni su radovi u središnjem delu zone raskrsnice. Iz oba pravca kretanja se zatvara traka za levo skretanje kao i po jedna traka za kretanje pravo. U samoj zoni raskrsnice učesnicima se zabranjuju leva skretanja, dok se sa prilaznih krakova učesnici obavezuju na desno kre…"
+ },
+ {
+  "title": "Kumanica-Kamenjača, radovi",
+  "text": "U toku su radovi na rekonstrukciji državnog puta II A reda broj 197, deonica Kumanica-Kamenjača, u dužini 3,5km, koji obuhvataju i radove na izgradnji 4 nova mosta. Saobraćaj se na jednom delu puta odvija devijacijom, pri čemu je zabranjen saobraćaj za kamione sa prikolicom. Radovi su obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Prijepolje- Brodarevo, mesto Točilovo klizište",
+  "text": "Produžava se izmena režima saobraćaja usled pojave klizišta na državnom putu I B reda broj 23, na deonici Brodarevo Gostun u mestu Točilovo Saobraćaj se odvija naizmeničnim propuštanjem vozila i regulisan je saobraćajnim znakovima. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Mijoska- granica SRB-CG",
+  "text": "Na snazi je izmena režima saobraćaja do 30.06.2026. godine, zbog izvođenja radova na sanaciji nestabilne kamene kosine na državnom putu I B reda broj 23, deonica Mijoska državna granica SRB/CG (Gostun) na km 250+447. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
  }
 ];

@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.6.2026. 13:08",
-  "text": "Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, pojedinim graničnim prijelazima te trajektnim lukama i pristaništima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Zbog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (opširnije niže u izvješću) . Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A1 između čvorova Brinje i Ogulin, na 95. km u smjeru Zagreba, vozi se uz ograničenje brzine od 80 km/h zbog prometne nesreće na državnoj cesti DC3 u mjestu Paka vozi se uz privremenu regulaciju pr…"
+  "updated": "12.6.2026. 15:39",
+  "text": "Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, pojedinim graničnim prijelazima te trajektnim lukama i pristaništima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na zagrebačkoj obilaznici (A3) na čvoru Jakuševec u smjeru Lipovca - vozi se jednim prometnim trakom uz ograničenje brzine od 40 km/h zbog vozila u kvaru na Jadranskoj magistrali (DC8) prije mosta dr. Franja Tuđmana u smjeru grada Dubrovnika, vozi se uz privremenu regulaciju prometa povećana je gustoća prometa: na au…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "12.6.2026. 12:58",
+  "updated": "12.6.2026. 15:23",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.6.2026. 12:58",
+  "updated": "12.6.2026. 15:23",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: katamaran Pula-Zadar-Pula krenut će danas, 12. lipnja, u 16:00 sati iz Zadra od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati u ponedjeljak 15. lipnja uspostavlja se komercijalna linija br. 661 Split - Hvar - Korčula isplovljenjem iz luke Split u 12:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "12.6.2026. 12:58",
+  "updated": "12.6.2026. 15:23",
   "text": "Stanje u željezničkom putničkom prometu 12. lipnja 2026. u 11.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloštar i Koprivnica te između kolodvora Osijek i Bizovac na pruzi Koprivnica – Dalj - između kolodvora Novska i Sisak Caprag na pruzi Zagreb GK – Sisak –…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "12.6.2026. 05:46",
-  "text": "Prometna prognoza za Hrvatsku za 12. lipnja 2026. Zbog bure na Jadranu moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. U ostatku zemlje vozit će se uz povoljne vremenske uvjete. Pojačan promet očekuje se na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone mogući su u zonama radova, osobito tijekom jutra i poslijepodneva. Čekanja u prometu osobnih i teretnih vozila bit će na pojedinim graničnim prijelazima s Bosnom i Hercegovinom, Srbijom i Crnom Gorom, povremeno u oba smjera. U pomorskom prometu ne očekuju se poteškoće Hrvatski autoklub želi vam sretan put i ugodnu vožnju!"
+  "updated": "12.6.2026. 13:25",
+  "text": "Prometna prognoza za Hrvatsku za 13. lipnja 2026. Tijekom noći i jutra, zbog jakog su vjetra moguće zabrane i ograničenja za pojedine skupine vozila na cestama u priobalju. No, tijekom dana, diljem Hrvatske vozit će se uz povoljne vremenske uvjete. Pojačan promet očekujemo na pojedinim dionicama autocesta, a gužve i usporavanja mogući su u zonama radova, tunela i naplata te na prilazima turističkim središtima. Vozače molimo za oprez i strpljenje te da se prije polaska na put informiraju o aktualnom stanju u prometu putem internetske stranice ili aplikacije HAK-a. Pojačan priljev osobnih i teretnih vozila očekuje se na pojedinim graničnim prijelazima s Bosnom i Hercegovinom i Srbijom. U pomor…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
