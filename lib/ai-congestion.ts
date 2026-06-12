@@ -15,9 +15,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta popolnoma prosta, brez čakajočih vozil",
+  "note": "Cesta popolnoma prosta, le eno vozilo blizu rampe",
   "readable": true,
-  "ts": "2026-06-12T18:24:46.624Z"
+  "ts": "2026-06-12T21:13:06.378Z"
  },
  {
   "crId": "ba-bijaca",
@@ -31,9 +31,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Krajša kolona vozil pri HR rampi.",
+  "note": "Kratka kolona pri rampi, dva vozna pasova",
   "readable": true,
-  "ts": "2026-06-12T18:24:46.900Z"
+  "ts": "2026-06-12T21:13:06.895Z"
  },
  {
   "crId": "ba-bijaca",
@@ -44,12 +44,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://m.hak.hr/cam.asp?id=202",
   "enter": "HR",
   "dirLabel": "vstop v Hrvaško",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta prosta, brez čakajočih vozil.",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 2,
+  "note": "Majhna kolona proti hrvaški rampi",
   "readable": true,
-  "ts": "2026-06-12T18:24:47.258Z"
+  "ts": "2026-06-12T21:13:07.540Z"
  },
  {
   "crId": "ba-brcko",
@@ -63,9 +63,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta popolnoma prosta, nobena kolona",
+  "note": "Cesta prosta, samo posamezno vozilo pri rampi",
   "readable": true,
-  "ts": "2026-06-12T18:24:55.909Z"
+  "ts": "2026-06-12T21:13:16.181Z"
  },
  {
   "crId": "ba-brcko",
@@ -74,14 +74,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 44.88,
   "lng": 18.84,
   "image": "https://m.hak.hr/cam.asp?id=431",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
+  "enter": "BA",
+  "dirLabel": "vstop v BiH",
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta popolnoma prosta, nobene kolone",
+  "note": "Cesta popolnoma prosta, nobene kolone vozil.",
   "readable": true,
-  "ts": "2026-06-12T18:24:56.082Z"
+  "ts": "2026-06-12T21:13:16.182Z"
  },
  {
   "crId": "ba-brod",
@@ -92,12 +92,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_04_GP_BR02/slika.jpg",
   "enter": "BA",
   "dirLabel": "vstop v BiH",
-  "level": "zastoj",
-  "extent": "dolga",
+  "level": "gneca",
+  "extent": "srednja",
   "lanes": 2,
-  "note": "Dolga kolona vozil čaka na hrvaski kontroli",
+  "note": "Kolona sega do polovice vidne ceste",
   "readable": true,
-  "ts": "2026-06-12T18:24:22.265Z"
+  "ts": "2026-06-12T21:12:44.234Z"
  },
  {
   "crId": "ba-brod",
@@ -111,25 +111,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, le posamezno vozilo pri rampi",
+  "note": "Cesta popolnoma prosta, nobene kolone vidne.",
   "readable": true,
-  "ts": "2026-06-12T18:24:23.047Z"
- },
- {
-  "crId": "ba-brod",
-  "crossing": "Slavonski Brod · kam 2",
-  "side": "HAK",
-  "lat": 45.16,
-  "lng": 18.01,
-  "image": "https://m.hak.hr/cam.asp?id=196",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona pred rampo, 2 pasova vozil",
-  "readable": true,
-  "ts": "2026-06-12T18:24:24.635Z"
+  "ts": "2026-06-12T21:12:44.975Z"
  },
  {
   "crId": "ba-brod",
@@ -140,12 +124,28 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://m.hak.hr/cam.asp?id=195",
   "enter": "HR",
   "dirLabel": "vstop v Hrvaško",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Dve vozili v koloni pred rampo",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Mejni prehod prazen, brez čakajočih vozil.",
   "readable": true,
-  "ts": "2026-06-12T18:24:24.774Z"
+  "ts": "2026-06-12T21:12:45.108Z"
+ },
+ {
+  "crId": "ba-brod",
+  "crossing": "Slavonski Brod · kam 2",
+  "side": "HAK",
+  "lat": 45.16,
+  "lng": 18.01,
+  "image": "https://m.hak.hr/cam.asp?id=196",
+  "enter": "BA",
+  "dirLabel": "vstop v BiH",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta prosta, samo posebna vozila pri rampi",
+  "readable": true,
+  "ts": "2026-06-12T21:12:45.630Z"
  },
  {
   "crId": "ba-brod",
@@ -154,14 +154,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 45.14,
   "lng": 17.99,
   "image": "https://m.hak.hr/cam.asp?id=402",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "zmerno",
-  "extent": "kratka",
+  "enter": "BA",
+  "dirLabel": "vstop v BiH",
+  "level": "gneca",
+  "extent": "srednja",
   "lanes": 2,
-  "note": "Krajša kolona vozil pred mejno rampo",
+  "note": "Kolona sega do polovice dovozne ceste",
   "readable": true,
-  "ts": "2026-06-12T18:24:25.056Z"
+  "ts": "2026-06-12T21:12:46.142Z"
  },
  {
   "crId": "ba-brod",
@@ -174,10 +174,10 @@ export const AI_CONGESTION: AiCongestion[] = [
   "dirLabel": "vstop v Hrvaško",
   "level": "zmerno",
   "extent": "kratka",
-  "lanes": 1,
-  "note": "Eno vozilo pri rampi, kratka kolona.",
+  "lanes": 2,
+  "note": "Kratka kolona proti hrvaški kontroli",
   "readable": true,
-  "ts": "2026-06-12T18:24:25.920Z"
+  "ts": "2026-06-12T21:12:47.139Z"
  },
  {
   "crId": "ba-crveni-grm",
@@ -186,14 +186,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 43.2,
   "lng": 17.65,
   "image": "https://m.hak.hr/cam.asp?id=410",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
+  "enter": "neznano",
+  "dirLabel": "smer neznana",
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, le eno vozilo pri rampi",
+  "note": "Cesta popolnoma prosta, nobene kolone.",
   "readable": true,
-  "ts": "2026-06-12T18:24:44.687Z"
+  "ts": "2026-06-12T21:13:04.919Z"
  },
  {
   "crId": "ba-crveni-grm",
@@ -202,14 +202,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 43.2,
   "lng": 17.65,
   "image": "https://video-nadzor.bihamk.ba/videosurveillence/CRVENIGRM.jpg",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
+  "enter": "neznano",
+  "dirLabel": "smer neznana",
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, samo posamezno vozilo pri rampi",
+  "note": "Cesta popolnoma prosta, nobene kolone vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:45.185Z"
+  "ts": "2026-06-12T21:13:05.486Z"
  },
  {
   "crId": "ba-doljani",
@@ -223,9 +223,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, nekaj vozil pri rampi",
+  "note": "Cesta je popolnoma prazna, ni vozil v koloni",
   "readable": true,
-  "ts": "2026-06-12T18:24:45.977Z"
+  "ts": "2026-06-12T21:13:07.824Z"
  },
  {
   "crId": "ba-gabela-polje",
@@ -239,9 +239,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Ni kolone, cesta prosta, posamezno vozilo pri rampi",
+  "note": "Brez kolone, samo eno vozilo pri rampi",
   "readable": true,
-  "ts": "2026-06-12T18:24:57.300Z"
+  "ts": "2026-06-12T21:13:19.188Z"
  },
  {
   "crId": "ba-gabela-polje",
@@ -255,9 +255,25 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, rampica prazna ob zajemanju",
+  "note": "Cesta popolnoma prosta, brez kolone vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:57.787Z"
+  "ts": "2026-06-12T21:13:19.475Z"
+ },
+ {
+  "crId": "ba-gradina",
+  "crossing": "GP Gradina (Donja Gradina) · vstop v BiH",
+  "side": "BA",
+  "lat": 45.27,
+  "lng": 16.93,
+  "image": "https://gp.satwork.net/AMSRS_08_GP_GD02/slika.jpg",
+  "enter": "BA",
+  "dirLabel": "vstop v BiH",
+  "level": "zastoj",
+  "extent": "dolga",
+  "lanes": 2,
+  "note": "Dolga kolona vozil čaka na hrvško kontrolo",
+  "readable": true,
+  "ts": "2026-06-12T21:12:41.780Z"
  },
  {
   "crId": "ba-gradina",
@@ -271,25 +287,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Samo eno vozilo pri rampi, cesta prosta.",
+  "note": "Cesta popolnoma prosta, nobenih vozil v koloni",
   "readable": true,
-  "ts": "2026-06-12T18:24:19.933Z"
- },
- {
-  "crId": "ba-gradina",
-  "crossing": "GP Gradina (Donja Gradina) · vstop v BiH",
-  "side": "BA",
-  "lat": 45.27,
-  "lng": 16.93,
-  "image": "https://gp.satwork.net/AMSRS_08_GP_GD02/slika.jpg",
-  "enter": "BA",
-  "dirLabel": "vstop v BiH",
-  "level": "gneca",
-  "extent": "srednja",
-  "lanes": 3,
-  "note": "Kolona sega do polovice vidne ceste",
-  "readable": true,
-  "ts": "2026-06-12T18:24:20.064Z"
+  "ts": "2026-06-12T21:12:41.902Z"
  },
  {
   "crId": "ba-gradiska",
@@ -298,14 +298,30 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 45.15,
   "lng": 17.25,
   "image": "https://m.hak.hr/cam.asp?id=60",
+  "enter": "HR",
+  "dirLabel": "vstop v Hrvaško",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta prosta, brez čakajočih vozil.",
+  "readable": true,
+  "ts": "2026-06-12T21:12:37.451Z"
+ },
+ {
+  "crId": "ba-gradiska",
+  "crossing": "GP Gradiška · vstop v BiH",
+  "side": "BA",
+  "lat": 45.14,
+  "lng": 17.25,
+  "image": "https://gp.satwork.net/AMSRS_17_GP_CA02/slika.jpg",
   "enter": "BA",
   "dirLabel": "vstop v BiH",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Majhna kolona pred mejnimi kabinami",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta prosta, nobene kolone vozil.",
   "readable": true,
-  "ts": "2026-06-12T18:24:14.159Z"
+  "ts": "2026-06-12T21:12:37.792Z"
  },
  {
   "crId": "ba-gradiska",
@@ -319,57 +335,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, nobene kolone vozil",
+  "note": "Cesta prosta, nekaj vozil pri kontroli.",
   "readable": true,
-  "ts": "2026-06-12T18:24:14.566Z"
- },
- {
-  "crId": "ba-gradiska",
-  "crossing": "GP Gradiška · vstop v BiH",
-  "side": "BA",
-  "lat": 45.14,
-  "lng": 17.25,
-  "image": "https://gp.satwork.net/AMSRS_17_GP_CA02/slika.jpg",
-  "enter": "BA",
-  "dirLabel": "vstop v BiH",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Majhna kolona pri rampi, dve vzporedni pasovi",
-  "readable": true,
-  "ts": "2026-06-12T18:24:14.575Z"
- },
- {
-  "crId": "ba-gradiska",
-  "crossing": "Bosanska Gradiska (BIH) · kam 1",
-  "side": "HAK",
-  "lat": 45.14,
-  "lng": 17.25,
-  "image": "https://m.hak.hr/cam.asp?id=404",
-  "enter": "neznano",
-  "dirLabel": "smer neznana",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta prosta, brez čakajočih vozil",
-  "readable": true,
-  "ts": "2026-06-12T18:24:15.873Z"
- },
- {
-  "crId": "ba-gradiska",
-  "crossing": "Bosanska Gradiska (BIH) · kam 2",
-  "side": "HAK",
-  "lat": 45.14,
-  "lng": 17.25,
-  "image": "https://m.hak.hr/cam.asp?id=405",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 1,
-  "note": "Manjša kolona vozil pri mejni rampi.",
-  "readable": true,
-  "ts": "2026-06-12T18:24:16.348Z"
+  "ts": "2026-06-12T21:12:37.915Z"
  },
  {
   "crId": "ba-gradiska",
@@ -385,7 +353,55 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lanes": 0,
   "note": "Cesta popolnoma prosta, nobene kolone",
   "readable": true,
-  "ts": "2026-06-12T18:24:17.579Z"
+  "ts": "2026-06-12T21:12:38.856Z"
+ },
+ {
+  "crId": "ba-gradiska",
+  "crossing": "Bosanska Gradiska (BIH) · kam 2",
+  "side": "HAK",
+  "lat": 45.14,
+  "lng": 17.25,
+  "image": "https://m.hak.hr/cam.asp?id=405",
+  "enter": "HR",
+  "dirLabel": "vstop v Hrvaško",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 2,
+  "note": "Krajša kolona vozil pred mejno rampo",
+  "readable": true,
+  "ts": "2026-06-12T21:12:39.354Z"
+ },
+ {
+  "crId": "ba-gradiska",
+  "crossing": "Gornji Varos · kam 1",
+  "side": "HAK",
+  "lat": 45.15,
+  "lng": 17.26,
+  "image": "https://m.hak.hr/cam.asp?id=1021",
+  "enter": "HR",
+  "dirLabel": "vstop v Hrvaško",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 2,
+  "note": "Kratka kolona proti HR rampi, 2 pasova",
+  "readable": true,
+  "ts": "2026-06-12T21:12:40.023Z"
+ },
+ {
+  "crId": "ba-gradiska",
+  "crossing": "Bosanska Gradiska (BIH) · kam 1",
+  "side": "HAK",
+  "lat": 45.14,
+  "lng": 17.25,
+  "image": "https://m.hak.hr/cam.asp?id=404",
+  "enter": "BA",
+  "dirLabel": "vstop v BiH",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 2,
+  "note": "Kratka kolona vozil pri mejni rampi.",
+  "readable": true,
+  "ts": "2026-06-12T21:12:40.201Z"
  },
  {
   "crId": "ba-gradiska",
@@ -399,25 +415,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta popolnoma prosta, nobenih čakajočih vozil",
+  "note": "Cesta popolnoma prosta, brez vozil v koloni",
   "readable": true,
-  "ts": "2026-06-12T18:24:17.617Z"
- },
- {
-  "crId": "ba-gradiska",
-  "crossing": "Gornji Varos · kam 1",
-  "side": "HAK",
-  "lat": 45.15,
-  "lng": 17.26,
-  "image": "https://m.hak.hr/cam.asp?id=1021",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "zastoj",
-  "extent": "dolga",
-  "lanes": 2,
-  "note": "Dolga kolona čez večino vidne ceste proti rampi",
-  "readable": true,
-  "ts": "2026-06-12T18:24:18.488Z"
+  "ts": "2026-06-12T21:12:40.604Z"
  },
  {
   "crId": "ba-hum",
@@ -431,9 +431,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, brez vidne kolone vozil",
+  "note": "Cesta prosta, rampa prazna. Nočna slika.",
   "readable": true,
-  "ts": "2026-06-12T18:24:34.475Z"
+  "ts": "2026-06-12T21:12:55.435Z"
  },
  {
   "crId": "ba-ivanica",
@@ -447,9 +447,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, brez čakajočih vozil pri rampi",
+  "note": "Cesta prosta, nobene kolone pri rampi.",
   "readable": true,
-  "ts": "2026-06-12T18:24:59.037Z"
+  "ts": "2026-06-12T21:13:20.744Z"
  },
  {
   "crId": "ba-ivanica",
@@ -463,9 +463,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, rampa vidna, brez čakajoče kolone.",
+  "note": "Cesta prosta, brez čakajočih vozil pri rampi",
   "readable": true,
-  "ts": "2026-06-12T18:24:59.148Z"
+  "ts": "2026-06-12T21:13:20.765Z"
  },
  {
   "crId": "ba-ivanica",
@@ -479,9 +479,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, nobene kolone pri rampi.",
+  "note": "Cesta prosta, brez čakajočih vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:59.742Z"
+  "ts": "2026-06-12T21:13:22.032Z"
  },
  {
   "crId": "ba-izacic",
@@ -490,14 +490,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 44.85,
   "lng": 15.78,
   "image": "https://video-nadzor.bihamk.ba/videosurveillence/IZACIC.jpg",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona pri rampi, dvopasna",
+  "enter": "neznano",
+  "dirLabel": "smer neznana",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta popolnoma prosta, nobene kolone.",
   "readable": true,
-  "ts": "2026-06-12T18:24:47.981Z"
+  "ts": "2026-06-12T21:13:08.465Z"
  },
  {
   "crId": "ba-izacic",
@@ -506,14 +506,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 44.85,
   "lng": 15.78,
   "image": "https://m.hak.hr/cam.asp?id=407",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
+  "enter": "neznano",
+  "dirLabel": "smer neznana",
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, le redka vozila pri rampi",
+  "note": "Cesta prosta, nobene kolone vidne.",
   "readable": true,
-  "ts": "2026-06-12T18:24:48.796Z"
+  "ts": "2026-06-12T21:13:09.006Z"
  },
  {
   "crId": "ba-kamensko",
@@ -527,9 +527,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Majhna kolona vozil pri rampi, dva pasova",
+  "note": "Kratka kolona pred rampo, 2 vozila vidna",
   "readable": true,
-  "ts": "2026-06-12T18:24:43.306Z"
+  "ts": "2026-06-12T21:13:03.316Z"
  },
  {
   "crId": "ba-kamensko",
@@ -538,14 +538,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 43.65,
   "lng": 16.86,
   "image": "https://video-nadzor.bihamk.ba/videosurveillence/KAMENSKO.jpg",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
+  "enter": "neznano",
+  "dirLabel": "smer neznana",
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, le posamezno vozilo pri rampi",
+  "note": "Cesta popolnoma prosta, ni stoječih vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:43.419Z"
+  "ts": "2026-06-12T21:13:03.547Z"
  },
  {
   "crId": "ba-kamensko",
@@ -556,28 +556,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://m.hak.hr/cam.asp?id=318",
   "enter": "BA",
   "dirLabel": "vstop v BiH",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona pri BiH rampi, 2 vozila v vrsti",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta popolnoma prosta, brez čakajočih vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:45.552Z"
- },
- {
-  "crId": "ba-karakaj",
-  "crossing": "GP Karakaj · izstop iz BiH",
-  "side": "BA",
-  "lat": 44.4,
-  "lng": 19.13,
-  "image": "https://gp.satwork.net/AMSRS_07_GP_KA01/slika.jpg",
-  "enter": "RS",
-  "dirLabel": "vstop v Srbijo",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Dve vozili v koloni pred rampo, promet tekoč",
-  "readable": true,
-  "ts": "2026-06-12T18:24:27.814Z"
+  "ts": "2026-06-12T21:13:04.209Z"
  },
  {
   "crId": "ba-karakaj",
@@ -591,25 +575,25 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, nobene kolone vidne",
-  "readable": true,
-  "ts": "2026-06-12T18:24:28.470Z"
+  "note": "Slika nejasna, cesta videti prazna",
+  "readable": false,
+  "ts": "2026-06-12T21:12:48.729Z"
  },
  {
-  "crId": "ba-klobuk",
-  "crossing": "GP Klobuk · izstop iz BiH",
+  "crId": "ba-karakaj",
+  "crossing": "GP Karakaj · izstop iz BiH",
   "side": "BA",
-  "lat": 42.92,
-  "lng": 18.45,
-  "image": "https://gp.satwork.net/AMSRS_12_GP_KL01/slika.jpg",
-  "enter": "ME",
-  "dirLabel": "vstop v Črno goro",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Dve vzporedni koloni pri rampi, zgodnja ura",
+  "lat": 44.4,
+  "lng": 19.13,
+  "image": "https://gp.satwork.net/AMSRS_07_GP_KA01/slika.jpg",
+  "enter": "RS",
+  "dirLabel": "vstop v Srbijo",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta je praktično prazna, nobene kolone.",
   "readable": true,
-  "ts": "2026-06-12T18:24:34.290Z"
+  "ts": "2026-06-12T21:12:49.596Z"
  },
  {
   "crId": "ba-klobuk",
@@ -620,12 +604,28 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_12_GP_KL02/slika.jpg",
   "enter": "BA",
   "dirLabel": "vstop v BiH",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Manjša kolona motorjev in avtov pri rampi",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta prosta, brez vozil v koloni",
   "readable": true,
-  "ts": "2026-06-12T18:24:34.307Z"
+  "ts": "2026-06-12T21:12:54.192Z"
+ },
+ {
+  "crId": "ba-klobuk",
+  "crossing": "GP Klobuk · izstop iz BiH",
+  "side": "BA",
+  "lat": 42.92,
+  "lng": 18.45,
+  "image": "https://gp.satwork.net/AMSRS_12_GP_KL01/slika.jpg",
+  "enter": "ME",
+  "dirLabel": "vstop v Črno goro",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta popolnoma prosta, nobenih vozil v koloni",
+  "readable": true,
+  "ts": "2026-06-12T21:12:54.413Z"
  },
  {
   "crId": "ba-kostajnica",
@@ -636,12 +636,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_11_GP_KO01/slika.jpg",
   "enter": "HR",
   "dirLabel": "vstop v Hrvaško",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta popolnoma prosta, brez kolone vozil",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 2,
+  "note": "Kratka kolona vozil pri mejni rampi, odprt promet.",
   "readable": true,
-  "ts": "2026-06-12T18:24:31.031Z"
+  "ts": "2026-06-12T21:12:52.426Z"
  },
  {
   "crId": "ba-kostajnica",
@@ -655,9 +655,25 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Kratka kolona, dve pasovi, čakanje pri rampi",
+  "note": "Kratka kolona pred rampo, 2 pasova vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:31.225Z"
+  "ts": "2026-06-12T21:12:52.492Z"
+ },
+ {
+  "crId": "ba-kostajnica",
+  "crossing": "Hrvatska Kostajnica · kam 1",
+  "side": "HAK",
+  "lat": 45.22,
+  "lng": 16.55,
+  "image": "https://m.hak.hr/cam.asp?id=1019",
+  "enter": "neznano",
+  "dirLabel": "smer neznana",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta pred rampo popolnoma prazna.",
+  "readable": true,
+  "ts": "2026-06-12T21:12:52.676Z"
  },
  {
   "crId": "ba-kostajnica",
@@ -671,25 +687,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Krajša kolona vozil pri mejni rampi, dve vozni pasovi",
+  "note": "Kratka kolona pri mejni rampi, dva pasova",
   "readable": true,
-  "ts": "2026-06-12T18:24:32.793Z"
- },
- {
-  "crId": "ba-kostajnica",
-  "crossing": "Hrvatska Kostajnica · kam 1",
-  "side": "HAK",
-  "lat": 45.22,
-  "lng": 16.55,
-  "image": "https://m.hak.hr/cam.asp?id=1019",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta popolnoma prosta, brez čakajočih vozil",
-  "readable": true,
-  "ts": "2026-06-12T18:24:32.926Z"
+  "ts": "2026-06-12T21:12:53.709Z"
  },
  {
   "crId": "ba-kozarska-dubica",
@@ -700,12 +700,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_09_GP_KD02/slika.jpg",
   "enter": "BA",
   "dirLabel": "vstop v BiH",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta prosta, samo eno vozilo pri rampi.",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 2,
+  "note": "Kratka kolona čaka na hrvaški kontroli.",
   "readable": true,
-  "ts": "2026-06-12T18:24:29.288Z"
+  "ts": "2026-06-12T21:12:49.497Z"
  },
  {
   "crId": "ba-kozarska-dubica",
@@ -719,9 +719,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, brez čakajočih vozil",
+  "note": "Cesta popolnoma prosta, nobenih vozil v koloni",
   "readable": true,
-  "ts": "2026-06-12T18:24:29.381Z"
+  "ts": "2026-06-12T21:12:50.660Z"
  },
  {
   "crId": "ba-neum-ii",
@@ -730,14 +730,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 42.92,
   "lng": 17.57,
   "image": "https://m.hak.hr/cam.asp?id=203",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
+  "enter": "BA",
+  "dirLabel": "vstop v BiH",
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, brez kolone vozil.",
+  "note": "Cesta prosta, brez vozil v koloni",
   "readable": true,
-  "ts": "2026-06-12T18:24:58.442Z"
+  "ts": "2026-06-12T21:13:20.508Z"
  },
  {
   "crId": "ba-novi-grad",
@@ -751,9 +751,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Samo eno vozilo pri rampi, cesta prosta.",
+  "note": "Cesta je prosta, brez stoječih vozil.",
   "readable": true,
-  "ts": "2026-06-12T18:24:29.737Z"
+  "ts": "2026-06-12T21:12:50.719Z"
  },
  {
   "crId": "ba-novi-grad",
@@ -764,28 +764,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_10_GP_NG01/slika.jpg",
   "enter": "HR",
   "dirLabel": "vstop v Hrvaško",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta prosta, posamezna vozila pri rampi.",
-  "readable": true,
-  "ts": "2026-06-12T18:24:31.540Z"
- },
- {
-  "crId": "ba-orasje",
-  "crossing": "Zupanja · kam 1",
-  "side": "HAK",
-  "lat": 45.01,
-  "lng": 18.7,
-  "image": "https://m.hak.hr/cam.asp?id=79",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Manjša kolona pri hrvaski rampi, 2 pasova",
+  "note": "Kratka kolona vozil pred mejno rampo",
   "readable": true,
-  "ts": "2026-06-12T18:24:41.575Z"
+  "ts": "2026-06-12T21:12:51.463Z"
  },
  {
   "crId": "ba-orasje",
@@ -799,9 +783,25 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Kratka kolona tovornjakov pred mejno kontrolo.",
+  "note": "Dve koloni vozil pri mejni rampi.",
   "readable": true,
-  "ts": "2026-06-12T18:24:41.955Z"
+  "ts": "2026-06-12T21:13:01.747Z"
+ },
+ {
+  "crId": "ba-orasje",
+  "crossing": "Zupanja · kam 1",
+  "side": "HAK",
+  "lat": 45.01,
+  "lng": 18.7,
+  "image": "https://m.hak.hr/cam.asp?id=79",
+  "enter": "HR",
+  "dirLabel": "vstop v Hrvaško",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 2,
+  "note": "Kratek zastoj, dve pasovi proti Hrvaški",
+  "readable": true,
+  "ts": "2026-06-12T21:13:01.915Z"
  },
  {
   "crId": "ba-orasje",
@@ -815,9 +815,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Kratka kolona pred mejno rampo, dve vozni pasova",
+  "note": "Manjša kolona vozil pri mejni rampi.",
   "readable": true,
-  "ts": "2026-06-12T18:24:42.055Z"
+  "ts": "2026-06-12T21:13:01.937Z"
  },
  {
   "crId": "ba-orasje",
@@ -831,9 +831,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Kratka kolona pri mejni rampi, dva pasova.",
+  "note": "Kratka kolona vozil pri mejni kontroli.",
   "readable": true,
-  "ts": "2026-06-12T18:24:42.851Z"
+  "ts": "2026-06-12T21:13:03.046Z"
  },
  {
   "crId": "ba-raca",
@@ -844,12 +844,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_02_GP_RA02/slika.jpg",
   "enter": "BA",
   "dirLabel": "vstop v BiH",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona čaka na srbski kontroli.",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta popolnoma prosta, brez vozil v koloni",
   "readable": true,
-  "ts": "2026-06-12T18:24:20.867Z"
+  "ts": "2026-06-12T21:12:42.860Z"
  },
  {
   "crId": "ba-raca",
@@ -863,41 +863,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Dve vozili v koloni pred rampo.",
+  "note": "Dve vozili v koloni pred rampo",
   "readable": true,
-  "ts": "2026-06-12T18:24:21.500Z"
- },
- {
-  "crId": "ba-samac",
-  "crossing": "GP Šamac · izstop iz BiH",
-  "side": "BA",
-  "lat": 45.06,
-  "lng": 18.46,
-  "image": "https://gp.satwork.net/AMSRS_15_GP_SA01/slika.jpg",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta popolnoma prosta, samo eno vozilo pri rampi.",
-  "readable": true,
-  "ts": "2026-06-12T18:24:38.250Z"
- },
- {
-  "crId": "ba-samac",
-  "crossing": "GP Šamac · vstop v BiH",
-  "side": "BA",
-  "lat": 45.06,
-  "lng": 18.46,
-  "image": "https://gp.satwork.net/AMSRS_15_GP_SA02/slika.jpg",
-  "enter": "BA",
-  "dirLabel": "vstop v BiH",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta prosta, nobene kolone vozil vidne",
-  "readable": true,
-  "ts": "2026-06-12T18:24:38.363Z"
+  "ts": "2026-06-12T21:12:43.543Z"
  },
  {
   "crId": "ba-samac",
@@ -911,9 +879,41 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Prazna dovozna cesta, nobene kolone",
+  "note": "Cesta prosta, nobena kolona pred rampo.",
   "readable": true,
-  "ts": "2026-06-12T18:24:38.649Z"
+  "ts": "2026-06-12T21:12:58.178Z"
+ },
+ {
+  "crId": "ba-samac",
+  "crossing": "GP Šamac · vstop v BiH",
+  "side": "BA",
+  "lat": 45.06,
+  "lng": 18.46,
+  "image": "https://gp.satwork.net/AMSRS_15_GP_SA02/slika.jpg",
+  "enter": "BA",
+  "dirLabel": "vstop v BiH",
+  "level": "zastoj",
+  "extent": "dolga",
+  "lanes": 2,
+  "note": "Gosta megla, kolona čez večino vidne ceste",
+  "readable": false,
+  "ts": "2026-06-12T21:12:58.646Z"
+ },
+ {
+  "crId": "ba-samac",
+  "crossing": "GP Šamac · izstop iz BiH",
+  "side": "BA",
+  "lat": 45.06,
+  "lng": 18.46,
+  "image": "https://gp.satwork.net/AMSRS_15_GP_SA01/slika.jpg",
+  "enter": "HR",
+  "dirLabel": "vstop v Hrvaško",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 1,
+  "note": "Eno vozilo pri rampi, kratka čakalna vrsta",
+  "readable": true,
+  "ts": "2026-06-12T21:12:58.702Z"
  },
  {
   "crId": "ba-samac",
@@ -927,9 +927,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta popolnoma prosta, nobene kolone",
+  "note": "Cesta prosta, posamezna vozila pri rampi",
   "readable": true,
-  "ts": "2026-06-12T18:24:39.687Z"
+  "ts": "2026-06-12T21:12:59.466Z"
  },
  {
   "crId": "ba-sepak",
@@ -943,9 +943,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Krajša kolona proti rampi, dvopasna",
+  "note": "Vozila čakajo pred srbsko rampo, večinoma v 2 pasovih.",
   "readable": true,
-  "ts": "2026-06-12T18:24:26.466Z"
+  "ts": "2026-06-12T21:12:47.593Z"
  },
  {
   "crId": "ba-sepak",
@@ -958,26 +958,10 @@ export const AI_CONGESTION: AiCongestion[] = [
   "dirLabel": "vstop v Srbijo",
   "level": "zmerno",
   "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona na dovozni cesti proti rampi",
+  "lanes": 1,
+  "note": "Večinoma prosta cesta, nekaj vozil pri rampi",
   "readable": true,
-  "ts": "2026-06-12T18:24:27.351Z"
- },
- {
-  "crId": "ba-svilaj",
-  "crossing": "GP Svilaj · izstop iz BiH",
-  "side": "BA",
-  "lat": 45.1,
-  "lng": 18.18,
-  "image": "https://gp.satwork.net/AMSRS_14_GP_SV01/slika.jpg",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta prosta, samo posamezna vozila pri rampi",
-  "readable": true,
-  "ts": "2026-06-12T18:24:35.696Z"
+  "ts": "2026-06-12T21:12:48.052Z"
  },
  {
   "crId": "ba-svilaj",
@@ -991,9 +975,25 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
+  "note": "Cesta prosta, samo redka vozila pri rampi",
+  "readable": true,
+  "ts": "2026-06-12T21:12:55.674Z"
+ },
+ {
+  "crId": "ba-svilaj",
+  "crossing": "GP Svilaj · izstop iz BiH",
+  "side": "BA",
+  "lat": 45.1,
+  "lng": 18.18,
+  "image": "https://gp.satwork.net/AMSRS_14_GP_SV01/slika.jpg",
+  "enter": "HR",
+  "dirLabel": "vstop v Hrvaško",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
   "note": "Cesta popolnoma prosta, brez kolone vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:35.976Z"
+  "ts": "2026-06-12T21:12:56.418Z"
  },
  {
   "crId": "ba-svilaj",
@@ -1002,14 +1002,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 45.1,
   "lng": 18.18,
   "image": "https://m.hak.hr/cam.asp?id=461",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona pred rampo, promet teče",
+  "enter": "BA",
+  "dirLabel": "vstop v BiH",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta popolnoma prosta, brez čakajočih vozil.",
   "readable": true,
-  "ts": "2026-06-12T18:24:36.301Z"
+  "ts": "2026-06-12T21:12:56.689Z"
  },
  {
   "crId": "ba-svilaj",
@@ -1022,10 +1022,26 @@ export const AI_CONGESTION: AiCongestion[] = [
   "dirLabel": "vstop v Hrvaško",
   "level": "zmerno",
   "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona pred mejno rampo, dva pasova",
+  "lanes": 1,
+  "note": "Kratka kolona vozil pred mejno kontrolo",
   "readable": true,
-  "ts": "2026-06-12T18:24:37.034Z"
+  "ts": "2026-06-12T21:12:56.946Z"
+ },
+ {
+  "crId": "ba-vardiste",
+  "crossing": "GP Višegrad · izstop iz BiH",
+  "side": "BA",
+  "lat": 43.78,
+  "lng": 19.4,
+  "image": "https://gp.satwork.net/AMSRS_16_GP_VA01/slika.jpg",
+  "enter": "RS",
+  "dirLabel": "vstop v Srbijo",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 1,
+  "note": "Malo vozil pri rampi, promet tekoč",
+  "readable": true,
+  "ts": "2026-06-12T21:13:00.519Z"
  },
  {
   "crId": "ba-vardiste",
@@ -1039,25 +1055,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, edino vozilo pri kontroli.",
+  "note": "Ena vozila pri rampi, cesta prosta.",
   "readable": true,
-  "ts": "2026-06-12T18:24:40.317Z"
- },
- {
-  "crId": "ba-vardiste",
-  "crossing": "GP Višegrad · izstop iz BiH",
-  "side": "BA",
-  "lat": 43.78,
-  "lng": 19.4,
-  "image": "https://gp.satwork.net/AMSRS_16_GP_VA01/slika.jpg",
-  "enter": "RS",
-  "dirLabel": "vstop v Srbijo",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta prosta, brez kolone vozil pri rampi",
-  "readable": true,
-  "ts": "2026-06-12T18:24:40.397Z"
+  "ts": "2026-06-12T21:13:00.713Z"
  },
  {
   "crId": "ba-velika-kladusa",
@@ -1066,14 +1066,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 45.18,
   "lng": 15.82,
   "image": "https://m.hak.hr/cam.asp?id=429",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
+  "enter": "BA",
+  "dirLabel": "vstop v BiH",
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta popolnoma prosta, brez kolone vozil.",
+  "note": "Cesta popolnoma prosta, brez čakajočih vozil.",
   "readable": true,
-  "ts": "2026-06-12T18:24:56.454Z"
+  "ts": "2026-06-12T21:13:17.923Z"
  },
  {
   "crId": "ba-velika-kladusa",
@@ -1084,12 +1084,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://m.hak.hr/cam.asp?id=430",
   "enter": "HR",
   "dirLabel": "vstop v Hrvaško",
-  "level": "zastoj",
-  "extent": "dolga",
+  "level": "gneca",
+  "extent": "srednja",
   "lanes": 2,
-  "note": "Dolga kolona vozil pred mejno rampo proti HR",
+  "note": "Kolona vozil čaka na mejno kontrolo proti HR",
   "readable": true,
-  "ts": "2026-06-12T18:24:57.259Z"
+  "ts": "2026-06-12T21:13:18.266Z"
  },
  {
   "crId": "ba-zupci",
@@ -1100,12 +1100,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://gp.satwork.net/AMSRS_03_GP_TB02/slika.jpg",
   "enter": "ME",
   "dirLabel": "vstop v Črno goro",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona pred mejno rampo, dve vozni pasi",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta prosta, ni vidnih čakajočih vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:23.035Z"
+  "ts": "2026-06-12T21:12:43.600Z"
  },
  {
   "crId": "hr-bajakovo",
@@ -1119,9 +1119,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Kratka kolona pri srbski rampi, dva pasova",
+  "note": "Kratka kolona vozil pred srbsko kontrolo.",
   "readable": true,
-  "ts": "2026-06-12T18:24:50.700Z"
+  "ts": "2026-06-12T21:13:10.946Z"
  },
  {
   "crId": "hr-bajakovo",
@@ -1130,14 +1130,14 @@ export const AI_CONGESTION: AiCongestion[] = [
   "lat": 45.06,
   "lng": 19.1,
   "image": "https://m.hak.hr/cam.asp?id=1",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
+  "enter": "RS",
+  "dirLabel": "vstop v Srbijo",
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Kratka kolona pri mejni rampi, dve vozni pasi",
+  "note": "Kratka kolona pri srbski rampi, dva pasova",
   "readable": true,
-  "ts": "2026-06-12T18:24:51.216Z"
+  "ts": "2026-06-12T21:13:11.822Z"
  },
  {
   "crId": "hr-batina",
@@ -1148,12 +1148,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://m.hak.hr/cam.asp?id=1017",
   "enter": "RS",
   "dirLabel": "vstop v Srbijo",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona vozil pri mejni rampi.",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta pred rampo popolnoma prosta, brez čakajočih vozil.",
   "readable": true,
-  "ts": "2026-06-12T18:24:54.669Z"
+  "ts": "2026-06-12T21:13:14.901Z"
  },
  {
   "crId": "hr-batina",
@@ -1167,9 +1167,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Kratka kolona pri rampi, dve vozili v vrsti",
+  "note": "Kratka kolona vozil pred mejno kontrolo",
   "readable": true,
-  "ts": "2026-06-12T18:24:55.204Z"
+  "ts": "2026-06-12T21:13:19.306Z"
  },
  {
   "crId": "hr-erdut",
@@ -1183,9 +1183,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, le posamezno vozilo pri rampi",
+  "note": "Cesta prosta, brez kolone vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:52.430Z"
+  "ts": "2026-06-12T21:13:13.072Z"
  },
  {
   "crId": "hr-erdut",
@@ -1196,28 +1196,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://m.hak.hr/cam.asp?id=416",
   "enter": "RS",
   "dirLabel": "vstop v Srbijo",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona pred srbsko kontrolo, 2 pasova.",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta prosta, brez čakajočih vozil v koloni",
   "readable": true,
-  "ts": "2026-06-12T18:24:53.369Z"
- },
- {
-  "crId": "hr-ilok",
-  "crossing": "Ilok · kam 1",
-  "side": "HAK",
-  "lat": 45.22,
-  "lng": 19.37,
-  "image": "https://m.hak.hr/cam.asp?id=417",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona na hrvaškem mejnem prehodu",
-  "readable": true,
-  "ts": "2026-06-12T18:24:53.663Z"
+  "ts": "2026-06-12T21:13:13.308Z"
  },
  {
   "crId": "hr-ilok",
@@ -1231,9 +1215,25 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta prosta, le eno vozilo pri rampi",
+  "note": "Cesta popolnoma prosta, brez vozil v koloni",
   "readable": true,
-  "ts": "2026-06-12T18:24:53.999Z"
+  "ts": "2026-06-12T21:13:14.288Z"
+ },
+ {
+  "crId": "hr-ilok",
+  "crossing": "Ilok · kam 1",
+  "side": "HAK",
+  "lat": 45.22,
+  "lng": 19.37,
+  "image": "https://m.hak.hr/cam.asp?id=417",
+  "enter": "RS",
+  "dirLabel": "vstop v Srbijo",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Cesta prazna, brez čakajočih vozil.",
+  "readable": true,
+  "ts": "2026-06-12T21:13:14.706Z"
  },
  {
   "crId": "hr-tovarnik",
@@ -1244,12 +1244,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://m.hak.hr/cam.asp?id=419",
   "enter": "RS",
   "dirLabel": "vstop v Srbijo",
-  "level": "prosto",
-  "extent": "brez",
-  "lanes": 0,
-  "note": "Cesta proti rampi je popolnoma prosta.",
+  "level": "zmerno",
+  "extent": "kratka",
+  "lanes": 2,
+  "note": "Majhna kolona pred srbsko kontrolo, 2 pasova",
   "readable": true,
-  "ts": "2026-06-12T18:24:51.363Z"
+  "ts": "2026-06-12T21:13:12.073Z"
  },
  {
   "crId": "hr-tovarnik",
@@ -1260,12 +1260,28 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://m.hak.hr/cam.asp?id=420",
   "enter": "RS",
   "dirLabel": "vstop v Srbijo",
+  "level": "gneca",
+  "extent": "srednja",
+  "lanes": 2,
+  "note": "Kolona čaka pred srbsko kontrolo, 2 pasova",
+  "readable": true,
+  "ts": "2026-06-12T21:13:12.392Z"
+ },
+ {
+  "crId": "si-gruskovje",
+  "crossing": "Macelj · kam 2",
+  "side": "HAK",
+  "lat": 46.29,
+  "lng": 15.78,
+  "image": "https://m.hak.hr/cam.asp?id=35",
+  "enter": "HR",
+  "dirLabel": "vstop v Hrvaško",
   "level": "zmerno",
   "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona pred srbsko kontrolo, 2 pasova",
+  "lanes": 1,
+  "note": "Ena kolona tovornjakov pri rampi, prosta cesta naprej",
   "readable": true,
-  "ts": "2026-06-12T18:24:52.683Z"
+  "ts": "2026-06-12T21:13:10.309Z"
  },
  {
   "crId": "si-gruskovje",
@@ -1279,25 +1295,9 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "zmerno",
   "extent": "kratka",
   "lanes": 2,
-  "note": "Krajša kolona tovornjakov pri rampi",
+  "note": "Krajša kolona vozil čaka na kontroli",
   "readable": true,
-  "ts": "2026-06-12T18:24:49.806Z"
- },
- {
-  "crId": "si-gruskovje",
-  "crossing": "Macelj · kam 2",
-  "side": "HAK",
-  "lat": 46.29,
-  "lng": 15.78,
-  "image": "https://m.hak.hr/cam.asp?id=35",
-  "enter": "HR",
-  "dirLabel": "vstop v Hrvaško",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona čaka na hrvaško kontrolo",
-  "readable": true,
-  "ts": "2026-06-12T18:24:50.142Z"
+  "ts": "2026-06-12T21:13:10.704Z"
  },
  {
   "crId": "si-obrezje",
@@ -1308,12 +1308,12 @@ export const AI_CONGESTION: AiCongestion[] = [
   "image": "https://m.hak.hr/cam.asp?id=6",
   "enter": "HR",
   "dirLabel": "vstop v Hrvaško",
-  "level": "zmerno",
-  "extent": "kratka",
-  "lanes": 2,
-  "note": "Kratka kolona vozil čaka na mejni kontroli",
+  "level": "prosto",
+  "extent": "brez",
+  "lanes": 0,
+  "note": "Prosta cesta, nobena kolona pri rampi",
   "readable": true,
-  "ts": "2026-06-12T18:24:48.554Z"
+  "ts": "2026-06-12T21:13:08.997Z"
  },
  {
   "crId": "si-obrezje",
@@ -1327,8 +1327,8 @@ export const AI_CONGESTION: AiCongestion[] = [
   "level": "prosto",
   "extent": "brez",
   "lanes": 0,
-  "note": "Cesta popolnoma prosta, brez čakajočih vozil",
+  "note": "Cesta prosta, brez čakajočih vozil",
   "readable": true,
-  "ts": "2026-06-12T18:24:49.295Z"
+  "ts": "2026-06-12T21:13:09.661Z"
  }
 ];
