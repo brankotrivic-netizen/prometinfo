@@ -94,10 +94,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Do 15.6.2026. godine, izvode radovi na nivelaciji šahtova na državnom putu I A reda broj 5, na deonici petlja Koševi-petlja Vrnjačka Banja (od km 27+800 do km 57+400 ), u oba smera. Tokom izvođenja radova zaustavna saobraćajna traka je zatvorena u dužini od 100 m, dok se saobraćaj odvija voznom i preticajnom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
  {
-  "title": "Petlja Ruma - kružna raskrsnica Šabac,radovi u oba smera",
-  "text": "Od ponedeljka 1. 6. do 13. 6. 2026. godine, tokom svetlog dela dana, izvodiće se radovi na popravci oštećene sigurnosno zaštitne ograde u razdelnom pojasu i uz zaustavnu traku na delu auto-puta broj 8 i državnom putu I M reda broj 3, petlja Ruma - kružna raskrsnica šabac, u oba smera. Tokom izvođenja radova, u zavisnosti od lokacije, za saobraćaj će biti zatvorena preticajna ili zaustavna saobraćajna traka u dužini do 200 metara, dok će se saobraćaj odvijati slobodnim saobraćajnim trakama. Izvor…"
- },
- {
   "title": "Petlja Ruma- petlja Drenovac, radovi na moto- putu",
   "text": "Do 30.6.2026. godine, u toku svetlog dela dana, izvode se radovi redovnog održavanja na košenju trave u srednjem pojasu, na bankinama i putnom pojasu, na državnom putu I A reda broj 8 i moto-putu M3, petlja Ruma - petlja Drenovac - kružna raskrsnica šabac. Za saobraćaj je zatvorena preticajna traka obe strane u dužini do 1000 metara ili zaustavna saobraćajna traka leve ili desne strane u dužini do 5000 metara. Izvor: Putevi Srbije"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Mijoska- granica SRB-CG",
   "text": "Na snazi je izmena režima saobraćaja do 30.06.2026. godine, zbog izvođenja radova na sanaciji nestabilne kamene kosine na državnom putu I B reda broj 23, deonica Mijoska državna granica SRB/CG (Gostun) na km 250+447. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Ivanjica-Arilje, radovi",
+  "text": "U okviru preostalih radova na pojačanom održavanju državnog puta I B reda broj 21, deonica Požega - Ivanjica, od km 209+141.00 do km 248+079.38, u periodu od 19.10.2025. do 01.10.2026. godine, izvodiće se radovi na asfaltiranju kolovoza na deonicama Arilje - Prilike i Prilike Ivanjica. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
  }
 ];

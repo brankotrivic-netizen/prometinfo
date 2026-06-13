@@ -91,10 +91,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog sanacije kolovoza, saobraća se usporeno, jednom trakom uz postavljenu signalizaciju u vremenu od 07:00 do 16:00 sati."
    },
    {
-    "title": "Čajdraš-Ovnak (Pojske)",
-    "text": "Zbog radova na asfaltiranju danas (13.06.) od 07 do 18 sati saobraćaj će biti obustavljen na regionalnoj cesti Čajdraš-Ovnak (lokalitet Pojske). Putnička vozila mogu koristiti lokalni put preko naselja Konjevići, a teretna regionalnu cestu Zenica-Vjetrenice-Vitez."
-   },
-   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
