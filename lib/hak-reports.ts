@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "13.6.2026. 12:07",
-  "text": "Vremenski uvjeti su povoljni za vožnju. Pojačan je promet na cestama u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: životinja (pas) na autocesti A3 između čvorova Okučani i Nova Gradiška u smjeru Lipovca - vozi se uz ograničenje brzine od 80 km/h pojačan je promet na Krčkom mostu (DC102) u smjeru otoka kolona je oko 4 km na riječkoj obilaznici (A7) na čraku čvora Učka u smjeru Istre i Opatije vozi se uporeno u koloni uz povremene zastoje zbog pojačanog prometa na autocesti A1 između čvorova Lučko i Bosiljevo 2 u smjeru mora povremeno se v…"
+  "updated": "13.6.2026. 14:00",
+  "text": "Vremenski uvjeti su povoljni za vožnju. Pojačan je promet na cestama u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: predmet na autocesti A1 između čvora Ogulin i čvora Brinje (oko 115+000 km ) u smjeru Dubrovnika, vozi se uz ograničenje brzine od 60 km/h na riječkoj obilaznici (A7) na kraku čvora Učka u smjeru Istre i Opatije vozi se uporeno u koloni uz povremene zastoje zbog pojačanog prometa na autocesti A1 između čvorova Lučko i Bosiljevo 2 u smjeru mora povremeno se vozi usporeno vozilo u kvaru (osobno vozilo) na autocesti A1 između č…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "13.6.2026. 12:06",
+  "updated": "13.6.2026. 14:02",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "13.6.2026. 12:06",
+  "updated": "13.6.2026. 14:02",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati u ponedjeljak 15. lipnja uspostavlja se komercijalna linija br. 661 Split - Hvar - Korčula isplovljenjem iz luke Split u 12:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međuna…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "13.6.2026. 06:53",
+  "updated": "13.6.2026. 14:02",
   "text": "Stanje u željezničkom putničkom prometu 12. lipnja 2026. u 11.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloštar i Koprivnica te između kolodvora Osijek i Bizovac na pruzi Koprivnica – Dalj - između kolodvora Novska i Sisak Caprag na pruzi Zagreb GK – Sisak –…"
  },
  {

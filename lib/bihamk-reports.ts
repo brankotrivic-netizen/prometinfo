@@ -66,7 +66,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na sanaciji nadvožnjaka na lokalitetu Orljani na magistralnoj cesti Bihać-Ripač, zatvoreno je skretanje sa magistralne ceste prema naselju Ribić-Orljani."
    },
    {
-    "title": "Lanište (Ključ-Bosanski Petrovac",
+    "title": "Lanište (Ključ-Bosanski Petrovac)",
     "text": "Zbog radova na redovnom održavanju na području Laništa na magistralnoj cesti Ključ-Bosanski Petrovac, na mjestu radova od 07 do 07 sati (osim vikenda) vozila saobraćaju naizmjenično, jednom trakom."
    },
    {
