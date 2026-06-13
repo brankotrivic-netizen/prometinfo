@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "13.6.2026. 14:00",
-  "text": "Vremenski uvjeti su povoljni za vožnju. Pojačan je promet na cestama u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: predmet na autocesti A1 između čvora Ogulin i čvora Brinje (oko 115+000 km ) u smjeru Dubrovnika, vozi se uz ograničenje brzine od 60 km/h na riječkoj obilaznici (A7) na kraku čvora Učka u smjeru Istre i Opatije vozi se uporeno u koloni uz povremene zastoje zbog pojačanog prometa na autocesti A1 između čvorova Lučko i Bosiljevo 2 u smjeru mora povremeno se vozi usporeno vozilo u kvaru (osobno vozilo) na autocesti A1 između č…"
+  "updated": "13.6.2026. 16:18",
+  "text": "Vremenski uvjeti su povoljni za vožnju. Pojačan je promet na cestama u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće za sav je promet zatvorena županijska cesta Marija Bistrica-Konjščina (ŽC2204) A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (izlaz sa autoceste A1)-DC220-ŽC6260-ŽC6145-DC1-Dugopolje/Split. Na naplatnoj postaji Dugopolje moguće se uključiti na autocestu A1 u smjeru Zagreba ili nastaviti državnom cestom DC1 prema ulazu u…"
  },
  {
   "title": "Granični prijelazi",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "13.6.2026. 12:07",
-  "text": "Prometna prognoza za Hrvatsku za 13. lipnja 2026. Tijekom noći i jutra, zbog jakog su vjetra moguće zabrane i ograničenja za pojedine skupine vozila na cestama u priobalju. No, tijekom dana, diljem Hrvatske vozit će se uz povoljne vremenske uvjete. Pojačan promet očekujemo na pojedinim dionicama autocesta, a gužve i usporavanja mogući su u zonama radova, tunela i naplata te na prilazima turističkim središtima. Vozače molimo za oprez i strpljenje te da se prije polaska na put informiraju o aktualnom stanju u prometu putem internetske stranice ili aplikacije HAK-a. Pojačan priljev osobnih i teretnih vozila očekuje se na pojedinim graničnim prijelazima s Bosnom i Hercegovinom i Srbijom. U pomor…"
+  "updated": "13.6.2026. 14:10",
+  "text": "Prometna prognoza za Hrvatsku za 14. lipnja 2026. Sutra se u popodnevnim satima u središnjoj Hrvatskoj očekuju jači pljuskovi s grmljavinom pa će se ondje voziti po mokrim i skliskim kolnicima. Pojačan promet očekujemo na pojedinim dionicama autocesta, a gužve i usporavanja mogući su u zonama radova, tunela i naplata te na prilazima turističkim središtima. Vozače molimo za oprez i strpljenje te da se prije polaska na put informiraju o aktualnom stanju u prometu putem internetske stranice ili aplikacije HAK-a. Pojačan priljev osobnih i teretnih vozila očekuje se na pojedinim graničnim prijelazima s Bosnom i Hercegovinom i Srbijom. U pomorskom prometu ne očekuju se poteškoće. Hrvatski autoklub…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
