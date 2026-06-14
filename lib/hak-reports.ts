@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.6.2026. 14:23",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. U prometu je svakodnevno veliki broj biciklista, mopedista i motociklista. Vozače ostalih vozila upozoravamo da prilikom uključivanja u promet, prestrojavanja, pretjecanja, obilaženja, polukružnog okretanja ili skretanja pripaze upravo na ovu kategoriju sudionika u prometu te im ne oduzimaju prednost prolaska na raskrižjima. Bicikliste, mopediste i motocikliste također podsjećamo da poštuju prometne propise i ograničenja brzine. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 na 43. km između čvorova Novigrad i Karlovac u smjeru Zagreba. Vozi se usporeno, uz ograničenje brzine od 80 km/h…"
+  "updated": "14.6.2026. 17:15",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: vozilo u kvaru (osobno vozilo) na autocesti A1 u tunelu Sveti Rok u smjeru Zagreba. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (izlaz sa autoceste A1)-DC220-ŽC6260-ŽC6145-DC1-Dugopolje/Split. Na naplatnoj postaji Dugopolje moguće se uključiti na autocestu A1 u smjeru Zagreba ili nastaviti državnom cestom DC1 prema ulazu u grad Split. Na čvoru Bisko nije moguće uključenje na autocestu A1 u smjeru Zagreba. Zbog radova…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "14.6.2026. 12:51",
+  "updated": "14.6.2026. 16:27",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "14.6.2026. 12:51",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati u ponedjeljak 15. lipnja uspostavlja se komercijalna linija br. 661 Split - Hvar - Korčula isplovljenjem iz luke Split u 12:15h katamaranska linija broj 661 Split-Hvar-Korčula i obratno uspostavlja se 15.06.2026. godine prema redu plovidbe iz luke Split u 12:15 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/lin…"
+  "updated": "14.6.2026. 16:27",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: dana 14. lipnja: trajekt na liniji 602 Split-Vis isplovit će iz luke Vis u 19:00 (umjesto u 18:00) te iz luke Split u 22:00 (umjesto u 21:00 sat) od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati u ponedjeljak 15. lipnja uspostavlja se komercijalna linija br. 661 Split - Hvar - Korčula isplovljenjem iz luke Split u 12:15h katamaranska linija broj 661 Split-Hvar-Korčula i obratno uspostavlja se 15.06.2026. godine prema redu plovidbe iz luke Split u 12:15 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadroli…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "14.6.2026. 08:30",
+  "updated": "14.6.2026. 15:12",
   "text": "Stanje u željezničkom putničkom prometu 12. lipnja 2026. u 11.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloštar i Koprivnica te između kolodvora Osijek i Bizovac na pruzi Koprivnica – Dalj - između kolodvora Novska i Sisak Caprag na pruzi Zagreb GK – Sisak –…"
  },
  {
@@ -28,7 +28,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "14.6.2026. 13:19",
+  "updated": "14.6.2026. 15:12",
   "text": "Prometna prognoza za Hrvatsku za 15. lipnja 2026. Mokri i skliski kolnici bit će sutra u većem dijelu unutrašnjosti i na sjevernom Jadranu. Očekujemo zastoje i kolone u zonama radova i privremene regulacije prometa, posebice na autocestama te duž Ličke (DC1) i Jadranske (DC8) magistrale, a ujutro i poslijepodne na gradskim prometnicama i obilaznicama. Pojačan promet osobnih vozila očekuje se na graničnim prijelazima: Bajakovo, Tovarnik, Batina, Slavonski Brod, Jasenovac, Karasovići i Županja. U pomorskom prometu moguće su poteškoće zbog jakog juga. Hrvatski autoklub želi vam sretan i ugodan put."
  },
  {
