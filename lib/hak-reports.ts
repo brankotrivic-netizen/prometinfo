@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.6.2026. 12:20",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. U prometu je svakodnevno veliki broj biciklista, mopedista i motociklista. Vozače ostalih vozila upozoravamo da prilikom uključivanja u promet, prestrojavanja, pretjecanja, obilaženja, polukružnog okretanja ili skretanja pripaze upravo na ovu kategoriju sudionika u prometu te im ne oduzimaju prednost prolaska na raskrižjima. Bicikliste, mopediste i motocikliste također podsjećamo da poštuju prometne propise i ograničenja brzine. IZVANREDNI PROMETNI DOGAĐAJI: - A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (izlaz sa aut…"
+  "updated": "14.6.2026. 14:23",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. U prometu je svakodnevno veliki broj biciklista, mopedista i motociklista. Vozače ostalih vozila upozoravamo da prilikom uključivanja u promet, prestrojavanja, pretjecanja, obilaženja, polukružnog okretanja ili skretanja pripaze upravo na ovu kategoriju sudionika u prometu te im ne oduzimaju prednost prolaska na raskrižjima. Bicikliste, mopediste i motocikliste također podsjećamo da poštuju prometne propise i ograničenja brzine. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 na 43. km između čvorova Novigrad i Karlovac u smjeru Zagreba. Vozi se usporeno, uz ograničenje brzine od 80 km/h…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "14.6.2026. 12:03",
+  "updated": "14.6.2026. 12:51",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "14.6.2026. 12:03",
+  "updated": "14.6.2026. 12:51",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: od 14. do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvodi se dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati u ponedjeljak 15. lipnja uspostavlja se komercijalna linija br. 661 Split - Hvar - Korčula isplovljenjem iz luke Split u 12:15h katamaranska linija broj 661 Split-Hvar-Korčula i obratno uspostavlja se 15.06.2026. godine prema redu plovidbe iz luke Split u 12:15 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/lin…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "14.6.2026. 05:17",
-  "text": "Prometna prognoza za Hrvatsku za 14. lipnja 2026. Sutra se u popodnevnim satima u središnjoj Hrvatskoj očekuju jači pljuskovi s grmljavinom pa će se ondje voziti po mokrim i skliskim kolnicima. Pojačan promet očekujemo na pojedinim dionicama autocesta, a gužve i usporavanja mogući su u zonama radova, tunela i naplata te na prilazima turističkim središtima. Vozače molimo za oprez i strpljenje te da se prije polaska na put informiraju o aktualnom stanju u prometu putem internetske stranice ili aplikacije HAK-a. Pojačan priljev osobnih i teretnih vozila očekuje se na pojedinim graničnim prijelazima s Bosnom i Hercegovinom i Srbijom. U pomorskom prometu ne očekuju se poteškoće. Hrvatski autoklub…"
+  "updated": "14.6.2026. 13:19",
+  "text": "Prometna prognoza za Hrvatsku za 15. lipnja 2026. Mokri i skliski kolnici bit će sutra u većem dijelu unutrašnjosti i na sjevernom Jadranu. Očekujemo zastoje i kolone u zonama radova i privremene regulacije prometa, posebice na autocestama te duž Ličke (DC1) i Jadranske (DC8) magistrale, a ujutro i poslijepodne na gradskim prometnicama i obilaznicama. Pojačan promet osobnih vozila očekuje se na graničnim prijelazima: Bajakovo, Tovarnik, Batina, Slavonski Brod, Jasenovac, Karasovići i Županja. U pomorskom prometu moguće su poteškoće zbog jakog juga. Hrvatski autoklub želi vam sretan i ugodan put."
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
