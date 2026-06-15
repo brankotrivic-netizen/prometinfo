@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.6.2026. 17:49",
-  "text": "Kolnici su mjestimice mokri i skliski. Na cestama u gorju i duž Jadranske magistrale (DC8) upozoravamo na moguće odrone. Vozačima savjetujemo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. Pojačan je promet na gradskim cestama i obilaznicama, a zastoji i kolone su u zonama radova, na Istarskom ipsilonu (A8) između čvora i tunela Učka te na pojedinim dionicama Ličke (DC1) i Jadranske magistrale (DC8). IZVANREDNI PROMETNI DOGAĐAJI: pješak na autocesti A3 Bregana-Lipovac između čvorova Okučani i Novska (134.km) u smjeru Bregane. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h predmet na autocesti A7 između čvorova Hrel…"
+  "updated": "15.6.2026. 19:59",
+  "text": "Kolnici su mjestimice mokri i skliski. Na cestama u gorju i duž Jadranske magistrale (DC8) veća je opasnost od odrona. Pozivamo vozače da brzinu i način vožnje prilagode trenutačnim uvjetima i pripaze na siguran razmak između vozila. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 između čvora Bisko i čvora Blato na Cetini (402+200 km) u smjeru Dubrovnika. Vozi se jednim trakom uz ograničenje brzine od 40 km/h opasnost je od naleta na divljač (srna) na autocesti A7 između čvora Rijeka istok i čvor…"
  },
  {
   "title": "Granični prijelazi",

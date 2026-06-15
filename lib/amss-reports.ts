@@ -2,6 +2,30 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "NR Novi Sad Istok - Obustava",
+  "text": "Od 16. 6. do 16. 7. 2026. u toku svetlog dela dana, izvodiće se radovi u fazama na rehabilitaciji kolovoza, na državnom putu I A reda broj 1, na deonici Novi Sad istok petlja Kovilj, u smeru ka Beogradu. Radovi će se izvoditi u sve 3 saobraćajne trake u smeru ka Beogradu i saobraćaj će biti službenim prolazima preusmeren u preticajnu saobraćajnu traku smera ka Subotici, dok će se saobraćaj u smeru ka Subotici odvijati voznom i zaustavnom saobraćajnom trakom. Tokom prve faze radova, u smeru ka Be…"
+ },
+ {
+  "title": "Boturići- Vitkovo, OBUSTAVA na mostu preko Kožetinske reke",
+  "text": "Od 8. 5. do 1. 11. 2026. saobraćaj će biti obustavljen zgog radova na popravci mosta preko Kožetinske reke na državnom putu II A reda broj 207, deonica Boturići Vitkovo. Alternativni putni pravac tokom obustave za vozila preko 3,5 tona su: državni putII A reda broj 207 (Vitkovo), državni put II A reda broj 208 (Boturići) i državni put II A reda broj 211 (Brus). Od 6.5. do 8.5.2026. godine, izvršiće se postavljanje privremene saobraćajne signalizacije za potrebe izvođenja radova na popravci mosta…"
+ },
+ {
+  "title": "Markovac-Svilajnac obustava na mostu V.Morava",
+  "text": "Od 07.07.2025. godine, biće postavljena saobraćajna signalizacija i na snazi će biti obustava saobraćaja na deonici državnog puta I B reda broj 27, petlja Markovac - Svilajnac, na mostu preko Velike Morave. Saobraćaj će se preusmeravati na alternativne putne pravce, i to: - za vozila koja se kreću iz pravca Beograda, državni put II A reda broj 147, petlja Velika Plana Žabari, zatim državni put II A reda broj 160, Žabari - Svilajnac, - za vozila koja se kreću iz pravca Niša, državni put II A reda…"
+ },
+ {
+  "title": "Od petlje Požarevac ka Požarevcu, obustava saobraćaja",
+  "text": "Obustava saobraćaja od 5. 5. 2025. od 14 č na državnom putu I B reda broj 33, neposredno nakon naplatne stanice Požarevac, zbog izvođenja radova na izgradnji brze saobraćajnice, državni put I M reda broj 7 (državni put I A reda broj 1, Beograd - Niš (petlja Požarevac) - Požarevac (obilaznica) - Veliko Gradište Golubac ). Tokom izvođenja radova saobraćaj će biti preusmeren na državni put I B reda broj 14 - put ka Smederevu, a zatim preko lokalnog puta ka Vranovu i dalje lokalnim putem ka Maloj Kr…"
+ },
+ {
+  "title": "Veliko Gradište-Makce, OBUSTAVA",
+  "text": "Obustava saobraćaja na državnom putu II A reda broj 162, na deonici Veliko Gradište Makce, neposredno nakon račvanja sa državnim putem I B reda broj 34, (nakon naselja Kusiće), zbog potreba izvođenja radova na izgradnji moto puta I M reda broj 7, deonica: državni put I A reda broj 1 (E-75) Beograd - Niš (petlja Požarevac) Požarevac (obilaznica) - Veliko Gradište - Golubac. Alternativni pravac je državni put II B reda broj 374, Miljević Donja Kruševica Braničevo Kusiće. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Orlovat, most preko reke Tamiš, OBUSTAVA",
+  "text": "Od 21.03.2020. godine na snazi je obustava saobraćaja zbog radova na redovnom održavanju, na državnom putu II A reda broj 130, most preko reke Tamiš, kod mesta Orlovat. Alternativni putni pravci za vozila koja se kreću iz pravca Zrenjanina i Perleza ka Tomaševcu, Uzdinu i Kovačice preko mesta Orlovat, upućuju se na državni put II A reda broj 129, Farkaždin -Kovačica, a vozila koja se kreću iz pravca Padine i Kovačice ka mestu Orlovat, i dalje prema Zrenjaninu, upućuju se na državni put II A reda…"
+ },
+ {
   "title": "1GP HORGOŠ SRBIJA MAĐARSKA AP A1, E-75",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima : 1. Izlaz iz Srbije - oko 90 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vreme potrebno za prolaz i …"
  },
@@ -216,29 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Ćičevac- naplatna rampa, radovi",
   "text": "Od 9. 6. do 16. 6. 2026. u toku svetlog dela dana, izvodiće se radovi na sanaciji betonskog kolovoza (rigidnog kolovoza), na državnom putu I A reda broj 5, na naplatnoj stanici Ćićevac, u oba smera. Tokom izvođenja radova, za saobraćaj će biti zatvoren po jedan naplatni kanal po smeru. Ostali naplatni kanali funkcionisaće u redovnom režimu. Izvor: Putevi Srbije"
- },
- {
-  "title": "Novi Beograd (Vojvođanska ulica) - petlja Surčin jug, radovi",
-  "text": "Od 9. 6. do 4. 8. 2026. izmenjen je režim saobraćaja zbog radova na rehabilitaciji kolovoza mosta na državnom putu II B reda broj 475 deonica Novi Beograd (Vojvođanska ulica) - petlja Surčin jug. Tokom izvođenja radova , za saobraćaj su zatvorene saobraćajne trake uz razdelno ostrvo. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petlja Vrnjačka banja, radovi",
-  "text": "Od 10. 6. 2026.godine izvodiće se radovi na sečenju asfalta i ugradnji asfalta na petlji Vrnjačka Banja i pristupnim putevima. Za vreme izvođenja radova petlja Vrnjačka Banja i pristupni putevi biće privremeno zatvoreni za saobraćaj motornih vozila. Vozila koja idu za Vrnjačku banju će se usmeravati na naplatnu stanicu Trstenik ili na naplatnu stanicu Vrba. Radovi će biti obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom i trajaće 21 dan, ukoliko vremenski uslovi to dozvole…"
- },
- {
-  "title": "Pakovraće-Požega, tunel Laz, radovi",
-  "text": "Od 12. 6. do 18. 6. 2026. godine izvodiće se radovi u desnoj tunelskoj cevi tunela Laz, na državnom putu I A reda broj 2, na deonici Pakovraće Požega. Tokom izvođenja radova, za saobraćaj će biti zatvorena desna tunelska cev (smer ka Beogradu), dok će se saobraćaj odvijati dvosmerno kroz levu tunelsku cev, uz korišće službenih prolaza. Izvor Putevi Srbije"
- },
- {
-  "title": "Petlja Nova Pazova- Novi Banovci, radovi",
-  "text": "Od 8. 6. 2026. godine, od 11 časova, do 18. 6. 2026. godine, izvodiće se radovi u razdelnom pojasu i preticajnoj saobraćajnoj traci, na državnom putu I A reda broj 1, na deonici Nova Pazova Novi Banovci (od km 165+740 do km 168+750), u smeru ka Beogradu. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka, dok će se saobraćaj odvijati u voznoj i zaustavnoj saobraćajnoj traci. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petlja Kruševac zapad, radovi",
-  "text": "Od 9.6.2026.godine izvoditi radovi na državnom putu I A reda broj 5 Petlja Kruševac Zapad Rampa 1 i nadvožnjak (desna strana), u pravcu ka Vrnjačkoj Banji. Za vreme izvođenja radova biće zatvorena naplatna stanica Kruševac Zapad u pravcu ka Vrbi. Vozila će se usmeravati na najbližu naplatnu stanicu Koševi. Izvor: Putevi Srbije"
- },
- {
-  "title": "Kovilovo-Beograd, radovi",
-  "text": "Dana 7.6. i 8.6.2026.godine, u periodu od 7 do 17 časova, izvoditi radovi na zameni oštećene zaštitne ograde na deonici petlja Kovilovo - Beograd (štamparija), u smeru ka Kovilovu. U zoni radova za saobraćaj će biti zatvorena leva saobraćajna traka u dužini od 100 metara, dok će se saobraćaj odvijati srednjom i desnom saobraćajnom trakom. Izvor. Putevi Srbije"
  }
 ];
