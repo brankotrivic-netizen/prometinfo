@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.6.2026. 19:59",
-  "text": "Kolnici su mjestimice mokri i skliski. Na cestama u gorju i duž Jadranske magistrale (DC8) veća je opasnost od odrona. Pozivamo vozače da brzinu i način vožnje prilagode trenutačnim uvjetima i pripaze na siguran razmak između vozila. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 između čvora Bisko i čvora Blato na Cetini (402+200 km) u smjeru Dubrovnika. Vozi se jednim trakom uz ograničenje brzine od 40 km/h opasnost je od naleta na divljač (srna) na autocesti A7 između čvora Rijeka istok i čvor…"
+  "updated": "15.6.2026. 21:51",
+  "text": "Kolnici su mjestimice mokri i skliski. Na cestama u gorju i duž Jadranske magistrale (DC8) veća je opasnost od odrona. Pozivamo vozače da brzinu i način vožnje prilagode trenutačnim uvjetima i pripaze na siguran razmak između vozila. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 između na čvoru Prgomet u smjeru Dubrovnika, vozi se uz ograničenje brzine od 40 km/h. pješak na autocesti A1 na 355+000 km između čvora Prgomet i čvora Vučevica u smjeru Dubrovnika. od 16. do 20. lipnja od 07:00 do 17:0…"
  },
  {
   "title": "Granični prijelazi",
