@@ -210,16 +210,8 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 12. 6. 2026. godine, od 9 časova, do 20. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radovi na redovnom održavanju pranje desne tunelske cevi, , na deonici petlja Predejane petlja Vladičin Han, u tunelu Manajle, smer ka Vranju. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka desne tunelske cevi, dok će se saobraćaj odvijati voznom saobraćajnom trakom. Izvor Putevi Srbije"
  },
  {
-  "title": "Mokroluško brdo, radovi",
-  "text": "Od 15. 6. 2026. godine, od 11 časova, do 10. 7. 2026. godine, do 16 časova, izvodiće se radovi na instalacijama javnog osvetljenja, na državnom putu I M reda broj 11, na deonici petlja Lasta - petlja Bubanj Potok, Mokroluško brdo, u smeru ka Beogradu (Faza 3) . U zoni radova za saobraćaj će biti zatvorena krajnja desna saobraćajna traka. Saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvbor: Putevi Srbije"
- },
- {
   "title": "Sremska Mitrovica- Ruma, radovi",
   "text": "Od 11. 6. od 14 časova do 22. 6. 2026. izvodiće se radovi na rehabilitaciji kolovoza na državnom putu I A reda broj 3, deonica Sremska Mitrovica - Ruma, u smeru ka Beogradu. U zoni radova, za saobraćaj će biti zatvorena kolovozna traka u smeru ka Beogradu i saobraćaj će se odvijati dvosmerno na levoj kolovoznoj traci u smeru ka šidu, na sledeći način: -U smeru ka Beogradu - saobraćaj će se odvijati preticajnom saobraćajnom trakom -U smeru ka šidu saobraćaj će se odvijati voznom i zaustavnom saob…"
- },
- {
-  "title": "Novi Sad - Centar, radovi na petlji OBUSTAVA",
-  "text": "Od 10. 6. 2026. od 12 č, do 15. 6. 2026. do 12 č, ukoliko vremenski uslovi dozvole, izvoditi radovi na autoputu drž.putu IA reda br.1, na petlji Novi Sad Centar, na rehabilitaciji kolovoza leve servisne saobraćajnice, u smeru ka Subotici. Na petlji Novi Sad Centar, u smeru Beograd Subotica, za saobraćaj će biti zatvorena isključenja sa državnog puta I A reda br. 1, ka Novom Sadu i Temerinu, i uključenje na državni put I A reda broj 1, ka Subotici. Aleternativa: -za isključenje ka Novom Sadu je p…"
  },
  {
   "title": "Ćičevac- naplatna rampa, radovi",
@@ -240,5 +232,13 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Nova Pazova- Novi Banovci, radovi",
   "text": "Od 8. 6. 2026. godine, od 11 časova, do 18. 6. 2026. godine, izvodiće se radovi u razdelnom pojasu i preticajnoj saobraćajnoj traci, na državnom putu I A reda broj 1, na deonici Nova Pazova Novi Banovci (od km 165+740 do km 168+750), u smeru ka Beogradu. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka, dok će se saobraćaj odvijati u voznoj i zaustavnoj saobraćajnoj traci. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Petlja Kruševac zapad, radovi",
+  "text": "Od 9.6.2026.godine izvoditi radovi na državnom putu I A reda broj 5 Petlja Kruševac Zapad Rampa 1 i nadvožnjak (desna strana), u pravcu ka Vrnjačkoj Banji. Za vreme izvođenja radova biće zatvorena naplatna stanica Kruševac Zapad u pravcu ka Vrbi. Vozila će se usmeravati na najbližu naplatnu stanicu Koševi. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Kovilovo-Beograd, radovi",
+  "text": "Dana 7.6. i 8.6.2026.godine, u periodu od 7 do 17 časova, izvoditi radovi na zameni oštećene zaštitne ograde na deonici petlja Kovilovo - Beograd (štamparija), u smeru ka Kovilovu. U zoni radova za saobraćaj će biti zatvorena leva saobraćajna traka u dužini od 100 metara, dok će se saobraćaj odvijati srednjom i desnom saobraćajnom trakom. Izvor. Putevi Srbije"
  }
 ];
