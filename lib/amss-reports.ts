@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Požarevac-Veliko Gradište, radovi",
+  "text": "Od 17. 6. 2026. biće izmenjen saobraćaja na drž. putu I B reda br. 34, Požarevac Veliko Gradište, u zoni skretanja za Babušinac, na sledeći način: - sa drž.puta IB reda broj 34 kod Požarevca, vozila će se preusmeravati na novoizgrađenu deonicu drž. puta IM reda broj 7, do kružne raskrsnice, gde će se upućivati desno ka Velikom Gradištu, a levo ka Babušincu; - od Velikog Gradišta, vozila će se nakon skretanja za Bratinac upućivati desno na kružnu raskrsnicu novoizgrađene trase državnog puta I M r…"
+ },
+ {
   "title": "Petlja Jagodina- petlja Ćuprija, kod mesta Mijatovac",
   "text": "Od 17. 6. od 7 časova, do 23. 6. 2026. do 16 časova, izvodiće se radovi na sanaciji kolovoza, na državnom putu I A reda broj 1, deonica petlja Jagodina petlja Ćuprija, kod Mijatovca, u smeru ka Nišu. Za saobraćaj će biti zatvorene vozna i izlivno-ulivne trake benzinske stanice EKO Petrol, dok će se saobraćaj odvijati preticajnom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Kumanica-Kamenjača, radovi",
   "text": "U toku su radovi na rekonstrukciji državnog puta II A reda broj 197, deonica Kumanica-Kamenjača, u dužini 3,5km, koji obuhvataju i radove na izgradnji 4 nova mosta. Saobraćaj se na jednom delu puta odvija devijacijom, pri čemu je zabranjen saobraćaj za kamione sa prikolicom. Radovi su obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
- },
- {
-  "title": "Prijepolje- Brodarevo, mesto Točilovo klizište",
-  "text": "Produžava se izmena režima saobraćaja usled pojave klizišta na državnom putu I B reda broj 23, na deonici Brodarevo Gostun u mestu Točilovo Saobraćaj se odvija naizmeničnim propuštanjem vozila i regulisan je saobraćajnim znakovima. Izvor: Putevi Srbije"
  }
 ];
