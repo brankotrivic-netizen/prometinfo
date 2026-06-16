@@ -91,6 +91,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog sanacije kolovoza, saobraća se usporeno, jednom trakom uz postavljenu signalizaciju u vremenu od 07:00 do 16:00 sati."
    },
    {
+    "title": "Banja Luka-Čađavica (dionica Kola-Stričići)",
+    "text": "Zbog bojevog gađanja u utorak i srijedu (16. i 17.06.2026.) od 08 do 16 sati doći će do obustave saobraćaja na cesti Banja Luka-Čađavica (dionici od naselja Kola do naselja Stričići)."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
