@@ -54,10 +54,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 11. 6. od 14 časova do 22. 6. 2026. izvodiće se radovi na rehabilitaciji kolovoza na državnom putu I A reda broj 3, deonica Sremska Mitrovica - Ruma, u smeru ka Beogradu. U zoni radova, za saobraćaj će biti zatvorena kolovozna traka u smeru ka Beogradu i saobraćaj će se odvijati dvosmerno na levoj kolovoznoj traci u smeru ka šidu, na sledeći način: -U smeru ka Beogradu - saobraćaj će se odvijati preticajnom saobraćajnom trakom -U smeru ka šidu saobraćaj će se odvijati voznom i zaustavnom saob…"
  },
  {
-  "title": "Ćičevac- naplatna rampa, radovi",
-  "text": "Od 9. 6. do 16. 6. 2026. u toku svetlog dela dana, izvodiće se radovi na sanaciji betonskog kolovoza (rigidnog kolovoza), na državnom putu I A reda broj 5, na naplatnoj stanici Ćićevac, u oba smera. Tokom izvođenja radova, za saobraćaj će biti zatvoren po jedan naplatni kanal po smeru. Ostali naplatni kanali funkcionisaće u redovnom režimu. Izvor: Putevi Srbije"
- },
- {
   "title": "Novi Beograd (Vojvođanska ulica) - petlja Surčin jug, radovi",
   "text": "Od 9. 6. do 4. 8. 2026. izmenjen je režim saobraćaja zbog radova na rehabilitaciji kolovoza mosta na državnom putu II B reda broj 475 deonica Novi Beograd (Vojvođanska ulica) - petlja Surčin jug. Tokom izvođenja radova , za saobraćaj su zatvorene saobraćajne trake uz razdelno ostrvo. Izvor: Putevi Srbije"
  },
@@ -124,10 +120,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Pančevo, radovi na mostu preko Tamiša",
   "text": "Do 8. 6. 2026. godine, u periodu od 8 do 16 časova, ukoliko vremenski uslovi dozvole, na državnom putu I B reda broj 13, na deonici Luka Pančevo šljunkara , u dužini od oko 2,6 km, obustavljen saobraćaj u kolovoznoj traci za smer Pančevo Beograd, zbog izvođenja radova. Saobraćaj iz smera Pančevo Beograd se preusmerava na suprotnu kolovoznu traku, odnosno na traku za smer Beograd Pančevo, na kojoj se saobraćaj odvija dvosmerno. Preusmerenje saobraćaja izvršeno je na službenom prolazu Luka (Pančev…"
- },
- {
-  "title": "Bor-Crni Vrh, radovi",
-  "text": "Dana 30. 5. 2026. i 1. 6. 2026. godine, biće izmenjen režim saobraćaja zbog vangabaritnog transporta elise vetrogeneratora na deonici Bor Crni Vrh, državni put I B reda broj 37, ulica Nade Dimić skretanje za Brestovačku Banju - državni put II A reda broj 161, Brestovac, Borsko jezero, Elektroistok na Crnom Vrhu. Tokom vršenja transporta, saobraćaj će se odvijati naizmeničnim propuštanjem vozila, uz asistenciju saobraćajne policije. Izvor: Putevi Srbije"
  },
  {
   "title": "Petlja Surčin jug -petlja Ostružnica, petlja Ekspo, radovi",
@@ -240,5 +232,13 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Kumanica-Kamenjača, radovi",
   "text": "U toku su radovi na rekonstrukciji državnog puta II A reda broj 197, deonica Kumanica-Kamenjača, u dužini 3,5km, koji obuhvataju i radove na izgradnji 4 nova mosta. Saobraćaj se na jednom delu puta odvija devijacijom, pri čemu je zabranjen saobraćaj za kamione sa prikolicom. Radovi su obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Prijepolje- Brodarevo, mesto Točilovo klizište",
+  "text": "Produžava se izmena režima saobraćaja usled pojave klizišta na državnom putu I B reda broj 23, na deonici Brodarevo Gostun u mestu Točilovo Saobraćaj se odvija naizmeničnim propuštanjem vozila i regulisan je saobraćajnim znakovima. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Mijoska- granica SRB-CG",
+  "text": "Na snazi je izmena režima saobraćaja do 30.06.2026. godine, zbog izvođenja radova na sanaciji nestabilne kamene kosine na državnom putu I B reda broj 23, deonica Mijoska državna granica SRB/CG (Gostun) na km 250+447. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
  }
 ];
