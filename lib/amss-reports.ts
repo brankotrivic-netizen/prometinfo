@@ -14,10 +14,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 18. 6. 2026. do 25. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radi radovi na obeležavanju horizontalne signalizacije na delu auto-puta između petlje Kovilj i Novi Sad jug, u smeru ka Novom Sadu. Radovi će se izvoditi u pokretu, a saobraćaj će se odvijati slobodnom sabraćajnom trakom. Izvor: Putevi Srbije"
  },
  {
-  "title": "Petlja Niš istok - OBUSTAVA",
-  "text": "U sredu 17. 6. 2026. u periodu od 8 do 17 č, izvodiće se radovi na rekonstrukciji kolovoznog zastora na delu državnog puta I A reda broj 4, na petlji Niš istok, u smeru Niš - Pirot.Tokom izvođenja radova za saobraćaj će biti zatvorena isključna traka na petlji Niš Istok u smeru ka Pirotu, kao i uključenje na državni put I A reda broj 4, iz smera bočne naplatne stanice Niš Istok ka Pirotu. Vozači koji imaju za cilj putovanja bočnu naplatnu stanicu Niš Istok, iz smera Niša ka Pirotu, adekvatnom sa…"
- },
- {
   "title": "petlja Leskovac (obilaznica) - Oraovica, radovi",
   "text": "Od 17. 6. do 19. 6. 2026. godine, u periodu od 7 do 17 časova, izvode se radovi na redovnom održavanju na državnom putu II A reda broj 258, petlja Leskovac centar - Oraovica. Tokom izvođenja radova saobraćaj je regulisan naizmeničnim propuštanjem vozila, uz pomoć mahača i semafora. Izvor: Putevi Srbije"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Valjevo-Iverak radovi na obilaznici i kružnoj raskrsnici",
   "text": "OD 2.12. 2025. izvodiće se radovi na državnom putu I B reda broj 27, deonica Valjevo (obilaznica) - Iverak, na delu četvorokrake semaforisane raskrsnice u smeru od Valjeva ka Lajkovcu. Izmenom režima saobraćaja u fazi II, predviđeni su radovi u središnjem delu zone raskrsnice. Iz oba pravca kretanja se zatvara traka za levo skretanje kao i po jedna traka za kretanje pravo. U samoj zoni raskrsnice učesnicima se zabranjuju leva skretanja, dok se sa prilaznih krakova učesnici obavezuju na desno kre…"
+ },
+ {
+  "title": "Kumanica-Kamenjača, radovi",
+  "text": "U toku su radovi na rekonstrukciji državnog puta II A reda broj 197, deonica Kumanica-Kamenjača, u dužini 3,5km, koji obuhvataju i radove na izgradnji 4 nova mosta. Saobraćaj se na jednom delu puta odvija devijacijom, pri čemu je zabranjen saobraćaj za kamione sa prikolicom. Radovi su obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
  }
 ];
