@@ -2,6 +2,14 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Niš istok - OBUSTAVA",
+  "text": "U sredu 17. 6. 2026. u periodu od 8 do 17 č, izvodiće se radovi na rekonstrukciji kolovoznog zastora na delu državnog puta I A reda broj 4, na petlji Niš istok, u smeru Niš - Pirot.Tokom izvođenja radova za saobraćaj će biti zatvorena isključna traka na petlji Niš Istok u smeru ka Pirotu, kao i uključenje na državni put I A reda broj 4, iz smera bočne naplatne stanice Niš Istok ka Pirotu. Vozači koji imaju za cilj putovanja bočnu naplatnu stanicu Niš Istok, iz smera Niša ka Pirotu, adekvatnom sa…"
+ },
+ {
+  "title": "petlja Leskovac (obilaznica) - Oraovica, radovi",
+  "text": "Od 17. 6. do 19. 6. 2026. godine, u periodu od 7 do 17 časova, izvode se radovi na redovnom održavanju na državnom putu II A reda broj 258, petlja Leskovac centar - Oraovica. Tokom izvođenja radova saobraćaj je regulisan naizmeničnim propuštanjem vozila, uz pomoć mahača i semafora. Izvor: Putevi Srbije"
+ },
+ {
   "title": "Požarevac-Veliko Gradište, radovi",
   "text": "Od 17. 6. 2026. biće izmenjen saobraćaja na drž. putu I B reda br. 34, Požarevac Veliko Gradište, u zoni skretanja za Babušinac, na sledeći način: - sa drž.puta IB reda broj 34 kod Požarevca, vozila će se preusmeravati na novoizgrađenu deonicu drž. puta IM reda broj 7, do kružne raskrsnice, gde će se upućivati desno ka Velikom Gradištu, a levo ka Babušincu; - od Velikog Gradišta, vozila će se nakon skretanja za Bratinac upućivati desno na kružnu raskrsnicu novoizgrađene trase državnog puta I M r…"
  },
@@ -232,13 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Kumanica-Kamenjača, radovi",
   "text": "U toku su radovi na rekonstrukciji državnog puta II A reda broj 197, deonica Kumanica-Kamenjača, u dužini 3,5km, koji obuhvataju i radove na izgradnji 4 nova mosta. Saobraćaj se na jednom delu puta odvija devijacijom, pri čemu je zabranjen saobraćaj za kamione sa prikolicom. Radovi su obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
- },
- {
-  "title": "Prijepolje- Brodarevo, mesto Točilovo klizište",
-  "text": "Produžava se izmena režima saobraćaja usled pojave klizišta na državnom putu I B reda broj 23, na deonici Brodarevo Gostun u mestu Točilovo Saobraćaj se odvija naizmeničnim propuštanjem vozila i regulisan je saobraćajnim znakovima. Izvor: Putevi Srbije"
- },
- {
-  "title": "Mijoska- granica SRB-CG",
-  "text": "Na snazi je izmena režima saobraćaja do 30.06.2026. godine, zbog izvođenja radova na sanaciji nestabilne kamene kosine na državnom putu I B reda broj 23, deonica Mijoska državna granica SRB/CG (Gostun) na km 250+447. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
  }
 ];

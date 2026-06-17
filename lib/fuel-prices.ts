@@ -133,9 +133,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Islandija",
   "flag": "🇮🇸",
-  "p95": "227,437 ISK (1,57 EUR)",
+  "p95": "227,437 ISK (1,58 EUR)",
   "p98": "",
-  "diesel": "258,051 ISK (1,78 EUR)",
+  "diesel": "258,051 ISK (1,79 EUR)",
   "date": "16. 6. 2026"
  },
  {
@@ -309,7 +309,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Švica",
   "flag": "🇨🇭",
-  "p95": "1,921 CHF (2,09 EUR)",
+  "p95": "1,921 CHF (2,08 EUR)",
   "p98": "",
   "diesel": "2,075 CHF (2,25 EUR)",
   "date": "16. 6. 2026"
