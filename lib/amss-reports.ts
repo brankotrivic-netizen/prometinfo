@@ -2,6 +2,18 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Koševi – petlja Vrnjačka Banja, radovi",
+  "text": "Od 20. 6. do 27. 6. 2026. godine, izvodiće se radovi na montaži pešačke ograde u razdelnom pojasu na mostovima na deonici petlja Koševi petlja Vrnjačka Banjau oba smera. U zoni radova, na mostovima, deo kolovoza uz razdelni pojas na levoj kolovoznoj traci biće zatvoren u dužini od 100 metara, dok će se saobraćaj odvijati voznom i zaustavnom saobraćajnom trakom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Tunel Manajle,radovi",
+  "text": "Od 18. 6. 2026. godine, od 8 časova, do 22. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radovi na redovnom održavanju pranje leve cevi tunela Manajle,na deonici petlja Vladičin Han - petlja Predejane, smer ka Nišu. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka desne tunelske cevi, dok će se saobraćaj odvijati voznom saobraćajnom trakom. Izvor Putevi Srbije"
+ },
+ {
+  "title": "Petlja Novi Sad Jug - Kovilj, radovi",
+  "text": "Od 18. 6. 2026. do 25. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radi radovi na obeležavanju horizontalne signalizacije na delu auto-puta između petlje Kovilj i Novi Sad jug, u smeru ka Novom Sadu. Radovi će se izvoditi u pokretu, a saobraćaj će se odvijati slobodnom sabraćajnom trakom. Izvor: Putevi Srbije"
+ },
+ {
   "title": "Petlja Niš istok - OBUSTAVA",
   "text": "U sredu 17. 6. 2026. u periodu od 8 do 17 č, izvodiće se radovi na rekonstrukciji kolovoznog zastora na delu državnog puta I A reda broj 4, na petlji Niš istok, u smeru Niš - Pirot.Tokom izvođenja radova za saobraćaj će biti zatvorena isključna traka na petlji Niš Istok u smeru ka Pirotu, kao i uključenje na državni put I A reda broj 4, iz smera bočne naplatne stanice Niš Istok ka Pirotu. Vozači koji imaju za cilj putovanja bočnu naplatnu stanicu Niš Istok, iz smera Niša ka Pirotu, adekvatnom sa…"
  },
@@ -54,10 +66,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 13. 6. 2026. do 23. 6. 2026. godine, izvode radovi na sanaciji rigidnog kolovoza, na državnom putu I A reda broj 5, na naplatnoj stanici Trstenik, u oba smera. Tokom izvođenja radova, doći će do zatvaranja jednog kanala naplatne stanice, dok će se saobraćaj odvijati slobodnim kanalima. Izvor : Putevi Srbije"
  },
  {
-  "title": "Tunel Manajle,radovi",
-  "text": "Od 12. 6. 2026. godine, od 9 časova, do 20. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radovi na redovnom održavanju pranje desne tunelske cevi, , na deonici petlja Predejane petlja Vladičin Han, u tunelu Manajle, smer ka Vranju. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka desne tunelske cevi, dok će se saobraćaj odvijati voznom saobraćajnom trakom. Izvor Putevi Srbije"
- },
- {
   "title": "Sremska Mitrovica- Ruma, radovi",
   "text": "Od 11. 6. od 14 časova do 22. 6. 2026. izvodiće se radovi na rehabilitaciji kolovoza na državnom putu I A reda broj 3, deonica Sremska Mitrovica - Ruma, u smeru ka Beogradu. U zoni radova, za saobraćaj će biti zatvorena kolovozna traka u smeru ka Beogradu i saobraćaj će se odvijati dvosmerno na levoj kolovoznoj traci u smeru ka šidu, na sledeći način: -U smeru ka Beogradu - saobraćaj će se odvijati preticajnom saobraćajnom trakom -U smeru ka šidu saobraćaj će se odvijati voznom i zaustavnom saob…"
  },
@@ -104,10 +112,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Kružni tok Vrba - Vitanovac , radovi",
   "text": "Do 1. 8. 2026. godine, zbog izvođenja radova na izgradnji dela (E-761), došlo je do zatvaranja državnog puta I B reda broj 24, od skretanja sa državnog puta I B reda broj 23, i saobraćaj je preusmeren na kružni tok Vrba (I B reda broj 23) i Vitanovac (I B reda broj 24), u smeru ka Kragujevcu. Kruševac - Kraljevo normalno odvijanje saobraćaja. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petlja Koševi – petlja Vrnjačka Banja, radovi",
-  "text": "Do 15.6.2026. godine, izvode radovi na nivelaciji šahtova na državnom putu I A reda broj 5, na deonici petlja Koševi-petlja Vrnjačka Banja (od km 27+800 do km 57+400 ), u oba smera. Tokom izvođenja radova zaustavna saobraćajna traka je zatvorena u dužini od 100 m, dok se saobraćaj odvija voznom i preticajnom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
  {
   "title": "Petlja Ruma- petlja Drenovac, radovi na moto- putu",
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Valjevo-Iverak radovi na obilaznici i kružnoj raskrsnici",
   "text": "OD 2.12. 2025. izvodiće se radovi na državnom putu I B reda broj 27, deonica Valjevo (obilaznica) - Iverak, na delu četvorokrake semaforisane raskrsnice u smeru od Valjeva ka Lajkovcu. Izmenom režima saobraćaja u fazi II, predviđeni su radovi u središnjem delu zone raskrsnice. Iz oba pravca kretanja se zatvara traka za levo skretanje kao i po jedna traka za kretanje pravo. U samoj zoni raskrsnice učesnicima se zabranjuju leva skretanja, dok se sa prilaznih krakova učesnici obavezuju na desno kre…"
- },
- {
-  "title": "Kumanica-Kamenjača, radovi",
-  "text": "U toku su radovi na rekonstrukciji državnog puta II A reda broj 197, deonica Kumanica-Kamenjača, u dužini 3,5km, koji obuhvataju i radove na izgradnji 4 nova mosta. Saobraćaj se na jednom delu puta odvija devijacijom, pri čemu je zabranjen saobraćaj za kamione sa prikolicom. Radovi su obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
  }
 ];

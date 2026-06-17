@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.6.2026. 11:12",
-  "text": "Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A1 između čvorova Benkovac i Zadar istok, na 278.+100 km u smjeru Zagreba, vozi se jednim trakom usporeno prometna nesreća na državnoj cesti DC126 na otoku Čiovu - promet je u prekidu u između mjesta Arbanija i Slatine (u Ulici Bana Jelačića kod kućnog broja 193) zbog prolaska izvanrednog prijevoza na državnoj cesti DC23 između Senja i Žute Lokve, vozi se usporeno A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica iz…"
+  "updated": "17.6.2026. 13:59",
+  "text": "Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: - A1 Zagreb-Ploče-Karamatići d o 19. lipnja zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (izlaz sa autoceste A1)-DC220-ŽC6260-ŽC6145-DC1-Dugopolje/Split. Na naplatnoj postaji Dugopolje moguće se uključiti na autocestu A1 u smjeru Zagreba ili nastaviti državnom cestom DC1 prema ulazu u grad Split. Na čvoru Bisko nije moguće uključenje na autocestu A1 u smjeru Zagreba. Između 377.+500 km i čvora Split u smjeru Dubrovnika …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "17.6.2026. 10:49",
+  "updated": "17.6.2026. 13:59",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "17.6.2026. 10:49",
+  "updated": "17.6.2026. 13:59",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split - Hvar - Korčula isplovljenjem iz luke Split u 12:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet p…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "17.6.2026. 10:49",
+  "updated": "17.6.2026. 13:59",
   "text": "Stanje u željezničkom putničkom prometu 17. lipnja 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Novi Marof i Varaždin na pruzi Zaprešić – Čakovec - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloštar i Koprivnica te između kolodvora Osijek i Bizovac na pruzi Koprivnica – Dalj -…"
  },
  {

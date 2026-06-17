@@ -5,34 +5,22 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "label": "Autoceste",
   "items": [
    {
-    "title": "Podlugovi-Sarajevo sjever",
-    "text": "Zbog izgradnje bukobrana na mjestu radova saobraća se preticajnom trakom."
-   },
-   {
     "title": "Kakanj-Lašva",
     "text": "Zbog izvođenja radova na sanaciji kolovoza na dionici autoceste A-1 Kakanj-Lašva, u dužini od 3 km zatvorena je lijeva strana autoceste. Za vrijeme radova vozila se usmjeravaju dvosmjerno-desnom stranom, smjer Lašva-Kakanj."
    },
    {
     "title": "Sarajevo zapad-Lepenica",
     "text": "Zbog izvođenja neophodnih radova na A-1 Sarajevo zapad-Lepenica, saobraćaj je preusmjeren u preticajnu traku."
+   },
+   {
+    "title": "Podlugovi-Sarajevo sjever",
+    "text": "Zbog izgradnje bukobrana na mjestu radova saobraća se preticajnom trakom."
    }
   ]
  },
  {
   "label": "Magistralne ceste",
   "items": [
-   {
-    "title": "Dobro Polje-Miljevina",
-    "text": "15. 05. 2026. godine - Kako smo upravo obaviješteni, od danas je počelo saobraćanje vozila do 3,5 tone na magistralnoj cesti Dobro Polje-Miljevina. Za vozila preko 3,5 tone i dalje je na snazi zabrana, pa moraju i dalje koristiti alternativne pravce."
-   },
-   {
-    "title": "Jablanica-Blidinje",
-    "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
-   },
-   {
-    "title": "Bihać-Cazin (u gradu Bihać)",
-    "text": "Zbog radova na izgradnji pješačke staze,saobraća se usporeno, naizmjeničnim propuštanjem vozila uz ručnu regulaciju saobraćaja."
-   },
    {
     "title": "M-4.3 Bužim-Brigovi",
     "text": "Zbog radova na sanaciji klizišta saobraća se usporeno, jednom trakom naizmjenično."
@@ -68,6 +56,18 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Lanište (Ključ-Bosanski Petrovac)",
     "text": "Zbog radova na redovnom održavanju na području Laništa na magistralnoj cesti Ključ-Bosanski Petrovac, na mjestu radova od 07 do 07 sati (osim vikenda) vozila saobraćaju naizmjenično, jednom trakom."
+   },
+   {
+    "title": "Jablanica-Blidinje",
+    "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
+   },
+   {
+    "title": "Dobro Polje-Miljevina",
+    "text": "15. 05. 2026. godine - Kako smo upravo obaviješteni, od danas je počelo saobraćanje vozila do 3,5 tone na magistralnoj cesti Dobro Polje-Miljevina. Za vozila preko 3,5 tone i dalje je na snazi zabrana, pa moraju i dalje koristiti alternativne pravce."
+   },
+   {
+    "title": "Bihać-Cazin (u gradu Bihać)",
+    "text": "Zbog radova na izgradnji pješačke staze,saobraća se usporeno, naizmjeničnim propuštanjem vozila uz ručnu regulaciju saobraćaja."
    },
    {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
