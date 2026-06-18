@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Vranje,radovi",
+  "text": "Dana 19.6.2026. godine, u periodu od 7 do 17 časova, izvodiće se radovi na sanaciji stubova portala za putokaznu signalizaciju na petlji Vranje, na sledećim lokacijama: na stacionaži km 538+760, smer Niš Preševo, na stacionaži 539+318, smer Preševo Niš. Radovi će se naizmenično izvoditi u zaustavnoj ili preticajnoj saobraćajnoj traci, a saobraćaj će biti preusmeren na slobodne saobraćajne trake. Izvor Putevi Srbije"
+ },
+ {
   "title": "Kljajićevo-Sivac, radovi",
   "text": "Od 20. 6. 2026. godine od 5 časova do 22. 6. 2026. godine do 5 časova, biće obustavljen saobraćaj zbog radova na rehabilitaciji kolovoza, na deonica Kljajićevo Sivac, od izlaza iz naselja Kljajićevo do ulaza u naselje Sivac. Tokom trajanja obustave, saobraćaj će se odvijati obilaznim putnim pravcem: Kljajićevo Bački Sokolac Bačka Topola Kula Crvenka Sivac. Izvor: Putevi Srbije"
  },
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Pećinci, radovi",
   "text": "Od 21. 2. 2026. godine, doći će do izmene režima saobraćaja u okviru radova na rekonstrukciji natputnjaka na petlji Pećinci na državnom putu A reda broj 3. Za saobraćaj će biti zatvorena leva kolovozna traka, dok će saobraćaj iz pravca Beograd - Šid biti preusmeren na desnu kolovoznu traku, gde će se odvijati dvosmerno. Za saobraćaj je zatvoreno isključenje na petlji Pećinci iz pravca Beograda i uključenje sa petlje Pećinci prema Sremskoj Mitrovici i Šidu. Obilazak za Pećince je preko petlje Šim…"
- },
- {
-  "title": "Valjevo-Iverak radovi na obilaznici i kružnoj raskrsnici",
-  "text": "OD 2.12. 2025. izvodiće se radovi na državnom putu I B reda broj 27, deonica Valjevo (obilaznica) - Iverak, na delu četvorokrake semaforisane raskrsnice u smeru od Valjeva ka Lajkovcu. Izmenom režima saobraćaja u fazi II, predviđeni su radovi u središnjem delu zone raskrsnice. Iz oba pravca kretanja se zatvara traka za levo skretanje kao i po jedna traka za kretanje pravo. U samoj zoni raskrsnice učesnicima se zabranjuju leva skretanja, dok se sa prilaznih krakova učesnici obavezuju na desno kre…"
  }
 ];
