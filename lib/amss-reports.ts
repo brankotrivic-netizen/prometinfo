@@ -2,6 +2,14 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Vlasotince -Grdelica, radovi",
+  "text": "Dana 20. 6. 2026. godine, u periodu od 7 do 17 časova, izvoditi radovi na sanaciji kolovoza na delu državnog puta II B reda broj 438, deonica Vlasotince Grdelica (veza sa državnim putem I A reda broj 1), od km 4+000 do km 5+000. Tokom izvođenja radova, saobraćaj će se odvijati naizmeničnim propuštanjem vozila regulisan mahačima i semaforima. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Irig-Ruma, radovi",
+  "text": "Od 19. 6. 2026. godine, doći će do izmene režima saobraćaja na državnom putu I B reda broj 21, na deonici Irig Ruma zbog radova u fazama na izgradnji brze saobraćajnice Novi Sad Ruma (Fruškogorski koridor). Saobraćaj će se odvijati preusmeravanjem vozila na levu servisnu saobraćajnicu prema postavljenoj saobraćajnoj signalizaciji. Izvor Putevi Srbije"
+ },
+ {
   "title": "Petlja Vranje,radovi",
   "text": "Dana 19.6.2026. godine, u periodu od 7 do 17 časova, izvodiće se radovi na sanaciji stubova portala za putokaznu signalizaciju na petlji Vranje, na sledećim lokacijama: na stacionaži km 538+760, smer Niš Preševo, na stacionaži 539+318, smer Preševo Niš. Radovi će se naizmenično izvoditi u zaustavnoj ili preticajnoj saobraćajnoj traci, a saobraćaj će biti preusmeren na slobodne saobraćajne trake. Izvor Putevi Srbije"
  },
@@ -232,13 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Glogonj-Jabuka, radovi",
   "text": "Od 5. 3. 2026. godine biće izmenjen režim saobraćaja na državnom putu Glogonj Jabuka, na km 0+000 do km 25+407. Izmena režima saobraćaja vrši se radi obezbeđivanja priključka gradilištu, a za potrebe izvođenja pripremnih radova na izgradnji auto-puta Beograd Zrenjanin Novi Sad, deonica 1: Beograd Zrenjanin. U zoni radova, saobraćaj će se odvijati shodno privremenoj saobraćajnoj signalizaciji i opremi. Na rastojanju od 100 m od nailaznog priključka postavljena je signalizacija ograničenje brzine …"
- },
- {
-  "title": "Petlja Aerodrom-petlja Bubanj Potok, u zoni petlje Autokomande, radovi",
-  "text": "Deonica petlja Aerodrom petlja Bubanj Potok, zbog izvođenja radova na redovnom održavanju - sanaciji stubova nadvožnjaka u zoni petlje Autokomanda, zauzeta krajnja desna saobraćajna traka, u smeru ka Novom Beogradu. Režim saobraćaja: Smer Niš Beograd: saobraćaj se odvija preticajnom saobraćajnom trakom i preticajnom saobraćajnom trakom suprotnog smera. Smer Beograd Niš : saobraćaj se odvija voznom saobraćajnom trakom i krajnjom desnom saobraćajnom trakom. Planirani rok za zavreštak radova je 24.…"
- },
- {
-  "title": "Petlja Pećinci, radovi",
-  "text": "Od 21. 2. 2026. godine, doći će do izmene režima saobraćaja u okviru radova na rekonstrukciji natputnjaka na petlji Pećinci na državnom putu A reda broj 3. Za saobraćaj će biti zatvorena leva kolovozna traka, dok će saobraćaj iz pravca Beograd - Šid biti preusmeren na desnu kolovoznu traku, gde će se odvijati dvosmerno. Za saobraćaj je zatvoreno isključenje na petlji Pećinci iz pravca Beograda i uključenje sa petlje Pećinci prema Sremskoj Mitrovici i Šidu. Obilazak za Pećince je preko petlje Šim…"
  }
 ];
