@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.6.2026. 18:36",
-  "text": "Vremenski uvjeti su povoljni za vožnju. Promet je pojačan na gradskim prometnicama i obilaznicama. Zastoji su povremeno u zonama radova, osobito na Istarskom ipsilonu između tunela i čvora Učka te na pojedinim dionicama Jadranske (DC8) i Ličke (DC1) magistrale. Molimo vozače za dodatan oprez i strpljenje te da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: teretno vozilo u kvaru na autocesti A3 Bregana-Lipovac na kraku 2 čvora Lučko u smjeru naplate Lučko - vozi se jednim prometnim trakom uz ograničenje brzine od 40 km/h vozilo u kvaru (osobno vozilo) u 10+500 km na autocesti A6 Rijeka-zagreb između tunela Veliki Gložac i čvora Vrbovsko u smjeru Rijeke - v…"
+  "updated": "18.6.2026. 20:34",
+  "text": "Vremenski uvjeti su povoljni za vožnju. Promet je pojačan na gradskim prometnicama i obilaznicama. Zastoji su povremeno u zonama radova, osobito na Istarskom ipsilonu između tunela i čvora Učka te na pojedinim dionicama Jadranske (DC8) i Ličke (DC1) magistrale. Molimo vozače za dodatan oprez i strpljenje te da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: životinja (pas) na autocesti A7 između tunela Jušići i čvora Jurdani - promet se vodi po dvije prometne trake, u oba smjera, uz ograničenje brzine od 60 km/h pješak na autocesti A3 Bregana-Lipovac između čvorova Novska i Okučani na 143. km u smjeru Lipovca - promet se vodi po dvije prometne trake uz ogra…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "18.6.2026. 18:36",
+  "updated": "18.6.2026. 20:27",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "18.6.2026. 18:37",
+  "updated": "18.6.2026. 20:27",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnik…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "18.6.2026. 18:37",
+  "updated": "18.6.2026. 20:27",
   "text": "Stanje u željezničkom putničkom prometu 18. lipnja 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Buzet i Lupoglav na pruzi državna granica – Buzet – Pula - između kolodvora Sisak i Greda na pruzi Velika Gorica – Sisak – Novska - između kolodvora Beli Manastir i Darda na pruzi državna granica – Beli Manastir – Osijek - između kolodvora Novi Marof i Varaždin na pruzi Zaprešić – Čakovec - između kolodvora Križ…"
  },
  {
