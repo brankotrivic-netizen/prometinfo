@@ -91,6 +91,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog sanacije kolovoza, saobraća se usporeno, jednom trakom uz postavljenu signalizaciju u vremenu od 07:00 do 16:00 sati."
    },
    {
+    "title": "Vučko trail 2026, SARAJEVO",
+    "text": "Zbog obilježavanja manifestacije \" Vučko trail 2026 \" od 19. do 21. juna, u periodu od 20 do 01 sat, dolazit će do etapnih/kratkotrajnih obustava saobraćaja na dionici regionalnog puta Babin do- Šabići."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
