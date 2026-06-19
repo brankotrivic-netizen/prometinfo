@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.6.2026. 13:42",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu između čvora i tunela Učka te na više dionica Ličke (DC1) i Jadranske (DC8) magistrale. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A6 između čvora Čavle i čvora Kikovica (76+500 km) u smjeru Zagreba. Vozi se uz ograničenje brzine od 60 km/h, jednim trakom. kolona vozila na autocesti A1 kod naplate Lučko u smjeru Zagreba duga je 1 km kolona na zagrebačkoj obilaznici (A3) zbog veće gustoće prometa na prilazu naplatnoj postaji Lučko iz smjera Buzina duga je 5 km zbog u…"
+  "updated": "19.6.2026. 15:48",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu između čvora i tunela Učka te na više dionica Ličke (DC1) i Jadranske (DC8) magistrale. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Ploče: prometna nesreća na 2+100 km u smjeru Dubrovnika, vozi se uz ograničenje brzine od 80 kmh pojačan je promet na ulasku na autocestu u Lučkom, u smjeru mora vozi se usporeno, u kolonama u pokretu i uz kraće zastoje na pojedinim dionicama do čvora Bosiljevo 2 kolona vozila kod naplate Lučko u smjeru Zagreba duga je 1 km vozilo u kvaru (osobno vozi…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "19.6.2026. 12:30",
-  "text": "Trajekti i katamarani plove prema plovidbenom redu. Izmjene u redu plovidbe: do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarod…"
+  "updated": "19.6.2026. 15:06",
+  "text": "Trajekti i katamarani plove prema plovidbenom redu. Izmjene u redu plovidbe: u subotu, 20.06.2026., na liniji 433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist/Kosirača trajekt će u polaznom putovanju iz luke Zadar/Gaženica u 11:00 sati po iskrcaju u luci Molat nastaviti za luku Ist/Kosirača. U povratnom putovanju trajekt će iz luke Ist/Kosirača isploviti u 15:20 sati, iz luke Molat u 16:40 sati, iz luke Zverinac u 17:10 sati, iz luke Sestrunj u 17:50 sati te iz luke Rivanj u 18:20 sati do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena kom…"
  },
  {
   "title": "Željeznički promet",
