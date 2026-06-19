@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.6.2026. 15:48",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu između čvora i tunela Učka te na više dionica Ličke (DC1) i Jadranske (DC8) magistrale. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Ploče: prometna nesreća na 2+100 km u smjeru Dubrovnika, vozi se uz ograničenje brzine od 80 kmh pojačan je promet na ulasku na autocestu u Lučkom, u smjeru mora vozi se usporeno, u kolonama u pokretu i uz kraće zastoje na pojedinim dionicama do čvora Bosiljevo 2 kolona vozila kod naplate Lučko u smjeru Zagreba duga je 1 km vozilo u kvaru (osobno vozi…"
+  "updated": "19.6.2026. 18:14",
+  "text": "Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama te pojedinim graničnim prijelazima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Ploče: pojačan je promet na ulasku na autocestu u Lučkom, u smjeru mora vozi se usporeno, u kolonama u pokretu i uz kraće zastoje na pojedinim dionicama do čvora Bosiljevo 2 A3 Bregana-Lipovac: prometna nesreća na 35. km između čvora Jakuševec i čvora Kosnica u smjeru Lipovca, vozi se uz ograničenje brzine od 80 km/h A7 Rupa-Rijeka-Žuta Lokva: zbog veće gustoće prometa na izlaznom kraku čvora Uč…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "19.6.2026. 13:44",
-  "text": "Zbog tehničkih problema na carinskom terminalu prekinut je promet na izlasku za teretna vozila na GP Bajakovo, kolona je duga 5 km. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi…"
+  "updated": "19.6.2026. 18:14",
+  "text": "Zbog tehničkih problema na carinskom terminalu prekinut je promet na izlasku za teretna vozila na GP Bajakovo, kolona je duga 6 km. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "19.6.2026. 15:06",
-  "text": "Trajekti i katamarani plove prema plovidbenom redu. Izmjene u redu plovidbe: u subotu, 20.06.2026., na liniji 433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist/Kosirača trajekt će u polaznom putovanju iz luke Zadar/Gaženica u 11:00 sati po iskrcaju u luci Molat nastaviti za luku Ist/Kosirača. U povratnom putovanju trajekt će iz luke Ist/Kosirača isploviti u 15:20 sati, iz luke Molat u 16:40 sati, iz luke Zverinac u 17:10 sati, iz luke Sestrunj u 17:50 sati te iz luke Rivanj u 18:20 sati do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena kom…"
+  "updated": "19.6.2026. 18:14",
+  "text": "Trajekti i katamarani plove prema plovidbenom redu. Izmjene u redu plovidbe: zbog tehničkog problema trajekt na liniji Mali Lošinj - Premuda - Silba - Olib - Ist - Zadar/Gaženica s polaskom iz luke Mali Lošinj u 16:00 u kašnjenju u subotu, 20.06.2026., na liniji 433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist/Kosirača trajekt će u polaznom putovanju iz luke Zadar/Gaženica u 11:00 sati po iskrcaju u luci Molat nastaviti za luku Ist/Kosirača. U povratnom putovanju trajekt će iz luke Ist/Kosirača isploviti u 15:20 sati, iz luke Molat u 16:40 sati, iz luke Zverinac u 17:10 sati, iz luke Sestrunj u 17:50 sati te iz luke Rivanj u 18:20 sati do 28. lipnja na trajektnoj liniji 636 Sp…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "19.6.2026. 12:31",
+  "updated": "19.6.2026. 18:14",
   "text": "Stanje u željezničkom putničkom prometu 19. lipnja 2026. u 8.00 sati Danas, 19. lipnja 2026. putnike prevozi autobus umjesto vlaka br. 775 (Gradec stj. 15.44 – Bjelovar 16.15). Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Buzet i Lupoglav na pruzi državna granica – Buzet – Pula - između kolodvora Sisak i Greda na pruzi Velika Gorica – Sisak – Novska - između kolodvora Novi Marof i Varaždin na pruzi Zaprešić – Čakovec - izme…"
  },
  {
