@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.6.2026. 12:15",
-  "text": "Pojačan je promet na važnijim cestama u smjeru mora i pojedinim graničnim prijelazima. Zbog povećane gustoće prometa na pojednim dionicama državnih cesta i autocesta vozi se u kolonama u pokretu uz zastoje koji su mogući i u zonama radova gdje se vozi suženim kolnikom na autocestama A1 Zagreb-Ploče-Karamatići i A6 Rijeka-Zagreb, Istarskom ipsilonu, državnim cestama DC1 kroz Liku i DC3 kroz Gorski kotar, Krčkom mostu te u trajektnim lukama i pristaništima. Prije polaska na put zbog promjenjivih uvjeta u prometu informirajte se o stanju na cestama na internetskim stranicama ili aplikaciji Hrvatskog autokluba. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pred naplatom Lučko u oba sm…"
+  "updated": "20.6.2026. 14:11",
+  "text": "Pojačan je promet na važnijim cestama u smjeru mora i pojedinim graničnim prijelazima. Zbog povećane gustoće prometa na pojednim dionicama državnih cesta i autocesta vozi se u kolonama u pokretu uz zastoje koji su mogući i u zonama radova gdje se vozi suženim kolnikom na autocestama A1 Zagreb-Ploče-Karamatići i A6 Rijeka-Zagreb, Istarskom ipsilonu, državnim cestama DC1 kroz Liku i DC3 kroz Gorski kotar, Krčkom mostu te u trajektnim lukama i pristaništima. Prije polaska na put zbog promjenjivih uvjeta u prometu informirajte se o stanju na cestama na internetskim stranicama ili aplikaciji Hrvatskog autokluba. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "20.6.2026. 11:49",
+  "updated": "20.6.2026. 13:53",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "20.6.2026. 11:54",
-  "text": "U pomorskom prometu nema poteškoća. Zbog povećanog priljeva vozila u pojedinim trajektnim lukama moguća su duža čekanja na ukrcaj. Izmjene u redu plovidbe: trajekt na liniji 401 Mali Lošinj - Premuda - Silba - Olib - Ist - Zadar/Gaženica - trajekt će isploviti iz luke Olib u 23:05 sati, iz luke Ist u 23:50 te dolazi u luku Gaženica u 02:00 sati u subotu, 20.06.2026., na liniji 433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist/Kosirača trajekt će u polaznom putovanju iz luke Zadar/Gaženica u 11:00 sati po iskrcaju u luci Molat nastaviti za luku Ist/Kosirača. U povratnom putovanju trajekt će iz luke Ist/Kosirača isploviti u 15:20 sati, iz luke Molat u 16:40 sati, iz luke Zverinac…"
+  "updated": "20.6.2026. 13:53",
+  "text": "U pomorskom prometu nema poteškoća. Zbog povećanog priljeva vozila u pojedinim trajektnim lukama moguća su duža čekanja na ukrcaj. Izmjene u redu plovidbe: trajekt na liniji 636 Split - Rogač s polaskom u 16:15 sati iz luke Split za luku Rogač isploviti će sa zakašnjenjem od (cca 30 min) trajekt na liniji 401 Mali Lošinj - Premuda - Silba - Olib - Ist - Zadar/Gaženica - trajekt će isploviti iz luke Olib u 23:05 sati, iz luke Ist u 23:50 te dolazi u luku Gaženica u 02:00 sati u subotu, 20.lipnja, na liniji 433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist/Kosirača trajekt će u polaznom putovanju iz luke Zadar/Gaženica u 11:00 sati po iskrcaju u luci Molat nastaviti za luku Ist/K…"
  },
  {
   "title": "Željeznički promet",
@@ -43,12 +43,12 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Savjeti MUP-a i HAK-a motociklistima",
-  "updated": "19.6.2026. 09:13",
+  "updated": "20.6.2026. 14:12",
   "text": "Savjeti MUP-a i HAK-a motociklistima: uvijek nosite zaštitnu kacigu i ostalu opremu (jakna, hlače, štitnici, čizme i rukavice) očistite vizir kacige i pravilno je zategnite preporuka je da nosite svjetliju odjeću i kacigu, \"življih\" boja, odnosno s reflektirajućim detaljima provjerite tlak u gumama upalite dnevno ili kratko svjetlo ne upravljajte pod utjecajem alkohola ili droga poštujte dopuštena ograničenja brzine ne precjenjujte svoje vozačke sposobnosti vozite s upaljenim svjetlima, tako ste uočljiviji drugima nemojte pretjecati gdje nije dopušteno ili je rizično prilagodite brzinu vožnje uvjetima na cesti (stanju i karakteristikama ceste) prilikom vožnje u skupini, vozite u slijedu jeda…"
  },
  {
   "title": "Vožnja ljeti pod velikim vrućinama",
-  "updated": "19.6.2026. 09:13",
+  "updated": "20.6.2026. 14:12",
   "text": "Izlaganje visokim temperaturama nepovoljno utječe na opće zdravstveno stanje, a kod vozača može utjecati na kognitivno funkcioniranje. Stoga je u svakodnevnom životu potrebno pratiti upute nadležnih službi (DHMZ, HZHM, Hrvatski Crveni križ, HGSS), a za putovanje slijedite sljedeće preporuke: planirajte vrijeme putovanja tijekom noći, ranih jutarnjih sati ili kasnije poslijepodne i navečer. Izbjegavajte vožnju sredinom dana kada temperature dosežu svoj maksimum jer će svaka izvanredna situacija u prometu (zastoji zbog veće gustoće prometa, prometne nesreće ili radovi) rezultirati povremenim stajanjem u mjestu koje će biti neugodno unatoč rashladnom uređaju u vozilu ako vozite na dužim relacij…"
  }
 ];
