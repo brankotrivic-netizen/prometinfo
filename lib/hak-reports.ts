@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.6.2026. 19:36",
-  "text": "Pojačan je promet na pojedinim cestama u smjeru mora i graničnim prijelazima na ulasku u Hrvatsku, a zastoji su mogući u zonama radova i privremene regulacije prometa. IZVANREDNI PROMETNI DOGAĐAJI: zbog oštećenja kolnika na DC53 u mjestu Ruševo vozi se uz ograničenje brzine prometna nesreća na autocesti A3 na 230+000 km između čvora Slavonski Brod istok i čvora Sredanci u smjeru Lipovca. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h. AUTOCESTE A1 Zagreb-Ploče-Karamatići do 23. lipnja zbog radova na 376.+800 km, između čvora Vučevica i čvora Split, vozi se jednim trakom u smjeru Dubrovnika te po dva traka u smjeru Zagreba do 24. lipnja od 01:00 do 5:00 sati zbog uklj…"
+  "updated": "20.6.2026. 22:40",
+  "text": "Pojačan je promet na pojedinim cestama u smjeru mora i graničnim prijelazima na ulasku u Hrvatsku, a zastoji su mogući u zonama radova i privremene regulacije prometa. IZVANREDNI PROMETNI DOGAĐAJI: zbog oštećenja cestovnog trupa na Jadranskoj magistrali (DC8) u mjestu Jesenice vozi se uz privremenu regulaciju prometa semaforima zbog oštećenja kolnika na DC53 u mjestu Ruševo vozi se uz ograničenje brzine AUTOCESTE A1 Zagreb-Ploče-Karamatići do 23. lipnja zbog radova na 376.+800 km, između čvora Vučevica i čvora Split, vozi se jednim trakom u smjeru Dubrovnika te po dva traka u smjeru Zagreba do 24. lipnja od 01:00 do 5:00 sati zbog uključivanja izvanrednog prijevoza na glavnu trasu autoceste …"
  },
  {
   "title": "Granični prijelazi",

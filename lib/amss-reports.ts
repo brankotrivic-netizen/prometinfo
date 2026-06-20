@@ -178,16 +178,8 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 16. 6. do 16. 7. 2026. u toku svetlog dela dana, izvodiće se radovi u fazama na rehabilitaciji kolovoza, na državnom putu I A reda broj 1, na deonici Novi Sad istok petlja Kovilj, u smeru ka Beogradu. Radovi će se izvoditi u sve 3 saobraćajne trake u smeru ka Beogradu i saobraćaj će biti službenim prolazima preusmeren u preticajnu saobraćajnu traku smera ka Subotici, dok će se saobraćaj u smeru ka Subotici odvijati voznom i zaustavnom saobraćajnom trakom. Tokom prve faze radova, u smeru ka Be…"
  },
  {
-  "title": "Mali Požarevac-Umčari, radovi na autoputu",
-  "text": "U subotu 20. 6. 2026. u periodu od 9 do 12 č, izvodiće se radovi na redovnom održavanju zaštitne odbojne ograde u razdelnom pojasu, na državnom putu I A reda broj 1, na deonici petlja Mali Požarevac petlja Umčari, u smeru ka Nišu. Tokom izvođenja radova za saobraćaj će biti zatvorena preticajna saobraćajna traka u dužini od 300 m, dok će se saobraćaj odvijati voznom i zaustavnom saobraćajnom trakom. Izvor Putevi Srbije"
- },
- {
   "title": "Bor-Crni Vrh, radovi",
   "text": "Dana 19.6.2026. godine, zbog vangabaritnog transporta elise vetrogeneratora, biti izmenjen režim saobraćaja na deonicama puteva od Bora do Crnog Vrha: od ulice Nade Dimić, skretanja za Brestovačku Banju - Brestovac, Borsko jezero, Elektroistok na Crnom Vrhu. Tokom vršenja transporta, saobraćaj će se odvijati naizmeničnim propuštanjem vozila, uz asistenciju saobraćajne policije. Izvor: Putevi Srbije"
- },
- {
-  "title": "Vlasotince -Grdelica, radovi",
-  "text": "Dana 20. 6. 2026. godine, u periodu od 7 do 17 časova, izvoditi radovi na sanaciji kolovoza na delu državnog puta II B reda broj 438, deonica Vlasotince Grdelica (veza sa državnim putem I A reda broj 1), od km 4+000 do km 5+000. Tokom izvođenja radova, saobraćaj će se odvijati naizmeničnim propuštanjem vozila regulisan mahačima i semaforima. Izvor: Putevi Srbije"
  },
  {
   "title": "Irig-Ruma, radovi",
@@ -208,10 +200,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Koševi – petlja Vrnjačka Banja, radovi",
   "text": "Od 20. 6. do 27. 6. 2026. godine, izvodiće se radovi na montaži pešačke ograde u razdelnom pojasu na mostovima na deonici petlja Koševi petlja Vrnjačka Banjau oba smera. U zoni radova, na mostovima, deo kolovoza uz razdelni pojas na levoj kolovoznoj traci biće zatvoren u dužini od 100 metara, dok će se saobraćaj odvijati voznom i zaustavnom saobraćajnom trakom. Izvor: Putevi Srbije"
- },
- {
-  "title": "Tunel Manajle,radovi",
-  "text": "Od 18. 6. 2026. godine, od 8 časova, do 22. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radovi na redovnom održavanju pranje leve cevi tunela Manajle,na deonici petlja Vladičin Han - petlja Predejane, smer ka Nišu. Tokom izvođenja radova, za saobraćaj će biti zatvorena preticajna saobraćajna traka desne tunelske cevi, dok će se saobraćaj odvijati voznom saobraćajnom trakom. Izvor Putevi Srbije"
  },
  {
   "title": "Petlja Novi Sad Jug - Kovilj, radovi",
@@ -240,5 +228,17 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Ruma-Šabac, radovi",
   "text": "Od 15. 6. do 30. 6. 2026. u toku svetlog dela dana, izvode se radovi na popravci sigurnosno zaštitne ograde uz zaustavnu saobraćajnu traku i u razdelnom pojasu, na državnom putu I A reda broj 8, na deonici Ruma-šabac, u oba smera. Tokom izvođenja radova, u zavisnosti od lokacije, za saobraćaj je zatvorena preticajna saobraćajna traka do 200 metara, dok se saobraćaj odvija voznom i zaustavnom saobraćajnom trakom ili je zatvorena zaustavna saobraćajna traka do 200 metara, dok se saobraćaj odvija v…"
+ },
+ {
+  "title": "Šabac- Majur, radovi",
+  "text": "Od 15. 6. do 30. 6. 2026. u toku svetlog dela dana, izvode se radovi na popravci sigurnosno zaštitne ograde uz zaustavnu saobraćajnu traku i u razdelnom pojasu, na državnom putu I A reda broj 3, na deonici šabac-Majur, u oba smera. Tokom izvođenja radova, u zavisnosti od lokacije, za saobraćaj je zatvorena preticajna saobraćajna traka do 200 metara, dok se saobraćaj odvija voznom i zaustavnom saobraćajnom trakom ili je zatvorena zaustavna saobraćajna traka do 200 metara, dok se saobraćaj odvija …"
+ },
+ {
+  "title": "Petlja Novi Sad Istok- petlja Kovilj, radovi",
+  "text": "Od 16. 6. do 16. 7. 2026. u toku svetlog dela dana, izvodiće se radovi u fazama na rehabilitaciji kolovoza, na državnom putu I A reda broj 1, na deonici Novi Sad istok petlja Kovilj, u smeru ka Beogradu. Radovi će se izvoditi u sve 3 saobraćajne trake u smeru ka Beogradu i saobraćaj će biti službenim prolazima preusmeren u preticajnu saobraćajnu traku smera ka Subotici, dok će se saobraćaj u smeru ka Subotici odvijati voznom i zaustavnom saobraćajnom trakom. Tokom prve faze radova, u smeru ka Be…"
+ },
+ {
+  "title": "Kladovo-Milutinovac, radovi",
+  "text": "Od 15. 6. do 17. 7. 2026. izvode se radovi na rehabilitaciji državnog puta II A reda broj 167, deonica Kladovo Milutinovac. Saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  }
 ];
