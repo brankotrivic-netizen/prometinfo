@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.6.2026. 09:58",
-  "text": "Pojačan je promet na važnijim cestama u smjeru mora i pojedinim graničnim prijelazima. Zbog povećane gustoće prometa mogući su zastoji i kolone u zonama radova i na mjestima gdje se vozi suženim kolnikom na autocestama A1 Zagreb-Ploče-Karamatići i A6 Rijeka-Zagreb, Istarskom ipsilonu, državnim cestama DC1 kroz Liku i DC3 kroz Gorski kotar, Krčkom mostu te u trajektnim lukama i pristaništima. Prije polaska na put zbog promjenjivih uvjeta u prometu informirajte se o stanju na cestama na internetskim stranicama ili aplikaciji Hrvatskog autokluba. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pred naplatom Lučko u smjeru Karlovca kolona je oko 1 km povećana je gustoća prometa u smjeru…"
+  "updated": "20.6.2026. 12:15",
+  "text": "Pojačan je promet na važnijim cestama u smjeru mora i pojedinim graničnim prijelazima. Zbog povećane gustoće prometa na pojednim dionicama državnih cesta i autocesta vozi se u kolonama u pokretu uz zastoje koji su mogući i u zonama radova gdje se vozi suženim kolnikom na autocestama A1 Zagreb-Ploče-Karamatići i A6 Rijeka-Zagreb, Istarskom ipsilonu, državnim cestama DC1 kroz Liku i DC3 kroz Gorski kotar, Krčkom mostu te u trajektnim lukama i pristaništima. Prije polaska na put zbog promjenjivih uvjeta u prometu informirajte se o stanju na cestama na internetskim stranicama ili aplikaciji Hrvatskog autokluba. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pred naplatom Lučko u oba sm…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "20.6.2026. 09:27",
+  "updated": "20.6.2026. 11:49",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "20.6.2026. 09:27",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: trajekt na liniji 401 Mali Lošinj - Premuda - Silba - Olib - Ist - Zadar/Gaženica - trajekt će isploviti iz luke Olib u 23:05 sati, iz luke Ist u 23:50 te dolazi u luku Gaženica u 02:00 sati u subotu, 20.06.2026., na liniji 433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist/Kosirača trajekt će u polaznom putovanju iz luke Zadar/Gaženica u 11:00 sati po iskrcaju u luci Molat nastaviti za luku Ist/Kosirača. U povratnom putovanju trajekt će iz luke Ist/Kosirača isploviti u 15:20 sati, iz luke Molat u 16:40 sati, iz luke Zverinac u 17:10 sati, iz luke Sestrunj u 17:50 sati te iz luke Rivanj u 18:20 sati do 28. lipnja na tr…"
+  "updated": "20.6.2026. 11:54",
+  "text": "U pomorskom prometu nema poteškoća. Zbog povećanog priljeva vozila u pojedinim trajektnim lukama moguća su duža čekanja na ukrcaj. Izmjene u redu plovidbe: trajekt na liniji 401 Mali Lošinj - Premuda - Silba - Olib - Ist - Zadar/Gaženica - trajekt će isploviti iz luke Olib u 23:05 sati, iz luke Ist u 23:50 te dolazi u luku Gaženica u 02:00 sati u subotu, 20.06.2026., na liniji 433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist/Kosirača trajekt će u polaznom putovanju iz luke Zadar/Gaženica u 11:00 sati po iskrcaju u luci Molat nastaviti za luku Ist/Kosirača. U povratnom putovanju trajekt će iz luke Ist/Kosirača isploviti u 15:20 sati, iz luke Molat u 16:40 sati, iz luke Zverinac…"
  },
  {
   "title": "Željeznički promet",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "19.6.2026. 11:12",
-  "text": "PROMETNA PROGNOZA ZA HRVATSKU ZA 20. LIPNJA 2026. GODINE Tijekom subote očekujemo pojačan promet na većini cesta u smjeru mora. Povremeno će se voziti u kolonama u pokretu i uz kraće zastoje na pojedinim dionicama autocesta A1 Zagreb-Ploče-Karamatići i A6 Rijeka-Zagreb, riječkoj obilaznici i prilazu tunela Učka, Krčkom mostu, na Ličkoj (DC1) i Jadranskoj (DC8) magistrali. Ljetna zabrana prometa za teretna motorna vozila najveće dopuštene mase iznad 7,5 t na pojedinim državnim cestama u Istri i priobalju (osim na autocestama i državnoj cesti DC1) do 15. rujna bit će subotama od 4 do 14 sati, a nedjeljama od 12 do 23 sata. Povodom Dana antifašističke borbe (22. lipnja) zabrana prometa bit će n…"
+  "updated": "20.6.2026. 12:06",
+  "text": "Prometna prognoza za Hrvatsku za 21. lipnja 2026. godine Sutra su tijekom dana u kontinentalnoj Hrvatskoj i na sjevernom Jadranu mogući jači lokalni pljuskovi s grmljavinom pa će se mjestimice voziti po mokrim i skliskim kolnicima. Pojačan promet očekuje se na pojedinim dionicama autocesta i na prilazima turističkim središtima. Zbog toplinskog vala, savjetujemo da putovanje planirate tijekom ranih jutarnjih sati ili noću te da na put ponesete dovoljne količine tekućine i hrane kako bi se olakšalo stajanje u mogućim kolonama. Povremeno će biti pojačan promet putničkih i teretnih vozila na pojedinim graničnim prijelazima s Bosnom i Hercegovinom, Srbijom i Crnom Gorom. U pomorskom prometu ne oč…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
