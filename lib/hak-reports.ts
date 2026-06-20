@@ -3,32 +3,32 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.6.2026. 17:19",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na važnijim cestama u smjeru mora i pojedinim graničnim prijelazima na ulazu u Hrvatsku, a zastoji su mogući u zonama radova i privremene regulacije prometa. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa između čvorova Karlovac i Zadar istok u smjeru mora DC1 Zagreb-Karlovac-Gračac-Knin-Split zbog povećane gustoće prometa usporeno se vozi u zonama radova kod mjesta Vrelo Koreničko i na dionici Otrić-Zrmanja DC102 Krčki most pojačan je promet u smjeru otoka. AUTOCESTE A1 Zagreb-Ploče-Karamatići do 23. lipnja zbog radova na 376.+800 km, između čvora Vučevica i čvora Split, vozi se jednim trakom u s…"
+  "updated": "20.6.2026. 19:36",
+  "text": "Pojačan je promet na pojedinim cestama u smjeru mora i graničnim prijelazima na ulasku u Hrvatsku, a zastoji su mogući u zonama radova i privremene regulacije prometa. IZVANREDNI PROMETNI DOGAĐAJI: zbog oštećenja kolnika na DC53 u mjestu Ruševo vozi se uz ograničenje brzine prometna nesreća na autocesti A3 na 230+000 km između čvora Slavonski Brod istok i čvora Sredanci u smjeru Lipovca. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h. AUTOCESTE A1 Zagreb-Ploče-Karamatići do 23. lipnja zbog radova na 376.+800 km, između čvora Vučevica i čvora Split, vozi se jednim trakom u smjeru Dubrovnika te po dva traka u smjeru Zagreba do 24. lipnja od 01:00 do 5:00 sati zbog uklj…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "20.6.2026. 16:21",
+  "updated": "20.6.2026. 19:08",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "20.6.2026. 17:19",
+  "updated": "20.6.2026. 19:05",
   "text": "U pomorskom prometu nema poteškoća. Zbog povećanog priljeva vozila u pojedinim trajektnim lukama moguća su duža čekanja na ukrcaj. Izmjene u redu plovidbe: trajekt na liniji 401 Mali Lošinj - Premuda - Silba - Olib - Ist - Zadar/Gaženica - trajekt će isploviti iz luke Olib u 23:05 sati, iz luke Ist u 23:50 te dolazi u luku Gaženica u 02:00 sati u subotu, 20.lipnja, na liniji 433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist/Kosirača trajekt će u polaznom putovanju iz luke Zadar/Gaženica u 11:00 sati po iskrcaju u luci Molat nastaviti za luku Ist/Kosirača. U povratnom putovanju trajekt će iz luke Ist/Kosirača isploviti u 15:20 sati, iz luke Molat u 16:40 sati, iz luke Zverinac u…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "20.6.2026. 17:19",
-  "text": "Stanje u željezničkom putničkom prometu 19. lipnja 2026. u 8.00 sati Danas, 19. lipnja 2026. putnike prevozi autobus umjesto vlaka br. 775 (Gradec stj. 15.44 – Bjelovar 16.15). Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Buzet i Lupoglav na pruzi državna granica – Buzet – Pula - između kolodvora Sisak i Greda na pruzi Velika Gorica – Sisak – Novska - između kolodvora Novi Marof i Varaždin na pruzi Zaprešić – Čakovec - izme…"
+  "updated": "20.6.2026. 19:05",
+  "text": "Danas, 19. lipnja 2026. putnike prevozi autobus umjesto vlaka br. 775 (Gradec stj. 15.44 – Bjelovar 16.15). Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Buzet i Lupoglav na pruzi državna granica – Buzet – Pula - između kolodvora Sisak i Greda na pruzi Velika Gorica – Sisak – Novska - između kolodvora Novi Marof i Varaždin na pruzi Zaprešić – Čakovec - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo –…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "20.6.2026. 17:19",
+  "updated": "20.6.2026. 19:05",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "20.6.2026. 17:19",
+  "updated": "20.6.2026. 19:08",
   "text": "Prometna prognoza za Hrvatsku za 21. lipnja 2026. godine Sutra su tijekom dana u kontinentalnoj Hrvatskoj i na sjevernom Jadranu mogući jači lokalni pljuskovi s grmljavinom pa će se mjestimice voziti po mokrim i skliskim kolnicima. Pojačan promet očekuje se na pojedinim dionicama autocesta i na prilazima turističkim središtima. Zbog toplinskog vala, savjetujemo da putovanje planirate tijekom ranih jutarnjih sati ili noću te da na put ponesete dovoljne količine tekućine i hrane kako bi se olakšalo stajanje u mogućim kolonama. Povremeno će biti pojačan promet putničkih i teretnih vozila na pojedinim graničnim prijelazima s Bosnom i Hercegovinom, Srbijom i Crnom Gorom. U pomorskom prometu ne oč…"
  },
  {
