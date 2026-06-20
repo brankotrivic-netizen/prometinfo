@@ -3,27 +3,27 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.6.2026. 22:46",
-  "text": "Povremeno je pojačan promet na važnijim cestama te pojedinim graničnim prijelazima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: predmet na autocesti A1 na čvoru Vodice na kolniku u smjeru Dubrovnika - promet se vodi jednom prometnom trakom uz ograničenje brzine od 40 km/h A1 Zagreb-Ploče-Karamatići do 23. lipnja radovi na održavanju na 376+800 km, između čvora Vučevica i čvora Split. Promet se vodi jednom prometnom trakom u oba smjera uz ograničenje brzine od 80 km/h IZVANREDNI PRIJEVOZ: do 24. lipnja od 01:00 do 5:00 sati zbog uključivanja izvanrednog prijev…"
+  "updated": "20.6.2026. 09:58",
+  "text": "Pojačan je promet na važnijim cestama u smjeru mora i pojedinim graničnim prijelazima. Zbog povećane gustoće prometa mogući su zastoji i kolone u zonama radova i na mjestima gdje se vozi suženim kolnikom na autocestama A1 Zagreb-Ploče-Karamatići i A6 Rijeka-Zagreb, Istarskom ipsilonu, državnim cestama DC1 kroz Liku i DC3 kroz Gorski kotar, Krčkom mostu te u trajektnim lukama i pristaništima. Prije polaska na put zbog promjenjivih uvjeta u prometu informirajte se o stanju na cestama na internetskim stranicama ili aplikaciji Hrvatskog autokluba. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pred naplatom Lučko u smjeru Karlovca kolona je oko 1 km povećana je gustoća prometa u smjeru…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "19.6.2026. 22:35",
+  "updated": "20.6.2026. 09:27",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "19.6.2026. 22:35",
+  "updated": "20.6.2026. 09:27",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: trajekt na liniji 401 Mali Lošinj - Premuda - Silba - Olib - Ist - Zadar/Gaženica - trajekt će isploviti iz luke Olib u 23:05 sati, iz luke Ist u 23:50 te dolazi u luku Gaženica u 02:00 sati u subotu, 20.06.2026., na liniji 433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist/Kosirača trajekt će u polaznom putovanju iz luke Zadar/Gaženica u 11:00 sati po iskrcaju u luci Molat nastaviti za luku Ist/Kosirača. U povratnom putovanju trajekt će iz luke Ist/Kosirača isploviti u 15:20 sati, iz luke Molat u 16:40 sati, iz luke Zverinac u 17:10 sati, iz luke Sestrunj u 17:50 sati te iz luke Rivanj u 18:20 sati do 28. lipnja na tr…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "19.6.2026. 22:35",
+  "updated": "20.6.2026. 09:27",
   "text": "Stanje u željezničkom putničkom prometu 19. lipnja 2026. u 8.00 sati Danas, 19. lipnja 2026. putnike prevozi autobus umjesto vlaka br. 775 (Gradec stj. 15.44 – Bjelovar 16.15). Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Buzet i Lupoglav na pruzi državna granica – Buzet – Pula - između kolodvora Sisak i Greda na pruzi Velika Gorica – Sisak – Novska - između kolodvora Novi Marof i Varaždin na pruzi Zaprešić – Čakovec - izme…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "19.6.2026. 09:13",
+  "updated": "20.6.2026. 09:27",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
