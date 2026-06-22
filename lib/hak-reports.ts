@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.6.2026. 20:02",
-  "text": "Kolnici su mjestimice mokri ili samo vlažni i skliski. Mogući su odroni. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. Autocesta A1 Zagreb-Split-Ploče: nema većih gužvi i zastoja prometna nesreća na 328. km između čvorova Danilo i Podi u smjeru Zagreba - vozi se jednim trakom uz ograničenje brzine od 40 km/h IZVAN REDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Ploče-Karamatići do 23. lipnja zbog radova na 376.+800 km, između čvora Vučevica i čvora Split, vozi se jednim trakom u smjeru Dubrovnika te po dva traka u smjeru Zagreba do 24. lipnja od 01:00 do 5:00 sati zbog uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1 u zoni NP Karlovac (smjer Zagreb), jedno…"
+  "updated": "22.6.2026. 21:54",
+  "text": "Kolnici su mjestimice vlažni i skliski. Mogući su odroni. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. Autocesta A1 Zagreb-Split-Ploče: nema gužvi i zastoja IZVAN REDNI PROMETNI DOGAĐAJI: životinja (pas) na autocesti A3 Bregana-Lipovac kod odmorišta Marsonija. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h AUTOCESTE A1 Zagreb-Ploče-Karamatići do 23. lipnja zbog radova na 376.+800 km, između čvora Vučevica i čvora Split, vozi se jednim trakom u smjeru Dubrovnika te po dva traka u smjeru Zagreba do 24. lipnja od 01:00 do 5:00 sati zbog uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1 u zoni NP Karlovac (smjer Zagreb), jedno kratkotr…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "22.6.2026. 20:02",
+  "updated": "22.6.2026. 21:37",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "22.6.2026. 20:02",
+  "updated": "22.6.2026. 20:51",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnik…"
  },
  {
@@ -28,7 +28,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "22.6.2026. 10:57",
+  "updated": "22.6.2026. 20:02",
   "text": "Prometna prognoza za Hrvatsku za 23. lipnja 2026. godine. U drugom dijelu dana zbog lokalnih grmljavinskih pljuskova bit će usporen promet u Hrvatskom primorju, središnjem dijelu unutrašnjosti te na istoku zemlje. Zbog obilnijih oborina moguće je i zadržavanje vode na kolniku. Pozivamo vozače da brzinu i način vožnje prilagode vremenskim uvjetima, pripaze na sigurnosnu udaljenost između vozila te i danju voze s uključenim svjetlima u krajevima s kišim ili naoblakom. Zbog bure u podvelebitskom dijelu Jadranske magistrale (DC8) bit će ograničenja za pojedine skupine vozila. Zbog promjenjive vremenske situacije savjetujemo vozačima da prije polaska na put provjere aktualnosti o prometu na mrežn…"
  },
  {
@@ -48,7 +48,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Vožnja ljeti pod velikim vrućinama",
-  "updated": "22.6.2026. 17:52",
+  "updated": "22.6.2026. 20:02",
   "text": "Izlaganje visokim temperaturama nepovoljno utječe na opće zdravstveno stanje, a kod vozača može utjecati na kognitivno funkcioniranje. Stoga je u svakodnevnom životu potrebno pratiti upute nadležnih službi (DHMZ, HZHM, Hrvatski Crveni križ, HGSS), a za putovanje slijedite sljedeće preporuke: planirajte vrijeme putovanja tijekom noći, ranih jutarnjih sati ili kasnije poslijepodne i navečer. Izbjegavajte vožnju sredinom dana kada temperature dosežu svoj maksimum jer će svaka izvanredna situacija u prometu (zastoji zbog veće gustoće prometa, prometne nesreće ili radovi) rezultirati povremenim stajanjem u mjestu koje će biti neugodno unatoč rashladnom uređaju u vozilu ako vozite na dužim relacij…"
  }
 ];
