@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.6.2026. 21:54",
-  "text": "Kolnici su mjestimice vlažni i skliski. Mogući su odroni. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. Autocesta A1 Zagreb-Split-Ploče: nema gužvi i zastoja IZVAN REDNI PROMETNI DOGAĐAJI: životinja (pas) na autocesti A3 Bregana-Lipovac kod odmorišta Marsonija. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h AUTOCESTE A1 Zagreb-Ploče-Karamatići do 23. lipnja zbog radova na 376.+800 km, između čvora Vučevica i čvora Split, vozi se jednim trakom u smjeru Dubrovnika te po dva traka u smjeru Zagreba do 24. lipnja od 01:00 do 5:00 sati zbog uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1 u zoni NP Karlovac (smjer Zagreb), jedno kratkotr…"
+  "updated": "22.6.2026. 22:44",
+  "text": "Kolnici su mjestimice vlažni i skliski. Mogući su odroni. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. Autocesta A1 Zagreb-Split-Ploče: nema gužvi i zastoja IZVAN REDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Ploče-Karamatići do 23. lipnja zbog radova na 376.+800 km, između čvora Vučevica i čvora Split, vozi se jednim trakom u smjeru Dubrovnika te po dva traka u smjeru Zagreba do 24. lipnja od 01:00 do 5:00 sati zbog uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1 u zoni NP Karlovac (smjer Zagreb), jedno kratkotrajno zaustavljanje prometa do maksimalno 15 minuta; prilikom prolaska zonom ČCNP Demerje (smjer Zagreb), ČCNP Lučko (smjer Zagreb) i zonom čvor…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "22.6.2026. 21:37",
+  "updated": "22.6.2026. 22:44",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "22.6.2026. 20:51",
+  "updated": "22.6.2026. 22:28",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnik…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "22.6.2026. 20:02",
+  "updated": "22.6.2026. 22:27",
   "text": "Danas, 19. lipnja 2026. putnike prevozi autobus umjesto vlaka br. 775 (Gradec stj. 15.44 – Bjelovar 16.15). Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Buzet i Lupoglav na pruzi državna granica – Buzet – Pula - između kolodvora Sisak i Greda na pruzi Velika Gorica – Sisak – Novska - između kolodvora Novi Marof i Varaždin na pruzi Zaprešić – Čakovec - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo –…"
  },
  {
