@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "23.6.2026. 12:45",
-  "text": "Vozi se u kolonama u pokretu i uz kraće zastoje u zonama radova i privremene regulacije prometa, osobito na autocesti A6 Rijeka-Zagreb između čvorova Bosiljevo 2 i Vrbovsko u smjeru Rijeke, Istarskom ipsilonu između tunela i čvora Učka te na pojednim dionicama Jadranske (DC8) i Ličke magistrale (DC1). Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama. Potreban je dodatan oprez i strpljenje. Pozivamo vozače da poštuju prometne propise i ograničenja, osobito ograničenje brzine te pripaze na brojne motocikliste i bicikliste u prometu. IZVAN REDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 na 125+500 km između čvora Otočac i čvora Žuta Lokva u sm…"
+  "updated": "23.6.2026. 15:13",
+  "text": "Vozi se u kolonama u pokretu i uz kraće zastoje u zonama radova i privremene regulacije prometa, osobito na autocesti A6 Rijeka-Zagreb između čvorova Bosiljevo 2 i Vrbovsko u smjeru Rijeke, Istarskom ipsilonu između tunela i čvora Učka te na pojednim dionicama Jadranske (DC8) i Ličke magistrale (DC1). Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama. Potreban je dodatan oprez i strpljenje. Pozivamo vozače da poštuju prometne propise i ograničenja, osobito ograničenje brzine te pripaze na brojne motocikliste i bicikliste u prometu. IZVAN REDNI PROMETNI DOGAĐAJI: zbog vozila u kvaru na brzoj cesti (DC1) u mjestu Klis vozi se uz ograničenje brzine od 60…"
  },
  {
   "title": "Granični prijelazi",

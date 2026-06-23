@@ -58,10 +58,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na redovnom održavanju na području Laništa na magistralnoj cesti Ključ-Bosanski Petrovac, na mjestu radova od 07 do 07 sati (osim vikenda) vozila saobraćaju naizmjenično, jednom trakom."
    },
    {
-    "title": "Jajce-Crna Rijeka",
-    "text": "Zbog održavanja manifestacije „Sveti Ivo“, danas do 22 sata zabranjuje se saobraćaj teretnih vozila na dijelu magistralog puta Jajce-Crna Rijeka. Alternativni pravci za vrijeme obustave su Jajce-Mrkonjić Grad-Banja Luka i Travnik-Kneževo-Banja Luka. Danas je zabranjen prevoz eksplozivnih materija i vangabaritnog tereta na teritoriji Srednjobosanskog kantona."
-   },
-   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },
