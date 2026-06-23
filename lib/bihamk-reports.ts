@@ -42,10 +42,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji kružne raskrsnice na M-16 u Kupresu, na spoju ulica Slavonske i Splitske, saobraća se usporeno, jednom trakom."
    },
    {
-    "title": "Srbac-Derventa",
-    "text": "U toku su sanacioni radovi, zbog čega je do kraja juna planirana obustava saobraćaja. Za vrijeme obustave vozila se preusmjeravaju na alternativni pravac Srbac-Prnjavor-Derventa."
-   },
-   {
     "title": "Konjic-Jablanica",
     "text": "U toku su radovi na zamjeni dilatacije na Ribićkom mostu, u dužini od 20m saobraća se usporeno-jednom trakom"
    },
