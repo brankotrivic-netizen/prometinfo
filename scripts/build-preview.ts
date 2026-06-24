@@ -340,6 +340,8 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .chip em{font-style:normal;font-size:11px;background:var(--panel-2);padding:1px 7px;border-radius:999px;color:var(--muted)}
 .chip.active em{background:rgba(255,255,255,.25);color:#fff;font-weight:700}
 #map{height:640px;border-radius:14px;border:1px solid var(--border);margin-bottom:4px;background:var(--panel-2)}
+.locbtn a{font-size:16px;width:30px;height:30px;line-height:30px;text-align:center;display:block;background:#fff;text-decoration:none}
+.youpin{font-size:22px;line-height:1;filter:drop-shadow(0 1px 2px rgba(0,0,0,.45))}
 .legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0;font-size:12px;color:var(--muted)}
 .legend .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .country-group{margin-top:24px}.country-group h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
@@ -502,7 +504,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 <div class="view" id="view-map">
 <div id="map"></div>
 <div id="zoomHint" class="zoomhint">🔍 Približaj zemljevid za prikaz kamer</div>
-<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label></div>
+<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:#b45309;font-size:11px">⚠ prometni sloj: dodaj domeno na TomTom</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label></div>
 </div>
 <div class="view" id="view-borders" style="display:none">
 ${sections}
@@ -654,11 +656,41 @@ function toggleTruckPark(cb){ if(cb.checked){truckPark.addTo(map);} else {map.re
 truckPark.addTo(map);
 rebuildCams();
 map.on('zoomend', function(){ rebuildCams(); rebuildTruckPark(); });
+
+/* 📍 Moja lokacija + najblizji prehod */
+var youMarker=null;
+function _km(a,b,c,d){ var R=6371,p=Math.PI/180,s=Math.sin((c-a)*p/2)*Math.sin((c-a)*p/2)+Math.cos(a*p)*Math.cos(c*p)*Math.sin((d-b)*p/2)*Math.sin((d-b)*p/2); return Math.round(R*2*Math.atan2(Math.sqrt(s),Math.sqrt(1-s))); }
+function locateMe(){
+  if(!navigator.geolocation){ alert('Naprava ne podpira lokacije.'); return; }
+  navigator.geolocation.getCurrentPosition(function(pos){
+    var la=pos.coords.latitude, ln=pos.coords.longitude, ll=[la,ln];
+    if(youMarker){ youMarker.setLatLng(ll); } else { youMarker=L.marker(ll,{icon:L.divIcon({className:'youdiv',html:'<div class="youpin">📍</div>',iconSize:[26,26],iconAnchor:[13,13]})}).addTo(map); }
+    var near=null,nd=1e9; MARKERS.forEach(function(o){ var d=_km(la,ln,o.lat,o.lng); if(d<nd){nd=d;near=o;} });
+    youMarker.bindTooltip(near?('Tukaj ste · najbližji prehod: '+near.name+' (~'+nd+' km)'):'Tukaj ste').openTooltip();
+    map.setView(ll,10); rebuildCams();
+  }, function(){ alert('Lokacije ni bilo mogoče dobiti (dovoli dostop do lokacije).'); }, {enableHighAccuracy:true,timeout:10000,maximumAge:60000});
+}
+var locCtrl=L.control({position:'topleft'});
+locCtrl.onAdd=function(){ var d=L.DomUtil.create('div','leaflet-bar locbtn'); d.innerHTML='<a href="#" title="Moja lokacija" role="button" aria-label="Moja lokacija">📍</a>'; L.DomEvent.on(d,'click',function(e){ L.DomEvent.stop(e); locateMe(); }); return d; };
+locCtrl.addTo(map);
+
+/* samodejno osvezevanje vidnih slik kamer (~45s) */
+setInterval(function(){ var vh=window.innerHeight||800; var ims=document.querySelectorAll('img.snap'); for(var i=0;i<ims.length;i++){ var im=ims[i]; if(im.offsetParent===null) continue; var r=im.getBoundingClientRect(); if(r.bottom<-50||r.top>vh+50) continue; var base=im.getAttribute('data-base'); if(!base) continue; im.src=base+(base.indexOf('?')>=0?'&':'?')+'t='+Date.now(); } }, 45000);
 var TOMTOM_KEY='F4bmVyCwlAC8AYfwKDndl4iLAvCAhFh1';
 var trafficLayer=null;
 function toggleTraffic(cb){
  if(!TOMTOM_KEY){ cb.checked=false; alert('Za prikaz gostote prometa (kot Google Maps) rabiš brezplačen TomTom API ključ z developer.tomtom.com. Ko ga dobiš, ga vstaviva v aplikacijo in se ceste obarvajo.'); return; }
- if(cb.checked){ if(!trafficLayer){ trafficLayer=L.tileLayer('https://api.tomtom.com/traffic/map/4/tile/flow/relative/{z}/{x}/{y}.png?key='+TOMTOM_KEY,{opacity:0.75,maxZoom:22,crossOrigin:true}); } trafficLayer.addTo(map); }
+ var note=document.getElementById('trafficNote');
+ if(cb.checked){
+   if(!trafficLayer){
+     trafficLayer=L.tileLayer('https://api.tomtom.com/traffic/map/4/tile/flow/relative/{z}/{x}/{y}.png?key='+TOMTOM_KEY,{opacity:0.75,maxZoom:22,crossOrigin:true});
+     var failed=false;
+     trafficLayer.on('tileerror', function(){ if(failed)return; failed=true; try{map.removeLayer(trafficLayer);}catch(e){} cb.checked=false; if(note)note.style.display='inline'; });
+     trafficLayer.on('tileload', function(){ if(note)note.style.display='none'; });
+   }
+   if(note)note.style.display='none';
+   trafficLayer.addTo(map);
+ }
  else if(trafficLayer){ map.removeLayer(trafficLayer); }
 }
 function showView(v, btn){
