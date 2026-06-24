@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "24.6.2026. 17:34",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVAN REDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A4 Goričan-Zagreb na čvoru Sveta Helena u smjeru Goričana, vozi se jednim trakom u koloni od oko 3 km na zagrebačkoj obilaznici (A3) između čvorova Kosnica i Zagreb istok u smjeru Lipovca te Lučko i Zagreb zapad u smjeru Bregane, vozi se usporeno uz povremene zastoje zbog prometne nesreće na državnoj cesti DC102 u mjestu Omišalj, vozi se …"
+  "updated": "24.6.2026. 20:15",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVAN REDNI PROMETNI DOGAĐAJI: opasnost je od naleta na divljač (srna) na autocesti A6 između čvora Orehovica i čvora Čavle, vozi se uz ograničenje brzine od 60 km/h. zbog prometne nesreće na državnoj cesti DC102 u mjestu Omišalj, vozi se uz ograničenje brzine od 30 km/h - kolona u smjeru otoka duga je oko 3 km večeras od 22:00 sata do 05:00 sati ujutro zbog radova na podvožnjaku „Žabica“ u Rijeci (DC8)…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "24.6.2026. 17:27",
+  "updated": "24.6.2026. 18:00",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "24.6.2026. 17:27",
+  "updated": "24.6.2026. 17:50",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnik…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "24.6.2026. 17:27",
+  "updated": "24.6.2026. 17:50",
   "text": "Stanje u željezničkom putničkom prometu 23. lipnja 2026. u 8.00 sati Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Buzet i Lupoglav na pruzi državna granica – Buzet – Pula - između kolodvora…"
  },
  {

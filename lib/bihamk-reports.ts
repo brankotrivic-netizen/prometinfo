@@ -58,10 +58,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji pješačke staze na magistralnoj cesti Grude-Gorica kroz naselje Sovići povremeno se saobraća jednom trakom."
    },
    {
-    "title": "Čitluk-Međugorje",
-    "text": "Povodom velikog hodočašća (45.obljetnica Gospinih ukazanja u Međugorju) danas od 17 do 19 sati obustavlja se saobraćaj na magistralnoj cesti Čitluk-Međugorje."
-   },
-   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },
