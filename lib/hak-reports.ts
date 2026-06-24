@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "24.6.2026. 20:15",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVAN REDNI PROMETNI DOGAĐAJI: opasnost je od naleta na divljač (srna) na autocesti A6 između čvora Orehovica i čvora Čavle, vozi se uz ograničenje brzine od 60 km/h. zbog prometne nesreće na državnoj cesti DC102 u mjestu Omišalj, vozi se uz ograničenje brzine od 30 km/h - kolona u smjeru otoka duga je oko 3 km večeras od 22:00 sata do 05:00 sati ujutro zbog radova na podvožnjaku „Žabica“ u Rijeci (DC8)…"
+  "updated": "24.6.2026. 22:23",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVAN REDNI PROMETNI DOGAĐAJI: životinja (pas) na autocesti A4 između čvora Ludbreg i čvora Čakovec . Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h. večeras od 22:00 sata do 05:00 sati ujutro zbog radova na podvožnjaku „Žabica“ u Rijeci (DC8) podvožnjak će biti zatvoren, a prometovat će se gornjim prometnim trakama. radovi na sanaciji kolnika i opreme (nakon prometne nesreće) n…"
  },
  {
   "title": "Granični prijelazi",
