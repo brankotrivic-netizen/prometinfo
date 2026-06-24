@@ -14,7 +14,6 @@ import { SI_CAMS } from "../lib/si-road-cameras";
 import { BIHAMK_CAMS } from "../lib/bihamk-cameras";
 import { AMSRS_CAMS } from "../lib/amsrs-cameras";
 import { AMSM_CAMS } from "../lib/amsm-cameras";
-import { AI_CONGESTION } from "../lib/ai-congestion";
 import { COUNTRY_BORDERS } from "../lib/country-borders";
 import { HAK_REPORTS } from "../lib/hak-reports";
 import { AMSS_REPORTS } from "../lib/amss-reports";
@@ -115,21 +114,6 @@ async function main() {
       merged.push(im);
     }
     (p as unknown as { images: { name: string; url: string }[] }).images = merged.slice(0, 10);
-
-    // AI ocena gnece (Claude vision) — pripni vse kamere prehoda (po crId; obe strani).
-    const pid = (p as unknown as { id: string }).id;
-    let aiHits = AI_CONGESTION
-      .filter((a) => a.crId === pid)
-      .sort((a, b) => a.enter.localeCompare(b.enter) || a.side.localeCompare(b.side));
-    // skrij prazne "smer neznana" (nejasne kamere), ce so na voljo uporabne ocene
-    const useful = aiHits.filter((a) => a.enter !== "neznano" || a.level !== "prosto");
-    if (useful.length) aiHits = useful;
-    if (aiHits.length) {
-      (p as unknown as { aiCams: unknown[] }).aiCams = aiHits.map((a) => ({
-        enter: a.enter, dirLabel: a.dirLabel, level: a.level, extent: a.extent, lanes: a.lanes,
-        note: a.note, readable: a.readable, ts: a.ts, image: a.image, cam: a.crossing,
-      }));
-    }
   }
 
   // Podatki o zivih tokovih (za vgrajeni HLS predvajalnik).
@@ -494,8 +478,6 @@ h1{font-size:24px}
 .popcams{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:5px;margin:7px 0 4px}
 .popcam{width:100%;height:82px;object-fit:cover;border-radius:6px;cursor:zoom-in;display:block;background:#000}
 .popsrc{font-size:11px;color:var(--muted)}
-.aibadge{margin:8px 0 4px;padding:6px 8px;background:#f8fafc;border-radius:6px;line-height:1.35}
-.aitag{font-size:10px;font-weight:700;letter-spacing:.4px;color:#6366f1;text-transform:uppercase}
 .lvl-none{border-left-color:var(--none)}.b-none{background:var(--none)}.lvl-low{border-left-color:var(--low)}.b-low{background:var(--low)}
 .lvl-moderate{border-left-color:var(--moderate)}.b-moderate{background:var(--moderate)}.lvl-high{border-left-color:var(--high)}.b-high{background:var(--high)}
 .lvl-severe{border-left-color:var(--severe)}.b-severe{background:var(--severe);color:#fff}.lvl-unknown{border-left-color:var(--unknown)}.b-unknown{background:var(--unknown);color:#16202b}
@@ -601,39 +583,19 @@ const TRUCKPTS=${JSON.stringify(TRUCK_PARKING)};
 const BORDERS=${JSON.stringify(COUNTRY_BORDERS)};
 const COL={none:"#2dd4a7",low:"#5fd35f",moderate:"#e7c84b",high:"#f29c3e",severe:"#ef4d56",unknown:"#6b7a8d"};
 const FLAGJS=${JSON.stringify(FLAG)};
-const AIIMG=${JSON.stringify(Object.fromEntries(AI_CONGESTION.map((a) => [a.image, { dirLabel: a.dirLabel, level: a.level, extent: a.extent, lanes: a.lanes, note: a.note, readable: a.readable, ts: a.ts }])))};
-const AISEARCH=${JSON.stringify(AI_CONGESTION.map((a) => ({ name: a.crossing, img: a.image, lat: a.lat, lng: a.lng })))};
+const BORDERSEARCH=${JSON.stringify(hakBorderCams.flatMap((c) => HAK_CAM_IMAGES[c.k].map((img, i) => ({ name: HAK_CAM_IMAGES[c.k].length > 1 ? `${c.name} · kam ${i + 1}` : c.name, img, lat: c.lat, lng: c.lng }))))};
 const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
 try{ L.geoJSON(BORDERS,{interactive:false,style:{color:'#475569',weight:1.2,opacity:0.7,fill:false,dashArray:'5 4'}}).addTo(map); }catch(e){}
 const crossingLayer=L.layerGroup().addTo(map);
 function crossingIcon(level){ return L.divIcon({className:'carinadiv',html:'<div class="carina"><div class="csign">CARINA<span>DOUANE</span></div><span class="cdot cd-'+level+'"></span></div>',iconSize:[38,38],iconAnchor:[19,19]}); }
 const MARKERS=[];
-function aiAgo(ts){ try{ var d=(Date.now()-new Date(ts).getTime())/60000; if(d<1)return 'pravkar'; if(d<60)return Math.round(d)+' min nazaj'; var h=d/60; if(h<24)return Math.round(h)+' h nazaj'; return Math.round(h/24)+' dni nazaj'; }catch(e){return '';} }
-var AIM={prosto:['🟢','Prosto','#16a34a'],zmerno:['🟡','Zmerno','#ca8a04'],gneca:['🟠','Gneča','#ea580c'],zastoj:['🔴','Zastoj','#dc2626'],neznano:['⚪','Neznano','#64748b']};
-var AIEXT={brez:'brez kolone',kratka:'kratka kolona',srednja:'srednja kolona',dolga:'dolga kolona'};
-function aiRow(a){ var m=AIM[a.level]||AIM.neznano;
- var dir=a.dirLabel?'<span style="font-size:11px;font-weight:600;color:#334155">▸ '+a.dirLabel+'</span> ':'';
- var parts=[]; if(a.extent&&AIEXT[a.extent])parts.push(AIEXT[a.extent]); if(a.lanes!=null&&a.lanes>0)parts.push(a.lanes+(a.lanes===1?' kolona':(a.lanes<5?' kolone':' kolon')));
- var ext=parts.length?' <span style="font-size:12px;color:#475569">· '+parts.join(' · ')+'</span>':'';
- var camlbl=a.cam?'<br><span style="font-size:10px;color:#94a3b8">📷 '+a.cam+'</span>':'';
- var note=a.note?'<br><span style="font-size:11px;color:#64748b">'+a.note+'</span>':'';
- var warn=a.readable===false?' <span style="font-size:10px;color:#b45309">⚠ slabo vidno</span>':'';
- return '<div style="margin:3px 0;padding-left:7px;border-left:3px solid '+m[2]+'">'+dir+'<b style="color:'+m[2]+'">'+m[0]+' '+m[1]+'</b>'+ext+warn+note+camlbl+'</div>';
-}
-function aiOne(url){ var a=AIIMG[url]; return a?'<div class="aibadge" style="margin-top:6px">'+'<span class="aitag">🤖 AI ocena gneče</span>'+aiRow(a)+'<span style="font-size:10px;color:#94a3b8">'+aiAgo(a.ts)+' · približek iz slike, brez parkiranih</span></div>':''; }
-function aiHtml(cams){ if(!cams||!cams.length)return '';
- var rows=cams.map(aiRow).join('');
- var ts=cams[0]?aiAgo(cams[0].ts):'';
- return '<div class="aibadge"><span class="aitag">🤖 AI ocena gneče (kolona proti rampi)</span>'+rows+'<span style="font-size:10px;color:#94a3b8">'+ts+' · približek iz slike, brez parkiranih</span></div>';
-}
 PTS.forEach(p=>{const cam=(p.cameras&&p.cameras.length)?'<br><span class="popsrc">uradni vir: '+p.cameras.map(c=>'<a href="'+c.url+'" target="_blank" rel="noopener noreferrer">'+c.source+' ↗</a>').join(' · ')+'</span>':'';
  var imgs=(p.images&&p.images.length)?'<div class="popcams">'+p.images.map(function(u){return '<img class="popcam snap" src="'+u.url+'" data-base="'+u.url+'" data-name="'+u.name+'" referrerpolicy="no-referrer" alt="'+u.name+'" title="'+u.name+'">';}).join('')+'</div>':'';
  const live=(p.streams&&p.streams.length)?'<br><b style="cursor:pointer;color:#c0392b" onclick="openStream(\\''+p.id+'\\')">▶ AMSS v živo</b>':'';
- var aiBadge=aiHtml(p.aiCams);
  const mk=L.marker([p.lat,p.lng],{icon:crossingIcon(p.level)})
  .bindTooltip('<b>'+p.name+'</b> '+FLAGJS[p.country]+'↔'+FLAGJS[p.neighbor])
- .bindPopup('<b>'+FLAGJS[p.country]+' '+p.name+' → '+FLAGJS[p.neighbor]+'</b><br>'+(p.waitMinutes==null?'čakanje: ni podatka':(p.waitMinutes<=0?'brez zadrževanja':'~'+p.waitMinutes+' min'))+'<br><small>'+p.rawStatus+'</small>'+aiBadge+imgs+cam+live,{maxWidth:280});
+ .bindPopup('<b>'+FLAGJS[p.country]+' '+p.name+' → '+FLAGJS[p.neighbor]+'</b><br>'+(p.waitMinutes==null?'čakanje: ni podatka':(p.waitMinutes<=0?'brez zadrževanja':'~'+p.waitMinutes+' min'))+'<br><small>'+p.rawStatus+'</small>'+imgs+cam+live,{maxWidth:280});
  mk.addTo(crossingLayer); MARKERS.push({mk:mk, cs:[p.country,p.neighbor], name:p.name, lat:p.lat, lng:p.lng});
 });
 document.addEventListener('click',function(e){ var t=e.target; if(t&&t.classList&&t.classList.contains('popcam')){ e.preventDefault(); openCam(t.getAttribute('data-base'), t.getAttribute('data-name')); } });
@@ -644,8 +606,8 @@ function addCam(lat,lng,country,name,popupHtml,image,road){ var m=L.marker([lat,
 ROADPTS.forEach(function(p){ var im=p.image?'<br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px">':''; addCam(p.lat,p.lng,'HR',p.name,'<b>📷 '+p.name+'</b><br><small>'+p.road+'</small>'+im+'<br><a href="'+p.url+'" target="_blank" rel="noopener noreferrer">odpri na HAK ↗</a>',p.image,p.road); });
 RSROADPTS.forEach(function(p){ addCam(p.lat,p.lng,'RS',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.poster+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>Putevi Srbije</small>',p.poster); });
 SIPTS.forEach(function(p){ addCam(p.lat,p.lng,'SI',p.title,'<b>📷 '+p.title+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>DARS</small>',p.image); });
-BIHCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>BIHAMK</small>'+aiOne(p.image),p.image); });
-AMSRSCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>AMS-RS</small>'+aiOne(p.image),p.image); });
+BIHCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>BIHAMK</small>',p.image); });
+AMSRSCAMPTS.forEach(function(p){ addCam(p.lat,p.lng,'BA',p.name,'<b>📷 '+p.name+'</b><br><img src="'+p.image+'" referrerpolicy="no-referrer" style="width:240px;border-radius:6px;margin-top:4px"><br><small>AMS-RS</small>',p.image); });
 camCluster.addTo(map);
 var _filter='all';
 var CAM_MIN_ZOOM=9;
@@ -671,8 +633,8 @@ var SEARCH=[];
 MARKERS.forEach(function(o){ SEARCH.push({name:o.name,lat:o.lat,lng:o.lng,t:'🚧',kind:'crossing',mk:o.mk}); });
 var _imgseen={};
 CAMS.forEach(function(o){ var disp=o.road?(o.name+' · '+o.road):o.name; SEARCH.push({name:disp,lat:o.lat,lng:o.lng,t:'📷',kind:'cam',img:o.image}); if(o.image)_imgseen[o.image]=1; });
-// AI-kamere, ki niso samostojne tocke (npr. Gornji Varos, Stara Gradiska) -> v iskanje
-AISEARCH.forEach(function(a){ if(a.img && !_imgseen[a.img]){ _imgseen[a.img]=1; SEARCH.push({name:a.name,lat:a.lat,lng:a.lng,t:'📷',kind:'cam',img:a.img}); } });
+// HAK mejne kamere (npr. Gornji Varos, Stara Gradiska) -> v iskanje
+BORDERSEARCH.forEach(function(a){ if(a.img && !_imgseen[a.img]){ _imgseen[a.img]=1; SEARCH.push({name:a.name,lat:a.lat,lng:a.lng,t:'📷',kind:'cam',img:a.img}); } });
 SEARCH.forEach(function(s,i){ s.id=i; s._n=nrm(s.name); });
 function doSearch(q){ var nq=nrm(q); var box=document.getElementById('searchResults'); if(!box) return; if(!nq){box.style.display='none';box.innerHTML='';return;}
  var hits=SEARCH.filter(function(s){return s._n.indexOf(nq)>=0;});

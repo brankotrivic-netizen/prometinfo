@@ -47,8 +47,6 @@ jobs:
 
       - name: Osveži podatke in zgradi stran
         run: npm run refresh
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Shrani osvežene podatke v repo
         run: |
