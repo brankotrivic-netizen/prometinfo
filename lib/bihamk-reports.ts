@@ -38,10 +38,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na rekonstrukciji raskrsnice na M-17 Ozimica-Topčić Polje na lokalitetu Papratnica svaki dan, osim nedjelje) od 07 do 16:30 sati saobraća se jednom trakom, naizmjenično."
    },
    {
-    "title": "Kupres",
-    "text": "Zbog radova na izgradnji kružne raskrsnice na M-16 u Kupresu, na spoju ulica Slavonske i Splitske, saobraća se usporeno, jednom trakom."
-   },
-   {
     "title": "Konjic-Jablanica",
     "text": "U toku su radovi na zamjeni dilatacije na Ribićkom mostu, u dužini od 20m saobraća se usporeno-jednom trakom"
    },
@@ -82,10 +78,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
  {
   "label": "Regionalne ceste",
   "items": [
-   {
-    "title": "Gračanica-Srnice",
-    "text": "Zbog sanacije kolovoza, saobraća se usporeno, jednom trakom uz postavljenu signalizaciju. Zbog održavanja sportske manifestacije danas 22.05.u vremenu od 16:45 do 17:30 sati, doći će do obustave saobraćaja na regionalnoj cesti Gračanica-Srnice (od raskrsnice do Šumarije)."
-   },
    {
     "title": "Ulaz u naselje Lokve",
     "text": "Zbog sanacije kolovoza, saobraća se usporeno, jednom trakom uz postavljenu signalizaciju u vremenu od 07:00 do 16:00 sati."
