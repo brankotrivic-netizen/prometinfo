@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "25.6.2026. 17:58",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, graničnim prijelazima te pojedinim trajektnim lukama i pristaništima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVAN REDNI PROMETNI DOGAĐAJI: na autocesti A2 Zagreb-Macelj u zoni radova između čvorova Zagreb zapad i Zaprešić, na Mostu Sava u smjeru Krapine, kolona je oko 4 km AUTOCESTE A1 Zagreb-Ploče-Karamatići - A2 Zagreb-Macelj zbog izvanrednih radova na Mostu Sava, od 55+700 km do 54+900 km u smjeru Krapine, vozi se preti…"
+  "updated": "25.6.2026. 20:04",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, graničnim prijelazima te pojedinim trajektnim lukama i pristaništima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVAN REDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A3 na 302+500 km između čvora Spačva i čvora Lipovac u smjeru Lipovca. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 40 km/h AUTOCESTE A1 Zagreb-Ploče-Karamatići A2 Zagreb-Macelj zbog izvanrednih radova na Mostu Sava, od 55+700 km do 54+90…"
  },
  {
   "title": "Granični prijelazi",

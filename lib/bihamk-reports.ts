@@ -83,10 +83,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog sanacije kolovoza, saobraća se usporeno, jednom trakom uz postavljenu signalizaciju u vremenu od 07:00 do 16:00 sati."
    },
    {
-    "title": "Obustava saobraćaja na cesti Devečani-planinski dom Galica",
-    "text": "Zbog radova na asfaltiranju, danas i sutra (24. - 25. 06.), u vremenu od 6 do 20 sati, obustavlja se saobraćaj na regionalnoj cesti Kalibunar-Galica-Babanovac-Vitovlje. Alternativni pravac za vrijeme obustave je cesta Turbe-Vitovlje."
-   },
-   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
