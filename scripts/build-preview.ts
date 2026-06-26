@@ -545,8 +545,7 @@ ${fuelHtml}
 <div id="camModal" class="modal" onclick="if(event.target===this)closeCam()">
   <div class="modalbox">
     <div class="modalhead"><span id="camTitle"></span><button onclick="closeCam()">✕</button></div>
-    <div style="text-align:center"><span id="camWrap" style="position:relative;display:inline-block;max-width:100%"><img id="camBig" referrerpolicy="no-referrer" alt=""><svg id="camZones" viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;display:none"></svg></span></div>
-    <div id="camZoneLegend" style="display:none;font-size:12px;margin-top:6px;line-height:1.5"><b>Vodilo (Gornji Varoš):</b> <span style="color:#16a34a">▬ zelena</span> = ni gužve · <span style="color:#ca8a04">▬ rumena</span> = zmerna · <span style="color:#dc2626">▬ rdeča</span> = gužva. Kolona čez črto = ta nivo.</div>
+    <div style="text-align:center"><img id="camBig" referrerpolicy="no-referrer" alt=""></div>
     <div class="modalfoot">Živa slika (osvežuje se) · <a id="camOpen" href="#" target="_blank" rel="noopener noreferrer">odpri v novem zavihku ↗</a></div>
   </div>
 </div>
@@ -717,18 +716,8 @@ function favRebuild(){ var grid=document.getElementById('favGrid'); if(!grid) re
 function favToggle(k){ if(FAVS.has(k))FAVS.delete(k); else FAVS.add(k); favSave(); favSync(); favRebuild(); }
 var _camTimer=null;
 function camBust(u){ return u+(u.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }
-// referencne crte (vodilo gneca) po sliki kamere; koordinate v % (0-100)
-var GVZONES={
- 'https://m.hak.hr/cam.asp?id=1022':[['#16a34a','18,46 30,42 44,47'],['#ca8a04','33,36 50,33'],['#dc2626','47,30 57,30']],
- 'https://m.hak.hr/cam.asp?id=1021':[['#16a34a','26,46 40,44 55,46'],['#ca8a04','42,40 56,38'],['#dc2626','48,36 57,36']]
-};
-function drawZones(img){ var svg=document.getElementById('camZones'); var leg=document.getElementById('camZoneLegend'); var z=GVZONES[img];
- if(!z){ svg.style.display='none'; leg.style.display='none'; svg.innerHTML=''; return; }
- svg.innerHTML=z.map(function(l){ return '<polyline points="'+l[1]+'" fill="none" stroke="'+l[0]+'" stroke-width="1.1" stroke-linecap="round" vector-effect="non-scaling-stroke" style="stroke-width:3px"/>'; }).join('');
- svg.style.display='block'; leg.style.display='block';
-}
-function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; drawZones(img); m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
-function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; var svg=document.getElementById('camZones'); if(svg){svg.style.display='none';svg.innerHTML='';} }
+function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
+function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
 (function favInit(){ var view=document.getElementById('view-cams'); if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); } view.addEventListener('click',function(e){ var t=e.target; var b=(t&&t.classList&&t.classList.contains('favbtn'))?t:(t&&t.closest?t.closest('.favbtn'):null); if(b){ e.preventDefault(); e.stopPropagation(); favToggle(b.getAttribute('data-k')); return; } var a=t&&t.closest?t.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); var nm=a.getAttribute('title')||(a.querySelector('span')?a.querySelector('span').textContent:''); openCam(im.getAttribute('data-base')||im.src, nm); } } }); favRebuild(); })();
 setInterval(function(){ document.querySelectorAll('img.snap').forEach(function(im){ var b=im.getAttribute('data-base'); if(b) im.src=b+(b.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }); }, 60000);
