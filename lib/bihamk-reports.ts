@@ -54,6 +54,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji pješačke staze na magistralnoj cesti Grude-Gorica kroz naselje Sovići povremeno se saobraća jednom trakom."
    },
    {
+    "title": "Kaonik-Vitez (Šantići)",
+    "text": "Zbog saobraćajne nezgode otežano, jednom trakom, saobraća se na magistralnoj cesti Kaonik-Vitez, kod mjesta Šantići."
+   },
+   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },
