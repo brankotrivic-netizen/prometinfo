@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.6.2026. 13:37",
-  "text": "IZVAN REDNI PROMETNI DOGAĐAJI: povećana gustoća prometa na autocesti A1 između naplatnih postaja Lučko i čvora Jastrebarsko u oba smjera. Na dionici su mjestimične usporene kolone vozila u pokretu uz povremene kratkotrajne zastoje na autocesti A6 Rijeka-Zagreb između čvorova Vrbovsko i Bosiljevo 2 kolona vozila u smjeru Zagreba duga je oko 2 km, zbog radova na vijaduktu Zečeve Drage AUTOCESTE A1 Zagreb-Ploče-Karamatići A2 Zagreb-Macelj - A3 Bregana-Lipovac do 26. lipnja zbog radova na dionici Zagreb zapad- čvora Sveta Nedelja (od 13.+ 600 do 12.+700 km) u smjeru Bregane vozi se po dva sužena prometna traka servisnim kolnikom (smjer Rakitje, Ježdovec, Kerestinec) u smjeru Bregane zbog prometn…"
+  "updated": "26.6.2026. 14:29",
+  "text": "IZVAN REDNI PROMETNI DOGAĐAJI: na autocesti A1 Zagreb-Ploče-Karamatići : povećana gustoća prometa između naplatnih postaja Lučko i čvora Jastrebarsko u oba smjera - na dionici su mjestimične usporene kolone vozila u pokretu uz povremene kratkotrajne zastoje požar na vozilu između čvorova Donja Zdenčina i Jastrebarsko u smjeru Dubrovnika - vozi se jednim trakom u koloni dugoj oko 7 km na autocesti A4 Goričan-Zagreb, povećana je gustoća prometa između čvorova Zagreb istok i Popovec u oba smjera - vozi se uz ograničenje brzine od 60 km/h na autocesti A6 Rijeka-Zagreb, između čvorova Vrbovsko i Bosiljevo 2 kolona vozila u smjeru Zagreba duga je oko 1 km, zbog radova na vijaduktu Zečeve Drage AUT…"
  },
  {
   "title": "Granični prijelazi",
