@@ -54,8 +54,8 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji pješačke staze na magistralnoj cesti Grude-Gorica kroz naselje Sovići povremeno se saobraća jednom trakom."
    },
    {
-    "title": "Kaonik-Vitez (Šantići)",
-    "text": "Zbog saobraćajne nezgode otežano, jednom trakom, saobraća se na magistralnoj cesti Kaonik-Vitez, kod mjesta Šantići."
+    "title": "Buna-Stolac (Kvanj)",
+    "text": "Zbog saobraćajne nezgode otežano, jednom trakom, saobraća se na magistralnoj cesti Buna-Stolac, kod mjesta Kvanj."
    },
    {
     "title": "Jablanica-Blidinje",
@@ -85,6 +85,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Ulaz u naselje Lokve",
     "text": "Zbog sanacije kolovoza, saobraća se usporeno, jednom trakom uz postavljenu signalizaciju u vremenu od 07:00 do 16:00 sati."
+   },
+   {
+    "title": "Zenica-Lašva",
+    "text": "Zbog sanacionih radova na regionalnoj cesti Zenica-Lašva od 08 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
