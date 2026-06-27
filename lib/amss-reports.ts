@@ -2,6 +2,18 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Vrba– petlja Trstenik, radovi",
+  "text": "Od 29. 6. 2026. godine do 15. 7. 2026. godine izvodiće se radovi na elementima za zaštitu od poplava na deonici petlja Trstenik petlja Vrba u smeru ka Vrbi. Tokom izvođenja radova za saobraćaj će biti zatvorena zaustavna saobraćajna traka u dužini od 500 metara, dok će se saobraćaj odvijati voznom i preticajnom saobraćajnom trakom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Petlja Koševi , radovi",
+  "text": "Od 29. 6. do 9. 7. 2026. godine, izvodiće se radovi na sanaciji behaton kocki na kružnom toku petlje Koševi. Tokom izvođenja radova, za saobraćaj će biti zatvorena desna saobraćajna traka u dužini od 200 metara, dok će se saobraćaj odvijati levom saobraćajnom trakom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Petlja Pojate- petlja Ćićevac, radovi",
+  "text": "Od 29. 6. 2026. godine do 19. 7. 2026. godine, izvodiće se radovi na sanaciji temelja niskih VMS portalnih konstrukcija na deonicama petlja Pojate petlja Ćićevac, petlja Ćićevac petlja Kruševac istok. Tokom izvođenja radova, u zavisnosti od lokacije (bankina ili središnji pojas), za saobraćaj će biti zatvorena zaustavna, odnosno preticajna saobraćajna traka u dužini od 100 metara, dok će se saobraćaj odvijati slobodnim trakama. Izvor: Putevi Srbije"
+ },
+ {
   "title": "Petlja Ostružnica - radovi",
   "text": "Od 29. 6. 2026. od 8 č do 3. 7. 2026. do 16 č izvoditi Faza 2 radova na rehabilitaciji kompletne petlje Ostružnica, na državnom putu I A reda broj 1. Tokom izvođenja radova, saobraćaj će se odvijati u sledećem režimu: - U smeru Niš/Novi Sad - Beograd/Železnik, za saobraćaj će biti zatvorena direktna rampa, dok će se saobraćaj preusmeravati prema postavljenoj saobraćajnoj signalizaciji OBILAZAK i Beograd Sajam: rampom ka Obrenovcu, uključenje ka Obrenovcu na Savsku magistralu, odmah desno isključ…"
  },
@@ -36,14 +48,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Vranje,radovi",
   "text": "Dana 19.6.2026. godine, u periodu od 7 do 17 časova, izvodiće se radovi na sanaciji stubova portala za putokaznu signalizaciju na petlji Vranje, na sledećim lokacijama: na stacionaži km 538+760, smer Niš Preševo, na stacionaži 539+318, smer Preševo Niš. Radovi će se naizmenično izvoditi u zaustavnoj ili preticajnoj saobraćajnoj traci, a saobraćaj će biti preusmeren na slobodne saobraćajne trake. Izvor Putevi Srbije"
- },
- {
-  "title": "Petlja Velika Drenova – petlja Trstenik, radovi",
-  "text": "Od 18.6.2026. godine, od 12 časova izvodiće se radovi na auto -putu broj 5, na deonici petlja Velika Drenova petlja Trstenik. U zoni radova (od km 39+500 do km 41+700) za saobraćaj će biti zatvorena kolovozna traka u smeru ka Vrnjačkoj Banji i saobraćaj će se odvijati dvosmerno na levoj kolovoznoj traci u smeru Pojatama. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petlja Koševi – petlja Vrnjačka Banja, radovi",
-  "text": "Od 20. 6. do 27. 6. 2026. godine, izvodiće se radovi na montaži pešačke ograde u razdelnom pojasu na mostovima na deonici petlja Koševi petlja Vrnjačka Banjau oba smera. U zoni radova, na mostovima, deo kolovoza uz razdelni pojas na levoj kolovoznoj traci biće zatvoren u dužini od 100 metara, dok će se saobraćaj odvijati voznom i zaustavnom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
  {
   "title": "Petlja Novi Sad Jug - Kovilj, radovi",
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Sušica-Kremna, radovi",
   "text": "Do 16. 3. 2026. godine izvode se radovi na rekonstrukciji mosta preko reke Sušica Sušica 3 (na km 121+540), na državnom putu I B reda broj 28, deonica Sušica - Kremna. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
- },
- {
-  "title": "Družetić-Joševa, radovi",
-  "text": "Produžavaju se radovi na uklanjanju oštećenog pločastog propusta i izgradnji novog propusta na deonici državnog puta Družetić (Joševa) Joševa (Gola Glava), u mestu Družetić (opština Koceljeva). U zoni radova, saobraćaj će biti prusmeren na privremenu devijaciju, gde će se odvijati naizmeničnim propuštanjem vozila. Planirani rok za završetak radova je 16.02.2026. godine. Izvor: Putevi Srbije"
  }
 ];
