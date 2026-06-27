@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "27.6.2026. 13:53",
-  "text": "Promet je srednje gust do povremeno pojačan na većini cesta u smjeru mora i u priobalju pa vozačima savjetujemo da održavaju sigurnosni razmak između vozila. Autocesta A1 Zagreb-Ploče-Karamatići kod naplatnih postaja Lučko iz smjera Buzina i Jankomira u smjeru mora nema dužih kolona između čvorova Karlovac i Bosiljevo 2 u smjeru mora vozi se usporeno u koloni uz povremene zastoje (gustoća prometa ) kod naplatnih postaja Lučko i Demerje u smjeru Zagreba kolone duge oko 1 km vozilo u kvaru na 163. km između čvorova Perušić i Otočac u smjeru Zagreba. Promet se vodi po dvije prometne trake uz ograničenje brzine od 100 km/h A2 Zagreb-Macelj kod naplatnih postaja Trakošćan u smjeru Zagreba kolona …"
+  "updated": "27.6.2026. 16:57",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: na autocesti A1 kod odmorišta Draganić u smjeru mora opasnost je od predmeta na kolniku AUTOCESTE A1 Zagreb-Ploče-Karamatići A2 Zagreb-Macelj - A3 Bregana-Lipovac zbog prometnog rasterećenja privoza čvoru Zagreb zapad (Jankomir) iz smjera Lipovca (A3) u smjeru Grada Zagreba, iz smjera Bregane (A3) i Macelja (A2) u smjeru Grada Zagreba (most Sava - Jankomir), prometuje se jednim prometnim trakom uz privremeno regulaciju prometa. Planirano trajanje je do 31.12.2026. godine. do 23. srpnja zbog sanacije odvodnje na dionici čvor Popovača – čvor Kutina u smjeru Lipovca (od km 90…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "27.6.2026. 13:34",
+  "updated": "27.6.2026. 16:37",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "27.6.2026. 13:35",
+  "updated": "27.6.2026. 16:31",
   "text": "U pomorskom prometu nema poteškoća. Tijekom dana očekujemo pojačan priljev vozila u trajektnim lukama. Izmjene u redu plovidbe: do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. sij…"
  },
  {
