@@ -54,10 +54,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji pješačke staze na magistralnoj cesti Grude-Gorica kroz naselje Sovići povremeno se saobraća jednom trakom."
    },
    {
-    "title": "Donji Vakuf",
-    "text": "Zbog održavanja manifestacije Dani Ajvatovice danas (27.06.) od 17:30 do 18:30 obustavlja se saobraćaj na raskrsnici magistralnih cesta u Donjem Vakufu (raskrsnica ulica 14.septembar i 770 Sbbr, od zgrade PTT do BP INA)."
-   },
-   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },
