@@ -82,14 +82,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 15. 6. do 17. 7. 2026. izvode se radovi na rehabilitaciji državnog puta II A reda broj 167, deonica Kladovo Milutinovac. Saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  },
  {
-  "title": "NR Preljina radovi - obustava saobraćaja",
-  "text": "Od 16. 6. 2026. godine, od 6 časova, zbog izvođenja završnih radova na saobraćajnom povezivanju dva auto-puta: državnog puta I A reda broj 2 ( Miloš Veliki ) i državnog puta I A reda broj 5 ( Moravski koridor ), planirano je zatvaranje denivelisane raskrsnice Preljina (Čačak - Sever). Naplatna stanica Preljina neće biti u funkciji tj. neće biti moguće isključenje i uključenje na auto-put Miloš Veliki Tokom zatvaranja denivelisane raskrsnice, saobraćaj će se, ka odredištima Čačak i Kraljevo, odvi…"
- },
- {
-  "title": "Povezivanjue auto-puta „Miloš Veliki“ i „Moravskog koridora“",
-  "text": "Dana 16. 6. 2026. od 6 časova, zbog izvođenja završnih radova na saobraćajnom povezivanju dva auto-puta: državnog puta I A reda broj 2 ( Miloš Veliki ) i državnog puta I A reda broj 5 ( Moravski koridor ), planirano je zatvaranje denivelisane raskrsnice Preljina (Čačak - Sever). Naplatna stanica Preljina neće biti u funkciji tj. neće biti moguće isključenje i uključenje na auto-put Miloš Veliki Tokom zatvaranja denivelisane raskrsnice, saobraćaj će se, ka odredištima Čačak i Kraljevo, odvijati n…"
- },
- {
   "title": "Naplatna stanica Trstenik, radovi",
   "text": "Od 13. 6. 2026. do 23. 6. 2026. godine, izvode radovi na sanaciji rigidnog kolovoza, na državnom putu I A reda broj 5, na naplatnoj stanici Trstenik, u oba smera. Tokom izvođenja radova, doći će do zatvaranja jednog kanala naplatne stanice, dok će se saobraćaj odvijati slobodnim kanalima. Izvor : Putevi Srbije"
  },
@@ -166,10 +158,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 18. 5. 2026. do 31. 12. 2026. godine, u toku svetlog dela dana, izvoditi radovi u sklopu rehabilitacije kolovoza, na deonici Sušica Zlatibor. Tokom izvođenja radova za saobraćaj će biti zatvorena treća saobraćajna traka, dok će se saobraćaj neometano odvijati u slobodne dve saobraćajne trake. Izuzetak, kada se radi zavšrni sloj asfalta, saobraćaj će se odvijati naizmeničnim propuštanjem u jednoj saobraćajnoj traci. Izvor JP Putevi Srbije"
  },
  {
-  "title": "Tunel Trbušani, radovi",
-  "text": "Radovi na održavanju ITS opreme i sistema za upravljanje tunelima na državnom putu I A reda broj 2, deonica petlja Preljina - petlja Pakovraće, tunel Trbušani izvodiće se sledećom dinamikom: - 13.5.2026. godine, u periodu od 10 do 18 časova, uz obustavu saobraćaja kroz desnu cev tunela, dok će se saobraćaj odvijati dvosmerno kroz levu cev tunela Trbušani, u smeru ka Čačku; - 14.5.2026. godine, u periodu od 10 do 18 časova, uz obustavu saobraćaja kroz levu cev tunela , dok će se saobraćaj odvijat…"
- },
- {
   "title": "Naplatna stanica Vrnjačka Banja, radovi",
   "text": "Od 7. 5. do 14. 5. 2026. izvodiće se radovi na državnom putu I A reda broj 5, na naplatnoj stanici Vrnjačka Banja. Za saobraćaj su zatvorena 3 naplatna kanala (broj 1, 2 i 8). Izvor: Putevi Srbije"
  },
@@ -240,5 +228,17 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Mijoska- granica SRB-CG",
   "text": "Na snazi je izmena režima saobraćaja do 30.06.2026. godine, zbog izvođenja radova na sanaciji nestabilne kamene kosine na državnom putu I B reda broj 23, deonica Mijoska državna granica SRB/CG (Gostun) na km 250+447. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Ivanjica-Arilje, radovi",
+  "text": "U okviru preostalih radova na pojačanom održavanju državnog puta I B reda broj 21, deonica Požega - Ivanjica, od km 209+141.00 do km 248+079.38, u periodu od 19.10.2025. do 01.10.2026. godine, izvodiće se radovi na asfaltiranju kolovoza na deonicama Arilje - Prilike i Prilike Ivanjica. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Sušica-Kremna, radovi",
+  "text": "Do 16. 3. 2026. godine izvode se radovi na rekonstrukciji mosta preko reke Sušica Sušica 3 (na km 121+540), na državnom putu I B reda broj 28, deonica Sušica - Kremna. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Družetić-Joševa, radovi",
+  "text": "Produžavaju se radovi na uklanjanju oštećenog pločastog propusta i izgradnji novog propusta na deonici državnog puta Družetić (Joševa) Joševa (Gola Glava), u mestu Družetić (opština Koceljeva). U zoni radova, saobraćaj će biti prusmeren na privremenu devijaciju, gde će se odvijati naizmeničnim propuštanjem vozila. Planirani rok za završetak radova je 16.02.2026. godine. Izvor: Putevi Srbije"
  }
 ];
