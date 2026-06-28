@@ -22,10 +22,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "U subotu, 27. juna. 2026. u 9 č, u saobraćaj biti puštena deonica državnog puta I A reda broj 5, Pojate Preljina, od denivelisane raskrsnice Adrani do denivelisane raskrsnice Preljina (Čačak Istok), u dužini od 28,71 km. Saobraćaj između ovih raskrsnica odvijaće se u punom profilu auto-puta E-761. Režim saobraćaja kod denivelisane raskrsnice Adrani Vozila koja dolaze iz smera Čačka ka Kraljevu isključivaće se sa auto-puta preko trake za usporenje i naplatne stanice Adrani Vozila koja se uključuj…"
  },
  {
-  "title": "Perlez- Farkaždin, radovi",
-  "text": "Od 25. 6. do 27. 6. 2026. godine, u periodu od 7 do 16 časova, izvodiće se radovi na krpljenju udarnih rupa, na državnom putu II A reda broj 129, deonica Perlez - Farkaždin. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila,uz pomoć mahača. Izvor: Putevi Srbije"
- },
- {
   "title": "Pakovraće-Prilipac, tunel Munjino brdo, radovi",
   "text": "Od 25. 6. 2026. godine do 1. 7. 2026. godine , izvodiće se radovi na redovnom održavanju, na deonici petlja Pakovraće petlja Prilipac, u tunelskoj cevi tunela Munjino brdo u smeru ka petlji Prilipac. Tokom izvođenja radova, za saobraćaj će biti zatvorena tunelska cev u smeru ka petlji Prilipac i saobraćaj će se odvijati dvosmerno u tunelskoj cevi u smeru ka petlji Pakovraće. Napomena: za saobraćaj će biti zatvoreno uključenje na petlji Lučani u smeru ka Prilipcu. Izvor:Putevi Srbije"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Sušica-Kremna, radovi",
   "text": "Do 16. 3. 2026. godine izvode se radovi na rekonstrukciji mosta preko reke Sušica Sušica 3 (na km 121+540), na državnom putu I B reda broj 28, deonica Sušica - Kremna. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Družetić-Joševa, radovi",
+  "text": "Produžavaju se radovi na uklanjanju oštećenog pločastog propusta i izgradnji novog propusta na deonici državnog puta Družetić (Joševa) Joševa (Gola Glava), u mestu Družetić (opština Koceljeva). U zoni radova, saobraćaj će biti prusmeren na privremenu devijaciju, gde će se odvijati naizmeničnim propuštanjem vozila. Planirani rok za završetak radova je 16.02.2026. godine. Izvor: Putevi Srbije"
  }
 ];
