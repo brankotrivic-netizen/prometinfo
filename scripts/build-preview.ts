@@ -143,7 +143,7 @@ async function main() {
       <div class="grid">
         ${[...g.list].sort((a, b) => (b.waitMinutes ?? -1) - (a.waitMinutes ?? -1)).map((it) => `
           <article class="card lvl-${it.level}">
-            <div class="name">${it.name}</div>
+            <div class="name">${it.name}<button class="cfav" data-cid="${it.id}" title="Dodaj med priljubljene prehode">☆</button></div>
             <div class="wait"><span class="badge b-${it.level}">${LEVEL_LABEL[it.level]}</span><span>${waitText(it.waitMinutes)}</span></div>
             <div class="raw">${it.rawStatus}</div>
             ${camBtn(it.cameras, it.streams, it.id)}
@@ -374,6 +374,15 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .favbtn.on{color:#f5a623}
 #favSection h2 .cnt{background:#fff7e6;color:#b9770e}
 #favGrid:empty{display:none}
+.busiest{display:flex;flex-direction:column;gap:6px}
+.busyrow{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--border);border-left:4px solid var(--border);border-radius:9px;padding:9px 12px;cursor:pointer;text-align:left}
+.busyrow:hover{border-color:var(--accent)}
+.busyname{font-weight:600;font-size:14px}
+.busymeta{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.busywait{font-size:12px;color:var(--muted)}
+.cfav{background:none;border:none;cursor:pointer;font-size:17px;color:#cbd5e1;line-height:1;padding:0 0 0 6px;vertical-align:middle}
+.cfav.on{color:#f5a623}
+#favCrossSection .meta{margin:6px 0 0}
 .favhint{margin:4px 0 0}
 .campin{font-size:15px;line-height:20px;text-align:center;filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}
 .carina{position:relative;width:38px;height:38px}
@@ -507,6 +516,16 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 <div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:#b45309;font-size:11px">⚠ prometni sloj: dodaj domeno na TomTom</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label></div>
 </div>
 <div class="view" id="view-borders" style="display:none">
+<section class="country-group" id="favCrossSection">
+  <h2>⭐ Priljubljeni prehodi <span class="cnt" id="favCrossCnt">0</span></h2>
+  <div class="busiest" id="favCrossList"></div>
+  <p class="meta" id="favCrossHint">Klikni zvezdico ⭐ pri katerem koli prehodu spodaj — prikaže se tukaj na vrhu. Shrani se v tej napravi.</p>
+</section>
+<section class="country-group" id="busiestSection">
+  <h2>⏱ Najdaljša čakanja zdaj <span class="cnt" id="busiestCnt">0</span></h2>
+  <div class="busiest" id="busiestList"></div>
+  <p class="meta" id="busiestHint" style="display:none">Trenutno ni zaznanih zastojev na prehodih z živimi podatki (čakalne dobe so večinoma za BiH).</p>
+</section>
 ${sections}
 </div>
 <div class="view" id="view-cams" style="display:none">
@@ -597,7 +616,7 @@ PTS.forEach(p=>{const cam=(p.cameras&&p.cameras.length)?'<br><span class="popsrc
  const mk=L.marker([p.lat,p.lng],{icon:crossingIcon(p.level)})
  .bindTooltip('<b>'+p.name+'</b> '+FLAGJS[p.country]+'↔'+FLAGJS[p.neighbor])
  .bindPopup('<b>'+FLAGJS[p.country]+' '+p.name+' → '+FLAGJS[p.neighbor]+'</b><br>'+(p.waitMinutes==null?'čakanje: ni podatka':(p.waitMinutes<=0?'brez zadrževanja':'~'+p.waitMinutes+' min'))+'<br><small>'+p.rawStatus+'</small>'+imgs+cam+live,{maxWidth:280});
- mk.addTo(crossingLayer); MARKERS.push({mk:mk, cs:[p.country,p.neighbor], name:p.name, lat:p.lat, lng:p.lng});
+ mk.addTo(crossingLayer); MARKERS.push({mk:mk, id:p.id, cs:[p.country,p.neighbor], name:p.name, lat:p.lat, lng:p.lng});
 });
 document.addEventListener('click',function(e){ var t=e.target; if(t&&t.classList&&t.classList.contains('popcam')){ e.preventDefault(); openCam(t.getAttribute('data-base'), t.getAttribute('data-name')); } });
 const camIcon=L.divIcon({className:'camdiv',html:'<div class="campin">📷</div>',iconSize:[20,20],iconAnchor:[10,10]});
@@ -721,6 +740,31 @@ function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.dis
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
 (function favInit(){ var view=document.getElementById('view-cams'); if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); } view.addEventListener('click',function(e){ var t=e.target; var b=(t&&t.classList&&t.classList.contains('favbtn'))?t:(t&&t.closest?t.closest('.favbtn'):null); if(b){ e.preventDefault(); e.stopPropagation(); favToggle(b.getAttribute('data-k')); return; } var a=t&&t.closest?t.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); var nm=a.getAttribute('title')||(a.querySelector('span')?a.querySelector('span').textContent:''); openCam(im.getAttribute('data-base')||im.src, nm); } } }); favRebuild(); })();
 setInterval(function(){ document.querySelectorAll('img.snap').forEach(function(im){ var b=im.getAttribute('data-base'); if(b) im.src=b+(b.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }); }, 60000);
+
+/* ⭐ Priljubljeni prehodi + ⏱ najbolj obremenjeni prehodi */
+(function(){
+  var LBL={none:'Brez',low:'Kratko',moderate:'Zmerno',high:'Daljše',severe:'Dolgo',unknown:'Ni podatka'};
+  var RANK={severe:5,high:4,moderate:3,low:2,none:1,unknown:0};
+  function waitTxt(m){ if(m==null)return ''; if(m<=0)return 'brez zadrževanja'; if(m<60)return '~'+m+' min'; var h=Math.floor(m/60),mm=m%60; return '~'+h+' h'+(mm?' '+mm+' min':''); }
+  var PBYID={}; PTS.forEach(function(p){ PBYID[p.id]=p; });
+  function crossRow(p){ var w=waitTxt(p.waitMinutes); return '<div class="busyrow lvl-'+p.level+'" onclick="focusCrossing(\\''+p.id+'\\')"><span class="busyname">'+(FLAGJS[p.country]||'')+(FLAGJS[p.neighbor]||'')+' '+p.name+'</span><span class="busymeta"><span class="badge b-'+p.level+'">'+(LBL[p.level]||'')+'</span>'+(w?'<span class="busywait">'+w+'</span>':'')+'</span></span></div>'; }
+  // najbolj obremenjeni
+  var busy=PTS.filter(function(p){ return RANK[p.level]>=3 || (p.waitMinutes!=null&&p.waitMinutes>0); });
+  busy.sort(function(a,b){ var aw=a.waitMinutes==null?-1:a.waitMinutes, bw=b.waitMinutes==null?-1:b.waitMinutes; return (bw-aw)||(RANK[b.level]-RANK[a.level]); });
+  var bl=document.getElementById('busiestList'), bc=document.getElementById('busiestCnt'), bh=document.getElementById('busiestHint');
+  if(bl){ if(busy.length){ bl.innerHTML=busy.slice(0,12).map(crossRow).join(''); if(bh)bh.style.display='none'; } else { bl.innerHTML=''; if(bh)bh.style.display='block'; } if(bc)bc.textContent=busy.length; }
+  // priljubljeni prehodi
+  var FCKEY='promet_fav_cross';
+  function fcGet(){ try{ return JSON.parse(localStorage.getItem(FCKEY)||'[]'); }catch(e){ return []; } }
+  function fcSave(a){ try{ localStorage.setItem(FCKEY, JSON.stringify(a)); }catch(e){} }
+  var FC=fcGet();
+  function fcSyncStars(){ var bs=document.querySelectorAll('.cfav'); for(var i=0;i<bs.length;i++){ var on=FC.indexOf(bs[i].getAttribute('data-cid'))>=0; bs[i].textContent=on?'\\u2605':'\\u2606'; bs[i].classList.toggle('on',on); } }
+  function fcRender(){ var list=document.getElementById('favCrossList'), cnt=document.getElementById('favCrossCnt'), hint=document.getElementById('favCrossHint'); if(!list)return; var rows=[]; FC.forEach(function(id){ var p=PBYID[id]; if(p)rows.push(crossRow(p)); }); list.innerHTML=rows.join(''); if(cnt)cnt.textContent=rows.length; if(hint)hint.style.display=rows.length?'none':'block'; }
+  window.focusCrossing=function(id){ var m=null; for(var i=0;i<MARKERS.length;i++){ if(MARKERS[i].id===id){ m=MARKERS[i]; break; } } showView('map', document.querySelectorAll('.tab')[0]); setTimeout(function(){ try{ map.invalidateSize(); if(m){ map.setView([m.lat,m.lng],12); m.mk.openPopup(); } }catch(e){} }, 150); };
+  var bv=document.getElementById('view-borders');
+  if(bv){ bv.addEventListener('click',function(e){ var t=e.target; if(t&&t.classList&&t.classList.contains('cfav')){ e.preventDefault(); e.stopPropagation(); var id=t.getAttribute('data-cid'); var ix=FC.indexOf(id); if(ix>=0)FC.splice(ix,1); else FC.push(id); fcSave(FC); fcSyncStars(); fcRender(); } }); }
+  fcSyncStars(); fcRender();
+})();
 </script></body></html>`;
 
   const out = resolve(process.cwd(), "osnutek-preview.html");
