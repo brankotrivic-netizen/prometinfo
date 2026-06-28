@@ -384,8 +384,14 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .cfav.on{color:#f5a623}
 #favCrossSection .meta{margin:6px 0 0}
 .favhint{margin:4px 0 0}
-.campin{font-size:15px;line-height:20px;text-align:center;filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}
+.campin{font-size:12px;width:22px;height:22px;line-height:19px;text-align:center;background:#fff;border:1.5px solid #3b82f6;border-radius:50%;box-shadow:0 1px 3px rgba(16,32,43,.4)}
 .carina{position:relative;width:38px;height:38px}
+.carinadiv .csign{transition:transform .1s}
+.carinadiv:hover .csign{transform:scale(1.1)}
+#view-map:fullscreen{background:var(--bg);padding:10px}
+#view-map:-webkit-full-screen{background:var(--bg);padding:10px}
+#view-map:fullscreen #map{height:92vh}
+#view-map:-webkit-full-screen #map{height:92vh}
 .csign{width:34px;height:34px;border-radius:50%;background:#fff;border:3px solid #d32f2f;color:#c62828;font-size:7px;font-weight:800;line-height:1.05;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.45);text-align:center}
 .csign span{font-size:6px;font-weight:700;opacity:.85}
 .cdot{position:absolute;top:0;right:0;width:11px;height:11px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 2px rgba(0,0,0,.4)}
@@ -606,7 +612,15 @@ const FLAGJS=${JSON.stringify(FLAG)};
 const BORDERSEARCH=${JSON.stringify(hakBorderCams.flatMap((c) => HAK_CAM_IMAGES[c.k].map((img, i) => ({ name: HAK_CAM_IMAGES[c.k].length > 1 ? `${c.name} · kam ${i + 1}` : c.name, img, lat: c.lat, lng: c.lng }))))};
 const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
-try{ L.geoJSON(BORDERS,{interactive:false,style:{color:'#475569',weight:1.2,opacity:0.7,fill:false,dashArray:'5 4'}}).addTo(map); }catch(e){}
+// drzavne meje: mehek sijaj + cista pikcasta crta
+try{
+  L.geoJSON(BORDERS,{interactive:false,style:{color:'#818cf8',weight:7,opacity:0.10,fill:false,lineJoin:'round'}}).addTo(map);
+  L.geoJSON(BORDERS,{interactive:false,style:{color:'#475569',weight:2,opacity:0.9,fill:false,dashArray:'1 8',lineCap:'round',lineJoin:'round'}}).addTo(map);
+}catch(e){}
+// celozaslonski gumb
+function toggleFs(){ var el=document.getElementById('view-map'); if(!el)return; var fe=document.fullscreenElement||document.webkitFullscreenElement; if(!fe){ (el.requestFullscreen||el.webkitRequestFullscreen||function(){}).call(el); } else { (document.exitFullscreen||document.webkitExitFullscreen||function(){}).call(document); } setTimeout(function(){ map.invalidateSize(); }, 300); }
+var fsCtrl=L.control({position:'topleft'}); fsCtrl.onAdd=function(){ var d=L.DomUtil.create('div','leaflet-bar locbtn'); d.innerHTML='<a href="#" title="Celozaslonsko" role="button" aria-label="Celozaslonsko">⛶</a>'; L.DomEvent.on(d,'click',function(e){ L.DomEvent.stop(e); toggleFs(); }); return d; }; fsCtrl.addTo(map);
+document.addEventListener('fullscreenchange',function(){ setTimeout(function(){ map.invalidateSize(); },250); });
 const crossingLayer=L.layerGroup().addTo(map);
 function crossingIcon(level){ return L.divIcon({className:'carinadiv',html:'<div class="carina"><div class="csign">CARINA<span>DOUANE</span></div><span class="cdot cd-'+level+'"></span></div>',iconSize:[38,38],iconAnchor:[19,19]}); }
 const MARKERS=[];
@@ -619,7 +633,7 @@ PTS.forEach(p=>{const cam=(p.cameras&&p.cameras.length)?'<br><span class="popsrc
  mk.addTo(crossingLayer); MARKERS.push({mk:mk, id:p.id, cs:[p.country,p.neighbor], name:p.name, lat:p.lat, lng:p.lng});
 });
 document.addEventListener('click',function(e){ var t=e.target; if(t&&t.classList&&t.classList.contains('popcam')){ e.preventDefault(); openCam(t.getAttribute('data-base'), t.getAttribute('data-name')); } });
-const camIcon=L.divIcon({className:'camdiv',html:'<div class="campin">📷</div>',iconSize:[20,20],iconAnchor:[10,10]});
+const camIcon=L.divIcon({className:'camdiv',html:'<div class="campin">📷</div>',iconSize:[22,22],iconAnchor:[11,11]});
 const camCluster=L.layerGroup();
 const CAMS=[];
 function addCam(lat,lng,country,name,popupHtml,image,road){ var m=L.marker([lat,lng],{icon:camIcon}).bindTooltip('📷 '+name).bindPopup(popupHtml); CAMS.push({m:m,country:country,name:name,lat:lat,lng:lng,image:image||'',road:road||''}); }
@@ -739,7 +753,6 @@ function openCam(img,title){ if(!img)return; var m=document.getElementById('camM
 function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
 (function favInit(){ var view=document.getElementById('view-cams'); if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); } view.addEventListener('click',function(e){ var t=e.target; var b=(t&&t.classList&&t.classList.contains('favbtn'))?t:(t&&t.closest?t.closest('.favbtn'):null); if(b){ e.preventDefault(); e.stopPropagation(); favToggle(b.getAttribute('data-k')); return; } var a=t&&t.closest?t.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); var nm=a.getAttribute('title')||(a.querySelector('span')?a.querySelector('span').textContent:''); openCam(im.getAttribute('data-base')||im.src, nm); } } }); favRebuild(); })();
-setInterval(function(){ document.querySelectorAll('img.snap').forEach(function(im){ var b=im.getAttribute('data-base'); if(b) im.src=b+(b.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }); }, 60000);
 
 /* ⭐ Priljubljeni prehodi + ⏱ najbolj obremenjeni prehodi */
 (function(){
