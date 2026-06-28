@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "29.6.2026. 01:29",
+  "updated": "29.6.2026. 01:52",
   "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: teretno vozilo u kvaru na autocesti A1 na 235.+800 km između čvorova Sveti Rok i Rovanjska u smjeru Dubrovnika - vozi se jednim prometnim trakom uz ograničenje brzine od 80 km/h AUTOCESTE A1 Zagreb-Ploče-Karamatići - A2 Zagreb-Macelj - A3 Bregana-Lipovac zbog prometnog rasterećenja privoza čvoru Zagreb zapad (Jankomir) iz smjera Lipovca (A3) u smjeru Grada Zagreba, iz smjera Bregane (A3) i Macelja (A2) u smjeru Grada Zagreba (most Sava - Jankomir), prome…"
  },
  {
