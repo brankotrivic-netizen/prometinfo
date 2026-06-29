@@ -131,6 +131,13 @@ async function main() {
   }
   const groupArr = [...groups.values()].sort((x, y) => y.list.length - x.list.length);
 
+  const esc = (s: string) => String(s).replace(/"/g, "&quot;").replace(/</g, "&lt;");
+  // Žive sličice kamer prehoda (za priljubljene kamere kar v zavihku Mejni prehodi).
+  const cardCams = (imgs?: { name: string; url: string }[]) =>
+    imgs && imgs.length
+      ? `<div class="camgrid cardcams">${imgs.map((im) => `<a class="camshot" href="${im.url}" target="_blank" rel="noopener noreferrer" title="${esc(im.name)}"><img class="snap" data-base="${im.url}" src="${im.url}" loading="lazy" referrerpolicy="no-referrer" alt="${esc(im.name)}"><span>${esc(im.name)}</span></a>`).join("")}</div>`
+      : "";
+
   const camBtn = (cams: CameraLink[], streams: StreamLink[], id: string) => {
     const live = streams.length ? `<button class="cam live" onclick="openStream('${id}')">▶ AMSS v živo</button>` : "";
     const links = cams.map((c) => `<a class="cam" href="${c.url}" target="_blank" rel="noopener noreferrer">📷 ${c.source} ↗</a>`).join("");
@@ -146,13 +153,13 @@ async function main() {
             <div class="name">${it.name}<button class="cfav" data-cid="${it.id}" title="Dodaj med priljubljene prehode">☆</button></div>
             <div class="wait"><span class="badge b-${it.level}">${LEVEL_LABEL[it.level]}</span><span>${waitText(it.waitMinutes)}</span></div>
             <div class="raw">${it.rawStatus}</div>
+            ${cardCams((it as unknown as { images?: { name: string; url: string }[] }).images)}
             ${camBtn(it.cameras, it.streams, it.id)}
           </article>`).join("")}
       </div>
     </section>`).join("");
 
   // Prometne kamere po cestah (HAK avtoceste) — zlozljivo po avtocesti.
-  const esc = (s: string) => String(s).replace(/"/g, "&quot;").replace(/</g, "&lt;");
   const roadTotal = HAK_ROADS.reduce((s, g) => s + g.cams.length, 0);
 
   // HAK mejni prehodi (granicni prijelazi) — vedno odprta mreza slicic
@@ -383,6 +390,10 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .cfav{background:none;border:none;cursor:pointer;font-size:17px;color:#cbd5e1;line-height:1;padding:0 0 0 6px;vertical-align:middle}
 .cfav.on{color:#f5a623}
 #favCrossSection .meta{margin:6px 0 0}
+.cardcams{grid-template-columns:repeat(auto-fill,minmax(82px,1fr));gap:5px;margin:9px 0 4px}
+.cardcams .camshot img{height:56px}
+.cardcams .camshot span{padding:3px 5px;font-size:9px;font-weight:600}
+.cardcams .favbtn{width:22px;height:22px;font-size:13px;line-height:22px;top:3px;right:3px}
 .favhint{margin:4px 0 0}
 .campin{font-size:12px;width:22px;height:22px;line-height:19px;text-align:center;background:#fff;border:1.5px solid #3b82f6;border-radius:50%;box-shadow:0 1px 3px rgba(16,32,43,.4)}
 .carina{position:relative;width:38px;height:38px}
@@ -745,14 +756,21 @@ var FAVS=favGet();
 function camKey(a){ var im=a.querySelector('img.snap'); var b=im&&im.getAttribute('data-base'); return b||a.getAttribute('href')||''; }
 function favBtn(key,on){ var b=document.createElement('button'); b.type='button'; b.className='favbtn'+(on?' on':''); b.textContent='\\u2605'; b.title='Dodaj/odstrani med priljubljene'; b.setAttribute('aria-label','Priljubljena kamera'); b.setAttribute('data-k',key); return b; }
 function favSync(){ var bs=document.querySelectorAll('.favbtn[data-k]'); for(var i=0;i<bs.length;i++){ bs[i].classList.toggle('on', FAVS.has(bs[i].getAttribute('data-k'))); } }
-function favRebuild(){ var grid=document.getElementById('favGrid'); if(!grid) return; grid.innerHTML=''; var seen={}; var list=document.querySelectorAll('#view-cams .camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k||!FAVS.has(k)||seen[k]) continue; seen[k]=1; var c=a.cloneNode(true); var ob=c.querySelector('.favbtn'); if(ob)ob.parentNode.removeChild(ob); c.appendChild(favBtn(k,true)); grid.appendChild(c); } var n=grid.children.length; var cnt=document.getElementById('favCnt'); if(cnt)cnt.textContent=n; var hint=document.getElementById('favHint'); if(hint)hint.style.display=n?'none':''; }
+function favRebuild(){ var grid=document.getElementById('favGrid'); if(!grid) return; grid.innerHTML=''; var seen={}; var list=document.querySelectorAll('#view-cams .camgrid:not(#favGrid) .camshot, #view-borders .camgrid .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k||!FAVS.has(k)||seen[k]) continue; seen[k]=1; var c=a.cloneNode(true); var ob=c.querySelector('.favbtn'); if(ob)ob.parentNode.removeChild(ob); c.appendChild(favBtn(k,true)); grid.appendChild(c); } var n=grid.children.length; var cnt=document.getElementById('favCnt'); if(cnt)cnt.textContent=n; var hint=document.getElementById('favHint'); if(hint)hint.style.display=n?'none':''; }
 function favToggle(k){ if(FAVS.has(k))FAVS.delete(k); else FAVS.add(k); favSave(); favSync(); favRebuild(); }
 var _camTimer=null;
 function camBust(u){ return u+(u.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }
 function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
 function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
-(function favInit(){ var view=document.getElementById('view-cams'); if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); } view.addEventListener('click',function(e){ var t=e.target; var b=(t&&t.classList&&t.classList.contains('favbtn'))?t:(t&&t.closest?t.closest('.favbtn'):null); if(b){ e.preventDefault(); e.stopPropagation(); favToggle(b.getAttribute('data-k')); return; } var a=t&&t.closest?t.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); var nm=a.getAttribute('title')||(a.querySelector('span')?a.querySelector('span').textContent:''); openCam(im.getAttribute('data-base')||im.src, nm); } } }); favRebuild(); })();
+(function favInit(){
+  function attach(view){ if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); }
+    view.addEventListener('click',function(e){ var t=e.target; var b=(t&&t.classList&&t.classList.contains('favbtn'))?t:(t&&t.closest?t.closest('.favbtn'):null); if(b){ e.preventDefault(); e.stopPropagation(); favToggle(b.getAttribute('data-k')); return; } var a=t&&t.closest?t.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); var nm=a.getAttribute('title')||(a.querySelector('span')?a.querySelector('span').textContent:''); openCam(im.getAttribute('data-base')||im.src, nm); } } });
+  }
+  attach(document.getElementById('view-cams'));
+  attach(document.getElementById('view-borders'));
+  favRebuild();
+})();
 
 /* ⭐ Priljubljeni prehodi + ⏱ najbolj obremenjeni prehodi */
 (function(){
