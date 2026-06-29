@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "29.6.2026. 18:41",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama te pojedinim graničnim prijelazima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na autocesti A3 Bregana-Lipovac na čvoru Rugvica u smjeru Lipovca. Obilazni pravci:čvor Rugvica (A3) - ŽC 3070 - ŽC 3034 - ŽC 3074 - ŽC 3041 - nerazvrstana cesta Etanska cesta - DC 43 - čvor Ivanić Grad . zbog prometne nesreće na zagrebačkoj obilaznici (A3) između čvorova Lučko i B…"
+  "updated": "29.6.2026. 19:11",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama te pojedinim graničnim prijelazima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na autocesti A3 Bregana-Lipovac između čvorova Rugvica i Ivanić Grad u smjeru Lipovca. Obilazni pravci: čvor Rugvica (A3) - ŽC 3070 - ŽC 3034 - ŽC 3074 - ŽC 3041 - nerazvrstana cesta Etanska cesta - DC 43 - čvor Ivanić Grad . Između čvorova Zagreb istok i Rugvica u smjeru Lipovca k…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "29.6.2026. 18:07",
+  "updated": "29.6.2026. 19:11",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "29.6.2026. 18:20",
+  "updated": "29.6.2026. 19:11",
   "text": "U prekidu je trajektna linija Sućuraj - Drvenik s polaskom iz luke Sućuraj u 18:00 i 19:45 sati te povratkom iz luke Drvenik u 19:00 i 20:30 sati. Uspostavit će se s polaskom iz luke Sućuraj u 22:00 sata. Izmjene u redu plovidbe: od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni prom…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "29.6.2026. 18:08",
+  "updated": "29.6.2026. 19:11",
   "text": "Stanje u željezničkom putničkom prometu 29. lipnja 2026. u 8.00 sati Zbog tehničkih poteškoća putnike će prevoziti autobusi umjesto vlakova: 5803 Knin 8.05 – Perković 9.03 5802 Perković 09.26 – Knin 10.28. Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupa…"
  },
  {
