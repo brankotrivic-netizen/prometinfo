@@ -68,17 +68,17 @@ export interface SourceResult {
 
 export const COUNTRY_NAMES: Record<Country, string> = {
   BA: "Bosna in Hercegovina",
-  HR: "Hrvaska",
+  HR: "Hrvaška",
   RS: "Srbija",
-  ME: "Crna gora",
+  ME: "Črna gora",
   MK: "Severna Makedonija",
   SI: "Slovenija",
   XK: "Kosovo",
-  HU: "Madzarska",
+  HU: "Madžarska",
   AT: "Avstrija",
   IT: "Italija",
   AL: "Albanija",
   BG: "Bolgarija",
   RO: "Romunija",
-  GR: "Grcija",
+  GR: "Grčija",
 };

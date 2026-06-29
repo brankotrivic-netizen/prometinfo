@@ -68,7 +68,7 @@ async function main() {
     items.push({
       id: c.id, name: nameFromId(c.id), country: c.country, neighbor: c.neighbor,
       lat: c.lat, lng: c.lng, cameras: c.cameras, streams: amssStreamsForCrossing(c.id),
-      level: "unknown", waitMinutes: null, rawStatus: "Lokacija + kamera (žive čakalne dobe v pripravi).", hasLive: false,
+      level: "unknown", waitMinutes: null, rawStatus: "Čakanje: ni podatka — preveri kamero / uradni vir.", hasLive: false,
     });
   }
   // Samostojne HAK kamere (brez ujemajocega prehoda) kot lastne tocke.
@@ -90,7 +90,11 @@ async function main() {
     const parts: string[] = [];
     if (w.ulazMin != null) parts.push(`vstop v HR ${w.ulazTxt}`);
     if (w.izlazMin != null) parts.push(`izstop iz HR ${w.izlazTxt}`);
-    it.rawStatus = `🇭🇷 HAK/MUP: ${parts.join(", ")}${w.ts ? ` · ${w.ts}` : ""}`;
+    const ageMin = w.tsISO ? Math.round((Date.now() - Date.parse(w.tsISO)) / 60000) : null;
+    const stale = ageMin != null && ageMin > 120 ? " · ⚠ star podatek" : "";
+    it.rawStatus = `🇭🇷 HAK/MUP: ${parts.join(", ")}${w.ts ? ` · ${w.ts}` : ""}${stale}`;
+    // shrani za smer + zanesljivost (kasnejše faze)
+    (it as unknown as { hak: unknown }).hak = { ulazMin: w.ulazMin, izlazMin: w.izlazMin, ulazTxt: w.ulazTxt, izlazTxt: w.izlazTxt, tsISO: w.tsISO };
   }
 
   const counts: Record<WaitLevel, number> = { none: 0, low: 0, moderate: 0, high: 0, severe: 0, unknown: 0 };
@@ -165,7 +169,7 @@ async function main() {
         ${[...g.list].sort((a, b) => (b.waitMinutes ?? -1) - (a.waitMinutes ?? -1)).map((it) => `
           <article class="card lvl-${it.level}">
             <div class="name">${it.name}<button class="cfav" data-cid="${it.id}" title="Dodaj med priljubljene prehode">☆</button></div>
-            <div class="wait"><span class="badge b-${it.level}">${LEVEL_LABEL[it.level]}</span><span>${waitText(it.waitMinutes)}</span></div>
+            <div class="wait"><span class="badge b-${it.level}">${LEVEL_LABEL[it.level]}</span>${it.level === "unknown" || it.waitMinutes == null ? "" : `<span>Čakanje: ${waitText(it.waitMinutes)}</span>`}</div>
             <div class="raw">${it.rawStatus}</div>
             ${cardCams((it as unknown as { images?: { name: string; url: string }[] }).images)}
             ${camBtn(it.cameras, it.streams, it.id)}
@@ -558,7 +562,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 </div>
 <div id="map"></div>
 <div id="zoomHint" class="zoomhint">🔍 Približaj zemljevid za prikaz kamer</div>
-<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:#b45309;font-size:11px">⚠ prometni sloj: dodaj domeno na TomTom</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label></div>
+<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:var(--muted);font-size:11px">🚦 gostota prometa trenutno ni na voljo</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label></div>
 </div>
 <div class="view" id="view-borders" style="display:none">
 <section class="country-group" id="favCrossSection">
@@ -838,7 +842,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   var PBYID={}; PTS.forEach(function(p){ PBYID[p.id]=p; });
   function crossRow(p){ var w=waitTxt(p.waitMinutes); return '<div class="busyrow lvl-'+p.level+'" onclick="focusCrossing(\\''+p.id+'\\')"><span class="busyname">'+(FLAGJS[p.country]||'')+(FLAGJS[p.neighbor]||'')+' '+p.name+'</span><span class="busymeta"><span class="badge b-'+p.level+'">'+(LBL[p.level]||'')+'</span>'+(w?'<span class="busywait">'+w+'</span>':'')+'</span></span></div>'; }
   // najbolj obremenjeni
-  var busy=PTS.filter(function(p){ return RANK[p.level]>=3 || (p.waitMinutes!=null&&p.waitMinutes>0); });
+  // dejansko cakanje = znan nivo cakanja (Kratko in vec) ALI minute > 0
+  var busy=PTS.filter(function(p){ return RANK[p.level]>=2 || (p.waitMinutes!=null&&p.waitMinutes>0); });
   busy.sort(function(a,b){ var aw=a.waitMinutes==null?-1:a.waitMinutes, bw=b.waitMinutes==null?-1:b.waitMinutes; return (bw-aw)||(RANK[b.level]-RANK[a.level]); });
   var bl=document.getElementById('busiestList'), bc=document.getElementById('busiestCnt'), bh=document.getElementById('busiestHint');
   if(bl){ if(busy.length){ bl.innerHTML=busy.slice(0,12).map(crossRow).join(''); if(bh)bh.style.display='none'; } else { bl.innerHTML=''; if(bh)bh.style.display='block'; } if(bc)bc.textContent=busy.length; }

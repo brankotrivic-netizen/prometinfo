@@ -42,6 +42,14 @@ function level(min) {
   if (min <= 120) return "high";
   return "severe";
 }
+// "28.6.2026. 23:57:07" -> ISO z +02:00 (CEST); za izracun starosti
+function toISO(ts) {
+  const m = /(\d{1,2})\.(\d{1,2})\.(\d{4})\.?\s+(\d{1,2}):(\d{2})(?::(\d{2}))?/.exec(String(ts || ""));
+  if (!m) return "";
+  const [, d, mo, y, h, mi, s] = m;
+  const p = (n) => String(n).padStart(2, "0");
+  return `${y}-${p(mo)}-${p(d)}T${p(h)}:${p(mi)}:${p(s || "00")}+02:00`;
+}
 function mapId(hakName) {
   const base = deacc(hakName).replace(/\bgp\b/g, "").replace(/\(.*?\)/g, "").trim();
   const paren = (/\((.*?)\)/.exec(strip(hakName)) || [])[1];
@@ -81,23 +89,24 @@ while ((m = rowRe.exec(html))) {
   if (ulazMin == null && izlazMin == null) continue; // brez podatka -> preskoci
   const id = mapId(name);
   const worst = Math.max(ulazMin == null ? -1 : ulazMin, izlazMin == null ? -1 : izlazMin);
+  const ts = cells[0].ts || (cells[2] && cells[2].ts) || "";
   waits.push({
     id: id || "", name, ulazMin, izlazMin, ulazTxt, izlazTxt,
     level: level(worst < 0 ? null : worst),
     waitMinutes: worst < 0 ? null : worst,
-    ts: cells[0].ts || (cells[2] && cells[2].ts) || "",
+    ts, tsISO: toISO(ts),
   });
 }
 
 function emptyTs() {
   return "// SAMODEJNO ZAJETO: zive cakalne dobe HAK/MUP. Trenutno brez objavljenih cakanj.\n" +
-    "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; level: string; waitMinutes: number | null; ts: string }\n" +
+    "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }\n" +
     "export const HAK_WAITS: HakWait[] = [];\n";
 }
 const ts =
   "// SAMODEJNO ZAJETO: zive cakalne dobe na mejnih prehodih (HAK / MUP RH).\n" +
   "// Objavljeni le prehodi s trenutnim cakanjem. ulaz=vstop v HR, izlaz=izstop iz HR (osebna vozila).\n" +
-  "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; level: string; waitMinutes: number | null; ts: string }\n" +
+  "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }\n" +
   "export const HAK_WAITS: HakWait[] = " + JSON.stringify(waits, null, 1) + ";\n";
 
 // stran smo uspesno dobili -> vedno zapisi (prazno je veljavno stanje "ni zastojev")
