@@ -12,6 +12,7 @@ import { HAK_CAM_IMAGES } from "../lib/hak-cam-images";
 import { HAK_WAITS } from "../lib/hak-waits";
 import { ROUTE_PRESETS } from "../lib/routes";
 import { DIESEL_PRICES, DIESEL_UPDATED } from "../lib/diesel-prices";
+import { SOCIAL_KEYWORDS, SOCIAL_PAGES, SOCIAL_QUERIES } from "../lib/social";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
 import { SI_CAMS } from "../lib/si-road-cameras";
 import { BIHAMK_CAMS } from "../lib/bihamk-cameras";
@@ -386,6 +387,12 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .rdir{margin:8px 0 4px}
 .dirrow{font-size:13px;line-height:1.7}
 .rmeta{font-size:12px;color:var(--muted);margin:4px 0}
+.rconf{font-size:13px;font-weight:700;margin:6px 0 2px}
+.rsrc{font-size:12px;color:var(--text);margin:3px 0;line-height:1.5}
+.rsoc{font-size:12px;color:var(--text);margin:5px 0;line-height:1.7}
+.rsoc a{color:var(--accent);font-weight:600}
+.rnote{font-size:12.5px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:8px;padding:7px 9px;margin:6px 0}
+.linklike{background:none;border:none;color:var(--accent);font:inherit;font-weight:600;cursor:pointer;padding:0;text-decoration:underline}
 .ract{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
 .ract .cam{padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:var(--panel-2);color:var(--text);font:inherit;font-weight:600;font-size:13px;cursor:pointer}
 .rfuel{margin-top:8px;padding:9px 11px;background:var(--panel-2);border-radius:9px;font-size:13px}
@@ -700,9 +707,12 @@ ${fuelHtml}
     <div class="modalhead"><span>➕ Dodaj moj podatek o čakanju</span><button onclick="closeManual()">✕</button></div>
     <div class="manform">
       <label>Mejni prehod<select id="manCrossing"></select></label>
+      <label>Vir podatka<select id="manSource"><option>HAK</option><option>AMSS</option><option>AMS-RS</option><option>BIHAMK</option><option>promet.si</option><option>Facebook</option><option value="osebno" selected>osebno (na kraju)</option><option>drugo</option></select></label>
       <label>Smer<select id="manDir"><option value="vstop v HR">vstop v Hrvaško</option><option value="izstop iz HR">izstop iz Hrvaške</option><option value="vstop v BiH">vstop v BiH</option><option value="izstop iz BiH">izstop iz BiH</option><option value="">druga / ni pomembno</option></select></label>
       <label>Čakanje (minute)<input id="manMin" type="number" min="0" max="600" inputmode="numeric" placeholder="npr. 45"></label>
       <label>Komentar (neobvezno)<input id="manCom" type="text" maxlength="80" placeholder="npr. samo en pas odprt"></label>
+      <label>Povezava na vir (neobvezno)<input id="manLink" type="url" placeholder="https://…"></label>
+      <label style="flex-direction:row;align-items:center;gap:8px"><input id="manVerified" type="checkbox"> Podatek sem osebno preveril</label>
       <button class="drivebtn" style="background:#2563eb" onclick="saveManual()">Shrani moj podatek</button>
       <p class="meta">Shrani se v tej napravi in dopolnjuje uradni podatek (ga ne izbriše).</p>
     </div>
@@ -754,6 +764,9 @@ const CNAMES=${JSON.stringify(COUNTRY_NAMES)};
 const ROUTES=${JSON.stringify(ROUTE_PRESETS)};
 const DIESEL=${JSON.stringify(Object.fromEntries(DIESEL_PRICES.map((d) => [d.country, d.eur])))};
 const DIESEL_UPD=${JSON.stringify(DIESEL_UPDATED)};
+const SOC_KW=${JSON.stringify(SOCIAL_KEYWORDS)};
+const SOC_PAGES=${JSON.stringify(SOCIAL_PAGES)};
+const SOC_Q=${JSON.stringify(SOCIAL_QUERIES)};
 const BORDERSEARCH=${JSON.stringify(hakBorderCams.flatMap((c) => HAK_CAM_IMAGES[c.k].map((img, i) => ({ name: HAK_CAM_IMAGES[c.k].length > 1 ? `${c.name} · kam ${i + 1}` : c.name, img, lat: c.lat, lng: c.lng }))))};
 const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
@@ -971,6 +984,10 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var age=(p.hak&&p.hak.tsISO)?(Date.now()-Date.parse(p.hak.tsISO))/60000:null;
     if(age!=null){ if(age<30)s+=15; else if(age<=120)s+=0; else s-=20; }
     else if(p.level==='unknown') s-=15;
+    // VEČ VIROV: potrditev iz >1 uradnega vira dvigne, sveži socialni signal ob "ni zastoja" uradno -> negotovost
+    var offN=sourcesFor(p).filter(function(x){return x.official;}).length;
+    if(offN>=2) s+=6;
+    if(socFresh(p.id).length>0 && (p.waitMinutes==null||p.waitMinutes<=15)) s-=8;
     if(role==='avoid') s-=20; else if(role==='alternative') s-=8;
     return Math.max(0, Math.min(100, Math.round(s)));
   }
@@ -982,6 +999,51 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(age<30) return {dot:'🟢', txt:'svež podatek (< 30 min)'};
     if(age<=120) return {dot:'🟡', txt:'star 30–120 min'};
     return {dot:'🔴', txt:'star > 2 h — preveri uradni vir'};
+  }
+  // ---- VEČ-VIRNI SLOJ: kateri vir pravi kaj ----
+  function sourcesFor(p){
+    var s=[];
+    if(p.hak){ var a=p.hak.tsISO?Math.round((Date.now()-Date.parse(p.hak.tsISO))/60000):null; s.push({key:'hak',label:'🇭🇷 HAK/MUP',official:true,wait:true,ageMin:a}); }
+    if(p.hasLive){ s.push({key:'bihamk',label:'🇧🇦 BIHAMK',official:true,wait:true,ageMin:null}); }
+    if(p.images&&p.images.length){
+      var u=p.images.map(function(i){return i.url||'';}).join(' ');
+      if(/satwork/.test(u)) s.push({key:'amsrs',label:'🇧🇦 AMS-RS (kamera)',official:true,wait:false});
+      if(/bihamk|videosurveillence/.test(u)) s.push({key:'bihcam',label:'🇧🇦 BIHAMK (kamera)',official:true,wait:false});
+      if(/cam\\.asp|m\\.hak\\.hr/.test(u)) s.push({key:'hakcam',label:'🇭🇷 HAK (kamera)',official:false,wait:false});
+    }
+    var ml=manLast(p.id); if(ml) s.push({key:'manual',label:'📝 moj vnos '+ml.min+' min'+(ml.source?' ('+ml.source+')':''),official:false,wait:true});
+    return s;
+  }
+  // ---- SOCIALNI SIGNALI (varno: brez scrapinga; staranje 3h) ----
+  var SKEY='promet_social';
+  function socGet(){ try{ return JSON.parse(localStorage.getItem(SKEY)||'[]'); }catch(e){ return []; } }
+  function socSave(a){ try{ localStorage.setItem(SKEY,JSON.stringify(a)); }catch(e){} }
+  function socFresh(id){ var now=Date.now(); return socGet().filter(function(x){ return x.id===id && (now-Date.parse(x.t))<3*3600*1000; }); }
+  function socQ(p){ if(SOC_Q[p.id]) return SOC_Q[p.id]; var nm=(p.name||'').replace(/^GP\\s+/,''); return [nm+' granica gužva', nm+' granični prelaz kolona', nm+' zastoj']; }
+  function fbUrl(q){ return 'https://www.facebook.com/search/posts/?q='+encodeURIComponent(q); }
+  function gUrl(q){ return 'https://www.google.com/search?tbs=qdr:d&q='+encodeURIComponent(q); }
+  window.addSocial=function(id){ var t=window.prompt('Socialni signal za ta prehod (kratek opis, npr. "kolona 2 km, čeka se"):'); if(!t)return; var a=socGet(); a.push({id:id,text:(''+t).slice(0,140),t:new Date().toISOString(),confirmed:false}); socSave(a); toast('Socialni signal dodan (velja 3 ure).'); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
+  // ---- ZANESLJIVOST IZ VEČ VIROV (🟢🟡🟠🔴⚫) ----
+  function confidence(p){
+    var srcs=sourcesFor(p), official=srcs.filter(function(s){return s.official;});
+    var officialWait=!!(p.hak||p.hasLive);
+    var age=(p.hak&&p.hak.tsISO)?(Date.now()-Date.parse(p.hak.tsISO))/60000:null;
+    var stale=age!=null && age>120;
+    var soc=socFresh(p.id).length;
+    if(officialWait && stale) return {dot:'🔴', txt:'Podatek star ali sumljiv', col:'#dc2626'};
+    if(official.length>=2) return {dot:'🟢', txt:'Potrjeno iz več virov', col:'#16a34a'};
+    if(soc>0 && !officialWait) return {dot:'🟠', txt:'Socialni signal — preveri kamero', col:'#ea580c'};
+    if(officialWait) return {dot:'🟡', txt:'Samo en uradni vir', col:'#ca8a04'};
+    if(official.length>=1) return {dot:'🟡', txt:'En vir (kamera) — brez čakalne dobe', col:'#ca8a04'};
+    return {dot:'⚫', txt:'Ni zanesljivega podatka', col:'#64748b'};
+  }
+  function assistantNote(p){
+    var soc=socFresh(p.id).length, officialWait=!!(p.hak||p.hasLive);
+    var officialLow=officialWait && (p.waitMinutes==null||p.waitMinutes<=15);
+    if(soc>0 && officialLow) return 'Uradni vir ne kaže večjega zastoja, socialni signali pa kažejo možno kolono — preveri kamero pred odločitvijo.';
+    if(soc>0) return 'Socialni signali kažejo možno povečanje čakanja — preveri kamero.';
+    if(!officialWait) return 'Ni avtomatske čakalne dobe — odpri uradni vir ali preveri kamero.';
+    return '';
   }
   var CACC={SI:'Slovenijo',HR:'Hrvaško',RS:'Srbijo',BA:'Bosno in Hercegovino',ME:'Črno goro',MK:'Severno Makedonijo',XK:'Kosovo',HU:'Madžarsko',AT:'Avstrijo',IT:'Italijo',AL:'Albanijo',BG:'Bolgarijo',RO:'Romunijo',GR:'Grčijo'};
   function acc(c){ return CACC[c]||CNAMES[c]||c; }
@@ -997,15 +1059,27 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   }
   function crossingCard(id, role){
     var p=CBYID[id]; if(!p) return '<div class="rcard" style="border-left:5px solid #94a3b8"><div class="rhead"><b>'+id+'</b></div><div class="rmeta" style="color:var(--muted)">Prehod ni v bazi — preveri uradni vir.</div></div>';
-    var sc=scoreCrossing(p,role), col=scoreColor(sc), rl=reliab(p);
+    var sc=scoreCrossing(p,role), col=scoreColor(sc), rl=reliab(p), cf=confidence(p);
     var icon=role==='recommended'?'✅':(role==='alternative'?'🟡':'🔴');
     var roleLbl=role==='recommended'?'Priporočeno':(role==='alternative'?'Alternativa':'Izogni se');
     var cam=(p.images&&p.images.length)?'<button class="cam" onclick="openCam(\\''+p.images[0].url+'\\',\\''+(p.name||'').replace(/[\\\\\\x27"]/g,'')+'\\')">📷 Kamera</button>':'';
+    var srcs=sourcesFor(p);
+    var srcLine=srcs.length?srcs.map(function(s){return s.label+(s.ageMin!=null?' ('+s.ageMin+' min)':'');}).join(' · '):'ni avtomatskih virov';
+    var soc=socFresh(p.id).length, q=socQ(p)[0];
+    var socLine='🔎 Socialni signali: '+(soc>0?('<b>'+soc+' svežih</b> (&lt;3h)'):'ni svežih')
+      +' · <a href="'+fbUrl(q)+'" target="_blank" rel="noopener noreferrer">Facebook ↗</a>'
+      +' · <a href="'+gUrl(q)+'" target="_blank" rel="noopener noreferrer">Google ↗</a>'
+      +' · <button class="linklike" onclick="addSocial(\\''+id+'\\')">➕ dodaj</button>';
+    var note=assistantNote(p);
     return '<div class="rcard" style="border-left:5px solid '+col+'">'
       +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">'+sc+'/100</span></div>'
+      +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
       +'<div class="rdir">'+dirWaits(p)+'</div>'
-      +'<div class="rmeta">'+rl.dot+' Zanesljivost: '+rl.txt+'</div>'
+      +'<div class="rsrc">Viri: '+srcLine+'</div>'
+      +'<div class="rmeta">'+rl.dot+' Svežina čakalne dobe: '+rl.txt+'</div>'
       +manLine(id)
+      +'<div class="rsoc">'+socLine+'</div>'
+      +(note?'<div class="rnote">🤖 '+note+'</div>':'')
       +'<div class="ract">'+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button></div>'
       +'</div>';
   }
@@ -1098,7 +1172,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function manLine(id){ var ml=manLast(id); if(!ml) return ''; return '<div class="rmine">📝 Moj zadnji vnos: <b>'+ml.min+' min</b> ob '+ml.hh+(ml.dir?' · '+ml.dir:'')+(ml.com?' — '+(''+ml.com).replace(/</g,'&lt;'):'')+'</div>'; }
   window.openManual=function(){ var dm=document.getElementById('manualModal'); if(!dm)return; var sel=document.getElementById('manCrossing'); var ids=CURRENT_ROUTE?CURRENT_ROUTE.recommended.concat(CURRENT_ROUTE.alternative,CURRENT_ROUTE.avoid):Object.keys(CBYID); sel.innerHTML=ids.map(function(id){var p=CBYID[id];return p?'<option value="'+id+'">'+p.name+'</option>':'';}).join(''); dm.style.display='flex'; };
   window.closeManual=function(){ var dm=document.getElementById('manualModal'); if(dm)dm.style.display='none'; };
-  window.saveManual=function(){ var id=document.getElementById('manCrossing').value, dir=document.getElementById('manDir').value, min=parseInt(document.getElementById('manMin').value,10), com=(document.getElementById('manCom').value||'').slice(0,80); if(!id||isNaN(min)){ toast('Izberi prehod in vnesi minute.'); return; } var a=manGet(); a.push({id:id,dir:dir,min:min,com:com,t:new Date().toISOString(),hh:nowHM()}); manSave(a); closeManual(); toast('Tvoj podatek je shranjen.'); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
+  window.saveManual=function(){ var id=document.getElementById('manCrossing').value, dir=document.getElementById('manDir').value, min=parseInt(document.getElementById('manMin').value,10), com=(document.getElementById('manCom').value||'').slice(0,80); var src=document.getElementById('manSource')?document.getElementById('manSource').value:'osebno'; var link=document.getElementById('manLink')?document.getElementById('manLink').value.slice(0,300):''; var ver=document.getElementById('manVerified')?document.getElementById('manVerified').checked:false; if(!id||isNaN(min)){ toast('Izberi prehod in vnesi minute.'); return; } var a=manGet(); a.push({id:id,dir:dir,min:min,com:com,source:src,link:link,verified:ver,t:new Date().toISOString(),hh:nowHM()}); manSave(a); closeManual(); toast('Tvoj podatek je shranjen.'); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
   // klik na kamero v "Moja pot" -> odpri veliko sliko
   var vr=document.getElementById('view-route');
   if(vr) vr.addEventListener('click',function(e){ var a=e.target&&e.target.closest?e.target.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); openCam(im.getAttribute('data-base')||im.src, a.getAttribute('data-name')||''); } } });
