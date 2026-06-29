@@ -10,6 +10,7 @@ import { HAK_ROADS, hakRoadLink } from "../lib/hak-road-cameras";
 import { HAK_CAMERAS, hakLink } from "../lib/hak-cameras";
 import { HAK_CAM_IMAGES } from "../lib/hak-cam-images";
 import { HAK_WAITS } from "../lib/hak-waits";
+import { ROUTE_PRESETS } from "../lib/routes";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
 import { SI_CAMS } from "../lib/si-road-cameras";
 import { BIHAMK_CAMS } from "../lib/bihamk-cameras";
@@ -373,6 +374,20 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .routebar #routeClear{background:var(--panel-2);color:var(--text);border:1px solid var(--border)}
 .rarrow{color:var(--muted);font-weight:700}
 .routeinfo{font-size:13px;flex-basis:100%;color:var(--text)}
+.quickroutes{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:6px}
+.qroute{padding:9px 12px;border:1px solid var(--border);border-radius:999px;background:var(--panel);color:var(--text);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.qroute:hover{border-color:var(--accent);background:var(--panel-2)}
+#routeResult h2{margin:2px 0 10px}
+.rcard{background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:11px 13px;margin-bottom:9px}
+.rhead{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:15px}
+.rrole{font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+.rscore{color:#fff;font-weight:800;font-size:13px;border-radius:8px;padding:3px 9px;white-space:nowrap}
+.rdir{margin:8px 0 4px}
+.dirrow{font-size:13px;line-height:1.7}
+.rmeta{font-size:12px;color:var(--muted);margin:4px 0}
+.ract{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
+.ract .cam{padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:var(--panel-2);color:var(--text);font:inherit;font-weight:600;font-size:13px;cursor:pointer}
+.rfuel{margin-top:8px;padding:9px 11px;background:var(--panel-2);border-radius:9px;font-size:13px}
 .legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0;font-size:12px;color:var(--muted)}
 .legend .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .country-group{margin-top:24px}.country-group h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
@@ -544,14 +559,29 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
   <div class="searchwrap"><input id="search" type="text" autocomplete="off" placeholder="🔍 Išči mejni prehod ali kamero…" oninput="doSearch(this.value)"><div id="searchResults"></div></div>
 </div>
 <div class="tabs">
-  <button class="tab active" onclick="showView('map',this)">🗺️ Zemljevid</button>
-  <button class="tab" onclick="showView('borders',this)">🚧 Mejni prehodi</button>
-  <button class="tab" onclick="showView('cams',this)">📷 Kamere</button>
-  <button class="tab" onclick="showView('reports',this)">📰 Poročila</button>
-  <button class="tab" onclick="showView('truck',this)">🚛 Tovornjaki</button>
-  <button class="tab" onclick="showView('fuel',this)">⛽ Gorivo</button>
+  <button class="tab active" data-view="route" onclick="showView('route',this)">🧭 Moja pot</button>
+  <button class="tab" data-view="map" onclick="showView('map',this)">🗺️ Zemljevid</button>
+  <button class="tab" data-view="borders" onclick="showView('borders',this)">🚧 Mejni prehodi</button>
+  <button class="tab" data-view="cams" onclick="showView('cams',this)">📷 Kamere</button>
+  <button class="tab" data-view="reports" onclick="showView('reports',this)">📰 Poročila</button>
+  <button class="tab" data-view="truck" onclick="showView('truck',this)">🚛 Tovornjaki</button>
+  <button class="tab" data-view="fuel" onclick="showView('fuel',this)">⛽ Gorivo</button>
 </div>
-<div class="view" id="view-map">
+<div class="view" id="view-route">
+  <section class="country-group">
+    <h2>🧭 Kam grem danes?</h2>
+    <div class="routebar">
+      <input id="mpFrom" type="text" autocomplete="off" placeholder="Izhodišče (npr. Kamnik)">
+      <span class="rarrow">→</span>
+      <input id="mpTo" type="text" autocomplete="off" placeholder="Cilj (npr. Banja Luka)">
+      <button type="button" onclick="checkRoute()">Preveri pot</button>
+    </div>
+    <p class="meta" style="margin:2px 0 10px">Hitre poti (shranjene v napravi):</p>
+    <div class="quickroutes" id="quickRoutes"></div>
+  </section>
+  <section class="country-group" id="routeResult" style="display:none"></section>
+</div>
+<div class="view" id="view-map" style="display:none">
 <div class="routebar">
   <input id="routeFrom" type="text" autocomplete="off" placeholder="Od (npr. Banja Luka)">
   <span class="rarrow">→</span>
@@ -652,6 +682,8 @@ const TRUCKPTS=${JSON.stringify(TRUCK_PARKING)};
 const BORDERS=${JSON.stringify(COUNTRY_BORDERS)};
 const COL={none:"#2dd4a7",low:"#5fd35f",moderate:"#e7c84b",high:"#f29c3e",severe:"#ef4d56",unknown:"#6b7a8d"};
 const FLAGJS=${JSON.stringify(FLAG)};
+const CNAMES=${JSON.stringify(COUNTRY_NAMES)};
+const ROUTES=${JSON.stringify(ROUTE_PRESETS)};
 const BORDERSEARCH=${JSON.stringify(hakBorderCams.flatMap((c) => HAK_CAM_IMAGES[c.k].map((img, i) => ({ name: HAK_CAM_IMAGES[c.k].length > 1 ? `${c.name} · kam ${i + 1}` : c.name, img, lat: c.lat, lng: c.lng }))))};
 const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
@@ -699,7 +731,7 @@ function filterCountry(c, btn){
  var secs=document.querySelectorAll('.country-group[data-countries]');
  for(var j=0;j<secs.length;j++){ var cs=(secs[j].getAttribute('data-countries')||'').split(' '); secs[j].style.display=(c==='all'||cs.indexOf(c)>=0)?'':'none'; }
  MARKERS.forEach(function(o){ var show=(c==='all'||o.cs.indexOf(c)>=0); if(show){o.mk.addTo(crossingLayer);}else{crossingLayer.removeLayer(o.mk);} });
- var mapTab=document.querySelector('.tab'); showView('map', mapTab);
+ showView('map');
  setTimeout(function(){
    if(c!=='all'){ var pts=[]; MARKERS.forEach(function(o){ if(o.cs.indexOf(c)>=0) pts.push([o.lat,o.lng]); }); CAMS.forEach(function(o){ if(o.country===c) pts.push([o.lat,o.lng]); }); if(pts.length) try{ map.fitBounds(pts,{padding:[40,40],maxZoom:11}); }catch(e){} }
    rebuildCams();
@@ -721,7 +753,7 @@ function doSearch(q){ var nq=nrm(q); var box=document.getElementById('searchResu
  box.style.display='block'; }
 function gotoHit(i){ var s=SEARCH[i]; if(!s) return; var box=document.getElementById('searchResults'); if(box)box.style.display='none'; var inp=document.getElementById('search'); if(inp)inp.value='';
  if(s.kind==='cam' && s.img){ openCam(s.img, s.name); return; }
- showView('map', document.querySelectorAll('.tab')[0]);
+ showView('map');
  setTimeout(function(){ try{ map.invalidateSize(); map.setView([s.lat,s.lng],12); if(s.mk) s.mk.openPopup(); }catch(e){} }, 140); }
 function gotoPoint(lat,lng){ map.setView([lat,lng],13); var b=document.getElementById('searchResults'); if(b)b.style.display='none'; var s=document.getElementById('search'); if(s)s.value=''; }
 var truckPark=L.layerGroup();
@@ -787,7 +819,7 @@ function calcRoute(){
       var m1=L.marker([pts[0].lat,pts[0].lng]).bindTooltip('Od: '+pts[0].name);
       var m2=L.marker([pts[1].lat,pts[1].lng]).bindTooltip('Do: '+pts[1].name);
       routeLayer=L.layerGroup([glow,line,m1,m2]).addTo(map);
-      showView('map', document.querySelectorAll('.tab')[0]);
+      showView('map');
       setTimeout(function(){ try{ map.invalidateSize(); map.fitBounds(line.getBounds(),{padding:[50,50]}); }catch(e){} }, 120);
       info.innerHTML='📏 <b>'+(rt.distance/1000).toFixed(0)+' km</b> · ⏱ ~'+Math.round(rt.duration/60)+' min <span style="color:#94a3b8">(brez prometa)</span>';
       document.getElementById('routeClear').style.display='';
@@ -800,13 +832,8 @@ function clearRoute(){ if(routeLayer){ map.removeLayer(routeLayer); routeLayer=n
 document.addEventListener('keydown',function(e){ if(e.key==='Enter'){ var t=e.target; if(t&&(t.id==='routeFrom'||t.id==='routeTo')) calcRoute(); } });
 function showView(v, btn){
  var tabs=document.querySelectorAll('.tab'); for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
- if(btn) btn.classList.add('active');
- document.getElementById('view-map').style.display=(v==='map')?'':'none';
- document.getElementById('view-borders').style.display=(v==='borders')?'':'none';
- document.getElementById('view-cams').style.display=(v==='cams')?'':'none';
- document.getElementById('view-reports').style.display=(v==='reports')?'':'none';
- document.getElementById('view-truck').style.display=(v==='truck')?'':'none';
- document.getElementById('view-fuel').style.display=(v==='fuel')?'':'none';
+ if(btn){ btn.classList.add('active'); } else { var tb=document.querySelector('.tab[data-view="'+v+'"]'); if(tb) tb.classList.add('active'); }
+ ['route','map','borders','cams','reports','truck','fuel'].forEach(function(name){ var el=document.getElementById('view-'+name); if(el) el.style.display=(v===name)?'':'none'; });
  if(v==='map'){ setTimeout(function(){ map.invalidateSize(); }, 60); }
 }
 (function(){ var tt=document.getElementById('trafficToggle'); if(tt&&tt.checked&&TOMTOM_KEY) toggleTraffic(tt); })();
@@ -854,10 +881,94 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   var FC=fcGet();
   function fcSyncStars(){ var bs=document.querySelectorAll('.cfav'); for(var i=0;i<bs.length;i++){ var on=FC.indexOf(bs[i].getAttribute('data-cid'))>=0; bs[i].textContent=on?'\\u2605':'\\u2606'; bs[i].classList.toggle('on',on); } }
   function fcRender(){ var list=document.getElementById('favCrossList'), cnt=document.getElementById('favCrossCnt'), hint=document.getElementById('favCrossHint'); if(!list)return; var rows=[]; FC.forEach(function(id){ var p=PBYID[id]; if(p)rows.push(crossRow(p)); }); list.innerHTML=rows.join(''); if(cnt)cnt.textContent=rows.length; if(hint)hint.style.display=rows.length?'none':'block'; }
-  window.focusCrossing=function(id){ var m=null; for(var i=0;i<MARKERS.length;i++){ if(MARKERS[i].id===id){ m=MARKERS[i]; break; } } showView('map', document.querySelectorAll('.tab')[0]); setTimeout(function(){ try{ map.invalidateSize(); if(m){ map.setView([m.lat,m.lng],12); m.mk.openPopup(); } }catch(e){} }, 150); };
+  window.focusCrossing=function(id){ var m=null; for(var i=0;i<MARKERS.length;i++){ if(MARKERS[i].id===id){ m=MARKERS[i]; break; } } showView('map'); setTimeout(function(){ try{ map.invalidateSize(); if(m){ map.setView([m.lat,m.lng],12); m.mk.openPopup(); } }catch(e){} }, 150); };
   var bv=document.getElementById('view-borders');
   if(bv){ bv.addEventListener('click',function(e){ var t=e.target; if(t&&t.classList&&t.classList.contains('cfav')){ e.preventDefault(); e.stopPropagation(); var id=t.getAttribute('data-cid'); var ix=FC.indexOf(id); if(ix>=0)FC.splice(ix,1); else FC.push(id); fcSave(FC); fcSyncStars(); fcRender(); } }); }
   fcSyncStars(); fcRender();
+})();
+
+/* 🧭 Moja pot: decision score, smer cakanja, zanesljivost, priporoceni prehodi */
+(function(){
+  var CBYID={}; PTS.forEach(function(p){ CBYID[p.id]=p; });
+  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(new RegExp('[\\u0300-\\u036f]','g'),'').trim(); }
+  function waitMinTxt(m){ if(m==null)return 'ni podatka'; if(m<=0)return 'brez zadrževanja'; if(m<60)return '~'+m+' min'; var h=Math.floor(m/60),mm=m%60; return '~'+h+' h'+(mm?' '+mm+' min':''); }
+  var LVLNUM={none:30,low:22,moderate:2,high:-15,severe:-25,unknown:-15};
+  function scoreCrossing(p, role){
+    var s=50, w=p.waitMinutes;
+    if(w!=null){ if(w<=15)s+=35; else if(w<=30)s+=25; else if(w<=60)s+=5; else s-=25; }
+    else { s+=(LVLNUM[p.level]!=null?LVLNUM[p.level]:-15); }
+    if(p.images&&p.images.length) s+=10;
+    var age=(p.hak&&p.hak.tsISO)?(Date.now()-Date.parse(p.hak.tsISO))/60000:null;
+    if(age!=null){ if(age<30)s+=15; else if(age<=120)s+=0; else s-=20; }
+    else if(p.level==='unknown') s-=15;
+    if(role==='avoid') s-=20; else if(role==='alternative') s-=8;
+    return Math.max(0, Math.min(100, Math.round(s)));
+  }
+  function scoreColor(s){ return s>=80?'#16a34a':(s>=60?'#ca8a04':'#dc2626'); }
+  function reliab(p){
+    var iso=p.hak&&p.hak.tsISO;
+    if(!iso) return {dot:'⚫', txt:'ni žive čakalne dobe — zanesljivost omejena'};
+    var age=(Date.now()-Date.parse(iso))/60000;
+    if(age<30) return {dot:'🟢', txt:'svež podatek (< 30 min)'};
+    if(age<=120) return {dot:'🟡', txt:'star 30–120 min'};
+    return {dot:'🔴', txt:'star > 2 h — preveri uradni vir'};
+  }
+  var CACC={SI:'Slovenijo',HR:'Hrvaško',RS:'Srbijo',BA:'Bosno in Hercegovino',ME:'Črno goro',MK:'Severno Makedonijo',XK:'Kosovo',HU:'Madžarsko',AT:'Avstrijo',IT:'Italijo',AL:'Albanijo',BG:'Bolgarijo',RO:'Romunijo',GR:'Grčijo'};
+  function acc(c){ return CACC[c]||CNAMES[c]||c; }
+  function dirWaits(p){
+    if(p.hak){
+      var other=(p.country==='HR')?p.neighbor:p.country;
+      var u=(p.hak.ulazMin!=null)?p.hak.ulazTxt:'ni podatka', iz=(p.hak.izlazMin!=null)?p.hak.izlazTxt:'ni podatka';
+      return '<div class="dirrow">'+(FLAGJS[other]||'')+'→🇭🇷 vstop v '+acc('HR')+': <b>'+u+'</b></div>'
+           + '<div class="dirrow">🇭🇷→'+(FLAGJS[other]||'')+' vstop v '+acc(other)+': <b>'+iz+'</b></div>';
+    }
+    if(p.waitMinutes!=null) return '<div class="dirrow">Čakanje (obe smeri): <b>'+waitMinTxt(p.waitMinutes)+'</b></div>';
+    return '<div class="dirrow" style="color:var(--muted)">Smerni podatek ni na voljo — preveri kamero / uradni vir.</div>';
+  }
+  function crossingCard(id, role){
+    var p=CBYID[id]; if(!p) return '<div class="rcard" style="border-left:5px solid #94a3b8"><div class="rhead"><b>'+id+'</b></div><div class="rmeta" style="color:var(--muted)">Prehod ni v bazi — preveri uradni vir.</div></div>';
+    var sc=scoreCrossing(p,role), col=scoreColor(sc), rl=reliab(p);
+    var icon=role==='recommended'?'✅':(role==='alternative'?'🟡':'🔴');
+    var roleLbl=role==='recommended'?'Priporočeno':(role==='alternative'?'Alternativa':'Izogni se');
+    var cam=(p.images&&p.images.length)?'<button class="cam" onclick="openCam(\\''+p.images[0].url+'\\',\\''+(p.name||'').replace(/[\\\\\\x27"]/g,'')+'\\')">📷 Kamera</button>':'';
+    return '<div class="rcard" style="border-left:5px solid '+col+'">'
+      +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">'+sc+'/100</span></div>'
+      +'<div class="rdir">'+dirWaits(p)+'</div>'
+      +'<div class="rmeta">'+rl.dot+' Zanesljivost: '+rl.txt+'</div>'
+      +'<div class="ract">'+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button></div>'
+      +'</div>';
+  }
+  function renderRoute(pr){
+    var res=document.getElementById('routeResult');
+    var html='<h2>'+pr.from+' → '+pr.to+'</h2>';
+    if(pr.note) html+='<p class="meta">ℹ️ '+pr.note+'</p>';
+    var all=pr.recommended.concat(pr.alternative, pr.avoid);
+    if(!all.length){ html+='<p class="meta">Na tej poti ni mejne kontrole (Schengen) — preveri le gostoto prometa na zemljevidu.</p>'; }
+    else {
+      pr.recommended.forEach(function(id){ html+=crossingCard(id,'recommended'); });
+      pr.alternative.forEach(function(id){ html+=crossingCard(id,'alternative'); });
+      pr.avoid.forEach(function(id){ html+=crossingCard(id,'avoid'); });
+    }
+    if(pr.fuelCountries&&pr.fuelCountries.length){ html+='<div class="rfuel">⛽ Države za gorivo: '+pr.fuelCountries.map(function(c){return (FLAGJS[c]||'')+' '+(CNAMES[c]||c);}).join(' · ')+' <span class="meta">(podroben izračun v pripravi)</span></div>'; }
+    res.innerHTML=html; res.style.display='';
+    try{ res.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){}
+  }
+  function renderQuick(){
+    var box=document.getElementById('quickRoutes'); if(!box) return;
+    box.innerHTML=ROUTES.map(function(r){ return '<button class="qroute" onclick="selectRoute(\\''+r.id+'\\')">'+r.from+' → '+r.to+'</button>'; }).join('');
+  }
+  window.selectRoute=function(id){ var pr=ROUTES.filter(function(r){return r.id===id;})[0]; if(!pr)return; var a=document.getElementById('mpFrom'),b=document.getElementById('mpTo'); if(a)a.value=pr.from; if(b)b.value=pr.to; showView('route'); renderRoute(pr); };
+  window.checkRoute=function(){
+    var a=(document.getElementById('mpFrom').value||'').trim(), b=(document.getElementById('mpTo').value||'').trim();
+    var res=document.getElementById('routeResult');
+    if(!a||!b){ res.style.display=''; res.innerHTML='<p class="meta">Vpiši izhodišče in cilj.</p>'; return; }
+    var pr=ROUTES.filter(function(r){return norm(r.from)===norm(a)&&norm(r.to)===norm(b);})[0];
+    if(pr){ renderRoute(pr); return; }
+    res.style.display=''; res.innerHTML='<h2>'+a+' → '+b+'</h2><p class="meta">Za to pot še nimam presetov mejnih prehodov. Pot rišem na zemljevidu…</p>';
+    var rf=document.getElementById('routeFrom'), rt=document.getElementById('routeTo'); if(rf)rf.value=a; if(rt)rt.value=b; calcRoute();
+  };
+  document.addEventListener('keydown',function(e){ if(e.key==='Enter'){ var t=e.target; if(t&&(t.id==='mpFrom'||t.id==='mpTo')) checkRoute(); } });
+  renderQuick();
 })();
 </script></body></html>`;
 
