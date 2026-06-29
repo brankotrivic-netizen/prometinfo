@@ -2,6 +2,14 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Vrnjačka banja- Vrba, radovi",
+  "text": "Dana 1. 7. 2026. godine, zbog izvođenja geodetskih mernih radova, biće izmenjen režim saobraćaja na deonici petlja Vrnjačka Banja Vrba, u oba smera. U zoni radova, u dužini od 160 metara, za saobraćaj će prvo biti zatvorena preticajna saobraćajna traka, dok će se saobraćaj odvijati voznom i zaustavnom saobraćajnom trakom, zatim će biti zatvorena zaustavna, a saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvor Putevi Srbije"
+ },
+ {
+  "title": "Petlja Dušanovac - petlje Lasta, radovi",
+  "text": "Od 29. 6. do 1. 7. 2026. godine, u periodu od 22 do 5 časova, izvodiće se radovi na čišćenju i ispiranju kišne kanalizacije, deonica petlja Dušanovac petlja Lasta, u smeru ka Nišu. Radovi će se izvoditi u preticajnoj saobraćajnoj traci, dok će se saobraćaj odvijati voznom i zaustavnom saobraćajnom trakom. Izvor: Putevi Srbije"
+ },
+ {
   "title": "Petlja Vrba– petlja Trstenik, radovi",
   "text": "Od 30. 6. 2026. godine, izvodiće se radovi na ugradnji rukohvata u razdelnom pojasu, na deonici petlja Trstenik petlja Vrba u oba smera. Tokom izvođenja radova, za saobraćaj će biti zatvorene preticajne saobraćajne trake na mostovima navedene deonice, dok će se saobraćaj odvijati voznim i zaustavnim saobraćajnim trakama. Rok za završetak radova je 7 dana. Izvor: Putevi Srbije"
  },
@@ -24,10 +32,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Pakovraće-Prilipac, tunel Munjino brdo, radovi",
   "text": "Od 25. 6. 2026. godine do 1. 7. 2026. godine , izvodiće se radovi na redovnom održavanju, na deonici petlja Pakovraće petlja Prilipac, u tunelskoj cevi tunela Munjino brdo u smeru ka petlji Prilipac. Tokom izvođenja radova, za saobraćaj će biti zatvorena tunelska cev u smeru ka petlji Prilipac i saobraćaj će se odvijati dvosmerno u tunelskoj cevi u smeru ka petlji Pakovraće. Napomena: za saobraćaj će biti zatvoreno uključenje na petlji Lučani u smeru ka Prilipcu. Izvor:Putevi Srbije"
- },
- {
-  "title": "Petlja Vladičin Han- petlja Predejane, radovi",
-  "text": "Od 24. 6. 2026. godine, od 8 časova, do 29. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radovi na redovnom održavanju pranje tunela, na deonici petlja Vladičin Han petlja Predejane, u tunelu Manajle, smer ka Nišu. Tokom izvođenja radova, za saobraćaj će biti zatvorena vozna saobraćajna traka leve tunelske cevi, dok će se saobraćaj odvijati preticajnom saobraćajnom trakom. Van perioda izvođenja radova saobraćaj će se odvijati u redovnom režimu. Izvor: Putevi Srbije"
  },
  {
   "title": "petlja Kruševac istok- petlja Ćićevac, radovi",
@@ -88,10 +92,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Novi Beograd (Vojvođanska ulica) - petlja Surčin jug, radovi",
   "text": "Od 9. 6. do 4. 8. 2026. izmenjen je režim saobraćaja zbog radova na rehabilitaciji kolovoza mosta na državnom putu II B reda broj 475 deonica Novi Beograd (Vojvođanska ulica) - petlja Surčin jug. Tokom izvođenja radova , za saobraćaj su zatvorene saobraćajne trake uz razdelno ostrvo. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petlja Vrnjačka banja, radovi",
-  "text": "Od 10. 6. 2026.godine izvodiće se radovi na sečenju asfalta i ugradnji asfalta na petlji Vrnjačka Banja i pristupnim putevima. Za vreme izvođenja radova petlja Vrnjačka Banja i pristupni putevi biće privremeno zatvoreni za saobraćaj motornih vozila. Vozila koja idu za Vrnjačku banju će se usmeravati na naplatnu stanicu Trstenik ili na naplatnu stanicu Vrba. Radovi će biti obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom i trajaće 21 dan, ukoliko vremenski uslovi to dozvole…"
  },
  {
   "title": "Kovilovo-Beograd, radovi",

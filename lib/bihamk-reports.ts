@@ -54,10 +54,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji pješačke staze na magistralnoj cesti Grude-Gorica kroz naselje Sovići povremeno se saobraća jednom trakom."
    },
    {
-    "title": "Zavidovići-Banovići",
-    "text": "Na magistralnoj cesti Zavidovići-Banovići od 11 do 15 sati zbog održavanja biciklističke utrke doći će do obustave saobraćaja."
-   },
-   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },
