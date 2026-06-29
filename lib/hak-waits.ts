@@ -49,12 +49,12 @@ export const HAK_WAITS: HakWait[] = [
  {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
-  "ulazMin": 30,
+  "ulazMin": null,
   "izlazMin": 30,
-  "ulazTxt": "do 30 min.",
+  "ulazTxt": "-",
   "izlazTxt": "do 30 min.",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "29.6.2026. 11:25:23"
+  "ts": "Nema podataka"
  }
 ];

@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "29.6.2026. 14:13",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu (A8) između čvora i tunela Učka gdje se tijekom dana prekida promet nekoliko puta te na više dionica Ličke (DC1) i Jadranske magistrale (DC8). Pozivamo vozače da poštuju prometne propise i ograničenja, osobito ograničenje brzine te pripaze na brojne motocikliste i bicikliste u prometu. IZVANREDNI PROMETNI DOGAĐAJI: u zoni radova na autocesti A6 Rijeka-Zagreb (9. km) ispred tunela Veliki Gložac u smjeru Rijeke kolona je 2 km kolona vozila zbog prometne nesreće na autocesti A4 između čvora Sesvete i čvora Zagreb istok u smj…"
+  "updated": "29.6.2026. 14:28",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu (A8) između čvora i tunela Učka gdje se tijekom dana prekida promet nekoliko puta te na više dionica Ličke (DC1) i Jadranske magistrale (DC8). Pozivamo vozače da poštuju prometne propise i ograničenja, osobito ograničenje brzine te pripaze na brojne motocikliste i bicikliste u prometu. IZVANREDNI PROMETNI DOGAĐAJI: u zoni radova na autocesti A6 Rijeka-Zagreb (9. km) ispred tunela Veliki Gložac u smjeru Rijeke kolona je 1 km prometna nesreća na autocesti A3 na 90+650 km između čvora Popovača i čvora Kutina u smjeru Lipovca…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "29.6.2026. 14:13",
-  "text": "Trajekti i katamarani plove prema plovidbenom redu. Izmjene u redu plovidbe: dana 28. lipnja, liniju 807 Suđurađ-Lopud-Koločep-Dubrovnik u 20:30 s polaskom iz Dubrovnika, preuzeti će trajekt Hanibal Lucić umjesto Premude koja ostaje na vezu u Dubrovniku do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. g…"
+  "updated": "29.6.2026. 14:24",
+  "text": "Trajekti i katamarani plove prema plovidbenom redu. Izmjene u redu plovidbe: od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni prome…"
  },
  {
   "title": "Željeznički promet",
