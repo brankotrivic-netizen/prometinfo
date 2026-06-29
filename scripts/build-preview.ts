@@ -411,6 +411,9 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .manform label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--text)}
 .manform select,.manform input{padding:10px 11px;border:1px solid var(--border);border-radius:8px;font:inherit;background:var(--bg);color:var(--text)}
 #toast{display:none;position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:4000;background:#0b1220;color:#fff;padding:12px 18px;border-radius:10px;font-size:14px;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.3);max-width:90%}
+.alrow{display:flex;align-items:center;gap:8px;font-size:14px;padding:6px 0}
+.alrow span{flex:1;font-weight:600}
+.althr{width:74px;padding:7px 9px;border:1px solid var(--border);border-radius:7px;font:inherit;background:var(--bg);color:var(--text)}
 .legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0;font-size:12px;color:var(--muted)}
 .legend .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .country-group{margin-top:24px}.country-group h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
@@ -522,7 +525,9 @@ h1{font-size:24px}
  .countrytiles{grid-template-columns:repeat(3,1fr);gap:6px}
  .ctile{padding:10px 4px;border-radius:10px}
  .ctile .cflag{font-size:22px}.ctile .cname{font-size:11px}.ctile .cstat{font-size:10px}
- .tabs{flex-wrap:wrap;gap:2px}
+ .tabs{flex-wrap:nowrap;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+ .tabs::-webkit-scrollbar{display:none}
+ .rhead{font-size:14px}.dname{font-size:30px}.dwait{font-size:20px}
  .tab{padding:8px 11px;font-size:13px;white-space:nowrap}
  #map{height:360px}
  .stats{gap:6px}.stat{flex:1 1 calc(33% - 6px);padding:8px 6px}.stat b{font-size:18px}
@@ -589,6 +594,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
   <button class="tab" data-view="reports" onclick="showView('reports',this)">📰 Poročila</button>
   <button class="tab" data-view="truck" onclick="showView('truck',this)">🚛 Tovornjaki</button>
   <button class="tab" data-view="fuel" onclick="showView('fuel',this)">⛽ Gorivo</button>
+  <button class="tab" data-view="settings" onclick="showView('settings',this)">⚙️ Nastavitve</button>
 </div>
 <div class="view" id="view-route">
   <div id="mpBanner"></div>
@@ -653,6 +659,30 @@ ${truckHtml}
 </div>
 <div class="view" id="view-fuel" style="display:none">
 ${fuelHtml}
+</div>
+<div class="view" id="view-settings" style="display:none">
+  <section class="country-group">
+    <h2>⚙️ Nastavitve</h2>
+    <h3 class="rsub">🚗 Moje vozilo</h3>
+    <div class="manform" style="max-width:440px">
+      <label>Ime vozila<input id="setVehName" type="text" placeholder="BMW X3 2.0d"></label>
+      <label>Poraba (l/100km)<input id="setVehCons" type="number" step="0.1" min="1" inputmode="decimal"></label>
+      <label>Rezervoar (l)<input id="setVehTank" type="number" min="1" inputmode="numeric"></label>
+      <button class="cam" onclick="saveVehicle()">Shrani vozilo</button>
+    </div>
+    <h3 class="rsub">🔔 Moji alarmi</h3>
+    <div id="setAlarms"></div>
+    <p class="meta">Alarm se sproži, ko čakanje na prehodu preseže prag — prikaže se kot pasica v zavihku »Moja pot«.</p>
+    <h3 class="rsub">⭐ Moji podatki v napravi</h3>
+    <div id="setCounts" class="meta"></div>
+    <div class="ract"><button class="cam" onclick="clearFavs()">Počisti priljubljene</button><button class="cam" onclick="clearManual()">Počisti moje vnose</button></div>
+    <h3 class="rsub">🛠️ Razvijalec</h3>
+    <label style="display:flex;gap:8px;align-items:center;cursor:pointer;font-size:14px"><input type="checkbox" id="setDebug" onchange="toggleDebug(this)"> Debug način (tehnični podatki)</label>
+    <div id="debugPanel" class="meta" style="display:none;margin-top:8px;background:var(--panel-2);border-radius:8px;padding:9px 11px"></div>
+    <h3 class="rsub">♻️ Ponastavitev</h3>
+    <button class="cam" style="border-color:#dc2626;color:#dc2626" onclick="resetAll()">Ponastavi vse (počisti localStorage)</button>
+    <p class="meta">Izbriše vse osebne nastavitve v tej napravi (vozilo, priljubljene, vnose, alarme).</p>
+  </section>
 </div>
 <footer><strong>Opomba:</strong> žive čakalne dobe trenutno iz BIHAMK (BiH); ostali prehodi prikazani z lokacijo + povezavo na uradno kamero (klik = uradni vir). 🔴 „AMSS v živo" predvaja uradni HLS tok kamere v aplikaciji. Čakalne dobe so pogosto opisne ocene. Koordinate približne (osnutek).</footer>
 </div></div>
@@ -873,7 +903,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Enter'){ var t=e.ta
 function showView(v, btn){
  var tabs=document.querySelectorAll('.tab'); for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
  if(btn){ btn.classList.add('active'); } else { var tb=document.querySelector('.tab[data-view="'+v+'"]'); if(tb) tb.classList.add('active'); }
- ['route','map','borders','cams','reports','truck','fuel'].forEach(function(name){ var el=document.getElementById('view-'+name); if(el) el.style.display=(v===name)?'':'none'; });
+ ['route','map','borders','cams','reports','truck','fuel','settings'].forEach(function(name){ var el=document.getElementById('view-'+name); if(el) el.style.display=(v===name)?'':'none'; });
  if(v==='map'){ setTimeout(function(){ map.invalidateSize(); }, 60); }
 }
 (function(){ var tt=document.getElementById('trafficToggle'); if(tt&&tt.checked&&TOMTOM_KEY) toggleTraffic(tt); })();
@@ -1134,6 +1164,30 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     box.innerHTML=html;
   }
   renderQuick(); renderBanner();
+})();
+
+/* ⚙️ Nastavitve */
+(function(){
+  function flash(m){ var t=document.getElementById('toast'); if(!t){t=document.createElement('div');t.id='toast';document.body.appendChild(t);} t.textContent=m; t.style.display='block'; clearTimeout(t._h); t._h=setTimeout(function(){t.style.display='none';},2600); }
+  function loadVeh(){ var v; try{v=JSON.parse(localStorage.getItem('promet_vehicle'));}catch(e){} v=v||{name:'BMW X3 2.0d',cons:7.8,tank:67}; var n=document.getElementById('setVehName'),c=document.getElementById('setVehCons'),t=document.getElementById('setVehTank'); if(n)n.value=v.name; if(c)c.value=v.cons; if(t)t.value=v.tank; }
+  window.saveVehicle=function(){ var v={name:(document.getElementById('setVehName').value||'Moje vozilo').slice(0,40), cons:parseFloat(document.getElementById('setVehCons').value)||7.8, tank:parseInt(document.getElementById('setVehTank').value,10)||60}; localStorage.setItem('promet_vehicle',JSON.stringify(v)); flash('Vozilo shranjeno.'); };
+  function getAlarms(){ try{var a=JSON.parse(localStorage.getItem('promet_alarms')); if(a&&a.length)return a;}catch(e){} return [{crossing:'si-obrezje',min:45,label:'Obrežje'},{crossing:'hr-bajakovo',min:60,label:'Bajakovo'},{crossing:'si-karavanke',min:30,label:'Karavanke'}]; }
+  function renderAlarms(){ var box=document.getElementById('setAlarms'); if(!box)return; var a=getAlarms(); box.innerHTML=a.map(function(al,i){ return '<div class="alrow"><span>'+al.label+'</span> prag: <input type="number" min="0" max="600" data-i="'+i+'" class="althr" value="'+al.min+'"> min</div>'; }).join('')+'<button class="cam" onclick="saveAlarms()" style="margin-top:8px">Shrani alarme</button>'; }
+  window.saveAlarms=function(){ var a=getAlarms(); var inps=document.querySelectorAll('.althr'); for(var i=0;i<inps.length;i++){ var ix=+inps[i].getAttribute('data-i'); a[ix].min=parseInt(inps[i].value,10)||0; } localStorage.setItem('promet_alarms',JSON.stringify(a)); flash('Alarmi shranjeni.'); };
+  function cnt(k){ try{var a=JSON.parse(localStorage.getItem(k)||'[]'); return a.length||0;}catch(e){return 0;} }
+  function renderCounts(){ var box=document.getElementById('setCounts'); if(!box)return; box.innerHTML='Priljubljene kamere: <b>'+cnt('promet_favs')+'</b> · priljubljeni prehodi: <b>'+cnt('promet_fav_cross')+'</b> · moji vnosi čakanja: <b>'+cnt('promet_manual')+'</b>'; }
+  window.clearFavs=function(){ localStorage.removeItem('promet_favs'); localStorage.removeItem('promet_fav_cross'); renderCounts(); flash('Priljubljene počiščene (osveži stran za prikaz).'); };
+  window.clearManual=function(){ localStorage.removeItem('promet_manual'); renderCounts(); flash('Moji vnosi počiščeni.'); };
+  function debugInfo(){
+    var tom=(typeof TOMTOM_KEY!=='undefined'&&TOMTOM_KEY)?'ključ vstavljen — domena mora biti na TomTom seznamu (brankotrivic-netizen.github.io/*)':'brez ključa';
+    var pts=(typeof PTS!=='undefined')?PTS.length:'?';
+    var keys=Object.keys(localStorage).filter(function(k){return k.indexOf('promet_')===0;}).join(', ')||'(brez)';
+    return 'Prehodov v podatkih: '+pts+'<br>TomTom prometni sloj: '+tom+'<br>localStorage ključi: '+keys+'<br>Zaslon: '+window.innerWidth+'×'+window.innerHeight+' px';
+  }
+  window.toggleDebug=function(cb){ localStorage.setItem('promet_debug', cb.checked?'1':'0'); var p=document.getElementById('debugPanel'); if(p){ p.style.display=cb.checked?'block':'none'; if(cb.checked)p.innerHTML=debugInfo(); } };
+  window.resetAll=function(){ if(!confirm('Počistim vse osebne nastavitve v tej napravi (vozilo, priljubljene, vnose, alarme)?'))return; Object.keys(localStorage).filter(function(k){return k.indexOf('promet_')===0;}).forEach(function(k){localStorage.removeItem(k);}); location.reload(); };
+  loadVeh(); renderAlarms(); renderCounts();
+  var dbg=localStorage.getItem('promet_debug')==='1', dc=document.getElementById('setDebug'); if(dc){ dc.checked=dbg; if(dbg){ var dp=document.getElementById('debugPanel'); dp.style.display='block'; dp.innerHTML=debugInfo(); } }
 })();
 </script></body></html>`;
 
