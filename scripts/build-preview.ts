@@ -363,6 +363,12 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 #map{height:640px;border-radius:14px;border:1px solid var(--border);margin-bottom:4px;background:var(--panel-2)}
 .locbtn a{font-size:16px;width:30px;height:30px;line-height:30px;text-align:center;display:block;background:#fff;text-decoration:none}
 .youpin{font-size:22px;line-height:1;filter:drop-shadow(0 1px 2px rgba(0,0,0,.45))}
+.routebar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:0 0 8px;background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:8px 10px}
+.routebar input{flex:1 1 150px;min-width:120px;padding:9px 11px;border:1px solid var(--border);border-radius:8px;font:inherit;background:var(--bg);color:var(--text)}
+.routebar button{padding:9px 13px;border:none;border-radius:8px;background:var(--accent);color:#fff;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap}
+.routebar #routeClear{background:var(--panel-2);color:var(--text);border:1px solid var(--border)}
+.rarrow{color:var(--muted);font-weight:700}
+.routeinfo{font-size:13px;flex-basis:100%;color:var(--text)}
 .legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0;font-size:12px;color:var(--muted)}
 .legend .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .country-group{margin-top:24px}.country-group h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
@@ -542,6 +548,14 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
   <button class="tab" onclick="showView('fuel',this)">⛽ Gorivo</button>
 </div>
 <div class="view" id="view-map">
+<div class="routebar">
+  <input id="routeFrom" type="text" autocomplete="off" placeholder="Od (npr. Banja Luka)">
+  <span class="rarrow">→</span>
+  <input id="routeTo" type="text" autocomplete="off" placeholder="Do (npr. Zagreb)">
+  <button type="button" onclick="calcRoute()">🧭 Izračunaj pot</button>
+  <button type="button" id="routeClear" onclick="clearRoute()" style="display:none">✕ počisti</button>
+  <span id="routeInfo" class="routeinfo"></span>
+</div>
 <div id="map"></div>
 <div id="zoomHint" class="zoomhint">🔍 Približaj zemljevid za prikaz kamer</div>
 <div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:#b45309;font-size:11px">⚠ prometni sloj: dodaj domeno na TomTom</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label></div>
@@ -750,6 +764,36 @@ function toggleTraffic(cb){
  }
  else if(trafficLayer){ map.removeLayer(trafficLayer); }
 }
+/* 🧭 Pot: geokodiranje (Photon) + usmerjanje (OSRM), brezplacno brez kljuca */
+var routeLayer=null;
+function geocode(q){ return fetch('https://photon.komoot.io/api/?limit=1&lang=default&q='+encodeURIComponent(q)).then(function(r){return r.json();}).then(function(j){ var f=j&&j.features&&j.features[0]; if(!f) throw new Error('ni najdeno: '+q); var p=f.properties||{}; var nm=[p.name,p.city,p.country].filter(Boolean).join(', '); return {lat:f.geometry.coordinates[1], lng:f.geometry.coordinates[0], name:nm||q}; }); }
+function calcRoute(){
+  var a=(document.getElementById('routeFrom').value||'').trim(), b=(document.getElementById('routeTo').value||'').trim();
+  var info=document.getElementById('routeInfo');
+  if(!a||!b){ info.textContent='Vpiši izhodišče in cilj.'; return; }
+  info.textContent='Računam pot…';
+  Promise.all([geocode(a),geocode(b)]).then(function(pts){
+    var url='https://router.project-osrm.org/route/v1/driving/'+pts[0].lng+','+pts[0].lat+';'+pts[1].lng+','+pts[1].lat+'?overview=full&geometries=geojson';
+    return fetch(url).then(function(r){return r.json();}).then(function(j){
+      if(j.code!=='Ok'||!j.routes||!j.routes.length) throw new Error('poti ni mogoče izračunati');
+      var rt=j.routes[0];
+      if(routeLayer){ map.removeLayer(routeLayer); }
+      var glow=L.geoJSON(rt.geometry,{interactive:false,style:{color:'#1d4ed8',weight:11,opacity:0.18}});
+      var line=L.geoJSON(rt.geometry,{interactive:false,style:{color:'#2563eb',weight:5,opacity:0.9}});
+      var m1=L.marker([pts[0].lat,pts[0].lng]).bindTooltip('Od: '+pts[0].name);
+      var m2=L.marker([pts[1].lat,pts[1].lng]).bindTooltip('Do: '+pts[1].name);
+      routeLayer=L.layerGroup([glow,line,m1,m2]).addTo(map);
+      showView('map', document.querySelectorAll('.tab')[0]);
+      setTimeout(function(){ try{ map.invalidateSize(); map.fitBounds(line.getBounds(),{padding:[50,50]}); }catch(e){} }, 120);
+      info.innerHTML='📏 <b>'+(rt.distance/1000).toFixed(0)+' km</b> · ⏱ ~'+Math.round(rt.duration/60)+' min <span style="color:#94a3b8">(brez prometa)</span>';
+      document.getElementById('routeClear').style.display='';
+      // gostota prometa ob poti (TomTom) — vklopi sloj, ce kljuc/domena delata
+      var tt=document.getElementById('trafficToggle'); if(tt&&!tt.checked){ tt.checked=true; toggleTraffic(tt); }
+    });
+  }).catch(function(e){ info.textContent='Napaka: '+(e&&e.message?e.message:e); });
+}
+function clearRoute(){ if(routeLayer){ map.removeLayer(routeLayer); routeLayer=null; } var i=document.getElementById('routeInfo'); if(i)i.textContent=''; var c=document.getElementById('routeClear'); if(c)c.style.display='none'; }
+document.addEventListener('keydown',function(e){ if(e.key==='Enter'){ var t=e.target; if(t&&(t.id==='routeFrom'||t.id==='routeTo')) calcRoute(); } });
 function showView(v, btn){
  var tabs=document.querySelectorAll('.tab'); for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
  if(btn) btn.classList.add('active');
