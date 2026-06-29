@@ -3,15 +3,48 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; level: string; waitMinutes: number | null; ts: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-gradina",
-  "name": "Jasenovac (Donja Gradina)",
-  "ulazMin": 240,
+  "id": "ba-velika-kladusa",
+  "name": "Maljevac (Velika Kladuša)",
+  "ulazMin": 30,
   "izlazMin": null,
-  "ulazTxt": "4 h",
+  "ulazTxt": "do 30 min.",
   "izlazTxt": "-",
-  "level": "severe",
-  "waitMinutes": 240,
-  "ts": "28.6.2026. 23:57:07"
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "29.6.2026. 13:24:23"
+ },
+ {
+  "id": "ba-doljani",
+  "name": "Metković (Doljani)",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "do 30 min.",
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "29.6.2026. 11:34:42"
+ },
+ {
+  "id": "",
+  "name": "Dvor (Bosanski Novi)",
+  "ulazMin": 60,
+  "izlazMin": null,
+  "ulazTxt": "1 h",
+  "izlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ts": "29.6.2026. 12:13:36"
+ },
+ {
+  "id": "ba-kostajnica",
+  "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
+  "ulazMin": 60,
+  "izlazMin": null,
+  "ulazTxt": "1 h",
+  "izlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ts": "29.6.2026. 12:02:27"
  },
  {
   "id": "hr-bajakovo",
@@ -22,6 +55,6 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTxt": "do 30 min.",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "29.6.2026. 0:35:24"
+  "ts": "29.6.2026. 11:25:23"
  }
 ];
