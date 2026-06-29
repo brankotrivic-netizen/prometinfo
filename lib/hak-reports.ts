@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "29.6.2026. 11:14",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. U zonama radova i privremene regulacije prometa vozit će se usporeno, u kolonama i uz kraće zastoje, osobito na Istarskom ipsilonu (A8) između čvora i tunela Učka te na više dionica Ličke (DC1) i Jadranske magistrale (DC8). Pozivamo vozače da poštuju prometne propise i ograničenja, osobito ograničenje brzine te pripaze na brojne motocikliste i bicikliste u prometu. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na DC2/DC43 u Đurđevcu, vozi se jednim trakom prometna nesreća na zagrebačkoj obilaznici (A3) na 29+50…"
+  "updated": "29.6.2026. 14:13",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa, osobito na Istarskom ipsilonu (A8) između čvora i tunela Učka gdje se tijekom dana prekida promet nekoliko puta te na više dionica Ličke (DC1) i Jadranske magistrale (DC8). Pozivamo vozače da poštuju prometne propise i ograničenja, osobito ograničenje brzine te pripaze na brojne motocikliste i bicikliste u prometu. IZVANREDNI PROMETNI DOGAĐAJI: u zoni radova na autocesti A6 Rijeka-Zagreb (9. km) ispred tunela Veliki Gložac u smjeru Rijeke kolona je 2 km kolona vozila zbog prometne nesreće na autocesti A4 između čvora Sesvete i čvora Zagreb istok u smj…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "29.6.2026. 06:54",
+  "updated": "29.6.2026. 13:26",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "29.6.2026. 06:54",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: dana 28. lipnja, liniju 807 Suđurađ-Lopud-Koločep-Dubrovnik u 20:30 s polaskom iz Dubrovnika, preuzeti će trajekt Hanibal Lucić umjesto Premude koja ostaje na vezu u Dubrovniku do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://a…"
+  "updated": "29.6.2026. 14:13",
+  "text": "Trajekti i katamarani plove prema plovidbenom redu. Izmjene u redu plovidbe: dana 28. lipnja, liniju 807 Suđurađ-Lopud-Koločep-Dubrovnik u 20:30 s polaskom iz Dubrovnika, preuzeti će trajekt Hanibal Lucić umjesto Premude koja ostaje na vezu u Dubrovniku do 28. lipnja na trajektnoj liniji 636 Split-Rogač nedjeljom i blagdanima uvedeno je dodatno putovanje iz luke Rogač u 17:30 sati te iz luke Split u 18:45 sati od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. g…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "29.6.2026. 08:31",
+  "updated": "29.6.2026. 13:26",
   "text": "Stanje u željezničkom putničkom prometu 29. lipnja 2026. u 8.00 sati Zbog tehničkih poteškoća putnike će prevoziti autobusi umjesto vlakova: 5803 Knin 8.05 – Perković 9.03 5802 Perković 09.26 – Knin 10.28. Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupa…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "29.6.2026. 06:54",
-  "text": "Prometna prognoza za Hrvatsku za 29. lipnja 2026. Pojačan promet očekujemo na većini cesta u smjeru mora, posebice u prijepodnevnim satima. Zbog povećane gustoće prometa mogući su kraći zastoji i vožnja u kolonama na autocesti A1 između čvorova Lučko i Bosiljevo 2 te na Krčkom mostu. Duže kolone i povremeni zastoji očekuju se u zonama radova na autocestama A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok, A6 Rijeka-Zagreb između čvorova Vrbovsko i Bosiljevo 2, Istarskom ipsilonu (A8) između čvora i tunela Učka te na Ličkoj magistrali (DC1) kod Korenice i u Otriću. Pojačan priljev putničkih vozila očekuje se na većini graničnih prijelaza s Bosnom i Hercegovinom, Srbijom i Crnom Gorom u…"
+  "updated": "29.6.2026. 12:02",
+  "text": "Prometna prognoza za Hrvatsku za 30. lipnja 2026. godine. U drugom dijelu dana očekuju se lokalni grmljavinski pljuskovi mjestimice na istoku zemlje, u Gorskoj Hrvatskoj i u Dalmaciji. Zbog kiše te mokrih i skliskih cesta vozit će se sporije, a zbog obilnijih oborina moguće je i zadržavanje vode na kolniku. Pozivamo vozače da brzinu i način vožnje prilagode vremenskim uvjetima, pripaze na sigurnosnu udaljenost između vozila te i danju voze s uključenim svjetlima, u krajevima s kišom ili naoblakom. Zbog bure u podvelebitskom dijelu Jadranske magistrale (DC8) bit će ograničenja za pojedine skupine vozila. Pojačan promet očekuje se povremeno na pojedinim dionicama autocesta, a vožnja u koloni u…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
