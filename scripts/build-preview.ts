@@ -388,6 +388,21 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .ract{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
 .ract .cam{padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:var(--panel-2);color:var(--text);font:inherit;font-weight:600;font-size:13px;cursor:pointer}
 .rfuel{margin-top:8px;padding:9px 11px;background:var(--panel-2);border-radius:9px;font-size:13px}
+.rsub{margin:14px 0 8px;font-size:15px}
+.drivebtn{display:block;width:100%;padding:15px;margin:0 0 12px;border:none;border-radius:12px;background:#16a34a;color:#fff;font-size:19px;font-weight:800;cursor:pointer;font-family:inherit}
+#driveMode{display:none;position:fixed;inset:0;z-index:3000;background:#0b1220;color:#fff;flex-direction:column}
+.drivehead{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;font-size:20px;font-weight:800;border-bottom:1px solid rgba(255,255,255,.12)}
+.drivehead button{background:#1f2937;color:#fff;border:none;border-radius:10px;padding:10px 16px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit}
+#driveBody{flex:1;overflow:auto;padding:18px;display:flex;flex-direction:column;gap:13px}
+.droute{font-size:18px;color:#93c5fd;font-weight:700;text-align:center}
+.dgo{background:#14532d;border-radius:16px;padding:22px 18px;text-align:center}
+.dlabel{font-size:17px;font-weight:700;color:#86efac}
+.dname{font-size:36px;font-weight:900;line-height:1.1;margin:6px 0}
+.dwait{font-size:23px;font-weight:700}
+.dfresh{font-size:15px;color:#cbd5e1;margin-top:4px}
+.dcam{margin-top:14px;background:#2563eb;color:#fff;border:none;border-radius:12px;padding:14px 20px;font-size:18px;font-weight:800;cursor:pointer;width:100%;font-family:inherit}
+.dalt{background:#3f3a14;border-radius:12px;padding:15px 16px;font-size:19px}
+.davoid{background:#4c1d1d;border-radius:12px;padding:15px 16px;font-size:19px}
 .legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0;font-size:12px;color:var(--muted)}
 .legend .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .country-group{margin-top:24px}.country-group h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
@@ -640,6 +655,7 @@ ${fuelHtml}
     <div class="modalfoot">Vir: AMSS (kamere.amss.org.rs) · živ prenos v aplikaciji</div>
   </div>
 </div>
+<div id="driveMode"><div class="drivehead"><span>🚗 Vozim</span><button onclick="exitDrive()">✕ Končaj</button></div><div id="driveBody"></div></div>
 <div id="camModal" class="modal" onclick="if(event.target===this)closeCam()">
   <div class="modalbox">
     <div class="modalhead"><span id="camTitle"></span><button onclick="closeCam()">✕</button></div>
@@ -938,21 +954,60 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<div class="ract">'+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button></div>'
       +'</div>';
   }
+  function routeCams(pr){
+    var seen={}, out=[];
+    pr.recommended.concat(pr.alternative, pr.avoid).forEach(function(id){
+      var p=CBYID[id]; if(!p||!p.images) return;
+      p.images.forEach(function(im){ if(im.url&&!seen[im.url]){ seen[im.url]=1; out.push(im); } });
+    });
+    return out;
+  }
+  var CURRENT_ROUTE=null;
   function renderRoute(pr){
+    CURRENT_ROUTE=pr; window._curRoute=pr;
     var res=document.getElementById('routeResult');
     var html='<h2>'+pr.from+' → '+pr.to+'</h2>';
-    if(pr.note) html+='<p class="meta">ℹ️ '+pr.note+'</p>';
     var all=pr.recommended.concat(pr.alternative, pr.avoid);
+    if(all.length) html+='<button class="drivebtn" onclick="enterDrive()">🚗 Vozim</button>';
+    if(pr.note) html+='<p class="meta">ℹ️ '+pr.note+'</p>';
     if(!all.length){ html+='<p class="meta">Na tej poti ni mejne kontrole (Schengen) — preveri le gostoto prometa na zemljevidu.</p>'; }
     else {
       pr.recommended.forEach(function(id){ html+=crossingCard(id,'recommended'); });
       pr.alternative.forEach(function(id){ html+=crossingCard(id,'alternative'); });
       pr.avoid.forEach(function(id){ html+=crossingCard(id,'avoid'); });
     }
+    var cams=routeCams(pr);
+    if(cams.length){
+      html+='<h3 class="rsub">📷 Kamere za to pot</h3>';
+      html+='<div class="camgrid cardcams">'+cams.slice(0,12).map(function(im){ return '<a class="camshot" href="'+im.url+'" data-name="'+(im.name||'')+'"><img class="snap" data-base="'+im.url+'" src="'+im.url+'" loading="lazy" referrerpolicy="no-referrer" alt="'+(im.name||'')+'"><span>'+(im.name||'')+'</span></a>'; }).join('')+'</div>';
+      html+='<button class="cam" onclick="showView(\\'cams\\')" style="margin-top:4px">Odpri vse kamere ↗</button>';
+    }
     if(pr.fuelCountries&&pr.fuelCountries.length){ html+='<div class="rfuel">⛽ Države za gorivo: '+pr.fuelCountries.map(function(c){return (FLAGJS[c]||'')+' '+(CNAMES[c]||c);}).join(' · ')+' <span class="meta">(podroben izračun v pripravi)</span></div>'; }
     res.innerHTML=html; res.style.display='';
     try{ res.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){}
   }
+  // klik na kamero v "Moja pot" -> odpri veliko sliko
+  var vr=document.getElementById('view-route');
+  if(vr) vr.addEventListener('click',function(e){ var a=e.target&&e.target.closest?e.target.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); openCam(im.getAttribute('data-base')||im.src, a.getAttribute('data-name')||''); } } });
+  // 🚗 Vozim nacin
+  function freshTxt(p){ if(!(p&&p.hak&&p.hak.tsISO)) return 'ni žive čakalne dobe'; var a=Math.round((Date.now()-Date.parse(p.hak.tsISO))/60000); return a<1?'pravkar':('pred '+a+' min'); }
+  function mainWait(p){ if(!p) return 'ni podatka'; if(p.hak){ var d=[]; if(p.hak.ulazMin!=null)d.push('vstop '+p.hak.ulazTxt); if(p.hak.izlazMin!=null)d.push('izstop '+p.hak.izlazTxt); if(d.length) return d.join(' · '); } if(p.waitMinutes!=null) return waitMinTxt(p.waitMinutes); return 'ni podatka'; }
+  window.enterDrive=function(){
+    var pr=CURRENT_ROUTE; if(!pr) return;
+    var dm=document.getElementById('driveMode'); var body=document.getElementById('driveBody');
+    var recId=pr.recommended[0], altId=pr.alternative[0], avId=pr.avoid[0];
+    var rec=recId?CBYID[recId]:null, alt=altId?CBYID[altId]:null, av=avId?CBYID[avId]:null;
+    var h='<div class="droute">'+pr.from+' → '+pr.to+'</div>';
+    if(rec){
+      h+='<div class="dgo"><div class="dlabel">✅ Pojdi</div><div class="dname">'+rec.name+'</div><div class="dwait">⏱ '+mainWait(rec)+'</div><div class="dfresh">🔄 '+freshTxt(rec)+'</div>';
+      if(rec.images&&rec.images.length) h+='<button class="dcam" onclick="openCam(\\''+rec.images[0].url+'\\',\\''+(rec.name||'').replace(/[\\\\\\x27"]/g,'')+'\\')">📷 Odpri kamero</button>';
+      h+='</div>';
+    } else { h+='<div class="dgo"><div class="dname">Brez mejne kontrole (Schengen)</div><div class="dwait">vožnja prosta — preveri gostoto</div></div>'; }
+    if(alt) h+='<div class="dalt">🟡 Alternativa: <b>'+alt.name+'</b> · '+mainWait(alt)+'</div>';
+    if(av) h+='<div class="davoid">🔴 Izogni se: <b>'+av.name+'</b> · '+mainWait(av)+'</div>';
+    body.innerHTML=h; dm.style.display='flex';
+  };
+  window.exitDrive=function(){ var dm=document.getElementById('driveMode'); if(dm)dm.style.display='none'; };
   function renderQuick(){
     var box=document.getElementById('quickRoutes'); if(!box) return;
     box.innerHTML=ROUTES.map(function(r){ return '<button class="qroute" onclick="selectRoute(\\''+r.id+'\\')">'+r.from+' → '+r.to+'</button>'; }).join('');
