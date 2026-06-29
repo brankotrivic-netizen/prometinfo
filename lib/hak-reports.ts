@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "29.6.2026. 22:44",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama te pojedinim graničnim prijelazima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A3 Bregana-Lipovac između čvorova Rugvica i Ivanić Grad u smjeru Lipovca vozi se zaustavnim trakom, a u smjeru Zagreba vozi se voznim trakom u koloni od oko 1 km AUTOCESTE A1 Zagreb-Ploče-Karamatići 02./03.07. od 23:00 do 05:00 zatvarat će se oba smjera dionice od čvora Brinje do čvora Ž…"
+  "updated": "29.6.2026. 23:18",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama te pojedinim graničnim prijelazima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A3 Bregana-Lipovac između čvorova Rugvica i Ivanić Grad u smjeru Lipovca vozi se zaustavnim trakom, a u smjeru Zagreba vozi se voznim trakom AUTOCESTE A1 Zagreb-Ploče-Karamatići 02./03.07. od 23:00 do 05:00 zatvarat će se oba smjera dionice od čvora Brinje do čvora Žuta Lokva te od čvora…"
  },
  {
   "title": "Granični prijelazi",
