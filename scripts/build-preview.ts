@@ -11,6 +11,7 @@ import { HAK_CAMERAS, hakLink } from "../lib/hak-cameras";
 import { HAK_CAM_IMAGES } from "../lib/hak-cam-images";
 import { HAK_WAITS } from "../lib/hak-waits";
 import { ROUTE_PRESETS } from "../lib/routes";
+import { DIESEL_PRICES, DIESEL_UPDATED } from "../lib/diesel-prices";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
 import { SI_CAMS } from "../lib/si-road-cameras";
 import { BIHAMK_CAMS } from "../lib/bihamk-cameras";
@@ -403,6 +404,13 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .dcam{margin-top:14px;background:#2563eb;color:#fff;border:none;border-radius:12px;padding:14px 20px;font-size:18px;font-weight:800;cursor:pointer;width:100%;font-family:inherit}
 .dalt{background:#3f3a14;border-radius:12px;padding:15px 16px;font-size:19px}
 .davoid{background:#4c1d1d;border-radius:12px;padding:15px 16px;font-size:19px}
+#mpBanner{margin-bottom:12px}
+.mpalert{background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:10px 13px;margin-bottom:8px;font-size:14px}
+.rmine{font-size:12px;color:#0369a1;background:#e0f2fe;border-radius:7px;padding:5px 8px;margin:4px 0}
+.manform{display:flex;flex-direction:column;gap:10px;padding:4px 2px}
+.manform label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--text)}
+.manform select,.manform input{padding:10px 11px;border:1px solid var(--border);border-radius:8px;font:inherit;background:var(--bg);color:var(--text)}
+#toast{display:none;position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:4000;background:#0b1220;color:#fff;padding:12px 18px;border-radius:10px;font-size:14px;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.3);max-width:90%}
 .legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0;font-size:12px;color:var(--muted)}
 .legend .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .country-group{margin-top:24px}.country-group h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
@@ -583,6 +591,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
   <button class="tab" data-view="fuel" onclick="showView('fuel',this)">⛽ Gorivo</button>
 </div>
 <div class="view" id="view-route">
+  <div id="mpBanner"></div>
   <section class="country-group">
     <h2>🧭 Kam grem danes?</h2>
     <div class="routebar">
@@ -656,6 +665,19 @@ ${fuelHtml}
   </div>
 </div>
 <div id="driveMode"><div class="drivehead"><span>🚗 Vozim</span><button onclick="exitDrive()">✕ Končaj</button></div><div id="driveBody"></div></div>
+<div id="manualModal" class="modal" onclick="if(event.target===this)closeManual()">
+  <div class="modalbox">
+    <div class="modalhead"><span>➕ Dodaj moj podatek o čakanju</span><button onclick="closeManual()">✕</button></div>
+    <div class="manform">
+      <label>Mejni prehod<select id="manCrossing"></select></label>
+      <label>Smer<select id="manDir"><option value="vstop v HR">vstop v Hrvaško</option><option value="izstop iz HR">izstop iz Hrvaške</option><option value="vstop v BiH">vstop v BiH</option><option value="izstop iz BiH">izstop iz BiH</option><option value="">druga / ni pomembno</option></select></label>
+      <label>Čakanje (minute)<input id="manMin" type="number" min="0" max="600" inputmode="numeric" placeholder="npr. 45"></label>
+      <label>Komentar (neobvezno)<input id="manCom" type="text" maxlength="80" placeholder="npr. samo en pas odprt"></label>
+      <button class="drivebtn" style="background:#2563eb" onclick="saveManual()">Shrani moj podatek</button>
+      <p class="meta">Shrani se v tej napravi in dopolnjuje uradni podatek (ga ne izbriše).</p>
+    </div>
+  </div>
+</div>
 <div id="camModal" class="modal" onclick="if(event.target===this)closeCam()">
   <div class="modalbox">
     <div class="modalhead"><span id="camTitle"></span><button onclick="closeCam()">✕</button></div>
@@ -700,6 +722,8 @@ const COL={none:"#2dd4a7",low:"#5fd35f",moderate:"#e7c84b",high:"#f29c3e",severe
 const FLAGJS=${JSON.stringify(FLAG)};
 const CNAMES=${JSON.stringify(COUNTRY_NAMES)};
 const ROUTES=${JSON.stringify(ROUTE_PRESETS)};
+const DIESEL=${JSON.stringify(Object.fromEntries(DIESEL_PRICES.map((d) => [d.country, d.eur])))};
+const DIESEL_UPD=${JSON.stringify(DIESEL_UPDATED)};
 const BORDERSEARCH=${JSON.stringify(hakBorderCams.flatMap((c) => HAK_CAM_IMAGES[c.k].map((img, i) => ({ name: HAK_CAM_IMAGES[c.k].length > 1 ? `${c.name} · kam ${i + 1}` : c.name, img, lat: c.lat, lng: c.lng }))))};
 const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
@@ -951,6 +975,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">'+sc+'/100</span></div>'
       +'<div class="rdir">'+dirWaits(p)+'</div>'
       +'<div class="rmeta">'+rl.dot+' Zanesljivost: '+rl.txt+'</div>'
+      +manLine(id)
       +'<div class="ract">'+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button></div>'
       +'</div>';
   }
@@ -982,10 +1007,68 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       html+='<div class="camgrid cardcams">'+cams.slice(0,12).map(function(im){ return '<a class="camshot" href="'+im.url+'" data-name="'+(im.name||'')+'"><img class="snap" data-base="'+im.url+'" src="'+im.url+'" loading="lazy" referrerpolicy="no-referrer" alt="'+(im.name||'')+'"><span>'+(im.name||'')+'</span></a>'; }).join('')+'</div>';
       html+='<button class="cam" onclick="showView(\\'cams\\')" style="margin-top:4px">Odpri vse kamere ↗</button>';
     }
-    if(pr.fuelCountries&&pr.fuelCountries.length){ html+='<div class="rfuel">⛽ Države za gorivo: '+pr.fuelCountries.map(function(c){return (FLAGJS[c]||'')+' '+(CNAMES[c]||c);}).join(' · ')+' <span class="meta">(podroben izračun v pripravi)</span></div>'; }
+    if(pr.fuelCountries&&pr.fuelCountries.length){ html+=fuelBlock(pr); }
+    html+='<div class="ract" style="margin-top:12px"><button class="cam" onclick="shareState()">📋 Pošlji stanje</button><button class="cam" onclick="openManual()">➕ Dodaj moj podatek</button></div>';
     res.innerHTML=html; res.style.display='';
     try{ res.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){}
+    updateFuelDistance(pr);
   }
+  // ---- gorivo po poti (profil vozila) ----
+  var VKEY='promet_vehicle';
+  function veh(){ try{ var v=JSON.parse(localStorage.getItem(VKEY)); if(v&&v.name) return v; }catch(e){} return {name:'BMW X3 2.0d', cons:7.8, tank:67}; }
+  function fuelCC(pr){ var c=(pr.fuelCountries||[]); return c.indexOf('SI')>=0?c:['SI'].concat(c); }
+  function fuelBlock(pr){
+    var v=veh();
+    var rows=fuelCC(pr).map(function(c){return {c:c, eur:DIESEL[c]};}).filter(function(x){return x.eur!=null;});
+    if(!rows.length) return '';
+    rows.sort(function(a,b){return a.eur-b.eur;});
+    var cheap=rows[0];
+    var h='<h3 class="rsub">⛽ Gorivo na poti</h3><div class="rfuel">';
+    h+='<div class="meta" style="margin-bottom:6px">Vozilo: '+v.name+' · '+v.cons+' l/100km · rezervoar '+v.tank+' l · cene dizla AMZS '+DIESEL_UPD+'</div>';
+    h+=rows.map(function(x){return (FLAGJS[x.c]||'')+' '+(CNAMES[x.c]||x.c)+': <b>'+x.eur.toFixed(3)+' €/l</b>'+(x.c===cheap.c?' ✅':'');}).join('<br>');
+    h+='<div style="margin-top:8px">✅ <b>Najbolje tankati: '+(CNAMES[cheap.c]||cheap.c)+'</b> ('+cheap.eur.toFixed(3)+' €/l)</div>';
+    if(DIESEL.SI!=null && cheap.c!=='SI' && DIESEL.SI>cheap.eur) h+='<div>⚠ Ne tankaj v Sloveniji, če ni nujno (dražje za ~'+Math.round((DIESEL.SI-cheap.eur)*100)+' centov/l kot v '+(CNAMES[cheap.c]||cheap.c)+').</div>';
+    h+='<div id="fuelTrip" class="meta" style="margin-top:8px">Računam porabo za pot…</div></div>';
+    return h;
+  }
+  function updateFuelDistance(pr){
+    if(!pr.fuelCountries||!pr.fuelCountries.length) return;
+    Promise.all([geocode(pr.from),geocode(pr.to)]).then(function(p){
+      var url='https://router.project-osrm.org/route/v1/driving/'+p[0].lng+','+p[0].lat+';'+p[1].lng+','+p[1].lat+'?overview=false';
+      return fetch(url).then(function(r){return r.json();}).then(function(j){
+        if(j.code!=='Ok'||!j.routes.length) throw 0;
+        var km=j.routes[0].distance/1000, v=veh(), liters=km/100*v.cons;
+        var prices=fuelCC(pr).map(function(c){return DIESEL[c];}).filter(function(x){return x!=null;}).sort(function(a,b){return a-b;});
+        var cheap=prices[0], dear=prices[prices.length-1], cost=liters*cheap, save=liters*(dear-cheap);
+        var t=document.getElementById('fuelTrip');
+        if(t) t.innerHTML='Pot ~<b>'+km.toFixed(0)+' km</b> · poraba ~<b>'+liters.toFixed(0)+' l</b> · strošek ~<b>'+cost.toFixed(0)+' €</b> (po najcenejši)'+(save>1?(' · prihranek do ~'+save.toFixed(0)+' € proti najdražji državi'):'');
+      });
+    }).catch(function(){ var t=document.getElementById('fuelTrip'); if(t) t.textContent='Porabe za pot ni bilo mogoče izračunati.'; });
+  }
+  // ---- share stanje ----
+  function nowHM(){ var n=new Date(); return ('0'+n.getHours()).slice(-2)+':'+('0'+n.getMinutes()).slice(-2); }
+  window.shareState=function(){
+    var pr=CURRENT_ROUTE; if(!pr) return;
+    var rec=pr.recommended[0]?CBYID[pr.recommended[0]]:null, alt=pr.alternative[0]?CBYID[pr.alternative[0]]:null, av=pr.avoid[0]?CBYID[pr.avoid[0]]:null;
+    var lines=[pr.from+' → '+pr.to];
+    if(rec){ lines.push('Priporočilo: '+rec.name); lines.push('Čakanje: '+mainWait(rec)); }
+    if(alt) lines.push('Alternativa: '+alt.name+' · '+mainWait(alt));
+    if(av) lines.push('Izogni se: '+av.name+' · '+mainWait(av));
+    lines.push('Osveženo: '+nowHM());
+    var txt=lines.join('\\n');
+    if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(function(){toast('Stanje kopirano — prilepi kamor koli.');},function(){window.prompt('Kopiraj stanje:',txt);}); }
+    else window.prompt('Kopiraj stanje:',txt);
+  };
+  function toast(msg){ var t=document.getElementById('toast'); if(!t){ t=document.createElement('div'); t.id='toast'; document.body.appendChild(t); } t.textContent=msg; t.style.display='block'; clearTimeout(t._h); t._h=setTimeout(function(){t.style.display='none';},2600); }
+  // ---- rocni vnos cakanja ----
+  var MKEY='promet_manual';
+  function manGet(){ try{ return JSON.parse(localStorage.getItem(MKEY)||'[]'); }catch(e){ return []; } }
+  function manSave(a){ try{ localStorage.setItem(MKEY, JSON.stringify(a)); }catch(e){} }
+  function manLast(id){ var a=manGet().filter(function(x){return x.id===id;}); return a.length?a[a.length-1]:null; }
+  function manLine(id){ var ml=manLast(id); if(!ml) return ''; return '<div class="rmine">📝 Moj zadnji vnos: <b>'+ml.min+' min</b> ob '+ml.hh+(ml.dir?' · '+ml.dir:'')+(ml.com?' — '+(''+ml.com).replace(/</g,'&lt;'):'')+'</div>'; }
+  window.openManual=function(){ var dm=document.getElementById('manualModal'); if(!dm)return; var sel=document.getElementById('manCrossing'); var ids=CURRENT_ROUTE?CURRENT_ROUTE.recommended.concat(CURRENT_ROUTE.alternative,CURRENT_ROUTE.avoid):Object.keys(CBYID); sel.innerHTML=ids.map(function(id){var p=CBYID[id];return p?'<option value="'+id+'">'+p.name+'</option>':'';}).join(''); dm.style.display='flex'; };
+  window.closeManual=function(){ var dm=document.getElementById('manualModal'); if(dm)dm.style.display='none'; };
+  window.saveManual=function(){ var id=document.getElementById('manCrossing').value, dir=document.getElementById('manDir').value, min=parseInt(document.getElementById('manMin').value,10), com=(document.getElementById('manCom').value||'').slice(0,80); if(!id||isNaN(min)){ toast('Izberi prehod in vnesi minute.'); return; } var a=manGet(); a.push({id:id,dir:dir,min:min,com:com,t:new Date().toISOString(),hh:nowHM()}); manSave(a); closeManual(); toast('Tvoj podatek je shranjen.'); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
   // klik na kamero v "Moja pot" -> odpri veliko sliko
   var vr=document.getElementById('view-route');
   if(vr) vr.addEventListener('click',function(e){ var a=e.target&&e.target.closest?e.target.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); openCam(im.getAttribute('data-base')||im.src, a.getAttribute('data-name')||''); } } });
@@ -1023,7 +1106,34 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var rf=document.getElementById('routeFrom'), rt=document.getElementById('routeTo'); if(rf)rf.value=a; if(rt)rt.value=b; calcRoute();
   };
   document.addEventListener('keydown',function(e){ if(e.key==='Enter'){ var t=e.target; if(t&&(t.id==='mpFrom'||t.id==='mpTo')) checkRoute(); } });
-  renderQuick();
+  // ---- vikend radar (tveganje glede na dan/uro/sezono) ----
+  function weekendRadar(){
+    var d=new Date(), day=d.getDay(), h=d.getHours(), mo=d.getMonth()+1, lvl=0, why=[];
+    if(day===5 && h>=14 && h<20){ why.push('petek popoldne (proti Hrvaški/BiH/Srbiji)'); lvl=2; }
+    if(day===6 && h>=6 && h<12){ why.push('sobota dopoldne (proti morju)'); lvl=2; }
+    if(day===0 && h>=15 && h<22){ why.push('nedeljski popoldanski povratek proti EU'); lvl=2; }
+    if(mo>=6 && mo<=8){ why.push('turistična sezona'); lvl=Math.max(lvl, lvl>=2?2:1); }
+    return { lvl: lvl>=2?'visoko':(lvl===1?'srednje':'nizko'), why: why };
+  }
+  // ---- lokalni alarmi ----
+  var AKEY='promet_alarms';
+  function alarmsGet(){ try{ var a=JSON.parse(localStorage.getItem(AKEY)); if(a&&a.length) return a; }catch(e){} return [
+    {crossing:'si-obrezje', min:45, label:'Obrežje nad 45 min'},
+    {crossing:'hr-bajakovo', min:60, label:'Bajakovo nad 60 min'},
+    {crossing:'si-karavanke', min:30, label:'Karavanke nad 30 min'}
+  ]; }
+  function checkAlarms(){ var fired=[]; alarmsGet().forEach(function(al){ var p=CBYID[al.crossing]; if(p&&p.waitMinutes!=null&&p.waitMinutes>al.min) fired.push(al.label+' — trenutno ~'+p.waitMinutes+' min'); }); return fired; }
+  function renderBanner(){
+    var box=document.getElementById('mpBanner'); if(!box) return;
+    var html='';
+    var wr=weekendRadar();
+    var col=wr.lvl==='visoko'?'#dc2626':(wr.lvl==='srednje'?'#ca8a04':'#16a34a');
+    html+='<div class="mpalert" style="border-left:5px solid '+col+'"><b>📅 Napoved tveganja: '+wr.lvl.toUpperCase()+'</b>'+(wr.why.length?'<br><span class="meta">Razlog: '+wr.why.join(' + ')+'</span>':'<br><span class="meta">Trenutno ni posebnih dejavnikov.</span>')+'</div>';
+    var fired=checkAlarms();
+    if(fired.length){ html+='<div class="mpalert" style="border-left:5px solid #dc2626"><b>🔔 Alarmi</b><br><span class="meta">'+fired.join('<br>')+'</span></div>'; }
+    box.innerHTML=html;
+  }
+  renderQuick(); renderBanner();
 })();
 </script></body></html>`;
 
