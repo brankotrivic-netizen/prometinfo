@@ -5,13 +5,13 @@ export const HAK_WAITS: HakWait[] = [
  {
   "id": "ba-gradiska",
   "name": "Gornji Varoš (Gradiška (novi most))",
-  "ulazMin": 60,
+  "ulazMin": 30,
   "izlazMin": 30,
-  "ulazTxt": "1 h",
+  "ulazTxt": "do 30 min.",
   "izlazTxt": "do 30 min.",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ts": "29.6.2026. 17:58:42",
-  "tsISO": "2026-06-29T17:58:42+02:00"
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "29.06.2026 20:09:46",
+  "tsISO": "2026-06-29T20:09:46+02:00"
  }
 ];
