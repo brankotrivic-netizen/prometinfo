@@ -9,6 +9,7 @@ import { amssStreamsForCrossing, type StreamLink } from "../lib/amss-cameras";
 import { HAK_ROADS, hakRoadLink } from "../lib/hak-road-cameras";
 import { HAK_CAMERAS, hakLink } from "../lib/hak-cameras";
 import { HAK_CAM_IMAGES } from "../lib/hak-cam-images";
+import { HAK_WAITS } from "../lib/hak-waits";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
 import { SI_CAMS } from "../lib/si-road-cameras";
 import { BIHAMK_CAMS } from "../lib/bihamk-cameras";
@@ -77,6 +78,19 @@ async function main() {
       lat: c.lat, lng: c.lng, cameras: [{ source: c.name, url: hakLink(c.k) }], streams: [],
       level: "unknown", waitMinutes: null, rawStatus: "Kamera HAK (živa slika na uradni strani).", hasLive: false,
     });
+  }
+
+  // Žive čakalne dobe HAK/MUP (RH stran) — prepiši/dopolni prehod, kjer je objavljeno.
+  const hakWaitById = new Map(HAK_WAITS.filter((w) => w.id).map((w) => [w.id, w]));
+  for (const it of items) {
+    const w = hakWaitById.get(it.id);
+    if (!w) continue;
+    it.level = w.level as WaitLevel;
+    it.waitMinutes = w.waitMinutes;
+    const parts: string[] = [];
+    if (w.ulazMin != null) parts.push(`vstop v HR ${w.ulazTxt}`);
+    if (w.izlazMin != null) parts.push(`izstop iz HR ${w.izlazTxt}`);
+    it.rawStatus = `🇭🇷 HAK/MUP: ${parts.join(", ")}${w.ts ? ` · ${w.ts}` : ""}`;
   }
 
   const counts: Record<WaitLevel, number> = { none: 0, low: 0, moderate: 0, high: 0, severe: 0, unknown: 0 };

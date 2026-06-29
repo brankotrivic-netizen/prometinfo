@@ -10,6 +10,7 @@ const steps = [
   ["HAK poročila (HR)", "node", ["scripts/build-hak-reports.mjs"]],
   ["AMSS poročila (RS)", "node", ["scripts/build-amss-reports.mjs"]],
   ["BIHAMK poročila (BiH)", "node", ["scripts/build-bihamk-reports.mjs"]],
+  ["HAK/MUP čakalne dobe (HR)", "node", ["scripts/build-hak-waits.mjs"]],
 ];
 
 let failed = 0;
