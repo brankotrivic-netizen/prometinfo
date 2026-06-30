@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "30.6.2026. 20:27",
-  "text": "Kolnici su mjestimice vlažni i skliski. Na većini cesta vozi se bez posebnih ograničenja i poteškoća. Zastoji su povremeno u zonama radova . Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: životinja (srna) na autocesti A1 na 54.+000 km između čvora Novigrad i čvora Bosiljevo 1 - vozi se uz ograničenje brzine od 60 km/h prometna nesreća na državnoj cesti DC3 u mjestu Soboli (Kamenjak) - vozi se jednim trakom naizmjence uz ograničenje brzine od 30 km/h zbog požara promet je prekinut na državnoj cesti DC126 između Trogira i mjesta Slatine AUTOCESTE A1 Zagreb-Ploče-Karamatići 02./03.07. od 23:00 do 05:00 zatvarat će se oba smjera dionice…"
+  "updated": "30.6.2026. 21:11",
+  "text": "Kolnici su mjestimice vlažni i skliski. Zbog bure, zabrane prometa su na dijelu Jadranske magistrale (DC8) Na većini cesta vozi se bez posebnih ograničenja i poteškoća. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na državnoj cesti DC3 u mjestu Soboli (Kamenjak) - vozi se jednim trakom naizmjence uz ograničenje brzine od 30 km/h zbog požara promet je prekinut na državnoj cesti DC126 između Trogira i mjesta Slatine AUTOCESTE A1 Zagreb-Ploče-Karamatići 02./03.07. od 23:00 do 05:00 zatvarat će se oba smjera dionice od čvora Brinje do čvora Žuta Lokva te od čvora Žuta Lokva do čvo…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "30.6.2026. 20:04",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: zbog olujnog nevremena u luci Split isplov za Hvar predviđen za 18:50 biti će odgođen za 15-20 min 30. lipnja katamaran na liniji 9403 Zadar - Molat - Brgulje - Zapuntel - Ist s polaskom iz luke Zadar u 11:00 sati pristat će u luku Kosirača, umjesto u luku Ist te će u srijedu 1. srpnja isploviti u 06:00 sati iz luke Kosirača, umjesto iz luke Ist od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu…"
+  "updated": "30.6.2026. 21:08",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 30. lipnja katamaran na liniji 9403 Zadar - Molat - Brgulje - Zapuntel - Ist s polaskom iz luke Zadar u 11:00 sati pristat će u luku Kosirača, umjesto u luku Ist te će u srijedu 1. srpnja isploviti u 06:00 sati iz luke Kosirača, umjesto iz luke Ist od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republ…"
  },
  {
   "title": "Željeznički promet",

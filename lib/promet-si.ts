@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-06-30T18:46:09.991Z";
+export const PROMET_SI_UPDATED = "2026-06-30T19:12:41.324Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;860558;84c6484a-1369-4c49-8605-093b547a75e9",
@@ -68,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-30T17:05:15.467Z",
   "end": "2026-06-30T21:30:42.323Z",
   "ts": "2026-06-30T17:05:22.017Z"
- },
- {
-  "id": "DARS;860367;a5fe5aac-396b-4518-91cf-cb8115fdeeef",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, priključek Pince - priključek Lendava v smeri Murske Sobote, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.52288,
-  "lng": 16.51657,
-  "start": "2026-06-30T04:30:12.957Z",
-  "end": "2026-06-30T20:00:00Z",
-  "ts": "2026-06-30T16:58:16.327Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
@@ -442,17 +431,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-11T05:42:25.747Z",
   "end": "2026-08-11T20:00:00Z",
   "ts": "2026-06-24T03:09:29.687Z"
- },
- {
-  "id": "DARS;859182;a22222b1-af1b-488e-84ee-eb30f0d52676",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-5, Celje - Krško, rondo Boštanj, izmenično enosmerni promet, interventno popravilo vozišča, do 30. 6. 2026, dnevno med 7. in 21. uro.",
-  "loc": "G1-5, Radeče - Boštanj",
-  "lat": 46.0135,
-  "lng": 15.28925,
-  "start": "2026-06-23T05:47:30.603Z",
-  "end": "2026-06-30T19:00:00Z",
-  "ts": "2026-06-23T05:49:26.347Z"
  },
  {
   "id": "DARS;850593;27a6a6d7-914d-472c-abfc-bf16f7cb8c8b",
