@@ -3,15 +3,15 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-izacic",
-  "name": "Ličko Petrovo Selo (Izačić)",
-  "ulazMin": 60,
+  "id": "ba-brod",
+  "name": "Slavonski Brod (Bosanski Brod)",
+  "ulazMin": 30,
   "izlazMin": null,
-  "ulazTxt": "1 h",
+  "ulazTxt": "do 30 min.",
   "izlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ts": "30.6.2026. 7:23:51",
-  "tsISO": "2026-06-30T07:23:51+02:00"
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "30.6.2026. 10:53:54",
+  "tsISO": "2026-06-30T10:53:54+02:00"
  }
 ];
