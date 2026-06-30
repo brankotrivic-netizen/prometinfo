@@ -411,6 +411,8 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .rscore{color:#fff;font-weight:800;font-size:13px;border-radius:8px;padding:3px 9px;white-space:nowrap}
 .rdir{margin:8px 0 4px}
 .dirrow{font-size:13px;line-height:1.7}
+.rdir-hl{background:#eff6ff;border-radius:6px;padding:2px 6px;margin:2px 0;font-weight:600}
+.tvojasmer{font-size:11px;color:#1d4ed8;font-weight:700}
 .rmeta{font-size:12px;color:var(--muted);margin:4px 0}
 .rconf{font-size:13px;font-weight:700;margin:6px 0 2px}
 .rsrc{font-size:12px;color:var(--text);margin:3px 0;line-height:1.5}
@@ -998,6 +1000,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
 /* 🧭 Moja pot: decision score, smer cakanja, zanesljivost, priporoceni prehodi */
 (function(){
   var CBYID={}; PTS.forEach(function(p){ CBYID[p.id]=p; });
+  var REV=false; // smer poti obrnjena (npr. Banja Luka -> Kamnik)
   function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(new RegExp('[\\u0300-\\u036f]','g'),'').trim(); }
   function waitMinTxt(m){ if(m==null)return 'ni podatka'; if(m<=0)return 'brez zadrževanja'; if(m<60)return '~'+m+' min'; var h=Math.floor(m/60),mm=m%60; return '~'+h+' h'+(mm?' '+mm+' min':''); }
   var LVLNUM={none:30,low:22,moderate:2,high:-15,severe:-25,unknown:-15};
@@ -1073,16 +1076,18 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   }
   var CACC={SI:'Slovenijo',HR:'Hrvaško',RS:'Srbijo',BA:'Bosno in Hercegovino',ME:'Črno goro',MK:'Severno Makedonijo',XK:'Kosovo',HU:'Madžarsko',AT:'Avstrijo',IT:'Italijo',AL:'Albanijo',BG:'Bolgarijo',RO:'Romunijo',GR:'Grčijo'};
   function acc(c){ return CACC[c]||CNAMES[c]||c; }
+  var MARK=' <span class="tvojasmer">← tvoja smer</span>';
   function dirWaits(p){
     if(p.hak){
       var other=(p.country==='HR')?p.neighbor:p.country;
       var u=(p.hak.ulazMin!=null)?p.hak.ulazTxt:'ni podatka', iz=(p.hak.izlazMin!=null)?p.hak.izlazTxt:'ni podatka';
-      return '<div class="dirrow">'+(FLAGJS[other]||'')+'→🇭🇷 vstop v '+acc('HR')+': <b>'+u+'</b></div>'
-           + '<div class="dirrow">🇭🇷→'+(FLAGJS[other]||'')+' vstop v '+acc(other)+': <b>'+iz+'</b></div>';
+      // smer potovanja: naprej (od doma) = vstop v tujino (izlaz iz HR); nazaj = vstop v HR (ulaz)
+      return '<div class="dirrow'+(REV?' rdir-hl':'')+'">'+(FLAGJS[other]||'')+'→🇭🇷 vstop v '+acc('HR')+': <b>'+u+'</b>'+(REV?MARK:'')+'</div>'
+           + '<div class="dirrow'+(!REV?' rdir-hl':'')+'">🇭🇷→'+(FLAGJS[other]||'')+' vstop v '+acc(other)+': <b>'+iz+'</b>'+(!REV?MARK:'')+'</div>';
     }
     if(p.amss){
-      return '<div class="dirrow">🇷🇸→ vstop v Srbijo: <b>'+(p.amss.ulazMin!=null?p.amss.ulazTxt:'ni podatka')+'</b></div>'
-           + '<div class="dirrow">→🇷🇸 izstop iz Srbije: <b>'+(p.amss.izlazMin!=null?p.amss.izlazTxt:'ni podatka')+'</b> <span class="meta">(AMSS — pogosto splošna ocena)</span></div>';
+      return '<div class="dirrow'+(!REV?' rdir-hl':'')+'">🇷🇸→ vstop v Srbijo: <b>'+(p.amss.ulazMin!=null?p.amss.ulazTxt:'ni podatka')+'</b>'+(!REV?MARK:'')+'</div>'
+           + '<div class="dirrow'+(REV?' rdir-hl':'')+'">→🇷🇸 izstop iz Srbije: <b>'+(p.amss.izlazMin!=null?p.amss.izlazTxt:'ni podatka')+'</b>'+(REV?MARK:'')+' <span class="meta">(AMSS)</span></div>';
     }
     if(p.waitMinutes!=null) return '<div class="dirrow">Čakanje (obe smeri): <b>'+waitMinTxt(p.waitMinutes)+'</b></div>';
     return '<div class="dirrow" style="color:var(--muted)">Smerni podatek ni na voljo — preveri kamero / uradni vir.</div>';
@@ -1122,10 +1127,14 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     return out;
   }
   var CURRENT_ROUTE=null;
+  function rFrom(pr){ return REV?pr.to:pr.from; }
+  function rTo(pr){ return REV?pr.from:pr.to; }
+  window.swapDir=function(){ REV=!REV; if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
   function renderRoute(pr){
     CURRENT_ROUTE=pr; window._curRoute=pr;
     var res=document.getElementById('routeResult');
-    var html='<h2>'+pr.from+' → '+pr.to+'</h2>';
+    var html='<h2>'+rFrom(pr)+' → '+rTo(pr)+'</h2>';
+    html+='<button class="cam" onclick="swapDir()" style="margin-bottom:8px">⇄ Obrni smer ('+rTo(pr)+' → '+rFrom(pr)+')</button>';
     var all=pr.recommended.concat(pr.alternative, pr.avoid);
     if(all.length) html+='<button class="drivebtn" onclick="enterDrive()">🚗 Vozim</button>';
     if(pr.note) html+='<p class="meta">ℹ️ '+pr.note+'</p>';
@@ -1184,7 +1193,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   window.shareState=function(){
     var pr=CURRENT_ROUTE; if(!pr) return;
     var rec=pr.recommended[0]?CBYID[pr.recommended[0]]:null, alt=pr.alternative[0]?CBYID[pr.alternative[0]]:null, av=pr.avoid[0]?CBYID[pr.avoid[0]]:null;
-    var lines=[pr.from+' → '+pr.to];
+    var lines=[rFrom(pr)+' → '+rTo(pr)];
     if(rec){ lines.push('Priporočilo: '+rec.name); lines.push('Čakanje: '+mainWait(rec)); }
     if(alt) lines.push('Alternativa: '+alt.name+' · '+mainWait(alt));
     if(av) lines.push('Izogni se: '+av.name+' · '+mainWait(av));
@@ -1214,7 +1223,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var dm=document.getElementById('driveMode'); var body=document.getElementById('driveBody');
     var recId=pr.recommended[0], altId=pr.alternative[0], avId=pr.avoid[0];
     var rec=recId?CBYID[recId]:null, alt=altId?CBYID[altId]:null, av=avId?CBYID[avId]:null;
-    var h='<div class="droute">'+pr.from+' → '+pr.to+'</div>';
+    var h='<div class="droute">'+rFrom(pr)+' → '+rTo(pr)+'</div>';
     if(rec){
       h+='<div class="dgo"><div class="dlabel">✅ Pojdi</div><div class="dname">'+rec.name+'</div><div class="dwait">⏱ '+mainWait(rec)+'</div><div class="dfresh">🔄 '+freshTxt(rec)+'</div>';
       if(rec.images&&rec.images.length) h+='<button class="dcam" onclick="openCam(\\''+rec.images[0].url+'\\',\\''+(rec.name||'').replace(/[\\\\\\x27"]/g,'')+'\\')">📷 Odpri kamero</button>';
@@ -1229,13 +1238,15 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var box=document.getElementById('quickRoutes'); if(!box) return;
     box.innerHTML=ROUTES.map(function(r){ return '<button class="qroute" onclick="selectRoute(\\''+r.id+'\\')">'+r.from+' → '+r.to+'</button>'; }).join('');
   }
-  window.selectRoute=function(id){ var pr=ROUTES.filter(function(r){return r.id===id;})[0]; if(!pr)return; var a=document.getElementById('mpFrom'),b=document.getElementById('mpTo'); if(a)a.value=pr.from; if(b)b.value=pr.to; showView('route'); renderRoute(pr); };
+  window.selectRoute=function(id){ var pr=ROUTES.filter(function(r){return r.id===id;})[0]; if(!pr)return; REV=false; var a=document.getElementById('mpFrom'),b=document.getElementById('mpTo'); if(a)a.value=pr.from; if(b)b.value=pr.to; showView('route'); renderRoute(pr); };
   window.checkRoute=function(){
     var a=(document.getElementById('mpFrom').value||'').trim(), b=(document.getElementById('mpTo').value||'').trim();
     var res=document.getElementById('routeResult');
     if(!a||!b){ res.style.display=''; res.innerHTML='<p class="meta">Vpiši izhodišče in cilj.</p>'; return; }
     var pr=ROUTES.filter(function(r){return norm(r.from)===norm(a)&&norm(r.to)===norm(b);})[0];
-    if(pr){ renderRoute(pr); return; }
+    if(pr){ REV=false; renderRoute(pr); return; }
+    var prR=ROUTES.filter(function(r){return norm(r.from)===norm(b)&&norm(r.to)===norm(a);})[0];
+    if(prR){ REV=true; renderRoute(prR); return; }
     res.style.display=''; res.innerHTML='<h2>'+a+' → '+b+'</h2><p class="meta">Za to pot še nimam presetov mejnih prehodov. Pot rišem na zemljevidu…</p>';
     var rf=document.getElementById('routeFrom'), rt=document.getElementById('routeTo'); if(rf)rf.value=a; if(rt)rt.value=b; calcRoute();
   };
