@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-06-30T17:18:40.067Z";
+export const PROMET_SI_UPDATED = "2026-06-30T17:44:34.964Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;860555;8625c97f-50e7-464e-b76a-28a79837e56a",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Logatec - razcep Kozarje v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.91075,
+  "lng": 14.25931,
+  "start": "2026-06-30T17:39:52.147Z",
+  "end": "2026-06-30T21:59:00Z",
+  "ts": "2026-06-30T17:40:08.92Z"
+ },
+ {
+  "id": "DARS;860554;fa3c55c7-78a0-41ba-8473-f37e29087077",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, razcep Srmin - priključek Bertoki v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55205,
+  "lng": 13.77562,
+  "start": "2026-06-30T17:29:15.897Z",
+  "end": "2026-07-01T00:00:37.907Z",
+  "ts": "2026-06-30T17:29:37.543Z"
+ },
+ {
+  "id": "DARS;860553;6c93a304-d502-4ec1-bfd9-989f53af8ee8",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Kozina - priključek Divača v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.64771,
+  "lng": 13.96008,
+  "start": "2026-06-30T17:18:16.297Z",
+  "end": "2026-06-30T21:59:31.103Z",
+  "ts": "2026-06-30T17:18:18.63Z"
+ },
  {
   "id": "DARS;860551;4825bb64-bacf-44c5-bbf2-863ba27d7e94",
   "type": "MaintenanceWorks",
