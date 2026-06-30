@@ -11,7 +11,19 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "30.6.2026. 10:53:54",
+  "ts": "30.06.2026 10:53:54",
   "tsISO": "2026-06-30T10:53:54+02:00"
+ },
+ {
+  "id": "ba-gradina",
+  "name": "Jasenovac (Donja Gradina)",
+  "ulazMin": null,
+  "izlazMin": 30,
+  "ulazTxt": "-",
+  "izlazTxt": "do 30 min.",
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "Nema podataka",
+  "tsISO": ""
  }
 ];

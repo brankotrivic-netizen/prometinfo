@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Kovin-Ralja, radovi",
+  "text": "Na deonici Kovin Ralja, dana 30.06.2026. godine završavaju se radovi i počinju radovi na zameni kolovoza na deonici od km 38+316 do km 39+535. Radovi će se izvoditi u jednoj saobraćajnoj traci, dok će se za saobraćaj koristiti slobodna traka uz naizmenično propuštanje vozila uz pomoć gradilišnih semafora. Planirani završetak navedenih radova je 27.07.2026. godine. Tokom trajanja radova putnički automobili biće preusmereni sa državnog puta IB 14 na uličnu mrežu grada Smedereva, i to sledećom ruto…"
+ },
+ {
   "title": "Petlja Vrnjačka banja- Vrba, radovi",
   "text": "Dana 1. 7. 2026. godine, zbog izvođenja geodetskih mernih radova, biće izmenjen režim saobraćaja na deonici petlja Vrnjačka Banja Vrba, u oba smera. U zoni radova, u dužini od 160 metara, za saobraćaj će prvo biti zatvorena preticajna saobraćajna traka, dok će se saobraćaj odvijati voznom i zaustavnom saobraćajnom trakom, zatim će biti zatvorena zaustavna, a saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvor Putevi Srbije"
  },
@@ -112,10 +116,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Ruma- petlja Drenovac, radovi na moto- putu",
   "text": "Do 30.6.2026. godine, u toku svetlog dela dana, izvode se radovi redovnog održavanja na košenju trave u srednjem pojasu, na bankinama i putnom pojasu, na državnom putu I A reda broj 8 i moto-putu M3, petlja Ruma - petlja Drenovac - kružna raskrsnica šabac. Za saobraćaj je zatvorena preticajna traka obe strane u dužini do 1000 metara ili zaustavna saobraćajna traka leve ili desne strane u dužini do 5000 metara. Izvor: Putevi Srbije"
- },
- {
-  "title": "Kovin-Ralja, radovi i OBUSTAVA",
-  "text": "Od 30.05.2026. u toku svetlog dela dana, izvodiće se radovi na pojačanom održavanju i zameni kolovoza, na magistralonom putu na deonici Kovin (granica APV) Ralja. Tokom izvođenja radova, za saobraćaj će biti zatvorena jedna saobraćajna traka, dok će se saobraćaj odvijati slobodnom saobraćajnom trakom uz naizmenično propuštanje regulisano semaforima. Napomena: Tokom trajanja radova na delu puta od petlje kod Kovinskog mosta do pružnog prelaza u Radincu doći će do obustave saobraćaja za putnička m…"
  },
  {
   "title": "Dobanovci-Batrovci, radovi na AP u oba smera",
