@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-06-30T12:42:19.385Z";
+export const PROMET_SI_UPDATED = "2026-06-30T14:46:03.272Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;860519;95cd3a45-33ee-473b-b5e5-8bdfc057b645",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, priključek Lendava - prehod Pince v smeri Madžarske, dela, zaprt vozni pas.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.53299,
+  "lng": 16.47752,
+  "start": "2026-06-30T13:38:11.91Z",
+  "end": "2026-07-01T21:00:42.97Z",
+  "ts": "2026-06-30T13:38:14.72Z"
+ },
  {
   "id": "DARS;854319;21066fe3-bea4-4097-a8a3-98260a995aaf",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -92,28 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-06-30T06:55:04.94Z"
  },
  {
-  "id": "DARS;860406;ba5a1e99-5f9c-4488-add4-ca4fc453882a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Most na Soči - Tolmin, pri Tolminu, izmenično enosmerni promet, asfaltiranje, do 16:00.",
-  "loc": "G2-102, Peršeti - Most na Soči",
-  "lat": 46.18286,
-  "lng": 13.71433,
-  "start": "2026-06-30T05:51:57.31Z",
-  "end": "2026-06-30T14:00:00Z",
-  "ts": "2026-06-30T05:54:00.94Z"
- },
- {
-  "id": "DARS;860403;b778cc13-a245-4065-bb97-aa1916fa1b12",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Kobarid - Nova Gorica, pri Kamnem, izmenično enosmerni promet, košnja, do 16:00.",
-  "loc": "G2-102, Idrsko - Peršeti",
-  "lat": 46.21524,
-  "lng": 13.61255,
-  "start": "2026-06-30T05:49:06.847Z",
-  "end": "2026-06-30T14:00:00Z",
-  "ts": "2026-06-30T05:50:16.877Z"
- },
- {
   "id": "DARS;857305;b65cbef7-4c02-4a26-ac31-fe0c086bc934",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-711, Fram - Rače, v Račah pri avtocestnem priključku, občasno promet urejen izmenično enosmerno, gradnje TK kabelske kanalizacije, do 19:00.",
@@ -123,17 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-15T05:11:51.497Z",
   "end": "2026-06-30T17:00:00Z",
   "ts": "2026-06-30T05:38:54.913Z"
- },
- {
-  "id": "DARS;860397;4106686e-20f7-4b61-8d4c-73acc8aac5be",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-419, Šentjernej - Novo mesto, pri Mali Cikavi, izmenično enosmerni promet, zamenjava varnostih ograj, do 15:00.",
-  "loc": "R2-419, Novo mesto - Šentjernej",
-  "lat": 45.80632,
-  "lng": 15.19585,
-  "start": "2026-06-30T05:34:23.3Z",
-  "end": "2026-06-30T13:00:00Z",
-  "ts": "2026-06-30T05:36:41.63Z"
  },
  {
   "id": "DARS;825006;d511c6f0-4749-4d4b-9429-a62bacd7f414",
@@ -156,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-30T05:29:13.417Z",
   "end": "2026-12-05T22:59:00Z",
   "ts": "2026-06-30T05:30:08.61Z"
- },
- {
-  "id": "DARS;860394;b8316dc2-3d0e-4b77-9525-56c7a5014eca",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-103, Nova Gorica - Tolmin, pri Volčah, izmenično enosmerni promet, sečnja dreves, do 15:00.",
-  "loc": "G2-103, Peršeti - Ušnik",
-  "lat": 46.17313,
-  "lng": 13.70979,
-  "start": "2026-06-30T05:27:16.913Z",
-  "end": "2026-06-30T13:00:00Z",
-  "ts": "2026-06-30T05:29:37.77Z"
  },
  {
   "id": "DARS;856530;ca57e7d8-5d75-483a-a15d-73ee4503dd3d",
@@ -235,17 +202,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-06-30T05:20:33.713Z"
  },
  {
-  "id": "DARS;860386;44b6f60e-c515-4bfc-bb97-2913e7d70d5d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-615, Volčja Draga - Vogrsko - Tri Hiše, med Volčjo Drago in Vogrskim, izmenično enosmerni promet, košnja, do 16:00.",
-  "loc": "R3-615, Tri Hiše - Volčja Draga",
-  "lat": 45.9066,
-  "lng": 13.69836,
-  "start": "2026-06-30T05:13:11.01Z",
-  "end": "2026-06-30T14:00:00Z",
-  "ts": "2026-06-30T05:16:10.553Z"
- },
- {
   "id": "DARS;860367;a5fe5aac-396b-4518-91cf-cb8115fdeeef",
   "type": "MaintenanceWorks",
   "desc": "A5, Pince - Maribor, priključek Pince - priključek Lendava v smeri Murske Sobote, dela, zaprt prehitevalni pas.",
@@ -255,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-30T04:30:12.957Z",
   "end": "2026-06-30T17:00:41.16Z",
   "ts": "2026-06-30T04:31:00.75Z"
- },
- {
-  "id": "DARS;860362;3da8ee82-86fd-41f9-b367-56aa1cee4a45",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-697, Nazarje - Gornji Grad, med Šmartnem ob Dreti in Zgornjimi Krašami, izmenično enosmerni promet, vzdrževalna dela, do 15:00.",
-  "loc": "R3-697, Nazarje - Gornji Grad",
-  "lat": 46.2841,
-  "lng": 14.89424,
-  "start": "2026-06-30T05:00:00Z",
-  "end": "2026-06-30T13:00:00Z",
-  "ts": "2026-06-30T04:07:26.61Z"
  },
  {
   "id": "DARS;860360;4162645e-87ef-42a3-a2dd-65c89f67825f",

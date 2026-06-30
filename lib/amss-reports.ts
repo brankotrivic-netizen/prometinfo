@@ -2,6 +2,14 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Ruma-Drenovac, radovi",
+  "text": "Od 1. 7. do 15. 7. 2026.godine, u toku svetlog dela dana, izvode se radovi na popravci oštećene zaštitne sigurnosne ograde za vozila u srednjem pojasu i na bankinama, na deonici petlja Ruma - petlja Drenovac - kružna raskrsnica Šabac, u oba smera. Za saobraćaj će biti zatvorena preticajna saobraćajna traka ili zaustavna saobraćajna traka u dužini do 200 metara u zavisnosti od lokacije izvođenja radova (bankina ili srednji pojas). Izvor Putevi Srbije"
+ },
+ {
+  "title": "granični prelaz Batrovci-petlja Dobanovci, radovi",
+  "text": "Od 1. 7. do 15. 7. 2026.godine, u toku svetlog dela dana, izvode se radovi na popravci oštećene sigurnosno zaštitne ograde u razdelnom pojasu i uz zaustavnu traku na više lokacija. U zavisnosti od lokacije izvođenja radova za saobraćaj će biti zatvorena preticajna saobraćajna traka do 200 metara (saobraćaj će se odvijati voznom i zaustavnom saobraćajnom trakom) ili će biti zatvorena zaustavna saobraćajna traka do 200 metara (saobraćaj će se odvijati voznom i preticajnom trakom), na državnom putu…"
+ },
+ {
   "title": "Kovin-Ralja, radovi",
   "text": "Na deonici Kovin Ralja, dana 30.06.2026. godine završavaju se radovi i počinju radovi na zameni kolovoza na deonici od km 38+316 do km 39+535. Radovi će se izvoditi u jednoj saobraćajnoj traci, dok će se za saobraćaj koristiti slobodna traka uz naizmenično propuštanje vozila uz pomoć gradilišnih semafora. Planirani završetak navedenih radova je 27.07.2026. godine. Tokom trajanja radova putnički automobili biće preusmereni sa državnog puta IB 14 na uličnu mrežu grada Smedereva, i to sledećom ruto…"
  },
@@ -232,13 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Ivanjica-Arilje, radovi",
   "text": "U okviru preostalih radova na pojačanom održavanju državnog puta I B reda broj 21, deonica Požega - Ivanjica, od km 209+141.00 do km 248+079.38, u periodu od 19.10.2025. do 01.10.2026. godine, izvodiće se radovi na asfaltiranju kolovoza na deonicama Arilje - Prilike i Prilike Ivanjica. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
- },
- {
-  "title": "Sušica-Kremna, radovi",
-  "text": "Do 16. 3. 2026. godine izvode se radovi na rekonstrukciji mosta preko reke Sušica Sušica 3 (na km 121+540), na državnom putu I B reda broj 28, deonica Sušica - Kremna. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
- },
- {
-  "title": "Družetić-Joševa, radovi",
-  "text": "Produžavaju se radovi na uklanjanju oštećenog pločastog propusta i izgradnji novog propusta na deonici državnog puta Družetić (Joševa) Joševa (Gola Glava), u mestu Družetić (opština Koceljeva). U zoni radova, saobraćaj će biti prusmeren na privremenu devijaciju, gde će se odvijati naizmeničnim propuštanjem vozila. Planirani rok za završetak radova je 16.02.2026. godine. Izvor: Putevi Srbije"
  }
 ];

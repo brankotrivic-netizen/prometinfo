@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "30.6.2026. 14:40",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja. Pojačan je promet na važnijim cestama, gradskim prometnicama i obilaznicama. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: teretno vozilo u kvaru na autocesti A1 između tunela Sveti Rok i tunela Krpani u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h teretno vozilo u kvaru na autocesti A1 između tunela Bristovac i tunela Čelinka u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 60 km/h rasuti teret (komadi gume) na autocesti A1 između 361. i 362. km između čvorova Prgomet i Vučevica u smjeru Dubrovnika, vozi se uz ograničenje brzi…"
+  "updated": "30.6.2026. 16:43",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja. Pojačan je promet na važnijim cestama, gradskim prometnicama i obilaznicama. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: požar na vozilu na autocesti A1 na 8. km između naplate Lučko i čvora Donja Zdenčina u smjeru Dubrovnika , vozi se jednim prometnim trakom u koloni dugoj oko 6 km teretno vozilo u kvaru na autocesti A1 između tunela Bristovac i tunela Čelinka u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 60 km/h prometna nesreća na zagrebačkoj obilaznici (A3) na 38. km između čvora Kosnica i mosta Sava u smjeru Lipovca, vozi se po dva prometna traka uz …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "30.6.2026. 12:50",
+  "updated": "30.6.2026. 15:08",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "30.6.2026. 12:50",
+  "updated": "30.6.2026. 15:08",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 30. lipnja katamaran na liniji 9403 Zadar - Molat - Brgulje - Zapuntel - Ist s polaskom iz luke Zadar u 11:00 sati pristat će u luku Kosirača, umjesto u luku Ist te će u srijedu 1. srpnja isploviti u 06:00 sati iz luke Kosirača, umjesto iz luke Ist od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republ…"
  },
  {
