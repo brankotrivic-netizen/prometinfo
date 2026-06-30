@@ -10,6 +10,7 @@ const steps = [
   ["AMZS cene goriv", "node", ["scripts/build-fuel.mjs"]],
   ["HAK poročila (HR)", "node", ["scripts/build-hak-reports.mjs"]],
   ["AMSS poročila (RS)", "node", ["scripts/build-amss-reports.mjs"]],
+  ["AMSS čakanja na meji (RS)", "node", ["scripts/build-amss-waits.mjs"]],
   ["BIHAMK poročila (BiH)", "node", ["scripts/build-bihamk-reports.mjs"]],
   ["HAK/MUP čakalne dobe (HR)", "node", ["scripts/build-hak-waits.mjs"]],
 ];

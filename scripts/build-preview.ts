@@ -14,6 +14,7 @@ import { ROUTE_PRESETS } from "../lib/routes";
 import { DIESEL_PRICES, DIESEL_UPDATED } from "../lib/diesel-prices";
 import { SOCIAL_KEYWORDS, SOCIAL_PAGES, SOCIAL_QUERIES } from "../lib/social";
 import { PROMET_SI, PROMET_SI_UPDATED } from "../lib/promet-si";
+import { AMSS_WAITS } from "../lib/amss-waits";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
 import { SI_CAMS } from "../lib/si-road-cameras";
 import { BIHAMK_CAMS } from "../lib/bihamk-cameras";
@@ -99,6 +100,23 @@ async function main() {
     it.rawStatus = `🇭🇷 HAK/MUP: ${parts.join(", ")}${w.ts ? ` · ${w.ts}` : ""}${stale}`;
     // shrani za smer + zanesljivost (kasnejše faze)
     (it as unknown as { hak: unknown }).hak = { ulazMin: w.ulazMin, izlazMin: w.izlazMin, ulazTxt: w.ulazTxt, izlazTxt: w.izlazTxt, tsISO: w.tsISO };
+  }
+
+  // AMSS (Srbija) — DODATEN uradni vir; čakanje uporabi le, če ni HAK/BIHAMK.
+  const amssById = new Map(AMSS_WAITS.filter((w) => w.id).map((w) => [w.id, w]));
+  const levelFromMin = (m: number | null): WaitLevel => m == null ? "unknown" : m <= 0 ? "none" : m <= 30 ? "low" : m <= 60 ? "moderate" : m <= 120 ? "high" : "severe";
+  for (const it of items) {
+    const w = amssById.get(it.id);
+    if (!w) continue;
+    (it as unknown as { amss: unknown }).amss = { ulazMin: w.ulazMin, izlazMin: w.izlazMin, ulazTxt: w.ulazTxt, izlazTxt: w.izlazTxt, ts: w.ts };
+    if (!it.hasLive && !(it as unknown as { hak?: unknown }).hak) {
+      const worst = Math.max(w.ulazMin ?? -1, w.izlazMin ?? -1);
+      if (worst >= 0) { it.waitMinutes = worst; it.level = levelFromMin(worst); }
+      const p: string[] = [];
+      if (w.ulazMin != null) p.push(`vstop v Srbijo ${w.ulazTxt}`);
+      if (w.izlazMin != null) p.push(`izstop iz Srbije ${w.izlazTxt}`);
+      it.rawStatus = `🇷🇸 AMSS: ${p.join(", ")}`;
+    }
   }
 
   const counts: Record<WaitLevel, number> = { none: 0, low: 0, moderate: 0, high: 0, severe: 0, unknown: 0 };
@@ -1012,6 +1030,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var s=[];
     if(p.hak){ var a=p.hak.tsISO?Math.round((Date.now()-Date.parse(p.hak.tsISO))/60000):null; s.push({key:'hak',label:'🇭🇷 HAK/MUP',official:true,wait:true,ageMin:a}); }
     if(p.hasLive){ s.push({key:'bihamk',label:'🇧🇦 BIHAMK',official:true,wait:true,ageMin:null}); }
+    if(p.amss){ s.push({key:'amss',label:'🇷🇸 AMSS ('+(p.amss.ulazTxt||'?')+' vstop / '+(p.amss.izlazTxt||'?')+' izstop)',official:true,wait:true}); }
     if(p.images&&p.images.length){
       var u=p.images.map(function(i){return i.url||'';}).join(' ');
       if(/satwork/.test(u)) s.push({key:'amsrs',label:'🇧🇦 AMS-RS (kamera)',official:true,wait:false});
@@ -1033,7 +1052,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   // ---- ZANESLJIVOST IZ VEČ VIROV (🟢🟡🟠🔴⚫) ----
   function confidence(p){
     var srcs=sourcesFor(p), official=srcs.filter(function(s){return s.official;});
-    var officialWait=!!(p.hak||p.hasLive);
+    var officialWait=!!(p.hak||p.hasLive||p.amss);
     var age=(p.hak&&p.hak.tsISO)?(Date.now()-Date.parse(p.hak.tsISO))/60000:null;
     var stale=age!=null && age>120;
     var soc=socFresh(p.id).length;
@@ -1060,6 +1079,10 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       var u=(p.hak.ulazMin!=null)?p.hak.ulazTxt:'ni podatka', iz=(p.hak.izlazMin!=null)?p.hak.izlazTxt:'ni podatka';
       return '<div class="dirrow">'+(FLAGJS[other]||'')+'→🇭🇷 vstop v '+acc('HR')+': <b>'+u+'</b></div>'
            + '<div class="dirrow">🇭🇷→'+(FLAGJS[other]||'')+' vstop v '+acc(other)+': <b>'+iz+'</b></div>';
+    }
+    if(p.amss){
+      return '<div class="dirrow">🇷🇸→ vstop v Srbijo: <b>'+(p.amss.ulazMin!=null?p.amss.ulazTxt:'ni podatka')+'</b></div>'
+           + '<div class="dirrow">→🇷🇸 izstop iz Srbije: <b>'+(p.amss.izlazMin!=null?p.amss.izlazTxt:'ni podatka')+'</b> <span class="meta">(AMSS — pogosto splošna ocena)</span></div>';
     }
     if(p.waitMinutes!=null) return '<div class="dirrow">Čakanje (obe smeri): <b>'+waitMinTxt(p.waitMinutes)+'</b></div>';
     return '<div class="dirrow" style="color:var(--muted)">Smerni podatek ni na voljo — preveri kamero / uradni vir.</div>';
