@@ -395,6 +395,7 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 #map{height:640px;border-radius:14px;border:1px solid var(--border);margin-bottom:4px;background:var(--panel-2)}
 .locbtn a{font-size:16px;width:30px;height:30px;line-height:30px;text-align:center;display:block;background:#fff;text-decoration:none}
 .youpin{font-size:22px;line-height:1;filter:drop-shadow(0 1px 2px rgba(0,0,0,.45))}
+.fuelpin{font-size:13px;width:22px;height:22px;line-height:20px;text-align:center;background:#fff;border:1.5px solid #16a34a;border-radius:50%;box-shadow:0 1px 3px rgba(16,32,43,.4)}
 .routebar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:0 0 8px;background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:8px 10px}
 .routebar input{flex:1 1 150px;min-width:120px;padding:9px 11px;border:1px solid var(--border);border-radius:8px;font:inherit;background:var(--bg);color:var(--text)}
 .routebar button{padding:9px 13px;border:none;border-radius:8px;background:var(--accent);color:#fff;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap}
@@ -656,7 +657,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 </div>
 <div id="map"></div>
 <div id="zoomHint" class="zoomhint">🔍 Približaj zemljevid za prikaz kamer</div>
-<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:var(--muted);font-size:11px">🚦 gostota prometa trenutno ni na voljo</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label></div>
+<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:var(--muted);font-size:11px">🚦 gostota prometa trenutno ni na voljo</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label><label style="cursor:pointer"><input type="checkbox" id="fuelStToggle" onchange="toggleFuelSt(this)"> ⛽ črpalke</label></div>
 </div>
 <div class="view" id="view-borders" style="display:none">
 <section class="country-group" id="favCrossSection">
@@ -703,6 +704,12 @@ ${fuelHtml}
       <label>Poraba (l/100km)<input id="setVehCons" type="number" step="0.1" min="1" inputmode="decimal"></label>
       <label>Rezervoar (l)<input id="setVehTank" type="number" min="1" inputmode="numeric"></label>
       <button class="cam" onclick="saveVehicle()">Shrani vozilo</button>
+    </div>
+    <h3 class="rsub">📱 Socialni viri (Facebook)</h3>
+    <div class="manform" style="max-width:440px">
+      <label>Moja FB skupina / stran (povezava)<input id="setFbGroup" type="url" placeholder="https://www.facebook.com/groups/..."></label>
+      <button class="cam" onclick="saveFbGroup()">Shrani FB skupino</button>
+      <p class="meta">Pri vsakem prehodu v »Moja pot« dobiš gumb »Moja FB skupina ↗«. FB skupine so pogosto najbolj ažurirane.</p>
     </div>
     <h3 class="rsub">🔔 Moji alarmi</h3>
     <div id="setAlarms"></div>
@@ -873,6 +880,44 @@ function toggleTruckPark(cb){ if(cb.checked){truckPark.addTo(map);} else {map.re
 truckPark.addTo(map);
 rebuildCams();
 map.on('zoomend', function(){ rebuildCams(); rebuildTruckPark(); });
+
+/* ⛽ Crpalke (OpenStreetMap/Overpass, dinamicno za vidno obmocje; cena dizla po drzavi) */
+var fuelLayer=L.layerGroup();
+var ISO2={SVN:'SI',HRV:'HR',BIH:'BA',SRB:'RS',MNE:'ME',MKD:'MK',HUN:'HU',AUT:'AT',ITA:'IT',ROU:'RO',BGR:'BG',ALB:'AL',GRC:'GR',XKX:'XK'};
+function _pip(lng,lat,ring){ var inside=false; for(var i=0,j=ring.length-1;i<ring.length;j=i++){ var xi=ring[i][0],yi=ring[i][1],xj=ring[j][0],yj=ring[j][1]; if(((yi>lat)!=(yj>lat))&&(lng<(xj-xi)*(lat-yi)/(yj-yi)+xi)) inside=!inside; } return inside; }
+function countryAt(lat,lng){ try{ var fs=BORDERS.features; for(var i=0;i<fs.length;i++){ var g=fs[i].geometry; if(g.type==='Polygon'){ if(_pip(lng,lat,g.coordinates[0])) return ISO2[fs[i].properties.iso]||null; } else if(g.type==='MultiPolygon'){ for(var k=0;k<g.coordinates.length;k++){ if(_pip(lng,lat,g.coordinates[k][0])) return ISO2[fs[i].properties.iso]||null; } } } }catch(e){} return null; }
+var fuelIcon=L.divIcon({className:'fueldiv',html:'<div class="fuelpin">⛽</div>',iconSize:[22,22],iconAnchor:[11,11]});
+var _fuelTimer=null;
+function rebuildFuel(){
+  var tb=document.getElementById('fuelStToggle');
+  fuelLayer.clearLayers();
+  if(!tb||!tb.checked||map.getZoom()<11) return;
+  var b=map.getBounds(), q='[out:json][timeout:25];node["amenity"="fuel"]('+b.getSouth().toFixed(3)+','+b.getWest().toFixed(3)+','+b.getNorth().toFixed(3)+','+b.getEast().toFixed(3)+');out tags;';
+  var mirrors=['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter'];
+  function tryFetch(i){
+    if(i>=mirrors.length){ return; }
+    fetch(mirrors[i],{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'data='+encodeURIComponent(q)})
+      .then(function(r){ return r.text(); })
+      .then(function(tx){
+        var j=null; try{ j=JSON.parse(tx); }catch(e){}
+        if(!j){ tryFetch(i+1); return; } // rate-limit/XML -> mirror
+        var tb2=document.getElementById('fuelStToggle'); if(!tb2||!tb2.checked) return;
+        fuelLayer.clearLayers();
+        (j.elements||[]).slice(0,400).forEach(function(el){
+          if(el.lat==null)return;
+          var nm=(el.tags&&(el.tags.brand||el.tags.name))||'Črpalka';
+          var cc=countryAt(el.lat,el.lon), pr=(cc&&DIESEL[cc]!=null)?(DIESEL[cc].toFixed(3)+' €/l'):'ni cene';
+          var ccN=cc?((FLAGJS[cc]||'')+' '+(CNAMES[cc]||cc)):'';
+          var pop='<b>⛽ '+nm+'</b>'+(ccN?'<br>'+ccN:'')+'<br>dizel ~<b>'+pr+'</b> <span style="color:#94a3b8">(okvirno, po državi · AMZS)</span>';
+          fuelLayer.addLayer(L.marker([el.lat,el.lon],{icon:fuelIcon}).bindPopup(pop).bindTooltip('⛽ '+nm));
+        });
+      })
+      .catch(function(){ tryFetch(i+1); });
+  }
+  tryFetch(0);
+}
+function toggleFuelSt(cb){ if(cb.checked){ fuelLayer.addTo(map); rebuildFuel(); } else { map.removeLayer(fuelLayer); fuelLayer.clearLayers(); } }
+map.on('moveend', function(){ if(_fuelTimer)clearTimeout(_fuelTimer); _fuelTimer=setTimeout(rebuildFuel, 600); });
 
 /* 📍 Moja lokacija + najblizji prehod */
 var youMarker=null;
@@ -1101,9 +1146,11 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var srcs=sourcesFor(p);
     var srcLine=srcs.length?srcs.map(function(s){return s.label+(s.ageMin!=null?' ('+s.ageMin+' min)':'');}).join(' · '):'ni avtomatskih virov';
     var soc=socFresh(p.id).length, q=socQ(p)[0];
+    var fbg=''; try{ fbg=localStorage.getItem('promet_fbgroup')||''; }catch(e){}
     var socLine='🔎 Socialni signali: '+(soc>0?('<b>'+soc+' svežih</b> (&lt;3h)'):'ni svežih')
       +' · <a href="'+fbUrl(q)+'" target="_blank" rel="noopener noreferrer">Facebook ↗</a>'
       +' · <a href="'+gUrl(q)+'" target="_blank" rel="noopener noreferrer">Google ↗</a>'
+      +(fbg?' · <a href="'+fbg+'" target="_blank" rel="noopener noreferrer">Moja FB skupina ↗</a>':'')
       +' · <button class="linklike" onclick="addSocial(\\''+id+'\\')">➕ dodaj</button>';
     var note=assistantNote(p);
     return '<div class="rcard" style="border-left:5px solid '+col+'">'
@@ -1301,7 +1348,9 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   }
   window.toggleDebug=function(cb){ localStorage.setItem('promet_debug', cb.checked?'1':'0'); var p=document.getElementById('debugPanel'); if(p){ p.style.display=cb.checked?'block':'none'; if(cb.checked)p.innerHTML=debugInfo(); } };
   window.resetAll=function(){ if(!confirm('Počistim vse osebne nastavitve v tej napravi (vozilo, priljubljene, vnose, alarme)?'))return; Object.keys(localStorage).filter(function(k){return k.indexOf('promet_')===0;}).forEach(function(k){localStorage.removeItem(k);}); location.reload(); };
-  loadVeh(); renderAlarms(); renderCounts();
+  function loadFb(){ var el=document.getElementById('setFbGroup'); if(el) el.value=localStorage.getItem('promet_fbgroup')||''; }
+  window.saveFbGroup=function(){ var u=(document.getElementById('setFbGroup').value||'').trim().slice(0,300); if(u){ localStorage.setItem('promet_fbgroup',u); } else { localStorage.removeItem('promet_fbgroup'); } flash('FB skupina shranjena.'); };
+  loadVeh(); loadFb(); renderAlarms(); renderCounts();
   var dbg=localStorage.getItem('promet_debug')==='1', dc=document.getElementById('setDebug'); if(dc){ dc.checked=dbg; if(dbg){ var dp=document.getElementById('debugPanel'); dp.style.display='block'; dp.innerHTML=debugInfo(); } }
 })();
 </script></body></html>`;
