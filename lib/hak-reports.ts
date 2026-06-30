@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "30.6.2026. 14:24",
+  "updated": "30.6.2026. 14:40",
   "text": "Na većini cesta vozi se bez posebnih ograničenja. Pojačan je promet na važnijim cestama, gradskim prometnicama i obilaznicama. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: teretno vozilo u kvaru na autocesti A1 između tunela Sveti Rok i tunela Krpani u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h teretno vozilo u kvaru na autocesti A1 između tunela Bristovac i tunela Čelinka u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 60 km/h rasuti teret (komadi gume) na autocesti A1 između 361. i 362. km između čvorova Prgomet i Vučevica u smjeru Dubrovnika, vozi se uz ograničenje brzi…"
  },
  {
