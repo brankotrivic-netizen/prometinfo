@@ -13,6 +13,7 @@ import { HAK_WAITS } from "../lib/hak-waits";
 import { ROUTE_PRESETS } from "../lib/routes";
 import { DIESEL_PRICES, DIESEL_UPDATED } from "../lib/diesel-prices";
 import { SOCIAL_KEYWORDS, SOCIAL_PAGES, SOCIAL_QUERIES } from "../lib/social";
+import { PROMET_SI, PROMET_SI_UPDATED } from "../lib/promet-si";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
 import { SI_CAMS } from "../lib/si-road-cameras";
 import { BIHAMK_CAMS } from "../lib/bihamk-cameras";
@@ -274,10 +275,16 @@ async function main() {
   const reportCard = (title: string, text: string, time?: string) =>
     `<article class="report"><div class="report-head"><b>${esc(title)}</b>${time ? `<span class="report-time">${esc(time)}</span>` : ""}</div><div class="report-text">${esc(text)}</div></article>`;
   const bihTotal = BIHAMK_REPORTS.reduce((s, g) => s + g.items.length, 0);
+  const siType: Record<string, string> = { MaintenanceWorks: "🚧 Dela na cesti", RoadOrCarriagewayOrLaneManagement: "🚦 Ureditev prometa", Accident: "💥 Nesreča", AbnormalTraffic: "🐌 Zastoj", PoorEnvironmentConditions: "🌧️ Vreme", GeneralObstruction: "⚠️ Ovira" };
+  const siTime = (s: string) => { try { return new Date(s).toLocaleString("sl-SI", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }); } catch { return ""; } };
   const reportsHtml = `
     <section class="country-group">
       <h2>📰 Prometna poročila <span class="src">· uradni viri</span></h2>
-      <details open class="roadgroup"><summary>🇭🇷 Hrvaška — HAK <span class="cnt">${HAK_REPORTS.length}</span></summary>
+      <details open class="roadgroup"><summary>🇸🇮 Slovenija — promet.si / DARS <span class="cnt">${PROMET_SI.length}</span></summary>
+        <p class="meta">Vir: promet.si / NAP (DARS) · osveženo ${PROMET_SI_UPDATED ? siTime(PROMET_SI_UPDATED) : "—"} · <a href="https://www.promet.si/sl/promet" target="_blank" rel="noopener noreferrer">odpri promet.si ↗</a></p>
+        <div class="reports">${PROMET_SI.slice(0, 150).map((e) => reportCard(siType[e.type] || "ℹ️ Dogodek", e.desc, siTime(e.start))).join("") || '<p class="meta">Trenutno ni objavljenih dogodkov ali vir ni dosegljiv.</p>'}</div>
+      </details>
+      <details class="roadgroup"><summary>🇭🇷 Hrvaška — HAK <span class="cnt">${HAK_REPORTS.length}</span></summary>
         <div class="reports">${HAK_REPORTS.map((r) => reportCard(r.title, r.text, r.updated)).join("")}</div>
       </details>
       <details class="roadgroup"><summary>🇷🇸 Srbija — AMSS <span class="cnt">${AMSS_REPORTS.length}</span></summary>

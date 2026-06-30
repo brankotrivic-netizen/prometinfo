@@ -6,6 +6,7 @@ const isWin = process.platform === "win32";
 const run = (cmd, args) => spawnSync(cmd, args, { stdio: "inherit", shell: isWin });
 
 const steps = [
+  ["promet.si / NAP dogodki (SI)", "node", ["scripts/build-promet-si.mjs"]],
   ["AMZS cene goriv", "node", ["scripts/build-fuel.mjs"]],
   ["HAK poročila (HR)", "node", ["scripts/build-hak-reports.mjs"]],
   ["AMSS poročila (RS)", "node", ["scripts/build-amss-reports.mjs"]],
