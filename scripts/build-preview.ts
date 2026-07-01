@@ -444,7 +444,8 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .rmine{font-size:12px;color:#0369a1;background:#e0f2fe;border-radius:7px;padding:5px 8px;margin:4px 0}
 .manform{display:flex;flex-direction:column;gap:10px;padding:4px 2px}
 .manform label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--text)}
-.manform select,.manform input{padding:10px 11px;border:1px solid var(--border);border-radius:8px;font:inherit;background:var(--bg);color:var(--text)}
+.manform select,.manform input,.manform textarea{padding:10px 11px;border:1px solid var(--border);border-radius:8px;font:inherit;background:var(--bg);color:var(--text);width:100%;box-sizing:border-box}
+.manform textarea{resize:vertical}
 #toast{display:none;position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:4000;background:#0b1220;color:#fff;padding:12px 18px;border-radius:10px;font-size:14px;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.3);max-width:90%}
 .alrow{display:flex;align-items:center;gap:8px;font-size:14px;padding:6px 0}
 .alrow span{flex:1;font-weight:600}
@@ -643,6 +644,8 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
     </div>
     <p class="meta" style="margin:2px 0 10px">Hitre poti (shranjene v napravi):</p>
     <div class="quickroutes" id="quickRoutes"></div>
+    <p class="meta" style="margin:10px 0 4px">📱 Socialni signali (Facebook so pogosto najbolj ažurirani):</p>
+    <button class="cam" onclick="openFbPaste()">📋 Prilepi objavo iz Facebooka</button>
   </section>
   <section class="country-group" id="routeResult" style="display:none"></section>
 </div>
@@ -736,6 +739,18 @@ ${fuelHtml}
   </div>
 </div>
 <div id="driveMode"><div class="drivehead"><span>🚗 Vozim</span><button onclick="exitDrive()">✕ Končaj</button></div><div id="driveBody"></div></div>
+<div id="fbPasteModal" class="modal" onclick="if(event.target===this)closeFbPaste()">
+  <div class="modalbox">
+    <div class="modalhead"><span>📋 Prilepi objavo iz Facebooka</span><button onclick="closeFbPaste()">✕</button></div>
+    <div class="manform">
+      <label>Besedilo FB objave / komentarja<textarea id="fbText" rows="4" maxlength="600" placeholder="Prilepi tukaj (npr. 'Gradiška kolona 2 km, čeka se preko sat vremena')"></textarea></label>
+      <div id="fbDetect" class="meta"></div>
+      <label>Prehod (samodejno zaznano — po potrebi popravi)<select id="fbCrossing"></select></label>
+      <button class="drivebtn" style="background:#1877f2" onclick="saveFbPaste()">Dodaj kot socialni signal</button>
+      <p class="meta">VARNO: nič se ne pobira s Facebooka — ti prilepiš besedilo. Signal velja 3 ure.</p>
+    </div>
+  </div>
+</div>
 <div id="manualModal" class="modal" onclick="if(event.target===this)closeManual()">
   <div class="modalbox">
     <div class="modalhead"><span>➕ Dodaj moj podatek o čakanju</span><button onclick="closeManual()">✕</button></div>
@@ -1096,7 +1111,15 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function socQ(p){ if(SOC_Q[p.id]) return SOC_Q[p.id]; var nm=(p.name||'').replace(/^GP\\s+/,''); return [nm+' granica gužva', nm+' granični prelaz kolona', nm+' zastoj']; }
   function fbUrl(q){ return 'https://www.facebook.com/search/posts/?q='+encodeURIComponent(q); }
   function gUrl(q){ return 'https://www.google.com/search?tbs=qdr:d&q='+encodeURIComponent(q); }
-  window.addSocial=function(id){ var t=window.prompt('Socialni signal za ta prehod (kratek opis, npr. "kolona 2 km, čeka se"):'); if(!t)return; var a=socGet(); a.push({id:id,text:(''+t).slice(0,140),t:new Date().toISOString(),confirmed:false}); socSave(a); toast('Socialni signal dodan (velja 3 ure).'); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
+  window.addSocial=function(id){ var t=window.prompt('Socialni signal za ta prehod (kratek opis, npr. "kolona 2 km, čeka se"):'); if(!t)return; var a=socGet(); a.push({id:id,text:(''+t).slice(0,140),t:new Date().toISOString(),confirmed:false,source:'facebook'}); socSave(a); toast('Socialni signal dodan (velja 3 ure).'); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
+  // ---- Prilepi iz Facebooka: zaznava prehoda + kljucnih besed ----
+  var CALIAS={ 'ba-gradiska':['gradiska','stara gradiska','gornji varos','novi most'], 'ba-brod':['brod','slavonski brod','bosanski brod'], 'ba-samac':['samac','slavonski samac'], 'ba-svilaj':['svilaj'], 'ba-orasje':['orasje','zupanja'], 'ba-izacic':['izacic','licko petrovo selo'], 'ba-velika-kladusa':['velika kladusa','maljevac'], 'ba-kostajnica':['kostajnica','hrvatska kostajnica'], 'ba-gradina':['gradina','jasenovac'], 'ba-doljani':['doljani','metkovic'], 'ba-bijaca':['bijaca','nova sela'], 'ba-raca':['raca','sremska raca'], 'ba-karakaj':['karakaj','mali zvornik'], 'hr-bajakovo':['bajakovo','batrovci'], 'hr-tovarnik':['tovarnik','sid'], 'si-obrezje':['obrezje','bregana'], 'si-gruskovje':['gruskovje','macelj'], 'si-karavanke':['karavanke'] };
+  function detectCrossing(txt){ var t=norm(txt); for(var id in CALIAS){ var al=CALIAS[id]; for(var i=0;i<al.length;i++){ if(t.indexOf(al[i])>=0) return id; } } for(var k in CBYID){ var nm=norm(CBYID[k].name).replace(/^gp\\s+/,''); if(nm.length>3 && t.indexOf(nm)>=0) return k; } return null; }
+  function detectKw(txt){ var t=norm(txt); var found=[]; SOC_KW.forEach(function(k){ if(t.indexOf(norm(k))>=0) found.push(k); }); return found; }
+  function fillFbSelect(sel){ var ids=CURRENT_ROUTE?CURRENT_ROUTE.recommended.concat(CURRENT_ROUTE.alternative,CURRENT_ROUTE.avoid):[]; if(!ids.length)ids=Object.keys(CBYID); var box=document.getElementById('fbCrossing'); box.innerHTML=ids.map(function(id){var p=CBYID[id];return p?'<option value="'+id+'"'+(id===sel?' selected':'')+'>'+p.name+'</option>':'';}).join(''); }
+  window.openFbPaste=function(){ var dm=document.getElementById('fbPasteModal'); if(!dm)return; document.getElementById('fbText').value=''; document.getElementById('fbDetect').textContent=''; fillFbSelect(); dm.style.display='flex'; var ta=document.getElementById('fbText'); ta.oninput=function(){ var id=detectCrossing(ta.value); var kw=detectKw(ta.value); var d=document.getElementById('fbDetect'); if(id){ fillFbSelect(id); d.innerHTML='✅ Zaznan prehod: <b>'+CBYID[id].name+'</b>'+(kw.length?' · ključne besede: '+kw.join(', '):''); } else { d.textContent=kw.length?('Ključne besede: '+kw.join(', ')+' — prehoda nisem zaznal, izberi ročno.'):'Prehoda nisem zaznal — izberi ročno.'; } }; };
+  window.closeFbPaste=function(){ var dm=document.getElementById('fbPasteModal'); if(dm)dm.style.display='none'; };
+  window.saveFbPaste=function(){ var txt=(document.getElementById('fbText').value||'').trim(); var id=document.getElementById('fbCrossing').value; if(!txt||!id){ toast('Prilepi besedilo in izberi prehod.'); return; } var a=socGet(); a.push({id:id,text:txt.slice(0,200),kw:detectKw(txt),t:new Date().toISOString(),confirmed:false,source:'facebook'}); socSave(a); closeFbPaste(); toast('FB signal dodan za '+CBYID[id].name+' (velja 3 ure).'); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
   // ---- ZANESLJIVOST IZ VEČ VIROV (🟢🟡🟠🔴⚫) ----
   function confidence(p){
     var srcs=sourcesFor(p), official=srcs.filter(function(s){return s.official;});
