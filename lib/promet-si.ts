@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-01T17:25:38.361Z";
+export const PROMET_SI_UPDATED = "2026-07-01T20:17:29.090Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;860784;338219c8-b9f6-4236-9d6b-64068a76d0a4",
+  "id": "DARS;860792;9cdc7db4-d39f-47a8-9089-1d045c7d4c29",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, izvoz 47 Kozina - priključek Kozina iz smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.61119,
-  "lng": 13.93262,
-  "start": "2026-07-01T17:17:59.28Z",
-  "end": "2026-07-01T21:00:00Z",
-  "ts": "2026-07-01T17:18:01.63Z"
- },
- {
-  "id": "DARS;860782;9ae0f049-48d5-44bc-a8ad-c71701330a6b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Podtabor - priključek Kranj zahod v smeri Ljubljane, dela, zaprt odstavni pas, košnja.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.30393,
-  "lng": 14.28291,
-  "start": "2026-07-01T17:07:18.923Z",
-  "end": "2026-07-01T23:00:00Z",
-  "ts": "2026-07-01T17:07:44.697Z"
+  "desc": "A2, Ljubljana - Obrežje, izvoz 19 Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.9689,
+  "lng": 14.65512,
+  "start": "2026-07-01T17:47:13.817Z",
+  "end": "2026-07-02T00:00:00Z",
+  "ts": "2026-07-01T20:05:13.22Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
