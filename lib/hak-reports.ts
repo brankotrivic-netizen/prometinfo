@@ -3,12 +3,12 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "1.7.2026. 01:53",
+  "updated": "1.7.2026. 02:20",
   "text": "Kolnici su mjestimice vlažni i skliski. Na većini cesta vozi se bez posebnih ograničenja i poteškoća. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog požara promet je prekinut na državnoj cesti DC126 između Trogira i mjesta Slatine AUTOCESTE A1 Zagreb-Ploče-Karamatići 02./03.07. od 23:00 do 05:00 zatvarat će se oba smjera dionice od čvora Brinje do čvora Žuta Lokva te od čvora Žuta Lokva do čvora Otočac. Obilazak dionica čvor Brinje - čvor Žuta Lokva je DC23, a čvor Žuta Lokva-Otočac je DC23 i DC50. A2 Zagreb-Macelj - A3 Bregana-Lipovac zbog prometnog rasterećenja privoza čvoru Zagreb zapad …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "1.7.2026. 01:52",
+  "updated": "1.7.2026. 02:20",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
