@@ -1218,13 +1218,25 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     h+=rows.map(function(x){return (FLAGJS[x.c]||'')+' '+(CNAMES[x.c]||x.c)+': <b>'+x.eur.toFixed(3)+' €/l</b>'+(x.c===cheap.c?' ✅':'');}).join('<br>');
     h+='<div style="margin-top:8px">✅ <b>Najbolje tankati: '+(CNAMES[cheap.c]||cheap.c)+'</b> ('+cheap.eur.toFixed(3)+' €/l)</div>';
     if(DIESEL.SI!=null && cheap.c!=='SI' && DIESEL.SI>cheap.eur) h+='<div>⚠ Ne tankaj v Sloveniji, če ni nujno (dražje za ~'+Math.round((DIESEL.SI-cheap.eur)*100)+' centov/l kot v '+(CNAMES[cheap.c]||cheap.c)+').</div>';
-    h+='<div id="fuelTrip" class="meta" style="margin-top:8px">Računam porabo za pot…</div></div>';
+    h+='<div id="fuelTrip" class="meta" style="margin-top:8px">Računam porabo za pot…</div>';
+    h+='<button class="cam" style="margin-top:8px" onclick="showRouteFuel()">⛽ Pokaži črpalke ob poti</button>';
+    h+='<div id="fuelSuggest" class="meta" style="margin-top:6px"></div>';
+    h+='</div>';
     return h;
   }
+  window.showRouteFuel=function(){
+    var pr=CURRENT_ROUTE; if(!pr) return;
+    var rf=document.getElementById('routeFrom'), rt=document.getElementById('routeTo');
+    if(rf)rf.value=rFrom(pr); if(rt)rt.value=rTo(pr);
+    var cb=document.getElementById('fuelStToggle'); if(cb&&!cb.checked){ cb.checked=true; if(window.toggleFuelSt)toggleFuelSt(cb); }
+    calcRoute(); // narise pot + preklopi na zemljevid
+    toast('Približaj del poti za prikaz črpalk in cen (⛽).');
+  };
   function updateFuelDistance(pr){
     if(!pr.fuelCountries||!pr.fuelCountries.length) return;
+    var cheapC=fuelCC(pr).filter(function(c){return DIESEL[c]!=null;}).sort(function(a,b){return DIESEL[a]-DIESEL[b];})[0];
     Promise.all([geocode(pr.from),geocode(pr.to)]).then(function(p){
-      var url='https://router.project-osrm.org/route/v1/driving/'+p[0].lng+','+p[0].lat+';'+p[1].lng+','+p[1].lat+'?overview=false';
+      var url='https://router.project-osrm.org/route/v1/driving/'+p[0].lng+','+p[0].lat+';'+p[1].lng+','+p[1].lat+'?overview=simplified&geometries=geojson';
       return fetch(url).then(function(r){return r.json();}).then(function(j){
         if(j.code!=='Ok'||!j.routes.length) throw 0;
         var km=j.routes[0].distance/1000, v=veh(), liters=km/100*v.cons;
@@ -1232,8 +1244,33 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
         var cheap=prices[0], dear=prices[prices.length-1], cost=liters*cheap, save=liters*(dear-cheap);
         var t=document.getElementById('fuelTrip');
         if(t) t.innerHTML='Pot ~<b>'+km.toFixed(0)+' km</b> · poraba ~<b>'+liters.toFixed(0)+' l</b> · strošek ~<b>'+cost.toFixed(0)+' €</b> (po najcenejši)'+(save>1?(' · prihranek do ~'+save.toFixed(0)+' € proti najdražji državi'):'');
+        // konkreten predlog crpalke ob poti v najcenejsi drzavi
+        var coords=(j.routes[0].geometry&&j.routes[0].geometry.coordinates)||[];
+        if(cheapC && coords.length && typeof countryAt==='function') suggestStation(coords, cheapC);
       });
     }).catch(function(){ var t=document.getElementById('fuelTrip'); if(t) t.textContent='Porabe za pot ni bilo mogoče izračunati.'; });
+  }
+  function suggestStation(coords, cc){
+    var box=document.getElementById('fuelSuggest'); if(!box) return;
+    // najdi tocko na poti v najcenejsi drzavi (nekje na sredini tega odseka)
+    var inC=coords.filter(function(c){ return countryAt(c[1],c[0])===cc; });
+    if(!inC.length){ return; }
+    var pt=inC[Math.floor(inC.length*0.55)]; // [lng,lat]
+    box.textContent='Iščem črpalko v '+(CNAMES[cc]||cc)+'…';
+    var q='[out:json][timeout:20];node["amenity"="fuel"](around:6000,'+pt[1].toFixed(4)+','+pt[0].toFixed(4)+');out tags 8;';
+    var mirrors=['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter'];
+    function go(i){ if(i>=mirrors.length){ box.innerHTML='Konkretne črpalke ni bilo mogoče pridobiti — na zemljevidu vklopi ⛽ za prikaz ob poti.'; return; }
+      fetch(mirrors[i],{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'data='+encodeURIComponent(q)})
+        .then(function(r){return r.text();}).then(function(tx){ var jj=null; try{jj=JSON.parse(tx);}catch(e){}
+          if(!jj){ go(i+1); return; }
+          var els=(jj.elements||[]).filter(function(e){return e.lat!=null && e.tags && (e.tags.brand||e.tags.name);});
+          if(!els.length){ box.innerHTML='V bližini poti (v '+(CNAMES[cc]||cc)+') ni najdene znamčene črpalke — vklopi ⛽ na zemljevidu.'; return; }
+          var names=els.slice(0,3).map(function(e){return (e.tags.brand||e.tags.name);});
+          var first=els[0];
+          box.innerHTML='✅ Predlog za tank ('+(FLAGJS[cc]||'')+' '+(CNAMES[cc]||cc)+', ~'+DIESEL[cc].toFixed(3)+' €/l): <b>'+names.join(', ')+'</b> ob poti. <a href="https://www.google.com/maps?q='+first.lat+','+first.lon+'" target="_blank" rel="noopener noreferrer">📍 zemljevid ↗</a>';
+        }).catch(function(){ go(i+1); });
+    }
+    go(0);
   }
   // ---- share stanje ----
   function nowHM(){ var n=new Date(); return ('0'+n.getHours()).slice(-2)+':'+('0'+n.getMinutes()).slice(-2); }
