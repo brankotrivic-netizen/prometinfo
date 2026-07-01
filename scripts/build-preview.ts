@@ -708,12 +708,14 @@ ${fuelHtml}
       <label>Rezervoar (l)<input id="setVehTank" type="number" min="1" inputmode="numeric"></label>
       <button class="cam" onclick="saveVehicle()">Shrani vozilo</button>
     </div>
-    <h3 class="rsub">📱 Socialni viri (Facebook)</h3>
-    <div class="manform" style="max-width:440px">
-      <label>Moja FB skupina / stran (povezava)<input id="setFbGroup" type="url" placeholder="https://www.facebook.com/groups/..."></label>
-      <button class="cam" onclick="saveFbGroup()">Shrani FB skupino</button>
-      <p class="meta">Pri vsakem prehodu v »Moja pot« dobiš gumb »Moja FB skupina ↗«. FB skupine so pogosto najbolj ažurirane.</p>
+    <h3 class="rsub">📱 Moje FB skupine (Facebook)</h3>
+    <div class="manform" style="max-width:460px">
+      <label>Ena skupina/stran na vrstico (lahko »Ime | povezava«)<textarea id="setFbGroups" rows="4" placeholder="Gužve na granicama | https://www.facebook.com/groups/...&#10;https://www.facebook.com/..."></textarea></label>
+      <button class="cam" onclick="saveFbGroups()">Shrani FB skupine</button>
+      <p class="meta">Pri vsakem prehodu v »Moja pot« dobiš povezave do teh skupin. FB skupine so pogosto najbolj ažurirane.</p>
     </div>
+    <h3 class="rsub">📥 Moji socialni signali (velja 3 h)</h3>
+    <div id="setSocial" class="meta"></div>
     <h3 class="rsub">🔔 Moji alarmi</h3>
     <div id="setAlarms"></div>
     <p class="meta">Alarm se sproži, ko čakanje na prehodu preseže prag — prikaže se kot pasica v zavihku »Moja pot«.</p>
@@ -853,7 +855,7 @@ camCluster.addTo(map);
 var _filter='all';
 var CAM_MIN_ZOOM=9;
 function rebuildCams(){ camCluster.clearLayers(); var rt=document.getElementById('roadToggle'); if(rt&&!rt.checked){ updateZoomHint(); return; } if(_filter==='all' && map.getZoom()<CAM_MIN_ZOOM){ updateZoomHint(); return; } var arr=[]; CAMS.forEach(function(o){ if(_filter==='all'||_filter===o.country) arr.push(o.m); }); if(camCluster.addLayers){camCluster.addLayers(arr);}else{arr.forEach(function(m){camCluster.addLayer(m);});} updateZoomHint(); }
-function updateZoomHint(){ var el=document.getElementById('zoomHint'); if(!el) return; var rt=document.getElementById('roadToggle'); el.style.display=(_filter==='all'&&rt&&rt.checked&&map.getZoom()<CAM_MIN_ZOOM)?'block':'none'; }
+function updateZoomHint(){ var el=document.getElementById('zoomHint'); if(!el) return; var rt=document.getElementById('roadToggle'), ft=document.getElementById('fuelStToggle'); var z=map.getZoom(); var need=[]; if(_filter==='all'&&rt&&rt.checked&&z<CAM_MIN_ZOOM) need.push('kamer'); if(ft&&ft.checked&&z<11) need.push('črpalk'); if(need.length){ el.textContent='🔍 Približaj zemljevid za prikaz '+need.join(' in '); el.style.display='block'; } else { el.style.display='none'; } }
 function toggleRoads(cb){ rebuildCams(); }
 function toggleCrossings(cb){ if(cb.checked) crossingLayer.addTo(map); else map.removeLayer(crossingLayer); }
 function filterCountry(c, btn){
@@ -890,7 +892,7 @@ function gotoHit(i){ var s=SEARCH[i]; if(!s) return; var box=document.getElement
 function gotoPoint(lat,lng){ map.setView([lat,lng],13); var b=document.getElementById('searchResults'); if(b)b.style.display='none'; var s=document.getElementById('search'); if(s)s.value=''; }
 var truckPark=L.layerGroup();
 var truckIcon=L.divIcon({className:'tpdiv',html:'🅿️',iconSize:[18,18],iconAnchor:[9,9]});
-function rebuildTruckPark(){ truckPark.clearLayers(); var tb=document.getElementById('truckToggle'); if(!tb||!tb.checked||map.getZoom()<CAM_MIN_ZOOM) return; TRUCKPTS.forEach(function(p){ truckPark.addLayer(L.marker([p.lat,p.lng],{icon:truckIcon}).bindTooltip('🅿️ '+p.name).bindPopup('<b>🅿️ '+p.name+'</b><br><small>'+p.type+'</small>')); }); }
+function rebuildTruckPark(){ truckPark.clearLayers(); var tb=document.getElementById('truckToggle'); if(!tb||!tb.checked) return; TRUCKPTS.forEach(function(p){ truckPark.addLayer(L.marker([p.lat,p.lng],{icon:truckIcon}).bindTooltip('🅿️ '+p.name).bindPopup('<b>🅿️ '+p.name+'</b><br><small>'+p.type+'</small>')); }); }
 function toggleTruckPark(cb){ if(cb.checked){truckPark.addTo(map);} else {map.removeLayer(truckPark);} rebuildTruckPark(); }
 truckPark.addTo(map);
 rebuildCams();
@@ -906,6 +908,7 @@ var _fuelTimer=null;
 function rebuildFuel(){
   var tb=document.getElementById('fuelStToggle');
   fuelLayer.clearLayers();
+  updateZoomHint();
   if(!tb||!tb.checked||map.getZoom()<11) return;
   var b=map.getBounds(), q='[out:json][timeout:25];node["amenity"="fuel"]('+b.getSouth().toFixed(3)+','+b.getWest().toFixed(3)+','+b.getNorth().toFixed(3)+','+b.getEast().toFixed(3)+');out tags;';
   var mirrors=['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter'];
@@ -931,7 +934,7 @@ function rebuildFuel(){
   }
   tryFetch(0);
 }
-function toggleFuelSt(cb){ if(cb.checked){ fuelLayer.addTo(map); rebuildFuel(); } else { map.removeLayer(fuelLayer); fuelLayer.clearLayers(); } }
+function toggleFuelSt(cb){ if(cb.checked){ fuelLayer.addTo(map); rebuildFuel(); } else { map.removeLayer(fuelLayer); fuelLayer.clearLayers(); updateZoomHint(); } }
 map.on('moveend', function(){ if(_fuelTimer)clearTimeout(_fuelTimer); _fuelTimer=setTimeout(rebuildFuel, 600); });
 
 /* 📍 Moja lokacija + najblizji prehod */
@@ -1004,6 +1007,7 @@ function showView(v, btn){
  var tabs=document.querySelectorAll('.tab'); for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
  if(btn){ btn.classList.add('active'); } else { var tb=document.querySelector('.tab[data-view="'+v+'"]'); if(tb) tb.classList.add('active'); }
  ['route','map','borders','cams','reports','truck','fuel','settings'].forEach(function(name){ var el=document.getElementById('view-'+name); if(el) el.style.display=(v===name)?'':'none'; });
+ if(v==='settings' && window.renderSocial){ try{ window.renderSocial(); }catch(e){} }
  if(v==='map'){ setTimeout(function(){ map.invalidateSize(); }, 60); }
 }
 (function(){ var tt=document.getElementById('trafficToggle'); if(tt&&tt.checked&&TOMTOM_KEY) toggleTraffic(tt); })();
@@ -1108,6 +1112,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function socGet(){ try{ return JSON.parse(localStorage.getItem(SKEY)||'[]'); }catch(e){ return []; } }
   function socSave(a){ try{ localStorage.setItem(SKEY,JSON.stringify(a)); }catch(e){} }
   function socFresh(id){ var now=Date.now(); return socGet().filter(function(x){ return x.id===id && (now-Date.parse(x.t))<3*3600*1000; }); }
+  function fbGroupsC(){ try{ var a=JSON.parse(localStorage.getItem('promet_fbgroups')); if(a&&a.length) return a; }catch(e){} var old=localStorage.getItem('promet_fbgroup'); return old?[{name:'Moja FB skupina',url:old}]:[]; }
+  window.shareCrossing=function(id){ var p=CBYID[id]; if(!p)return; var txt=p.name+': čakanje '+(mainWait(p)||'ni podatka')+' · '+nowHM()+' (PrometInfo)'; if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(function(){toast('Kopirano — prilepi v FB skupino.');},function(){window.prompt('Kopiraj:',txt);}); } else window.prompt('Kopiraj:',txt); };
   function socQ(p){ if(SOC_Q[p.id]) return SOC_Q[p.id]; var nm=(p.name||'').replace(/^GP\\s+/,''); return [nm+' granica gužva', nm+' granični prelaz kolona', nm+' zastoj']; }
   function fbUrl(q){ return 'https://www.facebook.com/search/posts/?q='+encodeURIComponent(q); }
   function gUrl(q){ return 'https://www.google.com/search?tbs=qdr:d&q='+encodeURIComponent(q); }
@@ -1169,12 +1175,13 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var srcs=sourcesFor(p);
     var srcLine=srcs.length?srcs.map(function(s){return s.label+(s.ageMin!=null?' ('+s.ageMin+' min)':'');}).join(' · '):'ni avtomatskih virov';
     var soc=socFresh(p.id).length, q=socQ(p)[0];
-    var fbg=''; try{ fbg=localStorage.getItem('promet_fbgroup')||''; }catch(e){}
+    var grpLinks=fbGroupsC().slice(0,3).map(function(g){ return '<a href="'+g.url+'" target="_blank" rel="noopener noreferrer">'+(g.name||'FB skupina')+' ↗</a>'; }).join(' · ');
     var socLine='🔎 Socialni signali: '+(soc>0?('<b>'+soc+' svežih</b> (&lt;3h)'):'ni svežih')
       +' · <a href="'+fbUrl(q)+'" target="_blank" rel="noopener noreferrer">Facebook ↗</a>'
       +' · <a href="'+gUrl(q)+'" target="_blank" rel="noopener noreferrer">Google ↗</a>'
-      +(fbg?' · <a href="'+fbg+'" target="_blank" rel="noopener noreferrer">Moja FB skupina ↗</a>':'')
-      +' · <button class="linklike" onclick="addSocial(\\''+id+'\\')">➕ dodaj</button>';
+      +(grpLinks?' · '+grpLinks:'')
+      +' · <button class="linklike" onclick="addSocial(\\''+id+'\\')">➕ dodaj</button>'
+      +' · <button class="linklike" onclick="shareCrossing(\\''+id+'\\')">📤 deli</button>';
     var note=assistantNote(p);
     return '<div class="rcard" style="border-left:5px solid '+col+'">'
       +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">'+sc+'/100</span></div>'
@@ -1408,9 +1415,17 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   }
   window.toggleDebug=function(cb){ localStorage.setItem('promet_debug', cb.checked?'1':'0'); var p=document.getElementById('debugPanel'); if(p){ p.style.display=cb.checked?'block':'none'; if(cb.checked)p.innerHTML=debugInfo(); } };
   window.resetAll=function(){ if(!confirm('Počistim vse osebne nastavitve v tej napravi (vozilo, priljubljene, vnose, alarme)?'))return; Object.keys(localStorage).filter(function(k){return k.indexOf('promet_')===0;}).forEach(function(k){localStorage.removeItem(k);}); location.reload(); };
-  function loadFb(){ var el=document.getElementById('setFbGroup'); if(el) el.value=localStorage.getItem('promet_fbgroup')||''; }
-  window.saveFbGroup=function(){ var u=(document.getElementById('setFbGroup').value||'').trim().slice(0,300); if(u){ localStorage.setItem('promet_fbgroup',u); } else { localStorage.removeItem('promet_fbgroup'); } flash('FB skupina shranjena.'); };
-  loadVeh(); loadFb(); renderAlarms(); renderCounts();
+  function fbGroups(){ try{ var a=JSON.parse(localStorage.getItem('promet_fbgroups')); if(a&&a.length) return a; }catch(e){} var old=localStorage.getItem('promet_fbgroup'); return old?[{name:'Moja FB skupina',url:old}]:[]; }
+  function loadFb(){ var el=document.getElementById('setFbGroups'); if(el) el.value=fbGroups().map(function(g){return g.name&&g.name!==g.url?(g.name+' | '+g.url):g.url;}).join('\\n'); }
+  window.saveFbGroups=function(){ var lines=(document.getElementById('setFbGroups').value||'').split('\\n'); var out=[]; lines.forEach(function(ln){ ln=ln.trim(); if(!ln)return; var parts=ln.split('|'); var name,url; if(parts.length>=2){ name=parts[0].trim(); url=parts.slice(1).join('|').trim(); } else { url=ln; name='FB skupina'; } if(/^https?:\\/\\//.test(url)) out.push({name:name.slice(0,40),url:url.slice(0,300)}); }); localStorage.setItem('promet_fbgroups',JSON.stringify(out)); localStorage.removeItem('promet_fbgroup'); flash('FB skupine shranjene ('+out.length+').'); };
+  // zgodovina socialnih signalov
+  var _pname={}; try{ (typeof PTS!=='undefined'?PTS:[]).forEach(function(p){ _pname[p.id]=p.name; }); }catch(e){}
+  function socAll(){ try{ return JSON.parse(localStorage.getItem('promet_social')||'[]'); }catch(e){ return []; } }
+  function agoTxt(iso){ var m=Math.round((Date.now()-Date.parse(iso))/60000); return m<1?'pravkar':(m<60?(m+' min nazaj'):(Math.round(m/60)+' h nazaj')); }
+  window.renderSocial=function(){ var box=document.getElementById('setSocial'); if(!box)return; var a=socAll(); if(!a.length){ box.innerHTML='Ni socialnih signalov.'; return; }
+    box.innerHTML=a.slice().reverse().map(function(s){ var i=a.indexOf(s); var fresh=(Date.now()-Date.parse(s.t))<3*3600*1000; return '<div class="alrow"><span>'+(fresh?'🟢':'⚫')+' <b>'+(_pname[s.id]||s.id)+'</b>: '+((s.text||'').replace(/</g,'&lt;').slice(0,60))+' <span style="color:#94a3b8">· '+agoTxt(s.t)+(s.source?' · '+s.source:'')+'</span></span><button class="cam" onclick="delSocial('+i+')">🗑</button></div>'; }).join(''); };
+  window.delSocial=function(i){ var a=socAll(); if(i>=0&&i<a.length){ a.splice(i,1); localStorage.setItem('promet_social',JSON.stringify(a)); renderSocial(); flash('Signal izbrisan.'); } };
+  loadVeh(); loadFb(); renderAlarms(); renderCounts(); renderSocial();
   var dbg=localStorage.getItem('promet_debug')==='1', dc=document.getElementById('setDebug'); if(dc){ dc.checked=dbg; if(dbg){ var dp=document.getElementById('debugPanel'); dp.style.display='block'; dp.innerHTML=debugInfo(); } }
 })();
 </script></body></html>`;
