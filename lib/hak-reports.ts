@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "1.7.2026. 14:06",
-  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama te pojedinim graničnim prijelazima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni, osobito u zonama radova na Istarskom ipsilonu između tunela i čvora Učka, Jadranskoj magistrali na splitskom području i državnoj cesti DC1 između Jezerca i Korenice te Gračaca i Knina u Otriću. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: na autocesti A1 između Zagreba i Karlovca u smjeru mora - vozi se usporeno uz povremene zastoje AUTOCESTE A1 Zagreb-Ploče-Karamatići 02./03. srpnja od 23:00 do 05:00 zatv…"
+  "updated": "1.7.2026. 17:12",
+  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama te pojedinim graničnim prijelazima. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni, osobito u zonama radova na Istarskom ipsilonu između tunela i čvora Učka, Jadranskoj magistrali na splitskom području i državnoj cesti DC1 između Jezerca i Korenice te Gračaca i Knina u Otriću. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: povećana je gustoća prometa na autocesti A1 između Zagreba i Bosiljeva u smjeru mora na zagrebačkoj obilaznici (A3) između čvorova Zagreb zapad i Zagreb istok u smjeru Li…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "1.7.2026. 14:03",
+  "updated": "1.7.2026. 17:12",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "1.7.2026. 14:03",
+  "updated": "1.7.2026. 17:12",
   "text": "U pomorskom prometu nema poteškoća. Zbog nepovoljnih vremenskih uvjeta odgođen je polazak katamarana na liniji Pula-Zadar-Pula iz Zadra u 16:00 sati. Dana 01.07.2026. katamaran na liniji 9403 Zadar - Molat - Brgulje - Zapuntel - Ist s polaskom iz luke Zadar u 14:05 sati pristat će u luku Kosirača te će u četvrtak, 02.07.2026. isploviti iz luke Kosirača u 06:00 sati umjesto iz luke Ist. Izmjene u redu plovidbe: od 15. lipnja je uspostavljena komercijalna linija br. 661 Split-Hvar-Korčula isplovljenjem iz luke Split u 12:15h Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. g…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "1.7.2026. 14:03",
+  "updated": "1.7.2026. 17:12",
   "text": "Stanje u željezničkom putničkom prometu 1. srpnja 2026. u 8.00 sati Do sanacije kvara na signalnome uređaju između kolodvora Vrbovec i Dugo Selo vlakovi prometuju u kolodvorskome razmaku te se očekuju kašnjenja. Također, uvedena je sljedeća regulacija prometa: Putnici vlaka 982 Vrbovec 8.10 – Zagreb GK 8.54 bit će prevezeni vlakom 2206 Vrbovec 8.30 – Zagreb GK 9.22. Putnici vlaka 985 Zagreb GK 13.20 – Vrbovec 14.02 bit će prevezeni vlakom 971 Zagreb GK 13.20 – Vrbovec 14.02. Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 58…"
  },
  {
