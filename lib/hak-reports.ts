@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "2.7.2026. 20:06",
+  "updated": "2.7.2026. 21:53",
   "text": "Za sve skupine vozila otvoreni su: autocesta A1 između čvorova Sveti Rok i Posedarje - vozi se uz ograničenje brzine od 60 km/h autocesta A7 između čvorova Rijeka istok i Šmrika državna cesta DC99 Križišće-čvor Križišće Krčki most (DC102) Zbog bure u priobalju zabrane su za pojedine skupine vozila ( detaljnije u popisu cesta ). Mogući su odroni. Promet je pojačan na gradskim prometnicama i obilaznicama. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI - AUTOCESTE A1 Zagreb-Ploče-Karamatići 02./03. srpnja od 23:00 do 05:00 zatvarat će se u oba smjera d…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "2.7.2026. 20:01",
+  "updated": "2.7.2026. 21:53",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "2.7.2026. 19:31",
+  "updated": "2.7.2026. 21:53",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 3. srpnja u prekidu će biti katamaranska linija 323 Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun 3. srpnja trajekt na liniji Pula-Zadar-Pula polazi u 16:00 sati iz Zadra Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a staln…"
  },
  {
