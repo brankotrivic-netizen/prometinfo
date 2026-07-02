@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-01T21:53:42.056Z";
+export const PROMET_SI_UPDATED = "2026-07-02T02:47:27.471Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -376,17 +376,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-29T08:13:37.373Z",
   "end": "2026-07-06T21:59:00Z",
   "ts": "2026-06-29T08:16:47.04Z"
- },
- {
-  "id": "DARS;787573;4409f2f1-7f1b-4cb0-9886-c0dd952cccd7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-225, Črnivec - Radmirje, pri Šmiklavžu, izmenično enosmerni promet, ureditev avtobusnih postajališč in pločnika, do 1. 7. 2026.",
-  "loc": "R1-225, Črnivec - Radmirje",
-  "lat": 46.27639,
-  "lng": 14.75746,
-  "start": "2025-07-10T06:10:32.583Z",
-  "end": "2026-07-01T21:59:00Z",
-  "ts": "2026-06-29T07:14:34.857Z"
  },
  {
   "id": "DARS;825661;81e9fbca-99cc-40dc-bc0e-f5de419109a0",
