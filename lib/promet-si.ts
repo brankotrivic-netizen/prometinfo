@@ -1,8 +1,74 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-02T15:46:22.367Z";
+export const PROMET_SI_UPDATED = "2026-07-02T18:04:13.014Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;861028;19bf4703-c7b0-40a4-be6d-90799ada8abe",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, predor Dekani - uvoz Črni Kal v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55132,
+  "lng": 13.83085,
+  "start": "2026-07-02T17:54:51.04Z",
+  "end": "2026-07-02T20:00:42.847Z",
+  "ts": "2026-07-02T17:54:53.363Z"
+ },
+ {
+  "id": "DARS;861023;e2142fbf-1691-44de-a7c2-980dd19bdde1",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Celje vzhod v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.2545,
+  "lng": 15.31652,
+  "start": "2026-07-02T17:42:44.997Z",
+  "end": "2026-07-02T19:00:22.293Z",
+  "ts": "2026-07-02T17:43:06.03Z"
+ },
+ {
+  "id": "DARS;861021;777e12a2-41ff-43b3-ad78-00ef984f0c3b",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, uvoz Šempeter v smeri Maribora, dela, oviran promet, košnja.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25941,
+  "lng": 15.0996,
+  "start": "2026-07-02T17:34:20.073Z",
+  "end": "2026-07-02T23:00:00Z",
+  "ts": "2026-07-02T17:34:31.677Z"
+ },
+ {
+  "id": "DARS;861020;b2dee760-6b2b-44ff-8ce1-6c89afd7e8cb",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Lukovica - izvoz Vransko v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.17005,
+  "lng": 14.77556,
+  "start": "2026-07-02T17:32:31.797Z",
+  "end": "2026-07-03T01:00:17.803Z",
+  "ts": "2026-07-02T17:32:43.453Z"
+ },
+ {
+  "id": "DARS;861018;c8072e39-71e5-428c-8e86-5fbef19b32bd",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Naklo - priključek Kranj zahod v smeri Ljubljane, dela, zaprt odstavni pas, košnja.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.27731,
+  "lng": 14.31308,
+  "start": "2026-07-02T17:08:28.833Z",
+  "end": "2026-07-02T23:00:00Z",
+  "ts": "2026-07-02T17:08:46.67Z"
+ },
+ {
+  "id": "DARS;787573;4409f2f1-7f1b-4cb0-9886-c0dd952cccd7",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-225, Črnivec - Radmirje, pri Šmiklavžu, izmenično enosmerni promet, ureditev avtobusnih postajališč in pločnika, do 16. 7. 2026.",
+  "loc": "R1-225, Črnivec - Radmirje",
+  "lat": 46.27639,
+  "lng": 14.75746,
+  "start": "2025-07-10T06:10:32.583Z",
+  "end": "2026-07-16T21:59:00Z",
+  "ts": "2026-07-02T17:00:41.9Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -35,39 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-02T14:35:59.727Z",
   "end": "2026-07-03T05:00:05.707Z",
   "ts": "2026-07-02T14:36:02.483Z"
- },
- {
-  "id": "DARS;860906;a755d4dd-e97a-4e21-9b54-90cc0cf377b2",
-  "type": "MaintenanceWorks",
-  "desc": "R2-441, Murska Sobota - Gederovci, oviran promet, košnja, do 18:00.",
-  "loc": "R2-441, Murska Sobota - Gederovci",
-  "lat": 46.66531,
-  "lng": 16.1743,
-  "start": "2026-07-02T08:31:16.477Z",
-  "end": "2026-07-02T16:00:00Z",
-  "ts": "2026-07-02T08:31:35.257Z"
- },
- {
-  "id": "DARS;860905;7628a7f7-c279-42d0-9e8c-ae2797e02f3a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-717, Cankova - Kuzma, Cankova - prehod Cankova, izmenično enosmerni promet, košnja, do 18:00.",
-  "loc": "R3-717, Cankova",
-  "lat": 46.71366,
-  "lng": 16.02305,
-  "start": "2026-07-02T08:30:03.493Z",
-  "end": "2026-07-02T16:00:00Z",
-  "ts": "2026-07-02T08:30:29.827Z"
- },
- {
-  "id": "DARS;860904;dd000c06-6511-4c21-a84c-f762f87a102a",
-  "type": "MaintenanceWorks",
-  "desc": "R2-440, Gederovci - Cankova, oviran promet, košnja, do 18:00.",
-  "loc": "R2-440, Gederovci - Cankova",
-  "lat": 46.67895,
-  "lng": 16.04967,
-  "start": "2026-07-02T08:29:17.14Z",
-  "end": "2026-07-02T16:00:00Z",
-  "ts": "2026-07-02T08:29:37.14Z"
  },
  {
   "id": "DARS;860854;83579b13-a69a-47a1-9d90-14be4b9ff1d9",
