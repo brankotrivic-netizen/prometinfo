@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "2.7.2026. 20:01",
+  "updated": "2.7.2026. 20:06",
   "text": "Za sve skupine vozila otvoreni su: autocesta A1 između čvorova Sveti Rok i Posedarje - vozi se uz ograničenje brzine od 60 km/h autocesta A7 između čvorova Rijeka istok i Šmrika državna cesta DC99 Križišće-čvor Križišće Krčki most (DC102) Zbog bure u priobalju zabrane su za pojedine skupine vozila ( detaljnije u popisu cesta ). Mogući su odroni. Promet je pojačan na gradskim prometnicama i obilaznicama. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI - AUTOCESTE A1 Zagreb-Ploče-Karamatići 02./03. srpnja od 23:00 do 05:00 zatvarat će se u oba smjera d…"
  },
  {
