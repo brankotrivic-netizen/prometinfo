@@ -13,6 +13,7 @@ import { HAK_WAITS } from "../lib/hak-waits";
 import { ROUTE_PRESETS } from "../lib/routes";
 import { DIESEL_PRICES, DIESEL_UPDATED } from "../lib/diesel-prices";
 import { SOCIAL_KEYWORDS, SOCIAL_PAGES, SOCIAL_QUERIES } from "../lib/social";
+import { FUEL_STATIONS } from "../lib/fuel-stations";
 import { PROMET_SI, PROMET_SI_UPDATED } from "../lib/promet-si";
 import { AMSS_WAITS } from "../lib/amss-waits";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
@@ -132,6 +133,9 @@ async function main() {
       it.rawStatus = `🇷🇸 AMSS: ${p.join(", ")}`;
     }
   }
+
+  // Novi most Gradiška: HR stran se imenuje Gornji Varoš — pokaži oboje v poti/karticah.
+  for (const it of items) if (it.id === "ba-gradiska") it.name = "Gornji Varoš–Gradiška (novi most)";
 
   const counts: Record<WaitLevel, number> = { none: 0, low: 0, moderate: 0, high: 0, severe: 0, unknown: 0 };
   for (const it of items) counts[it.level]++;
@@ -843,6 +847,7 @@ const ROUTES=${JSON.stringify(ROUTE_PRESETS)};
 const DIESEL=${JSON.stringify(Object.fromEntries(DIESEL_PRICES.map((d) => [d.country, d.eur])))};
 const DIESEL_UPD=${JSON.stringify(DIESEL_UPDATED)};
 const SOC_KW=${JSON.stringify(SOCIAL_KEYWORDS)};
+const FUELPTS=${JSON.stringify(FUEL_STATIONS)};
 const SOC_PAGES=${JSON.stringify(SOCIAL_PAGES)};
 const SOC_Q=${JSON.stringify(SOCIAL_QUERIES)};
 const BORDERSEARCH=${JSON.stringify(hakBorderCams.flatMap((c) => HAK_CAM_IMAGES[c.k].map((img, i) => ({ name: HAK_CAM_IMAGES[c.k].length > 1 ? `${c.name} · kam ${i + 1}` : c.name, img, lat: c.lat, lng: c.lng }))))};
@@ -882,7 +887,7 @@ camCluster.addTo(map);
 var _filter='all';
 var CAM_MIN_ZOOM=9;
 function rebuildCams(){ camCluster.clearLayers(); var rt=document.getElementById('roadToggle'); if(rt&&!rt.checked){ updateZoomHint(); return; } if(_filter==='all' && map.getZoom()<CAM_MIN_ZOOM){ updateZoomHint(); return; } var arr=[]; CAMS.forEach(function(o){ if(_filter==='all'||_filter===o.country) arr.push(o.m); }); if(camCluster.addLayers){camCluster.addLayers(arr);}else{arr.forEach(function(m){camCluster.addLayer(m);});} updateZoomHint(); }
-function updateZoomHint(){ var el=document.getElementById('zoomHint'); if(!el) return; var rt=document.getElementById('roadToggle'), ft=document.getElementById('fuelStToggle'); var z=map.getZoom(); var need=[]; if(_filter==='all'&&rt&&rt.checked&&z<CAM_MIN_ZOOM) need.push('kamer'); if(ft&&ft.checked&&z<11) need.push('črpalk'); if(need.length){ el.textContent='🔍 Približaj zemljevid za prikaz '+need.join(' in '); el.style.display='block'; } else { el.style.display='none'; } }
+function updateZoomHint(){ var el=document.getElementById('zoomHint'); if(!el) return; var rt=document.getElementById('roadToggle'), ft=document.getElementById('fuelStToggle'); var z=map.getZoom(); var need=[]; if(_filter==='all'&&rt&&rt.checked&&z<CAM_MIN_ZOOM) need.push('kamer'); if(ft&&ft.checked&&z<10) need.push('črpalk'); if(need.length){ el.textContent='🔍 Približaj zemljevid za prikaz '+need.join(' in '); el.style.display='block'; } else { el.style.display='none'; } }
 function toggleRoads(cb){ rebuildCams(); }
 function toggleCrossings(cb){ if(cb.checked) crossingLayer.addTo(map); else map.removeLayer(crossingLayer); }
 function filterCountry(c, btn){
@@ -933,40 +938,27 @@ function countryAt(lat,lng){ try{ var fs=BORDERS.features; for(var i=0;i<fs.leng
 var fuelIcon=L.divIcon({className:'fueldiv',html:'<div class="fuelpin">⛽</div>',iconSize:[22,22],iconAnchor:[11,11]});
 var _fuelTimer=null;
 function fuelStatus(msg,isErr){ var el=document.getElementById('fuelStatus'); if(!el)return; el.textContent=msg||''; el.style.display=msg?'block':'none'; el.style.color=isErr?'#dc2626':'#64748b'; }
+function fuelPopup(st){
+  var cc=countryAt(st.a,st.o), pr=(cc&&DIESEL[cc]!=null)?(DIESEL[cc].toFixed(3)+' €/l'):'ni cene';
+  var ccN=cc?((FLAGJS[cc]||'')+' '+(CNAMES[cc]||cc)):'';
+  return '<b>⛽ '+st.n+'</b>'+(ccN?'<br>'+ccN:'')+'<br>dizel ~<b>'+pr+'</b> <span style="color:#94a3b8">(okvirno, po državi · AMZS)</span>';
+}
 function rebuildFuel(){
+  // crpalke so VGRAJENE (OSM prek CI) — brez mreznih klicev, deluje vedno
   var tb=document.getElementById('fuelStToggle');
   fuelLayer.clearLayers();
   updateZoomHint();
   if(!tb||!tb.checked){ fuelStatus(''); return; }
-  if(map.getZoom()<11){ fuelStatus(''); return; }
-  fuelStatus('⏳ Nalagam črpalke…');
-  var b=map.getBounds(), q='[out:json][timeout:25];node["amenity"="fuel"]('+b.getSouth().toFixed(3)+','+b.getWest().toFixed(3)+','+b.getNorth().toFixed(3)+','+b.getEast().toFixed(3)+');out;';
-  var mirrors=['https://maps.mail.ru/osm/tools/overpass/api/interpreter','https://overpass.kumi.systems/api/interpreter','https://overpass-api.de/api/interpreter'];
-  var UA='PrometInfo/1.0 (osebna prometna app; kontakt preko GitHub)';
-  function tryFetch(i){
-    if(i>=mirrors.length){ fuelStatus('⚠ Črpalk trenutno ni bilo mogoče naložiti (viri OSM/Overpass so morda obremenjeni). Poskusi znova čez minuto.', true); return; }
-    fetch(mirrors[i],{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded','User-Agent':UA},body:'data='+encodeURIComponent(q)})
-      .then(function(r){ return r.text(); })
-      .then(function(tx){
-        var j=null; try{ j=JSON.parse(tx); }catch(e){}
-        if(!j){ tryFetch(i+1); return; } // rate-limit/HTML napaka -> naslednji vir
-        var tb2=document.getElementById('fuelStToggle'); if(!tb2||!tb2.checked) return;
-        fuelLayer.clearLayers();
-        var n=0;
-        (j.elements||[]).slice(0,400).forEach(function(el){
-          if(el.lat==null)return;
-          var nm=(el.tags&&(el.tags.brand||el.tags.name))||'Črpalka';
-          var cc=countryAt(el.lat,el.lon), pr=(cc&&DIESEL[cc]!=null)?(DIESEL[cc].toFixed(3)+' €/l'):'ni cene';
-          var ccN=cc?((FLAGJS[cc]||'')+' '+(CNAMES[cc]||cc)):'';
-          var pop='<b>⛽ '+nm+'</b>'+(ccN?'<br>'+ccN:'')+'<br>dizel ~<b>'+pr+'</b> <span style="color:#94a3b8">(okvirno, po državi · AMZS)</span>';
-          fuelLayer.addLayer(L.marker([el.lat,el.lon],{icon:fuelIcon}).bindPopup(pop).bindTooltip('⛽ '+nm));
-          n++;
-        });
-        fuelStatus(n?('Prikazanih '+n+' črpalk (OpenStreetMap).'):'V tem območju ni najdenih znamčenih črpalk (OSM).');
-      })
-      .catch(function(){ tryFetch(i+1); });
+  if(map.getZoom()<10){ fuelStatus('Približaj zemljevid (⛽ se pokažejo pri večji povečavi).'); return; }
+  var b=map.getBounds(), s=b.getSouth(), w=b.getWest(), n2=b.getNorth(), e2=b.getEast();
+  var n=0;
+  for(var i=0;i<FUELPTS.length;i++){
+    var st=FUELPTS[i];
+    if(st.a<s||st.a>n2||st.o<w||st.o>e2) continue;
+    fuelLayer.addLayer(L.marker([st.a,st.o],{icon:fuelIcon}).bindTooltip('⛽ '+st.n).bindPopup(fuelPopup(st)));
+    if(++n>=350) break;
   }
-  tryFetch(0);
+  fuelStatus(n?('Prikazanih '+n+' črpalk (OpenStreetMap)'+(n>=350?' — približaj za ostale':'')+'.'):'V tem območju ni znamčenih črpalk (OSM).');
 }
 function toggleFuelSt(cb){ if(cb.checked){ fuelLayer.addTo(map); rebuildFuel(); } else { map.removeLayer(fuelLayer); fuelLayer.clearLayers(); fuelStatus(''); updateZoomHint(); } }
 map.on('moveend', function(){ if(_fuelTimer)clearTimeout(_fuelTimer); _fuelTimer=setTimeout(rebuildFuel, 600); });
@@ -1454,21 +1446,19 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var inC=coords.filter(function(c){ return countryAt(c[1],c[0])===cc; });
     if(!inC.length){ return; }
     var pt=inC[Math.floor(inC.length*0.55)]; // [lng,lat]
-    box.textContent='Iščem črpalko v '+(CNAMES[cc]||cc)+'…';
-    var q='[out:json][timeout:20];node["amenity"="fuel"](around:6000,'+pt[1].toFixed(4)+','+pt[0].toFixed(4)+');out 8;';
-    var mirrors=['https://maps.mail.ru/osm/tools/overpass/api/interpreter','https://overpass.kumi.systems/api/interpreter','https://overpass-api.de/api/interpreter'];
-    function go(i){ if(i>=mirrors.length){ box.innerHTML='Konkretne črpalke ni bilo mogoče pridobiti — na zemljevidu vklopi ⛽ za prikaz ob poti.'; return; }
-      fetch(mirrors[i],{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'data='+encodeURIComponent(q)})
-        .then(function(r){return r.text();}).then(function(tx){ var jj=null; try{jj=JSON.parse(tx);}catch(e){}
-          if(!jj){ go(i+1); return; }
-          var els=(jj.elements||[]).filter(function(e){return e.lat!=null && e.tags && (e.tags.brand||e.tags.name);});
-          if(!els.length){ box.innerHTML='V bližini poti (v '+(CNAMES[cc]||cc)+') ni najdene znamčene črpalke — vklopi ⛽ na zemljevidu.'; return; }
-          var names=els.slice(0,3).map(function(e){return (e.tags.brand||e.tags.name);});
-          var first=els[0];
-          box.innerHTML='✅ Predlog za tank ('+(FLAGJS[cc]||'')+' '+(CNAMES[cc]||cc)+', ~'+DIESEL[cc].toFixed(3)+' €/l): <b>'+names.join(', ')+'</b> ob poti. <a href="https://www.google.com/maps?q='+first.lat+','+first.lon+'" target="_blank" rel="noopener noreferrer">📍 zemljevid ↗</a>';
-        }).catch(function(){ go(i+1); });
+    // vgrajene OSM crpalke: najblizje tocki na poti (brez mreznih klicev)
+    var near=[];
+    for(var i=0;i<FUELPTS.length;i++){
+      var st=FUELPTS[i];
+      var dLat=(st.a-pt[1])*111, dLng=(st.o-pt[0])*111*Math.cos(pt[1]*Math.PI/180);
+      var d2=dLat*dLat+dLng*dLng;
+      if(d2<36) near.push({st:st,d:d2}); // <6 km
     }
-    go(0);
+    if(!near.length){ box.innerHTML='V bližini poti (v '+(CNAMES[cc]||cc)+') ni znamčene črpalke — vklopi ⛽ na zemljevidu.'; return; }
+    near.sort(function(a,b){return a.d-b.d;});
+    var names=[]; near.slice(0,5).forEach(function(x){ if(names.indexOf(x.st.n)<0) names.push(x.st.n); });
+    var first=near[0].st;
+    box.innerHTML='✅ Predlog za tank ('+(FLAGJS[cc]||'')+' '+(CNAMES[cc]||cc)+', ~'+DIESEL[cc].toFixed(3)+' €/l): <b>'+names.slice(0,3).join(', ')+'</b> ob poti. <a href="https://www.google.com/maps?q='+first.a+','+first.o+'" target="_blank" rel="noopener noreferrer">📍 zemljevid ↗</a>';
   }
   // ---- share stanje ----
   function nowHM(){ var n=new Date(); return ('0'+n.getHours()).slice(-2)+':'+('0'+n.getMinutes()).slice(-2); }
