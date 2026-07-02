@@ -39,7 +39,7 @@ function toMin(seg) {
 }
 function emptyTs(note) {
   return `// SAMODEJNO ZAJETO: AMSS čakanja na graničnih prelazih (Srbija). ${note || ""}\n` +
-    "export interface AmssWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; text: string; ts: string }\n" +
+    "export interface AmssWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; text: string; ts: string }\n" +
     "export const AMSS_WAITS: AmssWait[] = [];\n";
 }
 
@@ -65,17 +65,25 @@ for (const b of blocks) {
   if (!/grani[čcč]nim prelaz/i.test(body)) continue;
   const id = mapId(title);
   if (!id || seen.has(id)) continue;
-  const izlazSeg = (/Izlaz iz Srbije[^.]*?(\d+\s*(?:min|sat|h|čas|cas)[^.]*)/i.exec(body) || [])[1] || "";
-  const ulazSeg = (/Ulaz u Srbiju[^.]*?(\d+\s*(?:min|sat|h|čas|cas)[^.]*)/i.exec(body) || [])[1] || "";
-  const izlazMin = toMin(izlazSeg), ulazMin = toMin(ulazSeg);
-  if (izlazMin == null && ulazMin == null) continue;
+  // razdeli na putnicki in teretni del ("Na TERETNIM terminalima: ...")
+  const teretIdx = body.search(/TERETNIM/i);
+  const paxPart = teretIdx >= 0 ? body.slice(0, teretIdx) : body;
+  const truckPart = teretIdx >= 0 ? body.slice(teretIdx) : "";
+  const grab = (part, re) => (re.exec(part) || [])[1] || "";
+  const izlazMin = toMin(grab(paxPart, /Izlaz iz Srbije[^.]*?(\d+\s*(?:min|sat|h|čas|cas)[^.]*)/i));
+  const ulazMin = toMin(grab(paxPart, /Ulaz u Srbiju[^.]*?(\d+\s*(?:min|sat|h|čas|cas)[^.]*)/i));
+  const truckIzlazMin = toMin(grab(truckPart, /Izlaz iz Srbije[^.]*?(\d+\s*(?:min|sat|h|čas|cas)[^.]*)/i));
+  const truckUlazMin = toMin(grab(truckPart, /Ulaz u Srbiju[^.]*?(\d+\s*(?:min|sat|h|čas|cas)[^.]*)/i));
+  if (izlazMin == null && ulazMin == null && truckIzlazMin == null && truckUlazMin == null) continue;
   seen.add(id);
+  const fm = (v) => v != null ? (v >= 60 ? "~" + Math.round(v / 60 * 10) / 10 + " h" : "~" + v + " min") : "-";
   const nm = title.replace(/^\s*\d*\s*GP\s*/i, "").trim().slice(0, 60);
   waits.push({
     id, name: nm,
     ulazMin, izlazMin,
-    ulazTxt: ulazMin != null ? "~" + ulazMin + " min" : "-",
-    izlazTxt: izlazMin != null ? "~" + izlazMin + " min" : "-",
+    ulazTxt: fm(ulazMin), izlazTxt: fm(izlazMin),
+    truckUlazMin, truckIzlazMin,
+    truckUlazTxt: fm(truckUlazMin), truckIzlazTxt: fm(truckIzlazMin),
     text: body.slice(0, 260),
     ts: new Date().toISOString(),
   });
@@ -84,9 +92,9 @@ for (const b of blocks) {
 const ts =
   "// SAMODEJNO ZAJETO: AMSS čakanja na graničnih prelazih (Srbija, amss.org.rs).\n" +
   "// ulaz = vstop v Srbijo, izlaz = izstop iz Srbije. Pogosto splošna MUP ocena.\n" +
-  "export interface AmssWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; text: string; ts: string }\n" +
+  "export interface AmssWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; text: string; ts: string }\n" +
   "export const AMSS_WAITS: AmssWait[] = " + JSON.stringify(waits, null, 1) + ";\n";
 
 writeFileSync(OUT, waits.length || !existsSync(OUT) ? ts : ts, "utf8");
 console.log(`ZAPISANO lib/amss-waits.ts | prehodov: ${waits.length}`);
-waits.forEach((w) => console.log(`  ${w.name} -> ${w.id} | ulaz ${w.ulazTxt} / izlaz ${w.izlazTxt}`));
+waits.forEach((w) => console.log(`  ${w.name.slice(0,30)} -> ${w.id} | 🚗 ${w.ulazTxt}/${w.izlazTxt} | 🚚 ${w.truckUlazTxt}/${w.truckIzlazTxt}`));

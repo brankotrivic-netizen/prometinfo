@@ -84,14 +84,18 @@ while ((m = rowRe.exec(html))) {
     return { val, ts: strip(tip).replace(/^T:\s*/i, "") };
   });
   if (!cells.length) continue;
+  // stolpci: 0=Ulaz avto, 1=Ulaz tovorni, 2=Izlaz avto, 3=Izlaz tovorni
   const ulazTxt = cells[0].val, izlazTxt = cells[2] ? cells[2].val : "-";
+  const truckUlazTxt = cells[1] ? cells[1].val : "-", truckIzlazTxt = cells[3] ? cells[3].val : "-";
   const ulazMin = toMin(ulazTxt), izlazMin = toMin(izlazTxt);
-  if (ulazMin == null && izlazMin == null) continue; // brez podatka -> preskoci
+  const truckUlazMin = toMin(truckUlazTxt), truckIzlazMin = toMin(truckIzlazTxt);
+  if (ulazMin == null && izlazMin == null && truckUlazMin == null && truckIzlazMin == null) continue;
   const id = mapId(name);
   const worst = Math.max(ulazMin == null ? -1 : ulazMin, izlazMin == null ? -1 : izlazMin);
   const ts = cells[0].ts || (cells[2] && cells[2].ts) || "";
   waits.push({
     id: id || "", name, ulazMin, izlazMin, ulazTxt, izlazTxt,
+    truckUlazMin, truckIzlazMin, truckUlazTxt, truckIzlazTxt,
     level: level(worst < 0 ? null : worst),
     waitMinutes: worst < 0 ? null : worst,
     ts, tsISO: toISO(ts),
@@ -100,13 +104,13 @@ while ((m = rowRe.exec(html))) {
 
 function emptyTs() {
   return "// SAMODEJNO ZAJETO: zive cakalne dobe HAK/MUP. Trenutno brez objavljenih cakanj.\n" +
-    "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }\n" +
+    "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }\n" +
     "export const HAK_WAITS: HakWait[] = [];\n";
 }
 const ts =
   "// SAMODEJNO ZAJETO: zive cakalne dobe na mejnih prehodih (HAK / MUP RH).\n" +
   "// Objavljeni le prehodi s trenutnim cakanjem. ulaz=vstop v HR, izlaz=izstop iz HR (osebna vozila).\n" +
-  "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }\n" +
+  "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }\n" +
   "export const HAK_WAITS: HakWait[] = " + JSON.stringify(waits, null, 1) + ";\n";
 
 // stran smo uspesno dobili -> vedno zapisi (prazno je veljavno stanje "ni zastojev")

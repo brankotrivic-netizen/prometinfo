@@ -99,7 +99,14 @@ async function main() {
     const stale = ageMin != null && ageMin > 120 ? " · ⚠ star podatek" : "";
     it.rawStatus = `🇭🇷 HAK/MUP: ${parts.join(", ")}${w.ts ? ` · ${w.ts}` : ""}${stale}`;
     // shrani za smer + zanesljivost (kasnejše faze)
-    (it as unknown as { hak: unknown }).hak = { ulazMin: w.ulazMin, izlazMin: w.izlazMin, ulazTxt: w.ulazTxt, izlazTxt: w.izlazTxt, tsISO: w.tsISO };
+    (it as unknown as { hak: unknown }).hak = {
+      ulazMin: w.ulazMin, izlazMin: w.izlazMin, ulazTxt: w.ulazTxt, izlazTxt: w.izlazTxt,
+      truckUlazMin: (w as { truckUlazMin?: number | null }).truckUlazMin ?? null,
+      truckIzlazMin: (w as { truckIzlazMin?: number | null }).truckIzlazMin ?? null,
+      truckUlazTxt: (w as { truckUlazTxt?: string }).truckUlazTxt ?? "-",
+      truckIzlazTxt: (w as { truckIzlazTxt?: string }).truckIzlazTxt ?? "-",
+      tsISO: w.tsISO,
+    };
   }
 
   // AMSS (Srbija) — DODATEN uradni vir; čakanje uporabi le, če ni HAK/BIHAMK.
@@ -108,7 +115,14 @@ async function main() {
   for (const it of items) {
     const w = amssById.get(it.id);
     if (!w) continue;
-    (it as unknown as { amss: unknown }).amss = { ulazMin: w.ulazMin, izlazMin: w.izlazMin, ulazTxt: w.ulazTxt, izlazTxt: w.izlazTxt, ts: w.ts };
+    (it as unknown as { amss: unknown }).amss = {
+      ulazMin: w.ulazMin, izlazMin: w.izlazMin, ulazTxt: w.ulazTxt, izlazTxt: w.izlazTxt,
+      truckUlazMin: (w as { truckUlazMin?: number | null }).truckUlazMin ?? null,
+      truckIzlazMin: (w as { truckIzlazMin?: number | null }).truckIzlazMin ?? null,
+      truckUlazTxt: (w as { truckUlazTxt?: string }).truckUlazTxt ?? "-",
+      truckIzlazTxt: (w as { truckIzlazTxt?: string }).truckIzlazTxt ?? "-",
+      ts: w.ts,
+    };
     if (!it.hasLive && !(it as unknown as { hak?: unknown }).hak) {
       const worst = Math.max(w.ulazMin ?? -1, w.izlazMin ?? -1);
       if (worst >= 0) { it.waitMinutes = worst; it.level = levelFromMin(worst); }
@@ -413,6 +427,18 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .rdir{margin:8px 0 4px}
 .dirrow{font-size:13px;line-height:1.7}
 .rdir-hl{background:#eff6ff;border-radius:6px;padding:2px 6px;margin:2px 0;font-weight:600}
+.vehrow{font-size:14px;margin:3px 0;font-weight:600}
+.ttag{font-size:10px;background:#ffedd5;color:#9a3412;border-radius:999px;padding:2px 8px;font-weight:700;white-space:nowrap}
+.ttrow{font-size:12px;margin:5px 0;line-height:1.6}
+.camver{font-size:12.5px;margin:5px 0;background:var(--panel-2);border-radius:7px;padding:6px 9px}
+.cchk{font-size:12px;margin:8px 0 6px;text-align:left;background:#eff6ff;border-radius:7px;padding:7px 9px;line-height:1.5}
+.ccbtns,.dccbtns{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.ccb{flex:1 1 40%;border:none;border-radius:9px;color:#fff;font:inherit;font-weight:700;font-size:13px;padding:11px 8px;cursor:pointer}
+.dveh{font-size:21px;font-weight:800;margin:4px 0}
+.dpazi{font-size:14px;background:rgba(250,204,21,.15);color:#fde047;border-radius:9px;padding:9px 11px;margin:10px 0 4px;line-height:1.4}
+.dccbtns .ccb{font-size:15px;padding:13px 8px}
+.dactions{display:flex;gap:9px}
+.dactions .dcam{flex:1;margin-top:0}
 .tvojasmer{font-size:11px;color:#1d4ed8;font-weight:700}
 .rmeta{font-size:12px;color:var(--muted);margin:4px 0}
 .rconf{font-size:13px;font-weight:700;margin:6px 0 2px}
@@ -773,6 +799,7 @@ ${fuelHtml}
   <div class="modalbox">
     <div class="modalhead"><span id="camTitle"></span><button onclick="closeCam()">✕</button></div>
     <div style="text-align:center"><img id="camBig" referrerpolicy="no-referrer" alt=""></div>
+    <div id="camCheckBar" style="display:none"></div>
     <div class="modalfoot">Živa slika (osvežuje se) · <a id="camOpen" href="#" target="_blank" rel="noopener noreferrer">odpri v novem zavihku ↗</a></div>
   </div>
 </div>
@@ -1031,7 +1058,7 @@ function favToggle(k){ if(FAVS.has(k))FAVS.delete(k); else FAVS.add(k); favSave(
 var _camTimer=null;
 function camBust(u){ return u+(u.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }
 function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
-function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; }
+function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; var cb=document.getElementById('camCheckBar'); if(cb){cb.style.display='none';cb.innerHTML='';} }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
 (function favInit(){
   function attach(view){ if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); }
@@ -1083,10 +1110,16 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var age=(p.hak&&p.hak.tsISO)?(Date.now()-Date.parse(p.hak.tsISO))/60000:null;
     if(age!=null){ if(age<30)s+=15; else if(age<=120)s+=0; else s-=20; }
     else if(p.level==='unknown') s-=15;
-    // VEČ VIROV: potrditev iz >1 uradnega vira dvigne, sveži socialni signal ob "ni zastoja" uradno -> negotovost
+    // VEČ VIROV: potrditev iz >1 uradnega vira dvigne oceno
     var offN=sourcesFor(p).filter(function(x){return x.official;}).length;
     if(offN>=2) s+=6;
-    if(socFresh(p.id).length>0 && (p.waitMinutes==null||p.waitMinutes<=15)) s-=8;
+    // socialni signali: samo OSEBNI znižajo; kamionski ne vplivajo na osebno oceno
+    var ss=socSplit(p.id);
+    if(ss.pax>0 && (p.waitMinutes==null||p.waitMinutes<=15)) s-=8;
+    if(ss.neutral>0 && !ss.pax && !ss.truck && (p.waitMinutes==null||p.waitMinutes<=15)) s-=4;
+    // kamera preverjanje (najmocnejsi rocni signal)
+    var cc=ccLast(p.id);
+    if(cc){ if(cc.cameraStatus==='passenger_queue') s-=25; else if(cc.cameraStatus==='clear') s+=8; else if(cc.cameraStatus==='truck_only_queue') s+=3; }
     if(role==='avoid') s-=20; else if(role==='alternative') s-=8;
     return Math.max(0, Math.min(100, Math.round(s)));
   }
@@ -1147,14 +1180,131 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(official.length>=1) return {dot:'🟡', txt:'En vir (kamera) — brez čakalne dobe', col:'#ca8a04'};
     return {dot:'⚫', txt:'Ni zanesljivega podatka', col:'#64748b'};
   }
-  function assistantNote(p){
-    var soc=socFresh(p.id).length, officialWait=!!(p.hak||p.hasLive);
-    var officialLow=officialWait && (p.waitMinutes==null||p.waitMinutes<=15);
-    if(soc>0 && officialLow) return 'Uradni vir ne kaže večjega zastoja, socialni signali pa kažejo možno kolono — preveri kamero pred odločitvijo.';
-    if(soc>0) return 'Socialni signali kažejo možno povečanje čakanja — preveri kamero.';
-    if(!officialWait) return 'Ni avtomatske čakalne dobe — odpri uradni vir ali preveri kamero.';
-    return '';
+  /* ===== 🚗/🚚 LOČEVANJE OSEBNIH IN TOVORNIH VOZIL ===== */
+  var TRUCK_WORDS=['kamion','kamioni','sleper','šleper','sleperi','teretna vozila','tovorna vozila','tovornjak','truck','lorry','teretni terminal','carina za kamione','teretni'];
+  var PAX_WORDS=['auta','automobil','avti','osobna vozila','putnicka','putnička','passenger','turisti','kolona auta','kolona automobila','ulaz osobna','izlaz osobna','porodice','osebna vozila'];
+  function socClass(txt){ var t=norm(txt); var tr=false,px=false; TRUCK_WORDS.forEach(function(w){ if(t.indexOf(norm(w))>=0)tr=true; }); PAX_WORDS.forEach(function(w){ if(t.indexOf(norm(w))>=0)px=true; });
+    // "kamioni stoje, auta prolaze normalno" -> avti so OK, signal je kamionski
+    if(tr&&px&&/(auta|automobil|avti|osobna|putnick)[^.]{0,40}(prolaz|normaln|tece|teče|bez guzve|bez gu[zž]ve|ok\b|slobodno)/.test(t)) return 'truck';
+    return (tr&&!px)?'truck':(px?'pax':'neutral'); }
+  function socSplit(id){ var out={pax:0,truck:0,neutral:0}; socFresh(id).forEach(function(s){ out[socClass(s.text||'')]++; }); return out; }
+  // uradna cakanja za tvojo smer (fallback: druga smer)
+  function paxTruck(p){
+    function pick(a,b){ return a!=null?a:b; }
+    var px=null,tr=null;
+    if(p.hak){
+      var d=REV?[p.hak.ulazMin,p.hak.truckUlazMin,p.hak.izlazMin,p.hak.truckIzlazMin]:[p.hak.izlazMin,p.hak.truckIzlazMin,p.hak.ulazMin,p.hak.truckUlazMin];
+      px=pick(d[0],d[2]); tr=pick(d[1],d[3]);
+    }
+    if(p.amss){
+      var e=REV?[p.amss.izlazMin,p.amss.truckIzlazMin,p.amss.ulazMin,p.amss.truckUlazMin]:[p.amss.ulazMin,p.amss.truckUlazMin,p.amss.izlazMin,p.amss.truckIzlazMin];
+      if(px==null) px=pick(e[0],e[2]);
+      if(tr==null) tr=pick(e[1],e[3]);
+    }
+    if(px==null) px=p.waitMinutes;
+    return {pax:px, truck:tr};
   }
+  function vcls(m){ if(m==null)return {e:'⚪',t:'ni podatka',c:'#94a3b8'}; if(m<=15)return {e:'🟢',t:'verjetno tekoče',c:'#16a34a'}; if(m<=30)return {e:'🟡',t:'krajše čakanje',c:'#ca8a04'}; if(m<=60)return {e:'🟠',t:'daljše čakanje',c:'#ea580c'}; return {e:'🔴',t:'velika kolona',c:'#dc2626'}; }
+  /* ===== KAMERA PREVERJANJE (rocna potrditev, velja 2 h) ===== */
+  var CCKEY='promet_camcheck';
+  function ccGet(){ try{ return JSON.parse(localStorage.getItem(CCKEY)||'[]'); }catch(e){ return []; } }
+  function ccLast(id){ var a=ccGet().filter(function(x){ return x.borderId===id && (Date.now()-Date.parse(x.checkedAt))<2*3600*1000; }); return a.length?a[a.length-1]:null; }
+  var CCLBL={passenger_queue:'🚗 avti stojijo',truck_only_queue:'🚚 samo kamioni',clear:'✅ tekoče',unclear:'❓ ni jasno'};
+  window.setCamStatus=function(id,status){
+    var p=CBYID[id]; var a=ccGet();
+    a.push({borderId:id,borderName:p?p.name:id,direction:REV?'nazaj':'tja',cameraStatus:status,note:'',checkedAt:new Date().toISOString(),source:'manual_camera_check'});
+    if(a.length>60)a=a.slice(-60);
+    try{ localStorage.setItem(CCKEY,JSON.stringify(a)); }catch(e){}
+    toast('Kamera preverjanje shranjeno: '+(CCLBL[status]||status));
+    try{ closeCam(); }catch(e){}
+    if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE);
+    var dm=document.getElementById('driveMode'); if(dm&&dm.style.display==='flex') enterDrive();
+  };
+  window.openCamCheck=function(id){
+    var p=CBYID[id]; if(!p||!p.images||!p.images.length){ toast('Ta prehod nima direktne kamere.'); return; }
+    var bar=document.getElementById('camCheckBar');
+    if(bar){ bar.style.display='block'; bar.innerHTML=
+      '<div class="cchk"><b>Preveri na sliki:</b> 1) stojijo osebni avti? 2) samo kamioni? 3) se osebni pas premika? 4) prava smer? 5) slika uporabna?</div>'
+      +'<div class="ccbtns">'
+      +'<button class="ccb" style="background:#dc2626" onclick="setCamStatus(\\''+id+'\\',\\'passenger_queue\\')">🚗 Avti stojijo</button>'
+      +'<button class="ccb" style="background:#ea580c" onclick="setCamStatus(\\''+id+'\\',\\'truck_only_queue\\')">🚚 Samo kamioni</button>'
+      +'<button class="ccb" style="background:#16a34a" onclick="setCamStatus(\\''+id+'\\',\\'clear\\')">✅ Tekoče</button>'
+      +'<button class="ccb" style="background:#64748b" onclick="setCamStatus(\\''+id+'\\',\\'unclear\\')">❓ Ni jasno</button>'
+      +'</div>'; }
+    openCam(p.images[0].url, p.name);
+  };
+  /* ===== TOMTOM QUEUE DETECTOR (Flow Segment Data; deluje, ko je domena na kljucu) ===== */
+  // fwd = azimut pristopa, ko potujes OD DOMA proti Balkanu; back = povratek
+  var TTQ={'ba-gradiska':{fwd:0,back:180},'ba-gradina':{fwd:315,back:135},'ba-brod':{fwd:0,back:180},'ba-svilaj':{fwd:0,back:180},'ba-orasje':{fwd:0,back:180},'ba-velika-kladusa':{fwd:0,back:180},'si-obrezje':{fwd:290,back:110},'si-gruskovje':{fwd:0,back:180},'hr-bajakovo':{fwd:270,back:90},'rs-horgos':{fwd:180,back:0},'si-karavanke':{fwd:170,back:350}};
+  // znane cone kamionskih kolon (radij m okoli prehoda)
+  var TRUCK_ZONES={'hr-bajakovo':2500,'si-obrezje':2000,'si-gruskovje':2000,'rs-horgos':2500,'si-karavanke':2000,'ba-gradiska':2000,'ba-brod':2000,'ba-svilaj':2000,'ba-orasje':2000,'ba-velika-kladusa':1500};
+  var TTRES={};
+  function destPt(lat,lng,km,bear){ var r=bear*Math.PI/180; return [lat+km*Math.cos(r)*0.008993, lng+km*Math.sin(r)*0.008993/Math.cos(lat*Math.PI/180)]; }
+  window.checkTomTom=function(id){
+    var p=CBYID[id]; if(!p||!TTQ[id]||p.lat==null){ toast('Za ta prehod TomTom analiza ni nastavljena.'); return; }
+    TTRES[id]={status:'loading'}; if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE);
+    var bear=REV?TTQ[id].back:TTQ[id].fwd, dists=[0.5,1,2,3,5];
+    Promise.all(dists.map(function(km){ var pt=destPt(p.lat,p.lng,km,bear);
+      return fetch('https://api.tomtom.com/traffic/services/4/flowSegmentData/relative0/10/json?point='+pt[0].toFixed(5)+','+pt[1].toFixed(5)+'&unit=KMPH&key='+TOMTOM_KEY,{signal:AbortSignal.timeout(9000)})
+        .then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ return {km:km,d:j.flowSegmentData}; }).catch(function(){ return null; });
+    })).then(function(res){
+      var ok=res.filter(Boolean);
+      if(!ok.length){ TTRES[id]={status:'unavailable'}; if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); return; }
+      var pts=ok.map(function(o){ var d=o.d; var ratio=(d.freeFlowSpeed>0)?(d.currentSpeed/d.freeFlowSpeed):1; return {km:o.km,cur:d.currentSpeed,free:d.freeFlowSpeed,ratio:ratio,conf:(d.confidence!=null?d.confidence:1)}; });
+      var slow=pts.filter(function(x){ return x.ratio<0.5 && x.cur<20 && x.conf>=0.5 && x.km<=3; });
+      var nearSlow=pts.some(function(x){ return x.km<=1 && x.ratio<0.5; });
+      var queueKm=(slow.length&&nearSlow)?Math.max.apply(null,slow.map(function(x){return x.km;})):0;
+      var worst=Math.min.apply(null,pts.map(function(x){return x.ratio;}));
+      TTRES[id]={
+        status: worst>=0.75?'normal':(worst>=0.5?'slow':(worst>=0.25?'jam':'stopped')),
+        queueKm:queueKm, farOnly:(slow.length>0&&!nearSlow),
+        avg:Math.round(pts.reduce(function(s,x){return s+x.cur;},0)/pts.length),
+        free:Math.round(pts.reduce(function(s,x){return s+x.free;},0)/pts.length),
+        drop:Math.round((1-worst)*100), lowConf:pts.some(function(x){return x.conf<0.5;}),
+        inTruckZone:!!TRUCK_ZONES[id]&&queueKm>0, at:new Date()
+      };
+      if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE);
+    });
+  };
+  function ttQueue(id){ var r=TTRES[id]; return !!(r&&(r.status==='jam'||r.status==='stopped')&&r.queueKm>0); }
+  function ttBlock(id){
+    var r=TTRES[id];
+    if(!TTQ[id]) return '';
+    if(!r) return '<div class="ttrow">🚦 TomTom: <button class="linklike" onclick="checkTomTom(\\''+id+'\\')">preveri kolono pred mejo</button></div>';
+    if(r.status==='loading') return '<div class="ttrow">🚦 TomTom: preverjam…</div>';
+    if(r.status==='unavailable') return '<div class="ttrow" style="color:var(--muted)">🚦 TomTom analiza trenutno ni na voljo — uporabljam uradne vire, kamere in socialne signale. <button class="linklike" onclick="checkTomTom(\\''+id+'\\')">poskusi znova</button></div>';
+    var lbl={normal:'🟢 normalno',slow:'🟡 upočasnjeno',jam:'🟠 zastoj',stopped:'🔴 skoraj stoji'}[r.status];
+    var out='🚦 TomTom: '+lbl+' · '+r.avg+'/'+r.free+' km/h (padec '+r.drop+'%)'+(r.queueKm?(' · možna kolona ~'+r.queueKm+' km'):'')+(r.lowConf?' · ⚠ nizka zanesljivost':'')+' · '+('0'+r.at.getHours()).slice(-2)+':'+('0'+r.at.getMinutes()).slice(-2)+' <button class="linklike" onclick="checkTomTom(\\''+id+'\\')">osveži</button>';
+    if(r.farOnly) out+='<br><span class="meta">Počasen odsek je stran od meje — verjetno mestni promet/semafor, ne mejna kolona.</span>';
+    if(r.inTruckZone) out+='<br><span class="meta">Rdeča črta je znotraj znane kamionske cone — verjetno povezana s tovornimi vozili.</span>';
+    return '<div class="ttrow">'+out+'</div>';
+  }
+  /* ===== ZAKLJUCEK ASISTENTA (vrstni red zanesljivosti + truck contamination filter) ===== */
+  function conclude(p){
+    var pt=paxTruck(p), px=pt.pax, tr=pt.truck;
+    var s=socSplit(p.id), cc=ccLast(p.id), tt=TTRES[p.id];
+    var notes=[], likelyTruck=false;
+    // 1. kriticna zapora preglasi vse
+    if(/zatvoren|zaprt|prekinjen|obustavljen|zabranjen promet/i.test(p.rawStatus||'')) return {pax:{e:'🔴',t:'MOŽNA ZAPORA — preveri uradni vir!',c:'#dc2626'},truck:vcls(tr),notes:['⛔ Uradni vir omenja zaporo/prekinitev — to preglasi vse ostalo.'],likelyTruck:false};
+    // truck contamination filter
+    if(ttQueue(p.id) && px!=null && px<=15 && tr!=null && tr>=60){ likelyTruck=true; notes.push('TomTom kaže kolono, a uradni vir za osebna vozila kaže kratko čakanje, za tovorna dolgo — verjetno gre za tovorno kolono.'); }
+    else if(ttQueue(p.id) && TTRES[p.id].inTruckZone && (px==null||px<=30)){ likelyTruck=true; notes.push('TomTom rdeča črta je verjetno kamionska (znana tovorna cona). Za osebna vozila gužva ni potrjena — preveri kamero.'); }
+    // 3./4. kamera preverjanje
+    if(cc){
+      var ago=Math.round((Date.now()-Date.parse(cc.checkedAt))/60000);
+      if(cc.cameraStatus==='passenger_queue'){ px=Math.max(px==null?0:px,61); notes.unshift('📷 Kamera potrjuje kolono osebnih vozil ('+ago+' min nazaj).'); }
+      else if(cc.cameraStatus==='truck_only_queue'){ tr=Math.max(tr==null?0:tr,61); likelyTruck=true; notes.unshift('📷 Kamera kaže predvsem tovorno kolono ('+ago+' min) — za osebna vozila gužva ni potrjena.'); }
+      else if(cc.cameraStatus==='clear'){ if(px!=null&&px>30)px=30; notes.unshift('📷 Kamera ne potrjuje večje kolone ('+ago+' min nazaj).'); likelyTruck=likelyTruck||ttQueue(p.id); }
+      else notes.unshift('📷 Kamera ni dovolj jasna — preveri še uradni vir ali socialni signal.');
+    }
+    // 6./7. socialni signali (loceno)
+    if(s.pax>0){ notes.push('🔎 '+s.pax+' svežih socialnih signalov omenja kolono OSEBNIH vozil — preveri kamero.'); if(px!=null&&px<=15)px=25; }
+    if(s.truck>0){ notes.push('🔎 '+s.truck+' svežih socialnih signalov omenja KAMIONE — na osebna vozila verjetno ne vpliva bistveno.'); if(tr!=null)tr=Math.max(tr,61); else tr=61; }
+    if(s.neutral>0 && !s.pax && !s.truck) notes.push('🔎 '+s.neutral+' svežih socialnih signalov (tip ni jasen) — preveri kamero.');
+    if(px==null && !cc) notes.push('Za osebna vozila ni avtomatskega podatka — odpri kamero in potrdi stanje.');
+    return {pax:vcls(px), truck:vcls(tr), notes:notes, likelyTruck:likelyTruck, paxMin:px, truckMin:tr};
+  }
+  function assistantNote(p){ return ''; }
   var CACC={SI:'Slovenijo',HR:'Hrvaško',RS:'Srbijo',BA:'Bosno in Hercegovino',ME:'Črno goro',MK:'Severno Makedonijo',XK:'Kosovo',HU:'Madžarsko',AT:'Avstrijo',IT:'Italijo',AL:'Albanijo',BG:'Bolgarijo',RO:'Romunijo',GR:'Grčijo'};
   function acc(c){ return CACC[c]||CNAMES[c]||c; }
   var MARK=' <span class="tvojasmer">← tvoja smer</span>';
@@ -1189,16 +1339,27 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +(grpLinks?' · '+grpLinks:'')
       +' · <button class="linklike" onclick="addSocial(\\''+id+'\\')">➕ dodaj</button>'
       +' · <button class="linklike" onclick="shareCrossing(\\''+id+'\\')">📤 deli</button>';
-    var note=assistantNote(p);
+    var cn=conclude(p);
+    var vehLines='<div class="vehrow" style="color:'+cn.pax.c+'">🚗 Osebna vozila: <b>'+cn.pax.e+' '+cn.pax.t+'</b>'+(cn.paxMin!=null?' <span class="meta">(~'+cn.paxMin+' min)</span>':'')+'</div>'
+      +'<div class="vehrow" style="color:'+cn.truck.c+'">🚚 Tovorna vozila: <b>'+cn.truck.e+' '+cn.truck.t+'</b>'+(cn.truckMin!=null?' <span class="meta">(~'+cn.truckMin+' min)</span>':'')+(cn.likelyTruck?' <span class="ttag">verjetno kamionska kolona</span>':'')+'</div>';
+    var cc=ccLast(id);
+    var camBlock='<div class="camver">📷 Kamera preverjanje: '
+      +(cc?('<b>'+(CCLBL[cc.cameraStatus]||cc.cameraStatus)+'</b> <span class="meta">('+Math.round((Date.now()-Date.parse(cc.checkedAt))/60000)+' min nazaj)</span>'):'<span class="meta">še ni preverjeno</span>')
+      +(p.images&&p.images.length?' · <button class="linklike" onclick="openCamCheck(\\''+id+'\\')">Odpri kamero in potrdi</button>':'')
+      +'</div>';
+    var notesHtml=cn.notes.length?('<div class="rnote">🤖 '+cn.notes.join('<br>')+'</div>'):'';
     return '<div class="rcard" style="border-left:5px solid '+col+'">'
       +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">'+sc+'/100</span></div>'
       +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
+      +vehLines
       +'<div class="rdir">'+dirWaits(p)+'</div>'
+      +ttBlock(id)
+      +camBlock
       +'<div class="rsrc">Viri: '+srcLine+'</div>'
       +'<div class="rmeta">'+rl.dot+' Svežina čakalne dobe: '+rl.txt+'</div>'
       +manLine(id)
       +'<div class="rsoc">'+socLine+'</div>'
-      +(note?'<div class="rnote">🤖 '+note+'</div>':'')
+      +notesHtml
       +'<div class="ract">'+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button></div>'
       +'</div>';
   }
@@ -1346,12 +1507,28 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var rec=recId?CBYID[recId]:null, alt=altId?CBYID[altId]:null, av=avId?CBYID[avId]:null;
     var h='<div class="droute">'+rFrom(pr)+' → '+rTo(pr)+'</div>';
     if(rec){
-      h+='<div class="dgo"><div class="dlabel">✅ Pojdi</div><div class="dname">'+rec.name+'</div><div class="dwait">⏱ '+mainWait(rec)+'</div><div class="dfresh">🔄 '+freshTxt(rec)+'</div>';
-      if(rec.images&&rec.images.length) h+='<button class="dcam" onclick="openCam(\\''+rec.images[0].url+'\\',\\''+(rec.name||'').replace(/[\\\\\\x27"]/g,'')+'\\')">📷 Odpri kamero</button>';
+      var cn=conclude(rec);
+      h+='<div class="dgo"><div class="dlabel">✅ Pojdi</div><div class="dname">'+rec.name+'</div>'
+        +'<div class="dveh" style="color:'+cn.pax.c+'">🚗 '+cn.pax.e+' '+cn.pax.t+(cn.paxMin!=null?' (~'+cn.paxMin+' min)':'')+'</div>'
+        +'<div class="dveh" style="color:'+cn.truck.c+'">🚚 '+cn.truck.e+' '+cn.truck.t+(cn.truckMin!=null?' (~'+cn.truckMin+' min)':'')+'</div>'
+        +'<div class="dfresh">🔄 '+freshTxt(rec)+'</div>';
+      var ccd=ccLast(recId);
+      if(ccd) h+='<div class="dfresh">📷 '+(CCLBL[ccd.cameraStatus]||'')+' ('+Math.round((Date.now()-Date.parse(ccd.checkedAt))/60000)+' min)</div>';
+      h+='<div class="dpazi">⚠ PAZI: rdeča črta na navigaciji je lahko samo kamionska kolona. Preveri kamero.</div>';
+      if(rec.images&&rec.images.length) h+='<button class="dcam" onclick="openCamCheck(\\''+recId+'\\')">📷 Odpri kamero in potrdi</button>';
+      h+='<div class="dccbtns">'
+        +'<button class="ccb" style="background:#dc2626" onclick="setCamStatus(\\''+recId+'\\',\\'passenger_queue\\')">🚗 Avti stojijo</button>'
+        +'<button class="ccb" style="background:#ea580c" onclick="setCamStatus(\\''+recId+'\\',\\'truck_only_queue\\')">🚚 Samo kamioni</button>'
+        +'<button class="ccb" style="background:#16a34a" onclick="setCamStatus(\\''+recId+'\\',\\'clear\\')">✅ Tekoče</button>'
+        +'</div>';
       h+='</div>';
     } else { h+='<div class="dgo"><div class="dname">Brez mejne kontrole (Schengen)</div><div class="dwait">vožnja prosta — preveri gostoto</div></div>'; }
     if(alt) h+='<div class="dalt">🟡 Alternativa: <b>'+alt.name+'</b> · '+mainWait(alt)+'</div>';
     if(av) h+='<div class="davoid">🔴 Izogni se: <b>'+av.name+'</b> · '+mainWait(av)+'</div>';
+    h+='<div class="dactions">'
+      +'<button class="dcam" style="background:#334155" onclick="enterDrive()">🔄 Osveži</button>'
+      +(rec&&rec.lat!=null?'<a class="dcam" style="background:#0f766e;text-decoration:none;display:block;text-align:center" href="https://www.google.com/maps/dir/?api=1&destination='+rec.lat+','+rec.lng+'" target="_blank" rel="noopener noreferrer">🧭 Odpri navigacijo</a>':'')
+      +'</div>';
     body.innerHTML=h; dm.style.display='flex';
   };
   window.exitDrive=function(){ var dm=document.getElementById('driveMode'); if(dm)dm.style.display='none'; };
