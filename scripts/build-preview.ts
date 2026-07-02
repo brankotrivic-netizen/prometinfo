@@ -660,7 +660,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 </div>
 <div id="map"></div>
 <div id="zoomHint" class="zoomhint">🔍 Približaj zemljevid za prikaz kamer</div>
-<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:var(--muted);font-size:11px">🚦 gostota prometa trenutno ni na voljo</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label><label style="cursor:pointer"><input type="checkbox" id="fuelStToggle" onchange="toggleFuelSt(this)"> ⛽ črpalke</label></div>
+<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:var(--muted);font-size:11px">🚦 gostota prometa trenutno ni na voljo</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label><label style="cursor:pointer"><input type="checkbox" id="fuelStToggle" onchange="toggleFuelSt(this)"> ⛽ črpalke</label><span id="fuelStatus" style="display:none;font-size:11px;flex-basis:100%"></span></div>
 </div>
 <div class="view" id="view-borders" style="display:none">
 <section class="country-group" id="favCrossSection">
@@ -905,22 +905,27 @@ function _pip(lng,lat,ring){ var inside=false; for(var i=0,j=ring.length-1;i<rin
 function countryAt(lat,lng){ try{ var fs=BORDERS.features; for(var i=0;i<fs.length;i++){ var g=fs[i].geometry; if(g.type==='Polygon'){ if(_pip(lng,lat,g.coordinates[0])) return ISO2[fs[i].properties.iso]||null; } else if(g.type==='MultiPolygon'){ for(var k=0;k<g.coordinates.length;k++){ if(_pip(lng,lat,g.coordinates[k][0])) return ISO2[fs[i].properties.iso]||null; } } } }catch(e){} return null; }
 var fuelIcon=L.divIcon({className:'fueldiv',html:'<div class="fuelpin">⛽</div>',iconSize:[22,22],iconAnchor:[11,11]});
 var _fuelTimer=null;
+function fuelStatus(msg,isErr){ var el=document.getElementById('fuelStatus'); if(!el)return; el.textContent=msg||''; el.style.display=msg?'block':'none'; el.style.color=isErr?'#dc2626':'#64748b'; }
 function rebuildFuel(){
   var tb=document.getElementById('fuelStToggle');
   fuelLayer.clearLayers();
   updateZoomHint();
-  if(!tb||!tb.checked||map.getZoom()<11) return;
-  var b=map.getBounds(), q='[out:json][timeout:25];node["amenity"="fuel"]('+b.getSouth().toFixed(3)+','+b.getWest().toFixed(3)+','+b.getNorth().toFixed(3)+','+b.getEast().toFixed(3)+');out tags;';
-  var mirrors=['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter'];
+  if(!tb||!tb.checked){ fuelStatus(''); return; }
+  if(map.getZoom()<11){ fuelStatus(''); return; }
+  fuelStatus('⏳ Nalagam črpalke…');
+  var b=map.getBounds(), q='[out:json][timeout:25];node["amenity"="fuel"]('+b.getSouth().toFixed(3)+','+b.getWest().toFixed(3)+','+b.getNorth().toFixed(3)+','+b.getEast().toFixed(3)+');out;';
+  var mirrors=['https://maps.mail.ru/osm/tools/overpass/api/interpreter','https://overpass.kumi.systems/api/interpreter','https://overpass-api.de/api/interpreter'];
+  var UA='PrometInfo/1.0 (osebna prometna app; kontakt preko GitHub)';
   function tryFetch(i){
-    if(i>=mirrors.length){ return; }
-    fetch(mirrors[i],{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'data='+encodeURIComponent(q)})
+    if(i>=mirrors.length){ fuelStatus('⚠ Črpalk trenutno ni bilo mogoče naložiti (viri OSM/Overpass so morda obremenjeni). Poskusi znova čez minuto.', true); return; }
+    fetch(mirrors[i],{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded','User-Agent':UA},body:'data='+encodeURIComponent(q)})
       .then(function(r){ return r.text(); })
       .then(function(tx){
         var j=null; try{ j=JSON.parse(tx); }catch(e){}
-        if(!j){ tryFetch(i+1); return; } // rate-limit/XML -> mirror
+        if(!j){ tryFetch(i+1); return; } // rate-limit/HTML napaka -> naslednji vir
         var tb2=document.getElementById('fuelStToggle'); if(!tb2||!tb2.checked) return;
         fuelLayer.clearLayers();
+        var n=0;
         (j.elements||[]).slice(0,400).forEach(function(el){
           if(el.lat==null)return;
           var nm=(el.tags&&(el.tags.brand||el.tags.name))||'Črpalka';
@@ -928,13 +933,15 @@ function rebuildFuel(){
           var ccN=cc?((FLAGJS[cc]||'')+' '+(CNAMES[cc]||cc)):'';
           var pop='<b>⛽ '+nm+'</b>'+(ccN?'<br>'+ccN:'')+'<br>dizel ~<b>'+pr+'</b> <span style="color:#94a3b8">(okvirno, po državi · AMZS)</span>';
           fuelLayer.addLayer(L.marker([el.lat,el.lon],{icon:fuelIcon}).bindPopup(pop).bindTooltip('⛽ '+nm));
+          n++;
         });
+        fuelStatus(n?('Prikazanih '+n+' črpalk (OpenStreetMap).'):'V tem območju ni najdenih znamčenih črpalk (OSM).');
       })
       .catch(function(){ tryFetch(i+1); });
   }
   tryFetch(0);
 }
-function toggleFuelSt(cb){ if(cb.checked){ fuelLayer.addTo(map); rebuildFuel(); } else { map.removeLayer(fuelLayer); fuelLayer.clearLayers(); updateZoomHint(); } }
+function toggleFuelSt(cb){ if(cb.checked){ fuelLayer.addTo(map); rebuildFuel(); } else { map.removeLayer(fuelLayer); fuelLayer.clearLayers(); fuelStatus(''); updateZoomHint(); } }
 map.on('moveend', function(){ if(_fuelTimer)clearTimeout(_fuelTimer); _fuelTimer=setTimeout(rebuildFuel, 600); });
 
 /* 📍 Moja lokacija + najblizji prehod */
@@ -1287,8 +1294,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(!inC.length){ return; }
     var pt=inC[Math.floor(inC.length*0.55)]; // [lng,lat]
     box.textContent='Iščem črpalko v '+(CNAMES[cc]||cc)+'…';
-    var q='[out:json][timeout:20];node["amenity"="fuel"](around:6000,'+pt[1].toFixed(4)+','+pt[0].toFixed(4)+');out tags 8;';
-    var mirrors=['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter'];
+    var q='[out:json][timeout:20];node["amenity"="fuel"](around:6000,'+pt[1].toFixed(4)+','+pt[0].toFixed(4)+');out 8;';
+    var mirrors=['https://maps.mail.ru/osm/tools/overpass/api/interpreter','https://overpass.kumi.systems/api/interpreter','https://overpass-api.de/api/interpreter'];
     function go(i){ if(i>=mirrors.length){ box.innerHTML='Konkretne črpalke ni bilo mogoče pridobiti — na zemljevidu vklopi ⛽ za prikaz ob poti.'; return; }
       fetch(mirrors[i],{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'data='+encodeURIComponent(q)})
         .then(function(r){return r.text();}).then(function(tx){ var jj=null; try{jj=JSON.parse(tx);}catch(e){}
