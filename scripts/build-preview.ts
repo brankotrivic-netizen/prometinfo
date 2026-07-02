@@ -432,6 +432,7 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .dirrow{font-size:13px;line-height:1.7}
 .rdir-hl{background:#eff6ff;border-radius:6px;padding:2px 6px;margin:2px 0;font-weight:600}
 .vehrow{font-size:14px;margin:3px 0;font-weight:600}
+.critbox{background:#fef2f2;border:2px solid #dc2626;color:#7f1d1d;border-radius:10px;padding:10px 12px;margin:8px 0;font-size:13.5px;line-height:1.55}
 .ttag{font-size:10px;background:#ffedd5;color:#9a3412;border-radius:999px;padding:2px 8px;font-weight:700;white-space:nowrap}
 .ttrow{font-size:12px;margin:5px 0;line-height:1.6}
 .camver{font-size:12.5px;margin:5px 0;background:var(--panel-2);border-radius:7px;padding:6px 9px}
@@ -848,6 +849,13 @@ const DIESEL=${JSON.stringify(Object.fromEntries(DIESEL_PRICES.map((d) => [d.cou
 const DIESEL_UPD=${JSON.stringify(DIESEL_UPDATED)};
 const SOC_KW=${JSON.stringify(SOCIAL_KEYWORDS)};
 const FUELPTS=${JSON.stringify(FUEL_STATIONS)};
+const GRADCRIT=${JSON.stringify((() => {
+  const t = HAK_REPORTS.map((r) => `${r.title} ${r.text}`).join(" ");
+  return {
+    oldClosed: /o[šs]te[ćc]enja mosta[\s\S]{0,160}?Stara Gradi[šs]ka[\s\S]{0,120}?prekinut/i.test(t) || /Stara Gradi[šs]ka[\s\S]{0,140}?prekinut je promet/i.test(t),
+    gvOpen: /otvoren[\s\S]{0,60}?grani[čc]ni prijelaz Gornji Varo[šs]/i.test(t),
+  };
+})())};
 const SOC_PAGES=${JSON.stringify(SOCIAL_PAGES)};
 const SOC_Q=${JSON.stringify(SOCIAL_QUERIES)};
 const BORDERSEARCH=${JSON.stringify(hakBorderCams.flatMap((c) => HAK_CAM_IMAGES[c.k].map((img, i) => ({ name: HAK_CAM_IMAGES[c.k].length > 1 ? `${c.name} · kam ${i + 1}` : c.name, img, lat: c.lat, lng: c.lng }))))};
@@ -1073,7 +1081,12 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   var busy=PTS.filter(function(p){ return RANK[p.level]>=2 || (p.waitMinutes!=null&&p.waitMinutes>0); });
   busy.sort(function(a,b){ var aw=a.waitMinutes==null?-1:a.waitMinutes, bw=b.waitMinutes==null?-1:b.waitMinutes; return (bw-aw)||(RANK[b.level]-RANK[a.level]); });
   var bl=document.getElementById('busiestList'), bc=document.getElementById('busiestCnt'), bh=document.getElementById('busiestHint');
-  if(bl){ if(busy.length){ bl.innerHTML=busy.slice(0,12).map(crossRow).join(''); if(bh)bh.style.display='none'; } else { bl.innerHTML=''; if(bh)bh.style.display='block'; } if(bc)bc.textContent=busy.length; }
+  if(bl){
+    var majors=busy.filter(function(p){ return (p.waitMinutes!=null&&p.waitMinutes>30)||RANK[p.level]>=3; });
+    if(bh)bh.style.display='none';
+    if(majors.length){ bl.innerHTML=majors.slice(0,12).map(crossRow).join(''); if(bc)bc.textContent=majors.length; }
+    else { bl.innerHTML='<p class="meta" style="margin:2px 0 8px">✅ Ni večjih zastojev nad 30 min. Največja zaznana čakanja:</p>'+busy.slice(0,8).map(crossRow).join(''); if(bc)bc.textContent=majors.length; }
+  }
   // priljubljeni prehodi
   var FCKEY='promet_fav_cross';
   function fcGet(){ try{ return JSON.parse(localStorage.getItem(FCKEY)||'[]'); }catch(e){ return []; } }
@@ -1113,6 +1126,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var cc=ccLast(p.id);
     if(cc){ if(cc.cameraStatus==='passenger_queue') s-=25; else if(cc.cameraStatus==='clear') s+=8; else if(cc.cameraStatus==='truck_only_queue') s+=3; }
     if(role==='avoid') s-=20; else if(role==='alternative') s-=8;
+    // kriticna zapora: ocena najvec 20
+    if(/zatvoren|zaprt|prekinjen|obustavljen|zabranjen promet/i.test(p.rawStatus||'')) s=Math.min(s,20);
     return Math.max(0, Math.min(100, Math.round(s)));
   }
   function scoreColor(s){ return s>=80?'#16a34a':(s>=60?'#ca8a04':'#dc2626'); }
@@ -1219,7 +1234,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       '<div class="cchk"><b>Preveri na sliki:</b> 1) stojijo osebni avti? 2) samo kamioni? 3) se osebni pas premika? 4) prava smer? 5) slika uporabna?</div>'
       +'<div class="ccbtns">'
       +'<button class="ccb" style="background:#dc2626" onclick="setCamStatus(\\''+id+'\\',\\'passenger_queue\\')">🚗 Avti stojijo</button>'
-      +'<button class="ccb" style="background:#ea580c" onclick="setCamStatus(\\''+id+'\\',\\'truck_only_queue\\')">🚚 Samo kamioni</button>'
+      +'<button class="ccb" style="background:#ea580c" onclick="setCamStatus(\\''+id+'\\',\\'truck_only_queue\\')">🚚 Samo kamioni stojijo</button>'
       +'<button class="ccb" style="background:#16a34a" onclick="setCamStatus(\\''+id+'\\',\\'clear\\')">✅ Tekoče</button>'
       +'<button class="ccb" style="background:#64748b" onclick="setCamStatus(\\''+id+'\\',\\'unclear\\')">❓ Ni jasno</button>'
       +'</div>'; }
@@ -1279,8 +1294,9 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     // 1. kriticna zapora preglasi vse
     if(/zatvoren|zaprt|prekinjen|obustavljen|zabranjen promet/i.test(p.rawStatus||'')) return {pax:{e:'🔴',t:'MOŽNA ZAPORA — preveri uradni vir!',c:'#dc2626'},truck:vcls(tr),notes:['⛔ Uradni vir omenja zaporo/prekinitev — to preglasi vse ostalo.'],likelyTruck:false};
     // truck contamination filter
-    if(ttQueue(p.id) && px!=null && px<=15 && tr!=null && tr>=60){ likelyTruck=true; notes.push('TomTom kaže kolono, a uradni vir za osebna vozila kaže kratko čakanje, za tovorna dolgo — verjetno gre za tovorno kolono.'); }
-    else if(ttQueue(p.id) && TTRES[p.id].inTruckZone && (px==null||px<=30)){ likelyTruck=true; notes.push('TomTom rdeča črta je verjetno kamionska (znana tovorna cona). Za osebna vozila gužva ni potrjena — preveri kamero.'); }
+    if(ttQueue(p.id) && px!=null && px<=15 && tr!=null && tr>=60){ likelyTruck=true; notes.push('Verjetno tovorna kolona. Za osebna vozila gužva ni potrjena.'); }
+    else if(px!=null && px<=15 && tr!=null && tr>=60){ likelyTruck=true; notes.push('Verjetno tovorna kolona. Za osebna vozila gužva ni potrjena (uradni vir: avti kratko, tovorni dolgo).'); }
+    else if(ttQueue(p.id) && TTRES[p.id].inTruckZone && (px==null||px<=30)){ likelyTruck=true; notes.push('Verjetno tovorna kolona (znana kamionska cona). Za osebna vozila gužva ni potrjena — preveri kamero.'); }
     // 3./4. kamera preverjanje
     if(cc){
       var ago=Math.round((Date.now()-Date.parse(cc.checkedAt))/60000);
@@ -1340,8 +1356,13 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +(p.images&&p.images.length?' · <button class="linklike" onclick="openCamCheck(\\''+id+'\\')">Odpri kamero in potrdi</button>':'')
       +'</div>';
     var notesHtml=cn.notes.length?('<div class="rnote">🤖 '+cn.notes.join('<br>')+'</div>'):'';
+    var gradBanner='';
+    if(id==='ba-gradiska'&&GRADCRIT.oldClosed){
+      gradBanner='<div class="critbox">🚨 <b>Stara Gradiška stari most zaprt</b> — promet prekinjen v obe smeri, NE UPORABLJAJ.'+(GRADCRIT.gvOpen?'<br>✅ <b>Uporabi Gornji Varoš–Gradiška (novi most)</b> — odprt.':'')+' <span class="meta">(vir: HAK)</span></div>';
+    }
     return '<div class="rcard" style="border-left:5px solid '+col+'">'
-      +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">'+sc+'/100</span></div>'
+      +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">Ocena '+sc+'/100</span></div>'
+      +gradBanner
       +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
       +vehLines
       +'<div class="rdir">'+dirWaits(p)+'</div>'
@@ -1370,7 +1391,12 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function renderRoute(pr){
     CURRENT_ROUTE=pr; window._curRoute=pr;
     var res=document.getElementById('routeResult');
-    var html='<h2>'+rFrom(pr)+' → '+rTo(pr)+'</h2>';
+    var html='<h2>Moja pot: '+rFrom(pr)+' → '+rTo(pr)+'</h2>';
+    // ⚠ kriticna opozorila za to pot (npr. zaprt stari most Gradiska)
+    var allIds=pr.recommended.concat(pr.alternative, pr.avoid);
+    if(GRADCRIT.oldClosed && allIds.indexOf('ba-gradiska')>=0){
+      html+='<div class="critbox">⚠ <b>Kritična opozorila:</b><br>🚨 <b>Stara Gradiška stari most zaprt</b> — promet prekinjen v obe smeri, ne uporabljaj starega mostu.'+(GRADCRIT.gvOpen?'<br>✅ Uporabi <b>Gornji Varoš–Gradiška</b> (novi most) — odprt.':'')+' <span class="meta">(vir: HAK)</span></div>';
+    }
     html+='<button class="cam" onclick="swapDir()" style="margin-bottom:8px">⇄ Obrni smer ('+rTo(pr)+' → '+rFrom(pr)+')</button>';
     var all=pr.recommended.concat(pr.alternative, pr.avoid);
     if(all.length) html+='<button class="drivebtn" onclick="enterDrive()">🚗 Vozim</button>';
@@ -1390,7 +1416,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(pr.fuelCountries&&pr.fuelCountries.length){ html+=fuelBlock(pr); }
     html+='<div class="ract" style="margin-top:12px"><button class="cam" onclick="shareState()">📋 Pošlji stanje</button><button class="cam" onclick="openManual()">➕ Dodaj moj podatek</button></div>';
     res.innerHTML=html; res.style.display='';
-    try{ res.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){}
+    if(!window._autoload){ try{ res.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){} }
     updateFuelDistance(pr);
   }
   // ---- gorivo po poti (profil vozila) ----
@@ -1505,10 +1531,11 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       var ccd=ccLast(recId);
       if(ccd) h+='<div class="dfresh">📷 '+(CCLBL[ccd.cameraStatus]||'')+' ('+Math.round((Date.now()-Date.parse(ccd.checkedAt))/60000)+' min)</div>';
       h+='<div class="dpazi">⚠ PAZI: rdeča črta na navigaciji je lahko samo kamionska kolona. Preveri kamero.</div>';
+      if(recId==='ba-gradiska'&&GRADCRIT.oldClosed) h+='<div class="dpazi" style="background:rgba(220,38,38,.3);color:#fecaca">🚨 Stari most Stara Gradiška–Gradiška ZAPRT — pelji na NOVI most (Gornji Varoš).</div>';
       if(rec.images&&rec.images.length) h+='<button class="dcam" onclick="openCamCheck(\\''+recId+'\\')">📷 Odpri kamero in potrdi</button>';
       h+='<div class="dccbtns">'
         +'<button class="ccb" style="background:#dc2626" onclick="setCamStatus(\\''+recId+'\\',\\'passenger_queue\\')">🚗 Avti stojijo</button>'
-        +'<button class="ccb" style="background:#ea580c" onclick="setCamStatus(\\''+recId+'\\',\\'truck_only_queue\\')">🚚 Samo kamioni</button>'
+        +'<button class="ccb" style="background:#ea580c" onclick="setCamStatus(\\''+recId+'\\',\\'truck_only_queue\\')">🚚 Samo kamioni stojijo</button>'
         +'<button class="ccb" style="background:#16a34a" onclick="setCamStatus(\\''+recId+'\\',\\'clear\\')">✅ Tekoče</button>'
         +'</div>';
       h+='</div>';
@@ -1526,7 +1553,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var box=document.getElementById('quickRoutes'); if(!box) return;
     box.innerHTML=ROUTES.map(function(r){ return '<button class="qroute" onclick="selectRoute(\\''+r.id+'\\')">'+r.from+' → '+r.to+'</button>'; }).join('');
   }
-  window.selectRoute=function(id){ var pr=ROUTES.filter(function(r){return r.id===id;})[0]; if(!pr)return; REV=false; var a=document.getElementById('mpFrom'),b=document.getElementById('mpTo'); if(a)a.value=pr.from; if(b)b.value=pr.to; showView('route'); renderRoute(pr); };
+  window.selectRoute=function(id){ var pr=ROUTES.filter(function(r){return r.id===id;})[0]; if(!pr)return; REV=false; try{ localStorage.setItem('promet_lastroute',id); }catch(e){} var a=document.getElementById('mpFrom'),b=document.getElementById('mpTo'); if(a)a.value=pr.from; if(b)b.value=pr.to; showView('route'); renderRoute(pr); };
   window.checkRoute=function(){
     var a=(document.getElementById('mpFrom').value||'').trim(), b=(document.getElementById('mpTo').value||'').trim();
     var res=document.getElementById('routeResult');
@@ -1567,6 +1594,9 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     box.innerHTML=html;
   }
   renderQuick(); renderBanner();
+  // ob zagonu takoj pokazi decision dashboard za zadnjo/privzeto pot (brez klika)
+  (function(){ var last='kamnik-banja-luka'; try{ last=localStorage.getItem('promet_lastroute')||last; }catch(e){}
+    window._autoload=true; try{ selectRoute(last); }catch(e){} window._autoload=false; })();
 })();
 
 /* ⚙️ Nastavitve */
