@@ -15,7 +15,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "02.07.2026 13:50:08",
+  "ts": "2.7.2026. 13:50:08",
   "tsISO": "2026-07-02T13:50:08+02:00"
  },
  {
@@ -42,9 +42,9 @@ export const HAK_WAITS: HakWait[] = [
   "ulazTxt": "-",
   "izlazTxt": "-",
   "truckUlazMin": null,
-  "truckIzlazMin": 180,
+  "truckIzlazMin": 60,
   "truckUlazTxt": "-",
-  "truckIzlazTxt": "3 h",
+  "truckIzlazTxt": "1 h",
   "level": "unknown",
   "waitMinutes": null,
   "ts": "Nema podataka",
