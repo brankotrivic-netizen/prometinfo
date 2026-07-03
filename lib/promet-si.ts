@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-03T15:26:31.793Z";
+export const PROMET_SI_UPDATED = "2026-07-03T17:48:55.336Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;861246;c9a3fc0c-8b64-4208-94d1-bfa118e72738",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Blagovica - izvoz Vransko v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.17435,
+  "lng": 14.80007,
+  "start": "2026-07-03T17:25:40.03Z",
+  "end": "2026-07-04T03:00:12.223Z",
+  "ts": "2026-07-03T17:25:52.617Z"
+ },
+ {
+  "id": "DARS;861112;311414d2-e1de-4388-bd75-a0a064d25290",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.99301,
+  "lng": 14.32999,
+  "start": "2026-07-03T17:25:01.713Z",
+  "end": "2026-07-03T19:00:00Z",
+  "ts": "2026-07-03T17:25:40.523Z"
+ },
+ {
+  "id": "DARS;861245;234bf018-47dd-4098-b90d-951c463f771e",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, izvoz 19 Grosuplje vzhod - izvoz 18 Grosuplje zahod, Cikava v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.96993,
+  "lng": 14.66406,
+  "start": "2026-07-03T17:08:46.463Z",
+  "end": "2026-07-05T10:36:56.88Z",
+  "ts": "2026-07-03T17:08:56.42Z"
+ },
+ {
+  "id": "DARS;861244;c6d596ea-3e7e-44c7-b08a-6a12d2b03fd3",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, uvoz Kozina v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.61182,
+  "lng": 13.93547,
+  "start": "2026-07-03T17:06:31.947Z",
+  "end": "2026-07-03T23:00:00Z",
+  "ts": "2026-07-03T17:06:35.527Z"
+ },
+ {
+  "id": "DARS;861242;9df72158-ef9e-4465-8e44-3c573fc0d9cb",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Črni Kal - izvoz 49 Črni Kal v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.55526,
+  "lng": 13.84146,
+  "start": "2026-07-03T16:50:06.183Z",
+  "end": "2026-07-03T21:00:28.917Z",
+  "ts": "2026-07-03T16:50:10.453Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -46,72 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-18T05:57:00Z",
   "end": "2026-07-06T15:00:00Z",
   "ts": "2026-07-03T07:14:30.62Z"
- },
- {
-  "id": "DARS;861105;f87cc110-347e-481f-a7c9-0bc21e58c599",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-715, Murska Sobota - Skakovci, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R3-715, Murska Sobota - Skakovci",
-  "lat": 46.66743,
-  "lng": 16.17618,
-  "start": "2026-07-03T06:09:30.733Z",
-  "end": "2026-07-03T16:00:00Z",
-  "ts": "2026-07-03T06:10:42.83Z"
- },
- {
-  "id": "DARS;861103;af0e8e4e-e558-4d29-9157-71467434a50a",
-  "type": "MaintenanceWorks",
-  "desc": "R3-717, Cankova - Gerlinci, oviran promet, košnja, do 18:00.",
-  "loc": "R3-717, Gerlinci",
-  "lat": 46.75094,
-  "lng": 15.98833,
-  "start": "2026-07-03T06:08:28.227Z",
-  "end": "2026-07-03T16:00:00Z",
-  "ts": "2026-07-03T06:08:58.307Z"
- },
- {
-  "id": "DARS;861102;4f7fefd5-b0aa-4dd5-b6ed-03257b1e8d3f",
-  "type": "MaintenanceWorks",
-  "desc": "R3-717, Korovci, oviran promet, košnja, do 18:00.",
-  "loc": "R3-717, Korovci",
-  "lat": 46.72712,
-  "lng": 16.0035,
-  "start": "2026-07-03T06:06:47.457Z",
-  "end": "2026-07-03T16:00:00Z",
-  "ts": "2026-07-03T06:07:12.87Z"
- },
- {
-  "id": "DARS;861100;8e6f8cb7-0f93-44a4-aadb-d5d1cb37d844",
-  "type": "MaintenanceWorks",
-  "desc": "R3-717, Cankova - Gerlinci, oviran promet, košnja, do 18:00.",
-  "loc": "R3-717, Cankova - Gerlinci",
-  "lat": 46.71822,
-  "lng": 16.0197,
-  "start": "2026-07-03T06:05:40.337Z",
-  "end": "2026-07-03T16:00:00Z",
-  "ts": "2026-07-03T06:06:17.97Z"
- },
- {
-  "id": "DARS;861097;37db6e6e-0ea0-43c1-9651-22d70ecf660e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-714, Spodnji Ivanjci - Gornja Radgona, Očeslavici, izmenično enosmerni promet, popravilo vozišča, do 18:00.",
-  "loc": "R3-714, Spodnji Ivanjci - Gornja Radgona",
-  "lat": 46.61197,
-  "lng": 15.99614,
-  "start": "2026-07-03T06:00:12.033Z",
-  "end": "2026-07-03T16:00:00Z",
-  "ts": "2026-07-03T06:01:15.1Z"
- },
- {
-  "id": "DARS;861088;8c75be08-89b6-4613-8b00-c553a1757442",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-721, Petrovci - Kuzma, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R3-721, Petrovci - Kuzma",
-  "lat": 46.80362,
-  "lng": 16.21902,
-  "start": "2026-07-03T05:37:57.017Z",
-  "end": "2026-07-03T16:00:00Z",
-  "ts": "2026-07-03T05:38:41.597Z"
  },
  {
   "id": "DARS;854319;21066fe3-bea4-4097-a8a3-98260a995aaf",
