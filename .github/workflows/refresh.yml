@@ -45,9 +45,6 @@ jobs:
         env:
           NAP_USER: ${{ secrets.NAP_USER }}
           NAP_PASS: ${{ secrets.NAP_PASS }}
-        env:
-          NAP_USER: ${{ secrets.NAP_USER }}
-          NAP_PASS: ${{ secrets.NAP_PASS }}
 
       - name: Shrani osvežene podatke v repo
         run: |
