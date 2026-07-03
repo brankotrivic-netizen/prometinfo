@@ -1,40 +1,62 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-02T21:36:40.615Z";
+export const PROMET_SI_UPDATED = "2026-07-03T03:41:02.089Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;861033;80c32928-589a-4adf-be3f-bff868e69d64",
+  "id": "DARS;861051;228d982a-9554-4a04-8875-49e2a96673c3",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - počivališče Barje v smeri Kozarij, dela, zaprta vozni in prehitevalni pas.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02504,
-  "lng": 14.50261,
-  "start": "2026-07-02T18:32:40.947Z",
-  "end": "2026-07-03T03:00:24.403Z",
-  "ts": "2026-07-02T19:27:22.413Z"
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, počivališče Podlehnik - priključek Lancova vas v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.33167,
+  "lng": 15.87785,
+  "start": "2026-07-03T03:36:03.707Z",
+  "end": "2026-07-03T10:30:51.17Z",
+  "ts": "2026-07-03T03:36:07.83Z"
  },
  {
-  "id": "DARS;861031;188be254-18da-43cb-a91e-4bb696fbc6c0",
+  "id": "DARS;861050;5c7d6875-7716-40af-93f2-fe3fbd7472d4",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, zaprta vozni in prehitevalni pas.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02616,
-  "lng": 14.49376,
-  "start": "2026-07-02T18:23:37.943Z",
-  "end": "2026-07-03T03:00:00Z",
-  "ts": "2026-07-02T19:26:53.033Z"
+  "desc": "A1, Ljubljana - Koper, počivališče Studenec - priključek Razdrto v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.76143,
+  "lng": 14.15736,
+  "start": "2026-07-03T03:31:03.523Z",
+  "end": "2026-07-03T11:00:00Z",
+  "ts": "2026-07-03T03:31:06.793Z"
  },
  {
-  "id": "DARS;861020;b2dee760-6b2b-44ff-8ce1-6c89afd7e8cb",
+  "id": "DARS;861049;c340df14-868d-404f-9390-37b5e8843211",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, počivališče Lukovica - izvoz Vransko v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.17005,
-  "lng": 14.77556,
-  "start": "2026-07-02T17:32:31.797Z",
-  "end": "2026-07-03T01:00:17.803Z",
-  "ts": "2026-07-02T17:32:43.453Z"
+  "desc": "A1, Koper - Ljubljana, uvoz Razdrto - priključek Postojna v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.75932,
+  "lng": 14.07505,
+  "start": "2026-07-03T03:30:53.13Z",
+  "end": "2026-07-03T11:00:00Z",
+  "ts": "2026-07-03T03:30:56.753Z"
+ },
+ {
+  "id": "DARS;861046;2cb65d50-0177-4fb4-8ba2-94c641e08e24",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02618,
+  "lng": 14.4936,
+  "start": "2026-07-03T03:13:40.227Z",
+  "end": "2026-07-31T21:59:00Z",
+  "ts": "2026-07-03T03:15:35.517Z"
+ },
+ {
+  "id": "DARS;861047;42700b6c-047d-413a-8411-e9fb3a4d40d4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - priključek Ljubljana center v smeri Kozarij, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02502,
+  "lng": 14.50269,
+  "start": "2026-07-03T03:14:56.24Z",
+  "end": "2026-07-31T09:00:00Z",
+  "ts": "2026-07-03T03:15:27.067Z"
  },
  {
   "id": "DARS;787573;4409f2f1-7f1b-4cb0-9886-c0dd952cccd7",
@@ -211,50 +233,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-28T18:08:19.213Z",
   "end": "2026-07-30T20:00:00Z",
   "ts": "2026-06-30T20:02:35.58Z"
- },
- {
-  "id": "DARS;860519;95cd3a45-33ee-473b-b5e5-8bdfc057b645",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Lendava - prehod Pince v smeri Madžarske, dela, zaprt vozni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.53299,
-  "lng": 16.47752,
-  "start": "2026-06-30T13:38:11.91Z",
-  "end": "2026-08-01T21:00:00Z",
-  "ts": "2026-06-30T19:58:02.197Z"
- },
- {
-  "id": "DARS;804300;a0607fd9-da39-426a-ba25-a9846bfefc79",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, prehod Pince - počivališče Pince v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.52008,
-  "lng": 16.5242,
-  "start": "2025-08-11T17:54:35.82Z",
-  "end": "2026-08-01T21:59:00Z",
-  "ts": "2026-06-30T19:56:45.96Z"
- },
- {
-  "id": "DARS;838285;8a43c49d-0189-40dd-8a6f-8bde057ee341",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, razcep Dolga vas - priključek Pince v smeri Pinc, Madžarske, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.58408,
-  "lng": 16.43249,
-  "start": "2026-03-10T20:42:42.77Z",
-  "end": "2026-08-01T21:00:00Z",
-  "ts": "2026-06-30T19:56:23.56Z"
- },
- {
-  "id": "DARS;838283;5f17cb84-1d67-41f9-9f28-0f9744c4f448",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Lendava - razcep Dolga vas v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.5538,
-  "lng": 16.44458,
-  "start": "2026-03-10T20:18:01.207Z",
-  "end": "2026-08-01T21:30:00Z",
-  "ts": "2026-06-30T19:56:09.247Z"
  },
  {
   "id": "DARS;854319;21066fe3-bea4-4097-a8a3-98260a995aaf",
