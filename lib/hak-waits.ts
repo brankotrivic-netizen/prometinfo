@@ -3,20 +3,20 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-gradina",
-  "name": "Jasenovac (Donja Gradina)",
-  "ulazMin": null,
-  "izlazMin": 30,
-  "ulazTxt": "-",
-  "izlazTxt": "do 30 min.",
+  "id": "ba-gradiska",
+  "name": "Gornji Varoš (Gradiška (novi most))",
+  "ulazMin": 30,
+  "izlazMin": null,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "-",
   "truckUlazMin": null,
-  "truckIzlazMin": null,
+  "truckIzlazMin": 120,
   "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
+  "truckIzlazTxt": "2 h",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "Nema podataka",
-  "tsISO": ""
+  "ts": "03.07.2026 14:03:47",
+  "tsISO": "2026-07-03T14:03:47+02:00"
  },
  {
   "id": "hr-bajakovo",
@@ -31,8 +31,8 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "1 h",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "3.7.2026. 12:19:38",
-  "tsISO": "2026-07-03T12:19:38+02:00"
+  "ts": "03.07.2026 13:12:36",
+  "tsISO": "2026-07-03T13:12:36+02:00"
  },
  {
   "id": "hr-tovarnik",
