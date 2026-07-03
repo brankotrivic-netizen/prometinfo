@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-03T17:48:55.336Z";
+export const PROMET_SI_UPDATED = "2026-07-03T19:50:42.204Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;861254;eb125fa9-7090-4fcd-8c4d-d5155aef1219",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Fram - priključek Sl. Bistrica sever v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.43784,
+  "lng": 15.64151,
+  "start": "2026-07-03T18:06:41.91Z",
+  "end": "2026-07-04T00:00:00Z",
+  "ts": "2026-07-03T19:32:42.06Z"
+ },
+ {
+  "id": "DARS;861260;6c928c7e-1b7a-4347-9a32-d6cd71f35562",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, počivališče Starine - priključek Novo mesto vzhod v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.83275,
+  "lng": 15.20226,
+  "start": "2026-07-03T19:12:58.283Z",
+  "end": "2026-07-04T01:00:00Z",
+  "ts": "2026-07-03T19:13:01.887Z"
+ },
  {
   "id": "DARS;861246;c9a3fc0c-8b64-4208-94d1-bfa118e72738",
   "type": "MaintenanceWorks",
@@ -13,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-03T17:25:40.03Z",
   "end": "2026-07-04T03:00:12.223Z",
   "ts": "2026-07-03T17:25:52.617Z"
- },
- {
-  "id": "DARS;861112;311414d2-e1de-4388-bd75-a0a064d25290",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.99301,
-  "lng": 14.32999,
-  "start": "2026-07-03T17:25:01.713Z",
-  "end": "2026-07-03T19:00:00Z",
-  "ts": "2026-07-03T17:25:40.523Z"
  },
  {
   "id": "DARS;861245;234bf018-47dd-4098-b90d-951c463f771e",
@@ -46,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-03T17:06:31.947Z",
   "end": "2026-07-03T23:00:00Z",
   "ts": "2026-07-03T17:06:35.527Z"
- },
- {
-  "id": "DARS;861242;9df72158-ef9e-4465-8e44-3c573fc0d9cb",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Črni Kal - izvoz 49 Črni Kal v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.55526,
-  "lng": 13.84146,
-  "start": "2026-07-03T16:50:06.183Z",
-  "end": "2026-07-03T21:00:28.917Z",
-  "ts": "2026-07-03T16:50:10.453Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
