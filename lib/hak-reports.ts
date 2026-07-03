@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "3.7.2026. 15:12",
-  "text": "Za sve skupine vozila otvoreni su: autocesta A1 Zagreb-Split-Dubrovnik autocesta A6 Rijeka-Zagreb autocesta A7 Rijeka istok-Šmrika državna cesta DC99 Križišće-čvor Križišće Paški most Krčki most Zbog bure u priobalju zabrana je za pojedine skupine vozila samo na Jadranskoj magistrali (DC8- vidjeti niže! ). Pojačan je promet u gradovima, na prilaznim i obilaznim cestama. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI vozilo u kvaru na Jadranskoj magistrali (DC8) kod Makarske (Volicija) - vozi se uz privremenu regulaciju prometa predmet na autocesti A7 i…"
+  "updated": "3.7.2026. 15:16",
+  "text": "Za sve skupine vozila otvoreni su: autocesta A1 Zagreb-Split-Dubrovnik autocesta A6 Rijeka-Zagreb autocesta A7 Rijeka istok-Šmrika državna cesta DC99 Križišće-čvor Križišće Paški most Krčki most Zbog bure u priobalju zabrana je za pojedine skupine vozila samo na Jadranskoj magistrali (DC8- vidjeti niže! ). Pojačan je promet u gradovima, na prilaznim i obilaznim cestama. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI teretno vozilo u kvaru na autocesti A1 u tunelu Mala Kapela u smjeru Dubrovnika - vozi se jednim prometnom trakom uz ograničenje brzine od…"
  },
  {
   "title": "Granični prijelazi",

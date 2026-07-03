@@ -15,7 +15,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "2 h",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "03.07.2026 14:03:47",
+  "ts": "3.7.2026. 14:03:47",
   "tsISO": "2026-07-03T14:03:47+02:00"
  },
  {
@@ -31,7 +31,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "1 h",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "03.07.2026 13:12:36",
+  "ts": "3.7.2026. 13:12:36",
   "tsISO": "2026-07-03T13:12:36+02:00"
  },
  {
