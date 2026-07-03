@@ -988,6 +988,9 @@ var locCtrl=L.control({position:'topleft'});
 locCtrl.onAdd=function(){ var d=L.DomUtil.create('div','leaflet-bar locbtn'); d.innerHTML='<a href="#" title="Moja lokacija" role="button" aria-label="Moja lokacija">📍</a>'; L.DomEvent.on(d,'click',function(e){ L.DomEvent.stop(e); locateMe(); }); return d; };
 locCtrl.addTo(map);
 
+/* ce slika kamere pade (izpad vira, npr. DARS): jasen nadomestek; 45s osvezevanje jo samodejno obudi */
+var CAMPH='data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180"><rect width="100%" height="100%" fill="#e2e8f0"/><text x="160" y="82" text-anchor="middle" fill="#64748b" font-family="sans-serif" font-size="15">📷 kamera trenutno ni dosegljiva</text><text x="160" y="106" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="11">vir ne odgovarja — poskusim znova čez minuto</text></svg>');
+document.addEventListener('error',function(e){ var im=e.target; if(!(im&&im.tagName==='IMG'&&im.classList&&im.classList.contains('snap')))return; if((im.src||'').indexOf('data:image')===0)return; im.src=CAMPH; },true);
 /* samodejno osvezevanje vidnih slik kamer (~45s) */
 setInterval(function(){ var vh=window.innerHeight||800; var ims=document.querySelectorAll('img.snap'); for(var i=0;i<ims.length;i++){ var im=ims[i]; if(im.offsetParent===null) continue; var r=im.getBoundingClientRect(); if(r.bottom<-50||r.top>vh+50) continue; var base=im.getAttribute('data-base'); if(!base) continue; im.src=base+(base.indexOf('?')>=0?'&':'?')+'t='+Date.now(); } }, 45000);
 var TOMTOM_KEY='F4bmVyCwlAC8AYfwKDndl4iLAvCAhFh1';
