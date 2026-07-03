@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-03T19:50:42.204Z";
+export const PROMET_SI_UPDATED = "2026-07-03T21:32:53.832Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;861254;eb125fa9-7090-4fcd-8c4d-d5155aef1219",
+  "id": "DARS;861261;bea82e96-b9f3-4371-96c1-322763da0fa4",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Fram - priključek Sl. Bistrica sever v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.43784,
-  "lng": 15.64151,
-  "start": "2026-07-03T18:06:41.91Z",
-  "end": "2026-07-04T00:00:00Z",
-  "ts": "2026-07-03T19:32:42.06Z"
- },
- {
-  "id": "DARS;861260;6c928c7e-1b7a-4347-9a32-d6cd71f35562",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, počivališče Starine - priključek Novo mesto vzhod v smeri Ljubljane, dela, oviran promet.",
+  "desc": "A2, Obrežje - Ljubljana, priključek Novo mesto vzhod - priključek Novo mesto zahod v smeri Ljubljane, dela, zaprt vozni pas.",
   "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.83275,
-  "lng": 15.20226,
-  "start": "2026-07-03T19:12:58.283Z",
-  "end": "2026-07-04T01:00:00Z",
-  "ts": "2026-07-03T19:13:01.887Z"
+  "lat": 45.82841,
+  "lng": 15.18445,
+  "start": "2026-07-03T20:02:38.123Z",
+  "end": "2026-07-04T19:00:08.24Z",
+  "ts": "2026-07-03T20:02:43.143Z"
  },
  {
   "id": "DARS;861246;c9a3fc0c-8b64-4208-94d1-bfa118e72738",
