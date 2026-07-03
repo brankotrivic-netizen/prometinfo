@@ -1339,7 +1339,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var sc=scoreCrossing(p,role), col=scoreColor(sc), rl=reliab(p), cf=confidence(p);
     var icon=role==='recommended'?'✅':(role==='alternative'?'🟡':'🔴');
     var roleLbl=role==='recommended'?'Priporočeno':(role==='alternative'?'Alternativa':'Izogni se');
-    var cam=(p.images&&p.images.length)?'<button class="cam" onclick="openCam(\\''+p.images[0].url+'\\',\\''+(p.name||'').replace(/[\\\\\\x27"]/g,'')+'\\')">📷 Kamera</button>':'';
+    var cam=(p.images&&p.images.length)?'<button class="cam" onclick="toggleCardCams(\\''+id+'\\')">📷 Kamere ('+p.images.length+')</button>':'';
+    var camGrid=(p.images&&p.images.length)?'<div id="ccams-'+id+'" class="camgrid cardcams" style="display:none;margin-top:9px">'+p.images.map(function(im){ return '<a class="camshot" href="'+im.url+'" data-name="'+(im.name||'')+'"><img class="snap" data-base="'+im.url+'" src="'+im.url+'" loading="lazy" referrerpolicy="no-referrer" alt="'+(im.name||'')+'"><span>'+(im.name||'')+'</span></a>'; }).join('')+'</div>':'';
     var srcs=sourcesFor(p);
     var srcLine=srcs.length?srcs.map(function(s){return s.label+(s.ageMin!=null?' ('+s.ageMin+' min)':'');}).join(' · '):'ni avtomatskih virov';
     var soc=socFresh(p.id).length, q=socQ(p)[0];
@@ -1377,8 +1378,10 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<div class="rsoc">'+socLine+'</div>'
       +notesHtml
       +'<div class="ract">'+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button></div>'
+      +camGrid
       +'</div>';
   }
+  window.toggleCardCams=function(id){ var d=document.getElementById('ccams-'+id); if(!d)return; d.style.display=(d.style.display==='none')?'grid':'none'; try{ d.scrollIntoView({behavior:'smooth',block:'nearest'}); }catch(e){} };
   function routeCams(pr){
     var seen={}, out=[];
     pr.recommended.concat(pr.alternative, pr.avoid).forEach(function(id){
