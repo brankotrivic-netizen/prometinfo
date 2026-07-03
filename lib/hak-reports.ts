@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "3.7.2026. 09:36",
-  "text": "Za sve skupine vozila otvoreni su: autocesta A1 Zagreb-Split-Dubrovnik autocesta A6 Rijeka-Zagreb autocesta A7 Rijeka istok-Šmrika državna cesta DC99 Križišće-čvor Križišće Krčki most (DC102) Zbog bure u priobalju zabrane su za pojedine skupine vozila ( vidjeti niže! ). Mogući su odroni. Promet je pojačan na gradskim prometnicama i obilaznicama. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI - AUTOCESTE A1 Zagreb-Ploče-Karamatići - IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati. zbog manevra isključivanja izvanrednih prijevoza, u konv…"
+  "updated": "3.7.2026. 12:43",
+  "text": "Za sve skupine vozila otvoreni su: autocesta A1 Zagreb-Split-Dubrovnik autocesta A6 Rijeka-Zagreb autocesta A7 Rijeka istok-Šmrika državna cesta DC99 Križišće-čvor Križišće Paški most Krčki most Zbog bure u priobalju zabrana je za pojedine skupine vozila samo na Jadranskoj magistrali (DC8- vidjeti niže! ). Mogući su odroni. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI požar na vozilu na Jadranskoj magistrali (DC8) kod Makarske (Volicija) - vozi se uz privremenu regulaciju prometa pojačan je priljev vozila kod naplatnih postaja Lučko u smjeru mora (iz…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "3.7.2026. 09:32",
+  "updated": "3.7.2026. 12:21",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "3.7.2026. 09:32",
-  "text": "Zbog vjetra u prekidu su: katamaranska linija K raljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ; brodska linija Dubrovnik-Koločep-Lopud-Suđurađ trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ će umjesto u 09:30 isploviti u 10:00 sati (3. srpnja) Izmjene u redu plovidbe: 3. srpnja katamaran na liniji Pula-Zadar-Pula polazi u 16:00 sati iz Zadra Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni pr…"
+  "updated": "3.7.2026. 12:21",
+  "text": "Zbog vjetra u prekidu su: katamaranska linija K raljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ; brodska linija Dubrovnik-Koločep-Lopud-Suđurađ Izmjene u redu plovidbe: 3. srpnja katamaran na liniji Pula-Zadar-Pula polazi u 16:00 sati iz Zadra Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/putovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršic…"
  },
  {
   "title": "Željeznički promet",
