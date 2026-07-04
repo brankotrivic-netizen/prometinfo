@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "4.7.2026. 09:04",
-  "text": "Zbog bure u priobalju zabrana je za pojedine skupine vozila (opširnije u izvješću) . Pojačan je promet na važnijim cestovnim pravcima u smjeru juga. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: veća je gustoća prometa između čvora Lučko i čvora Zadar istok u smjeru Dubrovnika na pojedinim dionicama vozi se usporeno, u kolonama u pokretu A2 Zagreb-Macelj: zbog povećanog priljeva vozila kolona na naplati Trakošćan u smjeru Zagreba duga je oko 3 km i proteže se u Sloveniju DC8 Jadranska magistrala: na dionici Senj-Sveta Marij…"
+  "updated": "4.7.2026. 11:31",
+  "text": "Zbog bure u priobalju zabrana je za pojedine skupine vozila (opširnije u izvješću) . Pojačan je promet u smjeru mora, a počinje jačati i u smjeru unutrašnjosti. Zastoji su povremeno u zonama radova. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: veća je gustoća prometa između čvora Lučko i čvora Zadar istok u smjeru Dubrovnika, a između čvora Zadar istok i čvora Otočac u smjeru Zagreba na pojedinim dionicama vozi se usporeno, u kolonama u pokretu i uz kraće zastoje nakon prometne nesreće između čvora Donja Zdenčina i čvora Jastrebarsko (17+500 km) u smjeru Dubro…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "4.7.2026. 08:58",
-  "text": "U prekidu su: trajektna linija Sumartin-Makarska katamaranska linija K raljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun Zbog nepovoljnih vremenkih uvjeta uvodi se raniji povratak (15:00 sati) na brodskoj liniji 612 Biševo-Vis (uvala Porat-Salbunara-Mezoporat-luka Komiža). Katamaranska linija 659 Split - Bol - Hvar - Vis - Hvar - Split s polaskom iz luke Split u 15:30 u prekidu Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni grani…"
+  "updated": "4.7.2026. 09:36",
+  "text": "U prekidu je katamaranska linija K raljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun Zbog nepovoljnih vremenkih uvjeta uvodi se raniji povratak (15:00 sati) na brodskoj liniji 612 Biševo-Vis (uvala Porat-Salbunara-Mezoporat-luka Komiža). Katamaranska linija 659 Split - Bol - Hvar - Vis - Hvar - Split s polaskom iz luke Split u 15:30 u prekidu Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet …"
  },
  {
   "title": "Željeznički promet",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "3.7.2026. 12:55",
-  "text": "Prometna prognoza za Hrvatsku za 4. srpnja 2026. Zbog bure na Jadranu moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Pojačan promet očekuje se na svim važnijim cestovnim pravcima u smjeru mora, osobito na zagrebačkoj obilaznici u smjeru naplate Lučko, na autocestama A1 Zagreb-Ploče-Karamatići, A6 Rijeka-Zagreb, na riječkoj obilaznici, na Istarskom ipsilonu između čvora i tunela Učka, na Krčkom mostu, kao i na prilazima turističkim mjestima na obali. Zastoji su mogući u zonama radova, odmorišta, naplata i tunela. Od 4:00 do 14:00 sati na važnijim državnim cestama u Istri i priobalju bit će zabrana prometa za teretna motorna vozila iznad 7,5 to…"
+  "updated": "4.7.2026. 10:23",
+  "text": "Prometna prognoza za Hrvatsku za 5. srpnja 2026. Sutra u popodnevnim i večernjim satima, jaki će lokalni pljuskovi mjestimice smanjivati vidljivost na cestama, a kolnici će biti vlažni i skliski. Zbog olujnih udara, moguće su zabrane i ograničenja za pojedine skupine vozila na pojedinim cestama u priobalju. Pojačan promet očekuje se na svim većim prometnim pravcima u smjeru unutrašnjosti, a zastoji i kolone mogući su u zonama odmorišta, tunela i naplata. Podsjećamo da uz veću gustoću prometa češće dolazi i do prometnih nesreća koje dodatno usporavaju protok vozila. Kako bi promet bio što sigurniji za sve sudionike, molimo sve vozače za pojačan oprez, koncentraciju i strpljenje te da održavaj…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",

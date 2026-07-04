@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-04T07:15:38.081Z";
+export const PROMET_SI_UPDATED = "2026-07-04T09:31:58.822Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;861304;b9c8e30d-b7f8-43ca-9d0b-2dd7110022c3",
@@ -13,28 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-04T06:05:17.12Z",
   "end": "2026-07-05T18:00:00Z",
   "ts": "2026-07-04T06:05:57.673Z"
- },
- {
-  "id": "DARS;861302;1f8a37a9-f29a-443a-912c-e2402f78f8e7",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Dramlje - priključek Celje center v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26253,
-  "lng": 15.38881,
-  "start": "2026-07-04T06:01:15.987Z",
-  "end": "2026-07-04T17:00:00Z",
-  "ts": "2026-07-04T06:01:34.367Z"
- },
- {
-  "id": "DARS;861292;e4b00f01-9268-4dc7-9fdd-ac4e1370cffd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, izvoz 47 Kozina - priključek Kozina iz smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.6112,
-  "lng": 13.93265,
-  "start": "2026-07-04T04:54:56.257Z",
-  "end": "2026-07-04T12:00:00Z",
-  "ts": "2026-07-04T04:55:02.05Z"
  },
  {
   "id": "DARS;861279;9b6c51d2-8135-498d-a9e6-d459ffbba8f6",
