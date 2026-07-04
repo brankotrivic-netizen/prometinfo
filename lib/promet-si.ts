@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-04T15:32:15.750Z";
+export const PROMET_SI_UPDATED = "2026-07-04T17:20:37.494Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;861386;3e3b5c10-f16f-4f4c-bd85-0055a19bb88e",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Radovljica - priključek Lesce v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.34195,
+  "lng": 14.18771,
+  "start": "2026-07-04T17:03:05.06Z",
+  "end": "2026-07-04T23:00:00Z",
+  "ts": "2026-07-04T17:03:19.97Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -741,28 +752,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-06-15T05:32:25.407Z"
  },
  {
-  "id": "DARS;857140;04cf7485-da1a-4169-ab03-711b6fb9ce13",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, razcep Nanos - pokrit vkop Rebrnice 1 v smeri Vrtojbe, Italije, dela, promet poteka po enem voznem pasu v vsako smer.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.75716,
-  "lng": 14.04904,
-  "start": "2026-06-13T19:38:05.25Z",
-  "end": "2026-07-30T13:00:00Z",
-  "ts": "2026-06-13T21:54:41.273Z"
- },
- {
-  "id": "DARS;857139;3c3e1738-4f46-4e43-a0e5-bf5fd19f95e2",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Nova Gorica - Razdrto, pred pokritim vkopom Rebrnice 2 v smeri Razdrtega, dela, zaprt prehitevalni pas.",
-  "loc": "H4, Nova Gorica - Razdrto",
-  "lat": 45.77374,
-  "lng": 14.02331,
-  "start": "2026-06-13T19:35:30.823Z",
-  "end": "2026-07-30T13:00:00Z",
-  "ts": "2026-06-13T21:53:31.28Z"
- },
- {
   "id": "DARS;784830;8a9d1072-89bb-4c91-97ee-5224fa07c01c",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-210, Trebija - Sovodenj, pri Fužinah, izmenično enosmerni promet, sanacija zidov in brežin ter asfaltiranja vozišča, do 7. 7. 2026.",
@@ -1179,28 +1168,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-11T06:13:14.403Z",
   "end": "2026-12-24T16:00:00Z",
   "ts": "2026-05-11T06:14:52.627Z"
- },
- {
-  "id": "DARS;839082;4dfae820-a1c9-48dc-9cf2-61ff6ea239dd",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Nova Gorica - Razdrto, pred predorom Podnanos v smeri Razdrtega, dela, zaprt prehitevalni pas.",
-  "loc": "H4, Nova Gorica - Razdrto",
-  "lat": 45.80495,
-  "lng": 13.97807,
-  "start": "2026-03-16T07:18:09.413Z",
-  "end": "2026-07-26T16:00:00Z",
-  "ts": "2026-05-10T20:25:38.803Z"
- },
- {
-  "id": "DARS;838977;44d75630-a395-42ce-9235-eb371d3f777e",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, pokrit vkop Rebrnice 2 - predor Barnica, dela, promet poteka po enem voznem pasu v vsako smer.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.77398,
-  "lng": 14.02315,
-  "start": "2026-03-15T17:13:23.047Z",
-  "end": "2026-07-26T16:00:00Z",
-  "ts": "2026-05-10T20:25:21.52Z"
  },
  {
   "id": "DARS;832048;6996ef9a-302f-4f94-a4e3-a4137ad66594",
