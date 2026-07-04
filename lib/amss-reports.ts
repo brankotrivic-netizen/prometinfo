@@ -2,6 +2,14 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Krnjača- Beograd( Bogoslovija), radovi",
+  "text": "Dana 5.7.2026. godine, u periodu od 6.30 do 16 časova, vršiti specijalizovani pregled konstrukcije Pančevačkog mosta na petlji Krnjača Beograd (Bogoslovija), u smeru ka Pančevu. Tokom izvođenja radova, saobraćaj će se odvijati slobodnom saobraćajnom trakom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "petlja Krnjača-Beograd(Bogoslovija)",
+  "text": "Izvodiće se radovi na dilatacionim spojnicama na petlji Krnjača Beograd (Bogoslovija), na deonici od petlje Krnjača do početka čelične konstrukcije Pančevačkog mosta, u smeru Pančevo Beograd: -4/5.7.2026. godine, u periodu od 20 do 5 časova, -5/6.7.2026. godine, u periodu od 20 do 5 časova, -6/7.7.2026. godine, u periodu od 20 do 5 časova. Tokom izvođenja radova, saobraćaj će se odvijati slobodnom saobraćajnom trakom. Izvor Putevi Srbije"
+ },
+ {
   "title": "Sremska Mitrovica-Jarak, OBUSTAVA",
   "text": "Do 20. 7. 2026. zbog radova na rehabilitaciji, saobraćaj će biti obustavljen na putu II B reda broj 316, Sremska Mitrovica - Jarak, u mestu Jarak, od raskrsnice sa državnim putem I B reda broj 21 do izlaza iz Jarka. Alternativni putni pravci su državni put II A reda broj 120, Sremska Mitrovica - Ruma, pa državni put I B reda broj 21, Ruma - Jarak. Izvor Putevi Srbije"
  },
@@ -20,10 +28,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Sremska Mitrovica -Ruma, radovi na autoputu",
   "text": "Do 17. 7. 2026. u toku svetlog dela dana, izvode radovi na obeležavanju ivičnih i središnje linije na kolovozu, na državnom putu I A reda broj 3, na deonici Sremska Mitrovica Ruma, u smeru ka Beogradu. U zoni radova biće zatvorena preticajna ili zaustavna i vozna saobraćajna traka u dužini do 5000 metara. Saobraćaj će se odvijati slobodnom saobraćajnom trakom. Putevi Srbije"
- },
- {
-  "title": "Petlja Krnjača- Beograd( Bogoslovija), radovi",
-  "text": "Dana 3/4.7.2026. godine, u periodu od 20 do 5 časova, izvodiće se radovi na dilatacionim spojnicama na petlji Krnjača Beograd (Bogoslovija), na deonici od petlje Krnjača do početka čelične konstrukcije Pančevačkog mosta, u smeru Pančevo Beograd. Tokom izvođenja radova, saobraćaj će se odvijati slobodnom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
  {
   "title": "Kuzmin-Batrovci, radovi",
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Družetić-Joševa, radovi",
   "text": "Produžavaju se radovi na uklanjanju oštećenog pločastog propusta i izgradnji novog propusta na deonici državnog puta Družetić (Joševa) Joševa (Gola Glava), u mestu Družetić (opština Koceljeva). U zoni radova, saobraćaj će biti prusmeren na privremenu devijaciju, gde će se odvijati naizmeničnim propuštanjem vozila. Planirani rok za završetak radova je 16.02.2026. godine. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petlja Mala Krsna - Ralja",
-  "text": "Obustava saobraćaja od 05.05.2025.godine od 14 časova na državnom putu I B reda broj 33, neposredno nakon naplatne stanice Požarevac, zbog izvođenja radova na izgradnji brze saobraćajnice, državni put I M reda broj 7 (državni put I A reda broj 1, Beograd - Niš (petlja Požarevac) - Požarevac (obilaznica) - Veliko Gradište Golubac ). Tokom izvođenja radova saobraćaj će biti preusmeren na državni put I B reda broj 14 - put ka Smederevu, a zatim preko lokalnog puta ka Vranovu i dalje lokalnim putem …"
  }
 ];

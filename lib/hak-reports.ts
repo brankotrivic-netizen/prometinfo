@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "4.7.2026. 13:34",
-  "text": "Pojačan je promet u smjeru mora, a počinje jačati i u smjeru unutrašnjosti. Zastoji su povremeno u zonama radova. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: na naplatnoj postaji Lučko i Demerje u smjeru Zagreba kolona je oko 1 km veća je gustoća prometa između čvora Lučko i čvora Zadar istok u oba smjera na pojedinim dionicama vozi se usporeno, u kolonama u pokretu i uz kraće zastoje A2 Zagreb-Macelj: zbog povećanog priljeva vozila kolona na naplati Trakošćan u smjeru Zagreba duga je oko 3 km i proteže se u Sloveniju DC33 Knin-Drniš prometna nesreća u Teplju…"
+  "updated": "4.7.2026. 15:43",
+  "text": "Pojačan je promet u smjeru mora te prema unutrašnjosti. Zastoji su povremeno u zonama radova. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: na naplatnoj postaji Lučko u smjeru Dubrovnika kolona je oko 2 km (iz smjera zagrebačke obilaznice (A3) i čvora Buzin) veća je gustoća prometa između čvora Bosiljevo i čvora Zadar istok u smjeru Dubrovnika te čvora Bosiljevo i čvora Lučko u smjeru Zagreba na pojedinim dionicama vozi se usporeno, u kolonama u pokretu i uz kraće zastoje zbog veće gustoće prometa između tunela Sveti Rok i tunela Čelinka u smjeru Dubrovnika na …"
  },
  {
   "title": "Granični prijelazi",
