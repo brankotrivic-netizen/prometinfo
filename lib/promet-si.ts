@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-04T17:20:37.494Z";
+export const PROMET_SI_UPDATED = "2026-07-04T19:38:39.682Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;861386;3e3b5c10-f16f-4f4c-bd85-0055a19bb88e",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Radovljica - priključek Lesce v smeri Karavank, Avstrije, dela, oviran promet.",
+  "desc": "A2, Ljubljana - Karavanke, predor Karavanke - priključek Jesenice vzhod v smeri Ljubljane, dela, pomična zapora voznega pasu.",
   "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.34195,
-  "lng": 14.18771,
+  "lat": 46.45038,
+  "lng": 13.99368,
   "start": "2026-07-04T17:03:05.06Z",
   "end": "2026-07-04T23:00:00Z",
-  "ts": "2026-07-04T17:03:19.97Z"
+  "ts": "2026-07-04T18:55:01.193Z"
+ },
+ {
+  "id": "DARS;861394;5ca94048-024e-472f-bd39-234e075a4940",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.00508,
+  "lng": 14.35892,
+  "start": "2026-07-04T18:35:55.343Z",
+  "end": "2026-07-05T00:00:00Z",
+  "ts": "2026-07-04T18:36:28.21Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -37,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-04T15:00:24.453Z"
  },
  {
-  "id": "DARS;861352;57e436a8-fd65-48b8-96ee-5368bc85262c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica jug - počivališče Tepanje v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.36371,
-  "lng": 15.51273,
-  "start": "2026-07-04T11:48:10.077Z",
-  "end": "2026-07-04T18:00:05.4Z",
-  "ts": "2026-07-04T11:48:13.397Z"
- },
- {
   "id": "DARS;861304;b9c8e30d-b7f8-43ca-9d0b-2dd7110022c3",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-742, Brezovica - Podpeč, v Podpeči, izmenično enosmerni promet, asfaltiranje, do 5. 7. 2026.",
@@ -68,39 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-04T03:37:37.767Z",
   "end": "2026-07-05T18:00:00Z",
   "ts": "2026-07-04T03:38:09.87Z"
- },
- {
-  "id": "DARS;861278;4726dfa6-8eb8-41dc-8f3e-b91201b9176a",
-  "type": "MaintenanceWorks",
-  "desc": "R2-448, Priključek Nm Z - Nm (Ločna), pri AC priključku, oviran promet, dela na AC, do 21:00.",
-  "loc": "R2-448, Priključek Nm Z - Nm (Ločna)",
-  "lat": 45.83218,
-  "lng": 15.17833,
-  "start": "2026-07-04T03:36:43.83Z",
-  "end": "2026-07-04T19:00:00Z",
-  "ts": "2026-07-04T03:37:32.94Z"
- },
- {
-  "id": "DARS;861269;a86a498d-2693-4d4c-845a-3f9e799b590b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, uvoz Novo mesto vzhod - počivališče Starine v smeri Obrežja, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.83033,
-  "lng": 15.1781,
-  "start": "2026-07-04T01:58:07.627Z",
-  "end": "2026-07-04T19:00:59.543Z",
-  "ts": "2026-07-04T01:58:12.707Z"
- },
- {
-  "id": "DARS;861261;bea82e96-b9f3-4371-96c1-322763da0fa4",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Novo mesto vzhod - priključek Novo mesto zahod v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.82841,
-  "lng": 15.18445,
-  "start": "2026-07-03T20:02:38.123Z",
-  "end": "2026-07-04T19:00:08.24Z",
-  "ts": "2026-07-03T20:02:43.143Z"
  },
  {
   "id": "DARS;861245;234bf018-47dd-4098-b90d-951c463f771e",
@@ -1377,17 +1344,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-03-18T08:26:57.24Z",
   "end": "2027-01-17T22:59:00Z",
   "ts": "2026-03-18T08:28:01.2Z"
- },
- {
-  "id": "DARS;824248;6b0a3bab-9c82-463d-b971-96228084bbb9",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, predor Podnanos - priključek Vipava, dela, promet poteka po enem voznem pasu v vsako smer.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.80606,
-  "lng": 13.97831,
-  "start": "2025-11-25T22:19:04.693Z",
-  "end": "2026-07-26T18:00:00Z",
-  "ts": "2026-03-16T07:22:02.187Z"
  },
  {
   "id": "DARS;839074;7034b09e-337d-4276-b954-961ca90de544",
