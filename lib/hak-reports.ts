@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "4.7.2026. 11:31",
-  "text": "Zbog bure u priobalju zabrana je za pojedine skupine vozila (opširnije u izvješću) . Pojačan je promet u smjeru mora, a počinje jačati i u smjeru unutrašnjosti. Zastoji su povremeno u zonama radova. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: veća je gustoća prometa između čvora Lučko i čvora Zadar istok u smjeru Dubrovnika, a između čvora Zadar istok i čvora Otočac u smjeru Zagreba na pojedinim dionicama vozi se usporeno, u kolonama u pokretu i uz kraće zastoje nakon prometne nesreće između čvora Donja Zdenčina i čvora Jastrebarsko (17+500 km) u smjeru Dubro…"
+  "updated": "4.7.2026. 13:34",
+  "text": "Pojačan je promet u smjeru mora, a počinje jačati i u smjeru unutrašnjosti. Zastoji su povremeno u zonama radova. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: na naplatnoj postaji Lučko i Demerje u smjeru Zagreba kolona je oko 1 km veća je gustoća prometa između čvora Lučko i čvora Zadar istok u oba smjera na pojedinim dionicama vozi se usporeno, u kolonama u pokretu i uz kraće zastoje A2 Zagreb-Macelj: zbog povećanog priljeva vozila kolona na naplati Trakošćan u smjeru Zagreba duga je oko 3 km i proteže se u Sloveniju DC33 Knin-Drniš prometna nesreća u Teplju…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "4.7.2026. 09:36",
-  "text": "U prekidu je katamaranska linija K raljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun Zbog nepovoljnih vremenkih uvjeta uvodi se raniji povratak (15:00 sati) na brodskoj liniji 612 Biševo-Vis (uvala Porat-Salbunara-Mezoporat-luka Komiža). Katamaranska linija 659 Split - Bol - Hvar - Vis - Hvar - Split s polaskom iz luke Split u 15:30 u prekidu Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet …"
+  "updated": "4.7.2026. 13:17",
+  "text": "Zbog većeg priljeva vozila u pojedinim trajektnim lukama moguća su čekanja za ukrcaj. U prekidu je katamaranska linija K raljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun Zbog nepovoljnih vremenkih uvjeta uvodi se raniji povratak (15:00 sati) na brodskoj liniji 612 Biševo-Vis (uvala Porat-Salbunara-Mezoporat-luka Komiža). Katamaranska linija 659 Split - Bol - Hvar - Vis - Hvar - Split s polaskom iz luke Split u 15:30 u prekidu Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Rep…"
  },
  {
   "title": "Željeznički promet",
