@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.7.2026. 21:40",
-  "text": "Kolnici su mjestimice mokri i skliski. Promet je pojačan na većini cesta. Vozače molimo za oprez, strpljenje i koncentraciju te da održavaju sigurnosni razmak između vozila. A1 Zagreb-Ploče-Karamatići: povećana gustoća prometa između čvora Bosiljevo i naplate Lučko u smjeru Zagreba Državna cesta DC1: zone radova između Jezerca i Korenice te Gračaca i Knina u Otriću - treba očekivati gužve i povremene zastoje u oba smjera (vozi se uz privremenu regulaciju prometa) Krčki most (DC102): povećana gustoća prometa u smjeru kopna, kolona je od Omišlja IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na DC214 između Bošnjaka i Županje Danas, od 12.00 do 23.00 sata, na snazi je l…"
+  "updated": "5.7.2026. 23:01",
+  "text": "Kolnici su mjestimice mokri i skliski. Promet je pojačan na većini cesta. Vozače molimo za oprez, strpljenje i koncentraciju te da održavaju sigurnosni razmak između vozila. A1 Zagreb-Ploče-Karamatići: povećana gustoća prometa između čvora Bosiljevo i naplate Lučko u smjeru Zagreba IZVANREDNI PROMETNI DOGAĐAJI: zbog prometnih nesreća prekinut je promet na DC77 u Vodnjanu, DC205 u Kumrovcu i DC214 između Bošnjaka i Županje Danas, od 12.00 do 23.00 sata, na snazi je ljetna zabrana prometa za teretna motorna vozila najveće dopuštene mase iznad 7,5 t na pojedinim državnim cestama u Istri i priobalju (osim na autocestama i državnoj cesti DC1). AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEV…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "5.7.2026. 21:40",
-  "text": "Zbog tehničkih poteškoća, u prekidu je promet na GP Slavonski Brod u oba smjera. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zem…"
+  "updated": "5.7.2026. 23:01",
+  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "5.7.2026. 21:40",
+  "updated": "5.7.2026. 23:01",
   "text": "U pomorskom prometu nema poteškoća. Trajektna linija 635 Stari Grad - Split s polaskom iz luke Stari Grad u 20:00 sati - u prekidu: linija će se uspostaviti u 23:00 sata polaskom iz luke Stari Grad ( putnici s kupljenim kartama u 20:00 sati polaskom iz luke Stari Grad mogu ih koristiti na liniji 632 Sučuraj - Drvenik) Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomo…"
  },
  {
