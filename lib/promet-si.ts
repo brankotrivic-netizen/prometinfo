@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-05T10:28:33.936Z";
+export const PROMET_SI_UPDATED = "2026-07-05T12:42:08.254Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;861448;86670eea-37cf-45ec-a65d-78eb8390c70d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - priključek Ljubljana center v smeri Kozarij, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02516,
+  "lng": 14.502,
+  "start": "2026-07-05T11:31:05.477Z",
+  "end": "2026-07-05T17:00:00Z",
+  "ts": "2026-07-05T11:31:10.46Z"
+ },
  {
   "id": "DARS;841673;14c19da7-4771-42fb-b6ba-942ed6bbc1d5",
   "type": "MaintenanceWorks",
@@ -46,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-04T03:37:37.767Z",
   "end": "2026-07-05T18:00:00Z",
   "ts": "2026-07-04T03:38:09.87Z"
- },
- {
-  "id": "DARS;861245;234bf018-47dd-4098-b90d-951c463f771e",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, izvoz 19 Grosuplje vzhod - izvoz 18 Grosuplje zahod, Cikava v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.96993,
-  "lng": 14.66406,
-  "start": "2026-07-03T17:08:46.463Z",
-  "end": "2026-07-05T10:36:56.88Z",
-  "ts": "2026-07-03T17:08:56.42Z"
  },
  {
   "id": "DARS;861125;786350ac-a680-41fd-b5bd-762e4bf79af5",

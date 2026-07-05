@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.7.2026. 12:20",
-  "text": "Pojačan je promet na svim većim prometnim pravcima, u oba smjera. Zastoji i kolone povremeno su u zonama radova, tunela, odmorišta i naplata te na prilazima turističkim središtima. U trajektnim lukama i pristaništima te na pojedinim graničnim prijelazima moguća su i dulja čekanja. Vozače molimo za oprez, strpljenje i koncentraciju te da održavaju sigurnosni razmak između vozila. A1 Zagreb-Ploče-Karamatići: na naplatnim postajama Lučko i Demerje nema dužih čekanja povećana gustoća prometa između naplate Lučko i čvora Zadar istok u oba smjera A2 Zagreb-Macelj: pred naplatnom postajom Trakošćan u smjeru Zagreba kolona je oko 1,5 km A6 Rijeka-Zagreb: promet teče bez većih poteškoća Istarski ipsi…"
+  "updated": "5.7.2026. 14:42",
+  "text": "Pojačan je promet na većini cesta. Zastoji i kolone povremeno su u zonama radova, tunela, odmorišta i naplata te na prilazima turističkim središtima. U trajektnim lukama i pristaništima te na pojedinim graničnim prijelazima moguća su i dulja čekanja. Vozače molimo za oprez, strpljenje i koncentraciju te da održavaju sigurnosni razmak između vozila. A1 Zagreb-Ploče-Karamatići: vozilo u kvaru u tunelu Mala Kapela u smjeru Zagreba (ograničenje brzine od 60 km/h) zbog prometnih nesreća između čvora Donja Zdenčina i naplate Demerje (na 6. km) te između čvorova Karlovac i Jastrebarsko (na 28. km) u smjeru Zagreba - vozi se usporeno u koloni prometna nesreća prije čvora Donja Zdenčina (na 14. km) u…"
  },
  {
   "title": "Granični prijelazi",
