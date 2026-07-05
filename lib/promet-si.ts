@@ -1,30 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-05T07:37:46.460Z";
+export const PROMET_SI_UPDATED = "2026-07-05T10:28:33.936Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;861411;782d823b-f273-485f-acc3-a96051a9a5f0",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, izvoz 22 Lukovica iz smeri Maribora, dela, oviran promet, košnja.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.16785,
-  "lng": 14.69366,
-  "start": "2026-07-05T06:31:48.12Z",
-  "end": "2026-07-05T12:00:00Z",
-  "ts": "2026-07-05T06:31:56.963Z"
- },
- {
-  "id": "DARS;861408;77059fef-4004-4b36-8a82-f389c0150319",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, uvoz Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.01557,
-  "lng": 14.38442,
-  "start": "2026-07-05T05:56:48.113Z",
-  "end": "2026-07-05T19:00:00Z",
-  "ts": "2026-07-05T05:57:36.46Z"
- },
  {
   "id": "DARS;841673;14c19da7-4771-42fb-b6ba-942ed6bbc1d5",
   "type": "MaintenanceWorks",
@@ -35,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-18T05:57:00Z",
   "end": "2026-07-06T15:00:00Z",
   "ts": "2026-07-05T05:24:53.913Z"
- },
- {
-  "id": "DARS;861403;91279ee7-0613-4487-b1c3-95558e8d69c6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Divača - izvoz 46 Divača v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.66849,
-  "lng": 13.96654,
-  "start": "2026-07-05T05:00:44.663Z",
-  "end": "2026-07-05T13:00:00Z",
-  "ts": "2026-07-05T05:00:57.277Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
