@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-05T17:33:33.273Z";
+export const PROMET_SI_UPDATED = "2026-07-05T19:42:54.978Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;861500;eeac9849-fbfc-41ca-8433-7b8b3d22d4d1",
+  "id": "DARS;861502;1b96a6ab-92ae-4b14-9834-a18e6405cf9a",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Blagovica - predor Podmilj v smeri Maribora, dela, pomična zapora voznega pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.17463,
-  "lng": 14.80386,
-  "start": "2026-07-05T17:31:35.833Z",
-  "end": "2026-07-05T21:30:00Z",
-  "ts": "2026-07-05T17:31:43.24Z"
+  "desc": "A1, Ljubljana - Koper, priključek Dragomer - priključek Vrhnika v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 46.01763,
+  "lng": 14.39002,
+  "start": "2026-07-05T17:41:50.083Z",
+  "end": "2026-07-05T23:00:00Z",
+  "ts": "2026-07-05T17:41:55.927Z"
  },
  {
   "id": "DARS;861496;85874194-554d-450b-9388-6eee5a78e903",
@@ -68,28 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-10-02T05:56:02.493Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-07-04T15:00:25.277Z"
- },
- {
-  "id": "DARS;861304;b9c8e30d-b7f8-43ca-9d0b-2dd7110022c3",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-742, Brezovica - Podpeč, v Podpeči, izmenično enosmerni promet, asfaltiranje, do 5. 7. 2026.",
-  "loc": "R3-742, Podpeč - Brezovica",
-  "lat": 45.9751,
-  "lng": 14.41887,
-  "start": "2026-07-04T06:05:17.12Z",
-  "end": "2026-07-05T18:00:00Z",
-  "ts": "2026-07-04T06:05:57.673Z"
- },
- {
-  "id": "DARS;861279;9b6c51d2-8135-498d-a9e6-d459ffbba8f6",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Rondo Logatec (Martinj Hrib), izmenično enosmerni promet, asfaltiranje, do 5. 7. 2026.",
-  "loc": "G2-102, Rondo Logatec (Martinj Hrib)",
-  "lat": 45.91211,
-  "lng": 14.22878,
-  "start": "2026-07-04T03:37:37.767Z",
-  "end": "2026-07-05T18:00:00Z",
-  "ts": "2026-07-04T03:38:09.87Z"
  },
  {
   "id": "DARS;861125;786350ac-a680-41fd-b5bd-762e4bf79af5",
