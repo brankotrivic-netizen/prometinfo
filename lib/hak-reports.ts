@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.7.2026. 18:07",
-  "text": "Kolnici su mjestimice vlažni i skliski, a promet je pojačan na većini cesta. Vozače molimo za oprez, strpljenje i koncentraciju te da održavaju sigurnosni razmak između vozila. A1 Zagreb-Ploče-Karamatići: povećana gustoća prometa između čvora Karlovac i naplate Lučko u smjeru Zagreba Državna cesta DC1: zone radova između Jezerca i Korenice te Gračaca i Knina u Otriću - treba očekivati gužve i povremene zastoje u oba smjera (vozi se uz privremenu regulaciju prometa) Krčki most (DC102): povećana gustoća prometa u oba smjera IZVANREDNI PROMETNI DOGAĐAJI: zbog požara, zatvorena je ŽC6135 na ulazu u mjestu Vinišće kod Trogira prometna nesreća na autocesti A3 između čvorova Slavonski Brod istok i …"
+  "updated": "5.7.2026. 19:31",
+  "text": "Kolnici su mjestimice mokri i skliski, a zbog ponegdje obilnije kiše moguće je zadržavanje veće količine vode na kolniku. Promet je pojačan na većini cesta. Vozače molimo za oprez, strpljenje i koncentraciju te da održavaju sigurnosni razmak između vozila. A1 Zagreb-Ploče-Karamatići: povećana gustoća prometa između čvora Bosiljevo i naplate Lučko u smjeru Zagreba prometna nesreća na 83. km između čvorova Ogulin i Bosiljevo 2 u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 60 km/h A6 Rijeka-Zagreb: zbog vodene bujice na kolniku u tunelu Čardak u oba smjera vozi se usporeno Državna cesta DC1: zone radova između Jezerca i Korenice te Gračaca i Knina u Otriću - treba oček…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "5.7.2026. 18:04",
+  "updated": "5.7.2026. 19:26",
   "text": "Zbog tehničkih poteškoća, u prekidu je promet na GP Slavonski Brod u oba smjera. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zem…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "5.7.2026. 18:04",
+  "updated": "5.7.2026. 19:26",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {

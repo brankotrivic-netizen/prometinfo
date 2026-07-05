@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-05T16:19:50.493Z";
+export const PROMET_SI_UPDATED = "2026-07-05T17:33:33.273Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;861500;eeac9849-fbfc-41ca-8433-7b8b3d22d4d1",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Blagovica - predor Podmilj v smeri Maribora, dela, pomična zapora voznega pasu.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.17463,
+  "lng": 14.80386,
+  "start": "2026-07-05T17:31:35.833Z",
+  "end": "2026-07-05T21:30:00Z",
+  "ts": "2026-07-05T17:31:43.24Z"
+ },
+ {
+  "id": "DARS;861496;85874194-554d-450b-9388-6eee5a78e903",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Naklo - priključek Podtabor v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.28197,
+  "lng": 14.29208,
+  "start": "2026-07-05T17:10:11.37Z",
+  "end": "2026-07-05T23:00:00Z",
+  "ts": "2026-07-05T17:10:52.993Z"
+ },
+ {
+  "id": "DARS;861495;d1a3eeaa-15e0-49ee-af00-9aaded198ae4",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Razdrto - Nova Gorica, razcep Nanos - priključek Vipava v smeri Vrtojbe, Italije, dela, promet poteka po enem pasu.",
+  "loc": "H4, Razdrto - Nova Gorica",
+  "lat": 45.75713,
+  "lng": 14.05059,
+  "start": "2026-07-05T17:05:19.937Z",
+  "end": "2026-10-06T13:00:00Z",
+  "ts": "2026-07-05T17:06:50.493Z"
+ },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
   "type": "RoadOrCarriagewayOrLaneManagement",

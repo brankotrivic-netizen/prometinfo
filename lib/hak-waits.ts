@@ -51,6 +51,22 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-07-05T16:32:18+02:00"
  },
  {
+  "id": "ba-neum-i",
+  "name": "Klek (Neum I)",
+  "ulazMin": null,
+  "izlazMin": 60,
+  "ulazTxt": "-",
+  "izlazTxt": "1 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
   "id": "",
   "name": "Hrvatska Dubica (Bosanska Dubica)",
   "ulazMin": 30,
