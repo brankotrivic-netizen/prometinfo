@@ -15,8 +15,8 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ts": "05.07.2026 14:36:23",
-  "tsISO": "2026-07-05T14:36:23+02:00"
+  "ts": "5.7.2026. 17:34:26",
+  "tsISO": "2026-07-05T17:34:26+02:00"
  },
  {
   "id": "ba-gradina",
@@ -31,7 +31,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "05.07.2026 15:31:27",
+  "ts": "5.7.2026. 15:31:27",
   "tsISO": "2026-07-05T15:31:27+02:00"
  },
  {
@@ -47,7 +47,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ts": "05.07.2026 16:32:18",
+  "ts": "5.7.2026. 16:32:18",
   "tsISO": "2026-07-05T16:32:18+02:00"
  },
  {
@@ -63,23 +63,55 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "05.07.2026 15:10:57",
+  "ts": "5.7.2026. 15:10:57",
   "tsISO": "2026-07-05T15:10:57+02:00"
+ },
+ {
+  "id": "ba-samac",
+  "name": "Slavonski Šamac (Bosanski Šamac)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 90,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "1 h 30 min.",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ts": "Nema podataka",
+  "tsISO": ""
  },
  {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
   "ulazMin": 30,
-  "izlazMin": 90,
+  "izlazMin": 30,
   "ulazTxt": "do 30 min.",
-  "izlazTxt": "1 h 30 min.",
+  "izlazTxt": "do 30 min.",
   "truckUlazMin": 60,
   "truckIzlazMin": null,
   "truckUlazTxt": "1 h",
   "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 90,
-  "ts": "05.07.2026 14:39:55",
-  "tsISO": "2026-07-05T14:39:55+02:00"
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "5.7.2026. 17:44:36",
+  "tsISO": "2026-07-05T17:44:36+02:00"
+ },
+ {
+  "id": "hr-tovarnik",
+  "name": "Tovarnik (Šid)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 360,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "6 h",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ts": "Nema podataka",
+  "tsISO": ""
  }
 ];
