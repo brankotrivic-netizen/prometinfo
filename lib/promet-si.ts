@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-06T19:05:59.438Z";
+export const PROMET_SI_UPDATED = "2026-07-06T21:02:17.817Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;861750;91b20c3e-97c1-46cf-8c98-6c9c326c5089",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica jug v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.38405,
-  "lng": 15.5723,
-  "start": "2026-07-06T18:42:08.637Z",
-  "end": "2026-07-07T00:00:00Z",
-  "ts": "2026-07-06T18:42:20.627Z"
- },
  {
   "id": "DARS;861747;48acbea4-f879-42e7-a300-75fb026c71ac",
   "type": "MaintenanceWorks",
@@ -26,17 +15,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-06T18:17:22.643Z"
  },
  {
-  "id": "DARS;861746;1051fc75-5d90-477c-9c3a-b2fe70eedad5",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Jesenice zahod, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.44664,
-  "lng": 14.01069,
-  "start": "2026-07-06T18:13:29.307Z",
-  "end": "2026-07-07T00:00:00Z",
-  "ts": "2026-07-06T18:13:34.683Z"
- },
- {
   "id": "DARS;861745;e87a074c-94cd-4772-8c2c-f6b76f1864dc",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - Maribor, predor Jasovnik - priključek Šentrupert v smeri Maribora, dela, oviran promet.",
@@ -46,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-06T17:39:37.977Z",
   "end": "2026-07-07T01:00:43.9Z",
   "ts": "2026-07-06T17:40:01.64Z"
- },
- {
-  "id": "DARS;861744;525b70cf-ee87-45f7-b0f4-483b82300f42",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, pred priključkom Dragomer - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.01755,
-  "lng": 14.39016,
-  "start": "2026-07-06T17:39:06.243Z",
-  "end": "2026-07-06T23:00:00Z",
-  "ts": "2026-07-06T17:39:29.277Z"
  },
  {
   "id": "DARS;861736;dde9a26a-60cc-4e76-b55c-64cb5a254305",
