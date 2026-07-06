@@ -5,9 +5,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Albanija",
   "flag": "🇦🇱",
-  "p95": "166,292 ALL (1,74 EUR)",
+  "p95": "166,292 ALL (1,77 EUR)",
   "p98": "",
-  "diesel": "170,989 ALL (1,79 EUR)",
+  "diesel": "170,989 ALL (1,82 EUR)",
   "date": "3. 7. 2026"
  },
  {
@@ -37,9 +37,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Belorusija",
   "flag": "🇧🇾",
-  "p95": "2,680 BYN (0,84 EUR)",
-  "p98": "2,900 BYN (0,91 EUR)",
-  "diesel": "2,680 BYN (0,84 EUR)",
+  "p95": "2,680 BYN (0,81 EUR)",
+  "p98": "2,900 BYN (0,88 EUR)",
+  "diesel": "2,680 BYN (0,81 EUR)",
   "date": "29. 6. 2026"
  },
  {
@@ -253,9 +253,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Rusija",
   "flag": "🇷🇺",
-  "p95": "71,530 RUB (0,87 EUR)",
-  "p98": "93,630 RUB (1,14 EUR)",
-  "diesel": "81,010 RUB (0,98 EUR)",
+  "p95": "71,530 RUB (0,80 EUR)",
+  "p98": "93,630 RUB (1,04 EUR)",
+  "diesel": "81,010 RUB (0,90 EUR)",
   "date": "3. 7. 2026"
  },
  {
@@ -294,7 +294,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "Srbija",
   "flag": "🇷🇸",
   "p95": "193,970 RSD (1,65 EUR)",
-  "p98": "220,080 RSD (1,87 EUR)",
+  "p98": "220,080 RSD (1,88 EUR)",
   "diesel": "218,820 RSD (1,86 EUR)",
   "date": "30. 6. 2026"
  },
@@ -325,9 +325,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Ukrajina",
   "flag": "🇺🇦",
-  "p95": "73,520 UAH (1,43 EUR)",
-  "p98": "77,870 UAH (1,51 EUR)",
-  "diesel": "87,810 UAH (1,70 EUR)",
+  "p95": "73,520 UAH (1,44 EUR)",
+  "p98": "77,870 UAH (1,53 EUR)",
+  "diesel": "87,810 UAH (1,72 EUR)",
   "date": "16. 6. 2026"
  },
  {
