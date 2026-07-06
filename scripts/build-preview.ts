@@ -1,6 +1,7 @@
 // Samostojen HTML osnutek (brez streznika): zdruzi zive BiH podatke (BIHAMK)
 // z registrom vseh prehodov + gumbi za uradno kamero. Zagon: npm run preview
 import { writeFileSync } from "node:fs";
+import { deflateSync } from "node:zlib";
 import { resolve } from "node:path";
 import { scrapeAll } from "../lib/scrapers";
 import { allCrossings } from "../lib/crossings";
@@ -414,7 +415,8 @@ async function main() {
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="PrometInfo"/>
-<link rel="apple-touch-icon" href="icon.svg"/>
+<link rel="apple-touch-icon" href="icon-180.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="icon-180.png"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
@@ -855,6 +857,22 @@ ${fuelHtml}
     <div style="text-align:center"><img id="camBig" referrerpolicy="no-referrer" alt=""></div>
     <div id="camCheckBar" style="display:none"></div>
     <div class="modalfoot">Živa slika (osvežuje se) · <a id="camOpen" href="#" target="_blank" rel="noopener noreferrer">odpri v novem zavihku ↗</a></div>
+  </div>
+</div>
+<div id="iosHelp" class="modal" onclick="if(event.target===this)closeIosHelp()">
+  <div class="modalbox" style="max-width:420px">
+    <div class="modalhead"><span>📲 Namesti PrometInfo na iPhone</span><button onclick="closeIosHelp()">✕</button></div>
+    <div style="padding:14px 16px;font-size:15px;line-height:1.6">
+      <p style="margin:0 0 12px">Aplikacija se namesti kot ikona na začetni zaslon — deluje celozaslonsko, kot prava app:</p>
+      <ol style="margin:0;padding-left:22px">
+        <li>Odpri to stran v <b>Safariju</b> (ne v Chromu).</li>
+        <li>Pritisni gumb <b>Deli</b> <span style="display:inline-block;border:1px solid var(--border);border-radius:5px;padding:0 6px">⬆️</span> spodaj v vrstici.</li>
+        <li>Izberi <b>»Dodaj na začetni zaslon«</b> (Add to Home Screen).</li>
+        <li>Pritisni <b>Dodaj</b> — ikona 🚦 se pojavi na zaslonu.</li>
+      </ol>
+      <p class="meta" style="margin:12px 0 0">Nasvet: odpri jo z začetnega zaslona (ne iz Safarija), da dobiš celozaslonski način brez naslovne vrstice.</p>
+    </div>
+    <div class="modalfoot"><button class="cam" onclick="closeIosHelp()" style="width:100%">Razumem</button></div>
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
@@ -1804,8 +1822,21 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
 (function(){
   if('serviceWorker' in navigator){ window.addEventListener('load',function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); }); }
   var deferred=null;
-  window.addEventListener('beforeinstallprompt',function(e){ e.preventDefault(); deferred=e; var b=document.getElementById('installBtn'); if(b)b.style.display='block'; });
-  window.doInstall=function(){ if(!deferred){ alert('Namestitev: v brskalniku odpri meni (⋮) → \\'Dodaj na začetni zaslon\\'. Na iPhonu: Deli → Na začetni zaslon.'); return; } deferred.prompt(); deferred.userChoice.finally(function(){ deferred=null; var b=document.getElementById('installBtn'); if(b)b.style.display='none'; }); };
+  var isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;
+  var standalone=(window.navigator.standalone===true)||(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches);
+  window.addEventListener('beforeinstallprompt',function(e){ e.preventDefault(); deferred=e; var b=document.getElementById('installBtn'); if(b){ b.style.display='block'; b.textContent='⬇️ Namesti na telefon'; } });
+  window.doInstall=function(){
+    if(deferred){ deferred.prompt(); deferred.userChoice.finally(function(){ deferred=null; var b=document.getElementById('installBtn'); if(b)b.style.display='none'; }); return; }
+    if(isIOS){ showIosHelp(); return; }
+    alert('Namestitev: v brskalniku odpri meni (⋮) → »Dodaj na začetni zaslon«.');
+  };
+  function showIosHelp(){ var m=document.getElementById('iosHelp'); if(m) m.style.display='flex'; }
+  window.closeIosHelp=function(){ var m=document.getElementById('iosHelp'); if(m) m.style.display='none'; };
+  // iOS: beforeinstallprompt ne obstaja -> pokaži gumb + enkraten namig (razen ce je ze nameščeno)
+  if(isIOS && !standalone){
+    var b=document.getElementById('installBtn'); if(b){ b.style.display='block'; b.textContent='📲 Namesti na iPhone'; }
+    try{ if(!localStorage.getItem('promet_ios_hint')){ localStorage.setItem('promet_ios_hint','1'); setTimeout(showIosHelp,1200); } }catch(e){}
+  }
   window.addEventListener('appinstalled',function(){ var b=document.getElementById('installBtn'); if(b)b.style.display='none'; });
 })();
 </script></body></html>`;
@@ -1816,22 +1847,61 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   // ---- PWA datoteke (kopira jih dist skripta v dist/) ----
   const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="34" fill="#2563eb"/><text x="96" y="130" font-size="112" text-anchor="middle">🚦</text></svg>`;
   writeFileSync(resolve(process.cwd(), "icon.svg"), icon, "utf8");
+
+  // PNG ikone (iOS na začetnem zaslonu potrebuje PNG, ne SVG) — narisan semafor na modrem.
+  const crcTab: number[] = [];
+  for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; crcTab[n] = c >>> 0; }
+  const crc32 = (b: Buffer) => { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = crcTab[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; };
+  const pngChunk = (type: string, data: Buffer) => {
+    const len = Buffer.alloc(4); len.writeUInt32BE(data.length, 0);
+    const t = Buffer.from(type, "ascii");
+    const crc = Buffer.alloc(4); crc.writeUInt32BE(crc32(Buffer.concat([t, data])), 0);
+    return Buffer.concat([len, t, data, crc]);
+  };
+  const iconPng = (S: number) => {
+    const px = Buffer.alloc(S * S * 4);
+    const put = (x: number, y: number, r: number, g: number, b: number, a: number) => { const i = (y * S + x) * 4; px[i] = r; px[i + 1] = g; px[i + 2] = b; px[i + 3] = a; };
+    const rad = S * 0.22, hr = S * 0.08;
+    const hw = S * 0.36, hh = S * 0.62, hx = (S - hw) / 2, hy = (S - hh) / 2;
+    const cx = S / 2, cr = S * 0.088;
+    const cys = [hy + hh * 0.24, hy + hh * 0.5, hy + hh * 0.76];
+    const inRound = (x: number, y: number, x0: number, y0: number, w: number, h: number, r: number) => {
+      const nx = x < x0 + r ? x0 + r : x > x0 + w - r ? x0 + w - r : x, ny = y < y0 + r ? y0 + r : y > y0 + h - r ? y0 + h - r : y;
+      const dx = x - nx, dy = y - ny; return dx * dx + dy * dy <= r * r;
+    };
+    for (let y = 0; y < S; y++) for (let x = 0; x < S; x++) {
+      if (!inRound(x, y, 0, 0, S, S, rad)) { put(x, y, 0, 0, 0, 0); continue; }
+      put(x, y, 37, 99, 235, 255); // modro ozadje
+      if (inRound(x, y, hx, hy, hw, hh, hr)) put(x, y, 15, 23, 42, 255); // temno ohišje
+      const lights = [[239, 68, 68], [245, 158, 11], [34, 197, 94]];
+      for (let li = 0; li < 3; li++) { const dx = x - cx, dy = y - cys[li]; if (dx * dx + dy * dy <= cr * cr) { const c = lights[li]; put(x, y, c[0], c[1], c[2], 255); } }
+    }
+    const raw = Buffer.alloc(S * (S * 4 + 1));
+    for (let y = 0; y < S; y++) { raw[y * (S * 4 + 1)] = 0; px.copy(raw, y * (S * 4 + 1) + 1, y * S * 4, (y + 1) * S * 4); }
+    const ihdr = Buffer.alloc(13); ihdr.writeUInt32BE(S, 0); ihdr.writeUInt32BE(S, 4); ihdr[8] = 8; ihdr[9] = 6;
+    return Buffer.concat([Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]), pngChunk("IHDR", ihdr), pngChunk("IDAT", deflateSync(raw)), pngChunk("IEND", Buffer.alloc(0))]);
+  };
+  writeFileSync(resolve(process.cwd(), "icon-180.png"), iconPng(180));
+  writeFileSync(resolve(process.cwd(), "icon-192.png"), iconPng(192));
+  writeFileSync(resolve(process.cwd(), "icon-512.png"), iconPng(512));
+
   const manifest = {
     name: "PrometInfo — mejni prehodi in kamere", short_name: "PrometInfo",
     description: "Čakanje na mejnih prehodih, žive kamere in odločitveni asistent (bivša Jugoslavija).",
     start_url: ".", scope: ".", display: "standalone", orientation: "portrait-primary",
     background_color: "#eef2f7", theme_color: "#2563eb", lang: "sl",
     icons: [
+      { src: "icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
+      { src: "icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
+      { src: "icon-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
       { src: "icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
-      { src: "icon.svg", sizes: "192x192", type: "image/svg+xml", purpose: "maskable" },
-      { src: "icon.svg", sizes: "512x512", type: "image/svg+xml", purpose: "maskable" },
     ],
   };
   writeFileSync(resolve(process.cwd(), "manifest.webmanifest"), JSON.stringify(manifest, null, 2), "utf8");
   // Service worker: network-first za navigacijo (offline fallback na predpomnjeni index),
   // ostalo (slike kamer, tiles, API) gre mimo predpomnilnika (vedno sveže / brez balasta).
-  const sw = `var CACHE='prometinfo-v1';
-self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return c.addAll(['./','./index.html','./manifest.webmanifest','./icon.svg']); }).catch(function(){})); });
+  const sw = `var CACHE='prometinfo-v2';
+self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return c.addAll(['./','./index.html','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png']); }).catch(function(){})); });
 self.addEventListener('activate',function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.map(function(k){ if(k!==CACHE) return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });
 self.addEventListener('fetch',function(e){ var req=e.request; if(req.method!=='GET') return;
   if(req.mode==='navigate'){ e.respondWith(fetch(req).then(function(r){ caches.open(CACHE).then(function(c){ c.put('./index.html', r.clone()); }); return r; }).catch(function(){ return caches.match('./index.html'); })); return; }

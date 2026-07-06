@@ -10,7 +10,7 @@
     "lint": "next lint",
     "scrape": "tsx scripts/test-scrape.ts",
     "preview": "tsx scripts/build-preview.ts",
-    "dist": "tsx scripts/build-preview.ts && node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('osnutek-preview.html','dist/index.html');['manifest.webmanifest','sw.js','icon.svg'].forEach(f=>fs.copyFileSync(f,'dist/'+f));console.log('dist/index.html + PWA posodobljen')\"",
+    "dist": "tsx scripts/build-preview.ts && node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('osnutek-preview.html','dist/index.html');['manifest.webmanifest','sw.js','icon.svg','icon-180.png','icon-192.png','icon-512.png'].forEach(f=>fs.copyFileSync(f,'dist/'+f));console.log('dist/index.html + PWA posodobljen')\"",
     "refresh": "node scripts/refresh.mjs"
   },
   "dependencies": {
