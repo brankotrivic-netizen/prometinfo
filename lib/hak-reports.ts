@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "6.7.2026. 15:13",
-  "text": "Zastoji su povremeno na gradskim prometnicama i obilaznicama te u zonama radova. Pojačan je promet na cestama u smjeru mora, osobito na autocestama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: na autocesti A3 prema naplati Lučko kolona je iz smjera Buzina oko 1 km na autocesti A1 pojačan je promet u smjeru mora, osobito između čvorova Lučko i Bosiljevo 2, povremeno se vozi u kolonama uz zastoje povremeno su zastoji zbog pojačanog prometa na zagrebačkoj (A3) i riječkoj (A7) obilaznici, državnoj cesti Sinj-Dugopolje (DC1) te na više dionica Jadranske magistrale (DC8). AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srp…"
+  "updated": "6.7.2026. 15:29",
+  "text": "Zastoji su povremeno na gradskim prometnicama i obilaznicama te u zonama radova. Pojačan je promet na cestama u smjeru mora, osobito na autocestama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: na autocesti A3 prema naplati Lučko kolona je iz smjera Buzina oko 1 km na autocesti A1 pojačan je promet između čvorova Lučko i Karlovac u oba smjera povremeno su zastoji zbog pojačanog prometa na zagrebačkoj (A3) i riječkoj (A7) obilaznici, državnoj cesti Sinj-Dugopolje (DC1) te na više dionica Jadranske magistrale (DC8). AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati. zbog isključivanja iz…"
  },
  {
   "title": "Granični prijelazi",
