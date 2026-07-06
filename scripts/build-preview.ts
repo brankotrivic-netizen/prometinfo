@@ -388,7 +388,14 @@ async function main() {
     chipCountries.map((c) => tile(c, FLAG[c], COUNTRY_NAMES[c])).join("");
 
   const html = `<!doctype html><html lang="sl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PrometInfo — osnutek</title>
+<title>PrometInfo — mejni prehodi in kamere</title>
+<link rel="manifest" href="manifest.webmanifest"/>
+<meta name="theme-color" content="#2563eb"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="PrometInfo"/>
+<link rel="apple-touch-icon" href="icon.svg"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
@@ -646,7 +653,7 @@ h1{font-size:24px}
 footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-top:1px solid var(--border);padding-top:16px}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#08111c}.leaflet-popup-content a{color:#1a55c8;font-weight:600}
 </style></head><body><div class="wrap">
-<div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><span class="meta">OSNUTEK · ${new Date().toLocaleString("sl-SI")}</span></div>
+<div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px"><button id="installBtn" style="display:none" class="drivebtn" onclick="doInstall()">⬇️ Namesti na telefon</button><span class="meta">OSNUTEK · ${new Date().toLocaleString("sl-SI")}</span></div></div>
 <div class="layout">
 <aside class="sidebar"><div class="countrytiles">${tiles}</div></aside>
 <div class="main">
@@ -1424,6 +1431,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     res.innerHTML=html; res.style.display='';
     if(!window._autoload){ try{ res.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){} }
     updateFuelDistance(pr);
+    // samodejni TomTom pregled kolone za priporoceni + alternativni prehod (ce se ni preverjeno)
+    pr.recommended.concat(pr.alternative).forEach(function(id){ if(TTQ[id] && !TTRES[id]){ try{ checkTomTom(id); }catch(e){} } });
   }
   // ---- gorivo po poti (profil vozila) ----
   var VKEY='promet_vehicle';
@@ -1638,11 +1647,47 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   loadVeh(); loadFb(); renderAlarms(); renderCounts(); renderSocial();
   var dbg=localStorage.getItem('promet_debug')==='1', dc=document.getElementById('setDebug'); if(dc){ dc.checked=dbg; if(dbg){ var dp=document.getElementById('debugPanel'); dp.style.display='block'; dp.innerHTML=debugInfo(); } }
 })();
+/* ===== PWA: namestitev na telefon + offline (service worker) ===== */
+(function(){
+  if('serviceWorker' in navigator){ window.addEventListener('load',function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); }); }
+  var deferred=null;
+  window.addEventListener('beforeinstallprompt',function(e){ e.preventDefault(); deferred=e; var b=document.getElementById('installBtn'); if(b)b.style.display='block'; });
+  window.doInstall=function(){ if(!deferred){ alert('Namestitev: v brskalniku odpri meni (⋮) → \\'Dodaj na začetni zaslon\\'. Na iPhonu: Deli → Na začetni zaslon.'); return; } deferred.prompt(); deferred.userChoice.finally(function(){ deferred=null; var b=document.getElementById('installBtn'); if(b)b.style.display='none'; }); };
+  window.addEventListener('appinstalled',function(){ var b=document.getElementById('installBtn'); if(b)b.style.display='none'; });
+})();
 </script></body></html>`;
 
   const out = resolve(process.cwd(), "osnutek-preview.html");
   writeFileSync(out, html, "utf8");
-  console.log("OSNUTEK ZAPISAN:", out);
+
+  // ---- PWA datoteke (kopira jih dist skripta v dist/) ----
+  const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="34" fill="#2563eb"/><text x="96" y="130" font-size="112" text-anchor="middle">🚦</text></svg>`;
+  writeFileSync(resolve(process.cwd(), "icon.svg"), icon, "utf8");
+  const manifest = {
+    name: "PrometInfo — mejni prehodi in kamere", short_name: "PrometInfo",
+    description: "Čakanje na mejnih prehodih, žive kamere in odločitveni asistent (bivša Jugoslavija).",
+    start_url: ".", scope: ".", display: "standalone", orientation: "portrait-primary",
+    background_color: "#eef2f7", theme_color: "#2563eb", lang: "sl",
+    icons: [
+      { src: "icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
+      { src: "icon.svg", sizes: "192x192", type: "image/svg+xml", purpose: "maskable" },
+      { src: "icon.svg", sizes: "512x512", type: "image/svg+xml", purpose: "maskable" },
+    ],
+  };
+  writeFileSync(resolve(process.cwd(), "manifest.webmanifest"), JSON.stringify(manifest, null, 2), "utf8");
+  // Service worker: network-first za navigacijo (offline fallback na predpomnjeni index),
+  // ostalo (slike kamer, tiles, API) gre mimo predpomnilnika (vedno sveže / brez balasta).
+  const sw = `var CACHE='prometinfo-v1';
+self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return c.addAll(['./','./index.html','./manifest.webmanifest','./icon.svg']); }).catch(function(){})); });
+self.addEventListener('activate',function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.map(function(k){ if(k!==CACHE) return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });
+self.addEventListener('fetch',function(e){ var req=e.request; if(req.method!=='GET') return;
+  if(req.mode==='navigate'){ e.respondWith(fetch(req).then(function(r){ caches.open(CACHE).then(function(c){ c.put('./index.html', r.clone()); }); return r; }).catch(function(){ return caches.match('./index.html'); })); return; }
+  var u=new URL(req.url);
+  if(u.origin===location.origin && /\\.(webmanifest|svg)$/.test(u.pathname)){ e.respondWith(caches.match(req).then(function(m){ return m||fetch(req); })); }
+});`;
+  writeFileSync(resolve(process.cwd(), "sw.js"), sw, "utf8");
+
+  console.log("OSNUTEK ZAPISAN:", out, "(+ manifest.webmanifest, sw.js, icon.svg)");
   console.log(`Prehodov skupaj: ${items.length} | na zemljevidu: ${points.length} | s kamero: ${items.filter((i) => i.cameras.length).length} | dvojnih kamer: ${items.filter((i) => i.cameras.length > 1).length}`);
 }
 
