@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-06T13:55:33.552Z";
+export const PROMET_SI_UPDATED = "2026-07-06T16:32:01.657Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-07-06T15:00:53.723Z"
+ },
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-06T15:00:50.587Z"
+ },
  {
   "id": "DARS;861643;6aef0a08-b396-4ec8-84fa-babfe47d1f1d",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -46,28 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-06T07:48:22.25Z",
   "end": "2026-08-07T21:59:00Z",
   "ts": "2026-07-06T07:48:56.34Z"
- },
- {
-  "id": "DARS;861612;ca07fb31-caf1-4ceb-94a8-7e211724d1ff",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-606, Kanal - Lig - Mišček - Neblo, izmenično enosmerni promet, pomična zapora, popravilo vozišča, do 16:00.",
-  "loc": "R3-606, Kanal - Lig - Mišček - Neblo",
-  "lat": 46.0663,
-  "lng": 13.52892,
-  "start": "2026-07-06T09:00:00Z",
-  "end": "2026-07-06T14:00:00Z",
-  "ts": "2026-07-06T07:47:52.143Z"
- },
- {
-  "id": "DARS;861611;f8b05272-4b1d-480f-81eb-f54a538cc30b",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-605, Kambreško - Livek, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R3-605, Kambreško - Kuščarji - Livek",
-  "lat": 46.16982,
-  "lng": 13.67171,
-  "start": "2026-07-06T07:44:43.26Z",
-  "end": "2026-07-06T15:00:00Z",
-  "ts": "2026-07-06T07:46:45.21Z"
  },
  {
   "id": "DARS;861608;b8e8cca4-c0a7-41e7-8a0b-dd6a7c647fdd",
@@ -167,28 +167,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-29T08:13:37.373Z",
   "end": "2026-07-13T21:59:00Z",
   "ts": "2026-07-06T06:00:49.383Z"
- },
- {
-  "id": "DARS;861580;247dfc7a-bc4f-4434-9a3d-ffc6218060f3",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-232, Petrovci - Martjanci, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R1-232, Petrovci - Martjanci",
-  "lat": 46.80362,
-  "lng": 16.21901,
-  "start": "2026-07-06T05:26:21.363Z",
-  "end": "2026-07-06T16:00:00Z",
-  "ts": "2026-07-06T05:59:22.86Z"
- },
- {
-  "id": "DARS;861552;571c5a47-6156-4dd1-baf0-31fd6be35c62",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-207, Godovič - Črni vrh - Col - Ajdovščina, Godovič - Črni Vrh, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
-  "loc": "R1-207, Godovič - Črni Vrh",
-  "lat": 45.95887,
-  "lng": 14.09118,
-  "start": "2026-07-06T04:59:10.267Z",
-  "end": "2026-07-06T14:00:00Z",
-  "ts": "2026-07-06T05:02:02.073Z"
  },
  {
   "id": "DARS;846998;b6ee78b0-0e60-4362-846e-610f8c9fbd65",
