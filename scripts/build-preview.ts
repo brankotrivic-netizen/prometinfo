@@ -307,15 +307,34 @@ async function main() {
       </div>
     </section>`;
 
-  // Pisna prometna porocila (HAK + AMSS + BIHAMK)
-  const reportCard = (title: string, text: string, time?: string) =>
-    `<article class="report"><div class="report-head"><b>${esc(title)}</b>${time ? `<span class="report-time">${esc(time)}</span>` : ""}</div><div class="report-text">${esc(text)}</div></article>`;
+  // Pisna prometna porocila (HAK + AMSS + BIHAMK) — s klasifikacijo tipa dogodka
+  // vrstni red = prioriteta (zapora najbolj kriticna); veckulturne besede SL/HR/SR/BS.
+  const EV_TYPES: { type: string; badge: string; label: string; col: string; re: RegExp }[] = [
+    { type: "closure", badge: "⛔", label: "Zapora", col: "#dc2626", re: /zapor|zatvoren|zatvara|prekinut|obustav|zabranjen promet|neprohodan|zaprt|closed|blokira/i },
+    { type: "accident", badge: "💥", label: "Nesreča", col: "#ea580c", re: /nesre[čc]|nezgoda|udes|sudar|naletel|prometna nezg|prevrn|zaletel/i },
+    { type: "roadworks", badge: "🚧", label: "Dela", col: "#ca8a04", re: /\bdela\b|delo na|radov[ie]|radova|izvode se|gradben|rekonstrukcij|asfaltir|obnov[ae]|sanacij|zapora zaradi del/i },
+    { type: "jam", badge: "🐌", label: "Zastoj", col: "#d97706", re: /zastoj|kolon[ae]|gu[žz]v|zagu[šs]|zgo[šs][čc]|po[čc]asn|usporen|ote[žz]an promet|čakalna|zamud/i },
+    { type: "weather", badge: "🌧️", label: "Vreme", col: "#0891b2", re: /poledic|sneg|snijeg|megl|magla|\bled\b|plu[žz]|burj|veter|vjetar|padavin|poplav|nanos/i },
+  ];
+  const evClass = (s: string) => EV_TYPES.find((t) => t.re.test(s)) || { type: "other", badge: "ℹ️", label: "Obvestilo", col: "#64748b", re: /./ };
+  const reportCard = (title: string, text: string, time?: string) => {
+    const ev = evClass(`${title} ${text}`);
+    return `<article class="report" data-evtype="${ev.type}"><div class="report-head"><span class="evbadge" style="background:${ev.col}">${ev.badge} ${ev.label}</span> <b>${esc(title)}</b>${time ? `<span class="report-time">${esc(time)}</span>` : ""}</div><div class="report-text">${esc(text)}</div></article>`;
+  };
   const bihTotal = BIHAMK_REPORTS.reduce((s, g) => s + g.items.length, 0);
   const siType: Record<string, string> = { MaintenanceWorks: "🚧 Dela na cesti", RoadOrCarriagewayOrLaneManagement: "🚦 Ureditev prometa", Accident: "💥 Nesreča", AbnormalTraffic: "🐌 Zastoj", PoorEnvironmentConditions: "🌧️ Vreme", GeneralObstruction: "⚠️ Ovira" };
   const siTime = (s: string) => { try { return new Date(s).toLocaleString("sl-SI", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }); } catch { return ""; } };
   const reportsHtml = `
     <section class="country-group">
       <h2>📰 Prometna poročila <span class="src">· uradni viri</span></h2>
+      <div class="evfilter" id="evFilter">
+        <button class="evchip active" data-t="all" onclick="filterReports('all',this)">Vse</button>
+        <button class="evchip" data-t="closure" onclick="filterReports('closure',this)" style="--c:#dc2626">⛔ Zapore</button>
+        <button class="evchip" data-t="accident" onclick="filterReports('accident',this)" style="--c:#ea580c">💥 Nesreče</button>
+        <button class="evchip" data-t="roadworks" onclick="filterReports('roadworks',this)" style="--c:#ca8a04">🚧 Dela</button>
+        <button class="evchip" data-t="jam" onclick="filterReports('jam',this)" style="--c:#d97706">🐌 Zastoji</button>
+        <button class="evchip" data-t="weather" onclick="filterReports('weather',this)" style="--c:#0891b2">🌧️ Vreme</button>
+      </div>
       <details open class="roadgroup"><summary>🇸🇮 Slovenija — promet.si / DARS <span class="cnt">${PROMET_SI.length}</span></summary>
         <p class="meta">Vir: promet.si / NAP (DARS) · osveženo ${PROMET_SI_UPDATED ? siTime(PROMET_SI_UPDATED) : "—"} · <a href="https://www.promet.si/sl/promet" target="_blank" rel="noopener noreferrer">odpri promet.si ↗</a></p>
         <div class="reports">${PROMET_SI.slice(0, 150).map((e) => reportCard(siType[e.type] || "ℹ️ Dogodek", e.desc, siTime(e.start))).join("") || '<p class="meta">Trenutno ni objavljenih dogodkov ali vir ni dosegljiv.</p>'}</div>
@@ -616,9 +635,16 @@ h1{font-size:24px}
 }
 .reports{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
 .report{background:var(--panel);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;box-shadow:0 1px 3px rgba(16,32,43,.05)}
-.report-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:6px}
+.report-head{display:flex;justify-content:flex-start;align-items:baseline;gap:8px;margin-bottom:6px;flex-wrap:wrap}
 .report-head b{font-size:14px}
+.report-head .report-time{margin-left:auto}
 .report-time{font-size:11px;color:var(--muted);white-space:nowrap}
+.evbadge{font-size:11px;font-weight:700;color:#fff;padding:2px 8px;border-radius:999px;white-space:nowrap;flex:none}
+.evfilter{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+.evchip{border:1.5px solid var(--border);background:var(--panel);color:var(--text);border-radius:999px;padding:6px 12px;font:inherit;font-size:12.5px;font-weight:600;cursor:pointer}
+.evchip:hover{border-color:var(--c,var(--accent))}
+.evchip.active{background:var(--c,var(--accent));border-color:var(--c,var(--accent));color:#fff}
+.roadgroup.evhidden,.report.evhidden,.neighbor-title.evhidden{display:none}
 .report-text{font-size:13px;color:var(--text);line-height:1.45}
 .diesel{display:flex;flex-direction:column;gap:6px;max-width:520px}
 .dprice{position:relative;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;overflow:hidden}
@@ -1055,6 +1081,23 @@ function showView(v, btn){
  if(v==='settings' && window.renderSocial){ try{ window.renderSocial(); }catch(e){} }
  if(v==='map'){ setTimeout(function(){ map.invalidateSize(); }, 60); }
 }
+// filtriranje poročil po tipu dogodka (zapore/nesreče/dela/zastoji/vreme)
+function filterReports(t, btn){
+  var chips=document.querySelectorAll('#evFilter .evchip'); for(var i=0;i<chips.length;i++) chips[i].classList.remove('active');
+  if(btn) btn.classList.add('active'); else { var c=document.querySelector('#evFilter .evchip[data-t="'+t+'"]'); if(c)c.classList.add('active'); }
+  var reps=document.querySelectorAll('#view-reports .report');
+  reps.forEach(function(r){ var m=(t==='all')||r.getAttribute('data-evtype')===t; r.classList.toggle('evhidden', !m); });
+  // skrij prazne skupine (države) in podnaslove (BIH) brez vidnih poročil
+  document.querySelectorAll('#view-reports .roadgroup').forEach(function(g){
+    var vis=g.querySelectorAll('.report:not(.evhidden)').length;
+    g.classList.toggle('evhidden', vis===0);
+    if(vis>0 && t!=='all') g.setAttribute('open','');
+  });
+  document.querySelectorAll('#view-reports .neighbor-title').forEach(function(h){
+    var n=h.nextElementSibling; var vis=n?n.querySelectorAll('.report:not(.evhidden)').length:0; h.classList.toggle('evhidden', vis===0);
+  });
+}
+window.filterReports=filterReports;
 (function(){ var tt=document.getElementById('trafficToggle'); if(tt&&tt.checked&&TOMTOM_KEY) toggleTraffic(tt); })();
 /* ⭐ Priljubljene kamere — shranjeno v napravi (localStorage) */
 var FAVKEY='promet_favs';
