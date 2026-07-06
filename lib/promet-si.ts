@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-06T12:59:42.287Z";
+export const PROMET_SI_UPDATED = "2026-07-06T13:24:07.342Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;861643;6aef0a08-b396-4ec8-84fa-babfe47d1f1d",
@@ -147,17 +147,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-06T07:18:44.587Z"
  },
  {
-  "id": "DARS;861593;bbbae0c7-c6ad-4e4f-b0fe-e2dfabdb062f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-212, Bloška Polica - Sodražica, pri Podklancu, izmenično enosmerni promet, pomična zapora, obrezovanje rastlinja, do 15:00.",
-  "loc": "R1-212, Bloška Polica - Sodražica",
-  "lat": 45.76763,
-  "lng": 14.59393,
-  "start": "2026-07-06T07:11:03.98Z",
-  "end": "2026-07-06T13:00:00Z",
-  "ts": "2026-07-06T07:11:55.613Z"
- },
- {
   "id": "DARS;861591;e616ebcb-5870-41fe-8727-a829a93a1777",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-106, Žlebič - Kočevje, pri Slovenski vasi, izmenično enosmerni promet, pomična zapora, popravilo bankin.",
@@ -167,17 +156,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-06T07:07:48.643Z",
   "end": "2026-07-06T21:59:00Z",
   "ts": "2026-07-06T07:10:44.217Z"
- },
- {
-  "id": "DARS;861584;078f5bb2-44dc-4e5d-b22b-2cf4f56a12c1",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-442, Martjanci - Dobrovnik, izmenično enosmerni promet, pomična zapora, košnja, do 15:00.",
-  "loc": "R2-442, Martjanci - Dobrovnik",
-  "lat": 46.68442,
-  "lng": 16.18203,
-  "start": "2026-07-06T10:00:00Z",
-  "end": "2026-07-06T13:00:00Z",
-  "ts": "2026-07-06T06:14:05.003Z"
  },
  {
   "id": "DARS;860222;9342f25d-6c7a-47da-b364-9b475716569d",
@@ -202,28 +180,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-06T05:59:22.86Z"
  },
  {
-  "id": "DARS;861566;823a76fc-0bd8-4058-9851-1bdc5d55be49",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Most na Soči - Tolmin, izmenično enosmerni promet, kratkotrajne popolne zapore (do 30 minut), obrezovanje rastlinja, do 15:00.",
-  "loc": "G2-102, Peršeti - Most na Soči",
-  "lat": 46.15529,
-  "lng": 13.74721,
-  "start": "2026-07-06T05:22:59.853Z",
-  "end": "2026-07-06T13:00:00Z",
-  "ts": "2026-07-06T05:24:50.883Z"
- },
- {
-  "id": "DARS;861554;2d6357f0-a311-44b1-a6e8-a858dde7eae8",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-610, Dolenja Trebuša - Oblakov vrh, pri Oblakovem vrhu, izmenično enosmerni promet, pomična zapora, košnja, do 15:00.",
-  "loc": "R3-610, Dolenja Trebuša - Spodnja Idrija",
-  "lat": 46.071,
-  "lng": 13.87451,
-  "start": "2026-07-06T05:02:56.207Z",
-  "end": "2026-07-06T13:00:00Z",
-  "ts": "2026-07-06T05:04:42.767Z"
- },
- {
   "id": "DARS;861552;571c5a47-6156-4dd1-baf0-31fd6be35c62",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-207, Godovič - Črni vrh - Col - Ajdovščina, Godovič - Črni Vrh, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
@@ -233,39 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-06T04:59:10.267Z",
   "end": "2026-07-06T14:00:00Z",
   "ts": "2026-07-06T05:02:02.073Z"
- },
- {
-  "id": "DARS;861548;b5acae7f-0853-41bf-b89a-6172bcb80edb",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-924, Podlom - Kranjski Rak - Luče, pri Podvolovljeku, izmenično enosmerni promet, pomična zapora, košnja, do 15:00.",
-  "loc": "RT-924, Podlom - Kranjski Rak - Luče",
-  "lat": 46.3041,
-  "lng": 14.70267,
-  "start": "2026-07-06T04:57:37.777Z",
-  "end": "2026-07-06T13:00:00Z",
-  "ts": "2026-07-06T04:58:41.4Z"
- },
- {
-  "id": "DARS;861543;6e5aa716-947b-4e90-90e7-3ca6a0e40d32",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-225, Soteska - Šentrupert, v Parižljah, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 15:00.",
-  "loc": "R1-225, Soteska - Šentrupert",
-  "lat": 46.27963,
-  "lng": 15.0565,
-  "start": "2026-07-06T05:00:00Z",
-  "end": "2026-07-06T13:00:00Z",
-  "ts": "2026-07-06T04:51:54.143Z"
- },
- {
-  "id": "DARS;861538;28a8b694-ccf2-4cc0-80b1-4630d283b961",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-225, Črnivec - Radmirje, pri Podlomu, izmenično enosmerni promet, pomična zapora, popravilo vozišča, do 15:00.",
-  "loc": "R1-225, Črnivec - Radmirje",
-  "lat": 46.26496,
-  "lng": 14.70936,
-  "start": "2026-07-06T05:00:00Z",
-  "end": "2026-07-06T13:00:00Z",
-  "ts": "2026-07-06T04:45:03.157Z"
  },
  {
   "id": "DARS;846998;b6ee78b0-0e60-4362-846e-610f8c9fbd65",

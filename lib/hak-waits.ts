@@ -9,13 +9,13 @@ export const HAK_WAITS: HakWait[] = [
   "izlazMin": null,
   "ulazTxt": "1 h",
   "izlazTxt": "-",
-  "truckUlazMin": 90,
+  "truckUlazMin": null,
   "truckIzlazMin": null,
-  "truckUlazTxt": "1 h 30 min.",
+  "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ts": "6.7.2026. 13:05:21",
+  "ts": "06.07.2026 13:05:21",
   "tsISO": "2026-07-06T13:05:21+02:00"
  },
  {
@@ -35,6 +35,22 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": ""
  },
  {
+  "id": "ba-gradina",
+  "name": "Jasenovac (Donja Gradina)",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": 60,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "1 h",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "06.07.2026 15:07:58",
+  "tsISO": "2026-07-06T15:07:58+02:00"
+ },
+ {
   "id": "",
   "name": "Karasovići (Sutorina)",
   "ulazMin": null,
@@ -47,22 +63,6 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ts": "Nema podataka",
-  "tsISO": ""
- },
- {
-  "id": "hr-bajakovo",
-  "name": "Bajakovo (Batrovci)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": 240,
-  "truckIzlazMin": 60,
-  "truckUlazTxt": "4 h",
-  "truckIzlazTxt": "1 h",
-  "level": "unknown",
-  "waitMinutes": null,
   "ts": "Nema podataka",
   "tsISO": ""
  }
