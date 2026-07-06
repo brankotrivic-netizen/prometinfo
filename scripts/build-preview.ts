@@ -573,6 +573,7 @@ h1{font-size:24px}
 .tab:hover{color:var(--text)}
 .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 #view-map{position:relative}
+.mapwrap{position:relative}
 .zoomhint{display:none;position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:500;background:rgba(22,32,43,.86);color:#fff;padding:6px 13px;border-radius:999px;font-size:12px;font-weight:600;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .view>.country-group:first-child{margin-top:8px}
 /* dvostolpčna postavitev: levo ploščice (navpično), desno večji zemljevid */
@@ -696,8 +697,8 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
   <button type="button" id="routeClear" onclick="clearRoute()" style="display:none">✕ počisti</button>
   <span id="routeInfo" class="routeinfo"></span>
 </div>
-<div id="map"></div>
-<div id="zoomHint" class="zoomhint">🔍 Približaj zemljevid za prikaz kamer</div>
+<div class="mapwrap"><div id="map"></div>
+<div id="zoomHint" class="zoomhint">🔍 Približaj zemljevid za prikaz kamer</div></div>
 <div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:var(--muted);font-size:11px">🚦 gostota prometa trenutno ni na voljo</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label><label style="cursor:pointer"><input type="checkbox" id="fuelStToggle" onchange="toggleFuelSt(this)"> ⛽ črpalke</label><span id="fuelStatus" style="display:none;font-size:11px;flex-basis:100%"></span></div>
 </div>
 <div class="view" id="view-borders" style="display:none">
