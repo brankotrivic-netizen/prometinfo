@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "6.7.2026. 22:47",
-  "text": "Na većini cesta promet teče bez smetnji i posebnih ograničenja. Kolnici su mjestimice mokri i skliski. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prekinut je promet na autocesti A6 između čvorova Vrbovsko i Bosiljevo u smjeru Zagreba, zbog požara na vozilu, kolona je 3 km. Promet se odvija obilaznim pravcem čvor Vrbovsko (A6) - DC42 - DC3 - DC204 - čvor Bosiljevo 1 prekinut je promet na autocesti A2 Zagreb-Macelj na dionici Krapina-Đurmanec u smjeru Maclja, vozila se na čvoru Krapina preusmjeravaju na obilazak državnom cestom DC1 večeras od 23:00 do 05:00 ujutro u oba smjera zatvara se…"
+  "updated": "7.7.2026. 00:11",
+  "text": "Na većini cesta promet teče bez smetnji i posebnih ograničenja. Kolnici su mjestimice mokri i skliski. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prekinut je promet na autocesti A6 između čvorova Vrbovsko i Bosiljevo u smjeru Zagreba, zbog požara na vozilu . Promet se odvija obilaznim pravcem čvor Vrbovsko (A6) - DC42 - DC3 - DC204 - čvor Bosiljevo 1 do 05:00 ujutro u oba smjera zatvara se dionica autoceste A1 između čvorova Gospić i Sveti Rok (uključujući čvor Gornja Ploča), a po završetku tih radova bit će zatvorena dionica između čvorova Sveti Rok i Rovanjska u oba smjera.Radovi na …"
  },
  {
   "title": "Granični prijelazi",

@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-06T21:02:17.817Z";
+export const PROMET_SI_UPDATED = "2026-07-06T22:39:18.900Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;861747;48acbea4-f879-42e7-a300-75fb026c71ac",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-06T18:16:58.81Z",
   "end": "2026-07-08T03:00:00Z",
   "ts": "2026-07-06T18:17:22.643Z"
- },
- {
-  "id": "DARS;861745;e87a074c-94cd-4772-8c2c-f6b76f1864dc",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, predor Jasovnik - priključek Šentrupert v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.19746,
-  "lng": 14.90212,
-  "start": "2026-07-06T17:39:37.977Z",
-  "end": "2026-07-07T01:00:43.9Z",
-  "ts": "2026-07-06T17:40:01.64Z"
  },
  {
   "id": "DARS;861736;dde9a26a-60cc-4e76-b55c-64cb5a254305",
@@ -189,17 +178,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-06T07:18:08.02Z",
   "end": "2026-09-19T21:59:00Z",
   "ts": "2026-07-06T07:18:44.587Z"
- },
- {
-  "id": "DARS;861591;e616ebcb-5870-41fe-8727-a829a93a1777",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-106, Žlebič - Kočevje, pri Slovenski vasi, izmenično enosmerni promet, pomična zapora, popravilo bankin.",
-  "loc": "G2-106, Žlebič - Kočevje",
-  "lat": 45.67157,
-  "lng": 14.8348,
-  "start": "2026-07-06T07:07:48.643Z",
-  "end": "2026-07-06T21:59:00Z",
-  "ts": "2026-07-06T07:10:44.217Z"
  },
  {
   "id": "DARS;860222;9342f25d-6c7a-47da-b364-9b475716569d",
