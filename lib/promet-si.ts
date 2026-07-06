@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-06T12:04:32.743Z";
+export const PROMET_SI_UPDATED = "2026-07-06T12:59:42.287Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;861667;cb26eadd-ce95-43c8-90ae-2cc7fa0bd2d4",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, izvoz 14 Celje center - predor Pletovarje v smeri Maribora, dela, pomična zapora voznega pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25364,
-  "lng": 15.2652,
-  "start": "2026-07-06T11:22:16.28Z",
-  "end": "2026-07-06T16:00:00Z",
-  "ts": "2026-07-06T11:24:28.68Z"
- },
  {
   "id": "DARS;861643;6aef0a08-b396-4ec8-84fa-babfe47d1f1d",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -79,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-06T07:44:43.26Z",
   "end": "2026-07-06T15:00:00Z",
   "ts": "2026-07-06T07:46:45.21Z"
- },
- {
-  "id": "DARS;861609;2d58cdb6-0a03-4844-987c-0e6f88e9dac1",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-654, Štalcerji - Kočevska Reka, pri Novih Lazih, izmenično enosmerni promet, pomična zapora, krpanje udarnih jam, do 14:30.",
-  "loc": "R3-654, Štalcerji - Kočevska Reka",
-  "lat": 45.572,
-  "lng": 14.85312,
-  "start": "2026-07-06T07:40:47.393Z",
-  "end": "2026-07-06T12:30:00Z",
-  "ts": "2026-07-06T07:43:15.31Z"
  },
  {
   "id": "DARS;861608;b8e8cca4-c0a7-41e7-8a0b-dd6a7c647fdd",
