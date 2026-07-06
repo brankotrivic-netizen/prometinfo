@@ -553,6 +553,15 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .cardcams .camshot span{padding:3px 5px;font-size:9px;font-weight:600}
 .cardcams .favbtn{width:22px;height:22px;font-size:13px;line-height:22px;top:3px;right:3px}
 .favhint{margin:4px 0 0}
+.cardcams{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.camcell{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:5px;display:flex;flex-direction:column;gap:3px}
+.camcell .camshot{border:none;box-shadow:none;border-radius:7px}
+.camcell .camshot img{height:78px}
+.castat{font-size:10.5px;font-weight:700;line-height:1.3;padding:0 2px}
+.camai{font-size:10.5px;line-height:1.4;padding:0 2px;color:var(--text)}
+.camai.meta{color:var(--muted);font-weight:400}
+.camcellbtns{font-size:11px;padding:1px 2px 2px}
+.camsum{font-size:12px;background:var(--panel-2);border-radius:8px;padding:7px 9px;margin:5px 0;line-height:1.5}
 .campin{font-size:12px;width:22px;height:22px;line-height:19px;text-align:center;background:#fff;border:1.5px solid #3b82f6;border-radius:50%;box-shadow:0 1px 3px rgba(16,32,43,.4)}
 .carina{position:relative;width:38px;height:38px}
 .carinadiv .csign{transition:transform .1s}
@@ -778,6 +787,12 @@ ${fuelHtml}
       <label>Ena skupina/stran na vrstico (lahko »Ime | povezava«)<textarea id="setFbGroups" rows="4" placeholder="Gužve na granicama | https://www.facebook.com/groups/...&#10;https://www.facebook.com/..."></textarea></label>
       <button class="cam" onclick="saveFbGroups()">Shrani FB skupine</button>
       <p class="meta">Pri vsakem prehodu v »Moja pot« dobiš povezave do teh skupin. FB skupine so pogosto najbolj ažurirane.</p>
+    </div>
+    <h3 class="rsub">🤖 AI analiza kamer (neobvezno)</h3>
+    <div class="setblock">
+      <label>Naslov AI/screenshot strežnika (Cloudflare Worker …)<input id="setAiEndpoint" type="url" placeholder="https://tvoj-worker.workers.dev/analyze"></label>
+      <button class="cam" onclick="saveAiEndpoint()">Shrani AI endpoint</button>
+      <p class="meta">Brez strežnika brskalnik pogosto ne more prebrati slik kamer (CORS) — takrat aplikacija <b>pošteno</b> označi kamero kot 🔒 blokirano ali 🔗 samo link in NE trdi, da jo je pregledala. Za pravo AI analizo namesti Cloudflare Worker iz <code>server/camera-worker.js</code> in prilepi njegov naslov sem.</p>
     </div>
     <h3 class="rsub">📥 Moji socialni signali (velja 3 h)</h3>
     <div id="setSocial" class="meta"></div>
@@ -1270,7 +1285,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   var CCKEY='promet_camcheck';
   function ccGet(){ try{ return JSON.parse(localStorage.getItem(CCKEY)||'[]'); }catch(e){ return []; } }
   function ccLast(id){ var a=ccGet().filter(function(x){ return x.borderId===id && (Date.now()-Date.parse(x.checkedAt))<2*3600*1000; }); return a.length?a[a.length-1]:null; }
-  var CCLBL={passenger_queue:'🚗 avti stojijo',truck_only_queue:'🚚 samo kamioni',clear:'✅ tekoče',unclear:'❓ ni jasno'};
+  var CCLBL={passenger_queue:'🚗 avti stojijo',truck_only_queue:'🚚 samo kamioni',clear:'✅ tekoče',unclear:'❓ ni jasno',wrong_direction:'↔ napačna smer'};
   window.setCamStatus=function(id,status){
     var p=CBYID[id]; var a=ccGet();
     a.push({borderId:id,borderName:p?p.name:id,direction:REV?'nazaj':'tja',cameraStatus:status,note:'',checkedAt:new Date().toISOString(),source:'manual_camera_check'});
@@ -1291,9 +1306,90 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<button class="ccb" style="background:#ea580c" onclick="setCamStatus(\\''+id+'\\',\\'truck_only_queue\\')">🚚 Samo kamioni stojijo</button>'
       +'<button class="ccb" style="background:#16a34a" onclick="setCamStatus(\\''+id+'\\',\\'clear\\')">✅ Tekoče</button>'
       +'<button class="ccb" style="background:#64748b" onclick="setCamStatus(\\''+id+'\\',\\'unclear\\')">❓ Ni jasno</button>'
+      +'<button class="ccb" style="background:#7c3aed" onclick="setCamStatus(\\''+id+'\\',\\'wrong_direction\\')">↔ Napačna smer</button>'
       +'</div>'; }
     openCam(p.images[0].url, p.name);
   };
+  /* ===== KAMERA AI STATUS (POŠTENO: brez dejanske slike NI analize) ===== */
+  var CAKEY='promet_camanalysis';
+  function caGet(){ try{ return JSON.parse(localStorage.getItem(CAKEY)||'{}'); }catch(e){ return {}; } }
+  function caSave(o){ try{ localStorage.setItem(CAKEY,JSON.stringify(o)); }catch(e){} }
+  function caRec(url){ return caGet()[url]||null; }
+  function caStatus(url){ var r=caRec(url); return r?r.status:'link_only'; }
+  function aiEndpoint(){ try{ return localStorage.getItem('promet_ai_endpoint')||''; }catch(e){ return ''; } }
+  var CA_LBL={
+    analyzed:{e:'✅',t:'AI analizirano',c:'#16a34a'},
+    unreliable:{e:'⚠️',t:'Ni zanesljivo',c:'#ca8a04'},
+    blocked:{e:'🔒',t:'Blokirana / ni dostopa',c:'#b91c1c'},
+    snapshot:{e:'🖼️',t:'Slika pridobljena (brez AI)',c:'#0891b2'},
+    link_only:{e:'🔗',t:'Samo link — AI je ni analiziral',c:'#64748b'},
+    checking:{e:'⏳',t:'preverjam…',c:'#64748b'}
+  };
+  function caBadge(url){ return CA_LBL[caStatus(url)]||CA_LBL.link_only; }
+  function camKind(u){ u=(u||'').toLowerCase().split('?')[0]; if(/\\.(jpg|jpeg|png|gif|webp|bmp)$/.test(u))return 'image'; if(/\\.(m3u8|mp4|ts|webm)$/.test(u))return 'video'; return 'page'; }
+  function aiQ(v){ return v==='clear'?'✅ tekoče':v==='slow'?'🟡 upočasnjeno':v==='queue'?'🔴 kolona':'❓'; }
+  function agoShort(iso){ var m=Math.round((Date.now()-Date.parse(iso))/60000); return m<1?'pravkar':(m<60?m+' min':Math.round(m/60)+' h'); }
+  function safeTxt(s){ return String(s||'').replace(/[<>]/g,'').slice(0,110); }
+  // pridobi frame SAMO iz direktne slike; CORS pogosto blokira branje pikslov -> pošteno "blocked"
+  function getCameraSnapshot(url){
+    return new Promise(function(resolve){
+      if(camKind(url)!=='image'){ resolve({ok:false,reason:'link_only'}); return; }
+      var img=new Image(); img.crossOrigin='anonymous'; var done=false;
+      var to=setTimeout(function(){ if(done)return; done=true; resolve({ok:false,reason:'blocked',err:'časovna omejitev'}); },8000);
+      img.onload=function(){ if(done)return; done=true; clearTimeout(to);
+        try{ var w=Math.min(320,img.naturalWidth||320), h=Math.round((img.naturalHeight||180)*w/(img.naturalWidth||320));
+          var c=document.createElement('canvas'); c.width=w; c.height=h; c.getContext('2d').drawImage(img,0,0,w,h);
+          resolve({ok:true,thumb:c.toDataURL('image/jpeg',0.7)}); }
+        catch(e){ resolve({ok:false,reason:'blocked',err:'CORS — branja slike ni dovoljeno'}); } };
+      img.onerror=function(){ if(done)return; done=true; clearTimeout(to); resolve({ok:false,reason:'blocked',err:'CORS — slike ni mogoče prebrati'}); };
+      img.src=url+(url.indexOf('?')>=0?'&':'?')+'_ca='+Date.now();
+    });
+  }
+  function finishCA(url,rec){ var s=caGet(); rec.url=url; rec.at=new Date().toISOString(); s[url]=Object.assign(s[url]||{},rec); caSave(s); toast('Kamera: '+((CA_LBL[rec.status]||CA_LBL.link_only).t)); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); }
+  window.analyzeCamera=function(borderId, idx){
+    var p=CBYID[borderId]; if(!p||!p.images||!p.images[idx]) return;
+    var im=p.images[idx], url=im.url, name=im.name||'';
+    var s=caGet(); s[url]=Object.assign(s[url]||{},{status:'checking',url:url,name:name,borderId:borderId,at:new Date().toISOString()}); caSave(s);
+    if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE);
+    if(camKind(url)!=='image'){ finishCA(url,{status:'link_only',screenshotAvailable:false,errorReason:'Stran/iframe/video — potreben strežniški screenshot (glej Nastavitve).',name:name,borderId:borderId}); return; }
+    getCameraSnapshot(url).then(function(snap){
+      if(!snap.ok){ finishCA(url,{status:(snap.reason||'blocked'),screenshotAvailable:false,errorReason:snap.err||'ni dostopa',name:name,borderId:borderId}); return; }
+      var ep=aiEndpoint();
+      if(!ep){ finishCA(url,{status:'snapshot',screenshotAvailable:true,thumbnailUrl:snap.thumb,errorReason:'Slika pridobljena, a AI strežnik ni nastavljen (Nastavitve → AI endpoint).',name:name,borderId:borderId}); return; }
+      fetch(ep,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({image:snap.thumb,cameraName:name,borderId:borderId,direction:REV?'nazaj':'tja',route:CURRENT_ROUTE?(rFrom(CURRENT_ROUTE)+'→'+rTo(CURRENT_ROUTE)):''}),signal:AbortSignal.timeout(20000)})
+        .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+        .then(function(ai){ var st=(ai&&ai.cameraVisible===false)?'unreliable':((ai&&ai.confidence!=null&&ai.confidence<40)?'unreliable':'analyzed'); finishCA(url,{status:st,screenshotAvailable:true,thumbnailUrl:snap.thumb,aiResult:ai,errorReason:'',name:name,borderId:borderId}); })
+        .catch(function(e){ finishCA(url,{status:'snapshot',screenshotAvailable:true,thumbnailUrl:snap.thumb,errorReason:'AI strežnik ni odgovoril: '+safeTxt(e.message),name:name,borderId:borderId}); });
+    });
+  };
+  window.analyzeAllCams=function(borderId){ var p=CBYID[borderId]; if(!p||!p.images)return; p.images.forEach(function(im,i){ setTimeout(function(){ analyzeCamera(borderId,i); }, i*400); }); };
+  // ena celica kamere v galeriji (slika + status + AI + gumbi)
+  function camCell(im, borderId, idx){
+    var url=im.url, b=caBadge(url), rec=caRec(url), nm=safeTxt(im.name);
+    var thumb=(rec&&rec.thumbnailUrl)?rec.thumbnailUrl:url;
+    var statusLine='<div class="castat" style="color:'+b.c+'">'+b.e+' '+b.t+(rec&&rec.at&&(rec.status==='analyzed'||rec.status==='snapshot')?' <span class="meta">('+agoShort(rec.at)+')</span>':'')+'</div>';
+    var extra='';
+    if(rec&&rec.status==='analyzed'&&rec.aiResult){ var a=rec.aiResult;
+      extra='<div class="camai">🚗 '+aiQ(a.passengerQueue)+' · 🚚 '+aiQ(a.truckQueue)+(a.confidence!=null?' · zanesljivost '+a.confidence+'%':'')+(a.directionMatch===false?' · <b>↔ napačna smer</b>':'')+(a.reason?'<br><span class="meta">'+safeTxt(a.reason)+'</span>':'')+'</div>'; }
+    else if(rec&&rec.errorReason){ extra='<div class="camai meta">'+safeTxt(rec.errorReason)+'</div>'; }
+    return '<div class="camcell">'
+      +'<a class="camshot" href="'+url+'" data-name="'+nm+'"><img class="snap" data-base="'+url+'" src="'+thumb+'" loading="lazy" referrerpolicy="no-referrer" alt="'+nm+'"><span>'+nm+'</span></a>'
+      +statusLine+extra
+      +'<div class="camcellbtns"><button class="linklike" onclick="analyzeCamera(\\''+borderId+'\\','+idx+')">🔍 Analiziraj</button> · <a href="'+url+'" target="_blank" rel="noopener noreferrer">Odpri ↗</a></div>'
+      +'</div>';
+  }
+  // povzetek kamer za prehod (analizirano/blokirano/samo link)
+  function camSummary(p){
+    if(!p.images||!p.images.length) return '';
+    var a=0,bl=0,ln=0,lastAt=null, n=p.images.length;
+    p.images.forEach(function(im){ var st=caStatus(im.url), r=caRec(im.url);
+      if(st==='analyzed'){ a++; if(r&&r.at&&(!lastAt||r.at>lastAt))lastAt=r.at; }
+      else if(st==='blocked'){ bl++; }
+      else { ln++; } });
+    var line='📷 Kamere za '+p.name+': <b style="color:#16a34a">✅ '+a+' analizirane</b> · <b style="color:#b91c1c">🔒 '+bl+' blokirane</b> · <b style="color:#64748b">🔗 '+ln+' samo linki</b>';
+    var concl = a>0 ? ('AI je analiziral '+a+' od '+n+' kamer'+(a<n?' — rezultat ni popolnoma zanesljiv.':'.')+(lastAt?' Zadnja uspešna: '+agoShort(lastAt)+' nazaj.':'')) : ('Nobena kamera ni bila AI-analizirana — to so zaenkrat samo povezave. Klikni »Analiziraj« ali preveri sam.');
+    return '<div class="camsum">'+line+'<br><span class="meta">'+concl+'</span> · <button class="linklike" onclick="analyzeAllCams(\\''+p.id+'\\')">🔍 Analiziraj vse</button></div>';
+  }
   /* ===== TOMTOM QUEUE DETECTOR (Flow Segment Data; deluje, ko je domena na kljucu) ===== */
   // fwd = azimut pristopa, ko potujes OD DOMA proti Balkanu; back = povratek
   var TTQ={'ba-gradiska':{fwd:0,back:180},'ba-gradina':{fwd:315,back:135},'ba-brod':{fwd:0,back:180},'ba-svilaj':{fwd:0,back:180},'ba-orasje':{fwd:0,back:180},'ba-velika-kladusa':{fwd:0,back:180},'si-obrezje':{fwd:290,back:110},'si-gruskovje':{fwd:0,back:180},'hr-bajakovo':{fwd:270,back:90},'rs-horgos':{fwd:180,back:0},'si-karavanke':{fwd:170,back:350}};
@@ -1357,8 +1453,16 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       if(cc.cameraStatus==='passenger_queue'){ px=Math.max(px==null?0:px,61); notes.unshift('📷 Kamera potrjuje kolono osebnih vozil ('+ago+' min nazaj).'); }
       else if(cc.cameraStatus==='truck_only_queue'){ tr=Math.max(tr==null?0:tr,61); likelyTruck=true; notes.unshift('📷 Kamera kaže predvsem tovorno kolono ('+ago+' min) — za osebna vozila gužva ni potrjena.'); }
       else if(cc.cameraStatus==='clear'){ if(px!=null&&px>30)px=30; notes.unshift('📷 Kamera ne potrjuje večje kolone ('+ago+' min nazaj).'); likelyTruck=likelyTruck||ttQueue(p.id); }
+      else if(cc.cameraStatus==='wrong_direction'){ notes.unshift('📷 Kamera kaže napačno smer ('+ago+' min) — njene slike ne upoštevam za odločitev.'); }
       else notes.unshift('📷 Kamera ni dovolj jasna — preveri še uradni vir ali socialni signal.');
     }
+    // AI-analizirane kamere (SAMO kjer je bila slika dejansko pridobljena in analizirana)
+    if(p.images){ p.images.forEach(function(im){ var r=caRec(im.url); if(r&&r.status==='analyzed'&&r.aiResult&&r.aiResult.cameraVisible!==false){ var a=r.aiResult; var conf=a.confidence!=null?a.confidence:0;
+      if(a.directionMatch===false){ notes.push('📷 AI: kamera "'+safeTxt(im.name)+'" kaže napačno smer — ne upoštevam.'); return; }
+      if(a.passengerQueue==='queue'&&conf>=55){ notes.push('📷 AI ('+conf+'%): možna kolona osebnih vozil na kameri "'+safeTxt(im.name)+'".'); if(px==null||px<40)px=Math.max(px||0,45); }
+      else if(a.passengerQueue==='clear'&&conf>=55){ notes.push('📷 AI ('+conf+'%): osebni promet tekoč na kameri "'+safeTxt(im.name)+'".'); }
+      if(a.truckQueue==='queue'&&conf>=55){ notes.push('📷 AI ('+conf+'%): kolona tovornih na kameri "'+safeTxt(im.name)+'" — na osebna vozila ne vpliva bistveno.'); if(tr==null||tr<61)tr=61; likelyTruck=true; }
+    } }); }
     // 6./7. socialni signali (loceno)
     if(s.pax>0){ notes.push('🔎 '+s.pax+' svežih socialnih signalov omenja kolono OSEBNIH vozil — preveri kamero.'); if(px!=null&&px<=15)px=25; }
     if(s.truck>0){ notes.push('🔎 '+s.truck+' svežih socialnih signalov omenja KAMIONE — na osebna vozila verjetno ne vpliva bistveno.'); if(tr!=null)tr=Math.max(tr,61); else tr=61; }
@@ -1391,7 +1495,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var icon=role==='recommended'?'✅':(role==='alternative'?'🟡':'🔴');
     var roleLbl=role==='recommended'?'Priporočeno':(role==='alternative'?'Alternativa':'Izogni se');
     var cam=(p.images&&p.images.length)?'<button class="cam" onclick="toggleCardCams(\\''+id+'\\')">📷 Kamere ('+p.images.length+')</button>':'';
-    var camGrid=(p.images&&p.images.length)?'<div id="ccams-'+id+'" class="camgrid cardcams" style="display:none;margin-top:9px">'+p.images.map(function(im){ return '<a class="camshot" href="'+im.url+'" data-name="'+(im.name||'')+'"><img class="snap" data-base="'+im.url+'" src="'+im.url+'" loading="lazy" referrerpolicy="no-referrer" alt="'+(im.name||'')+'"><span>'+(im.name||'')+'</span></a>'; }).join('')+'</div>':'';
+    var camGrid=(p.images&&p.images.length)?'<div id="ccams-'+id+'" class="camgrid cardcams" style="display:none;margin-top:9px">'+p.images.map(function(im,ix){ return camCell(im,id,ix); }).join('')+'</div>':'';
     var srcs=sourcesFor(p);
     var srcLine=srcs.length?srcs.map(function(s){return s.label+(s.ageMin!=null?' ('+s.ageMin+' min)':'');}).join(' · '):'ni avtomatskih virov';
     var soc=socFresh(p.id).length, q=socQ(p)[0];
@@ -1409,7 +1513,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var camBlock='<div class="camver">📷 Kamera preverjanje: '
       +(cc?('<b>'+(CCLBL[cc.cameraStatus]||cc.cameraStatus)+'</b> <span class="meta">('+Math.round((Date.now()-Date.parse(cc.checkedAt))/60000)+' min nazaj)</span>'):'<span class="meta">še ni preverjeno</span>')
       +(p.images&&p.images.length?' · <button class="linklike" onclick="openCamCheck(\\''+id+'\\')">Odpri kamero in potrdi</button>':'')
-      +'</div>';
+      +'</div>'
+      +camSummary(p);
     var notesHtml=cn.notes.length?('<div class="rnote">🤖 '+cn.notes.join('<br>')+'</div>'):'';
     var gradBanner='';
     if(id==='ba-gradiska'&&GRADCRIT.oldClosed){
@@ -1596,6 +1701,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
         +'<button class="ccb" style="background:#dc2626" onclick="setCamStatus(\\''+recId+'\\',\\'passenger_queue\\')">🚗 Avti stojijo</button>'
         +'<button class="ccb" style="background:#ea580c" onclick="setCamStatus(\\''+recId+'\\',\\'truck_only_queue\\')">🚚 Samo kamioni stojijo</button>'
         +'<button class="ccb" style="background:#16a34a" onclick="setCamStatus(\\''+recId+'\\',\\'clear\\')">✅ Tekoče</button>'
+        +'<button class="ccb" style="background:#64748b" onclick="setCamStatus(\\''+recId+'\\',\\'unclear\\')">❓ Ni jasno</button>'
+        +'<button class="ccb" style="background:#7c3aed" onclick="setCamStatus(\\''+recId+'\\',\\'wrong_direction\\')">↔ Napačna smer</button>'
         +'</div>';
       h+='</div>';
     } else { h+='<div class="dgo"><div class="dname">Brez mejne kontrole (Schengen)</div><div class="dwait">vožnja prosta — preveri gostoto</div></div>'; }
@@ -1688,7 +1795,9 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   window.renderSocial=function(){ var box=document.getElementById('setSocial'); if(!box)return; var a=socAll(); if(!a.length){ box.innerHTML='Ni socialnih signalov.'; return; }
     box.innerHTML=a.slice().reverse().map(function(s){ var i=a.indexOf(s); var fresh=(Date.now()-Date.parse(s.t))<3*3600*1000; return '<div class="alrow"><span>'+(fresh?'🟢':'⚫')+' <b>'+(_pname[s.id]||s.id)+'</b>: '+((s.text||'').replace(/</g,'&lt;').slice(0,60))+' <span style="color:#94a3b8">· '+agoTxt(s.t)+(s.source?' · '+s.source:'')+'</span></span><button class="cam" onclick="delSocial('+i+')">🗑</button></div>'; }).join(''); };
   window.delSocial=function(i){ var a=socAll(); if(i>=0&&i<a.length){ a.splice(i,1); localStorage.setItem('promet_social',JSON.stringify(a)); renderSocial(); flash('Signal izbrisan.'); } };
-  loadVeh(); loadFb(); renderAlarms(); renderCounts(); renderSocial();
+  function loadAi(){ var el=document.getElementById('setAiEndpoint'); if(el){ try{ el.value=localStorage.getItem('promet_ai_endpoint')||''; }catch(e){} } }
+  window.saveAiEndpoint=function(){ var v=(document.getElementById('setAiEndpoint').value||'').trim(); if(v&&!/^https?:\\/\\//.test(v)){ flash('Naslov mora biti veljaven URL (https://…).'); return; } try{ if(v)localStorage.setItem('promet_ai_endpoint',v); else localStorage.removeItem('promet_ai_endpoint'); }catch(e){} flash(v?'AI endpoint shranjen.':'AI endpoint odstranjen.'); };
+  loadVeh(); loadFb(); loadAi(); renderAlarms(); renderCounts(); renderSocial();
   var dbg=localStorage.getItem('promet_debug')==='1', dc=document.getElementById('setDebug'); if(dc){ dc.checked=dbg; if(dbg){ var dp=document.getElementById('debugPanel'); dp.style.display='block'; dp.innerHTML=debugInfo(); } }
 })();
 /* ===== PWA: namestitev na telefon + offline (service worker) ===== */
