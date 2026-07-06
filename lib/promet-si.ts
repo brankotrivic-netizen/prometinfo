@@ -1,8 +1,74 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-06T16:32:01.657Z";
+export const PROMET_SI_UPDATED = "2026-07-06T18:39:14.758Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;861747;48acbea4-f879-42e7-a300-75fb026c71ac",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Ločica - priključek Domžale v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.23984,
+  "lng": 14.95288,
+  "start": "2026-07-06T18:16:58.81Z",
+  "end": "2026-07-08T03:00:00Z",
+  "ts": "2026-07-06T18:17:22.643Z"
+ },
+ {
+  "id": "DARS;861746;1051fc75-5d90-477c-9c3a-b2fe70eedad5",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Jesenice zahod, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.44664,
+  "lng": 14.01069,
+  "start": "2026-07-06T18:13:29.307Z",
+  "end": "2026-07-07T00:00:00Z",
+  "ts": "2026-07-06T18:13:34.683Z"
+ },
+ {
+  "id": "DARS;861745;e87a074c-94cd-4772-8c2c-f6b76f1864dc",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Jasovnik - priključek Šentrupert v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.19746,
+  "lng": 14.90212,
+  "start": "2026-07-06T17:39:37.977Z",
+  "end": "2026-07-07T01:00:43.9Z",
+  "ts": "2026-07-06T17:40:01.64Z"
+ },
+ {
+  "id": "DARS;861744;525b70cf-ee87-45f7-b0f4-483b82300f42",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, pred priključkom Dragomer - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.01755,
+  "lng": 14.39016,
+  "start": "2026-07-06T17:39:06.243Z",
+  "end": "2026-07-06T23:00:00Z",
+  "ts": "2026-07-06T17:39:29.277Z"
+ },
+ {
+  "id": "DARS;861736;dde9a26a-60cc-4e76-b55c-64cb5a254305",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Koper - Škofije, priključek Koper center, Slavček - uvoz Bertoki v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "G1-11, Koper - Škofije",
+  "lat": 45.53746,
+  "lng": 13.73957,
+  "start": "2026-07-06T17:05:25.44Z",
+  "end": "2026-07-07T03:00:40.64Z",
+  "ts": "2026-07-06T17:05:27.453Z"
+ },
+ {
+  "id": "DARS;861735;1f1793c6-b26c-4827-abdc-221973d5253c",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - vzhodna obvoznica, priključek Maribor center - izvoz Zrkovci v smeri Šentilja, Avstrije, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.52729,
+  "lng": 15.69743,
+  "start": "2026-07-06T17:03:11.737Z",
+  "end": "2026-07-07T02:00:29.85Z",
+  "ts": "2026-07-06T17:03:41.67Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",

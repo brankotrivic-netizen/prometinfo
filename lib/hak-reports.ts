@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "6.7.2026. 18:16",
-  "text": "Zastoji su povremeno na gradskim prometnicama i obilaznicama te u zonama radova. Pojačan je promet na cestama u smjeru mora, osobito na autocestama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbpg prometne nesreće za sav je promet zatvorena Magistratska ulica u Krapini povremeno su zastoji zbog pojačanog prometa na zagrebačkoj (A3) i riječkoj (A7) obilaznici, državnoj cesti Sinj-Dugopolje (DC1) te na više dionica Jadranske magistrale (DC8). večeras od 23:00 do 05:00 ujutro u oba smjera zatvara se dionica autoceste A1 između čvorova Gospić i Sveti Rok (uključujući čvor Gornja Ploča), a po završetku tih radova bit će zatvorena dioni…"
+  "updated": "6.7.2026. 20:09",
+  "text": "Zastoji su povremeno na gradskim prometnicama i obilaznicama te u zonama radova. Pojačan je promet na cestama u smjeru mora, osobito na autocestama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: požar na vozilu na autocesti A6 na 9+000 km u smjeru Zagreba, kratkotrajno je prekinut promet, kolona je 1 km večeras od 23:00 do 05:00 ujutro u oba smjera zatvara se dionica autoceste A1 između čvorova Gospić i Sveti Rok (uključujući čvor Gornja Ploča), a po završetku tih radova bit će zatvorena dionica između čvorova Sveti Rok i Rovanjska u oba smjera. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05…"
  },
  {
   "title": "Granični prijelazi",
