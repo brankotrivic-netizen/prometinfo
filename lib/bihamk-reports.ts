@@ -58,6 +58,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Kolo-Posušje (Ričina), zbog izgradnje potpornog zida od 07 do 17 sati svaki dan, osim nedjelje, saobraća se jednom trakom."
    },
    {
+    "title": "Podromanija-Sumbulovac (prevoj Romanija)",
+    "text": "Zbog radova na izgradnji dodatne trake za spora vozila na magistralnom putu Podromanija-Sumbulovac, prevoj Romanija (uspon iz pravca Podromanije) dolazit će do povremenih obustava saobraćaja."
+   },
+   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },
@@ -89,6 +93,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Zenica-Lašva",
     "text": "Zbog sanacionih radova na regionalnoj cesti Zenica-Lašva od 08 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
+   },
+   {
+    "title": "Svatovac-Živinice (Poljice)",
+    "text": "Na regionalnoj cesti R-455a Svatovac-Živinice (u mjestu Poljice, od stadiona do Svatovca), za vrijeme radova moguće su kraće obustave saobraćaja."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",

@@ -102,10 +102,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Dana 19.6.2026. godine, u periodu od 7 do 17 časova, izvodiće se radovi na sanaciji stubova portala za putokaznu signalizaciju na petlji Vranje, na sledećim lokacijama: na stacionaži km 538+760, smer Niš Preševo, na stacionaži 539+318, smer Preševo Niš. Radovi će se naizmenično izvoditi u zaustavnoj ili preticajnoj saobraćajnoj traci, a saobraćaj će biti preusmeren na slobodne saobraćajne trake. Izvor Putevi Srbije"
  },
  {
-  "title": "Petlja Novi Sad Jug - Kovilj, radovi",
-  "text": "Od 18. 6. 2026. do 25. 6. 2026. godine, u toku svetlog dela dana, izvodiće se radi radovi na obeležavanju horizontalne signalizacije na delu auto-puta između petlje Kovilj i Novi Sad jug, u smeru ka Novom Sadu. Radovi će se izvoditi u pokretu, a saobraćaj će se odvijati slobodnom sabraćajnom trakom. Izvor: Putevi Srbije"
- },
- {
   "title": "petlja Leskovac (obilaznica) - Oraovica, radovi",
   "text": "Od 17. 6. do 19. 6. 2026. godine, u periodu od 7 do 17 časova, izvode se radovi na redovnom održavanju na državnom putu II A reda broj 258, petlja Leskovac centar - Oraovica. Tokom izvođenja radova saobraćaj je regulisan naizmeničnim propuštanjem vozila, uz pomoć mahača i semafora. Izvor: Putevi Srbije"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Sušica-Kremna, radovi",
   "text": "Do 16. 3. 2026. godine izvode se radovi na rekonstrukciji mosta preko reke Sušica Sušica 3 (na km 121+540), na državnom putu I B reda broj 28, deonica Sušica - Kremna. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Družetić-Joševa, radovi",
+  "text": "Produžavaju se radovi na uklanjanju oštećenog pločastog propusta i izgradnji novog propusta na deonici državnog puta Družetić (Joševa) Joševa (Gola Glava), u mestu Družetić (opština Koceljeva). U zoni radova, saobraćaj će biti prusmeren na privremenu devijaciju, gde će se odvijati naizmeničnim propuštanjem vozila. Planirani rok za završetak radova je 16.02.2026. godine. Izvor: Putevi Srbije"
  }
 ];
