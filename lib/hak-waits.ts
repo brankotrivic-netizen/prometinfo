@@ -35,15 +35,15 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": ""
  },
  {
-  "id": "ba-svilaj",
-  "name": "Svilaj",
+  "id": "ba-samac",
+  "name": "Slavonski Šamac (Bosanski Šamac)",
   "ulazMin": null,
   "izlazMin": null,
   "ulazTxt": "-",
   "izlazTxt": "-",
-  "truckUlazMin": 30,
+  "truckUlazMin": 60,
   "truckIzlazMin": null,
-  "truckUlazTxt": "do 30 min.",
+  "truckUlazTxt": "1 h",
   "truckIzlazTxt": "-",
   "level": "unknown",
   "waitMinutes": null,
@@ -63,7 +63,39 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "07.07.2026 11:18:49",
-  "tsISO": "2026-07-07T11:18:49+02:00"
+  "ts": "7.7.2026. 14:52:46",
+  "tsISO": "2026-07-07T14:52:46+02:00"
+ },
+ {
+  "id": "hr-tovarnik",
+  "name": "Tovarnik (Šid)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 0,
+  "truckIzlazMin": 120,
+  "truckUlazTxt": "Višesatna čekanja",
+  "truckIzlazTxt": "2 h",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
+  "id": "hr-batina",
+  "name": "Batina (Bezdan)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 90,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "1 h 30 min.",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ts": "Nema podataka",
+  "tsISO": ""
  }
 ];
