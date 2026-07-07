@@ -1,8 +1,118 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-07T16:42:35.747Z";
+export const PROMET_SI_UPDATED = "2026-07-07T19:15:23.101Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;861972;61ba4340-a95d-41f6-a664-943341b1415a",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Grosuplje zahod, Cikava - priključek Šmarje Sap v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.97609,
+  "lng": 14.61673,
+  "start": "2026-07-07T18:46:30.483Z",
+  "end": "2026-07-08T03:00:00Z",
+  "ts": "2026-07-07T18:46:58.173Z"
+ },
+ {
+  "id": "DARS;861967;fff3afda-424b-47e3-8f66-c7e4ea963b76",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Trojane - priključek Domžale v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.18943,
+  "lng": 14.89517,
+  "start": "2026-07-07T18:05:49.147Z",
+  "end": "2026-07-08T03:00:00Z",
+  "ts": "2026-07-07T18:06:10.847Z"
+ },
+ {
+  "id": "DARS;861747;48acbea4-f879-42e7-a300-75fb026c71ac",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Ločica - priključek Domžale v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.23984,
+  "lng": 14.95288,
+  "start": "2026-07-07T18:03:27.367Z",
+  "end": "2026-07-08T03:00:00Z",
+  "ts": "2026-07-07T18:03:48.65Z"
+ },
+ {
+  "id": "DARS;861961;6e53f194-9a23-48c1-a41c-234da0dc9297",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Koper - Izola, priključek Semedela - priključek Izola v smeri Portoroža, dela, zaprt prehitevalni pas, košnja.",
+  "loc": "G2-111, Koper - Izola",
+  "lat": 45.54245,
+  "lng": 13.71873,
+  "start": "2026-07-07T17:36:35.683Z",
+  "end": "2026-07-08T01:00:12.597Z",
+  "ts": "2026-07-07T17:46:55.467Z"
+ },
+ {
+  "id": "DARS;861962;7326bd19-b46c-4502-8725-47033fe32b77",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, razcep Slivnica v smeri Hoč, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.47776,
+  "lng": 15.65763,
+  "start": "2026-07-07T17:39:18.047Z",
+  "end": "2026-07-07T21:30:16.98Z",
+  "ts": "2026-07-07T17:39:54.183Z"
+ },
+ {
+  "id": "DARS;861959;214a9ba7-accc-4c1b-9dc2-1fdd952a619c",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Izola - Koper, začetek hitre ceste v Izoli - predor Markovec v smeri Ljubljane, dela, zaprt prehitevalni pas, košnja.",
+  "loc": "G2-111, Izola - Koper",
+  "lat": 45.53377,
+  "lng": 13.67298,
+  "start": "2026-07-07T17:09:14.187Z",
+  "end": "2026-07-08T01:00:31.353Z",
+  "ts": "2026-07-07T17:09:40.37Z"
+ },
+ {
+  "id": "DARS;861957;7d8abf71-41ca-439c-987d-45ae27960c4f",
+  "type": "MaintenanceWorks",
+  "desc": "A3, razcep Gabrk - Fernetiči, uvoz Sežana vzhod v smeri Fernetičev, Italije, dela, oviran promet, košnja.",
+  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
+  "lat": 45.71389,
+  "lng": 13.88269,
+  "start": "2026-07-07T17:04:01.493Z",
+  "end": "2026-07-07T23:00:00Z",
+  "ts": "2026-07-07T17:04:06.817Z"
+ },
+ {
+  "id": "DARS;861956;e11f09b6-ce97-4992-8e3d-e57df4447af2",
+  "type": "MaintenanceWorks",
+  "desc": "A3, razcep Gabrk - Fernetiči, izvoz Sežana vzhod iz smeri Gabrka, dela, oviran promet, košnja.",
+  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
+  "lat": 45.71376,
+  "lng": 13.88507,
+  "start": "2026-07-07T17:03:47.897Z",
+  "end": "2026-07-07T23:00:00Z",
+  "ts": "2026-07-07T17:03:54.447Z"
+ },
+ {
+  "id": "DARS;861953;2135c9c9-7487-4b3b-b260-8943e2f59556",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Kranj vzhod - izvoz 9 Kranj vzhod v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.24211,
+  "lng": 14.39779,
+  "start": "2026-07-07T16:48:31.99Z",
+  "end": "2026-07-08T03:00:12.393Z",
+  "ts": "2026-07-07T16:49:36.407Z"
+ },
+ {
+  "id": "DARS;861951;9393acbd-a5aa-4dc9-9594-5312e3377d2e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - vzhodna obvoznica, priključek Maribor center - izvoz Zrkovci v smeri Šentilja, Avstrije, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.52729,
+  "lng": 15.69743,
+  "start": "2026-07-07T16:42:23.763Z",
+  "end": "2026-07-08T02:00:29.85Z",
+  "ts": "2026-07-07T16:42:38.117Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
