@@ -87,10 +87,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "label": "Regionalne ceste",
   "items": [
    {
-    "title": "Ulaz u naselje Lokve",
-    "text": "Zbog sanacije kolovoza, saobraća se usporeno, jednom trakom uz postavljenu signalizaciju u vremenu od 07:00 do 16:00 sati."
-   },
-   {
     "title": "Zenica-Lašva",
     "text": "Zbog sanacionih radova na regionalnoj cesti Zenica-Lašva od 08 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
    },
