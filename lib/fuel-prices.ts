@@ -62,7 +62,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "Češka",
   "flag": "🇨🇿",
   "p95": "40,380 CZK (1,67 EUR)",
-  "p98": "39,520 CZK (1,64 EUR)",
+  "p98": "39,520 CZK (1,63 EUR)",
   "diesel": "36,550 CZK (1,51 EUR)",
   "date": "7. 7. 2026"
  },
@@ -135,7 +135,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇮🇸",
   "p95": "218,510 ISK (1,52 EUR)",
   "p98": "",
-  "diesel": "248,230 ISK (1,72 EUR)",
+  "diesel": "248,230 ISK (1,73 EUR)",
   "date": "7. 7. 2026"
  },
  {
@@ -221,7 +221,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Norveška",
   "flag": "🇳🇴",
-  "p95": "20,590 NOK (1,83 EUR)",
+  "p95": "20,590 NOK (1,84 EUR)",
   "p98": "",
   "diesel": "18,190 NOK (1,62 EUR)",
   "date": "3. 7. 2026"
@@ -230,7 +230,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "Poljska",
   "flag": "🇵🇱",
   "p95": "6,190 PLN (1,44 EUR)",
-  "p98": "6,930 PLN (1,62 EUR)",
+  "p98": "6,930 PLN (1,61 EUR)",
   "diesel": "6,410 PLN (1,49 EUR)",
   "date": "7. 7. 2026"
  },
@@ -302,7 +302,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "Švedska",
   "flag": "🇸🇪",
   "p95": "18,108 SEK (1,64 EUR)",
-  "p98": "19,594 SEK (1,78 EUR)",
+  "p98": "19,594 SEK (1,77 EUR)",
   "diesel": "21,972 SEK (1,99 EUR)",
   "date": "7. 7. 2026"
  },
@@ -311,13 +311,13 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇨🇭",
   "p95": "1,899 CHF (2,06 EUR)",
   "p98": "",
-  "diesel": "2,066 CHF (2,25 EUR)",
+  "diesel": "2,066 CHF (2,24 EUR)",
   "date": "7. 7. 2026"
  },
  {
   "country": "Turčija",
   "flag": "🇹🇷",
-  "p95": "55,300 TRY (1,04 EUR)",
+  "p95": "55,300 TRY (1,03 EUR)",
   "p98": "55,750 TRY (1,04 EUR)",
   "diesel": "57,570 TRY (1,08 EUR)",
   "date": "16. 6. 2026"
@@ -334,8 +334,8 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "V. Britanija",
   "flag": "🇬🇧",
   "p95": "1,510 GBP (1,77 EUR)",
-  "p98": "1,670 GBP (1,95 EUR)",
-  "diesel": "1,670 GBP (1,95 EUR)",
+  "p98": "1,670 GBP (1,96 EUR)",
+  "diesel": "1,670 GBP (1,96 EUR)",
   "date": "3. 7. 2026"
  }
 ];
