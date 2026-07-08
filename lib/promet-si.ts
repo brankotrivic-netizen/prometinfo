@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-08T11:58:10.889Z";
+export const PROMET_SI_UPDATED = "2026-07-08T14:41:52.253Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;862067;aa8a0568-87d7-4222-b8ae-de4cb3b456fe",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Nova Gorica - Razdrto, priključek Selo - priključek 2 Ajdovščina v smeri Razdrtega, dela, zaprt vozni pas.",
-  "loc": "H4, Nova Gorica - Razdrto",
-  "lat": 45.88494,
-  "lng": 13.86197,
-  "start": "2026-07-08T06:37:45.24Z",
-  "end": "2026-07-08T12:30:00Z",
-  "ts": "2026-07-08T10:57:52.7Z"
- },
  {
   "id": "DARS;862085;6e143df5-e026-411e-b266-c9fa42360410",
   "type": "MaintenanceWorks",
@@ -35,39 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-08T07:05:09.237Z",
   "end": "2026-07-15T21:59:00Z",
   "ts": "2026-07-08T07:05:35.513Z"
- },
- {
-  "id": "DARS;862073;96e1db74-1325-471c-98a4-9a23eb7edfc4",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-679, Breg - Sevnica - Brestanica, pri Blanci, izmenično enosmerni promet, geološke geomehanske preiskave, do 14:00.",
-  "loc": "R3-679, Breg - Sevnica - Brestanica",
-  "lat": 45.99058,
-  "lng": 15.39306,
-  "start": "2026-07-08T07:01:57.907Z",
-  "end": "2026-07-08T12:00:00Z",
-  "ts": "2026-07-08T07:03:05.93Z"
- },
- {
-  "id": "DARS;862069;4131db00-375d-4995-8207-2effe1f8beaf",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-606, Kanal - Lig - Mišček - Neblo, izmenično enosmerni promet, pomična zapora, popravilo vozišča, do 16:00.",
-  "loc": "R3-606, Kanal - Lig - Mišček - Neblo",
-  "lat": 46.09738,
-  "lng": 13.5842,
-  "start": "2026-07-08T06:56:36.683Z",
-  "end": "2026-07-08T14:00:00Z",
-  "ts": "2026-07-08T06:57:07.317Z"
- },
- {
-  "id": "DARS;862063;308ac315-77fc-495c-8937-97b682be83ae",
-  "type": "MaintenanceWorks",
-  "desc": "R2-439, Renkovci - Beltinci, oviran promet, košnja, do 15:00.",
-  "loc": "R2-439, Renkovci - Beltinci",
-  "lat": 46.63037,
-  "lng": 16.26293,
-  "start": "2026-07-08T06:13:29.46Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T06:14:10.42Z"
  },
  {
   "id": "DARS;848227;65816cd8-8ebf-40b3-af90-b386884ce52b",
@@ -92,50 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-08T05:56:46.56Z"
  },
  {
-  "id": "DARS;862044;fd588dc0-0435-489e-9958-76b5295e05f7",
-  "type": "MaintenanceWorks",
-  "desc": "RT-916, Dragarji - Medvedjek - Draga, oviran promet, popravilo vozišča, do 14:30.",
-  "loc": "RT-916, Dragarji - Medvedjek - Draga",
-  "lat": 45.5986,
-  "lng": 14.71619,
-  "start": "2026-07-08T05:43:08.24Z",
-  "end": "2026-07-08T12:30:00Z",
-  "ts": "2026-07-08T05:43:27.497Z"
- },
- {
-  "id": "DARS;862042;b8c1f8b2-5c66-4fc9-8b1e-efaba2bef4a9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-106, Žlebič - Kočevje, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 14:30.",
-  "loc": "G2-106, Žlebič - Kočevje",
-  "lat": 45.682,
-  "lng": 14.81998,
-  "start": "2026-07-08T05:40:46.647Z",
-  "end": "2026-07-08T12:30:00Z",
-  "ts": "2026-07-08T05:42:49.827Z"
- },
- {
-  "id": "DARS;862041;99d23337-e49f-4d1f-a043-775964198783",
-  "type": "MaintenanceWorks",
-  "desc": "R3-725, Fokovci - Prosenjakovci, oviran promet, košnja, do 15:00.",
-  "loc": "R3-725, Fokovci - Prosenjakovci",
-  "lat": 46.73165,
-  "lng": 16.28304,
-  "start": "2026-07-08T05:39:47.813Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T05:40:15.933Z"
- },
- {
-  "id": "DARS;862040;0235b1a6-78a8-4307-8179-6b7fa746b4ec",
-  "type": "MaintenanceWorks",
-  "desc": "R3-714, Grabonoš - Sp. Ivanjci, oviran promet, košnja, do 15:00.",
-  "loc": "R3-714, Grabonoš - Spodnji Ivanjci",
-  "lat": 46.59018,
-  "lng": 15.99477,
-  "start": "2026-07-08T05:38:52.27Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T05:39:22.397Z"
- },
- {
   "id": "DARS;862039;a61bbb4c-395a-42d7-b1f2-31a2a306d42b",
   "type": "MaintenanceWorks",
   "desc": "R1-232, Petrovci - Martjanci, oviran promet, košnja, do 18:00.",
@@ -145,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-08T05:38:13.08Z",
   "end": "2026-07-08T16:00:00Z",
   "ts": "2026-07-08T05:38:28.477Z"
- },
- {
-  "id": "DARS;862038;385d8f17-0f8e-4736-b2f5-f926c1a3573b",
-  "type": "MaintenanceWorks",
-  "desc": "R3-714, Sv. Jurij ob Ščavnici - Grabonoš, oviran promet, košnja, do 15:00.",
-  "loc": "R3-714, Sv. Jurij Ob Ščavnici - Grabonoš",
-  "lat": 46.58239,
-  "lng": 16.01629,
-  "start": "2026-07-08T05:37:35.61Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T05:37:53.967Z"
- },
- {
-  "id": "DARS;862037;635ce8da-dabe-44c7-ab23-3bfa558d3ff6",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-235, Petanjci - Murska Sobota (Gaj), izmenično enosmerni promet, pomična zapora, popravilo bankin, do 15:00.",
-  "loc": "R1-235, Petanjci - Ms (Gaj)",
-  "lat": 46.64543,
-  "lng": 16.12303,
-  "start": "2026-07-08T05:37:06.77Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T05:37:20.463Z"
  },
  {
   "id": "DARS;862034;80c93b42-0fbc-4218-9b49-066ee62e0658",
@@ -202,28 +92,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-08T05:11:46.277Z"
  },
  {
-  "id": "DARS;862029;906fe550-85ec-4ebb-b530-8035b3ff6c12",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-926, Koprivna - Črna, izmenično enosmerni promet, podiranje nevarnih dreves, možne občasne, kratkotrajne popolne zapore, do 14:00.",
-  "loc": "RT-926, Koprivna - Črna",
-  "lat": 46.46664,
-  "lng": 14.80485,
-  "start": "2026-07-08T05:09:40.527Z",
-  "end": "2026-07-08T12:00:00Z",
-  "ts": "2026-07-08T05:10:25.493Z"
- },
- {
-  "id": "DARS;862027;c8f8dc42-3e3d-417a-bbcb-1c5d38f1a4d9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-602, Staro Selo - Breginj - Most na Soči, izmenično enosmerni promet, pomična zapora, košnja, do 15:00.",
-  "loc": "R3-602, Staro Selo - Breginj - Most Na Soči",
-  "lat": 46.2551,
-  "lng": 13.49241,
-  "start": "2026-07-08T05:09:00.4Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T05:09:14.047Z"
- },
- {
   "id": "DARS;862024;cd17c490-41e1-41c0-8158-4b7dd3e6fdb6",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-447, Žalec - Šempeter, izmenično enosmerni promet, pomična zapora, zamenjava pokrova in popravilo jaška, do 10. 7. 2026, dnevno med 7. in 15. uro.",
@@ -235,61 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-08T05:07:25.093Z"
  },
  {
-  "id": "DARS;862013;43d19a3e-486d-41c6-bd97-a2cec8d8274e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-218, Kanižarica - Vinica, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 15:00.",
-  "loc": "R1-218, Kanižarica - Vinica",
-  "lat": 45.47711,
-  "lng": 15.21073,
-  "start": "2026-07-08T04:20:43.697Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T04:21:00.74Z"
- },
- {
-  "id": "DARS;862012;6aeb1684-bbb6-42a5-b343-ad61a520a011",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-218, Podzemelj - Črnomelj, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 16:00.",
-  "loc": "R1-218, Podzemelj - Črnomelj",
-  "lat": 45.61087,
-  "lng": 15.25647,
-  "start": "2026-07-08T04:20:06.637Z",
-  "end": "2026-07-08T14:00:00Z",
-  "ts": "2026-07-08T04:20:25.883Z"
- },
- {
-  "id": "DARS;862011;c36ac33f-8cb3-43ee-b467-38102f340b3f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-105, Novo mesto - Metlika, pri Bušinji vasi, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 15:00.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.68154,
-  "lng": 15.28272,
-  "start": "2026-07-08T04:19:09.783Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T04:19:50.12Z"
- },
- {
-  "id": "DARS;862010;1d6821e2-402c-4560-ab91-d260e67be1fe",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-404, Podgrad - Ilirska Bistrica, pri Podgradu, izmenično enosmerni promet, popravilo bankin, do 14:00.",
-  "loc": "R2-404, Podgrad - Ilirska Bistrica",
-  "lat": 45.52166,
-  "lng": 14.15169,
-  "start": "2026-07-08T04:18:34.19Z",
-  "end": "2026-07-08T12:00:00Z",
-  "ts": "2026-07-08T04:18:50.27Z"
- },
- {
-  "id": "DARS;862007;d38d1279-aec4-4cc4-bb14-8bd8a54ba71f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-714, Spodnji Ivanjci - Gornja Radgona, izmenično enosmerni promet, pomična zapora, ureditev odvodnjavanja, do 14:00.",
-  "loc": "R3-714, Spodnji Ivanjci - Gornja Radgona",
-  "lat": 46.6052,
-  "lng": 15.99119,
-  "start": "2026-07-08T04:07:44.793Z",
-  "end": "2026-07-08T12:00:00Z",
-  "ts": "2026-07-08T04:08:00.327Z"
- },
- {
   "id": "DARS;862006;e2730fb8-4738-482c-9ddb-43f9fdb8daef",
   "type": "MaintenanceWorks",
   "desc": "R3-714, Spodnji Ivanjci - Gornja Radgona, v Spodnjih Ivanjcih, dela, oviran promet, do 18:00.",
@@ -299,28 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-08T04:06:46.993Z",
   "end": "2026-07-08T16:00:00Z",
   "ts": "2026-07-08T04:07:17.927Z"
- },
- {
-  "id": "DARS;862005;39f74d28-d5a9-424e-a6a6-1df2a034d1e7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-928, Mozirje - Golte, pri Radegundi, izmenično enosmerni promet, vzdrževalna dela, do 15:00.",
-  "loc": "RT-928, Mozirje - Golte",
-  "lat": 46.35652,
-  "lng": 14.93108,
-  "start": "2026-07-08T05:00:00Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T04:06:18.963Z"
- },
- {
-  "id": "DARS;862003;8ae6ae37-fe15-42df-91ca-f7ccec821f99",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-928, Mozirje - Golte, izmenično enosmerni promet, vzdrževalna dela, do 15:00.",
-  "loc": "RT-928, Mozirje - Golte",
-  "lat": 46.35204,
-  "lng": 14.94704,
-  "start": "2026-07-08T03:58:59.613Z",
-  "end": "2026-07-08T13:00:00Z",
-  "ts": "2026-07-08T03:59:16.737Z"
  },
  {
   "id": "DARS;784830;8a9d1072-89bb-4c91-97ee-5224fa07c01c",

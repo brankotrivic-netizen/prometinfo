@@ -50,10 +50,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na redovnom održavanju na području Laništa na magistralnoj cesti Ključ-Bosanski Petrovac, na mjestu radova od 07 do 07 sati (osim vikenda) vozila saobraćaju naizmjenično, jednom trakom."
    },
    {
-    "title": "Grude-Gorica (Sovići)",
-    "text": "Zbog radova na izgradnji pješačke staze na magistralnoj cesti Grude-Gorica kroz naselje Sovići povremeno se saobraća jednom trakom."
-   },
-   {
     "title": "Kolo-Posušje (Ričina)",
     "text": "Na magistralnoj cesti Kolo-Posušje (Ričina), zbog izgradnje potpornog zida od 07 do 17 sati svaki dan, osim nedjelje, saobraća se jednom trakom."
    },
