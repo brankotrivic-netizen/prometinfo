@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-08T18:47:23.631Z";
+export const PROMET_SI_UPDATED = "2026-07-08T20:38:25.836Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;862190;8f7cd855-cda8-4774-9d83-3e75a9a3a9b1",
@@ -11,8 +11,8 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 45.92276,
   "lng": 14.26793,
   "start": "2026-07-08T18:27:13.847Z",
-  "end": "2026-07-08T20:00:00Z",
-  "ts": "2026-07-08T18:27:40.913Z"
+  "end": "2026-07-08T21:59:00Z",
+  "ts": "2026-07-08T19:56:16.45Z"
  },
  {
   "id": "DARS;862187;36a44d3f-d572-4811-a5af-f005287cbd73",
@@ -26,17 +26,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-08T17:48:40.41Z"
  },
  {
-  "id": "DARS;862184;d429a55f-e7b7-4f48-b679-cf217a4ba786",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, razcep Slivnica - priključek Fram v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.45533,
-  "lng": 15.6535,
-  "start": "2026-07-08T17:32:32.593Z",
-  "end": "2026-07-08T23:00:00Z",
-  "ts": "2026-07-08T17:32:54.197Z"
- },
- {
   "id": "DARS;862180;99a78fc7-ccad-4878-8092-6ba216cece0f",
   "type": "MaintenanceWorks",
   "desc": "A1, Maribor - vzhodna obvoznica, priključek Maribor center - izvoz Zrkovci v smeri Šentilja, Avstrije, dela, zaprt prehitevalni pas.",
@@ -46,28 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-08T17:05:07.86Z",
   "end": "2026-07-09T02:00:29.85Z",
   "ts": "2026-07-08T17:05:17.223Z"
- },
- {
-  "id": "DARS;862178;669b8db3-6cb1-473b-ac10-82a9a3a5c11a",
-  "type": "MaintenanceWorks",
-  "desc": "G2-111, Izola - Koper, priključek Semedela iz smeri Portoroža, dela, oviran promet, košnja.",
-  "loc": "G2-111, Izola - Koper",
-  "lat": 45.54187,
-  "lng": 13.72001,
-  "start": "2026-07-08T16:49:36.893Z",
-  "end": "2026-07-08T20:00:26.27Z",
-  "ts": "2026-07-08T16:50:29.037Z"
- },
- {
-  "id": "DARS;862177;6b82da99-9170-430e-81e9-d4a501208c9f",
-  "type": "MaintenanceWorks",
-  "desc": "G2-111, Koper - Izola, priključek Semedela iz smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "G2-111, Koper - Izola",
-  "lat": 45.54161,
-  "lng": 13.72148,
-  "start": "2026-07-08T16:49:05.87Z",
-  "end": "2026-07-08T20:00:11.513Z",
-  "ts": "2026-07-08T16:49:27.763Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
