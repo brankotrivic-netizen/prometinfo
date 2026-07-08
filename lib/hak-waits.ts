@@ -35,22 +35,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": ""
  },
  {
-  "id": "ba-samac",
-  "name": "Slavonski Šamac (Bosanski Šamac)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": 60,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "1 h",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ts": "Nema podataka",
-  "tsISO": ""
- },
- {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
   "ulazMin": null,
