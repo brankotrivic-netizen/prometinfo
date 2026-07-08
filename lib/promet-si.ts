@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-08T14:41:52.253Z";
+export const PROMET_SI_UPDATED = "2026-07-08T16:50:44.842Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;862177;6b82da99-9170-430e-81e9-d4a501208c9f",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Koper - Izola, priključek Semedela iz smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "G2-111, Koper - Izola",
+  "lat": 45.54161,
+  "lng": 13.72148,
+  "start": "2026-07-08T16:49:05.87Z",
+  "end": "2026-07-08T20:00:11.513Z",
+  "ts": "2026-07-08T16:49:27.763Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-07-08T15:01:01.41Z"
+ },
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-08T15:01:00.28Z"
+ },
  {
   "id": "DARS;862085;6e143df5-e026-411e-b266-c9fa42360410",
   "type": "MaintenanceWorks",
@@ -48,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-08T05:56:46.56Z"
  },
  {
-  "id": "DARS;862039;a61bbb4c-395a-42d7-b1f2-31a2a306d42b",
-  "type": "MaintenanceWorks",
-  "desc": "R1-232, Petrovci - Martjanci, oviran promet, košnja, do 18:00.",
-  "loc": "R1-232, Petrovci - Martjanci",
-  "lat": 46.76836,
-  "lng": 16.16468,
-  "start": "2026-07-08T05:38:13.08Z",
-  "end": "2026-07-08T16:00:00Z",
-  "ts": "2026-07-08T05:38:28.477Z"
- },
- {
   "id": "DARS;862034;80c93b42-0fbc-4218-9b49-066ee62e0658",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-207, Col - Ajdovščina, v Ajdovščini, na Idrijski cesti, izmenično enosmerni promet, ureditve območja priključka, do 31. 12. 2026.",
@@ -101,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-08T05:06:11.23Z",
   "end": "2026-07-10T13:00:00Z",
   "ts": "2026-07-08T05:07:25.093Z"
- },
- {
-  "id": "DARS;862006;e2730fb8-4738-482c-9ddb-43f9fdb8daef",
-  "type": "MaintenanceWorks",
-  "desc": "R3-714, Spodnji Ivanjci - Gornja Radgona, v Spodnjih Ivanjcih, dela, oviran promet, do 18:00.",
-  "loc": "R3-714, Spodnji Ivanjci - Gornja Radgona",
-  "lat": 46.59661,
-  "lng": 15.98181,
-  "start": "2026-07-08T04:06:46.993Z",
-  "end": "2026-07-08T16:00:00Z",
-  "ts": "2026-07-08T04:07:17.927Z"
  },
  {
   "id": "DARS;784830;8a9d1072-89bb-4c91-97ee-5224fa07c01c",
@@ -442,17 +453,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-07-10T06:10:32.583Z",
   "end": "2026-07-16T21:59:00Z",
   "ts": "2026-07-02T17:00:41.9Z"
- },
- {
-  "id": "DARS;860854;83579b13-a69a-47a1-9d90-14be4b9ff1d9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Tolmin - Sp. Idrija, pri Plužnjah, izmenično enosmerni promet, kratkotrajne popolne zapore (do 15 minut), popravilo vozišča, do 8. 7. 2026.",
-  "loc": "G2-102, Želin - Spodnja Idrija",
-  "lat": 46.07973,
-  "lng": 13.97722,
-  "start": "2026-07-02T05:43:53.233Z",
-  "end": "2026-07-08T15:00:00Z",
-  "ts": "2026-07-02T05:45:18.923Z"
  },
  {
   "id": "DARS;860848;68918368-454a-4dcc-8ee3-335a705d9347",
