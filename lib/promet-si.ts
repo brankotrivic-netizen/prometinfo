@@ -1,41 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-09T19:00:57.983Z";
+export const PROMET_SI_UPDATED = "2026-07-09T20:56:47.642Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;862412;66fd0f64-0229-4fb1-924b-af59d147ccf0",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Fram - priključek Sl. Bistrica sever v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.40356,
-  "lng": 15.61008,
-  "start": "2026-07-09T18:47:32.843Z",
-  "end": "2026-07-09T20:00:00Z",
-  "ts": "2026-07-09T18:55:41.847Z"
- },
- {
-  "id": "DARS;862413;0a85fbc3-9fad-40d0-9152-f1d19a31eb3b",
-  "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, uvoz Sežana vzhod - uvoz Sežana vzhod v smeri Fernetičev, Italije, dela, oviran promet.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.71389,
-  "lng": 13.88271,
-  "start": "2026-07-09T18:48:55.373Z",
-  "end": "2026-07-09T21:50:08.413Z",
-  "ts": "2026-07-09T18:48:58.267Z"
- },
- {
-  "id": "DARS;862411;6070ff51-9a78-44aa-b96c-67e34a099df6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, pred predorom Trojane - predor Trojane v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.18136,
-  "lng": 14.84939,
-  "start": "2026-07-09T18:41:16.133Z",
-  "end": "2026-07-09T21:00:48.667Z",
-  "ts": "2026-07-09T18:42:33.023Z"
- },
  {
   "id": "DARS;862407;54ae6e38-3a32-4cb9-aa13-2e7578d7eb8c",
   "type": "MaintenanceWorks",
@@ -46,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-09T18:30:31.963Z",
   "end": "2026-07-10T00:00:00Z",
   "ts": "2026-07-09T18:30:49.707Z"
- },
- {
-  "id": "DARS;862405;a8dba7ff-3e82-4bf8-be05-b59a97495ed8",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - zahodna obvoznica, priključek Ljubljana Brdo - razcep Kozarje v smeri Kozarij, dela, zaprt odstavni pas.",
-  "loc": "A2-E61, Ljubljana - zah. obvoznica",
-  "lat": 46.05327,
-  "lng": 14.45196,
-  "start": "2026-07-09T18:07:14.78Z",
-  "end": "2026-07-10T00:00:00Z",
-  "ts": "2026-07-09T18:07:38.31Z"
  },
  {
   "id": "DARS;862403;a0d8946f-fb17-45fb-82f4-0ef789e03a08",
@@ -79,50 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-09T17:50:40.037Z",
   "end": "2026-07-10T03:00:00Z",
   "ts": "2026-07-09T17:51:03.823Z"
- },
- {
-  "id": "DARS;862397;0c683ca1-d973-4ba3-b648-b9104070266b",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, prehod Gruškovje - predor Log v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.27076,
-  "lng": 15.86737,
-  "start": "2026-07-09T17:22:21.24Z",
-  "end": "2026-07-09T20:00:57.81Z",
-  "ts": "2026-07-09T17:22:23.833Z"
- },
- {
-  "id": "DARS;862396;c6361ce0-f8be-4ff9-954b-f8524eec1c29",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, prehod Gruškovje - prehod Gruškovje v smeri Maribora, dela, pomična zapora voznega pasu.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.27077,
-  "lng": 15.86737,
-  "start": "2026-07-09T17:22:16.02Z",
-  "end": "2026-07-09T20:00:23.74Z",
-  "ts": "2026-07-09T17:22:17.667Z"
- },
- {
-  "id": "DARS;862395;5f0c628c-d853-4afd-8724-dad11bc8d065",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Maribor - Gruškovje (Hrvaška), prehod Gruškovje v smeri Hrvaške, dela, pomična zapora voznega pasu.",
-  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
-  "lat": 46.27535,
-  "lng": 15.86633,
-  "start": "2026-07-09T17:21:55.083Z",
-  "end": "2026-07-09T20:00:07.91Z",
-  "ts": "2026-07-09T17:22:06.587Z"
- },
- {
-  "id": "DARS;862394;523ce7c7-fd08-442e-8f69-ef79df3b9dc2",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Maribor - Gruškovje (Hrvaška), prehod Gruškovje v smeri Hrvaške, dela, zaprt prehitevalni pas.",
-  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
-  "lat": 46.27556,
-  "lng": 15.8661,
-  "start": "2026-07-09T17:21:14.303Z",
-  "end": "2026-07-09T20:00:24.563Z",
-  "ts": "2026-07-09T17:21:42.193Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
