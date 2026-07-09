@@ -46,10 +46,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na sanaciji nadvožnjaka na lokalitetu Orljani na magistralnoj cesti Bihać-Ripač, zatvoreno je skretanje sa magistralne ceste prema naselju Ribić-Orljani."
    },
    {
-    "title": "Lanište (Ključ-Bosanski Petrovac)",
-    "text": "Zbog radova na redovnom održavanju na području Laništa na magistralnoj cesti Ključ-Bosanski Petrovac, na mjestu radova od 07 do 07 sati (osim vikenda) vozila saobraćaju naizmjenično, jednom trakom."
-   },
-   {
     "title": "Kolo-Posušje (Ričina)",
     "text": "Na magistralnoj cesti Kolo-Posušje (Ričina), zbog izgradnje potpornog zida od 07 do 17 sati svaki dan, osim nedjelje, saobraća se jednom trakom."
    },
