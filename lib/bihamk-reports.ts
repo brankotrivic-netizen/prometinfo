@@ -91,6 +91,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-455a Svatovac-Živinice (u mjestu Poljice, od stadiona do Svatovca), za vrijeme radova moguće su kraće obustave saobraćaja."
    },
    {
+    "title": "R-456a Kalesija-Sapna",
+    "text": "zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
