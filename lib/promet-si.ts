@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-10T16:34:44.651Z";
+export const PROMET_SI_UPDATED = "2026-07-10T18:46:12.934Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;862664;ee619324-600b-4196-a989-aa0e0785cc1b",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - vzhodna obvoznica, pokrit vkop Malečnik - počivališče Maribor zahod v smeri Slivnice, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.55135,
+  "lng": 15.69116,
+  "start": "2026-07-10T17:48:37.09Z",
+  "end": "2026-07-11T03:00:49.287Z",
+  "ts": "2026-07-10T17:48:45.223Z"
+ },
+ {
+  "id": "DARS;825949;0a53fe13-702b-456a-bec7-e609e7e44ff6",
+  "type": "MaintenanceWorks",
+  "desc": "R2-413, Zbilje - Vodice, pri Zapogah, oviran promet, rekonstrukcija ceste in ureditev pločnika, do 23:00.",
+  "loc": "R2-413, Zbilje - Vodice",
+  "lat": 46.18139,
+  "lng": 14.47521,
+  "start": "2025-12-08T07:41:08.133Z",
+  "end": "2026-07-13T21:59:00Z",
+  "ts": "2026-07-10T17:00:56.917Z"
+ },
+ {
+  "id": "DARS;862656;9350eed9-20f6-4cc5-a509-4a29bd5a591d",
+  "type": "MaintenanceWorks",
+  "desc": "A3, Fernetiči - razcep Gabrk, uvoz Sežana vzhod v smeri Gabrka, dela, oviran promet.",
+  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
+  "lat": 45.71334,
+  "lng": 13.88237,
+  "start": "2026-07-10T16:57:34.153Z",
+  "end": "2026-07-10T21:50:38.673Z",
+  "ts": "2026-07-10T16:57:45.393Z"
+ },
+ {
+  "id": "DARS;862655;56808e61-9e74-45fb-a3d7-3af2c792e429",
+  "type": "MaintenanceWorks",
+  "desc": "A3, Fernetiči - razcep Gabrk, izvoz Sežana vzhod v smeri Gabrka, dela, oviran promet.",
+  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
+  "lat": 45.71349,
+  "lng": 13.88006,
+  "start": "2026-07-10T16:57:13.447Z",
+  "end": "2026-07-10T21:50:12.223Z",
+  "ts": "2026-07-10T16:57:28.357Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -145,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-09T09:00:00Z",
   "end": "2026-07-31T15:00:00Z",
   "ts": "2026-07-09T08:45:04.853Z"
- },
- {
-  "id": "DARS;825949;0a53fe13-702b-456a-bec7-e609e7e44ff6",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-413, Zbilje - Vodice, pri Zapogah, izmenično enosmerni promet, rekonstrukcija ceste in ureditev pločnika, do 10. 7. 2026.",
-  "loc": "R2-413, Zbilje - Vodice",
-  "lat": 46.18139,
-  "lng": 14.47521,
-  "start": "2025-12-08T07:41:08.133Z",
-  "end": "2026-07-13T21:59:00Z",
-  "ts": "2026-07-09T06:30:14.203Z"
  },
  {
   "id": "DARS;862075;bf423588-6bc2-4aca-84b0-2ce0066a2db6",
