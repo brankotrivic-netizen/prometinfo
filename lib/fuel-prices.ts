@@ -334,8 +334,8 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "V. Britanija",
   "flag": "🇬🇧",
   "p95": "1,510 GBP (1,77 EUR)",
-  "p98": "1,670 GBP (1,95 EUR)",
-  "diesel": "1,670 GBP (1,95 EUR)",
+  "p98": "1,670 GBP (1,96 EUR)",
+  "diesel": "1,670 GBP (1,96 EUR)",
   "date": "3. 7. 2026"
  }
 ];
