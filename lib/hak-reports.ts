@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "10.7.2026. 22:38",
+  "updated": "10.7.2026. 23:19",
   "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. A1 Zagreb-Split-Dubrovnik kod naplatnih postaja Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih kolona IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati. zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 (petnaest) minuta po zaustavljanju. od 13. srpnja do 12. kolovoza od 01:00 sat do 05:00 sati privremena kratkotrajna zaustavljanja prometa, do maksimalno 15 minuta po zaustavljanju prilikom uključivanja izvanredn…"
  },
  {
