@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "10.7.2026. 09:51",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim prometnicama i obilaznicama te na prilazima turističkim mjestima u priobalju. Kraći zastoji i vožnja u kolonama mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između čvorova Lučko i Bosiljevo 2 u smjeru Dubrovnika, između Lučkog i Karlovca vozi se u koloni u pokretu s povremenim kratkim zastojima kolona vozila na prilazu naplatnoj postaji Lučko iz smjera Buzina u smjeru mora duga je oko 2 km promet je dodatno usporen zb…"
+  "updated": "10.7.2026. 13:15",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim prometnicama i obilaznicama te na prilazima turističkim mjestima u priobalju. Kraći zastoji i vožnja u kolonama mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik između čvorova Bosiljevo i Lučko u smjeru Zagreba te Karlovac i Bosiljevo u smjeru Dubrovnika povremeno se vozi u kolonama u pokretu s mogućim kraćim zastojima kolona na prilazu naplatnoj postaji Lučko u smjeru mora duga je oko 1 km na naplatama Lučko i Demerje u smjeru Zagreba kolone su dug…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "10.7.2026. 09:51",
+  "updated": "10.7.2026. 13:03",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "10.7.2026. 09:51",
+  "updated": "10.7.2026. 13:03",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
@@ -23,17 +23,17 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "10.7.2026. 05:39",
+  "updated": "10.7.2026. 12:33",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "10.7.2026. 06:46",
-  "text": "Prometna prognoza za Hrvatsku za 11. srpnja 2026. godine. Pojačan promet očekuje se na svim važnijim cestovnim pravcima u smjeru mora, osobito na zagrebačkoj obilaznici (A3) iz smjera Buzina i čvora Zagreb zapad u smjeru naplate Lučko, na autocestama A1 Zagreb-Split-Dubrovnik, A6 Rijeka-Zagreb, riječkoj obilaznici, Istarskom ipsilonu između tunela i čvora Učka i kod vijadukta Limska Draga, prema Kaštelu i Plovaniji, na Krčkom mostu i otoku Krku te na prilazima turističkim mjestima na obali. Zastoji su mogući u zonama radova, a na autocestama u zonama odmorišta, naplata i tunela. Vozačima savjetujemo da putuju tijekom noći, ranih jutarnjih sati ili kasnije poslijepodne i navečer kako bi izbje…"
+  "updated": "10.7.2026. 13:12",
+  "text": "Prometna prognoza za Hrvatsku za 11. srpnja 2026. godine. Vozit će se po mjestimice mokrim te vlažnim i skliskim kolnicima najprije na sjevernom Jadranu, a od sredine dana i u unutrašnjosti. Pojačan promet očekuje se na svim važnijim cestovnim pravcima u smjeru mora, osobito na zagrebačkoj obilaznici (A3) iz smjera Buzina i čvora Zagreb zapad u smjeru naplate Lučko, na autocestama A1 Zagreb-Split-Dubrovnik, A6 Rijeka-Zagreb, riječkoj obilaznici, Istarskom ipsilonu između tunela i čvora Učka i kod vijadukta Limska Draga, prema Kaštelu i Plovaniji, na Krčkom mostu i otoku Krku te na prilazima turističkim mjestima na obali. Zastoji su mogući u zonama radova, a na autocestama u zonama odmorišta,…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
-  "updated": "9.7.2026. 05:18",
+  "updated": "10.7.2026. 12:33",
   "text": "Kod vožnje po mokrim i skliskim kolnicima, savjetujemo Vam: provjeriti stanje guma i metlica brisača, obvezno uključiti kratka svjetla i danju, bez obzira na vidljivost, držati propisani sigurnosni razmak između vozila, osobito kod vožnje u koloni, izbjegavati nagla kočenja, voziti opreznije, ne precjenjujte svoje vozačke sposobnosti i ne dovodite bespotrebno u opasnost sebe, svoje suputnike i sve ostale sudionike u prometu. Video - HAK savjetnik za zimu - vožnja po mokrim i skliskim kolnicima"
  },
  {
@@ -48,7 +48,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Vožnja ljeti pod velikim vrućinama",
-  "updated": "9.7.2026. 05:18",
+  "updated": "10.7.2026. 12:33",
   "text": "Izlaganje visokim temperaturama nepovoljno utječe na opće zdravstveno stanje, a kod vozača može utjecati na kognitivno funkcioniranje. Stoga je u svakodnevnom životu potrebno pratiti upute nadležnih službi (DHMZ, HZHM, Hrvatski Crveni križ, HGSS), a za putovanje slijedite sljedeće preporuke: planirajte vrijeme putovanja tijekom noći, ranih jutarnjih sati ili kasnije poslijepodne i navečer. Izbjegavajte vožnju sredinom dana kada temperature dosežu svoj maksimum jer će svaka izvanredna situacija u prometu (zastoji zbog veće gustoće prometa, prometne nesreće ili radovi) rezultirati povremenim stajanjem u mjestu koje će biti neugodno unatoč rashladnom uređaju u vozilu ako vozite na dužim relacij…"
  }
 ];
