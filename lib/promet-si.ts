@@ -1,18 +1,117 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-10T22:17:08.774Z";
+export const PROMET_SI_UPDATED = "2026-07-11T06:27:17.547Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;862664;ee619324-600b-4196-a989-aa0e0785cc1b",
+  "id": "DARS;862702;fb9e7eb3-1dab-411a-8f89-b408fdb579cc",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, pokrit vkop Malečnik - počivališče Maribor zahod v smeri Slivnice, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.55135,
-  "lng": 15.69116,
-  "start": "2026-07-10T17:48:37.09Z",
-  "end": "2026-07-11T03:00:49.287Z",
-  "ts": "2026-07-10T17:48:45.223Z"
+  "desc": "H4, Razdrto - Nova Gorica, uvoz Vipava v smeri Vrtojbe, Italije, dela, oviran promet, košnja.",
+  "loc": "H4, Razdrto - Nova Gorica",
+  "lat": 45.83688,
+  "lng": 13.95551,
+  "start": "2026-07-11T06:25:07.613Z",
+  "end": "2026-07-11T12:00:00Z",
+  "ts": "2026-07-11T06:25:15.857Z"
+ },
+ {
+  "id": "DARS;862701;38fd172b-242c-48b5-8f4a-84e9d58bbf2d",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Razdrto - Nova Gorica, izvoz Vipava iz smeri Nanosa, dela, oviran promet, košnja.",
+  "loc": "H4, Razdrto - Nova Gorica",
+  "lat": 45.83666,
+  "lng": 13.95414,
+  "start": "2026-07-11T06:24:37.337Z",
+  "end": "2026-07-11T12:00:00Z",
+  "ts": "2026-07-11T06:24:56.863Z"
+ },
+ {
+  "id": "DARS;862699;4da48ac3-1792-4511-8fa9-7d092c49888d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, počivališče Zima - priključek Celje zahod v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.26178,
+  "lng": 15.38604,
+  "start": "2026-07-11T05:54:40.733Z",
+  "end": "2026-07-11T13:00:43.253Z",
+  "ts": "2026-07-11T05:54:51.443Z"
+ },
+ {
+  "id": "DARS;862697;ddeb67ea-c9b2-445e-85de-46127769fd25",
+  "type": "MaintenanceWorks",
+  "desc": "A3, razcep Gabrk - Fernetiči, izvoz Sežana vzhod - uvoz Sežana vzhod iz smeri Gabrka, dela, oviran promet, košnja.",
+  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
+  "lat": 45.71372,
+  "lng": 13.8855,
+  "start": "2026-07-11T05:28:14.183Z",
+  "end": "2026-07-11T21:00:44.673Z",
+  "ts": "2026-07-11T05:28:42.22Z"
+ },
+ {
+  "id": "DARS;862695;e4c8291f-bfe8-4ff3-9b10-35165951c485",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, priključek Lendava - prehod Pince v smeri Madžarske, dela, zaprt vozni pas.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.53469,
+  "lng": 16.44671,
+  "start": "2026-07-11T05:12:05.187Z",
+  "end": "2026-07-11T15:00:57.307Z",
+  "ts": "2026-07-11T05:12:09.12Z"
+ },
+ {
+  "id": "DARS;862693;e9e47a5c-f3ae-4a99-96de-33995934bac1",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Koper - Škofije, izvoz Plavje - uvoz Plavje iz smeri Srmina, dela, oviran promet, košnja.",
+  "loc": "G1-11, Koper - Škofije",
+  "lat": 45.57843,
+  "lng": 13.79638,
+  "start": "2026-07-11T04:58:32.493Z",
+  "end": "2026-07-11T11:00:06.35Z",
+  "ts": "2026-07-11T04:58:50.307Z"
+ },
+ {
+  "id": "DARS;862689;ecb4f6ef-0e49-4b59-b88e-8a910d5b8566",
+  "type": "MaintenanceWorks",
+  "desc": "G1-4, Otiški vrh - Dravograd, v Meži, oviran promet, košnja, do 9:00.",
+  "loc": "G1-4, Dravograd - Otiški Vrh",
+  "lat": 46.58678,
+  "lng": 15.02387,
+  "start": "2026-07-11T04:32:04.71Z",
+  "end": "2026-07-11T07:00:00Z",
+  "ts": "2026-07-11T04:32:59.81Z"
+ },
+ {
+  "id": "DARS;862686;39aa6207-146a-4176-8cc1-67015667e34a",
+  "type": "MaintenanceWorks",
+  "desc": "R1-230, Gornja Radgona - Radenci, v Meleh, oviran promet, košnja, do 17:00.",
+  "loc": "R1-230, Gornja Radgona - Radenci",
+  "lat": 46.67085,
+  "lng": 15.99556,
+  "start": "2026-07-11T05:00:00Z",
+  "end": "2026-07-11T15:00:00Z",
+  "ts": "2026-07-11T03:37:50.24Z"
+ },
+ {
+  "id": "DARS;862685;4408222b-dbeb-4661-855c-500182441d4b",
+  "type": "MaintenanceWorks",
+  "desc": "R2-449, Gornja Radgona - Podgrad, pri Gornji Radgoni, oviran promet, košnja, do 17:00.",
+  "loc": "R2-449, Gornja Radgona",
+  "lat": 46.68123,
+  "lng": 15.97093,
+  "start": "2026-07-11T05:00:00Z",
+  "end": "2026-07-11T15:00:00Z",
+  "ts": "2026-07-11T03:37:01.94Z"
+ },
+ {
+  "id": "DARS;862684;52ed8fe9-9c5b-4d06-8766-40bc5e9ffcd0",
+  "type": "MaintenanceWorks",
+  "desc": "G1-3, Lenart - Gornja Radgona, pri Plitvičkem vrhu, oviran promet, košnja, do 17:00.",
+  "loc": "R2-449, Lenart - Gornja Radgona",
+  "lat": 46.63935,
+  "lng": 15.91579,
+  "start": "2026-07-11T05:00:00Z",
+  "end": "2026-07-11T15:00:00Z",
+  "ts": "2026-07-11T03:36:14.67Z"
  },
  {
   "id": "DARS;825949;0a53fe13-702b-456a-bec7-e609e7e44ff6",
@@ -24,28 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-12-08T07:41:08.133Z",
   "end": "2026-07-13T21:59:00Z",
   "ts": "2026-07-10T17:00:56.917Z"
- },
- {
-  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 45.96375,
-  "lng": 15.5243,
-  "start": "2025-10-02T05:56:02.493Z",
-  "end": "2026-12-31T22:59:00Z",
-  "ts": "2026-07-10T15:01:01.253Z"
- },
- {
-  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
-  "loc": "R3-706, Ožbalt - Zg. Kapla",
-  "lat": 46.62649,
-  "lng": 15.43348,
-  "start": "2026-06-22T06:28:52.303Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-07-10T15:01:00.257Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
