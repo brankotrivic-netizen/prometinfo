@@ -15,7 +15,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "11.07.2026 13:41:15",
+  "ts": "11.7.2026. 13:41:15",
   "tsISO": "2026-07-11T13:41:15+02:00"
  },
  {
@@ -37,22 +37,6 @@ export const HAK_WAITS: HakWait[] = [
  {
   "id": "ba-neum-i",
   "name": "Klek (Neum I)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ts": "11.07.2026 10:12:45",
-  "tsISO": "2026-07-11T10:12:45+02:00"
- },
- {
-  "id": "ba-doljani",
-  "name": "Metković (Doljani)",
   "ulazMin": null,
   "izlazMin": 30,
   "ulazTxt": "-",
@@ -111,15 +95,15 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
-  "ts": "11.07.2026 11:45:26",
+  "ts": "11.7.2026. 11:45:26",
   "tsISO": "2026-07-11T11:45:26+02:00"
  },
  {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
-  "ulazMin": 90,
+  "ulazMin": 120,
   "izlazMin": 180,
-  "ulazTxt": "1 h 30 min.",
+  "ulazTxt": "2 h",
   "izlazTxt": "3 h",
   "truckUlazMin": 60,
   "truckIzlazMin": 180,
@@ -127,7 +111,55 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "3 h",
   "level": "severe",
   "waitMinutes": 180,
-  "ts": "11.07.2026 12:56:20",
-  "tsISO": "2026-07-11T12:56:20+02:00"
+  "ts": "11.7.2026. 15:12:09",
+  "tsISO": "2026-07-11T15:12:09+02:00"
+ },
+ {
+  "id": "hr-tovarnik",
+  "name": "Tovarnik (Šid)",
+  "ulazMin": null,
+  "izlazMin": 90,
+  "ulazTxt": "-",
+  "izlazTxt": "1 h 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": 240,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "4 h",
+  "level": "high",
+  "waitMinutes": 90,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
+  "id": "hr-ilok",
+  "name": "Ilok (Bačka Palanka)",
+  "ulazMin": null,
+  "izlazMin": 30,
+  "ulazTxt": "-",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
+  "id": "",
+  "name": "Principovac",
+  "ulazMin": null,
+  "izlazMin": 30,
+  "ulazTxt": "-",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "Nema podataka",
+  "tsISO": ""
  }
 ];
