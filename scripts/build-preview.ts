@@ -564,6 +564,7 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .camai.meta{color:var(--muted);font-weight:400}
 .camcellbtns{font-size:11px;padding:1px 2px 2px}
 .camsum{font-size:12px;background:var(--panel-2);border-radius:8px;padding:7px 9px;margin:5px 0;line-height:1.5}
+.camrefresh{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 12px;position:sticky;top:0;z-index:20;background:var(--bg);padding:6px 0}
 .campin{font-size:12px;width:22px;height:22px;line-height:19px;text-align:center;background:#fff;border:1.5px solid #3b82f6;border-radius:50%;box-shadow:0 1px 3px rgba(16,32,43,.4)}
 .carina{position:relative;width:38px;height:38px}
 .carinadiv .csign{transition:transform .1s}
@@ -752,6 +753,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 ${sections}
 </div>
 <div class="view" id="view-cams" style="display:none">
+<div class="camrefresh"><button class="cam" onclick="refreshCams()">🔄 Osveži vidne kamere</button> <span class="meta">Slike se same osvežujejo na 45 s (samo vidne). Gumb osveži takoj.</span></div>
 <section class="country-group" id="favSection">
   <h2>⭐ Moje priljubljene kamere <span class="cnt" id="favCnt">0</span></h2>
   <div class="camgrid" id="favGrid"></div>
@@ -856,7 +858,7 @@ ${fuelHtml}
     <div class="modalhead"><span id="camTitle"></span><button onclick="closeCam()">✕</button></div>
     <div style="text-align:center"><img id="camBig" referrerpolicy="no-referrer" alt=""></div>
     <div id="camCheckBar" style="display:none"></div>
-    <div class="modalfoot">Živa slika (osvežuje se) · <a id="camOpen" href="#" target="_blank" rel="noopener noreferrer">odpri v novem zavihku ↗</a></div>
+    <div class="modalfoot"><button class="cam" onclick="refreshBig()">🔄 Osveži</button> Živa slika (osvežuje se na 15 s) · <a id="camOpen" href="#" target="_blank" rel="noopener noreferrer">odpri v novem zavihku ↗</a></div>
   </div>
 </div>
 <div id="iosHelp" class="modal" onclick="if(event.target===this)closeIosHelp()">
@@ -1144,6 +1146,18 @@ function favRebuild(){ var grid=document.getElementById('favGrid'); if(!grid) re
 function favToggle(k){ if(FAVS.has(k))FAVS.delete(k); else FAVS.add(k); favSave(); favSync(); favRebuild(); }
 var _camTimer=null;
 function camBust(u){ return u+(u.indexOf('?')>=0?'&':'?')+'t='+Date.now(); }
+// ROCNO osvezi kamere: znotraj podanega elementa, sicer vse vidne na zaslonu
+window.refreshCams=function(scope){
+  var root=scope?(typeof scope==='string'?document.querySelector(scope):scope):document;
+  if(!root) root=document;
+  var ims=root.querySelectorAll('img.snap'), n=0, vh=window.innerHeight||800;
+  for(var i=0;i<ims.length;i++){ var im=ims[i], base=im.getAttribute('data-base'); if(!base) continue;
+    if(root===document){ if(im.offsetParent===null) continue; var r=im.getBoundingClientRect(); if(r.bottom<-50||r.top>vh+50) continue; }
+    im.src=base+(base.indexOf('?')>=0?'&':'?')+'t='+Date.now(); n++; }
+  try{ toast('🔄 Osvežujem '+n+' kamer…'); }catch(e){}
+  return n;
+};
+window.refreshBig=function(){ var big=document.getElementById('camBig'), op=document.getElementById('camOpen'); if(big&&op&&op.href){ big.src=camBust(op.href.split('?')[0]); toast('🔄 Osvežujem kamero…'); } };
 function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
 function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; var cb=document.getElementById('camCheckBar'); if(cb){cb.style.display='none';cb.innerHTML='';} }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
@@ -1406,7 +1420,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       else { ln++; } });
     var line='📷 Kamere za '+p.name+': <b style="color:#16a34a">✅ '+a+' analizirane</b> · <b style="color:#b91c1c">🔒 '+bl+' blokirane</b> · <b style="color:#64748b">🔗 '+ln+' samo linki</b>';
     var concl = a>0 ? ('AI je analiziral '+a+' od '+n+' kamer'+(a<n?' — rezultat ni popolnoma zanesljiv.':'.')+(lastAt?' Zadnja uspešna: '+agoShort(lastAt)+' nazaj.':'')) : ('Nobena kamera ni bila AI-analizirana — to so zaenkrat samo povezave. Klikni »Analiziraj« ali preveri sam.');
-    return '<div class="camsum">'+line+'<br><span class="meta">'+concl+'</span> · <button class="linklike" onclick="analyzeAllCams(\\''+p.id+'\\')">🔍 Analiziraj vse</button></div>';
+    return '<div class="camsum">'+line+'<br><span class="meta">'+concl+'</span> · <button class="linklike" onclick="refreshCams(\\'#ccams-'+p.id+'\\')">🔄 Osveži slike</button> · <button class="linklike" onclick="analyzeAllCams(\\''+p.id+'\\')">🔍 Analiziraj vse</button></div>';
   }
   /* ===== TOMTOM QUEUE DETECTOR (Flow Segment Data; deluje, ko je domena na kljucu) ===== */
   // fwd = azimut pristopa, ko potujes OD DOMA proti Balkanu; back = povratek
