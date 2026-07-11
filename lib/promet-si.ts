@@ -1,40 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-11T19:32:37.293Z";
+export const PROMET_SI_UPDATED = "2026-07-11T21:08:17.080Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;862832;7eeb2fc9-e8ab-4945-a830-a2305628ed87",
+  "id": "DARS;855706;30f43462-8ba1-4ecf-bfbe-c0a33e6844f6",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, razcep Kozarje - priključek Brezovica iz smeri Viča proti Brezovici, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.03769,
-  "lng": 14.45204,
-  "start": "2026-07-11T19:10:23.137Z",
-  "end": "2026-07-11T20:00:45.367Z",
-  "ts": "2026-07-11T19:10:25.523Z"
+  "desc": "H4, Razdrto - Nova Gorica, priključek Vipava - priključek 2 Ajdovščina v smeri Vrtojbe, Italije, dela, promet poteka po enem voznem pasu v vsako smer.",
+  "loc": "H4, Razdrto - Nova Gorica",
+  "lat": 45.8616,
+  "lng": 13.93817,
+  "start": "2026-06-07T19:12:55.377Z",
+  "end": "2026-07-31T13:00:00Z",
+  "ts": "2026-07-11T20:05:42.127Z"
  },
  {
-  "id": "DARS;862820;0a0d6662-15fb-44a5-b309-10d223ba943c",
+  "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
   "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, pred predorom Mali Vrh v smeri Ljubljane, dela, zaprt prehitevalni pas, košnja.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.97916,
-  "lng": 14.60581,
-  "start": "2026-07-11T18:13:17.7Z",
-  "end": "2026-07-12T00:00:00Z",
-  "ts": "2026-07-11T18:13:24.79Z"
+  "desc": "H4, Nova Gorica - Razdrto, pred priključkom 2 Ajdovščina v smeri Razdrtega, dela, zaprt prehitevalni pas.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.88156,
+  "lng": 13.896,
+  "start": "2026-06-07T16:16:04.123Z",
+  "end": "2026-07-31T13:00:00Z",
+  "ts": "2026-07-11T20:01:47.32Z"
  },
  {
-  "id": "DARS;862818;db578ee9-2089-4e9d-9c19-f9426afee6dc",
+  "id": "DARS;824250;ac0836a9-0101-491e-a4be-62a2f32eee61",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Maribor jug iz smeri Hoč proti Ljubljani, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.48476,
-  "lng": 15.65435,
-  "start": "2026-07-11T17:45:04.99Z",
-  "end": "2026-07-11T23:00:47.83Z",
-  "ts": "2026-07-11T17:45:25.167Z"
+  "desc": "H4, Nova Gorica - Razdrto, pred priključkom Vipava v smeri Razdrtega, dela, zaprt prehitevalni pas.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.83965,
+  "lng": 13.95278,
+  "start": "2025-11-25T22:34:17.297Z",
+  "end": "2026-10-10T16:00:00Z",
+  "ts": "2026-07-11T19:51:18.4Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -961,17 +961,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-06-11T04:34:49.127Z"
  },
  {
-  "id": "DARS;855706;30f43462-8ba1-4ecf-bfbe-c0a33e6844f6",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, priključek Vipava - priključek 2 Ajdovščina v smeri Vrtojbe, Italije, dela, promet poteka po enem voznem pasu v vsako smer.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.8616,
-  "lng": 13.93817,
-  "start": "2026-06-07T19:12:55.377Z",
-  "end": "2026-07-15T01:00:00Z",
-  "ts": "2026-06-10T17:35:50.383Z"
- },
- {
   "id": "DARS;856362;59021509-7d0f-46f8-a33a-e64776ff1fcf",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-711, Rače - Kungota - Kidričevo, pri Kungoti, izmenično enosmerni promet, gradnja pločnika in postajališč ter komunalna ureditve, do 31. 8. 2026.",
@@ -1157,17 +1146,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-02-04T07:48:39.13Z",
   "end": "2026-09-11T21:59:00Z",
   "ts": "2026-05-20T13:51:41.77Z"
- },
- {
-  "id": "DARS;824250;ac0836a9-0101-491e-a4be-62a2f32eee61",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Nova Gorica - Razdrto, pred priključkom Vipava v smeri Razdrtega, dela, zaprt prehitevalni pas.",
-  "loc": "H4, Nova Gorica - Razdrto",
-  "lat": 45.83965,
-  "lng": 13.95278,
-  "start": "2025-11-25T22:34:17.297Z",
-  "end": "2026-07-26T16:00:00Z",
-  "ts": "2026-05-20T09:45:32.747Z"
  },
  {
   "id": "DARS;851370;2dd7419b-e71f-4a64-b33c-92fda85c6ef4",
