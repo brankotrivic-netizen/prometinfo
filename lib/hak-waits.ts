@@ -25,14 +25,14 @@ export const HAK_WAITS: HakWait[] = [
   "izlazMin": 180,
   "ulazTxt": "do 30 min.",
   "izlazTxt": "3 h",
-  "truckUlazMin": 90,
-  "truckIzlazMin": 90,
-  "truckUlazTxt": "1 h 30 min.",
-  "truckIzlazTxt": "1 h 30 min.",
+  "truckUlazMin": 60,
+  "truckIzlazMin": 120,
+  "truckUlazTxt": "1 h",
+  "truckIzlazTxt": "2 h",
   "level": "severe",
   "waitMinutes": 180,
-  "ts": "11.7.2026. 5:00:15",
-  "tsISO": "2026-07-11T05:00:15+02:00"
+  "ts": "11.7.2026. 8:29:47",
+  "tsISO": "2026-07-11T08:29:47+02:00"
  },
  {
   "id": "hr-tovarnik",

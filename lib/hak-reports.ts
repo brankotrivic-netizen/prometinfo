@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "11.7.2026. 08:24",
-  "text": "Pojačan je promet u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. A1 Zagreb-Split-Dubrovnik na dionici između čvorova Lučko i Karlovac u smjeru mora vozi se usporeno u kolonama u pokretu uz zastoje prometna nesreća između čvora Bisko i čvora Split (na 379+000 km) u smjeru Zagreba, vozi se po dvije prometne trake uz ograničenje brzine od 40 km/h A2 Zagreb-Macelj kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je oko 3 km A3 Bregana-Lipovac prema naplatnim postajama Lučko iz smjera Buzina kolona je oko 1 km od naplatne postaje Lipovac prema graničnom prijelazu Bajakovo kolona je osobnih i teretnih vozila oko 2 km predmet između čvora Lu…"
+  "updated": "11.7.2026. 08:40",
+  "text": "Pojačan je promet u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. A1 Zagreb-Split-Dubrovnik na dionici između čvorova Lučko i Karlovac u smjeru mora vozi se usporeno u kolonama u pokretu uz zastoje prometna nesreća između čvora Bisko i čvora Split (na 379+000 km) u smjeru Zagreba, vozi se po dvije prometne trake uz ograničenje brzine od 40 km/h A2 Zagreb-Macelj kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je oko 3 km A3 Bregana-Lipovac od naplatne postaje Lipovac prema graničnom prijelazu Bajakovo kolona je osobnih i teretnih vozila oko 2 km. Krčki most kolona je od Krčkog mosta prema Omišlju oko 4 km. IZVANREDNI PROMETNI DOGAĐAJI:…"
  },
  {
   "title": "Granični prijelazi",
