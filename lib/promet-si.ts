@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-11T06:42:08.375Z";
+export const PROMET_SI_UPDATED = "2026-07-11T07:08:50.574Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;862702;fb9e7eb3-1dab-411a-8f89-b408fdb579cc",
@@ -68,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-11T04:58:32.493Z",
   "end": "2026-07-11T11:00:06.35Z",
   "ts": "2026-07-11T04:58:50.307Z"
- },
- {
-  "id": "DARS;862689;ecb4f6ef-0e49-4b59-b88e-8a910d5b8566",
-  "type": "MaintenanceWorks",
-  "desc": "G1-4, Otiški vrh - Dravograd, v Meži, oviran promet, košnja, do 9:00.",
-  "loc": "G1-4, Dravograd - Otiški Vrh",
-  "lat": 46.58678,
-  "lng": 15.02387,
-  "start": "2026-07-11T04:32:04.71Z",
-  "end": "2026-07-11T07:00:00Z",
-  "ts": "2026-07-11T04:32:59.81Z"
  },
  {
   "id": "DARS;862686;39aa6207-146a-4176-8cc1-67015667e34a",
