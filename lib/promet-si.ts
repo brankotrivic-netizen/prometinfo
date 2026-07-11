@@ -1,30 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-11T07:08:50.574Z";
+export const PROMET_SI_UPDATED = "2026-07-11T08:59:52.494Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;862702;fb9e7eb3-1dab-411a-8f89-b408fdb579cc",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, uvoz Vipava v smeri Vrtojbe, Italije, dela, oviran promet, košnja.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.83688,
-  "lng": 13.95551,
-  "start": "2026-07-11T06:25:07.613Z",
-  "end": "2026-07-11T12:00:00Z",
-  "ts": "2026-07-11T06:25:15.857Z"
- },
- {
-  "id": "DARS;862701;38fd172b-242c-48b5-8f4a-84e9d58bbf2d",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, izvoz Vipava iz smeri Nanosa, dela, oviran promet, košnja.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.83666,
-  "lng": 13.95414,
-  "start": "2026-07-11T06:24:37.337Z",
-  "end": "2026-07-11T12:00:00Z",
-  "ts": "2026-07-11T06:24:56.863Z"
- },
  {
   "id": "DARS;862699;4da48ac3-1792-4511-8fa9-7d092c49888d",
   "type": "MaintenanceWorks",
@@ -37,17 +15,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-11T05:54:51.443Z"
  },
  {
-  "id": "DARS;862697;ddeb67ea-c9b2-445e-85de-46127769fd25",
-  "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, izvoz Sežana vzhod - uvoz Sežana vzhod iz smeri Gabrka, dela, oviran promet, košnja.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.71372,
-  "lng": 13.8855,
-  "start": "2026-07-11T05:28:14.183Z",
-  "end": "2026-07-11T21:00:44.673Z",
-  "ts": "2026-07-11T05:28:42.22Z"
- },
- {
   "id": "DARS;862695;e4c8291f-bfe8-4ff3-9b10-35165951c485",
   "type": "MaintenanceWorks",
   "desc": "A5, Maribor - Pince, priključek Lendava - prehod Pince v smeri Madžarske, dela, zaprt vozni pas.",
@@ -57,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-11T05:12:05.187Z",
   "end": "2026-07-11T15:00:57.307Z",
   "ts": "2026-07-11T05:12:09.12Z"
- },
- {
-  "id": "DARS;862693;e9e47a5c-f3ae-4a99-96de-33995934bac1",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, izvoz Plavje - uvoz Plavje iz smeri Srmina, dela, oviran promet, košnja.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.57843,
-  "lng": 13.79638,
-  "start": "2026-07-11T04:58:32.493Z",
-  "end": "2026-07-11T11:00:06.35Z",
-  "ts": "2026-07-11T04:58:50.307Z"
  },
  {
   "id": "DARS;862686;39aa6207-146a-4176-8cc1-67015667e34a",
