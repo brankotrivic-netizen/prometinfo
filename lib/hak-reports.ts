@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "11.7.2026. 20:04",
-  "text": "Kolnici su mjestimice mokri i skliski. Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, osobito na autocestama te na većini graničnih prijelaza. Zastoji su povremeno na dionicama cesta gdje traju radovi. A1 Zagreb-Split-Dubrovnik pojačan je promet između čvora Karlovac i naplate Lučko u smjeru Zagreba na naplatama Lučko i Demerje nema dužih čekanja vozilo u kvaru u tunelu Mala Kapela na ugibalištu u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h A3 Bregana-Lipovac od naplatne postaje Lipovac prema graničnom prijelazu Bajakovo kolona je osobnih i teretnih vozila oko 2 km. A4 Goričan-Zagreb prometna nesreća na autocesti A4 između čvor…"
+  "updated": "11.7.2026. 21:16",
+  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Na većini cesta vozi se bez poteškoća, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na državnoj cesti DC66 Labin-Barban na dionici Raša-most Raša zbog požara je zatvorena državna cesta Vela Luka-Korčula (DC118) kraj mjesta Blato zbog vozila u kvaru na brzoj cesti DC1 Solin-Klis, iza tunela Klis Kosa, u smjeru Dugopolja vozi se uz ograničenje brzine od 40 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati. zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u m…"
  },
  {
   "title": "Granični prijelazi",

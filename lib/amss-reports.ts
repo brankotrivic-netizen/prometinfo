@@ -10,10 +10,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 13. 7. 2026. do 19. 11. 2027. godine, izvodiće se radovi na pojačanom održavanju , na deonici Novi Pazar (Brđani) - Ribariće. Saobraćaj će se odvijati naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  },
  {
-  "title": "Petlja Ostružnica - III faza radova",
-  "text": "Od 6. 7 .2026. od 8 časova do 11. 7. 2026. do 16 časova izvodiće se radovi na rehabilitaciji kompletne petlje Ostružnica (faza III), na državnom putu I A reda broj 1. Tokom izvođenja radova, saobraćaj će se odvijati u sledećem režimu: - Isključenje za Obrenovac iz smera Novog Sada i iz smera Niša biće zatvoreno za saobraćaj. - Saobraćaj u smeru Niš / Novi Sad - Obrenovac, će funkcionisati preko petlje Surčin jug auto-put Miloš Veliki petlja Obrenovac. - Isključenje za Železnik (Niš/Novi Sad Beog…"
- },
- {
   "title": "Petlja Pećinci, radovi",
   "text": "Na snazi je izmena režima saobraćaja na državnom putu I A reda broj 3, u zoni petlje Pećinci zbog izvođenja radova na rekonstrukciji natputnjaka. Tokom izvođenja radova saobraćaj se u smeru ka Beogradu odvija normalno, dok je u suprotnom smeru za saobraćaj zatvorena preticajna saobraćajna traka i saobraćaj se odvija voznom i zaustavnom saobraćajnom trakom. Takođe za saobraćaj je zatvoreno isključenje na petlji Pećinci iz pravca Beograda i uključenje sa petlje Pećinci prema Sremskoj Mitrovici i š…"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Kumanica-Kamenjača, radovi",
   "text": "U toku su radovi na rekonstrukciji državnog puta II A reda broj 197, deonica Kumanica-Kamenjača, u dužini 3,5km, koji obuhvataju i radove na izgradnji 4 nova mosta. Saobraćaj se na jednom delu puta odvija devijacijom, pri čemu je zabranjen saobraćaj za kamione sa prikolicom. Radovi su obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Prijepolje- Brodarevo, mesto Točilovo klizište",
+  "text": "Produžava se izmena režima saobraćaja usled pojave klizišta na državnom putu I B reda broj 23, na deonici Brodarevo Gostun u mestu Točilovo Saobraćaj se odvija naizmeničnim propuštanjem vozila i regulisan je saobraćajnim znakovima. Izvor: Putevi Srbije"
  }
 ];
