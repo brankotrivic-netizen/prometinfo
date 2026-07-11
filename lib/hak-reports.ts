@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "11.7.2026. 12:32",
-  "text": "Pojačan je promet na većini cesta u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. Kolnici su mjestimice mokri i skliski. A1 Zagreb-Split-Dubrovnik na dionici između čvorova Lučko i Bosiljevo 2 u oba smjera vozi se usporeno u kolonama u pokretu uz zastoje pojačan je promet između tunela Sveti Rok i čvora Zadar istok u oba smjera vozi se usporeno u kolonama u pokretu uz zastoje pred naplatnim postajama Lučko u smjeru Zagreba kolona je oko 1 km A2 Zagreb-Macelj kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je oko 3 km A3 Bregana-Lipovac od naplatne postaje Lipovac prema graničnom prijelazu Bajakovo kolona je osobnih i teretnih vozila o…"
+  "updated": "11.7.2026. 13:56",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. Kolnici su mjestimice mokri i skliski. A1 Zagreb-Split-Dubrovnik prometna nesreća kod odmorišta Vukova Gorica u smjeru Zagreba, vozi se jednom prometnom trakom uz ograničenje brzine od 40 km/h na dionici između čvorova Lučko i Bosiljevo 2 u oba smjera vozi se usporeno u kolonama u pokretu uz zastoje pojačan je promet između tunela Sveti Rok i čvora Zadar istok u oba smjera vozi se usporeno u kolonama u pokretu uz zastoje A2 Zagreb-Macelj kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je oko 2 km A3 Bregana-Lipovac od naplatne postaje Lip…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "11.7.2026. 11:40",
+  "updated": "11.7.2026. 13:56",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "11.7.2026. 11:40",
+  "updated": "11.7.2026. 13:56",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
