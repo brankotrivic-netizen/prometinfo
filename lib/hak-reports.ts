@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "11.7.2026. 15:49",
-  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. Kolnici su mjestimice mokri i skliski. A1 Zagreb-Split-Dubrovnik prometna nesreća između čvora Jastrebarsko i čvora Donja Zdenčina ( na 16+000 km) u smjeru Zagreba , vozi se usporeno u koloni na dionici između čvorova Lučko i Bosiljevo 2 u oba smjera vozi se usporeno u kolonama u pokretu uz zastoje A3 Bregana-Lipovac od naplatne postaje Lipovac prema graničnom prijelazu Bajakovo kolona je osobnih i teretnih vozila oko 3 km Istarski ipsilon povremeno su zastoji između čvora i tunela Učka u oba smjera Krčki most u smjeru otoka kolona je od čvora Šm…"
+  "updated": "11.7.2026. 17:00",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. Kolnici su mjestimice mokri i skliski. A1 Zagreb-Split-Dubrovnik na dionici između čvorova Lučko i Bosiljevo 2 u oba smjera vozi se usporeno u kolonama u pokretu uz zastoje A3 Bregana-Lipovac od naplatne postaje Lipovac prema graničnom prijelazu Bajakovo kolona je osobnih i teretnih vozila oko 3 km Istarski ipsilon povremeno su zastoji između čvora i tunela Učka u oba smjera DC1 zastoji su u zoni radova između Gračaca i Knina kraj mjesta Otrić Jadranska magistrala (DC8) pojačan je promet i povremeno su zastoji na prilazima turističkim središtima …"
  },
  {
   "title": "Granični prijelazi",

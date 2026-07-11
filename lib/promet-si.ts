@@ -1,40 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-11T13:55:19.460Z";
+export const PROMET_SI_UPDATED = "2026-07-11T15:16:43.360Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;862686;39aa6207-146a-4176-8cc1-67015667e34a",
-  "type": "MaintenanceWorks",
-  "desc": "R1-230, Gornja Radgona - Radenci, v Meleh, oviran promet, košnja, do 17:00.",
-  "loc": "R1-230, Gornja Radgona - Radenci",
-  "lat": 46.67085,
-  "lng": 15.99556,
-  "start": "2026-07-11T05:00:00Z",
-  "end": "2026-07-11T15:00:00Z",
-  "ts": "2026-07-11T03:37:50.24Z"
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-07-11T15:00:06.043Z"
  },
  {
-  "id": "DARS;862685;4408222b-dbeb-4661-855c-500182441d4b",
-  "type": "MaintenanceWorks",
-  "desc": "R2-449, Gornja Radgona - Podgrad, pri Gornji Radgoni, oviran promet, košnja, do 17:00.",
-  "loc": "R2-449, Gornja Radgona",
-  "lat": 46.68123,
-  "lng": 15.97093,
-  "start": "2026-07-11T05:00:00Z",
-  "end": "2026-07-11T15:00:00Z",
-  "ts": "2026-07-11T03:37:01.94Z"
- },
- {
-  "id": "DARS;862684;52ed8fe9-9c5b-4d06-8766-40bc5e9ffcd0",
-  "type": "MaintenanceWorks",
-  "desc": "G1-3, Lenart - Gornja Radgona, pri Plitvičkem vrhu, oviran promet, košnja, do 17:00.",
-  "loc": "R2-449, Lenart - Gornja Radgona",
-  "lat": 46.63935,
-  "lng": 15.91579,
-  "start": "2026-07-11T05:00:00Z",
-  "end": "2026-07-11T15:00:00Z",
-  "ts": "2026-07-11T03:36:14.67Z"
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-11T15:00:05.227Z"
  },
  {
   "id": "DARS;825949;0a53fe13-702b-456a-bec7-e609e7e44ff6",
