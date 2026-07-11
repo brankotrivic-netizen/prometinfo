@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-11T17:16:43.127Z";
+export const PROMET_SI_UPDATED = "2026-07-11T18:09:12.583Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;862818;db578ee9-2089-4e9d-9c19-f9426afee6dc",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, uvoz Maribor jug iz smeri Hoč proti Ljubljani, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.48476,
+  "lng": 15.65435,
+  "start": "2026-07-11T17:45:04.99Z",
+  "end": "2026-07-11T23:00:47.83Z",
+  "ts": "2026-07-11T17:45:25.167Z"
+ },
  {
   "id": "DARS;862813;74e4b176-3290-4eb3-bcd5-351bc5149289",
   "type": "MaintenanceWorks",
@@ -13,28 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-11T17:12:34.443Z",
   "end": "2026-07-11T21:00:08.413Z",
   "ts": "2026-07-11T17:12:47.343Z"
- },
- {
-  "id": "DARS;862812;f79e8857-fff3-459c-9638-f323ecf2ca92",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, priključek Zakl - priključek Podlehnik v smeri Maribora, dela, oviran promet.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.31757,
-  "lng": 15.87412,
-  "start": "2026-07-11T17:10:36.49Z",
-  "end": "2026-07-11T23:00:00Z",
-  "ts": "2026-07-11T17:10:43.15Z"
- },
- {
-  "id": "DARS;862811;0afcbd59-776d-43e6-b3a8-37b53f9ac70e",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.93441,
-  "lng": 14.8301,
-  "start": "2026-07-11T17:06:00.117Z",
-  "end": "2026-07-11T23:00:00Z",
-  "ts": "2026-07-11T17:06:02.853Z"
  },
  {
   "id": "DARS;862810;69543369-dd31-4518-8ea6-26f235b15727",
