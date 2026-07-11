@@ -601,6 +601,7 @@ h1{font-size:24px}
 .subtitle{font-size:13px}
 .tabs{display:flex;gap:4px;margin-bottom:16px;border-bottom:2px solid var(--border);flex-wrap:wrap}
 .tab{background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;padding:10px 16px;font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;font-family:inherit}
+.tab .ti{font-style:normal}.tab .tl{margin-left:5px}
 .tab:hover{color:var(--text)}
 .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 #view-map{position:relative}
@@ -626,20 +627,24 @@ h1{font-size:24px}
  #map{height:440px}
 }
 @media(max-width:640px){
- .wrap{padding:12px 10px 48px}
+ .wrap{padding:12px 10px 76px}
  h1{font-size:20px}
  .countrytiles{grid-template-columns:repeat(3,1fr);gap:6px}
  .ctile{padding:10px 4px;border-radius:10px}
  .ctile .cflag{font-size:22px}.ctile .cname{font-size:11px}.ctile .cstat{font-size:10px}
- .tabs{flex-wrap:nowrap;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
- .tabs::-webkit-scrollbar{display:none}
  .rhead{font-size:14px}.dname{font-size:30px}.dwait{font-size:20px}
- .tab{padding:8px 11px;font-size:13px;white-space:nowrap}
  #map{height:360px}
  .stats{gap:6px}.stat{flex:1 1 calc(33% - 6px);padding:8px 6px}.stat b{font-size:18px}
  .grid,.camgrid,.reports{grid-template-columns:1fr 1fr;gap:8px}
  .legend{font-size:11px;gap:8px 10px}
  .report,.card{padding:10px 12px}
+ /* SPODNJA NAVIGACIJA (kot native app) */
+ .tabs{position:fixed;left:0;right:0;bottom:0;z-index:1000;margin:0;padding:3px 2px calc(3px + env(safe-area-inset-bottom,0px));gap:0;background:var(--panel);border-top:1px solid var(--border);border-bottom:none;box-shadow:0 -2px 12px rgba(0,0,0,.1);flex-wrap:nowrap;justify-content:space-between}
+ .tab{flex:1 1 0;min-width:0;margin:0;padding:5px 1px;border-bottom:none;border-radius:9px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;font-size:9px}
+ .tab .ti{font-size:19px;margin:0;line-height:1.1}
+ .tab .tl{margin:0;font-size:8.5px;font-weight:600;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+ .tab.active{color:var(--accent);background:var(--panel-2)}
+ #toast{bottom:86px}
 }
 @media(max-width:400px){
  .countrytiles{grid-template-columns:repeat(2,1fr)}
@@ -699,16 +704,16 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 <div class="filterbar">
   <div class="searchwrap"><input id="search" type="text" autocomplete="off" placeholder="🔍 Išči mejni prehod ali kamero…" oninput="doSearch(this.value)"><div id="searchResults"></div></div>
 </div>
-<div class="tabs">
-  <button class="tab active" data-view="route" onclick="showView('route',this)">🧭 Moja pot</button>
-  <button class="tab" data-view="map" onclick="showView('map',this)">🗺️ Zemljevid</button>
-  <button class="tab" data-view="borders" onclick="showView('borders',this)">🚧 Mejni prehodi</button>
-  <button class="tab" data-view="cams" onclick="showView('cams',this)">📷 Kamere</button>
-  <button class="tab" data-view="reports" onclick="showView('reports',this)">📰 Poročila</button>
-  <button class="tab" data-view="truck" onclick="showView('truck',this)">🚛 Tovornjaki</button>
-  <button class="tab" data-view="fuel" onclick="showView('fuel',this)">⛽ Gorivo</button>
-  <button class="tab" data-view="settings" onclick="showView('settings',this)">⚙️ Nastavitve</button>
-</div>
+<nav class="tabs">
+  <button class="tab active" data-view="route" onclick="showView('route',this)"><span class="ti">🧭</span><span class="tl">Moja pot</span></button>
+  <button class="tab" data-view="map" onclick="showView('map',this)"><span class="ti">🗺️</span><span class="tl">Zemljevid</span></button>
+  <button class="tab" data-view="borders" onclick="showView('borders',this)"><span class="ti">🚧</span><span class="tl">Prehodi</span></button>
+  <button class="tab" data-view="cams" onclick="showView('cams',this)"><span class="ti">📷</span><span class="tl">Kamere</span></button>
+  <button class="tab" data-view="reports" onclick="showView('reports',this)"><span class="ti">📰</span><span class="tl">Poročila</span></button>
+  <button class="tab" data-view="truck" onclick="showView('truck',this)"><span class="ti">🚛</span><span class="tl">Tovornjaki</span></button>
+  <button class="tab" data-view="fuel" onclick="showView('fuel',this)"><span class="ti">⛽</span><span class="tl">Gorivo</span></button>
+  <button class="tab" data-view="settings" onclick="showView('settings',this)"><span class="ti">⚙️</span><span class="tl">Nastavitve</span></button>
+</nav>
 <div class="view" id="view-route">
   <div id="mpBanner"></div>
   <section class="country-group">
@@ -753,7 +758,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 ${sections}
 </div>
 <div class="view" id="view-cams" style="display:none">
-<div class="camrefresh"><button class="cam" onclick="refreshCams()">🔄 Osveži vidne kamere</button> <span class="meta">Slike se same osvežujejo na 45 s (samo vidne). Gumb osveži takoj.</span></div>
+<div class="camrefresh"><button class="cam" onclick="refreshCams()">🔄 Osveži vidne kamere</button> <span class="meta">Slike se same osvežujejo na 20 s (samo vidne). Gumb osveži takoj.</span></div>
 <section class="country-group" id="favSection">
   <h2>⭐ Moje priljubljene kamere <span class="cnt" id="favCnt">0</span></h2>
   <div class="camgrid" id="favGrid"></div>
@@ -1060,8 +1065,8 @@ locCtrl.addTo(map);
 /* ce slika kamere pade (izpad vira, npr. DARS): jasen nadomestek; 45s osvezevanje jo samodejno obudi */
 var CAMPH='data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180"><rect width="100%" height="100%" fill="#e2e8f0"/><text x="160" y="82" text-anchor="middle" fill="#64748b" font-family="sans-serif" font-size="15">📷 kamera trenutno ni dosegljiva</text><text x="160" y="106" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="11">vir ne odgovarja — poskusim znova čez minuto</text></svg>');
 document.addEventListener('error',function(e){ var im=e.target; if(!(im&&im.tagName==='IMG'&&im.classList&&im.classList.contains('snap')))return; if((im.src||'').indexOf('data:image')===0)return; im.src=CAMPH; },true);
-/* samodejno osvezevanje vidnih slik kamer (~45s) */
-setInterval(function(){ var vh=window.innerHeight||800; var ims=document.querySelectorAll('img.snap'); for(var i=0;i<ims.length;i++){ var im=ims[i]; if(im.offsetParent===null) continue; var r=im.getBoundingClientRect(); if(r.bottom<-50||r.top>vh+50) continue; var base=im.getAttribute('data-base'); if(!base) continue; im.src=base+(base.indexOf('?')>=0?'&':'?')+'t='+Date.now(); } }, 45000);
+/* samodejno osvezevanje vidnih slik kamer (~20s) */
+setInterval(function(){ var vh=window.innerHeight||800; var ims=document.querySelectorAll('img.snap'); for(var i=0;i<ims.length;i++){ var im=ims[i]; if(im.offsetParent===null) continue; var r=im.getBoundingClientRect(); if(r.bottom<-50||r.top>vh+50) continue; var base=im.getAttribute('data-base'); if(!base) continue; im.src=base+(base.indexOf('?')>=0?'&':'?')+'t='+Date.now(); } }, 20000);
 var TOMTOM_KEY='F4bmVyCwlAC8AYfwKDndl4iLAvCAhFh1';
 var trafficLayer=null;
 function toggleTraffic(cb){

@@ -20,7 +20,8 @@ export interface RoutePreset {
 export const ROUTE_PRESETS: RoutePreset[] = [
   {
     id: "kamnik-banja-luka", from: "Kamnik", to: "Banja Luka",
-    recommended: ["ba-gradiska"], alternative: ["ba-brod", "ba-gradina"], avoid: ["ba-kostajnica", "ba-novi-grad"],
+    // samo trije prehodi po zelenem vrstnem redu: Gradiška → Gradina → Dubica
+    recommended: ["ba-gradiska"], alternative: ["ba-gradina", "ba-kozarska-dubica"], avoid: [],
     fuelCountries: ["HR", "BA"],
   },
   {
