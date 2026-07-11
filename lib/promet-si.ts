@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-11T16:11:53.277Z";
+export const PROMET_SI_UPDATED = "2026-07-11T17:16:43.127Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;862813;74e4b176-3290-4eb3-bcd5-351bc5149289",
+  "type": "MaintenanceWorks",
+  "desc": "A3, razcep Gabrk - Fernetiči, uvoz Sežana vzhod - uvoz Sežana vzhod v smeri Fernetičev, Italije, dela, oviran promet.",
+  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
+  "lat": 45.71389,
+  "lng": 13.88271,
+  "start": "2026-07-11T17:12:34.443Z",
+  "end": "2026-07-11T21:00:08.413Z",
+  "ts": "2026-07-11T17:12:47.343Z"
+ },
+ {
+  "id": "DARS;862812;f79e8857-fff3-459c-9638-f323ecf2ca92",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, priključek Zakl - priključek Podlehnik v smeri Maribora, dela, oviran promet.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.31757,
+  "lng": 15.87412,
+  "start": "2026-07-11T17:10:36.49Z",
+  "end": "2026-07-11T23:00:00Z",
+  "ts": "2026-07-11T17:10:43.15Z"
+ },
+ {
+  "id": "DARS;862811;0afcbd59-776d-43e6-b3a8-37b53f9ac70e",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.93441,
+  "lng": 14.8301,
+  "start": "2026-07-11T17:06:00.117Z",
+  "end": "2026-07-11T23:00:00Z",
+  "ts": "2026-07-11T17:06:02.853Z"
+ },
+ {
+  "id": "DARS;862810;69543369-dd31-4518-8ea6-26f235b15727",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, viadukt Lešnica - priključek Naklo v smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.31361,
+  "lng": 14.26232,
+  "start": "2026-07-11T17:00:37.007Z",
+  "end": "2026-07-11T23:00:00Z",
+  "ts": "2026-07-11T17:01:59.097Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
