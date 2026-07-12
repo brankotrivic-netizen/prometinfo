@@ -19,22 +19,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-07-12T19:58:51+02:00"
  },
  {
-  "id": "ba-bijaca",
-  "name": "Nova Sela",
-  "ulazMin": null,
-  "izlazMin": 30,
-  "ulazTxt": "-",
-  "izlazTxt": "do 30 min.",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ts": "Nema podataka",
-  "tsISO": ""
- },
- {
   "id": "ba-orasje",
   "name": "Županja (Orašje)",
   "ulazMin": null,
@@ -84,22 +68,6 @@ export const HAK_WAITS: HakWait[] = [
  },
  {
   "id": "",
-  "name": "Dvor (Bosanski Novi)",
-  "ulazMin": 90,
-  "izlazMin": null,
-  "ulazTxt": "1 h 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 90,
-  "ts": "12.07.2026 19:28:19",
-  "tsISO": "2026-07-12T19:28:19+02:00"
- },
- {
-  "id": "",
   "name": "Hrvatska Dubica (Bosanska Dubica)",
   "ulazMin": 60,
   "izlazMin": null,
@@ -131,22 +99,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-07-12T20:27:36+02:00"
  },
  {
-  "id": "ba-samac",
-  "name": "Slavonski Šamac (Bosanski Šamac)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": 60,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "1 h",
-  "truckIzlazTxt": "-",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ts": "Nema podataka",
-  "tsISO": ""
- },
- {
   "id": "ba-svilaj",
   "name": "Svilaj",
   "ulazMin": 30,
@@ -161,22 +113,6 @@ export const HAK_WAITS: HakWait[] = [
   "waitMinutes": 30,
   "ts": "12.07.2026 19:22:51",
   "tsISO": "2026-07-12T19:22:51+02:00"
- },
- {
-  "id": "",
-  "name": "Karasovići (Sutorina)",
-  "ulazMin": 120,
-  "izlazMin": 240,
-  "ulazTxt": "2 h",
-  "izlazTxt": "4 h",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "severe",
-  "waitMinutes": 240,
-  "ts": "L: 1 km T: 12.07.2026 17:59:45",
-  "tsISO": "2026-07-12T17:59:45+02:00"
  },
  {
   "id": "hr-bajakovo",
