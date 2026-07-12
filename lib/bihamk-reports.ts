@@ -91,10 +91,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Divičani-Kuprešani",
-    "text": "Zbog održavanja autoslaloma danas (12.07.) od 10 do 18 sati doći će do obustave saobraćaja na regionalnoj cesti R-413b Divičani-Kuprešani."
-   },
-   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
