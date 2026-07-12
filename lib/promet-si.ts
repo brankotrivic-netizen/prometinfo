@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-12T06:47:04.706Z";
+export const PROMET_SI_UPDATED = "2026-07-12T09:16:51.233Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;862858;66bd6647-e901-449e-b383-12b4e5265900",
@@ -13,50 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-12T05:38:29.323Z",
   "end": "2026-07-12T11:00:00Z",
   "ts": "2026-07-12T05:39:16.617Z"
- },
- {
-  "id": "DARS;862857;c9836be9-682d-48cd-9534-e4dda5a7b3f6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - razcep Kozarje v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.97215,
-  "lng": 14.30608,
-  "start": "2026-07-12T05:32:38.113Z",
-  "end": "2026-07-12T19:00:00Z",
-  "ts": "2026-07-12T05:33:06.767Z"
- },
- {
-  "id": "DARS;862855;9ae3a6ac-407e-4e2f-8d4a-bdf54a8d65a7",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Lendava v smeri Madžarske, dela, oviran promet.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.55489,
-  "lng": 16.44318,
-  "start": "2026-07-12T05:23:03.177Z",
-  "end": "2026-07-12T11:00:00Z",
-  "ts": "2026-07-12T05:23:08.753Z"
- },
- {
-  "id": "DARS;862853;0ad5fdd6-2345-4d57-a8da-37162b5fb752",
-  "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, uvoz Sežana vzhod - uvoz Sežana vzhod v smeri Fernetičev, Italije, dela, oviran promet.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.71389,
-  "lng": 13.88271,
-  "start": "2026-07-12T05:00:04.667Z",
-  "end": "2026-07-12T21:00:08.413Z",
-  "ts": "2026-07-12T05:00:07.013Z"
- },
- {
-  "id": "DARS;862852;d7034439-8a29-420c-b0da-0873986afd2c",
-  "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, izvoz Sežana vzhod - izvoz Sežana vzhod iz smeri Gabrka, dela, oviran promet.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.71372,
-  "lng": 13.8855,
-  "start": "2026-07-12T04:59:57.493Z",
-  "end": "2026-07-12T21:00:44.673Z",
-  "ts": "2026-07-12T04:59:59.743Z"
  },
  {
   "id": "DARS;855706;30f43462-8ba1-4ecf-bfbe-c0a33e6844f6",
