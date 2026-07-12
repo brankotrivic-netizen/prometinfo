@@ -95,10 +95,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog održavanja autoslaloma danas (12.07.) od 10 do 18 sati doći će do obustave saobraćaja na regionalnoj cesti R-413b Divičani-Kuprešani."
    },
    {
-    "title": "Gračanica-Bukva",
-    "text": "Zbog održavanja Međunarodne biciklističke utrke danas (12.07.) od 12 do 14 sati obustavit će se saobraćaj na regionalnoj cesti R-460 Gračanica-Bukva (od raskršća kod BKC Gračanica do raskrša na Bukvi)."
-   },
-   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }

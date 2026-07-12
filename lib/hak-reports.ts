@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.7.2026. 12:23",
-  "text": "Kolnici su mjestimice mokri i skliski. Pojačan je promet na većini cesta u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. A1: pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km pojačan je promet između čvorova Lučko i Bosiljevo 2 u oba smjera između čvora Zadar istok i tunela Sveti Rok u smjeru Zagreba vozi se u koloni uz povremene zastoje A2 Zagreb-Macelj zbog pojačanog prometa pred naplatom Trakošćan u smjeru Zagreba kolona je 1 km zabranjeno je prometovanje za teretna vozila i autobuse od čvora Krapina do čvora Đurmanec u oba smjera A3 Bregana-Lipovac: na prilazu naplatnoj postaji Lučko u smjeru mora iz smjera čvor…"
+  "updated": "12.7.2026. 14:05",
+  "text": "Kolnici su mjestimice mokri i skliski. Pojačan je promet na većini cesta u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. A1: pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km pojačan je promet između čvorova Lučko i Bosiljevo 2 u oba smjera zbog prometne nesreće na autocesti A1 na 144.+200 km između čvorova Perušić i Otočac u smjeru Zagreba, vozi se jednim trakom oko 4 km iz sigurnosnih razloga prekinut je promet kroz tunele Grič i Plasina u smjeru Zagreba prometna nesreća na autocesti A1 između tunela Plasina i tunela Brezik u smjeru Zagreba, vozi se uz ograničenje brzine od 60 km/h A3 Bregana-Lipovac: na prilazu n…"
  },
  {
   "title": "Granični prijelazi",
