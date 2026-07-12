@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.7.2026. 15:49",
-  "text": "Pojačan je promet na većini cesta u smjeru unutrašnjosti, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. A1 Zagreb-Split-Dubrovnik: pred naplatnim postajama Demerje u smjeru Zagreba kolona je oko 1 km pojačan je promet između čvorova Lučko i Bosiljevo 2 u smjeru Zagreba A2 Zagreb-Macelj zbog pojačanog prometa zabranjeno je prometovanje za teretna vozila i autobuse od čvora Krapina do čvora Đurmanec u oba smjera DC1: zastoji su u zoni radova između Gračaca i Knina kraj mjesta Otrić. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati. zbog isključivanja izvanrednih prijevoza, s glav…"
+  "updated": "12.7.2026. 17:06",
+  "text": "Pojačan je promet na većini cesta u smjeru unutrašnjosti, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. A1 Zagreb-Split-Dubrovnik: pojačan je promet između čvorova Lučko i Bosiljevo 2 u smjeru Zagreba A2 Zagreb-Macelj: pred naplatnim postajama Trakošćan u smjeru Slovenije kolona je oko 500 metara zbog pojačanog prometa zabranjeno je prometovanje za teretna vozila i autobuse od čvora Krapina do čvora Đurmanec u oba smjera Krčki most: kolona je u smjeru kopna od Omišlja DC1: zastoji su u zoni radova između Gračaca i Knina kraj mjesta Otrić. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 0…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.7.2026. 10:37",
-  "text": "U prekidu je: katamaranska linija Dubrovnik-Pomena-Korčula brodska linija Komiža-Biševo. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
+  "updated": "12.7.2026. 17:05",
+  "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
