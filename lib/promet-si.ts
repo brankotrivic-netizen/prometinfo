@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-12T17:18:45.933Z";
+export const PROMET_SI_UPDATED = "2026-07-12T18:11:26.995Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;862940;de67c559-ef9e-4f21-a0ab-90e5fc875ce9",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Fram - počivališče Polskava, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.45082,
+  "lng": 15.65289,
+  "start": "2026-07-12T17:36:33.253Z",
+  "end": "2026-07-12T21:00:03.647Z",
+  "ts": "2026-07-12T17:36:38.267Z"
+ },
+ {
+  "id": "DARS;862937;a1e8a65a-5c39-4bdd-98a5-84410da3711c",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Dragomer - priključek Vrhnika v smeri Kopra, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 46.00127,
+  "lng": 14.34551,
+  "start": "2026-07-12T17:26:43.923Z",
+  "end": "2026-07-12T23:00:00Z",
+  "ts": "2026-07-12T17:26:49.613Z"
+ },
  {
   "id": "DARS;862932;f67ba797-46a1-4ed0-9914-a2ed40114dcd",
   "type": "MaintenanceWorks",
