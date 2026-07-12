@@ -3,13 +3,13 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.7.2026. 11:13",
-  "text": "Kolnici su mjestimice mokri i skliski. Pojačan je promet na većini cesta u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. A2 Zagreb-Macelj zbog pojačanog prometa pred naplatom Trakošćan u smjeru Zagreba kolona je 1 km zabranjeno je prometovanje za teretna vozila i autobuse od čvora Krapina do čvora Đurmanec u oba smjera A3 Bregana-Lipovac: na prilazu naplatnoj postaji Lučko u smjeru mora od strane čvora Buzin kolona je oko 2 km, a od čvora Zagreb zapad kolona je oko 1 km Istarski ipsilon pojačan je promet prema Kaštelu i Plovaniji Krčki most pojačan je promet u oba smjera, kolona je u smjeru kopna od Omišlja, a u smjeru otoka od čvora Šmrika. …"
+  "updated": "12.7.2026. 12:23",
+  "text": "Kolnici su mjestimice mokri i skliski. Pojačan je promet na većini cesta u smjeru mora, osobito na autocestama. Zastoji su povremeno na dionicama cesta gdje traju radovi. A1: pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km pojačan je promet između čvorova Lučko i Bosiljevo 2 u oba smjera između čvora Zadar istok i tunela Sveti Rok u smjeru Zagreba vozi se u koloni uz povremene zastoje A2 Zagreb-Macelj zbog pojačanog prometa pred naplatom Trakošćan u smjeru Zagreba kolona je 1 km zabranjeno je prometovanje za teretna vozila i autobuse od čvora Krapina do čvora Đurmanec u oba smjera A3 Bregana-Lipovac: na prilazu naplatnoj postaji Lučko u smjeru mora iz smjera čvor…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "12.7.2026. 11:05",
-  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
+  "updated": "12.7.2026. 11:56",
+  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Na graničnom prijelazu Batina prekinut je teretni promet na ulasku i izlasku iz zemlje. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana tre…"
  },
  {
   "title": "Pomorski promet",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "12.7.2026. 05:23",
-  "text": "Prometna prognoza za Hrvatsku za 12. srpnja 2026. godine. Pojačan promet očekuje se na svim važnijim cestovnim pravcima u smjeru unutrašnjosti, ali i u smjeru mora, osobito na zagrebačkoj obilaznici (A3) iz smjera Buzina u smjeru naplate Lučko, na autocestama A1 Zagreb-Split-Dubrovnik, A6 Rijeka-Zagreb, Istarskom ipsilonu između tunela i čvora Učka, kod vijadukta Limska Draga i prema Kaštelu i Plovaniji, na Krčkom mostu i otoku Krku te na prilazima turističkim mjestima na obali. Zastoji su mogući u zonama radova, a na autocestama u zonama odmorišta, naplata i tunela. Od 12:00 do 23:00 sata na pojedinim državnim cestama u Istri i priobalju, osim na autocestama i državnoj cesti DC1, na snazi ć…"
+  "updated": "12.7.2026. 12:15",
+  "text": "Prometna prognoza za Hrvatsku za 13. srpnja 2026. godine. U većem dijelu zemlje vozit će se uz povoljne vremenske uvjete. Pojačan promet i zastoji očekuju se na gradskim cestama, obilaznicama i zonama radova, osobito tijekom jutra i poslijepodneva. Povremene kolone i zastoji mogući su na autocesti A1 između čvorova Lučko i Bosiljevo, povremeno u oba smjera, ali i na naplatnim postajama Lučko i Demerje te na dionicama drugih autocesta u zonama odmorišta i tunela. Zastoji su mogući i u zonama radova na Istarskom ipsilonu i dionicama državne ceste DC1, na Krčkom mostu i otoku Krku te na prilazima turističkim središtima duž Jadranske magistrale (DC8). Pojačan promet putničkih vozila očekuje se n…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",

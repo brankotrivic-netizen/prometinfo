@@ -3,20 +3,52 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
+  "id": "ba-gradiska",
+  "name": "Gornji Varoš (Gradiška (novi most))",
+  "ulazMin": 60,
+  "izlazMin": null,
+  "ulazTxt": "1 h",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ts": "12.7.2026. 12:32:32",
+  "tsISO": "2026-07-12T12:32:32+02:00"
+ },
+ {
   "id": "ba-brod",
   "name": "Slavonski Brod (Bosanski Brod)",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": 60,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "1 h",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "12.7.2026. 12:10:26",
+  "tsISO": "2026-07-12T12:10:26+02:00"
+ },
+ {
+  "id": "ba-velika-kladusa",
+  "name": "Maljevac (Velika Kladuša)",
   "ulazMin": 30,
   "izlazMin": null,
   "ulazTxt": "do 30 min.",
   "izlazTxt": "-",
-  "truckUlazMin": 30,
+  "truckUlazMin": null,
   "truckIzlazMin": null,
-  "truckUlazTxt": "do 30 min.",
+  "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "12.07.2026 10:55:35",
-  "tsISO": "2026-07-12T10:55:35+02:00"
+  "ts": "12.7.2026. 12:32:40",
+  "tsISO": "2026-07-12T12:32:40+02:00"
  },
  {
   "id": "ba-izacic",
@@ -31,7 +63,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ts": "12.07.2026 08:28:52",
+  "ts": "12.7.2026. 8:28:52",
   "tsISO": "2026-07-12T08:28:52+02:00"
  },
  {
@@ -47,8 +79,24 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ts": "L: 1 km T: 12.07.2026 09:30:56",
+  "ts": "L: 1 km T: 12.7.2026. 9:30:56",
   "tsISO": "2026-07-12T09:30:56+02:00"
+ },
+ {
+  "id": "ba-kostajnica",
+  "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
+  "ulazMin": 30,
+  "izlazMin": null,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "12.7.2026. 12:20:20",
+  "tsISO": "2026-07-12T12:20:20+02:00"
  },
  {
   "id": "",
@@ -63,7 +111,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ts": "L: 1 km T: 12.07.2026 09:45:04",
+  "ts": "L: 1 km T: 12.7.2026. 9:45:04",
   "tsISO": "2026-07-12T09:45:04+02:00"
  },
  {
@@ -79,7 +127,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ts": "12.07.2026 10:41:08",
+  "ts": "12.7.2026. 10:41:08",
   "tsISO": "2026-07-12T10:41:08+02:00"
  }
 ];
