@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-13T21:13:40.907Z";
+export const PROMET_SI_UPDATED = "2026-07-13T22:10:54.478Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;863238;a2ab4587-a545-4889-8ffb-c392c622cfdd",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Celje vzhod v smeri Maribora, dela, oviran promet, strojno pometanje.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25386,
+  "lng": 15.3118,
+  "start": "2026-07-13T21:27:43.613Z",
+  "end": "2026-07-14T03:00:00Z",
+  "ts": "2026-07-13T21:32:17.97Z"
+ },
  {
   "id": "DARS;863229;2f844055-22c9-4cd4-9caa-b757e5ddcc4e",
   "type": "MaintenanceWorks",
@@ -497,17 +508,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-06T07:18:08.02Z",
   "end": "2026-09-19T21:59:00Z",
   "ts": "2026-07-06T07:18:44.587Z"
- },
- {
-  "id": "DARS;860222;9342f25d-6c7a-47da-b364-9b475716569d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "Ljubljana, Barjanska cesta, Barjanska cesta med križiščema z Ziherlovo ulico in Cesto dveh cesarjev, izmenično enosmerni promet, rekonstrukcija Barjanske ceste.",
-  "loc": "LG-211040, Barjanska cesta",
-  "lat": 46.04094,
-  "lng": 14.49985,
-  "start": "2026-06-29T08:13:37.373Z",
-  "end": "2026-07-13T21:59:00Z",
-  "ts": "2026-07-06T06:00:49.383Z"
  },
  {
   "id": "DARS;846998;b6ee78b0-0e60-4362-846e-610f8c9fbd65",
