@@ -3,6 +3,22 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
+  "id": "ba-brod",
+  "name": "Slavonski Brod (Bosanski Brod)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 60,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "1 h",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
   "id": "ba-gradina",
   "name": "Jasenovac (Donja Gradina)",
   "ulazMin": null,
@@ -19,19 +35,67 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": ""
  },
  {
+  "id": "ba-svilaj",
+  "name": "Svilaj",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 240,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "4 h",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
-  "ulazMin": 180,
-  "izlazMin": 180,
-  "ulazTxt": "3 h",
-  "izlazTxt": "3 h",
+  "ulazMin": 90,
+  "izlazMin": 120,
+  "ulazTxt": "1 h 30 min.",
+  "izlazTxt": "2 h",
   "truckUlazMin": 120,
   "truckIzlazMin": null,
   "truckUlazTxt": "2 h",
   "truckIzlazTxt": "-",
-  "level": "severe",
-  "waitMinutes": 180,
-  "ts": "13.7.2026. 13:42:47",
-  "tsISO": "2026-07-13T13:42:47+02:00"
+  "level": "high",
+  "waitMinutes": 120,
+  "ts": "13.7.2026. 18:08:24",
+  "tsISO": "2026-07-13T18:08:24+02:00"
+ },
+ {
+  "id": "hr-tovarnik",
+  "name": "Tovarnik (Šid)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 480,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "8 h",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
+  "id": "hr-batina",
+  "name": "Batina (Bezdan)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 0,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "Višesatna čekanja",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ts": "Nema podataka",
+  "tsISO": ""
  }
 ];

@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-13T15:12:42.766Z";
+export const PROMET_SI_UPDATED = "2026-07-13T17:23:29.466Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;863215;91ddb5ad-dc7f-4ac9-b497-3e30bab47ad0",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.90908,
+  "lng": 14.25838,
+  "start": "2026-07-13T17:08:14.99Z",
+  "end": "2026-07-13T20:00:00Z",
+  "ts": "2026-07-13T17:08:44.183Z"
+ },
+ {
+  "id": "DARS;863211;bd73077d-c007-4360-a12d-159d8307a75e",
+  "type": "MaintenanceWorks",
+  "desc": "A3, Fernetiči - razcep Gabrk, uvoz Sežana vzhod - uvoz Sežana vzhod v smeri Gabrka, dela, oviran promet.",
+  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
+  "lat": 45.71334,
+  "lng": 13.88237,
+  "start": "2026-07-13T17:01:06.397Z",
+  "end": "2026-07-13T21:00:38.673Z",
+  "ts": "2026-07-13T17:01:07.983Z"
+ },
+ {
+  "id": "DARS;863210;3d78f2e0-7f60-4b4c-b835-5aa009d1c0bd",
+  "type": "MaintenanceWorks",
+  "desc": "A3, Fernetiči - razcep Gabrk, izvoz Sežana vzhod - izvoz Sežana vzhod v smeri Gabrka, dela, oviran promet.",
+  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
+  "lat": 45.71349,
+  "lng": 13.88006,
+  "start": "2026-07-13T17:00:58.533Z",
+  "end": "2026-07-13T21:00:12.223Z",
+  "ts": "2026-07-13T17:01:01.387Z"
+ },
+ {
+  "id": "DARS;863196;c5f303ba-9e09-4998-a6a5-cee938e9991a",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, počivališče Studenec - priključek Postojna v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.75962,
+  "lng": 14.17487,
+  "start": "2026-07-13T15:49:38.603Z",
+  "end": "2026-07-14T03:00:00Z",
+  "ts": "2026-07-13T15:49:47.203Z"
+ },
+ {
+  "id": "DARS;862961;a5c2303e-f828-4b0d-9913-c082872fee39",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, razcep Srmin - razcep Srmin iz smeri Ljubljane proti Kopru, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55627,
+  "lng": 13.77936,
+  "start": "2026-07-13T03:29:47.46Z",
+  "end": "2026-07-13T18:30:00Z",
+  "ts": "2026-07-13T15:13:25.6Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -92,28 +147,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-13T06:05:59.17Z"
  },
  {
-  "id": "DARS;863035;8f33c990-e0e4-4266-8af4-f3fe24773065",
-  "type": "MaintenanceWorks",
-  "desc": "R3-718, Pertoča - Fikšinci, oviran promet, košnja, do 18:00.",
-  "loc": "R3-718, Pertoča - Fikšinci",
-  "lat": 46.77081,
-  "lng": 16.03729,
-  "start": "2026-07-13T06:01:53.15Z",
-  "end": "2026-07-13T16:00:00Z",
-  "ts": "2026-07-13T06:03:20.153Z"
- },
- {
-  "id": "DARS;863033;aa6ecc00-4c61-4dc1-8168-914cf44471e3",
-  "type": "MaintenanceWorks",
-  "desc": "R3-718, Fikšinci, pri Fikšincih, oviran promet, košnja, do 18:00.",
-  "loc": "R3-718, Fikšinci",
-  "lat": 46.78544,
-  "lng": 16.00067,
-  "start": "2026-07-13T06:00:26.07Z",
-  "end": "2026-07-13T16:00:00Z",
-  "ts": "2026-07-13T06:01:12.49Z"
- },
- {
   "id": "DARS;863031;65f6edbe-0b37-48d8-af97-387a3c4a7115",
   "type": "MaintenanceWorks",
   "desc": "G1-1, Maribor - Dravograd, v Mariboru, na Cesti Proletarskih brigad, oviran promet, preplastitve vozišča, do 31. 8. 2026.",
@@ -123,17 +156,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T05:56:11.267Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-07-13T05:57:06.313Z"
- },
- {
-  "id": "DARS;863026;ef5e1186-a8cb-4ca0-81df-43f7104131ab",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, počivališče Voklo - priključek Brnik v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.23221,
-  "lng": 14.41237,
-  "start": "2026-07-13T05:48:06.307Z",
-  "end": "2026-07-13T17:00:59.12Z",
-  "ts": "2026-07-13T05:48:25.01Z"
  },
  {
   "id": "DARS;863023;619c9ce9-8454-47bf-a8f2-f14a8d327280",
@@ -167,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T05:00:00Z",
   "end": "2026-07-24T21:59:00Z",
   "ts": "2026-07-13T03:54:15.697Z"
- },
- {
-  "id": "DARS;862961;a5c2303e-f828-4b0d-9913-c082872fee39",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Srmin - razcep Srmin iz smeri Ljubljane proti Kopru, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55627,
-  "lng": 13.77936,
-  "start": "2026-07-13T03:29:47.46Z",
-  "end": "2026-07-13T17:00:22.13Z",
-  "ts": "2026-07-13T03:29:55.667Z"
  },
  {
   "id": "DARS;855706;30f43462-8ba1-4ecf-bfbe-c0a33e6844f6",

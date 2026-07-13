@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "13.7.2026. 17:09",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Promet je pojačan na gradskim cestama, obilaznicama, pojedinim dionicama autocesta i graničnim prijelazima, a uz zastoje i kolone vozi se u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između naplate Lučko i čvora Bosiljevo II u smjeru Dubrovnika A2 Zagreb-Macelj na naplatnoj postaji Zaprešić u smjeru Maclja kolona je oko 2 km na naplati Mokrice u smjeru Zaboka kolona je oko 1 km A3 Bregana-Lipovac zbog povećane gustoće prometa vozi se usporeno uz povrem…"
+  "updated": "13.7.2026. 19:01",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim prometnicama i obilaznicama te na prilazima turističkim mjestima u priobalju. Kraći zastoji i vožnja u kolonama mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa u oba smjera, vozi se bez poteškoća i zastoja A7 Rupa-Križišće prometna nesreća između čvora Križišće i tunela Burlica u smjeru Rupe , vozi se jednim prometnim trakom DC1 Zagreb-Karlovac-Gračac-Knin usporen je promet u zoni radova između Gračaca i Knina kod Otrića…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "13.7.2026. 16:51",
+  "updated": "13.7.2026. 19:01",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "13.7.2026. 16:51",
-  "text": "U pomorskom prometu nerma poteškoća. Izmjene u redu plovidbe: 14.srpnja HSC Anastazija preuzima linije 652 Split-Hvar i 661 Split-Hvar-Korčula iz luke Split u 12:15 sati, a HSC Jazine preuzima liniju 842 Dubrovnik-Korčula-Hvar-Milna-Split iz luke Split u 15:10 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Spli…"
+  "updated": "13.7.2026. 19:01",
+  "text": "Izmjene u redu plovidbe: zbog nepovoljnih vremenskih uvjeta brodska linija Suđurađ-Lopud-Koločep-Dubrovnik u 18:30 plovi bez uplova u luku Lopud 14.srpnja HSC Anastazija preuzima linije 652 Split-Hvar i 661 Split-Hvar-Korčula iz luke Split u 12:15 sati, a HSC Jazine preuzima liniju 842 Dubrovnik-Korčula-Hvar-Milna-Split iz luke Split u 15:10 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodn…"
  },
  {
   "title": "Željeznički promet",
@@ -28,7 +28,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "13.7.2026. 09:50",
+  "updated": "13.7.2026. 17:36",
   "text": "Prometna prognoza za Hrvatsku za 14. srpnja 2026. Sutra će u poslijepodnevnim satima izraženi lokalni pljuskovi mjestimice smanjivati vidljivost na cestama, a moguće je i zadržavanje veće količine vode na kolniku. Na cestama u gorju te duž Jadranske magistrale (DC8) bit će i povećana opasnost od odrona. Tijekom jutra i poslijepodneva, bit će pojačan promet na gradskim cestama i obilaznicama, dok se povećana gustoća prometa tijekom cijelog dana očekuje i na autocestama. Zastoji i kolone mogući su na autocesti A2 Zagreb-Macelj na čvoru Zagreb zapad u smjeru Zagreba, na autocesti A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok, na zagrebačkoj (A3) i riječkoj (A7) obilaznici te na državn…"
  },
  {
