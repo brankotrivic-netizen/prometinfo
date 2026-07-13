@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-13T07:39:06.245Z";
+export const PROMET_SI_UPDATED = "2026-07-13T11:29:52.683Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;863097;45025a80-f797-4e30-a829-64397a53d820",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, uvoz Šmarje Sap - predor Debeli hrib v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.97977,
+  "lng": 14.60474,
+  "start": "2026-07-13T08:38:56.187Z",
+  "end": "2026-07-13T12:30:00Z",
+  "ts": "2026-07-13T11:27:18.147Z"
+ },
  {
   "id": "DARS;863069;3568bdd4-739d-4d32-8228-f6398ec316f5",
   "type": "MaintenanceWorks",
@@ -11,8 +22,19 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 46.5617,
   "lng": 16.44313,
   "start": "2026-07-13T07:09:14.837Z",
-  "end": "2026-07-13T11:00:36.3Z",
-  "ts": "2026-07-13T07:09:28.043Z"
+  "end": "2026-07-13T17:30:00Z",
+  "ts": "2026-07-13T10:57:17.703Z"
+ },
+ {
+  "id": "DARS;863104;dc839835-ed02-4d8f-a98e-f352caf9f106",
+  "type": "MaintenanceWorks",
+  "desc": "R2-409, Brezovica - Vrhnika, pri Sinji Gorici, oviran promet, ureditve skupinskega cestnega priključka, do 20. 7. 2026.",
+  "loc": "R2-409, Brezovica - Vrhnika",
+  "lat": 45.98136,
+  "lng": 14.3124,
+  "start": "2026-07-13T09:00:00.63Z",
+  "end": "2026-07-20T21:59:00Z",
+  "ts": "2026-07-13T09:00:29.13Z"
  },
  {
   "id": "DARS;825949;0a53fe13-702b-456a-bec7-e609e7e44ff6",
@@ -81,17 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-13T06:16:04.923Z"
  },
  {
-  "id": "DARS;863042;073769ea-2fe2-48dc-bfe4-a9c4e694879d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-441, Murska Sobota - Gederovci, v Gederovcih, izmenično enosmerni promet, vzdrževalna dela, do 10:00.",
-  "loc": "R2-441, Murska Sobota - Gederovci",
-  "lat": 46.67852,
-  "lng": 16.05307,
-  "start": "2026-07-13T06:12:28.24Z",
-  "end": "2026-07-13T08:00:00Z",
-  "ts": "2026-07-13T06:13:32.057Z"
- },
- {
   "id": "DARS;863040;1f4bd23a-716f-4153-8fef-ddf2bd6a8ae5",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-928, Mozirje - Golte, pri Selah, izmenično enosmerni promet, vzdrževalna dela, do 15:00.",
@@ -156,17 +167,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T06:01:53.15Z",
   "end": "2026-07-13T16:00:00Z",
   "ts": "2026-07-13T06:03:20.153Z"
- },
- {
-  "id": "DARS;863034;0d1190aa-d97e-4bb5-8a6e-20503d062806",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Vrhnika - uvoz Logatec v smeri Kopra, dela, pomična zapora voznega pasu.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.96864,
-  "lng": 14.30476,
-  "start": "2026-07-13T06:02:21.657Z",
-  "end": "2026-07-13T12:00:00Z",
-  "ts": "2026-07-13T06:02:23.603Z"
  },
  {
   "id": "DARS;863033;aa6ecc00-4c61-4dc1-8168-914cf44471e3",
@@ -279,17 +279,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-13T05:37:26.873Z"
  },
  {
-  "id": "DARS;863017;8dec7660-c2ec-4a47-89e4-8325e7669145",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, razcep Malence - predor Mali Vrh, dela, oviran promet.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.01297,
-  "lng": 14.5507,
-  "start": "2026-07-13T05:36:05.11Z",
-  "end": "2026-07-13T11:30:00Z",
-  "ts": "2026-07-13T05:36:26.913Z"
- },
- {
   "id": "DARS;863015;1d773300-9d52-497a-af67-2195eaa8c09c",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-606, Kanal - Lig - Mišček - Neblo, pri Ukanjah, izmenično enosmerni promet, pomična zapora, krpanje udarnih jam, do 15:00.",
@@ -387,17 +376,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T05:13:29.553Z",
   "end": "2026-07-13T12:00:00Z",
   "ts": "2026-07-13T05:13:36Z"
- },
- {
-  "id": "DARS;863004;481680a8-400b-47f9-9b7d-f9038247cb8d",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, razcep Srmin - priključek Bertoki v smeri Kopra, dela, zaprt vozni pas.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.55626,
-  "lng": 13.78186,
-  "start": "2026-07-13T05:07:45.13Z",
-  "end": "2026-07-13T17:00:40.597Z",
-  "ts": "2026-07-13T05:07:53.497Z"
  },
  {
   "id": "DARS;863002;89608f12-152f-4c7b-81e9-95677bffb0f8",
@@ -563,17 +541,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T05:00:00Z",
   "end": "2026-07-13T13:00:00Z",
   "ts": "2026-07-13T04:23:19.957Z"
- },
- {
-  "id": "DARS;862971;66f630a9-c69a-4e17-a494-0eedfd4166c6",
-  "type": "MaintenanceWorks",
-  "desc": "A3, Fernetiči - razcep Gabrk, prehod Fernetiči - predor Tabor v smeri Gabrka, dela, zaprt prehitevalni pas.",
-  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
-  "lat": 45.70104,
-  "lng": 13.8383,
-  "start": "2026-07-13T04:05:06.627Z",
-  "end": "2026-07-13T12:00:51.687Z",
-  "ts": "2026-07-13T04:05:15.333Z"
  },
  {
   "id": "DARS;862967;a9fd60ca-4800-4387-8f23-31200b3d40c2",
