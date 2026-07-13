@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-13T19:50:18.040Z";
+export const PROMET_SI_UPDATED = "2026-07-13T21:13:40.907Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;863229;2f844055-22c9-4cd4-9caa-b757e5ddcc4e",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T18:59:08.673Z",
   "end": "2026-07-14T17:00:52.207Z",
   "ts": "2026-07-13T18:59:24.833Z"
- },
- {
-  "id": "DARS;863220;aeb93b0f-cd59-4213-bac2-1ed82b1b2c4d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Celje center - predor Pletovarje v smeri Maribora, dela, pomična zapora voznega pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25448,
-  "lng": 15.28516,
-  "start": "2026-07-13T18:01:34.45Z",
-  "end": "2026-07-14T00:00:44.43Z",
-  "ts": "2026-07-13T18:02:41.523Z"
  },
  {
   "id": "DARS;863221;125bacdd-9760-49f8-b56d-a0f20f07610b",
@@ -145,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T05:56:11.267Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-07-13T05:57:06.313Z"
- },
- {
-  "id": "DARS;863016;56f84d85-bb06-45ec-ab25-d25ae9c07597",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, priključek Bertoki - razcep Srmin v smeri Ljubljane, dela, oviran promet.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.54754,
-  "lng": 13.76563,
-  "start": "2026-07-13T05:34:54.837Z",
-  "end": "2026-07-14T21:00:55.77Z",
-  "ts": "2026-07-13T05:37:26.873Z"
  },
  {
   "id": "DARS;862966;eb0c0da8-182b-4285-af5d-89833802e453",
