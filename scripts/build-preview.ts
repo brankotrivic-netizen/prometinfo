@@ -866,6 +866,14 @@ ${fuelHtml}
     <div class="modalfoot"><button class="cam" onclick="refreshBig()">🔄 Osveži</button> Živa slika (osvežuje se na 15 s) · <a id="camOpen" href="#" target="_blank" rel="noopener noreferrer">odpri v novem zavihku ↗</a></div>
   </div>
 </div>
+<div id="trafficMapModal" class="modal" onclick="if(event.target===this)closeTrafficMap()">
+  <div class="modalbox" style="max-width:760px">
+    <div class="modalhead"><span id="tmTitle">🚦 Kolona pred mejo</span><button onclick="closeTrafficMap()">✕</button></div>
+    <div id="tmMap" style="height:64vh;min-height:340px;border-radius:0 0 2px 2px"></div>
+    <div id="tmInfo" style="padding:9px 14px;font-size:13px;border-top:1px solid var(--border)"></div>
+    <div class="modalfoot"><button class="cam" onclick="refreshTrafficMap()">🔄 Osveži promet</button> <span class="meta">Barve cest: 🟢 tekoče · 🟡 upočasnjeno · 🟠🔴 zastoj (TomTom v živo). Krogci = naše meritve hitrosti na 0,5–5 km pred mejo.</span></div>
+  </div>
+</div>
 <div id="iosHelp" class="modal" onclick="if(event.target===this)closeIosHelp()">
   <div class="modalbox" style="max-width:420px">
     <div class="modalhead"><span>📲 Namesti PrometInfo na iPhone</span><button onclick="closeIosHelp()">✕</button></div>
@@ -1440,11 +1448,11 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var bear=REV?TTQ[id].back:TTQ[id].fwd, dists=[0.5,1,2,3,5];
     Promise.all(dists.map(function(km){ var pt=destPt(p.lat,p.lng,km,bear);
       return fetch('https://api.tomtom.com/traffic/services/4/flowSegmentData/relative0/10/json?point='+pt[0].toFixed(5)+','+pt[1].toFixed(5)+'&unit=KMPH&key='+TOMTOM_KEY,{signal:AbortSignal.timeout(9000)})
-        .then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ return {km:km,d:j.flowSegmentData}; }).catch(function(){ return null; });
+        .then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ return {km:km,ll:pt,d:j.flowSegmentData}; }).catch(function(){ return null; });
     })).then(function(res){
       var ok=res.filter(Boolean);
-      if(!ok.length){ TTRES[id]={status:'unavailable'}; if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); return; }
-      var pts=ok.map(function(o){ var d=o.d; var ratio=(d.freeFlowSpeed>0)?(d.currentSpeed/d.freeFlowSpeed):1; return {km:o.km,cur:d.currentSpeed,free:d.freeFlowSpeed,ratio:ratio,conf:(d.confidence!=null?d.confidence:1)}; });
+      if(!ok.length){ TTRES[id]={status:'unavailable'}; if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); if(_tmOpen===id)drawTrafficMap(id); return; }
+      var pts=ok.map(function(o){ var d=o.d; var ratio=(d.freeFlowSpeed>0)?(d.currentSpeed/d.freeFlowSpeed):1; return {km:o.km,ll:o.ll,cur:d.currentSpeed,free:d.freeFlowSpeed,ratio:ratio,conf:(d.confidence!=null?d.confidence:1)}; });
       var slow=pts.filter(function(x){ return x.ratio<0.5 && x.cur<20 && x.conf>=0.5 && x.km<=3; });
       var nearSlow=pts.some(function(x){ return x.km<=1 && x.ratio<0.5; });
       var queueKm=(slow.length&&nearSlow)?Math.max.apply(null,slow.map(function(x){return x.km;})):0;
@@ -1455,22 +1463,72 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
         avg:Math.round(pts.reduce(function(s,x){return s+x.cur;},0)/pts.length),
         free:Math.round(pts.reduce(function(s,x){return s+x.free;},0)/pts.length),
         drop:Math.round((1-worst)*100), lowConf:pts.some(function(x){return x.conf<0.5;}),
-        inTruckZone:!!TRUCK_ZONES[id]&&queueKm>0, at:new Date()
+        inTruckZone:!!TRUCK_ZONES[id]&&queueKm>0, at:new Date(),
+        pts:pts, bear:bear, olat:p.lat, olng:p.lng, name:p.name
       };
       if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE);
+      if(_tmOpen===id) drawTrafficMap(id);
     });
   };
+  /* ===== MINI-ZEMLJEVID KOLONE (TomTom prometni sloj + naše vzorčne točke) ===== */
+  var _tmMap=null, _tmFlow=null, _tmLayer=null, _tmOpen=null;
+  function tmRatioColor(r){ return r>=0.75?'#16a34a':(r>=0.5?'#f59e0b':(r>=0.25?'#ea580c':'#dc2626')); }
+  window.showTrafficMap=function(id){
+    var p=CBYID[id]; if(!p||p.lat==null){ toast('Za ta prehod ni koordinat.'); return; }
+    _tmOpen=id;
+    var m=document.getElementById('trafficMapModal'); if(m)m.style.display='flex';
+    document.getElementById('tmTitle').textContent='🚦 Kolona pred mejo — '+(p.name||id);
+    setTimeout(function(){
+      if(!_tmMap){
+        _tmMap=L.map('tmMap',{zoomControl:true,attributionControl:false});
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(_tmMap);
+        _tmFlow=L.tileLayer('https://api.tomtom.com/traffic/map/4/tile/flow/relative/{z}/{x}/{y}.png?key='+TOMTOM_KEY,{opacity:0.85,maxZoom:22,crossOrigin:true}).addTo(_tmMap);
+        _tmLayer=L.layerGroup().addTo(_tmMap);
+      }
+      _tmMap.invalidateSize();
+      _tmMap.setView([p.lat,p.lng],14);
+      drawTrafficMap(id);
+      // ce se ni preverjeno, sprozi TomTom analizo
+      if(!TTRES[id]||TTRES[id].status==='loading'){ try{ checkTomTom(id); }catch(e){} }
+    },160);
+  };
+  window.closeTrafficMap=function(){ var m=document.getElementById('trafficMapModal'); if(m)m.style.display='none'; _tmOpen=null; };
+  window.refreshTrafficMap=function(){ if(_tmOpen){ if(_tmFlow){ _tmFlow.setUrl('https://api.tomtom.com/traffic/map/4/tile/flow/relative/{z}/{x}/{y}.png?key='+TOMTOM_KEY+'&_='+Date.now()); } checkTomTom(_tmOpen); toast('🔄 Osvežujem promet…'); } };
+  function drawTrafficMap(id){
+    if(!_tmMap||!_tmLayer) return; _tmLayer.clearLayers();
+    var p=CBYID[id]; var r=TTRES[id];
+    // oznaka meje
+    L.marker([p.lat,p.lng]).addTo(_tmLayer).bindTooltip('🛃 '+(p.name||id),{permanent:false});
+    var info=document.getElementById('tmInfo');
+    if(r&&r.pts){
+      // vzorčne točke obarvane po hitrosti + črta kolone
+      var line=[[p.lat,p.lng]];
+      r.pts.slice().sort(function(a,b){return a.km-b.km;}).forEach(function(pt){
+        line.push(pt.ll);
+        L.circleMarker(pt.ll,{radius:7,color:'#fff',weight:2,fillColor:tmRatioColor(pt.ratio),fillOpacity:0.95}).addTo(_tmLayer)
+          .bindTooltip(pt.km+' km · '+Math.round(pt.cur)+'/'+Math.round(pt.free)+' km/h'+(pt.ratio<0.5?' 🔴':''),{permanent:false});
+      });
+      // rdeca crta cez del, ki skoraj stoji (kolona)
+      if(r.queueKm){
+        var qline=[[p.lat,p.lng]]; r.pts.filter(function(x){return x.km<=r.queueKm+0.01;}).sort(function(a,b){return a.km-b.km;}).forEach(function(x){qline.push(x.ll);});
+        L.polyline(qline,{color:'#dc2626',weight:6,opacity:0.8}).addTo(_tmLayer);
+      }
+      if(info){ var lbl={normal:'🟢 normalno',slow:'🟡 upočasnjeno',jam:'🟠 zastoj',stopped:'🔴 skoraj stoji'}[r.status]||''; info.innerHTML=lbl+' · '+r.avg+'/'+r.free+' km/h'+(r.queueKm?(' · <b>možna kolona ~'+r.queueKm+' km</b>'):' · brez kolone tik pred mejo')+(r.lowConf?' · ⚠ nizka zanesljivost':'')+(r.inTruckZone?' · <span class="meta">znana kamionska cona</span>':''); }
+    } else if(r&&r.status==='unavailable'){ if(info) info.textContent='TomTom analiza trenutno ni na voljo — barvni sloj cest je še vedno prikazan.'; }
+    else { if(info) info.textContent='Nalagam TomTom analizo…'; }
+  }
   function ttQueue(id){ var r=TTRES[id]; return !!(r&&(r.status==='jam'||r.status==='stopped')&&r.queueKm>0); }
   function ttBlock(id){
     var r=TTRES[id];
     if(!TTQ[id]) return '';
-    if(!r) return '<div class="ttrow">🚦 TomTom: <button class="linklike" onclick="checkTomTom(\\''+id+'\\')">preveri kolono pred mejo</button></div>';
+    if(!r) return '<div class="ttrow">🚦 TomTom: <button class="linklike" onclick="checkTomTom(\\''+id+'\\')">preveri kolono pred mejo</button> · <button class="linklike" onclick="showTrafficMap(\\''+id+'\\')">🗺️ Zemljevid kolone</button></div>';
     if(r.status==='loading') return '<div class="ttrow">🚦 TomTom: preverjam…</div>';
     if(r.status==='unavailable') return '<div class="ttrow" style="color:var(--muted)">🚦 TomTom analiza trenutno ni na voljo — uporabljam uradne vire, kamere in socialne signale. <button class="linklike" onclick="checkTomTom(\\''+id+'\\')">poskusi znova</button></div>';
     var lbl={normal:'🟢 normalno',slow:'🟡 upočasnjeno',jam:'🟠 zastoj',stopped:'🔴 skoraj stoji'}[r.status];
     var out='🚦 TomTom: '+lbl+' · '+r.avg+'/'+r.free+' km/h (padec '+r.drop+'%)'+(r.queueKm?(' · možna kolona ~'+r.queueKm+' km'):'')+(r.lowConf?' · ⚠ nizka zanesljivost':'')+' · '+('0'+r.at.getHours()).slice(-2)+':'+('0'+r.at.getMinutes()).slice(-2)+' <button class="linklike" onclick="checkTomTom(\\''+id+'\\')">osveži</button>';
     if(r.farOnly) out+='<br><span class="meta">Počasen odsek je stran od meje — verjetno mestni promet/semafor, ne mejna kolona.</span>';
     if(r.inTruckZone) out+='<br><span class="meta">Rdeča črta je znotraj znane kamionske cone — verjetno povezana s tovornimi vozili.</span>';
+    out+=' <button class="linklike" onclick="showTrafficMap(\\''+id+'\\')">🗺️ Zemljevid kolone</button>';
     return '<div class="ttrow">'+out+'</div>';
   }
   /* ===== ZAKLJUCEK ASISTENTA (vrstni red zanesljivosti + truck contamination filter) ===== */
