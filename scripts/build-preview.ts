@@ -871,7 +871,7 @@ ${fuelHtml}
     <div class="modalhead"><span id="tmTitle">🚦 Kolona pred mejo</span><button onclick="closeTrafficMap()">✕</button></div>
     <div id="tmMap" style="height:64vh;min-height:340px;border-radius:0 0 2px 2px"></div>
     <div id="tmInfo" style="padding:9px 14px;font-size:13px;border-top:1px solid var(--border)"></div>
-    <div class="modalfoot"><button class="cam" onclick="refreshTrafficMap()">🔄 Osveži promet</button> <span class="meta">Barve cest: 🟢 tekoče · 🟡 upočasnjeno · 🟠🔴 zastoj (TomTom v živo). Krogci = naše meritve hitrosti na 0,5–5 km pred mejo.</span></div>
+    <div class="modalfoot"><button class="cam" id="tmSatBtn" onclick="toggleTmSat()">🗺️ Zemljevid</button> <button class="cam" onclick="refreshTrafficMap()">🔄 Osveži promet</button> <span class="meta">Barve cest: 🟢 tekoče · 🟡 upočasnjeno · 🟠🔴 zastoj (TomTom v živo). Krogci = naše meritve hitrosti na 0,5–5 km pred mejo. ⚠ TomTom včasih spregleda kamionske kolone — preveri kamero.</span></div>
   </div>
 </div>
 <div id="iosHelp" class="modal" onclick="if(event.target===this)closeIosHelp()">
@@ -1471,7 +1471,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     });
   };
   /* ===== MINI-ZEMLJEVID KOLONE (TomTom prometni sloj + naše vzorčne točke) ===== */
-  var _tmMap=null, _tmFlow=null, _tmLayer=null, _tmOpen=null;
+  var _tmMap=null, _tmFlow=null, _tmLayer=null, _tmOpen=null, _tmSatL=null, _tmMapL=null, _tmSat=true;
+  window.toggleTmSat=function(){ if(!_tmMap)return; _tmSat=!_tmSat; if(_tmSat){ _tmMap.removeLayer(_tmMapL); _tmSatL.addTo(_tmMap); } else { _tmMap.removeLayer(_tmSatL); _tmMapL.addTo(_tmMap); } if(_tmFlow){ _tmFlow.bringToFront(); } if(_tmLayer){ _tmLayer.eachLayer(function(l){ if(l.bringToFront)l.bringToFront(); }); } var b=document.getElementById('tmSatBtn'); if(b)b.textContent=_tmSat?'🗺️ Zemljevid':'🛰️ Satelit'; };
   function tmRatioColor(r){ return r>=0.75?'#16a34a':(r>=0.5?'#f59e0b':(r>=0.25?'#ea580c':'#dc2626')); }
   window.showTrafficMap=function(id){
     var p=CBYID[id]; if(!p||p.lat==null){ toast('Za ta prehod ni koordinat.'); return; }
@@ -1481,8 +1482,10 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     setTimeout(function(){
       if(!_tmMap){
         _tmMap=L.map('tmMap',{zoomControl:true,attributionControl:false});
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(_tmMap);
-        _tmFlow=L.tileLayer('https://api.tomtom.com/traffic/map/4/tile/flow/relative/{z}/{x}/{y}.png?key='+TOMTOM_KEY,{opacity:0.85,maxZoom:22,crossOrigin:true}).addTo(_tmMap);
+        _tmSatL=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19});
+        _tmMapL=L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:19});
+        (_tmSat?_tmSatL:_tmMapL).addTo(_tmMap);
+        _tmFlow=L.tileLayer('https://api.tomtom.com/traffic/map/4/tile/flow/relative/{z}/{x}/{y}.png?key='+TOMTOM_KEY,{opacity:0.9,maxZoom:22,crossOrigin:true}).addTo(_tmMap);
         _tmLayer=L.layerGroup().addTo(_tmMap);
       }
       _tmMap.invalidateSize();
@@ -1542,6 +1545,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(ttQueue(p.id) && px!=null && px<=15 && tr!=null && tr>=60){ likelyTruck=true; notes.push('Verjetno tovorna kolona. Za osebna vozila gužva ni potrjena.'); }
     else if(px!=null && px<=15 && tr!=null && tr>=60){ likelyTruck=true; notes.push('Verjetno tovorna kolona. Za osebna vozila gužva ni potrjena (uradni vir: avti kratko, tovorni dolgo).'); }
     else if(ttQueue(p.id) && TTRES[p.id].inTruckZone && (px==null||px<=30)){ likelyTruck=true; notes.push('Verjetno tovorna kolona (znana kamionska cona). Za osebna vozila gužva ni potrjena — preveri kamero.'); }
+    // TomTom kaze tekoce, a tovorni podatek/cona kaze kolono -> TomTom pogosto spregleda kamione (primer Gradina)
+    if(TTRES[p.id] && (TTRES[p.id].status==='normal'||TTRES[p.id].status==='slow') && ((tr!=null&&tr>=60)||(TRUCK_ZONES[p.id]&&s.truck>0))){ notes.push('⚠ TomTom kaže tekoče, a kamioni verjetno stojijo — TomTom pogosto spregleda kamionske kolone. Za osebna vozila to običajno ni ovira, a preveri kamero.'); }
     // 3./4. kamera preverjanje
     if(cc){
       var ago=Math.round((Date.now()-Date.parse(cc.checkedAt))/60000);
