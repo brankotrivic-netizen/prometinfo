@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-14T11:20:01.504Z";
+export const PROMET_SI_UPDATED = "2026-07-14T11:28:25.957Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;863374;e3c706db-771f-4641-8c0b-e7b6c62e9119",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - zahodna obvoznica, razcep Koseze - priključek Ljubljana Brdo iz smeri Kosez, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - zah. obvoznica",
+  "lat": 46.06731,
+  "lng": 14.45722,
+  "start": "2026-07-14T11:21:00.023Z",
+  "end": "2026-07-14T12:15:02.987Z",
+  "ts": "2026-07-14T11:21:02.823Z"
+ },
  {
   "id": "DARS;863365;cfec95a2-cc79-4e70-bf45-d20f8cc9179d",
   "type": "MaintenanceWorks",
@@ -508,17 +519,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-14T03:25:17.007Z",
   "end": "2026-07-14T17:00:00Z",
   "ts": "2026-07-14T03:25:31.78Z"
- },
- {
-  "id": "DARS;863229;2f844055-22c9-4cd4-9caa-b757e5ddcc4e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Srmin - razcep Srmin iz smeri Ljubljane proti Kopru, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55627,
-  "lng": 13.77936,
-  "start": "2026-07-13T18:59:08.673Z",
-  "end": "2026-07-14T17:00:52.207Z",
-  "ts": "2026-07-13T18:59:24.833Z"
  },
  {
   "id": "DARS;857357;aa68f5d7-ed11-4c43-a7b6-cfd571ed8ff9",
