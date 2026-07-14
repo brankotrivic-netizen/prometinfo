@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-14T15:04:05.843Z";
+export const PROMET_SI_UPDATED = "2026-07-14T16:39:35.072Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -90,61 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-14T06:29:11.57Z",
   "end": "2026-07-16T13:00:00Z",
   "ts": "2026-07-14T06:43:26.32Z"
- },
- {
-  "id": "DARS;863314;c5272ed6-ea0b-4925-abaa-030323febdf2",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-724, Domanjševci, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R3-724, Domanjševci",
-  "lat": 46.78332,
-  "lng": 16.30521,
-  "start": "2026-07-14T06:24:01.623Z",
-  "end": "2026-07-14T16:00:00Z",
-  "ts": "2026-07-14T06:25:24.523Z"
- },
- {
-  "id": "DARS;863311;40bb7050-7278-46a4-ad63-15430da3f091",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-724, Hodoš - Domanjševci, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R3-724, Hodoš - Domanjčevci",
-  "lat": 46.82235,
-  "lng": 16.32135,
-  "start": "2026-07-14T06:13:11.72Z",
-  "end": "2026-07-14T16:00:00Z",
-  "ts": "2026-07-14T06:13:59.923Z"
- },
- {
-  "id": "DARS;863310;4b9e9d0e-8fa4-4d5a-a8c2-a04a6caacdc1",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-720, Sotina, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R3-720, Sotina",
-  "lat": 46.82127,
-  "lng": 16.03192,
-  "start": "2026-07-14T06:11:39.643Z",
-  "end": "2026-07-14T16:00:00Z",
-  "ts": "2026-07-14T06:12:05.637Z"
- },
- {
-  "id": "DARS;863308;4f80cb95-55c6-43b2-bb9f-1fd0cefcd5a3",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-719, Kramarovci, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R3-719, Kramarovci",
-  "lat": 46.80944,
-  "lng": 16.00153,
-  "start": "2026-07-14T06:07:05.94Z",
-  "end": "2026-07-14T16:00:00Z",
-  "ts": "2026-07-14T06:07:47.16Z"
- },
- {
-  "id": "DARS;863304;f1726788-7e99-4498-82cd-ccef185155f3",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-719, Rogašovci - Kramarovci, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R3-719, Rogašovci - Kramarovci",
-  "lat": 46.80557,
-  "lng": 16.03446,
-  "start": "2026-07-14T05:59:47.827Z",
-  "end": "2026-07-14T16:00:00Z",
-  "ts": "2026-07-14T06:01:52.927Z"
  },
  {
   "id": "DARS;863290;db8524a9-9d99-432d-8818-fdcf9afbe188",
