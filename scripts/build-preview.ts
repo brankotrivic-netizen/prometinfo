@@ -15,6 +15,7 @@ import { ROUTE_PRESETS } from "../lib/routes";
 import { DIESEL_PRICES, DIESEL_UPDATED } from "../lib/diesel-prices";
 import { SOCIAL_KEYWORDS, SOCIAL_PAGES, SOCIAL_QUERIES } from "../lib/social";
 import { FUEL_STATIONS } from "../lib/fuel-stations";
+import { WAIT_HISTORY } from "../lib/wait-history";
 import { PROMET_SI, PROMET_SI_UPDATED } from "../lib/promet-si";
 import { AMSS_WAITS } from "../lib/amss-waits";
 import { RS_ROAD_CAMS } from "../lib/rs-road-cameras";
@@ -463,6 +464,11 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .critbox{background:#fef2f2;border:2px solid #dc2626;color:#7f1d1d;border-radius:10px;padding:10px 12px;margin:8px 0;font-size:13.5px;line-height:1.55}
 .ttag{font-size:10px;background:#ffedd5;color:#9a3412;border-radius:999px;padding:2px 8px;font-weight:700;white-space:nowrap}
 .ttrow{font-size:12px;margin:5px 0;line-height:1.6}
+.predrow{font-size:12px;margin:5px 0;line-height:1.55;background:var(--panel-2);border-radius:7px;padding:6px 9px}
+.etarow{font-size:13px;margin:2px 0 10px;background:#eff6ff;border:1px solid #dbeafe;border-radius:9px;padding:8px 11px;line-height:1.5}
+.alertbox{background:#fef2f2;border:2px solid #dc2626;color:#7f1d1d;border-radius:10px;padding:10px 12px;margin:0 0 10px;font-size:13.5px;line-height:1.5;display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.alertbox button{flex:none;background:none;border:none;color:#7f1d1d;font-size:16px;cursor:pointer}
+@media(prefers-color-scheme:dark){.etarow{background:#0b2138;border-color:#1e3a5f}}
 .camver{font-size:12.5px;margin:5px 0;background:var(--panel-2);border-radius:7px;padding:6px 9px}
 .cchk{font-size:12px;margin:8px 0 6px;text-align:left;background:#eff6ff;border-radius:7px;padding:7px 9px;line-height:1.5}
 .ccbtns,.dccbtns{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
@@ -931,6 +937,7 @@ const DIESEL=${JSON.stringify(Object.fromEntries(DIESEL_PRICES.map((d) => [d.cou
 const DIESEL_UPD=${JSON.stringify(DIESEL_UPDATED)};
 const SOC_KW=${JSON.stringify(SOCIAL_KEYWORDS)};
 const FUELPTS=${JSON.stringify(FUEL_STATIONS)};
+const HISTPTS=${JSON.stringify(WAIT_HISTORY)};
 const GRADCRIT=${JSON.stringify((() => {
   const t = HAK_REPORTS.map((r) => `${r.title} ${r.text}`).join(" ");
   return {
@@ -1326,6 +1333,33 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     return {pax:px, truck:tr};
   }
   function vcls(m){ if(m==null)return {e:'⚪',t:'ni podatka',c:'#94a3b8'}; if(m<=15)return {e:'🟢',t:'verjetno tekoče',c:'#16a34a'}; if(m<=30)return {e:'🟡',t:'krajše čakanje',c:'#ca8a04'}; if(m<=60)return {e:'🟠',t:'daljše čakanje',c:'#ea580c'}; return {e:'🔴',t:'velika kolona',c:'#dc2626'}; }
+  /* ===== NAPOVED IZ ZGODOVINE ČAKANJ ("običajno ob tem času") ===== */
+  function histFor(id){ return HISTPTS.filter(function(h){ return h.i===id && h.p!=null; }); }
+  function typicalWait(id, date){
+    var h=histFor(id); if(!h.length) return {avg:null,n:0,total:0};
+    var hr=date.getHours(), wk=(date.getDay()===0||date.getDay()===6);
+    var bucket=h.filter(function(e){ var d=new Date(e.t); return ((d.getDay()===0||d.getDay()===6)===wk) && Math.abs(d.getHours()-hr)<=1; });
+    if(bucket.length<3) bucket=h.filter(function(e){ return Math.abs(new Date(e.t).getHours()-hr)<=1; });
+    if(!bucket.length) return {avg:null,n:0,total:h.length};
+    return {avg:Math.round(bucket.reduce(function(s,e){return s+e.p;},0)/bucket.length), n:bucket.length, total:h.length};
+  }
+  function bestDeparture(id, curMin){
+    var h=histFor(id); if(h.length<20) return null;
+    var now=new Date(), best=null;
+    for(var i=2;i<=24;i+=2){ var d=new Date(now.getTime()+i*3600000); var t=typicalWait(id,d); if(t.avg!=null && (best===null||t.avg<best.avg)) best={h:i,avg:t.avg,when:d}; }
+    return best;
+  }
+  function predictLine(p){
+    var t=typicalWait(p.id,new Date());
+    if(t.avg==null){ if(t.total>0) return '<div class="predrow meta">📊 Napoved: zbiram podatke za to uro… ('+t.total+' meritev doslej)</div>'; return ''; }
+    var wkTxt=(new Date().getDay()===0||new Date().getDay()===6)?'(vikend)':'(delavnik)';
+    var out='📊 Napoved: običajno ob tej uri '+wkTxt+' ~<b>'+t.avg+' min</b> <span class="meta">('+t.n+' meritev)</span>';
+    var cur=paxTruck(p).pax;
+    if(cur!=null){ if(cur>t.avg*1.6&&cur-t.avg>=15) out+=' · <span style="color:#dc2626">danes VEČ kot običajno</span>'; else if(cur<t.avg*0.6) out+=' · <span style="color:#16a34a">danes manj</span>'; }
+    var bd=bestDeparture(p.id,cur);
+    if(bd && bd.avg<=(cur==null?9999:cur)-15) out+='<br>💡 Manjše čakanje predvideno okoli '+('0'+bd.when.getHours()).slice(-2)+':00 (~'+bd.avg+' min).';
+    return '<div class="predrow">'+out+'</div>';
+  }
   /* ===== KAMERA PREVERJANJE (rocna potrditev, velja 2 h) ===== */
   var CCKEY='promet_camcheck';
   function ccGet(){ try{ return JSON.parse(localStorage.getItem(CCKEY)||'[]'); }catch(e){ return []; } }
@@ -1626,6 +1660,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
       +vehLines
       +'<div class="rdir">'+dirWaits(p)+'</div>'
+      +predictLine(p)
       +ttBlock(id)
       +camBlock
       +'<div class="rsrc">Viri: '+srcLine+'</div>'
@@ -1659,7 +1694,9 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(GRADCRIT.oldClosed && allIds.indexOf('ba-gradiska')>=0){
       html+='<div class="critbox">⚠ <b>Kritična opozorila:</b><br>🚨 <b>Stara Gradiška stari most zaprt</b> — promet prekinjen v obe smeri, ne uporabljaj starega mostu.'+(GRADCRIT.gvOpen?'<br>✅ Uporabi <b>Gornji Varoš–Gradiška</b> (novi most) — odprt.':'')+' <span class="meta">(vir: HAK)</span></div>';
     }
+    html+=alertsBanner(pr);
     html+='<button class="cam" onclick="swapDir()" style="margin-bottom:8px">⇄ Obrni smer ('+rTo(pr)+' → '+rFrom(pr)+')</button>';
+    html+='<div id="routeEta" class="etarow"><span class="meta">Računam pot in čas prihoda…</span></div>';
     var all=pr.recommended.concat(pr.alternative, pr.avoid);
     if(all.length) html+='<button class="drivebtn" onclick="enterDrive()">🚗 Vozim</button>';
     if(pr.note) html+='<p class="meta">ℹ️ '+pr.note+'</p>';
@@ -1680,9 +1717,57 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     res.innerHTML=html; res.style.display='';
     if(!window._autoload){ try{ res.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){} }
     updateFuelDistance(pr);
+    computeRouteEta(pr);
     // samodejni TomTom pregled kolone za priporoceni + alternativni prehod (ce se ni preverjeno)
     pr.recommended.concat(pr.alternative).forEach(function(id){ if(TTQ[id] && !TTRES[id]){ try{ checkTomTom(id); }catch(e){} } });
   }
+  /* ===== PRAVA POT + ETA (OSRM) ===== */
+  function fmtHM(min){ if(min==null)return '?'; if(min<60)return min+' min'; return Math.floor(min/60)+'h'+('0'+(min%60)).slice(-2); }
+  var _etaCache={};
+  function computeRouteEta(pr){
+    var el=document.getElementById('routeEta'); if(!el) return;
+    var from=rFrom(pr), to=rTo(pr), key=norm(from)+'>'+norm(to);
+    function render(km,min){
+      var recId=(pr.recommended[0]||pr.alternative[0]); var wait=recId&&CBYID[recId]?paxTruck(CBYID[recId]).pax:null;
+      var total=min+(wait||0), eta=new Date(Date.now()+total*60000);
+      el.innerHTML='📏 <b>'+km+' km</b> · 🚗 vožnja ~'+fmtHM(min)+(wait!=null?(' · 🛃 meja ~'+wait+' min'):'')+' · 🕒 <b>prihod ~'+('0'+eta.getHours()).slice(-2)+':'+('0'+eta.getMinutes()).slice(-2)+'</b>'
+        +' <button class="linklike" onclick="showRouteMap()">🗺️ pokaži pot</button>';
+    }
+    if(_etaCache[key]){ render(_etaCache[key].km,_etaCache[key].min); return; }
+    Promise.all([geocode(from),geocode(to)]).then(function(g){
+      return fetch('https://router.project-osrm.org/route/v1/driving/'+g[0].lng+','+g[0].lat+';'+g[1].lng+','+g[1].lat+'?overview=false',{signal:AbortSignal.timeout(12000)})
+        .then(function(r){return r.json();}).then(function(j){ var rt=j.routes&&j.routes[0]; if(!rt)throw 0;
+          var km=Math.round(rt.distance/1000), min=Math.round(rt.duration/60); _etaCache[key]={km:km,min:min}; render(km,min); });
+    }).catch(function(){ el.innerHTML='<span class="meta">📏 Časa poti ni bilo mogoče izračunati (poskusi na zavihku 🗺️ Zemljevid).</span>'; });
+  }
+  window.showRouteMap=function(){ var pr=CURRENT_ROUTE; if(!pr)return; var a=document.getElementById('routeFrom'),b=document.getElementById('routeTo'); if(a)a.value=rFrom(pr); if(b)b.value=rTo(pr); showView('map'); setTimeout(function(){ try{ calcRoute(); }catch(e){} },250); };
+  /* ===== OPOZORILA OB KOLONI (aktivna) ===== */
+  var ALARM_DEF=[{crossing:'si-obrezje',min:45,label:'Obrežje'},{crossing:'hr-bajakovo',min:60,label:'Bajakovo'},{crossing:'si-karavanke',min:30,label:'Karavanke'},{crossing:'ba-gradiska',min:45,label:'Gornji Varoš–Gradiška'}];
+  function alarmList(){ try{ var a=JSON.parse(localStorage.getItem('promet_alarms')); if(a&&a.length)return a; }catch(e){} return ALARM_DEF; }
+  function curWait(id){ var p=CBYID[id]; if(!p)return null; return paxTruck(p).pax; }
+  var _almDismiss={}, _almNotified={};
+  function activeAlerts(){
+    return alarmList().map(function(a){ var w=curWait(a.crossing); return {id:a.crossing,label:a.label||(CBYID[a.crossing]&&CBYID[a.crossing].name)||a.crossing,wait:w,thr:a.min}; })
+      .filter(function(x){ return x.wait!=null && x.wait>=x.thr && !( _almDismiss[x.id] && (Date.now()-_almDismiss[x.id])<30*60000); });
+  }
+  window.dismissAlert=function(id){ _almDismiss[id]=Date.now(); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
+  function alertsBanner(pr){
+    var al=activeAlerts(); if(!al.length) return '';
+    var routeIds=pr?pr.recommended.concat(pr.alternative,pr.avoid):[];
+    return al.map(function(a){
+      var backup='';
+      if(pr && pr.recommended.indexOf(a.id)>=0 && pr.alternative.length){ var alt=CBYID[pr.alternative[0]]; if(alt){ var aw=curWait(pr.alternative[0]); backup='<br>🟡 Backup: <b>'+alt.name+'</b>'+(aw!=null?(' ~'+aw+' min'):'')+'.'; } }
+      return '<div class="alertbox"><div>🔔 <b>'+a.label+'</b>: čakanje <b>~'+a.wait+' min</b> (tvoj prag '+a.thr+' min).'+backup+'</div><button onclick="dismissAlert(\\''+a.id+'\\')" title="skrij 30 min">✕</button></div>';
+    }).join('');
+  }
+  function alarmTick(){
+    activeAlerts().forEach(function(x){ if(_almNotified[x.id]&&(Date.now()-_almNotified[x.id])<30*60000)return; _almNotified[x.id]=Date.now();
+      toast('🔔 '+x.label+': čakanje ~'+x.wait+' min');
+      if(window.Notification&&Notification.permission==='granted'){ try{ new Notification('PrometInfo — kolona',{body:x.label+': čakanje ~'+x.wait+' min (prag '+x.thr+')',icon:'icon-192.png',tag:'promet-'+x.id}); }catch(e){} }
+    });
+  }
+  window.enableAlarmNotify=function(){ if(!window.Notification){ toast('Ta brskalnik ne podpira obvestil.'); return; } Notification.requestPermission().then(function(p){ toast(p==='granted'?'🔔 Obvestila vklopljena.':'Obvestila niso dovoljena.'); if(p==='granted')alarmTick(); }); };
+  setTimeout(alarmTick,4000); setInterval(alarmTick,180000);
   // ---- gorivo po poti (profil vozila) ----
   var VKEY='promet_vehicle';
   function veh(){ try{ var v=JSON.parse(localStorage.getItem(VKEY)); if(v&&v.name) return v; }catch(e){} return {name:'BMW X3 2.0d', cons:7.8, tank:67}; }
@@ -1871,7 +1956,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function loadVeh(){ var v; try{v=JSON.parse(localStorage.getItem('promet_vehicle'));}catch(e){} v=v||{name:'BMW X3 2.0d',cons:7.8,tank:67}; var n=document.getElementById('setVehName'),c=document.getElementById('setVehCons'),t=document.getElementById('setVehTank'); if(n)n.value=v.name; if(c)c.value=v.cons; if(t)t.value=v.tank; }
   window.saveVehicle=function(){ var v={name:(document.getElementById('setVehName').value||'Moje vozilo').slice(0,40), cons:parseFloat(document.getElementById('setVehCons').value)||7.8, tank:parseInt(document.getElementById('setVehTank').value,10)||60}; localStorage.setItem('promet_vehicle',JSON.stringify(v)); flash('Vozilo shranjeno.'); };
   function getAlarms(){ try{var a=JSON.parse(localStorage.getItem('promet_alarms')); if(a&&a.length)return a;}catch(e){} return [{crossing:'si-obrezje',min:45,label:'Obrežje'},{crossing:'hr-bajakovo',min:60,label:'Bajakovo'},{crossing:'si-karavanke',min:30,label:'Karavanke'}]; }
-  function renderAlarms(){ var box=document.getElementById('setAlarms'); if(!box)return; var a=getAlarms(); box.innerHTML=a.map(function(al,i){ return '<div class="alrow"><span>'+al.label+'</span> prag: <input type="number" min="0" max="600" data-i="'+i+'" class="althr" value="'+al.min+'"> min</div>'; }).join('')+'<button class="cam" onclick="saveAlarms()" style="margin-top:8px">Shrani alarme</button>'; }
+  function renderAlarms(){ var box=document.getElementById('setAlarms'); if(!box)return; var a=getAlarms(); box.innerHTML=a.map(function(al,i){ return '<div class="alrow"><span>'+al.label+'</span> prag: <input type="number" min="0" max="600" data-i="'+i+'" class="althr" value="'+al.min+'"> min</div>'; }).join('')+'<button class="cam" onclick="saveAlarms()" style="margin-top:8px">Shrani alarme</button> <button class="cam" onclick="enableAlarmNotify()" style="margin-top:8px">🔔 Vklopi obvestila</button><p class="meta" style="margin-top:6px">Ko čakanje na prehodu preseže prag, dobiš opozorilo v aplikaciji (in obvestilo, če ga vklopiš). Preverja se ob odprtju in vsake 3 min.</p>'; }
   window.saveAlarms=function(){ var a=getAlarms(); var inps=document.querySelectorAll('.althr'); for(var i=0;i<inps.length;i++){ var ix=+inps[i].getAttribute('data-i'); a[ix].min=parseInt(inps[i].value,10)||0; } localStorage.setItem('promet_alarms',JSON.stringify(a)); flash('Alarmi shranjeni.'); };
   function cnt(k){ try{var a=JSON.parse(localStorage.getItem(k)||'[]'); return a.length||0;}catch(e){return 0;} }
   function renderCounts(){ var box=document.getElementById('setCounts'); if(!box)return; box.innerHTML='Priljubljene kamere: <b>'+cnt('promet_favs')+'</b> · priljubljeni prehodi: <b>'+cnt('promet_fav_cross')+'</b> · moji vnosi čakanja: <b>'+cnt('promet_manual')+'</b>'; }
