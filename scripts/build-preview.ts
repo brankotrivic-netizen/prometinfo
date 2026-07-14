@@ -571,6 +571,9 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .camcellbtns{font-size:11px;padding:1px 2px 2px}
 .camsum{font-size:12px;background:var(--panel-2);border-radius:8px;padding:7px 9px;margin:5px 0;line-height:1.5}
 .camrefresh{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 12px;position:sticky;top:0;z-index:20;background:var(--bg);padding:6px 0}
+.reloadbtn{background:#0f766e;color:#fff;border:none;border-radius:9px;padding:9px 15px;font:inherit;font-weight:700;font-size:14px;cursor:pointer;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.reloadbtn:hover{background:#0d635c}
+.reloadbtn:active{transform:scale(.97)}
 .campin{font-size:12px;width:22px;height:22px;line-height:19px;text-align:center;background:#fff;border:1.5px solid #3b82f6;border-radius:50%;box-shadow:0 1px 3px rgba(16,32,43,.4)}
 .carina{position:relative;width:38px;height:38px}
 .carinadiv .csign{transition:transform .1s}
@@ -703,7 +706,7 @@ h1{font-size:24px}
 footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-top:1px solid var(--border);padding-top:16px}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#08111c}.leaflet-popup-content a{color:#1a55c8;font-weight:600}
 </style></head><body><div class="wrap">
-<div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px"><button id="installBtn" style="display:none" class="drivebtn" onclick="doInstall()">⬇️ Namesti na telefon</button><span class="meta">OSNUTEK · ${new Date().toLocaleString("sl-SI")}</span></div></div>
+<div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px"><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><button class="reloadbtn" onclick="reloadAll()">🔄 Osveži vse</button><button id="installBtn" style="display:none" class="drivebtn" onclick="doInstall()">⬇️ Namesti na telefon</button></div><span class="meta">osveženo · ${new Date().toLocaleString("sl-SI")}</span></div></div>
 <div class="layout">
 <aside class="sidebar"><div class="countrytiles">${tiles}</div></aside>
 <div class="main">
@@ -1178,6 +1181,9 @@ window.refreshCams=function(scope){
   return n;
 };
 window.refreshBig=function(){ var big=document.getElementById('camBig'), op=document.getElementById('camOpen'); if(big&&op&&op.href){ big.src=camBust(op.href.split('?')[0]); toast('🔄 Osvežujem kamero…'); } };
+// OSVEŽI VSE: znova naloži celo stran (sveži uradni podatki + vse kamere + TomTom naenkrat).
+// V PWA načinu (telefon) ni brskalnikovega gumba za osvežitev, zato je to glavni gumb.
+window.reloadAll=function(){ try{ toast('🔄 Osvežujem celotno stran…'); }catch(e){} setTimeout(function(){ try{ location.reload(); }catch(e){ location.href=location.href.split('#')[0]; } }, 250); };
 function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
 function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; var cb=document.getElementById('camCheckBar'); if(cb){cb.style.display='none';cb.innerHTML='';} }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
