@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.7.2026. 08:17",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet u gradovima, na prilaznim i obilaznim cestama, posebice u priobalju, pa vozačima savjetujemo da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: vozilo u kvaru na autocesti A1 između odmorišta Marune i tunela Ledenik u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati. zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 minu…"
+  "updated": "14.7.2026. 08:45",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet u gradovima, na prilaznim i obilaznim cestama, posebice u priobalju, pa vozačima savjetujemo da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati. zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 minuta po zaustavljanju. do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja i…"
  },
  {
   "title": "Granični prijelazi",
