@@ -72,8 +72,8 @@ export const CROSSINGS: Record<string, CrossingDef> = {
   "ba-novi-grad": { country: "BA", neighbor: "HR", lat: 45.05, lng: 16.38 },
   "ba-kostajnica": { country: "BA", neighbor: "HR", lat: 45.22, lng: 16.55 },
   "ba-kozarska-dubica": { country: "BA", neighbor: "HR", lat: 45.18, lng: 16.81 },
-  "ba-gradina": { country: "BA", neighbor: "HR", lat: 45.27, lng: 16.93 }, // Jasenovac (HR) / Gradina-Donja Gradina (BiH)
-  "ba-gradiska": { country: "BA", neighbor: "HR", lat: 45.151, lng: 17.242 }, // NOVI most Gornji Varoš (HR) / Bosanska Gradiška (BiH); star prehod Stara Gradiška je ~45.14,17.25 (zaprt)
+  "ba-gradina": { country: "BA", neighbor: "HR", lat: 45.2654, lng: 16.919 }, // Jasenovac (HR) / Donja Gradina (BiH) — OSM
+  "ba-gradiska": { country: "BA", neighbor: "HR", lat: 45.148, lng: 17.204 }, // NOVI most (sredina): Gornji Varoš HR 45.163,17.205 / Bosanska Gradiška BiH 45.136,17.203. Star prehod Stara Gradiška 45.151,17.246 (zaprt)
   "ba-brod": { country: "BA", neighbor: "HR", lat: 45.14, lng: 17.99 },
   "ba-svilaj": { country: "BA", neighbor: "HR", lat: 45.10, lng: 18.18 },
   "ba-samac": { country: "BA", neighbor: "HR", lat: 45.06, lng: 18.46 },
