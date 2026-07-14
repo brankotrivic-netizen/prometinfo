@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-14T10:28:11.071Z";
+export const PROMET_SI_UPDATED = "2026-07-14T10:58:08.134Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;863295;fe57df81-8939-4df9-80be-bc89b314c60c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Logatec - razcep Kozarje v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.90908,
-  "lng": 14.25838,
-  "start": "2026-07-14T09:58:09.803Z",
-  "end": "2026-07-14T20:00:00Z",
-  "ts": "2026-07-14T09:58:18.44Z"
- },
  {
   "id": "DARS;863365;cfec95a2-cc79-4e70-bf45-d20f8cc9179d",
   "type": "MaintenanceWorks",
@@ -79,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-14T07:37:24.47Z",
   "end": "2026-07-14T13:00:00Z",
   "ts": "2026-07-14T07:39:14.673Z"
- },
- {
-  "id": "DARS;863336;a961d5c6-0743-42f1-8f90-9850d74ae36d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, predor Kastelec - počivališče Ravne v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.59698,
-  "lng": 13.92988,
-  "start": "2026-07-14T07:37:02Z",
-  "end": "2026-07-14T11:30:36.993Z",
-  "ts": "2026-07-14T07:37:32.077Z"
  },
  {
   "id": "DARS;863330;25514312-8784-4944-8fbe-36ca42133bfa",

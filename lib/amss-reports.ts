@@ -30,10 +30,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Do 23.7.2026. godine izvode radovi na rehabilitaciji kolovoza, na državnom putu II A reda broj 150, deonica Rogača - Ranilović. Saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  },
  {
-  "title": "Kljajićevo-Sivac, radovi",
-  "text": "Od 11. 7. 2026. godine od 5 časova do 13.7.2026. godine do 5 časova, biće obustavljen saobraćaj zbog radova na rehabilitaciji kolovoza, na državnom putu I B reda broj 15, deonica Kljajićevo Sivac, od izlaza iz naselja Kljajićevo do ulaza u naselje Sivac.Tokom trajanja obustave, saobraćaj će se odvijati obilaznim putnim pravcem: Kljajićevo Bački Sokolac Bačka Topola Kula Crvenka Sivac. Izvor: Putevi Srbije"
- },
- {
   "title": "Petlja Vrba– radovi",
   "text": "Od 8. 7. do 26. 7. 2026. godine, izvodiće se radovi na kružnim tokovima i razdelnim ostrvima na petlji Vrba. U zoni radova, u dužini od 100 metara, za saobraćaj biti zatvorena desna saobraćajna traka, dok će saobraćaj biti preusmeren i odvijaće se levom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
@@ -92,10 +88,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Vrnjačka banja- Vrba, radovi",
   "text": "Dana 1. 7. 2026. godine, zbog izvođenja geodetskih mernih radova, biće izmenjen režim saobraćaja na deonici petlja Vrnjačka Banja Vrba, u oba smera. U zoni radova, u dužini od 160 metara, za saobraćaj će prvo biti zatvorena preticajna saobraćajna traka, dok će se saobraćaj odvijati voznom i zaustavnom saobraćajnom trakom, zatim će biti zatvorena zaustavna, a saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvor Putevi Srbije"
- },
- {
-  "title": "Petlja Dušanovac - petlje Lasta, radovi",
-  "text": "Od 29. 6. do 1. 7. 2026. godine, u periodu od 22 do 5 časova, izvodiće se radovi na čišćenju i ispiranju kišne kanalizacije, deonica petlja Dušanovac petlja Lasta, u smeru ka Nišu. Radovi će se izvoditi u preticajnoj saobraćajnoj traci, dok će se saobraćaj odvijati voznom i zaustavnom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
  {
   "title": "petlja Trstenik – petlja Vrnjačka Banja, radovi",
@@ -240,5 +232,13 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Kumanica-Kamenjača, radovi",
   "text": "U toku su radovi na rekonstrukciji državnog puta II A reda broj 197, deonica Kumanica-Kamenjača, u dužini 3,5km, koji obuhvataju i radove na izgradnji 4 nova mosta. Saobraćaj se na jednom delu puta odvija devijacijom, pri čemu je zabranjen saobraćaj za kamione sa prikolicom. Radovi su obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Prijepolje- Brodarevo, mesto Točilovo klizište",
+  "text": "Produžava se izmena režima saobraćaja usled pojave klizišta na državnom putu I B reda broj 23, na deonici Brodarevo Gostun u mestu Točilovo Saobraćaj se odvija naizmeničnim propuštanjem vozila i regulisan je saobraćajnim znakovima. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Ivanjica-Arilje, radovi",
+  "text": "U okviru preostalih radova na pojačanom održavanju državnog puta I B reda broj 21, deonica Požega - Ivanjica, od km 209+141.00 do km 248+079.38, u periodu od 19.10.2025. do 01.10.2026. godine, izvodiće se radovi na asfaltiranju kolovoza na deonicama Arilje - Prilike i Prilike Ivanjica. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
  }
 ];

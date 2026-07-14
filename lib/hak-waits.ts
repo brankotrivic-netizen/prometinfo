@@ -3,6 +3,38 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
+  "id": "ba-gradina",
+  "name": "Jasenovac (Donja Gradina)",
+  "ulazMin": null,
+  "izlazMin": 30,
+  "ulazTxt": "-",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": 240,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "4 h",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
+  "id": "",
+  "name": "Gornji Brgat (Ivanica)",
+  "ulazMin": 90,
+  "izlazMin": null,
+  "ulazTxt": "1 h 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "high",
+  "waitMinutes": 90,
+  "ts": "L: 1,5 km T: 14.07.2026 12:45:39",
+  "tsISO": "2026-07-14T12:45:39+02:00"
+ },
+ {
   "id": "ba-samac",
   "name": "Slavonski Šamac (Bosanski Šamac)",
   "ulazMin": null,
