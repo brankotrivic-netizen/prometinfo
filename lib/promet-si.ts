@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-14T21:16:07.066Z";
+export const PROMET_SI_UPDATED = "2026-07-14T22:13:55.441Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;863448;204f32ed-fedd-490a-ad0f-507880c1d29d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - uvoz Šentrupert v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25977,
+  "lng": 15.09913,
+  "start": "2026-07-14T22:03:24.923Z",
+  "end": "2026-07-15T01:00:00Z",
+  "ts": "2026-07-14T22:03:31.667Z"
+ },
  {
   "id": "DARS;863442;11ee244b-dd86-4be6-91f9-5f8ebfb02623",
   "type": "MaintenanceWorks",
@@ -13,28 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-14T20:37:41.73Z",
   "end": "2026-07-15T00:00:00Z",
   "ts": "2026-07-14T20:37:54.473Z"
- },
- {
-  "id": "DARS;863441;457ffafe-df8b-4528-8ef5-4db8de86298a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Vransko - uvoz Šentrupert v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25331,
-  "lng": 14.97568,
-  "start": "2026-07-14T20:23:46.117Z",
-  "end": "2026-07-14T23:00:00Z",
-  "ts": "2026-07-14T20:23:56.12Z"
- },
- {
-  "id": "DARS;863435;7233826b-7320-40d9-9a4e-c5d485439e8e",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, uvoz Ljubljana Nove Jarše - uvoz Ljubljana Nove Jarše v smeri Zadobrove, dela, zaprt prehitevalni pas.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07212,
-  "lng": 14.54918,
-  "start": "2026-07-14T18:10:16.06Z",
-  "end": "2026-07-14T21:30:19.297Z",
-  "ts": "2026-07-14T18:10:17.473Z"
  },
  {
   "id": "DARS;863423;3f559267-f35f-4c11-bebc-926a21e3f892",
