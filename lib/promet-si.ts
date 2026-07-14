@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-14T09:18:04.874Z";
+export const PROMET_SI_UPDATED = "2026-07-14T10:28:11.071Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;863359;104667d9-01de-4e27-822c-06f127126031",
+  "id": "DARS;863295;fe57df81-8939-4df9-80be-bc89b314c60c",
   "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, krožišče Tomačevo - priključek Ljubljana Nove Jarše v smeri Zadobrove, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07867,
-  "lng": 14.53329,
-  "start": "2026-07-14T09:05:20.32Z",
-  "end": "2026-07-14T11:00:27.503Z",
-  "ts": "2026-07-14T09:05:46.593Z"
+  "desc": "A1, Koper - Ljubljana, priključek Logatec - razcep Kozarje v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.90908,
+  "lng": 14.25838,
+  "start": "2026-07-14T09:58:09.803Z",
+  "end": "2026-07-14T20:00:00Z",
+  "ts": "2026-07-14T09:58:18.44Z"
+ },
+ {
+  "id": "DARS;863365;cfec95a2-cc79-4e70-bf45-d20f8cc9179d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Trojane - predor Podmilj v smeri Ljubljane, dela, zaprt odstavni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.18352,
+  "lng": 14.85971,
+  "start": "2026-07-14T09:44:39.777Z",
+  "end": "2026-07-14T15:00:00Z",
+  "ts": "2026-07-14T09:45:00.4Z"
  },
  {
   "id": "DARS;863357;6c66fca0-7bc1-47c9-938e-54a1e23ddcc7",
@@ -48,17 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-14T08:16:13.643Z"
  },
  {
-  "id": "DARS;863339;594030cd-d453-440e-bdbd-a68dc6542af0",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Novo mesto vzhod - priključek Mirna Peč v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.83605,
-  "lng": 15.16799,
-  "start": "2026-07-14T07:59:25.993Z",
-  "end": "2026-07-14T10:00:37.36Z",
-  "ts": "2026-07-14T07:59:27.66Z"
- },
- {
   "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G1-2, Slovenska Bistrica - Pragersko, pri AC priključku Slovenska Bistrica sever, izmenično enosmerni promet, kratkotrajne popolne zapore (do 15 minut), rekonstrukcija ceste v sklopu novogradnje AC viadukta Devina, do 31. 7. 2026.",
@@ -90,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-14T07:37:02Z",
   "end": "2026-07-14T11:30:36.993Z",
   "ts": "2026-07-14T07:37:32.077Z"
- },
- {
-  "id": "DARS;863247;c260cef3-3fca-4381-80b2-1f3057612661",
-  "type": "MaintenanceWorks",
-  "desc": "A3, Fernetiči - razcep Gabrk, predor Tabor - priključek Sežana vzhod v smeri Gabrka, dela, zaprt prehitevalni pas.",
-  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
-  "lat": 45.71246,
-  "lng": 13.8579,
-  "start": "2026-07-14T04:02:18.343Z",
-  "end": "2026-07-14T12:00:28.553Z",
-  "ts": "2026-07-14T07:22:21.293Z"
  },
  {
   "id": "DARS;863330;25514312-8784-4944-8fbe-36ca42133bfa",
@@ -321,17 +310,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-14T05:36:50.527Z",
   "end": "2026-07-14T13:00:00Z",
   "ts": "2026-07-14T05:37:16.327Z"
- },
- {
-  "id": "DARS;863285;7ca5e652-c96d-4d8f-b72c-5a87de001b67",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-103, Nova Gorica - Tolmin, izmenično enosmerni promet, zamenjava prometnega znaka, do 11:30.",
-  "loc": "G2-103, Plave - Solkan",
-  "lat": 45.99107,
-  "lng": 13.64461,
-  "start": "2026-07-14T06:30:00Z",
-  "end": "2026-07-14T09:30:00Z",
-  "ts": "2026-07-14T05:31:45.423Z"
  },
  {
   "id": "DARS;863283;8d3a16d5-74e4-413b-aeb8-640e7dcea79c",
