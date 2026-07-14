@@ -19,7 +19,7 @@
 //   [vars]
 //   ALLOW_ORIGIN = "https://brankotrivic-netizen.github.io"
 
-const MODEL = "claude-opus-4-8"; // ali claude-haiku-4-5-20251001 za ceneje/hitreje
+const MODEL = "claude-haiku-4-5-20251001"; // poceni/hitro; za več detajla: claude-opus-4-8
 
 function cors(env) {
   return {
@@ -40,12 +40,18 @@ export default {
     try { body = await request.json(); } catch { return json({ error: "bad json" }, 400, env); }
     const { image, url, cameraName, borderId, direction, route } = body || {};
 
-    // 1) Zagotovi sliko (base64). Če jo je klient že pridobil, jo uporabi; sicer poslikaj URL.
+    // 1) Zagotovi sliko (base64):
+    //    a) če jo klient že pošlje, jo uporabi;
+    //    b) DIREKTNA slika (jpg/png…) -> Worker jo sam prenese (obide CORS) — deluje na BREZPLAČNEM planu;
+    //    c) stran/iframe/video -> Browser Rendering (potreben plačljiv plan, neobvezno).
     let dataUrl = image || null;
     try {
-      if (!dataUrl && url) dataUrl = await captureCameraScreenshot(url, env);
+      if (!dataUrl && url) {
+        if (/\.(jpg|jpeg|png|gif|webp|bmp)(\?|$)/i.test(url)) dataUrl = await fetchImageAsDataUrl(url);
+        else dataUrl = await captureCameraScreenshot(url, env);
+      }
     } catch (e) {
-      return json({ error: "screenshot_failed", errorReason: String(e && e.message || e), cameraVisible: false }, 200, env);
+      return json({ error: "fetch_failed", errorReason: String(e && e.message || e), cameraVisible: false }, 200, env);
     }
     if (!dataUrl) return json({ error: "no_image", errorReason: "Slike ni bilo mogoče pridobiti.", cameraVisible: false }, 200, env);
 
@@ -60,7 +66,23 @@ export default {
   },
 };
 
-// Poslika kamero (stran/iframe/video) prek Cloudflare Browser Rendering.
+// DIREKTNA slika: Worker jo prenese sam (brez CORS omejitev brskalnika) -> base64.
+// Deluje na BREZPLAČNEM Cloudflare planu.
+async function fetchImageAsDataUrl(url) {
+  const r = await fetch(url, {
+    headers: { "User-Agent": "Mozilla/5.0 (PrometInfo camera fetch)", Referer: new URL(url).origin + "/" },
+    signal: AbortSignal.timeout(12000),
+  });
+  if (!r.ok) throw new Error("slika HTTP " + r.status);
+  const ct = (r.headers.get("content-type") || "image/jpeg").split(";")[0];
+  if (!/^image\//.test(ct)) throw new Error("odgovor ni slika (" + ct + ")");
+  const buf = new Uint8Array(await r.arrayBuffer());
+  let bin = "";
+  for (let i = 0; i < buf.length; i++) bin += String.fromCharCode(buf[i]);
+  return "data:" + ct + ";base64," + btoa(bin);
+}
+
+// Poslika kamero (stran/iframe/video) prek Cloudflare Browser Rendering (plačljiv plan).
 async function captureCameraScreenshot(url, env) {
   if (!env.BROWSER) throw new Error("Browser Rendering (BROWSER binding) ni na voljo.");
   const puppeteer = await import("@cloudflare/puppeteer");

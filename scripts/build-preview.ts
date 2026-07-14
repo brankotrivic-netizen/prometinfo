@@ -1430,15 +1430,24 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var im=p.images[idx], url=im.url, name=im.name||'';
     var s=caGet(); s[url]=Object.assign(s[url]||{},{status:'checking',url:url,name:name,borderId:borderId,at:new Date().toISOString()}); caSave(s);
     if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE);
-    if(camKind(url)!=='image'){ finishCA(url,{status:'link_only',screenshotAvailable:false,errorReason:'Stran/iframe/video — potreben strežniški screenshot (glej Nastavitve).',name:name,borderId:borderId}); return; }
-    getCameraSnapshot(url).then(function(snap){
-      if(!snap.ok){ finishCA(url,{status:(snap.reason||'blocked'),screenshotAvailable:false,errorReason:snap.err||'ni dostopa',name:name,borderId:borderId}); return; }
-      var ep=aiEndpoint();
-      if(!ep){ finishCA(url,{status:'snapshot',screenshotAvailable:true,thumbnailUrl:snap.thumb,errorReason:'Slika pridobljena, a AI strežnik ni nastavljen (Nastavitve → AI endpoint).',name:name,borderId:borderId}); return; }
-      fetch(ep,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({image:snap.thumb,cameraName:name,borderId:borderId,direction:REV?'nazaj':'tja',route:CURRENT_ROUTE?(rFrom(CURRENT_ROUTE)+'→'+rTo(CURRENT_ROUTE)):''}),signal:AbortSignal.timeout(20000)})
+    var ep=aiEndpoint();
+    // A) Z AI strežnikom: pošljemo URL — strežnik sam prenese sliko (obide CORS), zato deluje tudi za "blokirane" kamere
+    if(ep){
+      fetch(ep,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:url,cameraName:name,borderId:borderId,direction:REV?'nazaj':'tja',route:CURRENT_ROUTE?(rFrom(CURRENT_ROUTE)+'→'+rTo(CURRENT_ROUTE)):''}),signal:AbortSignal.timeout(25000)})
         .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
-        .then(function(ai){ var st=(ai&&ai.cameraVisible===false)?'unreliable':((ai&&ai.confidence!=null&&ai.confidence<40)?'unreliable':'analyzed'); finishCA(url,{status:st,screenshotAvailable:true,thumbnailUrl:snap.thumb,aiResult:ai,errorReason:'',name:name,borderId:borderId}); })
-        .catch(function(e){ finishCA(url,{status:'snapshot',screenshotAvailable:true,thumbnailUrl:snap.thumb,errorReason:'AI strežnik ni odgovoril: '+safeTxt(e.message),name:name,borderId:borderId}); });
+        .then(function(ai){
+          if(ai&&ai.error){ var st=(camKind(url)==='image')?'blocked':'link_only'; finishCA(url,{status:st,screenshotAvailable:false,errorReason:'Strežnik: '+safeTxt(ai.errorReason||ai.error),name:name,borderId:borderId}); return; }
+          var st2=(ai&&ai.cameraVisible===false)?'unreliable':((ai&&ai.confidence!=null&&ai.confidence<40)?'unreliable':'analyzed');
+          finishCA(url,{status:st2,screenshotAvailable:true,aiResult:ai,errorReason:'',name:name,borderId:borderId});
+        })
+        .catch(function(e){ finishCA(url,{status:'blocked',screenshotAvailable:false,errorReason:'AI strežnik ni odgovoril: '+safeTxt(e.message),name:name,borderId:borderId}); });
+      return;
+    }
+    // B) Brez strežnika: pošten klientski poskus (CORS pogosto blokira)
+    if(camKind(url)!=='image'){ finishCA(url,{status:'link_only',screenshotAvailable:false,errorReason:'Stran/iframe/video — potreben AI strežnik (Nastavitve → AI endpoint).',name:name,borderId:borderId}); return; }
+    getCameraSnapshot(url).then(function(snap){
+      if(!snap.ok){ finishCA(url,{status:(snap.reason||'blocked'),screenshotAvailable:false,errorReason:(snap.err||'ni dostopa')+' — za analizo nastavi AI strežnik (Nastavitve).',name:name,borderId:borderId}); return; }
+      finishCA(url,{status:'snapshot',screenshotAvailable:true,thumbnailUrl:snap.thumb,errorReason:'Slika pridobljena, a AI strežnik ni nastavljen (Nastavitve → AI endpoint).',name:name,borderId:borderId});
     });
   };
   window.analyzeAllCams=function(borderId){ var p=CBYID[borderId]; if(!p||!p.images)return; p.images.forEach(function(im,i){ setTimeout(function(){ analyzeCamera(borderId,i); }, i*400); }); };

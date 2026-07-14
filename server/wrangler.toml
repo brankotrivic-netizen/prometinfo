@@ -1,0 +1,20 @@
+# PrometInfo — Cloudflare Worker za AI analizo kamer.
+# Namestitev (v mapi server/):  wrangler deploy
+# Deluje na BREZPLAČNEM planu za direktne slike kamer (Worker jih sam prenese).
+# Za analizo strani/iframe/video kamer odkomentiraj [browser] (potreben plačljiv plan).
+
+name = "prometinfo-cam"
+main = "camera-worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Dovoli klice samo iz tvoje aplikacije (CORS). Za test lahko daš "*".
+ALLOW_ORIGIN = "https://brankotrivic-netizen.github.io"
+
+# ANTHROPIC_API_KEY se NE piše sem — nastaviš ga kot skrivnost:
+#   wrangler secret put ANTHROPIC_API_KEY
+
+# Za screenshot strani/video kamer (potreben Workers Paid plan ~5$/mesec):
+# [browser]
+# binding = "BROWSER"
