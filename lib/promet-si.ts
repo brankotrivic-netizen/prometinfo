@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-14T10:58:08.134Z";
+export const PROMET_SI_UPDATED = "2026-07-14T11:20:01.504Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;863365;cfec95a2-cc79-4e70-bf45-d20f8cc9179d",
@@ -112,28 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-14T06:29:11.57Z",
   "end": "2026-07-16T13:00:00Z",
   "ts": "2026-07-14T06:43:26.32Z"
- },
- {
-  "id": "DARS;863318;68ac4d13-dbe6-49cf-9720-878087764edb",
-  "type": "MaintenanceWorks",
-  "desc": "G1-1, Maribor - Ptuj, v Mariboru, na Ptujski cesti, zaprt en prometni pas, vzdrževalna dela, do 15:00.",
-  "loc": "G1-1, Maribor (Tržaška cesta) - Miklavž",
-  "lat": 46.54047,
-  "lng": 15.65124,
-  "start": "2026-07-14T06:33:16.8Z",
-  "end": "2026-07-14T13:00:00Z",
-  "ts": "2026-07-14T06:34:33.557Z"
- },
- {
-  "id": "DARS;863317;f6d00626-2fdd-4562-8078-37b5385c9cfe",
-  "type": "MaintenanceWorks",
-  "desc": "G1-1, Maribor - Ptuj, v Mariboru na Ptujski cesti, dela, zaprt en prometni pas, do 15:00.",
-  "loc": "G1-1, Maribor (Tržaška cesta) - Miklavž",
-  "lat": 46.53994,
-  "lng": 15.64923,
-  "start": "2026-07-14T06:30:57.72Z",
-  "end": "2026-07-14T13:00:00Z",
-  "ts": "2026-07-14T06:32:12.623Z"
  },
  {
   "id": "DARS;863315;144b145a-acc3-4dc3-a4dc-14429628eab5",
@@ -268,17 +246,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-14T05:40:39.977Z"
  },
  {
-  "id": "DARS;863289;fdcbe2bc-7a75-48c2-af41-2ab209d64d4f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-103, Solkan - Nova Gorica, v Novi Gorici, izmenično enosmerni promet, pomična zapora, obrezovanje rastlinja, do 13:00.",
-  "loc": "G2-103, Solkan - Nova Gorica (Kromberk)",
-  "lat": 45.96224,
-  "lng": 13.6547,
-  "start": "2026-07-14T05:39:16.95Z",
-  "end": "2026-07-14T11:00:00Z",
-  "ts": "2026-07-14T05:40:29.287Z"
- },
- {
   "id": "DARS;863288;b72c8356-af08-4106-a39f-69d37cadd2b3",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-204, Šempeter - Dornberk, izmenično enosmerni promet, vzdrževalna dela, do 15:00.",
@@ -343,6 +310,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-14T05:26:10.05Z",
   "end": "2026-07-14T12:00:00Z",
   "ts": "2026-07-14T05:26:12.07Z"
+ },
+ {
+  "id": "DARS;863276;291ba9fa-961d-44de-a9f9-4d8659c609c0",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-103, Nova Gorica - Rožna dolina, pri Rožni Dolini, izmenično enosmerni promet, pomična zapora, obrezovanje rastlinja, do 15:00.",
+  "loc": "G2-103, Priključek Rožna Dolina",
+  "lat": 45.94181,
+  "lng": 13.64609,
+  "start": "2026-07-14T11:00:00Z",
+  "end": "2026-07-14T13:00:00Z",
+  "ts": "2026-07-14T05:24:49.883Z"
  },
  {
   "id": "DARS;863275;c9d1081f-30ba-4488-b2a7-cc6c70f93d29",

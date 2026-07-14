@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.7.2026. 12:57",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet u gradovima, na prilaznim i obilaznim cestama, posebice u priobalju, pa vozačima savjetujemo da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prekinut je promet na Staroj cesti kroz Gorski kotar - DC3 kod skretanja za Fužine zbog prometne nesreće prometna nesreća na autocesti A1 između tunela Bristovac i tunela Ledenik u smjeru Zagreba. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h pješak na kolniku na autocesti A2 Zagreb-Macelj između čvorova Zagreb zapad i Zaprešić u smjeru Slovenije. Pozivamo vozače na pojačan oprez! vozilo u kva…"
+  "updated": "14.7.2026. 13:16",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet u gradovima, na prilaznim i obilaznim cestama, posebice u priobalju, pa vozačima savjetujemo da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: na Staroj cesti kroz Gorski kotar - DC3 kod skretanja za Fužine promet teče naizmjence zbog prometne nesreće prometna nesreća na autocesti A1 između tunela Bristovac i tunela Ledenik u smjeru Zagreba. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h vozilo u kvaru na autocesti A1 nakon tunela Brezik na kolniku u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80…"
  },
  {
   "title": "Granični prijelazi",
