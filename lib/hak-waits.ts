@@ -21,18 +21,18 @@ export const HAK_WAITS: HakWait[] = [
  {
   "id": "",
   "name": "Gornji Brgat (Ivanica)",
-  "ulazMin": 90,
+  "ulazMin": 30,
   "izlazMin": null,
-  "ulazTxt": "1 h 30 min.",
+  "ulazTxt": "do 30 min.",
   "izlazTxt": "-",
   "truckUlazMin": null,
   "truckIzlazMin": null,
   "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 90,
-  "ts": "L: 1,5 km T: 14.7.2026. 12:45:39",
-  "tsISO": "2026-07-14T12:45:39+02:00"
+  "level": "low",
+  "waitMinutes": 30,
+  "ts": "L: 0 km T: 14.07.2026 14:02:40",
+  "tsISO": "2026-07-14T14:02:40+02:00"
  },
  {
   "id": "ba-samac",
@@ -79,7 +79,7 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ts": "14.7.2026. 13:04:40",
+  "ts": "14.07.2026 13:04:40",
   "tsISO": "2026-07-14T13:04:40+02:00"
  },
  {
