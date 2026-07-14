@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.7.2026. 08:45",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet u gradovima, na prilaznim i obilaznim cestama, posebice u priobalju, pa vozačima savjetujemo da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati. zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 minuta po zaustavljanju. do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja i…"
+  "updated": "14.7.2026. 11:17",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet u gradovima, na prilaznim i obilaznim cestama, posebice u priobalju, pa vozačima savjetujemo da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: požar na vozilu na autocesti A6 Rijeka-Zagreb između čvorova Bosiljevo II-Vrbovsko na 8. km u smjeru Rijeke. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h vozilo u kvaru na autocesti A7 na ulaznom kraku čvora Rujevica u smjeru Križišća teretno vozilo u kvaru na državnoj cesti DC8 u mjestu Solin na mostu Jadro u smjeru Splita - vozi se uz privremenu regulaciju prometa AUTOCESTE A1 Zagreb-Split-…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "14.7.2026. 08:08",
+  "updated": "14.7.2026. 11:00",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "14.7.2026. 08:08",
-  "text": "Trajektna linija 53 Split - Ancona s polaskom iz luke Split u 10:00 sati i polaskom iz luke Ancona u 22:00 sata u prekidu. Izmjene u redu plovidbe: 14. srpnja HSC Anastazija preuzima linije 652 Split-Hvar i 661 Split-Hvar-Korčula iz luke Split u 12:15 sati, a HSC Jazine preuzima liniju 842 Dubrovnik-Korčula-Hvar-Milna-Split iz luke Split u 15:10 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međuna…"
+  "updated": "14.7.2026. 11:00",
+  "text": "U prekidu je trajektna linija 53 Split-Ancona. Izmjene u redu plovidbe: 14. srpnja HSC Anastazija preuzima linije 652 Split-Hvar i 661 Split-Hvar-Korčula iz luke Split u 12:15 sati, a HSC Jazine preuzima liniju 842 Dubrovnik-Korčula-Hvar-Milna-Split iz luke Split u 15:10 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Ši…"
  },
  {
   "title": "Željeznički promet",
