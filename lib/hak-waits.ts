@@ -51,6 +51,22 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": ""
  },
  {
+  "id": "ba-gradina",
+  "name": "Jasenovac (Donja Gradina)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 300,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "5 h",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
   "id": "ba-svilaj",
   "name": "Svilaj",
   "ulazMin": null,
