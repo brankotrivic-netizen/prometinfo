@@ -751,7 +751,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 </div>
 <div class="mapwrap"><div id="map"></div>
 <div id="zoomHint" class="zoomhint">🔍 Približaj zemljevid za prikaz kamer</div></div>
-<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:var(--muted);font-size:11px">🚦 gostota prometa trenutno ni na voljo</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label><label style="cursor:pointer"><input type="checkbox" id="fuelStToggle" onchange="toggleFuelSt(this)"> ⛽ črpalke</label><span id="fuelStatus" style="display:none;font-size:11px;flex-basis:100%"></span></div>
+<div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:var(--muted);font-size:11px">🚦 gostota prometa trenutno ni na voljo</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label><label style="cursor:pointer"><input type="checkbox" id="fuelStToggle" onchange="toggleFuelSt(this)"> ⛽ črpalke</label><label style="cursor:pointer"><input type="checkbox" id="satToggle" onchange="toggleSatMap(this)"> 🛰️ satelit</label><span id="fuelStatus" style="display:none;font-size:11px;flex-basis:100%"></span></div>
 </div>
 <div class="view" id="view-borders" style="display:none">
 <section class="country-group" id="favCrossSection">
@@ -952,7 +952,19 @@ const SOC_PAGES=${JSON.stringify(SOCIAL_PAGES)};
 const SOC_Q=${JSON.stringify(SOCIAL_QUERIES)};
 const BORDERSEARCH=${JSON.stringify(hakBorderCams.flatMap((c) => HAK_CAM_IMAGES[c.k].map((img, i) => ({ name: HAK_CAM_IMAGES[c.k].length > 1 ? `${c.name} · kam ${i + 1}` : c.name, img, lat: c.lat, lng: c.lng }))))};
 const map=L.map('map',{scrollWheelZoom:true,zoomSnap:0.5,zoomDelta:0.5,wheelPxPerZoomLevel:90}).setView([45.0,16.6],6);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20}).addTo(map);
+// podlaga: zemljevid (CARTO) ali satelit (Esri) — preklop v legendi
+var baseMapL=L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap, © CARTO',maxZoom:20});
+var baseSatL=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{attribution:'© Esri',maxZoom:19});
+var baseSatLabelL=L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png',{maxZoom:20,opacity:0.9});
+var _isSat=false; try{ _isSat=localStorage.getItem('promet_satmap')==='1'; }catch(e){}
+if(_isSat){ baseSatL.addTo(map); baseSatLabelL.addTo(map); } else { baseMapL.addTo(map); }
+window.toggleSatMap=function(cb){ _isSat=cb?cb.checked:!_isSat; try{ localStorage.setItem('promet_satmap',_isSat?'1':'0'); }catch(e){}
+  if(_isSat){ map.removeLayer(baseMapL); baseSatL.addTo(map); baseSatLabelL.addTo(map); }
+  else { map.removeLayer(baseSatL); map.removeLayer(baseSatLabelL); baseMapL.addTo(map); }
+  baseSatL.setZIndex(0); baseMapL.setZIndex(0); baseSatLabelL.setZIndex(1);
+  if(typeof trafficLayer!=='undefined'&&trafficLayer&&map.hasLayer(trafficLayer)) trafficLayer.setZIndex(3);
+};
+(function(){ var sc=document.getElementById('satToggle'); if(sc)sc.checked=_isSat; })();
 // drzavne meje: mehek sijaj + cista pikcasta crta
 try{
   L.geoJSON(BORDERS,{interactive:false,style:{color:'#818cf8',weight:7,opacity:0.10,fill:false,lineJoin:'round'}}).addTo(map);
