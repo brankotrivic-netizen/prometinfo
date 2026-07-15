@@ -62,7 +62,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "Češka",
   "flag": "🇨🇿",
   "p95": "40,370 CZK (1,66 EUR)",
-  "p98": "39,920 CZK (1,65 EUR)",
+  "p98": "39,920 CZK (1,64 EUR)",
   "diesel": "36,330 CZK (1,50 EUR)",
   "date": "14. 7. 2026"
  },
@@ -135,7 +135,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇮🇸",
   "p95": "218,350 ISK (1,52 EUR)",
   "p98": "",
-  "diesel": "238,650 ISK (1,66 EUR)",
+  "diesel": "238,650 ISK (1,67 EUR)",
   "date": "10. 7. 2026"
  },
  {
@@ -189,9 +189,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Madžarska",
   "flag": "🇭🇺",
-  "p95": "595,900 HUF (1,67 EUR)",
+  "p95": "595,900 HUF (1,65 EUR)",
   "p98": "",
-  "diesel": "613,700 HUF (1,72 EUR)",
+  "diesel": "613,700 HUF (1,70 EUR)",
   "date": "14. 7. 2026"
  },
  {
@@ -221,16 +221,16 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Norveška",
   "flag": "🇳🇴",
-  "p95": "20,930 NOK (1,88 EUR)",
+  "p95": "20,930 NOK (1,89 EUR)",
   "p98": "",
-  "diesel": "18,710 NOK (1,68 EUR)",
+  "diesel": "18,710 NOK (1,69 EUR)",
   "date": "10. 7. 2026"
  },
  {
   "country": "Poljska",
   "flag": "🇵🇱",
   "p95": "6,370 PLN (1,47 EUR)",
-  "p98": "7,220 PLN (1,67 EUR)",
+  "p98": "7,220 PLN (1,66 EUR)",
   "diesel": "6,580 PLN (1,52 EUR)",
   "date": "14. 7. 2026"
  },
@@ -245,9 +245,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Romunija",
   "flag": "🇷🇴",
-  "p95": "8,770 RON (1,68 EUR)",
+  "p95": "8,770 RON (1,67 EUR)",
   "p98": "9,790 RON (1,87 EUR)",
-  "diesel": "9,500 RON (1,82 EUR)",
+  "diesel": "9,500 RON (1,81 EUR)",
   "date": "14. 7. 2026"
  },
  {
@@ -335,7 +335,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇬🇧",
   "p95": "1,500 GBP (1,76 EUR)",
   "p98": "1,660 GBP (1,95 EUR)",
-  "diesel": "1,650 GBP (1,93 EUR)",
+  "diesel": "1,650 GBP (1,94 EUR)",
   "date": "10. 7. 2026"
  }
 ];
