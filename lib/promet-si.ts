@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-15T14:10:48.315Z";
+export const PROMET_SI_UPDATED = "2026-07-15T15:51:38.661Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;863458;93b2228a-cb11-41c3-b22d-2b805e8bcd93",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Kastelec - priključek Črni Kal v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.56473,
-  "lng": 13.86975,
-  "start": "2026-07-15T03:39:46.847Z",
-  "end": "2026-07-15T16:00:00Z",
-  "ts": "2026-07-15T12:11:00.09Z"
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-07-15T15:00:01.553Z"
+ },
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-15T15:00:00.743Z"
  },
  {
   "id": "DARS;862281;6623fbec-9ce3-495c-bd2a-c45b4f48f2e6",
@@ -79,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-15T06:09:09.81Z",
   "end": "2026-07-19T17:00:00Z",
   "ts": "2026-07-15T06:10:10.98Z"
- },
- {
-  "id": "DARS;863482;75021302-f2da-4a0e-95cc-811eae47161b",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-103, Nova Gorica - Tolmin, Deskle - Plave, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "G2-103, Ušnik - Plave",
-  "lat": 46.05265,
-  "lng": 13.61174,
-  "start": "2026-07-15T09:00:00Z",
-  "end": "2026-07-15T15:00:00Z",
-  "ts": "2026-07-15T05:00:19.907Z"
  },
  {
   "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
