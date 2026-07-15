@@ -27,7 +27,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    },
    {
     "title": "Granični prijelaz Izačić- Bihać",
-    "text": "Izvode se radovi na rekonstrukciji mosta preko potoka Mrižnica. Vozila se preusmjeravaju na privremenu obilazinicu (bajpas) u neposrednoj blizini radova, naizmjeničnim propuštanjem."
+    "text": "Na magistralnoj cesti M-5 granični prelaz Izačić-Bihać zbog radova na rekonstrukciji mosta preko potoka Mrižnica, vozila saobraćaju jednom trakom, naizmjeničnim propuštanjem (postavljeni semafori)."
    },
    {
     "title": "Tuzla-Bijeljina (Banj brdo)",
