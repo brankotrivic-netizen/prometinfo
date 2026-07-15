@@ -34,10 +34,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Na snazi je izmena režima saobraćaja na državnom putu I A reda broj 3, u zoni petlje Pećinci zbog izvođenja radova na rekonstrukciji natputnjaka. Tokom izvođenja radova saobraćaj se u smeru ka Beogradu odvija normalno, dok je u suprotnom smeru za saobraćaj zatvorena preticajna saobraćajna traka i saobraćaj se odvija voznom i zaustavnom saobraćajnom trakom. Takođe za saobraćaj je zatvoreno isključenje na petlji Pećinci iz pravca Beograda i uključenje sa petlje Pećinci prema Sremskoj Mitrovici i š…"
  },
  {
-  "title": "petlja Kovilj - petlja Maradik, radovi",
-  "text": "Od 10. 7. do 15. 7. 2026. godine, u periodu od 9 do 16 časova, izvodiće se kratkotrajni pokretni istražni radovi za potrebe rehabilitacije puta, na delu državnog puta I A reda broj 1, petlja Kovilj - petlja Maradik u smeru ka Beogradu. Tokom izvođenja radova, na više lokacija, za saobraćaj će biti zatvorena vozna i zaustavna saobraćajna traka, a posle obavljenih radova u voznoj i zaustavnoj biće zatvorena preticajna saobraćajna traka, dok će se saobraćaj odvijati slobodnom saobraćajnom trakom. I…"
- },
- {
   "title": "Deonica Rogača - Ranilović",
   "text": "Do 23.7.2026. godine izvode radovi na rehabilitaciji kolovoza, na državnom putu II A reda broj 150, deonica Rogača - Ranilović. Saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  },
@@ -84,14 +80,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Užice-Zlatibor, u mestu Surduk, radovi",
   "text": "Do 31. 12. 2026. godine, na snazi je izmena režima saobraćaja na deonici Užice Zlatibor, u mestu Surduk, zbog pojave klizišta na postojećem propustu. U smeru ka Zlatiboru, od dve saobraćajne trake, saobraćaj je u krajnjoj desnoj saobraćajnoj traci zatvoren u dužini od 50 metara. Izvor: Putevi Srbije"
- },
- {
-  "title": "Ruma-Drenovac, radovi",
-  "text": "Od 1. 7. do 15. 7. 2026.godine, u toku svetlog dela dana, izvode se radovi na popravci oštećene zaštitne sigurnosne ograde za vozila u srednjem pojasu i na bankinama, na deonici petlja Ruma - petlja Drenovac - kružna raskrsnica Šabac, u oba smera. Za saobraćaj će biti zatvorena preticajna saobraćajna traka ili zaustavna saobraćajna traka u dužini do 200 metara u zavisnosti od lokacije izvođenja radova (bankina ili srednji pojas). Izvor Putevi Srbije"
- },
- {
-  "title": "granični prelaz Batrovci-petlja Dobanovci, radovi",
-  "text": "Od 1. 7. do 15. 7. 2026.godine, u toku svetlog dela dana, izvode se radovi na popravci oštećene sigurnosno zaštitne ograde u razdelnom pojasu i uz zaustavnu traku na više lokacija. U zavisnosti od lokacije izvođenja radova za saobraćaj će biti zatvorena preticajna saobraćajna traka do 200 metara (saobraćaj će se odvijati voznom i zaustavnom saobraćajnom trakom) ili će biti zatvorena zaustavna saobraćajna traka do 200 metara (saobraćaj će se odvijati voznom i preticajnom trakom), na državnom putu…"
  },
  {
   "title": "Kovin-Ralja, radovi",
@@ -240,5 +228,17 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Valjevo-Iverak radovi na obilaznici i kružnoj raskrsnici",
   "text": "OD 2.12. 2025. izvodiće se radovi na državnom putu I B reda broj 27, deonica Valjevo (obilaznica) - Iverak, na delu četvorokrake semaforisane raskrsnice u smeru od Valjeva ka Lajkovcu. Izmenom režima saobraćaja u fazi II, predviđeni su radovi u središnjem delu zone raskrsnice. Iz oba pravca kretanja se zatvara traka za levo skretanje kao i po jedna traka za kretanje pravo. U samoj zoni raskrsnice učesnicima se zabranjuju leva skretanja, dok se sa prilaznih krakova učesnici obavezuju na desno kre…"
+ },
+ {
+  "title": "Kumanica-Kamenjača, radovi",
+  "text": "U toku su radovi na rekonstrukciji državnog puta II A reda broj 197, deonica Kumanica-Kamenjača, u dužini 3,5km, koji obuhvataju i radove na izgradnji 4 nova mosta. Saobraćaj se na jednom delu puta odvija devijacijom, pri čemu je zabranjen saobraćaj za kamione sa prikolicom. Radovi su obezbeđeni adekvatnom privremenom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Prijepolje- Brodarevo, mesto Točilovo klizište",
+  "text": "Produžava se izmena režima saobraćaja usled pojave klizišta na državnom putu I B reda broj 23, na deonici Brodarevo Gostun u mestu Točilovo Saobraćaj se odvija naizmeničnim propuštanjem vozila i regulisan je saobraćajnim znakovima. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Ivanjica-Arilje, radovi",
+  "text": "U okviru preostalih radova na pojačanom održavanju državnog puta I B reda broj 21, deonica Požega - Ivanjica, od km 209+141.00 do km 248+079.38, u periodu od 19.10.2025. do 01.10.2026. godine, izvodiće se radovi na asfaltiranju kolovoza na deonicama Arilje - Prilike i Prilike Ivanjica. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
  }
 ];
