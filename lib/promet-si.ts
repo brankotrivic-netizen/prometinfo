@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-15T21:16:10.277Z";
+export const PROMET_SI_UPDATED = "2026-07-15T22:14:35.320Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;863681;695b91c4-91b8-4e23-84d3-52b80e152eda",
@@ -15,17 +15,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-15T20:33:40.89Z"
  },
  {
-  "id": "DARS;863678;be41b7b6-e1ee-469d-a4ce-d55e1720006d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana, Ind. cona Moste - priključek Ljubljana vzhod v smeri Zadobrove, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.05976,
-  "lng": 14.57416,
-  "start": "2026-07-15T20:12:28.14Z",
-  "end": "2026-07-15T21:50:18.57Z",
-  "ts": "2026-07-15T20:12:46.503Z"
- },
- {
   "id": "DARS;863673;681b9663-eec6-400a-9c02-d0b613b8db5a",
   "type": "MaintenanceWorks",
   "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, zaprt prehitevalni pas.",
@@ -35,28 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-15T19:46:20.11Z",
   "end": "2026-07-16T03:30:00Z",
   "ts": "2026-07-15T19:46:48.137Z"
- },
- {
-  "id": "DARS;863671;cb911191-80d2-427b-acc6-4c8086f5d6a0",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, uvoz Celje vzhod - predor Pletovarje v smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25431,
-  "lng": 15.31286,
-  "start": "2026-07-15T19:33:10.817Z",
-  "end": "2026-07-16T00:00:55.127Z",
-  "ts": "2026-07-15T19:33:25.967Z"
- },
- {
-  "id": "DARS;863656;a699da0e-0f34-4127-a6a6-942c47a87afe",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, priključek Bertoki - priključek Koper center, Slavček v smeri Kopra, dela, zaprt vozni pas, košnja.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.5468,
-  "lng": 13.76315,
-  "start": "2026-07-15T17:30:26.057Z",
-  "end": "2026-07-16T01:00:16.287Z",
-  "ts": "2026-07-15T17:30:35.997Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
