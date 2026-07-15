@@ -3,38 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-orasje",
-  "name": "Županja (Orašje)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": 120,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "2 h",
-  "truckIzlazTxt": "-",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ts": "Nema podataka",
-  "tsISO": ""
- },
- {
-  "id": "hr-bajakovo",
-  "name": "Bajakovo (Batrovci)",
-  "ulazMin": 60,
-  "izlazMin": 60,
-  "ulazTxt": "1 h",
-  "izlazTxt": "1 h",
-  "truckUlazMin": 180,
-  "truckIzlazMin": 180,
-  "truckUlazTxt": "3 h",
-  "truckIzlazTxt": "3 h",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ts": "15.07.2026 18:04:34",
-  "tsISO": "2026-07-15T18:04:34+02:00"
- },
- {
   "id": "hr-tovarnik",
   "name": "Tovarnik (Šid)",
   "ulazMin": null,

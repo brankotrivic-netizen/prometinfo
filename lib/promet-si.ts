@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-15T19:37:21.029Z";
+export const PROMET_SI_UPDATED = "2026-07-15T21:16:10.277Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;863681;695b91c4-91b8-4e23-84d3-52b80e152eda",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Šempeter - priključek Žalec, Arja vas v smeri Maribora, dela, pomična zapora prehitevalnega pasu, strojno pometanje.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25928,
+  "lng": 15.0948,
+  "start": "2026-07-15T20:33:10.9Z",
+  "end": "2026-07-16T00:00:36.867Z",
+  "ts": "2026-07-15T20:33:40.89Z"
+ },
+ {
+  "id": "DARS;863678;be41b7b6-e1ee-469d-a4ce-d55e1720006d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana, Ind. cona Moste - priključek Ljubljana vzhod v smeri Zadobrove, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.05976,
+  "lng": 14.57416,
+  "start": "2026-07-15T20:12:28.14Z",
+  "end": "2026-07-15T21:50:18.57Z",
+  "ts": "2026-07-15T20:12:46.503Z"
+ },
+ {
+  "id": "DARS;863673;681b9663-eec6-400a-9c02-d0b613b8db5a",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25509,
+  "lng": 14.98039,
+  "start": "2026-07-15T19:46:20.11Z",
+  "end": "2026-07-16T03:30:00Z",
+  "ts": "2026-07-15T19:46:48.137Z"
+ },
  {
   "id": "DARS;863671;cb911191-80d2-427b-acc6-4c8086f5d6a0",
   "type": "MaintenanceWorks",
@@ -13,39 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-15T19:33:10.817Z",
   "end": "2026-07-16T00:00:55.127Z",
   "ts": "2026-07-15T19:33:25.967Z"
- },
- {
-  "id": "DARS;863669;a3846383-733f-4f1f-8d31-bc6b696afe0c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana vzhod - priključek Ljubljana, Ind. cona Moste v smeri Zadobrove, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.05901,
-  "lng": 14.57396,
-  "start": "2026-07-15T18:53:13.71Z",
-  "end": "2026-07-15T20:25:19.537Z",
-  "ts": "2026-07-15T18:53:26.923Z"
- },
- {
-  "id": "DARS;863658;d1181178-74cb-47bb-9e12-c7a88f6f742e",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Vodice - počivališče Povodje v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.1815,
-  "lng": 14.48443,
-  "start": "2026-07-15T17:42:32.54Z",
-  "end": "2026-07-15T23:00:00Z",
-  "ts": "2026-07-15T17:42:35.41Z"
- },
- {
-  "id": "DARS;863657;1dc08b64-df8f-4c80-a504-bff2fdc71067",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, izvoz 22 Lukovica iz smeri Maribora, dela, oviran promet, košnja.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.16793,
-  "lng": 14.69388,
-  "start": "2026-07-15T17:41:23.827Z",
-  "end": "2026-07-15T23:00:00Z",
-  "ts": "2026-07-15T17:41:33.973Z"
  },
  {
   "id": "DARS;863656;a699da0e-0f34-4127-a6a6-942c47a87afe",
