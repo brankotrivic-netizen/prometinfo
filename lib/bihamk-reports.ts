@@ -99,10 +99,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U mjestu Bukva izvode se radovi zbog čega se u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
    },
    {
-    "title": "R-960 Babin Do– Šabići",
-    "text": "Zbog izvođenja radova (završnog sloja asfalta) danas i sutra u vremenu od 8 do 16 sati obustavlja se saobraćaj na dionici regionalnog puta R-960 Babin Do– Šabići. Saobraćaj se tokom izvođenja radova odvija alternativnim pravcima."
-   },
-   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
