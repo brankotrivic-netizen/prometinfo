@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-16T14:24:46.777Z";
+export const PROMET_SI_UPDATED = "2026-07-16T16:42:19.193Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;863720;8492f992-12fb-4b2a-86af-9d1586fdc502",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, priključek Plavje, Hrvatini - priključek Škofije v smeri Kopra, dela, zaprt vozni pas.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.57782,
-  "lng": 13.796,
-  "start": "2026-07-16T05:04:46.33Z",
-  "end": "2026-07-16T16:00:00Z",
-  "ts": "2026-07-16T11:59:57.123Z"
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-07-16T15:00:54.21Z"
+ },
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-16T15:00:53.403Z"
  },
  {
   "id": "DARS;787573;4409f2f1-7f1b-4cb0-9886-c0dd952cccd7",
@@ -24,39 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-07-10T06:10:32.583Z",
   "end": "2026-08-14T21:59:00Z",
   "ts": "2026-07-16T06:15:11.937Z"
- },
- {
-  "id": "DARS;863736;d6b5640d-d565-4b8c-ade7-4d4dba954447",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-609, Predmeja - Lokve, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R3-609, Predmeja - Lokve",
-  "lat": 45.98672,
-  "lng": 13.81771,
-  "start": "2026-07-16T05:58:01.557Z",
-  "end": "2026-07-16T15:00:00Z",
-  "ts": "2026-07-16T05:58:37.763Z"
- },
- {
-  "id": "DARS;863732;c9bba1cf-9798-47cb-9f81-c20b69c309b9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-103, Nova Gorica - Tolmin, Anhovo - Plave, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "G2-103, Ušnik - Plave",
-  "lat": 46.05843,
-  "lng": 13.62759,
-  "start": "2026-07-16T05:46:53.323Z",
-  "end": "2026-07-16T15:00:00Z",
-  "ts": "2026-07-16T05:47:58.927Z"
- },
- {
-  "id": "DARS;863727;e2229a98-288f-4881-b2fd-29a3c40f2077",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Studenec - razcep Nanos v smeri Kopra, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.75956,
-  "lng": 14.18014,
-  "start": "2026-07-16T05:34:07.56Z",
-  "end": "2026-07-16T17:00:00Z",
-  "ts": "2026-07-16T05:34:22.567Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -101,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-15T08:47:15.067Z",
   "end": "2026-07-20T21:59:00Z",
   "ts": "2026-07-15T08:48:53.48Z"
- },
- {
-  "id": "DARS;863322;d1fe6520-6861-4ed0-a537-782acc6e2457",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-715, Murska Sobota - Skakovci, v Murski Soboti, na Markišavski ulici, izmenično enosmerni promet, pomična zapora, rezkanje vozišča pred asfaltiranjem, do 16. 7. 2026.",
-  "loc": "R3-715, Murska Sobota - Skakovci",
-  "lat": 46.67088,
-  "lng": 16.16994,
-  "start": "2026-07-15T07:30:00Z",
-  "end": "2026-07-16T15:00:00Z",
-  "ts": "2026-07-15T07:43:24.92Z"
  },
  {
   "id": "DARS;825661;81e9fbca-99cc-40dc-bc0e-f5de419109a0",
