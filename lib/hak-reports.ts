@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "16.7.2026. 13:49",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama, pojedinim dionicama autocesta te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. I ZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A4 na 95+500 km između čvora Sesvete i čvora Zagreb istok u smjeru Zagreba, vozi se uz ograničenje brzine od 40 km/h , kolona je 3 km kolona vozila na autocesti A7 na izlaznom kraku čvora Učka u smjeru Istre i Opatije duga je 2 km, a na naplati Demerje i Lučko na autocesti A1 u smjeru Zagreba kolona je 1 km zbog prometne nesreće na državnoj cesti DC10 između mjesta Cubinec i Križevci vozi se uz privremenu regulaciju prome…"
+  "updated": "16.7.2026. 16:23",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama, pojedinim dionicama autocesta te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. I ZVANREDNI PROMETNI DOGAĐAJI: kolona vozila na autocesti A7 na izlaznom kraku čvora Učka u smjeru Istre i Opatije duga je 2 km, a na naplati Demerje na autocesti A1 u smjeru Zagreba kolona je 1 km veća je gustoća prometa na zagrebačkoj obilaznici (A3) između čvora Zagreb zapad i čvora Zagreb istok u smjeru Lipovca, a iz smjera Buzina prema naplati Lučko kolona je 2 km kolona osobnih i teretnih vozila na autocesti A3 između 302+500 km i graničnog prijelaza GP Bajakovo u smjeru Lipo…"
  },
  {
   "title": "Granični prijelazi",
