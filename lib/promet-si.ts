@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-16T18:20:16.542Z";
+export const PROMET_SI_UPDATED = "2026-07-16T19:36:39.732Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;863908;16b93d8b-06b4-45c8-a0b1-4ee3f4e3b632",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, uvoz Divača - razcep Gabrk v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.66823,
+  "lng": 13.9667,
+  "start": "2026-07-16T19:17:51.023Z",
+  "end": "2026-07-16T21:00:28.99Z",
+  "ts": "2026-07-16T19:17:56.12Z"
+ },
  {
   "id": "DARS;863900;4d1703ea-d7a4-4287-b274-9eba94d07117",
   "type": "MaintenanceWorks",
@@ -26,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-16T17:46:34.087Z"
  },
  {
-  "id": "DARS;863898;eaf1b0dd-a280-4105-8e6b-6745e58a4543",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Ljubljana Brod - priključek Ljubljana Brod v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.10914,
-  "lng": 14.47133,
-  "start": "2026-07-16T17:46:11.097Z",
-  "end": "2026-07-16T20:00:50.143Z",
-  "ts": "2026-07-16T17:46:15.937Z"
- },
- {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
   "type": "MaintenanceWorks",
   "desc": "A1, Maribor - Šentilj, priključek Maribor sever - prehod Šentilj v smeri Šentilja, Avstrije, dela, promet poteka po dveh zoženih pasovih.",
@@ -57,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-16T17:34:58.187Z",
   "end": "2026-07-16T23:00:00Z",
   "ts": "2026-07-16T17:35:01.61Z"
- },
- {
-  "id": "DARS;863895;a6315c15-13f2-48ca-b763-b9246dfbccbe",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica sever - priključek Fram v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.40759,
-  "lng": 15.6152,
-  "start": "2026-07-16T17:16:30.51Z",
-  "end": "2026-07-16T21:59:03.25Z",
-  "ts": "2026-07-16T17:16:33.38Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
