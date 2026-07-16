@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-16T19:36:39.732Z";
+export const PROMET_SI_UPDATED = "2026-07-16T21:17:25.867Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;863908;16b93d8b-06b4-45c8-a0b1-4ee3f4e3b632",
+  "id": "DARS;863915;9fcbb191-d404-4641-9bbb-3ce4d9f278e9",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, uvoz Divača - razcep Gabrk v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.66823,
-  "lng": 13.9667,
-  "start": "2026-07-16T19:17:51.023Z",
-  "end": "2026-07-16T21:00:28.99Z",
-  "ts": "2026-07-16T19:17:56.12Z"
+  "desc": "A1, Maribor - Ljubljana, uvoz Fram - priključek Sl. Bistrica sever v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.44887,
+  "lng": 15.64931,
+  "start": "2026-07-16T20:29:33.77Z",
+  "end": "2026-07-17T00:00:00.72Z",
+  "ts": "2026-07-16T20:29:38.18Z"
+ },
+ {
+  "id": "DARS;863913;c86e03c0-a342-4687-a7f4-4ec1e1bc4de4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana zahod, Vič - razcep Kozarje v smeri Kozarij, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.03627,
+  "lng": 14.45988,
+  "start": "2026-07-16T19:47:37.203Z",
+  "end": "2026-07-17T00:00:36.15Z",
+  "ts": "2026-07-16T19:48:11.24Z"
  },
  {
   "id": "DARS;863900;4d1703ea-d7a4-4287-b274-9eba94d07117",
@@ -46,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T10:27:58.043Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-07-16T17:46:03.59Z"
- },
- {
-  "id": "DARS;863897;488d89d0-651c-4330-a9dc-4b73cfd8f2b0",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Zadobrova iz smeri Novih Jarš proti Sneberjam, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.06771,
-  "lng": 14.57244,
-  "start": "2026-07-16T17:34:58.187Z",
-  "end": "2026-07-16T23:00:00Z",
-  "ts": "2026-07-16T17:35:01.61Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
