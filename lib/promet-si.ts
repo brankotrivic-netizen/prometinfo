@@ -1,8 +1,129 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-17T15:41:44.811Z";
+export const PROMET_SI_UPDATED = "2026-07-17T17:31:50.762Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;864153;999bf6f6-bcda-4986-844b-73ffd09cc643",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Maribor - Gruškovje (Hrvaška), razcep Draženci, dela, oviran promet.",
+  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
+  "lat": 46.39066,
+  "lng": 15.85704,
+  "start": "2026-07-17T17:20:19.67Z",
+  "end": "2026-07-17T23:00:00Z",
+  "ts": "2026-07-17T17:20:22.76Z"
+ },
+ {
+  "id": "DARS;864152;6418cd12-080b-4891-9197-7dea6e2b7fe5",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, izvoz 49 Črni Kal iz smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55337,
+  "lng": 13.8566,
+  "start": "2026-07-17T17:13:24.19Z",
+  "end": "2026-07-17T21:00:40.78Z",
+  "ts": "2026-07-17T17:13:36.103Z"
+ },
+ {
+  "id": "DARS;864151;a075f20b-33e3-4c7c-a8d2-59185100869a",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, uvoz Črni Kal v smeri Kopra, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55174,
+  "lng": 13.85684,
+  "start": "2026-07-17T17:13:00.073Z",
+  "end": "2026-07-17T21:00:02.117Z",
+  "ts": "2026-07-17T17:13:12.347Z"
+ },
+ {
+  "id": "DARS;864150;3c4ab6a8-5e35-4f76-b055-9d4cff7a10fe",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, izvoz 49 Črni Kal iz smeri Kopra, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.55391,
+  "lng": 13.85535,
+  "start": "2026-07-17T17:12:19.447Z",
+  "end": "2026-07-17T21:00:01.52Z",
+  "ts": "2026-07-17T17:12:52.907Z"
+ },
+ {
+  "id": "DARS;864149;547970c5-6927-49d9-a8d0-d966e0854deb",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, izvoz 49 Črni Kal - uvoz Črni Kal v smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.55402,
+  "lng": 13.85535,
+  "start": "2026-07-17T17:11:49.87Z",
+  "end": "2026-07-17T21:00:28.11Z",
+  "ts": "2026-07-17T17:12:11.053Z"
+ },
+ {
+  "id": "DARS;864148;dbe5d057-ad0e-4e47-b0c2-9c4e75048b92",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, izvoz Radovljica iz smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.34101,
+  "lng": 14.18835,
+  "start": "2026-07-17T17:01:28.713Z",
+  "end": "2026-07-17T20:03:20.323Z",
+  "ts": "2026-07-17T17:01:46.72Z"
+ },
+ {
+  "id": "DARS;864147;544833e2-af6f-45d2-9728-9d422fcafa68",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, izvoz 3 Lesce - uvoz Lesce iz smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.36803,
+  "lng": 14.15945,
+  "start": "2026-07-17T17:00:45.693Z",
+  "end": "2026-07-17T19:01:44.59Z",
+  "ts": "2026-07-17T17:01:16.92Z"
+ },
+ {
+  "id": "DARS;864145;5845deee-d605-416e-a76a-2674a2cac877",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, izvoz 1 Jesenice zahod iz smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.44503,
+  "lng": 14.01234,
+  "start": "2026-07-17T17:00:01.113Z",
+  "end": "2026-07-17T18:04:41.7Z",
+  "ts": "2026-07-17T17:00:25.077Z"
+ },
+ {
+  "id": "DARS;864144;ff8bf081-49af-4926-bf34-3ddcabd375a2",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, izvoz 2 Jesenice vzhod iz smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.41666,
+  "lng": 14.09084,
+  "start": "2026-07-17T16:58:29.05Z",
+  "end": "2026-07-17T18:00:27.557Z",
+  "ts": "2026-07-17T16:59:09.94Z"
+ },
+ {
+  "id": "DARS;864142;af9ca991-c19b-4236-91f9-a28af0587cd8",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, uvoz Divača v smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.66831,
+  "lng": 13.96666,
+  "start": "2026-07-17T16:56:51.417Z",
+  "end": "2026-07-17T21:00:19.73Z",
+  "ts": "2026-07-17T16:57:10.067Z"
+ },
+ {
+  "id": "DARS;864141;b0fbae96-c765-42cb-ada4-0671e85a6219",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, pred priključkom Naklo v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.27963,
+  "lng": 14.2991,
+  "start": "2026-07-17T16:54:03.073Z",
+  "end": "2026-07-17T22:00:00Z",
+  "ts": "2026-07-17T16:54:45.247Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
