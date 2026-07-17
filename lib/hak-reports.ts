@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.7.2026. 08:27",
-  "text": "Pojačan je promet u gradovima, na prilaznim i obilaznim cestama, posebice u priobalju. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. I ZVANREDNI PROMETNI DOGAĐAJI: na autocesti A2 Zagreb-Macelj pojačan je priljev vozila kod naplatnih postaja Trakošćan u smjeru Zagreba, kolona je duga oko 500 m vozilo u kvaru na autocesti A1 u tunelu Mala Kapela u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h vozilo u kvaru na autocesti A7 u tunelu Trsat u smjeru Križišća. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 40 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati. zbo…"
+  "updated": "17.7.2026. 11:21",
+  "text": "Pojačan je promet u gradovima, na prilaznim i obilaznim cestama, posebice u priobalju. Kolnici su mjestimice mokri ili samo vlažni i skliski u Hrvatskom primorju. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. A1 Zagreb-Split-Dubrovnik: kod naplatnih postaja Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih kolona (do 1 km) nema većih gužvi i zastoja u oba smjera predmet u tunelu Grič u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h vozila u kvaru između tunela Bristovac i Ledenik u smjeru Zagreba. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h A2 Zagreb-Macelj: pojačan je priljev vozila kod napla…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "17.7.2026. 08:23",
+  "updated": "17.7.2026. 11:17",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "17.7.2026. 08:20",
+  "updated": "17.7.2026. 11:17",
   "text": "Zbog tehničkih razloga 17. srpnja otkazan je polazak katamarana na liniji Dubrovnik-Pomena-Korčula i obrnuto. Ostali katamarani, svi trajekti i brodovi plove prema redu plovidbe. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u …"
  },
  {
   "title": "Željeznički promet",
-  "updated": "17.7.2026. 08:03",
+  "updated": "17.7.2026. 11:18",
   "text": "Stanje u željezničkom putničkom prometu 17. srpnja 2026. u 8.00 sati Zbog tehničkih poteškoća autobusima će biti prevezeni putnici sljedećih vlakova: 5512 Split 7.08 – Perković 8:32 5505 Perković 9.18 – Split 10.26 5802 Šibenik 8.31 – Perković 9.00 5803 Perković 9.04 – Šibenik 9.34. Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do…"
  },
  {
