@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.7.2026. 11:21",
-  "text": "Pojačan je promet u gradovima, na prilaznim i obilaznim cestama, posebice u priobalju. Kolnici su mjestimice mokri ili samo vlažni i skliski u Hrvatskom primorju. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. A1 Zagreb-Split-Dubrovnik: kod naplatnih postaja Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih kolona (do 1 km) nema većih gužvi i zastoja u oba smjera predmet u tunelu Grič u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h vozila u kvaru između tunela Bristovac i Ledenik u smjeru Zagreba. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h A2 Zagreb-Macelj: pojačan je priljev vozila kod napla…"
+  "updated": "17.7.2026. 13:36",
+  "text": "Kolnici su mjestimice mokri ili samo vlažni i skliski u Hrvatskom primorju. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. A1 Zagreb-Split-Dubrovnik: kod naplatnih postaja Lučko u smjeru mora iz smjera Buzina kolona je duga oko 2 km kod naplatnih postaja Lučko i Demerje u smjeru Zagreba kolone su duge oko 2 km predmet između čvora Vodice i odmorišta Prokljan na kolniku u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h A2 Zagreb-Macelj: pojačan je priljev vozila kod naplatnih postaja Trakošćan u smjeru Zagreba, kolona je duga oko 500 m povećana gustoća prometa između čvorova Zaprešić i Jankomir u smjeru Zagreba, vozi se usporeno u…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "17.7.2026. 11:17",
+  "updated": "17.7.2026. 12:35",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "17.7.2026. 11:17",
-  "text": "Zbog tehničkih razloga 17. srpnja otkazan je polazak katamarana na liniji Dubrovnik-Pomena-Korčula i obrnuto. Ostali katamarani, svi trajekti i brodovi plove prema redu plovidbe. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u …"
+  "updated": "17.7.2026. 12:28",
+  "text": "Zbog tehničkih razloga 17. srpnja otkazan je polazak katamarana na liniji Dubrovnik-Pomena-Korčula i obrnuto. Dana 19. srpnja 2026. godine (nedjelja) trajekt će iz luke Preko u putovanju u 00:30 sati izvanredno pristati na otok Ošljak. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a s…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "17.7.2026. 11:18",
+  "updated": "17.7.2026. 12:26",
   "text": "Stanje u željezničkom putničkom prometu 17. srpnja 2026. u 8.00 sati Zbog tehničkih poteškoća autobusima će biti prevezeni putnici sljedećih vlakova: 5512 Split 7.08 – Perković 8:32 5505 Perković 9.18 – Split 10.26 5802 Šibenik 8.31 – Perković 9.00 5803 Perković 9.04 – Šibenik 9.34. Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "17.7.2026. 05:58",
-  "text": "Prometna prognoza za Hrvatsku za 17. srpnja 2026. Mokri i skliski kolnici bit će sutra povremeno u unutrašnjosti. Tijekom dana, pojačan promet, gužve i zastoji očekuju se na pojedinim dionicama autocesta te na prilazima turističkim središtima, osobito na Jadranskoj magistrali (DC8), zagrebačkoj (A3) i riječkoj (A7) obilaznici, brzoj cesti Solin-Klis (DC1) te na autocestama u smjeru mora. Tijekom noći od 20:00 do 05:00 ujutro na autocesti A2 Zagreb-Macelj bit će zatvorena dionica između čvorova Krapina i Trakošćan u oba smjera. Čekanja u putničkom prometu očekujemo na graničnim prijelazima Gornji Varoš, Ličko Petrovo Selo, Svilaj, Bajakovo, Karasovići i Tovarnik. U pomorskom prometu ne očekuj…"
+  "updated": "17.7.2026. 11:27",
+  "text": "Prometna prognoza za Hrvatsku za subotu, 18. srpnja, 2026. U većini krajeva bit će nestabilna vremenska situacija. Povremeno je moguća kiša i pljuskovi s grmljavinom koji će biti posebno izraženi u drugom dijelu dana. Lokalno je moguće i nevrijeme. Zbog zadržavanja vode na kolniku, te jakog vjetra i srušenih stabala bit će otežan promet na pojedinim cestama u unutrašnjosti. Prije polaska na put zbog promjenjivih uvjeta informirajte se o stanju i prohodnosti cesta na mrežnim stranicama ili mobilnoj aplikaciji Hrvatskog autokluba. Zbog veće gustoće prometa već od jutra bit će usporen promet na pojedinim dionicama autocesta u smjeru mora, a kasnije i prema unutrašnjosti. U kolonama i uz kraće z…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
