@@ -198,10 +198,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Do 1. 9. 2026. godine biće izmenjen režim saobraćaja od isključenja za naseljeno mesto Ponikve do ulaza u Golubac u sklopu izgradnje državnog puta I M reda broj 7 gde se vozila kreću dvosmerno jednom kolovoznom trakom.Za vreme radova na snazi je obustava saobraćaja na delu državnog puta I B reda broj 34. Tokom trajanja obustave predviđena je trasa obilaska za korisnike koji se kreću: - iz Radoševca ka Požarevcu kroz naseljeno mesto Usije; - iz Radoševca i Usija ka Golupcu preko naseljenih mesta …"
  },
  {
-  "title": "Petlja Koševi - petlja Vrnjačka Banja , radovi",
-  "text": "Od 14. 7. do 17. 7. 2026. godine, izvodiće se radovi na delu auto-puta broj 5, deonica petlja Koševi petlja Vrnjačka Banja. Tokom izvođenja radova doći će do suženja kolovoza u oba smera. Izvor: Putevi Srbije"
- },
- {
   "title": "Čačak(Drakčići)-Goričani, radovi",
   "text": "Od 13. 7. 2026. godine do 31. 7. 2026. godine, u periodu od 7 do 18 časova, izvodiće se radovi na redovnom održavanju državnog puta na deonici Čačak (Drakčići) - Goričani, od raskrsnice ulica Nemanjine i Dragiše Mišovića u Čačku, preko Atenice i Trnave, do Goričana. Tokom izvođenja radova saobraćaj će se odvijati naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Sremska Mitrovica-Jarak, OBUSTAVA",
   "text": "Do 20. 7. 2026. zbog radova na rehabilitaciji, saobraćaj će biti obustavljen na putu II B reda broj 316, Sremska Mitrovica - Jarak, u mestu Jarak, od raskrsnice sa državnim putem I B reda broj 21 do izlaza iz Jarka. Alternativni putni pravci su državni put II A reda broj 120, Sremska Mitrovica - Ruma, pa državni put I B reda broj 21, Ruma - Jarak. Izvor Putevi Srbije"
+ },
+ {
+  "title": "Veliko Gradište-Golubac, radovi",
+  "text": "Izmenjen je režim saobraćaja na državnom putu I M reda broj 7, deonica Veliko Gradište - Golubac, između tribrodskog i braničevskog kružnog toka. Na predmetnoj deonici saobraćaj se odvija dvosmerno desnim poluprofilom brze saobraćajnice. Izvor: Putevi Srbije"
  }
 ];
