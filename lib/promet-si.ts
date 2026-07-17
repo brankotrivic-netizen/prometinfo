@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-17T21:08:42.117Z";
+export const PROMET_SI_UPDATED = "2026-07-17T22:07:19.142Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;864168;be2c769f-df64-4403-b064-d543393bcdb7",
@@ -13,28 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-17T19:49:51.127Z",
   "end": "2026-07-18T03:00:37.693Z",
   "ts": "2026-07-17T19:50:20.43Z"
- },
- {
-  "id": "DARS;864161;304c5ddc-192f-43ed-a024-44ed0ae89c65",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Konjice - razcep Slivnica v smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.34143,
-  "lng": 15.47915,
-  "start": "2026-07-17T18:10:39.05Z",
-  "end": "2026-07-18T00:00:32.127Z",
-  "ts": "2026-07-17T18:10:43.037Z"
- },
- {
-  "id": "DARS;864141;b0fbae96-c765-42cb-ada4-0671e85a6219",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, pred priključkom Naklo v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.27963,
-  "lng": 14.2991,
-  "start": "2026-07-17T16:54:03.073Z",
-  "end": "2026-07-17T22:00:00Z",
-  "ts": "2026-07-17T16:54:45.247Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
