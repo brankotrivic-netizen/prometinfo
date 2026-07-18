@@ -3,20 +3,20 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-brod",
-  "name": "Slavonski Brod (Bosanski Brod)",
-  "ulazMin": 30,
-  "izlazMin": 60,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "1 h",
+  "id": "ba-gradiska",
+  "name": "Gornji Varoš (Gradiška (novi most))",
+  "ulazMin": 180,
+  "izlazMin": 120,
+  "ulazTxt": "3 h",
+  "izlazTxt": "2 h",
   "truckUlazMin": null,
   "truckIzlazMin": null,
   "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ts": "18.7.2026. 13:58:38",
-  "tsISO": "2026-07-18T13:58:38+02:00"
+  "level": "severe",
+  "waitMinutes": 180,
+  "ts": "18.7.2026. 17:32:13",
+  "tsISO": "2026-07-18T17:32:13+02:00"
  },
  {
   "id": "ba-gradina",
@@ -33,22 +33,6 @@ export const HAK_WAITS: HakWait[] = [
   "waitMinutes": 120,
   "ts": "18.7.2026. 16:40:43",
   "tsISO": "2026-07-18T16:40:43+02:00"
- },
- {
-  "id": "ba-velika-kladusa",
-  "name": "Maljevac (Velika Kladuša)",
-  "ulazMin": null,
-  "izlazMin": 90,
-  "ulazTxt": "-",
-  "izlazTxt": "1 h 30 min.",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 90,
-  "ts": "Nema podataka",
-  "tsISO": ""
  },
  {
   "id": "",
@@ -83,6 +67,22 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-07-18T14:38:51+02:00"
  },
  {
+  "id": "",
+  "name": "Dvor (Bosanski Novi)",
+  "ulazMin": null,
+  "izlazMin": 60,
+  "ulazTxt": "-",
+  "izlazTxt": "1 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
   "ulazMin": null,
@@ -99,6 +99,38 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": ""
  },
  {
+  "id": "hr-tovarnik",
+  "name": "Tovarnik (Šid)",
+  "ulazMin": null,
+  "izlazMin": 180,
+  "ulazTxt": "-",
+  "izlazTxt": "3 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": 480,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "8 h",
+  "level": "severe",
+  "waitMinutes": 180,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
+  "id": "hr-batina",
+  "name": "Batina (Bezdan)",
+  "ulazMin": null,
+  "izlazMin": 60,
+  "ulazTxt": "-",
+  "izlazTxt": "1 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
   "id": "hr-ilok",
   "name": "Ilok (Bačka Palanka)",
   "ulazMin": null,
@@ -111,6 +143,22 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
+  "ts": "Nema podataka",
+  "tsISO": ""
+ },
+ {
+  "id": "",
+  "name": "Principovac II",
+  "ulazMin": null,
+  "izlazMin": 360,
+  "ulazTxt": "-",
+  "izlazTxt": "6 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "severe",
+  "waitMinutes": 360,
   "ts": "Nema podataka",
   "tsISO": ""
  }
