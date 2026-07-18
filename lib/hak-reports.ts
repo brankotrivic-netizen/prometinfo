@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "18.7.2026. 05:20",
-  "text": "Prometna prognoza za Hrvatsku za subotu, 18. srpnja, 2026. U većini krajeva bit će nestabilna vremenska situacija. Povremeno je moguća kiša i pljuskovi s grmljavinom koji će biti posebno izraženi u drugom dijelu dana. Lokalno je moguće i nevrijeme. Zbog zadržavanja vode na kolniku, te jakog vjetra i srušenih stabala bit će otežan promet na pojedinim cestama u unutrašnjosti. Prije polaska na put zbog promjenjivih uvjeta informirajte se o stanju i prohodnosti cesta na mrežnim stranicama ili mobilnoj aplikaciji Hrvatskog autokluba. Zbog veće gustoće prometa već od jutra bit će usporen promet na pojedinim dionicama autocesta u smjeru mora, a kasnije i prema unutrašnjosti. U kolonama i uz kraće z…"
+  "updated": "18.7.2026. 13:01",
+  "text": "Prometna prognoza za Hrvatsku za nedjelju, 19. srpnja 2026. U kontinentalnoj Hrvatskoj, sutra će se zbog jakih pljuskova mjestimice nakupljati veće količine vode na kolniku, a na cestama u gorju bit će i povećana opasnost od odrona. U popodnevnim satima, na Jadranu će jačati bura pa su na cestama u priobalju moguće zabrane i ograničenja za pojedine skupine vozila. Tijekom dana, očekujemo vrlo pojačan promet na glavnim prometnim pravcima koji povezuju obalu i unutrašnjost. Usporenija vožnja očekuje se na autocesti A1 između čvora Bosiljevo II i naplate Lučko, Istarskom ipsilonu (A8) između čvora Matulji i tunela Učka, na Krčkom mostu (DC102), državnoj cesti DC1 u Otriću te na prilazima turist…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
