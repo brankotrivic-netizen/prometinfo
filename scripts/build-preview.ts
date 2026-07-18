@@ -1664,7 +1664,10 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var icon=role==='recommended'?'✅':(role==='alternative'?'🟡':'🔴');
     var roleLbl=role==='recommended'?'Priporočeno':(role==='alternative'?'Alternativa':'Izogni se');
     var cam=(p.images&&p.images.length)?'<button class="cam" onclick="toggleCardCams(\\''+id+'\\')">📷 Kamere ('+p.images.length+')</button>':'';
-    var camGrid=(p.images&&p.images.length)?'<div id="ccams-'+id+'" class="camgrid cardcams" style="display:none;margin-top:9px">'+p.images.map(function(im,ix){ return camCell(im,id,ix); }).join('')+'</div>':'';
+    // Pri novem prehodu Gradiška prikaži kamere takoj: uporabnik mora jasno videti
+    // AMS-RS smeri vstop/izstop, ne šele po dodatnem kliku na gumb.
+    var camsOpen=id==='ba-gradiska';
+    var camGrid=(p.images&&p.images.length)?'<div id="ccams-'+id+'" class="camgrid cardcams" style="display:'+(camsOpen?'grid':'none')+';margin-top:9px">'+p.images.map(function(im,ix){ return camCell(im,id,ix); }).join('')+'</div>':'';
     var srcs=sourcesFor(p);
     var srcLine=srcs.length?srcs.map(function(s){return s.label+(s.ageMin!=null?' ('+s.ageMin+' min)':'');}).join(' · '):'ni avtomatskih virov';
     var soc=socFresh(p.id).length, q=socQ(p)[0];

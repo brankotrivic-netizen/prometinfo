@@ -11,7 +11,7 @@ const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const GP = {
   // Novi prehod Gornji Varoš–Gradiška; koordinate morajo ustrezati ba-gradiska,
   // da se obe kameri AMS-RS prikažeta tudi na kartici poti.
-  "gradiska": ["GP Gradiška (novi most)", 45.148, 17.204],
+  "gradiska": ["Gornji Varoš–Gradiška (novi most)", 45.148, 17.204],
   "gradina-gradina-donja": ["GP Gradina (Donja Gradina)", 45.27, 16.93],
   "raca": ["GP Rača", 44.90, 19.32],
   "zupci": ["GP Zupci", 42.68, 18.40],

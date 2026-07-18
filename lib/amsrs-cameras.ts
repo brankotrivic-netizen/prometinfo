@@ -2,14 +2,14 @@
 export interface AmsrsCam { name: string; image: string; lat: number; lng: number; dir?: string | null }
 export const AMSRS_CAMS: AmsrsCam[] = [
  {
-  "name": "GP Gradiška · vstop v BiH",
+  "name": "Gornji Varoš–Gradiška (novi most) · vstop v BiH",
   "image": "https://gp.satwork.net/AMSRS_17_GP_CA02/slika.jpg",
   "lat": 45.148,
   "lng": 17.204,
   "dir": "vstop"
  },
  {
-  "name": "GP Gradiška · izstop iz BiH",
+  "name": "Gornji Varoš–Gradiška (novi most) · izstop iz BiH",
   "image": "https://gp.satwork.net/AMSRS_17_GP_CA01/slika.jpg",
   "lat": 45.148,
   "lng": 17.204,
