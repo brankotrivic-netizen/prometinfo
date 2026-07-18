@@ -96,8 +96,18 @@ async function main() {
     // BIHAMK praviloma poda zgornjo mejo za obe smeri. Ohranimo jo kot
     // rezervni podatek, če HAK za izbrano smer nima meritve.
     const bihamkFallbackWaitMin = it.hasLive ? it.waitMinutes : null;
-    it.level = w.level as WaitLevel;
-    it.waitMinutes = w.waitMinutes;
+    // Za skupni prikaz (kartica, zemljevid, opozorila) uporabi samo smerne
+    // HAK meritve, mlajše od 90 minut. BIHAMK ostane varna zgornja meja.
+    const freshHakMinutes: number[] = [];
+    const addIfFresh = (minutes: number | null, iso: string) => {
+      if (minutes != null && iso && (Date.now() - Date.parse(iso)) / 60000 <= 90) freshHakMinutes.push(minutes);
+    };
+    addIfFresh(w.ulazMin, (w as { ulazTsISO?: string }).ulazTsISO || w.tsISO);
+    addIfFresh(w.izlazMin, (w as { izlazTsISO?: string }).izlazTsISO || w.tsISO);
+    if (bihamkFallbackWaitMin != null) freshHakMinutes.push(bihamkFallbackWaitMin);
+    const currentWait = freshHakMinutes.length ? Math.max(...freshHakMinutes) : null;
+    it.waitMinutes = currentWait;
+    it.level = (currentWait == null ? "unknown" : currentWait <= 0 ? "none" : currentWait <= 30 ? "low" : currentWait <= 60 ? "moderate" : currentWait <= 120 ? "high" : "severe") as WaitLevel;
     const parts: string[] = [];
     const ulazTs = (w as { ulazTs?: string }).ulazTs || w.ts;
     const izlazTs = (w as { izlazTs?: string }).izlazTs || w.ts;
@@ -1986,7 +1996,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   if(vr) vr.addEventListener('click',function(e){ var a=e.target&&e.target.closest?e.target.closest('.camshot'):null; if(a){ var im=a.querySelector('img.snap'); if(im){ e.preventDefault(); openCam(im.getAttribute('data-base')||im.src, a.getAttribute('data-name')||''); } } });
   // 🚗 Vozim nacin
   function freshTxt(p){ if(!(p&&p.hak&&p.hak.tsISO)) return 'ni žive čakalne dobe'; var a=Math.round((Date.now()-Date.parse(p.hak.tsISO))/60000); return a<1?'pravkar':('pred '+a+' min'); }
-  function mainWait(p){ if(!p) return 'ni podatka'; if(p.hak){ var d=[]; if(p.hak.ulazMin!=null)d.push('vstop '+p.hak.ulazTxt); if(p.hak.izlazMin!=null)d.push('izstop '+p.hak.izlazTxt); if(d.length) return d.join(' · '); } if(p.waitMinutes!=null) return waitMinTxt(p.waitMinutes); return 'ni podatka'; }
+  function mainWait(p){ if(!p) return 'ni podatka'; var w=paxTruck(p).pax; return w!=null?waitMinTxt(w):'ni podatka'; }
   window.enterDrive=function(){
     var pr=CURRENT_ROUTE; if(!pr) return;
     var dm=document.getElementById('driveMode'); var body=document.getElementById('driveBody');
