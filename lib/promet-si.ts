@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-18T11:18:39.829Z";
+export const PROMET_SI_UPDATED = "2026-07-18T12:07:58.199Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;864223;e553cc5d-38b6-40cf-b242-655ec9369eb2",
@@ -13,28 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-18T07:57:37.827Z",
   "end": "2026-07-18T14:00:00Z",
   "ts": "2026-07-18T07:58:45.687Z"
- },
- {
-  "id": "DARS;864208;a03d4c6f-0b0f-437b-868f-53a1b9306f11",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-1, Brezno - Radlje, pri Kozjem Vrhu, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
-  "loc": "G1-1, Radlje - Brezno",
-  "lat": 46.58992,
-  "lng": 15.288,
-  "start": "2026-07-18T06:52:19.287Z",
-  "end": "2026-07-18T12:00:00Z",
-  "ts": "2026-07-18T06:52:48.39Z"
- },
- {
-  "id": "DARS;864190;0b98e7f0-3d79-48bd-a5d9-a9b4229053f6",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-4, Slovenj Gradec - Otiški Vrh, v Otiškem vrhu, izmenično enosmerni promet, pomična zapora, obrezovanje rastlinja, do 14:00.",
-  "loc": "G1-4, Otiški Vrh - Sl Gradec",
-  "lat": 46.57345,
-  "lng": 15.03132,
-  "start": "2026-07-18T04:14:12.86Z",
-  "end": "2026-07-18T12:00:00Z",
-  "ts": "2026-07-18T04:14:34.39Z"
  },
  {
   "id": "DARS;860639;0a70269a-c8c1-4ee6-9a36-0c4986a04411",

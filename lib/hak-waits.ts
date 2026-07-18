@@ -19,22 +19,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-07-18T10:56:13+02:00"
  },
  {
-  "id": "ba-bijaca",
-  "name": "Nova Sela",
-  "ulazMin": 60,
-  "izlazMin": 30,
-  "ulazTxt": "1 h",
-  "izlazTxt": "do 30 min.",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ts": "18.7.2026. 11:18:01",
-  "tsISO": "2026-07-18T11:18:01+02:00"
- },
- {
   "id": "ba-orasje",
   "name": "Županja (Orašje)",
   "ulazMin": null,
@@ -51,11 +35,27 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": ""
  },
  {
-  "id": "ba-brcko",
-  "name": "Gunja (Brčko)",
-  "ulazMin": null,
+  "id": "ba-brod",
+  "name": "Slavonski Brod (Bosanski Brod)",
+  "ulazMin": 30,
+  "izlazMin": 60,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "1 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ts": "18.7.2026. 13:58:38",
+  "tsISO": "2026-07-18T13:58:38+02:00"
+ },
+ {
+  "id": "ba-gradina",
+  "name": "Jasenovac (Donja Gradina)",
+  "ulazMin": 30,
   "izlazMin": 90,
-  "ulazTxt": "-",
+  "ulazTxt": "do 30 min.",
   "izlazTxt": "1 h 30 min.",
   "truckUlazMin": null,
   "truckIzlazMin": null,
@@ -63,8 +63,8 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ts": "Nema podataka",
-  "tsISO": ""
+  "ts": "18.7.2026. 13:22:58",
+  "tsISO": "2026-07-18T13:22:58+02:00"
  },
  {
   "id": "ba-velika-kladusa",
@@ -147,22 +147,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": ""
  },
  {
-  "id": "ba-kamensko",
-  "name": "Kamensko (Kamensko)",
-  "ulazMin": 30,
-  "izlazMin": 30,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "do 30 min.",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ts": "L: 0 km T: 18.7.2026. 9:21:40",
-  "tsISO": "2026-07-18T09:21:40+02:00"
- },
- {
   "id": "",
   "name": "Mali Prolog (Crveni Grm)",
   "ulazMin": 120,
@@ -217,9 +201,9 @@ export const HAK_WAITS: HakWait[] = [
   "izlazMin": 0,
   "ulazTxt": "do 30 min.",
   "izlazTxt": "Višesatna čekanja",
-  "truckUlazMin": null,
+  "truckUlazMin": 60,
   "truckIzlazMin": 0,
-  "truckUlazTxt": "-",
+  "truckUlazTxt": "1 h",
   "truckIzlazTxt": "Višesatna čekanja",
   "level": "low",
   "waitMinutes": 30,
