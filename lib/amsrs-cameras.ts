@@ -4,15 +4,15 @@ export const AMSRS_CAMS: AmsrsCam[] = [
  {
   "name": "GP Gradiška · vstop v BiH",
   "image": "https://gp.satwork.net/AMSRS_17_GP_CA02/slika.jpg",
-  "lat": 45.14,
-  "lng": 17.25,
+  "lat": 45.148,
+  "lng": 17.204,
   "dir": "vstop"
  },
  {
   "name": "GP Gradiška · izstop iz BiH",
   "image": "https://gp.satwork.net/AMSRS_17_GP_CA01/slika.jpg",
-  "lat": 45.14,
-  "lng": 17.25,
+  "lat": 45.148,
+  "lng": 17.204,
   "dir": "izstop"
  },
  {
