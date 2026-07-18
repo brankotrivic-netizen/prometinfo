@@ -3,8 +3,8 @@ name: Osvežitev podatkov in objava
 # Samodejno osveži cene goriv (AMZS) + prometna poročila (HAK, AMSS, BIHAMK),
 # znova zgradi stran in jo objavi na GitHub Pages.
 on:
-  schedule:                  # ure UTC; poletni SLO čas = +2h
-    - cron: "20 4-21 * * *"  # vsako uro ~06:20–23:20 SLO (čakalne dobe sproti osvežene)
+  schedule:                     # ure UTC; poletni SLO čas = +2h
+    - cron: "*/15 4-21 * * *"   # vsakih 15 min ~06:00–23:45 SLO
   workflow_dispatch:          # ročni gumb "Run workflow"
   push:
     branches: [main]          # ob vsaki spremembi kode na main znova objavi

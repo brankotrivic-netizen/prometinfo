@@ -93,6 +93,9 @@ async function main() {
   for (const it of items) {
     const w = hakWaitById.get(it.id);
     if (!w) continue;
+    // BIHAMK praviloma poda zgornjo mejo za obe smeri. Ohranimo jo kot
+    // rezervni podatek, če HAK za izbrano smer nima meritve.
+    const bihamkFallbackWaitMin = it.hasLive ? it.waitMinutes : null;
     it.level = w.level as WaitLevel;
     it.waitMinutes = w.waitMinutes;
     const parts: string[] = [];
@@ -108,6 +111,7 @@ async function main() {
       truckIzlazMin: (w as { truckIzlazMin?: number | null }).truckIzlazMin ?? null,
       truckUlazTxt: (w as { truckUlazTxt?: string }).truckUlazTxt ?? "-",
       truckIzlazTxt: (w as { truckIzlazTxt?: string }).truckIzlazTxt ?? "-",
+      bihamkFallbackWaitMin,
       tsISO: w.tsISO,
     };
   }
@@ -1266,7 +1270,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function waitMinTxt(m){ if(m==null)return 'ni podatka'; if(m<=0)return 'brez zadrževanja'; if(m<60)return '~'+m+' min'; var h=Math.floor(m/60),mm=m%60; return '~'+h+' h'+(mm?' '+mm+' min':''); }
   var LVLNUM={none:30,low:22,moderate:2,high:-15,severe:-25,unknown:-15};
   function scoreCrossing(p, role){
-    var s=50, w=p.waitMinutes;
+    // Ocena mora uporabljati smer poti, ne najslabše čakalne dobe v nasprotni smeri.
+    var s=50, w=paxTruck(p).pax;
     if(w!=null){ if(w<=15)s+=35; else if(w<=30)s+=25; else if(w<=60)s+=5; else s-=25; }
     else { s+=(LVLNUM[p.level]!=null?LVLNUM[p.level]:-15); }
     if(p.images&&p.images.length) s+=10;
@@ -1278,8 +1283,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(offN>=2) s+=6;
     // socialni signali: samo OSEBNI znižajo; kamionski ne vplivajo na osebno oceno
     var ss=socSplit(p.id);
-    if(ss.pax>0 && (p.waitMinutes==null||p.waitMinutes<=15)) s-=8;
-    if(ss.neutral>0 && !ss.pax && !ss.truck && (p.waitMinutes==null||p.waitMinutes<=15)) s-=4;
+    if(ss.pax>0 && (w==null||w<=15)) s-=8;
+    if(ss.neutral>0 && !ss.pax && !ss.truck && (w==null||w<=15)) s-=4;
     // kamera preverjanje (najmocnejsi rocni signal)
     var cc=ccLast(p.id);
     if(cc){ if(cc.cameraStatus==='passenger_queue') s-=25; else if(cc.cameraStatus==='clear') s+=8; else if(cc.cameraStatus==='truck_only_queue') s+=3; }
@@ -1353,20 +1358,23 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(tr&&px&&/(auta|automobil|avti|osobna|putnick)[^.]{0,40}(prolaz|normaln|tece|teče|bez guzve|bez gu[zž]ve|ok\b|slobodno)/.test(t)) return 'truck';
     return (tr&&!px)?'truck':(px?'pax':'neutral'); }
   function socSplit(id){ var out={pax:0,truck:0,neutral:0}; socFresh(id).forEach(function(s){ out[socClass(s.text||'')]++; }); return out; }
-  // uradna cakanja za tvojo smer (fallback: druga smer)
+  // Uradna čakanja samo za tvojo smer. Nikoli ne uporabi nasprotne smeri.
   function paxTruck(p){
-    function pick(a,b){ return a!=null?a:b; }
-    var px=null,tr=null;
+    var px=null,tr=null,hasDirectional=false;
     if(p.hak){
-      var d=REV?[p.hak.ulazMin,p.hak.truckUlazMin,p.hak.izlazMin,p.hak.truckIzlazMin]:[p.hak.izlazMin,p.hak.truckIzlazMin,p.hak.ulazMin,p.hak.truckUlazMin];
-      px=pick(d[0],d[2]); tr=pick(d[1],d[3]);
+      hasDirectional=true;
+      px=REV?p.hak.ulazMin:p.hak.izlazMin;
+      tr=REV?p.hak.truckUlazMin:p.hak.truckIzlazMin;
+      // Če HAK nima podatka za to smer, uporabi le BIHAMK-ovo obojesmerno
+      // zgornjo mejo; čakanja iz nasprotne smeri ne prenašaj.
+      if(px==null && p.hak.bihamkFallbackWaitMin!=null) px=p.hak.bihamkFallbackWaitMin;
     }
     if(p.amss){
-      var e=REV?[p.amss.izlazMin,p.amss.truckIzlazMin,p.amss.ulazMin,p.amss.truckUlazMin]:[p.amss.ulazMin,p.amss.truckUlazMin,p.amss.izlazMin,p.amss.truckIzlazMin];
-      if(px==null) px=pick(e[0],e[2]);
-      if(tr==null) tr=pick(e[1],e[3]);
+      hasDirectional=true;
+      if(px==null) px=REV?p.amss.izlazMin:p.amss.ulazMin;
+      if(tr==null) tr=REV?p.amss.truckIzlazMin:p.amss.truckUlazMin;
     }
-    if(px==null) px=p.waitMinutes;
+    if(px==null && !hasDirectional) px=p.waitMinutes;
     return {pax:px, truck:tr};
   }
   function vcls(m){ if(m==null)return {e:'⚪',t:'ni podatka',c:'#94a3b8'}; if(m<=15)return {e:'🟢',t:'verjetno tekoče',c:'#16a34a'}; if(m<=30)return {e:'🟡',t:'krajše čakanje',c:'#ca8a04'}; if(m<=60)return {e:'🟠',t:'daljše čakanje',c:'#ea580c'}; return {e:'🔴',t:'velika kolona',c:'#dc2626'}; }
