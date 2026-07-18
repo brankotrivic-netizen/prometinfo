@@ -92,28 +92,36 @@ while ((m = rowRe.exec(html))) {
   if (ulazMin == null && izlazMin == null && truckUlazMin == null && truckIzlazMin == null) continue;
   const id = mapId(name);
   const worst = Math.max(ulazMin == null ? -1 : ulazMin, izlazMin == null ? -1 : izlazMin);
-  const ts = cells[0].ts || (cells[2] && cells[2].ts) || "";
+  // HAK lahko vsako smer osveÅ¾i ob drugem Äasu. ÄŒasa zato ne smemo
+  // zdruÅ¾iti v en sam podatek, sicer stara smer izgleda kot sveÅ¾a.
+  const ulazTs = cells[0] ? cells[0].ts : "";
+  const izlazTs = cells[2] ? cells[2].ts : "";
+  // Besedilo "Nema podataka" ni Äas. Skupni Äas ohranimo le za zdruÅ¾ljivost
+  // s starejÅ¡im prikazom in izberemo prvo dejansko Äasovno oznako.
+  const ts = toISO(ulazTs) ? ulazTs : (toISO(izlazTs) ? izlazTs : "");
   waits.push({
     id: id || "", name, ulazMin, izlazMin, ulazTxt, izlazTxt,
     truckUlazMin, truckIzlazMin, truckUlazTxt, truckIzlazTxt,
     level: level(worst < 0 ? null : worst),
     waitMinutes: worst < 0 ? null : worst,
+    ulazTs, izlazTs, ulazTsISO: toISO(ulazTs), izlazTsISO: toISO(izlazTs),
     ts, tsISO: toISO(ts),
   });
 }
 
 function emptyTs() {
   return "// SAMODEJNO ZAJETO: zive cakalne dobe HAK/MUP. Trenutno brez objavljenih cakanj.\n" +
-    "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }\n" +
+    "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }\n" +
     "export const HAK_WAITS: HakWait[] = [];\n";
 }
 const ts =
   "// SAMODEJNO ZAJETO: zive cakalne dobe na mejnih prehodih (HAK / MUP RH).\n" +
   "// Objavljeni le prehodi s trenutnim cakanjem. ulaz=vstop v HR, izlaz=izstop iz HR (osebna vozila).\n" +
-  "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ts: string; tsISO: string }\n" +
+  "export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }\n" +
   "export const HAK_WAITS: HakWait[] = " + JSON.stringify(waits, null, 1) + ";\n";
 
 // stran smo uspesno dobili -> vedno zapisi (prazno je veljavno stanje "ni zastojev")
 writeFileSync(OUT, waits.length ? ts : emptyTs(), "utf8");
 console.log(`ZAPISANO lib/hak-waits.ts | prehodov s cakanjem: ${waits.length}`);
 waits.forEach((w) => console.log(`  ${w.name} -> ${w.id || "(NEZNAN ID)"} | vstop ${w.ulazTxt} / izstop ${w.izlazTxt}`));
+
