@@ -173,6 +173,17 @@ async function main() {
       seen.add(im.url);
       merged.push(im);
     }
+    // Novi prehod Gradiška: najprej obe HAK kameri z Gornjega Varoša,
+    // nato obe novi AMS-RS kameri; vse druge ohranijo obstoječi vrstni red.
+    if (p.id === "ba-gradiska") {
+      const cameraPriority = new Map<string, number>([
+        ["https://m.hak.hr/cam.asp?id=1021", 0],
+        ["https://m.hak.hr/cam.asp?id=1022", 1],
+        ["https://gp.satwork.net/AMSRS_17_GP_CA02/slika.jpg", 2],
+        ["https://gp.satwork.net/AMSRS_17_GP_CA01/slika.jpg", 3],
+      ]);
+      merged.sort((a, b) => (cameraPriority.get(a.url) ?? 100) - (cameraPriority.get(b.url) ?? 100));
+    }
     (p as unknown as { images: { name: string; url: string }[] }).images = merged.slice(0, 10);
   }
 
