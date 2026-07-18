@@ -1,51 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-18T06:22:54.496Z";
+export const PROMET_SI_UPDATED = "2026-07-18T08:12:14.117Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;864200;97a825fa-2a39-4fb8-81bf-129c4c7448ff",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Blagovica - počivališče Lukovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.17101,
-  "lng": 14.77844,
-  "start": "2026-07-18T05:39:10.96Z",
+  "id": "DARS;864223;e553cc5d-38b6-40cf-b242-655ec9369eb2",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-103, Nova Gorica - Tolmin, Ročinj - Kanal, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
+  "loc": "G2-103, Ušnik - Plave",
+  "lat": 46.1083,
+  "lng": 13.67151,
+  "start": "2026-07-18T07:57:37.827Z",
+  "end": "2026-07-18T14:00:00Z",
+  "ts": "2026-07-18T07:58:45.687Z"
+ },
+ {
+  "id": "DARS;864208;a03d4c6f-0b0f-437b-868f-53a1b9306f11",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-1, Brezno - Radlje, pri Kozjem Vrhu, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "G1-1, Radlje - Brezno",
+  "lat": 46.58992,
+  "lng": 15.288,
+  "start": "2026-07-18T06:52:19.287Z",
   "end": "2026-07-18T12:00:00Z",
-  "ts": "2026-07-18T05:39:16.623Z"
- },
- {
-  "id": "DARS;864196;c48363d7-2515-49f0-b61d-d778fbfc3d33",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, izvoz 46 Divača iz smeri Kopra, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.66523,
-  "lng": 13.96702,
-  "start": "2026-07-18T04:59:52.567Z",
-  "end": "2026-07-18T12:00:05.613Z",
-  "ts": "2026-07-18T05:00:18.623Z"
- },
- {
-  "id": "DARS;864168;be2c769f-df64-4403-b064-d543393bcdb7",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, izvoz 24 Domžale - uvoz Domžale v smeri Celja, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.13454,
-  "lng": 14.6155,
-  "start": "2026-07-17T19:49:51.127Z",
-  "end": "2026-07-18T07:00:00Z",
-  "ts": "2026-07-18T04:56:20.613Z"
- },
- {
-  "id": "DARS;864189;54452d9b-ba84-4e71-a659-ba482e80bc2e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Nanos iz smeri Ljubljane proti Vrtojbi, Italiji, dela, oviran promet, promet poteka po enem pasu.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.75872,
-  "lng": 14.0567,
-  "start": "2026-07-18T04:12:21.6Z",
-  "end": "2026-07-18T20:00:30.227Z",
-  "ts": "2026-07-18T04:43:27.677Z"
+  "ts": "2026-07-18T06:52:48.39Z"
  },
  {
   "id": "DARS;864190;0b98e7f0-3d79-48bd-a5d9-a9b4229053f6",
