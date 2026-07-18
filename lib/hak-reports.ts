@@ -3,12 +3,12 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.7.2026. 08:19",
+  "updated": "18.7.2026. 08:20",
   "text": "Promet je pojačan na svim važnijim cestovnim pravcima u smjeru juga. U uvjetima povećane gustoće prometa upozoravamo vozače na pojačan oprez i održavanje sigurnosnog razmaka između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: na naplatama Lučko i Demerje u smjeru Zagreba nema dužih čekanja između naplate Lučko i čvora Bosiljevo 2 u smjeru Dubrovnika vozi se u kolonama u pokretu s mogućim kratkotrajnim zastojima A2 Zagreb-Macelj: na naplatnoj postaji Trakošćan u smjeru Zagreba kolona je duga oko 6 km (proteže se u Sloveniju) vozi se usporeno u zoni radova između čvorova Trakošćan i Đurmanec u smjeru Zagreba zbog povećanog priljeva vozila zabranjen je promet za teretna vozi…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "18.7.2026. 08:13",
+  "updated": "18.7.2026. 08:20",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
