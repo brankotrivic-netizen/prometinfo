@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.7.2026. 21:08",
-  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti te na prilazima turističkim središtima. Kolnici su mjestimice mokri i skliski. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: pješak između čvora Zadar istok i odmorišta Nadin u smjeru Dubrovnika, vozi se po dvije prometne trake uz ograničenje brzine od 40 km/h povremeno je pojačan promet u smjeru mora i unutrašnjosti, a vozi se bez poteškoća i zastoja A2 Zagreb-Macelj: na naplatnoj postaji Trakošćan u smjeru Zagreba kolona je oko 2 km (proteže se u Sloveniju) zbog povećanog priljeva vozila zabranjen je promet za teretna vozila i autobuse između…"
+  "updated": "18.7.2026. 21:25",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti te na prilazima turističkim središtima. Kolnici su mjestimice mokri i skliski. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: povremeno je pojačan promet u smjeru mora i unutrašnjosti, a vozi se bez poteškoća i zastoja A2 Zagreb-Macelj: na naplatnoj postaji Trakošćan u smjeru Zagreba kolona je oko 2 km (proteže se u Sloveniju) zbog povećanog priljeva vozila zabranjen je promet za teretna vozila i autobuse između čvorova Krapina i Đurmanec u oba smjera A3 Bregana-Lipovac: na graničnom prijelazu Bajakovo kolona je osobnih i teretnih vozila oko 9 k…"
  },
  {
   "title": "Granični prijelazi",
