@@ -571,6 +571,11 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .camcellbtns{font-size:11px;padding:1px 2px 2px}
 .camsum{font-size:12px;background:var(--panel-2);border-radius:8px;padding:7px 9px;margin:5px 0;line-height:1.5}
 .camrefresh{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 12px;position:sticky;top:0;z-index:20;background:var(--bg);padding:6px 0}
+.wxslot:empty{display:none}
+.wxrow{font-size:12.5px;margin:5px 0;background:var(--panel-2);border-radius:7px;padding:6px 9px;line-height:1.5}
+.wxrow.meta{color:var(--muted)}
+.locbanner{background:#ecfdf5;border:2px solid #10b981;color:#065f46;border-radius:10px;padding:10px 12px;margin:0 0 10px;font-size:13.5px;line-height:1.6}
+@media(prefers-color-scheme:dark){.locbanner{background:#052e23;border-color:#10b981;color:#a7f3d0}}
 .reloadbtn{background:#0f766e;color:#fff;border:none;border-radius:9px;padding:9px 15px;font:inherit;font-weight:700;font-size:14px;cursor:pointer;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.15)}
 .reloadbtn:hover{background:#0d635c}
 .reloadbtn:active{transform:scale(.97)}
@@ -821,6 +826,7 @@ ${fuelHtml}
     <div id="setCounts" class="meta"></div>
     <div class="ract"><button class="cam" onclick="clearFavs()">Počisti priljubljene</button><button class="cam" onclick="clearManual()">Počisti moje vnose</button></div>
     <h3 class="rsub">🛠️ Razvijalec</h3>
+    <label style="display:flex;gap:8px;align-items:center;cursor:pointer;font-size:14px"><input type="checkbox" id="setVoice" onchange="toggleVoice(this)"> 🔊 Glasovna opozorila (bere prehod/opozorila na glas)</label>
     <label style="display:flex;gap:8px;align-items:center;cursor:pointer;font-size:14px"><input type="checkbox" id="setDebug" onchange="toggleDebug(this)"> Debug način (tehnični podatki)</label>
     <div id="debugPanel" class="meta" style="display:none;margin-top:8px;background:var(--panel-2);border-radius:8px;padding:9px 11px"></div>
     <h3 class="rsub">♻️ Ponastavitev</h3>
@@ -1687,6 +1693,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
       +vehLines
       +'<div class="rdir">'+dirWaits(p)+'</div>'
+      +'<div id="wx-'+id+'" class="wxslot"></div>'
       +predictLine(p)
       +ttBlock(id)
       +camBlock
@@ -1722,7 +1729,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       html+='<div class="critbox">⚠ <b>Kritična opozorila:</b><br>🚨 <b>Stara Gradiška stari most zaprt</b> — promet prekinjen v obe smeri, ne uporabljaj starega mostu.'+(GRADCRIT.gvOpen?'<br>✅ Uporabi <b>Gornji Varoš–Gradiška</b> (novi most) — odprt.':'')+' <span class="meta">(vir: HAK)</span></div>';
     }
     html+=alertsBanner(pr);
-    html+='<button class="cam" onclick="swapDir()" style="margin-bottom:8px">⇄ Obrni smer ('+rTo(pr)+' → '+rFrom(pr)+')</button>';
+    html+='<div id="locBanner" class="locbanner" style="display:none"></div>';
+    html+='<button class="cam" onclick="locateMe()">📍 Kje sem (najbližji prehod)</button> <button class="cam" onclick="swapDir()" style="margin-bottom:8px">⇄ Obrni smer ('+rTo(pr)+' → '+rFrom(pr)+')</button>';
     html+='<div id="routeEta" class="etarow"><span class="meta">Računam pot in čas prihoda…</span></div>';
     var all=pr.recommended.concat(pr.alternative, pr.avoid);
     if(all.length) html+='<button class="drivebtn" onclick="enterDrive()">🚗 Vozim</button>';
@@ -1747,6 +1755,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     computeRouteEta(pr);
     // samodejni TomTom pregled kolone za priporoceni + alternativni prehod (ce se ni preverjeno)
     pr.recommended.concat(pr.alternative).forEach(function(id){ if(TTQ[id] && !TTRES[id]){ try{ checkTomTom(id); }catch(e){} } });
+    // vreme za priporoceni + alternativni prehod
+    pr.recommended.concat(pr.alternative).forEach(function(id){ try{ loadWeather(id); }catch(e){} });
   }
   /* ===== PRAVA POT + ETA (OSRM) ===== */
   function fmtHM(min){ if(min==null)return '?'; if(min<60)return min+' min'; return Math.floor(min/60)+'h'+('0'+(min%60)).slice(-2); }
@@ -1791,10 +1801,46 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     activeAlerts().forEach(function(x){ if(_almNotified[x.id]&&(Date.now()-_almNotified[x.id])<30*60000)return; _almNotified[x.id]=Date.now();
       toast('🔔 '+x.label+': čakanje ~'+x.wait+' min');
       if(window.Notification&&Notification.permission==='granted'){ try{ new Notification('PrometInfo — kolona',{body:x.label+': čakanje ~'+x.wait+' min (prag '+x.thr+')',icon:'icon-192.png',tag:'promet-'+x.id}); }catch(e){} }
+      if(voiceOn()) speak('Opozorilo. '+x.label+', čakanje '+x.wait+' minut.');
     });
   }
   window.enableAlarmNotify=function(){ if(!window.Notification){ toast('Ta brskalnik ne podpira obvestil.'); return; } Notification.requestPermission().then(function(p){ toast(p==='granted'?'🔔 Obvestila vklopljena.':'Obvestila niso dovoljena.'); if(p==='granted')alarmTick(); }); };
   setTimeout(alarmTick,4000); setInterval(alarmTick,180000);
+  /* ===== 📍 GPS LOKACIJA · 🔊 GLAS · 🌧️ VREME ===== */
+  function distKm(a,b,c,d){ var R=6371,dLat=(c-a)*Math.PI/180,dLng=(d-b)*Math.PI/180; var s=Math.sin(dLat/2)*Math.sin(dLat/2)+Math.cos(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.sin(dLng/2)*Math.sin(dLng/2); return R*2*Math.atan2(Math.sqrt(s),Math.sqrt(1-s)); }
+  function nearestCrossing(lat,lng){ var best=null; for(var i=0;i<PTS.length;i++){ var p=PTS[i]; if(p.lat==null)continue; var dd=distKm(lat,lng,p.lat,p.lng); if(!best||dd<best.d)best={id:p.id,p:p,d:dd}; } return best; }
+  var _lastPos=null;
+  window.locateMe=function(){
+    if(!navigator.geolocation){ toast('Naprava ne podpira lokacije.'); return; }
+    toast('📍 Iščem lokacijo…');
+    navigator.geolocation.getCurrentPosition(function(pos){
+      _lastPos={lat:pos.coords.latitude,lng:pos.coords.longitude};
+      var n=nearestCrossing(_lastPos.lat,_lastPos.lng);
+      if(!n){ toast('Ni prehoda v bližini.'); return; }
+      var cn=conclude(n.p), distTxt=(n.d<1?Math.round(n.d*1000)+' m':n.d.toFixed(1)+' km');
+      var el=document.getElementById('locBanner');
+      if(el){ el.innerHTML='📍 Najbližji prehod: <b>'+n.p.name+'</b> — <b>'+distTxt+'</b><br>🚗 '+cn.pax.e+' '+cn.pax.t+' · 🚚 '+cn.truck.e+' '+cn.truck.t+' · <button class="linklike" onclick="focusCrossing(\\''+n.id+'\\')">🗺️ na zemljevidu</button>'; el.style.display='block'; }
+      if(voiceOn()) speak('Najbljižji prehod '+n.p.name+', '+(n.d<1?Math.round(n.d*1000)+' metrov':Math.round(n.d)+' kilometrov')+'. Osebna vozila '+cn.pax.t+'.');
+    }, function(err){ toast(err.code===1?'Ni dovoljenja za lokacijo.':'Lokacije ni bilo mogoče dobiti.'); }, {enableHighAccuracy:true,timeout:12000,maximumAge:30000});
+  };
+  // glasovna opozorila
+  function voiceOn(){ try{ return localStorage.getItem('promet_voice')==='1'; }catch(e){ return false; } }
+  function speak(t){ if(!window.speechSynthesis)return; try{ var u=new SpeechSynthesisUtterance(t); u.lang='sl-SI'; u.rate=1; window.speechSynthesis.cancel(); window.speechSynthesis.speak(u); }catch(e){} }
+  window.speakDrive=function(){ var pr=CURRENT_ROUTE; if(!pr||!pr.recommended.length)return; var p=CBYID[pr.recommended[0]]; if(!p)return; var cn=conclude(p); speak('Priporočen prehod '+p.name+'. Osebna vozila '+cn.pax.t+(cn.paxMin!=null?', približno '+cn.paxMin+' minut':'')+'. Tovorna vozila '+cn.truck.t+'.'); };
+  window.toggleVoice=function(cb){ var on=cb?cb.checked:!voiceOn(); try{ localStorage.setItem('promet_voice',on?'1':'0'); }catch(e){} var s=document.getElementById('setVoice'); if(s)s.checked=on; toast(on?'🔊 Glasovna opozorila vklopljena.':'🔇 Glas izklopljen.'); if(on) speak('Glasovna opozorila vklopljena.'); };
+  // vreme (Open-Meteo, brez ključa)
+  var WXCODE={0:'☀️ jasno',1:'🌤️ pretežno jasno',2:'⛅ delno oblačno',3:'☁️ oblačno',45:'🌫️ megla',48:'🌫️ megla',51:'🌦️ rosenje',53:'🌦️ rosenje',55:'🌧️ rosenje',56:'🌧️ ledeno rosenje',57:'🌧️ ledeno rosenje',61:'🌧️ dež',63:'🌧️ dež',65:'🌧️ močan dež',66:'🌧️ ledeni dež',67:'🌧️ ledeni dež',71:'🌨️ sneg',73:'🌨️ sneg',75:'❄️ močan sneg',77:'🌨️ snežna zrna',80:'🌦️ ploha',81:'🌧️ ploha',82:'⛈️ močna ploha',85:'🌨️ snežna ploha',86:'❄️ snežna ploha',95:'⛈️ nevihta',96:'⛈️ nevihta s točo',99:'⛈️ nevihta s točo'};
+  var _wxCache={};
+  function loadWeather(id){
+    var p=CBYID[id]; if(!p||p.lat==null)return; var el=document.getElementById('wx-'+id); if(!el)return;
+    if(_wxCache[id]){ el.innerHTML=_wxCache[id]; return; }
+    fetch('https://api.open-meteo.com/v1/forecast?latitude='+p.lat+'&longitude='+p.lng+'&current=temperature_2m,weather_code,precipitation,wind_speed_10m',{signal:AbortSignal.timeout(10000)})
+      .then(function(r){ return r.json(); }).then(function(j){ var c=j.current; if(!c)return;
+        var warn=(c.weather_code>=51||(c.precipitation||0)>0.2)?' <b>⚠ previdno</b>':'';
+        _wxCache[id]='<div class="wxrow">'+(WXCODE[c.weather_code]||'🌡️ vreme')+' · <b>'+Math.round(c.temperature_2m)+'°C</b>'+((c.precipitation||0)>0?' · '+c.precipitation+' mm':'')+' · 💨 '+Math.round(c.wind_speed_10m)+' km/h'+warn+'</div>';
+        el.innerHTML=_wxCache[id];
+      }).catch(function(){ el.innerHTML='<div class="wxrow meta">🌡️ vreme trenutno ni na voljo</div>'; });
+  }
   // ---- gorivo po poti (profil vozila) ----
   var VKEY='promet_vehicle';
   function veh(){ try{ var v=JSON.parse(localStorage.getItem(VKEY)); if(v&&v.name) return v; }catch(e){} return {name:'BMW X3 2.0d', cons:7.8, tank:67}; }
@@ -1922,9 +1968,11 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(av) h+='<div class="davoid">🔴 Izogni se: <b>'+av.name+'</b> · '+mainWait(av)+'</div>';
     h+='<div class="dactions">'
       +'<button class="dcam" style="background:#334155" onclick="enterDrive()">🔄 Osveži</button>'
-      +(rec&&rec.lat!=null?'<a class="dcam" style="background:#0f766e;text-decoration:none;display:block;text-align:center" href="https://www.google.com/maps/dir/?api=1&destination='+rec.lat+','+rec.lng+'" target="_blank" rel="noopener noreferrer">🧭 Odpri navigacijo</a>':'')
+      +'<button class="dcam" style="background:#4338ca" onclick="speakDrive()">🔊 Preberi</button>'
+      +(rec&&rec.lat!=null?'<a class="dcam" style="background:#0f766e;text-decoration:none;display:block;text-align:center" href="https://www.google.com/maps/dir/?api=1&destination='+rec.lat+','+rec.lng+'" target="_blank" rel="noopener noreferrer">🧭 Navigacija</a>':'')
       +'</div>';
     body.innerHTML=h; dm.style.display='flex';
+    if(voiceOn()) setTimeout(speakDrive,400);
   };
   window.exitDrive=function(){ var dm=document.getElementById('driveMode'); if(dm)dm.style.display='none'; };
   function renderQuick(){
@@ -2010,6 +2058,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function loadAi(){ var el=document.getElementById('setAiEndpoint'); if(el){ try{ el.value=localStorage.getItem('promet_ai_endpoint')||''; }catch(e){} } }
   window.saveAiEndpoint=function(){ var v=(document.getElementById('setAiEndpoint').value||'').trim(); if(v&&!/^https?:\\/\\//.test(v)){ flash('Naslov mora biti veljaven URL (https://…).'); return; } try{ if(v)localStorage.setItem('promet_ai_endpoint',v); else localStorage.removeItem('promet_ai_endpoint'); }catch(e){} flash(v?'AI endpoint shranjen.':'AI endpoint odstranjen.'); };
   loadVeh(); loadFb(); loadAi(); renderAlarms(); renderCounts(); renderSocial();
+  (function(){ var v=document.getElementById('setVoice'); if(v){ try{ v.checked=localStorage.getItem('promet_voice')==='1'; }catch(e){} } })();
   var dbg=localStorage.getItem('promet_debug')==='1', dc=document.getElementById('setDebug'); if(dc){ dc.checked=dbg; if(dbg){ var dp=document.getElementById('debugPanel'); dp.style.display='block'; dp.innerHTML=debugInfo(); } }
 })();
 /* ===== PWA: namestitev na telefon + offline (service worker) ===== */
