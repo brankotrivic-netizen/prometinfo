@@ -1128,8 +1128,10 @@ function calcRoute(){
   var info=document.getElementById('routeInfo');
   if(!a||!b){ info.textContent='Vpiši izhodišče in cilj.'; return; }
   info.textContent='Računam pot…';
+  var via=window._routeVia; window._routeVia=null; // enkratna vmesna tocka (prisili pot cez pravi/novi prehod)
   Promise.all([geocode(a),geocode(b)]).then(function(pts){
-    var url='https://router.project-osrm.org/route/v1/driving/'+pts[0].lng+','+pts[0].lat+';'+pts[1].lng+','+pts[1].lat+'?overview=full&geometries=geojson';
+    var mid=via?(';'+via[0]+','+via[1]):'';
+    var url='https://router.project-osrm.org/route/v1/driving/'+pts[0].lng+','+pts[0].lat+mid+';'+pts[1].lng+','+pts[1].lat+'?overview=full&geometries=geojson';
     return fetch(url).then(function(r){return r.json();}).then(function(j){
       if(j.code!=='Ok'||!j.routes||!j.routes.length) throw new Error('poti ni mogoče izračunati');
       var rt=j.routes[0];
@@ -1777,7 +1779,10 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
           var km=Math.round(rt.distance/1000), min=Math.round(rt.duration/60); _etaCache[key]={km:km,min:min}; render(km,min); });
     }).catch(function(){ el.innerHTML='<span class="meta">📏 Časa poti ni bilo mogoče izračunati (poskusi na zavihku 🗺️ Zemljevid).</span>'; });
   }
-  window.showRouteMap=function(){ var pr=CURRENT_ROUTE; if(!pr)return; var a=document.getElementById('routeFrom'),b=document.getElementById('routeTo'); if(a)a.value=rFrom(pr); if(b)b.value=rTo(pr); showView('map'); setTimeout(function(){ try{ calcRoute(); }catch(e){} },250); };
+  window.showRouteMap=function(){ var pr=CURRENT_ROUTE; if(!pr)return; var a=document.getElementById('routeFrom'),b=document.getElementById('routeTo'); if(a)a.value=rFrom(pr); if(b)b.value=rTo(pr);
+    // prisili pot cez PRIPOROCENI prehod (npr. novi most Gornji Varos, ne stari Stara Gradiska)
+    var rc=pr.recommended&&pr.recommended[0]?CBYID[pr.recommended[0]]:null; window._routeVia=(rc&&rc.lat!=null)?[rc.lng,rc.lat]:null;
+    showView('map'); setTimeout(function(){ try{ calcRoute(); }catch(e){} },250); };
   /* ===== OPOZORILA OB KOLONI (aktivna) ===== */
   var ALARM_DEF=[{crossing:'si-obrezje',min:45,label:'Obrežje'},{crossing:'hr-bajakovo',min:60,label:'Bajakovo'},{crossing:'si-karavanke',min:30,label:'Karavanke'},{crossing:'ba-gradiska',min:45,label:'Gornji Varoš–Gradiška'}];
   function alarmList(){ try{ var a=JSON.parse(localStorage.getItem('promet_alarms')); if(a&&a.length)return a; }catch(e){} return ALARM_DEF; }
