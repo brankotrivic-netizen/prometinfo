@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-17T22:07:19.142Z";
+export const PROMET_SI_UPDATED = "2026-07-18T06:10:20.596Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;864200;97a825fa-2a39-4fb8-81bf-129c4c7448ff",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Blagovica - počivališče Lukovica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.17101,
+  "lng": 14.77844,
+  "start": "2026-07-18T05:39:10.96Z",
+  "end": "2026-07-18T12:00:00Z",
+  "ts": "2026-07-18T05:39:16.623Z"
+ },
+ {
+  "id": "DARS;864196;c48363d7-2515-49f0-b61d-d778fbfc3d33",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, izvoz 46 Divača iz smeri Kopra, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.66523,
+  "lng": 13.96702,
+  "start": "2026-07-18T04:59:52.567Z",
+  "end": "2026-07-18T12:00:05.613Z",
+  "ts": "2026-07-18T05:00:18.623Z"
+ },
  {
   "id": "DARS;864168;be2c769f-df64-4403-b064-d543393bcdb7",
   "type": "MaintenanceWorks",
@@ -11,30 +33,30 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 46.13454,
   "lng": 14.6155,
   "start": "2026-07-17T19:49:51.127Z",
-  "end": "2026-07-18T03:00:37.693Z",
-  "ts": "2026-07-17T19:50:20.43Z"
+  "end": "2026-07-18T07:00:00Z",
+  "ts": "2026-07-18T04:56:20.613Z"
  },
  {
-  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 45.96375,
-  "lng": 15.5243,
-  "start": "2025-10-02T05:56:02.493Z",
-  "end": "2026-12-31T22:59:00Z",
-  "ts": "2026-07-17T15:00:08.64Z"
+  "id": "DARS;864189;54452d9b-ba84-4e71-a659-ba482e80bc2e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, razcep Nanos iz smeri Ljubljane proti Vrtojbi, Italiji, dela, oviran promet, promet poteka po enem pasu.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.75872,
+  "lng": 14.0567,
+  "start": "2026-07-18T04:12:21.6Z",
+  "end": "2026-07-18T20:00:30.227Z",
+  "ts": "2026-07-18T04:43:27.677Z"
  },
  {
-  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "id": "DARS;864190;0b98e7f0-3d79-48bd-a5d9-a9b4229053f6",
   "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
-  "loc": "R3-706, Ožbalt - Zg. Kapla",
-  "lat": 46.62649,
-  "lng": 15.43348,
-  "start": "2026-06-22T06:28:52.303Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-07-17T15:00:07.827Z"
+  "desc": "G1-4, Slovenj Gradec - Otiški Vrh, v Otiškem vrhu, izmenično enosmerni promet, pomična zapora, obrezovanje rastlinja, do 14:00.",
+  "loc": "G1-4, Otiški Vrh - Sl Gradec",
+  "lat": 46.57345,
+  "lng": 15.03132,
+  "start": "2026-07-18T04:14:12.86Z",
+  "end": "2026-07-18T12:00:00Z",
+  "ts": "2026-07-18T04:14:34.39Z"
  },
  {
   "id": "DARS;860639;0a70269a-c8c1-4ee6-9a36-0c4986a04411",
@@ -1014,17 +1036,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-11-25T06:42:04.553Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-06-15T05:32:25.407Z"
- },
- {
-  "id": "DARS;764167;a5a17448-1069-4b3a-b72f-97ced7c87e9f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-112, Ravne - Dravograd, izmenično enosmerni promet, rekonstrukcija ceste in ureditev kolesarske poti, do 31. 8. 2026.",
-  "loc": "G2-112, Ravne - Dravograd",
-  "lat": 46.54745,
-  "lng": 14.96716,
-  "start": "2025-03-19T08:54:12.133Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-06-12T06:10:13.35Z"
  },
  {
   "id": "DARS;770907;67e3cf48-89aa-4294-8248-8cb7533e5044",
