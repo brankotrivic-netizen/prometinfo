@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.7.2026. 21:46",
-  "text": "Promet je pojačan na svim važnijim cestovnim pravcima, osobito u smjeru unutrašnjosti. Zastoji i kolone mogući su u zonama radova i privremene regulacije prometa te na autocestama u zonama naplata, odmorišta i tunela. U uvjetima povećane gustoće prometa i mjestimice mokrih i skliskih kolnika pozivamo vozače da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: povećana je gustoća prometa u oba smjera vozi se usporeno u kolonama u pokretu uz povremene zastoje između čvora Karlovac i naplate Lučko u smjeru Zagreba A3 Bregana-Lipovac: na graničnom prijelazu Bajakovo kolona osobnih i teretnih v…"
+  "updated": "19.7.2026. 22:30",
+  "text": "Promet je pojačan na svim važnijim cestovnim pravcima, osobito u smjeru unutrašnjosti. Zastoji i kolone mogući su u zonama radova i privremene regulacije prometa te na autocestama u zonama naplata, odmorišta i tunela. U uvjetima povećane gustoće prometa i mjestimice mokrih i skliskih kolnika pozivamo vozače da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: povećana je gustoća prometa u oba smjera vozi se usporeno u kolonama u pokretu uz povremene zastoje između čvora Jastrebarsko i naplate Lučko u smjeru Zagreba A3 Bregana-Lipovac: prometna nesreća na 211. km između čvorova Slavonski Br…"
  },
  {
   "title": "Granični prijelazi",
