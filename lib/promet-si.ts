@@ -1,18 +1,84 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-18T22:05:37.237Z";
+export const PROMET_SI_UPDATED = "2026-07-19T06:21:38.633Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;864344;0e4af033-69f8-4bcc-af37-eb9afbc9bcf3",
+  "id": "DARS;864365;ee55b0c7-3d93-4a64-998e-9ba7665df62f",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, uvoz Šempeter - uvoz Žalec v smeri Maribora, dela, oviran promet.",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - predor Ločica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25305,
+  "lng": 14.97491,
+  "start": "2026-07-19T05:58:36.87Z",
+  "end": "2026-07-19T12:17:12.63Z",
+  "ts": "2026-07-19T05:58:59.143Z"
+ },
+ {
+  "id": "DARS;864362;b2e98dc2-bead-4861-b85a-917e7573bc83",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - izvoz 12 Dramlje v smeri Maribora, dela, oviran promet.",
   "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25932,
-  "lng": 15.09616,
-  "start": "2026-07-18T20:41:58.393Z",
-  "end": "2026-07-19T00:00:41.527Z",
-  "ts": "2026-07-18T20:42:03.69Z"
+  "lat": 46.26797,
+  "lng": 15.19364,
+  "start": "2026-07-19T05:40:55.053Z",
+  "end": "2026-07-19T15:00:46.897Z",
+  "ts": "2026-07-19T05:41:02.29Z"
+ },
+ {
+  "id": "DARS;864361;26628c62-22d1-4751-9395-036d155c740c",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, zaprt odstavni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.15299,
+  "lng": 14.47879,
+  "start": "2026-07-19T05:36:13.31Z",
+  "end": "2026-07-19T11:00:00Z",
+  "ts": "2026-07-19T05:36:19.883Z"
+ },
+ {
+  "id": "DARS;864358;ef07df26-c508-4ccc-a3bb-7dc6ff700394",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, uvoz Divača - uvoz Divača v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.66529,
+  "lng": 13.96699,
+  "start": "2026-07-19T05:29:28.013Z",
+  "end": "2026-07-19T12:00:12.123Z",
+  "ts": "2026-07-19T05:29:31.48Z"
+ },
+ {
+  "id": "DARS;825661;81e9fbca-99cc-40dc-bc0e-f5de419109a0",
+  "type": "MaintenanceWorks",
+  "desc": "G1-5, Celje - Laško - Krško, na Polulah, oviran promet, izgradnja krožišča na Polulah, do 18:00.",
+  "loc": "G1-5, Celje - Šmarjeta",
+  "lat": 46.21651,
+  "lng": 15.26262,
+  "start": "2025-12-05T07:23:21.813Z",
+  "end": "2026-07-19T16:00:00Z",
+  "ts": "2026-07-19T05:15:36.02Z"
+ },
+ {
+  "id": "DARS;864352;cf3a77b9-2b39-41b0-87b5-7a9f1ac83d4a",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor (Koroški most - cesta Proletarskih Brigad), v Mariboru, cesta Proletarskih Brigad, oviran promet, barvanje talnih označb, do 13:00.",
+  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
+  "lat": 46.54595,
+  "lng": 15.61982,
+  "start": "2026-07-19T03:34:01.527Z",
+  "end": "2026-07-19T11:00:00Z",
+  "ts": "2026-07-19T03:35:11.653Z"
+ },
+ {
+  "id": "DARS;864347;15c5e456-59b2-40ac-a0bb-deeebc141cd3",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor - Dravograd, v Mariboru, na Koroški cesti, dela, oviran promet, do 19. 7. 2026.",
+  "loc": "G1-1, Ruta - Maribor (Koroški Most)",
+  "lat": 46.5627,
+  "lng": 15.6277,
+  "start": "2026-07-19T03:00:00Z",
+  "end": "2026-07-19T11:00:00Z",
+  "ts": "2026-07-18T21:19:25.513Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
@@ -46,17 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-10-02T05:56:02.493Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-07-18T15:00:08.44Z"
- },
- {
-  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
-  "loc": "R3-706, Ožbalt - Zg. Kapla",
-  "lat": 46.62649,
-  "lng": 15.43348,
-  "start": "2026-06-22T06:28:52.303Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-07-18T15:00:07.473Z"
  },
  {
   "id": "DARS;860639;0a70269a-c8c1-4ee6-9a36-0c4986a04411",
@@ -156,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-15T08:47:15.067Z",
   "end": "2026-07-20T21:59:00Z",
   "ts": "2026-07-15T08:48:53.48Z"
- },
- {
-  "id": "DARS;825661;81e9fbca-99cc-40dc-bc0e-f5de419109a0",
-  "type": "MaintenanceWorks",
-  "desc": "G1-5, Celje - Laško - Krško, na Polulah, oviran promet, izgradnja krožišča na Polulah, do 19. 7. 2026.",
-  "loc": "G1-5, Celje - Šmarjeta",
-  "lat": 46.21651,
-  "lng": 15.26262,
-  "start": "2025-12-05T07:23:21.813Z",
-  "end": "2026-07-19T21:59:00Z",
-  "ts": "2026-07-15T07:28:58.057Z"
  },
  {
   "id": "DARS;863053;9e9e00dd-7995-4163-ac84-3ba452223cdd",

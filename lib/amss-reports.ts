@@ -2,24 +2,28 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "1GP BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policije…"
+ },
+ {
+  "title": "1GP SREMSKA RAČA",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - od 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na BiH. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po d…"
+ },
+ {
   "title": "1GP KELEBIJA Srbija-Mađarska",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 45 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađarskim terminalima, a koje je često dosta duže u odnosu na vreme zadržavanja na našim prelazima Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. .2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Podsećamo …"
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađarskim terminalima, a koje je često dosta duže u odnosu na vreme zadržavanja na našim prelazima Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. .2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Podsećamo …"
+ },
+ {
+  "title": "1GP PREŠEVO Srbija - Severna Makedonija AP E 75 M1",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Izvor: Upra…"
  },
  {
   "title": "1GP GRADINA (Dimitrovgrad Srbija Bugarska AP E80)",
-  "text": "Prema poslednjim informacijama Uprave granične policije zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije - oko 30 minuta; 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min; Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vreme potrebno za prolaz i njihovih terminala. Zadržavanje te…"
+  "text": "Prema poslednjim informacijama Uprave granične policije zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije - oko 60 minuta; 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min; Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vreme potrebno za prolaz i njihovih terminala. Zadržavanje te…"
  },
  {
   "title": "1GP HORGOŠ SRBIJA MAĐARSKA AP A1, E-75",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 45 minuta. Na TERETNIM terminalima : 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vreme potrebno za prolaz i …"
- },
- {
-  "title": "1GP SREMSKA RAČA",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - od 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na BiH. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po d…"
- },
- {
-  "title": "1GP BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policije…"
  },
  {
   "title": "1GP ŠID sa hrvatske strane GP Tovarnik",
@@ -28,10 +32,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "1GP BEZDAN ( Srbija- Hrvatska ) M-18",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 240 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće promenjeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Radno vreme ovog graničnog prelaz…"
- },
- {
-  "title": "1GP PREŠEVO Srbija - Severna Makedonija AP E 75 M1",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Izvor: Upra…"
  },
  {
   "title": "Novi Pazar-Bele Vode, radovi",
