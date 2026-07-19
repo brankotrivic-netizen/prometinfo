@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-19T14:46:10.990Z";
+export const PROMET_SI_UPDATED = "2026-07-19T15:44:39.545Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;864362;b2e98dc2-bead-4861-b85a-917e7573bc83",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - izvoz 12 Dramlje v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.26797,
-  "lng": 15.19364,
-  "start": "2026-07-19T08:27:48.347Z",
-  "end": "2026-07-19T15:00:46.897Z",
-  "ts": "2026-07-19T08:27:58.95Z"
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-19T15:00:30.533Z"
  },
  {
   "id": "DARS;825661;81e9fbca-99cc-40dc-bc0e-f5de419109a0",
