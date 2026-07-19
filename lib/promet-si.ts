@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-19T18:35:48.665Z";
+export const PROMET_SI_UPDATED = "2026-07-19T19:50:38.257Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;864457;0d48d093-1695-4581-8fd6-f3a896f24ae3",
@@ -15,17 +15,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-19T17:46:14.683Z"
  },
  {
-  "id": "DARS;864456;40b9f151-ec47-4cb0-80fc-b2ba0f9665f5",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Logatec - razcep Kozarje v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.90908,
-  "lng": 14.25838,
-  "start": "2026-07-19T17:37:37.977Z",
-  "end": "2026-07-19T20:00:00Z",
-  "ts": "2026-07-19T17:37:42.113Z"
- },
- {
   "id": "DARS;764167;a5a17448-1069-4b3a-b72f-97ced7c87e9f",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-112, Ravne - Dravograd, izmenično enosmerni promet, rekonstrukcija ceste in ureditev kolesarske poti, do 31. 8. 2026.",
@@ -35,39 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-03-19T08:54:12.133Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-07-19T17:01:23.24Z"
- },
- {
-  "id": "DARS;864451;1fccf155-9c5b-4e24-9e0a-dab1a01c0902",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, izvoz 46 Divača iz smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.66526,
-  "lng": 13.96706,
-  "start": "2026-07-19T16:54:54.937Z",
-  "end": "2026-07-19T21:00:16.293Z",
-  "ts": "2026-07-19T16:56:40.44Z"
- },
- {
-  "id": "DARS;864452;054e56de-a2be-4269-b2d3-fa5346aa1297",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, uvoz Divača v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.66628,
-  "lng": 13.96933,
-  "start": "2026-07-19T16:55:42.883Z",
-  "end": "2026-07-19T21:00:08.487Z",
-  "ts": "2026-07-19T16:55:56.173Z"
- },
- {
-  "id": "DARS;864450;aa888d14-6e5b-4546-acf2-134441953de5",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, izvoz 30 Ljubljana Bizovik - uvoz Ljubljana Bizovik v smeri Malenc, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.04581,
-  "lng": 14.57605,
-  "start": "2026-07-19T16:50:56.5Z",
-  "end": "2026-07-19T22:00:00Z",
-  "ts": "2026-07-19T16:51:11.543Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
