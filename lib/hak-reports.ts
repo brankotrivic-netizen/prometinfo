@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.7.2026. 15:49",
-  "text": "Pojačan je promet na važnijim cestama u smjeru mora i unutrašnjosti, cestama u priobalju te na većini graničnih prijelaza. Zastoji i kolone su u zonama radova i privremene regulacije prometa te na autocestama u zonama naplata, odmorišta i tunela. U uvjetima povećane gustoće prometa pozivamo vozače da prilagode brzinu i način vožnje uvjetima na cestama, stanju kolnika i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik prometna nesreća na 4.+500 km, prije naplate Demerje u smjeru Zagreba, vozi se usporeno, jednim trakom pred tunelom Sveti Rok u smjeru Dubrovnika kolona je oko 1 km (uklonjena su vozila iz tunela) vozi se u kolonama u pokretu uz …"
+  "updated": "19.7.2026. 16:44",
+  "text": "Pojačan je promet na važnijim cestama u smjeru mora i unutrašnjosti, cestama u priobalju te na većini graničnih prijelaza. Zastoji i kolone su u zonama radova i privremene regulacije prometa te na autocestama u zonama naplata, odmorišta i tunela. U uvjetima povećane gustoće prometa pozivamo vozače da prilagode brzinu i način vožnje uvjetima na cestama, stanju kolnika i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik prometna nesreća na 4.+950 km, prije naplate Demerje u smjeru Zagreba, vozi se po dvije trake, uz ograničenje brzine 80 km/h vozi se u kolonama u pokretu uz povremene zastoje između čvorova Ogulin i Bosiljevo I te između čvora Ka…"
  },
  {
   "title": "Granični prijelazi",
