@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-19T10:13:04.139Z";
+export const PROMET_SI_UPDATED = "2026-07-19T11:28:19.104Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;864362;b2e98dc2-bead-4861-b85a-917e7573bc83",
@@ -35,28 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-12-05T07:23:21.813Z",
   "end": "2026-07-19T16:00:00Z",
   "ts": "2026-07-19T05:15:36.02Z"
- },
- {
-  "id": "DARS;864352;cf3a77b9-2b39-41b0-87b5-7a9f1ac83d4a",
-  "type": "MaintenanceWorks",
-  "desc": "G1-1, Maribor (Koroški most - cesta Proletarskih Brigad), v Mariboru, cesta Proletarskih Brigad, oviran promet, barvanje talnih označb, do 13:00.",
-  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
-  "lat": 46.54595,
-  "lng": 15.61982,
-  "start": "2026-07-19T03:34:01.527Z",
-  "end": "2026-07-19T11:00:00Z",
-  "ts": "2026-07-19T03:35:11.653Z"
- },
- {
-  "id": "DARS;864347;15c5e456-59b2-40ac-a0bb-deeebc141cd3",
-  "type": "MaintenanceWorks",
-  "desc": "G1-1, Maribor - Dravograd, v Mariboru, na Koroški cesti, dela, oviran promet, do 19. 7. 2026.",
-  "loc": "G1-1, Ruta - Maribor (Koroški Most)",
-  "lat": 46.5627,
-  "lng": 15.6277,
-  "start": "2026-07-19T03:00:00Z",
-  "end": "2026-07-19T11:00:00Z",
-  "ts": "2026-07-18T21:19:25.513Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
