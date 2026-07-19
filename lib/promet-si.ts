@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-19T15:44:39.545Z";
+export const PROMET_SI_UPDATED = "2026-07-19T16:36:22.729Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-22T06:28:52.303Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-07-19T15:00:30.533Z"
- },
- {
-  "id": "DARS;825661;81e9fbca-99cc-40dc-bc0e-f5de419109a0",
-  "type": "MaintenanceWorks",
-  "desc": "G1-5, Celje - Laško - Krško, na Polulah, oviran promet, izgradnja krožišča na Polulah, do 18:00.",
-  "loc": "G1-5, Celje - Šmarjeta",
-  "lat": 46.21651,
-  "lng": 15.26262,
-  "start": "2025-12-05T07:23:21.813Z",
-  "end": "2026-07-19T16:00:00Z",
-  "ts": "2026-07-19T05:15:36.02Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
