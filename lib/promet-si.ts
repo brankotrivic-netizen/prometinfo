@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-19T06:21:38.633Z";
+export const PROMET_SI_UPDATED = "2026-07-19T08:40:15.359Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;864362;b2e98dc2-bead-4861-b85a-917e7573bc83",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - izvoz 12 Dramlje v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.26797,
+  "lng": 15.19364,
+  "start": "2026-07-19T08:27:48.347Z",
+  "end": "2026-07-19T15:00:46.897Z",
+  "ts": "2026-07-19T08:27:58.95Z"
+ },
  {
   "id": "DARS;864365;ee55b0c7-3d93-4a64-998e-9ba7665df62f",
   "type": "MaintenanceWorks",
@@ -13,39 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-19T05:58:36.87Z",
   "end": "2026-07-19T12:17:12.63Z",
   "ts": "2026-07-19T05:58:59.143Z"
- },
- {
-  "id": "DARS;864362;b2e98dc2-bead-4861-b85a-917e7573bc83",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - izvoz 12 Dramlje v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.26797,
-  "lng": 15.19364,
-  "start": "2026-07-19T05:40:55.053Z",
-  "end": "2026-07-19T15:00:46.897Z",
-  "ts": "2026-07-19T05:41:02.29Z"
- },
- {
-  "id": "DARS;864361;26628c62-22d1-4751-9395-036d155c740c",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, zaprt odstavni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.15299,
-  "lng": 14.47879,
-  "start": "2026-07-19T05:36:13.31Z",
-  "end": "2026-07-19T11:00:00Z",
-  "ts": "2026-07-19T05:36:19.883Z"
- },
- {
-  "id": "DARS;864358;ef07df26-c508-4ccc-a3bb-7dc6ff700394",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, uvoz Divača - uvoz Divača v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.66529,
-  "lng": 13.96699,
-  "start": "2026-07-19T05:29:28.013Z",
-  "end": "2026-07-19T12:00:12.123Z",
-  "ts": "2026-07-19T05:29:31.48Z"
  },
  {
   "id": "DARS;825661;81e9fbca-99cc-40dc-bc0e-f5de419109a0",
