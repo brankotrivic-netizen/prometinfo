@@ -3,7 +3,7 @@ export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "1GP BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 120 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policij…"
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 180 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policij…"
  },
  {
   "title": "1GP KELEBIJA Srbija-Mađarska",
@@ -15,15 +15,15 @@ export const AMSS_REPORTS: AmssReport[] = [
  },
  {
   "title": "1GP GRADINA (Dimitrovgrad Srbija Bugarska AP E80)",
-  "text": "Prema poslednjim informacijama Uprave granične policije zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije - oko 180 minuta; 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min; Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vreme potrebno za prolaz i njihovih terminala. Zadržavanje t…"
+  "text": "Prema poslednjim informacijama Uprave granične policije zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije - oko 180 minuta (međuzona je popunjena) 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min; Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vreme potrebno za prolaz i njihovih t…"
  },
  {
   "title": "1GP HORGOŠ SRBIJA MAĐARSKA AP A1, E-75",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta (međuzona je popunjena) Na TERETNIM terminalima : 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vrem…"
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta (međuzona je popunjena) Na TERETNIM terminalima : 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 90 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vrem…"
  },
  {
   "title": "1GP ŠID sa hrvatske strane GP Tovarnik",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min . Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 120 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri u…"
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min . Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri ut…"
  },
  {
   "title": "1GP BEZDAN ( Srbija- Hrvatska ) M-18",
@@ -182,6 +182,14 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Prelaz SKELOM - Radi svakog dana od 07,00 do 20,00 sati. - NEPARNIM satima skela kreće iz Srbije, a - PARNIM satima iz Republike Srpske. - Ukupno ima 14 polazaka skele (po 7 sa svake strane). Izvor:UGP"
  },
  {
+  "title": "granični prelaz Batrovci-petlja Dobanovci, radovi",
+  "text": "Od 20. 7. do 31. 7. 2026. godine, izvodiće se radovi na redovnom održavanju zaštitne odbojne ograde u razdelnom pojasu, na delu auto-puta E-70, na deonici petlja Dobanovci - g.p. Batrovci, u oba smera. Shodno dinamici radova, u dužini do 200 metara za saobraćaj će biti zatvorena preticajna ili zaustavna saobraćajna traka. Izvor Putevi Srbije"
+ },
+ {
+  "title": "Petlja Drenovac - kružna raskrsnica Šabac,radovi u oba smera",
+  "text": "Od 20. 7. do 31. 7. 2026. godine, izvodiće se radovi na redovnom održavanju zaštitne odbojne ograde u razdelnom pojasu, na delu moto-puta na deonici petlja Drenovac - kružna raskrsnica šabac, u oba smera. Shodno dinamici radova, u dužini do 200 metara za saobraćaj će biti zatvorena preticajna ili zaustavna saobraćajna traka. Putevi Srbije"
+ },
+ {
   "title": "Petlja Ostružnica - V faza radova",
   "text": "Od 20. 7. 2026. od 8 č do 25. 7. 2026. do 16 č, izvodiće se radovi faze 5, na rehabilitaciji kompletne petlje Ostružnica, na državnom putu I A reda broj 1. Tokom izvođenja radova, na petlji Ostružnica saobraćaj će se odvijati u sledećem režimu: - Iz Obrenovca u smeru ka Beogradu, sa Savske magistrale biće zatvoreno uključenje na petlju Ostružnica, - U delu rampe sa dve saobraćajne trake, za saobraćaj će biti zatvorena desna, dok će se saobraćaj odvijati levom saobraćajnom trakom. Alternativni pu…"
  },
@@ -232,13 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Krnjača- Beograd( Bogoslovija), radovi",
   "text": "Dana 5.7.2026. godine, u periodu od 6.30 do 16 časova, vršiti specijalizovani pregled konstrukcije Pančevačkog mosta na petlji Krnjača Beograd (Bogoslovija), u smeru ka Pančevu. Tokom izvođenja radova, saobraćaj će se odvijati slobodnom saobraćajnom trakom. Izvor: Putevi Srbije"
- },
- {
-  "title": "petlja Krnjača-Beograd(Bogoslovija)",
-  "text": "Izvodiće se radovi na dilatacionim spojnicama na petlji Krnjača Beograd (Bogoslovija), na deonici od petlje Krnjača do početka čelične konstrukcije Pančevačkog mosta, u smeru Pančevo Beograd: -4/5.7.2026. godine, u periodu od 20 do 5 časova, -5/6.7.2026. godine, u periodu od 20 do 5 časova, -6/7.7.2026. godine, u periodu od 20 do 5 časova. Tokom izvođenja radova, saobraćaj će se odvijati slobodnom saobraćajnom trakom. Izvor Putevi Srbije"
- },
- {
-  "title": "Sremska Mitrovica-Jarak, OBUSTAVA",
-  "text": "Do 20. 7. 2026. zbog radova na rehabilitaciji, saobraćaj će biti obustavljen na putu II B reda broj 316, Sremska Mitrovica - Jarak, u mestu Jarak, od raskrsnice sa državnim putem I B reda broj 21 do izlaza iz Jarka. Alternativni putni pravci su državni put II A reda broj 120, Sremska Mitrovica - Ruma, pa državni put I B reda broj 21, Ruma - Jarak. Izvor Putevi Srbije"
  }
 ];
