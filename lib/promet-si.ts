@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-20T18:18:27.614Z";
+export const PROMET_SI_UPDATED = "2026-07-20T20:02:29.455Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;864736;d77a5ab1-a783-4438-8a0f-afbf8ceec848",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, pred priključkom Sl. Bistrica sever v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.39936,
+  "lng": 15.60424,
+  "start": "2026-07-20T18:23:41.6Z",
+  "end": "2026-07-21T00:00:00Z",
+  "ts": "2026-07-20T18:23:46.683Z"
+ },
  {
   "id": "DARS;864733;470f36af-e86d-4286-8fee-5306aa7ad445",
   "type": "MaintenanceWorks",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-20T17:48:02.217Z",
   "end": "2026-07-21T01:00:00Z",
   "ts": "2026-07-20T17:48:08.517Z"
- },
- {
-  "id": "DARS;864730;794e0b40-6edc-44d5-b0e5-0f97319af42d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana Bizovik - priključek Ljubljana vzhod v smeri Zadobrove, dela, oviran promet, košnja.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.04587,
-  "lng": 14.57622,
-  "start": "2026-07-20T17:33:05.737Z",
-  "end": "2026-07-20T23:00:00Z",
-  "ts": "2026-07-20T17:33:18.323Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
