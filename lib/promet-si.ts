@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-20T14:31:37.130Z";
+export const PROMET_SI_UPDATED = "2026-07-20T16:12:42.616Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;864565;5c788c98-ad9d-4c3e-a450-001929e1fda8",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Kastelec - priključek Črni Kal v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.574,
-  "lng": 13.8711,
-  "start": "2026-07-20T06:53:00.777Z",
-  "end": "2026-07-20T16:00:00Z",
-  "ts": "2026-07-20T11:57:15.17Z"
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-20T15:00:04.533Z"
  },
  {
   "id": "DARS;864618;4d6d0ec9-4d5e-491b-86c6-87b83391d9ec",
@@ -112,28 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-20T06:16:20.997Z",
   "end": "2026-12-02T22:59:00Z",
   "ts": "2026-07-20T06:16:40.237Z"
- },
- {
-  "id": "DARS;826838;1cd0efe8-ec2a-4b61-a9b4-561ea0a3b25c",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-112, Holmec - Poljana, na Poljani, izmenično enosmerni promet, gradnje krožišča in rekonstrukcije ceste, do 17:00.",
-  "loc": "G2-112, Holmec - Poljana",
-  "lat": 46.54554,
-  "lng": 14.86971,
-  "start": "2025-12-15T06:38:37.72Z",
-  "end": "2026-07-20T15:00:00Z",
-  "ts": "2026-07-20T05:29:07.913Z"
- },
- {
-  "id": "DARS;864522;ed48a7ef-2527-480d-ac35-1359e7211b47",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-103, Nova Gorica - Tolmin, Ročinj - Sela pri Volčah, izmenično enosmerni promet, košnja, do 17:00.",
-  "loc": "G2-103, Ušnik - Plave",
-  "lat": 46.10838,
-  "lng": 13.67183,
-  "start": "2026-07-20T05:16:04.72Z",
-  "end": "2026-07-20T15:00:00Z",
-  "ts": "2026-07-20T05:16:56.98Z"
  },
  {
   "id": "DARS;864513;d1f34f59-9785-4b75-a484-e80e533f8e51",
