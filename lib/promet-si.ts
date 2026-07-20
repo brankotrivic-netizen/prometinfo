@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-20T20:02:29.455Z";
+export const PROMET_SI_UPDATED = "2026-07-20T21:21:49.956Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;864736;d77a5ab1-a783-4438-8a0f-afbf8ceec848",
+  "id": "DARS;864531;025c07ad-2580-43ad-8012-c679cb02fe67",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, pred priključkom Sl. Bistrica sever v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.39936,
-  "lng": 15.60424,
-  "start": "2026-07-20T18:23:41.6Z",
-  "end": "2026-07-21T00:00:00Z",
-  "ts": "2026-07-20T18:23:46.683Z"
+  "desc": "A2, Obrežje - Ljubljana, priključek Trebnje zahod - priključek Bič v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.92077,
+  "lng": 14.94509,
+  "start": "2026-07-20T20:12:20.973Z",
+  "end": "2026-07-21T03:00:20.79Z",
+  "ts": "2026-07-20T20:12:22.813Z"
  },
  {
   "id": "DARS;864733;470f36af-e86d-4286-8fee-5306aa7ad445",
