@@ -1,29 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-21T18:56:26.780Z";
+export const PROMET_SI_UPDATED = "2026-07-21T20:15:07.494Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;864942;a22a378e-d907-437f-9024-c2daf48bf018",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, razcep Malence - razcep Malence iz smeri Rudnika proti Golovcu, dela, zaprt vozni pas.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.0136,
-  "lng": 14.55699,
-  "start": "2026-07-21T18:53:53.61Z",
-  "end": "2026-07-21T19:57:24.857Z",
-  "ts": "2026-07-21T18:53:57.997Z"
- },
  {
   "id": "DARS;864941;26f5b02f-d5cf-4be5-8225-d18769829165",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Žalec, Arja vas - priključek Dramlje v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
+  "desc": "A1, Ljubljana - Maribor, priključek Sl. Konjice - razcep Slivnica v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
   "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.26775,
-  "lng": 15.19617,
+  "lat": 46.34306,
+  "lng": 15.481,
   "start": "2026-07-21T18:36:30.45Z",
   "end": "2026-07-21T23:30:38.163Z",
-  "ts": "2026-07-21T18:36:52.347Z"
+  "ts": "2026-07-21T19:36:46.853Z"
+ },
+ {
+  "id": "DARS;864945;0af53601-34ce-493e-883f-7803f2fb31b6",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Koper - Škofije, priključek Koper center, Slavček - uvoz Bertoki v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "G1-11, Koper - Škofije",
+  "lat": 45.54476,
+  "lng": 13.75794,
+  "start": "2026-07-21T19:17:23.123Z",
+  "end": "2026-07-21T21:59:55.17Z",
+  "ts": "2026-07-21T19:17:26.54Z"
  },
  {
   "id": "DARS;864939;40d60676-37a7-469b-8212-c0c7b54ca398",
