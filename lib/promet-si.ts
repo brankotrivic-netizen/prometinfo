@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-21T14:54:19.573Z";
+export const PROMET_SI_UPDATED = "2026-07-21T16:14:11.022Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-21T15:00:21.4Z"
+ },
  {
   "id": "DARS;864861;9474f153-88c6-4698-87e9-1b4d05b51078",
   "type": "MaintenanceWorks",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-21T07:04:15.567Z",
   "end": "2026-08-14T15:00:00Z",
   "ts": "2026-07-21T07:07:42.817Z"
- },
- {
-  "id": "DARS;864806;3e8e92d3-ebef-4b04-a2f4-bd6aa846c675",
-  "type": "MaintenanceWorks",
-  "desc": "G2-104, Trzin - Črnuče, na trzinski obvoznici, proti Ljubljani, zaprt en prometni pas, vzdrževalna dela, do 17:00.",
-  "loc": "G2-104, Trzin - Ljubljana (Črnuče)",
-  "lat": 46.11773,
-  "lng": 14.54974,
-  "start": "2026-07-21T06:18:11.947Z",
-  "end": "2026-07-21T15:00:00Z",
-  "ts": "2026-07-21T06:19:04.997Z"
  },
  {
   "id": "DARS;864787;b66505d5-19dd-4ba4-906c-fdce54538be3",
