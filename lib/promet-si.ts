@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-21T16:14:11.022Z";
+export const PROMET_SI_UPDATED = "2026-07-21T17:45:27.709Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;864935;c7dac140-dbfe-464f-8dce-bcb02ef12d7e",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Jesenice zahod - predor Karavanke v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.44537,
+  "lng": 14.01213,
+  "start": "2026-07-21T17:30:31.537Z",
+  "end": "2026-07-22T02:55:52.753Z",
+  "ts": "2026-07-21T17:31:07.883Z"
+ },
+ {
+  "id": "DARS;864934;1fbff92e-be94-45e4-9844-ba5c2e735ff2",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Logatec - priključek Vrhnika v smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.91973,
+  "lng": 14.26617,
+  "start": "2026-07-21T17:18:22.733Z",
+  "end": "2026-07-21T23:00:00Z",
+  "ts": "2026-07-21T17:18:31.523Z"
+ },
+ {
+  "id": "DARS;864925;166ae602-f595-4b4c-91b9-d4af21bf76ef",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, počivališče Ravbarkomanda - priključek Unec v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.7881,
+  "lng": 14.22524,
+  "start": "2026-07-21T16:15:58.767Z",
+  "end": "2026-07-22T21:30:00Z",
+  "ts": "2026-07-21T16:16:21.36Z"
+ },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
   "type": "RoadOrCarriagewayOrLaneManagement",
