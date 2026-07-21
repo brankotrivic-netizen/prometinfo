@@ -66,8 +66,12 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji dodatne trake za spora vozila na magistralnom putu Podromanija-Sumbulovac, prevoj Romanija (uspon iz pravca Podromanije) dolazit će do povremenih obustava saobraćaja."
    },
    {
-    "title": "Crna Rijeka- Jajce",
+    "title": "Crna Rijeka- Jajce (Podmilačje)",
     "text": "Danas počinju radovi na sanaciji škarpi na magistralnoj cesti Crna Rijeka – Jajce (u Podmilačju), zbog čega će se na mjestu radova saobraćati usporeno, naizmjeničnim propuštanjem vozila."
+   },
+   {
+    "title": "Sarajevo-Lapišnica",
+    "text": "Na magistralnoj cesti Sarajevo-Lapišnica, zbog postavljanja rasvjete u tunelu Vratnik svakog radnog dana od 07 do 16 sati saobraća se usporeno, jednom trakom."
    },
    {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
@@ -101,6 +105,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Gračanica-Srnice",
     "text": "U mjestu Bukva izvode se radovi zbog čega se u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
+   },
+   {
+    "title": "Visoko-Kiseljak",
+    "text": "Na regionalnoj cesti Visoko-Kiseljak zbog ispitivanja mosta (most preko Bosne kod objekta Berlijeta u Visokom) danas (21.07.) od 09 do 15 sati vozila će povremeno saobraćati jednom trakom, a u vrijeme obustave u funkciji je alternativni pravac u blizini."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
