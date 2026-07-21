@@ -103,10 +103,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U mjestu Bukva izvode se radovi zbog čega se u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
    },
    {
-    "title": "Visoko-Kiseljak",
-    "text": "Na regionalnoj cesti Visoko-Kiseljak zbog ispitivanja mosta (most preko Bosne kod objekta Berlijeta u Visokom) danas (21.07.) od 09 do 15 sati vozila će povremeno saobraćati jednom trakom, a u vrijeme obustave u funkciji je alternativni pravac u blizini."
-   },
-   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
