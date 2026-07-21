@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-21T21:33:52.712Z";
+export const PROMET_SI_UPDATED = "2026-07-21T22:34:20.844Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;864939;40d60676-37a7-469b-8212-c0c7b54ca398",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-21T18:13:31.833Z",
   "end": "2026-07-22T05:00:00Z",
   "ts": "2026-07-21T20:36:02.037Z"
- },
- {
-  "id": "DARS;864938;192905cc-6b29-41f5-ad63-79ae8ef80006",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, razcep Slivnica - priključek Sl. Konjice v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.47451,
-  "lng": 15.65773,
-  "start": "2026-07-21T18:01:47.29Z",
-  "end": "2026-07-21T23:30:23.717Z",
-  "ts": "2026-07-21T20:20:46.793Z"
  },
  {
   "id": "DARS;864935;c7dac140-dbfe-464f-8dce-bcb02ef12d7e",
@@ -156,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-20T07:06:28.867Z",
   "end": "2026-09-11T21:59:00Z",
   "ts": "2026-07-20T07:07:44.2Z"
- },
- {
-  "id": "DARS;863554;698afbcf-8624-4652-98e2-a9b493d573b8",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-642, Ig - Ljubljana, pri odcepu za Mateno, izmenično enosmerni promet, izgradnja plinovoda, do 21. 7. 2026.",
-  "loc": "R3-642, Ig - Ljubljana (Peruzzijeva)",
-  "lat": 45.99905,
-  "lng": 14.51707,
-  "start": "2026-07-15T08:47:15.067Z",
-  "end": "2026-07-21T21:59:00Z",
-  "ts": "2026-07-20T07:05:34.563Z"
  },
  {
   "id": "DARS;864545;3f090035-f3fd-4556-b6e0-79417bc24fc8",
