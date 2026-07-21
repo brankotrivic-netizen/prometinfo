@@ -5,10 +5,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "label": "Autoceste",
   "items": [
    {
-    "title": "Podlugovi-Sarajevo sjever",
-    "text": "Zbog izgradnje bukobrana na mjestu radova saobraća se preticajnom trakom."
-   },
-   {
     "title": "Kakanj-Lašva",
     "text": "Zbog izvođenja radova na sanaciji kolovoza na dionici autoceste A-1 Kakanj-Lašva, u dužini od 3 km zatvorena je lijeva strana autoceste. Za vrijeme radova vozila se usmjeravaju dvosmjerno-desnom stranom, smjer Lašva-Kakanj."
    },

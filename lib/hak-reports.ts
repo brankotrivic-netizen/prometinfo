@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.7.2026. 13:14",
-  "text": "Kolnici su mjestimice mokri ili samo vlažni i skliski. U priobalju puše bura, zabrane su za pojedine skupine vozila samo na Jadranskoj magistrali (vidjeti niže u Izvješću!). Vozačima savjetujemo da brzinu i način vožnje prilagode uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: autocesta A2 Zagreb -Macelj: na čvoru Zagreb zapad kolona u smjeru Zagreba duga je oko 1 km (zbog radova na zagrebačkoj obilaznici) na staroj kliškoj cesti (ŽC6253) vozi se otežano zbog autobusa (6+250 km) i cisterne u kvaru (6+350 km) zbog vozila u kvaru na državnoj cesti DC1 na vijaduktu Jamani u smjeru Klisa, vozi se uz privremenu regulaciju prometa AUTOCESTE A1 Zagreb…"
+  "updated": "21.7.2026. 14:46",
+  "text": "Kolnici su mjestimice mokri ili samo vlažni i skliski. U priobalju puše bura, zabrane su za pojedine skupine vozila samo na Jadranskoj magistrali (vidjeti niže u Izvješću!). Vozačima savjetujemo da brzinu i način vožnje prilagode uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zagrebačka obilaznica (A3): zona radova između čvorova Jankomir i Lučko u oba smjera (vozi se suženim tracima). Tijekom dana uz veću gustoću prometa vozi se usporeno u kolonama, korisnike molimo za strpljenje predmet na autocesti A1 između tunela Dubrave i čvora Prgomet na kolniku u smjeru Dubrovnika. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 60 km/h…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "21.7.2026. 12:21",
+  "updated": "21.7.2026. 14:30",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "21.7.2026. 12:21",
+  "updated": "21.7.2026. 14:38",
   "text": "U prekidu je katamaranska linija Jadrolinije Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun. Ostale linije plove redovito. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "21.7.2026. 12:20",
+  "updated": "21.7.2026. 14:18",
   "text": "Stanje u željezničkom putničkom prometu 21. srpnja 2026. u 8.00 sati Zbog tehničkih poteškoća, putnici vlaka 521 Zagreb GK 7.08 sati - Split 14.09 sati bit će prevezeni autobusom. Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Između kolodvora Križevci – Koprivnica i obratno, Križevci – Novo Drnje i obrat…"
  },
  {
