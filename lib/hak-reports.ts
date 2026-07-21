@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.7.2026. 19:12",
-  "text": "Konici su mjestimice mokri i skliski. Zbog bure u priobalju, zabrane su za pojedine skupine vozila na pojedinim dionicama Jadranske magistrale (vidjeti niže u Izvješću!). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na zagrebačkoj obilaznici ( A3) između čvora Zagreb zapad i čvora Lučko ( na 16+100 km) u smjeru Lipovca, vozi se po dvije prometne trake uz ograničenje brzine zbog prometne nesreće na državnoj cesti između čvora Škurinje i tunela Podmurvice (DC403 ) u Rijeci vozi se otežano. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključivanja izvanrednih p…"
+  "updated": "21.7.2026. 20:37",
+  "text": "Konici su mjestimice mokri i skliski. Zbog bure u priobalju, zabrane su za pojedine skupine vozila na pojedinim dionicama Jadranske magistrale i Krčkom mostu (vidjeti niže u Izvješću!). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 minuta po zaustavljanju do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uklju…"
  },
  {
   "title": "Granični prijelazi",

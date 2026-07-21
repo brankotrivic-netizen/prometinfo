@@ -2,19 +2,6 @@
 export interface BihReportGroup { label: string; items: { title: string; text: string }[] }
 export const BIHAMK_REPORTS: BihReportGroup[] = [
  {
-  "label": "Autoceste",
-  "items": [
-   {
-    "title": "Kakanj-Lašva",
-    "text": "Zbog izvođenja radova na sanaciji kolovoza na dionici autoceste A-1 Kakanj-Lašva, u dužini od 3 km zatvorena je lijeva strana autoceste. Za vrijeme radova vozila se usmjeravaju dvosmjerno-desnom stranom, smjer Lašva-Kakanj."
-   },
-   {
-    "title": "Sarajevo zapad-Lepenica",
-    "text": "Zbog izvođenja neophodnih radova na A-1 Sarajevo zapad-Lepenica, saobraćaj je preusmjeren u preticajnu traku."
-   }
-  ]
- },
- {
   "label": "Magistralne ceste",
   "items": [
    {
