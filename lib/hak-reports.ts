@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.7.2026. 21:44",
+  "updated": "21.7.2026. 23:25",
   "text": "Konici su mjestimice mokri i skliski. Zbog bure u priobalju, zabrane su za pojedine skupine vozila na pojedinim dionicama Jadranske magistrale i Krčkom mostu (vidjeti niže u Izvješću!). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 minuta po zaustavljanju do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uklju…"
  },
  {
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "21.7.2026. 21:44",
-  "text": "U prekidu je katamaranska linija Jadrolinije Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun. Ostale linije plove redovito. Zbog loših vremenskih uvjeta, trajekt Jadrolinije Ploče-Trpanj vratit će se večeras u luku Ploče na siguran vez te će ujutro isploviti u 05:30 za Trpanj zbog uspostave redovne linije u 06:45 Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 24.07.(petak), 25.07.(subota) i 26.07.(nedjelja): - 24. srpnja 2026. godine (petak) trajekt će iz luke Zadar/Gaženica za luku Iž Mali/bršanj isploviti u 10:00 sati, a iz luke Iž Mali/Bršanj za luku Zadar/Gaženica u 11:30 sati; - 25. srpnja 2026.…"
+  "updated": "21.7.2026. 22:55",
+  "text": "U prekidu je katamaranska linija Jadrolinije Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun. Ostale linije plove redovito. Zbog loših vremenskih uvjeta, trajekt Jadrolinije Ploče-Trpanj vratit će se večeras u luku Ploče na siguran vez te će ujutro isploviti u 05:30 za Trpanj zbog uspostave redovne linije u 06:45 . Trajektna Jadrolinije Stari Grad - Split zbog nepovoljnih vremenskih uvjeta će iz luke Stari Grad isploviti u 00:30 sati umijesto u 23:00 sata te iz luke Split u 03:00 sata umijesto u 01:30 sati. Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 24.07.(petak), 25.07.(subota) i 26.07.(nedjelja…"
  },
  {
   "title": "Željeznički promet",
