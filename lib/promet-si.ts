@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-22T20:05:25.110Z";
+export const PROMET_SI_UPDATED = "2026-07-22T21:20:33.365Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;865158;1fcb6457-8b3e-4f3d-84ed-b80efe9349f8",
+  "id": "DARS;865170;5e205908-1d19-42e8-8519-1d06cb466879",
   "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, uvoz Sv. Trojica v smeri Maribora, dela, oviran promet.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.56097,
-  "lng": 15.86852,
-  "start": "2026-07-22T17:25:43.423Z",
-  "end": "2026-07-22T23:00:00Z",
-  "ts": "2026-07-22T17:25:47.51Z"
- },
- {
-  "id": "DARS;865157;ca38f10d-e5f2-4cc2-b45d-e019d806f069",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, izvoz Sv. Trojica iz smeri Lendave, dela, oviran promet.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.56112,
-  "lng": 15.86913,
-  "start": "2026-07-22T17:25:31.977Z",
-  "end": "2026-07-22T23:00:00Z",
-  "ts": "2026-07-22T17:25:38.853Z"
+  "desc": "A2, Ljubljana - Karavanke, pred priključkom Naklo v smeri Karavank, Avstrije, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.2764,
+  "lng": 14.317,
+  "start": "2026-07-22T20:27:58.11Z",
+  "end": "2026-07-23T02:00:00Z",
+  "ts": "2026-07-22T20:28:05.883Z"
  },
  {
   "id": "DARS;865155;e8367117-347f-4bf4-bf19-298c3fc41eb2",
