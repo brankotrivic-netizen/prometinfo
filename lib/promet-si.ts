@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-22T14:54:26.759Z";
+export const PROMET_SI_UPDATED = "2026-07-22T16:13:20.593Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;865118;a67048b6-4d47-4eb8-808c-1b34ff556041",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana, Ind. cona Šiška - uvoz Ljubljana Bežigrad v smeri Zadobrove, dela, oviran promet, ročna košnja.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.08252,
-  "lng": 14.49012,
-  "start": "2026-07-22T13:41:24.96Z",
-  "end": "2026-07-22T19:00:00Z",
-  "ts": "2026-07-22T13:41:39.217Z"
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-22T15:00:07.79Z"
  },
  {
   "id": "DARS;865014;4c2c4af0-fd61-4a20-b884-f6ec470ac062",
@@ -35,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-22T05:50:11.943Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-07-22T05:53:41.023Z"
- },
- {
-  "id": "DARS;864991;e71c2ab3-32ee-46f6-ad98-fd26b894e535",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-604, Ročinj - Lig, na Kambreškem, izmenično enosmerni promet, košnja, do 17:00.",
-  "loc": "R3-604, Ročinj - Lig",
-  "lat": 46.12797,
-  "lng": 13.64903,
-  "start": "2026-07-22T05:32:40.57Z",
-  "end": "2026-07-22T15:00:00Z",
-  "ts": "2026-07-22T05:33:08.5Z"
  },
  {
   "id": "DARS;864861;9474f153-88c6-4698-87e9-1b4d05b51078",
