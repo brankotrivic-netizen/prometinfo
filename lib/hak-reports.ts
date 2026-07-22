@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.7.2026. 23:18",
-  "text": "Povremeno je pojačan promet na gradskim prometnicama i obilaznicama, prilazima turističkim središtima te u pojedinim trajektnim lukama i pristaništima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 minuta po zaustavljanju do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na…"
+  "updated": "23.7.2026. 00:03",
+  "text": "Povremeno je pojačan promet na gradskim prometnicama i obilaznicama, prilazima turističkim središtima te u pojedinim trajektnim lukama i pristaništima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: životinja (srna) na autocesti A3 na 182+000 km između čvora Lužani i čvora Nova Gradiška na kolniku u smjeru Bregane - promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h prometna nesreća na autocesti A3 Bregana-Lipovac na 14+700 km, između čvora Zagreb zapad i čvora Lučko na kolniku u smjeru Lipovca - promet se vodi jednom prometnom trakom uz ograničenje brzine od 60 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI …"
  },
  {
   "title": "Granični prijelazi",

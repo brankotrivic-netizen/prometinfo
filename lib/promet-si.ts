@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-22T21:20:33.365Z";
+export const PROMET_SI_UPDATED = "2026-07-22T22:31:05.493Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;865170;5e205908-1d19-42e8-8519-1d06cb466879",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, pred priključkom Naklo v smeri Karavank, Avstrije, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.2764,
-  "lng": 14.317,
-  "start": "2026-07-22T20:27:58.11Z",
-  "end": "2026-07-23T02:00:00Z",
-  "ts": "2026-07-22T20:28:05.883Z"
- },
  {
   "id": "DARS;865155;e8367117-347f-4bf4-bf19-298c3fc41eb2",
   "type": "MaintenanceWorks",
@@ -992,17 +981,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-18T06:46:51.863Z",
   "end": "2026-07-30T17:00:00Z",
   "ts": "2026-06-18T06:48:12.597Z"
- },
- {
-  "id": "DARS;858095;d421a96c-ca30-4443-9b9d-480765d9ea10",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-447, Lukovica - Domžale, pri Trojanah, izmenično enosmerni promet, obnova viadukta, do 22. 7. 2026.",
-  "loc": "R2-447, Trojane - Želodnik",
-  "lat": 46.18649,
-  "lng": 14.87791,
-  "start": "2026-06-18T05:48:26.233Z",
-  "end": "2026-07-22T21:59:00Z",
-  "ts": "2026-06-18T05:48:59.193Z"
  },
  {
   "id": "DARS;830910;5917bcbf-b19e-415f-8305-100349050b78",
