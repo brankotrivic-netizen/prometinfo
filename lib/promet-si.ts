@@ -1,41 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-22T18:46:39.750Z";
+export const PROMET_SI_UPDATED = "2026-07-22T20:05:25.110Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;865162;a473d7ff-58e1-43f9-a042-e99da7ba48f8",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Dragomer - priključek Brezovica v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.02301,
-  "lng": 14.4211,
-  "start": "2026-07-22T18:14:42.803Z",
-  "end": "2026-07-23T00:00:00Z",
-  "ts": "2026-07-22T18:14:50.903Z"
- },
- {
-  "id": "DARS;865161;b13e1fc1-265d-4fd2-95b2-589c97128d75",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Naklo - priključek Kranj zahod v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.28075,
-  "lng": 14.29419,
-  "start": "2026-07-22T17:53:26.867Z",
-  "end": "2026-07-23T00:00:35.473Z",
-  "ts": "2026-07-22T17:55:01.267Z"
- },
- {
-  "id": "DARS;865159;1fa3cac7-6eca-42cb-9b7b-7f749ba4866a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Konjice v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.39468,
-  "lng": 15.59685,
-  "start": "2026-07-22T17:30:45.437Z",
-  "end": "2026-07-22T21:30:23.343Z",
-  "ts": "2026-07-22T17:35:09.097Z"
- },
  {
   "id": "DARS;865158;1fcb6457-8b3e-4f3d-84ed-b80efe9349f8",
   "type": "MaintenanceWorks",
@@ -68,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-22T17:20:47.63Z",
   "end": "2026-07-22T23:00:33.917Z",
   "ts": "2026-07-22T17:20:55.477Z"
- },
- {
-  "id": "DARS;865150;0b409e42-74a5-4dac-939d-aaf9277dfa1e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Divača - izvoz 46 Divača, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.67134,
-  "lng": 13.96769,
-  "start": "2026-07-22T16:51:15.913Z",
-  "end": "2026-07-22T21:00:21.66Z",
-  "ts": "2026-07-22T16:51:28.88Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
