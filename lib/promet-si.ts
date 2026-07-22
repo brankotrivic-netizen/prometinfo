@@ -1,8 +1,74 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-22T16:13:20.593Z";
+export const PROMET_SI_UPDATED = "2026-07-22T17:41:27.069Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;865159;1fa3cac7-6eca-42cb-9b7b-7f749ba4866a",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Konjice v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.39468,
+  "lng": 15.59685,
+  "start": "2026-07-22T17:30:45.437Z",
+  "end": "2026-07-22T21:30:23.343Z",
+  "ts": "2026-07-22T17:35:09.097Z"
+ },
+ {
+  "id": "DARS;865158;1fcb6457-8b3e-4f3d-84ed-b80efe9349f8",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, uvoz Sv. Trojica v smeri Maribora, dela, oviran promet.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.56097,
+  "lng": 15.86852,
+  "start": "2026-07-22T17:25:43.423Z",
+  "end": "2026-07-22T23:00:00Z",
+  "ts": "2026-07-22T17:25:47.51Z"
+ },
+ {
+  "id": "DARS;865157;ca38f10d-e5f2-4cc2-b45d-e019d806f069",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, izvoz Sv. Trojica iz smeri Lendave, dela, oviran promet.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.56112,
+  "lng": 15.86913,
+  "start": "2026-07-22T17:25:31.977Z",
+  "end": "2026-07-22T23:00:00Z",
+  "ts": "2026-07-22T17:25:38.853Z"
+ },
+ {
+  "id": "DARS;865155;e8367117-347f-4bf4-bf19-298c3fc41eb2",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Žalec, Arja vas - priključek Žalec, Arja vas v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.26853,
+  "lng": 15.18625,
+  "start": "2026-07-22T17:20:47.63Z",
+  "end": "2026-07-22T23:00:33.917Z",
+  "ts": "2026-07-22T17:20:55.477Z"
+ },
+ {
+  "id": "DARS;865152;750dc82d-a9e2-4256-b4af-55556be3d99c",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Ivančna Gorica - izvoz Višnja Gora v smeri Ljubljane, dela, zaprt odstavni pas, strojno pometanje.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.93474,
+  "lng": 14.80301,
+  "start": "2026-07-22T16:53:41.233Z",
+  "end": "2026-07-22T23:00:31.107Z",
+  "ts": "2026-07-22T16:53:59.07Z"
+ },
+ {
+  "id": "DARS;865150;0b409e42-74a5-4dac-939d-aaf9277dfa1e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Divača - izvoz 46 Divača, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.67134,
+  "lng": 13.96769,
+  "start": "2026-07-22T16:51:15.913Z",
+  "end": "2026-07-22T21:00:21.66Z",
+  "ts": "2026-07-22T16:51:28.88Z"
+ },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
   "type": "RoadOrCarriagewayOrLaneManagement",
