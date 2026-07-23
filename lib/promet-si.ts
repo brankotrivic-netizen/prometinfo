@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-23T12:54:51.785Z";
+export const PROMET_SI_UPDATED = "2026-07-23T15:00:45.169Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;865239;cb28c512-1829-419f-9961-355c140bb216",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Razdrto - počivališče Studenec v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.76496,
+  "lng": 14.13034,
+  "start": "2026-07-23T06:44:01.543Z",
+  "end": "2026-07-23T17:00:00Z",
+  "ts": "2026-07-23T13:59:27.977Z"
+ },
  {
   "id": "DARS;773387;252cd393-09e6-43a1-9ca1-6de0a53209cd",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-05-07T17:00:00Z",
   "end": "2026-07-27T21:59:00Z",
   "ts": "2026-07-23T10:30:49.513Z"
- },
- {
-  "id": "DARS;865251;90ec2668-95d6-4df8-9c35-5de36443ca8b",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Most na Soči - Tolmin, pri Tolminu, izmenično enosmerni promet, košnja, do 15:00.",
-  "loc": "G2-102, Peršeti - Most na Soči",
-  "lat": 46.18299,
-  "lng": 13.71276,
-  "start": "2026-07-23T07:42:53.543Z",
-  "end": "2026-07-23T13:00:00Z",
-  "ts": "2026-07-23T07:43:49.637Z"
  },
  {
   "id": "DARS;864787;b66505d5-19dd-4ba4-906c-fdce54538be3",
@@ -48,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-23T06:48:52.203Z"
  },
  {
-  "id": "DARS;865239;cb28c512-1829-419f-9961-355c140bb216",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Razdrto - počivališče Studenec v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.76496,
-  "lng": 14.13034,
-  "start": "2026-07-23T06:44:01.543Z",
-  "end": "2026-07-23T14:00:16.837Z",
-  "ts": "2026-07-23T06:44:21.837Z"
- },
- {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
   "type": "MaintenanceWorks",
   "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Šentilj v smeri Maribora, dela, promet poteka po dveh zoženih pasovih.",
@@ -81,17 +70,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-23T06:36:32.06Z"
  },
  {
-  "id": "DARS;865235;e3d0d8fc-b434-468d-868c-46751de0d431",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-439, Križevci - Žihlava, izmenično enosmerni promet, barvanje talnih označb, do 15:00.",
-  "loc": "R2-439, Križevci - Žihlava",
-  "lat": 46.55416,
-  "lng": 16.14635,
-  "start": "2026-07-23T06:27:15.887Z",
-  "end": "2026-07-23T13:00:00Z",
-  "ts": "2026-07-23T06:33:34.933Z"
- },
- {
   "id": "DARS;865218;c82461a9-62d2-4c3e-a63a-3e1756fab8b2",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-647, Mlačevo - Rašica, pri Zdenski vasi, izmenično enosmerni promet, obnova daljnovoda, do 29. 7. 2026.",
@@ -103,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-23T05:34:16.627Z"
  },
  {
-  "id": "DARS;865216;d0d2ad36-eb63-4cff-b3f9-2a892944bd09",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-605, Kambreško - Livek, pri Pušnem, izmenično enosmerni promet, košnja, do 17:00.",
-  "loc": "R3-605, Kambreško - Kuščarji - Livek",
-  "lat": 46.14395,
-  "lng": 13.66627,
-  "start": "2026-07-23T05:31:05.823Z",
-  "end": "2026-07-23T15:00:00Z",
-  "ts": "2026-07-23T05:33:27.347Z"
- },
- {
   "id": "DARS;865211;7636038f-66a1-4308-b1db-22a2176aa97f",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-696, Velenje - Škale, pri Hrastovcu, izmenično enosmerni promet, kratkotrajne popolne zapore (do 15 minut), montaža daljnovoda, do 29. 7. 2026.",
@@ -123,50 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-23T05:25:06.067Z",
   "end": "2026-07-29T21:59:00Z",
   "ts": "2026-07-23T05:26:56.22Z"
- },
- {
-  "id": "DARS;865207;10f5c9e1-cb06-4bd2-849a-bf9e7f73c313",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, priključek Vogrsko - priključek Šempeter v smeri Vrtojbe, Italije, dela, zaprt vozni pas.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.91819,
-  "lng": 13.70718,
-  "start": "2026-07-23T05:19:12.023Z",
-  "end": "2026-07-23T17:00:00Z",
-  "ts": "2026-07-23T05:19:31.957Z"
- },
- {
-  "id": "DARS;865188;a1e839ec-2b99-4259-818f-349153fbce07",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-403, Bača pri Modreju - Petrovo Brdo, pri Klavžah, izmenično enosmerni promet, sečnja dreves, do 16:00.",
-  "loc": "R2-403, Bača - Kneža",
-  "lat": 46.16041,
-  "lng": 13.81248,
-  "start": "2026-07-23T04:28:53.077Z",
-  "end": "2026-07-23T14:00:00Z",
-  "ts": "2026-07-23T04:30:23.02Z"
- },
- {
-  "id": "DARS;865185;b957532a-f603-4daa-9d8f-80126924cf61",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Most na Soči - Tolmin, Podbreg - Poljubinj, izmenično enosmerni promet, košnja, do 15:00.",
-  "loc": "G2-102, Peršeti - Most na Soči",
-  "lat": 46.18383,
-  "lng": 13.73668,
-  "start": "2026-07-23T04:12:07.647Z",
-  "end": "2026-07-23T13:00:00Z",
-  "ts": "2026-07-23T04:14:41.877Z"
- },
- {
-  "id": "DARS;865183;5b418332-4027-4916-a19b-b06d61efadde",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-748, Lužarji - Nova vas, pri Karlovici, izmenično enosmerni promet, čiščenje jarkov, do 15:00.",
-  "loc": "R3-748, Velike Lašče - Lužarji - Nova Vas",
-  "lat": 45.80684,
-  "lng": 14.60357,
-  "start": "2026-07-23T04:06:42.027Z",
-  "end": "2026-07-23T13:00:00Z",
-  "ts": "2026-07-23T04:08:25.677Z"
  },
  {
   "id": "DARS;865014;4c2c4af0-fd61-4a20-b884-f6ec470ac062",
