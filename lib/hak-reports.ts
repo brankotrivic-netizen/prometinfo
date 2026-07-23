@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "23.7.2026. 08:21",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Vozi se bez posebnih ograničenja, osim na dionicama gdje su u tijeku radovi i gdje se vozi uz posebnu regulaciju prometa. Povremeno je pojačan promet na gradskim prometnicama i obilaznicama, prilazima turističkim središtima te u pojedinim trajektnim lukama i pristaništima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: vozilo u kvaru (osobno vozilo) na autocesti A6 Rijeka-Zagreb u tunelu Rožman Brdo u smjeru Rijeke. Vozi se jednom trakom uz ograničenje brzine od 40 km/h A2 Zagreb-Macelj zbog povećane gustoće prometa kolona je pred čvorom Zagreb zapad u smjeru Zagreba oko 3 km A3 Bregana-Lipovac …"
+  "updated": "23.7.2026. 11:00",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim prometnicama i obilaznicama, prilazima turističkim središtima na Jadranskoj magistrali, Krčkom mostu, u pojedinim trajektnim lukama i pristaništima i na pojedinim graničnim prijelazima. Usporeno se vozi u zonama radova osobito na državnoj cesti DC1 između Gračaca i Knina kod Otrića i Istarskom ipsilonu (A8) između tunela i čvora Učka. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na državnoj cesti DC2 između Orahovice i Čačinaca. Obilazak je lokalnim cestama uz regulaciju prometne …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "23.7.2026. 07:47",
-  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
+  "updated": "23.7.2026. 10:16",
+  "text": "Kolona osobnih i teretnih vozila pred graničnim prijelazom Bajakovo je oko 2 km. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zem…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "23.7.2026. 08:21",
+  "updated": "23.7.2026. 10:16",
   "text": "U pomorskom prometu nema poteškoća. Trajekt Jadrolinije na liniji Orebić-Dominče izvršit će izvanredno putovanje 24.07. u 01:50 iz Dominča odnosno u 02:15 iz Orebića . Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 24.07.(petak), 25.07.(subota) i 26.07.(nedjelja): - 24. srpnja 2026. godine (petak) trajekt će iz luke Zadar/Gaženica za luku Iž Mali/Bršanj isploviti u 10:00 sati, a iz luke Iž Mali/Bršanj za luku Zadar/Gaženica u 11:30 sati; - 25. srpnja 2026. godine (subota) trajekt će iz luke Zadar/Gaženica za luku Iž Mali/Bršanj isploviti u 13:00 sati, a iz luke Iž Mali/Bršanj za luku Zadar/Gaženica …"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "23.7.2026. 06:49",
-  "text": "Prometna prognoza za Hrvatsku za četvrtak, 23. srpnja 2026. Vozit će se po mjestimice mokrim ili samo vlažnim i skliskim kolnicima u unutrašnjosti, posebice u poslijepodnevnim satima. Mogući su odroni. Tijekom jutra i poslijepodneva, usporenije će se voziti na gradskim cestama i obilaznicama. Zastoji se očekuju na autocesti A4 između čvorova Popovec i Zagreb istok, zagrebačkoj (A3) i riječkoj (A7) obilaznici, Istarskom ipsilonu (A8) između čvora Matulji i tunela Učka te na državnoj cesti DC1 kod Otrića. Čekanja u putničkom i teretnom prometu očekuju se na pojedinim graničnim prijelazima s Bosnom i Hercegovinom, Srbijom i Crnom Gorom. U pomorskom prometu ne očekujemo poteškoće. Hrvatski autok…"
+  "updated": "23.7.2026. 08:25",
+  "text": "Prometna prognoza za Hrvatsku za petak, 24. srpnja 2026. Tijekom dana u Gorskoj Hrvatskoj i na jugu zemlje mjestimice će se voziti po mokrim i skliskim kolnicima, a zbog bure s olujnim udarima moguće su zabrane i ograničenja na cestama u priobalju. Pojačan promet očekuje se na svim važnijim cestovnim pravcima u smjeru mora, osobito na zagrebačkoj obilaznici u smjeru naplate Lučko, autocestama A1 Zagreb-Ploče-Karamatići i A6 Rijeka-Zagreb, riječkoj obilaznici, Istarskom ipsilonu između tunela i čvora Učka, Krčkom mostu, kao i na prilazima turističkim mjestima na obali. Pojačan promet putničkih i teretnih vozila očekuje se na većini graničnih prijelaza, povremeno u oba smjera. Zbog nepovoljnih…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
