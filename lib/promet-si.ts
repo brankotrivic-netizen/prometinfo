@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-23T16:43:45.950Z";
+export const PROMET_SI_UPDATED = "2026-07-23T18:01:14.251Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;865378;ba67659a-44e6-4cbd-81ee-04618b85079f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, počivališče Polskava - priključek Sl. Bistrica sever v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.4276,
+  "lng": 15.63359,
+  "start": "2026-07-23T17:58:12.883Z",
+  "end": "2026-07-23T20:00:57.47Z",
+  "ts": "2026-07-23T17:58:16.14Z"
+ },
+ {
+  "id": "DARS;865377;58923085-31c4-4887-9acf-db10305f76ba",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Kranj vzhod - priključek Vodice v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.23674,
+  "lng": 14.40446,
+  "start": "2026-07-23T17:44:40.453Z",
+  "end": "2026-07-24T00:00:43.643Z",
+  "ts": "2026-07-23T17:45:12.187Z"
+ },
+ {
+  "id": "DARS;865374;1ea80746-5e87-4a03-91c4-6742b1ee29fe",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Višnja Gora - priključek Ivančna Gorica v smeri Novega mesta, dela, oviran promet, strojno pometanje.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.95942,
+  "lng": 14.73929,
+  "start": "2026-07-23T17:12:57.58Z",
+  "end": "2026-07-23T22:30:05.887Z",
+  "ts": "2026-07-23T17:13:06.95Z"
+ },
+ {
+  "id": "DARS;865372;b9326fb3-d6ab-4cad-9e7a-ebc4007ef73e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, uvoz Črni Kal v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55165,
+  "lng": 13.85698,
+  "start": "2026-07-23T17:02:27.323Z",
+  "end": "2026-07-23T21:00:49.827Z",
+  "ts": "2026-07-23T17:03:02.317Z"
+ },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
   "type": "RoadOrCarriagewayOrLaneManagement",
