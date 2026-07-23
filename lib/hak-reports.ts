@@ -3,13 +3,13 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "23.7.2026. 13:11",
-  "text": "Pojačan je promet na gradskim prometnicama i obilaznicama, prilazima turističkim središtima na Jadranskoj magistrali, Krčkom mostu, u pojedinim trajektnim lukama i pristaništima i na pojedinim graničnim prijelazima. Usporeno se vozi u zonama radova osobito na državnoj cesti DC1 između Gračaca i Knina kod Otrića i Istarskom ipsilonu (A8) između tunela i čvora Učka. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na državnoj cesti DC2 između Orahovice i Čačinaca. Obilazak je lokalnim cestama uz regulaciju prometne policije vozilo u kvaru (osobno vozilo) …"
+  "updated": "23.7.2026. 14:52",
+  "text": "Pojačan je promet na gradskim prometnicama i obilaznicama, prilazima turističkim središtima na Jadranskoj magistrali, u pojedinim trajektnim lukama i pristaništima i na pojedinim graničnim prijelazima. Usporeno se vozi u zonama radova osobito na državnoj cesti DC1 između Gračaca i Knina kod Otrića i Istarskom ipsilonu (A8) između tunela i čvora Učka. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na državnoj cesti DC2 između Orahovice i Čačinaca. Obilazak je lokalnim cestama uz regulaciju prometne policije A1 Zagreb-Split-Dubrovnik životinja (srna) na…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "23.7.2026. 12:54",
-  "text": "Kolona osobnih i teretnih vozila pred graničnim prijelazom Bajakovo je oko 2 km. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zem…"
+  "updated": "23.7.2026. 14:21",
+  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
@@ -18,7 +18,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Željeznički promet",
-  "updated": "23.7.2026. 12:05",
+  "updated": "23.7.2026. 14:21",
   "text": "Stanje u željezničkom putničkom prometu 23. srpnja 2026. u 8.00 sati Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Između kolodvora Križevci – Koprivnica i obratno, Križevci – Novo Drnje i obratno te Kloštar – Koprivnica – Križevci od 21. do 23. srpnja putnike prevoze autobusi. Između kolodvora Duga Resa…"
  },
  {
