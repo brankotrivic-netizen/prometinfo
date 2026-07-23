@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-23T19:43:00.256Z";
+export const PROMET_SI_UPDATED = "2026-07-23T20:41:34.431Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;865391;dfc7e41f-42dc-45b1-a7b5-c5e9da129b16",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica jug - uvoz Sl. Konjice v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.38187,
+  "lng": 15.56951,
+  "start": "2026-07-23T20:00:45.457Z",
+  "end": "2026-07-24T00:00:57.59Z",
+  "ts": "2026-07-23T20:00:53.06Z"
+ },
+ {
+  "id": "DARS;865390;6d2741cb-cd0c-4655-910e-d655e0ed22c2",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Postojna - priključek Unec v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.76273,
+  "lng": 14.20891,
+  "start": "2026-07-23T19:57:14.19Z",
+  "end": "2026-07-24T03:00:00Z",
+  "ts": "2026-07-23T19:57:22.773Z"
+ },
+ {
+  "id": "DARS;865387;f884d645-b034-46f6-9890-0707416fba10",
+  "type": "MaintenanceWorks",
+  "desc": "H7, Dolga vas - meja z Madžarsko, razcep Dolga vas - prehod Dolga vas v smeri Madžarske, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "H7, Dolga vas - meja z Madžarsko",
+  "lat": 46.58998,
+  "lng": 16.4243,
+  "start": "2026-07-23T19:14:28.923Z",
+  "end": "2026-07-23T21:59:00Z",
+  "ts": "2026-07-23T19:48:58.367Z"
+ },
  {
   "id": "DARS;865388;9bc7ebf7-ef54-4dfe-970f-deb878064d71",
   "type": "MaintenanceWorks",
@@ -15,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-23T19:14:55.873Z"
  },
  {
-  "id": "DARS;865387;f884d645-b034-46f6-9890-0707416fba10",
-  "type": "MaintenanceWorks",
-  "desc": "H7, Dolga vas - meja z Madžarsko, razcep Dolga vas - prehod Dolga vas v smeri Madžarske, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "H7, Dolga vas - meja z Madžarsko",
-  "lat": 46.58998,
-  "lng": 16.4243,
-  "start": "2026-07-23T19:14:28.923Z",
-  "end": "2026-07-23T20:00:29.713Z",
-  "ts": "2026-07-23T19:14:38.237Z"
- },
- {
   "id": "DARS;865384;7d6ab4a6-a8a3-432c-8e0c-cc9fecbc9048",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - Koper, uvoz Divača v smeri Kopra, dela, oviran promet.",
@@ -35,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-23T18:35:24.693Z",
   "end": "2026-07-23T21:00:21.66Z",
   "ts": "2026-07-23T18:36:17.337Z"
- },
- {
-  "id": "DARS;865378;ba67659a-44e6-4cbd-81ee-04618b85079f",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, počivališče Polskava - priključek Sl. Bistrica sever v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.4276,
-  "lng": 15.63359,
-  "start": "2026-07-23T17:58:12.883Z",
-  "end": "2026-07-23T20:00:57.47Z",
-  "ts": "2026-07-23T17:58:16.14Z"
- },
- {
-  "id": "DARS;865377;58923085-31c4-4887-9acf-db10305f76ba",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Kranj vzhod - priključek Vodice v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.23674,
-  "lng": 14.40446,
-  "start": "2026-07-23T17:44:40.453Z",
-  "end": "2026-07-24T00:00:43.643Z",
-  "ts": "2026-07-23T17:45:12.187Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
