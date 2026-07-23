@@ -1,3 +1,65 @@
-// SAMODEJNO ZAJETO: zive cakalne dobe HAK/MUP. Trenutno brez objavljenih cakanj.
+// SAMODEJNO ZAJETO: zive cakalne dobe na mejnih prehodih (HAK / MUP RH).
+// Objavljeni le prehodi s trenutnim cakanjem. ulaz=vstop v HR, izlaz=izstop iz HR (osebna vozila).
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
-export const HAK_WAITS: HakWait[] = [];
+export const HAK_WAITS: HakWait[] = [
+ {
+  "id": "ba-brod",
+  "name": "Slavonski Brod (Bosanski Brod)",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": 60,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "1 h",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "23.7.2026. 8:04:28",
+  "izlazTs": "23.7.2026. 8:04:51",
+  "ulazTsISO": "2026-07-23T08:04:28+02:00",
+  "izlazTsISO": "2026-07-23T08:04:51+02:00",
+  "ts": "23.7.2026. 8:04:28",
+  "tsISO": "2026-07-23T08:04:28+02:00"
+ },
+ {
+  "id": "hr-bajakovo",
+  "name": "Bajakovo (Batrovci)",
+  "ulazMin": 90,
+  "izlazMin": 90,
+  "ulazTxt": "1 h 30 min.",
+  "izlazTxt": "1 h 30 min.",
+  "truckUlazMin": 300,
+  "truckIzlazMin": 30,
+  "truckUlazTxt": "5 h",
+  "truckIzlazTxt": "do 30 min.",
+  "level": "high",
+  "waitMinutes": 90,
+  "ulazTs": "23.7.2026. 6:33:51",
+  "izlazTs": "L: 2 km T: 23.7.2026. 6:33:34",
+  "ulazTsISO": "2026-07-23T06:33:51+02:00",
+  "izlazTsISO": "2026-07-23T06:33:34+02:00",
+  "ts": "23.7.2026. 6:33:51",
+  "tsISO": "2026-07-23T06:33:51+02:00"
+ },
+ {
+  "id": "hr-tovarnik",
+  "name": "Tovarnik (Šid)",
+  "ulazMin": 30,
+  "izlazMin": 60,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "1 h",
+  "truckUlazMin": 480,
+  "truckIzlazMin": 240,
+  "truckUlazTxt": "8 h",
+  "truckIzlazTxt": "4 h",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "23.7.2026. 7:12:46",
+  "izlazTs": "23.7.2026. 7:13:21",
+  "ulazTsISO": "2026-07-23T07:12:46+02:00",
+  "izlazTsISO": "2026-07-23T07:13:21+02:00",
+  "ts": "23.7.2026. 7:12:46",
+  "tsISO": "2026-07-23T07:12:46+02:00"
+ }
+];
