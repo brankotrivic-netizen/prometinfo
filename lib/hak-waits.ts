@@ -16,31 +16,11 @@ export const HAK_WAITS: HakWait[] = [
   "level": "high",
   "waitMinutes": 120,
   "ulazTs": "Nema podataka",
-  "izlazTs": "23.07.2026 20:09:48",
+  "izlazTs": "23.7.2026. 20:09:48",
   "ulazTsISO": "",
   "izlazTsISO": "2026-07-23T20:09:48+02:00",
-  "ts": "23.07.2026 20:09:48",
+  "ts": "23.7.2026. 20:09:48",
   "tsISO": "2026-07-23T20:09:48+02:00"
- },
- {
-  "id": "ba-izacic",
-  "name": "Ličko Petrovo Selo (Izačić)",
-  "ulazMin": null,
-  "izlazMin": 120,
-  "ulazTxt": "-",
-  "izlazTxt": "2 h",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 120,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "23.07.2026 18:36:51",
-  "ulazTsISO": "",
-  "izlazTsISO": "2026-07-23T18:36:51+02:00",
-  "ts": "23.07.2026 18:36:51",
-  "tsISO": "2026-07-23T18:36:51+02:00"
  },
  {
   "id": "hr-bajakovo",
@@ -55,11 +35,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "4 h",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "23.07.2026 21:21:17",
-  "izlazTs": "23.07.2026 21:21:42",
+  "ulazTs": "23.7.2026. 21:21:17",
+  "izlazTs": "23.7.2026. 21:21:42",
   "ulazTsISO": "2026-07-23T21:21:17+02:00",
   "izlazTsISO": "2026-07-23T21:21:42+02:00",
-  "ts": "23.07.2026 21:21:17",
+  "ts": "23.7.2026. 21:21:17",
   "tsISO": "2026-07-23T21:21:17+02:00"
  }
 ];
