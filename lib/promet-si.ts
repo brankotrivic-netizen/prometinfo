@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-24T21:19:00.215Z";
+export const PROMET_SI_UPDATED = "2026-07-24T22:32:56.307Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;861046;2cb65d50-0177-4fb4-8ba2-94c641e08e24",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02618,
+  "lng": 14.4936,
+  "start": "2026-07-03T03:13:40.227Z",
+  "end": "2026-07-31T21:59:00Z",
+  "ts": "2026-07-24T21:33:05.383Z"
+ },
  {
   "id": "DARS;865650;6a06cb8d-5265-442b-a422-a5e968d187bd",
   "type": "MaintenanceWorks",
@@ -13,28 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-24T20:08:45.51Z",
   "end": "2026-07-25T03:00:00Z",
   "ts": "2026-07-24T21:16:43.81Z"
- },
- {
-  "id": "DARS;865646;c0ce752e-6d8b-400b-8f6e-b32f941c2769",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02596,
-  "lng": 14.49558,
-  "start": "2026-07-24T19:31:48.007Z",
-  "end": "2026-07-31T21:50:26.227Z",
-  "ts": "2026-07-24T19:31:49.583Z"
- },
- {
-  "id": "DARS;861046;2cb65d50-0177-4fb4-8ba2-94c641e08e24",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, promet poteka po enem pasu.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02618,
-  "lng": 14.4936,
-  "start": "2026-07-03T03:13:40.227Z",
-  "end": "2026-07-31T21:59:00Z",
-  "ts": "2026-07-24T19:21:46.75Z"
  },
  {
   "id": "DARS;865643;474f55e8-5630-4a98-b4a3-446657f39d91",
@@ -497,17 +486,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T05:56:11.267Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-07-13T05:57:06.313Z"
- },
- {
-  "id": "DARS;862966;eb0c0da8-182b-4285-af5d-89833802e453",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-4, Velenje - Slovenj Gradec, pri Paki pri Velenju, izmenično enosmerni promet, vzdrževalna dela, do 24. 7. 2026.",
-  "loc": "G1-4, Gornji Dolič - Velenje",
-  "lat": 46.39324,
-  "lng": 15.16717,
-  "start": "2026-07-13T05:00:00Z",
-  "end": "2026-07-24T21:59:00Z",
-  "ts": "2026-07-13T03:54:15.697Z"
  },
  {
   "id": "DARS;855706;30f43462-8ba1-4ecf-bfbe-c0a33e6844f6",
