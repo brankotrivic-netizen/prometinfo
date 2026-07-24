@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-24T18:53:22.829Z";
+export const PROMET_SI_UPDATED = "2026-07-24T20:09:28.560Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;865650;6a06cb8d-5265-442b-a422-a5e968d187bd",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, počivališče Ravbarkomanda - priključek Unec v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.78731,
+  "lng": 14.22463,
+  "start": "2026-07-24T20:08:45.51Z",
+  "end": "2026-07-25T03:00:00Z",
+  "ts": "2026-07-24T20:08:55.463Z"
+ },
+ {
+  "id": "DARS;865646;c0ce752e-6d8b-400b-8f6e-b32f941c2769",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02596,
+  "lng": 14.49558,
+  "start": "2026-07-24T19:31:48.007Z",
+  "end": "2026-07-31T21:50:26.227Z",
+  "ts": "2026-07-24T19:31:49.583Z"
+ },
+ {
+  "id": "DARS;861046;2cb65d50-0177-4fb4-8ba2-94c641e08e24",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, promet poteka po enem pasu.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02618,
+  "lng": 14.4936,
+  "start": "2026-07-03T03:13:40.227Z",
+  "end": "2026-07-31T21:59:00Z",
+  "ts": "2026-07-24T19:21:46.75Z"
+ },
+ {
+  "id": "DARS;865643;474f55e8-5630-4a98-b4a3-446657f39d91",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, razcep Zadobrova - priključek Ljubljana Sneberje v smeri Celja, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.07308,
+  "lng": 14.57893,
+  "start": "2026-07-24T19:12:18.777Z",
+  "end": "2026-07-25T00:00:15.32Z",
+  "ts": "2026-07-24T19:12:21.18Z"
+ },
  {
   "id": "DARS;865631;717a8503-21b7-4ea3-9140-c3c9b3dbc3a6",
   "type": "MaintenanceWorks",
@@ -48,6 +92,39 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-24T15:00:31.823Z"
  },
  {
+  "id": "DARS;865530;2d202a75-c472-4db2-94ac-3d7e098f583a",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor (Koroški most - cesta Proletarskih Brigad), na Koroški cesti med Gosposvetsko cesto in Valvasorjevo ulico, oviran promet, barvanje talnih označb, do 25. 7. 2026.",
+  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
+  "lat": 46.56296,
+  "lng": 15.62799,
+  "start": "2026-07-24T19:00:00Z",
+  "end": "2026-07-25T02:00:00Z",
+  "ts": "2026-07-24T12:12:22.013Z"
+ },
+ {
+  "id": "DARS;865529;bf7df6d1-4be4-4721-8536-259b0c4301aa",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor - Dravograd, v Mariboru, na cesti Proletarskih brigad, oviran promet, barvanje talnih označb, do 25. 7. 2026.",
+  "loc": "G1-1, Maribor (C. Proletarskih Brigad - Tržaška C.)",
+  "lat": 46.543,
+  "lng": 15.63365,
+  "start": "2026-07-24T19:00:00Z",
+  "end": "2026-07-25T02:00:00Z",
+  "ts": "2026-07-24T12:10:44.033Z"
+ },
+ {
+  "id": "DARS;865527;1b1c35ad-cd6f-4c40-b7e3-ead5932bb000",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor - Dravograd, v Mariboru, na Cesti Proletarskih brigad, med Borovo vasjo in Kardeljevo cesto, oviran promet, barvanje talnih označb, do 25. 7. 2026.",
+  "loc": "G1-1, Maribor (c. Proletarskih Brigad - Tržaška cesta)",
+  "lat": 46.54557,
+  "lng": 15.61994,
+  "start": "2026-07-24T19:00:00Z",
+  "end": "2026-07-25T02:00:00Z",
+  "ts": "2026-07-24T12:06:45.2Z"
+ },
+ {
   "id": "DARS;865486;861a2535-fa4a-47d7-93eb-ebb63dbb280f",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-940, Pregarje - Harije, Harije - Zajelšje, izmenično enosmerni promet, košnja, do 25. 7. 2026.",
@@ -57,6 +134,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-24T09:50:36.057Z",
   "end": "2026-07-25T12:00:00Z",
   "ts": "2026-07-24T12:03:59.603Z"
+ },
+ {
+  "id": "DARS;865519;03299ddc-be56-4dd8-9977-8c4c16d792af",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor (Koroški most - cesta Proletarskih Brigad), na ulici heroja Šercerja, oviran promet, barvanje talnih označb, do 25. 7. 2026.",
+  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
+  "lat": 46.56301,
+  "lng": 15.62786,
+  "start": "2026-07-24T19:00:00Z",
+  "end": "2026-07-25T02:00:00Z",
+  "ts": "2026-07-24T11:29:26.95Z"
  },
  {
   "id": "DARS;865514;177f108a-7de0-457a-9d3b-6f077d12e8d8",
@@ -739,17 +827,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-03T07:35:04.67Z",
   "end": "2026-07-30T21:59:00Z",
   "ts": "2026-07-03T07:37:07.83Z"
- },
- {
-  "id": "DARS;861046;2cb65d50-0177-4fb4-8ba2-94c641e08e24",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02618,
-  "lng": 14.4936,
-  "start": "2026-07-03T03:13:40.227Z",
-  "end": "2026-07-31T21:59:00Z",
-  "ts": "2026-07-03T03:15:35.517Z"
  },
  {
   "id": "DARS;861047;42700b6c-047d-413a-8411-e9fb3a4d40d4",
