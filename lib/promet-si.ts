@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-24T14:25:26.277Z";
+export const PROMET_SI_UPDATED = "2026-07-24T15:51:34.649Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-24T15:00:31.823Z"
+ },
  {
   "id": "DARS;865486;861a2535-fa4a-47d7-93eb-ebb63dbb280f",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -46,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-24T11:07:47.25Z",
   "end": "2026-07-25T15:00:00Z",
   "ts": "2026-07-24T11:09:20.333Z"
- },
- {
-  "id": "DARS;865456;dea212a9-a501-430a-a3db-b4413d21bc31",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-604, Ročinj - Lig, na Kambreškem, izmenično enosmerni promet, košnja, do 17:00.",
-  "loc": "R3-604, Ročinj - Lig",
-  "lat": 46.12738,
-  "lng": 13.65074,
-  "start": "2026-07-24T10:00:00Z",
-  "end": "2026-07-24T15:00:00Z",
-  "ts": "2026-07-24T08:00:08.127Z"
  },
  {
   "id": "DARS;865014;4c2c4af0-fd61-4a20-b884-f6ec470ac062",
@@ -728,17 +728,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-03T07:35:04.67Z",
   "end": "2026-07-30T21:59:00Z",
   "ts": "2026-07-03T07:37:07.83Z"
- },
- {
-  "id": "DARS;854319;21066fe3-bea4-4097-a8a3-98260a995aaf",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-1, Maribor - Dravograd, v Spodnji Selnici, izmenično enosmerni promet, ureditev začasne pešpoti, do 24. 7. 2026.",
-  "loc": "G1-1, Ruta - Maribor (Koroški Most)",
-  "lat": 46.55525,
-  "lng": 15.51039,
-  "start": "2026-06-02T05:57:31.623Z",
-  "end": "2026-07-24T15:00:00Z",
-  "ts": "2026-07-03T05:37:18.403Z"
  },
  {
   "id": "DARS;861046;2cb65d50-0177-4fb4-8ba2-94c641e08e24",
