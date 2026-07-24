@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-24T15:51:34.649Z";
+export const PROMET_SI_UPDATED = "2026-07-24T17:19:41.728Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
@@ -57,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-24T11:07:47.25Z",
   "end": "2026-07-25T15:00:00Z",
   "ts": "2026-07-24T11:09:20.333Z"
- },
- {
-  "id": "DARS;865014;4c2c4af0-fd61-4a20-b884-f6ec470ac062",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-710, Maribor - Vurberk - Ptuj, v Dvorjanah, izmenično enosmerni promet, ureditve prometnih površin \"Varneje v šolo\", do 19:00.",
-  "loc": "R3-710, Maribor - Vurberk - Ptuj",
-  "lat": 46.49667,
-  "lng": 15.76939,
-  "start": "2026-07-22T06:20:16.607Z",
-  "end": "2026-07-24T17:00:00Z",
-  "ts": "2026-07-24T07:33:05.77Z"
  },
  {
   "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
@@ -376,17 +365,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-14T05:40:00.77Z",
   "end": "2026-07-31T21:59:00Z",
   "ts": "2026-07-14T05:40:39.977Z"
- },
- {
-  "id": "DARS;857357;aa68f5d7-ed11-4c43-a7b6-cfd571ed8ff9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-106, Livold - Fara, v Livoldu, izmenično enosmerni promet, sanacija mostu Livold, do 24. 7. 2026.",
-  "loc": "G2-106, Livold - Fara",
-  "lat": 45.60501,
-  "lng": 14.88852,
-  "start": "2026-06-15T06:36:43.933Z",
-  "end": "2026-07-24T17:00:00Z",
-  "ts": "2026-07-13T13:32:40.897Z"
  },
  {
   "id": "DARS;825949;0a53fe13-702b-456a-bec7-e609e7e44ff6",
