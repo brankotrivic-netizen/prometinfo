@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-24T20:09:28.560Z";
+export const PROMET_SI_UPDATED = "2026-07-24T21:19:00.215Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;865650;6a06cb8d-5265-442b-a422-a5e968d187bd",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, počivališče Ravbarkomanda - priključek Unec v smeri Ljubljane, dela, zaprt vozni pas.",
+  "desc": "A1, Koper - Ljubljana, počivališče Ravbarkomanda - priključek Unec v smeri Ljubljane, dela, zaprt prehitevalni pas.",
   "loc": "A1-E61, E70, Koper - Ljubljana",
   "lat": 45.78731,
   "lng": 14.22463,
   "start": "2026-07-24T20:08:45.51Z",
   "end": "2026-07-25T03:00:00Z",
-  "ts": "2026-07-24T20:08:55.463Z"
+  "ts": "2026-07-24T21:16:43.81Z"
  },
  {
   "id": "DARS;865646;c0ce752e-6d8b-400b-8f6e-b32f941c2769",
@@ -46,39 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-24T19:12:18.777Z",
   "end": "2026-07-25T00:00:15.32Z",
   "ts": "2026-07-24T19:12:21.18Z"
- },
- {
-  "id": "DARS;865631;717a8503-21b7-4ea3-9140-c3c9b3dbc3a6",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Vodice - priključek Brnik v smeri Karavank, Avstrije, dela, zaprt prehitevalni pas, košnja.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.20068,
-  "lng": 14.46606,
-  "start": "2026-07-24T18:07:28.82Z",
-  "end": "2026-07-25T00:00:00Z",
-  "ts": "2026-07-24T18:07:40.163Z"
- },
- {
-  "id": "DARS;865625;96f232f8-d14b-4905-9a4a-745139235b40",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Žalec - priključek Šentrupert v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26855,
-  "lng": 15.18784,
-  "start": "2026-07-24T17:31:58.3Z",
-  "end": "2026-07-24T21:59:37.483Z",
-  "ts": "2026-07-24T17:32:28.927Z"
- },
- {
-  "id": "DARS;865623;85e1eee4-7668-4275-8c1e-9daec243a06f",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - počivališče Zima v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25377,
-  "lng": 15.26793,
-  "start": "2026-07-24T17:29:23.897Z",
-  "end": "2026-07-24T21:30:23.49Z",
-  "ts": "2026-07-24T17:29:49.26Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
