@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Lasta- Petlja Bubanj Potok, radovi",
+  "text": "Od 27. 7. do 14. 8. 2026. u periodu od 7 do 18 časova, izvodiće se radovi na instalacijama javnog osvetljenja, na državnom putu I M reda broj 11, na deonici petlja Lasta - petlja Bubanj Potok, Mokroluško brdo, u smeru ka Beogradu (Faza 2). U zoni radova za saobraćaj će biti zatvorena krajnja desna saobraćajna traka. Saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvor: Putevi Srbije"
+ },
+ {
   "title": "Draževac, Stepojevac, radovi",
   "text": "Od 27. 7. do 1. 11. 2026. zbog radova na održavanju obustavlja se saobraćaj na objektu mosta preko potoka Vrbovica, na državnom putu II A reda broj 148, na deonici Draževac Stepojevac. Saobraćaj će biti preusmeren na izgrađenu privremenu devijaciju. Na devijaciji će se saobraćaj odvijati naizmeničnim propuštanjem vozila uz pomoć semafora."
  },
@@ -36,10 +40,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Zona petlje Ruma, radovi",
   "text": "Do 31. 7. 2026. godine izvode se radovi na redovnom održavanju u zoni petlje Ruma. Radovi se izvode na više lokacija u zoni petlje (denivelisane raskrsnice) na zaustavnoj traci servisne saobraćajnice. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petlja Beograd-petlja Lasta, radovi",
-  "text": "Od 15. 7. do 18. 7. 2026. godine, u periodu od 20 časova do 5 časova, izvodiće se radovi na uklanjanju oznaka na putu na deonici petlja Beograd - petlja Lasta, u smeru Niš - Novi Sad. Tokom izvođenja radova, biće zauzeta zaustavna saobraćajna traka, a saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
  {
   "title": "Petlja Novi Banovci- petlja Batočina, radovi",
