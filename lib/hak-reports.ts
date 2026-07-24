@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "24.7.2026. 14:38",
-  "text": "Pojačan je promet na glavnim prometnim pravcima u smjeru mora i unutrašnjosti pa se mjestimice vozi u kolonama uz zastoje. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: zastoji su i kolone (15 km) zbog prometne nesreće između odmorišta Vukova Gorica i Karlovca (39. km) u smjeru Zagreba. Vozi se jednim trakom, ograničenje brzine je 40 km/h pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km pojačan je promet na pojedinim dionicama u oba smjera - usporeno se vozi od čvora Jastrebarsko prema naplati Lučko A3 Bregana-Lipovac: na zagrebačkoj…"
+  "updated": "24.7.2026. 16:19",
+  "text": "Pojačan je promet na glavnim prometnim pravcima u smjeru mora i unutrašnjosti pa se mjestimice vozi u kolonama uz zastoje. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: između čvora Bosiljevo II i naplate Lučko u smjeru Zagreba vozi se u kolonama u pokretu uz kraće zastoje A2 Zagreb-Macelj na naplatnoj postaji Trakošćan u smjeru Zagreba kolona je oko 1 km na čvoru Zagreb zapad kolona u smjeru Zagreba je oko 2 km A3 Bregana-Lipovac: zbog prometne nesreće na 190. km u smjeru Lipovca - nastala je kolona duga oko 3 km između čvorova Nova Gradiška i Slavonski Brod z…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "24.7.2026. 13:27",
-  "text": "U prekidu su: katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija). katamaranska linija Split - Bol - Hvar - Vis - Hvar - Split s polaskom iz luke Split u 15:30 Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 24.07.(petak), 25.07.(subota) i 26.07.(nedjelja): - 25. srpnja 2026. godine (subota) trajekt će iz luke Zadar/Gaženica za luku Iž Mali/Bršanj isploviti u 13:00 sati, a iz luke Iž Mali/Bršanj za luku Zadar/Gaženica u 15:00 sat; - 26. srpnja 2026. godine (nedjelja) trajekt će iz luke Mali Iž/Bršanj za luku Zadar/Gaženica isploviti u 17:45 sati, a iz luke Zadar/Gaženica …"
+  "updated": "24.7.2026. 15:32",
+  "text": "U prekidu su: katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija). Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 24.07.(petak), 25.07.(subota) i 26.07.(nedjelja): - 25. srpnja 2026. godine (subota) trajekt će iz luke Zadar/Gaženica za luku Iž Mali/Bršanj isploviti u 13:00 sati, a iz luke Iž Mali/Bršanj za luku Zadar/Gaženica u 15:00 sat; - 26. srpnja 2026. godine (nedjelja) trajekt će iz luke Mali Iž/Bršanj za luku Zadar/Gaženica isploviti u 17:45 sati, a iz luke Zadar/Gaženica za luku Iž Mali/Bršanj u 19:15 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jad…"
  },
  {
   "title": "Željeznički promet",

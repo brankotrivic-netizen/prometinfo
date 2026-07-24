@@ -14,10 +14,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Dana 25.7.2026. godine, od 8 do 18 časova, zbog izvođenja asfalterskih radova, biti obustavljen saobraćaj na deonici državnog puta I B reda broj 21, Arilje - Prilike, u mestu Dobrače, od mosta na Panjici do skretanja za manastir Klisura ( od km 209+141 do km 248+079). Preusmerenje saobraćaja će se vršiti na alternativni putni pravac koji važi za oba smera: Arilje Guča Kotraža Ivanjica - Prilike. Izvor: Putevi Srbije"
  },
  {
-  "title": "Senta - Čoka, mosta na Tisi obustava",
-  "text": "U petak 24. 7. 2026. od 10 do 16 č, biće obustavljen saobraćaj zbog radova na ispitivanju mosta preko reke Tise, na državnom putu II A reda broj 105 na deonici Senta Čoka. Molimo učesnike u saobraćaju da u navedeno vreme koriste alternativni putni pravac preko mosta na Tisi u Novom Kneževcu, državni put IB-13. Putevi Srbije"
- },
- {
   "title": "Braničevo-Ponikve, radovi na putu",
   "text": "Od 30.5.2026. godine, na snazi će biti obustava saobraćaja u zoni nadvožnjak na državnom putu I B reda broj 34, na deonici Braničevo Ponikve, zbog radova u sklopu izgradnje državnog puta I M reda broj 7 . Tokom trajanja obustave vozila koja se kreću ka Ponikvama usmeravaće se preko kružne raskrsnice u Braničevu na km 57 državnim putem I M reda broj 7, dok vozila koja se kreću iz Ponikvi ka Velikom Gradištu usmeravaće se lokalnim saobraćajnicama do uključenja na državni put I M reda broj 7 u bliz…"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Kruševac Istok - Petlja Vrnjačka Banja, radovi",
   "text": "Na delu auto-puta broj 5 od petlje Kruševac Istok do petlje Vrnjačka Banja, u oba smera od danas do 3. juna u toku toku svetlog dela dana izvodiće se radovi na sanaciji temelja niskih portalnih konstrukcija na više lokacija i za saobraćaj će biti zatvarane preticajne saobraćajne trake u dužini od 100m. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Sušica- Zlatibor, radovi",
+  "text": "Od 18. 5. 2026. do 31. 12. 2026. godine, u toku svetlog dela dana, izvoditi radovi u sklopu rehabilitacije kolovoza, na deonici Sušica Zlatibor. Tokom izvođenja radova za saobraćaj će biti zatvorena treća saobraćajna traka, dok će se saobraćaj neometano odvijati u slobodne dve saobraćajne trake. Izuzetak, kada se radi zavšrni sloj asfalta, saobraćaj će se odvijati naizmeničnim propuštanjem u jednoj saobraćajnoj traci. Izvor JP Putevi Srbije"
  }
 ];

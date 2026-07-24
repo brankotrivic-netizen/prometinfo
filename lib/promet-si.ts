@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-24T12:43:35.513Z";
+export const PROMET_SI_UPDATED = "2026-07-24T14:25:26.277Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;865486;861a2535-fa4a-47d7-93eb-ebb63dbb280f",
@@ -46,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-24T11:07:47.25Z",
   "end": "2026-07-25T15:00:00Z",
   "ts": "2026-07-24T11:09:20.333Z"
- },
- {
-  "id": "DARS;865411;37e3a8e9-b3d9-4f2c-b829-576e8776075b",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, predor Kastelec - priključek Kozina v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.5922,
-  "lng": 13.92991,
-  "start": "2026-07-24T04:22:35.11Z",
-  "end": "2026-07-24T13:00:00Z",
-  "ts": "2026-07-24T10:59:37.957Z"
- },
- {
-  "id": "DARS;865487;2c20c714-31de-4567-958e-63656ed6017d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-216, Krka - Žužemberk, pri Vrhovem pri Žužemberku, izmenično enosmerni promet, popravilo bankin, do 15:00.",
-  "loc": "R1-216, Krka - Žužemberk",
-  "lat": 45.85641,
-  "lng": 14.87986,
-  "start": "2026-07-24T09:54:09.573Z",
-  "end": "2026-07-24T13:00:00Z",
-  "ts": "2026-07-24T09:57:27.703Z"
  },
  {
   "id": "DARS;865456;dea212a9-a501-430a-a3db-b4413d21bc31",
@@ -167,28 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-10-03T06:21:00.943Z",
   "end": "2026-07-31T21:59:00Z",
   "ts": "2026-07-24T05:40:18.16Z"
- },
- {
-  "id": "DARS;865415;93c9d185-6c3c-4125-b0f8-93640b093681",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-653, Sodražica - Hrib, pri Malem Logu, izmenično enosmerni promet, popravilo bankin, do 15:00.",
-  "loc": "R3-653, Sodražica - Hrib",
-  "lat": 45.72897,
-  "lng": 14.60336,
-  "start": "2026-07-24T04:41:46.55Z",
-  "end": "2026-07-24T13:00:00Z",
-  "ts": "2026-07-24T04:55:23.027Z"
- },
- {
-  "id": "DARS;865410;ff42a29e-0237-42a1-a9a1-19c818287ec6",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Kobarid - Nova Gorica, Idrsko - Kamno, izmenično enosmerni promet, košnja, do 15:00.",
-  "loc": "G2-102, Idrsko - Peršeti",
-  "lat": 46.22522,
-  "lng": 13.59999,
-  "start": "2026-07-24T04:15:29.4Z",
-  "end": "2026-07-24T13:00:00Z",
-  "ts": "2026-07-24T04:18:20.16Z"
  },
  {
   "id": "DARS;773387;252cd393-09e6-43a1-9ca1-6de0a53209cd",
