@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T12:43:45.172Z";
+export const PROMET_SI_UPDATED = "2026-07-25T14:17:04.177Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;865674;2d883a81-aecc-429d-9a9b-7e90f74420f5",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, pred priključkom Ljubljana Tomačevo v smeri Kosez, dela, zaprt prehitevalni pas.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07287,
-  "lng": 14.54839,
-  "start": "2026-07-25T10:25:18.297Z",
-  "end": "2026-07-25T13:30:00Z",
-  "ts": "2026-07-25T11:56:14.19Z"
- },
  {
   "id": "DARS;865668;843fa63a-f4a2-4f86-b16d-09bc69420dad",
   "type": "MaintenanceWorks",
