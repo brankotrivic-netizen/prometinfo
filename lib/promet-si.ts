@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T11:31:45.072Z";
+export const PROMET_SI_UPDATED = "2026-07-25T12:43:45.172Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;865674;2d883a81-aecc-429d-9a9b-7e90f74420f5",
@@ -11,8 +11,8 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 46.07287,
   "lng": 14.54839,
   "start": "2026-07-25T10:25:18.297Z",
-  "end": "2026-07-25T12:00:52.79Z",
-  "ts": "2026-07-25T10:26:18.627Z"
+  "end": "2026-07-25T13:30:00Z",
+  "ts": "2026-07-25T11:56:14.19Z"
  },
  {
   "id": "DARS;865668;843fa63a-f4a2-4f86-b16d-09bc69420dad",
@@ -57,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-03-01T10:12:00.717Z",
   "end": "2026-07-30T12:00:00Z",
   "ts": "2026-07-25T03:41:01.34Z"
- },
- {
-  "id": "DARS;865486;861a2535-fa4a-47d7-93eb-ebb63dbb280f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-940, Pregarje - Harije, Harije - Zajelšje, izmenično enosmerni promet, košnja, do 14. ure.",
-  "loc": "RT-940, Pregarje - Harije",
-  "lat": 45.56513,
-  "lng": 14.15465,
-  "start": "2026-07-24T09:50:36.057Z",
-  "end": "2026-07-25T12:00:00Z",
-  "ts": "2026-07-25T03:36:46.22Z"
  },
  {
   "id": "DARS;865660;aa332b69-595d-4879-b4d4-f8442f739044",
