@@ -3,32 +3,32 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "25.7.2026. 18:21",
+  "updated": "25.7.2026. 19:02",
   "text": "Vremenski uvjeti su povoljni za vožnju. Promet je pojačan na važnijim cestama u smjeru mora i unutrašnjosti te na prilazima turističkim središtima. Zastoji su na autocestama u zonama naplatnih postaja, čvorova, tunela i odmorišta te na većini graničnih prijelaza, osobito na izlasku iz zemlje. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik pojačan je promet od čvora Bosiljevo 2 u smjeru Zagreba, povremeno se vozi u kolonama uz zastoje pred naplatama Demerje i Lučko u smjeru Zagreba kolona je oko 1 km, u smjeru mora nema dužih čekanja usporeno u koloni uz povremene zastoje vozi se na dionici čvor Gospić-tunel…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "25.7.2026. 18:22",
+  "updated": "25.7.2026. 19:11",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "25.7.2026. 18:22",
-  "text": "U pomorskom prometu nema poteškoća. 26. srpnja 2026. godine (nedjelja) (08:00 sati) katamaran b/p Jelena na liniji 51BB Zadar (Gaženica) - Ancona neće isploviti zbog nepovoljnih vremenskih uvjeta. Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 26.07.(nedjelja): 26. srpnja 2026. godine (nedjelja) trajekt će iz luke Mali Iž/Bršanj za luku Zadar/Gaženica isploviti u 17:45 sati, a iz luke Zadar/Gaženica za luku Iž Mali/Bršanj u 19:15 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 20…"
+  "updated": "25.7.2026. 19:11",
+  "text": "U pomorskom prometu nema poteškoća. 26. srpnja 2026. godine (nedjelja): (08:00 sati) katamaran b/p Jelena na liniji 51BB Zadar (Gaženica) - Ancona neće isploviti zbog nepovoljnih vremenskih uvjeta otkazuje se katamaranska linija Pula-Zadar-Pula otkazuje se katamaranska linija Dubrovnik-Pomena-Korčula. Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 26.07.(nedjelja): 26. srpnja 2026. godine (nedjelja) trajekt će iz luke Mali Iž/Bršanj za luku Zadar/Gaženica isploviti u 17:45 sati, a iz luke Zadar/Gaženica za luku Iž Mali/Bršanj u 19:15 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadroli…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "25.7.2026. 18:22",
+  "updated": "25.7.2026. 18:37",
   "text": "Stanje u željezničkom putničkom prometu 24. srpnja 2026. u 8.00 sati Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Umjesto vlaka 2251 Križevci 5.15 – Koprivnica 5.51 putnike od ponedjeljka do petka prevoze autobusi. Između kolodvora Duga Resa, Karlovac i Bubnjarci putnike umjesto vlakova prevoze autobusi…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "25.7.2026. 05:33",
+  "updated": "25.7.2026. 18:37",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "25.7.2026. 06:20",
+  "updated": "25.7.2026. 18:37",
   "text": "Prometna prognoza za Hrvatsku za nedjelju, 26. srpnja 2026. Vozit će se po mjestimice mokrim te vlažnim i skliskim kolnicima u jutarnjim satima, osobito na sjevernom Jadranu i Gorskoj Hrvatskoj gdje su moguće obilnije padaline te dodatno otežana vožnja zbog lokalnog nevremena popraćenog olujnim vjetrom. Tijekom dana, očekuje se vrlo gust promet uz kolone i zastoje, na glavnim prometnim pravcima koji povezuju obalu i unutrašnjost, osobito na autocesti A1 između čvora Bosiljevo II i naplate Lučko, Istarskom ipsilonu (A8) između čvora i tunela Učka, na otoku Krku i Krčkom mostu (DC102), državnoj cesti DC1 u zoni radova kod Otrića te na prilazima turističkim središtima na Jadranskoj magistrali (…"
  },
  {
@@ -48,7 +48,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Vožnja ljeti pod velikim vrućinama",
-  "updated": "25.7.2026. 05:33",
+  "updated": "25.7.2026. 18:37",
   "text": "Izlaganje visokim temperaturama nepovoljno utječe na opće zdravstveno stanje, a kod vozača može utjecati na kognitivno funkcioniranje. Stoga je u svakodnevnom životu potrebno pratiti upute nadležnih službi (DHMZ, HZHM, Hrvatski Crveni križ, HGSS), a za putovanje slijedite sljedeće preporuke: planirajte vrijeme putovanja tijekom noći, ranih jutarnjih sati ili kasnije poslijepodne i navečer. Izbjegavajte vožnju sredinom dana kada temperature dosežu svoj maksimum jer će svaka izvanredna situacija u prometu (zastoji zbog veće gustoće prometa, prometne nesreće ili radovi) rezultirati povremenim stajanjem u mjestu koje će biti neugodno unatoč rashladnom uređaju u vozilu ako vozite na dužim relacij…"
  }
 ];
