@@ -1,8 +1,118 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-24T22:32:56.307Z";
+export const PROMET_SI_UPDATED = "2026-07-25T06:09:07.051Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;865680;e0d76197-3fc6-4a1c-a4b7-172841048fc4",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Škofije - Koper, uvoz Bertoki v smeri Kopra, dela, oviran promet.",
+  "loc": "G1-11, Škofije - Koper",
+  "lat": 45.54731,
+  "lng": 13.76464,
+  "start": "2026-07-25T06:03:10.547Z",
+  "end": "2026-07-25T11:00:43.17Z",
+  "ts": "2026-07-25T06:03:28.043Z"
+ },
+ {
+  "id": "DARS;865674;2d883a81-aecc-429d-9a9b-7e90f74420f5",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, pred priključkom Ljubljana Tomačevo v smeri Kosez, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.07626,
+  "lng": 14.54101,
+  "start": "2026-07-25T05:44:30.423Z",
+  "end": "2026-07-25T12:00:52.79Z",
+  "ts": "2026-07-25T05:47:50.14Z"
+ },
+ {
+  "id": "DARS;865671;98eecafe-d9cd-4a34-8ff5-a7585e252cc3",
+  "type": "MaintenanceWorks",
+  "desc": "A3, Fernetiči - razcep Gabrk, razcep Gabrk - počivališče Povir iz smeri Kopra proti Fernetičem, Italiji, dela, oviran promet.",
+  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
+  "lat": 45.69491,
+  "lng": 13.98052,
+  "start": "2026-07-25T05:35:09.76Z",
+  "end": "2026-07-25T12:00:00Z",
+  "ts": "2026-07-25T05:35:13.013Z"
+ },
+ {
+  "id": "DARS;865668;843fa63a-f4a2-4f86-b16d-09bc69420dad",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, uvoz Brezovica - priključek Vrhnika v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 46.02573,
+  "lng": 14.4341,
+  "start": "2026-07-25T05:01:23.46Z",
+  "end": "2026-07-25T19:00:30.903Z",
+  "ts": "2026-07-25T05:01:41.54Z"
+ },
+ {
+  "id": "DARS;865662;6bab593f-3f74-42fa-9b28-1a93aef7850a",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, razcep Nanos - izvoz Nanos v smeri Kopra, dela, oviran promet, preusmeritev prometa skozi plato Nanos zaradi sanacije cestišča po požaru vozila.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.75876,
+  "lng": 14.05693,
+  "start": "2026-07-25T03:57:44.84Z",
+  "end": "2026-07-25T20:00:02.847Z",
+  "ts": "2026-07-25T04:02:24.613Z"
+ },
+ {
+  "id": "DARS;861047;42700b6c-047d-413a-8411-e9fb3a4d40d4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - priključek Ljubljana center v smeri Kozarij, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02502,
+  "lng": 14.50269,
+  "start": "2026-07-03T03:14:56.24Z",
+  "end": "2026-07-31T09:00:00Z",
+  "ts": "2026-07-25T03:51:06.74Z"
+ },
+ {
+  "id": "DARS;836643;d20b5567-e002-4f09-a442-803b7beeb49f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, počivališče Studenec - priključek Unec v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.75941,
+  "lng": 14.18258,
+  "start": "2026-03-01T10:12:00.717Z",
+  "end": "2026-07-30T12:00:00Z",
+  "ts": "2026-07-25T03:41:01.34Z"
+ },
+ {
+  "id": "DARS;865486;861a2535-fa4a-47d7-93eb-ebb63dbb280f",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "RT-940, Pregarje - Harije, Harije - Zajelšje, izmenično enosmerni promet, košnja, do 14. ure.",
+  "loc": "RT-940, Pregarje - Harije",
+  "lat": 45.56513,
+  "lng": 14.15465,
+  "start": "2026-07-24T09:50:36.057Z",
+  "end": "2026-07-25T12:00:00Z",
+  "ts": "2026-07-25T03:36:46.22Z"
+ },
+ {
+  "id": "DARS;865660;aa332b69-595d-4879-b4d4-f8442f739044",
+  "type": "MaintenanceWorks",
+  "desc": "RT-926, Solčava - Podolševa - Sleme, Solčava - Podolševa, oviran promet, košnja, do 26. 7. 2026.",
+  "loc": "RT-926, Solčava - Podolševa - Sleme",
+  "lat": 46.41983,
+  "lng": 14.69317,
+  "start": "2026-07-25T03:33:17.89Z",
+  "end": "2026-07-26T15:00:00Z",
+  "ts": "2026-07-25T03:34:00.747Z"
+ },
+ {
+  "id": "DARS;865659;fac92ef1-fa36-4268-bb9c-db7540a4c88a",
+  "type": "MaintenanceWorks",
+  "desc": "RT-926, Solčava - Podolševa - Sleme, pri Podolševi, oviran promet, košnja, do 17:00.",
+  "loc": "RT-926, Solčava - Podolševa - Sleme",
+  "lat": 46.43293,
+  "lng": 14.6863,
+  "start": "2026-07-25T03:29:47.393Z",
+  "end": "2026-07-25T15:00:00Z",
+  "ts": "2026-07-25T03:30:23.933Z"
+ },
  {
   "id": "DARS;861046;2cb65d50-0177-4fb4-8ba2-94c641e08e24",
   "type": "MaintenanceWorks",
@@ -13,94 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-03T03:13:40.227Z",
   "end": "2026-07-31T21:59:00Z",
   "ts": "2026-07-24T21:33:05.383Z"
- },
- {
-  "id": "DARS;865650;6a06cb8d-5265-442b-a422-a5e968d187bd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, počivališče Ravbarkomanda - priključek Unec v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.78731,
-  "lng": 14.22463,
-  "start": "2026-07-24T20:08:45.51Z",
-  "end": "2026-07-25T03:00:00Z",
-  "ts": "2026-07-24T21:16:43.81Z"
- },
- {
-  "id": "DARS;865643;474f55e8-5630-4a98-b4a3-446657f39d91",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, razcep Zadobrova - priključek Ljubljana Sneberje v smeri Celja, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.07308,
-  "lng": 14.57893,
-  "start": "2026-07-24T19:12:18.777Z",
-  "end": "2026-07-25T00:00:15.32Z",
-  "ts": "2026-07-24T19:12:21.18Z"
- },
- {
-  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
-  "loc": "R3-706, Ožbalt - Zg. Kapla",
-  "lat": 46.62649,
-  "lng": 15.43348,
-  "start": "2026-06-22T06:28:52.303Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-07-24T15:00:31.823Z"
- },
- {
-  "id": "DARS;865530;2d202a75-c472-4db2-94ac-3d7e098f583a",
-  "type": "MaintenanceWorks",
-  "desc": "G1-1, Maribor (Koroški most - cesta Proletarskih Brigad), na Koroški cesti med Gosposvetsko cesto in Valvasorjevo ulico, oviran promet, barvanje talnih označb, do 25. 7. 2026.",
-  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
-  "lat": 46.56296,
-  "lng": 15.62799,
-  "start": "2026-07-24T19:00:00Z",
-  "end": "2026-07-25T02:00:00Z",
-  "ts": "2026-07-24T12:12:22.013Z"
- },
- {
-  "id": "DARS;865529;bf7df6d1-4be4-4721-8536-259b0c4301aa",
-  "type": "MaintenanceWorks",
-  "desc": "G1-1, Maribor - Dravograd, v Mariboru, na cesti Proletarskih brigad, oviran promet, barvanje talnih označb, do 25. 7. 2026.",
-  "loc": "G1-1, Maribor (C. Proletarskih Brigad - Tržaška C.)",
-  "lat": 46.543,
-  "lng": 15.63365,
-  "start": "2026-07-24T19:00:00Z",
-  "end": "2026-07-25T02:00:00Z",
-  "ts": "2026-07-24T12:10:44.033Z"
- },
- {
-  "id": "DARS;865527;1b1c35ad-cd6f-4c40-b7e3-ead5932bb000",
-  "type": "MaintenanceWorks",
-  "desc": "G1-1, Maribor - Dravograd, v Mariboru, na Cesti Proletarskih brigad, med Borovo vasjo in Kardeljevo cesto, oviran promet, barvanje talnih označb, do 25. 7. 2026.",
-  "loc": "G1-1, Maribor (c. Proletarskih Brigad - Tržaška cesta)",
-  "lat": 46.54557,
-  "lng": 15.61994,
-  "start": "2026-07-24T19:00:00Z",
-  "end": "2026-07-25T02:00:00Z",
-  "ts": "2026-07-24T12:06:45.2Z"
- },
- {
-  "id": "DARS;865486;861a2535-fa4a-47d7-93eb-ebb63dbb280f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-940, Pregarje - Harije, Harije - Zajelšje, izmenično enosmerni promet, košnja, do 25. 7. 2026.",
-  "loc": "RT-940, Pregarje - Harije",
-  "lat": 45.56513,
-  "lng": 14.15465,
-  "start": "2026-07-24T09:50:36.057Z",
-  "end": "2026-07-25T12:00:00Z",
-  "ts": "2026-07-24T12:03:59.603Z"
- },
- {
-  "id": "DARS;865519;03299ddc-be56-4dd8-9977-8c4c16d792af",
-  "type": "MaintenanceWorks",
-  "desc": "G1-1, Maribor (Koroški most - cesta Proletarskih Brigad), na ulici heroja Šercerja, oviran promet, barvanje talnih označb, do 25. 7. 2026.",
-  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
-  "lat": 46.56301,
-  "lng": 15.62786,
-  "start": "2026-07-24T19:00:00Z",
-  "end": "2026-07-25T02:00:00Z",
-  "ts": "2026-07-24T11:29:26.95Z"
  },
  {
   "id": "DARS;865514;177f108a-7de0-457a-9d3b-6f077d12e8d8",
@@ -774,17 +796,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-03T07:37:07.83Z"
  },
  {
-  "id": "DARS;861047;42700b6c-047d-413a-8411-e9fb3a4d40d4",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - priključek Ljubljana center v smeri Kozarij, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02502,
-  "lng": 14.50269,
-  "start": "2026-07-03T03:14:56.24Z",
-  "end": "2026-07-31T09:00:00Z",
-  "ts": "2026-07-03T03:15:27.067Z"
- },
- {
   "id": "DARS;860848;68918368-454a-4dcc-8ee3-335a705d9347",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-203, Predel - Bovec, pri Ravnem Lazu, izmenično enosmerni promet, rekonstrukcija cesta in izvedba kanalizacije, do 6. 11. 2026.",
@@ -1278,17 +1289,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-20T07:06:24.837Z",
   "end": "2026-10-30T22:59:00Z",
   "ts": "2026-05-20T07:08:53.43Z"
- },
- {
-  "id": "DARS;836643;d20b5567-e002-4f09-a442-803b7beeb49f",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, počivališče Studenec - počivališče Ravbarkomanda v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.75941,
-  "lng": 14.18258,
-  "start": "2026-03-01T10:12:00.717Z",
-  "end": "2026-07-30T12:00:00Z",
-  "ts": "2026-05-13T20:47:59.497Z"
  },
  {
   "id": "DARS;834721;7ad93a40-4883-4787-84e4-3a7a83bd6aed",
