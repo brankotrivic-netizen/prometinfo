@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T10:05:22.702Z";
+export const PROMET_SI_UPDATED = "2026-07-25T11:31:45.072Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;865680;e0d76197-3fc6-4a1c-a4b7-172841048fc4",
+  "id": "DARS;865674;2d883a81-aecc-429d-9a9b-7e90f74420f5",
   "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, uvoz Bertoki v smeri Kopra, dela, oviran promet.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.54731,
-  "lng": 13.76464,
-  "start": "2026-07-25T06:03:10.547Z",
-  "end": "2026-07-25T11:00:43.17Z",
-  "ts": "2026-07-25T06:03:28.043Z"
+  "desc": "H3, Ljubljana - severna obvoznica, pred priključkom Ljubljana Tomačevo v smeri Kosez, dela, zaprt prehitevalni pas.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.07287,
+  "lng": 14.54839,
+  "start": "2026-07-25T10:25:18.297Z",
+  "end": "2026-07-25T12:00:52.79Z",
+  "ts": "2026-07-25T10:26:18.627Z"
  },
  {
   "id": "DARS;865668;843fa63a-f4a2-4f86-b16d-09bc69420dad",
