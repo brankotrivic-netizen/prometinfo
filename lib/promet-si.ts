@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T18:36:40.768Z";
+export const PROMET_SI_UPDATED = "2026-07-25T19:53:04.992Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;865790;d031de7d-f6e0-4f46-a387-d74338b63ae6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, počivališče Zima - priključek Celje vzhod v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.2559,
+  "lng": 15.35381,
+  "start": "2026-07-25T19:48:57.437Z",
+  "end": "2026-07-25T21:30:23.63Z",
+  "ts": "2026-07-25T19:49:08.293Z"
+ },
+ {
+  "id": "DARS;865662;6bab593f-3f74-42fa-9b28-1a93aef7850a",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, razcep Nanos - izvoz Nanos v smeri Kopra, dela, oviran promet, preusmeritev prometa skozi plato Nanos zaradi sanacije cestišča po požaru vozila.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.75876,
+  "lng": 14.05693,
+  "start": "2026-07-25T03:57:44.84Z",
+  "end": "2026-07-25T21:59:00Z",
+  "ts": "2026-07-25T19:20:37.983Z"
+ },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
   "type": "MaintenanceWorks",
@@ -37,28 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-25T17:33:53.853Z"
  },
  {
-  "id": "DARS;865775;519a20aa-c6b9-469b-b200-9837130ef44b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Brnik - priključek Kranj vzhod v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.22166,
-  "lng": 14.43363,
-  "start": "2026-07-25T17:24:46.403Z",
-  "end": "2026-07-25T23:00:00Z",
-  "ts": "2026-07-25T17:25:05.923Z"
- },
- {
-  "id": "DARS;865774;9d277b7a-c0f5-4891-a8f2-df286f8a49b6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Senožeče - priključek Divača v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.72049,
-  "lng": 14.0071,
-  "start": "2026-07-25T17:17:29.657Z",
-  "end": "2026-07-25T21:00:00Z",
-  "ts": "2026-07-25T17:17:35.137Z"
- },
- {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
@@ -68,28 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-22T06:28:52.303Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-07-25T15:00:25.33Z"
- },
- {
-  "id": "DARS;865668;843fa63a-f4a2-4f86-b16d-09bc69420dad",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Brezovica - priključek Vrhnika v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.02573,
-  "lng": 14.4341,
-  "start": "2026-07-25T05:01:23.46Z",
-  "end": "2026-07-25T19:00:30.903Z",
-  "ts": "2026-07-25T05:01:41.54Z"
- },
- {
-  "id": "DARS;865662;6bab593f-3f74-42fa-9b28-1a93aef7850a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Nanos - izvoz Nanos v smeri Kopra, dela, oviran promet, preusmeritev prometa skozi plato Nanos zaradi sanacije cestišča po požaru vozila.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.75876,
-  "lng": 14.05693,
-  "start": "2026-07-25T03:57:44.84Z",
-  "end": "2026-07-25T20:00:02.847Z",
-  "ts": "2026-07-25T04:02:24.613Z"
  },
  {
   "id": "DARS;861047;42700b6c-047d-413a-8411-e9fb3a4d40d4",
