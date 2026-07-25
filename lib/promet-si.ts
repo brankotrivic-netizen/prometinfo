@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T19:53:04.992Z";
+export const PROMET_SI_UPDATED = "2026-07-25T20:39:19.022Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;865790;d031de7d-f6e0-4f46-a387-d74338b63ae6",
+  "id": "DARS;865794;79fa48b2-1b85-401a-b6e3-3ab84a87d5d7",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, počivališče Zima - priključek Celje vzhod v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "desc": "A1, Maribor - Ljubljana, počivališče Zima - priključek Celje vzhod v smeri Ljubljane, dela, zaprt vozni pas.",
   "loc": "A1-E57, Maribor - Ljubljana",
   "lat": 46.2559,
   "lng": 15.35381,
-  "start": "2026-07-25T19:48:57.437Z",
+  "start": "2026-07-25T20:35:44.793Z",
   "end": "2026-07-25T21:30:23.63Z",
-  "ts": "2026-07-25T19:49:08.293Z"
- },
- {
-  "id": "DARS;865662;6bab593f-3f74-42fa-9b28-1a93aef7850a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Nanos - izvoz Nanos v smeri Kopra, dela, oviran promet, preusmeritev prometa skozi plato Nanos zaradi sanacije cestišča po požaru vozila.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.75876,
-  "lng": 14.05693,
-  "start": "2026-07-25T03:57:44.84Z",
-  "end": "2026-07-25T21:59:00Z",
-  "ts": "2026-07-25T19:20:37.983Z"
+  "ts": "2026-07-25T20:35:46.56Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -46,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-07-25T17:59:55.24Z"
- },
- {
-  "id": "DARS;865777;4efafd68-4e4e-4211-a34a-e16060d1a640",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, počivališče Lukovica - priključek Blagovica v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.17183,
-  "lng": 14.706,
-  "start": "2026-07-25T17:33:39.683Z",
-  "end": "2026-07-25T21:00:00Z",
-  "ts": "2026-07-25T17:33:53.853Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",

@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "25.7.2026. 21:43",
-  "text": "Vremenski uvjeti su povoljni za vožnju. Promet je pojačan na važnijim cestama u smjeru mora i unutrašnjosti te na prilazima turističkim središtima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac prometna nesreća na zagrebačkoj obilaznici (A3) između čvora Zagreb zapad i čvora Lučko (na 15+8000 km) u smjeru Lipovca, vozi se jednom prometnom trakom, kolona je oko 2 km DC66 Barban-Pula zbog prometne nesreće prekinut je promet kraj mjesta Prodol DC1 Gračac-Knin zastoj je i kolona u zoni radova kraj mjesta Otrić AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključ…"
+  "updated": "25.7.2026. 22:25",
+  "text": "Vremenski uvjeti su povoljni za vožnju. Promet je pojačan na važnijim cestama u smjeru mora i unutrašnjosti te na prilazima turističkim središtima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: DC66 Barban-Pula zbog prometne nesreće prekinut je promet kraj mjesta Prodol DC1 Gračac-Knin zastoj je i kolona u zoni radova kraj mjesta Otrić ŽC6132 Trogir-Seget Vranjica zbog prometne nesreće prekinut je promet kod hotela Medena, obilazak je Jadranskom magistralom (DC8) AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni č…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "25.7.2026. 21:43",
-  "text": "U pomorskom prometu nema poteškoća. 26. srpnja 2026. godine (nedjelja): (08:00 sati) katamaran b/p Jelena na liniji 51BB Zadar (Gaženica) - Ancona neće isploviti zbog nepovoljnih vremenskih uvjeta otkazuje se katamaranska linija Pula-Zadar-Pula otkazuje se katamaranska linija Dubrovnik-Pomena-Korčula otkazuje se katamaranska linija 659 Split - Bol - Hvar - Vis s polascima iz luke Split u 07:30 sati i 15:30 sati te povratak iz luke Vis u 10:10 sati i 19:30 sati. Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 26.07.(nedjelja): 26. srpnja 2026. godine (nedjelja) trajekt će iz luke Mali Iž/Bršanj za luk…"
+  "updated": "25.7.2026. 22:26",
+  "text": "U prekidu je katamaranska linija 323 Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun. 26. srpnja 2026. godine (nedjelja): (08:00 sati) katamaran b/p Jelena na liniji 51BB Zadar (Gaženica) - Ancona neće isploviti zbog nepovoljnih vremenskih uvjeta otkazuje se katamaranska linija Pula-Zadar-Pula otkazuje se katamaranska linija Dubrovnik-Pomena-Korčula otkazuje se katamaranska linija 659 Split - Bol - Hvar - Vis s polascima iz luke Split u 07:30 sati i 15:30 sati te povratak iz luke Vis u 10:10 sati i 19:30 sati. Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 26.07.(nedjelja): 26. srpnja 2026. godine (n…"
  },
  {
   "title": "Željeznički promet",
