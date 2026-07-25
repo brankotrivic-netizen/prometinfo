@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T14:17:04.177Z";
+export const PROMET_SI_UPDATED = "2026-07-25T15:34:57.980Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-25T15:00:25.33Z"
+ },
  {
   "id": "DARS;865668;843fa63a-f4a2-4f86-b16d-09bc69420dad",
   "type": "MaintenanceWorks",
@@ -59,17 +70,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-25T03:34:00.747Z"
  },
  {
-  "id": "DARS;865659;fac92ef1-fa36-4268-bb9c-db7540a4c88a",
-  "type": "MaintenanceWorks",
-  "desc": "RT-926, Solčava - Podolševa - Sleme, pri Podolševi, oviran promet, košnja, do 17:00.",
-  "loc": "RT-926, Solčava - Podolševa - Sleme",
-  "lat": 46.43293,
-  "lng": 14.6863,
-  "start": "2026-07-25T03:29:47.393Z",
-  "end": "2026-07-25T15:00:00Z",
-  "ts": "2026-07-25T03:30:23.933Z"
- },
- {
   "id": "DARS;861046;2cb65d50-0177-4fb4-8ba2-94c641e08e24",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, promet poteka po dveh zoženih pasovih.",
@@ -103,17 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-24T11:19:35.523Z"
  },
  {
-  "id": "DARS;865510;58aeec09-4d7f-4b27-8334-7b0834f46e97",
-  "type": "MaintenanceWorks",
-  "desc": "R2-428, Luče - Sestre Logar, pri Solčavi, dela, oviran promet, do 25. 7. 2026.",
-  "loc": "R2-428, Luče - Sestre Logar",
-  "lat": 46.41978,
-  "lng": 14.69318,
-  "start": "2026-07-24T11:07:47.25Z",
-  "end": "2026-07-25T15:00:00Z",
-  "ts": "2026-07-24T11:09:20.333Z"
- },
- {
   "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G1-2, Slovenska Bistrica - Pragersko, pri AC priključku Slovenska Bistrica sever, izmenično enosmerni promet, kratkotrajne popolne zapore (do 15 minut), novogradnje AC viadukta Devina, do 31. 10. 2026.",
@@ -145,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-20T06:57:03.79Z",
   "end": "2026-07-31T15:00:00Z",
   "ts": "2026-07-24T07:08:10.577Z"
- },
- {
-  "id": "DARS;861803;f782582d-c843-4af2-89bc-cda51e4c00fa",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-206, Bovec - Vršič - Kranjska Gora, pri naselju Kal-Koritnica, izmenično enosmerni promet, ureditve avtobusnih postajališč, do 25. 7. 2026.",
-  "loc": "R1-206, Trenta - Bovec",
-  "lat": 46.33709,
-  "lng": 13.59849,
-  "start": "2026-07-07T05:26:57.777Z",
-  "end": "2026-07-25T15:00:00Z",
-  "ts": "2026-07-24T06:34:19.213Z"
  },
  {
   "id": "DARS;851316;f1f1c70f-96ff-417b-8096-aef0686867c9",
