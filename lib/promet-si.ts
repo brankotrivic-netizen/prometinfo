@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T21:33:03.210Z";
+export const PROMET_SI_UPDATED = "2026-07-25T22:34:05.171Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -563,17 +563,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-08T05:57:02.613Z",
   "end": "2026-07-31T21:59:00Z",
   "ts": "2026-07-07T05:34:38.377Z"
- },
- {
-  "id": "DARS;851587;60cf7396-45ba-4007-b12a-c69380e0f688",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-206, Bovec - Vršič - Kranjska Gora, pri Soči, izmenično enosmerni promet, ureditev avtobusnih postajališč, do 25. 7. 2026.",
-  "loc": "R1-206, Trenta - Bovec",
-  "lat": 46.3422,
-  "lng": 13.66788,
-  "start": "2026-05-21T05:28:36.413Z",
-  "end": "2026-07-25T21:59:00Z",
-  "ts": "2026-07-07T05:28:03.253Z"
  },
  {
   "id": "DARS;858200;905ee57a-deed-46ec-89df-45369b8ff25f",
