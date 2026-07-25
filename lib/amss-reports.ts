@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Kuzmin- petlja Sremska Mitrovica, radovi",
+  "text": "Od 27. 7. 2026. godine, od 6 časova, do 31. 7. 2026. godine, izvodiće se radovi na asfaltiranju odmorišta Laćarak, na deonici petlja Kuzmin petlja Sremska Mitrovica, u smeru ka Kuzminu. U zoni radova za saobraćaj će biti zatvorena zaustavna saobraćajna traka, u dužini od kilometar, kao i ulaz na odmorište. Izvor: Putevi Srbije"
+ },
+ {
   "title": "Pančevački most, Beograd-Krnjača",
   "text": "Od 25. 7. 2026 do 29. 7. 2026. godine, u periodu od 20 do 5 časova, izvodiće se radovi na popravci dilatacionih spojnica, na deonici Beograd (Bogoslovija) petlja Krnjača, deonica pre čelične konstrukcije Pančevačkog mosta iz smera ulice Despota Stefana Pančevo. U periodu izvođenja radova, saobraćaj će se odvijati u jednoj saobraćajnoj traci, dok će se saobraćaj van perioda izvođenja radova odvijati neometano u dve saobraćajne trake. Izvor Putevi Srbije"
  },
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Vlase- petlja Vranje jug, radovi",
   "text": "Do 1. 6. 2026. godine, ukoliko vremenski uslovi to dozvole, na snazi je izmenjen režim saobraćaja usled aktiviranja klizišta na državnom putu II A reda broj 227, deonica Vlase - petlja Vranje Jug, kod mesta Drenovac, leva strana puta u smeru ka Vranju. Saobraćaj se odvija naizmeničnim propuštanjem vozila, dok je na snazi zabrana saobraćaja za teretna motorna vozila preko 10 t. Izvor: Putevi Srbije"
- },
- {
-  "title": "Glogonj-Jabuka, radovi",
-  "text": "Od 5. 3. 2026. godine biće izmenjen režim saobraćaja na državnom putu Glogonj Jabuka, na km 0+000 do km 25+407. Izmena režima saobraćaja vrši se radi obezbeđivanja priključka gradilištu, a za potrebe izvođenja pripremnih radova na izgradnji auto-puta Beograd Zrenjanin Novi Sad, deonica 1: Beograd Zrenjanin. U zoni radova, saobraćaj će se odvijati shodno privremenoj saobraćajnoj signalizaciji i opremi. Na rastojanju od 100 m od nailaznog priključka postavljena je signalizacija ograničenje brzine …"
  }
 ];

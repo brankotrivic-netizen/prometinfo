@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "25.7.2026. 19:02",
-  "text": "Vremenski uvjeti su povoljni za vožnju. Promet je pojačan na važnijim cestama u smjeru mora i unutrašnjosti te na prilazima turističkim središtima. Zastoji su na autocestama u zonama naplatnih postaja, čvorova, tunela i odmorišta te na većini graničnih prijelaza, osobito na izlasku iz zemlje. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik pojačan je promet od čvora Bosiljevo 2 u smjeru Zagreba, povremeno se vozi u kolonama uz zastoje pred naplatama Demerje i Lučko u smjeru Zagreba kolona je oko 1 km, u smjeru mora nema dužih čekanja usporeno u koloni uz povremene zastoje vozi se na dionici čvor Gospić-tunel…"
+  "updated": "25.7.2026. 20:29",
+  "text": "Vremenski uvjeti su povoljni za vožnju. Promet je pojačan na važnijim cestama u smjeru mora i unutrašnjosti te na prilazima turističkim središtima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik pojačan je promet od čvora Bosiljevo 2 u smjeru Zagreba, povremeno se vozi u kolonama uz zastoje A3 Bregana-Lipovac prometna nesreća na zagrebačkoj obilaznici (A3) između čvora Zagreb zapad i čvora Lučko (na 15+8000 km) u smjeru Lipovca, vozi se jednom prometnom trakom, kolona je oko 2 km DC66 Barban-Pula zbog prometne nesreće prekinut je promet kraj mjesta Prodol DC1 Gračac-Knin zastoj je i kolona u zoni radova kraj …"
  },
  {
   "title": "Granični prijelazi",
