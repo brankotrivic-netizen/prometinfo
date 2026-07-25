@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T06:09:07.051Z";
+export const PROMET_SI_UPDATED = "2026-07-25T08:22:21.582Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;865680;e0d76197-3fc6-4a1c-a4b7-172841048fc4",
@@ -13,28 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-25T06:03:10.547Z",
   "end": "2026-07-25T11:00:43.17Z",
   "ts": "2026-07-25T06:03:28.043Z"
- },
- {
-  "id": "DARS;865674;2d883a81-aecc-429d-9a9b-7e90f74420f5",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, pred priključkom Ljubljana Tomačevo v smeri Kosez, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07626,
-  "lng": 14.54101,
-  "start": "2026-07-25T05:44:30.423Z",
-  "end": "2026-07-25T12:00:52.79Z",
-  "ts": "2026-07-25T05:47:50.14Z"
- },
- {
-  "id": "DARS;865671;98eecafe-d9cd-4a34-8ff5-a7585e252cc3",
-  "type": "MaintenanceWorks",
-  "desc": "A3, Fernetiči - razcep Gabrk, razcep Gabrk - počivališče Povir iz smeri Kopra proti Fernetičem, Italiji, dela, oviran promet.",
-  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
-  "lat": 45.69491,
-  "lng": 13.98052,
-  "start": "2026-07-25T05:35:09.76Z",
-  "end": "2026-07-25T12:00:00Z",
-  "ts": "2026-07-25T05:35:13.013Z"
  },
  {
   "id": "DARS;865668;843fa63a-f4a2-4f86-b16d-09bc69420dad",
