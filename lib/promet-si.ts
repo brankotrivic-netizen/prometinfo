@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T15:34:57.980Z";
+export const PROMET_SI_UPDATED = "2026-07-25T16:31:37.279Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
@@ -90,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-24T11:20:35.387Z",
   "end": "2026-07-26T15:00:00Z",
   "ts": "2026-07-24T11:22:15.39Z"
- },
- {
-  "id": "DARS;865513;d406bb11-4bed-4e49-a798-b8e9daa26aac",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-212, Unec - Cerknica, na Rakeku, izmenično enosmerni promet, vzdrževalna dela, do 25. 7. 2026.",
-  "loc": "R1-212, Rakek - Cerknica",
-  "lat": 45.81271,
-  "lng": 14.32031,
-  "start": "2026-07-24T11:11:25.687Z",
-  "end": "2026-07-25T16:00:00Z",
-  "ts": "2026-07-24T11:19:35.523Z"
  },
  {
   "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
