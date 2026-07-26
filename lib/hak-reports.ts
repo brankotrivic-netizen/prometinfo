@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.7.2026. 22:27",
-  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa u smjeru unutrašnjosti, a pred naplatama Lučko i Demerje nema dužih čekanja A3 Bregana-Lipovac pred graničnim prijelazom Bajakovo u smjeru Srbije kolona osobnih vozila je oko 1 km. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 minuta po…"
+  "updated": "26.7.2026. 23:37",
+  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: životinja (lisica) na autocesti A1 između čvora Prgomet i tunela Dubrave. Promet se vodi po dvije prometne trake u oba smjera uz ograničenje brzine od 60 km/h. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 minuta po zaustavljanju do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustav…"
  },
  {
   "title": "Granični prijelazi",

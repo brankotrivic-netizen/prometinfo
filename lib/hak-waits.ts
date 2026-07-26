@@ -83,26 +83,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-07-26T19:36:26+02:00"
  },
  {
-  "id": "",
-  "name": "Hrvatska Dubica (Bosanska Dubica)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "26.7.2026. 21:00:13",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-07-26T21:00:13+02:00",
-  "izlazTsISO": "",
-  "ts": "26.7.2026. 21:00:13",
-  "tsISO": "2026-07-26T21:00:13+02:00"
- },
- {
   "id": "ba-kostajnica",
   "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
   "ulazMin": 30,
@@ -181,25 +161,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-07-26T19:03:09+02:00",
   "ts": "26.7.2026. 19:03:09",
   "tsISO": "2026-07-26T19:03:09+02:00"
- },
- {
-  "id": "hr-ilok",
-  "name": "Ilok (Bačka Palanka)",
-  "ulazMin": null,
-  "izlazMin": 30,
-  "ulazTxt": "-",
-  "izlazTxt": "do 30 min.",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "26.7.2026. 18:07:33",
-  "ulazTsISO": "",
-  "izlazTsISO": "2026-07-26T18:07:33+02:00",
-  "ts": "26.7.2026. 18:07:33",
-  "tsISO": "2026-07-26T18:07:33+02:00"
  }
 ];
