@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-26T18:40:11.959Z";
+export const PROMET_SI_UPDATED = "2026-07-26T19:51:00.358Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;865885;c1b4cf6b-2501-4eb4-9c2f-22527548ecaf",
@@ -15,17 +15,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-26T17:38:18.117Z"
  },
  {
-  "id": "DARS;865884;d7fd3814-c2f4-4c4b-a510-500cadf58790",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Celje vzhod - priključek Dramlje v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25438,
-  "lng": 15.31628,
-  "start": "2026-07-26T17:37:31.733Z",
-  "end": "2026-07-26T21:30:00.46Z",
-  "ts": "2026-07-26T17:37:34.503Z"
- },
- {
   "id": "DARS;865881;bc5eceb1-63b3-45e9-ad88-4e62eb859b7d",
   "type": "MaintenanceWorks",
   "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Tomačevo - priključek Ljubljana sever v smeri Kosez, dela, pomična zapora prehitevalnega pasu.",
@@ -35,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-26T17:28:24.863Z",
   "end": "2026-07-27T01:00:05.68Z",
   "ts": "2026-07-26T17:28:28.177Z"
- },
- {
-  "id": "DARS;865877;fa5aa3d6-508e-4d6c-92f6-c79705fdddcb",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Kozina - razcep Gabrk v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.61399,
-  "lng": 13.94178,
-  "start": "2026-07-26T16:50:48.967Z",
-  "end": "2026-07-26T21:00:00Z",
-  "ts": "2026-07-26T16:50:51.443Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
