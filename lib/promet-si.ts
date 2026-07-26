@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-25T22:34:05.171Z";
+export const PROMET_SI_UPDATED = "2026-07-26T06:28:03.019Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;865818;13d84d7c-1da6-4e0a-85e8-20e9fcccc328",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Logatec, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.90885,
+  "lng": 14.25562,
+  "start": "2026-07-26T06:03:15.677Z",
+  "end": "2026-07-26T12:00:00Z",
+  "ts": "2026-07-26T06:03:24.993Z"
+ },
+ {
+  "id": "DARS;865817;5f0e20cb-2f9e-4480-9314-6e9184d1af01",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, izvoz 49 Črni Kal iz smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.55397,
+  "lng": 13.85528,
+  "start": "2026-07-26T05:59:54.457Z",
+  "end": "2026-07-26T11:00:09.307Z",
+  "ts": "2026-07-26T06:00:08.09Z"
+ },
+ {
+  "id": "DARS;865816;4468f2c9-176f-4afb-ad6d-9dd54dbcaf7f",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, oviran promet.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.97214,
+  "lng": 14.67023,
+  "start": "2026-07-26T05:44:50.607Z",
+  "end": "2026-07-26T11:00:00Z",
+  "ts": "2026-07-26T05:44:54.26Z"
+ },
+ {
+  "id": "DARS;865812;5179b6ca-cee0-49ae-b58e-864d4486f340",
+  "type": "MaintenanceWorks",
+  "desc": "A3, Fernetiči - razcep Gabrk, razcep Gabrk iz smeri Fernetičev, Italije proti Ljubljani, dela, oviran promet.",
+  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
+  "lat": 45.69345,
+  "lng": 13.97109,
+  "start": "2026-07-26T04:48:28.09Z",
+  "end": "2026-07-26T12:00:00Z",
+  "ts": "2026-07-26T04:49:11.59Z"
+ },
+ {
+  "id": "DARS;865808;d14c60e2-c28f-4255-b6f3-ba8cda093aab",
+  "type": "MaintenanceWorks",
+  "desc": "RT-927, Žibovt - Sv. Duh - Podolševa, v Logarski Dolini, oviran promet, košnja, do 17:00.",
+  "loc": "RT-927, Žibovt - Sv. Duh - Podolševa",
+  "lat": 46.43024,
+  "lng": 14.63135,
+  "start": "2026-07-26T03:37:51.063Z",
+  "end": "2026-07-26T15:00:00Z",
+  "ts": "2026-07-26T03:38:06.287Z"
+ },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
   "type": "MaintenanceWorks",
@@ -24,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-07-25T17:59:55.24Z"
- },
- {
-  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
-  "loc": "R3-706, Ožbalt - Zg. Kapla",
-  "lat": 46.62649,
-  "lng": 15.43348,
-  "start": "2026-06-22T06:28:52.303Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-07-25T15:00:25.33Z"
  },
  {
   "id": "DARS;861047;42700b6c-047d-413a-8411-e9fb3a4d40d4",
