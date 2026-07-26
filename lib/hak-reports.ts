@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.7.2026. 13:38",
-  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Promet je pojačan na važnijim cestama u smjeru mora i unutrašnjosti, prilazima turističkim središtima, pojedinim trajektnim lukama i pristaništima te na većini graničnih prijelaza. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa između Zagreba i Zadra u oba smjera pred naplatnim postajama Lučko u smjeru mora te Demerje u smjeru Zagreba kolone su oko 1 km u kolonama u pokretu uz moguće zastoje vozi se na dionicama: između čvorova Karlovac i Bosiljevo 2 u smjeru mora između čvorova Oguli…"
+  "updated": "26.7.2026. 14:39",
+  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Promet je pojačan na važnijim cestama u smjeru mora i unutrašnjosti, prilazima turističkim središtima, pojedinim trajektnim lukama i pristaništima te na većini graničnih prijelaza. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa između Zagreba i Zadra u oba smjera pred naplatnim postajama Demerje u smjeru Zagreba kolona je oko 1 km, a pred naplatama Lučko u oba smjera nema dužih čekanja između čvora Ogulin i naplate Lučko u smjeru Zagreba vozi se u kolonama u pokretu uz moguće zastoje …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "26.7.2026. 13:23",
+  "updated": "26.7.2026. 14:39",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "26.7.2026. 13:23",
+  "updated": "26.7.2026. 14:39",
   "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: katamaranske linije: Jadrolinija 9308 Mali Lošinj - Ilovik - Susak - Unije - Martinšćica - Cres - Rijeka Jadrolinija 9309 Novalja-Rab-Rijeka Jadrolinija 323 Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun Krilo-Kapetan Luka Pula-Zadar-Pula M/B Naranča Dubrovnik-Pomena-Korčula Jadrolinija l 659 Split - Bol - Hvar - Vis s polascima iz luke Split u 15:30 sati te povratak iz luke Vis u 19:30 sati brodska linija: Jadrolinija 310 Mali Lošinj - Vele Srakane - Unije - Susak Jadrolinija 409 Preko-Zadar Obavijest o uvođenju dodatnih polazno-povratnih putovanja na trajektnoj liniji 435 Zadar/Gaženica-Iž Mali/Bršanj-Rava-Rava Mala i obratno za 26.07.(nedje…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "26.7.2026. 13:23",
+  "updated": "26.7.2026. 14:39",
   "text": "Stanje u željezničkom putničkom prometu 24. srpnja 2026. u 8.00 sati Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Umjesto vlaka 2251 Križevci 5.15 – Koprivnica 5.51 putnike od ponedjeljka do petka prevoze autobusi. Između kolodvora Duga Resa, Karlovac i Bubnjarci putnike umjesto vlakova prevoze autobusi…"
  },
  {

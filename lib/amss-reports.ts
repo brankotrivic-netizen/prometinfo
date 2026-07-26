@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Petlja Kovilj-petlja Novi Sad Jug, radovi",
+  "text": "Od 27. 7. do 30. 7. 2026. godine, u toku svetlog dela dana, izvodiće se radovi na obeležavanju linija na petlji Kovilj - petlja Novi Sad Jug, smer ka Novom Sadu. Radovi će se odvijati u jednoj saobraćajnoj traci. Putevi Srbije"
+ },
+ {
   "title": "Petlja Kuzmin- petlja Sremska Mitrovica, radovi",
   "text": "Od 27. 7. 2026. godine, od 6 časova, do 31. 7. 2026. godine, izvodiće se radovi na asfaltiranju odmorišta Laćarak, na deonici petlja Kuzmin petlja Sremska Mitrovica, u smeru ka Kuzminu. U zoni radova za saobraćaj će biti zatvorena zaustavna saobraćajna traka, u dužini od kilometar, kao i ulaz na odmorište. Izvor: Putevi Srbije"
  },
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Priboj - Ustibar - Sastavci - Bučje - Pljevlja, Opis puta",
   "text": "U pitanju je asfaltni put sa oštećenjima. Put ima dosta neravnina, rupa i kolotraga. Prolazi kroz šumska područja i ima dosta krivina. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Loznica-Voćnjak-Paskovac-Zajača, Opis puta",
-  "text": "Put koji od Loznice vodi do mesta Zajača, preko mesta Voćnjak i Paskovac ima dosta krivina ali je celom dužinom asfaltni. Srećan put Vam želi vaš AMSS."
  }
 ];
