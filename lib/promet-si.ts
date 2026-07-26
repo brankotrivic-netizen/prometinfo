@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-26T14:15:21.754Z";
+export const PROMET_SI_UPDATED = "2026-07-26T15:30:04.033Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;865808;d14c60e2-c28f-4255-b6f3-ba8cda093aab",
-  "type": "MaintenanceWorks",
-  "desc": "RT-927, Žibovt - Sv. Duh - Podolševa, v Logarski Dolini, oviran promet, košnja, do 17:00.",
-  "loc": "RT-927, Žibovt - Sv. Duh - Podolševa",
-  "lat": 46.43024,
-  "lng": 14.63135,
-  "start": "2026-07-26T03:37:51.063Z",
-  "end": "2026-07-26T15:00:00Z",
-  "ts": "2026-07-26T03:38:06.287Z"
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-26T15:00:35.303Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -59,17 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-25T03:41:01.34Z"
  },
  {
-  "id": "DARS;865660;aa332b69-595d-4879-b4d4-f8442f739044",
-  "type": "MaintenanceWorks",
-  "desc": "RT-926, Solčava - Podolševa - Sleme, Solčava - Podolševa, oviran promet, košnja, do 26. 7. 2026.",
-  "loc": "RT-926, Solčava - Podolševa - Sleme",
-  "lat": 46.41983,
-  "lng": 14.69317,
-  "start": "2026-07-25T03:33:17.89Z",
-  "end": "2026-07-26T15:00:00Z",
-  "ts": "2026-07-25T03:34:00.747Z"
- },
- {
   "id": "DARS;861046;2cb65d50-0177-4fb4-8ba2-94c641e08e24",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, promet poteka po dveh zoženih pasovih.",
@@ -79,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-03T03:13:40.227Z",
   "end": "2026-07-31T21:59:00Z",
   "ts": "2026-07-24T21:33:05.383Z"
- },
- {
-  "id": "DARS;865514;177f108a-7de0-457a-9d3b-6f077d12e8d8",
-  "type": "MaintenanceWorks",
-  "desc": "RT-927, Žibovt - Sv. Duh - Podolševa, oviran promet, vzdrževalna dela, do 26. 7. 2026.",
-  "loc": "RT-927, Žibovt - Sv. Duh - Podolševa",
-  "lat": 46.42655,
-  "lng": 14.61102,
-  "start": "2026-07-24T11:20:35.387Z",
-  "end": "2026-07-26T15:00:00Z",
-  "ts": "2026-07-24T11:22:15.39Z"
  },
  {
   "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
