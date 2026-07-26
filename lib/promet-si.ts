@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-26T06:28:03.019Z";
+export const PROMET_SI_UPDATED = "2026-07-26T08:55:33.945Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;865818;13d84d7c-1da6-4e0a-85e8-20e9fcccc328",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Logatec, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.90885,
-  "lng": 14.25562,
-  "start": "2026-07-26T06:03:15.677Z",
-  "end": "2026-07-26T12:00:00Z",
-  "ts": "2026-07-26T06:03:24.993Z"
- },
  {
   "id": "DARS;865817;5f0e20cb-2f9e-4480-9314-6e9184d1af01",
   "type": "MaintenanceWorks",
@@ -24,28 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-26T05:59:54.457Z",
   "end": "2026-07-26T11:00:09.307Z",
   "ts": "2026-07-26T06:00:08.09Z"
- },
- {
-  "id": "DARS;865816;4468f2c9-176f-4afb-ad6d-9dd54dbcaf7f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.97214,
-  "lng": 14.67023,
-  "start": "2026-07-26T05:44:50.607Z",
-  "end": "2026-07-26T11:00:00Z",
-  "ts": "2026-07-26T05:44:54.26Z"
- },
- {
-  "id": "DARS;865812;5179b6ca-cee0-49ae-b58e-864d4486f340",
-  "type": "MaintenanceWorks",
-  "desc": "A3, Fernetiči - razcep Gabrk, razcep Gabrk iz smeri Fernetičev, Italije proti Ljubljani, dela, oviran promet.",
-  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
-  "lat": 45.69345,
-  "lng": 13.97109,
-  "start": "2026-07-26T04:48:28.09Z",
-  "end": "2026-07-26T12:00:00Z",
-  "ts": "2026-07-26T04:49:11.59Z"
  },
  {
   "id": "DARS;865808;d14c60e2-c28f-4255-b6f3-ba8cda093aab",
