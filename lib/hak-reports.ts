@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.7.2026. 19:22",
-  "text": "Promet je pojačan na važnijim cestama u smjeru unutrašnjosti, prilazima turističkim središtima, pojedinim trajektnim lukama i pristaništima te na većini graničnih prijelaza. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa u smjeru unutrašnjosti, između čvora Novigrad i odmorišta Draganić u smjeru Zagreba povremeno se vozi u kolonama u pokretu uz moguće zastoje osobito u zonama odmorišta i naplata pred naplatama Lučko i Demerje u oba smjera nema dužih čekanja osobno vozilo u kvaru na 324.km između čvorova Podi i Šibenik u smjeru Zagreb…"
+  "updated": "26.7.2026. 20:27",
+  "text": "Promet je pojačan na važnijim cestama u smjeru unutrašnjosti, prilazima turističkim središtima, pojedinim trajektnim lukama i pristaništima te na većini graničnih prijelaza. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: predmet na autocesti A7 u tunelu Trsat u smjeru Rupe. Promet se vodi po dvije prometne trake uz ograničenje brzine od 40 km/h požar na vozilu na autocesti A7 na čvoru Križišće u smjeru Krka. Vozi se uz ograničenje brzine od 40 km/h. A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa u smjeru unutrašnjosti, između čvora Novigrad i odmorišta Draganić u smjeru Zagreba p…"
  },
  {
   "title": "Granični prijelazi",

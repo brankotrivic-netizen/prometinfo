@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-26T17:32:52.389Z";
+export const PROMET_SI_UPDATED = "2026-07-26T18:40:11.959Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;865885;c1b4cf6b-2501-4eb4-9c2f-22527548ecaf",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, izvoz Trojane - priključek Šempeter v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.19094,
+  "lng": 14.89915,
+  "start": "2026-07-26T17:38:01.333Z",
+  "end": "2026-07-27T00:00:01.763Z",
+  "ts": "2026-07-26T17:38:18.117Z"
+ },
+ {
+  "id": "DARS;865884;d7fd3814-c2f4-4c4b-a510-500cadf58790",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Celje vzhod - priključek Dramlje v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25438,
+  "lng": 15.31628,
+  "start": "2026-07-26T17:37:31.733Z",
+  "end": "2026-07-26T21:30:00.46Z",
+  "ts": "2026-07-26T17:37:34.503Z"
+ },
  {
   "id": "DARS;865881;bc5eceb1-63b3-45e9-ad88-4e62eb859b7d",
   "type": "MaintenanceWorks",
