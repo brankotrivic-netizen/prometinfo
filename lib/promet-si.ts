@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-27T15:59:25.154Z";
+export const PROMET_SI_UPDATED = "2026-07-27T17:42:15.533Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;866100;76f7f0de-419a-4779-a1ac-52ce9abeee69",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Grosuplje vzhod - priključek Šmarje Sap v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.96904,
+  "lng": 14.65445,
+  "start": "2026-07-27T17:27:52.867Z",
+  "end": "2026-07-27T20:00:57.353Z",
+  "ts": "2026-07-27T17:28:27.377Z"
+ },
+ {
+  "id": "DARS;866099;032094c6-0b13-41ec-b7c0-908668a9791b",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, počivališče Studenec - priključek Postojna v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.75993,
+  "lng": 14.16986,
+  "start": "2026-07-27T17:14:08.353Z",
+  "end": "2026-07-27T23:00:00Z",
+  "ts": "2026-07-27T17:14:21.94Z"
+ },
+ {
+  "id": "DARS;866097;1e5b343d-501c-45ac-b3df-354813a87529",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Koper - Izola, priključek Semedela v smeri Portoroža, dela, oviran promet.",
+  "loc": "G2-111, Koper - Izola",
+  "lat": 45.54033,
+  "lng": 13.72525,
+  "start": "2026-07-27T17:04:43.457Z",
+  "end": "2026-07-27T20:00:54.49Z",
+  "ts": "2026-07-27T17:05:12.893Z"
+ },
+ {
+  "id": "DARS;865913;398b0003-bb6b-4dd2-ba27-0b6ee9816610",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, počivališče Ravne - priključek Divača v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.61079,
+  "lng": 13.93188,
+  "start": "2026-07-27T16:55:20.95Z",
+  "end": "2026-07-27T22:00:00Z",
+  "ts": "2026-07-27T16:56:46.937Z"
+ },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
   "type": "RoadOrCarriagewayOrLaneManagement",
