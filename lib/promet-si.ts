@@ -1,18 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-27T17:42:15.533Z";
+export const PROMET_SI_UPDATED = "2026-07-27T19:01:23.976Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;866100;76f7f0de-419a-4779-a1ac-52ce9abeee69",
+  "id": "DARS;866109;cd3f4929-6b8a-45f9-852d-698ac613ffbc",
   "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Grosuplje vzhod - priključek Šmarje Sap v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.96904,
-  "lng": 14.65445,
-  "start": "2026-07-27T17:27:52.867Z",
-  "end": "2026-07-27T20:00:57.353Z",
-  "ts": "2026-07-27T17:28:27.377Z"
+  "desc": "A1, Ljubljana - Koper, priključek Unec - počivališče Ravbarkomanda v smeri Kopra, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.79803,
+  "lng": 14.24977,
+  "start": "2026-07-27T18:55:06.267Z",
+  "end": "2026-07-28T03:00:00Z",
+  "ts": "2026-07-27T19:00:25.183Z"
+ },
+ {
+  "id": "DARS;866106;b79c5c9d-28e2-46cb-aa10-945c5d9d72ce",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, uvoz Šmarje Sap - priključek Grosuplje vzhod v smeri Novega mesta, dela, oviran promet.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.97753,
+  "lng": 14.61047,
+  "start": "2026-07-27T18:14:41.933Z",
+  "end": "2026-07-27T23:00:28.127Z",
+  "ts": "2026-07-27T18:14:50.21Z"
+ },
+ {
+  "id": "DARS;866103;fdb9229b-5b7d-4b13-b672-73bdeb223868",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Jasovnik - priključek Vransko v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.20032,
+  "lng": 14.90068,
+  "start": "2026-07-27T17:53:49.173Z",
+  "end": "2026-07-28T01:00:00Z",
+  "ts": "2026-07-27T17:54:09.9Z"
  },
  {
   "id": "DARS;866099;032094c6-0b13-41ec-b7c0-908668a9791b",
@@ -68,6 +90,50 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-27T12:16:24.933Z",
   "end": "2026-08-24T21:59:00Z",
   "ts": "2026-07-27T12:18:05.847Z"
+ },
+ {
+  "id": "DARS;866009;ad6aee69-285a-4964-8a79-00910351adea",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, MB (c. Proletarskih Brigad - Tržaška cesta), na območju krožišča pri trgovskem centru, oviran promet, barvanje talnih označb, do 28. 7. 2026.",
+  "loc": "G1-1, Maribor (C. Proletarskih Brigad - Tržaška C.)",
+  "lat": 46.54548,
+  "lng": 15.62083,
+  "start": "2026-07-27T18:00:00Z",
+  "end": "2026-07-28T02:00:00Z",
+  "ts": "2026-07-27T10:20:03.997Z"
+ },
+ {
+  "id": "DARS;866006;76e69ea5-72e3-4244-9def-77d48aec1313",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor (Koroški most - cesta Proletarskih Brigad), oviran promet, barvanje talnih označb, do 28. 7. 2026.",
+  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
+  "lat": 46.56204,
+  "lng": 15.62754,
+  "start": "2026-07-27T18:00:00Z",
+  "end": "2026-07-28T02:00:00Z",
+  "ts": "2026-07-27T10:18:32.203Z"
+ },
+ {
+  "id": "DARS;866005;5f4e638d-591b-49d3-98ad-c82926946ce9",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, MB (c. Proletarskih Brigad - Tržaška cesta), oviran promet, barvanje talnih označb, do 28. 7. 2026.",
+  "loc": "G1-1, Maribor (c. Proletarskih Brigad - Tržaška cesta)",
+  "lat": 46.54523,
+  "lng": 15.62167,
+  "start": "2026-07-27T18:00:00Z",
+  "end": "2026-07-28T02:00:00Z",
+  "ts": "2026-07-27T10:17:13.097Z"
+ },
+ {
+  "id": "DARS;866004;02af3dd2-fe72-4469-bbd5-00096bbc5ee3",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor (Koroški most - cesta Proletarskih Brigad), oviran promet, barvanje talnih označb, do 28. 7. 2026.",
+  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
+  "lat": 46.55995,
+  "lng": 15.62641,
+  "start": "2026-07-27T18:00:00Z",
+  "end": "2026-07-28T02:00:00Z",
+  "ts": "2026-07-27T10:15:15.213Z"
  },
  {
   "id": "DARS;865969;f4bd73ed-964c-42a4-b4b2-854b7b034659",
