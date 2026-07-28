@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-28T13:08:31.463Z";
+export const PROMET_SI_UPDATED = "2026-07-28T15:31:24.701Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;866151;806d110e-370c-4e4b-84f3-ab63e659e32d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Senožeče - razcep Nanos v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.75433,
-  "lng": 14.04923,
-  "start": "2026-07-28T05:11:02.167Z",
-  "end": "2026-07-28T15:00:00Z",
-  "ts": "2026-07-28T12:57:20.05Z"
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-28T15:00:35.003Z"
  },
  {
   "id": "DARS;858200;905ee57a-deed-46ec-89df-45369b8ff25f",
@@ -59,17 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-28T09:26:42.157Z"
  },
  {
-  "id": "DARS;866148;947f33b2-f5fc-4e54-a90a-188a4014e238",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, uvoz Novo mesto vzhod - priključek Kronovo v smeri Obrežja, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.82976,
-  "lng": 15.17947,
-  "start": "2026-07-28T05:04:05.813Z",
-  "end": "2026-07-28T13:30:00Z",
-  "ts": "2026-07-28T07:59:52.53Z"
- },
- {
   "id": "DARS;864787;b66505d5-19dd-4ba4-906c-fdce54538be3",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-424, Boštanj - Planina, pri Podgorju ob Sevnični, izmenično enosmerni promet, preplastitve vozišča, do 30. 10. 2026, dnevno med 7. in 17. uro.",
@@ -90,50 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-07-10T06:10:32.583Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-07-28T06:03:38.637Z"
- },
- {
-  "id": "DARS;866154;75778575-9259-428e-bb57-5e38ceed0a74",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-606, Kanal - Lig - Mišček - Neblo, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
-  "loc": "R3-606, Kanal - Lig - Mišček - Neblo",
-  "lat": 46.09545,
-  "lng": 13.63437,
-  "start": "2026-07-28T05:32:22.577Z",
-  "end": "2026-07-28T14:00:00Z",
-  "ts": "2026-07-28T05:32:31.013Z"
- },
- {
-  "id": "DARS;866136;e01c8c67-a366-466c-9d23-5b46f0db8c5e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-662, Metlika - Božakovo, izmenično enosmerni promet, pomična zapora, vzdrževalna dela, do 16:00.",
-  "loc": "R3-662, Metlika - Božakovo",
-  "lat": 45.64809,
-  "lng": 15.35085,
-  "start": "2026-07-28T04:18:16.14Z",
-  "end": "2026-07-28T14:00:00Z",
-  "ts": "2026-07-28T04:20:00.7Z"
- },
- {
-  "id": "DARS;866126;deefe8e4-544d-4158-9a24-5d71f4b47b35",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-105, Novo mesto - Metlika, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 16:00.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.68154,
-  "lng": 15.28271,
-  "start": "2026-07-28T03:54:29.983Z",
-  "end": "2026-07-28T14:00:00Z",
-  "ts": "2026-07-28T03:54:43.96Z"
- },
- {
-  "id": "DARS;866118;3741e1e3-4025-4984-96f5-2decd4a33002",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Blagovica - počivališče Lukovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.16749,
-  "lng": 14.76928,
-  "start": "2026-07-28T03:13:53.377Z",
-  "end": "2026-07-28T14:00:15.163Z",
-  "ts": "2026-07-28T03:14:11.177Z"
  },
  {
   "id": "DARS;836643;d20b5567-e002-4f09-a442-803b7beeb49f",
