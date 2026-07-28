@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "28.7.2026. 17:26",
-  "text": "Ovisno o gustoći prometa, zastoji su povremeno na gradskim cestama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozače molimo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac: povećana je gustoća prometa između čvorova Buzin i Zagreb istok u smjeru istoka - vozi se usporeno u kolonama u pokretu uz povremene zastoje A4 Goričan-Zagreb prometna nesreća na autocesti A4 između čvorova Sesvete i Popovec u smjeru Goričana. Vozi se po dva traka uz ograničenje brzine od 80 km/h A6 Rijeka-Zagreb: OPREZ: teretno vozilo u kvaru u tunelu Veliki Gložac u smjeru Rijeke (ograničenje brzine: 80 km/h) AUTOCESTE A1 Zagreb-Split-Dubro…"
+  "updated": "28.7.2026. 18:23",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: predmet na autocesti A1 na 187. km između čvorova Gospić i Gornja Ploča u smjeru Dubrovnika. Vozi se uz ograničenje brzine od 60 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključivanja izvanrednih prijevoza, s glavne trase autoceste u zoni čvora Bisko višekratno će se zaustavljati promet u maksimalnim trajanjima do 15 minuta po zaustavljanju do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na gla…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "28.7.2026. 17:22",
+  "updated": "28.7.2026. 17:57",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "28.7.2026. 17:23",
+  "updated": "28.7.2026. 17:57",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 30. srpnja trajektna linija Jadrolinije Orebić-Dominče izvršiti će dodatno putovanje u 02:00 i 3:00 s polaskom iz Dominča, odnosno u 02:30 i 3:30 povratak iz Orebića 1. kolovoza trajekt Jadrolinije će iz luke Iž/Bršanj za luku Zadar/Gaženica isploviti u 21:00 sat umjesto u 20:30 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni p…"
  },
  {
