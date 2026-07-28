@@ -36,10 +36,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "high",
   "waitMinutes": 90,
   "ulazTs": "Nema podataka",
-  "izlazTs": "28.7.2026. 20:03:27",
+  "izlazTs": "28.07.2026 20:03:27",
   "ulazTsISO": "",
   "izlazTsISO": "2026-07-28T20:03:27+02:00",
-  "ts": "28.7.2026. 20:03:27",
+  "ts": "28.07.2026 20:03:27",
   "tsISO": "2026-07-28T20:03:27+02:00"
  },
  {
@@ -76,10 +76,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "low",
   "waitMinutes": 30,
   "ulazTs": "Nema podataka",
-  "izlazTs": "28.7.2026. 19:52:12",
+  "izlazTs": "28.07.2026 22:52:42",
   "ulazTsISO": "",
-  "izlazTsISO": "2026-07-28T19:52:12+02:00",
-  "ts": "28.7.2026. 19:52:12",
-  "tsISO": "2026-07-28T19:52:12+02:00"
+  "izlazTsISO": "2026-07-28T22:52:42+02:00",
+  "ts": "28.07.2026 22:52:42",
+  "tsISO": "2026-07-28T22:52:42+02:00"
  }
 ];
