@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-28T18:42:04.576Z";
+export const PROMET_SI_UPDATED = "2026-07-28T20:05:52.910Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;866285;c57227fe-9791-47cf-b2bb-4d4cb8e8feea",
+  "id": "DARS;866288;0b765cb0-6480-4990-ae7a-5f60bc398db1",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Domžale - priključek Žalec, Arja vas v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.13594,
-  "lng": 14.61893,
-  "start": "2026-07-28T17:55:15.753Z",
-  "end": "2026-07-28T21:59:27.207Z",
-  "ts": "2026-07-28T17:55:24.677Z"
- },
- {
-  "id": "DARS;866280;3af704e2-cf37-4232-988f-2bebc93be3c9",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Kozina - uvoz Divača v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.62962,
-  "lng": 13.95947,
-  "start": "2026-07-28T17:22:08.88Z",
-  "end": "2026-07-28T21:00:00Z",
-  "ts": "2026-07-28T17:22:19.933Z"
+  "desc": "A1, Maribor - Ljubljana, uvoz Žalec - priključek Domžale v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.26836,
+  "lng": 15.19026,
+  "start": "2026-07-28T18:50:04.377Z",
+  "end": "2026-07-28T21:59:33.773Z",
+  "ts": "2026-07-28T18:50:07.39Z"
  },
  {
   "id": "DARS;866279;0d5d44f6-a5c8-4e2d-9b6c-ee947af5c033",
