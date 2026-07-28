@@ -1,18 +1,117 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-28T06:17:44.423Z";
+export const PROMET_SI_UPDATED = "2026-07-28T09:13:59.397Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866167;733161e3-0405-4e20-b585-ceb780398f97",
   "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, razcep Koseze - izvoz 8 Ljubljana Podutik v smeri Kosez, dela, oviran promet.",
+  "desc": "H3, Ljubljana - severna obvoznica, izvoz 7 Ljubljana Dravlje v smeri Kosez, dela, oviran promet.",
   "loc": "H3, Ljubljana - severna obvoznica",
   "lat": 46.07566,
   "lng": 14.46917,
-  "start": "2026-07-28T06:13:55.043Z",
+  "start": "2026-07-28T09:09:17.53Z",
   "end": "2026-07-28T11:00:15.697Z",
-  "ts": "2026-07-28T06:13:56.537Z"
+  "ts": "2026-07-28T09:11:03.427Z"
+ },
+ {
+  "id": "DARS;866182;2df666e9-7e62-4f63-90a6-eebd6a5a628a",
+  "type": "MaintenanceWorks",
+  "desc": "LZ-Ljubljana, Izvoz Zaloška - izvoz za Letališko cesto, dela, oviran promet.",
+  "loc": "LZ-212530, Izvoz Ljubljana (Zaloška)",
+  "lat": 46.05591,
+  "lng": 14.57395,
+  "start": "2026-07-28T08:21:28.503Z",
+  "end": "2026-07-28T11:30:59.787Z",
+  "ts": "2026-07-28T08:21:50.65Z"
+ },
+ {
+  "id": "DARS;866148;947f33b2-f5fc-4e54-a90a-188a4014e238",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, uvoz Novo mesto vzhod - priključek Kronovo v smeri Obrežja, dela, oviran promet.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.82976,
+  "lng": 15.17947,
+  "start": "2026-07-28T05:04:05.813Z",
+  "end": "2026-07-28T13:30:00Z",
+  "ts": "2026-07-28T07:59:52.53Z"
+ },
+ {
+  "id": "DARS;866175;93e51c6f-f287-4454-948c-d6a48e230fa3",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Kronovo - izvoz Novo mesto vzhod v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.85226,
+  "lng": 15.24573,
+  "start": "2026-07-28T07:25:01.543Z",
+  "end": "2026-07-28T11:30:08.973Z",
+  "ts": "2026-07-28T07:25:03.453Z"
+ },
+ {
+  "id": "DARS;866174;b5197482-6647-4b68-bd58-4c338a71d9dc",
+  "type": "MaintenanceWorks",
+  "desc": "R2-443, Lendava - Pince, oviran promet, košnja, do 14:00.",
+  "loc": "R2-443, Lendava - Pince",
+  "lat": 46.54344,
+  "lng": 16.49437,
+  "start": "2026-07-28T07:17:41.78Z",
+  "end": "2026-07-28T12:00:00Z",
+  "ts": "2026-07-28T07:17:54.9Z"
+ },
+ {
+  "id": "DARS;866173;0cd5e1a9-4766-40bf-816c-754458b0ea42",
+  "type": "MaintenanceWorks",
+  "desc": "R2-109, Petišovci - Lendava, oviran promet, košnja, do 14:00.",
+  "loc": "G2-109, Lendava - Petišovci",
+  "lat": 46.53706,
+  "lng": 16.44401,
+  "start": "2026-07-28T07:17:07.527Z",
+  "end": "2026-07-28T12:00:00Z",
+  "ts": "2026-07-28T07:17:22.617Z"
+ },
+ {
+  "id": "DARS;866165;3cb25e14-1ddf-4267-9f83-d98285b84823",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, uvoz Ljubljana jug - predor Debeli hrib v smeri Malenc, dela, oviran promet.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.01389,
+  "lng": 14.5448,
+  "start": "2026-07-28T06:04:31.937Z",
+  "end": "2026-07-28T12:30:00Z",
+  "ts": "2026-07-28T06:56:01.35Z"
+ },
+ {
+  "id": "DARS;864787;b66505d5-19dd-4ba4-906c-fdce54538be3",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-424, Boštanj - Planina, pri Podgorju ob Sevnični, izmenično enosmerni promet, preplastitve vozišča, do 30. 10. 2026, dnevno med 7. in 17. uro.",
+  "loc": "R2-424, Boštanj - Planina",
+  "lat": 46.06303,
+  "lng": 15.33849,
+  "start": "2026-07-21T05:39:16.077Z",
+  "end": "2026-10-30T22:59:00Z",
+  "ts": "2026-07-28T06:39:04.737Z"
+ },
+ {
+  "id": "DARS;866169;2d70873f-fa17-43e3-926f-4ce0f9854651",
+  "type": "MaintenanceWorks",
+  "desc": "R3-627, Črni Kal - Osp, oviran promet, košnja, do 14:00.",
+  "loc": "R3-627, Črni Kal - Osp",
+  "lat": 45.57044,
+  "lng": 13.85881,
+  "start": "2026-07-28T06:26:33.267Z",
+  "end": "2026-07-28T12:00:00Z",
+  "ts": "2026-07-28T06:26:51.133Z"
+ },
+ {
+  "id": "DARS;866142;051af0d9-fa06-44ad-96c4-646ffb167e95",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, priključek Murska Sobota - priključek Sveti Jurij ob Ščavnici v smeri Maribora, dela, oviran promet, košnja.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.63547,
+  "lng": 16.16724,
+  "start": "2026-07-28T04:48:47.49Z",
+  "end": "2026-07-28T16:00:00Z",
+  "ts": "2026-07-28T06:25:30.43Z"
  },
  {
   "id": "DARS;866166;d46fd47d-cfc8-42a6-8dc8-0d021d0b4479",
@@ -24,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-28T06:04:57.5Z",
   "end": "2026-07-28T12:00:00Z",
   "ts": "2026-07-28T06:05:09.927Z"
- },
- {
-  "id": "DARS;866165;3cb25e14-1ddf-4267-9f83-d98285b84823",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, uvoz Ljubljana jug - predor Debeli hrib v smeri Malenc, dela, oviran promet.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.01389,
-  "lng": 14.5448,
-  "start": "2026-07-28T06:04:31.937Z",
-  "end": "2026-07-28T07:00:18.667Z",
-  "ts": "2026-07-28T06:04:34.507Z"
  },
  {
   "id": "DARS;787573;4409f2f1-7f1b-4cb0-9886-c0dd952cccd7",
@@ -57,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-28T06:01:16.557Z",
   "end": "2026-07-28T12:00:00Z",
   "ts": "2026-07-28T06:02:45.043Z"
- },
- {
-  "id": "DARS;864787;b66505d5-19dd-4ba4-906c-fdce54538be3",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-424, Boštanj - Planina, pri Podgorju ob Sevnični, izmenično enosmerni promet, preplastitve vozišča, do 30. 10. 2026.",
-  "loc": "R2-424, Boštanj - Planina",
-  "lat": 46.06303,
-  "lng": 15.33849,
-  "start": "2026-07-21T05:39:16.077Z",
-  "end": "2026-10-30T22:59:00Z",
-  "ts": "2026-07-28T06:01:19.47Z"
  },
  {
   "id": "DARS;866162;881e0e81-bc8b-45ea-be2c-f4912ced0d5f",
@@ -202,28 +279,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-28T05:05:12.3Z"
  },
  {
-  "id": "DARS;866149;567365b4-2ae9-499f-9dcf-d6ae92e82e64",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Mirna Peč - priključek Novo mesto vzhod v smeri Obrežja, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.8732,
-  "lng": 15.09712,
-  "start": "2026-07-28T05:04:30.147Z",
-  "end": "2026-07-28T11:30:11.867Z",
-  "ts": "2026-07-28T05:04:33.47Z"
- },
- {
-  "id": "DARS;866148;947f33b2-f5fc-4e54-a90a-188a4014e238",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, uvoz Novo mesto vzhod - priključek Kronovo v smeri Obrežja, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.82976,
-  "lng": 15.17947,
-  "start": "2026-07-28T05:04:05.813Z",
-  "end": "2026-07-28T08:05:51.277Z",
-  "ts": "2026-07-28T05:04:10.913Z"
- },
- {
   "id": "DARS;866146;62d089cc-75e5-4005-8ef3-9ff34cfe2f7d",
   "type": "MaintenanceWorks",
   "desc": "A5, Maribor - Pince, priključek Pernica - priključek Lenart v smeri Lendave, dela, zaprt vozni pas.",
@@ -233,17 +288,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-28T05:01:13.473Z",
   "end": "2026-07-28T16:00:00Z",
   "ts": "2026-07-28T05:01:23.307Z"
- },
- {
-  "id": "DARS;866142;051af0d9-fa06-44ad-96c4-646ffb167e95",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, priključek Murska Sobota - priključek Vučja vas v smeri Maribora, dela, oviran promet, košnja.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.63547,
-  "lng": 16.16724,
-  "start": "2026-07-28T04:48:47.49Z",
-  "end": "2026-07-28T16:00:00Z",
-  "ts": "2026-07-28T04:49:19.2Z"
  },
  {
   "id": "DARS;866141;734e923f-daae-42cf-a587-9142c2fb854b",
