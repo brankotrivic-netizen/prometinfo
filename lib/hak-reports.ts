@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "28.7.2026. 13:25",
-  "text": "Ovisno o gustoći prometa, zastoji su povremeno na gradskim cestama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozače molimo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići: na naplatnoj postaji Lučko u smjeru Zagreba kolona je oko 2 km (zbog požara na čvoru Lučko na zagrebačkoj obilaznici) pojačan je promet u oba smjera A3 Bregana-Lipovac: OPREZ: požar raslinja uz autocestu na čvoru Lučko u smjeru Zagreba (Jadranska avenija) - vozi se uz ograničenje brzine od 60 km/h državna cesta DC3: zbog prometne nesreće, vozi se uz privremenu prometnu regulaciju kod Kamenjaka Jadranska magistrala (DC8): kolone i zast…"
+  "updated": "28.7.2026. 15:05",
+  "text": "Ovisno o gustoći prometa, zastoji su povremeno na gradskim cestama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozače molimo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići: nakon naplate Demerje kolona u smjeru čvora Lučko i Jadranske avenije duga je oko 3 km (zbog požara na čvoru Lučko na zagrebačkoj obilaznici) prometna nesreća između čvorova Ogulin i Brinje (na 113+770 km) u smjeru Dubrovnika - vozi uz ograničenje brzine od 60 km/h OPREZ: teretno vozilo u kvaru na čvoru Benkovac u smjeru Zagreba - vozi se jednim prometnim trakom uz ograničenje brzine od 60 km/h OPREZ: vozilo u kvaru između čvorova Prg…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "28.7.2026. 12:56",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 28. srpnja trajektna linija Jadrolinije Prapratno-Sobra neće ploviti u 14:50 sati s polaskom iz Prapratnog, odnosno u 16:00 sati s polaskom iz Sobre - uspostavit će se u 17:00 sati s polaskom iz Prapratnog 30. srpnja trajektna linija Jadrolinije Orebić-Dominče izvršiti će dodatno putovanje u 02:00 s polaskom iz Dominča odnosno u 02:30 povratak iz Orebića 1. kolovoza trajekt Jadrolinije će iz luke Iž/Bršanj za luku Zadar/Gaženica isploviti u 21:00 sat umjesto u 20:30 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima …"
+  "updated": "28.7.2026. 15:01",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 28. srpnja trajektna linija Jadrolinije Prapratno-Sobra neće ploviti u 14:50 sati s polaskom iz Prapratnog, odnosno u 16:00 sati s polaskom iz Sobre - uspostavit će se u 17:00 sati s polaskom iz Prapratnog 30. srpnja trajektna linija Jadrolinije Orebić-Dominče izvršiti će dodatno putovanje u 02:00 i 3:00 s polaskom iz Dominča, odnosno u 02:30 i 3:30 povratak iz Orebića 1. kolovoza trajekt Jadrolinije će iz luke Iž/Bršanj za luku Zadar/Gaženica isploviti u 21:00 sat umjesto u 20:30 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovid…"
  },
  {
   "title": "Željeznički promet",
