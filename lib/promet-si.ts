@@ -1,18 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-28T17:07:26.424Z";
+export const PROMET_SI_UPDATED = "2026-07-28T18:42:04.576Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;866278;f99c42e2-2c5c-47d3-aad1-09d72904e512",
+  "id": "DARS;866285;c57227fe-9791-47cf-b2bb-4d4cb8e8feea",
   "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, priključek Koper center, Slavček - priključek Bertoki v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.54541,
-  "lng": 13.75955,
-  "start": "2026-07-28T16:43:11.857Z",
-  "end": "2026-07-28T21:30:00Z",
-  "ts": "2026-07-28T16:43:34.813Z"
+  "desc": "A1, Ljubljana - Maribor, priključek Domžale - priključek Žalec, Arja vas v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.13594,
+  "lng": 14.61893,
+  "start": "2026-07-28T17:55:15.753Z",
+  "end": "2026-07-28T21:59:27.207Z",
+  "ts": "2026-07-28T17:55:24.677Z"
+ },
+ {
+  "id": "DARS;866280;3af704e2-cf37-4232-988f-2bebc93be3c9",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Kozina - uvoz Divača v smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.62962,
+  "lng": 13.95947,
+  "start": "2026-07-28T17:22:08.88Z",
+  "end": "2026-07-28T21:00:00Z",
+  "ts": "2026-07-28T17:22:19.933Z"
+ },
+ {
+  "id": "DARS;866279;0d5d44f6-a5c8-4e2d-9b6c-ee947af5c033",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Bežigrad - priključek Ljubljana Savlje v smeri Kosez, dela, zaprt prehitevalni pas.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.08273,
+  "lng": 14.52248,
+  "start": "2026-07-28T17:09:38.74Z",
+  "end": "2026-07-29T01:00:04.89Z",
+  "ts": "2026-07-28T17:09:40.713Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
