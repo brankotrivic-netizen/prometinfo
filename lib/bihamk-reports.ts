@@ -91,8 +91,8 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-455a Svatovac-Živinice (u mjestu Poljice, od stadiona do Svatovca), za vrijeme radova moguće su kraće obustave saobraćaja."
    },
    {
-    "title": "R-456a Kalesija-Sapna",
-    "text": "zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
+    "title": "Kalesija-Sapna",
+    "text": "Na regionalnoj cesti R-456a Kalesija-Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
     "title": "Čajdraš-Ovnak",
@@ -111,8 +111,8 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-456 Priboj–Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Krupac-skretanje za G.Grkaricu",
-    "text": "Na regionalnoj cesti R-442a Krupac-skretanje za G.Grkaricu zbog asfaltiranja od 06 do 18 sati obustavlja se saobraćaj u srijedu 29.07.2026.Za putovanje prema Bjelašnici u funkciji su alternativni pravci preko Trnova ili Hadžića."
+    "title": "Banja Luka-Čađavica (Han Kola-Stričići.)",
+    "text": "U srijedu i četvrtak (29. i 30.07.) u vremenu od 08 do 19 sati, zbog bojevog gađanja na vojnom poligonu Manjača, doći će do obustave saobraćaja na regionalnoj cesti Banja Luka-Čađavica, na dionici Han Kola-Stričići. Za vrijeme obustave, vozila će saobraćati alternativnim pravcem Han Kola-Ledenice-Stričići."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
