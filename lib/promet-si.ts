@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-29T13:21:42.794Z";
+export const PROMET_SI_UPDATED = "2026-07-29T15:24:56.439Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-29T15:00:43.54Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -103,39 +114,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-29T10:09:03.38Z"
  },
  {
-  "id": "DARS;866371;e6b9512c-c623-4097-a3eb-ecb3a36defed",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Ravne - predor Kastelec v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.60603,
-  "lng": 13.92802,
-  "start": "2026-07-29T07:51:44.997Z",
-  "end": "2026-07-29T15:00:00Z",
-  "ts": "2026-07-29T07:51:48.043Z"
- },
- {
-  "id": "DARS;866347;c394aa4e-dc0e-45ea-95a4-cce962b82d7f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-667, Zbure - Dolenje Kronovo, na Dolenjem Kronovem, izmenično enosmerni promet, menjave poškodovanega LTŽ pokrova, do 17:00.",
-  "loc": "R3-667, Zbure - Dolenje Kronovo",
-  "lat": 45.85891,
-  "lng": 15.25156,
-  "start": "2026-07-29T05:46:05.31Z",
-  "end": "2026-07-29T15:00:00Z",
-  "ts": "2026-07-29T05:46:36.017Z"
- },
- {
-  "id": "DARS;866332;c22d45b0-57b0-491a-bfc8-05169c69017b",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-606, Kanal - Lig - Mišček - Neblo, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
-  "loc": "R3-606, Kanal - Lig - Mišček - Neblo",
-  "lat": 46.09552,
-  "lng": 13.63424,
-  "start": "2026-07-29T05:15:35.413Z",
-  "end": "2026-07-29T14:00:00Z",
-  "ts": "2026-07-29T05:15:43.03Z"
- },
- {
   "id": "DARS;866320;b5483e5b-1eed-4cd6-ba15-1148c07ac96d",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-219, Bizeljsko - Čatež, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 31. 7. 2026, dnevno med 6. in 14. uro.",
@@ -145,28 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T04:53:00.887Z",
   "end": "2026-07-31T12:00:00Z",
   "ts": "2026-07-29T04:53:37.873Z"
- },
- {
-  "id": "DARS;866311;0c7c028d-3938-41c1-944f-cfcf8f977841",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-662, Metlika - Božakovo, izmenično enosmerni promet, pomična zapora, vzdrževalna dela, do 16:00.",
-  "loc": "R3-662, Metlika - Božakovo",
-  "lat": 45.64825,
-  "lng": 15.36288,
-  "start": "2026-07-29T04:21:44.783Z",
-  "end": "2026-07-29T14:00:00Z",
-  "ts": "2026-07-29T04:21:58.477Z"
- },
- {
-  "id": "DARS;866307;081b341c-5e00-47c1-8062-2c0d3d6da7fd",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-105, Novo mesto - Metlika, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 16:00.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.703,
-  "lng": 15.24953,
-  "start": "2026-07-29T04:19:13.953Z",
-  "end": "2026-07-29T14:00:00Z",
-  "ts": "2026-07-29T04:19:26.13Z"
  },
  {
   "id": "DARS;866299;292da9e6-afa7-4ecc-8840-b9710a592824",
