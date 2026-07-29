@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "29.7.2026. 18:20",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja i poteškoća. Zastoji su povremeno u zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! teretno vozilo u kvaru na državnoj cesti DC60 Trilj-Cista Provo u mjestu Čaporice u smjeru Ciste Provo - vozi se uz privremenu regulaciju prometa OPREZ! vozilo u kvaru na državnoj cesti DC1 poslije tunela Mihovilovići u smjeru Dugopolja vozi se uz privremenu regulaciju prometa AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isključivanja izvanrednih prijevoza, s glavne trase autoces…"
+  "updated": "29.7.2026. 19:38",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja i poteškoća. Zastoji su povremeno u zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! teretno vozilo u kvaru na državnoj cesti DC60 Trilj-Cista Provo u mjestu Čaporice u smjeru Ciste Provo - vozi se uz privremenu regulaciju prometa prometna nesreća na autocesti A1 između čvorova Zadar centar i Zadar istok, na 255.+850 km u smjeru Dubrovnika - promet se vodi jednom prometnom trakom uz ograničenje brzine od 60 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 31. srpnja od 23:00 sata do 05:00 sati zbog isklju…"
  },
  {
   "title": "Granični prijelazi",
