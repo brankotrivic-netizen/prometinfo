@@ -103,12 +103,16 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U mjestu Bukva izvode se radovi zbog čega se u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
    },
    {
-    "title": "R-459 Šibošnica – Lovački dom",
-    "text": "Zbog sanacionih radova od 07 do 17 sati saobraća se usporeno, jednom trakom svaki dan osim nedjelje."
+    "title": "Šibošnica-Lovački dom",
+    "text": "Na regionalnoj cesti R-459 Šibošnica-Lovački dom zbog sanacionih radova od 07 do 17 sati saobraća se usporeno, jednom trakom svaki dan osim nedjelje."
    },
    {
-    "title": "R-456 Priboj–Sapna",
-    "text": "Zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
+    "title": "Priboj–Sapna",
+    "text": "Na regionalnoj cesti R-456 Priboj–Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
+   },
+   {
+    "title": "Krupac-skretanje za G.Grkaricu",
+    "text": "Na regionalnoj cesti R-442a Krupac-skretanje za G.Grkaricu zbog asfaltiranja od 06 do 18 sati obustavlja se saobraćaj u srijedu 29.07.2026.Za putovanje prema Bjelašnici u funkciji su alternativni pravci preko Trnova ili Hadžića."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
