@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "29.7.2026. 13:34",
-  "text": "Promet je pojačan na važnijim cestama u smjeru mora i unutrašnjosti, no vozi se bez većih ograničenja ili poteškoća. Zastoji su povremeno u zonama radova, osobito na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u smjeru Bregane, na Istarskom ipsilonu između tunela i čvora Učka te na Jadranskoj magistrali (DC8) na prilazima turističkim središtima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: autocesta A1 Zagreb-Split -Dubrovnik pred naplatnim postajama Lučko i Demerje kolone u smjeru Zagreba su duge oko 1 km prometna nesreća na autocesti A1 na 293.+000 km između čvorova Be…"
+  "updated": "29.7.2026. 15:19",
+  "text": "Promet je pojačan na važnijim cestama u smjeru mora i unutrašnjosti, no vozi se bez većih ograničenja ili poteškoća. Zastoji su povremeno u zonama radova, osobito na zagrebačkoj obilaznici, na Istarskom ipsilonu između tunela i čvora Učka te na Jadranskoj magistrali (DC8) na prilazima turističkim središtima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća u tunelu Supava na Jadranskoj magistrali (DC8) na poluotoku Pelješcu - promet trenutno u prekidu AUTOCESTE A1 Zagreb-Split-Dubrovnik radovi na održavanju u tunelu Dubrave u smjeru Zagreba - vozi se jednim prometnim trako…"
  },
  {
   "title": "Granični prijelazi",

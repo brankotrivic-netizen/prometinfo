@@ -194,10 +194,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 27. 7. 2026. godine, od 6 časova, do 31. 7. 2026. godine, izvodiće se radovi na asfaltiranju odmorišta Laćarak, na deonici petlja Kuzmin petlja Sremska Mitrovica, u smeru ka Kuzminu. U zoni radova za saobraćaj će biti zatvorena zaustavna saobraćajna traka, u dužini od kilometar, kao i ulaz na odmorište. Izvor: Putevi Srbije"
  },
  {
-  "title": "Pančevački most, Beograd-Krnjača",
-  "text": "Od 25. 7. 2026 do 29. 7. 2026. godine, u periodu od 20 do 5 časova, izvodiće se radovi na popravci dilatacionih spojnica, na deonici Beograd (Bogoslovija) petlja Krnjača, deonica pre čelične konstrukcije Pančevačkog mosta iz smera ulice Despota Stefana Pančevo. U periodu izvođenja radova, saobraćaj će se odvijati u jednoj saobraćajnoj traci, dok će se saobraćaj van perioda izvođenja radova odvijati neometano u dve saobraćajne trake. Izvor Putevi Srbije"
- },
- {
   "title": "Petlja Lasta- Petlja Bubanj Potok, radovi",
   "text": "Od 27. 7. do 14. 8. 2026. u periodu od 7 do 18 časova, izvodiće se radovi na instalacijama javnog osvetljenja, na državnom putu I M reda broj 11, na deonici petlja Lasta - petlja Bubanj Potok, Mokroluško brdo, u smeru ka Beogradu (Faza 2). U zoni radova za saobraćaj će biti zatvorena krajnja desna saobraćajna traka. Saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "mesto Ponikve - Golubac, radovi",
   "text": "Do 1. 9. 2026. godine biće izmenjen režim saobraćaja od isključenja za naseljeno mesto Ponikve do ulaza u Golubac u sklopu izgradnje državnog puta I M reda broj 7 gde se vozila kreću dvosmerno jednom kolovoznom trakom.Za vreme radova na snazi je obustava saobraćaja na delu državnog puta I B reda broj 34. Tokom trajanja obustave predviđena je trasa obilaska za korisnike koji se kreću: - iz Radoševca ka Požarevcu kroz naseljeno mesto Usije; - iz Radoševca i Usija ka Golupcu preko naseljenih mesta …"
+ },
+ {
+  "title": "Čačak(Drakčići)-Goričani, radovi",
+  "text": "Od 13. 7. 2026. godine do 31. 7. 2026. godine, u periodu od 7 do 18 časova, izvodiće se radovi na redovnom održavanju državnog puta na deonici Čačak (Drakčići) - Goričani, od raskrsnice ulica Nemanjine i Dragiše Mišovića u Čačku, preko Atenice i Trnave, do Goričana. Tokom izvođenja radova saobraćaj će se odvijati naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  }
 ];
