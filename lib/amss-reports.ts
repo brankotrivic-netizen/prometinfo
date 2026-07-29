@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Rogačica - Debelo brdo, radovi",
+  "text": "Do 1. 11. 2026. godine, izvode se radovi na rehabilitaciji kolovoza na deonici Rogačica Debelo brdo. Potpuna obustava saobraćaja na državnom putu IIA-170 Sedlari Debelo Brdo Rogačica planirana je od 28. do 1. 8. 2026. u periodu od 07.00 do 19.00 časova, zbog izvođenja završnog sloja asfalta. Saobraćaj će biti preusmeren na alternativni pravac preko Valjeva, Osečine, Zavlake, Krupnja, Mačkovog kamena, Gračanice i Ljubovije. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem voz…"
+ },
+ {
   "title": "1GP BEZDAN ( Srbija- Hrvatska ) M-18",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće promenjeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Radno vreme ovog graničnog prelaza…"
  },
@@ -236,9 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "mesto Ponikve - Golubac, radovi",
   "text": "Do 1. 9. 2026. godine biće izmenjen režim saobraćaja od isključenja za naseljeno mesto Ponikve do ulaza u Golubac u sklopu izgradnje državnog puta I M reda broj 7 gde se vozila kreću dvosmerno jednom kolovoznom trakom.Za vreme radova na snazi je obustava saobraćaja na delu državnog puta I B reda broj 34. Tokom trajanja obustave predviđena je trasa obilaska za korisnike koji se kreću: - iz Radoševca ka Požarevcu kroz naseljeno mesto Usije; - iz Radoševca i Usija ka Golupcu preko naseljenih mesta …"
- },
- {
-  "title": "Čačak(Drakčići)-Goričani, radovi",
-  "text": "Od 13. 7. 2026. godine do 31. 7. 2026. godine, u periodu od 7 do 18 časova, izvodiće se radovi na redovnom održavanju državnog puta na deonici Čačak (Drakčići) - Goričani, od raskrsnice ulica Nemanjine i Dragiše Mišovića u Čačku, preko Atenice i Trnave, do Goričana. Tokom izvođenja radova saobraćaj će se odvijati naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  }
 ];
