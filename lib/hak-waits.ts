@@ -3,6 +3,26 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
+  "id": "ba-gradiska",
+  "name": "Gornji Varoš (Gradiška (novi most))",
+  "ulazMin": null,
+  "izlazMin": 30,
+  "ulazTxt": "-",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "29.07.2026 21:28:57",
+  "ulazTsISO": "",
+  "izlazTsISO": "2026-07-29T21:28:57+02:00",
+  "ts": "29.07.2026 21:28:57",
+  "tsISO": "2026-07-29T21:28:57+02:00"
+ },
+ {
   "id": "ba-velika-kladusa",
   "name": "Maljevac (Velika Kladuša)",
   "ulazMin": null,
@@ -16,10 +36,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "high",
   "waitMinutes": 90,
   "ulazTs": "Nema podataka",
-  "izlazTs": "29.7.2026. 18:51:16",
+  "izlazTs": "29.07.2026 18:51:16",
   "ulazTsISO": "",
   "izlazTsISO": "2026-07-29T18:51:16+02:00",
-  "ts": "29.7.2026. 18:51:16",
+  "ts": "29.07.2026 18:51:16",
   "tsISO": "2026-07-29T18:51:16+02:00"
  },
  {
@@ -36,31 +56,11 @@ export const HAK_WAITS: HakWait[] = [
   "level": "high",
   "waitMinutes": 90,
   "ulazTs": "Nema podataka",
-  "izlazTs": "29.7.2026. 20:27:58",
+  "izlazTs": "29.07.2026 20:27:58",
   "ulazTsISO": "",
   "izlazTsISO": "2026-07-29T20:27:58+02:00",
-  "ts": "29.7.2026. 20:27:58",
+  "ts": "29.07.2026 20:27:58",
   "tsISO": "2026-07-29T20:27:58+02:00"
- },
- {
-  "id": "",
-  "name": "Karasovići (Sutorina)",
-  "ulazMin": 60,
-  "izlazMin": 60,
-  "ulazTxt": "1 h",
-  "izlazTxt": "1 h",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "29.7.2026. 16:45:29",
-  "izlazTs": "29.7.2026. 16:45:42",
-  "ulazTsISO": "2026-07-29T16:45:29+02:00",
-  "izlazTsISO": "2026-07-29T16:45:42+02:00",
-  "ts": "29.7.2026. 16:45:29",
-  "tsISO": "2026-07-29T16:45:29+02:00"
  },
  {
   "id": "hr-tovarnik",
@@ -76,10 +76,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "low",
   "waitMinutes": 30,
   "ulazTs": "Nema podataka",
-  "izlazTs": "29.7.2026. 19:27:34",
+  "izlazTs": "29.07.2026 19:27:34",
   "ulazTsISO": "",
   "izlazTsISO": "2026-07-29T19:27:34+02:00",
-  "ts": "29.7.2026. 19:27:34",
+  "ts": "29.07.2026 19:27:34",
   "tsISO": "2026-07-29T19:27:34+02:00"
  }
 ];
