@@ -112,7 +112,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    },
    {
     "title": "Banja Luka-Čađavica (Han Kola-Stričići.)",
-    "text": "U srijedu i četvrtak (29. i 30.07.) u vremenu od 08 do 19 sati, zbog bojevog gađanja na vojnom poligonu Manjača, doći će do obustave saobraćaja na regionalnoj cesti Banja Luka-Čađavica, na dionici Han Kola-Stričići. Za vrijeme obustave, vozila će saobraćati alternativnim pravcem Han Kola-Ledenice-Stričići."
+    "text": "Danas (30.07.) do 19 sati, zbog bojevog gađanja na vojnom poligonu Manjača, obustavljen je saobraćaj na regionalnoj cesti Banja Luka-Čađavica, na dionici Han Kola-Stričići. Za vrijeme obustave, vozila će saobraćati alternativnim pravcem Han Kola-Ledenice-Stričići."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
