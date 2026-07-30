@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-30T18:08:52.577Z";
+export const PROMET_SI_UPDATED = "2026-07-30T19:48:25.608Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;866744;b8613eaa-8a23-40ca-8967-900b18fdb47d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - počivališče Barje v smeri Kozarij, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02439,
+  "lng": 14.50555,
+  "start": "2026-07-30T18:50:31.383Z",
+  "end": "2026-07-30T21:00:42.227Z",
+  "ts": "2026-07-30T18:50:48.13Z"
+ },
+ {
+  "id": "DARS;866743;5ef501a7-aa39-4be2-b736-8f84cff208e0",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - zahodna obvoznica, priključek Ljubljana Brdo - razcep Koseze v smeri Kosez, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - zah. obvoznica",
+  "lat": 46.06137,
+  "lng": 14.45526,
+  "start": "2026-07-30T18:46:41.293Z",
+  "end": "2026-07-30T21:00:49.35Z",
+  "ts": "2026-07-30T18:46:45.79Z"
+ },
+ {
+  "id": "DARS;866741;c37a339f-a708-4952-8d24-cd99f39695a1",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, prehod Obrežje - priključek Drnovo v smeri Novega mesta, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.84651,
+  "lng": 15.69309,
+  "start": "2026-07-30T18:32:09.867Z",
+  "end": "2026-07-31T02:00:38.873Z",
+  "ts": "2026-07-30T18:32:24.207Z"
+ },
  {
   "id": "DARS;866736;a154316b-a44d-49dc-9d14-6b7f0af08fdf",
   "type": "MaintenanceWorks",
@@ -24,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-30T17:33:13.92Z",
   "end": "2026-07-31T00:00:07.73Z",
   "ts": "2026-07-30T17:33:25.09Z"
- },
- {
-  "id": "DARS;866732;a4f0b11c-d9df-40a7-9171-3528289fccc5",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Kozina - razcep Gabrk v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.61453,
-  "lng": 13.94361,
-  "start": "2026-07-30T17:00:22.53Z",
-  "end": "2026-07-30T21:00:00Z",
-  "ts": "2026-07-30T17:00:25.72Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
