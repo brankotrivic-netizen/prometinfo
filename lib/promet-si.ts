@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-30T15:11:04.251Z";
+export const PROMET_SI_UPDATED = "2026-07-30T16:45:52.447Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
@@ -79,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-01T03:40:34.877Z",
   "end": "2026-11-20T14:00:00Z",
   "ts": "2026-07-30T05:33:37.123Z"
- },
- {
-  "id": "DARS;866559;1c5d6019-68ec-48ea-ae4e-8f21d351eb40",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Maribor - Gruškovje (Hrvaška), razcep Slivnica - priključek Marjeta v smeri Ptuja, dela, oviran promet.",
-  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
-  "lat": 46.47751,
-  "lng": 15.66865,
-  "start": "2026-07-30T05:06:16.97Z",
-  "end": "2026-07-30T17:00:00Z",
-  "ts": "2026-07-30T05:06:51.983Z"
  },
  {
   "id": "DARS;865942;dd407a0b-03af-47fa-8a99-0140076591b0",
