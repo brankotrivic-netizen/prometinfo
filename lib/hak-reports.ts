@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "30.7.2026. 13:08",
-  "text": "Pojačan je promet na gradskim prometnicama i obilaznicama. Zastoji su povremeno u zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik pojačan je promet na dionici između čvorova Karlovac i Lučko u smjeru Zagreba, vozi se usporeno u kolonama u pokretu uz povremene zastoje prometna nesreća između čvora Gospić i čvora Gornja Ploča (na 202+000 km) u smjeru Dubrovnika, vozi se po dvije prometne trake uz ograničenje brzine od 100 km/h teretno vozilo u kvaru na čvoru Bisko u smjeru Dubrovnika, vozi se jednom prometnom trakom uz ograničenje brzine od 80 km/h A3 Bregana-Lipovac pojačan promet na zagrebačkoj …"
+  "updated": "30.7.2026. 14:52",
+  "text": "Pojačan je promet na gradskim prometnicama i obilaznicama. Zastoji su povremeno u zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik prometna nesreća na čvoru Novigrad u smjeru Zagreba, vozi se suženim kolnikom, kolona je oko 4 km pojačan je promet na dionici između čvorova Bosiljevo 2 i Lučko u smjeru Zagreba, vozi se usporeno u kolonama u pokretu uz povremene zastoje A3 Bregana-Lipovac pojačan promet na zagrebačkoj obilaznici između čvorova Zagreb zapad i Buzin u oba smjera prema naplatnim postajama Lučko iz smjera Buzina kolona je oko 1 km. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ…"
  },
  {
   "title": "Granični prijelazi",
