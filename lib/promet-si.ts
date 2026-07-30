@@ -1,29 +1,51 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-30T19:48:25.608Z";
+export const PROMET_SI_UPDATED = "2026-07-30T20:54:06.345Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;866749;a0c8c6a1-78d6-451a-a177-5753ace89414",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - zahodna obvoznica, razcep Koseze - priključek Ljubljana Brdo iz smeri Kosez, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - zah. obvoznica",
+  "lat": 46.06326,
+  "lng": 14.45577,
+  "start": "2026-07-30T20:15:42.193Z",
+  "end": "2026-07-31T01:00:42.277Z",
+  "ts": "2026-07-30T20:15:47.55Z"
+ },
  {
   "id": "DARS;866744;b8613eaa-8a23-40ca-8967-900b18fdb47d",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - počivališče Barje v smeri Kozarij, dela, zaprt prehitevalni pas.",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - počivališče Barje v smeri Kozarij, dela, zaprt vozni pas.",
   "loc": "A1-E70, Ljubljana - juž. obvoznica",
   "lat": 46.02439,
   "lng": 14.50555,
   "start": "2026-07-30T18:50:31.383Z",
-  "end": "2026-07-30T21:00:42.227Z",
-  "ts": "2026-07-30T18:50:48.13Z"
+  "end": "2026-07-30T23:00:00Z",
+  "ts": "2026-07-30T20:12:04.833Z"
  },
  {
-  "id": "DARS;866743;5ef501a7-aa39-4be2-b736-8f84cff208e0",
+  "id": "DARS;847460;2a7541ae-ea40-40be-82cd-9e6d1796d695",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - zahodna obvoznica, priključek Ljubljana Brdo - razcep Koseze v smeri Kosez, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E61, Ljubljana - zah. obvoznica",
-  "lat": 46.06137,
-  "lng": 14.45526,
-  "start": "2026-07-30T18:46:41.293Z",
-  "end": "2026-07-30T21:00:49.35Z",
-  "ts": "2026-07-30T18:46:45.79Z"
+  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica jug - priključek Fram v smeri Maribora, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.38325,
+  "lng": 15.5737,
+  "start": "2026-05-02T16:00:34.7Z",
+  "end": "2026-09-30T21:59:00Z",
+  "ts": "2026-07-30T19:58:17.87Z"
+ },
+ {
+  "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, počivališče Polskava - priključek Sl. Bistrica sever v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.39742,
+  "lng": 15.60129,
+  "start": "2026-05-28T18:08:19.213Z",
+  "end": "2026-08-09T20:00:00Z",
+  "ts": "2026-07-30T19:57:37.537Z"
  },
  {
   "id": "DARS;866741;c37a339f-a708-4952-8d24-cd99f39695a1",
@@ -860,28 +882,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-01T07:12:07.65Z",
   "end": "2026-08-08T21:59:00Z",
   "ts": "2026-07-01T07:13:05.613Z"
- },
- {
-  "id": "DARS;847460;2a7541ae-ea40-40be-82cd-9e6d1796d695",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica jug - priključek Fram v smeri Maribora, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.38325,
-  "lng": 15.5737,
-  "start": "2026-05-02T16:00:34.7Z",
-  "end": "2026-07-30T21:59:00Z",
-  "ts": "2026-06-30T20:02:53.457Z"
- },
- {
-  "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, počivališče Polskava - priključek Sl. Bistrica sever v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.39742,
-  "lng": 15.60129,
-  "start": "2026-05-28T18:08:19.213Z",
-  "end": "2026-07-30T20:00:00Z",
-  "ts": "2026-06-30T20:02:35.58Z"
  },
  {
   "id": "DARS;823378;9ed2b8d7-7f5e-40fd-9ced-de3ceb59ea8a",
