@@ -111,10 +111,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-456 Priboj–Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Banja Luka-Čađavica (Han Kola-Stričići.)",
-    "text": "Danas (30.07.) do 19 sati, zbog bojevog gađanja na vojnom poligonu Manjača, obustavljen je saobraćaj na regionalnoj cesti Banja Luka-Čađavica, na dionici Han Kola-Stričići. Za vrijeme obustave, vozila će saobraćati alternativnim pravcem Han Kola-Ledenice-Stričići."
-   },
-   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }

@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "30.7.2026. 18:42",
-  "text": "Promet je pojačan na gradskim prometnicama i obilaznicama, osobito zagrebačkoj u smjeru istoka. Zastoji su povremeno u zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 Zagreb - Split - Dubrovnik na 424.+000 km između čvorova Zagvozd i Šestanovac u smjeru Zagreba - vozi se jednim prometnim trakom uz ograničenje brzine od 80 km/h prometna nesreća na autocesti A3 između između čvorova Lučko i Buzin (između 24.+000 km i 25.+000 km) u smjeru Lipovca - vozi se jednim prometnim trakom uz ograničenje brzine od 40 km/h u koloni dugoj oko 2 km AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ …"
+  "updated": "30.7.2026. 20:05",
+  "text": "Promet je pojačan na gradskim prometnicama i obilaznicama, osobito zagrebačkoj u smjeru istoka. Zastoji su povremeno u zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana Lipovac (uključujući zagrebačku obilaznicu) prometne nesreće na zagrebačkoj obilaznici (A3) između između čvorova Lučko i Buzin (između 22. i 23. km i između 24. km i 25. km) u smjeru Lipovca - vozi se jednim prometnim trakom u koloni dugoj oko 6 km prometna nesreća na Jadranskoj magistrali (DC8) u mjestu Čibača (predio Dubac) - vozi se otežano uz privremenu regulaciju prometa prometna nesreća na državnoj cesti DC62 Šestanovac-Zagvozd u Zagvozdu …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "30.7.2026. 18:12",
+  "updated": "30.7.2026. 19:41",
   "text": "Na graničnom prijelazu Batina prekinut je teretni promet zbog kvara na sustavu carine. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana treć…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "30.7.2026. 18:22",
+  "updated": "30.7.2026. 19:41",
   "text": "U prekidu su katamaranske linije Split-Hvar-Split i Split-Bol-Split. Izmjene u redu plovidbe: danas (30.07.) trajekt na liniji 832 Prapratno-Sobra će iznimno iz luke Sobra isploviti u 20:00 sati umjesto u 19:30 sati 1. kolovoza trajekt Jadrolinije će iz luke Iž/Bršanj za luku Zadar/Gaženica isploviti u 21:00 sat umjesto u 20:30 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnik…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "30.7.2026. 18:12",
+  "updated": "30.7.2026. 19:41",
   "text": "Stanje u željezničkom putničkom prometu 30. srpnja 2026. u 8.00 sati. Vlak 4050 iz Zagreb GK u 6.29 za Ogulin kasnio je u polasku 30 minuta. Autobus koji vozi umjesto vlaka 5002 iz Novske u 5.50 sati za Sunju kasnio je u polasku 55 minuta. Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamje…"
  },
  {
