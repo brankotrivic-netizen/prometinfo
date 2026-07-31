@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-31T13:28:25.896Z";
+export const PROMET_SI_UPDATED = "2026-07-31T15:36:45.713Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;849015;17f8f3fc-9452-4e0d-96d4-72b13ca3c53d",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Bič - počivališče Podsmreka v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.92786,
+  "lng": 14.85675,
+  "start": "2026-05-10T05:13:34.95Z",
+  "end": "2026-08-31T15:30:00Z",
+  "ts": "2026-07-31T15:27:17.613Z"
+ },
+ {
+  "id": "DARS;849026;ebd697d4-ab85-4bd4-9ea4-e1a05d8dfe98",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.93462,
+  "lng": 14.80302,
+  "start": "2026-05-10T06:34:58.423Z",
+  "end": "2026-08-31T16:30:00Z",
+  "ts": "2026-07-31T15:27:05.71Z"
+ },
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-07-31T15:00:06.387Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -15,28 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-31T13:00:56.483Z"
  },
  {
-  "id": "DARS;866796;dd803b21-a4a2-4eb4-90ab-2ced76fb099a",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Jesenice zahod - priključek Jesenice zahod v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.4458,
-  "lng": 14.01025,
-  "start": "2026-07-31T06:08:20.737Z",
-  "end": "2026-07-31T15:40:43.943Z",
-  "ts": "2026-07-31T06:08:27.153Z"
- },
- {
-  "id": "DARS;866779;12fececc-9418-4885-b57d-8def74eb00bf",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-402, Dobrovo - Neblo, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
-  "loc": "R2-402, Dobrovo - Neblo",
-  "lat": 45.99748,
-  "lng": 13.52699,
-  "start": "2026-07-31T05:17:59.507Z",
-  "end": "2026-07-31T14:00:00Z",
-  "ts": "2026-07-31T05:18:44.2Z"
- },
- {
   "id": "DARS;858200;905ee57a-deed-46ec-89df-45369b8ff25f",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-905, Gorje - Krnica, v Zgornjih Gorjah, izmenično enosmerni promet, rušitev in novogradnja Gorjanskega doma, do 29. 10. 2026.",
@@ -46,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-18T11:53:59.953Z",
   "end": "2026-10-29T16:00:00Z",
   "ts": "2026-07-31T05:12:29.657Z"
- },
- {
-  "id": "DARS;824108;c9a6bf29-05e0-4893-98ad-3be15c1874ca",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-676, Sp. Pohanca - Kapele, pri Dečnem selu, izmenično enosmerni promet, izgradnje pločnika in avtobusnih postajališč, do 17:00.",
-  "loc": "R3-676, Spodnja Pohanca - Kapele",
-  "lat": 45.9526,
-  "lng": 15.60133,
-  "start": "2025-11-25T06:42:04.553Z",
-  "end": "2026-07-31T15:00:00Z",
-  "ts": "2026-07-31T04:22:53.11Z"
  },
  {
   "id": "DARS;855218;b31655cc-0bf4-494a-8cee-127112e0c3ad",
@@ -323,17 +323,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-21T11:16:00.737Z"
  },
  {
-  "id": "DARS;864782;b20c0806-9681-4b9b-9652-032f79d0edc2",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-210, Kranj - Škofja Loka, v Sv. Duhu, izmenično enosmerni promet, gradnja kabelske kanalizacije, do 31. 7. 2026.",
-  "loc": "R1-210, Kranj - Škofja Loka",
-  "lat": 46.18596,
-  "lng": 14.32274,
-  "start": "2026-07-21T05:33:38.783Z",
-  "end": "2026-07-31T15:00:00Z",
-  "ts": "2026-07-21T05:35:00.943Z"
- },
- {
   "id": "DARS;860639;0a70269a-c8c1-4ee6-9a36-0c4986a04411",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-917, Željne - Rog - Baza - Podturn, pri Podstenicah, izmenično enosmerni promet, izvedba protiprašne zaščite ceste, do 14. 8. 2026.",
@@ -486,17 +475,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-08T06:32:10.917Z",
   "end": "2026-10-30T13:00:00Z",
   "ts": "2026-07-09T11:59:09.517Z"
- },
- {
-  "id": "DARS;862297;198bbbde-598e-4d5c-adf2-4f572e1bfd8e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-435, Maribor - Ruše, pri Limbušu, izmenično enosmerni promet, nadgradnje elektro omrežja, do 31. 7. 2026.",
-  "loc": "NK-435, Maribor - Ruše",
-  "lat": 46.55792,
-  "lng": 15.57387,
-  "start": "2026-07-09T09:00:00Z",
-  "end": "2026-07-31T15:00:00Z",
-  "ts": "2026-07-09T08:45:04.853Z"
  },
  {
   "id": "DARS;848227;65816cd8-8ebf-40b3-af90-b386884ce52b",
@@ -662,28 +640,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-30T05:29:13.417Z",
   "end": "2026-12-05T22:59:00Z",
   "ts": "2026-06-30T05:30:08.61Z"
- },
- {
-  "id": "DARS;849015;17f8f3fc-9452-4e0d-96d4-72b13ca3c53d",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Bič - počivališče Podsmreka v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.92786,
-  "lng": 14.85675,
-  "start": "2026-05-10T05:13:34.95Z",
-  "end": "2026-07-31T15:30:00Z",
-  "ts": "2026-06-30T00:19:08.763Z"
- },
- {
-  "id": "DARS;849026;ebd697d4-ab85-4bd4-9ea4-e1a05d8dfe98",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.93462,
-  "lng": 14.80302,
-  "start": "2026-05-10T06:34:58.423Z",
-  "end": "2026-07-31T16:30:00Z",
-  "ts": "2026-06-29T13:04:46.933Z"
  },
  {
   "id": "DARS;860269;12af5e16-84d2-47b5-b086-b4f7b1a7b309",
