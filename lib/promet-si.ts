@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-31T18:43:05.734Z";
+export const PROMET_SI_UPDATED = "2026-07-31T20:08:23.488Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867004;5e151162-aee1-408b-801b-5b621a5ff6ed",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - priključek Sl. Bistrica jug v smeri Maribora, dela, pomična zapora voznega pasu.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.36014,
+  "lng": 15.50595,
+  "start": "2026-07-31T20:01:04.777Z",
+  "end": "2026-08-01T00:00:24.203Z",
+  "ts": "2026-07-31T20:01:23.33Z"
+ },
+ {
+  "id": "DARS;867000;deb27687-4d17-4aa7-a120-285792583f5c",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, uvoz Kastelec - priključek Črni Kal v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.56329,
+  "lng": 13.87049,
+  "start": "2026-07-31T19:20:29.38Z",
+  "end": "2026-07-31T21:55:00Z",
+  "ts": "2026-07-31T19:20:37.06Z"
+ },
  {
   "id": "DARS;866993;151c0225-0887-42c6-be9b-d9bc29925674",
   "type": "MaintenanceWorks",
@@ -24,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-31T17:58:53.223Z",
   "end": "2026-08-07T21:00:00Z",
   "ts": "2026-07-31T17:59:17.36Z"
- },
- {
-  "id": "DARS;866984;b3951ebc-e384-481b-bae5-e278087637b7",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica jug - izvoz Sl. Konjice v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.36463,
-  "lng": 15.51479,
-  "start": "2026-07-31T17:32:04.35Z",
-  "end": "2026-07-31T21:59:04.387Z",
-  "ts": "2026-07-31T17:32:07.22Z"
- },
- {
-  "id": "DARS;866977;36b9043d-3589-4b5a-93e2-688ca5351929",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, predor Kastelec - priključek Kastelec v smeri Kopra, dela, zaprt vozni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.58427,
-  "lng": 13.90067,
-  "start": "2026-07-31T17:01:13.23Z",
-  "end": "2026-07-31T19:00:00Z",
-  "ts": "2026-07-31T17:01:16.177Z"
  },
  {
   "id": "DARS;849015;17f8f3fc-9452-4e0d-96d4-72b13ca3c53d",
