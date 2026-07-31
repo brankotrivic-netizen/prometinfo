@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-07-31T20:08:23.488Z";
+export const PROMET_SI_UPDATED = "2026-07-31T21:18:42.087Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;867004;5e151162-aee1-408b-801b-5b621a5ff6ed",
+  "id": "DARS;841844;f39cf734-fe5a-4201-9cf8-d69a66d44106",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - priključek Sl. Bistrica jug v smeri Maribora, dela, pomična zapora voznega pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.36014,
-  "lng": 15.50595,
-  "start": "2026-07-31T20:01:04.777Z",
-  "end": "2026-08-01T00:00:24.203Z",
-  "ts": "2026-07-31T20:01:23.33Z"
- },
- {
-  "id": "DARS;867000;deb27687-4d17-4aa7-a120-285792583f5c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Kastelec - priključek Črni Kal v smeri Kopra, dela, oviran promet.",
+  "desc": "A1, Ljubljana - Koper, priključek Unec - počivališče Studenec v smeri Kopra, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
   "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.56329,
-  "lng": 13.87049,
-  "start": "2026-07-31T19:20:29.38Z",
-  "end": "2026-07-31T21:55:00Z",
-  "ts": "2026-07-31T19:20:37.06Z"
+  "lat": 45.79768,
+  "lng": 14.24725,
+  "start": "2026-04-01T03:40:34.877Z",
+  "end": "2026-11-20T14:00:00Z",
+  "ts": "2026-07-31T20:24:17.087Z"
  },
  {
   "id": "DARS;866993;151c0225-0887-42c6-be9b-d9bc29925674",
@@ -167,17 +156,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-02-13T06:22:01.63Z",
   "end": "2026-10-30T22:59:00Z",
   "ts": "2026-07-30T06:07:43.963Z"
- },
- {
-  "id": "DARS;841844;f39cf734-fe5a-4201-9cf8-d69a66d44106",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Unec - počivališče Studenec v smeri Kopra, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.79768,
-  "lng": 14.24725,
-  "start": "2026-04-01T03:40:34.877Z",
-  "end": "2026-11-20T14:00:00Z",
-  "ts": "2026-07-30T05:33:37.123Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
@@ -376,17 +354,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-01T06:37:05.997Z",
   "end": "2026-08-14T21:59:00Z",
   "ts": "2026-07-21T04:33:19.617Z"
- },
- {
-  "id": "DARS;864618;4d6d0ec9-4d5e-491b-86c6-87b83391d9ec",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, pred priključkom Črni Kal v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.56159,
-  "lng": 13.87132,
-  "start": "2026-07-20T09:45:45.65Z",
-  "end": "2026-08-24T15:00:00Z",
-  "ts": "2026-07-20T09:46:54.337Z"
  },
  {
   "id": "DARS;864596;526d9950-2329-4aae-8eea-dd3b81d3eac2",
