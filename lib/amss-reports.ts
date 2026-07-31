@@ -2,6 +2,182 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "1GP BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policije…"
+ },
+ {
+  "title": "1GP KELEBIJA Srbija-Mađarska",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađarskim terminalima, a koje je često dosta duže u odnosu na vreme zadržavanja na našim prelazima Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. .2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Podsećamo …"
+ },
+ {
+  "title": "1GP PREŠEVO Srbija - Severna Makedonija AP E 75 M1",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Izvor: Upra…"
+ },
+ {
+  "title": "1GP ŠID sa hrvatske strane GP Tovarnik",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min . Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri ut…"
+ },
+ {
+  "title": "1GP BEZDAN ( Srbija- Hrvatska ) M-18",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće promenjeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Radno vreme ovog graničnog prelaza…"
+ },
+ {
+  "title": "1GP HORGOŠ SRBIJA MAĐARSKA AP A1, E-75",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta (međuzona je popunjena) Na TERETNIM terminalima : 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vrem…"
+ },
+ {
+  "title": "1GP GRADINA (Dimitrovgrad Srbija Bugarska AP E80)",
+  "text": "Prema poslednjim informacijama Uprave granične policije zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min; Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vreme potrebno za prolaz i njihovih terminala. Zadržavanje te…"
+ },
+ {
+  "title": "1GP SREMSKA RAČA",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - od 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na BiH. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po d…"
+ },
+ {
+  "title": "1GP ŠPILJANI Srbija Crna Gora E65 E80",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 minuta 2. Ulaz u Srbiju: oko 30 minuta Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ulaz u Srbiju- oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č."
+ },
+ {
+  "title": "1GP GOSTUN Srbija Crna Gora",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 minuta. 2. Ulaz u Srbiju: oko 30 minuta Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ulaz u Srbiju- oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razliko…"
+ },
+ {
+  "title": "Smederevska Palanka-Krnjevo, Obustava",
+  "text": "Dana 9 .6. 2026. godine, u periodu od 8 do 13 časova na snazi će biti obustava saobraćaja na dela državnog puta II B reda broj 354, od Smederevske Palanke do skretanja za jezero Kudreč, zbog radova na rehabilitaciji kolovoza. Alternativni pravac preko Zlatiborske ulice u Maloj Plani. Izvor Putevi Srbije"
+ },
+ {
+  "title": "1GP BAČKA PALANKA sa Hrvatske strane ILOK",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta . Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na GP Bačka Palanka normalizovan je saobraćaj za PMV, kao i za TMV ukupne mase do 3,5 tone, dok je za autobuse i dalje na snazi obustava saobraćaja, iz razloga što je došlo do oštećenja mosta na Dunavu. Radno vreme ovog graničnog prelaza …"
+ },
+ {
+  "title": "1GP BADOVINCI (PAVLOVIĆA ĆUPRIJA)",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Teretna motorna vozila na ovom graničnom prelazu mogu da ulaze u Srbiju PUNA i PRAZNA, dok na izlazu iz Srbije ka Bosni i Hercegovine teretna vozila mogu da prolaze samo PRAZNA. Radno vreme ovog graničnog prela…"
+ },
+ {
+  "title": "1GP Horgoš II (Srbija-Mađarska)",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja putničkih vozila na našim graničnim prelazima pri prelasku granice: 1. Izlaz iz Srbije- oko 30 minuta. 2. Ulaz u Srbiju- oko 30 minuta. Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vreme potrebno za prolaz i njihovih terminala. Radno vreme GP Horgoš II je od 1.5.2026. 24h dnevno za međunarodni promet putnik…"
+ },
+ {
+  "title": "1GP BAČKI VINOGRADI",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS ,zadržavanja putničkih vozila na našim graničnim prelazima pri prelasku granice: 1. Izlaz iz Srbije- oko 30 minuta. 2. Ulaz u Srbiju- oko 30 minuta . Granicni prelaz je isključivo za PUTNIČKA VOZILA. Granični prelaz Bački Vinogradi od 1.5.2026. biće otvoren 24h Ovaj GP prelaz,osim državljana srpske i mađarske nacionalnosti,mogu da koriste i putnici iz EU, švajcarske, Norveške i Islanda. Novo vreme zadržavanja na ovom graničnom prelazu bi…"
+ },
+ {
+  "title": "1GP VATIN",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - do 30 minuta. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude r…"
+ },
+ {
+  "title": "1GP SRPSKA CRNJA",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - do 30 minuta. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Izv…"
+ },
+ {
+  "title": "1GP ĐERDAP 1",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Radno…"
+ },
+ {
+  "title": "1GP Rastina (Srbija - Mađarska)",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja putničkih vozila na našim graničnim prelazima pri prelasku granice: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Uprava granične policije Ministarstva unutrašnjih poslova Republike Srbije u saradnji sa graničnim organima Mađarske usaglasila je radno vreme ovog graničnog prelaza. Radno vreme ovog graničnog prelaza je 7-19 časova. Ovaj GP prelaz, osim državljana srpske i mađarske nacionalnosti, mogu da …"
+ },
+ {
+  "title": "1GP BAJMOK (Srbija-Mađarska)",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja putničkih vozila na našim graničnim prelazima pri prelasku granice: 1. Izlaz iz Srbije- oko 30 minuta. 2. Ulaz u Srbiju- oko 30 minuta. Radno vreme graničnog prelaza je 07-19 časova. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađarskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Granični prelaz Bajmok Bačalmaš uspostavljen je za putnički saobraćaj, izuzimajući…"
+ },
+ {
+  "title": "1GP JABUKA",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 minuta 2. Ulaz u Srbiju: oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta 2. Ulaz u Srbiju- oko 30 minuta. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude r…"
+ },
+ {
+  "title": "1GP PROHOR PČINJSKI (Srbija - Severna Makedonija) R-238 (veza sa R-125)",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije: do 30 minuta 2. Ulaz u Srbiju: do 30 minuta. Novo vreme zadržavanja na ovom graničnom prelazu biće promenjeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi."
+ },
+ {
+  "title": "Ugrinovci - Rudnik, radovi na rekonstrukciji mosta preko potoka Garibovac",
+  "text": "Od 15.11.2025. godine, zbog radova na rekonstrukciji mosta preko potoka Garibovac ( Lukića most na Rudniku) izmenjen je režim saobraćaja na delu državnog puta I B reda broj 22, na deonici Ugrinovci Rudnik, u smeru ka Rudniku.U zoni radova, u smeru Ugrinovci - Rudnik, za saobraćaj je zatvorena krajnja leva saobraćajna traka, u dužini od oko 150 metara, a saobraćaj se odvija slobodnim saobraćajnim trakama. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "1GP NEŠTIN",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju do 30 minuta. Novo vreme zadržavanja na ovom graničnom prelazu biće promenjeno odmah po dobijanju informacije od Uprave granične policije RS kada se vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Ovaj granični prelaz predviđen je za …"
+ },
+ {
+  "title": "1GP VRŠKA ČUKA",
+  "text": "Prema poslednjim informacijama Uprave granične policije zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije: oko 30 minuta 2. Ulaz u Srbiju: oko 30 minuta Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutn…"
+ },
+ {
+  "title": "1GP RIBARCI",
+  "text": "Prema poslednjim informacijama Uprave granične policije zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije: od 30 minuta 2. Ulaz u Srbiju: oko 30 minuta Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno…"
+ },
+ {
+  "title": "1GP BOGOJEVO, sa hrvatske strane (GP ERDUT)",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ulaz u Srbiju- oko 30 min. DANA 11.03. OD 00:00 ČASOVA, UVEDENA JE OBUSTAVA TERETNOG SAOBRAĆAJA PREKO GRANIČNOG PRELAZA BOGOJEVO-ERDUT ZA TERETNA VOZILA UKUPNE MASE VEĆE OD 7,5 TONA. NAVEDENA OBUSTAVA BIĆE NA SNAZI DO DALJNJEG. Radno vreme ovog graničnog prelaza je 00…"
+ },
+ {
+  "title": "1GP KLADOVO - 1.",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude raz…"
+ },
+ {
+  "title": "1GP TRBUŠNICA - LOZNICA",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. PRIVREMENI TERETNI terminal otvoren je od 9-13h i od 22-6h radnim danima kao i vikendom 22- 06h. Od 02.12.2025. od 6 č. teretna motorna vozila biće usmerena na GP Mali Zvornik. Radno vreme ovog graničnog prelaza je 00-24č. Izvor: Uprava granične policije RS"
+ },
+ {
+  "title": "1GP BAČKI BREG (Srbija-Mađarska)",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na putničkim terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na teretnim terminalina: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme od 00-24č. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađarskim terminalima, a koje je često dosta duže u odnosu na vreme zadržavanja na našim prelazima Ovaj…"
+ },
+ {
+  "title": "1GP MALI ZVORNIK",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima : 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Od 2. 12. 2025. uspostavljen je saobraćaj za teretna motorna vozila čija ukupna masa prelazi 5 tona, a koji je bio u prekidu zbog oštećenja mosta preko reke Drine na drž. putu I B reda broj 26, u zoni GP Mali Z…"
+ },
+ {
+  "title": "1GP UVAC - između Srbije (Priboj) i BIH (Rudo-Višegrad)",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Izvor: Uprava granične policije RS"
+ },
+ {
+  "title": "1GP BAJINA BAŠTA - između Srbije (Bajina Bašta) i BIH (Skelani)",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Ovaj granični prelaz predviđen je za prelaz samo putničkih vozila i prolazak TERETNIH VOZILA, ali ISKLJUČIVO PRAZNA. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelaz…"
+ },
+ {
+  "title": "1GP SOT",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije do 30 minuta. 2. Ulaz u Srbiju do 30 minuta. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikaza…"
+ },
+ {
+  "title": "1GP LJUBA",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije do 30 minuta. 2. Ulaz u Srbiju do 30 minuta. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Radno vreme ovog graničnog prelaz…"
+ },
+ {
+  "title": "1GP JAŠA TOMIĆ",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja putničkih vozila na našim graničnim prelazima pri prelasku granice: 1. Izlaz iz Srbije- oko 30 minuta. 2. Ulaz u Srbiju- oko 30 minuta. Radno vreme GP Rabe je od 7 do 19 časova isključivo za PUTNIČKA VOZILA. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi."
+ },
+ {
+  "title": "1GP ĐALA (Srbija-Mađarska)",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja putničkih vozila na našim graničnim prelazima pri prelasku granice: 1. Izlaz iz Srbije- oko 30 minuta. 2. Ulaz u Srbiju- oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađarskim terminalima, a koje u ovim danima božićnih i novogodišnjih praznika može biti duže. Ovaj GP prelaz, osim državljana srpske i mađarske nacionalnosti, mogu da koriste i putnici iz EU, švajcarske, Norv…"
+ },
+ {
+  "title": "GP Ljubovija - GP Bratunac, Bratoljub",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 15 min. 2. Ulaz u Srbiju - oko 15 min. Na TERETNIM terminalima: 1. GP Ljubovija na izlazu - zastoj u odvijanju saobraćaja TMV zbog popunjenosti carinskog terminala susednih graničnih organa. 2. Ulaz u Srbiju - oko 15 min. Ovaj GP namenjen je za međunarodni saobraćaj za sve državljane i za sve kategorije vozila (putnička, teretna i autobuse). …"
+ },
+ {
+  "title": "1GP RABE (Srbija - Mađarska)",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja putničkih vozila na našim graničnim prelazima pri prelasku granice: 1. Izlaz iz Srbije- oko 30 minuta. 2. Ulaz u Srbiju- oko 30 minuta. Ovaj GP prelaz, osim državljana srpske i mađarske nacionalnosti, mogu da koriste i putnici iz EU, Švajcarske, Norveške i Islanda! Radno vreme GP Rabe je od 7 do 19 časova isključivo za PUTNIČKA VOZILA. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju infor…"
+ },
+ {
+  "title": "1GP NAKOVO",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našem graničnim prelazima su: Na putničkim terminalima: 1. Izlaz iz Srbije - oko 15 minuta. 2. Ulaz u Srbiju - oko 15 minuta. Radno vreme GP Nakovo je od 07-19č, svakog dana, isključivo za PUTNIČKA VOZILA. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Izvor UGP"
+ },
+ {
+  "title": "1GP STREZIMIROVCI (Srbija-Bugarska)",
+  "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije: oko 30 minuta 2. Ulaz u Srbiju: oko 30 minuta. Novo vreme zadržavanja na ovom graničnom prelazu biće promenjeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Radno vreme ovog graničnog prelaza je 00-24č. Izvor: Uprava granične policije RS"
+ },
+ {
+  "title": "1GP KOTROMAN - između Srbije i BIH",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - do 30 minuta. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bud…"
+ },
+ {
+  "title": "1GP LJUBOVIJA - između Srbije (Ljubovija) i BIH (Bratunac)",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Ovaj granični prelaz namenjen je samo za prelaz putnika i putničkih motornih vozila državljana iz BIH i Srbije. Na području Ljubovije otvoren je još jedan granični prelaz sa BIH . Na novom mostu i novom GP koji je sagrađen između Ljubovije i Bratunca (Bratoljub) odvija se međunarodni saobraćaj za sve drž…"
+ },
+ {
+  "title": "1GP JAMENA - između Srbije (na Savi zapadno od Sremske Rače) i BIH (Bijeljina)",
+  "text": "Prelaz SKELOM - Radi svakog dana od 07,00 do 20,00 sati. - NEPARNIM satima skela kreće iz Srbije, a - PARNIM satima iz Republike Srpske. - Ukupno ima 14 polazaka skele (po 7 sa svake strane). Izvor:UGP"
+ },
+ {
   "title": "Golubinci – Popinci (izlaz), radovi",
   "text": "Od 27. 7. do . 05. 8. 2026. godine, u periodu od 8 do 18 časova, biće obustavljen saobraćaj zbog izvođenja asfalterskih radova na deonici Golubinci, od raskrsnice do naseljenog mesta Popinci. Van navedenog termina obustave, saobraćaj će se odvijati dvosmerno suženim kolovozom i uz ograničenje brzine. Aleternativni putni pravac tokom obustave saobraćaja za oba smera je sledeći: Popinci - Pećinci Ruma Putinci Golubinci Putevi Srbije"
  },
@@ -64,181 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Arilje - Visoko, Opis puta",
   "text": "Arilje- Visoka od mosta Viroštak - Visoka, drža put II A reda je makadamski put u dužini oko 5 km. Vozače očekuju oštre krivine i veliki usponi, a u zimskim mesecima zbog obilnih snežnih padavina ova deonica je teško prohodna pa se ne savetuje korišćenje ovog putnog pravca. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Muhovo - Odvraćenica - Golija, Opis puta",
-  "text": "Put od Muhova do Odvraćenice je pod makadamom odnosno vozače očekuje zemljani put. U zimskim mesecima zbog obilnih snežnih padavina ova deonica je teško prohodna pa se ne savetuje korišćenje ovog putnog pravca. rećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Kalna - Jalovik izvor Periš, Opis puta",
-  "text": "Na drž putu II A reda broj 222, Kalna-Jalovik izvor-Periš, (IIA reda br 222) vozače celom dužinom očekuje asfaltani put koji prolazi kroz šumska područja i koji je u 2017.g. u potpunosti rehabilitovan. U zimskim mesecima u danima snežnih padavina (ledena kiša ili duge vremenske nepogode) saobraćaj može biti otežan, jer ovaj put pripada III prioritetu čišćenja koji podrazumeva samo uklanjanje snega sa puta, pa se ne preporučuje njegovo korišćenje. U zimskim mesecima savetujemo korišćenje puta koj…"
- },
- {
-  "title": "Opis puta, Ibarska magistrala - deonica kod Rušanja",
-  "text": "Deonica ibarske magistrale kod Rušnja dugačka je 5 km. Karakterisična je po čestoj magli i pojačanom vetru. Strogo poštujte postavljenu saobraćajnu signalizaciju."
- },
- {
-  "title": "Prevoj Begaljičko brdo, opis puta",
-  "text": "Prevoj Begaljičko brdo nalazi se na delu auto puta E75 između naplatne rampe Mali Požarevac i Vrčin. Dužina prevoja je 8 km. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put vam želi vaš AMSS."
- },
- {
-  "title": "Prevoj Banstol, opis puta",
-  "text": "Banstol se nalazi se između Sremkih Karlovca i Čortanovca na oko 200 m nadmorske visine. Dužina deonice je 10 km. Karakterisičan po čestoj magli i pojačanim vetrom. U zimskim mesecima u periodu snežnih padavina vetar stvara snežne nanose i u velikoj meri otežava rad putara i prohodnost puta. U peridu od 01.11 do 01.04. preporučujemo upotrebu zimske opreme, dok je ona obavezna ukoliko ima snega leda i poledice na kolovozu. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put Vam želi…"
- },
- {
-  "title": "Prevoj Iriški venac, opis puta",
-  "text": "Prevoj Iriški venac nalazi se na 451 m nadmorske visine. Dužina prevoja je 10 km. Karakterisičan po čestoj magli i pojačanim vetrom. U zimskim mesecima u periodu snežnih padavina vetar stvara snežne nanose i u velikoj meri otežava rad putara i prohodnost puta. U peridu od 01.11 do 01.04. preporučujemo upotrebu zimske oprema, dok je ona obavezna ukoliko ima snega leda i poledice na kolovozu. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Prevoj Mečka auto-put BG-Ni, opis puta",
-  "text": "Prevoj Mečka nalazi se na 400 m. nadmorske visine. Dužina prevoja je 10 km. Strogo poštujte postavljenu saobraćajnu signalizaciju."
- },
- {
-  "title": "Prevoj Svetinja, opis puta",
-  "text": "Prevoj Svetinja nalazi se na 400 m. nadmorske visine, na starom kragujevaćkom putu. Dužina prevoja je 10 km. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Prevoj Rudnik, opis puta",
-  "text": "Prevoj Rudnik nalazi se na 600 m nadmorske visine. Dužina prevoja je 10 km. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Prevoj Mionica-Divčibare",
-  "text": "Najviša tačka puta od Mionice ka Divčibarama nalazi se na 1.000 m. nadmorske visine. Dužina puta 20 km. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Prevoj Debelo Brdo Valjevo - Bajna Bašta, opis puta",
-  "text": "Prevoj Debelo Brdo nalazi se na 1.000 m nadmorske visine. Dužina puta 30 km. Karakterisičan je po čestoj magli, pojačanim vetrom i obilnim snežni padavinama. U zimskim mesecima u periodu snežnih padavina vetar stvara snežne nanose i u velikoj meri otežava rad putara i prohodnost puta. U peridu od 01.11 do 01.04. preporučujemo upotrebu zimske oprema, dok je ona obavezna, a preporučujemo upotrebu lanaca, ukoliko ima snega leda i poledice na kolovozu. Strogo poštujte postavljenu saobraćajnu signali…"
- },
- {
-  "title": "Opis puta Bajna Bašta - Tara",
-  "text": "Najviša tačka puta od Bajne Bašte ka Tari nalazi se na 1.000 m. nadmorske visine. Dužina puta 30 km. Pojačan vetar, magla, i obilne snežne padavine su osnovne karakteristike na ovoj deonici puta. U zimskim mesecima u periodu snežnih padavina vetar stvara snežne nanose i u velikoj meri otežava rad putara i prohodnost puta. U peridu od 01.11 do 01.04. preporučujemo upotrebu zimske oprema, dok je ona obavezna, a preporučujemo upotrebu lanaca, ukoliko ima snega leda i poledice na kolovozu. Strogo po…"
- },
- {
-  "title": "Prevoj Crni vrh Bor-Žagubica, opis puta",
-  "text": "Prevoj Crni vrh nalazi se na 1.000 m. nadmorske visine. Dužina prevoja je 20 km. Karakterisičan je po čestoj magli, pojačanim vetrom i po obilnim snežnim padavinama. U zimskim mesecima u periodu snežnih padavina vetar stvara snežne nanose i u velikoj meri otežava rad putara i prohodnost puta. U peridu od 01.11 do 01.04. preporučujemo upotrebu zimske oprema, dok je ona obavezna, a preporučujemo upotrebu lanaca, ukoliko ima snega leda i poledice na kolovozu. Strogo poštujte postavljenu saobraćajnu…"
- },
- {
-  "title": "Prevoj, Vlasina Surdulica Vlasinsko jezero, opis puta",
-  "text": "Prevoj Vlasina nalazi se na 1.100 nadmorske visine. Dužina prevoja je 10 km. Karakterisičan je po čestoj magli, pojačanim vetrom i obilnim snežnim padavinama. U zimskim mesecima u periodu snežnih padavina vetar stvara snežne nanose i u velikoj meri otežava rad putara i prohodnost puta. U peridu od 01.11 do 01.04. preporučujemo upotrebu zimske oprema, dok je ona obavezna a preporučujemo upotrebu lanaca ukoliko ima snega leda i poledice na kolovozu. Strogo poštujte postavljenu saobraćajnu signaliz…"
- },
- {
-  "title": "Prevoj Popadija, Opis puta",
-  "text": "Prevoj Popadija nalazi se na 500 m nadmorske visine na putu Majdanpek - Negotin. Dužina prevoja je 10 km. Karakterisičan po čestoj magli i pojačanim vetrom. U zimskim mesecima u periodu snežnih padavina vetar stvara snežne nanose i u velikoj meri otežava rad putara i prohodnost puta. U peridu od 01.11 do 01.04. preporučujemo upotrebu zimske oprema, dok je ona obavezna ukoliko ima snega leda i poledice na kolovozu. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put Vam želi vaš AMS…"
- },
- {
-  "title": "Prevoj Tresibaba, opis puta",
-  "text": "Prevoj Tresibaba nalazi se na 600 m nadmorske visine na putu Knjaževac-Niš. Dužina prevoja je 10 km. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Prevoj Čestobrodica, opis puta",
-  "text": "Prevoj Čestobrodica nalazi se na 600 m nadmorske visine, na putu Paraćin - Zaječar. Dužina prevoja je 20 km. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Prevoj Jaram, opis puta",
-  "text": "Prevoj Jaram nalazi se na 1700 m nadmorske visine. Dužina prevoja je 15 km. Karakterisičan po čestoj magli i pojačanim vetrom. U zimskim mesecima u periodu snežnih padavina vetar stvara snežne nanose i u velikoj meri otežava rad putara i prohodnost puta. U peridu od 01.11 do 01.04. preporučujemo upotrebu zimske oprema, dok je ona obavezna ukoliko ima snega leda i poledice na kolovozu. Strogo poštujte postavljenu saobraćajnu signalizaciju. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Trgovište-Bosilegrad, Opis puta",
-  "text": "Put od Trgovišta preko Radovnice do Bosilegrada većim delom u dužini od oko 20 km je pod makadamom, odnosno vozače očekuje zemljani put. Ne prepuručujemo korišćenje ovog putnog pravca."
- },
- {
-  "title": "Merćez-Lukovska banja, Opis puta",
-  "text": "Put od Merćeza ka Lukovskoj banji, (drž. put II B reda broj 414 ) asfaaltiran je samo do Lukovske banje, ostala deonica je makadamski put. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Čantavir - Orom, Opis puta",
-  "text": "Put između Čantavira i Oroma je put III prioriteta, na njemu nema asfalta već je to zemljani - makadamski put. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Majdanpek Donji Milanovac preko Omana",
-  "text": "Na državnom putu II A reda broj 164 preko Omana, vozače celom dužinom očekuje asfaltani put koji prolazi kroz šumska područja. U zimskim mesecima u danima snežnih padavina (ledena kiša ili duge vremenske nepogode) saobraćaj je otežan, pa se ne preporučuje njegovo korišćenje. Savetujemo korišćenje puta koji od Majdanpeka vodi preko Klokočevca i Porečkog mosta ka Donjem Milanovcu."
- },
- {
-  "title": "Krupanj-Osečina, Opis puta",
-  "text": "Prvih 9 km puta od Krupnja ka Osečini je pod asfaltom ostala dužina puta prema Osečini je makadamski odnosno zemljani put.Ne preporučijemo kretanje i korišćenje ovog putnog pravca. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Ivanjica - Kaona - Kraljevo, Opis puta",
-  "text": "Na putu između Kaone i Ivanjice (drž. putu od Ii A reda broj 197) vozače očekuje deonica koja nije pod asfaltom, odnosno zemljani (makadamski) put, zbog čega ne savetujemo korišćenje ovog puta. U zimskim mesecima on pripada III prioritetu održavanja puteva."
- },
- {
-  "title": "Ivanjica - Prilike - Nova Varoš, Opis puta",
-  "text": "Put IB reba br.-13 Ivanjica-Sjenica je celom dužinom pod asfaltom. Kolovoz je u dobrom stanju pa je prohodnost ovog puta u letnjim mesecima dobra. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Strmostena - Kučajske planine - Brestovačke banje, Opis puta",
-  "text": "Put od Strmostena preko Kučajskih planina do Brestovačke banje je većim delom pod makadamom odnosno vozače očekuje zemljani put. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Ivanjica - manastir Studenica - Ušće, Opis puta",
-  "text": "Put od Ivanjice ka manastiru Studenica do Ušća celom dužinom je pod asfaltom. Srećan put vam želi vaš AMSS."
- },
- {
-  "title": "Put Ivanjica Duga Poljana preko Golije",
-  "text": "Od Ivanjice ka Dugoj Poljani prvih 15 km je pod asfaltom, sledećih 3,3 km je zemljani put ili makadam, narednih 20 km je pod asfaltom, a zatim dolazi deonica od 22 km na kojoj nema asfalta, odnosno vozače očekuje zemljani put."
- },
- {
-  "title": "Krepoljin - Despotovac, Opis puta",
-  "text": "Državni put IIA reda broj 186 između Krepoljina i Despotovca, preko Sige, Lipovice, Panjevca ka manastiru Manasija do Despotovca je pod asfaltom. Na pojedinim deonicama kolovoz je oštećen, vozačima savetujemo punu opreznost u vožnji. Srećan put vam želi vaš AMSS."
- },
- {
-  "title": "Prevoj Mačkov kamen, pu Krupanj - Gračanica",
-  "text": "Saobraćaj se obavlja bez prekida, ali usporeno na pojedinim deonicama zbog oštećenog kolovoza. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "Žlne - Ponor, Opis puta",
-  "text": "Put između Žlne i Ponora je lokalni put pod asfaltom celom dužinom. U zimskim mesecima se ne savetuje njegovo korišćenje jer je otežano prohodan zbog snega i leda na kolovozu. Srećan put Vam želi vaš AMSS."
- },
- {
-  "title": "PRAVAC ZA TERETNA VOZILA UKUPNE TEŽINE VEĆE OD 3,5 T.",
-  "text": "IZ BANATA ZA BAČKU I SREM: Pančevački most, Ruzveltova, D. Tucovića, Batutova, Bulevar, G. Vučića, V. Ilića do Plavog mosta (ZABRANA SAOBRAĆAJA: od 16 do 18 i od 23 do 09 sati narednog dana!), AP E-75 ka Nišu, kružni put do ibarske magistrale, obilaznica preko Ostružnice, pa AP E-70 i AP E-75."
- },
- {
-  "title": "Rogačica - Debelo brdo, radovi",
-  "text": "Do 1. 11. 2026. godine, izvode se radovi na rehabilitaciji kolovoza na deonici Rogačica Debelo brdo. Potpuna obustava saobraćaja na državnom putu IIA-170 Sedlari Debelo Brdo Rogačica planirana je od 28. do 1. 8. 2026. u periodu od 07.00 do 19.00 časova, zbog izvođenja završnog sloja asfalta. Saobraćaj će biti preusmeren na alternativni pravac preko Valjeva, Osečine, Zavlake, Krupnja, Mačkovog kamena, Gračanice i Ljubovije. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem voz…"
- },
- {
-  "title": "1GP BEZDAN ( Srbija- Hrvatska ) M-18",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće promenjeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Radno vreme ovog graničnog prelaza…"
- },
- {
-  "title": "1GP ŠID sa hrvatske strane GP Tovarnik",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min . Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 300 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri u…"
- },
- {
-  "title": "1GP PREŠEVO Srbija - Severna Makedonija AP E 75 M1",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima 1. Izlaz iz Srbije - oko 90 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Izvor: Upra…"
- },
- {
-  "title": "1GP KELEBIJA Srbija-Mađarska",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađarskim terminalima, a koje je često dosta duže u odnosu na vreme zadržavanja na našim prelazima Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 min. .2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Podsećamo …"
- },
- {
-  "title": "1GP HORGOŠ SRBIJA MAĐARSKA AP A1, E-75",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta (međuzona je popunjena) Na TERETNIM terminalima : 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vrem…"
- },
- {
-  "title": "1GP GRADINA (Dimitrovgrad Srbija Bugarska AP E80)",
-  "text": "Prema poslednjim informacijama Uprave granične policije zadržavanja putničkih vozila na našim graničnim prelazima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min; Na brzinu prolaza u velikoj meri utiče procedura i način rada pograničnih vlasti kod naših suseda, što dodatno doprinosi višesatnom zadržavanju, zbog toga dodajte i vreme potrebno za prolaz i njihovih terminala. Zadržavanje te…"
- },
- {
-  "title": "1GP BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 120 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policij…"
- },
- {
-  "title": "1GP SREMSKA RAČA",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - od 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na BiH. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po d…"
- },
- {
-  "title": "1GP ŠPILJANI Srbija Crna Gora E65 E80",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 minuta 2. Ulaz u Srbiju: oko 30 minuta Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ulaz u Srbiju- oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č."
- },
- {
-  "title": "1GP GOSTUN Srbija Crna Gora",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 minuta. 2. Ulaz u Srbiju: oko 30 minuta Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ulaz u Srbiju- oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razliko…"
- },
- {
-  "title": "Smederevska Palanka-Krnjevo, Obustava",
-  "text": "Dana 9 .6. 2026. godine, u periodu od 8 do 13 časova na snazi će biti obustava saobraćaja na dela državnog puta II B reda broj 354, od Smederevske Palanke do skretanja za jezero Kudreč, zbog radova na rehabilitaciji kolovoza. Alternativni pravac preko Zlatiborske ulice u Maloj Plani. Izvor Putevi Srbije"
  }
 ];
