@@ -1,29 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-01T08:37:59.174Z";
+export const PROMET_SI_UPDATED = "2026-08-01T10:20:05.942Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;867048;46c7e916-fd1b-4c1e-963a-fd62d9f8fc24",
+  "id": "DARS;867054;a2a71881-deea-4bbe-8ca1-90dc834315aa",
   "type": "MaintenanceWorks",
-  "desc": "R1-218, Črnomelj - Kanižarica, v Črnomlju, na Viniški cesti, oviran promet, košnja, do 12:00.",
-  "loc": "R3-660, Črnomelj - (Viniška cesta - Kočevje)",
-  "lat": 45.56935,
-  "lng": 15.19186,
-  "start": "2026-08-01T08:00:00Z",
-  "end": "2026-08-01T10:00:00Z",
-  "ts": "2026-08-01T06:48:38.367Z"
+  "desc": "R1-218, Črnomelj, Ulica 21. oktobra in Ulica Moša Pijade, oviran promet, košnja, do 18:00.",
+  "loc": "R1-218, Črnomelj",
+  "lat": 45.57505,
+  "lng": 15.19007,
+  "start": "2026-08-01T10:00:00Z",
+  "end": "2026-08-01T16:00:00Z",
+  "ts": "2026-08-01T06:55:06.373Z"
  },
  {
-  "id": "DARS;867047;d899eee4-3066-4aad-9674-6258fef34047",
+  "id": "DARS;867050;8d3bcca8-86fd-4d3a-8a99-fa1d4d697028",
   "type": "MaintenanceWorks",
-  "desc": "R1-216, Črmošnjice - Črnomelj, pri Črnomljju, oviran promet, košnja, do 12:00.",
-  "loc": "R1-216, Črmošnjice - Črnomelj",
-  "lat": 45.5846,
-  "lng": 15.1838,
-  "start": "2026-08-01T06:40:31.213Z",
-  "end": "2026-08-01T10:00:00Z",
-  "ts": "2026-08-01T06:41:51.877Z"
+  "desc": "R1-216, Črnomelj Kočevje - Črnomelj ulica Moša Pijade, oviran promet, košnja, do 16:00.",
+  "loc": "R1-216, Črnomelj (ulica Moša Pijade - Kočevje)",
+  "lat": 45.57733,
+  "lng": 15.18139,
+  "start": "2026-08-01T10:00:00Z",
+  "end": "2026-08-01T14:00:00Z",
+  "ts": "2026-08-01T06:51:15.09Z"
+ },
+ {
+  "id": "DARS;867045;2e0d3d8a-c8e2-42b5-a223-e034c0ac41fa",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-102, Idrija, v Spodnji Idriji, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "G2-102, Spodnja Idrija",
+  "lat": 46.03108,
+  "lng": 14.02614,
+  "start": "2026-08-01T09:00:00Z",
+  "end": "2026-08-01T12:00:00Z",
+  "ts": "2026-08-01T06:39:49.36Z"
  },
  {
   "id": "DARS;867042;e0a50ad5-9495-4588-b722-db6f68b706aa",
