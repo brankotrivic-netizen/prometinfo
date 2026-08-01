@@ -510,9 +510,11 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .livehead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:9px}.livehead strong{font-size:15px}.liveclock{font-size:12px;color:#475569;text-align:right;white-space:nowrap}
 .livepulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.14);margin-right:6px}
 .livebest{background:#ecfdf5;border:1px solid #86efac;border-radius:10px;padding:10px 11px;margin-bottom:8px;font-size:14px;line-height:1.55}
+.livebest.warn{background:#fff7ed;border-color:#fb923c}
 .livebest b{font-size:16px}.livegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:7px;margin:7px 0}
 .liveopt{background:#fff;border:1px solid #dbeafe;border-radius:9px;padding:8px 9px;font-size:12.5px;line-height:1.5}.liveopt.best{border-color:#22c55e}
 .livealerts{margin-top:8px;background:#fff7ed;border:1px solid #fed7aa;border-radius:9px;padding:8px 10px;font-size:12.5px;line-height:1.5}.livealerts ul{margin:5px 0 0;padding-left:18px}.livealerts li{margin:3px 0}
+.liveborderwarn{margin:8px 0;background:#fff1f2;border:2px solid #fb7185;border-radius:10px;padding:9px 11px;color:#881337;font-size:13px;line-height:1.5}
 .liveactions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.liveactions button{border:1px solid #bfdbfe;background:#fff;color:#1d4ed8;border-radius:8px;padding:7px 10px;font:inherit;font-size:12px;font-weight:700;cursor:pointer}
 .livenote{font-size:11.5px;color:#64748b;line-height:1.45;margin-top:7px}
 @media(max-width:620px){.askrow{flex-wrap:wrap}.askrow input{flex-basis:100%}.askrow .askgo{flex:1}.livehead{display:block}.liveclock{text-align:left;margin-top:4px}.livegrid{grid-template-columns:1fr}}
@@ -1865,14 +1867,35 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       var fresh=JSON.parse(txt.slice(a+10,b)); fresh.forEach(function(np){ var old=CBYID[np.id]; if(old)Object.assign(old,np); }); OFFICIAL_LAST=Date.now(); return true;
     }).catch(function(){ return false; });
   }
+  function liveBorderWait(p){
+    if(!p)return {minutes:null,status:'missing',source:'',age:null};
+    if(p.hak){
+      var last=REV?p.hak.ulazMin:p.hak.izlazMin, age=hakDirAge(p);
+      if(last!=null&&!hakDirStale(p))return {minutes:last,status:'fresh',source:'HAK',age:age==null?null:Math.max(0,Math.round(age))};
+      if(last!=null)return {minutes:last,status:'last',source:'HAK',age:age==null?null:Math.max(0,Math.round(age))};
+      if(p.hak.bihamkFallbackWaitMin!=null)return {minutes:p.hak.bihamkFallbackWaitMin,status:'fresh',source:'BIHAMK',age:Math.max(0,Math.round((Date.now()-Date.parse(PAGE_BUILT_AT))/60000))};
+    }
+    var fresh=paxTruck(p).pax;
+    if(fresh!=null)return {minutes:fresh,status:'fresh',source:p.amss?'AMSS':'BIHAMK',age:null};
+    return {minutes:null,status:'missing',source:'',age:null};
+  }
+  function routeRank(a,b){
+    var av=a.totalMin==null?(100000+a.driveMin):a.totalMin, bv=b.totalMin==null?(100000+b.driveMin):b.totalMin;
+    return av-bv;
+  }
+  function borderWaitLine(r){
+    if(r.wait==null)return '🛂 Meja: ni zanesljive meritve — skupnega časa ne računam';
+    if(r.waitStatus==='last')return '⚠️ Zadnji uradni podatek '+r.waitSource+': <b>'+fmtHM(r.wait)+'</b>'+(r.waitAge!=null?' (pred '+r.waitAge+' min)':'')+' — trenutno stanje se je lahko spremenilo';
+    return '🛂 Uradno čakanje na meji: <b>'+fmtHM(r.wait)+'</b>'+(r.waitAge!=null?' (podatek pred '+r.waitAge+' min)':'');
+  }
   function tomTomRoute(pr,id){
     var cross=id&&CBYID[id], from=rFrom(pr), to=rTo(pr);
     return Promise.all([geocode(from),geocode(to)]).then(function(g){
       var coords=g[0].lat+','+g[0].lng+(cross&&cross.lat!=null?(':'+cross.lat+','+cross.lng):'')+':'+g[1].lat+','+g[1].lng;
       var url='https://api.tomtom.com/routing/1/calculateRoute/'+coords+'/json?key='+TOMTOM_KEY+'&traffic=true&travelMode=car&routeType=fastest&computeTravelTimeFor=all&sectionType=traffic&departAt=now';
       return fetch(url,{cache:'no-store',signal:AbortSignal.timeout(16000)}).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(function(j){
-        var rt=j.routes&&j.routes[0]; if(!rt)throw 0; var s=rt.summary||{}, wait=cross?paxTruck(cross).pax:0;
-        return {id:id||'',name:cross?cross.name:'Neposredna pot',driveMin:Math.round((s.travelTimeInSeconds||0)/60),freeMin:Math.round((s.noTrafficTravelTimeInSeconds||s.travelTimeInSeconds||0)/60),delayMin:Math.round((s.trafficDelayInSeconds||0)/60),trafficKm:Math.round((s.trafficLengthInMeters||0)/100)/10,km:Math.round((s.lengthInMeters||0)/1000),wait:wait,totalMin:Math.round((s.travelTimeInSeconds||0)/60)+(wait||0),arrival:s.arrivalTime||'',sections:(rt.sections||[]).filter(function(x){return x.sectionType==='TRAFFIC';}),points:(rt.legs||[]).reduce(function(out,leg){return out.concat(leg.points||[]);},[])};
+        var rt=j.routes&&j.routes[0]; if(!rt)throw 0; var s=rt.summary||{}, drive=Math.round((s.travelTimeInSeconds||0)/60), bw=cross?liveBorderWait(cross):{minutes:0,status:'fresh',source:'',age:null}, wait=bw.minutes;
+        return {id:id||'',name:cross?cross.name:'Neposredna pot',driveMin:drive,freeMin:Math.round((s.noTrafficTravelTimeInSeconds||s.travelTimeInSeconds||0)/60),delayMin:Math.round((s.trafficDelayInSeconds||0)/60),trafficKm:Math.round((s.trafficLengthInMeters||0)/100)/10,km:Math.round((s.lengthInMeters||0)/1000),wait:wait,waitStatus:bw.status,waitSource:bw.source,waitAge:bw.age,totalMin:wait==null?null:(drive+wait),arrival:s.arrivalTime||'',sections:(rt.sections||[]).filter(function(x){return x.sectionType==='TRAFFIC';}),points:(rt.legs||[]).reduce(function(out,leg){return out.concat(leg.points||[]);},[])};
       });
     });
   }
@@ -1898,12 +1921,13 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var box=document.getElementById('liveAnswer'); if(!box)return;
     if(LIVE_BUSY&&!LIVE_DATA){box.style.display='block';box.innerHTML='<div class="livehead"><strong><span class="livepulse"></span>Preverjam trenutno stanje…</strong></div><div class="meta">Povezujem promet na celotni poti, mejne prehode in uradna obvestila.</div>';return;}
     if(!LIVE_DATA){box.style.display='none';return;}
-    var d=LIVE_DATA, rows=d.routes.slice().sort(function(a,b){return a.totalMin-b.totalMin;}), best=rows[0], alerts=liveAlerts(d.pr,best), p=best&&best.id?CBYID[best.id]:null;
+    var d=LIVE_DATA, rows=d.routes.slice().sort(routeRank), best=rows[0], alerts=liveAlerts(d.pr,best), p=best&&best.id?CBYID[best.id]:null;
     var html='<div class="livehead"><strong><span class="livepulse"></span>Trenutno stanje poti</strong><div class="liveclock">preverjeno '+clockHMS(d.checkedAt)+'<br><span id="liveCountdown">'+(LIVE_AUTO?'naslednji pregled čez 60 s':'samodejno preverjanje izklopljeno')+'</span></div></div>';
+    if(rows.some(function(r){return r.waitStatus==='last'||r.wait==null;}))html+='<div class="liveborderwarn"><b>Pomembno:</b> TomTom minute pomenijo samo cestno zamudo, ne čakanja na mejni kontroli. Pri zastarelem uradnem podatku spodaj ohranim zadnji objavljeni čas in jasno napišem njegovo starost.</div>';
     if(best){
-      var arrive=best.arrival?new Date(best.arrival):new Date(Date.now()+best.totalMin*60000), traffic=best.delayMin>0?('zamuda zaradi prometa ~'+best.delayMin+' min'):'brez večje prometne zamude';
-      html+='<div class="livebest">✅ Trenutno najhitreje: <b>'+safeHtml(best.name)+'</b><br>🚗 '+best.km+' km · vožnja '+fmtHM(best.driveMin)+' · '+traffic+(best.wait!=null?' · meja ~'+best.wait+' min':'')+'<br>🕒 Predviden prihod <b>'+('0'+arrive.getHours()).slice(-2)+':'+('0'+arrive.getMinutes()).slice(-2)+'</b></div>';
-      html+='<div class="livegrid">'+rows.map(function(r,i){var inc=r.sections.filter(function(s){return (s.delayInSeconds||0)>0||s.simpleCategory==='ROAD_WORK';});return '<div class="liveopt'+(i===0?' best':'')+'"><b>'+(i===0?'✅ ':'')+safeHtml(r.name)+'</b><br>Skupaj ~'+fmtHM(r.totalMin)+(r.wait!=null?' · meja '+r.wait+' min':'')+'<br><span class="meta">prometna zamuda '+r.delayMin+' min'+(inc.length?' · '+inc.length+' dogodkov':'')+'</span></div>';}).join('')+'</div>';
+      var arrive=new Date(Date.now()+(best.totalMin==null?best.driveMin:best.totalMin)*60000), traffic=best.delayMin>0?('cestna zamuda brez meje ~'+best.delayMin+' min'):'brez večje cestne zamude';
+      html+='<div class="livebest'+(best.waitStatus==='fresh'?'':' warn')+'">'+(best.waitStatus==='fresh'?'✅ Najboljša trenutna ocena: ':'⚠️ Najboljša ocena po razpoložljivih podatkih: ')+'<b>'+safeHtml(best.name)+'</b><br>🚗 Vožnja '+fmtHM(best.driveMin)+' · '+traffic+'<br>'+borderWaitLine(best)+(best.totalMin!=null?'<br>🕒 Ocena skupaj <b>'+fmtHM(best.totalMin)+'</b> · prihod okoli <b>'+('0'+arrive.getHours()).slice(-2)+':'+('0'+arrive.getMinutes()).slice(-2)+'</b>':'')+'</div>';
+      html+='<div class="livegrid">'+rows.map(function(r,i){var inc=r.sections.filter(function(s){return (s.delayInSeconds||0)>0||s.simpleCategory==='ROAD_WORK';});return '<div class="liveopt'+(i===0?' best':'')+'"><b>'+(i===0?'➡️ ':'')+safeHtml(r.name)+'</b><br>Vožnja '+fmtHM(r.driveMin)+' · '+(r.waitStatus==='last'?'zadnji '+safeHtml(r.waitSource)+' '+fmtHM(r.wait)+(r.waitAge!=null?' pred '+r.waitAge+' min':''):(r.wait!=null?'meja '+fmtHM(r.wait):'meja brez podatka'))+(r.totalMin!=null?'<br><b>Ocena skupaj '+fmtHM(r.totalMin)+'</b>':'<br><b>Skupaj ni mogoče oceniti</b>')+'<br><span class="meta">cestna zamuda brez meje '+r.delayMin+' min'+(inc.length?' · '+inc.length+' dogodkov':'')+'</span></div>';}).join('')+'</div>';
       var notable=best.sections.filter(function(s){return (s.delayInSeconds||0)>0||s.simpleCategory==='ROAD_WORK';}).slice(0,5);
       if(notable.length)html+='<div class="livealerts"><b>🚧 TomTom dogodki na izbrani poti</b><ul>'+notable.map(function(s){return '<li>'+incidentLabel(s)+(s.delayInSeconds>0?' · zamuda '+Math.max(1,Math.round(s.delayInSeconds/60))+' min':'')+'</li>';}).join('')+'</ul></div>';
     }
@@ -1911,9 +1935,9 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     html+='<div class="livenote">Mejni podatki: '+safeHtml(borderFresh(p))+' · Promet TomTom je preverjen zdaj. Kamera je osvežena zdaj, vendar sama brez potrditve ne določa minut čakanja.</div>';
     html+='<div class="liveactions"><button onclick="refreshLiveRoute(true)">🔄 Preveri zdaj</button><button onclick="setLiveAuto('+(LIVE_AUTO?'false':'true')+')">'+(LIVE_AUTO?'⏸ Ustavi minutno preverjanje':'▶ Preverjaj vsako minuto')+'</button><button onclick="speakLiveAnswer()">🔊 Preberi povzetek</button></div>';
     box.style.display='block'; box.innerHTML=html;
-    var eta=document.getElementById('routeEta'); if(eta&&best){eta.innerHTML='📡 <b>Promet v živo:</b> '+best.km+' km · vožnja '+fmtHM(best.driveMin)+(best.wait!=null?' · meja ~'+best.wait+' min':'')+' · skupaj <b>'+fmtHM(best.totalMin)+'</b>';}
+    var eta=document.getElementById('routeEta'); if(eta&&best){eta.innerHTML='📡 <b>Cesta:</b> '+best.km+' km · vožnja '+fmtHM(best.driveMin)+' · zamuda brez meje '+best.delayMin+' min<br>'+borderWaitLine(best)+(best.totalMin!=null?' · ocena skupaj <b>'+fmtHM(best.totalMin)+'</b>':'');}
   }
-  window.speakLiveAnswer=function(){ if(!LIVE_DATA||!LIVE_DATA.routes.length)return; var b=LIVE_DATA.routes.slice().sort(function(a,b){return a.totalMin-b.totalMin;})[0]; speak('Trenutno najhitrejša pot je preko prehoda '+b.name+'. Vožnja približno '+b.driveMin+' minut'+(b.wait!=null?', čakanje na meji približno '+b.wait+' minut':'')+'. Skupaj približno '+b.totalMin+' minut.'); };
+  window.speakLiveAnswer=function(){ if(!LIVE_DATA||!LIVE_DATA.routes.length)return; var b=LIVE_DATA.routes.slice().sort(routeRank)[0], msg='Najboljša ocena je preko prehoda '+b.name+'. Vožnja približno '+b.driveMin+' minut.'; if(b.wait==null)msg+=' Za mejo ni zanesljive meritve.';else if(b.waitStatus==='last')msg+=' Zadnji uradni podatek za mejo je '+b.wait+' minut in je star '+b.waitAge+' minut.';else msg+=' Uradno čakanje na meji je približno '+b.wait+' minut.';if(b.totalMin!=null)msg+=' Ocena skupaj je '+b.totalMin+' minut.';speak(msg); };
   function liveTick(){ var el=document.getElementById('liveCountdown'); if(!el||!LIVE_AUTO)return; var s=Math.max(0,Math.ceil((LIVE_NEXT-Date.now())/1000)); el.textContent='naslednji pregled čez '+s+' s'; }
   window.setLiveAuto=function(on){ LIVE_AUTO=!!on; if(LIVE_TIMER)clearInterval(LIVE_TIMER);if(LIVE_CLOCK)clearInterval(LIVE_CLOCK);LIVE_TIMER=null;LIVE_CLOCK=null; if(LIVE_AUTO){LIVE_NEXT=Date.now()+60000;LIVE_TIMER=setInterval(function(){refreshLiveRoute(false);},60000);LIVE_CLOCK=setInterval(liveTick,1000);} renderLiveAnswer(); };
   window.refreshLiveRoute=function(force){
@@ -2160,7 +2184,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var pr=CURRENT_ROUTE; if(!pr) return;
     var dm=document.getElementById('driveMode'); var body=document.getElementById('driveBody');
     if(!LIVE_DATA&&!LIVE_BUSY) startLiveRoute(pr,true);
-    var ranked=LIVE_DATA&&LIVE_DATA.pr===pr?LIVE_DATA.routes.slice().sort(function(a,b){return a.totalMin-b.totalMin;}):[];
+    var ranked=LIVE_DATA&&LIVE_DATA.pr===pr?LIVE_DATA.routes.slice().sort(routeRank):[];
     var recId=ranked.length&&ranked[0].id?ranked[0].id:pr.recommended[0], altId=pr.alternative.filter(function(id){return id!==recId;})[0]||pr.recommended.filter(function(id){return id!==recId;})[0], avId=pr.avoid[0];
     var rec=recId?CBYID[recId]:null, alt=altId?CBYID[altId]:null, av=avId?CBYID[avId]:null;
     var h='<div class="droute">'+rFrom(pr)+' → '+rTo(pr)+'</div>';
