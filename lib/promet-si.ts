@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-01T14:10:06.278Z";
+export const PROMET_SI_UPDATED = "2026-08-01T15:15:12.488Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
+  "loc": "R3-706, Ožbalt - Zg. Kapla",
+  "lat": 46.62649,
+  "lng": 15.43348,
+  "start": "2026-06-22T06:28:52.303Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-08-01T15:00:25.04Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -112,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-28T18:08:19.213Z",
   "end": "2026-08-09T20:00:00Z",
   "ts": "2026-07-30T19:57:37.537Z"
- },
- {
-  "id": "DARS;866620;69490aac-c867-45ae-b812-026dc29d0be5",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-644, Ljubljana (Šmartinska) - Šentjakob, v Hrastju, izmenično enosmerni promet, zamenjava pokrova jaška, do 1. 8. 2026.",
-  "loc": "R3-644, Ljubljana (Šmartinska cesta) - Šentjakob",
-  "lat": 46.07591,
-  "lng": 14.5673,
-  "start": "2026-07-30T08:39:06.47Z",
-  "end": "2026-08-01T15:00:00Z",
-  "ts": "2026-07-30T09:48:06.343Z"
  },
  {
   "id": "DARS;861125;786350ac-a680-41fd-b5bd-762e4bf79af5",
