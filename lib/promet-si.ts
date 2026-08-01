@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-01T11:38:48.774Z";
+export const PROMET_SI_UPDATED = "2026-08-01T12:37:38.238Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;867054;a2a71881-deea-4bbe-8ca1-90dc834315aa",
@@ -24,72 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-01T10:00:00Z",
   "end": "2026-08-01T14:00:00Z",
   "ts": "2026-08-01T06:51:15.09Z"
- },
- {
-  "id": "DARS;867045;2e0d3d8a-c8e2-42b5-a223-e034c0ac41fa",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Idrija, v Spodnji Idriji, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
-  "loc": "G2-102, Spodnja Idrija",
-  "lat": 46.03108,
-  "lng": 14.02614,
-  "start": "2026-08-01T09:00:00Z",
-  "end": "2026-08-01T12:00:00Z",
-  "ts": "2026-08-01T06:39:49.36Z"
- },
- {
-  "id": "DARS;867042;e0a50ad5-9495-4588-b722-db6f68b706aa",
-  "type": "MaintenanceWorks",
-  "desc": "RT-926, Solčava - Podolševa - Sleme, oviran promet, košnja, do 14:00.",
-  "loc": "RT-926, Solčava - Podolševa - Sleme",
-  "lat": 46.41978,
-  "lng": 14.69318,
-  "start": "2026-08-01T06:35:55.347Z",
-  "end": "2026-08-01T12:00:00Z",
-  "ts": "2026-08-01T06:37:40.567Z"
- },
- {
-  "id": "DARS;867027;14d7da8c-3574-4840-b52c-c23a8524b5eb",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, izvoz 47 Kozina iz smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.61107,
-  "lng": 13.93237,
-  "start": "2026-08-01T05:26:32.793Z",
-  "end": "2026-08-01T15:00:00Z",
-  "ts": "2026-08-01T05:26:34.773Z"
- },
- {
-  "id": "DARS;867026;8af368da-26cf-4eda-8de2-f1c596d7fc6f",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, izvoz 47 Kozina - priključek Kozina iz smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.61389,
-  "lng": 13.94082,
-  "start": "2026-08-01T05:26:23.407Z",
-  "end": "2026-08-01T15:00:00Z",
-  "ts": "2026-08-01T05:26:25.563Z"
- },
- {
-  "id": "DARS;867025;297d59c6-ab69-4b33-b157-985d3cc7acc5",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Kozina - izvoz 47 Kozina v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.61398,
-  "lng": 13.93669,
-  "start": "2026-08-01T05:26:13.657Z",
-  "end": "2026-08-01T15:00:00Z",
-  "ts": "2026-08-01T05:26:16.623Z"
- },
- {
-  "id": "DARS;867024;900596fd-b6cd-4972-bc76-154ccc468a28",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, uvoz Kozina - uvoz Kozina v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.61164,
-  "lng": 13.93549,
-  "start": "2026-08-01T05:26:04.323Z",
-  "end": "2026-08-01T15:00:00Z",
-  "ts": "2026-08-01T05:26:07.703Z"
  },
  {
   "id": "DARS;866988;f70782f7-b23e-4af4-94ae-2e379b38c53f",
