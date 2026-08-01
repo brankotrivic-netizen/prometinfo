@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "1.8.2026. 18:09",
-  "text": "Promet je srednje gust do povremeno pojačan na većini cesta u smjeru mora i obrnuto prema unutrašnjosti. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići u smjeru Zagreba kod naplatnih postaja Lučko i Demerje kolone su duge oko 1 km u kolonama u pokretu s povremenim zastojima vozi se između čvorova Ogulin i Rovanjska u smjeru Dubrovnika (promet se povremeno prekida kod tunela Brezik na dionici Otočac-Perušić) A3 Bregana-Lipovac u smjeru graničnog prijelaza Bajakovo kolona osobnih i teretnih vozila duga je oko 8 km A4 Goričan-Zagreb kod naplatnih postaja Goričan u smjeru Republike Mađarske kolona je duga oko 2 km DC1 d…"
+  "updated": "1.8.2026. 19:13",
+  "text": "Promet je srednje gust do povremeno pojačan na većini cesta u smjeru mora i obrnuto prema unutrašnjosti. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići u smjeru Zagreba kod naplatnih postaja Lučko i Demerje nema dužih kolona u kolonama u pokretu s povremenim zastojima vozi se između čvorova Žuta Lokva i Rovanjska u smjeru Dubrovnika (promet se povremeno prekida kod tunela Brezik na dionici Otočac-Perušić, ovisno o priljevu vozila) A3 Bregana-Lipovac u smjeru graničnog prijelaza Bajakovo kolona osobnih i teretnih vozila duga je oko 7 km DC1 dionica Karlovac-Knin-Split vozi se usporeno u zoni radova kod Otrića AUTOCES…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "1.8.2026. 18:02",
+  "updated": "1.8.2026. 19:13",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "1.8.2026. 18:02",
+  "updated": "1.8.2026. 19:13",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: 1. kolovoza trajekt Jadrolinije će iz luke Iž/Bršanj za luku Zadar/Gaženica isploviti u 21:00 sat umjesto u 20:30 sati Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "1.8.2026. 17:13",
+  "updated": "1.8.2026. 18:14",
   "text": "Stanje u željezničkom putničkom prometu 31. srpnja 2026. u 8.00 sati Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između…"
  },
  {
