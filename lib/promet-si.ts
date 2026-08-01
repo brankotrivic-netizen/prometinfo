@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-01T06:19:47.534Z";
+export const PROMET_SI_UPDATED = "2026-08-01T07:23:14.150Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867053;a8bfefca-a06d-49d1-9ce4-77c391e3ec2f",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-218, Črnomelj - Kanižarica, občasno promet urejen izmenično enosmerno, košnja, do 10:00.",
+  "loc": "R1-218, Črnomelj (Kočevje) - Kanižarica",
+  "lat": 45.56893,
+  "lng": 15.18049,
+  "start": "2026-08-01T06:52:16.277Z",
+  "end": "2026-08-01T08:00:00Z",
+  "ts": "2026-08-01T06:53:33.17Z"
+ },
+ {
+  "id": "DARS;867047;d899eee4-3066-4aad-9674-6258fef34047",
+  "type": "MaintenanceWorks",
+  "desc": "R1-216, Črmošnjice - Črnomelj, pri Črnomljju, oviran promet, košnja, do 12:00.",
+  "loc": "R1-216, Črmošnjice - Črnomelj",
+  "lat": 45.5846,
+  "lng": 15.1838,
+  "start": "2026-08-01T06:40:31.213Z",
+  "end": "2026-08-01T10:00:00Z",
+  "ts": "2026-08-01T06:41:51.877Z"
+ },
+ {
+  "id": "DARS;867042;e0a50ad5-9495-4588-b722-db6f68b706aa",
+  "type": "MaintenanceWorks",
+  "desc": "RT-926, Solčava - Podolševa - Sleme, oviran promet, košnja, do 14:00.",
+  "loc": "RT-926, Solčava - Podolševa - Sleme",
+  "lat": 46.41978,
+  "lng": 14.69318,
+  "start": "2026-08-01T06:35:55.347Z",
+  "end": "2026-08-01T12:00:00Z",
+  "ts": "2026-08-01T06:37:40.567Z"
+ },
  {
   "id": "DARS;867038;bf59cf22-4b1c-4107-8956-6b61d8c83605",
   "type": "MaintenanceWorks",
