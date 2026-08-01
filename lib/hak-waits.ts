@@ -15,11 +15,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "severe",
   "waitMinutes": 180,
-  "ulazTs": "1.8.2026. 7:18:45",
-  "izlazTs": "1.8.2026. 7:19:08",
+  "ulazTs": "01.08.2026 07:18:45",
+  "izlazTs": "01.08.2026 07:19:08",
   "ulazTsISO": "2026-08-01T07:18:45+02:00",
   "izlazTsISO": "2026-08-01T07:19:08+02:00",
-  "ts": "1.8.2026. 7:18:45",
+  "ts": "01.08.2026 07:18:45",
   "tsISO": "2026-08-01T07:18:45+02:00"
  },
  {
@@ -36,31 +36,31 @@ export const HAK_WAITS: HakWait[] = [
   "level": "moderate",
   "waitMinutes": 60,
   "ulazTs": "Nema podataka",
-  "izlazTs": "1.8.2026. 8:28:33",
+  "izlazTs": "01.08.2026 08:28:33",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T08:28:33+02:00",
-  "ts": "1.8.2026. 8:28:33",
+  "ts": "01.08.2026 08:28:33",
   "tsISO": "2026-08-01T08:28:33+02:00"
  },
  {
   "id": "ba-brcko",
   "name": "Gunja (Brčko)",
   "ulazMin": null,
-  "izlazMin": 30,
+  "izlazMin": 60,
   "ulazTxt": "-",
-  "izlazTxt": "do 30 min.",
+  "izlazTxt": "1 h",
   "truckUlazMin": null,
   "truckIzlazMin": null,
   "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
+  "level": "moderate",
+  "waitMinutes": 60,
   "ulazTs": "Nema podataka",
-  "izlazTs": "1.8.2026. 7:55:04",
+  "izlazTs": "01.08.2026 09:41:13",
   "ulazTsISO": "",
-  "izlazTsISO": "2026-08-01T07:55:04+02:00",
-  "ts": "1.8.2026. 7:55:04",
-  "tsISO": "2026-08-01T07:55:04+02:00"
+  "izlazTsISO": "2026-08-01T09:41:13+02:00",
+  "ts": "01.08.2026 09:41:13",
+  "tsISO": "2026-08-01T09:41:13+02:00"
  },
  {
   "id": "ba-brod",
@@ -75,11 +75,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "do 30 min.",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "1.8.2026. 7:39:47",
-  "izlazTs": "1.8.2026. 7:39:20",
+  "ulazTs": "01.08.2026 07:39:47",
+  "izlazTs": "01.08.2026 07:39:20",
   "ulazTsISO": "2026-08-01T07:39:47+02:00",
   "izlazTsISO": "2026-08-01T07:39:20+02:00",
-  "ts": "1.8.2026. 7:39:47",
+  "ts": "01.08.2026 07:39:47",
   "tsISO": "2026-08-01T07:39:47+02:00"
  },
  {
@@ -95,11 +95,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "L: 0 km T: 1.8.2026. 6:56:31",
-  "izlazTs": "L: 0 km T: 1.8.2026. 6:56:54",
+  "ulazTs": "L: 0 km T: 01.08.2026 06:56:31",
+  "izlazTs": "L: 0 km T: 01.08.2026 06:56:54",
   "ulazTsISO": "2026-08-01T06:56:31+02:00",
   "izlazTsISO": "2026-08-01T06:56:54+02:00",
-  "ts": "L: 0 km T: 1.8.2026. 6:56:31",
+  "ts": "L: 0 km T: 01.08.2026 06:56:31",
   "tsISO": "2026-08-01T06:56:31+02:00"
  },
  {
@@ -115,11 +115,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "1.8.2026. 8:12:20",
-  "izlazTs": "1.8.2026. 8:11:59",
+  "ulazTs": "01.08.2026 08:12:20",
+  "izlazTs": "01.08.2026 08:11:59",
   "ulazTsISO": "2026-08-01T08:12:20+02:00",
   "izlazTsISO": "2026-08-01T08:11:59+02:00",
-  "ts": "1.8.2026. 8:12:20",
+  "ts": "01.08.2026 08:12:20",
   "tsISO": "2026-08-01T08:12:20+02:00"
  },
  {
@@ -135,31 +135,31 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "1.8.2026. 7:06:16",
+  "ulazTs": "01.08.2026 07:06:16",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-01T07:06:16+02:00",
   "izlazTsISO": "",
-  "ts": "1.8.2026. 7:06:16",
+  "ts": "01.08.2026 07:06:16",
   "tsISO": "2026-08-01T07:06:16+02:00"
  },
  {
   "id": "ba-doljani",
   "name": "Metković (Doljani)",
-  "ulazMin": 60,
+  "ulazMin": 120,
   "izlazMin": null,
-  "ulazTxt": "1 h",
+  "ulazTxt": "2 h",
   "izlazTxt": "-",
   "truckUlazMin": null,
   "truckIzlazMin": null,
   "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "L: 0,5 km T: 1.8.2026. 7:15:37",
+  "level": "high",
+  "waitMinutes": 120,
+  "ulazTs": "L: 1,5 km T: 01.08.2026 07:15:37",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-01T07:15:37+02:00",
   "izlazTsISO": "",
-  "ts": "L: 0,5 km T: 1.8.2026. 7:15:37",
+  "ts": "L: 1,5 km T: 01.08.2026 07:15:37",
   "tsISO": "2026-08-01T07:15:37+02:00"
  },
  {
@@ -176,10 +176,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "moderate",
   "waitMinutes": 60,
   "ulazTs": "Nema podataka",
-  "izlazTs": "1.8.2026. 8:47:47",
+  "izlazTs": "01.08.2026 08:47:47",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T08:47:47+02:00",
-  "ts": "1.8.2026. 8:47:47",
+  "ts": "01.08.2026 08:47:47",
   "tsISO": "2026-08-01T08:47:47+02:00"
  },
  {
@@ -195,11 +195,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "1.8.2026. 7:26:20",
-  "izlazTs": "1.8.2026. 7:25:48",
+  "ulazTs": "01.08.2026 07:26:20",
+  "izlazTs": "01.08.2026 07:25:48",
   "ulazTsISO": "2026-08-01T07:26:20+02:00",
   "izlazTsISO": "2026-08-01T07:25:48+02:00",
-  "ts": "1.8.2026. 7:26:20",
+  "ts": "01.08.2026 07:26:20",
   "tsISO": "2026-08-01T07:26:20+02:00"
  },
  {
@@ -216,10 +216,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "high",
   "waitMinutes": 120,
   "ulazTs": "Nema podataka",
-  "izlazTs": "L: 0 km T: 1.8.2026. 6:53:57",
+  "izlazTs": "L: 0 km T: 01.08.2026 06:53:57",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T06:53:57+02:00",
-  "ts": "L: 0 km T: 1.8.2026. 6:53:57",
+  "ts": "L: 0 km T: 01.08.2026 06:53:57",
   "tsISO": "2026-08-01T06:53:57+02:00"
  },
  {
@@ -236,10 +236,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "low",
   "waitMinutes": 30,
   "ulazTs": "Nema podataka",
-  "izlazTs": "L: 0 km T: 1.8.2026. 7:21:11",
+  "izlazTs": "L: 0 km T: 01.08.2026 07:21:11",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T07:21:11+02:00",
-  "ts": "L: 0 km T: 1.8.2026. 7:21:11",
+  "ts": "L: 0 km T: 01.08.2026 07:21:11",
   "tsISO": "2026-08-01T07:21:11+02:00"
  },
  {
@@ -256,10 +256,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "low",
   "waitMinutes": 30,
   "ulazTs": "Nema podataka",
-  "izlazTs": "1.8.2026. 7:24:28",
+  "izlazTs": "01.08.2026 07:24:28",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T07:24:28+02:00",
-  "ts": "1.8.2026. 7:24:28",
+  "ts": "01.08.2026 07:24:28",
   "tsISO": "2026-08-01T07:24:28+02:00"
  },
  {
@@ -275,11 +275,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "severe",
   "waitMinutes": 300,
-  "ulazTs": "L: 2 km T: 1.8.2026. 8:38:40",
-  "izlazTs": "L: 4 km T: 1.8.2026. 8:37:14",
+  "ulazTs": "L: 2 km T: 01.08.2026 08:38:40",
+  "izlazTs": "L: 4 km T: 01.08.2026 08:37:14",
   "ulazTsISO": "2026-08-01T08:38:40+02:00",
   "izlazTsISO": "2026-08-01T08:37:14+02:00",
-  "ts": "L: 2 km T: 1.8.2026. 8:38:40",
+  "ts": "L: 2 km T: 01.08.2026 08:38:40",
   "tsISO": "2026-08-01T08:38:40+02:00"
  },
  {
@@ -295,11 +295,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "severe",
   "waitMinutes": 240,
-  "ulazTs": "1.8.2026. 7:05:21",
-  "izlazTs": "1.8.2026. 7:04:40",
+  "ulazTs": "01.08.2026 07:05:21",
+  "izlazTs": "01.08.2026 07:04:40",
   "ulazTsISO": "2026-08-01T07:05:21+02:00",
   "izlazTsISO": "2026-08-01T07:04:40+02:00",
-  "ts": "1.8.2026. 7:05:21",
+  "ts": "01.08.2026 07:05:21",
   "tsISO": "2026-08-01T07:05:21+02:00"
  },
  {
@@ -315,11 +315,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "Višesatna čekanja",
   "level": "severe",
   "waitMinutes": 240,
-  "ulazTs": "1.8.2026. 7:57:51",
-  "izlazTs": "1.8.2026. 7:58:54",
+  "ulazTs": "01.08.2026 07:57:51",
+  "izlazTs": "01.08.2026 07:58:54",
   "ulazTsISO": "2026-08-01T07:57:51+02:00",
   "izlazTsISO": "2026-08-01T07:58:54+02:00",
-  "ts": "1.8.2026. 7:57:51",
+  "ts": "01.08.2026 07:57:51",
   "tsISO": "2026-08-01T07:57:51+02:00"
  },
  {
@@ -335,11 +335,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "7 h",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "1.8.2026. 6:04:45",
-  "izlazTs": "1.8.2026. 6:04:27",
+  "ulazTs": "01.08.2026 06:04:45",
+  "izlazTs": "01.08.2026 06:04:27",
   "ulazTsISO": "2026-08-01T06:04:45+02:00",
   "izlazTsISO": "2026-08-01T06:04:27+02:00",
-  "ts": "1.8.2026. 6:04:45",
+  "ts": "01.08.2026 06:04:45",
   "tsISO": "2026-08-01T06:04:45+02:00"
  },
  {
@@ -356,10 +356,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "moderate",
   "waitMinutes": 60,
   "ulazTs": "Nema podataka",
-  "izlazTs": "1.8.2026. 5:03:10",
+  "izlazTs": "01.08.2026 05:03:10",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T05:03:10+02:00",
-  "ts": "1.8.2026. 5:03:10",
+  "ts": "01.08.2026 05:03:10",
   "tsISO": "2026-08-01T05:03:10+02:00"
  },
  {
@@ -376,10 +376,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "high",
   "waitMinutes": 120,
   "ulazTs": "Nema podataka",
-  "izlazTs": "L: 2 km T: 1.8.2026. 7:15:27",
+  "izlazTs": "L: 2 km T: 01.08.2026 07:15:27",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T07:15:27+02:00",
-  "ts": "L: 2 km T: 1.8.2026. 7:15:27",
+  "ts": "L: 2 km T: 01.08.2026 07:15:27",
   "tsISO": "2026-08-01T07:15:27+02:00"
  },
  {
@@ -396,10 +396,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "moderate",
   "waitMinutes": 60,
   "ulazTs": "Nema podataka",
-  "izlazTs": "L: 1 km T: 1.8.2026. 8:09:38",
+  "izlazTs": "L: 1 km T: 01.08.2026 08:09:38",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T08:09:38+02:00",
-  "ts": "L: 1 km T: 1.8.2026. 8:09:38",
+  "ts": "L: 1 km T: 01.08.2026 08:09:38",
   "tsISO": "2026-08-01T08:09:38+02:00"
  },
  {
@@ -416,10 +416,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "moderate",
   "waitMinutes": 60,
   "ulazTs": "Nema podataka",
-  "izlazTs": "1.8.2026. 7:07:42",
+  "izlazTs": "01.08.2026 07:07:42",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T07:07:42+02:00",
-  "ts": "1.8.2026. 7:07:42",
+  "ts": "01.08.2026 07:07:42",
   "tsISO": "2026-08-01T07:07:42+02:00"
  },
  {
@@ -436,10 +436,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "severe",
   "waitMinutes": 180,
   "ulazTs": "Nema podataka",
-  "izlazTs": "1.8.2026. 5:15:32",
+  "izlazTs": "01.08.2026 05:15:32",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T05:15:32+02:00",
-  "ts": "1.8.2026. 5:15:32",
+  "ts": "01.08.2026 05:15:32",
   "tsISO": "2026-08-01T05:15:32+02:00"
  },
  {
@@ -456,10 +456,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "severe",
   "waitMinutes": 180,
   "ulazTs": "Nema podataka",
-  "izlazTs": "L: 0 km T: 1.8.2026. 8:32:04",
+  "izlazTs": "L: 0 km T: 01.08.2026 08:32:04",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-01T08:32:04+02:00",
-  "ts": "L: 0 km T: 1.8.2026. 8:32:04",
+  "ts": "L: 0 km T: 01.08.2026 08:32:04",
   "tsISO": "2026-08-01T08:32:04+02:00"
  }
 ];
