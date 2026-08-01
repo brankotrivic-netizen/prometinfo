@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-01T18:10:58.842Z";
+export const PROMET_SI_UPDATED = "2026-08-01T19:31:52.250Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867188;a2964d14-469b-47ea-a6b4-e5acf564b22c",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Vodice - priključek Brnik v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.19508,
+  "lng": 14.47283,
+  "start": "2026-08-01T18:55:23.817Z",
+  "end": "2026-08-02T03:00:11.453Z",
+  "ts": "2026-08-01T18:55:29.913Z"
+ },
+ {
+  "id": "DARS;867184;b99a5ced-3af8-419c-9218-eba9cd2cf205",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, krožišče Tomačevo - priključek Ljubljana Bežigrad v smeri Kosez, dela, zaprt prehitevalni pas.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.08128,
+  "lng": 14.52748,
+  "start": "2026-08-01T18:17:14.05Z",
+  "end": "2026-08-02T01:00:11.767Z",
+  "ts": "2026-08-01T18:17:21.547Z"
+ },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
   "type": "MaintenanceWorks",
@@ -35,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-01T17:42:24.44Z",
   "end": "2026-08-01T22:00:10.653Z",
   "ts": "2026-08-01T17:42:43.543Z"
- },
- {
-  "id": "DARS;867171;beb43129-bbd3-41be-aace-36203367050d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, predor Dekani - priključek Črni Kal v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55131,
-  "lng": 13.83073,
-  "start": "2026-08-01T16:49:36.983Z",
-  "end": "2026-08-01T21:00:44.39Z",
-  "ts": "2026-08-01T16:50:08.953Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
