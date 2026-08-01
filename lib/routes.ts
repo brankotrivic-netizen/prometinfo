@@ -15,6 +15,7 @@ export interface RoutePreset {
   avoid: string[];
   fuelCountries: Country[]; // drzave na poti (za gorivo)
   note?: string;            // npr. Schengen / opomba o poti
+  roadKeywords?: string[];  // kraji/ceste za izbor uradnih obvestil ob poti
 }
 
 export const ROUTE_PRESETS: RoutePreset[] = [
@@ -23,6 +24,7 @@ export const ROUTE_PRESETS: RoutePreset[] = [
     // samo trije prehodi po zelenem vrstnem redu: Gradiška → Gradina → Dubica
     recommended: ["ba-gradiska"], alternative: ["ba-gradina", "ba-kozarska-dubica"], avoid: [],
     fuelCountries: ["HR", "BA"],
+    roadKeywords: ["Kamnik", "Ljubljana", "A2", "Obrežje", "Bregana", "Zagreb", "A3", "Novska", "Okučani", "Gornji Varoš", "Stara Gradiška", "Gradiška", "Laktaši", "Klašnice", "Banja Luka"],
   },
   {
     id: "kamnik-sarajevo", from: "Kamnik", to: "Sarajevo",
