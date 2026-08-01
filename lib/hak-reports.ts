@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "1.8.2026. 23:29",
-  "text": "IZVANREDNI PROMETNI DOGAĐAJI: Vozilo u kvaru (osobno vozilo) na autocesti A7 u tunelu Katarina na kolniku u smjeru Križišća. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 40 km/h. Molimo korisnike za oprez. A1 Zagreb-Ploče-Karamatići u smjeru Zagreba kod naplatnih postaja Lučko i Demerje nema dužih kolona A3 Bregana-Lipovac u smjeru graničnog prijelaza Bajakovo kolona osobnih i teretnih vozila duga je oko 5 km DC1 dionica Karlovac-Knin-Split vozi se usporeno u zoni radova kod Otrića AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivan…"
+  "updated": "1.8.2026. 23:57",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: - A1 Zagreb-Ploče-Karamatići u smjeru Zagreba kod naplatnih postaja Lučko i Demerje nema dužih kolona A3 Bregana-Lipovac u smjeru graničnog prijelaza Bajakovo kolona osobnih i teretnih vozila duga je oko 5 km AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1, u zoni NP i čvora Karlovac (smjer Zagreb); prilikom prolaska zonom ČCNP Demerje (smjer Zagreb) i ČCNP Lučko (smjer Zagreb); prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A3, u zoni čvora L…"
  },
  {
   "title": "Granični prijelazi",
