@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "1.8.2026. 09:46",
+  "updated": "1.8.2026. 10:37",
   "text": "Promet je vrlo gust na svim važnijim cestama u smjeru mora. Zastoji i kolone su pred naplatnim postajama i na njihovim prilaznim cestama te u zonama tunela, čvorova i odmorišta, kao i na prilazima turističkim središtima na obali, u trajektnim lukama i pristaništima te na većini graničnih prijelaza. Podsjećamo vozače da su uz veću gustoću prometa češći i izvanredni događaji koji dodatno usporavaju promet, kao što su prometne nesreće. Kako bi promet bio što sigurniji za sve sudionike, molimo vozače da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pojačan promet pred naplatnim postajama …"
  },
  {
