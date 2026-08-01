@@ -3,6 +3,20 @@
 export interface AmssWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; text: string; ts: string }
 export const AMSS_WAITS: AmssWait[] = [
  {
+  "id": "rs-gostun",
+  "name": "GOSTUN Srbija Crna Gora",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "~30 min",
+  "izlazTxt": "~30 min",
+  "truckUlazMin": 30,
+  "truckIzlazMin": 30,
+  "truckUlazTxt": "~30 min",
+  "truckIzlazTxt": "~30 min",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 minuta. 2. Ulaz u Srbiju: oko 30 minuta Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ul",
+  "ts": "2026-08-01T06:19:52.308Z"
+ },
+ {
   "id": "hr-bajakovo",
   "name": "BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
   "ulazMin": 30,
@@ -14,35 +28,49 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrva",
-  "ts": "2026-07-31T22:30:19.855Z"
+  "ts": "2026-08-01T06:19:52.308Z"
  },
  {
   "id": "rs-kelebija",
   "name": "KELEBIJA Srbija-Mađarska",
-  "ulazMin": 30,
+  "ulazMin": 60,
   "izlazMin": 30,
-  "ulazTxt": "~30 min",
+  "ulazTxt": "~1 h",
   "izlazTxt": "~30 min",
   "truckUlazMin": 30,
   "truckIzlazMin": 30,
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađar",
-  "ts": "2026-07-31T22:30:19.855Z"
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 60 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađar",
+  "ts": "2026-08-01T06:19:52.309Z"
  },
  {
   "id": "rs-presevo",
   "name": "PREŠEVO Srbija - Severna Makedonija AP E 75 M1",
   "ulazMin": 30,
-  "izlazMin": 30,
+  "izlazMin": 180,
   "ulazTxt": "~30 min",
+  "izlazTxt": "~3 h",
+  "truckUlazMin": 30,
+  "truckIzlazMin": 30,
+  "truckUlazTxt": "~30 min",
+  "truckIzlazTxt": "~30 min",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 180 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz",
+  "ts": "2026-08-01T06:19:52.309Z"
+ },
+ {
+  "id": "rs-horgos",
+  "name": "HORGOŠ SRBIJA MAĐARSKA AP A1, E-75",
+  "ulazMin": 60,
+  "izlazMin": 30,
+  "ulazTxt": "~1 h",
   "izlazTxt": "~30 min",
   "truckUlazMin": 30,
   "truckIzlazMin": 30,
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz ",
-  "ts": "2026-07-31T22:30:19.855Z"
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 60 minuta Na TERETNIM terminalima : 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min.",
+  "ts": "2026-08-01T06:19:52.309Z"
  },
  {
   "id": "hr-tovarnik",
@@ -56,7 +84,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min . Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim",
-  "ts": "2026-07-31T22:30:19.855Z"
+  "ts": "2026-08-01T06:19:52.309Z"
  },
  {
   "id": "hr-batina",
@@ -70,21 +98,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~1 h",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 min. 2. Ulaz u Srbiju - oko 30 min.",
-  "ts": "2026-07-31T22:30:19.856Z"
- },
- {
-  "id": "rs-horgos",
-  "name": "HORGOŠ SRBIJA MAĐARSKA AP A1, E-75",
-  "ulazMin": 30,
-  "izlazMin": 30,
-  "ulazTxt": "~30 min",
-  "izlazTxt": "~30 min",
-  "truckUlazMin": 30,
-  "truckIzlazMin": 30,
-  "truckUlazTxt": "~30 min",
-  "truckIzlazTxt": "~30 min",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta (međuzona je popunjena) Na TERETNIM terminalima : 1. Izlaz iz Srbije - oko 30 min. 2. Ula",
-  "ts": "2026-07-31T22:30:19.856Z"
+  "ts": "2026-08-01T06:19:52.309Z"
  },
  {
   "id": "ba-raca",
@@ -98,21 +112,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - od 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ul",
-  "ts": "2026-07-31T22:30:19.856Z"
- },
- {
-  "id": "rs-gostun",
-  "name": "GOSTUN Srbija Crna Gora",
-  "ulazMin": 30,
-  "izlazMin": 30,
-  "ulazTxt": "~30 min",
-  "izlazTxt": "~30 min",
-  "truckUlazMin": 30,
-  "truckIzlazMin": 30,
-  "truckUlazTxt": "~30 min",
-  "truckIzlazTxt": "~30 min",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 minuta. 2. Ulaz u Srbiju: oko 30 minuta Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ul",
-  "ts": "2026-07-31T22:30:19.856Z"
+  "ts": "2026-08-01T06:19:52.309Z"
  },
  {
   "id": "hr-ilok",
@@ -126,7 +126,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta . Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min",
-  "ts": "2026-07-31T22:30:19.856Z"
+  "ts": "2026-08-01T06:19:52.311Z"
  },
  {
   "id": "ba-popovi",
@@ -140,7 +140,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. U",
-  "ts": "2026-07-31T22:30:19.856Z"
+  "ts": "2026-08-01T06:19:52.311Z"
  },
  {
   "id": "rs-vatin",
@@ -154,7 +154,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama Uprave granične Policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2.",
-  "ts": "2026-07-31T22:30:19.856Z"
+  "ts": "2026-08-01T06:19:52.311Z"
  },
  {
   "id": "hr-erdut",
@@ -168,7 +168,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ulaz u Srbiju- oko 30 min. D",
-  "ts": "2026-07-31T22:30:19.858Z"
+  "ts": "2026-08-01T06:19:52.312Z"
  },
  {
   "id": "ba-sepak",
@@ -182,7 +182,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. PRIVREMENI TERETNI terminal otvoren je od 9-13h i od 22-6h radnim",
-  "ts": "2026-07-31T22:30:19.858Z"
+  "ts": "2026-08-01T06:19:52.312Z"
  },
  {
   "id": "ba-karakaj",
@@ -196,7 +196,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima : 1. Izlaz iz Srbije -oko 30 minuta. 2. U",
-  "ts": "2026-07-31T22:30:19.859Z"
+  "ts": "2026-08-01T06:19:52.312Z"
  },
  {
   "id": "ba-uvac",
@@ -210,7 +210,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržava",
-  "ts": "2026-07-31T22:30:19.859Z"
+  "ts": "2026-08-01T06:19:52.312Z"
  },
  {
   "id": "ba-skelani",
@@ -224,7 +224,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. U",
-  "ts": "2026-07-31T22:30:19.859Z"
+  "ts": "2026-08-01T06:19:52.312Z"
  },
  {
   "id": "ba-bratunac",
@@ -238,7 +238,7 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~15 min",
   "truckIzlazTxt": "-",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 15 min. 2. Ulaz u Srbiju - oko 15 min. Na TERETNIM terminalima: 1. GP Ljubovija na izlazu - zastoj u odv",
-  "ts": "2026-07-31T22:30:19.859Z"
+  "ts": "2026-08-01T06:19:52.313Z"
  },
  {
   "id": "ba-vardiste",
@@ -252,6 +252,6 @@ export const AMSS_WAITS: AmssWait[] = [
   "truckUlazTxt": "~30 min",
   "truckIzlazTxt": "~30 min",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta.",
-  "ts": "2026-07-31T22:30:19.860Z"
+  "ts": "2026-08-01T06:19:52.314Z"
  }
 ];

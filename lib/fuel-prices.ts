@@ -61,7 +61,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Češka",
   "flag": "🇨🇿",
-  "p95": "41,750 CZK (1,73 EUR)",
+  "p95": "41,750 CZK (1,72 EUR)",
   "p98": "42,500 CZK (1,76 EUR)",
   "diesel": "40,330 CZK (1,67 EUR)",
   "date": "29. 7. 2026"
@@ -165,7 +165,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Liechtenstein",
   "flag": "🇱🇮",
-  "p95": "1,951 CHF (2,09 EUR)",
+  "p95": "1,951 CHF (2,10 EUR)",
   "p98": "",
   "diesel": "2,066 CHF (2,22 EUR)",
   "date": "29. 7. 2026"
@@ -189,9 +189,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Madžarska",
   "flag": "🇭🇺",
-  "p95": "599,700 HUF (1,66 EUR)",
+  "p95": "599,700 HUF (1,65 EUR)",
   "p98": "",
-  "diesel": "628,100 HUF (1,74 EUR)",
+  "diesel": "628,100 HUF (1,72 EUR)",
   "date": "29. 7. 2026"
  },
  {
@@ -221,16 +221,16 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Norveška",
   "flag": "🇳🇴",
-  "p95": "22,210 NOK (2,02 EUR)",
+  "p95": "22,210 NOK (2,03 EUR)",
   "p98": "",
-  "diesel": "21,830 NOK (1,99 EUR)",
+  "diesel": "21,830 NOK (2,00 EUR)",
   "date": "29. 7. 2026"
  },
  {
   "country": "Poljska",
   "flag": "🇵🇱",
   "p95": "7,120 PLN (1,65 EUR)",
-  "p98": "7,870 PLN (1,83 EUR)",
+  "p98": "7,870 PLN (1,82 EUR)",
   "diesel": "7,460 PLN (1,73 EUR)",
   "date": "29. 7. 2026"
  },
@@ -245,7 +245,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Romunija",
   "flag": "🇷🇴",
-  "p95": "8,890 RON (1,70 EUR)",
+  "p95": "8,890 RON (1,69 EUR)",
   "p98": "9,930 RON (1,89 EUR)",
   "diesel": "10,070 RON (1,92 EUR)",
   "date": "29. 7. 2026"
@@ -301,15 +301,15 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Švedska",
   "flag": "🇸🇪",
-  "p95": "17,984 SEK (1,63 EUR)",
+  "p95": "17,984 SEK (1,64 EUR)",
   "p98": "19,460 SEK (1,77 EUR)",
-  "diesel": "22,618 SEK (2,05 EUR)",
+  "diesel": "22,618 SEK (2,06 EUR)",
   "date": "29. 7. 2026"
  },
  {
   "country": "Švica",
   "flag": "🇨🇭",
-  "p95": "1,961 CHF (2,10 EUR)",
+  "p95": "1,961 CHF (2,11 EUR)",
   "p98": "",
   "diesel": "2,076 CHF (2,23 EUR)",
   "date": "29. 7. 2026"
