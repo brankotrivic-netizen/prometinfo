@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-01T17:14:13.666Z";
+export const PROMET_SI_UPDATED = "2026-08-01T18:10:58.842Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Šentilj v smeri Maribora, dela, promet poteka po enem voznem pasu.",
+  "loc": "A1-E57, E59, Šentilj - Maribor",
+  "lat": 46.68921,
+  "lng": 15.64654,
+  "start": "2026-04-13T12:05:47.197Z",
+  "end": "2026-09-05T21:59:00Z",
+  "ts": "2026-08-01T18:01:19.34Z"
+ },
+ {
+  "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Šentilj, priključek Maribor sever - prehod Šentilj v smeri Šentilja, Avstrije, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E57, E59, Maribor - Šentilj",
+  "lat": 46.67439,
+  "lng": 15.64669,
+  "start": "2026-04-13T10:27:58.043Z",
+  "end": "2026-09-05T21:59:00Z",
+  "ts": "2026-08-01T18:01:06.713Z"
+ },
+ {
+  "id": "DARS;867178;c563e2f3-9d06-4796-8334-53ffea9e244c",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, uvoz Žalec - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.26831,
+  "lng": 15.19084,
+  "start": "2026-08-01T17:42:24.44Z",
+  "end": "2026-08-01T22:00:10.653Z",
+  "ts": "2026-08-01T17:42:43.543Z"
+ },
  {
   "id": "DARS;867171;beb43129-bbd3-41be-aace-36203367050d",
   "type": "MaintenanceWorks",
@@ -35,6 +68,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-01T13:00:18.627Z"
+ },
+ {
+  "id": "DARS;861594;3ceda879-7e56-41ad-9366-126e3fea9074",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-2, Slovenska Bistrica - Pragersko, pri Spodnji Polskavi, izmenično enosmerni promet, obnova vozišča, do 19. 9. 2026.",
+  "loc": "G1-2, Slovenska Bistrica - Pragersko",
+  "lat": 46.39613,
+  "lng": 15.63202,
+  "start": "2026-08-01T18:00:00Z",
+  "end": "2026-09-19T21:59:00Z",
+  "ts": "2026-08-01T04:38:47.37Z"
  },
  {
   "id": "DARS;866988;f70782f7-b23e-4af4-94ae-2e379b38c53f",
@@ -145,28 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-02-13T06:22:01.63Z",
   "end": "2026-10-30T22:59:00Z",
   "ts": "2026-07-30T06:07:43.963Z"
- },
- {
-  "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Šentilj v smeri Maribora, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, E59, Šentilj - Maribor",
-  "lat": 46.68921,
-  "lng": 15.64654,
-  "start": "2026-04-13T12:05:47.197Z",
-  "end": "2026-09-05T21:59:00Z",
-  "ts": "2026-07-29T10:09:20.79Z"
- },
- {
-  "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Šentilj, priključek Maribor sever - prehod Šentilj v smeri Šentilja, Avstrije, dela, promet poteka po enem voznem pasu.",
-  "loc": "A1-E57, E59, Maribor - Šentilj",
-  "lat": 46.67439,
-  "lng": 15.64669,
-  "start": "2026-04-13T10:27:58.043Z",
-  "end": "2026-09-05T21:59:00Z",
-  "ts": "2026-07-29T10:09:03.38Z"
  },
  {
   "id": "DARS;866206;86dd5309-50c6-419a-a6b6-24c079355c32",
