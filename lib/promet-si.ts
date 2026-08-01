@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-01T15:15:12.488Z";
+export const PROMET_SI_UPDATED = "2026-08-01T16:13:25.373Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
@@ -24,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-01T13:00:18.627Z"
- },
- {
-  "id": "DARS;867054;a2a71881-deea-4bbe-8ca1-90dc834315aa",
-  "type": "MaintenanceWorks",
-  "desc": "R1-218, Črnomelj, Ulica 21. oktobra in Ulica Moša Pijade, oviran promet, košnja, do 18:00.",
-  "loc": "R1-218, Črnomelj",
-  "lat": 45.57505,
-  "lng": 15.19007,
-  "start": "2026-08-01T10:00:00Z",
-  "end": "2026-08-01T16:00:00Z",
-  "ts": "2026-08-01T06:55:06.373Z"
  },
  {
   "id": "DARS;866988;f70782f7-b23e-4af4-94ae-2e379b38c53f",

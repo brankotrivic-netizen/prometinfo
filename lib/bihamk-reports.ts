@@ -18,18 +18,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "label": "Magistralne ceste",
   "items": [
    {
-    "title": "Dobro Polje-Miljevina",
-    "text": "15. 05. 2026. godine - Kako smo upravo obaviješteni, od danas je počelo saobraćanje vozila do 3,5 tone na magistralnoj cesti Dobro Polje-Miljevina. Za vozila preko 3,5 tone i dalje je na snazi zabrana, pa moraju i dalje koristiti alternativne pravce."
-   },
-   {
-    "title": "Jablanica-Blidinje",
-    "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
-   },
-   {
-    "title": "Bihać-Cazin (u gradu Bihać)",
-    "text": "Zbog radova na izgradnji pješačke staze,saobraća se usporeno, naizmjeničnim propuštanjem vozila uz ručnu regulaciju saobraćaja."
-   },
-   {
     "title": "M-4.3 Bužim-Brigovi",
     "text": "Zbog radova na sanaciji klizišta saobraća se usporeno, jednom trakom naizmjenično."
    },
@@ -68,6 +56,18 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Sarajevo-Lapišnica",
     "text": "Na magistralnoj cesti Sarajevo-Lapišnica, zbog postavljanja rasvjete u tunelu Vratnik svakog radnog dana od 07 do 16 sati saobraća se usporeno, jednom trakom."
+   },
+   {
+    "title": "Jablanica-Blidinje",
+    "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
+   },
+   {
+    "title": "Dobro Polje-Miljevina",
+    "text": "15. 05. 2026. godine - Kako smo upravo obaviješteni, od danas je počelo saobraćanje vozila do 3,5 tone na magistralnoj cesti Dobro Polje-Miljevina. Za vozila preko 3,5 tone i dalje je na snazi zabrana, pa moraju i dalje koristiti alternativne pravce."
+   },
+   {
+    "title": "Bihać-Cazin (u gradu Bihać)",
+    "text": "Zbog radova na izgradnji pješačke staze,saobraća se usporeno, naizmjeničnim propuštanjem vozila uz ručnu regulaciju saobraćaja."
    },
    {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
