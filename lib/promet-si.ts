@@ -1,62 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-02T18:38:13.415Z";
+export const PROMET_SI_UPDATED = "2026-08-02T19:50:34.859Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;867308;fec166f3-f78d-4c10-a02a-0c2b8854adef",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.40255,
-  "lng": 15.60893,
-  "start": "2026-08-02T18:09:19.863Z",
-  "end": "2026-08-02T21:00:12.11Z",
-  "ts": "2026-08-02T18:09:31.99Z"
- },
  {
   "id": "DARS;867307;5eed657d-1f6f-4a8d-b081-d364f8bd8284",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Vodice - priključek Brnik v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
+  "desc": "A2, Ljubljana - Karavanke, priključek Vodice - priključek Brnik v smeri Karavank, Avstrije, dela, zaprt prehitevalni pas.",
   "loc": "A2-E61, Ljubljana - Karavanke",
   "lat": 46.19357,
   "lng": 14.47452,
   "start": "2026-08-02T17:59:12.917Z",
-  "end": "2026-08-02T20:00:42.583Z",
-  "ts": "2026-08-02T17:59:18.457Z"
+  "end": "2026-08-03T20:00:00Z",
+  "ts": "2026-08-02T19:28:54.18Z"
  },
  {
-  "id": "DARS;867306;2aecf9fb-392f-42db-997f-f9f474b48955",
+  "id": "DARS;850597;68213475-802e-4df9-8ee2-721ce319948f",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Domžale - izvoz Trojane v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.13558,
-  "lng": 14.61805,
-  "start": "2026-08-02T17:53:15.847Z",
-  "end": "2026-08-02T21:30:11.143Z",
-  "ts": "2026-08-02T17:53:23.11Z"
- },
- {
-  "id": "DARS;867303;0771f0d9-e785-4ba7-89c5-1d78bbc82f84",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, priključek na Celovško cesto - razcep Zadobrova v smeri Zadobrove, dela, zaprt prehitevalni pas.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07663,
-  "lng": 14.47295,
-  "start": "2026-08-02T17:28:04.783Z",
-  "end": "2026-08-03T00:00:14.857Z",
-  "ts": "2026-08-02T17:28:11.703Z"
- },
- {
-  "id": "DARS;867301;708d5211-21c9-4e43-83b3-dcf9c44f6c58",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Kastelec - priključek Črni Kal v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.57453,
-  "lng": 13.87142,
-  "start": "2026-08-02T17:12:32.833Z",
-  "end": "2026-08-02T21:00:00Z",
-  "ts": "2026-08-02T17:12:45.123Z"
+  "desc": "A2, Karavanke - Ljubljana, priključek Brnik - priključek Vodice v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.21765,
+  "lng": 14.44066,
+  "start": "2026-05-17T03:40:18.007Z",
+  "end": "2026-08-11T19:10:00Z",
+  "ts": "2026-08-02T19:27:37.85Z"
  },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
@@ -728,28 +695,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-11T05:42:25.747Z",
   "end": "2026-08-11T20:00:00Z",
   "ts": "2026-06-24T03:09:29.687Z"
- },
- {
-  "id": "DARS;850593;27a6a6d7-914d-472c-abfc-bf16f7cb8c8b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Vodice - priključek Brnik v smeri Karavank, Avstrije, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.19699,
-  "lng": 14.47061,
-  "start": "2026-05-17T02:32:49.083Z",
-  "end": "2026-08-11T20:00:00Z",
-  "ts": "2026-06-22T20:09:31.857Z"
- },
- {
-  "id": "DARS;850597;68213475-802e-4df9-8ee2-721ce319948f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Brnik - priključek Vodice v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.21765,
-  "lng": 14.44066,
-  "start": "2026-05-17T03:40:18.007Z",
-  "end": "2026-08-11T19:10:00Z",
-  "ts": "2026-06-22T20:09:12.857Z"
  },
  {
   "id": "DARS;842847;ee4f254e-fcaf-48a3-8d40-dc1b66785830",
