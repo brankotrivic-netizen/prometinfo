@@ -58,6 +58,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Sarajevo-Lapišnica, zbog postavljanja rasvjete u tunelu Vratnik svakog radnog dana od 07 do 16 sati saobraća se usporeno, jednom trakom."
    },
    {
+    "title": "Žepče-Zavidovići-Banovići",
+    "text": "Zbog održavanja sportske manifestacije „Druge omladinske utrke- Zavidovići 5k“ danas (02.08.) od 19 do 20 sati, najavljena je etapna obustava saobraćaja na magistralnoj cesti M-17.1 Žepče-Zavidovići-Banovići."
+   },
+   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },

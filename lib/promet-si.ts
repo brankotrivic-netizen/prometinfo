@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-01T22:35:19.026Z";
+export const PROMET_SI_UPDATED = "2026-08-02T06:25:31.891Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;867188;a2964d14-469b-47ea-a6b4-e5acf564b22c",
+  "id": "DARS;867221;c56555a7-fca2-4314-b59b-1b469ea4a51a",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Vodice - priključek Brnik v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.19508,
-  "lng": 14.47283,
-  "start": "2026-08-01T18:55:23.817Z",
-  "end": "2026-08-02T03:00:11.453Z",
-  "ts": "2026-08-01T18:55:29.913Z"
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - počivališče Barje v smeri Kozarij, dela, oviran promet.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02645,
+  "lng": 14.49221,
+  "start": "2026-08-02T06:10:14.67Z",
+  "end": "2026-08-02T12:00:00Z",
+  "ts": "2026-08-02T06:10:16.393Z"
+ },
+ {
+  "id": "DARS;867211;cd821998-aeb4-4173-9e25-4c8620b0f9df",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, izvoz 34 Ljubljana center - uvoz Ljubljana center v smeri Malenc, dela, zaprt odstavni pas.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02585,
+  "lng": 14.49658,
+  "start": "2026-08-02T02:42:31.37Z",
+  "end": "2026-08-02T08:00:00Z",
+  "ts": "2026-08-02T02:42:43.163Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
@@ -35,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T10:27:58.043Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-01T18:01:06.713Z"
- },
- {
-  "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-706, Ožbalt - Zg. Kapla, pri Sp. Kapli, izmenično enosmerni promet, nadgradnja elektro omrežja, do 31. 8. 2026.",
-  "loc": "R3-706, Ožbalt - Zg. Kapla",
-  "lat": 46.62649,
-  "lng": 15.43348,
-  "start": "2026-06-22T06:28:52.303Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-01T15:00:25.04Z"
- },
- {
-  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
-  "type": "MaintenanceWorks",
-  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
-  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
-  "lat": 46.20334,
-  "lng": 15.25907,
-  "start": "2026-07-29T13:00:00Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-01T13:00:18.627Z"
  },
  {
   "id": "DARS;861594;3ceda879-7e56-41ad-9366-126e3fea9074",
