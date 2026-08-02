@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-02T08:41:54.180Z";
+export const PROMET_SI_UPDATED = "2026-08-02T10:20:03.872Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867247;8434171e-9390-497f-a2ac-5608499f6716",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-225, Črnivec - Radmirje, v Tiroseku, izmenično enosmerni promet, popravilo varnostne ograje, do 4. 8. 2026.",
+  "loc": "R1-225, Črnivec - Radmirje",
+  "lat": 46.27446,
+  "lng": 14.72706,
+  "start": "2026-08-02T09:16:11.123Z",
+  "end": "2026-08-04T15:00:00Z",
+  "ts": "2026-08-02T09:18:51.3Z"
+ },
  {
   "id": "DARS;867224;d03b0072-8802-4fb0-9d63-efd93bd0ad2b",
   "type": "MaintenanceWorks",
