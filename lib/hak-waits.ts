@@ -23,26 +23,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-03T19:02:53+02:00"
  },
  {
-  "id": "ba-brod",
-  "name": "Slavonski Brod (Bosanski Brod)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "3.8.2026. 19:21:22",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-03T19:21:22+02:00",
-  "izlazTsISO": "",
-  "ts": "3.8.2026. 19:21:22",
-  "tsISO": "2026-08-03T19:21:22+02:00"
- },
- {
   "id": "ba-gradina",
   "name": "Jasenovac (Donja Gradina)",
   "ulazMin": 30,
@@ -121,25 +101,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-08-03T17:39:28+02:00",
   "ts": "3.8.2026. 17:39:00",
   "tsISO": "2026-08-03T17:39:00+02:00"
- },
- {
-  "id": "hr-batina",
-  "name": "Batina (Bezdan)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": 120,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "2 h",
-  "truckIzlazTxt": "-",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "",
-  "izlazTsISO": "",
-  "ts": "",
-  "tsISO": ""
  }
 ];
