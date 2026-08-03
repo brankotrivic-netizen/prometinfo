@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-03T16:02:59.534Z";
+export const PROMET_SI_UPDATED = "2026-08-03T18:02:43.790Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867545;e34b420e-110f-463e-a241-46cb58aec801",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, predor Šentvid - počivališče Povodje v smeri Jesenic, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.08779,
+  "lng": 14.4605,
+  "start": "2026-08-03T17:58:24.88Z",
+  "end": "2026-08-04T03:00:39.107Z",
+  "ts": "2026-08-03T17:58:26.46Z"
+ },
+ {
+  "id": "DARS;867543;b1869ca2-6f5d-467f-9a17-99e30bb7a962",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Celje vzhod - počivališče Zima v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25537,
+  "lng": 15.35104,
+  "start": "2026-08-03T17:46:33.283Z",
+  "end": "2026-08-03T19:00:43.533Z",
+  "ts": "2026-08-03T17:47:08.587Z"
+ },
  {
   "id": "DARS;858954;a31b541e-58d6-4c15-9f43-edb2681175ec",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -13,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-22T06:28:52.303Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-03T15:00:30.833Z"
- },
- {
-  "id": "DARS;867381;1715b6c5-60d6-4c48-ad11-c04787820805",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Razdrto - počivališče Studenec v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.76499,
-  "lng": 14.1297,
-  "start": "2026-08-03T05:50:40.307Z",
-  "end": "2026-08-03T18:00:00Z",
-  "ts": "2026-08-03T14:55:39.04Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -79,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-02-14T06:00:00Z",
   "end": "2026-12-31T18:00:00Z",
   "ts": "2026-08-03T06:04:14.713Z"
- },
- {
-  "id": "DARS;867379;2114569f-6757-4ef0-9876-2b6db0949f80",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-420, Brežice - Dobova - Rigonce, izmenično enosmerni promet, pomična zapora, košnja, do 20:00.",
-  "loc": "R2-420, Brežice - Dobova - Rigonce",
-  "lat": 45.89576,
-  "lng": 15.64715,
-  "start": "2026-08-03T05:48:58.347Z",
-  "end": "2026-08-03T18:00:00Z",
-  "ts": "2026-08-03T05:49:22.483Z"
  },
  {
   "id": "DARS;867376;64c21fe2-919e-462b-8d0c-46253234ccc4",
