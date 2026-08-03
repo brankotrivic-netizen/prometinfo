@@ -1,30 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-03T20:53:15.644Z";
+export const PROMET_SI_UPDATED = "2026-08-03T21:57:13.175Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;867550;882f0282-815c-491f-bb40-9f0853e5adfb",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Domžale - uvoz Žalec v smeri Maribora, dela, pomična zapora voznega pasu, barvanje talnih označb.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.15105,
-  "lng": 14.6436,
-  "start": "2026-08-03T18:40:24.95Z",
-  "end": "2026-08-04T03:00:00Z",
-  "ts": "2026-08-03T19:48:59.167Z"
- },
- {
-  "id": "DARS;867553;138b3e65-b438-4915-8902-3b0491577b5c",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, priključek Koper center, Slavček - uvoz Bertoki v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.54476,
-  "lng": 13.75794,
-  "start": "2026-08-03T19:39:21.603Z",
-  "end": "2026-08-03T21:59:02.353Z",
-  "ts": "2026-08-03T19:39:24.19Z"
- },
  {
   "id": "DARS;867547;2ef40d9f-029f-439c-ba8e-319ce16240d0",
   "type": "MaintenanceWorks",
