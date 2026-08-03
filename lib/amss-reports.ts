@@ -2,16 +2,16 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "1GP GOSTUN Srbija Crna Gora",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 min. 2. Ulaz u Srbiju: oko 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ulaz u Srbiju- oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo …"
+ },
+ {
   "title": "1GP ŠPILJANI Srbija Crna Gora E65 E80",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 min. 2. Ulaz u Srbiju: oko 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ulaz u Srbiju- oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č."
  },
  {
   "title": "1GP BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 60 min. 2. Ulaz u Srbiju - oko 30 min. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policije RS"
- },
- {
-  "title": "1GP GOSTUN Srbija Crna Gora",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije: oko 30 min. 2. Ulaz u Srbiju: oko 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije- oko 30 min. 2. Ulaz u Srbiju- oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo …"
  },
  {
   "title": "1GP PROHOR PČINJSKI (Srbija - Severna Makedonija) R-238 (veza sa R-125)",

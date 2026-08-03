@@ -301,9 +301,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Švedska",
   "flag": "🇸🇪",
-  "p95": "17,880 SEK (1,63 EUR)",
-  "p98": "19,347 SEK (1,76 EUR)",
-  "diesel": "22,487 SEK (2,05 EUR)",
+  "p95": "15,740 SEK (1,43 EUR)",
+  "p98": "16,684 SEK (1,52 EUR)",
+  "diesel": "19,940 SEK (1,82 EUR)",
   "date": "3. 8. 2026"
  },
  {
