@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-04T15:42:10.093Z";
+export const PROMET_SI_UPDATED = "2026-08-04T17:19:03.807Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867722;abaddfd1-9ec0-482b-a201-e4a51057cac9",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Pletovarje - priključek Celje vzhod v smeri Ljubljane, dela, pomična zapora voznega pasu.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.27433,
+  "lng": 15.41526,
+  "start": "2026-08-04T17:15:55.807Z",
+  "end": "2026-08-05T00:00:53.647Z",
+  "ts": "2026-08-04T17:16:28.46Z"
+ },
+ {
+  "id": "DARS;867720;013e2e25-0766-4a74-b3ef-a7fd5515bd08",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Izola - Koper, priključek Izola - priključek Koper center, Slavček v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "G2-111, Izola - Koper",
+  "lat": 45.53895,
+  "lng": 13.68697,
+  "start": "2026-08-04T17:00:35.21Z",
+  "end": "2026-08-05T00:00:22.967Z",
+  "ts": "2026-08-04T17:00:57.087Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -35,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-10T06:34:58.423Z",
   "end": "2026-08-31T16:30:00Z",
   "ts": "2026-08-04T09:26:24.337Z"
- },
- {
-  "id": "DARS;867606;fa8c6550-854b-4b00-9482-b2105b5c416d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-218, Kanižarica - Vinica, Dragatuš - Stara Lipa, izmenično enosmerni promet, pomična zapora, košnja, do 19:00.",
-  "loc": "R1-218, Kanižarica - Vinica",
-  "lat": 45.52145,
-  "lng": 15.16906,
-  "start": "2026-08-04T05:27:37.087Z",
-  "end": "2026-08-04T17:00:00Z",
-  "ts": "2026-08-04T05:28:44.267Z"
- },
- {
-  "id": "DARS;867605;754a5f4e-37d8-4177-8a13-8390f0da9dd8",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-218, Podzemelj - Črnomelj, Metlika - Primostek, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R1-218, Metlika - Podzemelj",
-  "lat": 45.6463,
-  "lng": 15.31683,
-  "start": "2026-08-04T05:26:11.673Z",
-  "end": "2026-08-04T16:00:00Z",
-  "ts": "2026-08-04T05:27:01.707Z"
  },
  {
   "id": "DARS;867441;072883da-335e-4667-9e9d-b7fa5f8d52b2",
