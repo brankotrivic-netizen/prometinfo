@@ -1286,7 +1286,13 @@ window.refreshCams=function(scope){
 window.refreshBig=function(){ var big=document.getElementById('camBig'), op=document.getElementById('camOpen'); if(big&&op&&op.href){ big.src=camBust(op.href.split('?')[0]); toast('🔄 Osvežujem kamero…'); } };
 // OSVEŽI VSE: znova naloži celo stran (sveži uradni podatki + vse kamere + TomTom naenkrat).
 // V PWA načinu (telefon) ni brskalnikovega gumba za osvežitev, zato je to glavni gumb.
-window.reloadAll=function(){ try{ toast('🔄 Osvežujem celotno stran…'); }catch(e){} setTimeout(function(){ try{ location.reload(); }catch(e){ location.href=location.href.split('#')[0]; } }, 250); };
+window.reloadAll=function(){
+  try{ toast('🔄 Preverjam novo različico aplikacije…'); }catch(e){}
+  var jobs=[];
+  if('serviceWorker' in navigator) jobs.push(navigator.serviceWorker.getRegistration().then(function(reg){ return reg?reg.update():null; }).catch(function(){}));
+  if('caches' in window) jobs.push(caches.keys().then(function(keys){ return Promise.all(keys.filter(function(k){return k.indexOf('prometinfo-')===0;}).map(function(k){return caches.delete(k);})); }).catch(function(){}));
+  Promise.all(jobs).finally(function(){ var base=location.href.split('#')[0].split('?')[0]; location.replace(base+'?appUpdate='+Date.now()); });
+};
 function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
 function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; var cb=document.getElementById('camCheckBar'); if(cb){cb.style.display='none';cb.innerHTML='';} }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
@@ -2285,7 +2291,22 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
 })();
 /* ===== PWA: namestitev na telefon + offline (service worker) ===== */
 (function(){
-  if('serviceWorker' in navigator){ window.addEventListener('load',function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); }); }
+  if('serviceWorker' in navigator){
+    var hadController=!!navigator.serviceWorker.controller, updateReloaded=false;
+    navigator.serviceWorker.addEventListener('controllerchange',function(){
+      if(!hadController||updateReloaded)return; updateReloaded=true;
+      try{ if(sessionStorage.getItem('promet_pwa_v4')==='1')return; sessionStorage.setItem('promet_pwa_v4','1'); }catch(e){}
+      location.reload();
+    });
+    window.addEventListener('load',function(){
+      navigator.serviceWorker.register('sw.js?v=4',{updateViaCache:'none'}).then(function(reg){
+        reg.update().catch(function(){});
+        if(reg.waiting)reg.waiting.postMessage('SKIP_WAITING');
+        setInterval(function(){reg.update().catch(function(){});},5*60000);
+        document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')reg.update().catch(function(){});});
+      }).catch(function(){});
+    });
+  }
   var deferred=null;
   var isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;
   var standalone=(window.navigator.standalone===true)||(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches);
@@ -2365,13 +2386,15 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   writeFileSync(resolve(process.cwd(), "manifest.webmanifest"), JSON.stringify(manifest, null, 2), "utf8");
   // Service worker: network-first za navigacijo (offline fallback na predpomnjeni index),
   // ostalo (slike kamer, tiles, API) gre mimo predpomnilnika (vedno sveže / brez balasta).
-  const sw = `var CACHE='prometinfo-v2';
-self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return c.addAll(['./','./index.html','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png']); }).catch(function(){})); });
+  const sw = `var CACHE='prometinfo-v4';
+var ASSETS=['./index.html','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png'];
+self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return Promise.all(ASSETS.map(function(u){ return fetch(u,{cache:'reload'}).then(function(r){ if(r.ok)return c.put(u,r); }).catch(function(){}); })); })); });
 self.addEventListener('activate',function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.map(function(k){ if(k!==CACHE) return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });
+self.addEventListener('message',function(e){ if(e.data==='SKIP_WAITING')self.skipWaiting(); });
 self.addEventListener('fetch',function(e){ var req=e.request; if(req.method!=='GET') return;
-  if(req.mode==='navigate'){ e.respondWith(fetch(req).then(function(r){ caches.open(CACHE).then(function(c){ c.put('./index.html', r.clone()); }); return r; }).catch(function(){ return caches.match('./index.html'); })); return; }
+  if(req.mode==='navigate'){ e.respondWith(fetch(req,{cache:'no-store'}).then(function(r){ if(r.ok)caches.open(CACHE).then(function(c){ c.put('./index.html',r.clone()); }); return r; }).catch(function(){ return caches.match('./index.html'); })); return; }
   var u=new URL(req.url);
-  if(u.origin===location.origin && /\\.(webmanifest|svg)$/.test(u.pathname)){ e.respondWith(caches.match(req).then(function(m){ return m||fetch(req); })); }
+  if(u.origin===location.origin && /\\.(webmanifest|svg)$/.test(u.pathname)){ e.respondWith(fetch(req,{cache:'no-cache'}).then(function(r){ if(r.ok)caches.open(CACHE).then(function(c){c.put(req,r.clone());}); return r; }).catch(function(){return caches.match(req);})); }
 });`;
   writeFileSync(resolve(process.cwd(), "sw.js"), sw, "utf8");
 
