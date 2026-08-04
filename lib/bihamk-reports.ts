@@ -22,10 +22,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na sanaciji klizišta saobraća se usporeno, jednom trakom naizmjenično."
    },
    {
-    "title": "Granični prijelaz Izačić- Bihać",
-    "text": "Na magistralnoj cesti M-5 granični prelaz Izačić-Bihać zbog radova na rekonstrukciji mosta preko potoka Mrižnica, vozila saobraćaju jednom trakom, naizmjeničnim propuštanjem (postavljeni semafori)."
-   },
-   {
     "title": "Tuzla-Bijeljina (Banj brdo)",
     "text": "Na dionici Simin Han-Lopare (Banj brdo) zbog sanacionih radova putnička vozila saobraćaju naizmjenično, jednom trakom, dok teretna vozila preko 3,5 t i autobusi saobraćaju pravcem Simin Han-Lopare-Priboj."
    },
@@ -56,10 +52,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Sarajevo-Lapišnica",
     "text": "Na magistralnoj cesti Sarajevo-Lapišnica, zbog postavljanja rasvjete u tunelu Vratnik svakog radnog dana od 07 do 16 sati saobraća se usporeno, jednom trakom."
-   },
-   {
-    "title": "Srednje-Čevljanovići (Moševac)",
-    "text": "Zbog saobraćajne nezgode obustavljen je saobraćaj na magistralnoj cesti Srednje-Čevljanovići, kod mjesta Moševac."
    },
    {
     "title": "Jablanica-Blidinje",
