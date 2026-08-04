@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-04T06:19:23.998Z";
+export const PROMET_SI_UPDATED = "2026-08-04T06:47:24.785Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867628;2c9ee800-8a6f-43bd-a194-353417eeef16",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Jesenice vzhod v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.41712,
+  "lng": 14.09039,
+  "start": "2026-08-04T06:37:23.967Z",
+  "end": "2026-08-04T11:19:16.93Z",
+  "ts": "2026-08-04T06:37:39.917Z"
+ },
+ {
+  "id": "DARS;867626;fa292ce8-efaa-4559-808b-7d223fad8b28",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-439, Kobilje - Dobrovnik, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 14:00.",
+  "loc": "R2-439, Kobilje - Dobrovnik",
+  "lat": 46.66621,
+  "lng": 16.37634,
+  "start": "2026-08-04T06:31:17.36Z",
+  "end": "2026-08-04T12:00:00Z",
+  "ts": "2026-08-04T06:32:04.387Z"
+ },
+ {
+  "id": "DARS;867625;b24770f9-c648-424a-adfd-1fa8b43828aa",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Drnovo - priključek Dobruška vas v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.91385,
+  "lng": 15.4604,
+  "start": "2026-08-04T06:28:10.953Z",
+  "end": "2026-08-04T11:00:39.623Z",
+  "ts": "2026-08-04T06:28:13.927Z"
+ },
+ {
+  "id": "DARS;867624;a7ff4674-1bf7-45b6-97d4-64611ce2f088",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Dobruška vas - priključek Kronovo v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.88265,
+  "lng": 15.30748,
+  "start": "2026-08-04T06:23:42.003Z",
+  "end": "2026-08-04T11:30:29.82Z",
+  "ts": "2026-08-04T06:23:43.58Z"
+ },
  {
   "id": "DARS;867622;098c6c8f-7972-46f5-96b7-d7da5f3fa43c",
   "type": "MaintenanceWorks",
@@ -35,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-04T05:51:09.45Z",
   "end": "2026-08-04T11:00:00Z",
   "ts": "2026-08-04T05:51:19.503Z"
- },
- {
-  "id": "DARS;867614;0f80d4a7-b7c8-4587-ba5e-046697a2fbb2",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Kronovo - priključek Smednik v smeri Obrežja, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.86508,
-  "lng": 15.27485,
-  "start": "2026-08-04T05:42:54.4Z",
-  "end": "2026-08-04T08:30:00Z",
-  "ts": "2026-08-04T05:43:08.067Z"
  },
  {
   "id": "DARS;867613;4e7cd4b2-9ef1-40b1-a7b4-ebb4cfac54e6",
@@ -112,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-04T05:29:06.41Z",
   "end": "2026-08-04T12:00:00Z",
   "ts": "2026-08-04T05:29:50.79Z"
- },
- {
-  "id": "DARS;867607;80e07c22-8119-4dde-afae-445ce24d6403",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, predor Karavanke v smeri Karavank, Avstrije, dela, odstavni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.44638,
-  "lng": 14.00863,
-  "start": "2026-08-04T05:28:36.553Z",
-  "end": "2026-08-04T11:54:28.407Z",
-  "ts": "2026-08-04T05:29:12.12Z"
  },
  {
   "id": "DARS;867606;fa8c6550-854b-4b00-9482-b2105b5c416d",

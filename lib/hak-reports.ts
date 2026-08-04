@@ -3,13 +3,13 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "4.8.2026. 08:11",
-  "text": "Pojačan je promet na važnijim cestama, prilazima turističkim središtima te pojedinim graničnim prijelazima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: životinja (medvjed) na autocesti A1 između tunela Krpani i tunela Sveti Rok na kolniku u smjeru Dubrovnika prometna nesreća na autocesti A3 na čvoru Zagreb zapad u smjeru Bregane, vozi se uz ograničenje brzine od 60 km/h U povodu blagdana Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja, 5. kolovoza, bit će zabrana prometa za teretna vozila najveće dopuštene mase iznad 7,5 t, danas od 15-23 sata i sutra, na blagdan, od 14-23 sata. AUTOCESTE A1 Zagreb-Split-Dubrovnik…"
+  "updated": "4.8.2026. 08:40",
+  "text": "Pojačan je promet na važnijim cestama, prilazima turističkim središtima te pojedinim graničnim prijelazima. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: životinja (medvjed) na autocesti A1 između tunela Krpani i tunela Sveti Rok na kolniku u smjeru Dubrovnika U povodu blagdana Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja, 5. kolovoza, bit će zabrana prometa za teretna vozila najveće dopuštene mase iznad 7,5 t, danas od 15-23 sata i sutra, na blagdan, od 14-23 sata. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "4.8.2026. 05:52",
-  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
+  "updated": "4.8.2026. 08:26",
+  "text": "Pojačan je promet osobnih vozila i čekanja su na graničnim prijelazima Tovarnik, Bajakovo, Županja, Sl. Brod, Maljevac, Metković, Brgat, Karasovići, Vitaljina. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci …"
  },
  {
   "title": "Pomorski promet",
