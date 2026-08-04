@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "4.8.2026. 22:33",
-  "text": "Na većini cesta vozi se bez većih ograničenja i poteškoća. Zastoji su povremeno u zonama radova. Podsjećamo vozače da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! lešina na autocesti A6 Rijeka-Zagreb na 71.+000 km između čvorova Oštrovica i Kikovica u smjeru Rijeke - vozi se uz ograničenje brzine od 80 km/h OPREZ! opasnost je od naleta na životinju (srna) na autocesti A6 Rijeka-Zagreb između i čvora Oštrovica i naplatne postaje Grobnik - vozi se uz ograničenje brzine od 80 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do m…"
+  "updated": "4.8.2026. 23:46",
+  "text": "Na većini cesta vozi se bez većih ograničenja i poteškoća. Zastoji su povremeno u zonama radova. Podsjećamo vozače da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 Zagreb-Split-Dubrovnik na 353.+000 km između čvorova Prgomet i Vučevica u smjeru Dubrovnika - vozi se jednim prometnim trakom uz ograničenje brzine od 60 km/h vozilo u kvaru na državnoj cesti DC1 ispod tunela Mihovilovići u smjeru Dugopolja - vozi se uz privremenu regulaciju prometa AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "4.8.2026. 22:05",
+  "updated": "4.8.2026. 22:59",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "4.8.2026. 22:05",
+  "updated": "4.8.2026. 22:59",
   "text": "U pomorskom prometu nema poteškoća. Državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 06.08.2026 od HSC Kolovare preuzima HSC Jadera u luci Ubli isplovljenjem u 04:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međun…"
  },
  {

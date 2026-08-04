@@ -16,10 +16,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "low",
   "waitMinutes": 30,
   "ulazTs": "Nema podataka",
-  "izlazTs": "4.8.2026. 19:23:35",
+  "izlazTs": "04.08.2026 19:23:35",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-04T19:23:35+02:00",
-  "ts": "4.8.2026. 19:23:35",
+  "ts": "04.08.2026 19:23:35",
   "tsISO": "2026-08-04T19:23:35+02:00"
  },
  {
