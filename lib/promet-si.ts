@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-04T19:02:05.846Z";
+export const PROMET_SI_UPDATED = "2026-08-04T20:42:29.887Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867737;9548a23e-7fef-4bad-b37f-95c020e5a4e1",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, uvoz Žalec - priključek Domžale v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.26842,
+  "lng": 15.18938,
+  "start": "2026-08-04T19:49:42.64Z",
+  "end": "2026-08-05T03:00:00Z",
+  "ts": "2026-08-04T19:49:54.44Z"
+ },
  {
   "id": "DARS;867725;a22932d3-8264-4625-b567-29b65dd9cc3b",
   "type": "MaintenanceWorks",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-04T18:17:22.283Z",
   "end": "2026-08-05T04:00:00Z",
   "ts": "2026-08-04T18:17:51.393Z"
- },
- {
-  "id": "DARS;867723;955c8913-ba7a-48a4-8522-778fb9cb385c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Trojane - predor Trojane v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.18998,
-  "lng": 14.89682,
-  "start": "2026-08-04T17:46:10.95Z",
-  "end": "2026-08-04T21:00:00Z",
-  "ts": "2026-08-04T17:46:20.563Z"
  },
  {
   "id": "DARS;867722;abaddfd1-9ec0-482b-a201-e4a51057cac9",
