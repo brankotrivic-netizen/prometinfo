@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-05T20:20:17.660Z";
+export const PROMET_SI_UPDATED = "2026-08-05T21:40:00.373Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867958;34899e96-7683-42d3-ba8e-c74f7e1dce7f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, izvoz Vransko - uvoz Žalec v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.24768,
+  "lng": 14.96812,
+  "start": "2026-08-05T21:31:58.077Z",
+  "end": "2026-08-06T04:30:00Z",
+  "ts": "2026-08-05T21:32:10.523Z"
+ },
+ {
+  "id": "DARS;867724;f45aa0a1-e93d-4042-ba1b-a3c81661a5f2",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, predor Šentvid - počivališče Povodje v smeri Jesenic, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.08796,
+  "lng": 14.4605,
+  "start": "2026-08-05T17:57:58.563Z",
+  "end": "2026-08-06T03:30:00Z",
+  "ts": "2026-08-05T20:24:41.2Z"
+ },
  {
   "id": "DARS;867925;2a303222-bfc9-4858-aae8-5797a3c52398",
   "type": "MaintenanceWorks",
@@ -13,28 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-05T14:45:16.083Z",
   "end": "2026-08-06T07:00:00Z",
   "ts": "2026-08-05T19:47:47.257Z"
- },
- {
-  "id": "DARS;867956;f9635730-3bbd-47db-a729-c959e0b5a7b5",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Unec - počivališče Lom v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.83396,
-  "lng": 14.29507,
-  "start": "2026-08-05T19:46:13.26Z",
-  "end": "2026-08-05T21:59:00Z",
-  "ts": "2026-08-05T19:46:15.72Z"
- },
- {
-  "id": "DARS;867724;f45aa0a1-e93d-4042-ba1b-a3c81661a5f2",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, predor Šentvid - počivališče Povodje v smeri Jesenic, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.08796,
-  "lng": 14.4605,
-  "start": "2026-08-05T17:57:58.563Z",
-  "end": "2026-08-05T23:00:00Z",
-  "ts": "2026-08-05T18:25:39.797Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
