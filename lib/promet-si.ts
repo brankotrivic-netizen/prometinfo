@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-05T18:46:52.314Z";
+export const PROMET_SI_UPDATED = "2026-08-05T20:20:17.660Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867925;2a303222-bfc9-4858-aae8-5797a3c52398",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Škofije - Koper, priključek Plavje, Hrvatini - priključek Škofije v smeri Kopra, dela, zaprt vozni pas.",
+  "loc": "G1-11, Škofije - Koper",
+  "lat": 45.57783,
+  "lng": 13.796,
+  "start": "2026-08-05T14:45:16.083Z",
+  "end": "2026-08-06T07:00:00Z",
+  "ts": "2026-08-05T19:47:47.257Z"
+ },
+ {
+  "id": "DARS;867956;f9635730-3bbd-47db-a729-c959e0b5a7b5",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Unec - počivališče Lom v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.83396,
+  "lng": 14.29507,
+  "start": "2026-08-05T19:46:13.26Z",
+  "end": "2026-08-05T21:59:00Z",
+  "ts": "2026-08-05T19:46:15.72Z"
+ },
  {
   "id": "DARS;867724;f45aa0a1-e93d-4042-ba1b-a3c81661a5f2",
   "type": "MaintenanceWorks",
@@ -13,61 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-05T17:57:58.563Z",
   "end": "2026-08-05T23:00:00Z",
   "ts": "2026-08-05T18:25:39.797Z"
- },
- {
-  "id": "DARS;867948;f3d7a1e2-820d-423b-882f-75adab4cfb39",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Dragomer v smeri Ljubljane, dela, zaprt odstavni pas, košnja.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.97248,
-  "lng": 14.30625,
-  "start": "2026-08-05T18:16:43.407Z",
-  "end": "2026-08-06T00:00:00Z",
-  "ts": "2026-08-05T18:16:48.95Z"
- },
- {
-  "id": "DARS;867944;65882852-0f27-4af1-9c90-6ecd5ae1badd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Žalec, Arja vas - priključek Šempeter v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26782,
-  "lng": 15.11458,
-  "start": "2026-08-05T17:54:12.55Z",
-  "end": "2026-08-05T22:00:35.433Z",
-  "ts": "2026-08-05T17:54:51.12Z"
- },
- {
-  "id": "DARS;867941;20bf7107-20a6-4b94-8c6c-1979a4d5aa1d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Celje vzhod - priključek Žalec, Arja vas v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25445,
-  "lng": 15.31409,
-  "start": "2026-08-05T17:23:03.1Z",
-  "end": "2026-08-06T00:00:44.593Z",
-  "ts": "2026-08-05T17:23:09.383Z"
- },
- {
-  "id": "DARS;867940;d490ec39-f0bf-4949-b5c1-53a57a33fb22",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Črni Kal - predor Dekani v smeri Kopra, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55446,
-  "lng": 13.85476,
-  "start": "2026-08-05T17:18:19.52Z",
-  "end": "2026-08-05T21:00:00Z",
-  "ts": "2026-08-05T17:18:54.9Z"
- },
- {
-  "id": "DARS;867925;2a303222-bfc9-4858-aae8-5797a3c52398",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, priključek Plavje, Hrvatini - priključek Škofije v smeri Kopra, dela, zaprt vozni pas.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.57783,
-  "lng": 13.796,
-  "start": "2026-08-05T14:45:16.083Z",
-  "end": "2026-08-06T05:00:54.857Z",
-  "ts": "2026-08-05T14:45:29.89Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -112,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-05T04:14:11.177Z",
   "end": "2026-08-07T15:00:00Z",
   "ts": "2026-08-05T05:38:22.803Z"
- },
- {
-  "id": "DARS;867763;43f6a362-3f59-4156-a598-f436705b57b9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-419, Križaj - Čatež ob Savi, pri Velikem Mraševem, izmenično enosmerni promet, pomična zapora, košnja, do 21:00.",
-  "loc": "R2-419, Križaj - Čatež Ob Savi",
-  "lat": 45.86809,
-  "lng": 15.45189,
-  "start": "2026-08-05T04:18:57.937Z",
-  "end": "2026-08-05T19:00:00Z",
-  "ts": "2026-08-05T04:20:12.017Z"
  },
  {
   "id": "DARS;849015;17f8f3fc-9452-4e0d-96d4-72b13ca3c53d",
