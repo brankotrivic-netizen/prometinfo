@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.8.2026. 09:33",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila , a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI: osobno vozilo u kvaru na autocesti A1 u tunelu Mala Kapela u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h vozilo u kvaru na autocesti A1 u tunelu Grič u smjeru Dubrovnika, vozi se jednim prometnim trakom uz ograničenje brzine 80 km/h zbog održavanja svečane proslave 31. obljetnice vojno-redarstvene akcije „Olu…"
+  "updated": "5.8.2026. 09:50",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila , a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI: zbog održavanja svečane proslave 31. obljetnice vojno-redarstvene akcije „Oluja“ te Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja zabrana je prometa na državnoj cesti DC1 u Kninu (obilazak državnom cestom DC33 Ulica kralja Tomislava-ŽC6080 ulica Domovinskog rata i obrnuto) te na državnoj cesti DC33 između Knina i Zvjerinca…"
  },
  {
   "title": "Granični prijelazi",
