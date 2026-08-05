@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-05T07:51:28.366Z";
+export const PROMET_SI_UPDATED = "2026-08-05T07:59:15.128Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867829;3b3f0955-599b-49a9-81ac-59b5aa4aa08d",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, izvoz 3 Lesce - izvoz 3 Lesce v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.38004,
+  "lng": 14.14979,
+  "start": "2026-08-05T07:51:20.59Z",
+  "end": "2026-08-05T11:55:04.903Z",
+  "ts": "2026-08-05T07:51:31.617Z"
+ },
  {
   "id": "DARS;867822;c2a29a00-81bb-4d70-b95e-91d37e3e9f63",
   "type": "MaintenanceWorks",
@@ -387,17 +398,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-05T05:16:25.66Z",
   "end": "2026-08-05T09:00:00Z",
   "ts": "2026-08-05T05:23:28.827Z"
- },
- {
-  "id": "DARS;867775;c70e6288-2840-48f0-98d7-d81de85f881f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, uvoz Jesenice vzhod - izvoz 2 Jesenice vzhod v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.41694,
-  "lng": 14.09065,
-  "start": "2026-08-05T05:16:36.537Z",
-  "end": "2026-08-05T10:54:08.927Z",
-  "ts": "2026-08-05T05:17:44.887Z"
  },
  {
   "id": "DARS;867774;69bf60da-6dc3-41eb-a226-3ee34a88a837",
