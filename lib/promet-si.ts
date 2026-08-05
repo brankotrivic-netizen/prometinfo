@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-05T15:34:48.077Z";
+export const PROMET_SI_UPDATED = "2026-08-05T17:08:26.672Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867936;7447de34-8ad6-4d66-82a7-25f6cac61f81",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Novo mesto vzhod - priključek Novo mesto zahod, dela, pomična zapora počasnega pasu, košnja.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.8313,
+  "lng": 15.17639,
+  "start": "2026-08-05T16:51:07.513Z",
+  "end": "2026-08-05T20:30:07.68Z",
+  "ts": "2026-08-05T16:51:22.37Z"
+ },
  {
   "id": "DARS;867925;2a303222-bfc9-4858-aae8-5797a3c52398",
   "type": "MaintenanceWorks",
@@ -70,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-05T05:38:22.803Z"
  },
  {
-  "id": "DARS;867764;a886aada-ed1e-4a68-96b3-087d48ae9f60",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-218, Podzemelj - Črnomelj, Primostek - Podzemelj, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R1-218, Metlika - Podzemelj",
-  "lat": 45.63223,
-  "lng": 15.30265,
-  "start": "2026-08-05T04:21:12.107Z",
-  "end": "2026-08-05T16:00:00Z",
-  "ts": "2026-08-05T04:21:56.9Z"
- },
- {
   "id": "DARS;867763;43f6a362-3f59-4156-a598-f436705b57b9",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-419, Križaj - Čatež ob Savi, pri Velikem Mraševem, izmenično enosmerni promet, pomična zapora, košnja, do 21:00.",
@@ -90,28 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-05T04:18:57.937Z",
   "end": "2026-08-05T19:00:00Z",
   "ts": "2026-08-05T04:20:12.017Z"
- },
- {
-  "id": "DARS;867762;0c522499-d4e3-4e1b-ada7-320c54390e24",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-225, Radmirje - Mozirje, Grušovlje - Nazarje, izmenično enosmerni promet, pomična zapora, košnja, do 19:00.",
-  "loc": "R1-225, Radmirje - Mozirje",
-  "lat": 46.31631,
-  "lng": 14.88617,
-  "start": "2026-08-05T04:16:36.213Z",
-  "end": "2026-08-05T17:00:00Z",
-  "ts": "2026-08-05T04:17:56.957Z"
- },
- {
-  "id": "DARS;867760;b9e0a846-b380-4733-b35d-5f21279000b7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-216, Soteska - Črmošnjice - Črnomelj, Ručetna vas - Lokve, izmenično enosmerni promet, pomična zapora, košnja, do 19:00.",
-  "loc": "R1-216, Črmošnjice - Črnomelj",
-  "lat": 45.61805,
-  "lng": 15.16661,
-  "start": "2026-08-05T04:12:30.643Z",
-  "end": "2026-08-05T17:00:00Z",
-  "ts": "2026-08-05T04:13:22.63Z"
  },
  {
   "id": "DARS;849015;17f8f3fc-9452-4e0d-96d4-72b13ca3c53d",
