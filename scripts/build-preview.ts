@@ -788,14 +788,19 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
   <div class="searchwrap"><input id="search" type="text" autocomplete="off" placeholder="🔍 Išči mejni prehod ali kamero…" oninput="doSearch(this.value)"><div id="searchResults"></div></div>
 </div>
 <nav class="tabs">
+  <button class="tab active" data-view="route" onclick="showView('route',this)"><span class="ti">🧭</span><span class="tl">Moja pot</span></button>
   <button class="tab" data-view="map" onclick="showView('map',this)"><span class="ti">🗺️</span><span class="tl">Zemljevid</span></button>
-  <button class="tab active" data-view="borders" onclick="showView('borders',this)"><span class="ti">🚧</span><span class="tl">Prehodi</span></button>
+  <button class="tab" data-view="borders" onclick="showView('borders',this)"><span class="ti">🚧</span><span class="tl">Prehodi</span></button>
   <button class="tab" data-view="cams" onclick="showView('cams',this)"><span class="ti">📷</span><span class="tl">Kamere</span></button>
   <button class="tab" data-view="reports" onclick="showView('reports',this)"><span class="ti">📰</span><span class="tl">Poročila</span></button>
   <button class="tab" data-view="truck" onclick="showView('truck',this)"><span class="ti">🚛</span><span class="tl">Tovornjaki</span></button>
   <button class="tab" data-view="fuel" onclick="showView('fuel',this)"><span class="ti">⛽</span><span class="tl">Gorivo</span></button>
   <button class="tab" data-view="settings" onclick="showView('settings',this)"><span class="ti">⚙️</span><span class="tl">Nastavitve</span></button>
 </nav>
+<div class="view" id="view-route">
+  <div id="mpBanner"></div>
+  <section class="country-group" id="routeResult" style="display:none"></section>
+</div>
 <div class="view" id="view-map" style="display:none">
 <div class="routebar">
   <input id="routeFrom" type="text" autocomplete="off" placeholder="Od (npr. Banja Luka)">
@@ -809,7 +814,7 @@ footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-
 <div id="zoomHint" class="zoomhint">🔍 Približaj zemljevid za prikaz kamer</div></div>
 <div class="legend"><span><i class="dot b-none"></i>brez</span><span><i class="dot b-low"></i>do 30 min</span><span><i class="dot b-moderate"></i>do 1 h</span><span><i class="dot b-high"></i>do 2 h</span><span><i class="dot b-severe"></i>nad 2 h</span><span><i class="dot b-unknown"></i>kamera/ni podatka</span><span><i class="dot" style="background:#3b82f6"></i>cestna kamera</span><label style="margin-left:auto;cursor:pointer"><input type="checkbox" id="crossingToggle" checked onchange="toggleCrossings(this)"> 🚧 prehodi</label><label style="cursor:pointer"><input type="checkbox" id="roadToggle" checked onchange="toggleRoads(this)"> 📷 kamere</label><label style="cursor:pointer"><input type="checkbox" id="trafficToggle" checked onchange="toggleTraffic(this)"> 🚦 gostota prometa</label><span id="trafficNote" style="display:none;color:var(--muted);font-size:11px">🚦 gostota prometa trenutno ni na voljo</span><label style="cursor:pointer"><input type="checkbox" id="truckToggle" onchange="toggleTruckPark(this)"> 🅿️ parkirišča</label><label style="cursor:pointer"><input type="checkbox" id="fuelStToggle" onchange="toggleFuelSt(this)"> ⛽ črpalke</label><label style="cursor:pointer"><input type="checkbox" id="satToggle" onchange="toggleSatMap(this)"> 🛰️ satelit</label><span id="fuelStatus" style="display:none;font-size:11px;flex-basis:100%"></span></div>
 </div>
-<div class="view" id="view-borders">
+<div class="view" id="view-borders" style="display:none">
 <section class="country-group" id="favCrossSection">
   <h2>⭐ Priljubljeni prehodi <span class="cnt" id="favCrossCnt">0</span></h2>
   <div class="busiest" id="favCrossList"></div>
@@ -870,6 +875,9 @@ ${fuelHtml}
     </div>
     <h3 class="rsub">📥 Moji socialni signali (velja 3 h)</h3>
     <div id="setSocial" class="meta"></div>
+    <h3 class="rsub">🔔 Moji alarmi</h3>
+    <div id="setAlarms"></div>
+    <p class="meta">Alarm se sproži, ko čakanje na prehodu preseže prag — prikaže se kot pasica v zavihku »Moja pot«.</p>
     <h3 class="rsub">⭐ Moji podatki v napravi</h3>
     <div id="setCounts" class="meta"></div>
     <div class="ract"><button class="cam" onclick="clearFavs()">Počisti priljubljene</button><button class="cam" onclick="clearManual()">Počisti moje vnose</button></div>
@@ -1997,6 +2005,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     });
   }
   window.enableAlarmNotify=function(){ if(!window.Notification){ toast('Ta brskalnik ne podpira obvestil.'); return; } Notification.requestPermission().then(function(p){ toast(p==='granted'?'🔔 Obvestila vklopljena.':'Obvestila niso dovoljena.'); if(p==='granted')alarmTick(); }); };
+  setTimeout(alarmTick,4000); setInterval(alarmTick,180000);
   /* ===== 📍 GPS LOKACIJA · 🔊 GLAS · 🌧️ VREME ===== */
   function distKm(a,b,c,d){ var R=6371,dLat=(c-a)*Math.PI/180,dLng=(d-b)*Math.PI/180; var s=Math.sin(dLat/2)*Math.sin(dLat/2)+Math.cos(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.sin(dLng/2)*Math.sin(dLng/2); return R*2*Math.atan2(Math.sqrt(s),Math.sqrt(1-s)); }
   function nearestCrossing(lat,lng){ var best=null; for(var i=0;i<PTS.length;i++){ var p=PTS[i]; if(p.lat==null)continue; var dd=distKm(lat,lng,p.lat,p.lng); if(!best||dd<best.d)best={id:p.id,p:p,d:dd}; } return best; }
@@ -2214,8 +2223,10 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(fired.length){ html+='<div class="mpalert" style="border-left:5px solid #dc2626"><b>🔔 Alarmi</b><br><span class="meta">'+fired.join('<br>')+'</span></div>'; }
     box.innerHTML=html;
   }
-  // Aplikacija se odpre neposredno na mejnih prehodih.
-  try{ showView('borders'); }catch(e){}
+  renderBanner();
+  // Ob zagonu pokaži zadnjo oziroma privzeto pot, brez odstranjenih vnosnih sklopov.
+  (function(){ var last='kamnik-banja-luka'; try{ last=localStorage.getItem('promet_lastroute')||last; }catch(e){}
+    window._autoload=true; try{ selectRoute(last); }catch(e){} window._autoload=false; })();
 })();
 
 /* ⚙️ Nastavitve */
@@ -2250,7 +2261,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   window.delSocial=function(i){ var a=socAll(); if(i>=0&&i<a.length){ a.splice(i,1); localStorage.setItem('promet_social',JSON.stringify(a)); renderSocial(); flash('Signal izbrisan.'); } };
   function loadAi(){ var el=document.getElementById('setAiEndpoint'); if(el){ try{ el.value=localStorage.getItem('promet_ai_endpoint')||''; }catch(e){} } }
   window.saveAiEndpoint=function(){ var v=(document.getElementById('setAiEndpoint').value||'').trim(); if(v&&!/^https?:\\/\\//.test(v)){ flash('Naslov mora biti veljaven URL (https://…).'); return; } try{ if(v)localStorage.setItem('promet_ai_endpoint',v); else localStorage.removeItem('promet_ai_endpoint'); }catch(e){} flash(v?'AI endpoint shranjen.':'AI endpoint odstranjen.'); };
-  loadVeh(); loadFb(); loadAi(); renderCounts(); renderSocial();
+  loadVeh(); loadFb(); loadAi(); renderAlarms(); renderCounts(); renderSocial();
   (function(){ var v=document.getElementById('setVoice'); if(v){ try{ v.checked=localStorage.getItem('promet_voice')==='1'; }catch(e){} } })();
   var dbg=localStorage.getItem('promet_debug')==='1', dc=document.getElementById('setDebug'); if(dc){ dc.checked=dbg; if(dbg){ var dp=document.getElementById('debugPanel'); dp.style.display='block'; dp.innerHTML=debugInfo(); } }
 })();
@@ -2260,11 +2271,11 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var hadController=!!navigator.serviceWorker.controller, updateReloaded=false;
     navigator.serviceWorker.addEventListener('controllerchange',function(){
       if(!hadController||updateReloaded)return; updateReloaded=true;
-      try{ if(sessionStorage.getItem('promet_pwa_v5')==='1')return; sessionStorage.setItem('promet_pwa_v5','1'); }catch(e){}
+      try{ if(sessionStorage.getItem('promet_pwa_v6')==='1')return; sessionStorage.setItem('promet_pwa_v6','1'); }catch(e){}
       location.reload();
     });
     window.addEventListener('load',function(){
-      navigator.serviceWorker.register('sw.js?v=5',{updateViaCache:'none'}).then(function(reg){
+      navigator.serviceWorker.register('sw.js?v=6',{updateViaCache:'none'}).then(function(reg){
         reg.update().catch(function(){});
         if(reg.waiting)reg.waiting.postMessage('SKIP_WAITING');
         setInterval(function(){reg.update().catch(function(){});},5*60000);
@@ -2351,7 +2362,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   writeFileSync(resolve(process.cwd(), "manifest.webmanifest"), JSON.stringify(manifest, null, 2), "utf8");
   // Service worker: network-first za navigacijo (offline fallback na predpomnjeni index),
   // ostalo (slike kamer, tiles, API) gre mimo predpomnilnika (vedno sveže / brez balasta).
-  const sw = `var CACHE='prometinfo-v5';
+  const sw = `var CACHE='prometinfo-v6';
 var ASSETS=['./index.html','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return Promise.all(ASSETS.map(function(u){ return fetch(u,{cache:'reload'}).then(function(r){ if(r.ok)return c.put(u,r); }).catch(function(){}); })); })); });
 self.addEventListener('activate',function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.map(function(k){ if(k!==CACHE) return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });
