@@ -1259,18 +1259,19 @@ window.refreshCams=function(scope){
   try{ toast('🔄 Osvežujem '+n+' kamer…'); }catch(e){}
   return n;
 };
-window.refreshBig=function(){ var big=document.getElementById('camBig'), op=document.getElementById('camOpen'); if(big&&op&&op.href){ big.src=camBust(op.href.split('?')[0]); toast('🔄 Osvežujem kamero…'); } };
+window.refreshBig=function(){ var big=document.getElementById('camBig'), op=document.getElementById('camOpen'); if(big&&op&&op.href){ var base=big.getAttribute('data-base')||op.href; big.src=camBust(base); toast('🔄 Osvežujem kamero…'); } };
 // OSVEŽI VSE: znova naloži celo stran (sveži uradni podatki + vse kamere + TomTom naenkrat).
 // V PWA načinu (telefon) ni brskalnikovega gumba za osvežitev, zato je to glavni gumb.
-window.reloadAll=function(){
+window.reloadAll=function(returnCrossing){
   try{ toast('🔄 Preverjam novo različico aplikacije…'); }catch(e){}
+  if(returnCrossing){ try{ sessionStorage.setItem('promet_return_crossing',returnCrossing); }catch(e){} }
   var jobs=[];
   if('serviceWorker' in navigator) jobs.push(navigator.serviceWorker.getRegistration().then(function(reg){ return reg?reg.update():null; }).catch(function(){}));
   if('caches' in window) jobs.push(caches.keys().then(function(keys){ return Promise.all(keys.filter(function(k){return k.indexOf('prometinfo-')===0;}).map(function(k){return caches.delete(k);})); }).catch(function(){}));
-  Promise.all(jobs).finally(function(){ var base=location.href.split('#')[0].split('?')[0]; location.replace(base+'?appUpdate='+Date.now()); });
+  Promise.all(jobs).finally(function(){ var base=location.href.split('#')[0].split('?')[0]; location.replace(base+'?appUpdate='+Date.now()+(returnCrossing?'&crossing='+encodeURIComponent(returnCrossing):'')); });
 };
-function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
-function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big)big.src=''; var cb=document.getElementById('camCheckBar'); if(cb){cb.style.display='none';cb.innerHTML='';} }
+function openCam(img,title){ if(!img)return; var m=document.getElementById('camModal'); document.getElementById('camTitle').textContent=title||'Kamera'; var big=document.getElementById('camBig'); big.setAttribute('data-base',img); big.src=img; var op=document.getElementById('camOpen'); if(op)op.href=img; m.style.display='flex'; if(_camTimer)clearInterval(_camTimer); _camTimer=setInterval(function(){ big.src=camBust(img); },15000); }
+function closeCam(){ var m=document.getElementById('camModal'); if(m)m.style.display='none'; if(_camTimer){clearInterval(_camTimer);_camTimer=null;} var big=document.getElementById('camBig'); if(big){big.src='';big.removeAttribute('data-base');} var cb=document.getElementById('camCheckBar'); if(cb){cb.style.display='none';cb.innerHTML='';} }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam(); });
 (function favInit(){
   function attach(view){ if(!view) return; var list=view.querySelectorAll('.camgrid:not(#favGrid) .camshot'); for(var i=0;i<list.length;i++){ var a=list[i]; var k=camKey(a); if(!k) continue; if(!a.querySelector('.favbtn')) a.appendChild(favBtn(k,FAVS.has(k))); }
@@ -1748,9 +1749,9 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var icon=role==='recommended'?'✅':(role==='alternative'?'🟡':'🔴');
     var roleLbl=role==='recommended'?'Priporočeno':(role==='alternative'?'Alternativa':'Izogni se');
     var cam=(p.images&&p.images.length)?'<button class="cam" onclick="toggleCardCams(\\''+id+'\\')">📷 Kamere ('+p.images.length+')</button>':'';
-    // Pri novem prehodu Gradiška prikaži kamere takoj: uporabnik mora jasno videti
-    // AMS-RS smeri vstop/izstop, ne šele po dodatnem kliku na gumb.
-    var camsOpen=id==='ba-gradiska';
+    // Pri prehodih Gradiška, Gradina in Dubica prikaži kamere takoj,
+    // da so smeri vstop/izstop vidne brez dodatnega klika.
+    var camsOpen=['ba-gradiska','ba-gradina','ba-kozarska-dubica'].indexOf(id)>=0;
     var camGrid=(p.images&&p.images.length)?'<div id="ccams-'+id+'" class="camgrid cardcams" style="display:'+(camsOpen?'grid':'none')+';margin-top:9px">'+p.images.map(function(im,ix){ return camCell(im,id,ix); }).join('')+'</div>':'';
     var srcs=sourcesFor(p);
     var srcLine=srcs.length?srcs.map(function(s){return s.label+(s.ageMin!=null?' ('+s.ageMin+' min)':'');}).join(' · '):'ni avtomatskih virov';
@@ -1776,7 +1777,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(id==='ba-gradiska'&&GRADCRIT.oldClosed){
       gradBanner='<div class="critbox">🚨 <b>Stara Gradiška stari most zaprt</b> — promet prekinjen v obe smeri, NE UPORABLJAJ.'+(GRADCRIT.gvOpen?'<br>✅ <b>Uporabi Gornji Varoš–Gradiška (novi most)</b> — odprt.':'')+' <span class="meta">(vir: HAK)</span></div>';
     }
-    return '<div class="rcard" style="border-left:5px solid '+col+'">'
+    return '<div class="rcard" id="crossing-'+id+'" style="border-left:5px solid '+col+';scroll-margin-top:12px">'
       +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">Ocena '+sc+'/100</span></div>'
       +gradBanner
       +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
@@ -1791,7 +1792,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +manLine(id)
       +'<div class="rsoc">'+socLine+'</div>'
       +notesHtml
-      +'<div class="ract">'+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button></div>'
+      +'<div class="ract"><button class="cam" onclick="reloadAll(\\''+id+'\\')">🔄 Osveži prehod</button> '+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button></div>'
       +camGrid
       +'</div>';
   }
@@ -2226,7 +2227,10 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   renderBanner();
   // Ob zagonu pokaži zadnjo oziroma privzeto pot, brez odstranjenih vnosnih sklopov.
   (function(){ var last='kamnik-banja-luka'; try{ last=localStorage.getItem('promet_lastroute')||last; }catch(e){}
-    window._autoload=true; try{ selectRoute(last); }catch(e){} window._autoload=false; })();
+    window._autoload=true; try{ selectRoute(last); }catch(e){} window._autoload=false;
+    var returnId=''; try{ returnId=new URLSearchParams(location.search).get('crossing')||sessionStorage.getItem('promet_return_crossing')||''; sessionStorage.removeItem('promet_return_crossing'); }catch(e){}
+    if(returnId) setTimeout(function(){ var el=document.getElementById('crossing-'+returnId); if(el)el.scrollIntoView({behavior:'auto',block:'start'}); },500);
+  })();
 })();
 
 /* ⚙️ Nastavitve */
@@ -2271,11 +2275,11 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var hadController=!!navigator.serviceWorker.controller, updateReloaded=false;
     navigator.serviceWorker.addEventListener('controllerchange',function(){
       if(!hadController||updateReloaded)return; updateReloaded=true;
-      try{ if(sessionStorage.getItem('promet_pwa_v6')==='1')return; sessionStorage.setItem('promet_pwa_v6','1'); }catch(e){}
+      try{ if(sessionStorage.getItem('promet_pwa_v7')==='1')return; sessionStorage.setItem('promet_pwa_v7','1'); }catch(e){}
       location.reload();
     });
     window.addEventListener('load',function(){
-      navigator.serviceWorker.register('sw.js?v=6',{updateViaCache:'none'}).then(function(reg){
+      navigator.serviceWorker.register('sw.js?v=7',{updateViaCache:'none'}).then(function(reg){
         reg.update().catch(function(){});
         if(reg.waiting)reg.waiting.postMessage('SKIP_WAITING');
         setInterval(function(){reg.update().catch(function(){});},5*60000);
@@ -2362,7 +2366,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   writeFileSync(resolve(process.cwd(), "manifest.webmanifest"), JSON.stringify(manifest, null, 2), "utf8");
   // Service worker: network-first za navigacijo (offline fallback na predpomnjeni index),
   // ostalo (slike kamer, tiles, API) gre mimo predpomnilnika (vedno sveže / brez balasta).
-  const sw = `var CACHE='prometinfo-v6';
+  const sw = `var CACHE='prometinfo-v7';
 var ASSETS=['./index.html','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return Promise.all(ASSETS.map(function(u){ return fetch(u,{cache:'reload'}).then(function(r){ if(r.ok)return c.put(u,r); }).catch(function(){}); })); })); });
 self.addEventListener('activate',function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.map(function(k){ if(k!==CACHE) return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });
