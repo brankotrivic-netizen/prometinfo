@@ -1006,13 +1006,6 @@ const HISTPTS=${JSON.stringify(WAIT_HISTORY)};
 const PAGE_BUILT_AT=${JSON.stringify(new Date().toISOString())};
 const SIROADEVENTS=${JSON.stringify(PROMET_SI.slice(0, 180).map((e) => ({ type: e.type, desc: e.desc, lat: e.lat, lng: e.lng, ts: e.ts, start: e.start, end: e.end })))};
 const ROUTEOFFICIAL=${JSON.stringify(routeOfficialAlerts)};
-const GRADCRIT=${JSON.stringify((() => {
-  const t = HAK_REPORTS.map((r) => `${r.title} ${r.text}`).join(" ");
-  return {
-    oldClosed: /o[šs]te[ćc]enja mosta[\s\S]{0,160}?Stara Gradi[šs]ka[\s\S]{0,120}?prekinut/i.test(t) || /Stara Gradi[šs]ka[\s\S]{0,140}?prekinut je promet/i.test(t),
-    gvOpen: /otvoren[\s\S]{0,60}?grani[čc]ni prijelaz Gornji Varo[šs]/i.test(t),
-  };
-})())};
 const SOC_PAGES=${JSON.stringify(SOCIAL_PAGES)};
 const SOC_Q=${JSON.stringify(SOCIAL_QUERIES)};
 const BORDERSEARCH=${JSON.stringify(hakBorderCams.flatMap((c) => HAK_CAM_IMAGES[c.k].map((img, i) => ({ name: HAK_CAM_IMAGES[c.k].length > 1 ? `${c.name} · kam ${i + 1}` : c.name, img, lat: c.lat, lng: c.lng }))))};
@@ -1345,8 +1338,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var cc=ccLast(p.id);
     if(cc){ if(cc.cameraStatus==='passenger_queue') s-=25; else if(cc.cameraStatus==='clear') s+=8; else if(cc.cameraStatus==='truck_only_queue') s+=3; }
     if(role==='avoid') s-=20; else if(role==='alternative') s-=8;
-    // kriticna zapora: ocena najvec 20
-    if(/zatvoren|zaprt|prekinjen|obustavljen|zabranjen promet/i.test(p.rawStatus||'')) s=Math.min(s,20);
+    // Zapora starega mostu Stara Gradiška ne velja za novi prehod Gornji Varoš.
+    if(p.id!=='ba-gradiska' && /zatvoren|zaprt|prekinjen|obustavljen|zabranjen promet/i.test(p.rawStatus||'')) s=Math.min(s,20);
     return Math.max(0, Math.min(100, Math.round(s)));
   }
   function scoreColor(s){ return s>=80?'#16a34a':(s>=60?'#ca8a04':'#dc2626'); }
@@ -1386,7 +1379,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   window.addSocial=function(id){ var t=window.prompt('Socialni signal za ta prehod (kratek opis, npr. "kolona 2 km, čeka se"):'); if(!t)return; var a=socGet(); a.push({id:id,text:(''+t).slice(0,140),t:new Date().toISOString(),confirmed:false,source:'facebook'}); socSave(a); toast('Socialni signal dodan (velja 3 ure).'); if(CURRENT_ROUTE) renderRoute(CURRENT_ROUTE); };
   // ---- Prilepi iz Facebooka: zaznava prehoda + kljucnih besed ----
   var CALIAS={ 'ba-gradiska':['gradiska','stara gradiska','gornji varos','novi most'], 'ba-brod':['brod','slavonski brod','bosanski brod'], 'ba-samac':['samac','slavonski samac'], 'ba-svilaj':['svilaj'], 'ba-orasje':['orasje','zupanja'], 'ba-izacic':['izacic','licko petrovo selo'], 'ba-velika-kladusa':['velika kladusa','maljevac'], 'ba-kostajnica':['kostajnica','hrvatska kostajnica'], 'ba-gradina':['gradina','jasenovac'], 'ba-doljani':['doljani','metkovic'], 'ba-bijaca':['bijaca','nova sela'], 'ba-raca':['raca','sremska raca'], 'ba-karakaj':['karakaj','mali zvornik'], 'hr-bajakovo':['bajakovo','batrovci'], 'hr-tovarnik':['tovarnik','sid'], 'si-obrezje':['obrezje','bregana'], 'si-gruskovje':['gruskovje','macelj'], 'si-karavanke':['karavanke'] };
-  function detectCrossing(txt){ var t=norm(txt); for(var id in CALIAS){ var al=CALIAS[id]; for(var i=0;i<al.length;i++){ if(t.indexOf(al[i])>=0) return id; } } for(var k in CBYID){ var nm=norm(CBYID[k].name).replace(/^gp\\s+/,''); if(nm.length>3 && t.indexOf(nm)>=0) return k; } return null; }
+  function detectCrossing(txt){ var t=norm(txt); if(t.indexOf('stara gradiska')>=0 && t.indexOf('gornji varos')<0 && t.indexOf('novi most')<0)return null; for(var id in CALIAS){ var al=CALIAS[id]; for(var i=0;i<al.length;i++){ if(t.indexOf(al[i])>=0) return id; } } for(var k in CBYID){ var nm=norm(CBYID[k].name).replace(/^gp\\s+/,''); if(nm.length>3 && t.indexOf(nm)>=0) return k; } return null; }
   function detectKw(txt){ var t=norm(txt); var found=[]; SOC_KW.forEach(function(k){ if(t.indexOf(norm(k))>=0) found.push(k); }); return found; }
   function fillFbSelect(sel){ var ids=CURRENT_ROUTE?CURRENT_ROUTE.recommended.concat(CURRENT_ROUTE.alternative,CURRENT_ROUTE.avoid):[]; if(!ids.length)ids=Object.keys(CBYID); var box=document.getElementById('fbCrossing'); box.innerHTML=ids.map(function(id){var p=CBYID[id];return p?'<option value="'+id+'"'+(id===sel?' selected':'')+'>'+p.name+'</option>':'';}).join(''); }
   window.openFbPaste=function(){ var dm=document.getElementById('fbPasteModal'); if(!dm)return; document.getElementById('fbText').value=''; document.getElementById('fbDetect').textContent=''; fillFbSelect(); dm.style.display='flex'; var ta=document.getElementById('fbText'); ta.oninput=function(){ var id=detectCrossing(ta.value); var kw=detectKw(ta.value); var d=document.getElementById('fbDetect'); if(id){ fillFbSelect(id); d.innerHTML='✅ Zaznan prehod: <b>'+CBYID[id].name+'</b>'+(kw.length?' · ključne besede: '+kw.join(', '):''); } else { d.textContent=kw.length?('Ključne besede: '+kw.join(', ')+' — prehoda nisem zaznal, izberi ročno.'):'Prehoda nisem zaznal — izberi ročno.'; } }; };
@@ -1691,8 +1684,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       var fb=p.hak&&p.hak.bihamkFallbackWaitMin;
       notes.push('⚠ HAK podatek za tvojo smer je star '+Math.round(hakAge)+' min, zato ni uporabljen kot trenutno stanje.'+(fb!=null?' Uporabljena je novejša BIHAMK ocena do '+fb+' min.':' Preveri živo kamero.'));
     }
-    // 1. kriticna zapora preglasi vse
-    if(/zatvoren|zaprt|prekinjen|obustavljen|zabranjen promet/i.test(p.rawStatus||'')) return {pax:{e:'🔴',t:'MOŽNA ZAPORA — preveri uradni vir!',c:'#dc2626'},truck:vcls(tr),notes:['⛔ Uradni vir omenja zaporo/prekinitev — to preglasi vse ostalo.'],likelyTruck:false};
+    // Zapora starega mostu Stara Gradiška ne sme preglasiti stanja novega mostu Gornji Varoš.
+    if(p.id!=='ba-gradiska' && /zatvoren|zaprt|prekinjen|obustavljen|zabranjen promet/i.test(p.rawStatus||'')) return {pax:{e:'🔴',t:'MOŽNA ZAPORA — preveri uradni vir!',c:'#dc2626'},truck:vcls(tr),notes:['⛔ Uradni vir omenja zaporo/prekinitev — to preglasi vse ostalo.'],likelyTruck:false};
     // truck contamination filter
     if(ttQueue(p.id) && px!=null && px<=15 && tr!=null && tr>=60){ likelyTruck=true; notes.push('Verjetno tovorna kolona. Za osebna vozila gužva ni potrjena.'); }
     else if(px!=null && px<=15 && tr!=null && tr>=60){ likelyTruck=true; notes.push('Verjetno tovorna kolona. Za osebna vozila gužva ni potrjena (uradni vir: avti kratko, tovorni dolgo).'); }
@@ -1773,13 +1766,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'</div>'
       +camSummary(p);
     var notesHtml=cn.notes.length?('<div class="rnote">🤖 '+cn.notes.join('<br>')+'</div>'):'';
-    var gradBanner='';
-    if(id==='ba-gradiska'&&GRADCRIT.oldClosed){
-      gradBanner='<div class="critbox">🚨 <b>Stara Gradiška stari most zaprt</b> — promet prekinjen v obe smeri, NE UPORABLJAJ.'+(GRADCRIT.gvOpen?'<br>✅ <b>Uporabi Gornji Varoš–Gradiška (novi most)</b> — odprt.':'')+' <span class="meta">(vir: HAK)</span></div>';
-    }
     return '<div class="rcard" id="crossing-'+id+'" style="border-left:5px solid '+col+';scroll-margin-top:12px">'
       +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">Ocena '+sc+'/100</span></div>'
-      +gradBanner
       +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
       +vehLines
       +'<div class="rdir">'+dirWaits(p)+'</div>'
@@ -1918,11 +1906,6 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     CURRENT_ROUTE=pr; window._curRoute=pr;
     var res=document.getElementById('routeResult');
     var html='<h2>Moja pot: '+rFrom(pr)+' → '+rTo(pr)+'</h2>';
-    // ⚠ kriticna opozorila za to pot (npr. zaprt stari most Gradiska)
-    var allIds=pr.recommended.concat(pr.alternative, pr.avoid);
-    if(GRADCRIT.oldClosed && allIds.indexOf('ba-gradiska')>=0){
-      html+='<div class="critbox">⚠ <b>Kritična opozorila:</b><br>🚨 <b>Stara Gradiška stari most zaprt</b> — promet prekinjen v obe smeri, ne uporabljaj starega mostu.'+(GRADCRIT.gvOpen?'<br>✅ Uporabi <b>Gornji Varoš–Gradiška</b> (novi most) — odprt.':'')+' <span class="meta">(vir: HAK)</span></div>';
-    }
     html+=alertsBanner(pr);
     html+='<div id="liveAnswer" class="liveanswer" style="display:none"></div>';
     html+='<div id="locBanner" class="locbanner" style="display:none"></div>';
@@ -2157,7 +2140,6 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       var ccd=ccLast(recId);
       if(ccd) h+='<div class="dfresh">📷 '+(CCLBL[ccd.cameraStatus]||'')+' ('+Math.round((Date.now()-Date.parse(ccd.checkedAt))/60000)+' min)</div>';
       h+='<div class="dpazi">⚠ PAZI: rdeča črta na navigaciji je lahko samo kamionska kolona. Preveri kamero.</div>';
-      if(recId==='ba-gradiska'&&GRADCRIT.oldClosed) h+='<div class="dpazi" style="background:rgba(220,38,38,.3);color:#fecaca">🚨 Stari most Stara Gradiška–Gradiška ZAPRT — pelji na NOVI most (Gornji Varoš).</div>';
       if(rec.images&&rec.images.length) h+='<button class="dcam" onclick="openCamCheck(\\''+recId+'\\')">📷 Odpri kamero in potrdi</button>';
       h+='<div class="dccbtns">'
         +'<button class="ccb" style="background:#dc2626" onclick="setCamStatus(\\''+recId+'\\',\\'passenger_queue\\')">🚗 Avti stojijo</button>'
@@ -2275,11 +2257,11 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var hadController=!!navigator.serviceWorker.controller, updateReloaded=false;
     navigator.serviceWorker.addEventListener('controllerchange',function(){
       if(!hadController||updateReloaded)return; updateReloaded=true;
-      try{ if(sessionStorage.getItem('promet_pwa_v7')==='1')return; sessionStorage.setItem('promet_pwa_v7','1'); }catch(e){}
+      try{ if(sessionStorage.getItem('promet_pwa_v8')==='1')return; sessionStorage.setItem('promet_pwa_v8','1'); }catch(e){}
       location.reload();
     });
     window.addEventListener('load',function(){
-      navigator.serviceWorker.register('sw.js?v=7',{updateViaCache:'none'}).then(function(reg){
+      navigator.serviceWorker.register('sw.js?v=8',{updateViaCache:'none'}).then(function(reg){
         reg.update().catch(function(){});
         if(reg.waiting)reg.waiting.postMessage('SKIP_WAITING');
         setInterval(function(){reg.update().catch(function(){});},5*60000);
@@ -2366,7 +2348,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   writeFileSync(resolve(process.cwd(), "manifest.webmanifest"), JSON.stringify(manifest, null, 2), "utf8");
   // Service worker: network-first za navigacijo (offline fallback na predpomnjeni index),
   // ostalo (slike kamer, tiles, API) gre mimo predpomnilnika (vedno sveže / brez balasta).
-  const sw = `var CACHE='prometinfo-v7';
+  const sw = `var CACHE='prometinfo-v8';
 var ASSETS=['./index.html','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return Promise.all(ASSETS.map(function(u){ return fetch(u,{cache:'reload'}).then(function(r){ if(r.ok)return c.put(u,r); }).catch(function(){}); })); })); });
 self.addEventListener('activate',function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.map(function(k){ if(k!==CACHE) return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });
