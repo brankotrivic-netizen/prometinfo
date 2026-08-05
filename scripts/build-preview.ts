@@ -1317,7 +1317,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function hakDirIso(p){ if(!p.hak)return ''; return REV?(p.hak.ulazTsISO||p.hak.tsISO):(p.hak.izlazTsISO||p.hak.tsISO); }
   function hakDirAge(p){ var iso=hakDirIso(p); return iso?(Date.now()-Date.parse(iso))/60000:null; }
   function hakDirStale(p){ var age=hakDirAge(p); return age!=null&&age>90; }
-  var LVLNUM={none:30,low:22,moderate:2,high:-15,severe:-25,unknown:-15};
+  // Manjkajoč podatek je nevtralen: ne pomeni niti gneče niti prostega prehoda.
+  var LVLNUM={none:30,low:22,moderate:2,high:-15,severe:-25,unknown:0};
   function scoreCrossing(p, role){
     // Ocena mora uporabljati smer poti, ne najslabše čakalne dobe v nasprotni smeri.
     var s=50, w=paxTruck(p).pax;
@@ -1326,10 +1327,16 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(p.images&&p.images.length) s+=10;
     var age=hakDirAge(p);
     if(age!=null){ if(age<30)s+=15; else if(age<=90)s+=0; else s-=(p.hasLive?5:20); }
-    else if(p.level==='unknown') s-=15;
     // VEČ VIROV: potrditev iz >1 uradnega vira dvigne oceno
     var offN=sourcesFor(p).filter(function(x){return x.official;}).length;
     if(offN>=2) s+=6;
+    // TomTom meri dejanski tok prometa pred prehodom. Normalen tok izboljša oceno,
+    // potrjen zastoj pa jo zniža; brez meritve ostane ocena nevtralna.
+    var tt=TTRES[p.id];
+    if(tt&&tt.status==='normal') s+=15;
+    else if(tt&&tt.status==='slow') s+=5;
+    else if(tt&&tt.status==='jam') s-=15;
+    else if(tt&&tt.status==='stopped') s-=25;
     // socialni signali: samo OSEBNI znižajo; kamionski ne vplivajo na osebno oceno
     var ss=socSplit(p.id);
     if(ss.pax>0 && (w==null||w<=15)) s-=8;
@@ -1394,7 +1401,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var soc=socFresh(p.id).length;
     if(p.hak && stale && !p.hasLive) return {dot:'🔴', txt:'HAK podatek za smer je zastarel', col:'#dc2626'};
     if(p.hak && stale && p.hasLive) return {dot:'🟡', txt:'HAK zastarel — uporabljena novejša BIHAMK ocena', col:'#ca8a04'};
-    if(official.length>=2) return {dot:'🟢', txt:'Potrjeno iz več virov', col:'#16a34a'};
+    if(official.length>=2) return {dot:'🟢', txt:'Na voljo je več uradnih virov', col:'#16a34a'};
     if(soc>0 && !officialWait) return {dot:'🟠', txt:'Socialni signal — preveri kamero', col:'#ea580c'};
     if(officialWait) return {dot:'🟡', txt:'Samo en uradni vir', col:'#ca8a04'};
     if(official.length>=1) return {dot:'🟡', txt:'En vir (kamera) — brez čakalne dobe', col:'#ca8a04'};
@@ -1718,6 +1725,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function assistantNote(p){ return ''; }
   var CACC={SI:'Slovenijo',HR:'Hrvaško',RS:'Srbijo',BA:'Bosno in Hercegovino',ME:'Črno goro',MK:'Severno Makedonijo',XK:'Kosovo',HU:'Madžarsko',AT:'Avstrijo',IT:'Italijo',AL:'Albanijo',BG:'Bolgarijo',RO:'Romunijo',GR:'Grčijo'};
   function acc(c){ return CACC[c]||CNAMES[c]||c; }
+  function googleMapsDir(p){ var dst=(p.lat!=null&&p.lng!=null)?(p.lat+','+p.lng):(p.name||''); return 'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(dst)+'&travelmode=driving'; }
   var MARK=' <span class="tvojasmer">← tvoja smer</span>';
   function dirWaits(p){
     if(p.hak){
@@ -1780,7 +1788,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +manLine(id)
       +'<div class="rsoc">'+socLine+'</div>'
       +notesHtml
-      +'<div class="ract"><button class="cam" onclick="reloadAll(\\''+id+'\\')">🔄 Osveži prehod</button> '+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button></div>'
+      +'<div class="ract"><button class="cam" onclick="reloadAll(\\''+id+'\\')">🔄 Osveži prehod</button> '+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button> <a class="cam" style="text-decoration:none" href="'+googleMapsDir(p)+'" target="_blank" rel="noopener noreferrer">📍 Google Maps pot</a></div>'
       +camGrid
       +'</div>';
   }
@@ -2257,11 +2265,11 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var hadController=!!navigator.serviceWorker.controller, updateReloaded=false;
     navigator.serviceWorker.addEventListener('controllerchange',function(){
       if(!hadController||updateReloaded)return; updateReloaded=true;
-      try{ if(sessionStorage.getItem('promet_pwa_v8')==='1')return; sessionStorage.setItem('promet_pwa_v8','1'); }catch(e){}
+      try{ if(sessionStorage.getItem('promet_pwa_v9')==='1')return; sessionStorage.setItem('promet_pwa_v9','1'); }catch(e){}
       location.reload();
     });
     window.addEventListener('load',function(){
-      navigator.serviceWorker.register('sw.js?v=8',{updateViaCache:'none'}).then(function(reg){
+      navigator.serviceWorker.register('sw.js?v=9',{updateViaCache:'none'}).then(function(reg){
         reg.update().catch(function(){});
         if(reg.waiting)reg.waiting.postMessage('SKIP_WAITING');
         setInterval(function(){reg.update().catch(function(){});},5*60000);
@@ -2348,7 +2356,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   writeFileSync(resolve(process.cwd(), "manifest.webmanifest"), JSON.stringify(manifest, null, 2), "utf8");
   // Service worker: network-first za navigacijo (offline fallback na predpomnjeni index),
   // ostalo (slike kamer, tiles, API) gre mimo predpomnilnika (vedno sveže / brez balasta).
-  const sw = `var CACHE='prometinfo-v8';
+  const sw = `var CACHE='prometinfo-v9';
 var ASSETS=['./index.html','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return Promise.all(ASSETS.map(function(u){ return fetch(u,{cache:'reload'}).then(function(r){ if(r.ok)return c.put(u,r); }).catch(function(){}); })); })); });
 self.addEventListener('activate',function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.map(function(k){ if(k!==CACHE) return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });
