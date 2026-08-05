@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-05T09:15:52.338Z";
+export const PROMET_SI_UPDATED = "2026-08-05T11:34:36.436Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;867751;1e850042-4848-4049-b98e-65209797698f",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, razcep Draženci - počivališče Dravsko polje v smeri Maribora, dela, oviran promet.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.39162,
+  "lng": 15.86011,
+  "start": "2026-08-05T05:07:47.337Z",
+  "end": "2026-08-05T12:00:00Z",
+  "ts": "2026-08-05T10:57:24.563Z"
+ },
  {
   "id": "DARS;867834;08606f06-3531-4447-b70c-21a394a31f6b",
   "type": "MaintenanceWorks",
@@ -101,17 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-05T06:33:53.033Z",
   "end": "2026-08-05T12:00:00Z",
   "ts": "2026-08-05T06:34:52.913Z"
- },
- {
-  "id": "DARS;867807;83e33943-4a53-470f-86d0-3e8d181a4805",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Celje vzhod - počivališče Zima v smeri Maribora, dela, oviran promet, košnja.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25438,
-  "lng": 15.32269,
-  "start": "2026-08-05T06:31:59.58Z",
-  "end": "2026-08-05T12:00:01.6Z",
-  "ts": "2026-08-05T06:32:10.97Z"
  },
  {
   "id": "DARS;867806;4cd527fd-a388-46e3-b563-5bf0ca3ea3c7",
@@ -389,28 +389,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-05T05:10:48.887Z"
  },
  {
-  "id": "DARS;867751;1e850042-4848-4049-b98e-65209797698f",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, razcep Draženci - počivališče Dravsko polje v smeri Maribora, dela, oviran promet.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.39162,
-  "lng": 15.86011,
-  "start": "2026-08-05T05:07:47.337Z",
-  "end": "2026-08-05T11:00:31.23Z",
-  "ts": "2026-08-05T05:07:51.467Z"
- },
- {
-  "id": "DARS;867766;25f69efc-4f7e-4b24-80de-b05987bb1a95",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.96861,
-  "lng": 14.30493,
-  "start": "2026-08-05T04:37:35.933Z",
-  "end": "2026-08-05T19:00:00Z",
-  "ts": "2026-08-05T04:51:32.053Z"
- },
- {
   "id": "DARS;867769;b934d561-d097-4773-b058-115ff7c99db8",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G1-5, Celje - Krško, pri Prapretnem, dela, izmenično enosmerni promet, pomična zapora, do 14:00.",
@@ -420,28 +398,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-05T04:46:53.253Z",
   "end": "2026-08-05T12:00:00Z",
   "ts": "2026-08-05T04:47:18.433Z"
- },
- {
-  "id": "DARS;867768;5993f848-0adb-48f1-b4e5-ab72693be638",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-664, Gaber - Uršna Sela - Novo mesto, v Uršnih Selih, na Vaški cesti, izmenično enosmerni promet, okvara vodovodnega sistema, do 12:00.",
-  "loc": "R3-664, Gaber - Uršna Sela - Novo mesto",
-  "lat": 45.72297,
-  "lng": 15.11529,
-  "start": "2026-08-05T04:44:09.187Z",
-  "end": "2026-08-05T10:00:00Z",
-  "ts": "2026-08-05T04:45:40.91Z"
- },
- {
-  "id": "DARS;867756;6dca195e-78e8-4ecd-8c97-0d9c3df65c60",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Pesnica - Hoče, pokrit vkop Maribor - priključek Maribor center, Meljska cesta v smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "R2-430, Pesnica - Hoče",
-  "lat": 46.55503,
-  "lng": 15.66061,
-  "start": "2026-08-05T03:46:55.187Z",
-  "end": "2026-08-05T12:00:00Z",
-  "ts": "2026-08-05T04:27:54.247Z"
  },
  {
   "id": "DARS;867764;a886aada-ed1e-4a68-96b3-087d48ae9f60",
@@ -486,17 +442,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-05T04:12:30.643Z",
   "end": "2026-08-05T17:00:00Z",
   "ts": "2026-08-05T04:13:22.63Z"
- },
- {
-  "id": "DARS;867757;584197b0-c76c-4a15-91b8-7dc8661c11c0",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, razcep Gabrk - priključek Senožeče v smeri Ljubljane, dela, zaprt počasni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.70556,
-  "lng": 14.00025,
-  "start": "2026-08-05T03:49:25.95Z",
-  "end": "2026-08-05T10:00:00Z",
-  "ts": "2026-08-05T03:50:23.597Z"
  },
  {
   "id": "DARS;867755;ba7785a1-18b8-4ed5-8b95-6056d7d43a76",

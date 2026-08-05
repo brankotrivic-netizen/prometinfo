@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.8.2026. 11:09",
+  "updated": "5.8.2026. 13:29",
   "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila , a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI: zbog održavanja svečane proslave 31. obljetnice vojno-redarstvene akcije „Oluja“ te Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja zabrana je prometa na državnoj cesti DC1 u Kninu (obilazak državnom cestom DC33 Ulica kralja Tomislava-ŽC6080 ulica Domovinskog rata i obrnuto) te na državnoj cesti DC33 između K…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "5.8.2026. 10:47",
+  "updated": "5.8.2026. 13:29",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "5.8.2026. 10:47",
+  "updated": "5.8.2026. 13:29",
   "text": "U pomorskom prometu nema poteškoća. Državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 06.08.2026 od HSC Kolovare preuzima HSC Jadera u luci Ubli isplovljenjem u 04:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međun…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "4.8.2026. 16:45",
-  "text": "Prometna prognoza za Hrvatsku za srijedu, 5. kolovoza 2026. Gužve i zastoje očekujemo sutra na većini autocesta u smjeru mora te na prilazima turističkim središtima, osobito duž Jadranske magistrale (DC8), brzoj cesti Solin-Klis (DC1), Krčkom mostu i na pojedinim državnim cestama. Povodom Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja bit će zabrana prometa za teretna vozila najveće dopuštene mase iznad 7,5 tona sutra (05. kolovoza) od 14:00 do 23:00 na državnim cestama duž jadranske obale. Čekanja u putničkom prometu očekujemo na graničnim prijelazima Gornji Varoš, Ličko Petrovo Selo, Svilaj, Bajakovo, Karasovići i Tovarnik. U pomorskom prometu ne očekuju se poteškoće. Hr…"
+  "updated": "5.8.2026. 13:00",
+  "text": "Prometna prognoza za Hrvatsku za 6. kolovoza 2026 Tijekom jutarnjih i poslijepodnevnih sati usporenije će se voziti na gradskim cestama i obilaznicama, a povećana gustoća prometa moguća je i na cestama u smjeru mora. Zastoji i kolone mogući su na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A4 između čvorova Popovec i Zagreb istok, Istarskom ipsilonu (A8) između čvora i tunela Učka, Krčkom mostu (DC102) te na pojedinim dionicama Ličke (DC1) i Jadranske (DC8) magistrale. U drugom dijelu noći na sjevernom će Jadranu zapuhati jaka bura pa su moguće zabrane i ograničenja za pojedine skupine vozila, a moguće su i poteškoće u pomorskom prometu. Na graničnim prijelazima s Bosnom i Hercego…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",

@@ -54,10 +54,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Sarajevo-Lapišnica, zbog postavljanja rasvjete u tunelu Vratnik svakog radnog dana od 07 do 16 sati saobraća se usporeno, jednom trakom."
    },
    {
-    "title": "Donje Vukovije (Živinice-Tojšići)",
-    "text": "Zbog saobraćajne nezgode otežano, jednom trakom saobraća se kod mjesta Donje Vukovije na magistralnoj cesti Živinice-Tojšići (u blizini aerodroma)."
-   },
-   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },
