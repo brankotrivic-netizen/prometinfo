@@ -1,4 +1,4 @@
-var CACHE='prometinfo-v5';
+var CACHE='prometinfo-v6';
 var ASSETS=['./index.html','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return Promise.all(ASSETS.map(function(u){ return fetch(u,{cache:'reload'}).then(function(r){ if(r.ok)return c.put(u,r); }).catch(function(){}); })); })); });
 self.addEventListener('activate',function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.map(function(k){ if(k!==CACHE) return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });

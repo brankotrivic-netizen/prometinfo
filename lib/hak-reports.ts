@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.8.2026. 08:39",
+  "updated": "5.8.2026. 09:11",
   "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama i održavaju sigurnosni razmak između vozila , a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI: osobno vozilo u kvaru na autocesti A1 u tunelu Mala Kapela u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h zbog održavanja svečane proslave 31. obljetnice vojno-redarstvene akcije „Oluja“ te Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja zabrana je prometa na državnoj cesti DC1 u Kninu (obila…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "5.8.2026. 08:39",
+  "updated": "5.8.2026. 09:11",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "5.8.2026. 08:39",
+  "updated": "5.8.2026. 09:11",
   "text": "U pomorskom prometu nema poteškoća. Državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 06.08.2026 od HSC Kolovare preuzima HSC Jadera u luci Ubli isplovljenjem u 04:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međun…"
  },
  {
