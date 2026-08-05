@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-izacic",
-  "name": "Ličko Petrovo Selo (Izačić)",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "5.8.2026. 19:11:09",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-05T19:11:09+02:00",
-  "izlazTsISO": "",
-  "ts": "5.8.2026. 19:11:09",
-  "tsISO": "2026-08-05T19:11:09+02:00"
- },
- {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
   "ulazMin": 30,
@@ -41,25 +21,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-08-05T22:31:00+02:00",
   "ts": "5.8.2026. 22:31:12",
   "tsISO": "2026-08-05T22:31:12+02:00"
- },
- {
-  "id": "hr-tovarnik",
-  "name": "Tovarnik (Šid)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": 120,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "2 h",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "",
-  "izlazTsISO": "",
-  "ts": "",
-  "tsISO": ""
  }
 ];
