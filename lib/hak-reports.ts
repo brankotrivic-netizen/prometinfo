@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "6.8.2026. 08:18",
-  "text": "Povremeno je pojačan promet na važnijim cestama, gradskim cestama i obilaznicama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: prolivena tekućina na autocesti A7 na ulaznom kraku (krak 6) čvora Rujevica na kolniku u smjeru Križišća - vozi se uz ograničenje brzine od 40 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvan…"
+  "updated": "6.8.2026. 11:18",
+  "text": "Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: pješak na autocesti A7 između čvora Učka i čvora Trinajstići na kolniku u smjeru Rupe - promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h A3 Bregana-Lipovac između čvorova Lučko i Zagreb zapad u smjeru Bregane vozi se usporeno Istarski ipsilon (A8/A9) povećana je gustoća prometa prema Kaštelu i Plovaniji, pred tunelom Učka u smjeru Rije…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "6.8.2026. 08:18",
+  "updated": "6.8.2026. 11:18",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "6.8.2026. 08:18",
-  "text": "U pomorskom prometu nema poteškoća. Državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 06.08.2026 od HSC Kolovare preuzima HSC Jadera u luci Ubli isplovljenjem u 04:15h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međun…"
+  "updated": "6.8.2026. 11:18",
+  "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
-  "updated": "6.8.2026. 08:18",
+  "updated": "6.8.2026. 11:18",
   "text": "Stanje u željezničkom putničkom prometu 6. kolovoza 2026. u 8.00 sati Zbog tehničkih poteškoća putnici sljedećih vlakova bit će prevezeni autobusom: 4710 Vodnjan 16.07 – Lupoglav 17.33 38103 Buzet 19.40 – Lupoglav 19.58 4717 Lupoglav 20.32 – Pula 22.16 Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog r…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "5.8.2026. 20:41",
-  "text": "Prometna prognoza za Hrvatsku za 6. kolovoza 2026 Tijekom jutarnjih i poslijepodnevnih sati usporenije će se voziti na gradskim cestama i obilaznicama, a povećana gustoća prometa moguća je i na cestama u smjeru mora. Zastoji i kolone mogući su na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A4 između čvorova Popovec i Zagreb istok, Istarskom ipsilonu (A8) između čvora i tunela Učka, Krčkom mostu (DC102) te na pojedinim dionicama Ličke (DC1) i Jadranske (DC8) magistrale. U drugom dijelu noći na sjevernom će Jadranu zapuhati jaka bura pa su moguće zabrane i ograničenja za pojedine skupine vozila, a moguće su i poteškoće u pomorskom prometu. Na graničnim prijelazima s Bosnom i Hercego…"
+  "updated": "6.8.2026. 08:55",
+  "text": "Prometna prognoza za Hrvatsku za 7. kolovoza 2026. Od sredine dana ponajprije u unutrašnjosti te sjevernom i srednjem Jadranu vozit će se po mjestimice mokrim i skliskim kolnicima, a zbog lokalno izraženijih pljuskova moguće je zadržavanje veće količine vode na kolniku. Zbog olujne bure u priobalju očekujemo ograničenja za pojedine skupine vozila, osobito na dionicama Jadranske magistrale. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. Pojačan promet očekujemo na svim važnijim cestovnim pravcima u smjeru mora i unutrašnjosti, gradskim prometnicama i obilaznicama, a osobito na autocestama A1 i A6 u smjeru mora, A2 kod čvo…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
