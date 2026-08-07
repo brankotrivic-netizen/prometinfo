@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-07T16:31:40.394Z";
+export const PROMET_SI_UPDATED = "2026-08-07T17:31:03.179Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868419;af013508-4fab-4aee-9466-856e6b849db9",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Koper - Izola, izvoz Izola iz smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "G2-111, Koper - Izola",
+  "lat": 45.53657,
+  "lng": 13.67723,
+  "start": "2026-08-07T17:06:43.3Z",
+  "end": "2026-08-07T20:00:15.33Z",
+  "ts": "2026-08-07T17:07:00.53Z"
+ },
  {
   "id": "DARS;868413;89663b6b-b2af-4090-908f-802ca3ef3539",
   "type": "MaintenanceWorks",
@@ -26,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-07T13:00:53.04Z"
  },
  {
-  "id": "DARS;868367;3ad56c5a-ea10-48a6-b4c0-bb24b07f819a",
-  "type": "MaintenanceWorks",
-  "desc": "RT-919, Podzemelj - Dolenjci, pri Podzemlju, oviran promet, košnja, do 19:00.",
-  "loc": "RT-919, Podzemelj - Dolenjci",
-  "lat": 45.61256,
-  "lng": 15.27126,
-  "start": "2026-08-07T13:00:00Z",
-  "end": "2026-08-07T17:00:00Z",
-  "ts": "2026-08-07T11:39:54.757Z"
- },
- {
   "id": "DARS;868272;7d35dc98-64cf-49c3-80c8-5575a7609dd3",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-102, Idrsko - Peršeti, na Volarjah, izmenično enosmerni promet, sanacije drsnih vozišč, do 11. 8. 2026.",
@@ -46,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T05:54:11.597Z",
   "end": "2026-08-11T15:00:00Z",
   "ts": "2026-08-07T05:55:44.027Z"
- },
- {
-  "id": "DARS;868235;bc9afc97-74da-4dc0-bec7-2b368d7da0f0",
-  "type": "MaintenanceWorks",
-  "desc": "R1-216, Črmošnjice - Črnomelj, v Vrčicah, oviran promet, košnja, do 19:00.",
-  "loc": "R1-216, Črmošnjice - Črnomelj",
-  "lat": 45.64714,
-  "lng": 15.14755,
-  "start": "2026-08-07T04:03:57.943Z",
-  "end": "2026-08-07T17:00:00Z",
-  "ts": "2026-08-07T04:05:24.873Z"
  },
  {
   "id": "DARS;868211;9b160530-e79e-4b46-91e9-495e2c6eed9f",

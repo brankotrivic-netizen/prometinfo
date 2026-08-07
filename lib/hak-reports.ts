@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "7.8.2026. 18:27",
-  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju na Jadranskoj magistrali (opširnije u izvješću). Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Zastoji su povremeno na dionicama cesta gdje traju radovi, osobito na autocestama na prilazima naplatnim postajama, tunelima te u zonama odmorišta. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići pojačan je promet između čvora Bosiljevo 2 i naplate Lučko u smjeru Zagreba, vozi se u kolonama u pokretu uz povremene zastoje pre…"
+  "updated": "7.8.2026. 19:30",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju na Jadranskoj magistrali (opširnije u izvješću). Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Zastoji su povremeno na dionicama cesta gdje traju radovi, osobito na autocestama na prilazima naplatnim postajama, tunelima te u zonama odmorišta. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići pojačan je promet između čvora Karlovac i naplate Lučko u smjeru Zagreba, vozi se u kolonama u pokretu uz povremene zastoje pred n…"
  },
  {
   "title": "Granični prijelazi",
