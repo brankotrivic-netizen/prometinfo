@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-07T10:43:23.530Z";
+export const PROMET_SI_UPDATED = "2026-08-07T11:31:20.139Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868260;9dabf85c-84a1-4070-ba8a-23fc4e9edb38",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Koper - Škofije, razcep Srmin - priključek Škofije, Ankaran v smeri Škofij, Italije, dela, zaprt vozni pas.",
+  "loc": "G1-11, Koper - Škofije",
+  "lat": 45.55446,
+  "lng": 13.77835,
+  "start": "2026-08-07T05:40:25.9Z",
+  "end": "2026-08-07T16:00:09.207Z",
+  "ts": "2026-08-07T11:02:52.483Z"
+ },
  {
   "id": "DARS;868325;8494f02b-f585-4d64-8743-b1d6d5afff1f",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -46,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T06:29:33.81Z",
   "end": "2026-08-07T12:00:00Z",
   "ts": "2026-08-07T06:30:07.437Z"
- },
- {
-  "id": "DARS;868275;61a4051c-5a66-463d-b711-d7457a8a1106",
-  "type": "MaintenanceWorks",
-  "desc": "RT-930, Pesek - Oplotnica, pri Oplotnici, oviran promet, barvanje talnih označb, do 13:00.",
-  "loc": "RT-930, Pesek - Oplotnica",
-  "lat": 46.39846,
-  "lng": 15.44251,
-  "start": "2026-08-07T05:56:46.703Z",
-  "end": "2026-08-07T11:00:00Z",
-  "ts": "2026-08-07T06:28:26.833Z"
  },
  {
   "id": "DARS;868277;cbb58013-820e-4906-a2fe-7286b12d03fd",
@@ -147,17 +147,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-07T05:51:10.13Z"
  },
  {
-  "id": "DARS;868260;9dabf85c-84a1-4070-ba8a-23fc4e9edb38",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, priključek Bertoki - razcep Srmin v smeri Ljubljane, dela, oviran promet.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.54731,
-  "lng": 13.76495,
-  "start": "2026-08-07T05:40:25.9Z",
-  "end": "2026-08-07T16:00:09.207Z",
-  "ts": "2026-08-07T05:41:01.637Z"
- },
- {
   "id": "DARS;868259;8b0c9d23-a1dd-44c2-bf13-a8cfb555f3d3",
   "type": "MaintenanceWorks",
   "desc": "R2-419, Šentjernej - Križaj, pri Gornji Prekopi, oviran promet, košnja, do 18:00.",
@@ -178,17 +167,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T05:33:11.94Z",
   "end": "2026-08-07T13:00:00Z",
   "ts": "2026-08-07T05:34:03.387Z"
- },
- {
-  "id": "DARS;868247;0c9f5095-271f-400d-8a67-6a488bff3eb4",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Maribor - Gruškovje (Hrvaška), priključek Podlehnik - prehod Gruškovje v smeri Hrvaške, dela, oviran promet, pobiranje smeti.",
-  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
-  "lat": 46.33525,
-  "lng": 15.8765,
-  "start": "2026-08-07T05:04:01.683Z",
-  "end": "2026-08-07T11:00:00Z",
-  "ts": "2026-08-07T05:04:24.387Z"
  },
  {
   "id": "DARS;868244;96917784-15ed-40fe-af3f-38b3e731c680",
