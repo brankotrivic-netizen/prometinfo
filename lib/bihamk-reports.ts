@@ -111,6 +111,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-442a Hadžići-Donja Grkarica (dionica od spoja sa lokalnom cestom za Igmansku džamiju do kružne raskrsnice kod Doma policije), zbog sanacionih radova saobraća se usporeno, jednom trakom."
    },
    {
+    "title": "R-439 Gornji Vakuf/Uskoplje- Novi Travnik",
+    "text": "Bistrica, u toku su sanacioni radovi, zbog čega se svakim danom (osim nedjelje) u vremenu od 7 do 16:30 sati saobraća usporeno, jednom trakom."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }

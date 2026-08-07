@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-07T09:56:31.855Z";
+export const PROMET_SI_UPDATED = "2026-08-07T10:43:23.530Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;868325;8494f02b-f585-4d64-8743-b1d6d5afff1f",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T09:31:24.35Z",
   "end": "2026-08-07T12:00:00Z",
   "ts": "2026-08-07T09:32:03.87Z"
- },
- {
-  "id": "DARS;868320;d67f389b-3f20-4d4d-a3c1-436f9630167a",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, uvoz Ljubljana Nove Jarše - uvoz Ljubljana Nove Jarše v smeri Zadobrove, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.06914,
-  "lng": 14.55292,
-  "start": "2026-08-07T09:14:28.467Z",
-  "end": "2026-08-07T11:30:13.3Z",
-  "ts": "2026-08-07T09:14:31.653Z"
  },
  {
   "id": "DARS;868283;9545a90e-e4c3-45f5-bcea-fac272411e7b",
@@ -189,17 +178,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T05:33:11.94Z",
   "end": "2026-08-07T13:00:00Z",
   "ts": "2026-08-07T05:34:03.387Z"
- },
- {
-  "id": "DARS;868251;53b3cc74-0f03-4312-a908-a6c60a4df2ef",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - zahodna obvoznica, priključek Ljubljana Brdo - razcep Koseze v smeri Kosez, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - zah. obvoznica",
-  "lat": 46.06398,
-  "lng": 14.45621,
-  "start": "2026-08-07T05:20:54.5Z",
-  "end": "2026-08-07T11:00:00Z",
-  "ts": "2026-08-07T05:20:56.72Z"
  },
  {
   "id": "DARS;868247;0c9f5095-271f-400d-8a67-6a488bff3eb4",
