@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "7.8.2026. 01:46",
-  "text": "Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI do danas u 18:00 sati zbog radova na željezničko-cestovnom prijelazu Jabuka na državnoj cesti DC33 u mjestu Siverić promet je obustavljen i preusmjerava se na obilazak: DC33 Drniš-ŽC6055-Oklaj-ŽC6056-Vrbnik-DC33-Siverić i obrnuto. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja promet…"
+  "updated": "7.8.2026. 07:23",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa između naplate Lučko i čvora Bosiljevo 2 u smjeru mora zbog prometne nesreće između čvorova Donja Zdenčina i Jastrebarsko, na 18. km u smjeru mora, vozi se jednim trakom usporeno u koloni od oko 1 km A2 Zagreb-Macelj…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "6.8.2026. 21:02",
-  "text": "Kolona teretnih vozila na autocesti A3 između 304+500 km i graničnog prijelaza GP Bajakovo u smjeru Lipovca duga je 1 km, vozi se uz ograničenje brzine od 40 km/h Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, poda…"
+  "updated": "7.8.2026. 07:20",
+  "text": "Na graničnom prijelazu Ličko Petrovo Selo prekinut je promet teretnih vozila na izlasku iz zemlje zbog popunjenosti terminala. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vr…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "6.8.2026. 21:42",
-  "text": "U pomorskom prometu nema poteškoća. Katamaranska linija 323 Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun Tovarnele u prekidu Državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 07.08.2026 od HSC Jadera preuzima HSC Kolovare u luci Ubli isplovljenjem u 04:15h. Državnu liniju br. 9808 Ubli (Lastovo) - Korčula - Sobra (Mljet) - Dubrovnik i obratno 07.08.2026 od HSC Kolovare preuzima HSC Jadera u luci Ubli isplovljenjem u 06:00h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjena…"
+  "updated": "7.8.2026. 07:20",
+  "text": "U prekidu je k atamaranska linija Ja drolinije 323 Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun Tovarnele. Državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 07.08.2026 od HSC Jadera preuzima HSC Kolovare u luci Ubli isplovljenjem u 04:15h. Državnu liniju br. 9808 Ubli (Lastovo) - Korčula - Sobra (Mljet) - Dubrovnik i obratno 07.08.2026 od HSC Kolovare preuzima HSC Jadera u luci Ubli isplovljenjem u 06:00h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o granič…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "6.8.2026. 21:02",
+  "updated": "7.8.2026. 07:20",
   "text": "Stanje u željezničkom putničkom prometu 6. kolovoza 2026. u 8.00 sati Zbog tehničkih poteškoća putnici sljedećih vlakova bit će prevezeni autobusom: 4710 Vodnjan 16.07 – Lupoglav 17.33 38103 Buzet 19.40 – Lupoglav 19.58 4717 Lupoglav 20.32 – Pula 22.16 Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog r…"
  },
  {
