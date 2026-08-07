@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-07T07:59:10.867Z";
+export const PROMET_SI_UPDATED = "2026-08-07T08:57:49.868Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;868283;9545a90e-e4c3-45f5-bcea-fac272411e7b",
@@ -354,17 +354,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T04:00:00Z",
   "end": "2026-08-07T12:00:00Z",
   "ts": "2026-08-07T03:50:46.04Z"
- },
- {
-  "id": "DARS;868224;caf661ed-97ce-4d6d-bce1-deac995f7904",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-632, Ilirska Bistrica - Novokračine, pri Zabičah, izmenično enosmerni promet, košnja, do 10:30.",
-  "loc": "R3-632, Ilirska Bistrica - Novokračine",
-  "lat": 45.5216,
-  "lng": 14.33369,
-  "start": "2026-08-07T04:00:00Z",
-  "end": "2026-08-07T08:30:00Z",
-  "ts": "2026-08-07T03:48:27.507Z"
  },
  {
   "id": "DARS;868223;929252e1-0070-44c6-adb7-f8bd033715f5",
