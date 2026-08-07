@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-07T08:57:49.868Z";
+export const PROMET_SI_UPDATED = "2026-08-07T09:56:31.855Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868325;8494f02b-f585-4d64-8743-b1d6d5afff1f",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "RT-928, Mozirje - Golte, pri Brezjah, izmenično enosmerni promet, čiščenje jarkov, do 14:00.",
+  "loc": "RT-928, Mozirje - Golte",
+  "lat": 46.34881,
+  "lng": 14.95102,
+  "start": "2026-08-07T09:31:24.35Z",
+  "end": "2026-08-07T12:00:00Z",
+  "ts": "2026-08-07T09:32:03.87Z"
+ },
+ {
+  "id": "DARS;868320;d67f389b-3f20-4d4d-a3c1-436f9630167a",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, uvoz Ljubljana Nove Jarše - uvoz Ljubljana Nove Jarše v smeri Zadobrove, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.06914,
+  "lng": 14.55292,
+  "start": "2026-08-07T09:14:28.467Z",
+  "end": "2026-08-07T11:30:13.3Z",
+  "ts": "2026-08-07T09:14:31.653Z"
+ },
  {
   "id": "DARS;868283;9545a90e-e4c3-45f5-bcea-fac272411e7b",
   "type": "MaintenanceWorks",
@@ -167,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T05:33:11.94Z",
   "end": "2026-08-07T13:00:00Z",
   "ts": "2026-08-07T05:34:03.387Z"
- },
- {
-  "id": "DARS;868254;88ff10e9-a0bd-4187-b685-b62003ed4b93",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Pince - priključek Lendava v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.53341,
-  "lng": 16.47583,
-  "start": "2026-08-07T05:26:51.61Z",
-  "end": "2026-08-07T10:00:50.303Z",
-  "ts": "2026-08-07T05:27:03.643Z"
  },
  {
   "id": "DARS;868251;53b3cc74-0f03-4312-a908-a6c60a4df2ef",
@@ -354,6 +365,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T04:00:00Z",
   "end": "2026-08-07T12:00:00Z",
   "ts": "2026-08-07T03:50:46.04Z"
+ },
+ {
+  "id": "DARS;868225;9c90de68-07d9-4beb-b7e4-0d9f8dfb302a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-404, Podgrad - Ilirska Bistrica, Podgrad - Zalči, dela, izmenično enosmerni promet, do 14:00.",
+  "loc": "R2-404, Podgrad - Ilirska Bistrica",
+  "lat": 45.54469,
+  "lng": 14.17608,
+  "start": "2026-08-07T09:00:00Z",
+  "end": "2026-08-07T12:00:00Z",
+  "ts": "2026-08-07T03:49:26.533Z"
  },
  {
   "id": "DARS;868223;929252e1-0070-44c6-adb7-f8bd033715f5",
