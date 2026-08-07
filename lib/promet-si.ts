@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-07T13:46:35.415Z";
+export const PROMET_SI_UPDATED = "2026-08-07T14:44:15.365Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868217;4d71ae27-cbb5-48b1-bf14-7ccb63dcd2de",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Jesenice zahod - predor Karavanke v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.44538,
+  "lng": 14.01208,
+  "start": "2026-08-07T03:07:44.963Z",
+  "end": "2026-08-07T17:00:00Z",
+  "ts": "2026-08-07T14:07:16.543Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -70,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-07T05:55:44.027Z"
  },
  {
-  "id": "DARS;868265;6ad90d05-7292-49ea-a890-96fa426ed7d7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-444, Selo - Ajševica - Vogrsko, Rožna Dolina - Ajševica, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
-  "loc": "R2-444, Selo - Nova Gorica",
-  "lat": 45.94461,
-  "lng": 13.68549,
-  "start": "2026-08-07T05:50:29.643Z",
-  "end": "2026-08-07T14:00:00Z",
-  "ts": "2026-08-07T05:51:10.13Z"
- },
- {
   "id": "DARS;868259;8b0c9d23-a1dd-44c2-bf13-a8cfb555f3d3",
   "type": "MaintenanceWorks",
   "desc": "R2-419, Šentjernej - Križaj, pri Gornji Prekopi, oviran promet, košnja, do 18:00.",
@@ -123,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T04:03:57.943Z",
   "end": "2026-08-07T17:00:00Z",
   "ts": "2026-08-07T04:05:24.873Z"
- },
- {
-  "id": "DARS;868217;4d71ae27-cbb5-48b1-bf14-7ccb63dcd2de",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, uvoz Jesenice zahod - predor Karavanke v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.44538,
-  "lng": 14.01208,
-  "start": "2026-08-07T03:07:44.963Z",
-  "end": "2026-08-07T14:10:13.737Z",
-  "ts": "2026-08-07T03:07:52.5Z"
  },
  {
   "id": "DARS;868211;9b160530-e79e-4b46-91e9-495e2c6eed9f",
