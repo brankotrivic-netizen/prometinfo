@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-07T17:31:03.179Z";
+export const PROMET_SI_UPDATED = "2026-08-07T18:28:00.328Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868428;6dba0cf6-f111-455c-9c6f-cb28e1c2d018",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, priključek Pince - prehod Pince v smeri Madžarske, dela, zaprt vozni pas.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.52163,
+  "lng": 16.51963,
+  "start": "2026-08-07T18:17:50.7Z",
+  "end": "2026-08-08T00:00:00Z",
+  "ts": "2026-08-07T18:18:46.933Z"
+ },
+ {
+  "id": "DARS;868427;7bd0cfa4-004b-4508-ad57-2d2bf4ea757f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, uvoz Trojane - uvoz Vransko v smeri Maribora, dela, oviran promet, košnja.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.19614,
+  "lng": 14.90234,
+  "start": "2026-08-07T18:04:07.11Z",
+  "end": "2026-08-07T23:00:06.337Z",
+  "ts": "2026-08-07T18:04:25.083Z"
+ },
+ {
+  "id": "DARS;868426;675acec4-b545-494a-bcaa-21a15e19b3e6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Senožeče - razcep Gabrk v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.72158,
+  "lng": 14.00889,
+  "start": "2026-08-07T18:02:38.99Z",
+  "end": "2026-08-07T21:30:15.38Z",
+  "ts": "2026-08-07T18:03:18.067Z"
+ },
+ {
+  "id": "DARS;868422;d0d1d074-154e-4bf2-8ab9-200d7927871a",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - priključek Sl. Bistrica jug v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.35962,
+  "lng": 15.50502,
+  "start": "2026-08-07T17:37:16.713Z",
+  "end": "2026-08-07T21:00:56.947Z",
+  "ts": "2026-08-07T17:37:22.757Z"
+ },
  {
   "id": "DARS;868419;af013508-4fab-4aee-9466-856e6b849db9",
   "type": "MaintenanceWorks",
@@ -13,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T17:06:43.3Z",
   "end": "2026-08-07T20:00:15.33Z",
   "ts": "2026-08-07T17:07:00.53Z"
- },
- {
-  "id": "DARS;868413;89663b6b-b2af-4090-908f-802ca3ef3539",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, prehod Pince - prehod Pince v smeri Madžarske, dela, zaprt prehitevalni pas, barvanje talnih označb.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.52165,
-  "lng": 16.51957,
-  "start": "2026-08-07T16:07:25.67Z",
-  "end": "2026-08-07T22:00:00Z",
-  "ts": "2026-08-07T16:07:40.087Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",

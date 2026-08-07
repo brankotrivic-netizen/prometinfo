@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "7.8.2026. 19:30",
-  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju na Jadranskoj magistrali (opširnije u izvješću). Pojačan je promet na važnijim cestama, gradskim cestama i obilaznicama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Zastoji su povremeno na dionicama cesta gdje traju radovi, osobito na autocestama na prilazima naplatnim postajama, tunelima te u zonama odmorišta. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići pojačan je promet između čvora Karlovac i naplate Lučko u smjeru Zagreba, vozi se u kolonama u pokretu uz povremene zastoje pred n…"
+  "updated": "7.8.2026. 20:12",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju na Jadranskoj magistrali (opširnije u izvješću). Zastoji su povremeno na dionicama cesta gdje traju radovi, osobito na autocestama na prilazima naplatnim postajama, tunelima te u zonama odmorišta. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići pred naplatama Demerje i Lučko u oba smjera nema dužih čekanja DC1 Zagreb-Split u zoni radova između Knina i Gračaca kod Otrića, vozi se usporeno Grad Sisak zbog prometne nesreće prekinut je promet u Ulici Božidara Adžije u Sisku. Obilazak regulira prometna policija AUTOCESTE A1 Zagreb-Split-Dubrovnik IZV…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,22 +13,22 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "7.8.2026. 17:52",
+  "updated": "7.8.2026. 20:05",
   "text": "U prekidu je k atamaranska linija Ja drolinije 323 Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun Tovarnele. Državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 07.08.2026 od HSC Jadera preuzima HSC Kolovare u luci Ubli isplovljenjem u 04:15h. Državnu liniju br. 9808 Ubli (Lastovo) - Korčula - Sobra (Mljet) - Dubrovnik i obratno 07.08.2026 od HSC Kolovare preuzima HSC Jadera u luci Ubli isplovljenjem u 06:00h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o granič…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "7.8.2026. 17:52",
+  "updated": "7.8.2026. 20:05",
   "text": "Stanje u željezničkom putničkom prometu 7. kolovoza 2026. u 8.00 sati Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - izmeđ…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "6.8.2026. 21:03",
+  "updated": "7.8.2026. 20:05",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "7.8.2026. 13:04",
+  "updated": "7.8.2026. 20:05",
   "text": "Prometna prognoza za Hrvatsku za 8. kolovoza 2026. Zbog bure na Jadranu moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Pojačan promet očekuje se na većini cesta u smjeru mora. Kolone i zastoji su mogući na zagrebačkoj obilaznici (A3) iz smjera čvorova Buzin i Zagreb zapad u smjeru naplate Lučko, na autocesti A1 Zagreb-Ploče-Karamatići osobito između čvorova Lučko i Bosiljevo, riječkoj obilaznici, Istarskom ipsilonu, na Krčkom mostu i otoku Krku te na prilazima turističkim mjestima na obali. Zastoji su mogući u zonama radova, a na autocestama u zonama odmorišta, naplata i tunela. Vozačima savjetujemo da putuju tijekom noći, ranih jutarnjih sat…"
  },
  {
