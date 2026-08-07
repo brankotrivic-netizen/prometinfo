@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-07T15:35:55.176Z";
+export const PROMET_SI_UPDATED = "2026-08-07T16:31:40.394Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868413;89663b6b-b2af-4090-908f-802ca3ef3539",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, prehod Pince - prehod Pince v smeri Madžarske, dela, zaprt prehitevalni pas, barvanje talnih označb.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.52165,
+  "lng": 16.51957,
+  "start": "2026-08-07T16:07:25.67Z",
+  "end": "2026-08-07T22:00:00Z",
+  "ts": "2026-08-07T16:07:40.087Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-07T13:00:53.04Z"
- },
- {
-  "id": "DARS;868222;22c0e704-e23e-41ee-a6b8-8241271dd452",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, predor Kastelec - počivališče Ravne v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.58222,
-  "lng": 13.90635,
-  "start": "2026-08-07T03:46:01.343Z",
-  "end": "2026-08-07T16:00:00Z",
-  "ts": "2026-08-07T12:56:21.86Z"
  },
  {
   "id": "DARS;868367;3ad56c5a-ea10-48a6-b4c0-bb24b07f819a",
@@ -37,28 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-07T11:39:54.757Z"
  },
  {
-  "id": "DARS;868260;9dabf85c-84a1-4070-ba8a-23fc4e9edb38",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, razcep Srmin - priključek Škofije, Ankaran v smeri Škofij, Italije, dela, zaprt vozni pas.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.55446,
-  "lng": 13.77835,
-  "start": "2026-08-07T05:40:25.9Z",
-  "end": "2026-08-07T16:00:09.207Z",
-  "ts": "2026-08-07T11:02:52.483Z"
- },
- {
-  "id": "DARS;868341;67164c37-bab6-479f-a352-ee1608901a87",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-4, Črnova - Arja vas, pri Veliki Pirešici, izmenično enosmerni promet, vzdrževalna dela, do 18:00.",
-  "loc": "G1-4, Črnova - Arja Vas",
-  "lat": 46.29215,
-  "lng": 15.17223,
-  "start": "2026-08-07T12:00:00Z",
-  "end": "2026-08-07T16:00:00Z",
-  "ts": "2026-08-07T10:45:28.45Z"
- },
- {
   "id": "DARS;868272;7d35dc98-64cf-49c3-80c8-5575a7609dd3",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-102, Idrsko - Peršeti, na Volarjah, izmenično enosmerni promet, sanacije drsnih vozišč, do 11. 8. 2026.",
@@ -68,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-07T05:54:11.597Z",
   "end": "2026-08-11T15:00:00Z",
   "ts": "2026-08-07T05:55:44.027Z"
- },
- {
-  "id": "DARS;868259;8b0c9d23-a1dd-44c2-bf13-a8cfb555f3d3",
-  "type": "MaintenanceWorks",
-  "desc": "R2-419, Šentjernej - Križaj, pri Gornji Prekopi, oviran promet, košnja, do 18:00.",
-  "loc": "R2-419, Šentjernej - Križaj",
-  "lat": 45.85068,
-  "lng": 15.36835,
-  "start": "2026-08-07T05:34:32.74Z",
-  "end": "2026-08-07T16:00:00Z",
-  "ts": "2026-08-07T05:35:17.963Z"
- },
- {
-  "id": "DARS;868236;2fc7b272-3c34-49c2-803c-6f724e03b585",
-  "type": "MaintenanceWorks",
-  "desc": "R1-218, Podzemelj - Črnomelj, pri Vranovičih, oviran promet, košnja, do 18:00.",
-  "loc": "R1-218, Podzemelj - Črnomelj",
-  "lat": 45.59846,
-  "lng": 15.23015,
-  "start": "2026-08-07T04:05:49.21Z",
-  "end": "2026-08-07T16:00:00Z",
-  "ts": "2026-08-07T04:06:23.017Z"
  },
  {
   "id": "DARS;868235;bc9afc97-74da-4dc0-bec7-2b368d7da0f0",

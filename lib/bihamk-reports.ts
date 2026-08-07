@@ -30,10 +30,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na rekonstrukciji raskrsnice na M-17 Ozimica-Topčić Polje na lokalitetu Papratnica svaki dan, osim nedjelje) od 07 do 16:30 sati saobraća se jednom trakom, naizmjenično."
    },
    {
-    "title": "Konjic-Jablanica",
-    "text": "U toku su radovi na zamjeni dilatacije na Ribićkom mostu, u dužini od 20m saobraća se usporeno-jednom trakom"
-   },
-   {
     "title": "Bihać-Ripač (Orljani)",
     "text": "Zbog radova na sanaciji nadvožnjaka na lokalitetu Orljani na magistralnoj cesti Bihać-Ripač, zatvoreno je skretanje sa magistralne ceste prema naselju Ribić-Orljani."
    },
