@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-07T22:05:01.965Z";
+export const PROMET_SI_UPDATED = "2026-08-08T04:45:33.469Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868468;158a69ef-f61a-4f02-80c8-6f32084904c7",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-4, Velenje - Arja vas, pri kamnolomu pri Veliki Pirešici, izmenično enosmerni promet, sanacija priključka, do 17:00.",
+  "loc": "G1-4, Črnova - Arja Vas",
+  "lat": 46.29203,
+  "lng": 15.17239,
+  "start": "2026-08-08T04:42:07.34Z",
+  "end": "2026-08-08T15:00:00Z",
+  "ts": "2026-08-08T04:44:56.433Z"
+ },
+ {
+  "id": "DARS;860653;2ad65407-fbf1-4662-a8bc-bb9efc0a477c",
+  "type": "MaintenanceWorks",
+  "desc": "R1-206, Bovec - Vršič - Kranjska Gora, pri Trenti, oviran promet, občasno promet urejen izmenično enosmerno, ureditve brežine in začasnega gradbiščnega priključka, do 17:00.",
+  "loc": "R1-206, Trenta - Bovec",
+  "lat": 46.35897,
+  "lng": 13.70545,
+  "start": "2026-07-01T07:12:07.65Z",
+  "end": "2026-08-08T15:00:00Z",
+  "ts": "2026-08-08T03:59:41.713Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -675,17 +697,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-01T10:02:42.58Z"
  },
  {
-  "id": "DARS;860653;2ad65407-fbf1-4662-a8bc-bb9efc0a477c",
-  "type": "MaintenanceWorks",
-  "desc": "R1-206, Bovec - Vršič - Kranjska Gora, pri Trenti, oviran promet, občasno promet urejen izmenično enosmerno, ureditve brežine in začasnega gradbiščnega priključka, do 8. 8. 2026.",
-  "loc": "R1-206, Trenta - Bovec",
-  "lat": 46.35897,
-  "lng": 13.70545,
-  "start": "2026-07-01T07:12:07.65Z",
-  "end": "2026-08-08T21:59:00Z",
-  "ts": "2026-07-01T07:13:05.613Z"
- },
- {
   "id": "DARS;823378;9ed2b8d7-7f5e-40fd-9ced-de3ceb59ea8a",
   "type": "MaintenanceWorks",
   "desc": "G1-2, Ptuj - Ormož, pri Ormožu, popolna zapora, promet poteka ob gradbišču, izgradnja nadvoza, do 31. 10. 2027.",
@@ -728,17 +739,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-29T06:58:06.677Z",
   "end": "2026-11-20T22:59:00Z",
   "ts": "2026-06-29T07:00:52.26Z"
- },
- {
-  "id": "DARS;849179;a9b7429b-9c09-4679-8043-94b24eae0d7c",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Naklo - priključek Kranj vzhod v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih, fizično ločenih.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.27761,
-  "lng": 14.3116,
-  "start": "2026-05-11T05:42:25.747Z",
-  "end": "2026-08-11T20:00:00Z",
-  "ts": "2026-06-24T03:09:29.687Z"
  },
  {
   "id": "DARS;842847;ee4f254e-fcaf-48a3-8d40-dc1b66785830",
