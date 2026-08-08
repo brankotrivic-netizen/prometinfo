@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-08T04:45:33.469Z";
+export const PROMET_SI_UPDATED = "2026-08-08T05:34:09.988Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868474;11c21fa0-f363-4373-964e-3eaebd0556b6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Črni Kal - predor Dekani v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.556,
+  "lng": 13.84302,
+  "start": "2026-08-08T05:26:55.997Z",
+  "end": "2026-08-08T11:00:22.947Z",
+  "ts": "2026-08-08T05:27:12.207Z"
+ },
+ {
+  "id": "DARS;868469;c688c9e5-b580-422a-8c5f-33a7a7fa72a7",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-630, Prem - Obrov, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "R3-630, Prem - Obrov",
+  "lat": 45.5951,
+  "lng": 14.1716,
+  "start": "2026-08-08T04:45:55.55Z",
+  "end": "2026-08-08T12:00:00Z",
+  "ts": "2026-08-08T04:46:19.113Z"
+ },
  {
   "id": "DARS;868468;158a69ef-f61a-4f02-80c8-6f32084904c7",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -24,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-01T07:12:07.65Z",
   "end": "2026-08-08T15:00:00Z",
   "ts": "2026-08-08T03:59:41.713Z"
- },
- {
-  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
-  "type": "MaintenanceWorks",
-  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
-  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
-  "lat": 46.20334,
-  "lng": 15.25907,
-  "start": "2026-07-29T13:00:00Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-07T13:00:53.04Z"
  },
  {
   "id": "DARS;868272;7d35dc98-64cf-49c3-80c8-5575a7609dd3",

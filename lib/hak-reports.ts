@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.8.2026. 06:43",
-  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na većini cesta u smjeru mora, posebice na autocestama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik pojačan je promet između naplatnih postaja Lučko i čvora Bosiljevo 2 u smjeru mora, vozi se u kolonama, uz zastoje A2 Zagreb-Macelj kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je duga oko 5 km A3 Bregana-Lipovac prema naplatnim postajama Lučko iz smjera Buzina kolona je duga oko 4 km i raste AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati pr…"
+  "updated": "8.8.2026. 07:15",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na većini cesta u smjeru mora, posebice na autocestama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik pojačan je promet između naplatnih postaja Lučko i čvora Bosiljevo 2 u smjeru mora, vozi se u kolonama, uz zastoje A2 Zagreb-Macelj kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je duga oko 5 km A3 Bregana-Lipovac prema naplatnim postajama Lučko iz smjera Buzina kolona je duga oko 4 km AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "8.8.2026. 06:00",
-  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
+  "updated": "8.8.2026. 07:26",
+  "text": "Kolona osobnih i teretnih vozila na autocesti A3 između 301+500 km i graničnog prijelaza GP Bajakovo u smjeru Lipovca duga je 4 km. Promet se vodi po dvije prometne trake uz ograničenje brzine od 40 km/h. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "8.8.2026. 06:25",
-  "text": "U prekidu je k atamaranska linija Ja drolinije 323 Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun Tovarnele. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
+  "updated": "8.8.2026. 07:18",
+  "text": "Zbog većeg priljeva vozila u pojedinim trajektnim lukama moguća su čekanja za ukrcaj. U prekidu je k atamaranska linija Kraljevica - otok Pag (Crikvenica-Senj-Baška-Lopar-Rab-Lun Tovarnele). Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni prome…"
  },
  {
   "title": "Željeznički promet",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "8.8.2026. 00:46",
-  "text": "Prometna prognoza za Hrvatsku za 8. kolovoza 2026. Zbog bure na Jadranu moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Pojačan promet očekuje se na većini cesta u smjeru mora. Kolone i zastoji su mogući na zagrebačkoj obilaznici (A3) iz smjera čvorova Buzin i Zagreb zapad u smjeru naplate Lučko, na autocesti A1 Zagreb-Ploče-Karamatići osobito između čvorova Lučko i Bosiljevo, riječkoj obilaznici, Istarskom ipsilonu, na Krčkom mostu i otoku Krku te na prilazima turističkim mjestima na obali. Zastoji su mogući u zonama radova, a na autocestama u zonama odmorišta, naplata i tunela. Vozačima savjetujemo da putuju tijekom noći, ranih jutarnjih sat…"
+  "updated": "8.8.2026. 07:04",
+  "text": "Prometna prognoza za Hrvatsku za 9. kolovoza 2026. Zbog bure u priobalju moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Pojačan promet očekujemo na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. Ljetna zabrana prometa za teretna motorna vozila najveće dopuštene mase iznad 7,5 t na pojedinim državnim cestama u Istri i priobalju (osim na autocestama i državnoj cesti DC1) bit će u nedjelju od 12 do 23 sata. Na većini graničnih prijelaza moguća su duža čekanja u putničkom i teretnom prometu. Mogući su por…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
