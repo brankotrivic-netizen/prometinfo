@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-08T14:47:04.388Z";
+export const PROMET_SI_UPDATED = "2026-08-08T15:18:10.904Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -24,28 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-08T08:20:47.563Z",
   "end": "2026-08-08T16:00:00Z",
   "ts": "2026-08-08T08:21:13.77Z"
- },
- {
-  "id": "DARS;868468;158a69ef-f61a-4f02-80c8-6f32084904c7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-4, Velenje - Arja vas, pri kamnolomu pri Veliki Pirešici, izmenično enosmerni promet, sanacija priključka, do 17:00.",
-  "loc": "G1-4, Črnova - Arja Vas",
-  "lat": 46.29203,
-  "lng": 15.17239,
-  "start": "2026-08-08T04:42:07.34Z",
-  "end": "2026-08-08T15:00:00Z",
-  "ts": "2026-08-08T04:44:56.433Z"
- },
- {
-  "id": "DARS;860653;2ad65407-fbf1-4662-a8bc-bb9efc0a477c",
-  "type": "MaintenanceWorks",
-  "desc": "R1-206, Bovec - Vršič - Kranjska Gora, pri Trenti, oviran promet, občasno promet urejen izmenično enosmerno, ureditve brežine in začasnega gradbiščnega priključka, do 17:00.",
-  "loc": "R1-206, Trenta - Bovec",
-  "lat": 46.35897,
-  "lng": 13.70545,
-  "start": "2026-07-01T07:12:07.65Z",
-  "end": "2026-08-08T15:00:00Z",
-  "ts": "2026-08-08T03:59:41.713Z"
  },
  {
   "id": "DARS;868272;7d35dc98-64cf-49c3-80c8-5575a7609dd3",
