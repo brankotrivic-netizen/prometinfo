@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.8.2026. 11:26",
-  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na većini cesta u smjeru mora i prema unutrašnjosti , posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik pojačan je promet između naplatnih postaja Lučko i čvora Zadar istok u oba smjera, mjestimice se vozi u koloni u pokretu, uz povremene kraće zastoje. na naplati Demerje u smjeru Zagreba kolona je 1 km A2 Zagreb-Macelj kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je duga …"
+  "updated": "8.8.2026. 12:01",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na većini cesta u smjeru mora i prema unutrašnjosti , posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik pojačan je promet između naplatnih postaja Lučko i čvora Zadar istok u oba smjera, mjestimice se vozi u koloni u pokretu, uz povremene kraće zastoje. na naplati Demerje u smjeru Zagreba kolona je 1 km između tunela Brezik i tunela Plasina u smjeru Dubrovnika povremeno se prekida pr…"
  },
  {
   "title": "Granični prijelazi",
