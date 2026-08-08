@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.8.2026. 19:54",
-  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Na glavnim cestovnim pravcima nema većih gužvi i zastoja. IZVANREDNI PROMETNI DOGAĐAJI A3 Bregana-Lipovac predmet kod čvora Ivanić-Grad u smjeru Lipovca - vozi se uz ograničenje brzine od 60 km/h A6 Rijeka-Zagreb predmet na 65.+000 km između čvorova Oštrovica i Kikovica u smjeru Rijeke - vozi se uz ograničenje brzine od 60 km/h brza cesta DC424 Zadar - Zemunik Gornji prometna nesreća - promet je u prekidu od izlaza Sveti Martin u smjeru sjevera ŽC5047 Vranja– Kastav promet je u prekidu između Veprinca i Učke AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sa…"
+  "updated": "8.8.2026. 20:24",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Na glavnim cestovnim pravcima nema većih gužvi i zastoja. IZVANREDNI PROMETNI DOGAĐAJI Opasnost je od naleta na životinju (srna) na autocesti A7 između čvora Učka i odmorišta Vrata Jadrana Jug - vozi se uz ograničenje brzine od 40 km/h brza cesta DC424 Zadar - Zemunik Gornji prometna nesreća - promet je u prekidu od izlaza Sveti Martin u smjeru sjevera AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1, u zoni…"
  },
  {
   "title": "Granični prijelazi",
