@@ -3,12 +3,12 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.8.2026. 18:13",
-  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Na glavnim cestovnim pravcima nema većih gužvi i zastoja. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik kod naplatnih postaja Demerje u smjeru Zagreba kolona je duga oko 1 km, a kod naplatnih postaja Lučko u oba smjera nema dužih kolona A3 Bregana-Lipovac životinja na autocesti A3 kod odmorišta Dragalić u smjeru Lipovca - vozi se uz ograničenje brzine od 40 km/h brza cesta DC424 Zadar - Zemunik Gornji prometna nesreća - promet je u prekidu od izlaza Sveti Martin u smjeru sjevera AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustav…"
+  "updated": "8.8.2026. 18:54",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Na glavnim cestovnim pravcima nema većih gužvi i zastoja. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik kod naplatnih postaja Demerje u smjeru Zagreba kolona je duga oko 1 km, a kod naplatnih postaja Lučko u oba smjera nema dužih kolona A3 Bregana-Lipovac životinja A3 kod odmorišta Dragalić u smjeru Lipovca - vozi se uz ograničenje brzine od 40 km/h Jadranska magistrala (DC8) prometna nesreća na ulazu u Novi Vinodolski u smjeru Senja - vozi se otežano jednim kolničkim trakom 0brza cesta DC424 Zadar - Zemunik Gornji prometna nesreća - promet je u prekidu od izlaza Sveti Martin u smjeru sjevera Ž…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "8.8.2026. 17:41",
+  "updated": "8.8.2026. 18:41",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
