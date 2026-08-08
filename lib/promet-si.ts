@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-08T08:05:30.583Z";
+export const PROMET_SI_UPDATED = "2026-08-08T08:57:32.469Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868511;d0f249e7-095d-4d08-bda8-ea8ab5bfb623",
+  "type": "MaintenanceWorks",
+  "desc": "G1-5, Brestanica - Krško, pri Guntah, oviran promet, košnja, do 18:00.",
+  "loc": "G1-5, Brestanica - Krško",
+  "lat": 45.98598,
+  "lng": 15.46662,
+  "start": "2026-08-08T08:20:47.563Z",
+  "end": "2026-08-08T16:00:00Z",
+  "ts": "2026-08-08T08:21:13.77Z"
+ },
  {
   "id": "DARS;868479;c02252e1-3662-43be-b2e4-640455643030",
   "type": "MaintenanceWorks",

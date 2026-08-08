@@ -3,13 +3,13 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.8.2026. 10:04",
+  "updated": "8.8.2026. 10:56",
   "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na većini cesta u smjeru mora i prema unutrašnjosti , posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik pojačan je promet između naplatnih postaja Lučko i čvora Bosiljevo 2 te između čvora Gornja Ploča i čvora Rovanjska u oba smjera, vozi se u koloni u pokretu, uz povremene zastoje. kod tunela Sveti Rok u smjeru Dubrovnika povremeno se zaustavlja promet iz sigurnosnih razloga (sprječ…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "8.8.2026. 07:26",
-  "text": "Kolona osobnih i teretnih vozila na autocesti A3 između 301+500 km i graničnog prijelaza GP Bajakovo u smjeru Lipovca duga je 4 km. Promet se vodi po dvije prometne trake uz ograničenje brzine od 40 km/h. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom…"
+  "updated": "8.8.2026. 10:11",
+  "text": "Kolona osobnih i teretnih vozila na autocesti A3 između 301+500 km i graničnog prijelaza GP Bajakovo u smjeru Lipovca duga je 3 km. Promet se vodi po dvije prometne trake uz ograničenje brzine od 40 km/h. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom…"
  },
  {
   "title": "Pomorski promet",
