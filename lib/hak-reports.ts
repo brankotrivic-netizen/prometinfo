@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.8.2026. 18:54",
-  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Na glavnim cestovnim pravcima nema većih gužvi i zastoja. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik kod naplatnih postaja Demerje u smjeru Zagreba kolona je duga oko 1 km, a kod naplatnih postaja Lučko u oba smjera nema dužih kolona A3 Bregana-Lipovac životinja A3 kod odmorišta Dragalić u smjeru Lipovca - vozi se uz ograničenje brzine od 40 km/h Jadranska magistrala (DC8) prometna nesreća na ulazu u Novi Vinodolski u smjeru Senja - vozi se otežano jednim kolničkim trakom 0brza cesta DC424 Zadar - Zemunik Gornji prometna nesreća - promet je u prekidu od izlaza Sveti Martin u smjeru sjevera Ž…"
+  "updated": "8.8.2026. 19:21",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Na glavnim cestovnim pravcima nema većih gužvi i zastoja. IZVANREDNI PROMETNI DOGAĐAJI Jadranska magistrala (DC8) prometna nesreća na ulazu u Novi Vinodolski u smjeru Senja - vozi se otežano jednim kolničkim trakom 0brza cesta DC424 Zadar - Zemunik Gornji prometna nesreća - promet je u prekidu od izlaza Sveti Martin u smjeru sjevera ŽC5047 Vranja– Kastav promet je u prekidu između Veprinca i Učke AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog p…"
  },
  {
   "title": "Granični prijelazi",
