@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.8.2026. 08:21",
-  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na većini cesta u smjeru mora, posebice na autocestama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik pojačan je promet između naplatnih postaja Lučko i čvora Bosiljevo 2 u smjeru mora, vozi se u kolonama, uz zastoje životinja (srna) na 7+000 km . Vozi se uz ograničenje brzine od 80 km/h. A2 Zagreb-Macelj kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je duga oko 4 km, a u smjeru Maclja 1 km A3 Bregana-Lipovac prema naplatnim postajama Lučko iz smjera Buzina kolona je duga oko 1 km životinja (p…"
+  "updated": "8.8.2026. 09:25",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na većini cesta u smjeru mora i prema unutrašnjosti , posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik pojačan je promet između naplatnih postaja Lučko i čvora Bosiljevo 2 te između čvora Sveti Rok i čvora Rovanjska u smjeru Dubrovnika, vozi se u koloni u pokretu, uz povremene zastoje. osobno vozilo u kvaru u tunelu Mala Kapela u smjeru Zagreba. Promet se vodi jednom prometnom trako…"
  },
  {
   "title": "Granični prijelazi",
