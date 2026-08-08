@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-08T11:50:53.422Z";
+export const PROMET_SI_UPDATED = "2026-08-08T12:22:47.336Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868560;169dc070-62c5-4c36-b9ab-7c2abe125fae",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, pred priključkom Šempeter - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.26978,
+  "lng": 15.1189,
+  "start": "2026-08-08T11:27:26.487Z",
+  "end": "2026-08-08T17:00:00Z",
+  "ts": "2026-08-08T11:54:50.36Z"
+ },
  {
   "id": "DARS;868535;3b1ec843-2a58-49f9-ab5a-1a0547605e81",
   "type": "MaintenanceWorks",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-08T08:20:47.563Z",
   "end": "2026-08-08T16:00:00Z",
   "ts": "2026-08-08T08:21:13.77Z"
- },
- {
-  "id": "DARS;868469;c688c9e5-b580-422a-8c5f-33a7a7fa72a7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-630, Prem - Obrov, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
-  "loc": "R3-630, Prem - Obrov",
-  "lat": 45.5951,
-  "lng": 14.1716,
-  "start": "2026-08-08T04:45:55.55Z",
-  "end": "2026-08-08T12:00:00Z",
-  "ts": "2026-08-08T04:46:19.113Z"
  },
  {
   "id": "DARS;868468;158a69ef-f61a-4f02-80c8-6f32084904c7",
