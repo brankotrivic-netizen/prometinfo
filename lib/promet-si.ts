@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-08T12:22:47.336Z";
+export const PROMET_SI_UPDATED = "2026-08-08T13:24:29.926Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;868560;169dc070-62c5-4c36-b9ab-7c2abe125fae",
+  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, pred priključkom Šempeter - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26978,
-  "lng": 15.1189,
-  "start": "2026-08-08T11:27:26.487Z",
-  "end": "2026-08-08T17:00:00Z",
-  "ts": "2026-08-08T11:54:50.36Z"
- },
- {
-  "id": "DARS;868535;3b1ec843-2a58-49f9-ab5a-1a0547605e81",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Vransko - predor Ločica v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.24993,
-  "lng": 14.97064,
-  "start": "2026-08-08T10:24:51.687Z",
-  "end": "2026-08-08T16:00:00Z",
-  "ts": "2026-08-08T10:28:02.577Z"
+  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
+  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
+  "lat": 46.20334,
+  "lng": 15.25907,
+  "start": "2026-07-29T13:00:00Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-08-08T13:00:52.15Z"
  },
  {
   "id": "DARS;868511;d0f249e7-095d-4d08-bda8-ea8ab5bfb623",
