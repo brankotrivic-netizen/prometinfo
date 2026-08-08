@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.8.2026. 09:25",
-  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na većini cesta u smjeru mora i prema unutrašnjosti , posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik pojačan je promet između naplatnih postaja Lučko i čvora Bosiljevo 2 te između čvora Sveti Rok i čvora Rovanjska u smjeru Dubrovnika, vozi se u koloni u pokretu, uz povremene zastoje. osobno vozilo u kvaru u tunelu Mala Kapela u smjeru Zagreba. Promet se vodi jednom prometnom trako…"
+  "updated": "8.8.2026. 10:04",
+  "text": "Ograničenja su zbog vjetra za pojedine skupine vozila u priobalju (opširnije u izvješću). Pojačan je promet na većini cesta u smjeru mora i prema unutrašnjosti , posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik pojačan je promet između naplatnih postaja Lučko i čvora Bosiljevo 2 te između čvora Gornja Ploča i čvora Rovanjska u oba smjera, vozi se u koloni u pokretu, uz povremene zastoje. kod tunela Sveti Rok u smjeru Dubrovnika povremeno se zaustavlja promet iz sigurnosnih razloga (sprječ…"
  },
  {
   "title": "Granični prijelazi",

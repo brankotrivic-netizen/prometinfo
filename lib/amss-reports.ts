@@ -234,11 +234,11 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Do 3. 9 .2026. na snazi izmena režima saobraćaja na državnom putu I B reda broj 19, deonica Kuzmin (Sr.Mitrovica) - granica SRB/BiH (Sremska Rača), zbog izvođenja radova na izgradnji novog graničnog prelaza na državnom putu I A reda broj 7. Za vreme izvođenja radova postavljena je signalizacija koja blagovremeno upozorava na opasnost zbog spajanja sporednog puta sa državnim putem i na suženje kolovoza. Izvor: Putevi Srbije"
  },
  {
-  "title": "Petlja Ruma-Drenovac, radovi",
-  "text": "Od 27. 7. do 31. 7. 2026. u toku svetlog dela dana, izvodiće se radovi na farbanju debeloslojnih oznaka, na državnom putu I A reda broj 8,deonica petlja Ruma-petlja Drenovac, u zoni naplatne stanice Ruma. Tokom izvođenja radova za saobraćaj će biti zatvorena preticajna, vozna ili zaustavna saobraćajna traka u dužini do 200m. Izvor:Putevi Srbije"
- },
- {
   "title": "Petlja Kovilj-petlja Novi Sad Jug, radovi",
   "text": "Od 27. 7. do 30. 7. 2026. godine, u toku svetlog dela dana, izvodiće se radovi na obeležavanju linija na petlji Kovilj - petlja Novi Sad Jug, smer ka Novom Sadu. Radovi će se odvijati u jednoj saobraćajnoj traci. Putevi Srbije"
+ },
+ {
+  "title": "Petlja Lasta- Petlja Bubanj Potok, radovi",
+  "text": "Od 27. 7. do 14. 8. 2026. u periodu od 7 do 18 časova, izvodiće se radovi na instalacijama javnog osvetljenja, na državnom putu I M reda broj 11, na deonici petlja Lasta - petlja Bubanj Potok, Mokroluško brdo, u smeru ka Beogradu (Faza 2). U zoni radova za saobraćaj će biti zatvorena krajnja desna saobraćajna traka. Saobraćaj će se odvijati voznom i preticajnom saobraćajnom trakom. Izvor: Putevi Srbije"
  }
 ];
