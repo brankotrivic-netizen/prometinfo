@@ -23,6 +23,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-08T19:17:53+02:00"
  },
  {
+  "id": "ba-orasje",
+  "name": "Županja (Orašje)",
+  "ulazMin": 30,
+  "izlazMin": null,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "8.8.2026. 19:33:08",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-08T19:33:08+02:00",
+  "izlazTsISO": "",
+  "ts": "8.8.2026. 19:33:08",
+  "tsISO": "2026-08-08T19:33:08+02:00"
+ },
+ {
   "id": "ba-velika-kladusa",
   "name": "Maljevac (Velika Kladuša)",
   "ulazMin": 60,
@@ -201,5 +221,25 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "8.8.2026. 18:38:38",
   "tsISO": "2026-08-08T18:38:38+02:00"
+ },
+ {
+  "id": "",
+  "name": "Principovac II",
+  "ulazMin": 30,
+  "izlazMin": null,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": 30,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "do 30 min.",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "8.8.2026. 19:41:55",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-08T19:41:55+02:00",
+  "izlazTsISO": "",
+  "ts": "8.8.2026. 19:41:55",
+  "tsISO": "2026-08-08T19:41:55+02:00"
  }
 ];
