@@ -63,26 +63,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-09T21:19:50+02:00"
  },
  {
-  "id": "ba-kostajnica",
-  "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "9.8.2026. 20:07:00",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-09T20:07:00+02:00",
-  "izlazTsISO": "",
-  "ts": "9.8.2026. 20:07:00",
-  "tsISO": "2026-08-09T20:07:00+02:00"
- },
- {
   "id": "ba-svilaj",
   "name": "Svilaj",
   "ulazMin": 30,

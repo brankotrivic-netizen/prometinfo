@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.8.2026. 21:55",
-  "text": "Promet je pojačan na većini cesta u smjeru unutrašnjosti. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik: promet je pojačan u smjeru Zagreba, no vozi se bez većih zastoja, a pred naplatama Lučko i Demerje nema dužih čekanja državna cesta DC102 na otoku Krku (uključujući Krčki most) promet je pojačan u smjeru kopna - usporeno se vozi od Omišlja (kolona je duga oko 4 km), a promet je vrlo gust i kod Njivica (vozi se usporeno u smjeru Omišlja) AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do ma…"
+  "updated": "9.8.2026. 22:35",
+  "text": "Na većini cesta vozi se bez većih ograničenja ili poteškoća. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI - A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1, u zoni NP i čvora Karlovac (smjer Zagreb); prilikom prolaska zonom ČCNP Demerje (smjer Zagreb) i ČCNP Lučko (smjer Zagreb); prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A3, u zoni čvora Lučko (krakom iz smjera autoceste A1 u smjeru aut…"
  },
  {
   "title": "Granični prijelazi",
