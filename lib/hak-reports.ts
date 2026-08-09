@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.8.2026. 16:47",
+  "updated": "9.8.2026. 16:52",
   "text": "Promet je pojačan na većini cesta u smjeru unutrašnjosti. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik: povremeno pojačan priljev vozila kod naplatnih postaja Lučko i Demerje u smjeru Zagreba (nema dužih kolona) povećana gustoća prometa između čvorova Bosiljevo II i Jastrebarsko u smjeru Zagreba ( vozi se usporeno u kolonama uz povremene zastoje) A2 Zagreb-Macelj: kod naplatnih postaja Trakošćan u oba smjera kolone su duge oko 1 km zbog povećanog priljeva vozila zabranjeno je prometovanje za teretna vozila i autobuse od čvora Krapina do čvora Đurmanec u oba smjera AUTOCESTE …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "9.8.2026. 15:23",
+  "updated": "9.8.2026. 16:52",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "9.8.2026. 15:23",
+  "updated": "9.8.2026. 16:52",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
