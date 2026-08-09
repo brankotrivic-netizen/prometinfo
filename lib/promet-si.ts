@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-09T18:06:06.057Z";
+export const PROMET_SI_UPDATED = "2026-08-09T18:58:44.904Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868729;e9c26727-adc1-489a-8c87-d726b6886d98",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Nove Jarše - razcep Koseze v smeri Kosez, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.06766,
+  "lng": 14.56909,
+  "start": "2026-08-09T18:15:27.93Z",
+  "end": "2026-08-10T00:00:43.767Z",
+  "ts": "2026-08-09T18:15:32.85Z"
+ },
  {
   "id": "DARS;868728;5f580ae8-5d32-4355-a517-92affea98c9f",
   "type": "MaintenanceWorks",
@@ -24,28 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-09T17:35:53.513Z",
   "end": "2026-08-09T23:00:00Z",
   "ts": "2026-08-09T17:36:25.043Z"
- },
- {
-  "id": "DARS;868718;a4c3535d-75dc-4ba6-8574-bc4adcc8b42a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Risnik - priključek Kozina v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.67484,
-  "lng": 13.97227,
-  "start": "2026-08-09T17:25:54.417Z",
-  "end": "2026-08-09T21:30:37.1Z",
-  "ts": "2026-08-09T17:25:59.01Z"
- },
- {
-  "id": "DARS;868716;ec03fd01-4d5e-476a-8e22-80e10c991991",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, priključek Škofije, Ankaran iz smeri Srmina, dela, oviran promet.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.56585,
-  "lng": 13.78374,
-  "start": "2026-08-09T17:09:58.313Z",
-  "end": "2026-08-09T21:00:58.937Z",
-  "ts": "2026-08-09T17:10:18.533Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
