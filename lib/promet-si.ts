@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-09T13:28:26.917Z";
+export const PROMET_SI_UPDATED = "2026-08-09T14:05:44.528Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -24,6 +24,72 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-05T12:51:50.49Z",
   "end": "2026-08-11T18:00:00Z",
   "ts": "2026-08-09T06:45:21.407Z"
+ },
+ {
+  "id": "DARS;868636;821f9cdf-728c-4cc4-8f31-ebe324ce481b",
+  "type": "MaintenanceWorks",
+  "desc": "R2-454, Zlatoličje - Priključek Zlatoličje, oviran promet, barvanje talnih označb, do 10. 8. 2026.",
+  "loc": "R2-454, Zlatoličje _ Priključek Zlatoličje",
+  "lat": 46.44346,
+  "lng": 15.78253,
+  "start": "2026-08-09T14:00:00Z",
+  "end": "2026-08-10T00:00:00Z",
+  "ts": "2026-08-09T05:01:50.877Z"
+ },
+ {
+  "id": "DARS;868635;0c71e9e8-3561-4f8a-b8fb-25de2ffaca58",
+  "type": "MaintenanceWorks",
+  "desc": "R2-454, Miklavž - Hajdina, v Miklavžu na Dravskem Polju, oviran promet, barvanje talnih označb, do 10. 8. 2026.",
+  "loc": "R2-454, Miklavž - Hajdina",
+  "lat": 46.50107,
+  "lng": 15.70405,
+  "start": "2026-08-09T14:00:00Z",
+  "end": "2026-08-10T00:00:00Z",
+  "ts": "2026-08-09T05:00:22.807Z"
+ },
+ {
+  "id": "DARS;868634;efaf093b-9232-4d93-a3f3-3f4ae4ff1ea3",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor (cesta Proletarskih Brigad - Koroški most), oviran promet, barvanje talnih označb, do 10. 8. 2026.",
+  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
+  "lat": 46.54855,
+  "lng": 15.62106,
+  "start": "2026-08-09T14:00:00Z",
+  "end": "2026-08-10T00:00:00Z",
+  "ts": "2026-08-09T04:58:11.35Z"
+ },
+ {
+  "id": "DARS;868632;7dfe4c3e-cd46-4319-8a5f-5532ff095e08",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor, Priključek Limbuš, oviran promet, barvanje talnih označb, do 10. 8. 2026.",
+  "loc": "G1-1, Priključek Limbuš",
+  "lat": 46.55555,
+  "lng": 15.62444,
+  "start": "2026-08-09T14:00:00Z",
+  "end": "2026-08-10T00:00:00Z",
+  "ts": "2026-08-09T04:54:55.38Z"
+ },
+ {
+  "id": "DARS;868631;7309a8b1-d29d-4675-85da-3bc3de1647fe",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1,Maribor, Priključek Studenci, oviran promet, barvanje talnih označb, do 10. 8. 2026.",
+  "loc": "G1-1, Priključek Studenci",
+  "lat": 46.55855,
+  "lng": 15.62571,
+  "start": "2026-08-09T14:00:00Z",
+  "end": "2026-08-10T00:00:00Z",
+  "ts": "2026-08-09T04:53:43.223Z"
+ },
+ {
+  "id": "DARS;868630;5f2eb58a-5798-4171-bcf3-855c9a0eea54",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor (Koroški most - cesta Proletarskih Brigad), oviran promet, barvanje talnih označb, do 10. 8. 2026.",
+  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
+  "lat": 46.54855,
+  "lng": 15.62091,
+  "start": "2026-08-09T14:00:00Z",
+  "end": "2026-08-10T00:00:00Z",
+  "ts": "2026-08-09T04:52:02.223Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
