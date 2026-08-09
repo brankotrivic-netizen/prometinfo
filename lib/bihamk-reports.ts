@@ -50,10 +50,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Sarajevo-Lapišnica, zbog postavljanja rasvjete u tunelu Vratnik svakog radnog dana od 07 do 16 sati saobraća se usporeno, jednom trakom."
    },
    {
-    "title": "Cazin-Ostrožac-Srbljani",
-    "text": "Zbog održavanja brdske auto trke danas i sutra od 08 do 20 sati, biti će obustavljen saobraćaj na magistralnoj cesti Cazin-Ostrožac-Srbljani, a vozila će biti usmjerena na alternativne pravce."
-   },
-   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },

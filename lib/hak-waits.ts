@@ -23,26 +23,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-09T17:23:57+02:00"
  },
  {
-  "id": "ba-orasje",
-  "name": "Županja (Orašje)",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "9.8.2026. 15:22:26",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-09T15:22:26+02:00",
-  "izlazTsISO": "",
-  "ts": "9.8.2026. 15:22:26",
-  "tsISO": "2026-08-09T15:22:26+02:00"
- },
- {
   "id": "ba-brcko",
   "name": "Gunja (Brčko)",
   "ulazMin": 30,
