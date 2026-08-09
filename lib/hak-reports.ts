@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.8.2026. 16:01",
-  "text": "Promet je pojačan na većini cesta u smjeru unutrašnjosti. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik: povremeno pojačan priljev vozila kod naplatnih postaja Lučko i Demerje u smjeru Zagreba (nema dužih kolona) povećana gustoća prometa između čvorova Bosiljevo II i Jastrebarsko u smjeru Zagreba ( vozi se usporeno u kolonama uz povremene zastoje) predmet na 417. km između čvora Zagvozd i čvora Šestanovac u smjeru Zagreba. Vozi se uz ograničenje brzine od 60 km/h A2 Zagreb-Macelj: kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je duga oko 500 m zbog povećanog priljev…"
+  "updated": "9.8.2026. 16:47",
+  "text": "Promet je pojačan na većini cesta u smjeru unutrašnjosti. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik: povremeno pojačan priljev vozila kod naplatnih postaja Lučko i Demerje u smjeru Zagreba (nema dužih kolona) povećana gustoća prometa između čvorova Bosiljevo II i Jastrebarsko u smjeru Zagreba ( vozi se usporeno u kolonama uz povremene zastoje) A2 Zagreb-Macelj: kod naplatnih postaja Trakošćan u oba smjera kolone su duge oko 1 km zbog povećanog priljeva vozila zabranjeno je prometovanje za teretna vozila i autobuse od čvora Krapina do čvora Đurmanec u oba smjera AUTOCESTE …"
  },
  {
   "title": "Granični prijelazi",
