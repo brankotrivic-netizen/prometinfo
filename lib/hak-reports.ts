@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.8.2026. 21:28",
-  "text": "Promet je pojačan na većini cesta u smjeru unutrašnjosti. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik: OPREZ! životinja na autocesti A1 na 43.+000 km između čvorova Karlovac i Novigrad - vozi se uz ograničenje brzine od 60 km/h promet je pojačan u smjeru Zagreba, no vozi se bez većih zastoja, a pred naplatama Lučko i Demerje nema dužih čekanja državna cesta DC102 na otoku Krku (uključujući Krčki most) promet je pojačan u smjeru kopna - usporeno se vozi od Omišlja (kolona je duga oko 4 km) državna cesta DC306 Vir-Zadar prometna nesreća u Ninu - vozi se otežano, uz ograničenj…"
+  "updated": "9.8.2026. 21:55",
+  "text": "Promet je pojačan na većini cesta u smjeru unutrašnjosti. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik: promet je pojačan u smjeru Zagreba, no vozi se bez većih zastoja, a pred naplatama Lučko i Demerje nema dužih čekanja državna cesta DC102 na otoku Krku (uključujući Krčki most) promet je pojačan u smjeru kopna - usporeno se vozi od Omišlja (kolona je duga oko 4 km), a promet je vrlo gust i kod Njivica (vozi se usporeno u smjeru Omišlja) AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do ma…"
  },
  {
   "title": "Granični prijelazi",

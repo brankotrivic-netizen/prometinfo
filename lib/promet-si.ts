@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-09T19:31:07.238Z";
+export const PROMET_SI_UPDATED = "2026-08-09T20:02:22.671Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, počivališče Polskava - priključek Sl. Bistrica sever v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.39742,
+  "lng": 15.60129,
+  "start": "2026-05-28T18:08:19.213Z",
+  "end": "2026-08-22T20:00:00Z",
+  "ts": "2026-08-09T19:57:18.577Z"
+ },
  {
   "id": "DARS;868735;4b4a7571-7cc8-467a-9629-ca250040090b",
   "type": "MaintenanceWorks",
@@ -365,17 +376,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-02T16:00:34.7Z",
   "end": "2026-09-30T21:59:00Z",
   "ts": "2026-07-30T19:58:17.87Z"
- },
- {
-  "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, počivališče Polskava - priključek Sl. Bistrica sever v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.39742,
-  "lng": 15.60129,
-  "start": "2026-05-28T18:08:19.213Z",
-  "end": "2026-08-09T20:00:00Z",
-  "ts": "2026-07-30T19:57:37.537Z"
  },
  {
   "id": "DARS;861125;786350ac-a680-41fd-b5bd-762e4bf79af5",
