@@ -23,26 +23,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-09T19:23:30+02:00"
  },
  {
-  "id": "ba-gradina",
-  "name": "Jasenovac (Donja Gradina)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "L: 0 km T: 9.8.2026. 18:18:25",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-09T18:18:25+02:00",
-  "izlazTsISO": "",
-  "ts": "L: 0 km T: 9.8.2026. 18:18:25",
-  "tsISO": "2026-08-09T18:18:25+02:00"
- },
- {
   "id": "ba-velika-kladusa",
   "name": "Maljevac (Velika Kladuša)",
   "ulazMin": 60,
@@ -61,26 +41,6 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-08-09T21:21:23+02:00",
   "ts": "9.8.2026. 21:19:50",
   "tsISO": "2026-08-09T21:19:50+02:00"
- },
- {
-  "id": "ba-svilaj",
-  "name": "Svilaj",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "9.8.2026. 18:12:07",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-09T18:12:07+02:00",
-  "izlazTsISO": "",
-  "ts": "9.8.2026. 18:12:07",
-  "tsISO": "2026-08-09T18:12:07+02:00"
  },
  {
   "id": "hr-bajakovo",
