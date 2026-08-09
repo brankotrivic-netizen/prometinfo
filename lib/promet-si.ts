@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-09T06:27:02.428Z";
+export const PROMET_SI_UPDATED = "2026-08-09T07:30:21.953Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;868642;43aa3cea-602d-40ee-a657-0589d6ab3cd0",
+  "id": "DARS;848067;1396e725-bf31-4c66-a698-3a3af4917b07",
   "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, pred priključkom Dekani, dela, oviran promet.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.56048,
-  "lng": 13.78429,
-  "start": "2026-08-09T05:19:01.193Z",
-  "end": "2026-08-09T11:00:24.497Z",
-  "ts": "2026-08-09T05:19:24.653Z"
- },
- {
-  "id": "DARS;868640;9149ab58-1ead-4f5f-a002-bf62114acbb4",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Podutik - razcep Zadobrova v smeri Zadobrove, dela, zaprt odstavni pas.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07259,
-  "lng": 14.4626,
-  "start": "2026-08-09T05:10:35.693Z",
-  "end": "2026-08-09T11:00:00Z",
-  "ts": "2026-08-09T05:11:30.21Z"
+  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Naklo v smeri Karavank, Avstrije, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.23761,
+  "lng": 14.40342,
+  "start": "2026-05-05T12:51:50.49Z",
+  "end": "2026-08-11T18:00:00Z",
+  "ts": "2026-08-09T06:45:21.407Z"
  },
  {
   "id": "DARS;868637;2e4f0843-5f18-4c82-96ef-3ab333151f1f",
@@ -35,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-09T05:03:19.547Z",
   "end": "2026-08-09T19:00:00Z",
   "ts": "2026-08-09T05:03:30.567Z"
- },
- {
-  "id": "DARS;848067;1396e725-bf31-4c66-a698-3a3af4917b07",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Naklo v smeri Karavank, Avstrije, dela, promet poteka po enem pasu.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.23761,
-  "lng": 14.40342,
-  "start": "2026-05-05T12:51:50.49Z",
-  "end": "2026-08-11T18:00:00Z",
-  "ts": "2026-08-08T19:22:58.643Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
