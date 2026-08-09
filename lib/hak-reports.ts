@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.8.2026. 23:11",
-  "text": "Na većini cesta vozi se bez većih ograničenja ili poteškoća. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI predmet na autocesti A7 između čvora Šmrika i tunela Burlica na kolniku u smjeru Rupe predmet na autocesti A3 na 182.+000 km između čvora Lužani i čvora Nova Gradiška na kolniku u smjeru Bregane - vozi se uz ograničenje brzine od 80 km/h A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1, u zoni NP i čvora Karlov…"
+  "updated": "9.8.2026. 23:39",
+  "text": "Na većini cesta vozi se bez većih ograničenja ili poteškoća. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI - A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1, u zoni NP i čvora Karlovac (smjer Zagreb); prilikom prolaska zonom ČCNP Demerje (smjer Zagreb) i ČCNP Lučko (smjer Zagreb); prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A3, u zoni čvora Lučko (krakom iz smjera autoceste A1 u smjeru aut…"
  },
  {
   "title": "Granični prijelazi",
