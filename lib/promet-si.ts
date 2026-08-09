@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-09T04:54:13.944Z";
+export const PROMET_SI_UPDATED = "2026-08-09T05:39:53.786Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868642;43aa3cea-602d-40ee-a657-0589d6ab3cd0",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Škofije - Koper, pred priključkom Dekani, dela, oviran promet.",
+  "loc": "G1-11, Škofije - Koper",
+  "lat": 45.56048,
+  "lng": 13.78429,
+  "start": "2026-08-09T05:19:01.193Z",
+  "end": "2026-08-09T11:00:24.497Z",
+  "ts": "2026-08-09T05:19:24.653Z"
+ },
+ {
+  "id": "DARS;868640;9149ab58-1ead-4f5f-a002-bf62114acbb4",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Podutik - razcep Zadobrova v smeri Zadobrove, dela, zaprt odstavni pas.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.07259,
+  "lng": 14.4626,
+  "start": "2026-08-09T05:10:35.693Z",
+  "end": "2026-08-09T11:00:00Z",
+  "ts": "2026-08-09T05:11:30.21Z"
+ },
+ {
+  "id": "DARS;868637;2e4f0843-5f18-4c82-96ef-3ab333151f1f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Logatec - razcep Kozarje v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.91075,
+  "lng": 14.25931,
+  "start": "2026-08-09T05:03:19.547Z",
+  "end": "2026-08-09T19:00:00Z",
+  "ts": "2026-08-09T05:03:30.567Z"
+ },
  {
   "id": "DARS;848067;1396e725-bf31-4c66-a698-3a3af4917b07",
   "type": "MaintenanceWorks",
@@ -35,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T10:27:58.043Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-08T17:49:46.093Z"
- },
- {
-  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
-  "type": "MaintenanceWorks",
-  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
-  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
-  "lat": 46.20334,
-  "lng": 15.25907,
-  "start": "2026-07-29T13:00:00Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-08T13:00:52.15Z"
  },
  {
   "id": "DARS;868272;7d35dc98-64cf-49c3-80c8-5575a7609dd3",

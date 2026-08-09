@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.8.2026. 06:49",
-  "text": "Zbog vjetra zabrana je prometa za pojedine skupine vozila samo na dijelu Jadranske magistrale (opširnije vidjeti niže u popisu cesta!). Na glavnim cestovnim pravcima nema većih gužvi i zastoja. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik kod naplatnih postaja Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih kolona A2 Zagreb-Macelj: kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je duga oko 1 km AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaus…"
+  "updated": "9.8.2026. 07:25",
+  "text": "Zbog vjetra zabrana je prometa za pojedine skupine vozila samo na dijelu Jadranske magistrale (opširnije vidjeti niže u popisu cesta!) . Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Dubrovnik kod naplatnih postaja Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih kolona povećana gustoća prometa između čvorova Karlovac i Bosiljevo 2 u smjeru mora (kolone u pokretu s povremenim zastojima) A2 Zagreb-Macelj: kod naplatnih postaja Trakošćan u smjeru Zagreba kolona je duga oko 1 km AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati priv…"
  },
  {
   "title": "Granični prijelazi",
