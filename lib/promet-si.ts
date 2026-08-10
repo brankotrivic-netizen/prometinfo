@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-10T18:00:36.038Z";
+export const PROMET_SI_UPDATED = "2026-08-10T19:13:23.151Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868970;16ffc5f5-c77d-4ea0-b64f-fc2ad107bdac",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Ljubljana Šmartno - priključek Vodice v smeri Jesenic, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.12259,
+  "lng": 14.481,
+  "start": "2026-08-10T18:03:31.753Z",
+  "end": "2026-08-11T03:00:24.97Z",
+  "ts": "2026-08-10T18:03:50.96Z"
+ },
  {
   "id": "DARS;868969;8dc82986-19a5-4abc-9fff-65190d297559",
   "type": "MaintenanceWorks",
@@ -24,28 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T17:41:39.48Z",
   "end": "2026-08-10T22:00:00Z",
   "ts": "2026-08-10T17:42:41.77Z"
- },
- {
-  "id": "DARS;868965;707524e9-9cf3-4195-8c76-8458f2c12140",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Gabrk - počivališče Risnik v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.68834,
-  "lng": 13.97774,
-  "start": "2026-08-10T17:26:30.067Z",
-  "end": "2026-08-10T21:00:00Z",
-  "ts": "2026-08-10T17:26:32.187Z"
- },
- {
-  "id": "DARS;868962;47b052db-d0e1-4c69-843d-bf3bccaf02d8",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, izvoz 4 Bertoki - razcep Srmin v smeri Ljubljane, dela, oviran promet.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.54703,
-  "lng": 13.76409,
-  "start": "2026-08-10T17:02:56.17Z",
-  "end": "2026-08-10T21:59:33.8Z",
-  "ts": "2026-08-10T17:02:59.287Z"
  },
  {
   "id": "DARS;868961;7975db09-845d-4245-8690-f3495ae11fe4",

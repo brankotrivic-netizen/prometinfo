@@ -83,26 +83,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-10T19:46:28+02:00"
  },
  {
-  "id": "ba-neum-i",
-  "name": "Klek (Neum I)",
-  "ulazMin": null,
-  "izlazMin": 30,
-  "ulazTxt": "-",
-  "izlazTxt": "do 30 min.",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "10.08.2026 19:21:45",
-  "ulazTsISO": "",
-  "izlazTsISO": "2026-08-10T19:21:45+02:00",
-  "ts": "10.08.2026 19:21:45",
-  "tsISO": "2026-08-10T19:21:45+02:00"
- },
- {
   "id": "",
   "name": "Karasovići (Sutorina)",
   "ulazMin": 90,
@@ -125,9 +105,9 @@ export const HAK_WAITS: HakWait[] = [
  {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
-  "ulazMin": 30,
+  "ulazMin": null,
   "izlazMin": 30,
-  "ulazTxt": "do 30 min.",
+  "ulazTxt": "-",
   "izlazTxt": "do 30 min.",
   "truckUlazMin": null,
   "truckIzlazMin": null,
@@ -135,12 +115,12 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "10.08.2026 16:38:11",
+  "ulazTs": "Nema podataka",
   "izlazTs": "10.08.2026 17:35:15",
-  "ulazTsISO": "2026-08-10T16:38:11+02:00",
+  "ulazTsISO": "",
   "izlazTsISO": "2026-08-10T17:35:15+02:00",
-  "ts": "10.08.2026 16:38:11",
-  "tsISO": "2026-08-10T16:38:11+02:00"
+  "ts": "10.08.2026 17:35:15",
+  "tsISO": "2026-08-10T17:35:15+02:00"
  },
  {
   "id": "hr-tovarnik",
