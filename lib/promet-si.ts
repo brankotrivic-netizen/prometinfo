@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-10T09:54:31.498Z";
+export const PROMET_SI_UPDATED = "2026-08-10T10:56:16.752Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868796;8098913b-7e02-446e-8f54-dd34e56e6474",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, priključek Lendava - priključek Lendava v smeri Lendave, dela, zaprt vozni pas.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.5615,
+  "lng": 16.44308,
+  "start": "2026-08-10T05:45:08.473Z",
+  "end": "2026-08-10T13:30:00Z",
+  "ts": "2026-08-10T10:56:07.08Z"
+ },
  {
   "id": "DARS;868874;533ad3b2-9ebe-48dc-a0b3-f1a3a00d3d4a",
   "type": "MaintenanceWorks",
@@ -68,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T08:37:46.063Z",
   "end": "2026-08-10T14:00:00Z",
   "ts": "2026-08-10T08:39:40.693Z"
- },
- {
-  "id": "DARS;868829;7697fa26-7e82-4961-8d9a-cef518b2a634",
-  "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, pred predorom Tabor v smeri Fernetičev, Italije, dela, oviran promet.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.71455,
-  "lng": 13.8624,
-  "start": "2026-08-10T07:34:00.253Z",
-  "end": "2026-08-10T13:00:00Z",
-  "ts": "2026-08-10T07:34:03.67Z"
  },
  {
   "id": "DARS;868818;d0b10aaf-2aa6-410e-b2b2-f6cc3abb7fc3",
@@ -200,17 +200,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T05:44:42.947Z",
   "end": "2026-08-10T12:00:00Z",
   "ts": "2026-08-10T05:46:27.41Z"
- },
- {
-  "id": "DARS;868796;8098913b-7e02-446e-8f54-dd34e56e6474",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Lendava - priključek Lendava v smeri Lendave, dela, zaprt vozni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.5615,
-  "lng": 16.44308,
-  "start": "2026-08-10T05:45:08.473Z",
-  "end": "2026-08-10T11:00:06.887Z",
-  "ts": "2026-08-10T05:45:12.753Z"
  },
  {
   "id": "DARS;868795;577110fc-d09b-489c-9a39-09ada802fecd",
@@ -1091,17 +1080,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-02T05:35:29.45Z",
   "end": "2026-11-06T16:00:00Z",
   "ts": "2026-07-02T05:38:51.74Z"
- },
- {
-  "id": "DARS;836655;3ed955af-3143-42b2-ab48-f96d332ae544",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Zadobrova - izvoz 24 Domžale v smeri Celja, dela, promet poteka po dveh zoženih pasovih v vsako smer.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.07075,
-  "lng": 14.57796,
-  "start": "2026-03-01T13:09:50.15Z",
-  "end": "2026-08-10T10:00:00Z",
-  "ts": "2026-07-01T10:02:42.58Z"
  },
  {
   "id": "DARS;823378;9ed2b8d7-7f5e-40fd-9ced-de3ceb59ea8a",
