@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-10T15:14:17.500Z";
+export const PROMET_SI_UPDATED = "2026-08-10T16:08:52.648Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868951;b7f94b9e-1d7c-4646-8811-1037242f8d5f",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Koper - Škofije, priključek Koper center, Slavček - uvoz Bertoki v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "G1-11, Koper - Škofije",
+  "lat": 45.53746,
+  "lng": 13.73957,
+  "start": "2026-08-10T15:14:52.58Z",
+  "end": "2026-08-10T21:59:04.92Z",
+  "ts": "2026-08-10T15:15:01.063Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T04:00:00Z",
   "end": "2026-08-11T12:00:00Z",
   "ts": "2026-08-10T11:47:46.227Z"
- },
- {
-  "id": "DARS;868747;dc910d81-e830-44ae-b725-facd450e7a91",
-  "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, priključek Sežana vzhod - predor Tabor v smeri Fernetičev, Italije, dela, oviran promet.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.71375,
-  "lng": 13.87735,
-  "start": "2026-08-10T03:20:13.283Z",
-  "end": "2026-08-10T17:00:00Z",
-  "ts": "2026-08-10T11:09:08.833Z"
  },
  {
   "id": "DARS;868856;6c0d2639-021f-490b-88cb-057c6a0d2996",
@@ -90,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T05:52:50.25Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-10T05:53:33.443Z"
- },
- {
-  "id": "DARS;868776;7366d691-c469-4a86-9d4d-8455886d8da9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-1, Dravograd - Vič, pri Dravogradu, izmenično enosmerni promet, vzdrževalna dela, do 18:00.",
-  "loc": "G1-1, Vič - Dravograd",
-  "lat": 46.59408,
-  "lng": 15.00899,
-  "start": "2026-08-10T04:51:29.897Z",
-  "end": "2026-08-10T16:00:00Z",
-  "ts": "2026-08-10T04:52:31.707Z"
  },
  {
   "id": "DARS;868770;ef1ec19d-e7f6-4828-b2f9-09af1df0d7af",
