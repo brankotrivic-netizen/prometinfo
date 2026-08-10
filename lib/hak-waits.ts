@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-gradiska",
-  "name": "Gornji Varoš (Gradiška (novi most))",
-  "ulazMin": 120,
-  "izlazMin": 30,
-  "ulazTxt": "2 h",
-  "izlazTxt": "do 30 min.",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 120,
-  "ulazTs": "10.8.2026. 18:11:04",
-  "izlazTs": "10.8.2026. 18:11:30",
-  "ulazTsISO": "2026-08-10T18:11:04+02:00",
-  "izlazTsISO": "2026-08-10T18:11:30+02:00",
-  "ts": "10.8.2026. 18:11:04",
-  "tsISO": "2026-08-10T18:11:04+02:00"
- },
- {
   "id": "ba-brod",
   "name": "Slavonski Brod (Bosanski Brod)",
   "ulazMin": 30,
@@ -43,26 +23,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-10T19:49:00+02:00"
  },
  {
-  "id": "ba-gradina",
-  "name": "Jasenovac (Donja Gradina)",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": 60,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "1 h",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "10.8.2026. 18:06:00",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-10T18:06:00+02:00",
-  "izlazTsISO": "",
-  "ts": "10.8.2026. 18:06:00",
-  "tsISO": "2026-08-10T18:06:00+02:00"
- },
- {
   "id": "ba-izacic",
   "name": "Ličko Petrovo Selo (Izačić)",
   "ulazMin": 60,
@@ -81,26 +41,6 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-08-10T19:32:42+02:00",
   "ts": "10.8.2026. 19:46:28",
   "tsISO": "2026-08-10T19:46:28+02:00"
- },
- {
-  "id": "",
-  "name": "Karasovići (Sutorina)",
-  "ulazMin": 90,
-  "izlazMin": 60,
-  "ulazTxt": "1 h 30 min.",
-  "izlazTxt": "1 h",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 90,
-  "ulazTs": "10.8.2026. 18:30:48",
-  "izlazTs": "10.8.2026. 18:31:01",
-  "ulazTsISO": "2026-08-10T18:30:48+02:00",
-  "izlazTsISO": "2026-08-10T18:31:01+02:00",
-  "ts": "10.8.2026. 18:30:48",
-  "tsISO": "2026-08-10T18:30:48+02:00"
  },
  {
   "id": "hr-tovarnik",

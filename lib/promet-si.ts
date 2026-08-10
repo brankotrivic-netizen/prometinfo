@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-10T20:58:45.565Z";
+export const PROMET_SI_UPDATED = "2026-08-10T21:38:55.813Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868987;fee4ebda-24bf-4361-87f1-9b8ec79b99d6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Ločica - uvoz Žalec v smeri Maribora, dela, zaprt prehitevalni pas, barvanje talnih označb.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.22668,
+  "lng": 14.94913,
+  "start": "2026-08-10T21:26:42.16Z",
+  "end": "2026-08-11T02:00:00Z",
+  "ts": "2026-08-10T21:27:36.793Z"
+ },
  {
   "id": "DARS;848067;1396e725-bf31-4c66-a698-3a3af4917b07",
   "type": "MaintenanceWorks",
@@ -26,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-10T18:03:50.96Z"
  },
  {
-  "id": "DARS;868969;8dc82986-19a5-4abc-9fff-65190d297559",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Žalec - predor Ločica v smeri Ljubljane, dela, zaprt prehitevalni pas, barvanje talnih označb.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26831,
-  "lng": 15.19084,
-  "start": "2026-08-10T17:57:45.79Z",
-  "end": "2026-08-11T02:00:00Z",
-  "ts": "2026-08-10T17:58:46.16Z"
- },
- {
   "id": "DARS;868961;7975db09-845d-4245-8690-f3495ae11fe4",
   "type": "MaintenanceWorks",
   "desc": "A2, Karavanke - Ljubljana, priključek Kranj zahod v smeri Ljubljane, dela, zaprt prehitevalni pas.",
@@ -46,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T17:02:06.49Z",
   "end": "2026-08-11T03:00:55.407Z",
   "ts": "2026-08-10T17:02:31.18Z"
- },
- {
-  "id": "DARS;868951;b7f94b9e-1d7c-4646-8811-1037242f8d5f",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, priključek Koper center, Slavček - uvoz Bertoki v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.53746,
-  "lng": 13.73957,
-  "start": "2026-08-10T15:14:52.58Z",
-  "end": "2026-08-10T21:59:04.92Z",
-  "ts": "2026-08-10T15:15:01.063Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
