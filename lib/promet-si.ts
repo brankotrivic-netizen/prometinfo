@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-10T19:13:23.151Z";
+export const PROMET_SI_UPDATED = "2026-08-10T20:01:01.311Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;848067;1396e725-bf31-4c66-a698-3a3af4917b07",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Naklo v smeri Karavank, Avstrije, dela, promet poteka po enem pasu.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.23761,
+  "lng": 14.40342,
+  "start": "2026-05-05T12:51:50.49Z",
+  "end": "2026-08-11T18:00:00Z",
+  "ts": "2026-08-10T19:43:51.153Z"
+ },
  {
   "id": "DARS;868970;16ffc5f5-c77d-4ea0-b64f-fc2ad107bdac",
   "type": "MaintenanceWorks",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T17:57:45.79Z",
   "end": "2026-08-11T02:00:00Z",
   "ts": "2026-08-10T17:58:46.16Z"
- },
- {
-  "id": "DARS;868968;f3c82901-2ddf-4946-b025-59c78bc54a38",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Domžale - izvoz Trojane v smeri Maribora, dela, oviran promet, strojno pometanje.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.13509,
-  "lng": 14.61682,
-  "start": "2026-08-10T17:41:39.48Z",
-  "end": "2026-08-10T22:00:00Z",
-  "ts": "2026-08-10T17:42:41.77Z"
  },
  {
   "id": "DARS;868961;7975db09-845d-4245-8690-f3495ae11fe4",
@@ -134,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-28T18:08:19.213Z",
   "end": "2026-08-22T20:00:00Z",
   "ts": "2026-08-09T19:57:18.577Z"
- },
- {
-  "id": "DARS;848067;1396e725-bf31-4c66-a698-3a3af4917b07",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Naklo v smeri Karavank, Avstrije, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.23761,
-  "lng": 14.40342,
-  "start": "2026-05-05T12:51:50.49Z",
-  "end": "2026-08-11T18:00:00Z",
-  "ts": "2026-08-09T06:45:21.407Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
