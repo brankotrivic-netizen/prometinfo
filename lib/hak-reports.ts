@@ -3,12 +3,12 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "10.8.2026. 21:56",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI Predmet na autocesti A6 između tunela Sopač i tunela Sleme na kolniku u smjeru Rijeke. Vozi se uz ograničenje brzine od 80 km/h. Molimo korisnike za oprez. A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1, u zoni NP i čvora Karlovac (smjer Zagreb); prilikom prolaska zonom ČCNP Deme…"
+  "updated": "10.8.2026. 22:20",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Vozače podsjećamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI Predmet na autocesti A6 između tunela Sopač i tunela Sleme na kolniku u smjeru Rijeke. Vozi se uz ograničenje brzine od 80 km/h. Molimo korisnike za oprez A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1, u zoni NP i čvora Karlovac (smjer Zagreb); prilikom prolaska zonom ČCNP Demer…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "10.8.2026. 21:24",
+  "updated": "10.8.2026. 22:20",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
