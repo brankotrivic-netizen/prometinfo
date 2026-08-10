@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-10T12:30:33.818Z";
+export const PROMET_SI_UPDATED = "2026-08-10T14:04:09.409Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
+  "type": "MaintenanceWorks",
+  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
+  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
+  "lat": 46.20334,
+  "lng": 15.25907,
+  "start": "2026-07-29T13:00:00Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-08-10T13:00:15.767Z"
+ },
  {
   "id": "DARS;868756;69301d79-cbd7-421f-8f41-b98b970eb2b9",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T11:33:31.143Z",
   "end": "2026-08-10T15:00:06.723Z",
   "ts": "2026-08-10T11:34:14.447Z"
- },
- {
-  "id": "DARS;868895;ab692686-1355-4aad-be2e-cc637c35a9e1",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Lendava - priključek Lendava v smeri Lendave, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.56164,
-  "lng": 16.44311,
-  "start": "2026-08-10T11:33:07.28Z",
-  "end": "2026-08-10T13:00:18.877Z",
-  "ts": "2026-08-10T11:33:13.89Z"
  },
  {
   "id": "DARS;868747;dc910d81-e830-44ae-b725-facd450e7a91",
@@ -101,28 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T05:52:50.25Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-10T05:53:33.443Z"
- },
- {
-  "id": "DARS;868794;e968d97b-252e-4397-9bd7-208b8326c27b",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-440, Gederovci - Cankova, v Krajni, izmenično enosmerni promet, zalivanje reg in razpok, do 16:00.",
-  "loc": "R2-440, Gederovci - Cankova",
-  "lat": 46.69279,
-  "lng": 16.04403,
-  "start": "2026-08-10T05:41:51.54Z",
-  "end": "2026-08-10T14:00:00Z",
-  "ts": "2026-08-10T05:42:29.523Z"
- },
- {
-  "id": "DARS;868792;51861f3e-844e-45e7-ab4b-af7577684daf",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-235, Radenci - Petanjci - Murska Sobota, v Petanjcih, pri mostu čez Muro, izmenično enosmerni promet, vzdrževalna dela, do 15:00.",
-  "loc": "R1-235, Radenci - Petanjci",
-  "lat": 46.64945,
-  "lng": 16.05024,
-  "start": "2026-08-10T05:39:50.347Z",
-  "end": "2026-08-10T13:00:00Z",
-  "ts": "2026-08-10T05:40:16.52Z"
  },
  {
   "id": "DARS;868776;7366d691-c469-4a86-9d4d-8455886d8da9",
