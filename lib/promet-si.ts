@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-10T16:08:52.648Z";
+export const PROMET_SI_UPDATED = "2026-08-10T17:06:00.005Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;868962;47b052db-d0e1-4c69-843d-bf3bccaf02d8",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Koper - Škofije, izvoz 4 Bertoki - razcep Srmin v smeri Ljubljane, dela, oviran promet.",
+  "loc": "G1-11, Koper - Škofije",
+  "lat": 45.54703,
+  "lng": 13.76409,
+  "start": "2026-08-10T17:02:56.17Z",
+  "end": "2026-08-10T21:59:33.8Z",
+  "ts": "2026-08-10T17:02:59.287Z"
+ },
+ {
+  "id": "DARS;868961;7975db09-845d-4245-8690-f3495ae11fe4",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Kranj zahod v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.27572,
+  "lng": 14.3187,
+  "start": "2026-08-10T17:02:06.49Z",
+  "end": "2026-08-11T03:00:55.407Z",
+  "ts": "2026-08-10T17:02:31.18Z"
+ },
  {
   "id": "DARS;868951;b7f94b9e-1d7c-4646-8811-1037242f8d5f",
   "type": "MaintenanceWorks",
@@ -35,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T04:00:00Z",
   "end": "2026-08-11T12:00:00Z",
   "ts": "2026-08-10T11:47:46.227Z"
- },
- {
-  "id": "DARS;868856;6c0d2639-021f-490b-88cb-057c6a0d2996",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-660, Črnomelj - Adlešiči, Tribuče - Črnomelj, dela, izmenično enosmerni promet, pomična zapora, do 19:00.",
-  "loc": "R3-660, Črnomelj - Dolenjci",
-  "lat": 45.56935,
-  "lng": 15.19186,
-  "start": "2026-08-10T08:53:14.21Z",
-  "end": "2026-08-10T17:00:00Z",
-  "ts": "2026-08-10T08:54:08.267Z"
  },
  {
   "id": "DARS;868812;19640b8b-4729-441c-ae34-b82848b0a9a3",
@@ -90,28 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-10T05:52:50.25Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-10T05:53:33.443Z"
- },
- {
-  "id": "DARS;868770;ef1ec19d-e7f6-4828-b2f9-09af1df0d7af",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-919, Vinica - Žuniči, Vinica - Zilije, izmenično enosmerni promet, pomična zapora, košnja, do 19:00.",
-  "loc": "RT-919, Žuniči - Vinica",
-  "lat": 45.46081,
-  "lng": 15.30316,
-  "start": "2026-08-10T04:40:55.08Z",
-  "end": "2026-08-10T17:00:00Z",
-  "ts": "2026-08-10T04:42:37.763Z"
- },
- {
-  "id": "DARS;868769;06047fd2-61f9-49d3-8918-fdbfac41e116",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-919, Podzemelj - Dolenjci, Krasinec - Dragoši, izmenično enosmerni promet, pomična zapora, urejanje brežin, do 19:00.",
-  "loc": "RT-919, Podzemelj - Dolenjci",
-  "lat": 45.58797,
-  "lng": 15.27947,
-  "start": "2026-08-10T04:38:18.903Z",
-  "end": "2026-08-10T17:00:00Z",
-  "ts": "2026-08-10T04:40:09.13Z"
  },
  {
   "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
