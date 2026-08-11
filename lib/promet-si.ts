@@ -1,51 +1,117 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-10T22:18:16.877Z";
+export const PROMET_SI_UPDATED = "2026-08-11T04:57:07.115Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;868987;fee4ebda-24bf-4361-87f1-9b8ec79b99d6",
+  "id": "DARS;869010;aab6f720-dd2a-496d-9bb2-b369801dede6",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-443, Beltinci - Črenšovci, izmenično enosmerni promet, pomična zapora, barvanje talnih označb, do 14:00.",
+  "loc": "R2-443, Beltinci - Črešnovci",
+  "lat": 46.59456,
+  "lng": 16.26216,
+  "start": "2026-08-11T04:43:04.147Z",
+  "end": "2026-08-11T12:00:00Z",
+  "ts": "2026-08-11T04:43:24.87Z"
+ },
+ {
+  "id": "DARS;869007;e0eb7710-28a0-48e6-ad63-fa8db64c3838",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-5, Celje - Krško, Arto - Spodnje Pijavško, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
+  "loc": "G1-5, Impoljca - Brestanica",
+  "lat": 45.98475,
+  "lng": 15.39521,
+  "start": "2026-08-11T04:17:25.263Z",
+  "end": "2026-08-11T16:00:00Z",
+  "ts": "2026-08-11T04:17:59.423Z"
+ },
+ {
+  "id": "DARS;869001;a6562bf5-80b1-4dc6-a71f-270a390b5560",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, predor Ločica - uvoz Žalec v smeri Maribora, dela, zaprt prehitevalni pas, barvanje talnih označb.",
+  "desc": "A5, Maribor - Pince, priključek Lenart - počivališče Lormanje jug v smeri Murske Sobote, dela, zaprt prehitevalni pas.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.57365,
+  "lng": 15.81517,
+  "start": "2026-08-11T03:57:47.083Z",
+  "end": "2026-08-11T11:00:45.713Z",
+  "ts": "2026-08-11T03:57:52.617Z"
+ },
+ {
+  "id": "DARS;869000;eb88aea5-9553-4d57-85d9-ba0ee8c0e4d4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Kozina - priključek Divača v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.61713,
+  "lng": 13.94903,
+  "start": "2026-08-11T03:56:41.537Z",
+  "end": "2026-08-11T14:00:56.713Z",
+  "ts": "2026-08-11T03:56:44.14Z"
+ },
+ {
+  "id": "DARS;868998;232f7be2-c71b-4943-9609-2d3d280c71c1",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-3, Lenart - Gornja Radgona, v Lomanošah, izmenično enosmerni promet, vzdrževalna dela, do 14:00.",
+  "loc": "R2-449, Lenart - Gornja Radgona",
+  "lat": 46.67219,
+  "lng": 15.95245,
+  "start": "2026-08-11T04:00:00Z",
+  "end": "2026-08-11T12:00:00Z",
+  "ts": "2026-08-11T03:54:59.857Z"
+ },
+ {
+  "id": "DARS;868997;31bd4f11-35db-4792-96d3-0462259715da",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "RT-914, Postojna - Rakov Škocjan, pri odcepu za Rakov Škocjan, izmenično enosmerni promet, popravilo bankin, do 14:00.",
+  "loc": "RT-914, Postojna - Rakov Škocjan",
+  "lat": 45.80253,
+  "lng": 14.2665,
+  "start": "2026-08-11T04:00:00Z",
+  "end": "2026-08-11T12:00:00Z",
+  "ts": "2026-08-11T03:53:21.307Z"
+ },
+ {
+  "id": "DARS;868796;8098913b-7e02-446e-8f54-dd34e56e6474",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, razcep Dolga vas - priključek Lendava v smeri Lendave, dela, zaprt vozni pas.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.5615,
+  "lng": 16.44308,
+  "start": "2026-08-11T03:38:17.05Z",
+  "end": "2026-08-11T08:00:00Z",
+  "ts": "2026-08-11T03:38:53.533Z"
+ },
+ {
+  "id": "DARS;868995;9af145c8-6802-41df-8230-a8e91ae0c927",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Jesenice zahod - predor Karavanke v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.44535,
+  "lng": 14.01217,
+  "start": "2026-08-11T03:25:14.06Z",
+  "end": "2026-08-11T15:28:54.607Z",
+  "ts": "2026-08-11T03:25:30.117Z"
+ },
+ {
+  "id": "DARS;868994;988c49bc-65de-4d3c-885a-7ef710407fe1",
+  "type": "MaintenanceWorks",
+  "desc": "A3, razcep Gabrk - Fernetiči, predor Tabor - priključek Sežana zahod v smeri Fernetičev, Italije, dela, zaprt vozni pas.",
+  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
+  "lat": 45.71469,
+  "lng": 13.86305,
+  "start": "2026-08-11T02:43:17.907Z",
+  "end": "2026-08-11T13:00:00Z",
+  "ts": "2026-08-11T02:59:33.543Z"
+ },
+ {
+  "id": "DARS;868992;c6bc620c-65c1-40e1-8f00-e65c61a82911",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Polskava - priključek Fram v smeri Maribora, dela, oviran promet.",
   "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.22668,
-  "lng": 14.94913,
-  "start": "2026-08-10T21:26:42.16Z",
-  "end": "2026-08-11T02:00:00Z",
-  "ts": "2026-08-10T21:27:36.793Z"
- },
- {
-  "id": "DARS;848067;1396e725-bf31-4c66-a698-3a3af4917b07",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Naklo v smeri Karavank, Avstrije, dela, promet poteka po enem pasu.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.23761,
-  "lng": 14.40342,
-  "start": "2026-05-05T12:51:50.49Z",
-  "end": "2026-08-11T18:00:00Z",
-  "ts": "2026-08-10T19:43:51.153Z"
- },
- {
-  "id": "DARS;868970;16ffc5f5-c77d-4ea0-b64f-fc2ad107bdac",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, uvoz Ljubljana Šmartno - priključek Vodice v smeri Jesenic, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.12259,
-  "lng": 14.481,
-  "start": "2026-08-10T18:03:31.753Z",
-  "end": "2026-08-11T03:00:24.97Z",
-  "ts": "2026-08-10T18:03:50.96Z"
- },
- {
-  "id": "DARS;868961;7975db09-845d-4245-8690-f3495ae11fe4",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Kranj zahod v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.27572,
-  "lng": 14.3187,
-  "start": "2026-08-10T17:02:06.49Z",
-  "end": "2026-08-11T03:00:55.407Z",
-  "ts": "2026-08-10T17:02:31.18Z"
+  "lat": 46.42059,
+  "lng": 15.62793,
+  "start": "2026-08-11T02:46:29.763Z",
+  "end": "2026-08-11T14:00:30.46Z",
+  "ts": "2026-08-11T02:46:35.417Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",

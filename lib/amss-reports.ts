@@ -190,10 +190,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 10. 8. do 30. 8. 2026. godine, zbog radova na sanaciji krutog kolovoza, biće izmenjen režim saobraćaja n u zoni naplatne stanice na petlji Kruševac zapad, u oba smera. Shodno dinamici izvođenja radova, saobraćaj će se odvijati slobodnim saobraćajnim trakama. Izvor: Putevi Srbije"
  },
  {
-  "title": "Paraćin - Izvor, na mostu preko reke Crnice, radovi",
-  "text": "Od 7. 8 do 10. 8. 2026. godine izvodiće se radovi na državnom putu I B reda broj 36, deonica Paraćin - Izvor, na mostu preko reke Crnice, na km 3+350. Tokom izvođenja radova, saobraćaj preko mosta će se odvijati naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
- },
- {
   "title": "Sušica-Kremna, radovi",
   "text": "Izvode se radovi na rekonstrukciji mosta preko reke Sušica Sušica 3 (na km 121+540), na državnom putu I B reda broj 28, deonica Sušica - Kremna. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  },
@@ -226,10 +222,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 27. 7. do 1. 11. 2026. zbog radova na održavanju obustavlja se saobraćaj na objektu mosta preko potoka Vrbovica, na državnom putu II A reda broj 148, na deonici Draževac Stepojevac. Saobraćaj će biti preusmeren na izgrađenu privremenu devijaciju. Na devijaciji će se saobraćaj odvijati naizmeničnim propuštanjem vozila uz pomoć semafora."
  },
  {
-  "title": "Petlja Adrani, radovi",
-  "text": "Od 25. 7. do 10. 8. 2026. godine, u toku svetlog dela dana, izvodiće se radovi na popravci behaton i kamenih kocki na kružnim tokovima 1 i 2, kao i razdelnim ostrvima na petlji Adrani. Tokom izvođenja radova, za saobraćaj će biti zatvorena desna saobraćajna traka u dužini od 100 metara, dok će se saobraćaj odvijati levom saobraćajnom trakom, naizmeničnim propuštanjem vozila u zoni radova, regulisanim uz pomoć mahača. Izvor: Putevi Srbije"
- },
- {
   "title": "mesto Ponikve - Golubac, radovi",
   "text": "Do 1. 9. 2026. godine biće izmenjen režim saobraćaja od isključenja za naseljeno mesto Ponikve do ulaza u Golubac u sklopu izgradnje državnog puta I M reda broj 7 gde se vozila kreću dvosmerno jednom kolovoznom trakom.Za vreme radova na snazi je obustava saobraćaja na delu državnog puta I B reda broj 34. Tokom trajanja obustave predviđena je trasa obilaska za korisnike koji se kreću: - iz Radoševca ka Požarevcu kroz naseljeno mesto Usije; - iz Radoševca i Usija ka Golupcu preko naseljenih mesta …"
  },
@@ -240,5 +232,13 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Pećinci, radovi",
   "text": "Na snazi je izmena režima saobraćaja na državnom putu I A reda broj 3, u zoni petlje Pećinci zbog izvođenja radova na rekonstrukciji natputnjaka. Tokom izvođenja radova saobraćaj se u smeru ka Beogradu odvija normalno, dok je u suprotnom smeru za saobraćaj zatvorena preticajna saobraćajna traka i saobraćaj se odvija voznom i zaustavnom saobraćajnom trakom. Takođe za saobraćaj je zatvoreno isključenje na petlji Pećinci iz pravca Beograda i uključenje sa petlje Pećinci prema Sremskoj Mitrovici i š…"
+ },
+ {
+  "title": "Zona petlje Smederevo, radovi",
+  "text": "Od 7. 7. od 10 časova, do 21. 8. 2026.godine, do 17 časova, izvodiće se radovi na popravci stubova, na mostu (krak za isključenje iz smera Niša ka Smederevu) u zoni petlje Smederevo, u smeru ka Beogradu. U zoni radova, za saobraćaj će biti zatvorena zaustavna saobraćajna traka, dok će se saobraćaj odvijati voznom i preticajnom saobraćajnom trakom. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Veliko Gradište-Golubac, radovi",
+  "text": "Izmenjen je režim saobraćaja na državnom putu I M reda broj 7, deonica Veliko Gradište - Golubac, između tribrodskog i braničevskog kružnog toka. Na predmetnoj deonici saobraćaj se odvija dvosmerno desnim poluprofilom brze saobraćajnice. Izvor: Putevi Srbije"
  }
 ];
