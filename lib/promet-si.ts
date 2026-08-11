@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-11T06:44:52.072Z";
+export const PROMET_SI_UPDATED = "2026-08-11T07:56:22.915Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869047;e848247c-b229-4869-b53c-e0586e4ac0d8",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-603, Most na Soči - Ušnik, pri Modrejcah, izmenično enosmerni promet, gradnje vodovoda Modrejce, do 30. 11. 2026.",
+  "loc": "R3-603, Most Na Soči - Ušnik",
+  "lat": 46.16266,
+  "lng": 13.73908,
+  "start": "2026-08-11T07:13:15.763Z",
+  "end": "2026-11-30T18:00:00Z",
+  "ts": "2026-08-11T07:14:29.77Z"
+ },
+ {
+  "id": "DARS;869046;71221ea3-d235-459c-968a-e5f53c2d21e2",
+  "type": "MaintenanceWorks",
+  "desc": "G2-103, Nova Gorica - Tolmin, oviran promet, sanacije drsnih vozišč, do 14. 8. 2026.",
+  "loc": "G2-103, Plave - Solkan",
+  "lat": 46.0034,
+  "lng": 13.6311,
+  "start": "2026-08-11T07:08:36.33Z",
+  "end": "2026-08-20T21:59:00Z",
+  "ts": "2026-08-11T07:10:51.193Z"
+ },
+ {
+  "id": "DARS;869045;38a98747-b1f6-4878-a2d3-00afe10031dd",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-439, Bratonci - Križevci, na mostu čez Muro, izmenično enosmerni promet, vzdrževalna dela, do 14:00.",
+  "loc": "R2-439, Bratonci - Križevci",
+  "lat": 46.58878,
+  "lng": 16.17842,
+  "start": "2026-08-11T07:05:11.457Z",
+  "end": "2026-08-11T12:00:00Z",
+  "ts": "2026-08-11T07:06:27.577Z"
+ },
  {
   "id": "DARS;869041;13ff562b-e91f-4359-b71a-e5d7fae9b77f",
   "type": "MaintenanceWorks",
@@ -46,28 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-03T05:57:13.48Z",
   "end": "2026-10-04T15:00:00Z",
   "ts": "2026-08-11T06:21:06.257Z"
- },
- {
-  "id": "DARS;869036;072951ec-ddae-48aa-acf7-67101be8cb60",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - priključek Ljubljana center v smeri Kozarij, dela, oviran promet.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02111,
-  "lng": 14.51544,
-  "start": "2026-08-11T06:19:56.743Z",
-  "end": "2026-08-11T11:45:41.237Z",
-  "ts": "2026-08-11T06:20:17.857Z"
- },
- {
-  "id": "DARS;869034;d6e548cd-c02a-48dc-9d1a-da239a6fcd36",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, priključek Bertoki v smeri Ljubljane, dela, oviran promet.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.54604,
-  "lng": 13.76198,
-  "start": "2026-08-11T06:09:22.48Z",
-  "end": "2026-08-11T12:00:00Z",
-  "ts": "2026-08-11T06:09:43.95Z"
  },
  {
   "id": "DARS;869033;6fdf8aee-473d-4c1d-b8a6-a43f8b7a5f09",
@@ -134,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T05:48:46.673Z",
   "end": "2026-08-11T13:00:00Z",
   "ts": "2026-08-11T05:49:11.54Z"
- },
- {
-  "id": "DARS;869026;3b28ae2c-906d-4efd-83c7-040119e1adf3",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Trojane - priključek Trojane v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.20677,
-  "lng": 14.90162,
-  "start": "2026-08-11T05:40:00.483Z",
-  "end": "2026-08-11T14:00:00Z",
-  "ts": "2026-08-11T05:40:10.153Z"
  },
  {
   "id": "DARS;869023;5098cfd1-0892-465e-8bd4-7f2beb288610",

@@ -3,6 +3,26 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
+  "id": "ba-bijaca",
+  "name": "Nova Sela",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "11.8.2026. 9:31:08",
+  "izlazTs": "11.8.2026. 9:31:42",
+  "ulazTsISO": "2026-08-11T09:31:08+02:00",
+  "izlazTsISO": "2026-08-11T09:31:42+02:00",
+  "ts": "11.8.2026. 9:31:08",
+  "tsISO": "2026-08-11T09:31:08+02:00"
+ },
+ {
   "id": "ba-gradina",
   "name": "Jasenovac (Donja Gradina)",
   "ulazMin": null,
@@ -61,5 +81,25 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "11.8.2026. 5:09:19",
   "tsISO": "2026-08-11T05:09:19+02:00"
+ },
+ {
+  "id": "hr-batina",
+  "name": "Batina (Bezdan)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 90,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "1 h 30 min.",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "",
+  "izlazTsISO": "",
+  "ts": "",
+  "tsISO": ""
  }
 ];
