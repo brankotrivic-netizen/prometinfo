@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-11T17:37:24.740Z";
+export const PROMET_SI_UPDATED = "2026-08-11T18:32:12.564Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869144;e028fe3a-04fd-41f4-a1e9-fd9a77b54c05",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Naklo v smeri Karavank, Avstrije, dela, odstavni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.23733,
+  "lng": 14.40381,
+  "start": "2026-08-11T18:22:40.09Z",
+  "end": "2026-08-12T00:00:00Z",
+  "ts": "2026-08-11T18:23:34.857Z"
+ },
+ {
+  "id": "DARS;869143;a96def88-a071-4d14-a215-c2071366a01d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - izvoz 12 Dramlje v smeri Maribora, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.26796,
+  "lng": 15.19371,
+  "start": "2026-08-11T18:09:15.63Z",
+  "end": "2026-08-12T00:30:44.467Z",
+  "ts": "2026-08-11T18:13:25.157Z"
+ },
+ {
+  "id": "DARS;869142;2654acfb-4830-4ea0-abee-ace2b6e1bcc1",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, počivališče Risnik - uvoz Divača v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.67956,
+  "lng": 13.97499,
+  "start": "2026-08-11T18:04:44.643Z",
+  "end": "2026-08-11T21:00:00Z",
+  "ts": "2026-08-11T18:04:53.33Z"
+ },
+ {
+  "id": "DARS;869140;fb380cb0-10f7-44fd-9ccb-d954456a6787",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - vzhodna obvoznica, uvoz Maribor center - priključek Rogoza v smeri Slivnice, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.51795,
+  "lng": 15.67827,
+  "start": "2026-08-11T17:38:21.177Z",
+  "end": "2026-08-11T23:00:00Z",
+  "ts": "2026-08-11T17:47:46.97Z"
+ },
  {
   "id": "DARS;869139;df268c85-f703-4133-8f12-9f00e11b295b",
   "type": "MaintenanceWorks",

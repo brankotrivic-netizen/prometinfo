@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "11.8.2026. 19:28",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Povećana je gustoća prometa na gradskim prometnicama, obilaznicama, važnijim cestovnim pravcima u smjeru mora i unutrašnjosti te na cestama u priobalju. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI zbog rasutog tereta na državnoj cesti DC1 kod mjesta Drežnik Grad vozi se uz ograničenje brzine 30 km/h A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza…"
+  "updated": "11.8.2026. 20:29",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Povećana je gustoća prometa na gradskim prometnicama, obilaznicama, važnijim cestovnim pravcima u smjeru mora i unutrašnjosti te na cestama u priobalju. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI vozilo u kvaru (osobno vozilo) na autocesti A1 u tunelu Puljani u smjeru Dubrovnika, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h životinja (srna) na autocesti A4 na čvoru Novi Marof u smjeru Zagreba, vozi se uz ograničenje brzine 60 km/h zbog rasutog tereta na državnoj cesti DC1 kod mjesta Dre…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "11.8.2026. 19:28",
-  "text": "U pomorskom prometu nema poteškoća. Na dan 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isploviti će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Promjena se odnosi radi nesmetanog održavanja tradicionalnog 26. Viškog plivačkog maratona. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijel…"
+  "updated": "11.8.2026. 20:08",
+  "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija) . Na dan 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isploviti će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Promjena se odnosi radi nesmetanog održavanja tradicionalnog 26. Viškog plivačkog maratona. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.…"
  },
  {
   "title": "Željeznički promet",
