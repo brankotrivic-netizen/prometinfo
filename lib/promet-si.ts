@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-11T13:38:33.760Z";
+export const PROMET_SI_UPDATED = "2026-08-11T14:41:57.280Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -70,17 +70,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-11T05:52:17.03Z"
  },
  {
-  "id": "DARS;869028;f40afdb9-810e-47cf-ba75-5bff0bfe5057",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-103, Nova Gorica - Tolmin, pri Zagomili, izmenično enosmerni promet, vzdrževalna dela, do 16:00.",
-  "loc": "G2-103, Plave - Solkan",
-  "lat": 46.00917,
-  "lng": 13.62086,
-  "start": "2026-08-11T05:50:28.927Z",
-  "end": "2026-08-11T14:00:00Z",
-  "ts": "2026-08-11T05:50:53.387Z"
- },
- {
   "id": "DARS;869023;5098cfd1-0892-465e-8bd4-7f2beb288610",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-663, Bušinja vas - Radovica, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
@@ -112,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T04:17:25.263Z",
   "end": "2026-08-11T16:00:00Z",
   "ts": "2026-08-11T04:17:59.423Z"
- },
- {
-  "id": "DARS;869000;eb88aea5-9553-4d57-85d9-ba0ee8c0e4d4",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Kozina - priključek Divača v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.61713,
-  "lng": 13.94903,
-  "start": "2026-08-11T03:56:41.537Z",
-  "end": "2026-08-11T14:00:56.713Z",
-  "ts": "2026-08-11T03:56:44.14Z"
  },
  {
   "id": "DARS;868995;9af145c8-6802-41df-8230-a8e91ae0c927",
