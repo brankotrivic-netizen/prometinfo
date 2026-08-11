@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-11T12:06:21.409Z";
+export const PROMET_SI_UPDATED = "2026-08-11T13:38:33.760Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;869086;c4b89908-9f82-467e-95c9-38b74ac4edd7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-440, Cankova - Kuzma, pri Cankovi, izmenično enosmerni promet, zalivanje reg in razpok, do 15:00.",
-  "loc": "R2-440, Cankova - Kuzma",
-  "lat": 46.71836,
-  "lng": 16.01997,
-  "start": "2026-08-11T11:46:07.883Z",
-  "end": "2026-08-11T13:00:00Z",
-  "ts": "2026-08-11T11:47:34.047Z"
+  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
+  "type": "MaintenanceWorks",
+  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
+  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
+  "lat": 46.20334,
+  "lng": 15.25907,
+  "start": "2026-07-29T13:00:00Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-08-11T13:00:52.82Z"
  },
  {
   "id": "DARS;868994;988c49bc-65de-4d3c-885a-7ef710407fe1",
@@ -59,28 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-11T06:21:06.257Z"
  },
  {
-  "id": "DARS;869033;6fdf8aee-473d-4c1d-b8a6-a43f8b7a5f09",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-409, Razdrto - Senožeče, izmenično enosmerni promet, pomična zapora, košnja, do 15:00.",
-  "loc": "R2-409, Razdrto - Senožeče",
-  "lat": 45.73846,
-  "lng": 14.053,
-  "start": "2026-08-11T05:55:35.477Z",
-  "end": "2026-08-11T13:00:00Z",
-  "ts": "2026-08-11T05:55:57.517Z"
- },
- {
-  "id": "DARS;869032;d1c9900f-7366-4c44-9fb1-768144e5fd77",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-618, Branik - Komen, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 15:00.",
-  "loc": "R3-618, Branik - Komen",
-  "lat": 45.84748,
-  "lng": 13.7872,
-  "start": "2026-08-11T05:54:04.263Z",
-  "end": "2026-08-11T13:00:00Z",
-  "ts": "2026-08-11T05:54:21.113Z"
- },
- {
   "id": "DARS;869030;b3b25f0b-e06c-4fde-ba71-a848b46264a8",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-204, Šempeter - Dornberk, pri Dombravi, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
@@ -103,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-11T05:50:53.387Z"
  },
  {
-  "id": "DARS;869027;4a760fc9-0af6-4da3-a2b3-6a26ac1c1bfb",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-4, Črnova - Arja vas, izmenično enosmerni promet, pomična zapora, košnja, do 15:00.",
-  "loc": "G1-4, Črnova - Arja Vas",
-  "lat": 46.30067,
-  "lng": 15.17182,
-  "start": "2026-08-11T05:48:46.673Z",
-  "end": "2026-08-11T13:00:00Z",
-  "ts": "2026-08-11T05:49:11.54Z"
- },
- {
   "id": "DARS;869023;5098cfd1-0892-465e-8bd4-7f2beb288610",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-663, Bušinja vas - Radovica, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
@@ -134,28 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T05:28:38.223Z",
   "end": "2026-08-11T17:00:00Z",
   "ts": "2026-08-11T05:28:54.603Z"
- },
- {
-  "id": "DARS;869017;8057c6be-f3a5-4da8-be43-2d4cd8d149a7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-403, Bača - Kneža, pri Bači pri Modreju, izmenično enosmerni promet, pomična zapora, košnja, do 15:00.",
-  "loc": "R2-403, Bača - Kneža",
-  "lat": 46.1496,
-  "lng": 13.77068,
-  "start": "2026-08-11T05:18:02.72Z",
-  "end": "2026-08-11T13:00:00Z",
-  "ts": "2026-08-11T05:21:14.71Z"
- },
- {
-  "id": "DARS;869009;17230fc0-b406-4554-a795-46dde3cd1ca9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-454, Maribor - Ptuj, v Staršah, izmenično enosmerni promet, vzdrževalna dela, do 15:00.",
-  "loc": "R2-454, Miklavž - Hajdina",
-  "lat": 46.46584,
-  "lng": 15.76882,
-  "start": "2026-08-11T05:00:00Z",
-  "end": "2026-08-11T13:00:00Z",
-  "ts": "2026-08-11T04:42:00.56Z"
  },
  {
   "id": "DARS;869007;e0eb7710-28a0-48e6-ad63-fa8db64c3838",
