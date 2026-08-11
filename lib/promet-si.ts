@@ -1,29 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-11T09:42:33.707Z";
+export const PROMET_SI_UPDATED = "2026-08-11T10:32:28.822Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;869062;51c3117d-e3c5-44f9-abaf-f35529ecad02",
+  "id": "DARS;868994;988c49bc-65de-4d3c-885a-7ef710407fe1",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - priključek Ljubljana center v smeri Kozarij, dela, oviran promet.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02004,
-  "lng": 14.51792,
-  "start": "2026-08-11T09:07:57.387Z",
-  "end": "2026-08-11T15:00:00Z",
-  "ts": "2026-08-11T09:07:58.873Z"
+  "desc": "A3, razcep Gabrk - Fernetiči, predor Tabor - priključek Sežana zahod v smeri Fernetičev, Italije, dela, oviran promet.",
+  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
+  "lat": 45.71469,
+  "lng": 13.86305,
+  "start": "2026-08-11T02:43:17.907Z",
+  "end": "2026-08-11T20:00:00Z",
+  "ts": "2026-08-11T10:11:37.08Z"
  },
  {
   "id": "DARS;869041;13ff562b-e91f-4359-b71a-e5d7fae9b77f",
   "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Lendava - prehod Pince v smeri Madžarske, dela, zaprt vozni pas.",
+  "desc": "A5, Maribor - Pince, priključek Lendava - prehod Pince v smeri Madžarske, dela, zaprt prehitevalni pas.",
   "loc": "A5, Maribor - Pince",
   "lat": 46.54098,
   "lng": 16.44074,
   "start": "2026-08-11T06:34:16.72Z",
   "end": "2026-08-11T12:00:13.133Z",
-  "ts": "2026-08-11T08:46:28.793Z"
+  "ts": "2026-08-11T09:59:26.88Z"
  },
  {
   "id": "DARS;869054;6ec54ebe-c851-4ed6-85ff-d4a8f32051fb",
@@ -68,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T07:05:11.457Z",
   "end": "2026-08-11T12:00:00Z",
   "ts": "2026-08-11T07:06:27.577Z"
- },
- {
-  "id": "DARS;869040;284a64c5-4444-4ce7-95a7-b3910cdcc0fb",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Studenec - priključek Razdrto v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.75956,
-  "lng": 14.18014,
-  "start": "2026-08-11T06:31:07.03Z",
-  "end": "2026-08-11T17:00:00Z",
-  "ts": "2026-08-11T06:31:26.31Z"
  },
  {
   "id": "DARS;842423;fb27deaa-4292-4bdc-b396-c56c94a7d0f5",
@@ -213,17 +202,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-11T05:21:14.71Z"
  },
  {
-  "id": "DARS;869016;3fb31f98-7a69-4bf5-bb2f-42e67692681c",
-  "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, počivališče Povir - uvoz Sežana vzhod, dela, zaprt prehitevalni pas.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.70983,
-  "lng": 13.92205,
-  "start": "2026-08-11T05:12:55.83Z",
-  "end": "2026-08-11T12:00:00Z",
-  "ts": "2026-08-11T05:13:09.527Z"
- },
- {
   "id": "DARS;869015;9acfe677-5ae5-4828-a7f5-912ea87ccf81",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-716, Grad - Kuzma, pri Gradu, izmenično enosmerni promet, pomična zapora, vzdrževalna dela, do 14:00.",
@@ -332,17 +310,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T03:25:14.06Z",
   "end": "2026-08-11T15:28:54.607Z",
   "ts": "2026-08-11T03:25:30.117Z"
- },
- {
-  "id": "DARS;868994;988c49bc-65de-4d3c-885a-7ef710407fe1",
-  "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, predor Tabor - priključek Sežana zahod v smeri Fernetičev, Italije, dela, zaprt vozni pas.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.71469,
-  "lng": 13.86305,
-  "start": "2026-08-11T02:43:17.907Z",
-  "end": "2026-08-11T13:00:00Z",
-  "ts": "2026-08-11T02:59:33.543Z"
  },
  {
   "id": "DARS;868992;c6bc620c-65c1-40e1-8f00-e65c61a82911",
