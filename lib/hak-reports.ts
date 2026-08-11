@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "11.8.2026. 22:40",
+  "updated": "11.8.2026. 23:33",
   "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Zbog jakog vjetra zabrana je za pojedine skupine vozila na Jadranskoj magistrali (niže u izvješću). Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI zbog rasutog tereta na državnoj cesti DC1 kod mjesta Drežnik Grad vozi se uz ograničenje brzine 30 km/h A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 12. kolovoza od 01:00 sat do 05:00 sati privremena zaustavljanja prometa, do maksimalno 15 minuta, po zaustavljanju prilikom uključivanja izvanrednog prijevoza na glavnu trasu autoceste A1, u zoni NP i čvora Karl…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "11.8.2026. 22:32",
+  "updated": "11.8.2026. 23:33",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "11.8.2026. 22:32",
+  "updated": "11.8.2026. 23:34",
   "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija) . U srijedu, 12.08.2026. brodsku liniju 409 Preko-Zadar vozit će trajekt Mate Balota sa veza br.1. Na dan 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isploviti će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Promjena se odnosi radi nesmetanog održavanja tradicionalnog 26. Viškog plivačkog maratona. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, b…"
  },
  {
