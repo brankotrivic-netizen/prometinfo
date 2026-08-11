@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-11T14:41:57.280Z";
+export const PROMET_SI_UPDATED = "2026-08-11T15:36:38.653Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -59,17 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-11T06:21:06.257Z"
  },
  {
-  "id": "DARS;869030;b3b25f0b-e06c-4fde-ba71-a848b46264a8",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-204, Šempeter - Dornberk, pri Dombravi, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R1-204, Šempeter - Dornberk",
-  "lat": 45.89997,
-  "lng": 13.6819,
-  "start": "2026-08-11T05:51:53.677Z",
-  "end": "2026-08-11T15:00:00Z",
-  "ts": "2026-08-11T05:52:17.03Z"
- },
- {
   "id": "DARS;869023;5098cfd1-0892-465e-8bd4-7f2beb288610",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-663, Bušinja vas - Radovica, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
@@ -101,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T04:17:25.263Z",
   "end": "2026-08-11T16:00:00Z",
   "ts": "2026-08-11T04:17:59.423Z"
- },
- {
-  "id": "DARS;868995;9af145c8-6802-41df-8230-a8e91ae0c927",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, uvoz Jesenice zahod - predor Karavanke v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.44535,
-  "lng": 14.01217,
-  "start": "2026-08-11T03:25:14.06Z",
-  "end": "2026-08-11T15:28:54.607Z",
-  "ts": "2026-08-11T03:25:30.117Z"
  },
  {
   "id": "DARS;868812;19640b8b-4729-441c-ae34-b82848b0a9a3",
@@ -189,17 +167,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T10:27:58.043Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-08T17:49:46.093Z"
- },
- {
-  "id": "DARS;868272;7d35dc98-64cf-49c3-80c8-5575a7609dd3",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Idrsko - Peršeti, na Volarjah, izmenično enosmerni promet, sanacije drsnih vozišč, do 11. 8. 2026.",
-  "loc": "G2-102, Idrsko - Peršeti",
-  "lat": 46.20413,
-  "lng": 13.65867,
-  "start": "2026-08-07T05:54:11.597Z",
-  "end": "2026-08-11T15:00:00Z",
-  "ts": "2026-08-07T05:55:44.027Z"
  },
  {
   "id": "DARS;868211;9b160530-e79e-4b46-91e9-495e2c6eed9f",
