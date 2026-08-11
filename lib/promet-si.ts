@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-11T15:36:38.653Z";
+export const PROMET_SI_UPDATED = "2026-08-11T16:31:51.201Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869124;3f17bac3-3ceb-4e80-b069-4fe1eb5678d0",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, razcep Zadobrova - priključek Domžale v smeri Celja, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.07218,
+  "lng": 14.57852,
+  "start": "2026-08-11T15:35:49.023Z",
+  "end": "2026-08-31T21:00:00Z",
+  "ts": "2026-08-11T15:37:58.51Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -59,17 +70,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-11T06:21:06.257Z"
  },
  {
-  "id": "DARS;869023;5098cfd1-0892-465e-8bd4-7f2beb288610",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-663, Bušinja vas - Radovica, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R3-663, Bušinja Vas - Radovica",
-  "lat": 45.68588,
-  "lng": 15.32474,
-  "start": "2026-08-11T05:31:09.823Z",
-  "end": "2026-08-11T16:00:00Z",
-  "ts": "2026-08-11T05:31:29.417Z"
- },
- {
   "id": "DARS;869021;a7734650-aa2a-4e37-ac6b-29266e39796c",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-660, Črnomelj - Adlešiči, izmenično enosmerni promet, pomična zapora, košnja, do 19:00.",
@@ -79,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T05:28:38.223Z",
   "end": "2026-08-11T17:00:00Z",
   "ts": "2026-08-11T05:28:54.603Z"
- },
- {
-  "id": "DARS;869007;e0eb7710-28a0-48e6-ad63-fa8db64c3838",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-5, Celje - Krško, Arto - Spodnje Pijavško, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "G1-5, Impoljca - Brestanica",
-  "lat": 45.98475,
-  "lng": 15.39521,
-  "start": "2026-08-11T04:17:25.263Z",
-  "end": "2026-08-11T16:00:00Z",
-  "ts": "2026-08-11T04:17:59.423Z"
  },
  {
   "id": "DARS;868812;19640b8b-4729-441c-ae34-b82848b0a9a3",
