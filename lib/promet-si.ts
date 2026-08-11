@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-11T20:23:27.467Z";
+export const PROMET_SI_UPDATED = "2026-08-11T21:10:52.358Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;868994;988c49bc-65de-4d3c-885a-7ef710407fe1",
-  "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, predor Tabor - priključek Sežana zahod v smeri Fernetičev, Italije, dela, oviran promet.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.71469,
-  "lng": 13.86305,
-  "start": "2026-08-11T02:43:17.907Z",
-  "end": "2026-08-11T21:30:00Z",
-  "ts": "2026-08-11T19:57:04.157Z"
- },
  {
   "id": "DARS;869149;cb632159-a571-4708-8db1-eb00e2250b94",
   "type": "MaintenanceWorks",
