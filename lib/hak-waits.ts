@@ -83,26 +83,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-11T10:07:29+02:00"
  },
  {
-  "id": "ba-neum-i",
-  "name": "Klek (Neum I)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "11.8.2026. 11:51:11",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-11T11:51:11+02:00",
-  "izlazTsISO": "",
-  "ts": "11.8.2026. 11:51:11",
-  "tsISO": "2026-08-11T11:51:11+02:00"
- },
- {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
   "ulazMin": 30,
@@ -121,25 +101,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "11.8.2026. 10:57:42",
   "tsISO": "2026-08-11T10:57:42+02:00"
- },
- {
-  "id": "hr-batina",
-  "name": "Batina (Bezdan)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": 90,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "1 h 30 min.",
-  "truckIzlazTxt": "-",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "",
-  "izlazTsISO": "",
-  "ts": "",
-  "tsISO": ""
  }
 ];
