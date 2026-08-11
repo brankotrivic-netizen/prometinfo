@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-11T07:56:22.915Z";
+export const PROMET_SI_UPDATED = "2026-08-11T08:44:26.361Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869054;6ec54ebe-c851-4ed6-85ff-d4a8f32051fb",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Trebnje zahod - priključek Bič v smeri Ljubljane, dela, zaprt počasni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.92077,
+  "lng": 14.94509,
+  "start": "2026-08-11T08:22:08.14Z",
+  "end": "2026-08-11T12:00:34.773Z",
+  "ts": "2026-08-11T08:22:14.107Z"
+ },
  {
   "id": "DARS;869047;e848247c-b229-4869-b53c-e0586e4ac0d8",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -200,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T05:24:11.38Z",
   "end": "2026-08-11T12:00:00Z",
   "ts": "2026-08-11T05:25:19.71Z"
- },
- {
-  "id": "DARS;869018;4c8450c3-5cab-49a0-a20a-99b757294315",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Bič - priključek Trebnje zahod v smeri Novega mesta, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.92807,
-  "lng": 14.91222,
-  "start": "2026-08-11T05:23:40.553Z",
-  "end": "2026-08-11T12:00:00Z",
-  "ts": "2026-08-11T05:24:19.387Z"
  },
  {
   "id": "DARS;869017;8057c6be-f3a5-4da8-be43-2d4cd8d149a7",
