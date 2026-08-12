@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.8.2026. 15:28",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detalji niže u izvješću ). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A3 Bregana-Lipovac zastoj je na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u smjeru Bregane A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredan prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj vozi se samo voznim trakom: od 17.+500 do 13.+750 km u smjeru Maclja (dionica Krapina – …"
+  "updated": "12.8.2026. 16:18",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detalji niže u izvješću ). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Ploče prometna nesreća između čvora Skradin i odmorišta Prokljan u smjeru Zagreba, vozi se usporeno u koloni A3 Bregana-Lipovac zastoj je na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u smjeru Bregane A6 Rijeka-Zagreb predmet u tunelu Lučice u smjeru Zagreba, vozi se jednom prometnom trakom uz ograničenje brzine od 60 km/h. A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJ…"
  },
  {
   "title": "Granični prijelazi",

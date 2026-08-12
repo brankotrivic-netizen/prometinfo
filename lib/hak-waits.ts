@@ -105,21 +105,21 @@ export const HAK_WAITS: HakWait[] = [
  {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
-  "ulazMin": 90,
+  "ulazMin": 60,
   "izlazMin": 30,
-  "ulazTxt": "1 h 30 min.",
+  "ulazTxt": "1 h",
   "izlazTxt": "do 30 min.",
   "truckUlazMin": null,
   "truckIzlazMin": 60,
   "truckUlazTxt": "-",
   "truckIzlazTxt": "1 h",
-  "level": "high",
-  "waitMinutes": 90,
-  "ulazTs": "12.8.2026. 13:12:28",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "12.8.2026. 16:39:01",
   "izlazTs": "12.8.2026. 13:12:17",
-  "ulazTsISO": "2026-08-12T13:12:28+02:00",
+  "ulazTsISO": "2026-08-12T16:39:01+02:00",
   "izlazTsISO": "2026-08-12T13:12:17+02:00",
-  "ts": "12.8.2026. 13:12:28",
-  "tsISO": "2026-08-12T13:12:28+02:00"
+  "ts": "12.8.2026. 16:39:01",
+  "tsISO": "2026-08-12T16:39:01+02:00"
  }
 ];
