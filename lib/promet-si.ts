@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-12T14:43:03.805Z";
+export const PROMET_SI_UPDATED = "2026-08-12T15:37:14.913Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;869318;664b7613-f5b4-4e9c-b6d7-c28b05ce22af",
@@ -112,17 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-12T05:44:51.53Z",
   "end": "2026-08-14T21:59:00Z",
   "ts": "2026-08-12T05:45:30.137Z"
- },
- {
-  "id": "DARS;869202;29b5d5a7-1195-43d7-a83c-2de9484ac940",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-204, Šempeter - Dornberk, AC priključek Šempeter - Volčja Draga, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R1-204, Šempeter - Dornberk",
-  "lat": 45.92251,
-  "lng": 13.65288,
-  "start": "2026-08-12T05:40:17.94Z",
-  "end": "2026-08-12T15:00:00Z",
-  "ts": "2026-08-12T05:41:14.917Z"
  },
  {
   "id": "DARS;869167;f72f203f-7428-4348-9a6a-289ddef6af97",
