@@ -1,40 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-12T18:33:07.819Z";
+export const PROMET_SI_UPDATED = "2026-08-12T19:45:46.607Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;869353;436d1d55-6efa-4df8-b507-e6ae090b4560",
+  "id": "DARS;869356;0fd0752e-022a-49e6-93b4-40ebf07a440d",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica jug - počivališče Tepanje v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.36677,
-  "lng": 15.51992,
-  "start": "2026-08-12T18:26:21.557Z",
-  "end": "2026-08-12T19:00:18.613Z",
-  "ts": "2026-08-12T18:26:24.783Z"
+  "desc": "A1, Ljubljana - Maribor, pred počivališčem Lukovica v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.16285,
+  "lng": 14.68511,
+  "start": "2026-08-12T19:36:14.59Z",
+  "end": "2026-08-13T03:00:00Z",
+  "ts": "2026-08-12T19:37:37.78Z"
  },
  {
-  "id": "DARS;869351;84cadab5-c749-4266-b6dc-e4cd73613c4d",
+  "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
   "type": "MaintenanceWorks",
-  "desc": "A4, Maribor - Gruškovje (Hrvaška), priključek Marjeta - priključek Hajdina v smeri Podlehnika, dela, oviran promet.",
-  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
-  "lat": 46.45799,
-  "lng": 15.73103,
-  "start": "2026-08-12T18:05:57.783Z",
-  "end": "2026-08-13T00:00:00Z",
-  "ts": "2026-08-12T18:06:10.97Z"
- },
- {
-  "id": "DARS;869348;9b659296-371b-4474-9586-8e4f84df7cb9",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, predor Dekani - priključek Črni Kal v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55131,
-  "lng": 13.83073,
-  "start": "2026-08-12T17:46:52.733Z",
-  "end": "2026-08-12T20:00:11.773Z",
-  "ts": "2026-08-12T17:46:55.233Z"
+  "desc": "H4, Nova Gorica - Razdrto, pred priključkom 2 Ajdovščina v smeri Razdrtega, dela, zaprt prehitevalni pas.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.88156,
+  "lng": 13.896,
+  "start": "2026-06-07T16:16:04.123Z",
+  "end": "2026-12-30T14:00:00Z",
+  "ts": "2026-08-12T18:55:52.82Z"
  },
  {
   "id": "DARS;869347;1c3a5d6a-8990-4541-8c5b-e66f9d35c9cb",
@@ -46,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-12T17:36:34.53Z",
   "end": "2026-08-13T03:00:12.503Z",
   "ts": "2026-08-12T17:37:18.207Z"
- },
- {
-  "id": "DARS;869318;664b7613-f5b4-4e9c-b6d7-c28b05ce22af",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, počivališče Polskava - počivališče Polskava v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.41643,
-  "lng": 15.62425,
-  "start": "2026-08-12T13:15:23.88Z",
-  "end": "2026-08-12T20:00:00Z",
-  "ts": "2026-08-12T17:26:21.163Z"
  },
  {
   "id": "DARS;869341;6a67400b-1581-4f80-a884-23a925467b74",
