@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.8.2026. 12:25",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detalji niže u izvješću ). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI Krčki most kolona je između čvora Šmrika i Omišlja u oba smjera A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredan prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj vozi se samo voznim trakom: od 17.+500 do 13.+750 km u smjeru Maclja (dionica Krapina – Đurmanec) i od 6.+700 do 8. +200 km u smjeru…"
+  "updated": "12.8.2026. 13:08",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detalji niže u izvješću ). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Ploče pred naplatom Demerje u smjeru Zagreba kolona je oko 1 km A3 Bregana-Lipovac zastoj je na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u smjeru Bregane Krčki most kolona je između čvora Šmrika i Omišlja u oba smjera A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredan prijevoz kretat će se na relaciji od ČC…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "12.8.2026. 12:25",
+  "updated": "12.8.2026. 13:08",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.8.2026. 12:25",
-  "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija) . U srijedu, 12.08.2026. brodsku liniju 409 Preko-Zadar vozit će trajekt Mate Balota sa veza br.1. Na dan 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isploviti će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Promjena se odnosi radi nesmetanog održavanja tradicionalnog 26. Viškog plivačkog maratona. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, b…"
+  "updated": "12.8.2026. 12:36",
+  "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija) . U srijedu, 12.08.2026. brodsku liniju 409 Preko-Zadar vozit će trajekt Mate Balota sa veza br.1. Dana 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak. Na dan 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isploviti će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Promjena se odnosi r…"
  },
  {
   "title": "Željeznički promet",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "12.8.2026. 10:52",
-  "text": "Prometna prognoza za Hrvatsku za utorak, 12. kolovoza 2026. Zbog bure na Jadranu moguća su ograničenja za pojedine skupine vozila, osobito na dionicama Jadranske magistrale u podvelebitskom području. Tijekom jutra i poslijepodneva, zbog pojačanog prometa vozit će se usporenije na gradskim cestama i obilaznicama. Zastoji i kolone posebice se očekuju na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A2 Zagreb-Macelj na čvoru Zagreb zapad te na autocesti A3 Bregana-Lipovac između čvorova Sveta Nedelja i Zagreb zapad. Pojačan promet očekuje se i na cestama u smjeru mora, a zastoji su povremeno mogući u zonama tunela, odmorišta i naplata te na prilazima turističkim središtima. Na pojedini…"
+  "updated": "12.8.2026. 13:16",
+  "text": "Prometna prognoza za Hrvatsku za utorak, 13. kolovoza 2026. Zbog bure na Jadranu moguća su ograničenja za pojedine skupine vozila, osobito na dionicama Jadranske magistrale u podvelebitskom području. Tijekom jutra i poslijepodneva, zbog pojačanog prometa vozit će se usporenije na gradskim cestama i obilaznicama. Zastoji i kolone posebice se očekuju na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A2 Zagreb-Macelj na čvoru Zagreb zapad te na autocesti A3 Bregana-Lipovac između čvorova Sveta Nedelja i Zagreb zapad. Pojačan promet očekuje se i na cestama u smjeru mora, a zastoji su povremeno mogući u zonama tunela, odmorišta i naplata te na prilazima turističkim središtima. Na pojedini…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",

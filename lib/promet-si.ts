@@ -1,40 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-12T10:32:28.466Z";
+export const PROMET_SI_UPDATED = "2026-08-12T11:27:23.710Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;869270;00e83ad4-d114-43c8-a106-c0d56cd94aab",
+  "id": "DARS;869283;6ec86c2a-45ac-4bf6-8ead-92a31492dd96",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Šentrupert v smeri Ljubljane, dela, zaprt prehitevalni pas, strojno pometanje.",
+  "desc": "A1, Maribor - Ljubljana, priključek Šempeter - priključek Šentrupert v smeri Ljubljane, dela, zaprt odstavni pas, strojno pometanje.",
   "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25969,
-  "lng": 15.09872,
-  "start": "2026-08-12T09:53:11.29Z",
-  "end": "2026-08-12T11:00:31.42Z",
-  "ts": "2026-08-12T09:53:49.067Z"
- },
- {
-  "id": "DARS;869266;d3c38836-406c-458c-8a38-28c8df21ca90",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Kozarje iz smeri Brezovice proti Brdu, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.02514,
-  "lng": 14.43224,
-  "start": "2026-08-12T09:44:26.167Z",
-  "end": "2026-08-12T13:00:00Z",
-  "ts": "2026-08-12T09:45:31.69Z"
- },
- {
-  "id": "DARS;869250;720fadc9-1a7f-4a1a-b574-4c0783f29ce0",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Lom - priključek Unec v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.84889,
-  "lng": 14.28532,
-  "start": "2026-08-12T08:40:46.39Z",
-  "end": "2026-08-12T14:00:00Z",
-  "ts": "2026-08-12T08:40:52.373Z"
+  "lat": 46.25982,
+  "lng": 15.09944,
+  "start": "2026-08-12T10:46:25.5Z",
+  "end": "2026-08-12T16:00:00Z",
+  "ts": "2026-08-12T10:46:57.313Z"
  },
  {
   "id": "DARS;869245;a9ab1a81-a764-4f12-88ff-398a74ca36d2",
@@ -44,8 +22,19 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 46.53272,
   "lng": 16.47956,
   "start": "2026-08-12T08:19:56.607Z",
-  "end": "2026-08-12T11:00:27.677Z",
-  "ts": "2026-08-12T08:20:11.863Z"
+  "end": "2026-08-12T14:00:00Z",
+  "ts": "2026-08-12T10:37:12.987Z"
+ },
+ {
+  "id": "DARS;869250;720fadc9-1a7f-4a1a-b574-4c0783f29ce0",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, pred priključkom Unec v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.83836,
+  "lng": 14.29404,
+  "start": "2026-08-12T08:40:46.39Z",
+  "end": "2026-08-12T14:00:00Z",
+  "ts": "2026-08-12T10:36:24.423Z"
  },
  {
   "id": "DARS;869238;c94a6dbf-8cd5-4b09-96d4-bc072620b36d",
