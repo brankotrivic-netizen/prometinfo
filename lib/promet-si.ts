@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-12T16:33:01.925Z";
+export const PROMET_SI_UPDATED = "2026-08-12T17:38:24.538Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869347;1c3a5d6a-8990-4541-8c5b-e66f9d35c9cb",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, predor Šentvid - priključek Vodice v smeri Jesenic, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.08796,
+  "lng": 14.46051,
+  "start": "2026-08-12T17:36:34.53Z",
+  "end": "2026-08-13T03:00:12.503Z",
+  "ts": "2026-08-12T17:37:18.207Z"
+ },
  {
   "id": "DARS;869318;664b7613-f5b4-4e9c-b6d7-c28b05ce22af",
   "type": "MaintenanceWorks",
@@ -11,8 +22,41 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 46.41643,
   "lng": 15.62425,
   "start": "2026-08-12T13:15:23.88Z",
-  "end": "2026-08-12T17:30:33.557Z",
-  "ts": "2026-08-12T13:15:54.51Z"
+  "end": "2026-08-12T20:00:00Z",
+  "ts": "2026-08-12T17:26:21.163Z"
+ },
+ {
+  "id": "DARS;869345;b365456f-8717-431f-b5a5-dff7d63e35ea",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Domžale - uvoz Domžale v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.13606,
+  "lng": 14.61889,
+  "start": "2026-08-12T17:24:20.267Z",
+  "end": "2026-08-12T21:59:19.41Z",
+  "ts": "2026-08-12T17:24:30.977Z"
+ },
+ {
+  "id": "DARS;869341;6a67400b-1581-4f80-a884-23a925467b74",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Ločica - uvoz Žalec v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.22668,
+  "lng": 14.94913,
+  "start": "2026-08-12T16:58:42.83Z",
+  "end": "2026-08-13T02:00:00Z",
+  "ts": "2026-08-12T16:58:55.427Z"
+ },
+ {
+  "id": "DARS;869339;4a5514ec-8464-47f8-998a-1f24002619b6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Logatec - priključek Brezovica v smeri Ljubljane, dela, zaprt odstavni pas, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.90908,
+  "lng": 14.25838,
+  "start": "2026-08-12T16:51:18.283Z",
+  "end": "2026-08-12T21:30:00Z",
+  "ts": "2026-08-12T16:51:45.373Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -59,17 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-12T07:09:49.98Z"
  },
  {
-  "id": "DARS;869214;b5629f29-6aa0-43b3-85cf-b380e5e95c29",
-  "type": "MaintenanceWorks",
-  "desc": "R3-661, Črnomelj - Metlika - Krmačina, Krmačina - Drašiči, oviran promet, košnja, do 19:00.",
-  "loc": "R3-661, Krmačina - Drašiči - Metlika",
-  "lat": 45.66735,
-  "lng": 15.39157,
-  "start": "2026-08-12T06:05:14.117Z",
-  "end": "2026-08-12T17:00:00Z",
-  "ts": "2026-08-12T06:11:42.393Z"
- },
- {
   "id": "DARS;869213;d868237c-da32-4743-b395-5a01e43c2b8f",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-108, Litija - Zagorje, pri Renkah, izmenično enosmerni promet, sanacije usada Renke, do 24. 12. 2026.",
@@ -112,28 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-12T05:44:51.53Z",
   "end": "2026-08-14T21:59:00Z",
   "ts": "2026-08-12T05:45:30.137Z"
- },
- {
-  "id": "DARS;869167;f72f203f-7428-4348-9a6a-289ddef6af97",
-  "type": "MaintenanceWorks",
-  "desc": "R2-421, Štrekljevec - Jugorje, oviran promet, košnja, do 19:00.",
-  "loc": "R2-421, Štrekljevec - Jugorje",
-  "lat": 45.67055,
-  "lng": 15.21386,
-  "start": "2026-08-12T04:00:00Z",
-  "end": "2026-08-12T17:00:00Z",
-  "ts": "2026-08-12T03:55:42.603Z"
- },
- {
-  "id": "DARS;869165;a11dfffa-e061-4a71-8bf3-ccf7c399deae",
-  "type": "MaintenanceWorks",
-  "desc": "R3-660, Dolenjci - Adlešiči - Žuniči, Dolenjci - Marindol, oviran promet, košnja, do 19:00.",
-  "loc": "R3-660, Dolenjci - Adlešiči - Žuniči",
-  "lat": 45.53528,
-  "lng": 15.29638,
-  "start": "2026-08-12T04:00:00Z",
-  "end": "2026-08-12T17:00:00Z",
-  "ts": "2026-08-12T03:54:02.257Z"
  },
  {
   "id": "DARS;869124;3f17bac3-3ceb-4e80-b069-4fe1eb5678d0",

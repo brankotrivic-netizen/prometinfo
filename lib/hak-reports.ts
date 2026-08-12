@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.8.2026. 18:20",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja ili poteškoća. Zastoji su povremeno na dijelovima cesta gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detaljnije u popisu cesta ). Vozače upozoravamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na Jadranskoj magistrali (DC8) u Brodarici (kod Šibenika) - vozi se jednim trakom uz ograničenje brzine od 40 km/h, uz regulaciju policije A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredan prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do …"
+  "updated": "12.8.2026. 19:20",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja ili poteškoća. Zastoji su povremeno na dijelovima cesta gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detaljnije u popisu cesta ). Vozače upozoravamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na Jadranskoj magistrali (DC8) u Brodarici (kod Šibenika) - vozi se jednim trakom uz ograničenje brzine od 40 km/h, uz regulaciju policije prometna nesreća na državnoj cesti DC58 Šibenik-Plano u mjestu Plano - vozi se otežano, uz privremenu regulaciju prometa prometna nesreća na državnoj cesti DC70 Omiš-Kos…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "12.8.2026. 18:17",
+  "updated": "12.8.2026. 19:20",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.8.2026. 18:23",
+  "updated": "12.8.2026. 19:20",
   "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ( Jadrolinija ). Izmjene u polovidbenom redu: u srijedu, 12.08.2026. brodsku liniju 409 Preko-Zadar vozit će trajekt Mate Balota sa veza br.1 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Do pr…"
  },
  {
