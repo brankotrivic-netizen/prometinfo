@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.8.2026. 19:20",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja ili poteškoća. Zastoji su povremeno na dijelovima cesta gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detaljnije u popisu cesta ). Vozače upozoravamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na Jadranskoj magistrali (DC8) u Brodarici (kod Šibenika) - vozi se jednim trakom uz ograničenje brzine od 40 km/h, uz regulaciju policije prometna nesreća na državnoj cesti DC58 Šibenik-Plano u mjestu Plano - vozi se otežano, uz privremenu regulaciju prometa prometna nesreća na državnoj cesti DC70 Omiš-Kos…"
+  "updated": "12.8.2026. 20:28",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja ili poteškoća. Zastoji su povremeno na dijelovima cesta gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detaljnije u popisu cesta ). Vozače upozoravamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI OPREZ! životinja (srna) na autocesti A3 kod odmorišta Novoselec - vozi se uz ograničenje brzine od 40 km/h OPREZ! lešina na autocesti A1 Zagreb-Split-Dubrovnik na 93. km između čvorova Brinje i Ogulin u smjeru Zagreba - vozi se uz ograničenje brzine od 80 km/h prometna nesreća na državnoj cesti DC1 u mjestu Podosoje - vozi …"
  },
  {
   "title": "Granični prijelazi",
