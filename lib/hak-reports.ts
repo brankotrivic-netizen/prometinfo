@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.8.2026. 13:08",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detalji niže u izvješću ). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Ploče pred naplatom Demerje u smjeru Zagreba kolona je oko 1 km A3 Bregana-Lipovac zastoj je na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u smjeru Bregane Krčki most kolona je između čvora Šmrika i Omišlja u oba smjera A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredan prijevoz kretat će se na relaciji od ČC…"
+  "updated": "12.8.2026. 14:03",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detalji niže u izvješću ). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Split-Ploče pred naplatom Demerje u smjeru Zagreba kolona je oko 1 km pred naplatom Lučko u smjeru Zagreba kolona je oko 1 km A3 Bregana-Lipovac zastoj je na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u smjeru Bregane A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredan prijevoz kretat će se na relaciji od ČCNP Karam…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,7 +13,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.8.2026. 12:36",
+  "updated": "12.8.2026. 14:03",
   "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija) . U srijedu, 12.08.2026. brodsku liniju 409 Preko-Zadar vozit će trajekt Mate Balota sa veza br.1. Dana 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak. Na dan 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isploviti će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Promjena se odnosi r…"
  },
  {
