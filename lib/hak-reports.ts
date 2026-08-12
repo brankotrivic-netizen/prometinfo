@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.8.2026. 22:14",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja ili poteškoća. Zastoji su povremeno na dijelovima cesta gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detaljnije u popisu cesta ). Vozače upozoravamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI OPREZ! lešina na autocesti A1 Zagreb-Split-Dubrovnik na 93. km između čvorova Brinje i Ogulin u smjeru Zagreba - vozi se uz ograničenje brzine od 80 km/h prometna nesreća na autocesti A7 Rupa-Križišće na 27.+000 km između čvorova Škurinje i Orehovica u smjeru Križišća - vozi jednim trakom uz ograničenje brzine od 40 km/h pr…"
+  "updated": "12.8.2026. 23:20",
+  "text": "Na većini cesta vozi se bez posebnih ograničenja ili poteškoća. Zastoji su povremeno na dijelovima cesta gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detaljnije u popisu cesta ). Vozače upozoravamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na autocesti A7 Rupa-Križišće na 27.+000 km između čvorova Škurinje i Orehovica u smjeru Križišća - vozi jednim trakom uz ograničenje brzine od 40 km/h A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredan prijevoz kretat će se na relaciji od ČCNP Karama…"
  },
  {
   "title": "Granični prijelazi",
