@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.8.2026. 23:20",
+  "updated": "12.8.2026. 23:46",
   "text": "Na većini cesta vozi se bez posebnih ograničenja ili poteškoća. Zastoji su povremeno na dijelovima cesta gdje traju radovi. Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali ( detaljnije u popisu cesta ). Vozače upozoravamo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na autocesti A7 Rupa-Križišće na 27.+000 km između čvorova Škurinje i Orehovica u smjeru Križišća - vozi jednim trakom uz ograničenje brzine od 40 km/h A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredan prijevoz kretat će se na relaciji od ČCNP Karama…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "12.8.2026. 22:29",
+  "updated": "12.8.2026. 23:46",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.8.2026. 22:29",
-  "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ( Jadrolinija ). Izmjene u polovidbenom redu: u srijedu, 12.08.2026. brodsku liniju 409 Preko-Zadar vozit će trajekt Mate Balota sa veza br.1 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Do pr…"
+  "updated": "12.8.2026. 23:49",
+  "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ( Jadrolinija ). Izmjene u polovidbenom redu: 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Do promjena dolazi zbog nesmetanog održavanja tradicionalnog 26. Viškog plivačkog maratona. Jadrolini…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "12.8.2026. 22:29",
+  "updated": "12.8.2026. 23:46",
   "text": "Stanje u željezničkom putničkom prometu 12. kolovoza 2026. u 8.00 sati Autobusi prevoze putnike sljedećih vlakova: - 5803 Perković 9.04 – Šibenik 9.34 - 5822 Šibenik 11.10 – Unešić 11.57 - 5831 Unešić 12.45 – Šibenik 13.53 - 5824 Šibenik 14.27 – Perković 14.56 - 5825 Perković 15.18 – Šibenik 15.47 - 5804 Šibenik 16.03 – Knin 17.43 - 521 Oštarije 9.08 – Split 14.09. Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 v…"
  },
  {
