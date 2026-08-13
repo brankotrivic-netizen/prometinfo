@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-13T10:42:15.305Z";
+export const PROMET_SI_UPDATED = "2026-08-13T11:26:47.153Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;869468;908a4b74-68d7-4809-8912-8373ce12d20f",
@@ -35,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-13T09:36:52.74Z"
- },
- {
-  "id": "DARS;869459;8907442e-2876-44e0-9183-f96dabd25898",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - zahodna obvoznica, razcep Kozarje - razcep Koseze v smeri Kosez, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - zah. obvoznica",
-  "lat": 46.04409,
-  "lng": 14.44673,
-  "start": "2026-08-13T09:28:32.783Z",
-  "end": "2026-08-13T11:40:33.177Z",
-  "ts": "2026-08-13T09:28:47Z"
  },
  {
   "id": "DARS;869448;d1e63e51-7b19-4e4e-8382-711dc19813fd",
@@ -398,28 +387,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T05:19:41.653Z",
   "end": "2026-08-13T12:00:00Z",
   "ts": "2026-08-13T05:19:47.647Z"
- },
- {
-  "id": "DARS;869388;3b06b4e5-924e-433d-853e-ca26003f6892",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, izvoz Radovljica - uvoz Radovljica v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.33762,
-  "lng": 14.19353,
-  "start": "2026-08-13T05:18:00.13Z",
-  "end": "2026-08-13T13:19:18.813Z",
-  "ts": "2026-08-13T05:19:09.457Z"
- },
- {
-  "id": "DARS;869387;2424ddbd-d060-45e4-b18b-8d3e50613ff3",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Črni Kal - predor Kastelec v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.55277,
-  "lng": 13.85928,
-  "start": "2026-08-13T05:18:59.777Z",
-  "end": "2026-08-13T12:00:31.563Z",
-  "ts": "2026-08-13T05:19:02.737Z"
  },
  {
   "id": "DARS;869386;d663fc72-85e3-4edc-a7d6-ff68f701dfc5",

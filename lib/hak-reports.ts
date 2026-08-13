@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "13.8.2026. 12:41",
-  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (opširnije u izvješću) . Na većini ostalih cesta vozi se bez posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na prilaznim cestama turističkim središtima duž jadranske obale te važnijim cestama u smjeru mora i prema unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima, poštuju prometne propise i ograničenja i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići na naplatnoj postaji Demerje u smjeru Zagreba kolona je 1 km zbog veće gustoće prometa uz povremene z…"
+  "updated": "13.8.2026. 13:22",
+  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali (opširnije u izvješću) . Na većini ostalih cesta vozi se bez posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na prilaznim cestama turističkim središtima duž jadranske obale te važnijim cestama u smjeru mora i prema unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima, poštuju prometne propise i ograničenja i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići na naplatnoj postaji Demerje u smjeru Zagreba kolona je 1 km zbog veće gustoće prometa uz povremene…"
  },
  {
   "title": "Granični prijelazi",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "12.8.2026. 17:37",
-  "text": "Prometna prognoza za Hrvatsku za utorak, 13. kolovoza 2026. Zbog bure na Jadranu moguća su ograničenja za pojedine skupine vozila, osobito na dionicama Jadranske magistrale u podvelebitskom području. Tijekom jutra i poslijepodneva, zbog pojačanog prometa vozit će se usporenije na gradskim cestama i obilaznicama. Zastoji i kolone posebice se očekuju na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A2 Zagreb-Macelj na čvoru Zagreb zapad te na autocesti A3 Bregana-Lipovac između čvorova Sveta Nedelja i Zagreb zapad. Pojačan promet očekuje se i na cestama u smjeru mora, a zastoji su povremeno mogući u zonama tunela, odmorišta i naplata te na prilazima turističkim središtima. Na pojedini…"
+  "updated": "13.8.2026. 13:05",
+  "text": "Prometna prognoza za Hrvatsku za 14. kolovoza 2026. Gužve i zastoje očekujemo sutra na većini cesta u smjeru mora, osobito na autocestama te na prilazima turističkim središtima duž Jadranske magistrale (DC8), brzoj cesti Solin-Klis (DC1), Krčkom mostu i na pojedinim državnim cestama. Zabrana prometa za teretna vozila najveće dopuštene mase iznad 7,5 tona bit će sutra (14. kolovoza) od 15:00 do 23:00 na državnim cestama duž jadranske obale. Čekanja u putničkom prometu očekujemo na graničnim prijelazima Gornji Varoš, Ličko Petrovo Selo, Svilaj, Bajakovo, Karasovići i Tovarnik. U pomorskom prometu ne očekuju se poteškoće. Hrvatski autoklub želi vam sretan i ugodan put. Savjeti HAK-a: prije pola…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
