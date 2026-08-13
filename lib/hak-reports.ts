@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "13.8.2026. 10:08",
-  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (opširnije u izvješću) . Na većini ostalih cesta vozi se bez posebnih ograničenja. Zastoji su povremeno na dionicama cesta gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima, poštuju prometne propise i ograničenja i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na autocesti A1 u tunelu Čelinka u smjeru Zagreba. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 60 km/h. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredan prijevoz kretat će se na relaciji od ČCNP…"
+  "updated": "13.8.2026. 11:28",
+  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (opširnije u izvješću) . Na većini ostalih cesta vozi se bez posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na prilaznim cestama turističkim središtima duž Jadranske obale te važnijim cestama u smjeru mora i prema unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima, poštuju prometne propise i ograničenja i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na autocesti A1 u tunelu Čelinka u smjeru Zagreba, vozi se uz ograničenje brzine od 60 km/h. Kolona između odmo…"
  },
  {
   "title": "Granični prijelazi",
