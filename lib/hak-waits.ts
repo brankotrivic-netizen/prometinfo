@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-gradiska",
-  "name": "Gornji Varoš (Gradiška (novi most))",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "13.8.2026. 16:42:06",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-13T16:42:06+02:00",
-  "izlazTsISO": "",
-  "ts": "13.8.2026. 16:42:06",
-  "tsISO": "2026-08-13T16:42:06+02:00"
- },
- {
   "id": "ba-brod",
   "name": "Slavonski Brod (Bosanski Brod)",
   "ulazMin": null,
@@ -36,10 +16,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "low",
   "waitMinutes": 30,
   "ulazTs": "Nema podataka",
-  "izlazTs": "13.8.2026. 19:08:38",
+  "izlazTs": "13.08.2026 19:08:38",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-13T19:08:38+02:00",
-  "ts": "13.8.2026. 19:08:38",
+  "ts": "13.08.2026 19:08:38",
   "tsISO": "2026-08-13T19:08:38+02:00"
  },
  {
@@ -55,19 +35,19 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "L: 0 km T: 13.8.2026. 17:01:26",
-  "izlazTs": "L: 0 km T: 13.8.2026. 17:01:49",
+  "ulazTs": "L: 0 km T: 13.08.2026 17:01:26",
+  "izlazTs": "L: 0 km T: 13.08.2026 17:01:49",
   "ulazTsISO": "2026-08-13T17:01:26+02:00",
   "izlazTsISO": "2026-08-13T17:01:49+02:00",
-  "ts": "L: 0 km T: 13.8.2026. 17:01:26",
+  "ts": "L: 0 km T: 13.08.2026 17:01:26",
   "tsISO": "2026-08-13T17:01:26+02:00"
  },
  {
   "id": "ba-velika-kladusa",
   "name": "Maljevac (Velika Kladuša)",
-  "ulazMin": 60,
+  "ulazMin": 30,
   "izlazMin": 60,
-  "ulazTxt": "1 h",
+  "ulazTxt": "do 30 min.",
   "izlazTxt": "1 h",
   "truckUlazMin": null,
   "truckIzlazMin": null,
@@ -75,12 +55,12 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "13.8.2026. 20:12:14",
-  "izlazTs": "13.8.2026. 20:12:22",
-  "ulazTsISO": "2026-08-13T20:12:14+02:00",
+  "ulazTs": "13.08.2026 21:02:16",
+  "izlazTs": "13.08.2026 20:12:22",
+  "ulazTsISO": "2026-08-13T21:02:16+02:00",
   "izlazTsISO": "2026-08-13T20:12:22+02:00",
-  "ts": "13.8.2026. 20:12:14",
-  "tsISO": "2026-08-13T20:12:14+02:00"
+  "ts": "13.08.2026 21:02:16",
+  "tsISO": "2026-08-13T21:02:16+02:00"
  },
  {
   "id": "ba-izacic",
@@ -95,11 +75,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ulazTs": "13.8.2026. 19:14:06",
-  "izlazTs": "13.8.2026. 19:14:37",
+  "ulazTs": "13.08.2026 19:14:06",
+  "izlazTs": "13.08.2026 19:14:37",
   "ulazTsISO": "2026-08-13T19:14:06+02:00",
   "izlazTsISO": "2026-08-13T19:14:37+02:00",
-  "ts": "13.8.2026. 19:14:06",
+  "ts": "13.08.2026 19:14:06",
   "tsISO": "2026-08-13T19:14:06+02:00"
  },
  {
@@ -116,10 +96,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "low",
   "waitMinutes": 30,
   "ulazTs": "Nema podataka",
-  "izlazTs": "13.8.2026. 20:25:49",
+  "izlazTs": "13.08.2026 20:25:49",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-13T20:25:49+02:00",
-  "ts": "13.8.2026. 20:25:49",
+  "ts": "13.08.2026 20:25:49",
   "tsISO": "2026-08-13T20:25:49+02:00"
  },
  {
@@ -135,11 +115,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ulazTs": "13.8.2026. 20:08:34",
-  "izlazTs": "13.8.2026. 20:08:54",
+  "ulazTs": "13.08.2026 20:08:34",
+  "izlazTs": "13.08.2026 20:08:54",
   "ulazTsISO": "2026-08-13T20:08:34+02:00",
   "izlazTsISO": "2026-08-13T20:08:54+02:00",
-  "ts": "13.8.2026. 20:08:34",
+  "ts": "13.08.2026 20:08:34",
   "tsISO": "2026-08-13T20:08:34+02:00"
  }
 ];
