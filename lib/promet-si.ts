@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-13T21:10:34.382Z";
+export const PROMET_SI_UPDATED = "2026-08-13T21:59:39.768Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;869542;ac215c18-bd10-4ff0-89b4-fa65ae1fe431",
+  "id": "DARS;869527;bb891ae5-7c33-480a-b09b-dc7ac736da5c",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Konjice - priključek Sl. Bistrica jug v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.34002,
-  "lng": 15.47754,
-  "start": "2026-08-13T17:51:09.417Z",
-  "end": "2026-08-14T03:00:00Z",
-  "ts": "2026-08-13T21:01:14.18Z"
+  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.9271,
+  "lng": 14.86024,
+  "start": "2026-08-13T15:18:36.453Z",
+  "end": "2026-08-14T05:30:00Z",
+  "ts": "2026-08-13T21:56:38.93Z"
+ },
+ {
+  "id": "DARS;869551;a5681eb8-832c-42e6-a70e-7e735f581da8",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Zadobrova - razcep Zadobrova iz smeri Novih Jarš proti Sneberjam, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.06775,
+  "lng": 14.57293,
+  "start": "2026-08-13T19:45:09.38Z",
+  "end": "2026-08-14T06:30:00Z",
+  "ts": "2026-08-13T21:42:37.14Z"
  },
  {
   "id": "DARS;869555;ec459d9e-1f2f-4373-8654-43e6ad111449",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T20:37:22.133Z",
   "end": "2026-08-14T00:00:00Z",
   "ts": "2026-08-13T20:37:38.04Z"
- },
- {
-  "id": "DARS;869551;a5681eb8-832c-42e6-a70e-7e735f581da8",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Zadobrova - razcep Zadobrova iz smeri Novih Jarš proti Sneberjam, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.06775,
-  "lng": 14.57293,
-  "start": "2026-08-13T19:45:09.38Z",
-  "end": "2026-08-13T21:30:53.467Z",
-  "ts": "2026-08-13T19:45:13.643Z"
  },
  {
   "id": "DARS;869550;f489afb3-c037-43c2-b9e1-6d0424adb3aa",
@@ -57,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T19:28:17.81Z",
   "end": "2026-08-14T07:00:00Z",
   "ts": "2026-08-13T19:29:10.223Z"
- },
- {
-  "id": "DARS;869527;bb891ae5-7c33-480a-b09b-dc7ac736da5c",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.9271,
-  "lng": 14.86024,
-  "start": "2026-08-13T15:18:36.453Z",
-  "end": "2026-08-13T21:59:00Z",
-  "ts": "2026-08-13T18:57:41.197Z"
- },
- {
-  "id": "DARS;869539;eca437cd-d0f1-4a7e-a09c-b6e5bd871c05",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Ivančna Gorica v smeri Novega mesta, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.93427,
-  "lng": 14.79355,
-  "start": "2026-08-13T17:15:40.883Z",
-  "end": "2026-08-13T21:30:00Z",
-  "ts": "2026-08-13T18:44:43.66Z"
  },
  {
   "id": "DARS;869543;96efa16b-cd89-432a-ad48-2b29c5fc54e6",
