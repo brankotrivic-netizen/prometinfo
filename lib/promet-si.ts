@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-13T13:42:15.611Z";
+export const PROMET_SI_UPDATED = "2026-08-13T15:37:30.232Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869527;bb891ae5-7c33-480a-b09b-dc7ac736da5c",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.9271,
+  "lng": 14.86024,
+  "start": "2026-08-13T15:18:36.453Z",
+  "end": "2026-08-13T18:16:07.23Z",
+  "ts": "2026-08-13T15:18:46.333Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-13T13:00:28.36Z"
- },
- {
-  "id": "DARS;869370;538aba35-eeec-40f8-8b6c-d78e894522f1",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Fram - razcep Slivnica v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.45274,
-  "lng": 15.65204,
-  "start": "2026-08-13T03:24:43.567Z",
-  "end": "2026-08-13T17:30:00Z",
-  "ts": "2026-08-13T12:56:51.153Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -103,28 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-13T06:13:41.147Z"
  },
  {
-  "id": "DARS;869414;769fc57d-483c-4f0a-adef-410142fc6a6f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-403, Kneža - Podbrdo, Kneža - Grahovo ob Bači, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
-  "loc": "R2-403, Kneža - Podbrdo",
-  "lat": 46.16149,
-  "lng": 13.8268,
-  "start": "2026-08-13T06:12:28.127Z",
-  "end": "2026-08-13T14:00:00Z",
-  "ts": "2026-08-13T06:12:56.897Z"
- },
- {
-  "id": "DARS;869413;36b3ef96-b9df-42ba-8fa7-fb1eef7de880",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-403, Bača pri Modreju - Petrovo Brdo, pri Klavžah, izmenično enosmerni promet, pomična zapora, čiščenje cestišča, do 16:00.",
-  "loc": "R2-403, Bača - Kneža",
-  "lat": 46.15976,
-  "lng": 13.81575,
-  "start": "2026-08-13T06:11:36.143Z",
-  "end": "2026-08-13T14:00:00Z",
-  "ts": "2026-08-13T06:12:10.54Z"
- },
- {
   "id": "DARS;869412;fda2fbbf-7b3e-43fc-8ec1-aec7d8bcd898",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-421, Štrekljevec - Jugorje, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
@@ -156,28 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T06:06:15.797Z",
   "end": "2026-08-13T17:00:00Z",
   "ts": "2026-08-13T06:07:01.433Z"
- },
- {
-  "id": "DARS;869392;28490f71-14ce-4084-99b4-ddd1f8b35ae6",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-204, Dornberk - Štanjel, Dornberk - Saksid, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R1-204, Dornberk - Štanjel",
-  "lat": 45.88611,
-  "lng": 13.73522,
-  "start": "2026-08-13T05:31:45.833Z",
-  "end": "2026-08-13T15:00:00Z",
-  "ts": "2026-08-13T05:32:59.57Z"
- },
- {
-  "id": "DARS;869373;185f6bfd-c9f9-4c69-879f-d75530c359cd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Gabrk - počivališče Risnik v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.69261,
-  "lng": 13.97859,
-  "start": "2026-08-13T03:34:59.74Z",
-  "end": "2026-08-13T14:00:17.493Z",
-  "ts": "2026-08-13T03:35:05.247Z"
  },
  {
   "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
