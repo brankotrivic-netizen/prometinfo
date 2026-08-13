@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "13.8.2026. 13:22",
-  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali (opširnije u izvješću) . Na većini ostalih cesta vozi se bez posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na prilaznim cestama turističkim središtima duž jadranske obale te važnijim cestama u smjeru mora i prema unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima, poštuju prometne propise i ograničenja i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići na naplatnoj postaji Demerje u smjeru Zagreba kolona je 1 km zbog veće gustoće prometa uz povremene…"
+  "updated": "13.8.2026. 13:47",
+  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali (opširnije u izvješću) . Na većini ostalih cesta vozi se bez posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na prilaznim cestama turističkim središtima duž jadranske obale te važnijim cestama u smjeru mora i prema unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima, poštuju prometne propise i ograničenja i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići prometna nesreća na 25+000 km između čvora Jastrebarsko i čvora Karlovac u smjeru Dubrovnika. zbog …"
  },
  {
   "title": "Granični prijelazi",
