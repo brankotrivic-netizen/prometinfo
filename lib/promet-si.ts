@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-13T19:42:06.123Z";
+export const PROMET_SI_UPDATED = "2026-08-13T20:19:15.167Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869551;a5681eb8-832c-42e6-a70e-7e735f581da8",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Zadobrova - razcep Zadobrova iz smeri Novih Jarš proti Sneberjam, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.06775,
+  "lng": 14.57293,
+  "start": "2026-08-13T19:45:09.38Z",
+  "end": "2026-08-13T21:30:53.467Z",
+  "ts": "2026-08-13T19:45:13.643Z"
+ },
  {
   "id": "DARS;869550;f489afb3-c037-43c2-b9e1-6d0424adb3aa",
   "type": "MaintenanceWorks",
