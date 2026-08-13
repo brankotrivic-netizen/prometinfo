@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "13.8.2026. 11:28",
-  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (opširnije u izvješću) . Na većini ostalih cesta vozi se bez posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na prilaznim cestama turističkim središtima duž Jadranske obale te važnijim cestama u smjeru mora i prema unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima, poštuju prometne propise i ograničenja i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na autocesti A1 u tunelu Čelinka u smjeru Zagreba, vozi se uz ograničenje brzine od 60 km/h. Kolona između odmo…"
+  "updated": "13.8.2026. 12:41",
+  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (opširnije u izvješću) . Na većini ostalih cesta vozi se bez posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na prilaznim cestama turističkim središtima duž jadranske obale te važnijim cestama u smjeru mora i prema unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima, poštuju prometne propise i ograničenja i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI A1 Zagreb-Ploče-Karamatići na naplatnoj postaji Demerje u smjeru Zagreba kolona je 1 km zbog veće gustoće prometa uz povremene z…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "13.8.2026. 09:39",
-  "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ( Jadrolinija ). Izmjene u polovidbenom redu: 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Do promjena dolazi zbog nesmetanog održavanja tradicionalnog 26. Viškog plivačkog maratona 15. kolovo…"
+  "updated": "13.8.2026. 12:09",
+  "text": "U prekidu je kataramaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ( Jadrolinija ). Izmjene u polovidbenom redu: 14. kolovoza uvodi se dodatno putovanje na trajektnoj liniji Orebić-Dominče. Trajekt će isploviti iz Dominča za Orebić u 01:50, a iz Orebića za Dominče u 02:15 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati)…"
  },
  {
   "title": "Željeznički promet",
