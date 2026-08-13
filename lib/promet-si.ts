@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-13T16:32:13.775Z";
+export const PROMET_SI_UPDATED = "2026-08-13T17:38:47.782Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869541;0589cb70-dc97-4c85-8f17-90229c813d83",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Škofije - Koper, priključek Škofije v smeri Kopra, dela, oviran promet, košnja.",
+  "loc": "G1-11, Škofije - Koper",
+  "lat": 45.5672,
+  "lng": 13.78298,
+  "start": "2026-08-13T17:17:50.027Z",
+  "end": "2026-08-13T23:00:00Z",
+  "ts": "2026-08-13T17:18:00.793Z"
+ },
+ {
+  "id": "DARS;869540;caf0e5dc-fe38-4fb1-8092-c8b5f2637ece",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Škofije - Koper, priključek Škofije iz smeri Škofij, Italije, dela, oviran promet, košnja.",
+  "loc": "G1-11, Škofije - Koper",
+  "lat": 45.56786,
+  "lng": 13.78478,
+  "start": "2026-08-13T17:17:09.743Z",
+  "end": "2026-08-13T23:00:00Z",
+  "ts": "2026-08-13T17:17:34.11Z"
+ },
+ {
+  "id": "DARS;869539;eca437cd-d0f1-4a7e-a09c-b6e5bd871c05",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Ivančna Gorica v smeri Novega mesta, dela, zaprt vozni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.93427,
+  "lng": 14.79355,
+  "start": "2026-08-13T17:15:40.883Z",
+  "end": "2026-08-13T19:18:33.33Z",
+  "ts": "2026-08-13T17:15:52.553Z"
+ },
+ {
+  "id": "DARS;869536;b6e3555e-ecb7-4591-a73e-1f118b5132d7",
+  "type": "MaintenanceWorks",
+  "desc": "R2-430, Pesnica - Hoče, uvoz Maribor center v smeri Maribora, dela, oviran promet, košnja.",
+  "loc": "R2-430, Pesnica - Hoče",
+  "lat": 46.55883,
+  "lng": 15.6606,
+  "start": "2026-08-13T17:00:47.66Z",
+  "end": "2026-08-13T23:00:00Z",
+  "ts": "2026-08-13T17:00:52.523Z"
+ },
+ {
+  "id": "DARS;869535;d02b48e8-fdba-448f-96b4-5a8c4b2d87bb",
+  "type": "MaintenanceWorks",
+  "desc": "R2-430, Pesnica - Hoče, uvoz Maribor center iz smeri Šentilja, Avstrije, dela, oviran promet, košnja.",
+  "loc": "R2-430, Pesnica - Hoče",
+  "lat": 46.56384,
+  "lng": 15.66217,
+  "start": "2026-08-13T17:00:03.37Z",
+  "end": "2026-08-13T23:00:00Z",
+  "ts": "2026-08-13T17:00:15.46Z"
+ },
  {
   "id": "DARS;869527;bb891ae5-7c33-480a-b09b-dc7ac736da5c",
   "type": "MaintenanceWorks",
@@ -101,17 +156,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T06:12:42.773Z",
   "end": "2027-07-15T21:59:00Z",
   "ts": "2026-08-13T06:13:41.147Z"
- },
- {
-  "id": "DARS;869410;63c2f65f-e4dd-4777-87bc-2e96673cffd9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-660, Dolenjci - Adlešiči - Žuniči, Marindol - Žuniči, izmenično enosmerni promet, pomična zapora, košnja, do 19:00.",
-  "loc": "R3-660, Dolenjci - Adlešiči - Žuniči",
-  "lat": 45.49962,
-  "lng": 15.34662,
-  "start": "2026-08-13T06:06:15.797Z",
-  "end": "2026-08-13T17:00:00Z",
-  "ts": "2026-08-13T06:07:01.433Z"
  },
  {
   "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
