@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-13T15:37:30.232Z";
+export const PROMET_SI_UPDATED = "2026-08-13T16:32:13.775Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;869527;bb891ae5-7c33-480a-b09b-dc7ac736da5c",
@@ -101,28 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T06:12:42.773Z",
   "end": "2027-07-15T21:59:00Z",
   "ts": "2026-08-13T06:13:41.147Z"
- },
- {
-  "id": "DARS;869412;fda2fbbf-7b3e-43fc-8ec1-aec7d8bcd898",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-421, Štrekljevec - Jugorje, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "R2-421, Štrekljevec - Jugorje",
-  "lat": 45.67058,
-  "lng": 15.21389,
-  "start": "2026-08-13T06:10:03.42Z",
-  "end": "2026-08-13T16:00:00Z",
-  "ts": "2026-08-13T06:10:48.747Z"
- },
- {
-  "id": "DARS;869411;ab557cb7-3c52-4a52-8399-9841065b1fcd",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-919, Vinica - Žuniči, Balkovci - Žuniči, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "RT-919, Žuniči - Vinica",
-  "lat": 45.48154,
-  "lng": 15.35956,
-  "start": "2026-08-13T06:07:29.343Z",
-  "end": "2026-08-13T16:00:00Z",
-  "ts": "2026-08-13T06:08:23.963Z"
  },
  {
   "id": "DARS;869410;63c2f65f-e4dd-4777-87bc-2e96673cffd9",
