@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-13T17:38:47.782Z";
+export const PROMET_SI_UPDATED = "2026-08-13T18:34:11.109Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869527;bb891ae5-7c33-480a-b09b-dc7ac736da5c",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.9271,
+  "lng": 14.86024,
+  "start": "2026-08-13T15:18:36.453Z",
+  "end": "2026-08-13T19:00:00Z",
+  "ts": "2026-08-13T18:16:14.527Z"
+ },
+ {
+  "id": "DARS;869543;96efa16b-cd89-432a-ad48-2b29c5fc54e6",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Brnik v smeri Jesenic, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.15143,
+  "lng": 14.47805,
+  "start": "2026-08-13T17:56:42.967Z",
+  "end": "2026-08-14T05:00:00Z",
+  "ts": "2026-08-13T17:57:05.607Z"
+ },
+ {
+  "id": "DARS;869542;ac215c18-bd10-4ff0-89b4-fa65ae1fe431",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Sl. Konjice - priključek Sl. Bistrica jug v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.34002,
+  "lng": 15.47754,
+  "start": "2026-08-13T17:51:09.417Z",
+  "end": "2026-08-14T00:30:24.357Z",
+  "ts": "2026-08-13T17:51:19.067Z"
+ },
  {
   "id": "DARS;869541;0589cb70-dc97-4c85-8f17-90229c813d83",
   "type": "MaintenanceWorks",
@@ -57,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T17:00:03.37Z",
   "end": "2026-08-13T23:00:00Z",
   "ts": "2026-08-13T17:00:15.46Z"
- },
- {
-  "id": "DARS;869527;bb891ae5-7c33-480a-b09b-dc7ac736da5c",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.9271,
-  "lng": 14.86024,
-  "start": "2026-08-13T15:18:36.453Z",
-  "end": "2026-08-13T18:16:07.23Z",
-  "ts": "2026-08-13T15:18:46.333Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",

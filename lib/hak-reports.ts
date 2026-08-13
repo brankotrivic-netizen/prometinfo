@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "13.8.2026. 19:30",
-  "text": "Zbog vjetra zabrana je prometa I. skupinu vozila samo na Jadranskoj magistrali-DC8 (vidjeti niže!) . Na većini ostalih cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI DC501 Meja: otklanjanje kvara na cestovnoj signalizaciji na pružnom prijelazu Meja, pozivamo vozače na dodatan oprez (vozi se usporeno, korisnike molimo za strpljenje) vozilo u kvaru (osobno vozilo) na autocesti A6 između 23.+540 km i tunela Čardak na kolniku u smjeru Rijeke. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h predmet na autocesti A3 na 129. km između čvora Novska i čvora Okučani na kolniku u smjeru Lipovca. Vozi se uz ograničenje…"
+  "updated": "13.8.2026. 20:14",
+  "text": "Zbog vjetra zabrana je prometa I. skupinu vozila samo na Jadranskoj magistrali-DC8 (vidjeti niže!) . Na većini ostalih cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI DC501 Meja: otklanjanje kvara na cestovnoj signalizaciji na pružnom prijelazu Meja, pozivamo vozače na dodatan oprez (vozi se usporeno, korisnike molimo za strpljenje) AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026 . godine od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj vozi se samo voznim trakom: od 17.+500 do 13.+750 km u smjeru Maclja (dionica Krapina – Đu…"
  },
  {
   "title": "Granični prijelazi",
