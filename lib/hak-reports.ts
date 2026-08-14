@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.8.2026. 12:29",
-  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: na čvoru Bosiljevo 2 u smjeru Zagreba kolona je duga oko 8 km zbog prometne nesreće na 159. km između tunela Grič i odmorišta Janjče u smjeru Zagreba kolona je duga oko 7 km na dionici od čvora Zadar istok do tunela Čelinka u smjeru Zagreba vozi se u kolonama u pokretu uz povremene zastoje autobus u kvaru između čvorova Podi i Šibenik u smjeru Zagreba (323. km), vozi se jednim prometnim trakom uz ograničenje brzine 80 km/h osobno vozilo u kvaru između odmorišta Sitno i čvora Danilo u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 80 km/h Jadranska magistrala (DC8): zbog jakog vjetra između Senja i Karlobaga zabra…"
+  "updated": "14.8.2026. 13:24",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: kolona na naplati Demerje u smjeru Zagreba duga je oko 1 km na čvoru Bosiljevo 2 u smjeru Zagreba kolona je duga oko 8 km između čvorova Perušić i Otočac u smjeru Zagreba kolona je duga oko 10 km na dionici od čvora Posedarje do tunela Čelinka u smjeru Zagreba vozi se u kolonama u pokretu uz povremene zastoje autobus u kvaru između čvorova Podi i Šibenik u smjeru Zagreba (323. km), vozi se jednim prometnim trakom uz ograničenje brzine 80 km/h A3 Bregana-Lipovac: prometna nesreća između čvora Kosnica i mosta Sava na 37. km u smjeru Lipovca, v ozi se u koloni dugoj oko 2 km Jadranska magistrala (DC8): zbog požara prekinut je promet u mje…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "14.8.2026. 12:29",
+  "updated": "14.8.2026. 12:58",
   "text": "Zbog nestanka struje prekinut je promet na GP Užljebić. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbija…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "14.8.2026. 12:29",
+  "updated": "14.8.2026. 12:58",
   "text": "U prekidu su: katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija) trajektna linija Drvenik-Sućuraj (Jadrolinija) - linija će se uspostaviti u 16:30 iz luke Sućuraj Izmjene u polovidbenom redu: trajekt na liniji 633 Ploče-Trpanj do daljnjega vozi non stop, bez praćenja standardnog reda plovidbe, uvodi se dodatna linija 635 Split - Stari Grad s polaskom iz luke Split u 12:30 te povratak iz luke Stari Grad u 15:00 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isploviti će u 06:30 i 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zada…"
  },
  {
