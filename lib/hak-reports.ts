@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.8.2026. 16:34",
-  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: kolone na naplati Lučko u oba smjera i Demerje u smjeru Zagreba duge su oko 1 km na dionicama između čvora Ogulin i naplate Lučko te čvorova Gospić i Otočac u smjeru Zagreba vozi se u kolonama u pokretu uz povremene zastoje A2 Zagreb-Macelj: kolona na naplati Zaprešić u smjeru Krapine duga je oko 1 km A3 Bregana-Lipovac: između čvorova Lučko i Zagreb zapad u smjeru Bregane te Buzin i Zagreb istok u smjeru Lipovca vozi se usporeno u kolonama u pokretu uz povremene zastoje Omiška obilaznica (DC553): zbog požara prekinut je promet prema Makarskoj Pelješac (DC414 i DC415): zbog požara na državnoj cesti DC414 na dionici Prizdrina-Potomje vo…"
+  "updated": "14.8.2026. 17:27",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: kolone na naplati Lučko u smjera mora i Demerje u smjeru Zagreba duge su oko 1 km na dionici između čvora Ogulin i naplate Lučko u smjeru Zagreba povremeno se vozi u kolonama u pokretu uz povremene zastoje A2 Zagreb-Macelj: kolona na naplati Trakošćan u smje ru Zagreba duga je oko 1 km, a na naplati Zaprešić u smjeru Krapine oko 500 metara zabranjen je promet za teretna vozila i autobuse između čvorova Krapina i Đurmanec u oba smjera A3 Bregana-Lipovac: između čvorova Lučko i Zagreb zapad u smjeru Bregane te Buzin i Zagreb istok u smjeru Lipovca vozi se usporeno u kolonama u pokretu uz povremene zastoje Omiška obilaznica (DC553): zbog …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "14.8.2026. 16:34",
+  "updated": "14.8.2026. 17:19",
   "text": "Zbog nestanka struje prekinut je promet na GP Užljebić. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbija…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "14.8.2026. 16:34",
-  "text": "U prekidu je katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija). Izmjene u polovidbenom redu: trajekt na liniji 633 Ploče-Trpanj do daljnjega vozi non stop, bez praćenja standardnog reda plovidbe, uvodi se dodatna linija 635 Split - Stari Grad s polaskom iz luke Split u 12:30 te povratak iz luke Stari Grad u 15:00 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isploviti će u 06:30 i 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine k…"
+  "updated": "14.8.2026. 17:19",
+  "text": "U prekidu je katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija). Izmjene u polovidbenom redu: 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isploviti će u 06:30 i 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uplovi…"
  },
  {
   "title": "Željeznički promet",

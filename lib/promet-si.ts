@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-14T14:36:39.956Z";
+export const PROMET_SI_UPDATED = "2026-08-14T15:28:02.520Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -59,28 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-14T05:37:29.513Z"
  },
  {
-  "id": "DARS;869587;36a59ddb-7dd7-43e3-b75a-1b518cc0db00",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-421, Jugorje pri Metliki - Štrekljevec - Ručetna vas, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R2-421, Ručetna Vas - Štrekljevec",
-  "lat": 45.62253,
-  "lng": 15.16551,
-  "start": "2026-08-14T05:34:03.777Z",
-  "end": "2026-08-14T15:00:00Z",
-  "ts": "2026-08-14T05:35:19.143Z"
- },
- {
-  "id": "DARS;869585;31ddc45a-27ad-49b1-965d-7cb1c0d18ad3",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-919, Vinica - Žuniči, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "RT-919, Žuniči - Vinica",
-  "lat": 45.48153,
-  "lng": 15.35956,
-  "start": "2026-08-14T05:25:44.937Z",
-  "end": "2026-08-14T15:00:00Z",
-  "ts": "2026-08-14T05:27:33.847Z"
- },
- {
   "id": "DARS;857354;2bd24ed5-9663-4beb-beb1-4aacf36bb740",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-601, Borjana - Robidišče, pri Podbeli, izmenično enosmerni promet, izvedba omrežja GOŠO6, do 22. 8. 2026.",
@@ -90,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-15T06:19:31.58Z",
   "end": "2026-08-22T17:00:00Z",
   "ts": "2026-08-14T05:17:56.22Z"
- },
- {
-  "id": "DARS;869581;392f60f8-56c4-4cf4-8e2c-a83b4075fa86",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-204, Dornberk - Štanjel, Saskid - Branik, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R1-204, Dornberk - Štanjel",
-  "lat": 45.87655,
-  "lng": 13.75466,
-  "start": "2026-08-14T05:15:12.73Z",
-  "end": "2026-08-14T15:00:00Z",
-  "ts": "2026-08-14T05:16:58.147Z"
  },
  {
   "id": "DARS;868804;1eb0f48a-629a-456f-8270-29bbf9dc7f65",
