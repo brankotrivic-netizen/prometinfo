@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.8.2026. 08:49",
-  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: prometna nesreća na 64.+700 km na čvoru Bosiljevo 2 u smjeru Zagreba, vozi se jednim prometnim trakom u koloni dugoj oko 2 km osobno vozilo u kvaru između odmorišta Sitno i čvora Danilo u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 80 km/h Jadranska magistrala (DC8): zbog jakog vjetra između Senja i Svete Marije Magdalene zabrana je prometa za motocikle, vozila s prikolicama i autobuse na kat (I. skupina) zbog požara prekinut je promet u mjestu Lokva Rogoznica (dionica Stanići-Medići) Omiška obilaznica (DC553): zbog požara prekinut je promet na omiškoj obilaznici (DC553) prema Makarskoj Pelješac (DC414): zbog …"
+  "updated": "14.8.2026. 10:01",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: prometna nesreća na 64.+700 km na čvoru Bosiljevo 2 u smjeru Zagreba, vozi se jednim prometnim trakom u koloni dugoj oko 9 km, alternativni pravac je čvor Ogulin i dalje državnim cestama preko Josipdola, Tounja i Generalskog Stola prema Karlovcu osobno vozilo u kvaru između odmorišta Sitno i čvora Danilo u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 80 km/h Jadranska magistrala (DC8): zbog jakog vjetra između Senja i Svete Marije Magdalene zabrana je prometa za motocikle, vozila s prikolicama i autobuse na kat (I. skupina) zbog požara prekinut je promet u mjestu Lokva Rogoznica (dionica Stanići-Medići) Krčki m…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "14.8.2026. 08:20",
+  "updated": "14.8.2026. 09:59",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "14.8.2026. 08:20",
-  "text": "U prekidu je katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ( Jadrolinija ). Izmjene u polovidbenom redu: zbog nastale situacije uzrokovane požarom trajekt Sv. Juraj će isploviti u dodatnoj liniji u 08:40 iz Ploča, odnosno u 09:50 iz Trpnja 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isploviti će u 06:30 i 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sat…"
+  "updated": "14.8.2026. 09:59",
+  "text": "U prekidu je katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ( Jadrolinija ). Izmjene u polovidbenom redu: trajekt na liniji 633 Ploče-Trpanj do daljnjega vozi non stop, bez praćenja standardnog reda plovidbe, 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isploviti će u 06:30 i 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luk…"
  },
  {
   "title": "Željeznički promet",

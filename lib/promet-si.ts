@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-14T06:50:34.133Z";
+export const PROMET_SI_UPDATED = "2026-08-14T08:06:22.018Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869605;3a9dc16e-b2af-4cdf-b90a-b05ab4a2d5d7",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-441, Murska Sobota - Gederovci, v Murski Soboti, Ulica Štefana Kovača, izmenično enosmerni promet, pomična zapora, zalivanje reg in razpok, do 14:00.",
+  "loc": "R2-441, Murska Sobota - Gederovci",
+  "lat": 46.66079,
+  "lng": 16.15802,
+  "start": "2026-08-14T07:38:55.62Z",
+  "end": "2026-08-14T12:00:00Z",
+  "ts": "2026-08-14T07:39:30.537Z"
+ },
+ {
+  "id": "DARS;869603;c40059a9-3631-4e46-a644-17fe3e7c2dee",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-443, Bratonci - Beltinci, izmenično enosmerni promet, pomična zapora, barvanje talnih označb, do 14:00.",
+  "loc": "R2-443, Bratonci - Beltinci",
+  "lat": 46.6233,
+  "lng": 16.21654,
+  "start": "2026-08-14T07:32:52.533Z",
+  "end": "2026-08-14T12:00:00Z",
+  "ts": "2026-08-14T07:35:02.85Z"
+ },
+ {
+  "id": "DARS;869601;11c08263-e4d9-4c8a-bb49-1e137b47a3d6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, pred razcepom Srmin v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55849,
+  "lng": 13.79204,
+  "start": "2026-08-14T07:15:49.267Z",
+  "end": "2026-08-14T10:00:02.69Z",
+  "ts": "2026-08-14T07:16:44.757Z"
+ },
  {
   "id": "DARS;869595;96639fb3-6015-4e10-89b8-15b0013390dc",
   "type": "MaintenanceWorks",
@@ -24,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-14T05:56:24.81Z",
   "end": "2026-08-14T09:00:47.267Z",
   "ts": "2026-08-14T05:56:57.793Z"
- },
- {
-  "id": "DARS;869593;71c44ab8-85ba-43b2-8afe-df2bf3a5ad96",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, predor Dekani - razcep Srmin v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55444,
-  "lng": 13.80461,
-  "start": "2026-08-14T05:55:40.27Z",
-  "end": "2026-08-20T15:00:57.683Z",
-  "ts": "2026-08-14T05:55:48.74Z"
  },
  {
   "id": "DARS;869591;0d65e505-38a7-4d84-ba8c-6c7b966df9b9",
