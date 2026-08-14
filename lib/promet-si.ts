@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-14T09:18:09.161Z";
+export const PROMET_SI_UPDATED = "2026-08-14T10:30:37.474Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;869620;f447c206-04b3-4c28-93da-16d61e1eb696",
@@ -48,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-14T07:35:02.85Z"
  },
  {
-  "id": "DARS;869601;11c08263-e4d9-4c8a-bb49-1e137b47a3d6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, pred razcepom Srmin v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55849,
-  "lng": 13.79204,
-  "start": "2026-08-14T07:15:49.267Z",
-  "end": "2026-08-14T10:00:02.69Z",
-  "ts": "2026-08-14T07:16:44.757Z"
- },
- {
   "id": "DARS;869595;96639fb3-6015-4e10-89b8-15b0013390dc",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - Koper, uvoz Brezovica - uvoz Vrhnika v smeri Kopra, dela, oviran promet.",
@@ -68,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-14T06:23:33.95Z",
   "end": "2026-08-14T20:00:06.7Z",
   "ts": "2026-08-14T06:23:47.493Z"
- },
- {
-  "id": "DARS;869591;0d65e505-38a7-4d84-ba8c-6c7b966df9b9",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Kronovo - priključek Dobruška vas v smeri Obrežja, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.86551,
-  "lng": 15.27598,
-  "start": "2026-08-14T05:42:35.633Z",
-  "end": "2026-08-14T09:20:31.717Z",
-  "ts": "2026-08-14T05:42:37.01Z"
  },
  {
   "id": "DARS;869590;7ea71457-c2e4-496b-9b07-8de1d21c439a",
@@ -244,17 +222,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-14T04:57:23.193Z",
   "end": "2026-08-14T12:00:31.563Z",
   "ts": "2026-08-14T04:57:36.65Z"
- },
- {
-  "id": "DARS;869569;57c30147-81bd-4bd7-a0ff-26ffad569e8a",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Cerkvenjak - priključek Vučja vas v smeri Murske Sobote, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.56476,
-  "lng": 15.92702,
-  "start": "2026-08-14T03:58:58.023Z",
-  "end": "2026-08-14T11:00:10.607Z",
-  "ts": "2026-08-14T03:59:00.743Z"
  },
  {
   "id": "DARS;869568;9ef91da5-6a68-4202-a844-e22c7aa74c1e",
