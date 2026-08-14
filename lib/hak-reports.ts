@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.8.2026. 22:19",
-  "text": "IZVANREDNI PROMETNI DOGAĐAJI: pješak na autocesti A7 između odmorišta Vrata Jadrana Jug i čvora Rijeka zapad na kolniku u smjeru Križišća - vozi se uz ograničenje brzine od 60 km/h prometna nesreća na autocesti A4 Goričan-Zagreb na 80+200 km između čvora Popovec i čvora Sveta Helena na kolniku u smjeru Goričana - vozi se uz ograničenje brzine od 60 km/h vozilo u kvaru na autocesti A6 rijeka-zagreb, u tunelu Tuhobić na ugibalištu u smjeru Zagreba - promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h zbog požara za sva vozila zatvorena je Omiška obilaznica (DC553) zbog požara na Pelješcu na vozi se jednim prometnim trakom na državnoj cesti DC414 na dionici Prizdrina-Potomje…"
+  "updated": "14.8.2026. 22:42",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A1 između čvorova Jastrebarsko i Karlovac, između 26. i 27. km u smjeru Dubrovnika, vozi se po dva prometna traka uz ograničenje brzine prometna nesreća na autocesti A4 Goričan-Zagreb na 80+200 km između čvora Popovec i čvora Sveta Helena na kolniku u smjeru Goričana - vozi se uz ograničenje brzine od 80 km/h vozilo u kvaru na autocesti A6 rijeka-zagreb, u tunelu Tuhobić na ugibalištu u smjeru Zagreba - promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h zbog požara za sva vozila zatvorena je Omiška obilaznica (DC553) zbog požara na Pelješcu na vozi se jednim prometnim trakom na državnoj cesti DC414 na dioni…"
  },
  {
   "title": "Granični prijelazi",
