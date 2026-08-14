@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.8.2026. 10:01",
-  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: prometna nesreća na 64.+700 km na čvoru Bosiljevo 2 u smjeru Zagreba, vozi se jednim prometnim trakom u koloni dugoj oko 9 km, alternativni pravac je čvor Ogulin i dalje državnim cestama preko Josipdola, Tounja i Generalskog Stola prema Karlovcu osobno vozilo u kvaru između odmorišta Sitno i čvora Danilo u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 80 km/h Jadranska magistrala (DC8): zbog jakog vjetra između Senja i Svete Marije Magdalene zabrana je prometa za motocikle, vozila s prikolicama i autobuse na kat (I. skupina) zbog požara prekinut je promet u mjestu Lokva Rogoznica (dionica Stanići-Medići) Krčki m…"
+  "updated": "14.8.2026. 11:17",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: na čvoru Bosiljevo 2 u smjeru Zagreba kolona je duga oko 13 km, alternativni pravac je čvor Ogulin (kolona 1 km) i dalje državnim cestama preko Josipdola, Tounja i Generalskog Stola prema Karlovcu kolona na čvoru Ogulin u smjeru Zagreba duga je oko 1 km prometna nesreća u tunelu Grič u smjeru Zagreba, vozi se jednim prometnim trakom u koloni dugoj oko 8 km na dionicama od odmorišta Vukova Gorica do čvora Bosiljevo2 u smjeru mora te od čvora Zadar centar do tunela Čelinka vozi se u kolonama u pokretu uz povremene zastoje osobno vozilo u kvaru između odmorišta Sitno i čvora Danilo u smjeru Zagreba, vozi se jednim prometnim trakom uz ogra…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "14.8.2026. 09:59",
-  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
+  "updated": "14.8.2026. 11:14",
+  "text": "Zbog nestanka struje prekinut je promet na GP Užljebić. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbija…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "14.8.2026. 09:59",
-  "text": "U prekidu je katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun ( Jadrolinija ). Izmjene u polovidbenom redu: trajekt na liniji 633 Ploče-Trpanj do daljnjega vozi non stop, bez praćenja standardnog reda plovidbe, 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isploviti će u 06:30 i 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luk…"
+  "updated": "14.8.2026. 11:16",
+  "text": "U prekidu su: katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija) trajektna linija Drvenik-Sućuraj (Jadrolinija) Izmjene u polovidbenom redu: trajekt na liniji 633 Ploče-Trpanj do daljnjega vozi non stop, bez praćenja standardnog reda plovidbe, 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isploviti će u 06:30 i 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Spli…"
  },
  {
   "title": "Željeznički promet",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "13.8.2026. 17:22",
-  "text": "Prometna prognoza za Hrvatsku za 14. kolovoza 2026. Gužve i zastoje očekujemo sutra na većini cesta u smjeru mora, osobito na autocestama te na prilazima turističkim središtima duž Jadranske magistrale (DC8), brzoj cesti Solin-Klis (DC1), Krčkom mostu i na pojedinim državnim cestama. Zabrana prometa za teretna vozila najveće dopuštene mase iznad 7,5 tona bit će sutra (14. kolovoza) od 15:00 do 23:00 na državnim cestama duž jadranske obale. Čekanja u putničkom prometu očekujemo na graničnim prijelazima Gornji Varoš, Ličko Petrovo Selo, Svilaj, Bajakovo, Karasovići i Tovarnik. U pomorskom prometu ne očekuju se poteškoće. Hrvatski autoklub želi vam sretan i ugodan put. Savjeti HAK-a: prije pola…"
+  "updated": "14.8.2026. 11:04",
+  "text": "Prometna prognoza za Hrvatsku za 15. kolovoza, 2026. Tijekom noći i ujutro veći broj hodočasnika kretat će se cestama prema marijanskim svetištima. Najviše se hodočasnika očekuje iz smjera Zagreba i Varaždina prema Mariji Bistrici, prema Sinju iz smjera Splita te na prilaznim cestama Trsatu, Aljmašu i Krasnom. Podsjećamo hodočasnike da se kreću lijevom stranom ceste, u koloni, jedan iza drugoga te koriste reflektirajući prsluk i svjetiljke. Pojačan promet očekujemo na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima duž jadranske obale, otoku Krku i Krčkom mostu, u trajektnim lukama i pristaništima te na graničnim prijelazima. Vozit će se …"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",

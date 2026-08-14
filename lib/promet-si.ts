@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-14T08:06:22.018Z";
+export const PROMET_SI_UPDATED = "2026-08-14T09:18:09.161Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869620;f447c206-04b3-4c28-93da-16d61e1eb696",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, predor Mali Vrh - razcep Malence v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.99085,
+  "lng": 14.59301,
+  "start": "2026-08-14T08:37:37.343Z",
+  "end": "2026-08-14T11:30:21.477Z",
+  "ts": "2026-08-14T08:37:40.493Z"
+ },
+ {
+  "id": "DARS;869046;71221ea3-d235-459c-968a-e5f53c2d21e2",
+  "type": "MaintenanceWorks",
+  "desc": "G2-103, Nova Gorica - Tolmin, oviran promet, sanacije drsnih vozišč, do 19. 8. 2026.",
+  "loc": "G2-103, Plave - Solkan",
+  "lat": 46.0034,
+  "lng": 13.6311,
+  "start": "2026-08-11T07:08:36.33Z",
+  "end": "2026-08-19T21:59:00Z",
+  "ts": "2026-08-14T08:16:14.313Z"
+ },
  {
   "id": "DARS;869605;3a9dc16e-b2af-4cdf-b90a-b05ab4a2d5d7",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -46,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-14T06:23:33.95Z",
   "end": "2026-08-14T20:00:06.7Z",
   "ts": "2026-08-14T06:23:47.493Z"
- },
- {
-  "id": "DARS;869594;5ca79708-6237-4205-bafb-19032287283a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, razcep Malence - uvoz Šmarje Sap v smeri Novega mesta, dela, oviran promet.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.0126,
-  "lng": 14.55444,
-  "start": "2026-08-14T05:56:24.81Z",
-  "end": "2026-08-14T09:00:47.267Z",
-  "ts": "2026-08-14T05:56:57.793Z"
  },
  {
   "id": "DARS;869591;0d65e505-38a7-4d84-ba8c-6c7b966df9b9",
@@ -411,17 +422,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-11T07:14:29.77Z"
  },
  {
-  "id": "DARS;869046;71221ea3-d235-459c-968a-e5f53c2d21e2",
-  "type": "MaintenanceWorks",
-  "desc": "G2-103, Nova Gorica - Tolmin, oviran promet, sanacije drsnih vozišč, do 14. 8. 2026.",
-  "loc": "G2-103, Plave - Solkan",
-  "lat": 46.0034,
-  "lng": 13.6311,
-  "start": "2026-08-11T07:08:36.33Z",
-  "end": "2026-08-20T21:59:00Z",
-  "ts": "2026-08-11T07:10:51.193Z"
- },
- {
   "id": "DARS;842423;fb27deaa-4292-4bdc-b396-c56c94a7d0f5",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-645, Zadvor - Šmartno pri Litiji, pri Besnici, izmenično enosmerni promet, novogradnja prepusta, do 4. 10. 2026. Dela potekajo na več odsekih.",
@@ -772,17 +772,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-21T11:15:42.87Z",
   "end": "2026-08-30T21:59:00Z",
   "ts": "2026-07-21T11:16:00.737Z"
- },
- {
-  "id": "DARS;860639;0a70269a-c8c1-4ee6-9a36-0c4986a04411",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-917, Željne - Rog - Baza - Podturn, pri Podstenicah, izmenično enosmerni promet, izvedba protiprašne zaščite ceste, do 14. 8. 2026.",
-  "loc": "RT-917, Željne - Rog - Baza - Podturn",
-  "lat": 45.71622,
-  "lng": 15.02913,
-  "start": "2026-07-01T06:37:05.997Z",
-  "end": "2026-08-14T21:59:00Z",
-  "ts": "2026-07-21T04:33:19.617Z"
  },
  {
   "id": "DARS;864569;5234fa72-7bf2-4271-bec5-adef83b3e3da",
