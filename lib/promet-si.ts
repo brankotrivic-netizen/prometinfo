@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-14T15:28:02.520Z";
+export const PROMET_SI_UPDATED = "2026-08-14T16:14:20.132Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -35,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T07:08:36.33Z",
   "end": "2026-08-19T21:59:00Z",
   "ts": "2026-08-14T08:16:14.313Z"
- },
- {
-  "id": "DARS;869595;96639fb3-6015-4e10-89b8-15b0013390dc",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Brezovica - uvoz Vrhnika v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.99321,
-  "lng": 14.33006,
-  "start": "2026-08-14T06:23:33.95Z",
-  "end": "2026-08-14T20:00:06.7Z",
-  "ts": "2026-08-14T06:23:47.493Z"
  },
  {
   "id": "DARS;866201;d6958092-7c2d-440e-868a-321ca647c70b",
