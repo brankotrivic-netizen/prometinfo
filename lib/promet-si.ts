@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-15T17:16:33.355Z";
+export const PROMET_SI_UPDATED = "2026-08-15T17:41:37.895Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869914;53f910fb-5b70-44d1-8c4a-36640b36ce29",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, uvoz Šentrupert - uvoz Žalec v smeri Maribora, dela, oviran promet, košnja.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25927,
+  "lng": 15.07352,
+  "start": "2026-08-15T17:36:24.617Z",
+  "end": "2026-08-15T21:50:58.52Z",
+  "ts": "2026-08-15T17:37:53.823Z"
+ },
+ {
+  "id": "DARS;869913;46eaeadc-0338-4331-a4c7-c38f900e3df2",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - priključek Sl. Konjice v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.26781,
+  "lng": 15.19554,
+  "start": "2026-08-15T17:36:11.3Z",
+  "end": "2026-08-15T21:59:00Z",
+  "ts": "2026-08-15T17:36:38.2Z"
+ },
+ {
+  "id": "DARS;869910;1841f1e1-3f46-45f9-ac76-983b5fef3911",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Dragomer - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.01904,
+  "lng": 14.39813,
+  "start": "2026-08-15T17:28:32.277Z",
+  "end": "2026-08-15T23:00:00Z",
+  "ts": "2026-08-15T17:28:38.413Z"
+ },
+ {
+  "id": "DARS;869909;5a430dcd-65fb-4e2d-b1c6-5e2197207b42",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Izola - Koper, priključek Semedela v smeri Ljubljane, dela, oviran promet.",
+  "loc": "G2-111, Izola - Koper",
+  "lat": 45.54086,
+  "lng": 13.72217,
+  "start": "2026-08-15T17:17:05.963Z",
+  "end": "2026-08-15T23:00:00Z",
+  "ts": "2026-08-15T17:17:35.553Z"
+ },
  {
   "id": "DARS;869907;ce920b82-99a3-4a12-a0db-8bdc419bbd87",
   "type": "MaintenanceWorks",

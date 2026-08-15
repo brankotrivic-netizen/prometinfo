@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 18:58",
-  "text": "Pojačan je promet na glavnim cestama u smjeru unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Povremeno se vozi usporeno u kolonama u pokretu i uz kraće zastoje na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripazer na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 53. km između čvora Bosiljevo 1 i čvora Novigrad u smjeru Zagreba. Vozi se uz ograničenje brzine od 60 km/h. između Bosiljeva i Lučkog u …"
+  "updated": "15.8.2026. 19:32",
+  "text": "Pojačan je promet na glavnim cestama u smjeru unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Povremeno se vozi usporeno u kolonama u pokretu i uz kraće zastoje na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripazer na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između Bosiljeva i Lučkog u smjeru Zagreba vozi se u kolonama u pokretu s kraćim zastojima na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema du…"
  },
  {
   "title": "Granični prijelazi",
