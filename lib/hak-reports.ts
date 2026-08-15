@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 17:38",
-  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Karlovac i Jastrebarsko u smjeru Zagreba kolona je duga oko 6 km (posljedica prometne nesreće) između Bosiljeva i Lučkog u smjeru Zagreba te tunela Čelinka i čvora Rovanjska u smjeru juga vozi se u kolonama u pokretu s kraćim zastojima na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Državna cesta DC1 vozi se usporeno u zoni radova…"
+  "updated": "15.8.2026. 17:51",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Karlovac i Jastrebarsko u smjeru Zagreba kolona je duga oko 4 km (posljedica prometne nesreće) između Bosiljeva i Lučkog u smjeru Zagreba te tunela Čelinka i čvora Rovanjska u smjeru juga vozi se u kolonama u pokretu s kraćim zastojima na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Državna cesta DC1 vozi se usporeno u zoni radova…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "15.8.2026. 17:21",
+  "updated": "15.8.2026. 17:51",
   "text": "Zbog požara u BiH promet na GP Aržano preusmjerava se na GP Kamensko. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "15.8.2026. 17:21",
+  "updated": "15.8.2026. 17:51",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u polovidbenom redu: 15. kolovoza na državnoj trajektnoj liniji Brbinj (Dugi otok) - Zadar/Gaženica prioritetan ukrcaj imaju interventna vozila, molimo putnike s kupljenim kartama za razumijevanje i strpljenje 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isplovit će u 17:30 sati, a iz luke Dubrovnik 19:30 sati. 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Do promje…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "15.8.2026. 05:45",
+  "updated": "15.8.2026. 17:51",
   "text": "Stanje u željezničkom putničkom prometu 14. kolovoza 2026. u 8.00 sati Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - izme…"
  },
  {
