@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-15T18:14:18.577Z";
+export const PROMET_SI_UPDATED = "2026-08-15T18:47:41.029Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;869914;53f910fb-5b70-44d1-8c4a-36640b36ce29",
@@ -24,39 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-15T17:36:11.3Z",
   "end": "2026-08-15T21:59:00Z",
   "ts": "2026-08-15T17:36:38.2Z"
- },
- {
-  "id": "DARS;869910;1841f1e1-3f46-45f9-ac76-983b5fef3911",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Dragomer - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.01904,
-  "lng": 14.39813,
-  "start": "2026-08-15T17:28:32.277Z",
-  "end": "2026-08-15T23:00:00Z",
-  "ts": "2026-08-15T17:28:38.413Z"
- },
- {
-  "id": "DARS;869909;5a430dcd-65fb-4e2d-b1c6-5e2197207b42",
-  "type": "MaintenanceWorks",
-  "desc": "G2-111, Izola - Koper, priključek Semedela v smeri Ljubljane, dela, oviran promet.",
-  "loc": "G2-111, Izola - Koper",
-  "lat": 45.54086,
-  "lng": 13.72217,
-  "start": "2026-08-15T17:17:05.963Z",
-  "end": "2026-08-15T23:00:00Z",
-  "ts": "2026-08-15T17:17:35.553Z"
- },
- {
-  "id": "DARS;869907;ce920b82-99a3-4a12-a0db-8bdc419bbd87",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, izvoz 35 Ljubljana zahod iz smeri Kozarij, dela, oviran promet, strojno pometanje.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.03526,
-  "lng": 14.46328,
-  "start": "2026-08-15T16:58:44.39Z",
-  "end": "2026-08-15T20:00:26.773Z",
-  "ts": "2026-08-15T16:58:58.263Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
