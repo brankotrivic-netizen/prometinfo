@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 17:51",
-  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Karlovac i Jastrebarsko u smjeru Zagreba kolona je duga oko 4 km (posljedica prometne nesreće) između Bosiljeva i Lučkog u smjeru Zagreba te tunela Čelinka i čvora Rovanjska u smjeru juga vozi se u kolonama u pokretu s kraćim zastojima na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Državna cesta DC1 vozi se usporeno u zoni radova…"
+  "updated": "15.8.2026. 18:09",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između Bosiljeva i Lučkog u smjeru Zagreba vozi se u kolonama u pokretu s kraćim zastojima na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Državna cesta DC1 vozi se usporeno u zoni radova između Gračaca i Knina kod Otrića Zbog požara: Omiš - za sva vozila zatvorena je omiška obilaznica (DC553) Pelješac - na državnoj cesti DC414 na dionici Prizdr…"
  },
  {
   "title": "Granični prijelazi",
