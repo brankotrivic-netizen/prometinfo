@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 15:39",
-  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 35.+550 km između čvorova Karlovac i Jastrebarsko u smjeru Zagreba, vozi se jednim prometnim trakom u koloni dugoj oko 7 km povremeno se zbog velike gustoće prometa prekida promet pred tunelom Sveti Rok u smjeru Dubrovnika , kolona je duga oko 3 km između Karlovca i Bosiljeva te tunela Sveti Rok i čvora Rovanjska u smjeru mora vozi se u kolonama u pokretu…"
+  "updated": "15.8.2026. 15:54",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 35.+550 km između čvorova Karlovac i Jastrebarsko u smjeru Zagreba, vozi se po dva prometna traka u koloni dugoj oko 10 km kolona pred tunelom Sveti Rok u smjeru Dubrovnika duga je oko 2 km između čvorova Gornja Ploča i Rovanjska u smjeru mora vozi se u kolonama u pokretu s kraćim zastojima na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema d…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "15.8.2026. 15:39",
-  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
+  "updated": "15.8.2026. 15:54",
+  "text": "Zbog požara u BiH promet na GP Aržano preusmjerava se na GP Kamensko. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "15.8.2026. 15:39",
+  "updated": "15.8.2026. 15:55",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u polovidbenom redu: 15. kolovoza na državnoj trajektnoj liniji Brbinj (Dugi otok) - Zadar/Gaženica prioritetan ukrcaj imaju interventna vozila, molimo putnike s kupljenim kartama za razumijevanje i strpljenje 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isplovit će u 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:…"
  },
  {
