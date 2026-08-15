@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 07:12",
-  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pred naplatom Lučko u smjeru mora kolona iz smjera Buzina duga je oko 4 km, a iz smjera čvora Zagreb zapad oko 1 km između Zagreba i Bosiljeva u smjeru mora povremeno se vozi u kolonama u pokretu s kraćim zastojima vozilo u kvaru (teretno vozilo) u tunelu Sveti Rok na kolniku u smjeru Zagreba, vozilo se nalazi na ugibalištu - promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagreba kolona je oko 4 km i proteže se u Sloveniju A3 Bregana-Lipovac povećan je priljev vozila prema naplati Lučko (A1) iz smjera Buzina (kolona 4 km) i čvora Zagreb zapad (kolona 1 km) A4 Go…"
+  "updated": "15.8.2026. 07:40",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pred naplatom Lučko u smjeru mora kolona iz smjera Buzina duga je oko 2 km između Zagreba i Bosiljeva u smjeru mora povremeno se vozi u kolonama u pokretu s kraćim zastojima prometna nesreća na 57.+900 km između čvorova Novigrad i Bosiljevo 1 u smjeru Dubrovnika, v ozi se po dva traka u koloni dugoj oko 4 km vozilo u kvaru (teretno vozilo) u tunelu Sveti Rok na kolniku u smjeru Zagreba, vozilo se nalazi na ugibalištu - promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagreba kolona je oko 4 km i proteže se u Sloveniju A3 Bregana-Lipovac povećan je priljev vozila p…"
  },
  {
   "title": "Granični prijelazi",
