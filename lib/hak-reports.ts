@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 07:40",
-  "text": "IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pred naplatom Lučko u smjeru mora kolona iz smjera Buzina duga je oko 2 km između Zagreba i Bosiljeva u smjeru mora povremeno se vozi u kolonama u pokretu s kraćim zastojima prometna nesreća na 57.+900 km između čvorova Novigrad i Bosiljevo 1 u smjeru Dubrovnika, v ozi se po dva traka u koloni dugoj oko 4 km vozilo u kvaru (teretno vozilo) u tunelu Sveti Rok na kolniku u smjeru Zagreba, vozilo se nalazi na ugibalištu - promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagreba kolona je oko 4 km i proteže se u Sloveniju A3 Bregana-Lipovac povećan je priljev vozila p…"
+  "updated": "15.8.2026. 07:58",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: Životinja (srna) na autocesti A5 na čvoru Čepin, vozi se uz ograničenje brzine 60 km/h. A1 Zagreb-Ploče-Karamatići između Zagreba i Bosiljeva u smjeru mora povremeno se vozi u kolonama u pokretu s kraćim zastojima prometna nesreća na 57.+900 km između čvorova Novigrad i Bosiljevo 1 u smjeru Dubrovnika, v ozi se jednim prometnim trakom u koloni dugoj oko 6 km A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagreba kolona je oko 4 km i proteže se u Sloveniju A4 Goričan-Zagreb kolona na naplati Sveta Helena u smjeru Zagreba duga je oko 1 km Jadranska magistrala (DC8) zbog prometne nesreće u mjestu Brsečine vozi se uz privremenu regulaciju prometa Zbog požara: Omi…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "15.8.2026. 07:12",
+  "updated": "15.8.2026. 07:48",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "15.8.2026. 07:12",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u polovidbenom redu: 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isploviti će u 06:30 i 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Do promj…"
+  "updated": "15.8.2026. 07:49",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u polovidbenom redu: 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isplovit će u 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Do promjena dolaz…"
  },
  {
   "title": "Željeznički promet",
