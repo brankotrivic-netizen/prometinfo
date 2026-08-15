@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 11:53",
-  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 23. km između čvorova Karlovac i Jastrebarsko u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 60 km/h kolone na naplatama Lučko i Demerje u smjeru Zagreba duge su oko 1 km između Zagreba i Bosiljeva u smjeru juga te čvora Zadar istok i tunela Čelinka u smjeru Zagreba vozi se u kolonama u pokretu s kraćim zastojima A2 Zagreb-Macelj …"
+  "updated": "15.8.2026. 12:15",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići kolone na naplatama Lučko i Demerje u smjeru Zagreba duge su oko 1 km između Zagreba i Bosiljeva u oba smjera te čvora Zadar istok i tunela Sveti Rok u smjeru Zagreba vozi se u kolonama u pokretu s kraćim zastojima A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagreba kolo na je oko 2 km i proteže se u Sloveniju, a pred naplatom Zaprešić u smjeru Maclja oko 1 km zbog pov…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "15.8.2026. 11:53",
+  "updated": "15.8.2026. 12:12",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "15.8.2026. 11:53",
+  "updated": "15.8.2026. 12:12",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u polovidbenom redu: 15. kolovoza na državnoj trajektnoj liniji Brbinj (Dugi otok) - Zadar/Gaženica prioritetan ukrcaj imaju interventna vozila, molimo putnike s kupljenim kartama za razumijevanje i strpljenje 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isplovit će u 17:30 sati, a iz luke Dubrovnik u 09:30 i 19:30 sati. 15. kolovoza 2026. godine (subota) trajekt će iz luke Preko u putovanju u 10:30 sati te iz luke Zadar/Gaženica u putovanju u 12:30 sati izvanredno pristati na otok Ošljak 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "14.8.2026. 17:39",
-  "text": "Prometna prognoza za Hrvatsku za 15. kolovoza, 2026. Tijekom noći i ujutro veći broj hodočasnika kretat će se cestama prema marijanskim svetištima. Najviše se hodočasnika očekuje iz smjera Zagreba i Varaždina prema Mariji Bistrici, prema Sinju iz smjera Splita te na prilaznim cestama Trsatu, Aljmašu i Krasnom. Podsjećamo hodočasnike da se kreću lijevom stranom ceste, u koloni, jedan iza drugoga te koriste reflektirajući prsluk i svjetiljke. Pojačan promet očekujemo na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima duž jadranske obale, otoku Krku i Krčkom mostu, u trajektnim lukama i pristaništima te na graničnim prijelazima. Vozit će se …"
+  "updated": "15.8.2026. 12:04",
+  "text": "Prometna prognoza za Hrvatsku za 16. kolovoza 2026. Pojačan promet očekujemo na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima duž jadranske obale, otoku Krku i Krčkom mostu, u trajektnim lukama i pristaništima te na graničnim prijelazima. Vozit će se usporeno, u kolonama i uz kraće zastoje na pojedinim dionicama autocesta, osobito u zonama naplatnih postaja, odmorišta i tunela te u zonama radova i privremene regulacije prometa. Pozivamo vozače da održavaju razmak između vozila te izbjegavaju nagla kočenja i pripreme se na čekanja i zastoje u prometu. Na većini graničnih prijelaza bit će pojačan promet osobnih vozila te su povremeno mogu…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
