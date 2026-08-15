@@ -23,26 +23,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-15T18:10:21+02:00"
  },
  {
-  "id": "ba-brcko",
-  "name": "Gunja (Brčko)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "15.8.2026. 15:02:34",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-15T15:02:34+02:00",
-  "izlazTsISO": "",
-  "ts": "15.8.2026. 15:02:34",
-  "tsISO": "2026-08-15T15:02:34+02:00"
- },
- {
   "id": "ba-brod",
   "name": "Slavonski Brod (Bosanski Brod)",
   "ulazMin": 30,
@@ -135,12 +115,12 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "15.8.2026. 18:08:30",
+  "ulazTs": "15.8.2026. 20:13:28",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-15T18:08:30+02:00",
+  "ulazTsISO": "2026-08-15T20:13:28+02:00",
   "izlazTsISO": "",
-  "ts": "15.8.2026. 18:08:30",
-  "tsISO": "2026-08-15T18:08:30+02:00"
+  "ts": "15.8.2026. 20:13:28",
+  "tsISO": "2026-08-15T20:13:28+02:00"
  },
  {
   "id": "hr-bajakovo",
@@ -201,25 +181,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "15.8.2026. 19:27:29",
   "tsISO": "2026-08-15T19:27:29+02:00"
- },
- {
-  "id": "",
-  "name": "Principovac",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "15.8.2026. 15:19:27",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-15T15:19:27+02:00",
-  "izlazTsISO": "",
-  "ts": "15.8.2026. 15:19:27",
-  "tsISO": "2026-08-15T15:19:27+02:00"
  }
 ];
