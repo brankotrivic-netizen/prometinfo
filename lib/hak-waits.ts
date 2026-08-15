@@ -83,6 +83,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-15T10:19:54+02:00"
  },
  {
+  "id": "ba-izacic",
+  "name": "Ličko Petrovo Selo (Izačić)",
+  "ulazMin": 60,
+  "izlazMin": 60,
+  "ulazTxt": "1 h",
+  "izlazTxt": "1 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "L: 0 km T: 15.8.2026. 12:48:55",
+  "izlazTs": "15.8.2026. 12:49:14",
+  "ulazTsISO": "2026-08-15T12:48:55+02:00",
+  "izlazTsISO": "2026-08-15T12:49:14+02:00",
+  "ts": "L: 0 km T: 15.8.2026. 12:48:55",
+  "tsISO": "2026-08-15T12:48:55+02:00"
+ },
+ {
   "id": "",
   "name": "Gornji Brgat (Ivanica)",
   "ulazMin": 60,
@@ -181,6 +201,26 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "15.8.2026. 8:12:07",
   "tsISO": "2026-08-15T08:12:07+02:00"
+ },
+ {
+  "id": "",
+  "name": "Vinjani Gornji (Osoje)",
+  "ulazMin": null,
+  "izlazMin": 30,
+  "ulazTxt": "-",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "L: 0,5 km T: 15.8.2026. 12:49:39",
+  "ulazTsISO": "",
+  "izlazTsISO": "2026-08-15T12:49:39+02:00",
+  "ts": "L: 0,5 km T: 15.8.2026. 12:49:39",
+  "tsISO": "2026-08-15T12:49:39+02:00"
  },
  {
   "id": "hr-bajakovo",

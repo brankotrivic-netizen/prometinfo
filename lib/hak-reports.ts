@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 12:38",
-  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća u tunelu Sveti Marko u smjeru mora - vozi se jednim trakom uz ograničenje brzine od 60 km/h prometna nesreća na 263.+500 km između čvorova Benkovac i Zadar istok u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h OPREZ: osobno vozilo u kvaru u tunelu Mala Kapela na ugibalištu u smjeru Zagreba, vozi se po dva prometna traka uz ogr…"
+  "updated": "15.8.2026. 12:51",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća u tunelu Sveti Marko u smjeru mora - kolona oko 3 km prometna nesreća na 263.+500 km između čvorova Benkovac i Zadar istok u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h kolone na naplatama Lučko i Demerje u smjeru Zagreba duge su oko 1 km između Zagreba i Bosiljeva u oba smjera te čvora Zadar istok i tunela Sveti Rok u smjer…"
  },
  {
   "title": "Granični prijelazi",
