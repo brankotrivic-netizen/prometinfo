@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-14T21:57:16.787Z";
+export const PROMET_SI_UPDATED = "2026-08-15T04:19:20.800Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;869766;3fc28e92-e661-463e-a36c-3e15db893490",
+  "id": "DARS;869792;d5eb2652-2809-4e15-aa6e-770d1938f5fc",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Ljubljana Šmartno - priključek Brnik v smeri Jesenic, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.13084,
-  "lng": 14.48184,
-  "start": "2026-08-14T18:00:44.353Z",
-  "end": "2026-08-15T03:00:51.98Z",
-  "ts": "2026-08-14T18:17:06.53Z"
+  "desc": "RT-919, Vinica - Žuniči, Vinica - Balkovci, oviran promet, košnja, do 16:00.",
+  "loc": "RT-919, Žuniči - Vinica",
+  "lat": 45.46066,
+  "lng": 15.25513,
+  "start": "2026-08-15T04:00:00Z",
+  "end": "2026-08-15T14:00:00Z",
+  "ts": "2026-08-15T03:43:34.593Z"
+ },
+ {
+  "id": "DARS;869791;298595c5-e134-415d-be2c-782c60927f6e",
+  "type": "MaintenanceWorks",
+  "desc": "R1-217, Brezovica - Kanižarica, Miklarji - Kanižarica, oviran promet, košnja, do 16:00.",
+  "loc": "R1-217, Brezovica - Kanižarica",
+  "lat": 45.56584,
+  "lng": 15.10715,
+  "start": "2026-08-15T04:00:00Z",
+  "end": "2026-08-15T14:00:00Z",
+  "ts": "2026-08-15T03:41:30.397Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
