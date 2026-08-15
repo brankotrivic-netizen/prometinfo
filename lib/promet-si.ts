@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-15T16:57:47.862Z";
+export const PROMET_SI_UPDATED = "2026-08-15T17:16:33.355Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;869907;ce920b82-99a3-4a12-a0db-8bdc419bbd87",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, izvoz 35 Ljubljana zahod iz smeri Kozarij, dela, oviran promet, strojno pometanje.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.03526,
+  "lng": 14.46328,
+  "start": "2026-08-15T16:58:44.39Z",
+  "end": "2026-08-15T20:00:26.773Z",
+  "ts": "2026-08-15T16:58:58.263Z"
+ },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
   "type": "MaintenanceWorks",
@@ -35,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-15T13:00:48.733Z"
- },
- {
-  "id": "DARS;825949;0a53fe13-702b-456a-bec7-e609e7e44ff6",
-  "type": "MaintenanceWorks",
-  "desc": "R2-413, Zbilje - Vodice, pri Zapogah, oviran promet, rekonstrukcija ceste in ureditev pločnika, do 19:00.",
-  "loc": "R2-413, Zbilje - Vodice",
-  "lat": 46.18139,
-  "lng": 14.47521,
-  "start": "2025-12-08T07:41:08.133Z",
-  "end": "2026-08-15T17:00:00Z",
-  "ts": "2026-08-15T04:22:50.797Z"
  },
  {
   "id": "DARS;869230;806202bb-9624-413e-b21c-f1d05417e0e4",
