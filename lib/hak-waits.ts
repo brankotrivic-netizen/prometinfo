@@ -103,26 +103,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-15T10:47:46+02:00"
  },
  {
-  "id": "ba-neum-i",
-  "name": "Klek (Neum I)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "15.8.2026. 9:12:22",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-15T09:12:22+02:00",
-  "izlazTsISO": "",
-  "ts": "15.8.2026. 9:12:22",
-  "tsISO": "2026-08-15T09:12:22+02:00"
- },
- {
   "id": "",
   "name": "Dvor (Bosanski Novi)",
   "ulazMin": 60,
