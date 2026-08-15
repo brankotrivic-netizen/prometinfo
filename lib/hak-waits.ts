@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-orasje",
-  "name": "Županja (Orašje)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "15.8.2026. 12:34:02",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-15T12:34:02+02:00",
-  "izlazTsISO": "",
-  "ts": "15.8.2026. 12:34:02",
-  "tsISO": "2026-08-15T12:34:02+02:00"
- },
- {
   "id": "ba-brcko",
   "name": "Gunja (Brčko)",
   "ulazMin": 30,
@@ -61,26 +41,6 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "15.8.2026. 15:06:07",
   "tsISO": "2026-08-15T15:06:07+02:00"
- },
- {
-  "id": "ba-izacic",
-  "name": "Ličko Petrovo Selo (Izačić)",
-  "ulazMin": 60,
-  "izlazMin": 60,
-  "ulazTxt": "1 h",
-  "izlazTxt": "1 h",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "L: 0 km T: 15.8.2026. 12:48:55",
-  "izlazTs": "15.8.2026. 12:49:14",
-  "ulazTsISO": "2026-08-15T12:48:55+02:00",
-  "izlazTsISO": "2026-08-15T12:49:14+02:00",
-  "ts": "L: 0 km T: 15.8.2026. 12:48:55",
-  "tsISO": "2026-08-15T12:48:55+02:00"
  },
  {
   "id": "",

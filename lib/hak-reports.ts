@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 16:58",
-  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Karlovac i Jastrebarsko u smjeru Zagreba vozi se u koloni dugoj oko 15 km (posljedica prometne nesreće) na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Državna cesta DC1 povremeno se vozi usporeno u kolonama, osobito u zoni radova između Gračaca i Knina kod Otrića Krčki most (DC102): kolona u smjeru otoka je između čvora Kraljevic…"
+  "updated": "15.8.2026. 17:11",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Karlovac i Jastrebarsko u smjeru Zagreba kolona je duga oko 10 km (posljedica prometne nesreće) na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Državna cesta DC1 vozi se usporeno u zoni radova između Gračaca i Knina kod Otrića Zbog požara: Omiš - za sva vozila zatvorena je omiška obilaznica (DC553) Pelješac - na državnoj cesti DC4…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "15.8.2026. 16:30",
+  "updated": "15.8.2026. 17:09",
   "text": "Zbog požara u BiH promet na GP Aržano preusmjerava se na GP Kamensko. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "15.8.2026. 16:31",
+  "updated": "15.8.2026. 17:09",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u polovidbenom redu: 15. kolovoza na državnoj trajektnoj liniji Brbinj (Dugi otok) - Zadar/Gaženica prioritetan ukrcaj imaju interventna vozila, molimo putnike s kupljenim kartama za razumijevanje i strpljenje 15. kolovoza trajekt na liniji Dubrovnik-Koločep-Lopud-Suđurađ iz luke Suđurađ isplovit će u 17:30 sati, a iz luke Dubrovnik 19:30 sati. 15. kolovoza 2026. godine katamaran na liniji 659 Split - Bol - Hvar - Vis isplovit će iz luke Split u 14:40 sati (umjesto u 15:30 sati), iz luke Bol u 16:00 sati (umjesto u 16:45 sati), iz luke Hvar u 17:00 sati (umjesto u 17:45 sati), te će uploviti u luku Vis u 17:45 sati (umjesto u 18:20 sati). Do promje…"
  },
  {
