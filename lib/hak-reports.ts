@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 16:31",
-  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Karlovac i Jastrebarsko u smjeru Zagreba vozi se u koloni dugoj oko 15 km (posljedica prometne nesreće) na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja A7 Rupa-Križišće lešina između čvora Križišće i tunela Burlica u smjeru Rupe, pozivamo vozače na pojačan oprez kolona između čvorova Hreljin i Šmrika u smjeru Krka duga je oko 1 km…"
+  "updated": "15.8.2026. 16:58",
+  "text": "Pojačan je promet na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Karlovac i Jastrebarsko u smjeru Zagreba vozi se u koloni dugoj oko 15 km (posljedica prometne nesreće) na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Državna cesta DC1 povremeno se vozi usporeno u kolonama, osobito u zoni radova između Gračaca i Knina kod Otrića Krčki most (DC102): kolona u smjeru otoka je između čvora Kraljevic…"
  },
  {
   "title": "Granični prijelazi",
