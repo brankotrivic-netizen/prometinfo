@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.8.2026. 22:08",
+  "updated": "15.8.2026. 22:23",
   "text": "Pojačan je promet na glavnim cestama u smjeru unutrašnjosti, posebice na autocestama, prilazima turističkim središtima, trajektnim lukama i pristaništima te pojedinim graničnim prijelazima. Povremeno se vozi usporeno u kolonama u pokretu i uz kraće zastoje na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 15+300 km između čvora Jastrebarsko i čvora Donja Zdenčina u smjeru Zagreba. Promet se vodi po dvije prometne trake uz ograničenje brzine …"
  },
  {
