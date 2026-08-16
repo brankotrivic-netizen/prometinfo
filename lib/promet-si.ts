@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-16T19:03:03.540Z";
+export const PROMET_SI_UPDATED = "2026-08-16T19:31:11.490Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870047;8d12e32b-93e4-47d5-b19b-d3b5b1c8e889",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-16T18:44:11.677Z",
   "end": "2026-08-16T21:00:12.437Z",
   "ts": "2026-08-16T18:44:15.507Z"
- },
- {
-  "id": "DARS;870043;15683d36-b4c3-44a4-a923-dfe052936b82",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, uvoz Ljubljana Bizovik - razcep Zadobrova v smeri Zadobrove, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.04531,
-  "lng": 14.57638,
-  "start": "2026-08-16T18:22:22.963Z",
-  "end": "2026-08-16T20:00:38.293Z",
-  "ts": "2026-08-16T18:22:26.967Z"
  },
  {
   "id": "DARS;870041;2f5e9d7e-9b7a-4057-bfe0-832941ca67d2",
