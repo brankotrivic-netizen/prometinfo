@@ -195,12 +195,12 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "16.8.2026. 11:30:32",
-  "izlazTs": "16.8.2026. 12:13:16",
-  "ulazTsISO": "2026-08-16T11:30:32+02:00",
-  "izlazTsISO": "2026-08-16T12:13:16+02:00",
-  "ts": "16.8.2026. 11:30:32",
-  "tsISO": "2026-08-16T11:30:32+02:00"
+  "ulazTs": "16.8.2026. 12:39:17",
+  "izlazTs": "16.8.2026. 12:39:41",
+  "ulazTsISO": "2026-08-16T12:39:17+02:00",
+  "izlazTsISO": "2026-08-16T12:39:41+02:00",
+  "ts": "16.8.2026. 12:39:17",
+  "tsISO": "2026-08-16T12:39:17+02:00"
  },
  {
   "id": "ba-samac",
@@ -281,5 +281,25 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-08-16T10:52:44+02:00",
   "ts": "16.8.2026. 10:52:33",
   "tsISO": "2026-08-16T10:52:33+02:00"
+ },
+ {
+  "id": "hr-tovarnik",
+  "name": "Tovarnik (Šid)",
+  "ulazMin": 120,
+  "izlazMin": null,
+  "ulazTxt": "2 h",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "high",
+  "waitMinutes": 120,
+  "ulazTs": "16.8.2026. 12:48:20",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-16T12:48:20+02:00",
+  "izlazTsISO": "",
+  "ts": "16.8.2026. 12:48:20",
+  "tsISO": "2026-08-16T12:48:20+02:00"
  }
 ];
