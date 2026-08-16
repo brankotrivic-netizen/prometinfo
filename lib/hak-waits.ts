@@ -15,12 +15,12 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "16.8.2026. 17:23:41",
+  "ulazTs": "16.8.2026. 19:28:06",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-16T17:23:41+02:00",
+  "ulazTsISO": "2026-08-16T19:28:06+02:00",
   "izlazTsISO": "",
-  "ts": "16.8.2026. 17:23:41",
-  "tsISO": "2026-08-16T17:23:41+02:00"
+  "ts": "16.8.2026. 19:28:06",
+  "tsISO": "2026-08-16T19:28:06+02:00"
  },
  {
   "id": "ba-orasje",
@@ -201,6 +201,26 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "16.8.2026. 17:43:02",
   "tsISO": "2026-08-16T17:43:02+02:00"
+ },
+ {
+  "id": "",
+  "name": "Vinjani Gornji (Osoje)",
+  "ulazMin": null,
+  "izlazMin": 30,
+  "ulazTxt": "-",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "L: 0,5 km T: 16.8.2026. 19:26:21",
+  "ulazTsISO": "",
+  "izlazTsISO": "2026-08-16T19:26:21+02:00",
+  "ts": "L: 0,5 km T: 16.8.2026. 19:26:21",
+  "tsISO": "2026-08-16T19:26:21+02:00"
  },
  {
   "id": "hr-bajakovo",
