@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-16T17:31:50.086Z";
+export const PROMET_SI_UPDATED = "2026-08-16T17:53:32.170Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870041;2f5e9d7e-9b7a-4057-bfe0-832941ca67d2",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Koper - Izola, priključek Koper center, Slavček v smeri Ljubljane, dela, oviran promet.",
+  "loc": "G2-111, Koper - Izola",
+  "lat": 45.53746,
+  "lng": 13.73368,
+  "start": "2026-08-16T17:42:22.69Z",
+  "end": "2026-08-16T23:00:00Z",
+  "ts": "2026-08-16T17:42:44.443Z"
+ },
+ {
+  "id": "DARS;870038;6da3950d-f2b9-4d9b-8be0-1f97fa244105",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana, Ind. cona Moste - priključek Ljubljana Bizovik v smeri Malenc, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.06271,
+  "lng": 14.57492,
+  "start": "2026-08-16T17:35:45.4Z",
+  "end": "2026-08-16T19:00:54.64Z",
+  "ts": "2026-08-16T17:35:47.387Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
