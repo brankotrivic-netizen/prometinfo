@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "16.8.2026. 11:18",
-  "text": "Na većini cesta vozi se bez posebnih ograničenja, osim na dionicama gdje traju radovi. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti, na cestama u priobalju te na većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Karlovac i Bosiljevo 2 u smjeru Dubrovnika te čvora Zadar istok i tunela Čelinka u smjeru Zagreba mjestimice se vozi u kolonama u pokretu s kraćim zastojima na naplatama Lučko i Demerje u smjeru Zagreba kolone su duge oko 1 km A2 Zagreb-Macelj kolona na naplati Trakošćan u s…"
+  "updated": "16.8.2026. 11:43",
+  "text": "Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti, na cestama u priobalju te na većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Lučko i Bosiljevo 2 u oba smjera te čvora Zadar istok i tunela Bristovac u smjeru Zagreba mjestimice se vozi u kolonama u pokretu s kraćim zastojima na naplatama Lučko i Demerje u smjeru Zagreba kolone su duge oko 1 km A2 Zagreb-Macelj kolona na naplati Trakošćan u smjeru Zagreba duga je oko 1 km zbog povećanog priljeva vozila zabranjen je promet za teretna vo…"
  },
  {
   "title": "Granični prijelazi",
