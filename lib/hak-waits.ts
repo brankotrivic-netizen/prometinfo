@@ -23,26 +23,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-16T19:28:06+02:00"
  },
  {
-  "id": "ba-orasje",
-  "name": "Županja (Orašje)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "16.8.2026. 20:03:25",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-16T20:03:25+02:00",
-  "izlazTsISO": "",
-  "ts": "16.8.2026. 20:03:25",
-  "tsISO": "2026-08-16T20:03:25+02:00"
- },
- {
   "id": "ba-brod",
   "name": "Slavonski Brod (Bosanski Brod)",
   "ulazMin": 90,
@@ -81,6 +61,26 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "16.8.2026. 18:10:27",
   "tsISO": "2026-08-16T18:10:27+02:00"
+ },
+ {
+  "id": "ba-izacic",
+  "name": "Ličko Petrovo Selo (Izačić)",
+  "ulazMin": 60,
+  "izlazMin": 30,
+  "ulazTxt": "1 h",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "16.8.2026. 21:41:14",
+  "izlazTs": "16.8.2026. 21:40:51",
+  "ulazTsISO": "2026-08-16T21:41:14+02:00",
+  "izlazTsISO": "2026-08-16T21:40:51+02:00",
+  "ts": "16.8.2026. 21:41:14",
+  "tsISO": "2026-08-16T21:41:14+02:00"
  },
  {
   "id": "",
