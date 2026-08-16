@@ -83,6 +83,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-16T04:12:11+02:00"
  },
  {
+  "id": "",
+  "name": "Hrvatska Dubica (Bosanska Dubica)",
+  "ulazMin": 120,
+  "izlazMin": null,
+  "ulazTxt": "2 h",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "high",
+  "waitMinutes": 120,
+  "ulazTs": "16.8.2026. 6:35:24",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-16T06:35:24+02:00",
+  "izlazTsISO": "",
+  "ts": "16.8.2026. 6:35:24",
+  "tsISO": "2026-08-16T06:35:24+02:00"
+ },
+ {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
   "ulazMin": 90,
