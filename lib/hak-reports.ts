@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "16.8.2026. 11:43",
+  "updated": "16.8.2026. 11:48",
   "text": "Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti, na cestama u priobalju te na većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Lučko i Bosiljevo 2 u oba smjera te čvora Zadar istok i tunela Bristovac u smjeru Zagreba mjestimice se vozi u kolonama u pokretu s kraćim zastojima na naplatama Lučko i Demerje u smjeru Zagreba kolone su duge oko 1 km A2 Zagreb-Macelj kolona na naplati Trakošćan u smjeru Zagreba duga je oko 1 km zbog povećanog priljeva vozila zabranjen je promet za teretna vo…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "16.8.2026. 05:53",
-  "text": "Prometna prognoza za Hrvatsku za 16. kolovoza 2026. Pojačan promet očekujemo na većini cesta u smjeru mora i unutrašnjosti, posebice na autocestama, prilazima turističkim središtima duž jadranske obale, otoku Krku i Krčkom mostu, u trajektnim lukama i pristaništima te na graničnim prijelazima. Vozit će se usporeno, u kolonama i uz kraće zastoje na pojedinim dionicama autocesta, osobito u zonama naplatnih postaja, odmorišta i tunela te u zonama radova i privremene regulacije prometa. Pozivamo vozače da održavaju razmak između vozila te izbjegavaju nagla kočenja i pripreme se na čekanja i zastoje u prometu. Na većini graničnih prijelaza bit će pojačan promet osobnih vozila te su povremeno mogu…"
+  "updated": "16.8.2026. 11:57",
+  "text": "Prometna prognoza za Hrvatsku za 17. kolovoza 2026. Sutra će se diljem zemlje voziti po mokrim i skliskim kolnicima, a mjetimice je moguće i plavljenje kolnika. Zbog lokalno obilnijih oborina, na cestama u gorju bit će povećana opasnost od odrona. Tijekom jutarnjih i poslijepodnevnih sati, na gradskim će se cestama i obilaznicama voziti usporenije, posebice na zagrebačkoj (A3) i riječkoj obilaznici, autocesti A2 na čvoru Zagreb zapad u smjeru Zagreba te na autocesti A4 između čvorova Popovec i Zagreb istok. Pojačan promet očekuje se i na cestama koje povezuju obalu i unutrašnjost, a zastoji i kolone povremeno će biti u zonama radova, tunela, čvorova, odmorišta i naplata te na prilazima turis…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
