@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "16.8.2026. 15:40",
-  "text": "Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti, na cestama u priobalju te na većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 70. km između čvorova Ogulin i Bosiljevo 2 u smjeru Zagreba, vozi se jednim prometnim trakom u koloni dugoj oko 3 km prometna nesreća na 165. km između čvorova Perušić i Otočac u smjeru Zagreba, v ozi se po dva prometna traka u koloni dugoj oko 5 km teretno vozilo u kvaru u tunelu Bristovac u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje …"
+  "updated": "16.8.2026. 15:56",
+  "text": "Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti, na cestama u priobalju te na većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 70. km između čvorova Ogulin i Bosiljevo 2 u smjeru Zagreba, vozi se jednim prometnim trakom u koloni dugoj oko 3 km prometna nesreća na 165. km između čvorova Perušić i Otočac u smjeru Zagreba, v ozi se po dva prometna traka u koloni dugoj oko 5 km teretno vozilo u kvaru u tunelu Bristovac u smjeru Zagreba, vozi se jednim prometnim trakom, između odmoriš…"
  },
  {
   "title": "Granični prijelazi",
