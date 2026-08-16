@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "16.8.2026. 23:25",
-  "text": "Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru unutrašnjosti, na cestama u priobalju te na većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvora Bosiljevo 2 i naplate Lučko u smjeru Zagreba vozi se u kolonama uz povremene zastoje na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja A3 Bregana-Lipovac zbog prometne nesreće između čvorova Ivanić Grad i Rugvica, na 58.+850 km u smjeru Bregane, vozi se jednim trakom usporeno u koloni od oko 6 km Krčki most (DC102) u smjeru kopna kolona je o…"
+  "updated": "16.8.2026. 23:43",
+  "text": "Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru unutrašnjosti, na cestama u priobalju te na većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvora Bosiljevo 2 i naplate Lučko u smjeru Zagreba vozi se u kolonama uz povremene zastoje na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja A3 Bregana-Lipovac zbog prometne nesreće između čvorova Ivanić Grad i Rugvica, na 58.+850 km u smjeru Bregane, vozi se po dva traka usporeno u koloni od oko 6 km Krčki most (DC102) u smjeru kopna kolona je od…"
  },
  {
   "title": "Granični prijelazi",
