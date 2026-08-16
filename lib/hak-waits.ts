@@ -43,26 +43,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-16T19:32:12+02:00"
  },
  {
-  "id": "ba-velika-kladusa",
-  "name": "Maljevac (Velika Kladuša)",
-  "ulazMin": 120,
-  "izlazMin": null,
-  "ulazTxt": "2 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 120,
-  "ulazTs": "16.8.2026. 18:10:27",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-16T18:10:27+02:00",
-  "izlazTsISO": "",
-  "ts": "16.8.2026. 18:10:27",
-  "tsISO": "2026-08-16T18:10:27+02:00"
- },
- {
   "id": "ba-izacic",
   "name": "Ličko Petrovo Selo (Izačić)",
   "ulazMin": 60,
@@ -81,26 +61,6 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-08-16T21:40:51+02:00",
   "ts": "16.8.2026. 21:41:14",
   "tsISO": "2026-08-16T21:41:14+02:00"
- },
- {
-  "id": "",
-  "name": "Bogovolja (Hadžin Potok)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "16.8.2026. 18:10:41",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-16T18:10:41+02:00",
-  "izlazTsISO": "",
-  "ts": "16.8.2026. 18:10:41",
-  "tsISO": "2026-08-16T18:10:41+02:00"
  },
  {
   "id": "",
@@ -143,26 +103,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-16T20:07:03+02:00"
  },
  {
-  "id": "ba-kostajnica",
-  "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
-  "ulazMin": 180,
-  "izlazMin": null,
-  "ulazTxt": "3 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "severe",
-  "waitMinutes": 180,
-  "ulazTs": "16.8.2026. 18:14:22",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-16T18:14:22+02:00",
-  "izlazTsISO": "",
-  "ts": "16.8.2026. 18:14:22",
-  "tsISO": "2026-08-16T18:14:22+02:00"
- },
- {
   "id": "",
   "name": "Prud (Bijača)",
   "ulazMin": null,
@@ -201,25 +141,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "16.8.2026. 19:09:44",
   "tsISO": "2026-08-16T19:09:44+02:00"
- },
- {
-  "id": "hr-bajakovo",
-  "name": "Bajakovo (Batrovci)",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "16.8.2026. 18:51:01",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-16T18:51:01+02:00",
-  "izlazTsISO": "",
-  "ts": "16.8.2026. 18:51:01",
-  "tsISO": "2026-08-16T18:51:01+02:00"
  }
 ];
