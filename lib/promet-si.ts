@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T11:15:46.075Z";
+export const PROMET_SI_UPDATED = "2026-08-17T11:46:45.116Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870203;782c61f7-adec-4c57-bb64-e9ccaf0eb08c",
@@ -11,8 +11,8 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 46.24431,
   "lng": 14.96391,
   "start": "2026-08-17T10:23:13.21Z",
-  "end": "2026-08-17T12:00:00Z",
-  "ts": "2026-08-17T10:23:16.373Z"
+  "end": "2026-08-17T15:00:00Z",
+  "ts": "2026-08-17T11:16:19.337Z"
  },
  {
   "id": "DARS;870197;90c78ce6-d004-4b18-903c-8b72877ca7bc",
@@ -37,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-17T09:37:11.553Z"
  },
  {
-  "id": "DARS;870193;bac5f260-683b-4cd7-85f8-41b8f101a012",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, izvoz 13 Ljubljana Brod - priključek Vodice v smeri Jesenic, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.10153,
-  "lng": 14.46693,
-  "start": "2026-08-17T09:29:08.58Z",
-  "end": "2026-08-17T15:00:00Z",
-  "ts": "2026-08-17T09:29:22.023Z"
- },
- {
   "id": "DARS;870188;c59fc19b-70f5-42e7-a1c5-7b0270957975",
   "type": "MaintenanceWorks",
   "desc": "A2, Karavanke - Ljubljana, počivališče Voklo - počivališče Voklo v smeri Ljubljane, dela, oviran promet.",
@@ -57,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T09:03:28.417Z",
   "end": "2026-08-17T15:00:25.153Z",
   "ts": "2026-08-17T09:03:43.883Z"
- },
- {
-  "id": "DARS;870182;758a86aa-2387-4cc8-9598-6ff1b5cfc867",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Brezovica - priključek Vrhnika v smeri Kopra, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.02573,
-  "lng": 14.4341,
-  "start": "2026-08-17T08:37:40.29Z",
-  "end": "2026-08-17T19:00:00Z",
-  "ts": "2026-08-17T08:38:13.673Z"
  },
  {
   "id": "DARS;870160;2e9f1542-202f-441d-ae9e-db5c1edbf7a2",
@@ -90,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T07:08:05.087Z",
   "end": "2026-11-16T22:59:00Z",
   "ts": "2026-08-17T07:08:39.347Z"
- },
- {
-  "id": "DARS;870133;6ad9cbba-5d21-4a6b-b9a0-26ed2dcadd20",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Črni Kal - razcep Srmin v smeri Kopra, dela, oviran promet, pomična zapora.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55476,
-  "lng": 13.85423,
-  "start": "2026-08-17T06:04:04.227Z",
-  "end": "2026-08-17T12:00:00Z",
-  "ts": "2026-08-17T06:04:35.95Z"
  },
  {
   "id": "DARS;870131;79e48091-47f5-4871-80f0-5191b27df175",
@@ -464,17 +431,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T02:37:10.517Z",
   "end": "2026-08-17T17:00:00Z",
   "ts": "2026-08-17T02:37:26.713Z"
- },
- {
-  "id": "DARS;870063;97e693b5-ffc0-4cb9-8dd7-f335a3c67fb5",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Ravne - predor Kastelec v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.60383,
-  "lng": 13.92782,
-  "start": "2026-08-17T02:36:39.03Z",
-  "end": "2026-08-17T17:00:00Z",
-  "ts": "2026-08-17T02:36:58.017Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",

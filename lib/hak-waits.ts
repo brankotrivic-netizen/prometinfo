@@ -63,26 +63,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-17T13:12:33+02:00"
  },
  {
-  "id": "ba-neum-i",
-  "name": "Klek (Neum I)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "17.8.2026. 11:25:28",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-17T11:25:28+02:00",
-  "izlazTsISO": "",
-  "ts": "17.8.2026. 11:25:28",
-  "tsISO": "2026-08-17T11:25:28+02:00"
- },
- {
   "id": "ba-kostajnica",
   "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
   "ulazMin": 60,
@@ -135,12 +115,12 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "17.8.2026. 10:58:41",
+  "ulazTs": "17.8.2026. 13:28:11",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-17T10:58:41+02:00",
+  "ulazTsISO": "2026-08-17T13:28:11+02:00",
   "izlazTsISO": "",
-  "ts": "17.8.2026. 10:58:41",
-  "tsISO": "2026-08-17T10:58:41+02:00"
+  "ts": "17.8.2026. 13:28:11",
+  "tsISO": "2026-08-17T13:28:11+02:00"
  },
  {
   "id": "hr-tovarnik",
