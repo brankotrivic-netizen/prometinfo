@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.8.2026. 12:48",
-  "text": "Pojačan je promet na glavnim cestama u smjeru mora i u smjeru unutrašnjosti. Povremena su usporavanja na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. Kolnici su mjestimice mokri i skliski. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići veća je gustoća prometa između Zagreba i čvora Zadar 1 u smjeru mora i prema unutrašnjosti na naplatnoj postaji Demerje u smjeru Zagreba kolona je oko 1 km prometna nesreća u tunelu Sveti Marko u smjeru Zagreba, vozi se jednim trakom uz ograničenje brzine od 60 km/h, kolona…"
+  "updated": "17.8.2026. 13:11",
+  "text": "Pojačan je promet na glavnim cestama u smjeru mora i prema unutrašnjosti. Povremena su usporavanja na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. U kolonama u pokretu i uz kraće zastoje vozi se duž jadranske obale na prilazima turističkim središtima, u Istri i na otoku Krku te na Krčkom mostu. Zbog veće gustoće prometa čekanja su u trajektnim lukama i pristaništima. Na pojedinim graničnim prijelazima čekanja su višesatna. Kolnici su mjestimice mokri i skliski. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamati…"
  },
  {
   "title": "Granični prijelazi",
