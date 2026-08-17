@@ -43,7 +43,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    },
    {
     "title": "Crna Rijeka- Jajce (Podmilačje)",
-    "text": "Zbog izvođenja radova bit će obustavljen saobraćaj za sva vozila na magistralnoj cesti Jajce–Crna Rijeka, u naselju Podmilačje. Za vrijeme obustave, vozila će biti preusmjeravana alternativnim pravcem preko Mrkonjić Grada."
+    "text": "Zbog izvođenja radova obustavljen je saobraćaj za sva vozila na magistralnoj cesti Jajce–Crna Rijeka, u naselju Podmilačje. Za vrijeme obustave, vozila će biti preusmjeravana alternativnim pravcem preko Mrkonjić Grada."
    },
    {
     "title": "Sarajevo-Lapišnica",
@@ -109,6 +109,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "R-439 Gornji Vakuf/Uskoplje- Novi Travnik",
     "text": "Bistrica, u toku su sanacioni radovi, zbog čega se svakim danom (osim nedjelje) u vremenu od 7 do 16:30 sati saobraća usporeno, jednom trakom."
+   },
+   {
+    "title": "Zavidovići-Kamenica",
+    "text": "Zbog sanacije kolovoza svakog radnog dana od 7 do 16 sati saobraća se usporeno, uz povremene obustave."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",

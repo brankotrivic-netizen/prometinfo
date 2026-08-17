@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T10:20:16.293Z";
+export const PROMET_SI_UPDATED = "2026-08-17T10:53:54.830Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870203;782c61f7-adec-4c57-bb64-e9ccaf0eb08c",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, uvoz Vransko - predor Ločica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.24431,
+  "lng": 14.96391,
+  "start": "2026-08-17T10:23:13.21Z",
+  "end": "2026-08-17T12:00:00Z",
+  "ts": "2026-08-17T10:23:16.373Z"
+ },
+ {
+  "id": "DARS;870184;b820b03f-6d6e-44a2-91cd-560cdaf29718",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, uvoz Žalec - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.26831,
+  "lng": 15.19084,
+  "start": "2026-08-17T10:21:25.347Z",
+  "end": "2026-08-17T12:00:00Z",
+  "ts": "2026-08-17T10:21:39.143Z"
+ },
  {
   "id": "DARS;870197;90c78ce6-d004-4b18-903c-8b72877ca7bc",
   "type": "MaintenanceWorks",
@@ -35,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T09:29:08.58Z",
   "end": "2026-08-17T15:00:00Z",
   "ts": "2026-08-17T09:29:22.023Z"
- },
- {
-  "id": "DARS;870192;183e70c5-3f68-418a-b036-478fca6a6f5a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, izvoz Trojane - uvoz Trojane v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.19582,
-  "lng": 14.90219,
-  "start": "2026-08-17T09:28:02.273Z",
-  "end": "2026-08-17T11:00:00Z",
-  "ts": "2026-08-17T09:28:42.643Z"
  },
  {
   "id": "DARS;870188;c59fc19b-70f5-42e7-a1c5-7b0270957975",
@@ -233,17 +244,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T05:28:09.797Z",
   "end": "2026-09-11T17:00:00Z",
   "ts": "2026-08-17T05:32:00.113Z"
- },
- {
-  "id": "DARS;870109;a2a25e44-4f5e-4d3e-b171-a34a1c32c8ec",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, izvoz Smednik v smeri Obrežja, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.90719,
-  "lng": 15.37108,
-  "start": "2026-08-17T05:28:22.453Z",
-  "end": "2026-08-17T12:00:54.997Z",
-  "ts": "2026-08-17T05:28:24.363Z"
  },
  {
   "id": "DARS;870096;2e78a0da-9ca4-407e-9f1f-abd1bac4a385",
