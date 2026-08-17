@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.8.2026. 09:26",
-  "text": "Pojačan je promet na glavnim cestama u smjeru mora. Povremena su usporavanja na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići veća je gustoća prometa između Zagreba i Bosiljeva u smjeru mora te od Karlovca prema Zagrebu iz smjera Buzina (A3) prema naplatnoj postaji Lučko kolona je oko 2 km prometna nesreća na 196. km između čvora Gospić i čvora Gornja Ploča u smjeru Dubrovnika, vozi se uz ograničenje brzine od 80 km/h. prometna nesreća između čvora Prgomet i č…"
+  "updated": "17.8.2026. 10:19",
+  "text": "Pojačan je promet na glavnim cestama u smjeru mora. Povremena su usporavanja na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići veća je gustoća prometa između Zagreba i Bosiljeva u smjeru mora te od Karlovca prema Zagrebu iz smjera Buzina (A3) prema naplatnoj postaji Lučko kolona je oko 2 km prometna nesreća između čvora Prgomet i čvora Vučevica u smjeru Dubrovnika, vozi se uz ograničenje brzine od 60 km/h. A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagre…"
  },
  {
   "title": "Granični prijelazi",

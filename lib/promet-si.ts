@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T07:37:37.972Z";
+export const PROMET_SI_UPDATED = "2026-08-17T08:22:22.218Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870117;06c87032-2c2c-4a11-8eff-f06d9b626a9e",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Naklo - priključek Kranj zahod v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.27746,
+  "lng": 14.31239,
+  "start": "2026-08-17T05:40:33.557Z",
+  "end": "2026-08-17T10:00:00Z",
+  "ts": "2026-08-17T07:58:01.58Z"
+ },
  {
   "id": "DARS;870160;2e9f1542-202f-441d-ae9e-db5c1edbf7a2",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -57,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T06:40:42.53Z",
   "end": "2026-08-17T12:00:00Z",
   "ts": "2026-08-17T06:41:10.53Z"
- },
- {
-  "id": "DARS;870142;814b54e5-87a9-4fab-8770-947a583762a7",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, priključek Zlatoličje - priključek Marjeta v smeri Maribora, dela, oviran promet.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.45797,
-  "lng": 15.73554,
-  "start": "2026-08-17T06:21:02.687Z",
-  "end": "2026-08-17T18:30:00Z",
-  "ts": "2026-08-17T06:21:09.487Z"
  },
  {
   "id": "DARS;870138;5906547e-058a-4021-acad-07299f6790d6",
@@ -211,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T05:44:44.423Z",
   "end": "2026-10-30T16:00:00Z",
   "ts": "2026-08-17T05:45:32.38Z"
- },
- {
-  "id": "DARS;870117;06c87032-2c2c-4a11-8eff-f06d9b626a9e",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Naklo - priključek Kranj zahod v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.27746,
-  "lng": 14.31239,
-  "start": "2026-08-17T05:40:33.557Z",
-  "end": "2026-08-17T08:00:12.757Z",
-  "ts": "2026-08-17T05:40:41.797Z"
  },
  {
   "id": "DARS;870113;2b42dc48-93f7-41a9-9d7d-591472fb9b97",
