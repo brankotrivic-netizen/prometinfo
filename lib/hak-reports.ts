@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.8.2026. 18:39",
-  "text": "Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti te na cestama u priobalju. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići kolone su i kraći zastoji između čvorova Karlovac i Lučko u smjeru Zagreba na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja A3 Bregana-Lipovac povećana gustoća prometa na zagrebačkoj obilaznici između čvorova Buzin i Zagreb zapad u smjeru Bregane A7 Rupa- Križišće na izlaznom kraku čvora Učka u smjeru Opatije i Istre kolona je 2 km Državna cesta DC1 vozi se usporeno u zoni rad…"
+  "updated": "17.8.2026. 19:09",
+  "text": "Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti te na cestama u priobalju. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 78. km između čvorova Bosiljevo 2 i Ogulin u smjeru Dubrovnika, vozi se uz ograničenje brzine 40 km/h povećana gustoća prometa između čvorova Karlovac i Lučko u smjeru Zagreba na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Državna cesta DC1 vozi se usporeno u zoni radova između Gračaca i Knina kod Otrića DC47 Lipik-Novska zbog požara na teretnom vozilu u …"
  },
  {
   "title": "Granični prijelazi",
