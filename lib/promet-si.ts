@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T09:54:53.604Z";
+export const PROMET_SI_UPDATED = "2026-08-17T10:20:16.293Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;870107;d33da48e-3342-4f05-ae50-cacc22dd9134",
+  "id": "DARS;870197;90c78ce6-d004-4b18-903c-8b72877ca7bc",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25667,
-  "lng": 14.99542,
-  "start": "2026-08-17T05:10:48.23Z",
-  "end": "2026-08-17T13:00:00Z",
-  "ts": "2026-08-17T09:37:33.55Z"
+  "desc": "A1, Ljubljana - Koper, priključek Logatec - priključek Unec, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.9084,
+  "lng": 14.25785,
+  "start": "2026-08-17T09:53:34.747Z",
+  "end": "2026-08-17T12:00:00Z",
+  "ts": "2026-08-17T09:54:08.177Z"
  },
  {
   "id": "DARS;870138;5906547e-058a-4021-acad-07299f6790d6",
@@ -57,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T09:03:28.417Z",
   "end": "2026-08-17T15:00:25.153Z",
   "ts": "2026-08-17T09:03:43.883Z"
- },
- {
-  "id": "DARS;870184;b820b03f-6d6e-44a2-91cd-560cdaf29718",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Žalec - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26831,
-  "lng": 15.19084,
-  "start": "2026-08-17T08:46:35.827Z",
-  "end": "2026-08-17T12:00:00Z",
-  "ts": "2026-08-17T08:46:45.58Z"
  },
  {
   "id": "DARS;870182;758a86aa-2387-4cc8-9598-6ff1b5cfc867",
