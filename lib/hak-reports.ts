@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.8.2026. 19:09",
-  "text": "Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti te na cestama u priobalju. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 78. km između čvorova Bosiljevo 2 i Ogulin u smjeru Dubrovnika, vozi se uz ograničenje brzine 40 km/h povećana gustoća prometa između čvorova Karlovac i Lučko u smjeru Zagreba na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Državna cesta DC1 vozi se usporeno u zoni radova između Gračaca i Knina kod Otrića DC47 Lipik-Novska zbog požara na teretnom vozilu u …"
+  "updated": "17.8.2026. 19:43",
+  "text": "Kolnici su mjestimice mokri i skliski. Zbog povremeno obilnijih pljuskova moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti te na cestama u priobalju. Povremena usporavanja moguća su u zonama radova i privremene regulacije prometa. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća na 78. km između čvorova Bosiljevo 2 i Ogulin u smjeru Dubrovnika, vozi se jednim prometnim trakom u…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "17.8.2026. 18:30",
-  "text": "U prekidu su: trajektna linija Dubrovnik-Bari (Jadrolinija, zbog tehničkog kvara do daljnjega u prekidu) katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun (Jadrolinija, u prekidu zbog vremenskih uvjeta) Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični p…"
+  "updated": "17.8.2026. 19:24",
+  "text": "U prekidu je trajektna linija Dubrovnik-Bari (Jadrolinija, zbog tehničkog kvara do daljnjega u prekidu). Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
