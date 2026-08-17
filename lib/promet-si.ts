@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T19:37:46.722Z";
+export const PROMET_SI_UPDATED = "2026-08-17T19:57:14.881Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870319;56b28220-902e-4673-9061-713fbb47ac00",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, uvoz Vransko - predor Trojane v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25018,
+  "lng": 14.97093,
+  "start": "2026-08-17T19:45:57.123Z",
+  "end": "2026-08-17T21:50:44.253Z",
+  "ts": "2026-08-17T19:46:07.717Z"
+ },
  {
   "id": "DARS;870323;8f7872b5-1849-482b-be82-4dd73eb5f0aa",
   "type": "MaintenanceWorks",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T18:39:52.583Z",
   "end": "2026-08-18T03:00:08.32Z",
   "ts": "2026-08-17T18:39:55.62Z"
- },
- {
-  "id": "DARS;870315;c2f071c9-4127-4f8d-8433-14bd87ab50a8",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, izvoz 3 Lesce - uvoz Brezje v smeri Ljubljane, dela, zaprt odstavni pas, strojno pometanje.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.38016,
-  "lng": 14.14963,
-  "start": "2026-08-17T17:20:38.667Z",
-  "end": "2026-08-18T01:19:30.497Z",
-  "ts": "2026-08-17T17:21:08.783Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
