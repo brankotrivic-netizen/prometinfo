@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.8.2026. 07:15",
-  "text": "Pojačan je promet na glavnim cestama u smjeru mora. Povremena su usporavanja na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići veći je priljev vozila pred naplatom Lučko u smjeru mora, a veća je gustoća prometa do Bosiljeva A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagreba kolona je oko 1 km na ulazu u Zagreb, na čvoru Zagreb zapad kolona je oko 4 km A3 Bregana-Lipovac veća je gustoća prometa na zagrebačkoj obilaznici između čvora Zagreb zapad i čvora L…"
+  "updated": "17.8.2026. 07:56",
+  "text": "Pojačan je promet na glavnim cestama u smjeru mora. Povremena su usporavanja na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići veća je gustoća prometa između Zagreba i Bosiljeva A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagreba kolona je oko 1 km na ulazu u Zagreb, na čvoru Zagreb zapad kolona je oko 5 km A3 Bregana-Lipovac veća je gustoća prometa na zagrebačkoj obilaznici između čvora Zagreb zapad i čvora Lučko u smjeru Lipovca te između čvora Zagreb i…"
  },
  {
   "title": "Granični prijelazi",
