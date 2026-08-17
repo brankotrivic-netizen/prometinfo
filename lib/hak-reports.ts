@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.8.2026. 21:03",
-  "text": "Kolnici su mjestimice mokri i skliski. Zbog povremeno obilnijih pljuskova moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti te na cestama u priobalju. Povremena usporavanja moguća su u zonama radova i privremene regulacije prometa. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići vozilo u kvaru (osobno vozilo) u tunelu Mala Kapela na ugibalištu u smjeru Dubrovnika, vozi se po dva prometna traka …"
+  "updated": "17.8.2026. 21:23",
+  "text": "Kolnici su mjestimice mokri i skliski. Zbog povremeno obilnijih pljuskova moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti te na cestama u priobalju. Povremena usporavanja moguća su u zonama radova i privremene regulacije prometa. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026. godine od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na re…"
  },
  {
   "title": "Granični prijelazi",

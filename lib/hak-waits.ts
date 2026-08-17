@@ -63,6 +63,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-17T21:01:07+02:00"
  },
  {
+  "id": "ba-samac",
+  "name": "Slavonski Šamac (Bosanski Šamac)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 120,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "2 h",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "",
+  "izlazTsISO": "",
+  "ts": "",
+  "tsISO": ""
+ },
+ {
   "id": "ba-svilaj",
   "name": "Svilaj",
   "ulazMin": null,
