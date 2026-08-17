@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T15:57:51.047Z";
+export const PROMET_SI_UPDATED = "2026-08-17T16:20:34.036Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -79,28 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T05:28:09.797Z",
   "end": "2026-09-11T17:00:00Z",
   "ts": "2026-08-17T05:32:00.113Z"
- },
- {
-  "id": "DARS;870096;2e78a0da-9ca4-407e-9f1f-abd1bac4a385",
-  "type": "MaintenanceWorks",
-  "desc": "RT-919, Vinica - Stari trg, Vinica - Učakovci, oviran promet, košnja, do 18:00.",
-  "loc": "RT-919, Vinica - Stari Trg",
-  "lat": 45.46137,
-  "lng": 15.25352,
-  "start": "2026-08-17T04:38:41.383Z",
-  "end": "2026-08-17T16:00:00Z",
-  "ts": "2026-08-17T04:39:28.403Z"
- },
- {
-  "id": "DARS;870095;d47a5258-19c8-401d-a7b7-239065082324",
-  "type": "MaintenanceWorks",
-  "desc": "G2-105, Novo mesto - Metlika, Dolnja Lokvica - Metlika, oviran promet, košnja, do 18:00.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.67343,
-  "lng": 15.28534,
-  "start": "2026-08-17T04:35:06.7Z",
-  "end": "2026-08-17T16:00:00Z",
-  "ts": "2026-08-17T04:37:20.463Z"
  },
  {
   "id": "DARS;870067;23c6206b-bb49-40d6-9ee5-28b98cbd5ee5",
