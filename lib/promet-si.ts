@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T13:12:59.666Z";
+export const PROMET_SI_UPDATED = "2026-08-17T13:52:34.525Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870073;779f4539-5a56-4078-8a11-63a87a53b00b",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, pred priključkom Brnik v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.21625,
+  "lng": 14.44334,
+  "start": "2026-08-17T03:40:56.897Z",
+  "end": "2026-08-17T15:00:00Z",
+  "ts": "2026-08-17T13:41:42.337Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -13,39 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-17T13:00:37.99Z"
- },
- {
-  "id": "DARS;870073;779f4539-5a56-4078-8a11-63a87a53b00b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, pred priključkom Brnik v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.21625,
-  "lng": 14.44334,
-  "start": "2026-08-17T03:40:56.897Z",
-  "end": "2026-08-17T14:00:00Z",
-  "ts": "2026-08-17T12:56:46.733Z"
- },
- {
-  "id": "DARS;870138;5906547e-058a-4021-acad-07299f6790d6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25534,
-  "lng": 14.9816,
-  "start": "2026-08-17T06:15:43.04Z",
-  "end": "2026-08-17T14:00:00Z",
-  "ts": "2026-08-17T12:28:33.297Z"
- },
- {
-  "id": "DARS;870197;90c78ce6-d004-4b18-903c-8b72877ca7bc",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Logatec - priključek Unec, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.9084,
-  "lng": 14.25785,
-  "start": "2026-08-17T09:53:34.747Z",
-  "end": "2026-08-17T14:00:00Z",
-  "ts": "2026-08-17T11:56:00.917Z"
  },
  {
   "id": "DARS;870203;782c61f7-adec-4c57-bb64-e9ccaf0eb08c",
