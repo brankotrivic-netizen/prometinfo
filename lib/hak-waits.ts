@@ -63,6 +63,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-17T13:12:33+02:00"
  },
  {
+  "id": "",
+  "name": "Dvor (Bosanski Novi)",
+  "ulazMin": 30,
+  "izlazMin": null,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "17.8.2026. 14:12:55",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-17T14:12:55+02:00",
+  "izlazTsISO": "",
+  "ts": "17.8.2026. 14:12:55",
+  "tsISO": "2026-08-17T14:12:55+02:00"
+ },
+ {
   "id": "ba-kostajnica",
   "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
   "ulazMin": 60,
@@ -81,26 +101,6 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "17.8.2026. 12:39:49",
   "tsISO": "2026-08-17T12:39:49+02:00"
- },
- {
-  "id": "",
-  "name": "Karasovići (Sutorina)",
-  "ulazMin": 60,
-  "izlazMin": 60,
-  "ulazTxt": "1 h",
-  "izlazTxt": "1 h",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "L: 1 km T: 17.8.2026. 9:02:11",
-  "izlazTs": "L: 1 km T: 17.8.2026. 9:02:44",
-  "ulazTsISO": "2026-08-17T09:02:11+02:00",
-  "izlazTsISO": "2026-08-17T09:02:44+02:00",
-  "ts": "L: 1 km T: 17.8.2026. 9:02:11",
-  "tsISO": "2026-08-17T09:02:11+02:00"
  },
  {
   "id": "hr-bajakovo",
