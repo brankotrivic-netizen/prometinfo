@@ -1,8 +1,74 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T05:57:02.927Z";
+export const PROMET_SI_UPDATED = "2026-08-17T06:39:25.078Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870142;814b54e5-87a9-4fab-8770-947a583762a7",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, priključek Zlatoličje - priključek Marjeta v smeri Maribora, dela, oviran promet.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.45797,
+  "lng": 15.73554,
+  "start": "2026-08-17T06:21:02.687Z",
+  "end": "2026-08-17T18:30:00Z",
+  "ts": "2026-08-17T06:21:09.487Z"
+ },
+ {
+  "id": "DARS;870138;5906547e-058a-4021-acad-07299f6790d6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25534,
+  "lng": 14.9816,
+  "start": "2026-08-17T06:15:43.04Z",
+  "end": "2026-08-17T10:00:00Z",
+  "ts": "2026-08-17T06:15:48.653Z"
+ },
+ {
+  "id": "DARS;870137;0f1d35ab-8a44-4110-b170-0a6b9c332a24",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, pokrit vkop Močna - razcep Dragučova v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.57073,
+  "lng": 15.77523,
+  "start": "2026-08-17T06:14:15.787Z",
+  "end": "2026-08-17T12:00:34.437Z",
+  "ts": "2026-08-17T06:14:26.94Z"
+ },
+ {
+  "id": "DARS;870135;4ea7a8e8-975f-4a75-a0cf-f42fda6cda4f",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Ljubljana Šentvid, Celovška cesta - počivališče Povodje v smeri Jesenic, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.10121,
+  "lng": 14.46673,
+  "start": "2026-08-17T06:07:25.36Z",
+  "end": "2026-08-17T12:00:00Z",
+  "ts": "2026-08-17T06:07:51.633Z"
+ },
+ {
+  "id": "DARS;870133;6ad9cbba-5d21-4a6b-b9a0-26ed2dcadd20",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Črni Kal - razcep Srmin v smeri Kopra, dela, oviran promet, pomična zapora.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55476,
+  "lng": 13.85423,
+  "start": "2026-08-17T06:04:04.227Z",
+  "end": "2026-08-17T12:00:00Z",
+  "ts": "2026-08-17T06:04:35.95Z"
+ },
+ {
+  "id": "DARS;870131;79e48091-47f5-4871-80f0-5191b27df175",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-403, Kneža - Podbrdo, Hudajužna - Koritnica, izmenično enosmerni promet, košnja, do 15:00.",
+  "loc": "R2-403, Kneža - Podbrdo",
+  "lat": 46.16317,
+  "lng": 13.88587,
+  "start": "2026-08-17T05:55:48.203Z",
+  "end": "2026-08-17T13:00:00Z",
+  "ts": "2026-08-17T05:56:15.257Z"
+ },
  {
   "id": "DARS;870130;6db06db3-2646-4a1b-b871-b8945b03e2e9",
   "type": "RoadOrCarriagewayOrLaneManagement",
