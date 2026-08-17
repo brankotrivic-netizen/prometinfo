@@ -1,29 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T18:20:43.206Z";
+export const PROMET_SI_UPDATED = "2026-08-17T19:05:01.447Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;870318;3518a7a5-814b-4746-9c63-39094f78e6ad",
+  "id": "DARS;870325;8133941c-79e2-4fb8-b58c-9ca221b2e3a4",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Divača - priključek Kozina v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.64178,
-  "lng": 13.96108,
-  "start": "2026-08-17T17:27:14.267Z",
-  "end": "2026-08-17T21:00:00Z",
-  "ts": "2026-08-17T17:27:16.033Z"
+  "desc": "H3, Ljubljana - severna obvoznica, razcep Koseze - priključek Dravlje v smeri Zadobrove, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.07528,
+  "lng": 14.46832,
+  "start": "2026-08-17T19:02:35.873Z",
+  "end": "2026-08-18T01:00:00Z",
+  "ts": "2026-08-17T19:02:38.793Z"
  },
  {
-  "id": "DARS;870317;dff09ff2-05b6-46e1-8a89-c2d376bdd5ac",
+  "id": "DARS;870323;8f7872b5-1849-482b-be82-4dd73eb5f0aa",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Konjice - priključek Sl. Bistrica jug v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.37591,
-  "lng": 15.55208,
-  "start": "2026-08-17T17:24:42.073Z",
-  "end": "2026-08-17T19:30:23.853Z",
-  "ts": "2026-08-17T17:24:55.243Z"
+  "desc": "A2, Ljubljana - Karavanke, izvoz 13 Ljubljana Brod - priključek Vodice v smeri Jesenic, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.10156,
+  "lng": 14.46696,
+  "start": "2026-08-17T18:39:52.583Z",
+  "end": "2026-08-18T03:00:08.32Z",
+  "ts": "2026-08-17T18:39:55.62Z"
  },
  {
   "id": "DARS;870315;c2f071c9-4127-4f8d-8433-14bd87ab50a8",
@@ -35,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T17:20:38.667Z",
   "end": "2026-08-18T01:19:30.497Z",
   "ts": "2026-08-17T17:21:08.783Z"
- },
- {
-  "id": "DARS;870314;1c094158-a73c-4c40-a5af-75dfbbefacae",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, izvoz 4 Bertoki iz smeri Srmina, dela, oviran promet, priključek bertoki.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.54777,
-  "lng": 13.76584,
-  "start": "2026-08-17T17:03:51.483Z",
-  "end": "2026-08-17T23:00:00Z",
-  "ts": "2026-08-17T17:04:37.083Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
