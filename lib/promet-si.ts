@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T13:52:34.525Z";
+export const PROMET_SI_UPDATED = "2026-08-17T14:16:48.678Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870073;779f4539-5a56-4078-8a11-63a87a53b00b",
@@ -156,17 +156,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T04:35:06.7Z",
   "end": "2026-08-17T16:00:00Z",
   "ts": "2026-08-17T04:37:20.463Z"
- },
- {
-  "id": "DARS;870085;b439bb8a-c804-4ed6-8ec4-85dbdfaaf8a8",
-  "type": "MaintenanceWorks",
-  "desc": "R3-672, Smednik - Zameško - Kostanjevica, Gmajna - Koprivnik, oviran promet, košnja, do 16:00.",
-  "loc": "R3-672, Smednik - Zameško - Kostanjevica",
-  "lat": 45.9067,
-  "lng": 15.36993,
-  "start": "2026-08-17T04:20:38.163Z",
-  "end": "2026-08-17T14:00:00Z",
-  "ts": "2026-08-17T04:21:19.697Z"
  },
  {
   "id": "DARS;870067;23c6206b-bb49-40d6-9ee5-28b98cbd5ee5",

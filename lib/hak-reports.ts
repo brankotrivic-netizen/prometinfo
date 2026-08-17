@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.8.2026. 15:51",
+  "updated": "17.8.2026. 16:01",
   "text": "Zbog veće gustoće prometa vozi se u kolonama u pokretu i uz kraće zastoje duž jadranske obale na prilazima turističkim središtima, u Istri i na otoku Krku te na Krčkom mostu. Na pojedinim graničnim prijelazima čekanja su višesatna. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići povremena su usporavanja zbog veće gustoće prometa, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama kolone i kraći zastoji: čvor Karlovac-čvor Bosiljevo 1 u smjeru mora, čvor Ogulin - čvor Bosiljevo - čvor Karlovac u smjeru unutrašnjosti A3 Bregana-Lipovac veća je g…"
  },
  {

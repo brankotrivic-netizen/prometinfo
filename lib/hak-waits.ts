@@ -125,21 +125,21 @@ export const HAK_WAITS: HakWait[] = [
  {
   "id": "hr-tovarnik",
   "name": "Tovarnik (Šid)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": 60,
+  "ulazMin": null,
+  "izlazMin": 30,
+  "ulazTxt": "-",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": 30,
   "truckIzlazMin": null,
-  "truckUlazTxt": "1 h",
+  "truckUlazTxt": "do 30 min.",
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "17.8.2026. 12:15:49",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-17T12:15:49+02:00",
-  "izlazTsISO": "",
-  "ts": "17.8.2026. 12:15:49",
-  "tsISO": "2026-08-17T12:15:49+02:00"
+  "ulazTs": "Nema podataka",
+  "izlazTs": "17.8.2026. 16:12:12",
+  "ulazTsISO": "",
+  "izlazTsISO": "2026-08-17T16:12:12+02:00",
+  "ts": "17.8.2026. 16:12:12",
+  "tsISO": "2026-08-17T16:12:12+02:00"
  }
 ];
