@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.8.2026. 22:36",
+  "updated": "17.8.2026. 23:15",
   "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Zbog povremeno obilnijih pljuskova moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti te na cestama u priobalju. Povremena usporavanja moguća su u zonama radova i privremene regulacije prometa. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A3 na 45.+200 km između čvorova Rugvica i Otok Svibovski u smjeru Bregane, vozi se jednim prometnim tra…"
  },
  {
