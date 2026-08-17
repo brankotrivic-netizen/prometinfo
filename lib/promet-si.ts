@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T06:39:25.078Z";
+export const PROMET_SI_UPDATED = "2026-08-17T07:37:37.972Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870160;2e9f1542-202f-441d-ae9e-db5c1edbf7a2",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-215, Trebnje - Mokronog, na Rakovniku pri Šentrupertu, izmenično enosmerni promet, izvedbe ukrepov v območju šolske poti, do 20. 9. 2026.",
+  "loc": "R1-215, Trebnje - Mokronog",
+  "lat": 45.96019,
+  "lng": 15.08927,
+  "start": "2026-08-17T07:16:53.463Z",
+  "end": "2026-09-20T21:59:00Z",
+  "ts": "2026-08-17T07:24:39.07Z"
+ },
+ {
+  "id": "DARS;870157;516e6b01-9ddd-43f2-87f3-e0df68b3e8a9",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-220, Krško - Brežice, v Brežicah, izmenično enosmerni promet, ureditve križišča, kolesarskih in peš poti, do 16. 11. 2026.",
+  "loc": "R1-220, Krško - Brežice",
+  "lat": 45.90905,
+  "lng": 15.60071,
+  "start": "2026-08-17T07:08:05.087Z",
+  "end": "2026-11-16T22:59:00Z",
+  "ts": "2026-08-17T07:08:39.347Z"
+ },
+ {
+  "id": "DARS;870107;d33da48e-3342-4f05-ae50-cacc22dd9134",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25667,
+  "lng": 14.99542,
+  "start": "2026-08-17T05:10:48.23Z",
+  "end": "2026-08-17T11:00:00Z",
+  "ts": "2026-08-17T07:06:38.753Z"
+ },
+ {
+  "id": "DARS;870066;bcc5e31a-9422-402b-83c2-0c278cbc1631",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, razcep Dolga vas - izvoz Turnišče v smeri Murske Sobote, dela, zaprt prehitevalni pas.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.5898,
+  "lng": 16.42526,
+  "start": "2026-08-17T07:05:14.383Z",
+  "end": "2026-08-17T17:00:00Z",
+  "ts": "2026-08-17T07:05:30.983Z"
+ },
+ {
+  "id": "DARS;870145;b5693e6c-c9d0-4602-a9ff-f62ce9c62697",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Unec - priključek Logatec v smeri Ljubljane, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.82363,
+  "lng": 14.28677,
+  "start": "2026-08-17T06:40:42.53Z",
+  "end": "2026-08-17T12:00:00Z",
+  "ts": "2026-08-17T06:41:10.53Z"
+ },
  {
   "id": "DARS;870142;814b54e5-87a9-4fab-8770-947a583762a7",
   "type": "MaintenanceWorks",
@@ -35,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T06:14:15.787Z",
   "end": "2026-08-17T12:00:34.437Z",
   "ts": "2026-08-17T06:14:26.94Z"
- },
- {
-  "id": "DARS;870135;4ea7a8e8-975f-4a75-a0cf-f42fda6cda4f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, uvoz Ljubljana Šentvid, Celovška cesta - počivališče Povodje v smeri Jesenic, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.10121,
-  "lng": 14.46673,
-  "start": "2026-08-17T06:07:25.36Z",
-  "end": "2026-08-17T12:00:00Z",
-  "ts": "2026-08-17T06:07:51.633Z"
  },
  {
   "id": "DARS;870133;6ad9cbba-5d21-4a6b-b9a0-26ed2dcadd20",
@@ -211,17 +255,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T05:28:22.453Z",
   "end": "2026-08-17T12:00:54.997Z",
   "ts": "2026-08-17T05:28:24.363Z"
- },
- {
-  "id": "DARS;870107;d33da48e-3342-4f05-ae50-cacc22dd9134",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25667,
-  "lng": 14.99542,
-  "start": "2026-08-17T05:10:48.23Z",
-  "end": "2026-08-17T08:00:00Z",
-  "ts": "2026-08-17T05:10:54.483Z"
  },
  {
   "id": "DARS;870096;2e78a0da-9ca4-407e-9f1f-abd1bac4a385",
@@ -431,17 +464,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T04:00:00Z",
   "end": "2026-08-17T12:00:00Z",
   "ts": "2026-08-17T03:39:10Z"
- },
- {
-  "id": "DARS;870068;54b46c9c-7a8a-43f6-8f02-8afd25ca8fb4",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Turnišče - razcep Dolga vas v smeri Lendave, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.60957,
-  "lng": 16.31842,
-  "start": "2026-08-17T03:34:47.197Z",
-  "end": "2026-08-17T07:00:58.6Z",
-  "ts": "2026-08-17T03:34:53.603Z"
  },
  {
   "id": "DARS;870065;57bb337f-2759-405b-bc6d-9e8ce948155f",
