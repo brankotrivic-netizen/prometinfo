@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T09:05:44.126Z";
+export const PROMET_SI_UPDATED = "2026-08-17T09:54:53.604Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870107;d33da48e-3342-4f05-ae50-cacc22dd9134",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25667,
+  "lng": 14.99542,
+  "start": "2026-08-17T05:10:48.23Z",
+  "end": "2026-08-17T13:00:00Z",
+  "ts": "2026-08-17T09:37:33.55Z"
+ },
+ {
+  "id": "DARS;870138;5906547e-058a-4021-acad-07299f6790d6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25534,
+  "lng": 14.9816,
+  "start": "2026-08-17T06:15:43.04Z",
+  "end": "2026-08-17T13:00:00Z",
+  "ts": "2026-08-17T09:37:11.553Z"
+ },
+ {
+  "id": "DARS;870193;bac5f260-683b-4cd7-85f8-41b8f101a012",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, izvoz 13 Ljubljana Brod - priključek Vodice v smeri Jesenic, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.10153,
+  "lng": 14.46693,
+  "start": "2026-08-17T09:29:08.58Z",
+  "end": "2026-08-17T15:00:00Z",
+  "ts": "2026-08-17T09:29:22.023Z"
+ },
+ {
+  "id": "DARS;870192;183e70c5-3f68-418a-b036-478fca6a6f5a",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, izvoz Trojane - uvoz Trojane v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.19582,
+  "lng": 14.90219,
+  "start": "2026-08-17T09:28:02.273Z",
+  "end": "2026-08-17T11:00:00Z",
+  "ts": "2026-08-17T09:28:42.643Z"
+ },
  {
   "id": "DARS;870188;c59fc19b-70f5-42e7-a1c5-7b0270957975",
   "type": "MaintenanceWorks",
@@ -57,61 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T07:08:05.087Z",
   "end": "2026-11-16T22:59:00Z",
   "ts": "2026-08-17T07:08:39.347Z"
- },
- {
-  "id": "DARS;870107;d33da48e-3342-4f05-ae50-cacc22dd9134",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25667,
-  "lng": 14.99542,
-  "start": "2026-08-17T05:10:48.23Z",
-  "end": "2026-08-17T11:00:00Z",
-  "ts": "2026-08-17T07:06:38.753Z"
- },
- {
-  "id": "DARS;870066;bcc5e31a-9422-402b-83c2-0c278cbc1631",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, razcep Dolga vas - izvoz Turnišče v smeri Murske Sobote, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.5898,
-  "lng": 16.42526,
-  "start": "2026-08-17T07:05:14.383Z",
-  "end": "2026-08-17T17:00:00Z",
-  "ts": "2026-08-17T07:05:30.983Z"
- },
- {
-  "id": "DARS;870145;b5693e6c-c9d0-4602-a9ff-f62ce9c62697",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Unec - priključek Logatec v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.82363,
-  "lng": 14.28677,
-  "start": "2026-08-17T06:40:42.53Z",
-  "end": "2026-08-17T12:00:00Z",
-  "ts": "2026-08-17T06:41:10.53Z"
- },
- {
-  "id": "DARS;870138;5906547e-058a-4021-acad-07299f6790d6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25534,
-  "lng": 14.9816,
-  "start": "2026-08-17T06:15:43.04Z",
-  "end": "2026-08-17T10:00:00Z",
-  "ts": "2026-08-17T06:15:48.653Z"
- },
- {
-  "id": "DARS;870137;0f1d35ab-8a44-4110-b170-0a6b9c332a24",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, pokrit vkop Močna - razcep Dragučova v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.57073,
-  "lng": 15.77523,
-  "start": "2026-08-17T06:14:15.787Z",
-  "end": "2026-08-17T12:00:34.437Z",
-  "ts": "2026-08-17T06:14:26.94Z"
  },
  {
   "id": "DARS;870133;6ad9cbba-5d21-4a6b-b9a0-26ed2dcadd20",
