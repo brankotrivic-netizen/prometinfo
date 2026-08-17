@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.8.2026. 14:11",
-  "text": "Pojačan je promet na glavnim cestama u smjeru mora i prema unutrašnjosti. Povremena su usporavanja na pojedinim dionicama autocesta, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama. U kolonama u pokretu i uz kraće zastoje vozi se duž jadranske obale na prilazima turističkim središtima, u Istri i na otoku Krku te na Krčkom mostu. Zbog veće gustoće prometa čekanja su u trajektnim lukama i pristaništima. Na pojedinim graničnim prijelazima čekanja su višesatna. Kolnici su mjestimice mokri i skliski. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamati…"
+  "updated": "17.8.2026. 15:11",
+  "text": "Pojačan je promet na glavnim cestama u smjeru mora i prema unutrašnjosti. U kolonama u pokretu i uz kraće zastoje vozi se duž jadranske obale na prilazima turističkim središtima, u Istri i na otoku Krku te na Krčkom mostu. Zbog veće gustoće prometa čekanja su u trajektnim lukama i pristaništima. Na pojedinim graničnim prijelazima čekanja su višesatna. Kolnici su mjestimice mokri i skliski. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići povremena su usporavanja zbog veće gustoće prometa, osobito u zonama odmorišta i tunela te na prilazima naplatnim postajama kolon…"
  },
  {
   "title": "Granični prijelazi",

@@ -1,18 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T12:19:28.131Z";
+export const PROMET_SI_UPDATED = "2026-08-17T13:12:59.666Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;870129;965c2bc0-2b62-4d74-8e75-1c47d43c203c",
+  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Maribor jug - uvoz Maribor jug iz smeri Hoč proti Ljubljani, dela, oviran promet.",
+  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
+  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
+  "lat": 46.20334,
+  "lng": 15.25907,
+  "start": "2026-07-29T13:00:00Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-08-17T13:00:37.99Z"
+ },
+ {
+  "id": "DARS;870073;779f4539-5a56-4078-8a11-63a87a53b00b",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, pred priključkom Brnik v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.21625,
+  "lng": 14.44334,
+  "start": "2026-08-17T03:40:56.897Z",
+  "end": "2026-08-17T14:00:00Z",
+  "ts": "2026-08-17T12:56:46.733Z"
+ },
+ {
+  "id": "DARS;870138;5906547e-058a-4021-acad-07299f6790d6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
   "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.49085,
-  "lng": 15.65255,
-  "start": "2026-08-17T05:54:38.123Z",
-  "end": "2026-08-17T13:00:00Z",
-  "ts": "2026-08-17T11:57:12.46Z"
+  "lat": 46.25534,
+  "lng": 14.9816,
+  "start": "2026-08-17T06:15:43.04Z",
+  "end": "2026-08-17T14:00:00Z",
+  "ts": "2026-08-17T12:28:33.297Z"
  },
  {
   "id": "DARS;870197;90c78ce6-d004-4b18-903c-8b72877ca7bc",
@@ -35,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T10:23:13.21Z",
   "end": "2026-08-17T15:00:00Z",
   "ts": "2026-08-17T11:16:19.337Z"
- },
- {
-  "id": "DARS;870138;5906547e-058a-4021-acad-07299f6790d6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25534,
-  "lng": 14.9816,
-  "start": "2026-08-17T06:15:43.04Z",
-  "end": "2026-08-17T13:00:00Z",
-  "ts": "2026-08-17T09:37:11.553Z"
  },
  {
   "id": "DARS;870188;c59fc19b-70f5-42e7-a1c5-7b0270957975",
@@ -79,39 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T07:08:05.087Z",
   "end": "2026-11-16T22:59:00Z",
   "ts": "2026-08-17T07:08:39.347Z"
- },
- {
-  "id": "DARS;870131;79e48091-47f5-4871-80f0-5191b27df175",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-403, Kneža - Podbrdo, Hudajužna - Koritnica, izmenično enosmerni promet, košnja, do 15:00.",
-  "loc": "R2-403, Kneža - Podbrdo",
-  "lat": 46.16317,
-  "lng": 13.88587,
-  "start": "2026-08-17T05:55:48.203Z",
-  "end": "2026-08-17T13:00:00Z",
-  "ts": "2026-08-17T05:56:15.257Z"
- },
- {
-  "id": "DARS;870130;6db06db3-2646-4a1b-b871-b8945b03e2e9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-403, Bača pri Modreju - Petrovo Brdo, pri Klavžah, izmenično enosmerni promet, sečnja dreves, do 15:00.",
-  "loc": "R2-403, Bača - Kneža",
-  "lat": 46.1589,
-  "lng": 13.81646,
-  "start": "2026-08-17T05:54:54.127Z",
-  "end": "2026-08-17T13:00:00Z",
-  "ts": "2026-08-17T05:55:13.367Z"
- },
- {
-  "id": "DARS;870125;59f20ba2-d92f-4c98-b69b-e460a74a377d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-439, Dobrovnik - Renkovci, v Dobrovniku, izmenično enosmerni promet, popravilo vozišča, do 15:00.",
-  "loc": "R2-439, Dobrovnik - Renkovci",
-  "lat": 46.65325,
-  "lng": 16.34499,
-  "start": "2026-08-17T05:52:39.027Z",
-  "end": "2026-08-17T13:00:00Z",
-  "ts": "2026-08-17T05:53:01.113Z"
  },
  {
   "id": "DARS;870123;cb0faed3-4aa2-4218-82d6-90db8ba1b2ae",
@@ -202,28 +180,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-17T04:37:20.463Z"
  },
  {
-  "id": "DARS;870087;57265da6-cea9-4cb4-8686-f58d4fd8d64e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-225, Radmirje - Mozirje, Juvanje - Mozirje, izmenično enosmerni promet, barvanje talnih označb, do 15:00.",
-  "loc": "R1-225, Radmirje - Mozirje",
-  "lat": 46.33449,
-  "lng": 14.85581,
-  "start": "2026-08-17T04:31:10.203Z",
-  "end": "2026-08-17T13:00:00Z",
-  "ts": "2026-08-17T04:31:36.09Z"
- },
- {
-  "id": "DARS;870073;779f4539-5a56-4078-8a11-63a87a53b00b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, pred priključkom Brnik v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.21625,
-  "lng": 14.44334,
-  "start": "2026-08-17T03:40:56.897Z",
-  "end": "2026-08-17T13:00:00Z",
-  "ts": "2026-08-17T04:25:38.47Z"
- },
- {
   "id": "DARS;870085;b439bb8a-c804-4ed6-8ec4-85dbdfaaf8a8",
   "type": "MaintenanceWorks",
   "desc": "R3-672, Smednik - Zameško - Kostanjevica, Gmajna - Koprivnik, oviran promet, košnja, do 16:00.",
@@ -233,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T04:20:38.163Z",
   "end": "2026-08-17T14:00:00Z",
   "ts": "2026-08-17T04:21:19.697Z"
- },
- {
-  "id": "DARS;870084;b32d71ab-ce6e-40ad-9259-42d2d28c00ee",
-  "type": "MaintenanceWorks",
-  "desc": "R3-672, Zavratec - Smednik, Zavratec - Podulce, oviran promet, košnja, do 15:00.",
-  "loc": "R3-672, Zavratec - Smednik",
-  "lat": 45.95919,
-  "lng": 15.3412,
-  "start": "2026-08-17T04:19:28.703Z",
-  "end": "2026-08-17T13:00:00Z",
-  "ts": "2026-08-17T04:20:00.797Z"
  },
  {
   "id": "DARS;870067;23c6206b-bb49-40d6-9ee5-28b98cbd5ee5",
