@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-gradiska",
-  "name": "Gornji Varoš (Gradiška (novi most))",
-  "ulazMin": 60,
-  "izlazMin": 30,
-  "ulazTxt": "1 h",
-  "izlazTxt": "do 30 min.",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "17.8.2026. 17:33:57",
-  "izlazTs": "17.8.2026. 17:34:15",
-  "ulazTsISO": "2026-08-17T17:33:57+02:00",
-  "izlazTsISO": "2026-08-17T17:34:15+02:00",
-  "ts": "17.8.2026. 17:33:57",
-  "tsISO": "2026-08-17T17:33:57+02:00"
- },
- {
   "id": "ba-gradina",
   "name": "Jasenovac (Donja Gradina)",
   "ulazMin": 30,
@@ -61,26 +41,6 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "17.8.2026. 21:01:07",
   "tsISO": "2026-08-17T21:01:07+02:00"
- },
- {
-  "id": "ba-samac",
-  "name": "Slavonski Šamac (Bosanski Šamac)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": 120,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "2 h",
-  "truckIzlazTxt": "-",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "",
-  "izlazTsISO": "",
-  "ts": "",
-  "tsISO": ""
  },
  {
   "id": "ba-svilaj",
