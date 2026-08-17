@@ -43,7 +43,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    },
    {
     "title": "Crna Rijeka- Jajce (Podmilačje)",
-    "text": "U toku su radovi na sanaciji škarpi na magistralnoj cesti Crna Rijeka–Jajce (u Podmilačju), zbog čega se na mjestu radova saobraća usporeno, naizmjeničnim propuštanjem vozila."
+    "text": "Zbog izvođenja radova bit će obustavljen saobraćaj za sva vozila na magistralnoj cesti Jajce–Crna Rijeka, u naselju Podmilačje. Za vrijeme obustave, vozila će biti preusmjeravana alternativnim pravcem preko Mrkonjić Grada."
    },
    {
     "title": "Sarajevo-Lapišnica",

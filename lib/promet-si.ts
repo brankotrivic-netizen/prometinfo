@@ -1,8 +1,74 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-17T04:30:36.746Z";
+export const PROMET_SI_UPDATED = "2026-08-17T05:20:15.602Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870107;d33da48e-3342-4f05-ae50-cacc22dd9134",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25667,
+  "lng": 14.99542,
+  "start": "2026-08-17T05:10:48.23Z",
+  "end": "2026-08-17T08:00:00Z",
+  "ts": "2026-08-17T05:10:54.483Z"
+ },
+ {
+  "id": "DARS;870096;2e78a0da-9ca4-407e-9f1f-abd1bac4a385",
+  "type": "MaintenanceWorks",
+  "desc": "RT-919, Vinica - Stari trg, Vinica - Učakovci, oviran promet, košnja, do 18:00.",
+  "loc": "RT-919, Vinica - Stari Trg",
+  "lat": 45.46137,
+  "lng": 15.25352,
+  "start": "2026-08-17T04:38:41.383Z",
+  "end": "2026-08-17T16:00:00Z",
+  "ts": "2026-08-17T04:39:28.403Z"
+ },
+ {
+  "id": "DARS;870095;d47a5258-19c8-401d-a7b7-239065082324",
+  "type": "MaintenanceWorks",
+  "desc": "G2-105, Novo mesto - Metlika, Dolnja Lokvica - Metlika, oviran promet, košnja, do 18:00.",
+  "loc": "G2-105, Nm (Revoz) - Metlika",
+  "lat": 45.67343,
+  "lng": 15.28534,
+  "start": "2026-08-17T04:35:06.7Z",
+  "end": "2026-08-17T16:00:00Z",
+  "ts": "2026-08-17T04:37:20.463Z"
+ },
+ {
+  "id": "DARS;870091;ef76c4ce-dcf9-42da-95ff-a688482bf7fc",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-404, Ilirska Bistrica - Knežak - Pivka, Knežak - Šembije, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "NK-404, Ilirska Bistrica - Pivka",
+  "lat": 45.59637,
+  "lng": 14.23683,
+  "start": "2026-08-17T04:33:11.537Z",
+  "end": "2026-08-17T12:00:00Z",
+  "ts": "2026-08-17T04:33:37.613Z"
+ },
+ {
+  "id": "DARS;870089;54c1e10e-7d3f-43b0-9414-3331898243ab",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-7, Starod - Kozina, pri Starodu, izmenično enosmerni promet, obrezovanje rastlinja, do 14:00.",
+  "loc": "G1-7, Starod - Podgrad",
+  "lat": 45.49321,
+  "lng": 14.20011,
+  "start": "2026-08-17T04:32:11.613Z",
+  "end": "2026-08-17T12:00:00Z",
+  "ts": "2026-08-17T04:32:32.96Z"
+ },
+ {
+  "id": "DARS;870087;57265da6-cea9-4cb4-8686-f58d4fd8d64e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-225, Radmirje - Mozirje, Juvanje - Mozirje, izmenično enosmerni promet, barvanje talnih označb, do 15:00.",
+  "loc": "R1-225, Radmirje - Mozirje",
+  "lat": 46.33449,
+  "lng": 14.85581,
+  "start": "2026-08-17T04:31:10.203Z",
+  "end": "2026-08-17T13:00:00Z",
+  "ts": "2026-08-17T04:31:36.09Z"
+ },
  {
   "id": "DARS;870073;779f4539-5a56-4078-8a11-63a87a53b00b",
   "type": "MaintenanceWorks",
@@ -125,6 +191,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-17T03:44:35.707Z"
  },
  {
+  "id": "DARS;870070;41598eae-3f93-4de9-b44a-ac4601353802",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-731, Polzela - Parižlje - Braslovče, v Rakovlju, izmenično enosmerni promet, vzdrževalna dela, do 23. 8. 2026.",
+  "loc": "R3-731, Polzela - Parižlje - Braslovče - Male Braslovče",
+  "lat": 46.28361,
+  "lng": 15.04439,
+  "start": "2026-08-17T05:00:00Z",
+  "end": "2026-08-23T15:00:00Z",
+  "ts": "2026-08-17T03:42:51.297Z"
+ },
+ {
   "id": "DARS;870072;a375c3f5-be0f-43f9-961b-fd8d2029f4e2",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-230, Križevci - Ljutomer, Križevci - Noršinci, izmenično enosmerni promet, popravilo bankin, do 19. 8. 2026.",
@@ -200,17 +277,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T02:36:39.03Z",
   "end": "2026-08-17T17:00:00Z",
   "ts": "2026-08-17T02:36:58.017Z"
- },
- {
-  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
-  "type": "MaintenanceWorks",
-  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
-  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
-  "lat": 46.20334,
-  "lng": 15.25907,
-  "start": "2026-07-29T13:00:00Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-16T13:00:47.427Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
