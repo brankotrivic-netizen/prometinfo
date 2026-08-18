@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T14:49:22.477Z";
+export const PROMET_SI_UPDATED = "2026-08-18T15:20:28.224Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -48,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-18T11:56:22.063Z"
  },
  {
-  "id": "DARS;870426;ba1060b0-d220-4e8f-ab8e-766dfd915378",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Ločica - predor Jasovnik v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.22012,
-  "lng": 14.94337,
-  "start": "2026-08-18T10:02:15.43Z",
-  "end": "2026-08-18T15:00:00Z",
-  "ts": "2026-08-18T10:02:38.08Z"
- },
- {
   "id": "DARS;868804;1eb0f48a-629a-456f-8270-29bbf9dc7f65",
   "type": "MaintenanceWorks",
   "desc": "R3-664, Gaber - Uršna Sela - Novo mesto, v Novem mestu, Šmihel, oviran promet, sanacije drsnega vozišča, do 19:00.",
@@ -79,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T05:28:57.39Z",
   "end": "2027-03-25T22:59:00Z",
   "ts": "2026-08-18T05:30:25.8Z"
- },
- {
-  "id": "DARS;870368;90c07103-ac68-46d0-94fe-d233f85f6376",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-607, Preval - Grgar - Čepovan, pri Čepovanu, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R3-607, Preval - Grgar - Čepovan",
-  "lat": 46.0089,
-  "lng": 13.71774,
-  "start": "2026-08-18T05:11:00.787Z",
-  "end": "2026-08-18T15:00:00Z",
-  "ts": "2026-08-18T05:11:24.993Z"
  },
  {
   "id": "DARS;870351;e861d719-ddb2-4856-8faa-b83c2158d510",
