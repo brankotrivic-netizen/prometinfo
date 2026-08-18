@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T18:20:14.828Z";
+export const PROMET_SI_UPDATED = "2026-08-18T19:04:31.231Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870511;184ae0f5-e0a9-4b02-8b23-3582261e015b",
@@ -37,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-18T18:00:40.003Z"
  },
  {
-  "id": "DARS;870384;82bbcb26-cd98-427c-9f62-8faabd8aa888",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, počivališče Voklo - počivališče Voklo v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.23729,
-  "lng": 14.40364,
-  "start": "2026-08-18T05:57:50.487Z",
-  "end": "2026-08-18T19:00:00Z",
-  "ts": "2026-08-18T17:56:30.417Z"
- },
- {
   "id": "DARS;870503;dbd66a74-4c10-4243-9d54-666d02208aab",
   "type": "MaintenanceWorks",
   "desc": "A2, Ljubljana - Karavanke, izvoz 5 Brezje - počivališče Jesenice v smeri Karavank, Avstrije, dela, oviran promet, strojno pometanje.",
@@ -57,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T17:24:15.887Z",
   "end": "2026-08-19T01:23:11.563Z",
   "ts": "2026-08-18T17:24:40.973Z"
- },
- {
-  "id": "DARS;870502;ed16be86-a68b-4ff4-a4fd-f606d1488ed1",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica jug - priključek Sl. Bistrica sever v smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.38755,
-  "lng": 15.58389,
-  "start": "2026-08-18T17:06:50.113Z",
-  "end": "2026-08-18T20:30:45.99Z",
-  "ts": "2026-08-18T17:07:13.36Z"
- },
- {
-  "id": "DARS;870501;4cb0634f-eb4f-444a-b5b5-4c41106819cd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Kozina - priključek Divača v smeri Ljubljane, dela, oviran promet, strojno pometanje.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.61442,
-  "lng": 13.94329,
-  "start": "2026-08-18T16:53:34.217Z",
-  "end": "2026-08-18T21:00:00Z",
-  "ts": "2026-08-18T16:53:47.6Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",

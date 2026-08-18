@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.8.2026. 20:19",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac prometna nesreća na 25.km između čvorova Lučko i Buzin u smjeru Lipovca. Vozi se po dva traka uz ograničenje brzine od 80 km/h A4 Goričan-Zagreb prometna nesreća na 94.+100 km između čvorova Sesvete i Zagreb istok u smjeru Zagreba. Vozi se uz ograničenje brzine od 60 km/h Jadranska magistrala (DC8) zbog vozila u kvaru na mostu dr. F. Tuđmana u Duborvnik u smjeru Lozice vozi se naizmjenično jednim kolničkim trakom. AUTOCESTE A1 Zagreb-Split-Dubrov…"
+  "updated": "18.8.2026. 20:47",
+  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: Jadranska magistrala (DC8) zbog vozila u kvaru na mostu dr. F. Tuđmana u Dubrovniku u smjeru Lozice vozi se naizmjenično jednim kolničkim trakom. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.09.2026. godine od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj vozi se samo voznim trakom: od 17.+500 do 13.+750 km u smjeru Maclja (dionica Krapina – Đurmanec) i od 6.+700 d…"
  },
  {
   "title": "Granični prijelazi",
