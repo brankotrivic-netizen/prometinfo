@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T09:00:14.146Z";
+export const PROMET_SI_UPDATED = "2026-08-18T09:34:55.792Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870415;cad75b60-d6f7-46d5-a20d-db6b9b811670",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - vzhodna obvoznica, razcep Slivnica - izvoz 5 Maribor center v smeri Šentilja, Avstrije, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.4852,
+  "lng": 15.65988,
+  "start": "2026-08-18T09:12:21.917Z",
+  "end": "2026-08-18T12:00:57.853Z",
+  "ts": "2026-08-18T09:12:25.02Z"
+ },
  {
   "id": "DARS;870411;1e1d2b07-8dec-4ae1-91dd-241c0dbbcfbc",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T08:40:32.007Z",
   "end": "2026-08-18T12:00:00Z",
   "ts": "2026-08-18T08:41:22.75Z"
- },
- {
-  "id": "DARS;870362;8a67475c-10db-4422-8fa5-1d8de42bb681",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Vransko - predor Ločica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.24431,
-  "lng": 14.96391,
-  "start": "2026-08-18T04:56:06.91Z",
-  "end": "2026-08-18T11:00:00Z",
-  "ts": "2026-08-18T08:40:04.753Z"
  },
  {
   "id": "DARS;870409;ea8b26a7-69fd-48d9-aa58-066f1e3956cf",
@@ -180,17 +180,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-18T05:57:58.813Z"
  },
  {
-  "id": "DARS;870382;f0abdb77-9e59-4ede-a0a7-e701565ce21b",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, uvoz Maribor center - razcep Slivnica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.51737,
-  "lng": 15.6772,
-  "start": "2026-08-18T05:45:02.007Z",
-  "end": "2026-08-18T10:00:58.917Z",
-  "ts": "2026-08-18T05:45:36.553Z"
- },
- {
   "id": "DARS;870379;c5fe9164-9e91-42a9-b411-8b1dcf57816e",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - priključek Sl. Bistrica jug v smeri Maribora, dela, oviran promet.",
@@ -211,17 +200,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T05:28:57.39Z",
   "end": "2027-03-25T22:59:00Z",
   "ts": "2026-08-18T05:30:25.8Z"
- },
- {
-  "id": "DARS;870373;14d9ac7d-0ab7-4802-96a6-29d2db91365f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, uvoz Drnovo - priključek Brežice v smeri Obrežja, dela, zaprt odstavni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.91258,
-  "lng": 15.46835,
-  "start": "2026-08-18T05:29:16.907Z",
-  "end": "2026-08-18T12:00:29.177Z",
-  "ts": "2026-08-18T05:29:46.23Z"
  },
  {
   "id": "DARS;870372;2e026227-afca-4aa5-94dd-7d7fd384a238",

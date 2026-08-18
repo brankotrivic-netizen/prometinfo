@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-velika-kladusa",
-  "name": "Maljevac (Velika Kladuša)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "18.08.2026 06:47:16",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-18T06:47:16+02:00",
-  "izlazTsISO": "",
-  "ts": "18.08.2026 06:47:16",
-  "tsISO": "2026-08-18T06:47:16+02:00"
- },
- {
   "id": "ba-doljani",
   "name": "Metković (Doljani)",
   "ulazMin": 30,
@@ -35,11 +15,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "18.08.2026 08:34:37",
+  "ulazTs": "18.8.2026. 8:34:37",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-18T08:34:37+02:00",
   "izlazTsISO": "",
-  "ts": "18.08.2026 08:34:37",
+  "ts": "18.8.2026. 8:34:37",
   "tsISO": "2026-08-18T08:34:37+02:00"
  },
  {
@@ -55,11 +35,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "L: 0 km T: 18.08.2026 08:23:43",
-  "izlazTs": "L: 0 km T: 18.08.2026 08:25:08",
+  "ulazTs": "L: 0 km T: 18.8.2026. 8:23:43",
+  "izlazTs": "L: 0 km T: 18.8.2026. 8:25:08",
   "ulazTsISO": "2026-08-18T08:23:43+02:00",
   "izlazTsISO": "2026-08-18T08:25:08+02:00",
-  "ts": "L: 0 km T: 18.08.2026 08:23:43",
+  "ts": "L: 0 km T: 18.8.2026. 8:23:43",
   "tsISO": "2026-08-18T08:23:43+02:00"
  },
  {
@@ -75,11 +55,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "18.08.2026 10:19:09",
-  "izlazTs": "18.08.2026 10:19:18",
+  "ulazTs": "18.8.2026. 10:19:09",
+  "izlazTs": "18.8.2026. 10:19:18",
   "ulazTsISO": "2026-08-18T10:19:09+02:00",
   "izlazTsISO": "2026-08-18T10:19:18+02:00",
-  "ts": "18.08.2026 10:19:09",
+  "ts": "18.8.2026. 10:19:09",
   "tsISO": "2026-08-18T10:19:09+02:00"
  },
  {
