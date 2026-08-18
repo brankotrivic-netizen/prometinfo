@@ -1,8 +1,85 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T05:27:17.637Z";
+export const PROMET_SI_UPDATED = "2026-08-18T05:53:12.957Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870382;f0abdb77-9e59-4ede-a0a7-e701565ce21b",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - vzhodna obvoznica, uvoz Maribor center - razcep Slivnica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.51737,
+  "lng": 15.6772,
+  "start": "2026-08-18T05:45:02.007Z",
+  "end": "2026-08-18T10:00:58.917Z",
+  "ts": "2026-08-18T05:45:36.553Z"
+ },
+ {
+  "id": "DARS;870381;12e3756f-a2e4-4ba2-b50e-63e0ae1fe7c5",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, predor Debeli hrib - predor Mali Vrh v smeri Novega mesta, dela, oviran promet, košnja.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 46.00129,
+  "lng": 14.58175,
+  "start": "2026-08-18T05:42:48.343Z",
+  "end": "2026-08-18T08:00:11.8Z",
+  "ts": "2026-08-18T05:43:00.193Z"
+ },
+ {
+  "id": "DARS;870379;c5fe9164-9e91-42a9-b411-8b1dcf57816e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - priključek Sl. Bistrica jug v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.37228,
+  "lng": 15.53773,
+  "start": "2026-08-18T05:39:46.603Z",
+  "end": "2026-08-18T12:00:46.99Z",
+  "ts": "2026-08-18T05:40:07.26Z"
+ },
+ {
+  "id": "DARS;870377;7293ed6a-a496-4878-b179-786105139cc1",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Nova Gorica - Razdrto, počivališče Šempas - priključek Selo v smeri Razdrtega, dela, pomična zapora voznega pasu.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.90493,
+  "lng": 13.75317,
+  "start": "2026-08-18T05:36:33.36Z",
+  "end": "2026-08-18T07:00:39.64Z",
+  "ts": "2026-08-18T05:36:36.247Z"
+ },
+ {
+  "id": "DARS;870374;da105683-add5-4691-b490-2cc0fc5abd4d",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-219, Bizeljsko - Čatež, Stara vas-Bizeljsko, izmenično enosmerni promet, izgradnja pločnika, do 25. 3. 2027.",
+  "loc": "R1-219, Bizeljsko - Čatež",
+  "lat": 45.98761,
+  "lng": 15.69698,
+  "start": "2026-08-18T05:28:57.39Z",
+  "end": "2027-03-25T22:59:00Z",
+  "ts": "2026-08-18T05:30:25.8Z"
+ },
+ {
+  "id": "DARS;870373;14d9ac7d-0ab7-4802-96a6-29d2db91365f",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, uvoz Drnovo - priključek Brežice v smeri Obrežja, dela, zaprt odstavni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.91258,
+  "lng": 15.46835,
+  "start": "2026-08-18T05:29:16.907Z",
+  "end": "2026-08-18T12:00:29.177Z",
+  "ts": "2026-08-18T05:29:46.23Z"
+ },
+ {
+  "id": "DARS;870372;2e026227-afca-4aa5-94dd-7d7fd384a238",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, počivališče Jesenice - izvoz 3 Lesce v smeri Ljubljane, dela, oviran promet, strojno pometanje.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.44001,
+  "lng": 14.03068,
+  "start": "2026-08-18T05:27:54.543Z",
+  "end": "2026-08-18T12:11:28.35Z",
+  "ts": "2026-08-18T05:28:34.823Z"
+ },
  {
   "id": "DARS;870370;6ba54838-36a8-4000-9dba-dcccc848b1c8",
   "type": "RoadOrCarriagewayOrLaneManagement",
