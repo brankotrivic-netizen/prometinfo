@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T16:18:07.981Z";
+export const PROMET_SI_UPDATED = "2026-08-18T16:54:36.018Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870501;4cb0634f-eb4f-444a-b5b5-4c41106819cd",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Kozina - priključek Divača v smeri Ljubljane, dela, oviran promet, strojno pometanje.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.61442,
+  "lng": 13.94329,
+  "start": "2026-08-18T16:53:34.217Z",
+  "end": "2026-08-18T21:00:00Z",
+  "ts": "2026-08-18T16:53:47.6Z"
+ },
+ {
+  "id": "DARS;870500;d8007cde-556a-44e1-a8de-3ae4100fb3ed",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Koper - Škofije, izvoz 4 Bertoki iz smeri Portoroža, dela, oviran promet, košnja.",
+  "loc": "G1-11, Koper - Škofije",
+  "lat": 45.54604,
+  "lng": 13.7638,
+  "start": "2026-08-18T16:51:46.72Z",
+  "end": "2026-08-18T22:00:00Z",
+  "ts": "2026-08-18T16:52:20.407Z"
+ },
+ {
+  "id": "DARS;870499;59ee46b8-59c0-4a0d-bf6f-6080719f9c15",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Koper - Škofije, izvoz 4 Bertoki iz smeri Portoroža, dela, oviran promet, košnja.",
+  "loc": "G1-11, Koper - Škofije",
+  "lat": 45.54594,
+  "lng": 13.76105,
+  "start": "2026-08-18T16:51:01.597Z",
+  "end": "2026-08-18T22:00:00Z",
+  "ts": "2026-08-18T16:51:35.103Z"
+ },
  {
   "id": "DARS;870384;82bbcb26-cd98-427c-9f62-8faabd8aa888",
   "type": "MaintenanceWorks",
@@ -24,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-18T13:00:32.453Z"
- },
- {
-  "id": "DARS;870415;cad75b60-d6f7-46d5-a20d-db6b9b811670",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, razcep Slivnica - izvoz 5 Maribor center v smeri Šentilja, Avstrije, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.4852,
-  "lng": 15.65988,
-  "start": "2026-08-18T09:12:21.917Z",
-  "end": "2026-08-18T19:00:00Z",
-  "ts": "2026-08-18T11:56:22.063Z"
  },
  {
   "id": "DARS;868804;1eb0f48a-629a-456f-8270-29bbf9dc7f65",
