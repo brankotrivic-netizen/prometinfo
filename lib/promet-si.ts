@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T15:54:03.783Z";
+export const PROMET_SI_UPDATED = "2026-08-18T16:18:07.981Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870384;82bbcb26-cd98-427c-9f62-8faabd8aa888",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, počivališče Voklo - počivališče Voklo v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.23729,
+  "lng": 14.40364,
+  "start": "2026-08-18T05:57:50.487Z",
+  "end": "2026-08-18T18:00:00Z",
+  "ts": "2026-08-18T16:13:49.833Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -13,28 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-18T13:00:32.453Z"
- },
- {
-  "id": "DARS;870384;82bbcb26-cd98-427c-9f62-8faabd8aa888",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, počivališče Voklo - počivališče Voklo v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.23729,
-  "lng": 14.40364,
-  "start": "2026-08-18T05:57:50.487Z",
-  "end": "2026-08-18T16:00:00Z",
-  "ts": "2026-08-18T12:34:00.227Z"
- },
- {
-  "id": "DARS;870396;7e1f829a-4f75-4132-ba66-8a0523b8eb49",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj vzhod v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.22811,
-  "lng": 14.42086,
-  "start": "2026-08-18T06:38:40.157Z",
-  "end": "2026-08-18T16:00:00Z",
-  "ts": "2026-08-18T12:33:38.147Z"
  },
  {
   "id": "DARS;870415;cad75b60-d6f7-46d5-a20d-db6b9b811670",
@@ -68,39 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T05:28:57.39Z",
   "end": "2027-03-25T22:59:00Z",
   "ts": "2026-08-18T05:30:25.8Z"
- },
- {
-  "id": "DARS;870351;e861d719-ddb2-4856-8faa-b83c2158d510",
-  "type": "MaintenanceWorks",
-  "desc": "RT-919, Vinica - Stari trg, pri Sinjem Vrhu, oviran promet, košnja, do 18:00.",
-  "loc": "RT-919, Vinica - Stari Trg",
-  "lat": 45.44733,
-  "lng": 15.20613,
-  "start": "2026-08-18T04:18:24.183Z",
-  "end": "2026-08-18T16:00:00Z",
-  "ts": "2026-08-18T04:18:51.223Z"
- },
- {
-  "id": "DARS;870350;9a3904c6-6a6d-4543-b13e-b85632d961f6",
-  "type": "MaintenanceWorks",
-  "desc": "G2-105, Novo mesto - Metlika, na Hrastu pri Jugorju, oviran promet, košnja, do 18:00.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.70536,
-  "lng": 15.24401,
-  "start": "2026-08-18T04:17:36.693Z",
-  "end": "2026-08-18T16:00:00Z",
-  "ts": "2026-08-18T04:18:08.7Z"
- },
- {
-  "id": "DARS;870349;50e13934-2764-42e6-9f49-91e914695e4d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-4, Slovenj Gradec - Otiški Vrh, pri Otiškem vrhu, izmenično enosmerni promet, vzdrževalna dela, do 18:00.",
-  "loc": "G1-4, Otiški Vrh - Sl Gradec",
-  "lat": 46.56763,
-  "lng": 15.0385,
-  "start": "2026-08-18T04:16:34.143Z",
-  "end": "2026-08-18T16:00:00Z",
-  "ts": "2026-08-18T04:17:12.85Z"
  },
  {
   "id": "DARS;870160;2e9f1542-202f-441d-ae9e-db5c1edbf7a2",
