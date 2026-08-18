@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.8.2026. 18:53",
-  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac prometna nesreća na čvoru Buzin u smjeru Lipovca. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h A4 Goričan-Zagreb prometna nesreća na čvoru Sesvete u smjeru Zagreba. Vozi se uz ograničenje brzine od 60 km/h A7 Rupa-Rijeka-Šmrika biciklist između čvora Rijeka istok i čvora Orehovica na kolniku u smjeru Rupe. Vozi se uz ograničenje brzine od 60 km/h. DC1 Gračac-Knin zastoji u zoni radova kraj Otrića DC8 Jadranska magistrala prometna nesreća u mjestu Seget Donji…"
+  "updated": "18.8.2026. 19:16",
+  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac prometna nesreća na čvoru Buzin u smjeru Lipovca. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h A4 Goričan-Zagreb prometna nesreća na čvoru Sesvete u smjeru Zagreba. Vozi se uz ograničenje brzine od 60 km/h DC1 Gračac-Knin zbog vozila u kvaru ispred tunela Klis-Kosa u smjeru Solina vozi se uz privremenu regulaciju prometa zastoji u zoni radova kraj Otrića DC8 Jadranska magistrala prometna nesreća u mjestu Seget Donji vozi se otežano uz privremenu regulaciju p…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "18.8.2026. 18:47",
+  "updated": "18.8.2026. 19:14",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "18.8.2026. 18:47",
+  "updated": "18.8.2026. 19:14",
   "text": "U pomorskom prometu nema poteškoća. Trajekt na liniji 634 Orebić-Dominče iznimno 21.08.(petak) uvodi dodatno putovanje i to na način da će trajekt isploviti iz Dominča za Orebić u 01:50, odnosno iz Orebića za Dominče u 02:15 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni…"
  },
  {

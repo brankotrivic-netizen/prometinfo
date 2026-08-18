@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T16:54:36.018Z";
+export const PROMET_SI_UPDATED = "2026-08-18T17:17:18.226Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870502;ed16be86-a68b-4ff4-a4fd-f606d1488ed1",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica jug - priključek Sl. Bistrica sever v smeri Maribora, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.38755,
+  "lng": 15.58389,
+  "start": "2026-08-18T17:06:50.113Z",
+  "end": "2026-08-18T20:30:45.99Z",
+  "ts": "2026-08-18T17:07:13.36Z"
+ },
  {
   "id": "DARS;870501;4cb0634f-eb4f-444a-b5b5-4c41106819cd",
   "type": "MaintenanceWorks",
@@ -57,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-18T13:00:32.453Z"
- },
- {
-  "id": "DARS;868804;1eb0f48a-629a-456f-8270-29bbf9dc7f65",
-  "type": "MaintenanceWorks",
-  "desc": "R3-664, Gaber - Uršna Sela - Novo mesto, v Novem mestu, Šmihel, oviran promet, sanacije drsnega vozišča, do 19:00.",
-  "loc": "R3-664, Gaber - Uršna Sela - Novo mesto",
-  "lat": 45.79028,
-  "lng": 15.16058,
-  "start": "2026-08-10T05:57:14.943Z",
-  "end": "2026-08-18T17:00:00Z",
-  "ts": "2026-08-18T06:01:48.847Z"
  },
  {
   "id": "DARS;870374;da105683-add5-4691-b490-2cc0fc5abd4d",
