@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.8.2026. 12:42",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići prometna nesreća između čvora Bosiljevo 1 i čvora Novigrad (na 52+000 km) u smjeru Zagreba, vozi se usporeno u koloni pojačan je promet na dionici Bosiljevo 2 -Lučko u smjeru Zagreba, povremeno se vozi u kolonama uz zastoje pred naplatama Lučko i Demerje nema dužih čekanja A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera DC1 Gračac-Knin zastoji u zoni radova kraj Otrića DC8 Jadranska …"
+  "updated": "18.8.2026. 12:52",
+  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići nakon prometne nesreće između čvora Bosiljevo 1 i čvora Novigrad (na 52+000 km) u smjeru Zagreba, vozi se usporeno u koloni prometna nesreća između čvora Perušić i čvora Otočac (na 145+500 km) u smjeru Zagreba, vozi se po dvije prometne trake uz ograničenje brzine pojačan je promet na dionici Bosiljevo 2 -Lučko u smjeru Zagreba, povremeno se vozi u kolonama uz zastoje pred naplatama Lučko i Demerje nema dužih čekanja A3 Bregana-Lipovac po…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "18.8.2026. 12:42",
-  "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
+  "updated": "18.8.2026. 13:02",
+  "text": "U pomorskom prometu nema poteškoća. Trajekt na liniji 634 Orebić-Dominče iznimno 21.08.(petak) uvodi dodatno putovanje i to na način da će trajekt isploviti iz Dominča za Orebić u 01:50, odnosno iz Orebića za Dominče u 02:15 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni…"
  },
  {
   "title": "Željeznički promet",
