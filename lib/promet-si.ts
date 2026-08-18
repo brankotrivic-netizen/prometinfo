@@ -1,18 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T10:02:40.982Z";
+export const PROMET_SI_UPDATED = "2026-08-18T10:44:34.572Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;870418;7ea927a9-6b58-4c65-8b00-57cab3a6b030",
+  "id": "DARS;870433;925c1742-44a9-4d44-b46a-0c4662758d7b",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, pred predorom Jasovnik v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.20509,
-  "lng": 14.90078,
-  "start": "2026-08-18T09:35:50.81Z",
+  "desc": "A2, Ljubljana - Karavanke, priključek Lesce - priključek Jesenice zahod v smeri Karavank, Avstrije, dela, pomična zapora voznega pasu, strojno pometanje.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.37985,
+  "lng": 14.15024,
+  "start": "2026-08-18T10:21:13.333Z",
+  "end": "2026-08-18T12:43:11.103Z",
+  "ts": "2026-08-18T10:22:18.643Z"
+ },
+ {
+  "id": "DARS;870430;84bd0948-6aab-4c95-b96a-05025bf7112a",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, razcep Dragučova - razcep Dragučova iz smeri Maribora, dela, zaprt vozni pas.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.58904,
+  "lng": 15.68978,
+  "start": "2026-08-18T10:16:34.91Z",
+  "end": "2026-08-18T16:00:34.337Z",
+  "ts": "2026-08-18T10:16:38.28Z"
+ },
+ {
+  "id": "DARS;870426;ba1060b0-d220-4e8f-ab8e-766dfd915378",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Ločica - predor Jasovnik v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.22012,
+  "lng": 14.94337,
+  "start": "2026-08-18T10:02:15.43Z",
   "end": "2026-08-18T15:00:00Z",
-  "ts": "2026-08-18T09:36:01.557Z"
+  "ts": "2026-08-18T10:02:38.08Z"
  },
  {
   "id": "DARS;870398;b9477de3-e0e1-42fc-a16c-65f01ef086cc",
@@ -191,17 +213,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-18T05:57:58.813Z"
  },
  {
-  "id": "DARS;870379;c5fe9164-9e91-42a9-b411-8b1dcf57816e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - priključek Sl. Bistrica jug v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.37228,
-  "lng": 15.53773,
-  "start": "2026-08-18T05:39:46.603Z",
-  "end": "2026-08-18T12:00:46.99Z",
-  "ts": "2026-08-18T05:40:07.26Z"
- },
- {
   "id": "DARS;870374;da105683-add5-4691-b490-2cc0fc5abd4d",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-219, Bizeljsko - Čatež, Stara vas-Bizeljsko, izmenično enosmerni promet, izgradnja pločnika, do 25. 3. 2027.",
@@ -244,17 +255,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T05:11:00.787Z",
   "end": "2026-08-18T15:00:00Z",
   "ts": "2026-08-18T05:11:24.993Z"
- },
- {
-  "id": "DARS;870367;932947ee-c86c-42eb-b1cf-88826c6935c4",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Šentilj - Maribor, izvoz Pesnica - uvoz Pesnica v smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "A1-E57, E59, Šentilj - Maribor",
-  "lat": 46.59883,
-  "lng": 15.6664,
-  "start": "2026-08-18T05:07:07.877Z",
-  "end": "2026-08-18T12:00:20.89Z",
-  "ts": "2026-08-18T05:07:11.637Z"
  },
  {
   "id": "DARS;870366;9d754904-540e-4f0b-9e4e-be5064524292",
