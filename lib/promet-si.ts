@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T20:37:53.276Z";
+export const PROMET_SI_UPDATED = "2026-08-18T20:57:40.851Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;870516;574efcbc-27f6-487d-9a81-516ee44a3d5b",
+  "id": "DARS;870519;fc1819a7-26d4-4cfe-93df-4ff6a5b26b96",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Dragomer v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.00449,
-  "lng": 14.35552,
-  "start": "2026-08-18T20:01:28.027Z",
-  "end": "2026-08-18T21:00:00Z",
-  "ts": "2026-08-18T20:01:31.91Z"
+  "desc": "A1, Ljubljana - Koper, priključek Dragomer - priključek Vrhnika v smeri Kopra, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 46.00734,
+  "lng": 14.36935,
+  "start": "2026-08-18T20:44:40.65Z",
+  "end": "2026-08-19T00:00:00Z",
+  "ts": "2026-08-18T20:44:57.47Z"
  },
  {
   "id": "DARS;870512;21f7b32b-5004-4315-ae8c-8bc97eb60ef3",
