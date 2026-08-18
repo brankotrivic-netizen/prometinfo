@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T06:22:51.004Z";
+export const PROMET_SI_UPDATED = "2026-08-18T07:12:02.002Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870398;b9477de3-e0e1-42fc-a16c-65f01ef086cc",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Vransko - predor Ločica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.23197,
+  "lng": 14.94792,
+  "start": "2026-08-18T07:05:50.857Z",
+  "end": "2026-08-18T11:00:00Z",
+  "ts": "2026-08-18T07:06:13.773Z"
+ },
+ {
+  "id": "DARS;870396;7e1f829a-4f75-4132-ba66-8a0523b8eb49",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj vzhod v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.22811,
+  "lng": 14.42086,
+  "start": "2026-08-18T06:38:40.157Z",
+  "end": "2026-08-18T11:00:00.23Z",
+  "ts": "2026-08-18T06:38:49.8Z"
+ },
+ {
+  "id": "DARS;870395;bb5e6df0-40a6-40e3-a1dd-710f7d44db9e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-105, Novo mesto - Metlika, pri Jugorju pri Metliki, izmenično enosmerni promet, vzdrževalna dela, do 15:00.",
+  "loc": "G2-105, Nm (Revoz) - Metlika",
+  "lat": 45.71756,
+  "lng": 15.23008,
+  "start": "2026-08-18T06:35:56.027Z",
+  "end": "2026-08-18T13:00:00Z",
+  "ts": "2026-08-18T06:36:39.44Z"
+ },
+ {
+  "id": "DARS;870393;06977702-ec8d-4137-b280-0213da38f8a0",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, pred predorom Jasovnik v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.20498,
+  "lng": 14.90072,
+  "start": "2026-08-18T06:28:47.963Z",
+  "end": "2026-08-18T12:00:00Z",
+  "ts": "2026-08-18T06:28:52.17Z"
+ },
  {
   "id": "DARS;870392;df46d5fa-231a-4045-bacb-0060344facdd",
   "type": "MaintenanceWorks",
@@ -46,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T06:05:03.287Z",
   "end": "2026-08-18T12:00:42.36Z",
   "ts": "2026-08-18T06:05:06.65Z"
- },
- {
-  "id": "DARS;870386;a4878d8a-0d34-43f2-8f00-0dde3a725e29",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, razcep Zadobrova - priključek Ljubljana Bizovik v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.06955,
-  "lng": 14.57731,
-  "start": "2026-08-18T06:00:45.993Z",
-  "end": "2026-08-18T12:00:00Z",
-  "ts": "2026-08-18T06:02:15.023Z"
  },
  {
   "id": "DARS;868804;1eb0f48a-629a-456f-8270-29bbf9dc7f65",

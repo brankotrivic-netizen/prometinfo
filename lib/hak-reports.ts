@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.8.2026. 08:12",
-  "text": "Kolnici su mjestimice mokri i skliski, u unutrašnjosti je smanjena vidljivost zbog magle. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Ploče prometna nesreća između čvora Zadar istok i čvora Benkovac (na 275+000 km) u smjeru Dubrovnika, vozi se po dvije prometne trake uz ograničenje brzine od 60 km/h A2 Zagreb-Macelj na čvoru Zagreb zapad u smjeru Zagreba kolona je oko 4 km A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok …"
+  "updated": "18.8.2026. 09:02",
+  "text": "Kolnici su mjestimice mokri i skliski, u unutrašnjosti je smanjena vidljivost zbog magle. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Ploče prometna nesreća između tunela Sveti Marko i čvora Novigrad u smjeru Dubrovnika, vozi se po dvije prometne trake uz ograničenje brzine od 80 km/h A2 Zagreb-Macelj na čvoru Zagreb zapad u smjeru Zagreba kolona je oko 2,5 km A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera DC1 Gračac-Knin zastoji u zoni radova kraj Otrića DC8 Jadranska magis…"
  },
  {
   "title": "Granični prijelazi",
@@ -18,8 +18,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Željeznički promet",
-  "updated": "18.8.2026. 07:42",
-  "text": "Stanje u željezničkom putničkom prometu 17. kolovoza 2026. u 8.00 sati Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - izme…"
+  "updated": "18.8.2026. 08:25",
+  "text": "Stanje u željezničkom putničkom prometu 18. kolovoza 2026. u 8.00 sati. Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - izm…"
  },
  {
   "title": "Ograničenja za teretna vozila",
