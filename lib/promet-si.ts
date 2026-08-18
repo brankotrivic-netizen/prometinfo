@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T11:36:59.056Z";
+export const PROMET_SI_UPDATED = "2026-08-18T11:58:51.328Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870415;cad75b60-d6f7-46d5-a20d-db6b9b811670",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - vzhodna obvoznica, razcep Slivnica - izvoz 5 Maribor center v smeri Šentilja, Avstrije, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.4852,
+  "lng": 15.65988,
+  "start": "2026-08-18T09:12:21.917Z",
+  "end": "2026-08-18T19:00:00Z",
+  "ts": "2026-08-18T11:56:22.063Z"
+ },
  {
   "id": "DARS;870396;7e1f829a-4f75-4132-ba66-8a0523b8eb49",
   "type": "MaintenanceWorks",
@@ -70,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-18T09:34:57.61Z"
  },
  {
-  "id": "DARS;870415;cad75b60-d6f7-46d5-a20d-db6b9b811670",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, razcep Slivnica - izvoz 5 Maribor center v smeri Šentilja, Avstrije, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.4852,
-  "lng": 15.65988,
-  "start": "2026-08-18T09:12:21.917Z",
-  "end": "2026-08-18T12:00:57.853Z",
-  "ts": "2026-08-18T09:12:25.02Z"
- },
- {
   "id": "DARS;870411;1e1d2b07-8dec-4ae1-91dd-241c0dbbcfbc",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-230, Križevci - Ljutomer, pri Šalincih, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 16:00.",
@@ -145,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T06:35:56.027Z",
   "end": "2026-08-18T13:00:00Z",
   "ts": "2026-08-18T06:36:39.44Z"
- },
- {
-  "id": "DARS;870388;e1fe07fb-dc7a-4a7f-b3d6-b21dbb941a3e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Unec - priključek Logatec v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.8527,
-  "lng": 14.28237,
-  "start": "2026-08-18T06:13:51.467Z",
-  "end": "2026-08-18T12:00:00Z",
-  "ts": "2026-08-18T06:14:20.707Z"
  },
  {
   "id": "DARS;868804;1eb0f48a-629a-456f-8270-29bbf9dc7f65",
