@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.8.2026. 11:31",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići: OPREZ: teretno vozilo u kvaru između čvorova Brinje i Žuta Lokva (na 121. km) u smjeru Dubrovnika - vozi se uz ograničenje brzine od 60 km/h A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera OPREZ : predmet između čvorova Popovača i Križ (na 81+000 km) u smjeru Bregane - vozi se uz ograničenje brzine od 60 km/h DC1 Gračac-Knin zastoji u zoni radova kraj Otrića DC8 Jadranska magistrala…"
+  "updated": "18.8.2026. 12:00",
+  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići teretno vozilo u kvaru prije tunela Brinje u smjeru Dubrovnika, vozi se po dvije prometne trake uz ograničenje brzine od 80 km/h A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera OPREZ : predmet između čvorova Popovača i Križ (na 81+000 km) u smjeru Bregane - vozi se uz ograničenje brzine od 60 km/h DC1 Gračac-Knin zastoji u zoni radova kraj Otrića DC8 Jadranska magistrala zastoji su n…"
  },
  {
   "title": "Granični prijelazi",
