@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.8.2026. 12:52",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići nakon prometne nesreće između čvora Bosiljevo 1 i čvora Novigrad (na 52+000 km) u smjeru Zagreba, vozi se usporeno u koloni prometna nesreća između čvora Perušić i čvora Otočac (na 145+500 km) u smjeru Zagreba, vozi se po dvije prometne trake uz ograničenje brzine pojačan je promet na dionici Bosiljevo 2 -Lučko u smjeru Zagreba, povremeno se vozi u kolonama uz zastoje pred naplatama Lučko i Demerje nema dužih čekanja A3 Bregana-Lipovac po…"
+  "updated": "18.8.2026. 13:11",
+  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pojačan je promet na dionici Bosiljevo 2 -Lučko u smjeru Zagreba, povremeno se vozi u kolonama uz zastoje pred naplatama Lučko i Demerje nema dužih čekanja A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera DC1 Gračac-Knin zastoji u zoni radova kraj Otrića DC8 Jadranska magistrala zastoji su na prilazima Splitu i Dubrovniku AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05.0…"
  },
  {
   "title": "Granični prijelazi",

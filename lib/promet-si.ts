@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T11:02:53.224Z";
+export const PROMET_SI_UPDATED = "2026-08-18T11:36:59.056Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870396;7e1f829a-4f75-4132-ba66-8a0523b8eb49",
@@ -136,17 +136,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-18T08:37:07.74Z"
  },
  {
-  "id": "DARS;870403;54569714-82b6-483f-bdd3-4a78264e17ea",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, predor Mali Vrh - predor Debeli hrib v smeri Ljubljane, dela, zaprt odstavni pas, košnja.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 46.0032,
-  "lng": 14.57705,
-  "start": "2026-08-18T08:31:20.34Z",
-  "end": "2026-08-18T12:00:10.44Z",
-  "ts": "2026-08-18T08:31:51.743Z"
- },
- {
   "id": "DARS;870395;bb5e6df0-40a6-40e3-a1dd-710f7d44db9e",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-105, Novo mesto - Metlika, pri Jugorju pri Metliki, izmenično enosmerni promet, vzdrževalna dela, do 15:00.",
@@ -167,17 +156,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T06:13:51.467Z",
   "end": "2026-08-18T12:00:00Z",
   "ts": "2026-08-18T06:14:20.707Z"
- },
- {
-  "id": "DARS;870387;1a8b646b-0c55-41fe-9395-bb0f82ea9aec",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, izvoz 7 Maribor jug - izvoz 7 Maribor jug v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.48518,
-  "lng": 15.65437,
-  "start": "2026-08-18T06:05:03.287Z",
-  "end": "2026-08-18T12:00:42.36Z",
-  "ts": "2026-08-18T06:05:06.65Z"
  },
  {
   "id": "DARS;868804;1eb0f48a-629a-456f-8270-29bbf9dc7f65",
