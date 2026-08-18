@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T19:04:31.231Z";
+export const PROMET_SI_UPDATED = "2026-08-18T19:37:26.921Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870512;21f7b32b-5004-4315-ae8c-8bc97eb60ef3",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25474,
+  "lng": 14.97906,
+  "start": "2026-08-18T19:34:15.263Z",
+  "end": "2026-08-19T03:30:00Z",
+  "ts": "2026-08-18T19:34:38.98Z"
+ },
  {
   "id": "DARS;870511;184ae0f5-e0a9-4b02-8b23-3582261e015b",
   "type": "MaintenanceWorks",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T18:08:13.783Z",
   "end": "2026-08-19T03:00:29.527Z",
   "ts": "2026-08-18T18:08:25.22Z"
- },
- {
-  "id": "DARS;870507;e41e6374-2878-4ae2-80b6-a18ae8ac77a6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Brezovica - priključek Vrhnika v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.02573,
-  "lng": 14.4341,
-  "start": "2026-08-18T18:00:36.183Z",
-  "end": "2026-08-18T20:00:00Z",
-  "ts": "2026-08-18T18:00:40.003Z"
  },
  {
   "id": "DARS;870503;dbd66a74-4c10-4243-9d54-666d02208aab",
