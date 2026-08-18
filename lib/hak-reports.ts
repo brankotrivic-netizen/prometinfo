@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.8.2026. 15:51",
-  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pojačan je promet na dionici Bosiljevo 2 -Lučko u smjeru Zagreba, povremeno se vozi u kolonama uz zastoje pred naplatama Lučko i Demerje nema dužih čekanja A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A4 Goričan-Zagreb predmet između čvora Sveta Helena i čvora Komin u smjeru Goričana, vozi se jednom prometnom trakom uz ograničenje brzine od 80 km/h DC1 Gračac-Knin zastoji u zoni radova kraj Otrića DC8 Jadranska magistr…"
+  "updated": "18.8.2026. 16:44",
+  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pojačan je promet na dionici Karlovac -Lučko u smjeru Zagreba, povremeno se vozi u kolonama uz zastoje pred naplatama Lučko i Demerje nema dužih čekanja A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A7 Rupa-Križišće prometna nesreća na čvoru Orehovica u smjeru Rupe, vozi se jednom prometnom trakom uz ograničenje brzine od 40 km/h DC1 Gračac-Knin zastoji u zoni radova kraj Otrića DC8 Jadranska magistrala prometna nesreća…"
  },
  {
   "title": "Granični prijelazi",
