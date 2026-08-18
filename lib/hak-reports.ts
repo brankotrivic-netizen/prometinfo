@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.8.2026. 06:58",
-  "text": "Kolnici su mjestimice mokri i skliski, u unutrašnjosti je smanjena vidljivost zbog magle. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Ploče prometna nesreća u tunelu Grič u smjeru Zagreba, vozi se jednom prometnom trakom uz ograničenje brzine od 60 km/h A2 Zagreb-Macelj na čvoru Zagreb zapad u smjeru Zagreba kolona je oko 2 km A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok u smjeru Zagreba vozi se usporeno u koloni DC1 …"
+  "updated": "18.8.2026. 07:22",
+  "text": "Kolnici su mjestimice mokri i skliski, u unutrašnjosti je smanjena vidljivost zbog magle. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Ploče prometna nesreća između čvora Zadar istok i čvora Benkovac (na 275+000 km) u smjeru Dubrovnika, vozi se po dvije prometne trake uz ograničenje brzine od 60 km/h A2 Zagreb-Macelj na čvoru Zagreb zapad u smjeru Zagreba kolona je oko 4 km A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok …"
  },
  {
   "title": "Granični prijelazi",
