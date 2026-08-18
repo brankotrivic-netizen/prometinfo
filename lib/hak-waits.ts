@@ -3,24 +3,24 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-gradiska",
-  "name": "Gornji Varoš (Gradiška (novi most))",
-  "ulazMin": 90,
+  "id": "ba-doljani",
+  "name": "Metković (Doljani)",
+  "ulazMin": 30,
   "izlazMin": null,
-  "ulazTxt": "1 h 30 min.",
+  "ulazTxt": "do 30 min.",
   "izlazTxt": "-",
   "truckUlazMin": null,
   "truckIzlazMin": null,
   "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 90,
-  "ulazTs": "18.8.2026. 11:56:49",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "18.8.2026. 15:38:16",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-18T11:56:49+02:00",
+  "ulazTsISO": "2026-08-18T15:38:16+02:00",
   "izlazTsISO": "",
-  "ts": "18.8.2026. 11:56:49",
-  "tsISO": "2026-08-18T11:56:49+02:00"
+  "ts": "18.8.2026. 15:38:16",
+  "tsISO": "2026-08-18T15:38:16+02:00"
  },
  {
   "id": "hr-bajakovo",

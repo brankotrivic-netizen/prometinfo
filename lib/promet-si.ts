@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T13:27:57.921Z";
+export const PROMET_SI_UPDATED = "2026-08-18T14:05:23.611Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -48,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-18T11:56:22.063Z"
  },
  {
-  "id": "DARS;870430;84bd0948-6aab-4c95-b96a-05025bf7112a",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, razcep Dragučova - razcep Dragučova iz smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.58904,
-  "lng": 15.68978,
-  "start": "2026-08-18T10:16:34.91Z",
-  "end": "2026-08-18T16:00:34.337Z",
-  "ts": "2026-08-18T10:16:38.28Z"
- },
- {
   "id": "DARS;870426;ba1060b0-d220-4e8f-ab8e-766dfd915378",
   "type": "MaintenanceWorks",
   "desc": "A1, Maribor - Ljubljana, predor Ločica - predor Jasovnik v smeri Ljubljane, dela, oviran promet.",
@@ -68,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T10:02:15.43Z",
   "end": "2026-08-18T15:00:00Z",
   "ts": "2026-08-18T10:02:38.08Z"
- },
- {
-  "id": "DARS;870411;1e1d2b07-8dec-4ae1-91dd-241c0dbbcfbc",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-230, Križevci - Ljutomer, pri Šalincih, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 16:00.",
-  "loc": "R1-230, Križevci - Ljutomer",
-  "lat": 46.55341,
-  "lng": 16.15164,
-  "start": "2026-08-18T08:41:48.403Z",
-  "end": "2026-08-18T14:00:00Z",
-  "ts": "2026-08-18T08:42:17.52Z"
  },
  {
   "id": "DARS;868804;1eb0f48a-629a-456f-8270-29bbf9dc7f65",
@@ -101,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T05:28:57.39Z",
   "end": "2027-03-25T22:59:00Z",
   "ts": "2026-08-18T05:30:25.8Z"
- },
- {
-  "id": "DARS;870370;6ba54838-36a8-4000-9dba-dcccc848b1c8",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-103, Plave - Solkan, pri Zagomili, izmenično enosmerni promet, vzdrževalna dela, do 16:00.",
-  "loc": "G2-103, Plave - Solkan",
-  "lat": 46.00407,
-  "lng": 13.62991,
-  "start": "2026-08-18T05:22:39.66Z",
-  "end": "2026-08-18T14:00:00Z",
-  "ts": "2026-08-18T05:23:12.247Z"
  },
  {
   "id": "DARS;870368;90c07103-ac68-46d0-94fe-d233f85f6376",
@@ -156,50 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T04:16:34.143Z",
   "end": "2026-08-18T16:00:00Z",
   "ts": "2026-08-18T04:17:12.85Z"
- },
- {
-  "id": "DARS;870337;8f662579-d3d9-4ab3-b485-a8548d18a694",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-743, Bogojina - Gančani, pri Bogojini, izmenično enosmerni promet, asfaltiranje, do 16:00.",
-  "loc": "R3-743, Bogojina - Priključek Gančani",
-  "lat": 46.66325,
-  "lng": 16.27576,
-  "start": "2026-08-18T03:38:18.93Z",
-  "end": "2026-08-18T14:00:00Z",
-  "ts": "2026-08-18T03:38:46.333Z"
- },
- {
-  "id": "DARS;870336;79e5a322-f8a1-468b-b7b1-44bc61bddabd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Ravne - predor Kastelec v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.60768,
-  "lng": 13.92871,
-  "start": "2026-08-18T03:37:50.217Z",
-  "end": "2026-08-18T15:00:00Z",
-  "ts": "2026-08-18T03:38:02.253Z"
- },
- {
-  "id": "DARS;870335;ae4d3b37-7872-4979-8d7a-3a43266e87f4",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-442, Martjanci - Dobrovnik, v Dobrovniku, izmenično enosmerni promet, zalivanje reg in razpok, do 16:00.",
-  "loc": "R2-442, Martjanci - Dobrovnik",
-  "lat": 46.68443,
-  "lng": 16.18205,
-  "start": "2026-08-18T05:00:00Z",
-  "end": "2026-08-18T14:00:00Z",
-  "ts": "2026-08-18T03:37:29.22Z"
- },
- {
-  "id": "DARS;870334;605dfd8c-6d77-4455-88db-34f8680ce00c",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-442, Martjanci - Dobrovnik, pri Dobrovniku, izmenično enosmerni promet, zalivanje reg in razpok, do 16:00.",
-  "loc": "R2-442, Martjanci - Dobrovnik",
-  "lat": 46.6562,
-  "lng": 16.33867,
-  "start": "2026-08-18T05:00:00Z",
-  "end": "2026-08-18T14:00:00Z",
-  "ts": "2026-08-18T03:36:35.957Z"
  },
  {
   "id": "DARS;870160;2e9f1542-202f-441d-ae9e-db5c1edbf7a2",
