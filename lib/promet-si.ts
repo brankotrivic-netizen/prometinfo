@@ -1,8 +1,85 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T08:21:47.004Z";
+export const PROMET_SI_UPDATED = "2026-08-18T09:00:14.146Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870411;1e1d2b07-8dec-4ae1-91dd-241c0dbbcfbc",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-230, Križevci - Ljutomer, pri Šalincih, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 16:00.",
+  "loc": "R1-230, Križevci - Ljutomer",
+  "lat": 46.55341,
+  "lng": 16.15164,
+  "start": "2026-08-18T08:41:48.403Z",
+  "end": "2026-08-18T14:00:00Z",
+  "ts": "2026-08-18T08:42:17.52Z"
+ },
+ {
+  "id": "DARS;870410;fddf28b8-fe3c-499a-9b22-26294a5a8dda",
+  "type": "MaintenanceWorks",
+  "desc": "G1-7, Kozina - Starod, pri Povžanah, oviran promet, košnja, do 14:00.",
+  "loc": "G1-7, Obrov - Kozina",
+  "lat": 45.55951,
+  "lng": 14.03372,
+  "start": "2026-08-18T08:40:32.007Z",
+  "end": "2026-08-18T12:00:00Z",
+  "ts": "2026-08-18T08:41:22.75Z"
+ },
+ {
+  "id": "DARS;870362;8a67475c-10db-4422-8fa5-1d8de42bb681",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, uvoz Vransko - predor Ločica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.24431,
+  "lng": 14.96391,
+  "start": "2026-08-18T04:56:06.91Z",
+  "end": "2026-08-18T11:00:00Z",
+  "ts": "2026-08-18T08:40:04.753Z"
+ },
+ {
+  "id": "DARS;870409;ea8b26a7-69fd-48d9-aa58-066f1e3956cf",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-439, Križevci - Žihlava, pri Logarovcih, izmenično enosmerni promet, pomična zapora, košnja, do 15:00.",
+  "loc": "R2-439, Križevci - Žihlava",
+  "lat": 46.54355,
+  "lng": 16.12679,
+  "start": "2026-08-18T08:38:35.313Z",
+  "end": "2026-08-18T13:00:00Z",
+  "ts": "2026-08-18T08:39:55.57Z"
+ },
+ {
+  "id": "DARS;870408;a67fd36c-8925-4aa0-8e97-7d012a01eb9a",
+  "type": "MaintenanceWorks",
+  "desc": "R2-409, Dekani - Rižana, pri Dekanih, oviran promet, košnja, do 14:00.",
+  "loc": "R2-409, Rižana - Dekani",
+  "lat": 45.54297,
+  "lng": 13.85196,
+  "start": "2026-08-18T08:37:33.31Z",
+  "end": "2026-08-18T12:00:00Z",
+  "ts": "2026-08-18T08:38:11.913Z"
+ },
+ {
+  "id": "DARS;870407;67457348-4b23-41a8-aade-e0141bba9900",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-409, Divača - Kozina, pri Rodiku, izmenično enosmerni promet, čiščenje jarkov, do 14:00.",
+  "loc": "R2-409, Matavun - Kozina",
+  "lat": 45.62842,
+  "lng": 13.95735,
+  "start": "2026-08-18T08:36:28.12Z",
+  "end": "2026-08-18T12:00:00Z",
+  "ts": "2026-08-18T08:37:07.74Z"
+ },
+ {
+  "id": "DARS;870403;54569714-82b6-483f-bdd3-4a78264e17ea",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, predor Mali Vrh - predor Debeli hrib v smeri Ljubljane, dela, zaprt odstavni pas, košnja.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 46.0032,
+  "lng": 14.57705,
+  "start": "2026-08-18T08:31:20.34Z",
+  "end": "2026-08-18T12:00:10.44Z",
+  "ts": "2026-08-18T08:31:51.743Z"
+ },
  {
   "id": "DARS;870398;b9477de3-e0e1-42fc-a16c-65f01ef086cc",
   "type": "MaintenanceWorks",
@@ -222,17 +299,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T04:59:09.033Z",
   "end": "2026-08-18T12:00:00Z",
   "ts": "2026-08-18T04:59:39.147Z"
- },
- {
-  "id": "DARS;870362;8a67475c-10db-4422-8fa5-1d8de42bb681",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Vransko - predor Ločica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.24431,
-  "lng": 14.96391,
-  "start": "2026-08-18T04:56:06.91Z",
-  "end": "2026-08-18T09:00:00Z",
-  "ts": "2026-08-18T04:56:17.727Z"
  },
  {
   "id": "DARS;870353;fb15fd43-75b6-4a3e-9411-3c8fb16fba9e",
