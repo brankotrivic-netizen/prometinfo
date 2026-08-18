@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T07:12:02.002Z";
+export const PROMET_SI_UPDATED = "2026-08-18T07:52:23.731Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870398;b9477de3-e0e1-42fc-a16c-65f01ef086cc",
@@ -57,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T06:17:37.297Z",
   "end": "2026-08-18T11:00:46.383Z",
   "ts": "2026-08-18T06:17:43.337Z"
- },
- {
-  "id": "DARS;870390;cfd57814-400d-4432-aaf9-dde4faec9614",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Lom - priključek Unec v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.85204,
-  "lng": 14.28278,
-  "start": "2026-08-18T06:15:23.833Z",
-  "end": "2026-08-18T12:00:00Z",
-  "ts": "2026-08-18T06:15:42.997Z"
  },
  {
   "id": "DARS;870388;e1fe07fb-dc7a-4a7f-b3d6-b21dbb941a3e",
@@ -134,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-18T05:45:02.007Z",
   "end": "2026-08-18T10:00:58.917Z",
   "ts": "2026-08-18T05:45:36.553Z"
- },
- {
-  "id": "DARS;870381;12e3756f-a2e4-4ba2-b50e-63e0ae1fe7c5",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, predor Debeli hrib - predor Mali Vrh v smeri Novega mesta, dela, oviran promet, košnja.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 46.00129,
-  "lng": 14.58175,
-  "start": "2026-08-18T05:42:48.343Z",
-  "end": "2026-08-18T08:00:11.8Z",
-  "ts": "2026-08-18T05:43:00.193Z"
  },
  {
   "id": "DARS;870379;c5fe9164-9e91-42a9-b411-8b1dcf57816e",
