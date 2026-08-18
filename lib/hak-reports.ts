@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.8.2026. 17:16",
+  "updated": "18.8.2026. 17:28",
   "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac rasuti teret između čvora Lučko i čvora Buzin u smjeru Lipovca, vozi se uz ograničenje brzine povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A7 Rupa-Križišće prometna nesreća na čvoru Orehovica u smjeru Rupe, vozi se jednom prometnom trakom uz ograničenje brzine od 40 km/h DC1 Gračac-Knin zastoji u zoni radova kraj Otrića DC8 Jadranska magistrala prometna nesreća u mjestu Seget Donji vozi se otežano uz privremenu regulaciju prometa zastoji su na p…"
  },
  {
