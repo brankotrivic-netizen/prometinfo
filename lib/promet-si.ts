@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T15:53:50.693Z";
+export const PROMET_SI_UPDATED = "2026-08-19T16:17:51.659Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -24,50 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T06:48:11.563Z",
   "end": "2026-08-21T21:59:00Z",
   "ts": "2026-08-19T06:48:58.373Z"
- },
- {
-  "id": "DARS;870535;a9394e95-df78-4416-b360-82dfa2811af1",
-  "type": "MaintenanceWorks",
-  "desc": "R1-219, Bizeljsko - Čatež, Bizeljsko - Dramlja, oviran promet, košnja, do 18:00.",
-  "loc": "R1-219, Bizeljsko - Čatež",
-  "lat": 46.01513,
-  "lng": 15.69274,
-  "start": "2026-08-19T04:23:25.4Z",
-  "end": "2026-08-19T16:00:00Z",
-  "ts": "2026-08-19T04:25:03.55Z"
- },
- {
-  "id": "DARS;870534;9503b31b-f1e0-460f-910a-5f10aea25f24",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-105, Novo mesto - Metlika, Novo Mesto - Višnja vas, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.79959,
-  "lng": 15.18002,
-  "start": "2026-08-19T04:21:24.073Z",
-  "end": "2026-08-19T16:00:00Z",
-  "ts": "2026-08-19T04:22:58.497Z"
- },
- {
-  "id": "DARS;870532;11159aa0-5520-4440-a390-10385f8704ee",
-  "type": "MaintenanceWorks",
-  "desc": "RT-919, Vinica - Stari trg, Sinji Vrh - Špeharji, dela, oviran promet, do 18:00.",
-  "loc": "RT-919, Vinica - Stari Trg",
-  "lat": 45.44689,
-  "lng": 15.16501,
-  "start": "2026-08-19T04:00:00Z",
-  "end": "2026-08-19T16:00:00Z",
-  "ts": "2026-08-19T03:57:21.14Z"
- },
- {
-  "id": "DARS;870531;d8b4942d-b562-4846-a36b-cf1ef47bb3f9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-105, Novo mesto - Metlika, Hrast - Jugorje, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.71826,
-  "lng": 15.23051,
-  "start": "2026-08-19T04:00:00Z",
-  "end": "2026-08-19T16:00:00Z",
-  "ts": "2026-08-19T03:55:32.49Z"
  },
  {
   "id": "DARS;870374;da105683-add5-4691-b490-2cc0fc5abd4d",
