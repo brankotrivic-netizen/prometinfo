@@ -1,8 +1,85 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T07:13:27.954Z";
+export const PROMET_SI_UPDATED = "2026-08-19T07:53:42.286Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870603;79b397cd-6daf-4a5b-b4a1-ea8cbe8119fb",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-743, Bogojina - Gančani, med Bogojino in Ivanci, izmenično enosmerni promet, vzdrževalna dela, do 14:00.",
+  "loc": "R3-743, Bogojina - Priključek Gančani",
+  "lat": 46.66325,
+  "lng": 16.27576,
+  "start": "2026-08-19T07:46:25.58Z",
+  "end": "2026-08-19T12:00:00Z",
+  "ts": "2026-08-19T07:48:05.743Z"
+ },
+ {
+  "id": "DARS;870602;7dafea02-1c96-496b-bc5c-ba0069707728",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "RT-940, Zavrhek - Artviže - Pregarje, Mrše - Tatre, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "RT-940, Zavrhek - Artviže - Pregarje",
+  "lat": 45.58366,
+  "lng": 14.04832,
+  "start": "2026-08-19T07:44:04.077Z",
+  "end": "2026-08-19T12:00:00Z",
+  "ts": "2026-08-19T07:45:35.527Z"
+ },
+ {
+  "id": "DARS;870601;d1370820-2c82-4549-a2c9-051434070bfb",
+  "type": "MaintenanceWorks",
+  "desc": "G1-7, Kozina - Starod, Obrov - Markovščina, oviran promet, košnja, do 14:00.",
+  "loc": "G1-7, Obrov - Kozina",
+  "lat": 45.5424,
+  "lng": 14.08698,
+  "start": "2026-08-19T07:42:21.46Z",
+  "end": "2026-08-19T12:00:00Z",
+  "ts": "2026-08-19T07:43:26.977Z"
+ },
+ {
+  "id": "DARS;870598;9d04cadd-6885-4b4d-9fb9-2fccefa79e72",
+  "type": "MaintenanceWorks",
+  "desc": "R2-409, Dekani - Rižana, oviran promet, košnja, do 14:00.",
+  "loc": "R2-409, Rižana - Dekani",
+  "lat": 45.54298,
+  "lng": 13.85199,
+  "start": "2026-08-19T07:40:28.003Z",
+  "end": "2026-08-19T12:00:00Z",
+  "ts": "2026-08-19T07:41:31.36Z"
+ },
+ {
+  "id": "DARS;870597;e1b1894b-ae78-40cb-bf4b-c2e86bb1ec9a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-409, Divača - Kozina, pri odcepu za Rodik, izmenično enosmerni promet, vzdrževalna dela, do 14:00.",
+  "loc": "R2-409, Matavun - Kozina",
+  "lat": 45.63249,
+  "lng": 13.95901,
+  "start": "2026-08-19T07:37:55.673Z",
+  "end": "2026-08-19T12:00:00Z",
+  "ts": "2026-08-19T07:39:56.283Z"
+ },
+ {
+  "id": "DARS;870596;35ce9353-48c7-42bb-8067-70cd03e747e2",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-204, Dornberk - Štanjel, v Braniku, izmenično enosmerni promet, čiščenje jarkov, do 16:00.",
+  "loc": "R1-204, Dornberk - Štanjel",
+  "lat": 45.86867,
+  "lng": 13.77342,
+  "start": "2026-08-19T07:34:06.06Z",
+  "end": "2026-08-19T14:00:00Z",
+  "ts": "2026-08-19T07:36:20.903Z"
+ },
+ {
+  "id": "DARS;870594;ff1479f7-9886-491e-84ae-cd2d08b2367f",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj vzhod v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.22974,
+  "lng": 14.41759,
+  "start": "2026-08-19T07:27:48.29Z",
+  "end": "2026-08-19T11:00:54.2Z",
+  "ts": "2026-08-19T07:27:51.387Z"
+ },
  {
   "id": "DARS;870589;993c01e2-54c9-4a2c-97bf-c7b057abc473",
   "type": "RoadOrCarriagewayOrLaneManagement",
