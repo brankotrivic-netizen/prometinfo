@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T17:16:51.551Z";
+export const PROMET_SI_UPDATED = "2026-08-19T17:46:44.740Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870711;81f42a89-bf23-487f-8e93-61b125aab4f7",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Ljubljana Šentvid, Celovška cesta - priključek Vodice v smeri Jesenic, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.10075,
+  "lng": 14.46639,
+  "start": "2026-08-19T17:41:24.337Z",
+  "end": "2026-08-20T03:00:54.787Z",
+  "ts": "2026-08-19T17:41:34.827Z"
+ },
+ {
+  "id": "DARS;870508;7fd863de-033f-4a3e-ba42-1e6f008b36f6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Ločica - priključek Vransko v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.23198,
+  "lng": 14.94806,
+  "start": "2026-08-19T17:34:43.73Z",
+  "end": "2026-08-19T23:00:00Z",
+  "ts": "2026-08-19T17:34:53.797Z"
+ },
+ {
+  "id": "DARS;870708;eb08f0b3-48ed-46fa-b6fd-3f3d970be54a",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Škofije - Koper, izvoz 1 Koper center, Slavček - uvoz Koper center, Slavček v smeri Izole, dela, oviran promet.",
+  "loc": "G1-11, Škofije - Koper",
+  "lat": 45.53749,
+  "lng": 13.73575,
+  "start": "2026-08-19T17:29:45.907Z",
+  "end": "2026-08-19T23:00:00Z",
+  "ts": "2026-08-19T17:30:27.923Z"
+ },
+ {
+  "id": "DARS;870707;3e20fa4d-77bc-46a1-9224-2f73c5643595",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Kranj zahod - izvoz 9 Kranj vzhod v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.27471,
+  "lng": 14.32134,
+  "start": "2026-08-19T17:21:56.88Z",
+  "end": "2026-08-20T03:00:31.473Z",
+  "ts": "2026-08-19T17:25:12.81Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -420,17 +464,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-02-14T06:00:00Z",
   "end": "2026-12-31T18:00:00Z",
   "ts": "2026-08-03T06:04:14.713Z"
- },
- {
-  "id": "DARS;867375;86238f8d-b184-4f52-91a9-ecd4625b88bd",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-708, Zg. Kungota - Plač, v Zgornji Kungoti, izmenično enosmerni promet, ureditev hitrostne ovire, do 20. 8. 2026.",
-  "loc": "R3-708, Zgornja Kungota - Plač (Mejni Prehod)",
-  "lat": 46.6403,
-  "lng": 15.61313,
-  "start": "2026-08-03T05:39:43.66Z",
-  "end": "2026-08-20T15:00:00Z",
-  "ts": "2026-08-03T05:40:31.833Z"
  },
  {
   "id": "DARS;867369;14765bd6-0f6e-4297-b845-a61e5892f7f7",
