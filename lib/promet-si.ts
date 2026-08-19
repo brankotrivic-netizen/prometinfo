@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T20:13:55.651Z";
+export const PROMET_SI_UPDATED = "2026-08-19T20:45:06.674Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;870729;447546d4-ca20-46cd-987e-6aa685df99dd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Nanos - priključek Senožeče v smeri Kopra, dela, zaprt počasni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.75302,
-  "lng": 14.04635,
-  "start": "2026-08-19T20:08:41.823Z",
-  "end": "2026-08-20T02:00:00Z",
-  "ts": "2026-08-19T20:08:47.82Z"
- },
  {
   "id": "DARS;870711;81f42a89-bf23-487f-8e93-61b125aab4f7",
   "type": "MaintenanceWorks",
@@ -46,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T18:54:09.327Z",
   "end": "2026-08-20T02:53:10.82Z",
   "ts": "2026-08-19T18:54:13.917Z"
- },
- {
-  "id": "DARS;870720;01efe2e7-1619-4af1-9f8e-7720fb76f94b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, pomična zapora voznega pasu.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.14564,
-  "lng": 14.47614,
-  "start": "2026-08-19T18:45:40.027Z",
-  "end": "2026-08-20T00:00:00Z",
-  "ts": "2026-08-19T18:45:42.9Z"
  },
  {
   "id": "DARS;870508;7fd863de-033f-4a3e-ba42-1e6f008b36f6",
