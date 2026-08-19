@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T10:51:58.995Z";
+export const PROMET_SI_UPDATED = "2026-08-19T11:14:49.505Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870566;ddbef42b-70cd-47c1-a7c8-414cf7672500",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Voklo - počivališče Voklo v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.22093,
+  "lng": 14.435,
+  "start": "2026-08-19T05:36:12.64Z",
+  "end": "2026-08-19T15:00:00Z",
+  "ts": "2026-08-19T10:57:50.797Z"
+ },
+ {
+  "id": "DARS;870594;ff1479f7-9886-491e-84ae-cd2d08b2367f",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj vzhod v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.22974,
+  "lng": 14.41759,
+  "start": "2026-08-19T07:27:48.29Z",
+  "end": "2026-08-19T15:00:00Z",
+  "ts": "2026-08-19T10:57:34.503Z"
+ },
  {
   "id": "DARS;870639;feaa48d9-636a-4b62-ad17-ab636886ae47",
   "type": "MaintenanceWorks",
@@ -114,17 +136,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-19T07:36:20.903Z"
  },
  {
-  "id": "DARS;870594;ff1479f7-9886-491e-84ae-cd2d08b2367f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj vzhod v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.22974,
-  "lng": 14.41759,
-  "start": "2026-08-19T07:27:48.29Z",
-  "end": "2026-08-19T11:00:54.2Z",
-  "ts": "2026-08-19T07:27:51.387Z"
- },
- {
   "id": "DARS;870589;993c01e2-54c9-4a2c-97bf-c7b057abc473",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-102, Žaga - Kobarid - Tolmin, na Volarjah, izmenično enosmerni promet, sanacije drsnih vozišč, do 21. 8. 2026.",
@@ -134,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T06:48:11.563Z",
   "end": "2026-08-21T21:59:00Z",
   "ts": "2026-08-19T06:48:58.373Z"
- },
- {
-  "id": "DARS;870586;c26a70b3-e5fd-4137-9238-020148ff890f",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, pred predorom Jasovnik v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.21775,
-  "lng": 14.92794,
-  "start": "2026-08-19T06:35:39.433Z",
-  "end": "2026-08-19T11:00:00Z",
-  "ts": "2026-08-19T06:36:02.923Z"
  },
  {
   "id": "DARS;870583;09d2f04d-59ce-468d-9984-67c8e85ca7da",
@@ -222,28 +222,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T05:43:25.297Z",
   "end": "2026-08-19T17:00:00Z",
   "ts": "2026-08-19T05:43:35.18Z"
- },
- {
-  "id": "DARS;870566;ddbef42b-70cd-47c1-a7c8-414cf7672500",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Voklo - počivališče Voklo v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.22093,
-  "lng": 14.435,
-  "start": "2026-08-19T05:36:12.64Z",
-  "end": "2026-08-19T11:00:02.463Z",
-  "ts": "2026-08-19T05:36:15.29Z"
- },
- {
-  "id": "DARS;870563;1845750f-ea1b-4796-bb74-24a2c81db325",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Kastelec v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.57465,
-  "lng": 13.87059,
-  "start": "2026-08-19T05:33:38.27Z",
-  "end": "2026-08-19T11:00:00Z",
-  "ts": "2026-08-19T05:33:42.047Z"
  },
  {
   "id": "DARS;870562;88bde6e9-3a70-4cc9-90f5-5136679942cf",
