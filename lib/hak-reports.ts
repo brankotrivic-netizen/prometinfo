@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.8.2026. 18:48",
-  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac pješak između čvora Zagreb istok i Mosta Sava u smjeru Bregane. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h. A4 Goričan-Zagreb prometna nesreća između čvora Sesvete i čvora Zagreb istok (na 95+400 km) u smjeru Zagreba, vozi se uz ograničenje brzine od 60 km/h DC1 Gračac-Knin zastoji su u zoni radova kraj Otrića AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCN…"
+  "updated": "19.8.2026. 19:11",
+  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac pješak između čvora Zagreb istok i Mosta Sava u smjeru Bregane. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h. A4 Goričan-Zagreb prometna nesreća između čvora Sesvete i čvora Zagreb istok (na 95+400 km) u smjeru Zagreba, vozi se uz ograničenje brzine od 60 km/h DC1 Gračac-Knin zastoji su u zoni radova kraj Otrića DC7 Đakovo zbog prometne nesreće kod mjesta Selci Đakovački promet je obustavljen i teče obilazno kroz grad AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVA…"
  },
  {
   "title": "Granični prijelazi",
