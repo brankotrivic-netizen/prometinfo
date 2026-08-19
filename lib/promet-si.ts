@@ -1,18 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T18:17:10.255Z";
+export const PROMET_SI_UPDATED = "2026-08-19T18:59:39.793Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;870715;c74858e9-2af1-421a-8096-09bdb3e3f2ad",
+  "id": "DARS;870721;21d5f35e-077b-460b-8f69-fdebcd552579",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Kozina - priključek Divača v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.64115,
-  "lng": 13.96139,
-  "start": "2026-08-19T18:13:20.773Z",
-  "end": "2026-08-19T21:00:00Z",
-  "ts": "2026-08-19T18:13:29.463Z"
+  "desc": "A2, Ljubljana - Obrežje, predor Debeli hrib - predor Mali Vrh v smeri Novega mesta, dela, zaprt vozni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 46.01076,
+  "lng": 14.56409,
+  "start": "2026-08-19T18:54:09.327Z",
+  "end": "2026-08-20T02:53:10.82Z",
+  "ts": "2026-08-19T18:54:13.917Z"
+ },
+ {
+  "id": "DARS;870711;81f42a89-bf23-487f-8e93-61b125aab4f7",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Ljubljana Šentvid, Celovška cesta - priključek Ljubljana Šmartno v smeri Jesenic, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.10075,
+  "lng": 14.46639,
+  "start": "2026-08-19T17:41:24.337Z",
+  "end": "2026-08-20T03:00:54.787Z",
+  "ts": "2026-08-19T18:49:58.04Z"
+ },
+ {
+  "id": "DARS;870720;01efe2e7-1619-4af1-9f8e-7720fb76f94b",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, pomična zapora voznega pasu.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.14564,
+  "lng": 14.47614,
+  "start": "2026-08-19T18:45:40.027Z",
+  "end": "2026-08-20T00:00:00Z",
+  "ts": "2026-08-19T18:45:42.9Z"
  },
  {
   "id": "DARS;870713;63db316f-db60-4f3b-ac67-dd6692ea163e",
@@ -26,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-19T18:09:45.123Z"
  },
  {
-  "id": "DARS;870711;81f42a89-bf23-487f-8e93-61b125aab4f7",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, uvoz Ljubljana Šentvid, Celovška cesta - priključek Vodice v smeri Jesenic, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.10075,
-  "lng": 14.46639,
-  "start": "2026-08-19T17:41:24.337Z",
-  "end": "2026-08-20T03:00:54.787Z",
-  "ts": "2026-08-19T18:05:23.267Z"
- },
- {
   "id": "DARS;870508;7fd863de-033f-4a3e-ba42-1e6f008b36f6",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - Maribor, predor Ločica - priključek Vransko v smeri Maribora, dela, oviran promet.",
@@ -46,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T17:34:43.73Z",
   "end": "2026-08-19T23:00:00Z",
   "ts": "2026-08-19T17:34:53.797Z"
- },
- {
-  "id": "DARS;870708;eb08f0b3-48ed-46fa-b6fd-3f3d970be54a",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, izvoz 1 Koper center, Slavček - uvoz Koper center, Slavček v smeri Izole, dela, oviran promet.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.53749,
-  "lng": 13.73575,
-  "start": "2026-08-19T17:29:45.907Z",
-  "end": "2026-08-19T23:00:00Z",
-  "ts": "2026-08-19T17:30:27.923Z"
  },
  {
   "id": "DARS;870707;3e20fa4d-77bc-46a1-9224-2f73c5643595",
