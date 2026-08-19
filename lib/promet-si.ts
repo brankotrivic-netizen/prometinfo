@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T11:40:45.734Z";
+export const PROMET_SI_UPDATED = "2026-08-19T11:58:46.196Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870551;8d66dd3c-19da-41b5-b69a-85d95c7425e4",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, počivališče Murska Sobota, počivališče - izvoz Turnišče v smeri Lendave, dela, pomična zapora voznega pasu.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.63526,
+  "lng": 16.18046,
+  "start": "2026-08-19T04:50:13.677Z",
+  "end": "2026-08-19T13:30:00Z",
+  "ts": "2026-08-19T11:57:06.647Z"
+ },
  {
   "id": "DARS;870566;ddbef42b-70cd-47c1-a7c8-414cf7672500",
   "type": "MaintenanceWorks",
@@ -136,17 +147,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-19T06:48:58.373Z"
  },
  {
-  "id": "DARS;870581;a5e272ed-96fc-4af2-a90b-b5510be7ff22",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Pesnica - Hoče, izvoz Pesnica - uvoz Maribor center v smeri Maribora, dela, pomična zapora voznega pasu.",
-  "loc": "R2-430, Pesnica - Hoče",
-  "lat": 46.59524,
-  "lng": 15.66999,
-  "start": "2026-08-19T06:09:10.867Z",
-  "end": "2026-08-19T12:00:44.897Z",
-  "ts": "2026-08-19T06:09:12.7Z"
- },
- {
   "id": "DARS;870579;359964a0-e91b-46a6-a903-44959e6d9e54",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - Koper, priključek Logatec - priključek Unec v smeri Kopra, dela, oviran promet, košnja.",
@@ -222,17 +222,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T05:04:25.97Z",
   "end": "2026-08-19T13:00:00Z",
   "ts": "2026-08-19T05:05:47.097Z"
- },
- {
-  "id": "DARS;870551;8d66dd3c-19da-41b5-b69a-85d95c7425e4",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, počivališče Murska Sobota, počivališče - izvoz Turnišče v smeri Lendave, dela, pomična zapora voznega pasu.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.63526,
-  "lng": 16.18046,
-  "start": "2026-08-19T04:50:13.677Z",
-  "end": "2026-08-19T12:00:22.297Z",
-  "ts": "2026-08-19T04:50:16.11Z"
  },
  {
   "id": "DARS;870549;571dd99e-c908-4be7-8cf7-e2c0aa16ef77",

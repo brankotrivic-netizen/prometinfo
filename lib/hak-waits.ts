@@ -23,6 +23,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-19T12:53:34+02:00"
  },
  {
+  "id": "ba-orasje",
+  "name": "Županja (Orašje)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": 30,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "do 30 min.",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "",
+  "izlazTsISO": "",
+  "ts": "",
+  "tsISO": ""
+ },
+ {
   "id": "",
   "name": "Gornji Brgat (Ivanica)",
   "ulazMin": 30,
