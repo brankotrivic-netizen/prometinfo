@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T07:53:42.286Z";
+export const PROMET_SI_UPDATED = "2026-08-19T08:22:50.706Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870606;d46208cc-daff-4ecb-a553-57a04d7d06f4",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-725, Sebeborci - Fokovci, v Andrejcih, izmenično enosmerni promet, popravilo bankin, do 14:00.",
+  "loc": "R3-725, Sebeborci - Trakšarov Breg",
+  "lat": 46.72253,
+  "lng": 16.2325,
+  "start": "2026-08-19T07:49:07.567Z",
+  "end": "2026-08-19T12:00:00Z",
+  "ts": "2026-08-19T07:56:58.287Z"
+ },
  {
   "id": "DARS;870603;79b397cd-6daf-4a5b-b4a1-ea8cbe8119fb",
   "type": "RoadOrCarriagewayOrLaneManagement",

@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.8.2026. 09:48",
-  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac predmet između čvora Buzin i čvora Jakuševec u smjeru Lipovca, vozi se uz ograničenje brzine od 80 km/h povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok u smjeru Zagreba vozi se usporeno DC1 Gračac-Knin zastoji su u zoni radova kraj Otrića DC8 Jadranska magistrala zbog prometne nesreće na predjelu Ratac vozi se jednom prometnom trakom, naizmjence zastoji su na prilazima Splitu AUTOCESTE A1 Zagr…"
+  "updated": "19.8.2026. 10:21",
+  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac prometna nesreća između čvora Novska i čvora Lipovljani (na 127+000 km) u smjeru Bregane, vozi se uz ograničenje brzine od 80 km/h povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok u smjeru Zagreba vozi se usporeno DC1 Gračac-Knin zastoji su u zoni radova kraj Otrića DC8 Jadranska magistrala zbog prometne nesreće između mjesta Trsteno i Slano na predjelu Ratac vozi se jednom prometnom trakom, na…"
  },
  {
   "title": "Granični prijelazi",
