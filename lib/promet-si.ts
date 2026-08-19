@@ -1,62 +1,62 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-18T21:57:54.783Z";
+export const PROMET_SI_UPDATED = "2026-08-19T04:25:23.202Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;870507;e41e6374-2878-4ae2-80b6-a18ae8ac77a6",
+  "id": "DARS;870534;9503b31b-f1e0-460f-910a-5f10aea25f24",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-105, Novo mesto - Metlika, Novo Mesto - Višnja vas, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
+  "loc": "G2-105, Nm (Revoz) - Metlika",
+  "lat": 45.79959,
+  "lng": 15.18002,
+  "start": "2026-08-19T04:21:24.073Z",
+  "end": "2026-08-19T16:00:00Z",
+  "ts": "2026-08-19T04:22:58.497Z"
+ },
+ {
+  "id": "DARS;870532;11159aa0-5520-4440-a390-10385f8704ee",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Brezovica - priključek Vrhnika v smeri Kopra, dela, oviran promet.",
+  "desc": "RT-919, Vinica - Stari trg, Sinji Vrh - Špeharji, dela, oviran promet, do 18:00.",
+  "loc": "RT-919, Vinica - Stari Trg",
+  "lat": 45.44689,
+  "lng": 15.16501,
+  "start": "2026-08-19T04:00:00Z",
+  "end": "2026-08-19T16:00:00Z",
+  "ts": "2026-08-19T03:57:21.14Z"
+ },
+ {
+  "id": "DARS;870531;d8b4942d-b562-4846-a36b-cf1ef47bb3f9",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-105, Novo mesto - Metlika, Hrast - Jugorje, izmenično enosmerni promet, pomična zapora, košnja, do 18:00.",
+  "loc": "G2-105, Nm (Revoz) - Metlika",
+  "lat": 45.71826,
+  "lng": 15.23051,
+  "start": "2026-08-19T04:00:00Z",
+  "end": "2026-08-19T16:00:00Z",
+  "ts": "2026-08-19T03:55:32.49Z"
+ },
+ {
+  "id": "DARS;870529;b5c82789-6de2-4523-8e24-edf637bc783f",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "RT-914, Postojna - Rakov Škocjan, pri Rakovem Škocjanu, izmenično enosmerni promet, popravilo bankin, do 14:00.",
+  "loc": "RT-914, Postojna - Rakov Škocjan",
+  "lat": 45.80397,
+  "lng": 14.27359,
+  "start": "2026-08-19T04:00:00Z",
+  "end": "2026-08-19T12:00:00Z",
+  "ts": "2026-08-19T03:50:56.37Z"
+ },
+ {
+  "id": "DARS;870527;7c3d8a29-92fd-4595-8986-215a15404c33",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, predor Dekani v smeri Kopra, dela, oviran promet.",
   "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.02573,
-  "lng": 14.4341,
-  "start": "2026-08-18T21:38:23.54Z",
-  "end": "2026-08-19T03:00:00Z",
-  "ts": "2026-08-18T21:40:25.2Z"
- },
- {
-  "id": "DARS;870519;fc1819a7-26d4-4cfe-93df-4ff6a5b26b96",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Dragomer - priključek Vrhnika v smeri Kopra, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.00734,
-  "lng": 14.36935,
-  "start": "2026-08-18T20:44:40.65Z",
-  "end": "2026-08-19T00:00:00Z",
-  "ts": "2026-08-18T20:44:57.47Z"
- },
- {
-  "id": "DARS;870512;21f7b32b-5004-4315-ae8c-8bc97eb60ef3",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25474,
-  "lng": 14.97906,
-  "start": "2026-08-18T19:34:15.263Z",
-  "end": "2026-08-19T03:30:00Z",
-  "ts": "2026-08-18T19:34:38.98Z"
- },
- {
-  "id": "DARS;870511;184ae0f5-e0a9-4b02-8b23-3582261e015b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Ljubljana Šmartno - priključek Brnik v smeri Jesenic, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.12363,
-  "lng": 14.48154,
-  "start": "2026-08-18T18:16:26.287Z",
-  "end": "2026-08-19T06:30:00Z",
-  "ts": "2026-08-18T18:16:44.673Z"
- },
- {
-  "id": "DARS;870508;7fd863de-033f-4a3e-ba42-1e6f008b36f6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, predor Ločica - priključek Vransko v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.23198,
-  "lng": 14.94806,
-  "start": "2026-08-18T18:08:13.783Z",
-  "end": "2026-08-19T03:00:29.527Z",
-  "ts": "2026-08-18T18:08:25.22Z"
+  "lat": 45.5547,
+  "lng": 13.80274,
+  "start": "2026-08-19T03:45:13.333Z",
+  "end": "2026-08-19T15:00:15.167Z",
+  "ts": "2026-08-19T03:45:32.553Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
