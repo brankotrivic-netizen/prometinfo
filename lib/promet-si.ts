@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T13:29:38.343Z";
+export const PROMET_SI_UPDATED = "2026-08-19T14:06:37.282Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870679;1c33ecfd-330b-4ee0-9ac0-131b93fa68eb",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.96865,
+  "lng": 14.30493,
+  "start": "2026-08-19T13:54:43.473Z",
+  "end": "2026-08-19T17:00:00Z",
+  "ts": "2026-08-19T13:55:06.643Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -37,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-19T10:48:16.647Z"
  },
  {
-  "id": "DARS;870596;35ce9353-48c7-42bb-8067-70cd03e747e2",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-204, Dornberk - Štanjel, v Braniku, izmenično enosmerni promet, čiščenje jarkov, do 16:00.",
-  "loc": "R1-204, Dornberk - Štanjel",
-  "lat": 45.86867,
-  "lng": 13.77342,
-  "start": "2026-08-19T07:34:06.06Z",
-  "end": "2026-08-19T14:00:00Z",
-  "ts": "2026-08-19T07:36:20.903Z"
- },
- {
   "id": "DARS;870589;993c01e2-54c9-4a2c-97bf-c7b057abc473",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-102, Žaga - Kobarid - Tolmin, na Volarjah, izmenično enosmerni promet, sanacije drsnih vozišč, do 21. 8. 2026.",
@@ -68,28 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T05:23:33.543Z",
   "end": "2026-08-19T15:00:00Z",
   "ts": "2026-08-19T05:24:42.323Z"
- },
- {
-  "id": "DARS;870560;25cce319-34d8-4234-ab5d-696a8e0f92c1",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-403, Bača pri Modreju - Petrovo Brdo, pri Kneži, izmenično enosmerni promet, sečnja dreves, do 16:00.",
-  "loc": "R2-403, Bača - Kneža",
-  "lat": 46.15975,
-  "lng": 13.81575,
-  "start": "2026-08-19T05:13:14.94Z",
-  "end": "2026-08-19T14:00:00Z",
-  "ts": "2026-08-19T05:14:04.47Z"
- },
- {
-  "id": "DARS;870549;571dd99e-c908-4be7-8cf7-e2c0aa16ef77",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-230, Križevci - Ljutomer, pri Šalincih, izmenično enosmerni promet, popravilo bankin, do 16:00.",
-  "loc": "R1-230, Križevci - Ljutomer",
-  "lat": 46.54638,
-  "lng": 16.16598,
-  "start": "2026-08-19T04:45:30.007Z",
-  "end": "2026-08-19T14:00:00Z",
-  "ts": "2026-08-19T04:46:28.38Z"
  },
  {
   "id": "DARS;870535;a9394e95-df78-4416-b360-82dfa2811af1",
@@ -233,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T05:00:00Z",
   "end": "2026-08-23T15:00:00Z",
   "ts": "2026-08-17T03:42:51.297Z"
- },
- {
-  "id": "DARS;870072;a375c3f5-be0f-43f9-961b-fd8d2029f4e2",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-230, Križevci - Ljutomer, Križevci - Noršinci, izmenično enosmerni promet, popravilo bankin, do 19. 8. 2026.",
-  "loc": "R1-230, Križevci - Ljutomer",
-  "lat": 46.55605,
-  "lng": 16.14597,
-  "start": "2026-08-17T04:00:00Z",
-  "end": "2026-08-19T14:00:00Z",
-  "ts": "2026-08-17T03:41:26.103Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",

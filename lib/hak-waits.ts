@@ -44,26 +44,6 @@ export const HAK_WAITS: HakWait[] = [
  },
  {
   "id": "",
-  "name": "Gornji Brgat (Ivanica)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "19.8.2026. 11:19:11",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-19T11:19:11+02:00",
-  "izlazTsISO": "",
-  "ts": "19.8.2026. 11:19:11",
-  "tsISO": "2026-08-19T11:19:11+02:00"
- },
- {
-  "id": "",
   "name": "Karasovići (Sutorina)",
   "ulazMin": 90,
   "izlazMin": null,
@@ -81,5 +61,25 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "19.8.2026. 12:34:58",
   "tsISO": "2026-08-19T12:34:58+02:00"
+ },
+ {
+  "id": "hr-bajakovo",
+  "name": "Bajakovo (Batrovci)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": 60,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "1 h",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "",
+  "izlazTsISO": "",
+  "ts": "",
+  "tsISO": ""
  }
 ];

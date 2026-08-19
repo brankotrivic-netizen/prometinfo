@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.8.2026. 15:27",
-  "text": "Promet je pojačan na autocestama u smjeru mora i unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac prometna nesreća između čvora Lučko i čvora Zagreb zapad (na 19+400 km) u smjeru Bregane, vozi se usporeno povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A7 Rupa-Križišće teretno vozilo u kvaru na izlaznom kraku čvora Sveti Kuzam u smjeru Rupe, vozi se otežano jednom prometnom trakom DC1 Gračac-Knin zastoji su u zoni radova kraj Otrića DC8 Jadranska magistrala zastoji su na prilazima …"
+  "updated": "19.8.2026. 15:45",
+  "text": "Promet je pojačan na autocestama u smjeru mora i unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac prometna nesreća između čvora Lučko i čvora Zagreb zapad (na 19+400 km) u smjeru Bregane, vozi se usporeno povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera DC1 Gračac-Knin zastoji su u zoni radova kraj Otrića DC8 Jadranska magistrala zastoji su na prilazima Splitu AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat …"
  },
  {
   "title": "Granični prijelazi",
