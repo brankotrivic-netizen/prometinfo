@@ -1,8 +1,74 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T05:29:31.283Z";
+export const PROMET_SI_UPDATED = "2026-08-19T05:56:00.629Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870573;1b64b118-3644-4c19-b6ed-5f6c610bb0aa",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana, Ind. cona Moste - uvoz Ljubljana Bizovik v smeri Malenc, dela, oviran promet, pobiranje smeti.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.06013,
+  "lng": 14.57409,
+  "start": "2026-08-19T05:48:27.953Z",
+  "end": "2026-08-19T11:00:00Z",
+  "ts": "2026-08-19T05:48:50.977Z"
+ },
+ {
+  "id": "DARS;870570;113336c3-66c1-4f75-a302-983b573b2b3b",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, počivališče Lukovica - priključek Blagovica v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.16981,
+  "lng": 14.69768,
+  "start": "2026-08-19T05:45:49.77Z",
+  "end": "2026-08-19T09:00:00Z",
+  "ts": "2026-08-19T05:45:57.523Z"
+ },
+ {
+  "id": "DARS;870568;3e9c5ffd-d58d-49ed-ad2d-ca3dfcd7d992",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Brežice - prehod Obrežje v smeri Obrežja, dela, oviran promet.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.89143,
+  "lng": 15.60503,
+  "start": "2026-08-19T05:43:36.123Z",
+  "end": "2026-08-19T12:00:49.447Z",
+  "ts": "2026-08-19T05:43:41.833Z"
+ },
+ {
+  "id": "DARS;870567;372edf34-fc6a-4491-bbb2-491eec04636e",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Maribor - Gruškovje (Hrvaška), razcep Slivnica - priključek Zlatoličje v smeri Ptuja, dela, oviran promet.",
+  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
+  "lat": 46.47882,
+  "lng": 15.66345,
+  "start": "2026-08-19T05:43:25.297Z",
+  "end": "2026-08-19T17:00:00Z",
+  "ts": "2026-08-19T05:43:35.18Z"
+ },
+ {
+  "id": "DARS;870566;ddbef42b-70cd-47c1-a7c8-414cf7672500",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Voklo - počivališče Voklo v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.22093,
+  "lng": 14.435,
+  "start": "2026-08-19T05:36:12.64Z",
+  "end": "2026-08-19T11:00:02.463Z",
+  "ts": "2026-08-19T05:36:15.29Z"
+ },
+ {
+  "id": "DARS;870563;1845750f-ea1b-4796-bb74-24a2c81db325",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, uvoz Kastelec v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.57465,
+  "lng": 13.87059,
+  "start": "2026-08-19T05:33:38.27Z",
+  "end": "2026-08-19T11:00:00Z",
+  "ts": "2026-08-19T05:33:42.047Z"
+ },
  {
   "id": "DARS;870562;88bde6e9-3a70-4cc9-90f5-5136679942cf",
   "type": "RoadOrCarriagewayOrLaneManagement",
