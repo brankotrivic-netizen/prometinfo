@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T08:22:50.706Z";
+export const PROMET_SI_UPDATED = "2026-08-19T09:01:44.207Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870606;d46208cc-daff-4ecb-a553-57a04d7d06f4",
@@ -103,17 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-19T06:48:58.373Z"
  },
  {
-  "id": "DARS;870588;419a6906-2674-461c-b42d-fb3a1df62d40",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.14534,
-  "lng": 14.47611,
-  "start": "2026-08-19T06:48:29.41Z",
-  "end": "2026-08-19T09:00:48.817Z",
-  "ts": "2026-08-19T06:48:31.997Z"
- },
- {
   "id": "DARS;870586;c26a70b3-e5fd-4137-9238-020148ff890f",
   "type": "MaintenanceWorks",
   "desc": "A1, Maribor - Ljubljana, pred predorom Jasovnik v smeri Ljubljane, dela, oviran promet.",
@@ -178,17 +167,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T05:54:16.83Z",
   "end": "2026-08-19T13:00:00Z",
   "ts": "2026-08-19T05:55:31.543Z"
- },
- {
-  "id": "DARS;870570;113336c3-66c1-4f75-a302-983b573b2b3b",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, počivališče Lukovica - priključek Blagovica v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.16981,
-  "lng": 14.69768,
-  "start": "2026-08-19T05:45:49.77Z",
-  "end": "2026-08-19T09:00:00Z",
-  "ts": "2026-08-19T05:45:57.523Z"
  },
  {
   "id": "DARS;870568;3e9c5ffd-d58d-49ed-ad2d-ca3dfcd7d992",
