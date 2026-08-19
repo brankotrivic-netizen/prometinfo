@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T04:59:18.651Z";
+export const PROMET_SI_UPDATED = "2026-08-19T05:29:31.283Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870562;88bde6e9-3a70-4cc9-90f5-5136679942cf",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-607, Preval - Grgar - Čepovan, pri Čepovanu, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
+  "loc": "R3-607, Preval - Grgar - Čepovan",
+  "lat": 46.02162,
+  "lng": 13.75601,
+  "start": "2026-08-19T05:23:33.543Z",
+  "end": "2026-08-19T15:00:00Z",
+  "ts": "2026-08-19T05:24:42.323Z"
+ },
+ {
+  "id": "DARS;870561;0118163c-a723-46f0-aa1d-dbce05ec7bef",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-102, Dolenja Trebuša - Želin, Stopniik - Dolenja Trebuša, izmenično enosmerni promet, košnja, do 14:00.",
+  "loc": "G2-102, Dolenja Trebuša - Želin",
+  "lat": 46.09963,
+  "lng": 13.85211,
+  "start": "2026-08-19T05:14:50.72Z",
+  "end": "2026-08-19T12:00:00Z",
+  "ts": "2026-08-19T05:16:11.397Z"
+ },
+ {
+  "id": "DARS;870560;25cce319-34d8-4234-ab5d-696a8e0f92c1",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-403, Bača pri Modreju - Petrovo Brdo, pri Kneži, izmenično enosmerni promet, sečnja dreves, do 16:00.",
+  "loc": "R2-403, Bača - Kneža",
+  "lat": 46.15975,
+  "lng": 13.81575,
+  "start": "2026-08-19T05:13:14.94Z",
+  "end": "2026-08-19T14:00:00Z",
+  "ts": "2026-08-19T05:14:04.47Z"
+ },
+ {
+  "id": "DARS;870557;0e303fe0-f6cd-4671-9d2e-dcacbd4af135",
+  "type": "MaintenanceWorks",
+  "desc": "R3-679, Breg - Sevnica - Brestanica, Breg - Orehovo, oviran promet, košnja, do 15:00.",
+  "loc": "R3-679, Breg - Sevnica - Brestanica",
+  "lat": 46.04472,
+  "lng": 15.24279,
+  "start": "2026-08-19T05:04:25.97Z",
+  "end": "2026-08-19T13:00:00Z",
+  "ts": "2026-08-19T05:05:47.097Z"
+ },
  {
   "id": "DARS;870551;8d66dd3c-19da-41b5-b69a-85d95c7425e4",
   "type": "MaintenanceWorks",
@@ -178,17 +222,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T03:45:13.333Z",
   "end": "2026-08-19T15:00:15.167Z",
   "ts": "2026-08-19T03:45:32.553Z"
- },
- {
-  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
-  "type": "MaintenanceWorks",
-  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
-  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
-  "lat": 46.20334,
-  "lng": 15.25907,
-  "start": "2026-07-29T13:00:00Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-18T13:00:32.453Z"
  },
  {
   "id": "DARS;870374;da105683-add5-4691-b490-2cc0fc5abd4d",
