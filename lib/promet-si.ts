@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T05:56:00.629Z";
+export const PROMET_SI_UPDATED = "2026-08-19T06:26:34.080Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870583;09d2f04d-59ce-468d-9984-67c8e85ca7da",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Dobruška vas - priključek Kronovo v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.86463,
+  "lng": 15.27302,
+  "start": "2026-08-19T06:13:10.713Z",
+  "end": "2026-08-19T12:00:00Z",
+  "ts": "2026-08-19T06:13:19.44Z"
+ },
+ {
+  "id": "DARS;870581;a5e272ed-96fc-4af2-a90b-b5510be7ff22",
+  "type": "MaintenanceWorks",
+  "desc": "R2-430, Pesnica - Hoče, izvoz Pesnica - uvoz Maribor center v smeri Maribora, dela, pomična zapora voznega pasu.",
+  "loc": "R2-430, Pesnica - Hoče",
+  "lat": 46.59524,
+  "lng": 15.66999,
+  "start": "2026-08-19T06:09:10.867Z",
+  "end": "2026-08-19T12:00:44.897Z",
+  "ts": "2026-08-19T06:09:12.7Z"
+ },
+ {
+  "id": "DARS;870580;8918f9ca-fe5b-4a31-868b-9720125957be",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, pokrit vkop Močna - razcep Dragučova v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.57073,
+  "lng": 15.77523,
+  "start": "2026-08-19T06:07:21.453Z",
+  "end": "2026-08-19T12:00:34.437Z",
+  "ts": "2026-08-19T06:07:23.447Z"
+ },
+ {
+  "id": "DARS;870579;359964a0-e91b-46a6-a903-44959e6d9e54",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Logatec - priključek Unec v smeri Kopra, dela, oviran promet, košnja.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.9084,
+  "lng": 14.25785,
+  "start": "2026-08-19T06:01:01.427Z",
+  "end": "2026-08-19T17:00:00Z",
+  "ts": "2026-08-19T06:02:06.927Z"
+ },
+ {
+  "id": "DARS;870576;a1c8d9e5-1892-445a-b282-0e4e1ff80c9d",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-4, Velenje - Slovenj Gradec, Velenje, Šalek, izmenično enosmerni promet, košnja, do 15:00.",
+  "loc": "G1-4, Gornji Dolič - Velenje",
+  "lat": 46.36247,
+  "lng": 15.12851,
+  "start": "2026-08-19T05:54:16.83Z",
+  "end": "2026-08-19T13:00:00Z",
+  "ts": "2026-08-19T05:55:31.543Z"
+ },
  {
   "id": "DARS;870573;1b64b118-3644-4c19-b6ed-5f6c610bb0aa",
   "type": "MaintenanceWorks",
@@ -277,6 +332,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T04:00:00Z",
   "end": "2026-08-19T12:00:00Z",
   "ts": "2026-08-19T03:50:56.37Z"
+ },
+ {
+  "id": "DARS;870528;310b803f-69f0-4dda-b2c1-fb33f43f5bf7",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-102, Tolmin - Sp. Idrija, pri Straži, izmenično enosmerni promet, pomična zapora, vzdrževalna dela, do 15:00.",
+  "loc": "G2-102, Želin - Spodnja Idrija",
+  "lat": 46.08933,
+  "lng": 13.96362,
+  "start": "2026-08-19T06:00:00Z",
+  "end": "2026-08-19T13:00:00Z",
+  "ts": "2026-08-19T03:49:05.867Z"
  },
  {
   "id": "DARS;870527;7c3d8a29-92fd-4595-8986-215a15404c33",
