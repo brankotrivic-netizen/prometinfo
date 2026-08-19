@@ -15,11 +15,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ulazTs": "19.08.2026 12:53:34",
+  "ulazTs": "19.8.2026. 12:53:34",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-19T12:53:34+02:00",
   "izlazTsISO": "",
-  "ts": "19.08.2026 12:53:34",
+  "ts": "19.8.2026. 12:53:34",
   "tsISO": "2026-08-19T12:53:34+02:00"
  },
  {
@@ -35,11 +35,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "19.08.2026 11:19:11",
+  "ulazTs": "19.8.2026. 11:19:11",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-19T11:19:11+02:00",
   "izlazTsISO": "",
-  "ts": "19.08.2026 11:19:11",
+  "ts": "19.8.2026. 11:19:11",
   "tsISO": "2026-08-19T11:19:11+02:00"
  },
  {
@@ -55,11 +55,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "19.08.2026 09:49:11",
+  "ulazTs": "19.8.2026. 9:49:11",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-19T09:49:11+02:00",
   "izlazTsISO": "",
-  "ts": "19.08.2026 09:49:11",
+  "ts": "19.8.2026. 9:49:11",
   "tsISO": "2026-08-19T09:49:11+02:00"
  },
  {
@@ -75,11 +75,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ulazTs": "19.08.2026 12:34:58",
+  "ulazTs": "19.8.2026. 12:34:58",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-19T12:34:58+02:00",
   "izlazTsISO": "",
-  "ts": "19.08.2026 12:34:58",
+  "ts": "19.8.2026. 12:34:58",
   "tsISO": "2026-08-19T12:34:58+02:00"
  },
  {
@@ -95,11 +95,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "1 h",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "19.08.2026 09:23:53",
+  "ulazTs": "19.8.2026. 9:23:53",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-19T09:23:53+02:00",
   "izlazTsISO": "",
-  "ts": "19.08.2026 09:23:53",
+  "ts": "19.8.2026. 9:23:53",
   "tsISO": "2026-08-19T09:23:53+02:00"
  }
 ];

@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T11:14:49.505Z";
+export const PROMET_SI_UPDATED = "2026-08-19T11:40:45.734Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870566;ddbef42b-70cd-47c1-a7c8-414cf7672500",
@@ -46,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T09:40:48.647Z",
   "end": "2026-08-19T12:00:00Z",
   "ts": "2026-08-19T09:40:53.577Z"
- },
- {
-  "id": "DARS;870588;419a6906-2674-461c-b42d-fb3a1df62d40",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.14534,
-  "lng": 14.47611,
-  "start": "2026-08-19T06:48:29.41Z",
-  "end": "2026-08-19T12:00:00Z",
-  "ts": "2026-08-19T09:30:56.38Z"
  },
  {
   "id": "DARS;870606;d46208cc-daff-4ecb-a553-57a04d7d06f4",
@@ -147,17 +136,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-19T06:48:58.373Z"
  },
  {
-  "id": "DARS;870583;09d2f04d-59ce-468d-9984-67c8e85ca7da",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Dobruška vas - priključek Kronovo v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.86463,
-  "lng": 15.27302,
-  "start": "2026-08-19T06:13:10.713Z",
-  "end": "2026-08-19T12:00:00Z",
-  "ts": "2026-08-19T06:13:19.44Z"
- },
- {
   "id": "DARS;870581;a5e272ed-96fc-4af2-a90b-b5510be7ff22",
   "type": "MaintenanceWorks",
   "desc": "R2-430, Pesnica - Hoče, izvoz Pesnica - uvoz Maribor center v smeri Maribora, dela, pomična zapora voznega pasu.",
@@ -167,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T06:09:10.867Z",
   "end": "2026-08-19T12:00:44.897Z",
   "ts": "2026-08-19T06:09:12.7Z"
- },
- {
-  "id": "DARS;870580;8918f9ca-fe5b-4a31-868b-9720125957be",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, pokrit vkop Močna - razcep Dragučova v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.57073,
-  "lng": 15.77523,
-  "start": "2026-08-19T06:07:21.453Z",
-  "end": "2026-08-19T12:00:34.437Z",
-  "ts": "2026-08-19T06:07:23.447Z"
  },
  {
   "id": "DARS;870579;359964a0-e91b-46a6-a903-44959e6d9e54",
@@ -200,17 +167,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T05:54:16.83Z",
   "end": "2026-08-19T13:00:00Z",
   "ts": "2026-08-19T05:55:31.543Z"
- },
- {
-  "id": "DARS;870568;3e9c5ffd-d58d-49ed-ad2d-ca3dfcd7d992",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Brežice - prehod Obrežje v smeri Obrežja, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.89143,
-  "lng": 15.60503,
-  "start": "2026-08-19T05:43:36.123Z",
-  "end": "2026-08-19T12:00:49.447Z",
-  "ts": "2026-08-19T05:43:41.833Z"
  },
  {
   "id": "DARS;870567;372edf34-fc6a-4491-bbb2-491eec04636e",
