@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.8.2026. 11:44",
-  "text": "Promet je pojačan na autocestama u smjeru mora i unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik teretno vozilo u kvaru na 51.+400 km između čvorova Novigrad i Bosiljevo 1 u smjeru Dubrovnika -vozi se uz ograničenje brzine od 80 km/h vozilo u kvaru između tunela Bristovac i tunela Ledenik u smjeru Zagreba A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A6 Rijeka-Zagreb predmet između čvorova Vrata i Oštrovica (54.+000 km i 56.+000 km) u smjeru Rijeke - vo…"
+  "updated": "19.8.2026. 12:16",
+  "text": "Promet je pojačan na autocestama u smjeru mora i unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik teretno vozilo u kvaru na 51.+400 km između čvorova Novigrad i Bosiljevo 1 u smjeru Dubrovnika -vozi se uz ograničenje brzine od 80 km/h A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A6 Rijeka-Zagreb predmet između čvorova Vrata i Oštrovica (54.+000 km i 56.+000 km) u smjeru Rijeke - vozi se uz ograničenje brzine od 60 km/h DC1 Gračac-Knin zastoji su u zoni …"
  },
  {
   "title": "Granični prijelazi",
