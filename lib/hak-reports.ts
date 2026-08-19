@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.8.2026. 06:20",
-  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj vozi se samo voznim trakom: od 17.+500 do 13.+750 km u smjeru Maclja (dionica Krapina – Đurmanec) i od 6.+700 do 8. +200 km u smjeru Zagreba (dionica Trakošćan – Đurmanec) A3 Bregana-Lipovac do 31. kolovoza zbog radova zatvorena su odmorišta Kraljeva Velika sjever i Kraljeva Velika jug u oba smjera do 31…"
+  "updated": "19.8.2026. 06:58",
+  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok u smjeru Zagreba vozi se usporeno AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj vozi se samo voznim trakom: od 17.+500 do 13.+750 km u smjeru Maclja (dionica Krapina – Đurmanec) i od 6.+700 d…"
  },
  {
   "title": "Granični prijelazi",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "19.8.2026. 06:15",
-  "text": "Prometna prognoza za Hrvatsku za 19. kolovoza 2026. Pojačan promet očekuje se sutra na gradskim cestama i obilaznicama te na pojedinim dionicama autocesta, osobito u jutarnjim i poslijepodnevnim satima. Zastoji su mogući na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A4 između čvorova Popovec i Zagreb istok, Istarskom ipsilonu (A8) između čvora i tunela Učka, na pojedinim dionicama državne ceste DC1 te na Jadranskoj magistrali (DC8) na prilazima turističkim središtima. Čekanja u putničkom i teretnom prometu bit će na pojedinim graničnim prijelazima s Bosnom i Hercegovinom, Srbijom i Crnom Gorom, a u pomorskom prometu ne očekuju se poteškoće. Hrvatski autoklub želi vam sretan put i…"
+  "updated": "19.8.2026. 06:37",
+  "text": "Prometna prognoza za Hrvatsku za 20. kolovoza 2026. Pojačan promet očekuje se sutra na gradskim cestama i obilaznicama te na pojedinim dionicama autocesta, osobito u jutarnjim i poslijepodnevnim satima. Na sjevernom Jadranu i u Gorskoj kotaru vozit će se mjestimice po mokrim i skliskim kolnicima. Zastoji su mogući na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A4 između čvorova Popovec i Zagreb istok, Istarskom ipsilonu (A8) između čvora i tunela Učka, na pojedinim dionicama državne ceste DC1 te na Jadranskoj magistrali (DC8) na prilazima turističkim središtima. Čekanja u putničkom i teretnom prometu bit će na pojedinim graničnim prijelazima s Bosnom i Hercegovinom, Srbijom i Crno…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
