@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T14:06:37.282Z";
+export const PROMET_SI_UPDATED = "2026-08-19T14:50:27.007Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;870679;1c33ecfd-330b-4ee0-9ac0-131b93fa68eb",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.96865,
-  "lng": 14.30493,
-  "start": "2026-08-19T13:54:43.473Z",
-  "end": "2026-08-19T17:00:00Z",
-  "ts": "2026-08-19T13:55:06.643Z"
- },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -24,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-19T13:00:04.69Z"
- },
- {
-  "id": "DARS;870566;ddbef42b-70cd-47c1-a7c8-414cf7672500",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Voklo - počivališče Voklo v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.22093,
-  "lng": 14.435,
-  "start": "2026-08-19T05:36:12.64Z",
-  "end": "2026-08-19T15:00:00Z",
-  "ts": "2026-08-19T10:57:50.797Z"
  },
  {
   "id": "DARS;870639;feaa48d9-636a-4b62-ad17-ab636886ae47",
