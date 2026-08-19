@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.8.2026. 21:15",
-  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: DC1 Gračac-Knin zastoji su u zoni radova kraj Otrića DC7 Đakovo zbog prometne nesreće kod mjesta Selci Đakovački promet teče jednim trakom, uz regulaciju prometne policije AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj 19. kolovoza zbog radova se vozi jednim trakom između odmarališta Lepa Bukva i izlaza Đurmanec u smjeru Zagreba i između izlaza Krapi…"
+  "updated": "19.8.2026. 21:39",
+  "text": "Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići osobno vozilo na 411+100 km između čvora Blato na Cetini i čvora Šestanovac u smjeru Dubrovnika, vozi se uz ograničenje brzine od 100 km/h DC1 Gračac-Knin zastoji su u zoni radova kraj Otrića AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj 19. kolovoza zbog radova se vozi jednim trakom između odmarališta Lepa Bukva i izlaza …"
  },
  {
   "title": "Granični prijelazi",
