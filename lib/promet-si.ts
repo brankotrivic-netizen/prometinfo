@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-19T14:50:27.007Z";
+export const PROMET_SI_UPDATED = "2026-08-19T15:19:59.444Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -15,17 +15,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-19T13:00:04.69Z"
  },
  {
-  "id": "DARS;870639;feaa48d9-636a-4b62-ad17-ab636886ae47",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.18352,
-  "lng": 14.83756,
-  "start": "2026-08-19T10:47:52.497Z",
-  "end": "2026-08-19T15:00:00Z",
-  "ts": "2026-08-19T10:48:16.647Z"
- },
- {
   "id": "DARS;870589;993c01e2-54c9-4a2c-97bf-c7b057abc473",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-102, Žaga - Kobarid - Tolmin, na Volarjah, izmenično enosmerni promet, sanacije drsnih vozišč, do 21. 8. 2026.",
@@ -35,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T06:48:11.563Z",
   "end": "2026-08-21T21:59:00Z",
   "ts": "2026-08-19T06:48:58.373Z"
- },
- {
-  "id": "DARS;870562;88bde6e9-3a70-4cc9-90f5-5136679942cf",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-607, Preval - Grgar - Čepovan, pri Čepovanu, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R3-607, Preval - Grgar - Čepovan",
-  "lat": 46.02162,
-  "lng": 13.75601,
-  "start": "2026-08-19T05:23:33.543Z",
-  "end": "2026-08-19T15:00:00Z",
-  "ts": "2026-08-19T05:24:42.323Z"
  },
  {
   "id": "DARS;870535;a9394e95-df78-4416-b360-82dfa2811af1",
@@ -123,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-17T07:08:05.087Z",
   "end": "2026-11-16T22:59:00Z",
   "ts": "2026-08-17T07:08:39.347Z"
- },
- {
-  "id": "DARS;870122;b9b997f7-d234-4c4f-a77d-cd8c390c5d39",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Tolmin - Sp. Idrija, Straža - Sp. Idrija, izmenično enosmerni promet, košnja, do 19. 8. 2026.",
-  "loc": "G2-102, Želin - Spodnja Idrija",
-  "lat": 46.10223,
-  "lng": 13.94832,
-  "start": "2026-08-17T05:48:57.817Z",
-  "end": "2026-08-19T15:00:00Z",
-  "ts": "2026-08-17T05:49:41.13Z"
  },
  {
   "id": "DARS;870119;c5794141-9766-490a-8aa0-b3c65d4e1d8e",
