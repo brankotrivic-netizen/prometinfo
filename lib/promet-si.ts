@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T07:54:01.243Z";
+export const PROMET_SI_UPDATED = "2026-08-20T08:23:47.357Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870830;0ba2e266-6f08-4753-b744-15f65a8ce610",
@@ -189,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T05:47:16.497Z",
   "end": "2026-08-20T12:00:16.577Z",
   "ts": "2026-08-20T05:47:20.727Z"
- },
- {
-  "id": "DARS;870790;df6512d7-4467-47e5-839d-cbdd272753f7",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, izvoz 3 Lesce - priključek Brezje v smeri Ljubljane, dela, zaprt odstavni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.38011,
-  "lng": 14.1497,
-  "start": "2026-08-20T05:43:44.653Z",
-  "end": "2026-08-20T11:34:40.103Z",
-  "ts": "2026-08-20T05:43:58.403Z"
  },
  {
   "id": "DARS;870785;2ebe0e78-0698-408b-a7ce-f455a585cda2",
@@ -420,17 +409,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T04:42:28.137Z",
   "end": "2026-08-20T12:00:00Z",
   "ts": "2026-08-20T04:47:59.23Z"
- },
- {
-  "id": "DARS;870759;27e11673-b926-4a6a-87f2-fbcf01fdbe46",
-  "type": "MaintenanceWorks",
-  "desc": "R1-207, Črni Vrh - Col, pri Strmcu, kratkotrajne popolne zapore (do 15 minut), barvanje talnih označb, do 12:00.",
-  "loc": "R1-207, Črni Vrh - Col",
-  "lat": 45.91339,
-  "lng": 14.02871,
-  "start": "2026-08-20T05:00:00Z",
-  "end": "2026-08-20T10:00:00Z",
-  "ts": "2026-08-20T04:42:53.77Z"
  },
  {
   "id": "DARS;870758;0bebc6d6-b031-44a0-9667-2f1ed28b8d8e",

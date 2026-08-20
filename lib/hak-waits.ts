@@ -3,8 +3,8 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-orasje",
-  "name": "Županja (Orašje)",
+  "id": "ba-kostajnica",
+  "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
   "ulazMin": 30,
   "izlazMin": null,
   "ulazTxt": "do 30 min.",
@@ -15,12 +15,12 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "20.08.2026 05:42:13",
+  "ulazTs": "20.8.2026. 10:19:00",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-20T05:42:13+02:00",
+  "ulazTsISO": "2026-08-20T10:19:00+02:00",
   "izlazTsISO": "",
-  "ts": "20.08.2026 05:42:13",
-  "tsISO": "2026-08-20T05:42:13+02:00"
+  "ts": "20.8.2026. 10:19:00",
+  "tsISO": "2026-08-20T10:19:00+02:00"
  },
  {
   "id": "",
@@ -35,11 +35,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "20.08.2026 07:01:04",
+  "ulazTs": "20.8.2026. 7:01:04",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-20T07:01:04+02:00",
   "izlazTsISO": "",
-  "ts": "20.08.2026 07:01:04",
+  "ts": "20.8.2026. 7:01:04",
   "tsISO": "2026-08-20T07:01:04+02:00"
  },
  {
@@ -55,11 +55,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "20.08.2026 07:58:18",
+  "ulazTs": "20.8.2026. 7:58:18",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-20T07:58:18+02:00",
   "izlazTsISO": "",
-  "ts": "20.08.2026 07:58:18",
+  "ts": "20.8.2026. 7:58:18",
   "tsISO": "2026-08-20T07:58:18+02:00"
  },
  {
@@ -75,11 +75,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "1 h",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "20.08.2026 07:22:54",
+  "ulazTs": "20.8.2026. 7:22:54",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-20T07:22:54+02:00",
   "izlazTsISO": "",
-  "ts": "20.08.2026 07:22:54",
+  "ts": "20.8.2026. 7:22:54",
   "tsISO": "2026-08-20T07:22:54+02:00"
  }
 ];
