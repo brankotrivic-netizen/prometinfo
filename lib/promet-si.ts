@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T14:52:24.566Z";
+export const PROMET_SI_UPDATED = "2026-08-20T15:23:01.249Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -35,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-20T10:00:50.423Z"
- },
- {
-  "id": "DARS;870773;f27ff7e8-bb41-4e46-bd49-91b281558847",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-609, Čepovan - Most na Soči, pri Čepovanu, izmenično enosmerni promet, košnja, do 17:00.",
-  "loc": "R3-609, Čepovan - Most Na Soči",
-  "lat": 46.05474,
-  "lng": 13.79816,
-  "start": "2026-08-20T05:18:28.213Z",
-  "end": "2026-08-20T15:00:00Z",
-  "ts": "2026-08-20T05:20:31.24Z"
  },
  {
   "id": "DARS;870768;86281d27-1282-4745-8a43-194a7d412628",

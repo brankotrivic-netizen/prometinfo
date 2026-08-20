@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.8.2026. 16:49",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik vozi se u kolonama u pokretu uz zastoje u smjeru Zagreba između odmorišta Vukova Gorica i čvora Lučko kolona na naplati Demerje je oko 1 km prometna nesreća na 349.+500 km između čvorova Danilo i Prgomet u smjeru Dubrovnika. Vozi se jednim trakom uz ograničenje brzine od 40 km/h A3 Bregana-Lipovac povećana je gustoća prometa i voz…"
+  "updated": "20.8.2026. 17:18",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik vozi se u kolonama u pokretu uz zastoje u smjeru Zagreba između odmorišta Vukova Gorica i čvora Lučko kolone na naplatama Lučko i Demerje u smjeru Zagreba su oko 1 km prometna nesreća na 349.+500 km između čvorova Danilo i Prgomet u smjeru Dubrovnika. Vozi se jednim trakom uz ograničenje brzine od 40 km/h A3 Bregana-Lipovac poveća…"
  },
  {
   "title": "Granični prijelazi",
