@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.8.2026. 06:21",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su mogući u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac povećana je gustoća prometa na zagrebačkoj obilaznici između čvrova Zagreb zapad i Lučko u smjeru Lipovca A4 Goričan-Zagreb kolona vozila na naplati Sveta Helena u smjeru Zagreba je oko 2 km povećana je gustoća prometa između čvorova Popovec i Zagreb istok u smjeru Zagreba A6 Rijeka-Zagreb prometna nesreća na 79.+500 km između čvo…"
+  "updated": "20.8.2026. 06:55",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su mogući u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A2 Zagreb-Macelj povećana je gustoća prometa i vozi se usporeno pred čvorom Zagreb zapad u smjeru grada A3 Bregana-Lipovac povećana je gustoća prometa na zagrebačkoj obilaznici između čvorova Zagreb zapad i Lučko u smjeru Lipovca A4 Goričan-Zagreb kolona vozila na naplati Sveta Helena u smjeru Zagreba je oko 1 km prometna nesreća između čvorova Sesv…"
  },
  {
   "title": "Granični prijelazi",

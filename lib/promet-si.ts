@@ -1,18 +1,73 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T04:25:02.018Z";
+export const PROMET_SI_UPDATED = "2026-08-20T05:00:22.169Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870762;79b64d6a-4444-40d5-ace9-77573638fc16",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-5, Celje - Krško, pri Brestanici, izmenično enosmerni promet, čiščenje cestišča, do 8:00.",
+  "loc": "G1-5, Impoljca - Brestanica",
+  "lat": 45.98587,
+  "lng": 15.45484,
+  "start": "2026-08-20T04:49:39.507Z",
+  "end": "2026-08-20T06:00:00Z",
+  "ts": "2026-08-20T04:51:11.137Z"
+ },
+ {
+  "id": "DARS;870761;e1a11d09-b33d-4c26-8f6d-95214b7661a1",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-409, Ravbarkomanda - Postojna, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 14:00.",
+  "loc": "R2-409, Ravbarkomanda - Postojna",
+  "lat": 45.79594,
+  "lng": 14.23464,
+  "start": "2026-08-20T04:42:28.137Z",
+  "end": "2026-08-20T12:00:00Z",
+  "ts": "2026-08-20T04:47:59.23Z"
+ },
+ {
+  "id": "DARS;870758;0bebc6d6-b031-44a0-9667-2f1ed28b8d8e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-225, Črnivec - Radmirje, pri Podlomu, izmenično enosmerni promet, popravilo bankin, do 14:00.",
+  "loc": "R1-225, Črnivec - Radmirje",
+  "lat": 46.26235,
+  "lng": 14.70525,
+  "start": "2026-08-20T04:39:39.677Z",
+  "end": "2026-08-20T12:00:00Z",
+  "ts": "2026-08-20T04:41:05.92Z"
+ },
+ {
+  "id": "DARS;870757;fc2679ff-acd2-4c79-9acf-7937f890c199",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-699, Dravograd - Libeliče, pri Tribeju, izmenično enosmerni promet, čiščenje jarkov, do 14:00.",
+  "loc": "R3-699, Dravograd - Libeliče",
+  "lat": 46.60755,
+  "lng": 14.97407,
+  "start": "2026-08-20T04:35:03.207Z",
+  "end": "2026-08-20T12:00:00Z",
+  "ts": "2026-08-20T04:37:05.257Z"
+ },
+ {
+  "id": "DARS;870755;7843c36d-9722-4459-bec2-cede4aefe7d3",
+  "type": "MaintenanceWorks",
+  "desc": "R2-404, Ilirska Bistrica - Knežak - Pivka, Zagorje - Šembije, oviran promet, košnja, do 14:00.",
+  "loc": "NK-404, Ilirska Bistrica - Pivka",
+  "lat": 45.64536,
+  "lng": 14.22529,
+  "start": "2026-08-20T04:25:27.23Z",
+  "end": "2026-08-20T12:00:00Z",
+  "ts": "2026-08-20T04:34:10.23Z"
+ },
  {
   "id": "DARS;870750;27b94de8-f200-46a6-8764-8bfa18cf8662",
   "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-915, Ilirska Bistrica - Sviščaki, pri Ilirski Bistrici, dela, izmenično enosmerni promet, do 14:00.",
+  "desc": "RT-915, Ilirska Bistrica - Sviščaki, pri Ilirski Bistrici, izmenično enosmerni promet, popravilo bankin, do 14:00.",
   "loc": "RT-915, Ilirska Bistrica - Grda Draga",
   "lat": 45.56988,
   "lng": 14.25671,
   "start": "2026-08-20T04:22:01.2Z",
   "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T04:23:44.26Z"
+  "ts": "2026-08-20T04:24:40.513Z"
  },
  {
   "id": "DARS;870749;f333b572-4f03-487d-a820-ecff1ab7a980",

@@ -167,7 +167,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇱🇮",
   "p95": "1,965 CHF (2,09 EUR)",
   "p98": "",
-  "diesel": "2,177 CHF (2,31 EUR)",
+  "diesel": "2,177 CHF (2,32 EUR)",
   "date": "18. 8. 2026"
  },
  {
