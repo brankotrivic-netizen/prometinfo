@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T13:24:25.565Z";
+export const PROMET_SI_UPDATED = "2026-08-20T14:06:08.134Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -37,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-20T12:53:26.7Z"
  },
  {
-  "id": "DARS;870775;a427d770-0c8a-48a1-a18c-18ef53f3365e",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Pince - priključek Lendava v smeri Lendave, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.53486,
-  "lng": 16.44668,
-  "start": "2026-08-20T05:25:11.533Z",
-  "end": "2026-08-20T14:00:00Z",
-  "ts": "2026-08-20T12:00:18.573Z"
- },
- {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
   "type": "MaintenanceWorks",
   "desc": "A1, Maribor - Šentilj, priključek Maribor sever - prehod Šentilj v smeri Šentilja, Avstrije, dela, promet poteka po enem voznem pasu.",
@@ -68,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-20T10:00:50.423Z"
- },
- {
-  "id": "DARS;870783;19c05486-4e3b-4098-9b76-ef5b866b1b1e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-210, Cerkno - Želin, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
-  "loc": "R1-210, Cerkno - Želin",
-  "lat": 46.1264,
-  "lng": 13.98527,
-  "start": "2026-08-20T05:34:33.397Z",
-  "end": "2026-08-20T14:00:00Z",
-  "ts": "2026-08-20T05:35:22.44Z"
- },
- {
-  "id": "DARS;870782;d197f122-1e3e-48ea-a78b-abc7f6d634f4",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-210, Trebija - Cerkno, Podjelovo Brdo - Cerkno, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
-  "loc": "R1-210, Sovodenj - Cerkno",
-  "lat": 46.1009,
-  "lng": 14.0247,
-  "start": "2026-08-20T05:32:23.257Z",
-  "end": "2026-08-20T14:00:00Z",
-  "ts": "2026-08-20T05:33:58.877Z"
  },
  {
   "id": "DARS;870773;f27ff7e8-bb41-4e46-bd49-91b281558847",

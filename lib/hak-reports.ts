@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.8.2026. 15:20",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između čvorova Lučko i Bosiljevo 2 u oba smjera te čvorova Zadar istok i Bosiljevo 2 u smjeru Zagreba vozi se u kolonama u pokretu uz zastoje u smjeru mora između naplate Lučko i čvora Karlovac, a u smjeru Zagreba između čvorova Bosiljevo II i Lučko prometna nesreća između čvorova Karlovac i Jastrebarsk…"
+  "updated": "20.8.2026. 15:58",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između čvorova Lučko i Bosiljevo 2 u oba smjera te tunela Sveti Rok i čvora Lučko u smjeru Zagreba vozi se u kolonama u pokretu uz zastoje u smjeru Zagreba između čvorova Bosiljevo II i Lučko prometna nesreća na 349.+500 km između čvorova Danilo i Prgomet u smjeru Dubrovnika. Vozi se jednim trakom uz og…"
  },
  {
   "title": "Granični prijelazi",
