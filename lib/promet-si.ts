@@ -1,8 +1,140 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T06:01:28.994Z";
+export const PROMET_SI_UPDATED = "2026-08-20T07:03:54.226Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870825;031a7fbd-8df5-4995-88a7-965eafdab91d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, pred predorom Ločica v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.21811,
+  "lng": 14.93775,
+  "start": "2026-08-20T07:00:24.637Z",
+  "end": "2026-08-20T14:00:00Z",
+  "ts": "2026-08-20T07:00:45.117Z"
+ },
+ {
+  "id": "DARS;870816;0da766d2-4e6e-4840-bb61-66d0553d2567",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-439, Križevci - Žihlava, Križevci - Lukavci, izmenično enosmerni promet, popravilo bankin, do 15:00.",
+  "loc": "R2-439, Križevci - Žihlava",
+  "lat": 46.55376,
+  "lng": 16.14638,
+  "start": "2026-08-20T06:19:12.793Z",
+  "end": "2026-08-20T13:00:00Z",
+  "ts": "2026-08-20T06:21:12.39Z"
+ },
+ {
+  "id": "DARS;870814;4f5150e3-83fd-4274-8c78-0e36b0070d79",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-449, Gornja Radgona - Podgrad, izmenično enosmerni promet, popravilo vozišča, do 15:00.",
+  "loc": "R2-449, Gornja Radgona",
+  "lat": 46.68118,
+  "lng": 15.97536,
+  "start": "2026-08-20T06:17:38.337Z",
+  "end": "2026-08-20T13:00:00Z",
+  "ts": "2026-08-20T06:18:44.46Z"
+ },
+ {
+  "id": "DARS;870813;9340cf20-9b1b-4415-b641-de3e771cc5c3",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-689, Kozminci - Žetale - Rogatec, pri Čermožišah, izmenično enosmerni promet, popravilo vozišča, do 15:00.",
+  "loc": "NK-689, Kozminci - Žetale - Rogatec",
+  "lat": 46.26819,
+  "lng": 15.77481,
+  "start": "2026-08-20T06:13:35.577Z",
+  "end": "2026-08-20T13:00:00Z",
+  "ts": "2026-08-20T06:15:25.76Z"
+ },
+ {
+  "id": "DARS;870812;e6eb6c00-f532-42d1-844c-ff58320b46a9",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-439, Križevci - Žihlava, Kokoriči - Berkovci, izmenično enosmerni promet, pomična zapora, obnova cestišča, do 15:00.",
+  "loc": "R2-439, Križevci - Žihlava",
+  "lat": 46.5504,
+  "lng": 16.0993,
+  "start": "2026-08-20T06:11:45.127Z",
+  "end": "2026-08-20T13:00:00Z",
+  "ts": "2026-08-20T06:12:59.81Z"
+ },
+ {
+  "id": "DARS;870811;57528d87-e3a6-4685-b016-c24583cadf4c",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-103, Nova Gorica - Tolmin, pri Solkanu, izmenično enosmerni promet, popravilo vozišča, do 13:00.",
+  "loc": "G2-103, Plave - Solkan",
+  "lat": 45.97712,
+  "lng": 13.65176,
+  "start": "2026-08-20T06:09:26.813Z",
+  "end": "2026-08-20T11:00:00Z",
+  "ts": "2026-08-20T06:11:00.17Z"
+ },
+ {
+  "id": "DARS;870810;c6e15fde-211d-497b-84e2-b9f05100c42c",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Nova Gorica - Razdrto, pred počivališčem Šempas v smeri Razdrtega, dela, promet preusmerjen skozi počivališče.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.91798,
+  "lng": 13.71635,
+  "start": "2026-08-20T06:10:29.203Z",
+  "end": "2026-08-20T12:00:00Z",
+  "ts": "2026-08-20T06:10:38.857Z"
+ },
+ {
+  "id": "DARS;870806;b02890ea-1300-42bf-aa86-d2388d1c98f9",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-725, Sebeborci - Fokovci, Sebeborci - Andrejci, izmenično enosmerni promet, popravilo bankin, do 14:00.",
+  "loc": "R3-725, Sebeborci - Trakšarov Breg",
+  "lat": 46.71477,
+  "lng": 16.21767,
+  "start": "2026-08-20T06:05:33.327Z",
+  "end": "2026-08-20T12:00:00Z",
+  "ts": "2026-08-20T06:06:32.58Z"
+ },
+ {
+  "id": "DARS;870804;86631ee8-51ac-43f5-88be-16e31855bc21",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-719, Rogašovci - Kramarovci, izmenično enosmerni promet, pomična zapora, čiščenje jarkov, do 14:00.",
+  "loc": "R3-719, Rogašovci - Kramarovci",
+  "lat": 46.80461,
+  "lng": 16.03167,
+  "start": "2026-08-20T05:52:17.733Z",
+  "end": "2026-08-20T12:00:00Z",
+  "ts": "2026-08-20T06:04:39.41Z"
+ },
+ {
+  "id": "DARS;870803;d751b83b-bb8e-4d22-9569-b6a5839f77c3",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, priključek Zlatoličje - priključek Marjeta v smeri Maribora, dela, oviran promet.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.45364,
+  "lng": 15.75619,
+  "start": "2026-08-20T06:04:31.283Z",
+  "end": "2026-08-20T12:00:00Z",
+  "ts": "2026-08-20T06:04:34.967Z"
+ },
+ {
+  "id": "DARS;870802;148ae23f-19ce-47a0-88b4-ed443735263c",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Kozarje iz smeri Brezovice proti Brdu, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.03916,
+  "lng": 14.44981,
+  "start": "2026-08-20T06:04:01.977Z",
+  "end": "2026-08-20T11:00:49.263Z",
+  "ts": "2026-08-20T06:04:13.677Z"
+ },
+ {
+  "id": "DARS;870800;5ad0b836-3f85-42c4-9c3f-9bbc5d5efedd",
+  "type": "MaintenanceWorks",
+  "desc": "R2-430, Pesnica - Hoče, uvoz Maribor center - priključek Maribor Pobrežje, Zrkovska cesta v smeri Maribora, dela, zaprt vozni pas.",
+  "loc": "R2-430, Pesnica - Hoče",
+  "lat": 46.55793,
+  "lng": 15.66061,
+  "start": "2026-08-20T06:01:43.793Z",
+  "end": "2026-08-20T11:00:59.887Z",
+  "ts": "2026-08-20T06:02:04.41Z"
+ },
  {
   "id": "DARS;870799;6081b553-a39c-4182-a5d9-7263b94a775c",
   "type": "MaintenanceWorks",
@@ -519,17 +651,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T10:27:58.043Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-15T14:02:27.057Z"
- },
- {
-  "id": "DARS;869230;806202bb-9624-413e-b21c-f1d05417e0e4",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-689, Podlehnik - Žetale, pri Čermožišah, izmenično enosmerni promet, popravilo vozišča, do 25. 8. 2026.",
-  "loc": "NK-689, Kozminci - Žetale - Rogatec",
-  "lat": 46.26751,
-  "lng": 15.77315,
-  "start": "2026-08-12T07:06:44.253Z",
-  "end": "2026-08-25T13:00:00Z",
-  "ts": "2026-08-14T12:31:28.597Z"
  },
  {
   "id": "DARS;866201;d6958092-7c2d-440e-868a-321ca647c70b",
