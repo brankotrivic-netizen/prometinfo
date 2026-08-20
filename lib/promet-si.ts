@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T11:16:17.768Z";
+export const PROMET_SI_UPDATED = "2026-08-20T11:49:31.983Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;870796;9f51d748-70f7-4746-88ed-0fccffe2f298",
@@ -24,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T05:48:55.17Z",
   "end": "2026-08-20T13:00:00Z",
   "ts": "2026-08-20T10:57:40.95Z"
- },
- {
-  "id": "DARS;870802;148ae23f-19ce-47a0-88b4-ed443735263c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Kozarje iz smeri Brezovice proti Brdu, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.03916,
-  "lng": 14.44981,
-  "start": "2026-08-20T06:04:01.977Z",
-  "end": "2026-08-20T13:00:00Z",
-  "ts": "2026-08-20T10:57:03.567Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -68,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T09:57:07.843Z",
   "end": "2026-08-20T12:00:00Z",
   "ts": "2026-08-20T09:58:34.887Z"
- },
- {
-  "id": "DARS;870830;0ba2e266-6f08-4753-b744-15f65a8ce610",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Logatec - priključek Unec v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.90738,
-  "lng": 14.25736,
-  "start": "2026-08-20T07:34:34.077Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T07:35:26.363Z"
  },
  {
   "id": "DARS;870825;031a7fbd-8df5-4995-88a7-965eafdab91d",
@@ -211,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T05:30:04.63Z",
   "end": "2026-08-20T12:00:00Z",
   "ts": "2026-08-20T05:31:34.817Z"
- },
- {
-  "id": "DARS;870776;103e02b2-08ab-48ec-939b-ae12d7f17dd1",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, pred predorom Jasovnik v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.19961,
-  "lng": 14.90105,
-  "start": "2026-08-20T05:25:22.823Z",
-  "end": "2026-08-20T14:00:00Z",
-  "ts": "2026-08-20T05:25:32.823Z"
  },
  {
   "id": "DARS;870775;a427d770-0c8a-48a1-a18c-18ef53f3365e",

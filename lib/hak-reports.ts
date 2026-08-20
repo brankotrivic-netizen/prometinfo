@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.8.2026. 13:15",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su mogući u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik kolona pred naplatom Lučko u smjeru Karlovca je 2 km povećana je gustoća prometa između čvorova Lučko i Bosiljevo 2 u oba smjera te čvorova Zadar istok i Bosiljevo 2 u smjeru Zagreba prometna nesreća između čvorova Karlovac i Jastrebarsko (na 24. km) u smjeru Zagreba - vozi se jednim prometnom trakom uz ograničenje brzine o…"
+  "updated": "20.8.2026. 13:48",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su mogući u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između čvorova Lučko i Bosiljevo 2 u oba smjera te čvorova Zadar istok i Bosiljevo 2 u smjeru Zagreba vozi se u kolonama u pokretu uz zastoje u smjeru mora između naplate Lučko i čvora Karlovac, a u smjeru Zagreba od mosta Dobra do čvora Jastrebarsko te između odmorišta Jasenice i tunela Čelinka …"
  },
  {
   "title": "Granični prijelazi",
@@ -13,7 +13,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "20.8.2026. 10:21",
+  "updated": "20.8.2026. 13:35",
   "text": "U pomorskom prometu nema poteškoća. Trajekt na liniji Orebić-Dominče 21. kolovoza, u petak, uvodi dodatno putovanje. Trajekt će isploviti iz Dominča za Orebić u 01:50, odnosno iz Orebića za Dominče u 02:15 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi…"
  },
  {
