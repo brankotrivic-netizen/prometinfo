@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T16:58:01.461Z";
+export const PROMET_SI_UPDATED = "2026-08-20T17:24:51.061Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871008;d10261ea-b4a7-4735-b1e7-3ca266536d06",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, izvoz 1 Jesenice zahod iz smeri Karavank, Avstrije, dela, oviran promet, strojno pometanje.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.41668,
+  "lng": 14.09083,
+  "start": "2026-08-20T17:15:44.9Z",
+  "end": "2026-08-20T17:30:07.53Z",
+  "ts": "2026-08-20T17:16:23.557Z"
+ },
+ {
+  "id": "DARS;871006;b81d6d61-61d7-4977-98f7-1707d85c8224",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Srmin - priključek Srmin v smeri Škofij, Italije, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.56137,
+  "lng": 13.78546,
+  "start": "2026-08-20T17:08:38.123Z",
+  "end": "2026-08-20T19:00:14.873Z",
+  "ts": "2026-08-20T17:08:40.637Z"
+ },
  {
   "id": "DARS;871001;36b96c5d-e9af-4175-9c76-790847f6ede2",
   "type": "MaintenanceWorks",
@@ -46,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-20T10:00:50.423Z"
- },
- {
-  "id": "DARS;870748;69239c41-8380-4d02-ae82-732af3ba271a",
-  "type": "MaintenanceWorks",
-  "desc": "R1-219, Bizeljsko - Čatež, Bizeljsko - Stara vas, oviran promet, košnja, do 19:00.",
-  "loc": "R1-219, Bizeljsko - Čatež",
-  "lat": 46.01513,
-  "lng": 15.69274,
-  "start": "2026-08-20T04:00:00Z",
-  "end": "2026-08-20T17:00:00Z",
-  "ts": "2026-08-20T03:54:15.817Z"
  },
  {
   "id": "DARS;849015;17f8f3fc-9452-4e0d-96d4-72b13ca3c53d",

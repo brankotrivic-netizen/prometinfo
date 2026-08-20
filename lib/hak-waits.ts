@@ -23,26 +23,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-20T18:19:30+02:00"
  },
  {
-  "id": "ba-gradina",
-  "name": "Jasenovac (Donja Gradina)",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "20.8.2026. 14:29:28",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-20T14:29:28+02:00",
-  "izlazTsISO": "",
-  "ts": "20.8.2026. 14:29:28",
-  "tsISO": "2026-08-20T14:29:28+02:00"
- },
- {
   "id": "ba-velika-kladusa",
   "name": "Maljevac (Velika Kladuša)",
   "ulazMin": null,
