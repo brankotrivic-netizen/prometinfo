@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T14:06:08.134Z";
+export const PROMET_SI_UPDATED = "2026-08-20T14:52:24.566Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -13,28 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-20T13:00:07.647Z"
- },
- {
-  "id": "DARS;870795;d6dc9f83-f9e8-4f27-881e-14b00f3450bd",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj zahod - priključek Kranj zahod v smeri Karavank, Avstrije, dela, zaprt odstavni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.2626,
-  "lng": 14.35328,
-  "start": "2026-08-20T05:48:55.17Z",
-  "end": "2026-08-20T16:00:00Z",
-  "ts": "2026-08-20T12:53:46.453Z"
- },
- {
-  "id": "DARS;870796;9f51d748-70f7-4746-88ed-0fccffe2f298",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj zahod v smeri Karavank, Avstrije, dela, zaprt odstavni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.24146,
-  "lng": 14.39851,
-  "start": "2026-08-20T05:49:53.24Z",
-  "end": "2026-08-20T16:00:00Z",
-  "ts": "2026-08-20T12:53:26.7Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
