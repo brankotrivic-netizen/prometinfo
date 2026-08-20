@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T10:18:27.827Z";
+export const PROMET_SI_UPDATED = "2026-08-20T10:54:04.936Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -213,17 +213,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-20T05:47:20.727Z"
  },
  {
-  "id": "DARS;870785;2ebe0e78-0698-408b-a7ce-f455a585cda2",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, pred prehodom Obrežje v smeri Obrežja, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.85642,
-  "lng": 15.6843,
-  "start": "2026-08-20T05:38:51.987Z",
-  "end": "2026-08-20T12:00:10.77Z",
-  "ts": "2026-08-20T05:39:03.99Z"
- },
- {
   "id": "DARS;870783;19c05486-4e3b-4098-9b76-ef5b866b1b1e",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-210, Cerkno - Želin, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
@@ -376,17 +365,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T05:00:52.667Z",
   "end": "2026-08-20T12:00:00Z",
   "ts": "2026-08-20T05:00:59.083Z"
- },
- {
-  "id": "DARS;870765;7ade40ab-6711-49fe-8121-3cb2522b8806",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Trebnje zahod - priključek Bič v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.91106,
-  "lng": 14.96184,
-  "start": "2026-08-20T04:59:40.423Z",
-  "end": "2026-08-20T12:59:43.51Z",
-  "ts": "2026-08-20T04:59:51.527Z"
  },
  {
   "id": "DARS;870763;0799c723-ca3f-4ddb-b422-0c7cd62093e5",

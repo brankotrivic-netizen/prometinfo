@@ -43,6 +43,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-20T12:11:56+02:00"
  },
  {
+  "id": "",
+  "name": "Hrvatska Dubica (Bosanska Dubica)",
+  "ulazMin": 60,
+  "izlazMin": null,
+  "ulazTxt": "1 h",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "20.8.2026. 12:30:03",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-20T12:30:03+02:00",
+  "izlazTsISO": "",
+  "ts": "20.8.2026. 12:30:03",
+  "tsISO": "2026-08-20T12:30:03+02:00"
+ },
+ {
   "id": "ba-kostajnica",
   "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
   "ulazMin": 30,
@@ -65,21 +85,21 @@ export const HAK_WAITS: HakWait[] = [
  {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
-  "ulazMin": 120,
+  "ulazMin": 180,
   "izlazMin": 30,
-  "ulazTxt": "2 h",
+  "ulazTxt": "3 h",
   "izlazTxt": "do 30 min.",
-  "truckUlazMin": 120,
+  "truckUlazMin": null,
   "truckIzlazMin": null,
-  "truckUlazTxt": "2 h",
+  "truckUlazTxt": "-",
   "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 120,
-  "ulazTs": "20.8.2026. 11:15:14",
+  "level": "severe",
+  "waitMinutes": 180,
+  "ulazTs": "20.8.2026. 12:38:50",
   "izlazTs": "20.8.2026. 11:14:24",
-  "ulazTsISO": "2026-08-20T11:15:14+02:00",
+  "ulazTsISO": "2026-08-20T12:38:50+02:00",
   "izlazTsISO": "2026-08-20T11:14:24+02:00",
-  "ts": "20.8.2026. 11:15:14",
-  "tsISO": "2026-08-20T11:15:14+02:00"
+  "ts": "20.8.2026. 12:38:50",
+  "tsISO": "2026-08-20T12:38:50+02:00"
  }
 ];
