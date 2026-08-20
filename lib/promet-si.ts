@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T19:42:41.382Z";
+export const PROMET_SI_UPDATED = "2026-08-20T20:01:34.824Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871023;0f993dc0-dd60-4eb6-b1d6-792096b98a12",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Vodice - priključek Brnik v smeri Karavank, Avstrije, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.18498,
+  "lng": 14.48268,
+  "start": "2026-08-20T19:54:13.45Z",
+  "end": "2026-08-20T21:30:13.447Z",
+  "ts": "2026-08-20T19:54:17.03Z"
+ },
+ {
+  "id": "DARS;871022;9bd9f350-f3c3-41d4-a042-35682938e55f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Lukovica - priključek Blagovica v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.17281,
+  "lng": 14.7879,
+  "start": "2026-08-20T19:44:36.887Z",
+  "end": "2026-08-21T01:00:00Z",
+  "ts": "2026-08-20T19:47:27.357Z"
+ },
  {
   "id": "DARS;871021;2ed1317b-7b05-445e-96df-9496dcd9eaed",
   "type": "MaintenanceWorks",
@@ -24,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T18:52:07.133Z",
   "end": "2026-08-21T02:55:18.36Z",
   "ts": "2026-08-20T18:52:16.807Z"
- },
- {
-  "id": "DARS;871016;fb3e422b-a54f-4a79-9935-217b1b78e3e2",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, pred izvozom 9 Kranj vzhod v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.2427,
-  "lng": 14.39696,
-  "start": "2026-08-20T18:22:29.483Z",
-  "end": "2026-08-21T00:00:00Z",
-  "ts": "2026-08-20T18:22:32.34Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
