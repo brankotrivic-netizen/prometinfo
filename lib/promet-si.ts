@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T17:24:51.061Z";
+export const PROMET_SI_UPDATED = "2026-08-20T17:53:19.293Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;871008;d10261ea-b4a7-4735-b1e7-3ca266536d06",
+  "id": "DARS;871013;33975ecc-48ec-4719-ab41-62c6e6e39ff3",
   "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, izvoz 1 Jesenice zahod iz smeri Karavank, Avstrije, dela, oviran promet, strojno pometanje.",
+  "desc": "A2, Ljubljana - Karavanke, izvoz 3 Lesce iz smeri Ljubljane, dela, oviran promet, strojno pometanje.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.36702,
+  "lng": 14.16195,
+  "start": "2026-08-20T17:50:12.67Z",
+  "end": "2026-08-20T21:15:41.727Z",
+  "ts": "2026-08-20T17:50:33.82Z"
+ },
+ {
+  "id": "DARS;871012;47e873be-c69f-46b4-ad1f-467543d76428",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, izvoz 3 Lesce iz smeri Karavank, Avstrije, dela, oviran promet, strojno pometanje.",
   "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.41668,
-  "lng": 14.09083,
-  "start": "2026-08-20T17:15:44.9Z",
-  "end": "2026-08-20T17:30:07.53Z",
-  "ts": "2026-08-20T17:16:23.557Z"
+  "lat": 46.36891,
+  "lng": 14.15971,
+  "start": "2026-08-20T17:41:28.03Z",
+  "end": "2026-08-20T18:30:04.68Z",
+  "ts": "2026-08-20T17:41:56.937Z"
  },
  {
   "id": "DARS;871006;b81d6d61-61d7-4977-98f7-1707d85c8224",
