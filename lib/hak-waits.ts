@@ -23,6 +23,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-20T10:42:06+02:00"
  },
  {
+  "id": "ba-doljani",
+  "name": "Metković (Doljani)",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "20.8.2026. 12:11:56",
+  "izlazTs": "20.8.2026. 12:12:16",
+  "ulazTsISO": "2026-08-20T12:11:56+02:00",
+  "izlazTsISO": "2026-08-20T12:12:16+02:00",
+  "ts": "20.8.2026. 12:11:56",
+  "tsISO": "2026-08-20T12:11:56+02:00"
+ },
+ {
   "id": "ba-kostajnica",
   "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
   "ulazMin": 30,
@@ -43,26 +63,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-20T10:19:00+02:00"
  },
  {
-  "id": "",
-  "name": "Karasovići (Sutorina)",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "20.8.2026. 7:01:04",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-20T07:01:04+02:00",
-  "izlazTsISO": "",
-  "ts": "20.8.2026. 7:01:04",
-  "tsISO": "2026-08-20T07:01:04+02:00"
- },
- {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
   "ulazMin": 120,
@@ -81,25 +81,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-08-20T11:14:24+02:00",
   "ts": "20.8.2026. 11:15:14",
   "tsISO": "2026-08-20T11:15:14+02:00"
- },
- {
-  "id": "hr-tovarnik",
-  "name": "Tovarnik (Šid)",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": 60,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "1 h",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "20.8.2026. 7:22:54",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-20T07:22:54+02:00",
-  "izlazTsISO": "",
-  "ts": "20.8.2026. 7:22:54",
-  "tsISO": "2026-08-20T07:22:54+02:00"
  }
 ];
