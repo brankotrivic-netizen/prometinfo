@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.8.2026. 21:59",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog putničkog vozila u kvaru na državnoj cesti DC114 u mjestu Sutivan vozi se uz privremenu regulaciju prometa - promet se odvija jednom suženom prometnom trakom zbog prometne nesreće na Jadranskoj magistrali (DC8) u mjestu Mlini vozi se jednim trakom otežano AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati …"
+  "updated": "20.8.2026. 22:35",
+  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A6 Rijeka-Zagreb na čvoru Orehovica na kolniku u smjeru Rijeke - vozi se uz ograničenje brzine od 40 km/h zbog vozila u kvaru na državnoj cesti DC114 u mjestu Sutivan vozi se uz privremenu regulaciju prometa - promet se odvija jednom suženom prometnom trakom zbog vozila u kvaru na državnoj cesti DC219 u mjestu Obrovac Sinjski vozi se uz privremenu regulaciju prometa - promet se odvija jednom suženom prometnom trakom AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVO…"
  },
  {
   "title": "Granični prijelazi",
