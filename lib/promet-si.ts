@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T19:08:27.231Z";
+export const PROMET_SI_UPDATED = "2026-08-20T19:42:41.382Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871021;2ed1317b-7b05-445e-96df-9496dcd9eaed",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, pred priključkom Dragomer v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.0196,
+  "lng": 14.40132,
+  "start": "2026-08-20T19:24:20.243Z",
+  "end": "2026-08-21T01:00:00Z",
+  "ts": "2026-08-20T19:24:35.43Z"
+ },
  {
   "id": "DARS;871020;c4be0a87-5ed7-4f01-a896-cd4a340a9f5a",
   "type": "MaintenanceWorks",
@@ -15,28 +26,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-20T18:52:16.807Z"
  },
  {
-  "id": "DARS;871019;a3153151-e3e1-478c-a935-f3ba55b744b0",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, izvoz Radovljica iz smeri Ljubljane, dela, oviran promet, strojno pometanje.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.3378,
-  "lng": 14.19353,
-  "start": "2026-08-20T18:38:49.357Z",
-  "end": "2026-08-21T00:00:00Z",
-  "ts": "2026-08-20T18:39:17.64Z"
- },
- {
-  "id": "DARS;871018;7846dd28-9358-4c2a-9c8c-9d0fad708711",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Vodice - priključek Brnik v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.18956,
-  "lng": 14.47881,
-  "start": "2026-08-20T18:33:10.267Z",
-  "end": "2026-08-20T19:30:33.773Z",
-  "ts": "2026-08-20T18:33:16.017Z"
- },
- {
   "id": "DARS;871016;fb3e422b-a54f-4a79-9935-217b1b78e3e2",
   "type": "MaintenanceWorks",
   "desc": "A2, Karavanke - Ljubljana, pred izvozom 9 Kranj vzhod v smeri Ljubljane, dela, oviran promet.",
@@ -46,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T18:22:29.483Z",
   "end": "2026-08-21T00:00:00Z",
   "ts": "2026-08-20T18:22:32.34Z"
- },
- {
-  "id": "DARS;871001;36b96c5d-e9af-4175-9c76-790847f6ede2",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, predor Kastelec - priključek Črni Kal v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.57653,
-  "lng": 13.8728,
-  "start": "2026-08-20T16:41:05.523Z",
-  "end": "2026-08-20T21:00:00Z",
-  "ts": "2026-08-20T16:41:09.417Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
