@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T15:55:39.552Z";
+export const PROMET_SI_UPDATED = "2026-08-20T16:21:24.653Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -35,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-20T10:00:50.423Z"
- },
- {
-  "id": "DARS;870768;86281d27-1282-4745-8a43-194a7d412628",
-  "type": "MaintenanceWorks",
-  "desc": "RT-919, Vinica - Stari trg, Hrib - Dečina, oviran promet, košnja, do 18:00.",
-  "loc": "RT-919, Vinica - Stari Trg",
-  "lat": 45.4484,
-  "lng": 15.13147,
-  "start": "2026-08-20T05:08:35.44Z",
-  "end": "2026-08-20T16:00:00Z",
-  "ts": "2026-08-20T05:10:01.957Z"
  },
  {
   "id": "DARS;870748;69239c41-8380-4d02-ae82-732af3ba271a",
