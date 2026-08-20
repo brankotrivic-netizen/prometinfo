@@ -121,25 +121,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "L: 1 km T: 20.8.2026. 17:53:05",
   "tsISO": "2026-08-20T17:53:05+02:00"
- },
- {
-  "id": "",
-  "name": "Principovac II",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": 30,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "do 30 min.",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "20.8.2026. 17:41:27",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-20T17:41:27+02:00",
-  "izlazTsISO": "",
-  "ts": "20.8.2026. 17:41:27",
-  "tsISO": "2026-08-20T17:41:27+02:00"
  }
 ];
