@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T11:49:31.983Z";
+export const PROMET_SI_UPDATED = "2026-08-20T12:22:58.663Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870775;a427d770-0c8a-48a1-a18c-18ef53f3365e",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, priključek Pince - priključek Lendava v smeri Lendave, dela, zaprt prehitevalni pas.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.53486,
+  "lng": 16.44668,
+  "start": "2026-08-20T05:25:11.533Z",
+  "end": "2026-08-20T14:00:00Z",
+  "ts": "2026-08-20T12:00:18.573Z"
+ },
  {
   "id": "DARS;870796;9f51d748-70f7-4746-88ed-0fccffe2f298",
   "type": "MaintenanceWorks",
@@ -46,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-20T10:00:50.423Z"
- },
- {
-  "id": "DARS;870873;abdb3e44-7d19-4e69-8dc3-2f978caa39d7",
-  "type": "MaintenanceWorks",
-  "desc": "G1-6, Postojna - Pivka - Ilirska Bistrica, oviran promet, barvanje talnih označb, do 14:00.",
-  "loc": "G1-6, Pivka - Ribnica",
-  "lat": 45.68277,
-  "lng": 14.19737,
-  "start": "2026-08-20T09:57:07.843Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T09:58:34.887Z"
  },
  {
   "id": "DARS;870825;031a7fbd-8df5-4995-88a7-965eafdab91d",
@@ -114,50 +114,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-20T06:12:59.81Z"
  },
  {
-  "id": "DARS;870806;b02890ea-1300-42bf-aa86-d2388d1c98f9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-725, Sebeborci - Fokovci, Sebeborci - Andrejci, izmenično enosmerni promet, popravilo bankin, do 14:00.",
-  "loc": "R3-725, Sebeborci - Trakšarov Breg",
-  "lat": 46.71477,
-  "lng": 16.21767,
-  "start": "2026-08-20T06:05:33.327Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T06:06:32.58Z"
- },
- {
-  "id": "DARS;870804;86631ee8-51ac-43f5-88be-16e31855bc21",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-719, Rogašovci - Kramarovci, izmenično enosmerni promet, pomična zapora, čiščenje jarkov, do 14:00.",
-  "loc": "R3-719, Rogašovci - Kramarovci",
-  "lat": 46.80461,
-  "lng": 16.03167,
-  "start": "2026-08-20T05:52:17.733Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T06:04:39.41Z"
- },
- {
-  "id": "DARS;870797;27c061dc-b9ce-4c28-a1d0-1fa5f62b7fec",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-743, Bogojina - Gančani, izmenično enosmerni promet, popravilo bankin, do 14:00.",
-  "loc": "R3-743, Bogojina - Priključek Gančani",
-  "lat": 46.66769,
-  "lng": 16.27894,
-  "start": "2026-08-20T05:45:49.473Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T05:51:24.853Z"
- },
- {
-  "id": "DARS;870794;fe34817d-4ab8-4460-b99f-8abf711268a2",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Maribor - Gruškovje (Hrvaška), priključek Marjeta - priključek Hajdina v smeri Podlehnika, dela, oviran promet.",
-  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
-  "lat": 46.45795,
-  "lng": 15.7332,
-  "start": "2026-08-20T05:47:16.497Z",
-  "end": "2026-08-20T12:00:16.577Z",
-  "ts": "2026-08-20T05:47:20.727Z"
- },
- {
   "id": "DARS;870783;19c05486-4e3b-4098-9b76-ef5b866b1b1e",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-210, Cerkno - Želin, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
@@ -178,28 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T05:32:23.257Z",
   "end": "2026-08-20T14:00:00Z",
   "ts": "2026-08-20T05:33:58.877Z"
- },
- {
-  "id": "DARS;870779;212f75f9-bf05-4740-a873-eb6050151b97",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-409, Divača - Kozina, pri Rodiku, izmenično enosmerni promet, popravilo bankin, do 14:00.",
-  "loc": "R2-409, Matavun - Kozina",
-  "lat": 45.63737,
-  "lng": 13.96093,
-  "start": "2026-08-20T05:30:04.63Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T05:31:34.817Z"
- },
- {
-  "id": "DARS;870775;a427d770-0c8a-48a1-a18c-18ef53f3365e",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Pince - priključek Lendava v smeri Lendave, dela, zaprt prehitevalni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.53486,
-  "lng": 16.44668,
-  "start": "2026-08-20T05:25:11.533Z",
-  "end": "2026-08-20T12:00:49.937Z",
-  "ts": "2026-08-20T05:25:15.91Z"
  },
  {
   "id": "DARS;870773;f27ff7e8-bb41-4e46-bd49-91b281558847",
@@ -246,28 +180,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-20T05:10:01.957Z"
  },
  {
-  "id": "DARS;870767;dcfb5e15-1c2e-4fbf-af20-f73d2cd8577c",
-  "type": "MaintenanceWorks",
-  "desc": "G2-105, Novo mesto - Metlika, Hrast - Jugorje, oviran promet, občasno promet urejen izmenično enosmerno, košnja, do 14:00.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.71826,
-  "lng": 15.23051,
-  "start": "2026-08-20T05:06:11.097Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T05:07:39.667Z"
- },
- {
-  "id": "DARS;870766;2081c237-3297-4c4c-b67b-1132891db839",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Divača - priključek Kozina v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.66748,
-  "lng": 13.96806,
-  "start": "2026-08-20T05:00:52.667Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T05:00:59.083Z"
- },
- {
   "id": "DARS;870763;0799c723-ca3f-4ddb-b422-0c7cd62093e5",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-676, Sp. Pohanca - Kapele, pri Artičah, izmenično enosmerni promet, popravilo vozišča, do 15:00.",
@@ -277,61 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T05:00:00Z",
   "end": "2026-08-20T13:00:00Z",
   "ts": "2026-08-20T04:55:03.613Z"
- },
- {
-  "id": "DARS;870761;e1a11d09-b33d-4c26-8f6d-95214b7661a1",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-409, Ravbarkomanda - Postojna, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 14:00.",
-  "loc": "R2-409, Ravbarkomanda - Postojna",
-  "lat": 45.79594,
-  "lng": 14.23464,
-  "start": "2026-08-20T04:42:28.137Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T04:47:59.23Z"
- },
- {
-  "id": "DARS;870758;0bebc6d6-b031-44a0-9667-2f1ed28b8d8e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-225, Črnivec - Radmirje, pri Podlomu, izmenično enosmerni promet, popravilo bankin, do 14:00.",
-  "loc": "R1-225, Črnivec - Radmirje",
-  "lat": 46.26235,
-  "lng": 14.70525,
-  "start": "2026-08-20T04:39:39.677Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T04:41:05.92Z"
- },
- {
-  "id": "DARS;870757;fc2679ff-acd2-4c79-9acf-7937f890c199",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-699, Dravograd - Libeliče, pri Tribeju, izmenično enosmerni promet, čiščenje jarkov, do 14:00.",
-  "loc": "R3-699, Dravograd - Libeliče",
-  "lat": 46.60755,
-  "lng": 14.97407,
-  "start": "2026-08-20T04:35:03.207Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T04:37:05.257Z"
- },
- {
-  "id": "DARS;870755;7843c36d-9722-4459-bec2-cede4aefe7d3",
-  "type": "MaintenanceWorks",
-  "desc": "R2-404, Ilirska Bistrica - Knežak - Pivka, Zagorje - Šembije, oviran promet, košnja, do 14:00.",
-  "loc": "NK-404, Ilirska Bistrica - Pivka",
-  "lat": 45.64536,
-  "lng": 14.22529,
-  "start": "2026-08-20T04:25:27.23Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T04:34:10.23Z"
- },
- {
-  "id": "DARS;870750;27b94de8-f200-46a6-8764-8bfa18cf8662",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-915, Ilirska Bistrica - Sviščaki, pri Ilirski Bistrici, izmenično enosmerni promet, popravilo bankin, do 14:00.",
-  "loc": "RT-915, Ilirska Bistrica - Grda Draga",
-  "lat": 45.56988,
-  "lng": 14.25671,
-  "start": "2026-08-20T04:22:01.2Z",
-  "end": "2026-08-20T12:00:00Z",
-  "ts": "2026-08-20T04:24:40.513Z"
  },
  {
   "id": "DARS;870749;f333b572-4f03-487d-a820-ecff1ab7a980",
