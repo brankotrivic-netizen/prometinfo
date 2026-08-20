@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.8.2026. 19:59",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik između čvora Karlovac i naplate Lučko u smjeru Zagreba povećana je gustoća prometa A3 Bregana-Lipovac između čvorova Buzin i Zagreb istok u smjeru Lipovca vozi se usporeno DC1 Zagreb-Karlovac-Gračac-Knin zbog prometne nesreće u mjestu Rudanovac vozi se naizmjenično jednim kolničkim trakom Jadranska magistrala (DC8) zbog policijsko…"
+  "updated": "20.8.2026. 20:23",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: na autocesti A1 između čvora Karlovac i naplate Lučko u smjeru Zagreba povećana je gustoća prometa na Jadranskoj magistrali (DC8) zbog policijskog postupanja kod Slanog se vozi jednim trakom naizmjenično zbog putničkog vozila u kvaru na državnoj cesti DC114 u mjestu Sutivan vozi se uz privremenu regulaciju prometa - promet se odvija jednom suženom prometno…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "20.8.2026. 19:59",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe: trajektna linija 532 Šibenik-Zlarin-Obonjan-Kaprije-Žirje i obatno sa polaskom sutra u 08:30 sati iz luke Šibenik je otkazano katamaran Jadrolinije Jelena na liniji 51BB Zadar (Gaženica)-Ancona u petak, 21. kolovoza, u 08:00 sati neće isploviti zbog nepovoljnih vremenskih uvjeta; na trajektnoj liniji Jadrolinije Orebić-Dominče u petak, 21. kolovoza, trajekt će dodatno isploviti iz Dominča za Orebić u 01:50, odnosno iz Orebića za Dominče u 02:15 sati. sutra 21.8 u 16:00 sati katamaran na liniji Zadar-Pula neće isploviti iz luke Zadar za Pulu Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne…"
+  "updated": "20.8.2026. 20:37",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u redu plovidbe za 21. kolovoza: katamaranska linija 659 Split - Bol - Hvar - Vis s polaskom iz luke Split u 07:30 sati te povratkom iz luke Vis u 10:10 sati - u prekidu trajektna linija 532 Šibenik-Zlarin-Obonjan-Kaprije-Žirje i obatno sa polaskom sutra u 08:30 sati iz luke Šibenik je otkazano katamaran Jadrolinije Jelena na liniji 51BB Zadar (Gaženica)-Ancona u petak, 21. kolovoza, u 08:00 sati neće isploviti zbog nepovoljnih vremenskih uvjeta; na trajektnoj liniji Jadrolinije Orebić-Dominče u petak, 21. kolovoza, trajekt će dodatno isploviti iz Dominča za Orebić u 01:50, odnosno iz Orebića za Dominče u 02:15 sati. sutra 21.8 u 16:00 sati katamar…"
  },
  {
   "title": "Željeznički promet",
