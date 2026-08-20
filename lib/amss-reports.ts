@@ -202,10 +202,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 19. 8. do 8. 9. 2026. godine, u periodu od 7 do 16 časova, izvodiće se radovi na presvlačenju kolovoznog zastora, na državnom putu I B reda broj 13, deonica Beograd (štamparija) - petlja Kovilovo, u smeru ka Kovilovu. *Danas, 18.8.2026. godine, nakon 15 časova biće postavljena privremena saobraćajna signalizacija za radove u smeru ka Kovilovu. Tokom izvođenja radova, saobraćaj će se odvijati krajnjom levom saobraćajnom trakom. Izvor: Putevi Srbije"
  },
  {
-  "title": "Ečka-Čenta, radovi",
-  "text": "Dana 17. 8. i 18. 8. 2026. u periodu od 7 do 16 časova, izvodiće se radovi na mašinskom struganju grebena kolotraga, na državnom putu I B reda broj 13, na deonici Ečka Čenta. Tokom izvođenja radova saobraćaj će se odvijati naizmeničnim propuštanjem. Izvor: Putevi Srbije"
- },
- {
   "title": "Salaš Noćajski-Noćaj, radovi",
   "text": "Od 17. 8. do 17. 10. 2026. godine, u toku svetlog dela dana, na snazi će biti izmenjen režim saobraćaja, zbog radova na rehabilitaciji kolovoza, Salaš Noćajski - Noćaj. U toku svetlog dela dana saobraćaj će se odvijati naizmeničnim propuštanjem vozila, a van tog perioda suženim kolovozom uz ograničenje brzine. Izvor Putevi Srbije"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Draževac, Stepojevac, radovi",
   "text": "Od 27. 7. do 1. 11. 2026. zbog radova na održavanju obustavlja se saobraćaj na objektu mosta preko potoka Vrbovica, na državnom putu II A reda broj 148, na deonici Draževac Stepojevac. Saobraćaj će biti preusmeren na izgrađenu privremenu devijaciju. Na devijaciji će se saobraćaj odvijati naizmeničnim propuštanjem vozila uz pomoć semafora."
+ },
+ {
+  "title": "mesto Ponikve - Golubac, radovi",
+  "text": "Do 1. 9. 2026. godine biće izmenjen režim saobraćaja od isključenja za naseljeno mesto Ponikve do ulaza u Golubac u sklopu izgradnje državnog puta I M reda broj 7 gde se vozila kreću dvosmerno jednom kolovoznom trakom.Za vreme radova na snazi je obustava saobraćaja na delu državnog puta I B reda broj 34. Tokom trajanja obustave predviđena je trasa obilaska za korisnike koji se kreću: - iz Radoševca ka Požarevcu kroz naseljeno mesto Usije; - iz Radoševca i Usija ka Golupcu preko naseljenih mesta …"
  }
 ];
