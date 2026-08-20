@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-20T07:03:54.226Z";
+export const PROMET_SI_UPDATED = "2026-08-20T07:54:01.243Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;870830;0ba2e266-6f08-4753-b744-15f65a8ce610",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Logatec - priključek Unec v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.90738,
+  "lng": 14.25736,
+  "start": "2026-08-20T07:34:34.077Z",
+  "end": "2026-08-20T12:00:00Z",
+  "ts": "2026-08-20T07:35:26.363Z"
+ },
  {
   "id": "DARS;870825;031a7fbd-8df5-4995-88a7-965eafdab91d",
   "type": "MaintenanceWorks",
@@ -134,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-20T06:01:43.793Z",
   "end": "2026-08-20T11:00:59.887Z",
   "ts": "2026-08-20T06:02:04.41Z"
- },
- {
-  "id": "DARS;870799;6081b553-a39c-4182-a5d9-7263b94a775c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Zadobrova - razcep Zadobrova iz smeri Zaloške proti Sneberjam, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.06104,
-  "lng": 14.57456,
-  "start": "2026-08-20T05:58:02.183Z",
-  "end": "2026-08-20T08:00:34.99Z",
-  "ts": "2026-08-20T05:58:03.737Z"
  },
  {
   "id": "DARS;870797;27c061dc-b9ce-4c28-a1d0-1fa5f62b7fec",
