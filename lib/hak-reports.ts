@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "21.8.2026. 22:38",
-  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: katamaranske linije Rijeka-Cres-Unije-Susak-Ilovik-Mali Lošinj, Rijeka-Rab-Novalja, Zadar (Gaženica)-Ancona, Zadar-Pula , Split - Bol - Split trajektne linije Zadar/Gaženica – Ist/Kosirača – Olib – Silba – Premuda – Mali Lošinj . Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Š…"
+  "updated": "21.8.2026. 22:40",
+  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: katamaranske linije Jadrolinije Mali Lošinj-Cres-Rijeka i Novalja-Rab-Rijeka Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, U…"
  },
  {
   "title": "Željeznički promet",
