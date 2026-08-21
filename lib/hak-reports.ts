@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.8.2026. 10:29",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik prometna nesreća između čvora Posedarje i čvora Rovanjska (na 244+000 km) u smjeru Zagreba, vozi se po dvije prometne trake uz ograničenje brzine od 60 km/h pojačan je promet između čvora Zadar istok i tunela Čelinka u smjeru Zagreba A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Buzin i Sveta Nedelja u smjeru Bregane Istarski ipsilon pojačan je promet prema graničnim prijelazima Kaštel i Plovanija, vozi se usporeno u…"
+  "updated": "21.8.2026. 11:10",
+  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km prometna nesreća između čvora Posedarje i čvora Rovanjska (na 244+000 km) u smjeru Zagreba, vozi se po dvije prometne trake uz ograničenje brzine od 60 km/h pojačan je promet između čvora Zadar istok i tunela Čelinka u smjeru Zagreba A3 Bregana-Lipovac prema naplatnim postajama Lučko iz smjera Buzina kolona je oko 1 km povremeno su zastoji u zoni radova između čvo…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "21.8.2026. 10:00",
-  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: katamaranske linije Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun, Zadar (Gaženica)-Ancona, Zadar-Pula i Split - Bol - Hvar - Vis trajektne linije Šibenik-Zlarin-Obonjan-Kaprije-Žirje i Zadar/Gaženica – Ist/Kosirača – Olib – Silba – Premuda – Mali Lošinj . Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu…"
+  "updated": "21.8.2026. 10:50",
+  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: katamaranske linije Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun, Zadar (Gaženica)-Ancona, Zadar-Pula trajektne linije Šibenik-Zlarin-Obonjan-Kaprije-Žirje i Zadar/Gaženica – Ist/Kosirača – Olib – Silba – Premuda – Mali Lošinj . Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, …"
  },
  {
   "title": "Željeznički promet",

@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T08:33:41.433Z";
+export const PROMET_SI_UPDATED = "2026-08-21T09:18:35.133Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871073;8212a72d-f563-469b-830d-cb9358590d25",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, razcep Dragučova - priključek Pernica v smeri Murske Sobote, dela, oviran promet.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.58541,
+  "lng": 15.72137,
+  "start": "2026-08-21T09:06:47.247Z",
+  "end": "2026-08-21T12:00:52.387Z",
+  "ts": "2026-08-21T09:06:49.753Z"
+ },
  {
   "id": "DARS;871125;6b04ec28-902b-4726-bfef-a4c777be032a",
   "type": "MaintenanceWorks",

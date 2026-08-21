@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-gradiska",
-  "name": "Gornji Varoš (Gradiška (novi most))",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "21.8.2026. 6:34:49",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-21T06:34:49+02:00",
-  "izlazTsISO": "",
-  "ts": "21.8.2026. 6:34:49",
-  "tsISO": "2026-08-21T06:34:49+02:00"
- },
- {
   "id": "ba-bijaca",
   "name": "Nova Sela",
   "ulazMin": 30,
@@ -81,6 +61,26 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "L: 0 km T: 21.8.2026. 8:16:54",
   "tsISO": "2026-08-21T08:16:54+02:00"
+ },
+ {
+  "id": "",
+  "name": "Čepikuće (Trebinja)",
+  "ulazMin": 30,
+  "izlazMin": null,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "21.8.2026. 10:49:35",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-21T10:49:35+02:00",
+  "izlazTsISO": "",
+  "ts": "21.8.2026. 10:49:35",
+  "tsISO": "2026-08-21T10:49:35+02:00"
  },
  {
   "id": "",
