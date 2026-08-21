@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T09:57:33.808Z";
+export const PROMET_SI_UPDATED = "2026-08-21T10:23:24.617Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;871144;4c3b10ad-f133-463a-8910-e8744c92b45c",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T09:53:16.523Z",
   "end": "2026-08-21T15:00:00Z",
   "ts": "2026-08-21T09:53:38.737Z"
- },
- {
-  "id": "DARS;871143;5857023f-86c6-49a2-849d-75ef23313547",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, razcep Koseze - priključek Ljubljana Tomačevo v smeri Zadobrove, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07481,
-  "lng": 14.46708,
-  "start": "2026-08-21T09:39:53.967Z",
-  "end": "2026-08-21T15:00:00Z",
-  "ts": "2026-08-21T09:40:17.787Z"
  },
  {
   "id": "DARS;871141;2f2139f3-899f-44f0-8fc3-560c19c56c63",
@@ -68,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T09:06:47.247Z",
   "end": "2026-08-21T12:00:52.387Z",
   "ts": "2026-08-21T09:06:49.753Z"
- },
- {
-  "id": "DARS;871125;6b04ec28-902b-4726-bfef-a4c777be032a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Kozarje iz smeri Brezovice proti Brdu, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.03954,
-  "lng": 14.44963,
-  "start": "2026-08-21T08:33:06.817Z",
-  "end": "2026-08-21T14:00:00Z",
-  "ts": "2026-08-21T08:33:10.58Z"
- },
- {
-  "id": "DARS;871106;0051bcd1-3e56-4614-8b85-019b9e734c46",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, priključek Selo - priključek Vogrsko v smeri Vrtojbe, Italije, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.89755,
-  "lng": 13.78241,
-  "start": "2026-08-21T07:45:41.073Z",
-  "end": "2026-08-21T10:00:47.813Z",
-  "ts": "2026-08-21T07:45:49.45Z"
  },
  {
   "id": "DARS;871096;64308538-c6fe-4b61-ad08-8347ad7abf23",
@@ -156,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-19T06:48:11.563Z",
   "end": "2026-08-24T21:59:00Z",
   "ts": "2026-08-21T06:21:01.917Z"
- },
- {
-  "id": "DARS;871088;884813f2-6de3-437c-9c11-ece452b030a1",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Hoče - Pesnica, pokrit vkop Maribor - priključek Maribor center v smeri Šentilja, Avstrije, dela, zaprt vozni pas.",
-  "loc": "R2-430, Hoče - Pesnica",
-  "lat": 46.5511,
-  "lng": 15.6613,
-  "start": "2026-08-21T06:12:24.617Z",
-  "end": "2026-08-21T11:00:21.227Z",
-  "ts": "2026-08-21T06:12:33.907Z"
  },
  {
   "id": "DARS;871087;e1ff7834-2459-4221-a3ed-16a19173acb2",
@@ -266,17 +222,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:38:14.02Z",
   "end": "2026-10-03T21:59:00Z",
   "ts": "2026-08-21T05:38:55.207Z"
- },
- {
-  "id": "DARS;871071;957e1f00-1a8d-4e2e-a3d5-224f8ff52d79",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Bič - priključek Trebnje zahod v smeri Novega mesta, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.92361,
-  "lng": 14.88781,
-  "start": "2026-08-21T05:35:29.157Z",
-  "end": "2026-08-21T12:00:00Z",
-  "ts": "2026-08-21T05:36:58.9Z"
  },
  {
   "id": "DARS;871070;ebceac51-2d62-4bf6-bb7e-e8cd824670e9",

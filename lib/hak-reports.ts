@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.8.2026. 11:56",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik u smjeru Zagreba: vozi se u kolonama uz zastoje između čvora Zadar istok i tunela Sveti Rok te između čvorova Ogulin i Novigrad pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km prometna nesreća između čvorova Bosiljevo 2 i Bosiljevo 1 (na 63. km) u smjeru Zagreba - kolona je oko 3 km prometna nesreća između čvora Posedarje i čvora Rovanjska (na 244+000 km) u smjeru Zagreba, vozi se po dvije prometne trake uz ogr…"
+  "updated": "21.8.2026. 12:14",
+  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik u smjeru Zagreba: vozi se u kolonama uz zastoje između čvora Zadar istok i tunela Sveti Rok te između čvorova Ogulin i Novigrad pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km nakon prometne nesreće, na čvoru Bosiljevo II u smjeru Zagreba, kolona je oko 7 km prometna nesreća između čvora Posedarje i čvora Rovanjska (na 244+000 km) u smjeru Zagreba, vozi se po dvije prometne trake uz ograničenje brzine od 60 km/…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,7 +13,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "21.8.2026. 11:47",
+  "updated": "21.8.2026. 12:21",
   "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: katamaranske linije Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun, Rijeka-Cres-Unije-Susak-Ilovik-Mali Lošinj, Rijeka-Rab-Novalja, Zadar (Gaženica)-Ancona, Zadar-Pula , Split - Bol - Split trajektne linije Zadar/Gaženica – Ist/Kosirača – Olib – Silba – Premuda – Mali Lošinj . Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba…"
  },
  {
