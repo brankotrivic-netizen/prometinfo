@@ -43,6 +43,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-21T07:31:23+02:00"
  },
  {
+  "id": "ba-izacic",
+  "name": "Ličko Petrovo Selo (Izačić)",
+  "ulazMin": null,
+  "izlazMin": 60,
+  "ulazTxt": "-",
+  "izlazTxt": "1 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "21.8.2026. 11:56:05",
+  "ulazTsISO": "",
+  "izlazTsISO": "2026-08-21T11:56:05+02:00",
+  "ts": "21.8.2026. 11:56:05",
+  "tsISO": "2026-08-21T11:56:05+02:00"
+ },
+ {
   "id": "ba-doljani",
   "name": "Metković (Doljani)",
   "ulazMin": 30,
