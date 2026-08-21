@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T04:27:10.808Z";
+export const PROMET_SI_UPDATED = "2026-08-21T05:02:55.382Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871056;c3bd5215-dc6b-4340-9e99-81262b1d8bbb",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-699, Dravograd - Libeliče, pri Tribeju, izmenično enosmerni promet, čiščenje jarkov, do 14:00.",
+  "loc": "R3-699, Dravograd - Libeliče",
+  "lat": 46.60712,
+  "lng": 14.97428,
+  "start": "2026-08-21T04:40:08.637Z",
+  "end": "2026-08-21T12:00:00Z",
+  "ts": "2026-08-21T04:41:12.823Z"
+ },
  {
   "id": "DARS;871054;37917ef6-8e5f-4c55-ae85-e3943b39a668",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -92,6 +103,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-21T03:57:39.737Z"
  },
  {
+  "id": "DARS;871046;43c1675d-ae12-40d2-9af5-dc68fc32f3bd",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-230, Gornja Radgona - Radenci, v Radencih, Radgonska cesta, izmenično enosmerni promet, zalivanje reg in razpok, do 15:00.",
+  "loc": "R1-230, Gornja Radgona - Radenci",
+  "lat": 46.64557,
+  "lng": 16.03311,
+  "start": "2026-08-21T05:00:00Z",
+  "end": "2026-08-21T13:00:00Z",
+  "ts": "2026-08-21T03:56:01.337Z"
+ },
+ {
   "id": "DARS;871045;bab16003-bf20-48c2-9026-0c0897bd4562",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-745, Dolge Njive - Spodnji Duplek, v Spodnjem Dupleku, pri osnovni šoli, izmenično enosmerni promet, vzdrževalna dela, do 19:00.",
@@ -112,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T04:00:00Z",
   "end": "2026-08-21T12:00:00Z",
   "ts": "2026-08-21T03:46:25.38Z"
- },
- {
-  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
-  "type": "MaintenanceWorks",
-  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
-  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
-  "lat": 46.20334,
-  "lng": 15.25907,
-  "start": "2026-07-29T13:00:00Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-20T13:00:07.647Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",

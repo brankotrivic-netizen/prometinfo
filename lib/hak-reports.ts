@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.8.2026. 06:17",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj vozi se samo voznim trakom: od 17.+500 do 13.+750 km u smjeru Maclja (dionica Krapina – Đurmanec) i od 6.+700 do 8. +200 km u smjeru Zagreba (dionica Trakošćan – Đurmanec) A3 Bregana-Lipovac do 31. kolovoza zbog radova zatvorena su odmorišta Kraljeva Velika sjever i…"
+  "updated": "21.8.2026. 06:59",
+  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac povremeno su zastoji u zoni radova između čvorova Sveta Nedelja i Lučko u oba smjera A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok u smjeru Zagreba vozi se usporeno DC1 Gračac-Knin zastoji su u zoni radova kraj Otrića DC8 Jadranska magistrala zastoji su na prilazima Splitu AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) …"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "21.8.2026. 06:17",
-  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: katamaranske linije Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun i Split - Bol - Hvar - Vis trajektne linije Šibenik-Zlarin-Obonjan-Kaprije-Žirje i Zadar/Gaženica – Ist/Kosirača – Olib – Silba – Premuda – Mali Lošinj . Izmjene u redu plovidbe za 21. kolovoza: katamaranska linija 659 Split - Bol - Hvar - Vis s polaskom iz luke Split u 07:30 sati te povratkom iz luke Vis u 10:10 sati - u prekidu trajektna linija 532 Šibenik-Zlarin-Obonjan-Kaprije-Žirje i obatno sa polaskom u 08:30 sati iz luke Šibenik je otkazano katamaran Jadrolinije Jelena na liniji 51BB Zadar (Gaženica)-Ancona u 08:00 sati neće isploviti zbog nepovoljnih vremenskih uvjeta; …"
+  "updated": "21.8.2026. 06:45",
+  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: katamaranske linije Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun, Zadar-Pula, Zadar (Gaženica)-Ancona i Split - Bol - Hvar - Vis trajektne linije Šibenik-Zlarin-Obonjan-Kaprije-Žirje i Zadar/Gaženica – Ist/Kosirača – Olib – Silba – Premuda – Mali Lošinj . Izmjene u redu plovidbe za 21. kolovoza: katamaran Jadrolinije Jelena na liniji 51BB Zadar (Gaženica)-Ancona u 08:00 sati neće isploviti zbog nepovoljnih vremenskih uvjeta. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema …"
  },
  {
   "title": "Željeznički promet",
