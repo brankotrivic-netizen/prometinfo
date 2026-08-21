@@ -15,11 +15,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "21.8.2026. 6:34:49",
+  "ulazTs": "21.08.2026 06:34:49",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-21T06:34:49+02:00",
   "izlazTsISO": "",
-  "ts": "21.8.2026. 6:34:49",
+  "ts": "21.08.2026 06:34:49",
   "tsISO": "2026-08-21T06:34:49+02:00"
  },
  {
@@ -35,11 +35,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "21.8.2026. 8:03:00",
-  "izlazTs": "21.8.2026. 8:03:00",
+  "ulazTs": "21.08.2026 08:03:00",
+  "izlazTs": "21.08.2026 08:03:00",
   "ulazTsISO": "2026-08-21T08:03:00+02:00",
   "izlazTsISO": "2026-08-21T08:03:00+02:00",
-  "ts": "21.8.2026. 8:03:00",
+  "ts": "21.08.2026 08:03:00",
   "tsISO": "2026-08-21T08:03:00+02:00"
  },
  {
@@ -55,11 +55,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "do 30 min.",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "21.8.2026. 7:31:23",
+  "ulazTs": "21.08.2026 07:31:23",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-21T07:31:23+02:00",
   "izlazTsISO": "",
-  "ts": "21.8.2026. 7:31:23",
+  "ts": "21.08.2026 07:31:23",
   "tsISO": "2026-08-21T07:31:23+02:00"
  },
  {
@@ -75,11 +75,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "L: 0 km T: 21.8.2026. 8:16:54",
+  "ulazTs": "L: 0 km T: 21.08.2026 08:16:54",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-21T08:16:54+02:00",
   "izlazTsISO": "",
-  "ts": "L: 0 km T: 21.8.2026. 8:16:54",
+  "ts": "L: 0 km T: 21.08.2026 08:16:54",
   "tsISO": "2026-08-21T08:16:54+02:00"
  },
  {
@@ -95,11 +95,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ulazTs": "21.8.2026. 5:32:01",
+  "ulazTs": "21.08.2026 05:32:01",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-21T05:32:01+02:00",
   "izlazTsISO": "",
-  "ts": "21.8.2026. 5:32:01",
+  "ts": "21.08.2026 05:32:01",
   "tsISO": "2026-08-21T05:32:01+02:00"
  },
  {
