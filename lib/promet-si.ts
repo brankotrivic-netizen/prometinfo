@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T07:57:31.941Z";
+export const PROMET_SI_UPDATED = "2026-08-21T08:33:41.433Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;871110;22712461-d7e3-4ead-a9f3-fa4779a0d373",
+  "id": "DARS;871125;6b04ec28-902b-4726-bfef-a4c777be032a",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Razdrto - priključek Senožeče v smeri Kopra, dela, oviran promet.",
+  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Kozarje iz smeri Brezovice proti Brdu, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.03954,
+  "lng": 14.44963,
+  "start": "2026-08-21T08:33:06.817Z",
+  "end": "2026-08-21T14:00:00Z",
+  "ts": "2026-08-21T08:33:10.58Z"
+ },
+ {
+  "id": "DARS;871072;e8d9699c-e47a-4c88-852e-52978bab34f2",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Razdrto - razcep Nanos v smeri Kopra, dela, oviran promet.",
   "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.73703,
-  "lng": 14.02513,
-  "start": "2026-08-21T07:55:53.873Z",
+  "lat": 45.75908,
+  "lng": 14.08159,
+  "start": "2026-08-21T05:37:33.643Z",
   "end": "2026-08-21T13:00:00Z",
-  "ts": "2026-08-21T07:56:23.357Z"
+  "ts": "2026-08-21T07:57:47.13Z"
  },
  {
   "id": "DARS;871106;0051bcd1-3e56-4614-8b85-019b9e734c46",
@@ -211,17 +222,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:38:14.02Z",
   "end": "2026-10-03T21:59:00Z",
   "ts": "2026-08-21T05:38:55.207Z"
- },
- {
-  "id": "DARS;871072;e8d9699c-e47a-4c88-852e-52978bab34f2",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Razdrto - razcep Nanos v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.75908,
-  "lng": 14.08159,
-  "start": "2026-08-21T05:37:33.643Z",
-  "end": "2026-08-21T08:00:00Z",
-  "ts": "2026-08-21T05:37:37.457Z"
  },
  {
   "id": "DARS;871071;957e1f00-1a8d-4e2e-a3d5-224f8ff52d79",
