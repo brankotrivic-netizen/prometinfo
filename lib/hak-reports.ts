@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.8.2026. 12:53",
+  "updated": "21.8.2026. 12:55",
   "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik u smjeru Zagreba: vozi se u kolonama uz zastoje između čvora Zadar istok i tunela Sveti Rok te između čvorova Ogulin i Novigrad pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km nakon prometne nesreće, na čvoru Bosiljevo II u smjeru Zagreba, kolona je oko 3 km prometna nesreća između čvora Posedarje i čvora Rovanjska (na 244+000 km) u smjeru Zagreba, vozi se po dvije prometne trake uz ograničenje brzine od 60 km/…"
  },
  {

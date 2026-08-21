@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T10:54:48.795Z";
+export const PROMET_SI_UPDATED = "2026-08-21T11:15:46.605Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;871144;4c3b10ad-f133-463a-8910-e8744c92b45c",
@@ -35,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T09:06:47.247Z",
   "end": "2026-08-21T12:00:52.387Z",
   "ts": "2026-08-21T09:06:49.753Z"
- },
- {
-  "id": "DARS;871096;64308538-c6fe-4b61-ad08-8347ad7abf23",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-904, Ukanc - Ribčev Laz, pri Ribčevem Lazu, izmenično enosmerni promet, vzdrževalna dela, do 13:00.",
-  "loc": "RT-904, Jezero - Savica",
-  "lat": 46.27619,
-  "lng": 13.88299,
-  "start": "2026-08-21T06:42:47.667Z",
-  "end": "2026-08-21T11:00:00Z",
-  "ts": "2026-08-21T06:44:32.18Z"
  },
  {
   "id": "DARS;870113;2b42dc48-93f7-41a9-9d7d-591472fb9b97",
@@ -169,17 +158,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-21T05:41:36.44Z"
  },
  {
-  "id": "DARS;871076;abc85d0e-f618-47b9-85a0-4076cae44ca6",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, prehod Obrežje - priključek Drnovo v smeri Novega mesta, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.84756,
-  "lng": 15.6918,
-  "start": "2026-08-21T05:39:56.697Z",
-  "end": "2026-08-21T12:00:47.327Z",
-  "ts": "2026-08-21T05:40:03.983Z"
- },
- {
   "id": "DARS;871075;2112abd5-2978-480b-a91a-3c9b81a3cd3b",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-630, Obrov - Golac, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
@@ -233,28 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:17:49.503Z",
   "end": "2026-08-21T15:00:00Z",
   "ts": "2026-08-21T05:18:29.833Z"
- },
- {
-  "id": "DARS;871066;2e0685d0-8861-457d-9fcc-fa259e33fd1c",
-  "type": "MaintenanceWorks",
-  "desc": "A3, Fernetiči - razcep Gabrk, priključek Sežana zahod - uvoz Sežana zahod v smeri Fernetičev, Italije, dela, oviran promet.",
-  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
-  "lat": 45.70978,
-  "lng": 13.85389,
-  "start": "2026-08-21T05:17:17.22Z",
-  "end": "2026-08-21T12:00:00Z",
-  "ts": "2026-08-21T05:17:52.16Z"
- },
- {
-  "id": "DARS;871063;f9751c46-2e88-4ede-a17c-896f31a84095",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Senožeče - priključek Divača v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.72147,
-  "lng": 14.0087,
-  "start": "2026-08-21T05:15:16.673Z",
-  "end": "2026-08-21T12:00:00Z",
-  "ts": "2026-08-21T05:15:22.177Z"
  },
  {
   "id": "DARS;871061;226161ed-0ee7-4fd3-aa8d-d08719f81ba6",
