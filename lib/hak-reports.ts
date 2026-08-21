@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.8.2026. 21:33",
-  "text": "Vožnja u suprotnom smjeru na autocesti A4 između čvora Čakovec i čvora Ludbreg na kolniku u smjeru Goričana. Vozi se uz ograničenje brzine od 40 km/h. Molimo korisnike za oprez. Kolnici su mjestimice mokri i skliski. Zbog ponegdje obilnijih pljuskova moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Pojačan je promet na cestama u smjeru unutrašnjosti, osobito na autocestama. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik kolone na naplatama Lučko i Demerje u smjeru Zagreba duge su …"
+  "updated": "21.8.2026. 21:45",
+  "text": "Vožnja u suprotnom smjeru na autocesti A4 između čvora Goričan i čvora Čakovec na kolniku u smjeru Goričana. Vozi se uz ograničenje brzine od 40 km/h. Molimo korisnike za oprez Kolnici su mjestimice mokri i skliski. Zbog ponegdje obilnijih pljuskova moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Pojačan je promet na cestama u smjeru unutrašnjosti, osobito na autocestama. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik kolone na naplatama Lučko i Demerje u smjeru Zagreba duge su o…"
  },
  {
   "title": "Granični prijelazi",
