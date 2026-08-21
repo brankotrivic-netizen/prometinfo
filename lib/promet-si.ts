@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T07:15:07.159Z";
+export const PROMET_SI_UPDATED = "2026-08-21T07:57:31.941Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871110;22712461-d7e3-4ead-a9f3-fa4779a0d373",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Razdrto - priključek Senožeče v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.73703,
+  "lng": 14.02513,
+  "start": "2026-08-21T07:55:53.873Z",
+  "end": "2026-08-21T13:00:00Z",
+  "ts": "2026-08-21T07:56:23.357Z"
+ },
+ {
+  "id": "DARS;871106;0051bcd1-3e56-4614-8b85-019b9e734c46",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Razdrto - Nova Gorica, priključek Selo - priključek Vogrsko v smeri Vrtojbe, Italije, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "H4, Razdrto - Nova Gorica",
+  "lat": 45.89755,
+  "lng": 13.78241,
+  "start": "2026-08-21T07:45:41.073Z",
+  "end": "2026-08-21T10:00:47.813Z",
+  "ts": "2026-08-21T07:45:49.45Z"
+ },
  {
   "id": "DARS;871100;85ae1708-282c-4344-af7f-22174fb83da6",
   "type": "MaintenanceWorks",
@@ -15,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-21T07:13:37.377Z"
  },
  {
-  "id": "DARS;871086;8a8f3249-7aea-4afd-bcab-9f1622b4b4ef",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Nova Gorica - Razdrto, počivališče Šempas - priključek Selo v smeri Razdrtega, dela, pomična zapora voznega pasu.",
-  "loc": "H4, Nova Gorica - Razdrto",
-  "lat": 45.90224,
-  "lng": 13.75829,
-  "start": "2026-08-21T05:59:19.217Z",
-  "end": "2026-08-21T08:00:00Z",
-  "ts": "2026-08-21T06:58:03.407Z"
- },
- {
   "id": "DARS;871096;64308538-c6fe-4b61-ad08-8347ad7abf23",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-904, Ukanc - Ribčev Laz, pri Ribčevem Lazu, izmenično enosmerni promet, vzdrževalna dela, do 13:00.",
@@ -35,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T06:42:47.667Z",
   "end": "2026-08-21T11:00:00Z",
   "ts": "2026-08-21T06:44:32.18Z"
- },
- {
-  "id": "DARS;871095;66c62291-1a5c-41b0-8f01-2d5506af7992",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, razcep Koseze - uvoz Ljubljana Nove Jarše v smeri Zadobrove, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07276,
-  "lng": 14.46287,
-  "start": "2026-08-21T06:42:51.06Z",
-  "end": "2026-08-21T09:00:45.723Z",
-  "ts": "2026-08-21T06:42:54.36Z"
  },
  {
   "id": "DARS;870113;2b42dc48-93f7-41a9-9d7d-591472fb9b97",
@@ -180,17 +180,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-21T05:41:36.44Z"
  },
  {
-  "id": "DARS;871077;48644a03-a4a9-47ac-97b1-7317a7d3b536",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, krožišče Tomačevo - razcep Koseze v smeri Kosez, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.08117,
-  "lng": 14.52776,
-  "start": "2026-08-21T05:41:04.123Z",
-  "end": "2026-08-21T11:00:00Z",
-  "ts": "2026-08-21T05:41:28.293Z"
- },
- {
   "id": "DARS;871076;abc85d0e-f618-47b9-85a0-4076cae44ca6",
   "type": "MaintenanceWorks",
   "desc": "A2, Obrežje - Ljubljana, prehod Obrežje - priključek Drnovo v smeri Novega mesta, dela, oviran promet.",
@@ -299,17 +288,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:17:17.22Z",
   "end": "2026-08-21T12:00:00Z",
   "ts": "2026-08-21T05:17:52.16Z"
- },
- {
-  "id": "DARS;871065;40e97db9-46e4-435f-b5b9-fcddb56e4583",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Divača v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.66522,
-  "lng": 13.96701,
-  "start": "2026-08-21T05:15:47.41Z",
-  "end": "2026-08-21T12:00:00Z",
-  "ts": "2026-08-21T05:16:55.62Z"
  },
  {
   "id": "DARS;871063;f9751c46-2e88-4ede-a17c-896f31a84095",
