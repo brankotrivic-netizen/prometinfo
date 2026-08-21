@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T10:23:24.617Z";
+export const PROMET_SI_UPDATED = "2026-08-21T10:54:48.795Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;871144;4c3b10ad-f133-463a-8910-e8744c92b45c",
@@ -24,28 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T09:34:19.24Z",
   "end": "2026-08-21T12:00:28.397Z",
   "ts": "2026-08-21T09:34:21.313Z"
- },
- {
-  "id": "DARS;871139;27871bbb-b5fb-47ca-bdac-46203d5fe816",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Žalec, Arja vas - priključek Vransko v smeri Ljubljane, dela, oviran promet, strojno pometanje.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26831,
-  "lng": 15.19084,
-  "start": "2026-08-21T09:29:58.087Z",
-  "end": "2026-08-21T12:00:00Z",
-  "ts": "2026-08-21T09:30:40.047Z"
- },
- {
-  "id": "DARS;871137;9a5bf71d-11e5-4ed5-9480-a071cdfc8324",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Nove Jarše - razcep Koseze v smeri Kosez, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.06763,
-  "lng": 14.568,
-  "start": "2026-08-21T09:26:57.633Z",
-  "end": "2026-08-21T12:00:16.397Z",
-  "ts": "2026-08-21T09:27:02.02Z"
  },
  {
   "id": "DARS;871073;8212a72d-f563-469b-830d-cb9358590d25",

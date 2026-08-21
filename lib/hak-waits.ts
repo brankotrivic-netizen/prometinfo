@@ -63,26 +63,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-21T11:56:05+02:00"
  },
  {
-  "id": "ba-doljani",
-  "name": "Metković (Doljani)",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "L: 0 km T: 21.8.2026. 8:16:54",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-21T08:16:54+02:00",
-  "izlazTsISO": "",
-  "ts": "L: 0 km T: 21.8.2026. 8:16:54",
-  "tsISO": "2026-08-21T08:16:54+02:00"
- },
- {
   "id": "",
   "name": "Čepikuće (Trebinja)",
   "ulazMin": 30,
