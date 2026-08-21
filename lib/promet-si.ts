@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T16:57:53.125Z";
+export const PROMET_SI_UPDATED = "2026-08-21T17:24:08.509Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871307;d5215445-2b9a-462d-bab6-820e9d3c8595",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Žalec, Arja vas - uvoz Vransko v smeri Ljubljane, dela, pomična zapora počasnega pasu, košnja.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.26855,
+  "lng": 15.18756,
+  "start": "2026-08-21T17:19:25.71Z",
+  "end": "2026-08-22T00:00:00Z",
+  "ts": "2026-08-21T17:20:11.947Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -68,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:38:14.02Z",
   "end": "2026-10-03T21:59:00Z",
   "ts": "2026-08-21T05:38:55.207Z"
- },
- {
-  "id": "DARS;871045;bab16003-bf20-48c2-9026-0c0897bd4562",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-745, Dolge Njive - Spodnji Duplek, v Spodnjem Dupleku, pri osnovni šoli, izmenično enosmerni promet, vzdrževalna dela, do 19:00.",
-  "loc": "R3-745, Dolge Njive - Spodnji Duplek",
-  "lat": 46.50499,
-  "lng": 15.75694,
-  "start": "2026-08-21T03:51:02.473Z",
-  "end": "2026-08-21T17:00:00Z",
-  "ts": "2026-08-21T03:52:34.84Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
