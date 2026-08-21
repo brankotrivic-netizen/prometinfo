@@ -3,6 +3,26 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
+  "id": "ba-bijaca",
+  "name": "Nova Sela",
+  "ulazMin": null,
+  "izlazMin": 30,
+  "ulazTxt": "-",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "21.08.2026 14:14:00",
+  "ulazTsISO": "",
+  "izlazTsISO": "2026-08-21T14:14:00+02:00",
+  "ts": "21.08.2026 14:14:00",
+  "tsISO": "2026-08-21T14:14:00+02:00"
+ },
+ {
   "id": "ba-brod",
   "name": "Slavonski Brod (Bosanski Brod)",
   "ulazMin": 30,
@@ -75,12 +95,12 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "severe",
   "waitMinutes": 300,
-  "ulazTs": "L: 3 km T: 21.08.2026 10:29:28",
+  "ulazTs": "L: 4 km T: 21.08.2026 13:58:16",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-21T10:29:28+02:00",
+  "ulazTsISO": "2026-08-21T13:58:16+02:00",
   "izlazTsISO": "",
-  "ts": "L: 3 km T: 21.08.2026 10:29:28",
-  "tsISO": "2026-08-21T10:29:28+02:00"
+  "ts": "L: 4 km T: 21.08.2026 13:58:16",
+  "tsISO": "2026-08-21T13:58:16+02:00"
  },
  {
   "id": "",
@@ -121,25 +141,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "21.08.2026 11:59:38",
   "tsISO": "2026-08-21T11:59:38+02:00"
- },
- {
-  "id": "hr-tovarnik",
-  "name": "Tovarnik (Šid)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": 30,
-  "truckIzlazMin": 180,
-  "truckUlazTxt": "do 30 min.",
-  "truckIzlazTxt": "3 h",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "",
-  "izlazTsISO": "",
-  "ts": "",
-  "tsISO": ""
  }
 ];

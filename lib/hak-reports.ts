@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.8.2026. 13:44",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik u smjeru Zagreba: vozi se u kolonama uz zastoje između čvora Zadar istok i tunela Sveti Rok te između čvorova Ogulin i Novigrad pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km prometna nesreća između odmorišta Nadin i čvora Zadar istok u smjeru Zagreba, vozi se usporeno u koloni prometna nesreća između čvora Posedarje i čvora Rovanjska (na 244+000 km) u smjeru Zagreba, vozi se po dvije prometne trake usporeno A…"
+  "updated": "21.8.2026. 14:20",
+  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik između čvora Zadar istok i tunela Sveti Rok te između čvorova Ogulin i Novigrad u smjeru Zagreba vozi se u kolonama uz zastoje pred naplatnim postajama Lučko i Demerje u smjeru Zagreba kolone su oko 1 km prometna nesreća između čvorova Benkovac i Zadar istok (na 270+200 km) u smjeru Zagreba, vozi se jednim prometnim trakom, usporeno u koloni A3 Bregana-Lipovac prema naplatnim postajama Lučko iz smjera Buzina kolona je oko 2 km povremeno su…"
  },
  {
   "title": "Granični prijelazi",
