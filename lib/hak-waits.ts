@@ -23,6 +23,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-21T18:05:12+02:00"
  },
  {
+  "id": "",
+  "name": "Dvor (Bosanski Novi)",
+  "ulazMin": null,
+  "izlazMin": 60,
+  "ulazTxt": "-",
+  "izlazTxt": "1 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "21.08.2026 20:19:41",
+  "ulazTsISO": "",
+  "izlazTsISO": "2026-08-21T20:19:41+02:00",
+  "ts": "21.08.2026 20:19:41",
+  "tsISO": "2026-08-21T20:19:41+02:00"
+ },
+ {
   "id": "ba-kostajnica",
   "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
   "ulazMin": null,
@@ -36,11 +56,11 @@ export const HAK_WAITS: HakWait[] = [
   "level": "moderate",
   "waitMinutes": 60,
   "ulazTs": "Nema podataka",
-  "izlazTs": "21.08.2026 17:02:08",
+  "izlazTs": "21.08.2026 20:07:58",
   "ulazTsISO": "",
-  "izlazTsISO": "2026-08-21T17:02:08+02:00",
-  "ts": "21.08.2026 17:02:08",
-  "tsISO": "2026-08-21T17:02:08+02:00"
+  "izlazTsISO": "2026-08-21T20:07:58+02:00",
+  "ts": "21.08.2026 20:07:58",
+  "tsISO": "2026-08-21T20:07:58+02:00"
  },
  {
   "id": "",
@@ -70,9 +90,9 @@ export const HAK_WAITS: HakWait[] = [
   "ulazTxt": "3 h",
   "izlazTxt": "1 h",
   "truckUlazMin": null,
-  "truckIzlazMin": null,
+  "truckIzlazMin": 60,
   "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
+  "truckIzlazTxt": "1 h",
   "level": "severe",
   "waitMinutes": 180,
   "ulazTs": "21.08.2026 17:53:20",
@@ -101,5 +121,25 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-08-21T19:44:33+02:00",
   "ts": "21.08.2026 19:44:45",
   "tsISO": "2026-08-21T19:44:45+02:00"
+ },
+ {
+  "id": "",
+  "name": "Principovac II",
+  "ulazMin": 30,
+  "izlazMin": null,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": 30,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "do 30 min.",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "21.08.2026 20:18:54",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-21T20:18:54+02:00",
+  "izlazTsISO": "",
+  "ts": "21.08.2026 20:18:54",
+  "tsISO": "2026-08-21T20:18:54+02:00"
  }
 ];

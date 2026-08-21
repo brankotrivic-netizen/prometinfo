@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.8.2026. 19:41",
+  "updated": "21.8.2026. 20:11",
   "text": "Kolnici su mjestimice mokri i skliski. Zbog ponegdje obilnijih pljuskova moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Pojačan je promet na cestama u smjeru unutrašnjosti, osobito na autocestama. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik prometna nesreća na 197.+500 km između čvorova Gospić i Gornja Ploča u smjeru Dubrovnika, vozi se jednim prometnim trakom uz ograničenje brzine 60 km/h pojačan je promet u smjeru Zagreba, između čvorova Bosiljevo 2 i Lučko vozi se u kolona…"
  },
  {
