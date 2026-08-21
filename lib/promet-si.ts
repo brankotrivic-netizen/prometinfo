@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T12:22:13.415Z";
+export const PROMET_SI_UPDATED = "2026-08-21T13:23:45.709Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
+  "type": "MaintenanceWorks",
+  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
+  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
+  "lat": 46.20334,
+  "lng": 15.25907,
+  "start": "2026-07-29T13:00:00Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-08-21T13:01:00.213Z"
+ },
  {
   "id": "DARS;871061;226161ed-0ee7-4fd3-aa8d-d08719f81ba6",
   "type": "MaintenanceWorks",
@@ -70,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-21T05:38:55.207Z"
  },
  {
-  "id": "DARS;871069;c8d130b2-09fe-4991-830d-ca2b5c2212e9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-609, Čepovan - Most na Soči, Čepovan - Grudnica, izmenično enosmerni promet, košnja, do 15:00.",
-  "loc": "R3-609, Čepovan - Most Na Soči",
-  "lat": 46.08094,
-  "lng": 13.79656,
-  "start": "2026-08-21T05:27:52.823Z",
-  "end": "2026-08-21T13:00:00Z",
-  "ts": "2026-08-21T05:29:08.48Z"
- },
- {
   "id": "DARS;871067;b1deedbb-96b0-4cf3-bfb5-097a1290907d",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-615, Volčja Draga - Miren, pri Biljah, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
@@ -103,17 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-21T04:09:26.22Z"
  },
  {
-  "id": "DARS;871052;4878d487-fbb1-4c96-a796-f741ce8012e4",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-218, Podzemelj - Črnomelj, pri Vranovičih, izmenično enosmerni promet, pomična zapora, obrezovanje rastlinja, do 15:00.",
-  "loc": "R1-218, Podzemelj - Črnomelj",
-  "lat": 45.60175,
-  "lng": 15.23406,
-  "start": "2026-08-21T04:04:34.417Z",
-  "end": "2026-08-21T13:00:00Z",
-  "ts": "2026-08-21T04:05:23.613Z"
- },
- {
   "id": "DARS;871050;5a0c15f9-8237-4fe1-9191-3946e9a6f356",
   "type": "MaintenanceWorks",
   "desc": "R1-217, Brezovica - Kanižarica, Grič pri Dobličah - Kanižarica, oviran promet, košnja, do 18:00.",
@@ -134,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T04:00:00Z",
   "end": "2026-08-21T14:00:00Z",
   "ts": "2026-08-21T03:57:39.737Z"
- },
- {
-  "id": "DARS;871046;43c1675d-ae12-40d2-9af5-dc68fc32f3bd",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-230, Gornja Radgona - Radenci, v Radencih, Radgonska cesta, izmenično enosmerni promet, zalivanje reg in razpok, do 15:00.",
-  "loc": "R1-230, Gornja Radgona - Radenci",
-  "lat": 46.64557,
-  "lng": 16.03311,
-  "start": "2026-08-21T05:00:00Z",
-  "end": "2026-08-21T13:00:00Z",
-  "ts": "2026-08-21T03:56:01.337Z"
  },
  {
   "id": "DARS;871045;bab16003-bf20-48c2-9026-0c0897bd4562",
