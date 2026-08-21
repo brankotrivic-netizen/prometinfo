@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T14:51:04.120Z";
+export const PROMET_SI_UPDATED = "2026-08-21T15:22:04.767Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -68,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:38:14.02Z",
   "end": "2026-10-03T21:59:00Z",
   "ts": "2026-08-21T05:38:55.207Z"
- },
- {
-  "id": "DARS;871067;b1deedbb-96b0-4cf3-bfb5-097a1290907d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-615, Volčja Draga - Miren, pri Biljah, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R3-615, Volčja Draga - Gornji Miren",
-  "lat": 45.89633,
-  "lng": 13.65417,
-  "start": "2026-08-21T05:17:49.503Z",
-  "end": "2026-08-21T15:00:00Z",
-  "ts": "2026-08-21T05:18:29.833Z"
  },
  {
   "id": "DARS;871053;74d485f9-43ac-463f-8ba0-ed81400bd57a",
