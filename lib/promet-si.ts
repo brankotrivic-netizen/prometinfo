@@ -1,8 +1,206 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T05:02:55.382Z";
+export const PROMET_SI_UPDATED = "2026-08-21T05:46:25.275Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871080;2ea08c58-5f8b-4e14-822a-2a358ade995f",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-404, Podgrad - Ilirska Bistrica, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "R2-404, Podgrad - Ilirska Bistrica",
+  "lat": 45.52035,
+  "lng": 14.14967,
+  "start": "2026-08-21T05:43:36.043Z",
+  "end": "2026-08-21T12:00:00Z",
+  "ts": "2026-08-21T05:44:50.653Z"
+ },
+ {
+  "id": "DARS;871078;4c382f74-df87-4feb-a286-034a03c86e81",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "RT-915, Ilirska Bistrica - Sviščaki, pri Ilirski Bistrici, izmenično enosmerni promet, popravilo bankin, do 14:00.",
+  "loc": "RT-915, Ilirska Bistrica - Grda Draga",
+  "lat": 45.57101,
+  "lng": 14.2611,
+  "start": "2026-08-21T05:40:22.587Z",
+  "end": "2026-08-21T12:00:00Z",
+  "ts": "2026-08-21T05:41:36.44Z"
+ },
+ {
+  "id": "DARS;871077;48644a03-a4a9-47ac-97b1-7317a7d3b536",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, krožišče Tomačevo - razcep Koseze v smeri Kosez, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.08117,
+  "lng": 14.52776,
+  "start": "2026-08-21T05:41:04.123Z",
+  "end": "2026-08-21T11:00:00Z",
+  "ts": "2026-08-21T05:41:28.293Z"
+ },
+ {
+  "id": "DARS;871076;abc85d0e-f618-47b9-85a0-4076cae44ca6",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, prehod Obrežje - priključek Drnovo v smeri Novega mesta, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.84756,
+  "lng": 15.6918,
+  "start": "2026-08-21T05:39:56.697Z",
+  "end": "2026-08-21T12:00:47.327Z",
+  "ts": "2026-08-21T05:40:03.983Z"
+ },
+ {
+  "id": "DARS;871075;2112abd5-2978-480b-a91a-3c9b81a3cd3b",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-630, Obrov - Golac, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "R3-630, Obrov - Golac",
+  "lat": 45.5424,
+  "lng": 14.08698,
+  "start": "2026-08-21T05:38:50.257Z",
+  "end": "2026-08-21T12:00:00Z",
+  "ts": "2026-08-21T05:39:37.05Z"
+ },
+ {
+  "id": "DARS;871074;a4b637af-52dc-4c7c-b59e-37d947e39102",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-4, Velenje - Slovenj Gradec, pri Paki pri Velenju, izmenično enosmerni promet, preplastitev vozišča, do 3. 10. 2026.",
+  "loc": "G1-4, Gornji Dolič - Velenje",
+  "lat": 46.38783,
+  "lng": 15.16368,
+  "start": "2026-08-21T05:38:14.02Z",
+  "end": "2026-10-03T21:59:00Z",
+  "ts": "2026-08-21T05:38:55.207Z"
+ },
+ {
+  "id": "DARS;871073;8212a72d-f563-469b-830d-cb9358590d25",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, razcep Dragučova - priključek Pernica v smeri Murske Sobote, dela, oviran promet.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.58541,
+  "lng": 15.72137,
+  "start": "2026-08-21T05:37:50.307Z",
+  "end": "2026-08-21T12:00:52.387Z",
+  "ts": "2026-08-21T05:37:54.177Z"
+ },
+ {
+  "id": "DARS;871072;e8d9699c-e47a-4c88-852e-52978bab34f2",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Razdrto - razcep Nanos v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.75908,
+  "lng": 14.08159,
+  "start": "2026-08-21T05:37:33.643Z",
+  "end": "2026-08-21T08:00:00Z",
+  "ts": "2026-08-21T05:37:37.457Z"
+ },
+ {
+  "id": "DARS;871071;957e1f00-1a8d-4e2e-a3d5-224f8ff52d79",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Bič - priključek Trebnje zahod v smeri Novega mesta, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.92361,
+  "lng": 14.88781,
+  "start": "2026-08-21T05:35:29.157Z",
+  "end": "2026-08-21T12:00:00Z",
+  "ts": "2026-08-21T05:36:58.9Z"
+ },
+ {
+  "id": "DARS;871070;ebceac51-2d62-4bf6-bb7e-e8cd824670e9",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, priključek Lendava - priključek Pince v smeri Lendave, dela, pomična zapora voznega pasu.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.55667,
+  "lng": 16.4433,
+  "start": "2026-08-21T05:35:21.747Z",
+  "end": "2026-08-21T12:00:06.937Z",
+  "ts": "2026-08-21T05:35:38.933Z"
+ },
+ {
+  "id": "DARS;871069;c8d130b2-09fe-4991-830d-ca2b5c2212e9",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-609, Čepovan - Most na Soči, Čepovan - Grudnica, izmenično enosmerni promet, košnja, do 15:00.",
+  "loc": "R3-609, Čepovan - Most Na Soči",
+  "lat": 46.08094,
+  "lng": 13.79656,
+  "start": "2026-08-21T05:27:52.823Z",
+  "end": "2026-08-21T13:00:00Z",
+  "ts": "2026-08-21T05:29:08.48Z"
+ },
+ {
+  "id": "DARS;871067;b1deedbb-96b0-4cf3-bfb5-097a1290907d",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-615, Volčja Draga - Miren, pri Biljah, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
+  "loc": "R3-615, Volčja Draga - Gornji Miren",
+  "lat": 45.89633,
+  "lng": 13.65417,
+  "start": "2026-08-21T05:17:49.503Z",
+  "end": "2026-08-21T15:00:00Z",
+  "ts": "2026-08-21T05:18:29.833Z"
+ },
+ {
+  "id": "DARS;871064;7f6ca401-0c00-4c00-b164-7274b90339a9",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Vransko - priključek Žalec, Arja vas v smeri Maribora, dela, oviran promet, strojno pometanje.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25057,
+  "lng": 14.97159,
+  "start": "2026-08-21T05:15:22.09Z",
+  "end": "2026-08-21T12:00:00Z",
+  "ts": "2026-08-21T05:18:19.347Z"
+ },
+ {
+  "id": "DARS;871066;2e0685d0-8861-457d-9fcc-fa259e33fd1c",
+  "type": "MaintenanceWorks",
+  "desc": "A3, Fernetiči - razcep Gabrk, priključek Sežana zahod - uvoz Sežana zahod v smeri Fernetičev, Italije, dela, oviran promet.",
+  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
+  "lat": 45.70978,
+  "lng": 13.85389,
+  "start": "2026-08-21T05:17:17.22Z",
+  "end": "2026-08-21T12:00:00Z",
+  "ts": "2026-08-21T05:17:52.16Z"
+ },
+ {
+  "id": "DARS;871065;40e97db9-46e4-435f-b5b9-fcddb56e4583",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Divača v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.66522,
+  "lng": 13.96701,
+  "start": "2026-08-21T05:15:47.41Z",
+  "end": "2026-08-21T12:00:00Z",
+  "ts": "2026-08-21T05:16:55.62Z"
+ },
+ {
+  "id": "DARS;871063;f9751c46-2e88-4ede-a17c-896f31a84095",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, uvoz Senožeče - priključek Divača v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.72147,
+  "lng": 14.0087,
+  "start": "2026-08-21T05:15:16.673Z",
+  "end": "2026-08-21T12:00:00Z",
+  "ts": "2026-08-21T05:15:22.177Z"
+ },
+ {
+  "id": "DARS;871062;fbf22a70-0bbe-4553-a13c-7504b8c855a6",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, priključek Lendava - razcep Dolga vas v smeri razcepa Dolga vas, dela, zaprt vozni pas.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.55998,
+  "lng": 16.4429,
+  "start": "2026-08-21T05:13:24.803Z",
+  "end": "2026-08-21T07:00:55.113Z",
+  "ts": "2026-08-21T05:13:37.47Z"
+ },
+ {
+  "id": "DARS;871061;226161ed-0ee7-4fd3-aa8d-d08719f81ba6",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Maribor - Gruškovje (Hrvaška), priključek Zlatoličje - priključek Podlehnik v smeri Ptuja, dela, oviran promet.",
+  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
+  "lat": 46.42718,
+  "lng": 15.79638,
+  "start": "2026-08-21T05:12:37.597Z",
+  "end": "2026-08-21T12:00:18.433Z",
+  "ts": "2026-08-21T05:13:07.323Z"
+ },
  {
   "id": "DARS;871056;c3bd5215-dc6b-4340-9e99-81262b1d8bbb",
   "type": "RoadOrCarriagewayOrLaneManagement",
