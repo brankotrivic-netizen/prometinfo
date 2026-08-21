@@ -105,22 +105,22 @@ export const HAK_WAITS: HakWait[] = [
  {
   "id": "hr-tovarnik",
   "name": "Tovarnik (Šid)",
-  "ulazMin": 60,
-  "izlazMin": 30,
-  "ulazTxt": "1 h",
-  "izlazTxt": "do 30 min.",
+  "ulazMin": 90,
+  "izlazMin": 60,
+  "ulazTxt": "1 h 30 min.",
+  "izlazTxt": "1 h",
   "truckUlazMin": null,
-  "truckIzlazMin": 60,
+  "truckIzlazMin": null,
   "truckUlazTxt": "-",
-  "truckIzlazTxt": "1 h",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "21.8.2026. 22:31:46",
-  "izlazTs": "21.8.2026. 22:31:35",
-  "ulazTsISO": "2026-08-21T22:31:46+02:00",
-  "izlazTsISO": "2026-08-21T22:31:35+02:00",
-  "ts": "21.8.2026. 22:31:46",
-  "tsISO": "2026-08-21T22:31:46+02:00"
+  "truckIzlazTxt": "-",
+  "level": "high",
+  "waitMinutes": 90,
+  "ulazTs": "21.8.2026. 23:42:48",
+  "izlazTs": "21.8.2026. 23:42:24",
+  "ulazTsISO": "2026-08-21T23:42:48+02:00",
+  "izlazTsISO": "2026-08-21T23:42:24+02:00",
+  "ts": "21.8.2026. 23:42:48",
+  "tsISO": "2026-08-21T23:42:48+02:00"
  },
  {
   "id": "",
@@ -135,11 +135,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "21.8.2026. 20:18:54",
+  "ulazTs": "21.8.2026. 23:23:21",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-21T20:18:54+02:00",
+  "ulazTsISO": "2026-08-21T23:23:21+02:00",
   "izlazTsISO": "",
-  "ts": "21.8.2026. 20:18:54",
-  "tsISO": "2026-08-21T20:18:54+02:00"
+  "ts": "21.8.2026. 23:23:21",
+  "tsISO": "2026-08-21T23:23:21+02:00"
  }
 ];
