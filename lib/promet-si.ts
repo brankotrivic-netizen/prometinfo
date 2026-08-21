@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T13:23:45.709Z";
+export const PROMET_SI_UPDATED = "2026-08-21T14:04:17.803Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-21T13:01:00.213Z"
- },
- {
-  "id": "DARS;871061;226161ed-0ee7-4fd3-aa8d-d08719f81ba6",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Maribor - Gruškovje (Hrvaška), priključek Zlatoličje - priključek Podlehnik v smeri Ptuja, dela, oviran promet.",
-  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
-  "lat": 46.42718,
-  "lng": 15.79638,
-  "start": "2026-08-21T05:12:37.597Z",
-  "end": "2026-08-21T16:00:00Z",
-  "ts": "2026-08-21T11:55:48.76Z"
  },
  {
   "id": "DARS;870113;2b42dc48-93f7-41a9-9d7d-591472fb9b97",
@@ -112,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T04:02:09.647Z",
   "end": "2026-08-21T16:00:00Z",
   "ts": "2026-08-21T04:03:51.183Z"
- },
- {
-  "id": "DARS;871047;cf98def8-39d3-4bf7-9024-e438bdec48d0",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-439, Križevci - Žihlava, v Berkovcih, izmenično enosmerni promet, popravilo bankin, do 16:00.",
-  "loc": "R2-439, Križevci - Žihlava",
-  "lat": 46.55014,
-  "lng": 16.0827,
-  "start": "2026-08-21T04:00:00Z",
-  "end": "2026-08-21T14:00:00Z",
-  "ts": "2026-08-21T03:57:39.737Z"
  },
  {
   "id": "DARS;871045;bab16003-bf20-48c2-9026-0c0897bd4562",
