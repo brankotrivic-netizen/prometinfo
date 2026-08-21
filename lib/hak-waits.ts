@@ -16,10 +16,10 @@ export const HAK_WAITS: HakWait[] = [
   "level": "low",
   "waitMinutes": 30,
   "ulazTs": "Nema podataka",
-  "izlazTs": "21.08.2026 14:14:00",
+  "izlazTs": "21.8.2026. 14:14:00",
   "ulazTsISO": "",
   "izlazTsISO": "2026-08-21T14:14:00+02:00",
-  "ts": "21.08.2026 14:14:00",
+  "ts": "21.8.2026. 14:14:00",
   "tsISO": "2026-08-21T14:14:00+02:00"
  },
  {
@@ -35,11 +35,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "21.08.2026 12:02:06",
+  "ulazTs": "21.8.2026. 12:02:06",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-21T12:02:06+02:00",
   "izlazTsISO": "",
-  "ts": "21.08.2026 12:02:06",
+  "ts": "21.8.2026. 12:02:06",
   "tsISO": "2026-08-21T12:02:06+02:00"
  },
  {
@@ -55,11 +55,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "severe",
   "waitMinutes": 300,
-  "ulazTs": "L: 4 km T: 21.08.2026 13:58:16",
+  "ulazTs": "L: 4 km T: 21.8.2026. 13:58:16",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-21T13:58:16+02:00",
   "izlazTsISO": "",
-  "ts": "L: 4 km T: 21.08.2026 13:58:16",
+  "ts": "L: 4 km T: 21.8.2026. 13:58:16",
   "tsISO": "2026-08-21T13:58:16+02:00"
  },
  {
@@ -75,11 +75,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "severe",
   "waitMinutes": 180,
-  "ulazTs": "21.08.2026 15:06:28",
+  "ulazTs": "21.8.2026. 15:06:28",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-21T15:06:28+02:00",
   "izlazTsISO": "",
-  "ts": "21.08.2026 15:06:28",
+  "ts": "21.8.2026. 15:06:28",
   "tsISO": "2026-08-21T15:06:28+02:00"
  },
  {
@@ -95,11 +95,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "2 h",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "21.08.2026 15:08:07",
+  "ulazTs": "21.8.2026. 15:08:07",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-21T15:08:07+02:00",
   "izlazTsISO": "",
-  "ts": "21.08.2026 15:08:07",
+  "ts": "21.8.2026. 15:08:07",
   "tsISO": "2026-08-21T15:08:07+02:00"
  }
 ];
