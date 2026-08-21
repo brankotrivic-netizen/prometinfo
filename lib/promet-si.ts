@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T15:55:10.140Z";
+export const PROMET_SI_UPDATED = "2026-08-21T16:18:38.680Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -68,28 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:38:14.02Z",
   "end": "2026-10-03T21:59:00Z",
   "ts": "2026-08-21T05:38:55.207Z"
- },
- {
-  "id": "DARS;871053;74d485f9-43ac-463f-8ba0-ed81400bd57a",
-  "type": "MaintenanceWorks",
-  "desc": "RT-919, Vinica - Stari trg, Hrib - Dolenji Radenci, oviran promet, košnja, do 18:00.",
-  "loc": "RT-919, Vinica - Stari Trg",
-  "lat": 45.4484,
-  "lng": 15.13147,
-  "start": "2026-08-21T04:06:29.47Z",
-  "end": "2026-08-21T16:00:00Z",
-  "ts": "2026-08-21T04:09:26.22Z"
- },
- {
-  "id": "DARS;871050;5a0c15f9-8237-4fe1-9191-3946e9a6f356",
-  "type": "MaintenanceWorks",
-  "desc": "R1-217, Brezovica - Kanižarica, Grič pri Dobličah - Kanižarica, oviran promet, košnja, do 18:00.",
-  "loc": "R1-217, Brezovica - Kanižarica",
-  "lat": 45.55401,
-  "lng": 15.13715,
-  "start": "2026-08-21T04:02:09.647Z",
-  "end": "2026-08-21T16:00:00Z",
-  "ts": "2026-08-21T04:03:51.183Z"
  },
  {
   "id": "DARS;871045;bab16003-bf20-48c2-9026-0c0897bd4562",

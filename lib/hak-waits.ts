@@ -23,6 +23,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-21T14:14:00+02:00"
  },
  {
+  "id": "ba-velika-kladusa",
+  "name": "Maljevac (Velika Kladuša)",
+  "ulazMin": null,
+  "izlazMin": 60,
+  "ulazTxt": "-",
+  "izlazTxt": "1 h",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "21.8.2026. 18:05:12",
+  "ulazTsISO": "",
+  "izlazTsISO": "2026-08-21T18:05:12+02:00",
+  "ts": "21.8.2026. 18:05:12",
+  "tsISO": "2026-08-21T18:05:12+02:00"
+ },
+ {
   "id": "ba-kostajnica",
   "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
   "ulazMin": null,
