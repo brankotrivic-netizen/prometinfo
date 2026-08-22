@@ -123,26 +123,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-22T15:23:16+02:00"
  },
  {
-  "id": "",
-  "name": "Dvor (Bosanski Novi)",
-  "ulazMin": 90,
-  "izlazMin": null,
-  "ulazTxt": "1 h 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 90,
-  "ulazTs": "22.08.2026 11:38:20",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-22T11:38:20+02:00",
-  "izlazTsISO": "",
-  "ts": "22.08.2026 11:38:20",
-  "tsISO": "2026-08-22T11:38:20+02:00"
- },
- {
   "id": "ba-kamensko",
   "name": "Kamensko (Kamensko)",
   "ulazMin": 30,
@@ -201,26 +181,6 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "L: 1,5 km T: 22.08.2026 13:55:47",
   "tsISO": "2026-08-22T13:55:47+02:00"
- },
- {
-  "id": "",
-  "name": "Principovac",
-  "ulazMin": 90,
-  "izlazMin": null,
-  "ulazTxt": "1 h 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "high",
-  "waitMinutes": 90,
-  "ulazTs": "22.08.2026 11:00:14",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-22T11:00:14+02:00",
-  "izlazTsISO": "",
-  "ts": "22.08.2026 11:00:14",
-  "tsISO": "2026-08-22T11:00:14+02:00"
  },
  {
   "id": "",
