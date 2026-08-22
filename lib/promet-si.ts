@@ -1,18 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-21T22:00:19.761Z";
+export const PROMET_SI_UPDATED = "2026-08-22T04:20:59.824Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;871313;a7bb01b9-846e-4538-a660-0d188ed8535f",
+  "id": "DARS;871351;dbf066b5-197c-450f-ac52-512ac8f07e4a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-710, Maribor - Vurberk - Ptuj, pri Dogošah, izmenično enosmerni promet, popravilo vozišča, do 24. 8. 2026.",
+  "loc": "R3-710, Maribor - Vurberk - Ptuj",
+  "lat": 46.5272,
+  "lng": 15.69953,
+  "start": "2026-08-22T04:14:03.117Z",
+  "end": "2026-08-24T17:00:00Z",
+  "ts": "2026-08-22T04:14:35.03Z"
+ },
+ {
+  "id": "DARS;871349;d462bf2f-9c80-45f5-94a3-999b35bba0f9",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Brnik, izmenično enosmerni promet, asfaltiranje, do 23. 8. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.23626,
+  "lng": 14.43165,
+  "start": "2026-08-22T04:07:17.293Z",
+  "end": "2026-08-23T16:00:00Z",
+  "ts": "2026-08-22T04:08:05.677Z"
+ },
+ {
+  "id": "DARS;871337;52eed8e5-bca6-41b3-87da-7a07c8645f8d",
   "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Vodice - priključek Ljubljana, Šmartno v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.17117,
-  "lng": 14.48602,
-  "start": "2026-08-21T21:05:15.567Z",
-  "end": "2026-08-22T03:00:58.413Z",
-  "ts": "2026-08-21T21:05:19.74Z"
+  "desc": "H4, Nova Gorica - Razdrto, pred priključkom Selo v smeri Razdrtega, dela, zaprt prehitevalni pas.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.89693,
+  "lng": 13.78406,
+  "start": "2026-08-22T03:12:49.027Z",
+  "end": "2026-08-22T09:00:00Z",
+  "ts": "2026-08-22T03:12:53.203Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
