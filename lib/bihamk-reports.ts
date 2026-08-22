@@ -115,6 +115,14 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-448 Goražde-Hrenovica (Bare-Hrenovica), zbog asfaltiranje od 08 do 18 sati vozila će saobraćati uspotreno, jednom trakom, uz moguće obustave ne duže od 1 sat. Dana 21.08. biće na snazi potpuna obustava za teretni saobraćaj."
    },
    {
+    "title": "Donji Vakuf-Prusac-Poriče",
+    "text": "Na regionalnoj cesti R-481 Donji Vakuf-Prusac-Poriče (Mehinac-Magrdžijine kuće) zbog aktuelnih radova obustavlja se saobraćaj od 07 do 19 sati u subotu (22.08.) i ponedjeljak (24.08.)."
+   },
+   {
+    "title": "Tuzla-Dokanj-Šibošnica",
+    "text": "Zbog održavanja brdske trke Tuzla 2026 u subotu i nedjelju (22. i 23.08.) od 08 do 18 sati obustavlja se saobraćaj na regionalnoj cesti Tuzla-Dokanj-Šibošnica (od škole u Doknju do Lovačkog doma „Stara Majevica“)."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }

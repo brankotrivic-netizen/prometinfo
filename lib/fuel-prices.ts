@@ -61,7 +61,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Češka",
   "flag": "🇨🇿",
-  "p95": "42,870 CZK (1,77 EUR)",
+  "p95": "42,870 CZK (1,78 EUR)",
   "p98": "41,500 CZK (1,72 EUR)",
   "diesel": "44,660 CZK (1,85 EUR)",
   "date": "18. 8. 2026"
@@ -165,7 +165,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Liechtenstein",
   "flag": "🇱🇮",
-  "p95": "1,965 CHF (2,11 EUR)",
+  "p95": "1,965 CHF (2,10 EUR)",
   "p98": "",
   "diesel": "2,177 CHF (2,33 EUR)",
   "date": "18. 8. 2026"
@@ -189,9 +189,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Madžarska",
   "flag": "🇭🇺",
-  "p95": "613,300 HUF (1,68 EUR)",
+  "p95": "613,300 HUF (1,69 EUR)",
   "p98": "",
-  "diesel": "671,400 HUF (1,84 EUR)",
+  "diesel": "671,400 HUF (1,85 EUR)",
   "date": "18. 8. 2026"
  },
  {
@@ -223,13 +223,13 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇳🇴",
   "p95": "21,780 NOK (2,00 EUR)",
   "p98": "",
-  "diesel": "21,410 NOK (1,96 EUR)",
+  "diesel": "21,410 NOK (1,97 EUR)",
   "date": "15. 8. 2026"
  },
  {
   "country": "Poljska",
   "flag": "🇵🇱",
-  "p95": "7,400 PLN (1,71 EUR)",
+  "p95": "7,400 PLN (1,72 EUR)",
   "p98": "8,120 PLN (1,88 EUR)",
   "diesel": "7,980 PLN (1,85 EUR)",
   "date": "18. 8. 2026"
@@ -247,7 +247,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇷🇴",
   "p95": "9,140 RON (1,74 EUR)",
   "p98": "10,000 RON (1,90 EUR)",
-  "diesel": "10,530 RON (2,01 EUR)",
+  "diesel": "10,530 RON (2,00 EUR)",
   "date": "18. 8. 2026"
  },
  {
@@ -302,14 +302,14 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "Švedska",
   "flag": "🇸🇪",
   "p95": "15,290 SEK (1,38 EUR)",
-  "p98": "16,207 SEK (1,46 EUR)",
+  "p98": "16,207 SEK (1,47 EUR)",
   "diesel": "19,840 SEK (1,79 EUR)",
   "date": "18. 8. 2026"
  },
  {
   "country": "Švica",
   "flag": "🇨🇭",
-  "p95": "1,975 CHF (2,12 EUR)",
+  "p95": "1,975 CHF (2,11 EUR)",
   "p98": "",
   "diesel": "2,187 CHF (2,34 EUR)",
   "date": "18. 8. 2026"
@@ -317,9 +317,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Turčija",
   "flag": "🇹🇷",
-  "p95": "69,920 TRY (1,25 EUR)",
-  "p98": "75,514 TRY (1,35 EUR)",
-  "diesel": "80,060 TRY (1,43 EUR)",
+  "p95": "69,920 TRY (1,24 EUR)",
+  "p98": "75,514 TRY (1,34 EUR)",
+  "diesel": "80,060 TRY (1,42 EUR)",
   "date": "18. 8. 2026"
  },
  {
