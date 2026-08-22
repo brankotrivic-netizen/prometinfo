@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-22T07:07:13.801Z";
+export const PROMET_SI_UPDATED = "2026-08-22T07:42:54.419Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871379;10de1cdb-3f54-4fde-a73f-e13cf3224b17",
+  "type": "MaintenanceWorks",
+  "desc": "RT-919, Vinica - Stari trg, Stari trg - Dolenji Radenci, oviran promet, košnja, do 18:00.",
+  "loc": "RT-919, Vinica - Stari Trg",
+  "lat": 45.49266,
+  "lng": 15.09182,
+  "start": "2026-08-22T07:14:29.463Z",
+  "end": "2026-08-22T16:00:00Z",
+  "ts": "2026-08-22T07:15:05.187Z"
+ },
+ {
+  "id": "DARS;871378;0fcbd736-d1b3-4cfc-ab24-eea27ba306c9",
+  "type": "MaintenanceWorks",
+  "desc": "R1-217, Brezovica - Kanižarica, Grič pri Dobličah - Dobliče, oviran promet, košnja, do 18:00.",
+  "loc": "R1-217, Brezovica - Kanižarica",
+  "lat": 45.56215,
+  "lng": 15.12507,
+  "start": "2026-08-22T07:12:41.153Z",
+  "end": "2026-08-22T16:00:00Z",
+  "ts": "2026-08-22T07:13:36.093Z"
+ },
  {
   "id": "DARS;871374;50d5120e-9070-49cf-b97e-36b5c085f13a",
   "type": "MaintenanceWorks",
@@ -24,39 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-22T06:16:28.997Z",
   "end": "2026-08-22T09:30:22.947Z",
   "ts": "2026-08-22T06:16:33.16Z"
- },
- {
-  "id": "DARS;871365;547b7464-bfc3-41d7-bf78-74d9695f4370",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, izvoz 48 Kastelec - uvoz Kastelec iz smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.57032,
-  "lng": 13.86978,
-  "start": "2026-08-22T06:11:45.353Z",
-  "end": "2026-08-22T14:00:00Z",
-  "ts": "2026-08-22T06:11:49.293Z"
- },
- {
-  "id": "DARS;871364;bf9dd501-f72b-46a1-9a8d-31372d877607",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, izvoz 48 Kastelec - priključek Črni Kal iz smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.57508,
-  "lng": 13.87163,
-  "start": "2026-08-22T06:11:34.363Z",
-  "end": "2026-08-22T13:00:00Z",
-  "ts": "2026-08-22T06:11:38.867Z"
- },
- {
-  "id": "DARS;871363;d7563143-8e7f-4a65-8b03-694d6b108980",
-  "type": "MaintenanceWorks",
-  "desc": "G2-111, Koper - Izola, predor Markovec - priključek Izola v smeri Portoroža, dela, oviran promet.",
-  "loc": "G2-111, Koper - Izola",
-  "lat": 45.53919,
-  "lng": 13.68794,
-  "start": "2026-08-22T05:59:42.303Z",
-  "end": "2026-08-22T11:00:00Z",
-  "ts": "2026-08-22T06:00:08.66Z"
  },
  {
   "id": "DARS;871361;b1e54fb3-982a-466d-aa7f-f07d20a52975",
