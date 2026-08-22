@@ -18,24 +18,12 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "label": "Magistralne ceste",
   "items": [
    {
-    "title": "M-4.3 Bužim-Brigovi",
-    "text": "Zbog radova na sanaciji klizišta saobraća se usporeno, jednom trakom naizmjenično."
-   },
-   {
     "title": "Tuzla-Bijeljina (Banj brdo)",
     "text": "Na dionici Simin Han-Lopare (Banj brdo) zbog sanacionih radova putnička vozila saobraćaju naizmjenično, jednom trakom, dok teretna vozila preko 3,5 t i autobusi saobraćaju pravcem Simin Han-Lopare-Priboj."
    },
    {
     "title": "Ozimica-Topčić Polje (Papratnica)",
     "text": "Zbog radova na rekonstrukciji raskrsnice na M-17 Ozimica-Topčić Polje na lokalitetu Papratnica svaki dan, osim nedjelje) od 07 do 16:30 sati saobraća se jednom trakom, naizmjenično."
-   },
-   {
-    "title": "Bihać-Ripač (Orljani)",
-    "text": "Zbog radova na sanaciji nadvožnjaka na lokalitetu Orljani na magistralnoj cesti Bihać-Ripač, zatvoreno je skretanje sa magistralne ceste prema naselju Ribić-Orljani."
-   },
-   {
-    "title": "Kolo-Posušje (Ričina)",
-    "text": "Na magistralnoj cesti Kolo-Posušje (Ričina), zbog izgradnje potpornog zida od 07 do 17 sati svaki dan, osim nedjelje, saobraća se jednom trakom."
    },
    {
     "title": "Podromanija-Sumbulovac (prevoj Romanija)",
@@ -56,10 +44,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Dobro Polje-Miljevina",
     "text": "15. 05. 2026. godine - Kako smo upravo obaviješteni, od danas je počelo saobraćanje vozila do 3,5 tone na magistralnoj cesti Dobro Polje-Miljevina. Za vozila preko 3,5 tone i dalje je na snazi zabrana, pa moraju i dalje koristiti alternativne pravce."
-   },
-   {
-    "title": "Bihać-Cazin (u gradu Bihać)",
-    "text": "Zbog radova na izgradnji pješačke staze,saobraća se usporeno, naizmjeničnim propuštanjem vozila uz ručnu regulaciju saobraćaja."
    },
    {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
