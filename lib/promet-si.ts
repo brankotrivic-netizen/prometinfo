@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-22T05:49:38.708Z";
+export const PROMET_SI_UPDATED = "2026-08-22T06:19:38.429Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871367;234bf9bf-5b31-48fa-98f1-79b9bb4bb5fb",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Nove Jarše - priključek Ljubljana Nove Jarše v smeri Kosez, dela, zaprt prehitevalni pas.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.0676,
+  "lng": 14.56652,
+  "start": "2026-08-22T06:16:28.997Z",
+  "end": "2026-08-22T09:30:22.947Z",
+  "ts": "2026-08-22T06:16:33.16Z"
+ },
+ {
+  "id": "DARS;871365;547b7464-bfc3-41d7-bf78-74d9695f4370",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, izvoz 48 Kastelec - uvoz Kastelec iz smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.57032,
+  "lng": 13.86978,
+  "start": "2026-08-22T06:11:45.353Z",
+  "end": "2026-08-22T14:00:00Z",
+  "ts": "2026-08-22T06:11:49.293Z"
+ },
+ {
+  "id": "DARS;871364;bf9dd501-f72b-46a1-9a8d-31372d877607",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, izvoz 48 Kastelec - priključek Črni Kal iz smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.57508,
+  "lng": 13.87163,
+  "start": "2026-08-22T06:11:34.363Z",
+  "end": "2026-08-22T13:00:00Z",
+  "ts": "2026-08-22T06:11:38.867Z"
+ },
+ {
+  "id": "DARS;871363;d7563143-8e7f-4a65-8b03-694d6b108980",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Koper - Izola, predor Markovec - priključek Izola v smeri Portoroža, dela, oviran promet.",
+  "loc": "G2-111, Koper - Izola",
+  "lat": 45.53919,
+  "lng": 13.68794,
+  "start": "2026-08-22T05:59:42.303Z",
+  "end": "2026-08-22T11:00:00Z",
+  "ts": "2026-08-22T06:00:08.66Z"
+ },
+ {
+  "id": "DARS;871361;b1e54fb3-982a-466d-aa7f-f07d20a52975",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Vransko - priključek Šempeter v smeri Maribora, dela, zaprt odstavni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25882,
+  "lng": 15.05812,
+  "start": "2026-08-22T05:50:58.38Z",
+  "end": "2026-08-22T11:00:00Z",
+  "ts": "2026-08-22T05:51:48.633Z"
+ },
  {
   "id": "DARS;871351;dbf066b5-197c-450f-ac52-512ac8f07e4a",
   "type": "RoadOrCarriagewayOrLaneManagement",
