@@ -3,6 +3,26 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
+  "id": "ba-gradiska",
+  "name": "Gornji Varoš (Gradiška (novi most))",
+  "ulazMin": 30,
+  "izlazMin": null,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "22.08.2026 21:11:14",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-22T21:11:14+02:00",
+  "izlazTsISO": "",
+  "ts": "22.08.2026 21:11:14",
+  "tsISO": "2026-08-22T21:11:14+02:00"
+ },
+ {
   "id": "ba-velika-kladusa",
   "name": "Maljevac (Velika Kladuša)",
   "ulazMin": 60,
