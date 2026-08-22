@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-22T17:15:30.670Z";
+export const PROMET_SI_UPDATED = "2026-08-22T17:42:24.997Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;871508;1150ba5c-081d-41b1-84de-e82ba5afe11a",
