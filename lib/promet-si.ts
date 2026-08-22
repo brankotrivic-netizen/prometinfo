@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-22T16:57:28.731Z";
+export const PROMET_SI_UPDATED = "2026-08-22T17:15:30.670Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;871508;1150ba5c-081d-41b1-84de-e82ba5afe11a",
@@ -222,17 +222,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-28T09:34:33Z",
   "end": "2026-09-01T21:59:00Z",
   "ts": "2026-08-14T05:37:29.513Z"
- },
- {
-  "id": "DARS;857354;2bd24ed5-9663-4beb-beb1-4aacf36bb740",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-601, Borjana - Robidišče, pri Podbeli, izmenično enosmerni promet, izvedba omrežja GOŠO6, do 22. 8. 2026.",
-  "loc": "R3-601, Borjana - Robidišče",
-  "lat": 46.23009,
-  "lng": 13.44109,
-  "start": "2026-06-15T06:19:31.58Z",
-  "end": "2026-08-22T17:00:00Z",
-  "ts": "2026-08-14T05:17:56.22Z"
  },
  {
   "id": "DARS;869420;36c7de5e-a007-4bce-858f-14356813a1a3",
