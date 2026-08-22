@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.8.2026. 11:37",
+  "updated": "22.8.2026. 11:54",
   "text": "Kolnici su mjestimice mokri i skliski. Mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Pojačan je promet na važnijim cestama te pojedinim graničnim prijelazima. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići u kolonama u pokretu s povremenim zastojima vozi se na dionicama: između naplate Lučko i čvora Bosiljevo 2 u smjeru mora između čvora Zadar istok i tunela Čelinka u smjeru Zagreba u smjeru Zagreba kolone su na naplatama: Demerje oko 1 km Lučko oko 1 km zbog prometne nesreće između odmorišta Jasenice i tunela Čelinka, na 235.+300…"
  },
  {
