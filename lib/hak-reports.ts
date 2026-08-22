@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.8.2026. 20:15",
-  "text": "Kolnici su mjestimice mokri i skliski. Mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Pojačan je promet na važnijim cestama te pojedinim graničnim prijelazima. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići nakon prometne nesreće u tunelu Brezik na kolniku u smjeru Zagreba povremeno se prekida promet kroz tunel Grič kolona je oko 2 km pojačan je promet u smjeru Zagreba između čvorova Gospić i Žuta Lokva vozi se u kolonama uz povremene zastoje A3 Bregana-Lipovac povremeno su zastoji u zoni radova na zagrebačkoj obilaznici između čvo…"
+  "updated": "22.8.2026. 20:38",
+  "text": "Kolnici su mjestimice mokri i skliski. Mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Pojačan je promet na važnijim cestama te pojedinim graničnim prijelazima. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići pojačan je promet u smjeru Zagreba između čvorova Karlovac i Lučko vozi se u kolonama uz povremene zastoje A3 Bregana-Lipovac povremeno su zastoji u zoni radova na zagrebačkoj obilaznici između čvorova Lučko i Sveta Nedelja u oba smjera AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 s…"
  },
  {
   "title": "Granični prijelazi",
