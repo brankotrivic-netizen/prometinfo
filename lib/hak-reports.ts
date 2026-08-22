@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.8.2026. 19:40",
-  "text": "Kolnici su mjestimice mokri i skliski. Mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Pojačan je promet na važnijim cestama te pojedinim graničnim prijelazima. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići nakon prometne nesreće u tunelu Brezik na kolniku u smjeru Zagreba kolona je oko 2 km, a povremeno se prekida promet kroz tunel Grič dionica između čvorova Otočac i Perušić otvorena je u oba smjera nakon prometne nesreće pojačan je promet u smjeru Zagreba između čvorova Gospić i Žuta Lokva vozi se u kolonama uz povremene zastoje…"
+  "updated": "22.8.2026. 19:54",
+  "text": "Kolnici su mjestimice mokri i skliski. Mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Pojačan je promet na važnijim cestama te pojedinim graničnim prijelazima. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići nakon prometne nesreće u tunelu Brezik na kolniku u smjeru Zagreba povremeno se prekida promet kroz tunele Plasina i Grič kolone su pred tunelima oko 2 km pojačan je promet u smjeru Zagreba između čvorova Gospić i Žuta Lokva vozi se u kolonama uz povremene zastoje pojačan je promet između čvora Gornja Ploča i tunela Čelinka u sm…"
  },
  {
   "title": "Granični prijelazi",
