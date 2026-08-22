@@ -263,6 +263,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-22T07:25:55+02:00"
  },
  {
+  "id": "",
+  "name": "Hrvatska Dubica (Bosanska Dubica)",
+  "ulazMin": 60,
+  "izlazMin": null,
+  "ulazTxt": "1 h",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "L: 0,5 km T: 22.8.2026. 11:06:47",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-22T11:06:47+02:00",
+  "izlazTsISO": "",
+  "ts": "L: 0,5 km T: 22.8.2026. 11:06:47",
+  "tsISO": "2026-08-22T11:06:47+02:00"
+ },
+ {
   "id": "ba-kamensko",
   "name": "Kamensko (Kamensko)",
   "ulazMin": 30,
@@ -375,12 +395,12 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "L: 0,5 km T: 22.8.2026. 8:10:04",
+  "ulazTs": "L: 0,5 km T: 22.8.2026. 11:05:15",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-22T08:10:04+02:00",
+  "ulazTsISO": "2026-08-22T11:05:15+02:00",
   "izlazTsISO": "",
-  "ts": "L: 0,5 km T: 22.8.2026. 8:10:04",
-  "tsISO": "2026-08-22T08:10:04+02:00"
+  "ts": "L: 0,5 km T: 22.8.2026. 11:05:15",
+  "tsISO": "2026-08-22T11:05:15+02:00"
  },
  {
   "id": "",
