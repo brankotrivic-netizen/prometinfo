@@ -15,11 +15,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "23.08.2026 13:47:14",
-  "izlazTs": "23.08.2026 14:31:27",
+  "ulazTs": "23.8.2026. 13:47:14",
+  "izlazTs": "23.8.2026. 14:31:27",
   "ulazTsISO": "2026-08-23T13:47:14+02:00",
   "izlazTsISO": "2026-08-23T14:31:27+02:00",
-  "ts": "23.08.2026 13:47:14",
+  "ts": "23.8.2026. 13:47:14",
   "tsISO": "2026-08-23T13:47:14+02:00"
  },
  {
@@ -35,11 +35,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "L: 0,5 km T: 23.08.2026 13:19:37",
+  "ulazTs": "L: 0,5 km T: 23.8.2026. 13:19:37",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-23T13:19:37+02:00",
   "izlazTsISO": "",
-  "ts": "L: 0,5 km T: 23.08.2026 13:19:37",
+  "ts": "L: 0,5 km T: 23.8.2026. 13:19:37",
   "tsISO": "2026-08-23T13:19:37+02:00"
  },
  {
@@ -55,11 +55,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "23.08.2026 13:49:41",
+  "ulazTs": "23.8.2026. 13:49:41",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-23T13:49:41+02:00",
   "izlazTsISO": "",
-  "ts": "23.08.2026 13:49:41",
+  "ts": "23.8.2026. 13:49:41",
   "tsISO": "2026-08-23T13:49:41+02:00"
  },
  {
@@ -75,11 +75,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "23.08.2026 15:54:33",
+  "ulazTs": "23.8.2026. 15:54:33",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-23T15:54:33+02:00",
   "izlazTsISO": "",
-  "ts": "23.08.2026 15:54:33",
+  "ts": "23.8.2026. 15:54:33",
   "tsISO": "2026-08-23T15:54:33+02:00"
  },
  {
@@ -95,11 +95,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "23.08.2026 16:52:25",
+  "ulazTs": "23.8.2026. 16:52:25",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-23T16:52:25+02:00",
   "izlazTsISO": "",
-  "ts": "23.08.2026 16:52:25",
+  "ts": "23.8.2026. 16:52:25",
   "tsISO": "2026-08-23T16:52:25+02:00"
  },
  {
@@ -115,11 +115,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "23.08.2026 14:13:58",
+  "ulazTs": "23.8.2026. 14:13:58",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-23T14:13:58+02:00",
   "izlazTsISO": "",
-  "ts": "23.08.2026 14:13:58",
+  "ts": "23.8.2026. 14:13:58",
   "tsISO": "2026-08-23T14:13:58+02:00"
  },
  {
@@ -135,11 +135,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 90,
-  "ulazTs": "23.08.2026 14:11:44",
+  "ulazTs": "23.8.2026. 14:11:44",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-23T14:11:44+02:00",
   "izlazTsISO": "",
-  "ts": "23.08.2026 14:11:44",
+  "ts": "23.8.2026. 14:11:44",
   "tsISO": "2026-08-23T14:11:44+02:00"
  },
  {
@@ -155,11 +155,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "23.08.2026 14:45:09",
+  "ulazTs": "23.8.2026. 14:45:09",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-23T14:45:09+02:00",
   "izlazTsISO": "",
-  "ts": "23.08.2026 14:45:09",
+  "ts": "23.8.2026. 14:45:09",
   "tsISO": "2026-08-23T14:45:09+02:00"
  },
  {
@@ -175,11 +175,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "23.08.2026 13:25:27",
+  "ulazTs": "23.8.2026. 13:25:27",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-23T13:25:27+02:00",
   "izlazTsISO": "",
-  "ts": "23.08.2026 13:25:27",
+  "ts": "23.8.2026. 13:25:27",
   "tsISO": "2026-08-23T13:25:27+02:00"
  },
  {
@@ -195,11 +195,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "23.08.2026 14:30:59",
+  "ulazTs": "23.8.2026. 14:30:59",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-23T14:30:59+02:00",
   "izlazTsISO": "",
-  "ts": "23.08.2026 14:30:59",
+  "ts": "23.8.2026. 14:30:59",
   "tsISO": "2026-08-23T14:30:59+02:00"
  }
 ];
