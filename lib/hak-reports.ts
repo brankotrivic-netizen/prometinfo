@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "23.8.2026. 16:45",
-  "text": "U priobalju puše jaka bura, zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više u popisu cesta). Na ostalim cestama većinom se vozi uz povoljne vremenske uvjete. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru unutrašnjosti, osobito na autocestama, na cestama u priobalju te većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići zbog vozila u kvaru na 247.+700 km između čvorova Rovanjska i Posedarje u smjeru Dubrovnika, vozi se po dva prometna traka u koloni dugoj oko 3 km između čvorova Ogulin i Lučko u smjeru Za…"
+  "updated": "23.8.2026. 17:02",
+  "text": "U priobalju puše jaka bura, zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više u popisu cesta). Na ostalim cestama većinom se vozi uz povoljne vremenske uvjete. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru unutrašnjosti, osobito na autocestama, na cestama u priobalju te većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići između čvorova Ogulin i Lučko u smjeru Zagreba vozi se u kolonama u pokretu uz povremene zastoje na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja A2 Zagreb-Mac…"
  },
  {
   "title": "Granični prijelazi",

@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T14:45:58.821Z";
+export const PROMET_SI_UPDATED = "2026-08-23T15:11:22.003Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Nova Gorica - Razdrto, priključek Selo - priključek Vipava v smeri Razdrtega, dela, zaprt prehitevalni pas.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.88497,
+  "lng": 13.86159,
+  "start": "2026-06-07T16:16:04.123Z",
+  "end": "2026-12-30T14:00:00Z",
+  "ts": "2026-08-23T14:48:21.18Z"
+ },
  {
   "id": "DARS;871620;4eac381d-7969-4c75-916b-e93477c81cbc",
   "type": "MaintenanceWorks",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-23T13:00:44.247Z"
- },
- {
-  "id": "DARS;871604;ead56a5b-35b8-4504-9f04-a19e89126be2",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Nova Gorica - Razdrto, priključek Selo - pokrit vkop Vipavski Križ v smeri Razdrtega, dela, zaprt prehitevalni pas.",
-  "loc": "H4, Nova Gorica - Razdrto",
-  "lat": 45.88499,
-  "lng": 13.86145,
-  "start": "2026-08-23T12:36:16.987Z",
-  "end": "2026-10-23T18:00:00Z",
-  "ts": "2026-08-23T12:37:21.227Z"
  },
  {
   "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
@@ -213,17 +213,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-17T05:32:00.113Z"
  },
  {
-  "id": "DARS;870070;41598eae-3f93-4de9-b44a-ac4601353802",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-731, Polzela - Parižlje - Braslovče, v Rakovlju, izmenično enosmerni promet, vzdrževalna dela, do 23. 8. 2026.",
-  "loc": "R3-731, Polzela - Parižlje - Braslovče - Male Braslovče",
-  "lat": 46.28361,
-  "lng": 15.04439,
-  "start": "2026-08-17T05:00:00Z",
-  "end": "2026-08-23T15:00:00Z",
-  "ts": "2026-08-17T03:42:51.297Z"
- },
- {
   "id": "DARS;866201;d6958092-7c2d-440e-868a-321ca647c70b",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-231, Gibina - Razkrižje, Šafarsko - Gibina, izmenično enosmerni promet, pomična zapora, izvedbe ukrepov za umirjanje prometa, do 1. 9. 2026.",
@@ -255,17 +244,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T06:12:42.773Z",
   "end": "2027-07-15T21:59:00Z",
   "ts": "2026-08-13T06:13:41.147Z"
- },
- {
-  "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Nova Gorica - Razdrto, pred priključkom 2 Ajdovščina v smeri Razdrtega, dela, zaprt prehitevalni pas.",
-  "loc": "H4, Nova Gorica - Razdrto",
-  "lat": 45.88156,
-  "lng": 13.896,
-  "start": "2026-06-07T16:16:04.123Z",
-  "end": "2026-12-30T14:00:00Z",
-  "ts": "2026-08-12T18:55:52.82Z"
  },
  {
   "id": "DARS;866206;86dd5309-50c6-419a-a6b6-24c079355c32",
