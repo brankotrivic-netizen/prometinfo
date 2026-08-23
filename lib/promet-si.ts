@@ -1,18 +1,51 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T18:12:52.536Z";
+export const PROMET_SI_UPDATED = "2026-08-23T18:47:30.452Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;871648;7303fc9d-ff05-41cb-99b1-b4305b204a3d",
+  "id": "DARS;871659;57f80e4c-0e04-424f-b114-53624918f88e",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Kastelec, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.57453,
-  "lng": 13.87028,
-  "start": "2026-08-23T17:26:35.53Z",
-  "end": "2026-08-23T21:00:00Z",
-  "ts": "2026-08-23T18:07:23.25Z"
+  "desc": "A1, Ljubljana - Maribor, priključek Dramlje - predor Pletovarje v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.26376,
+  "lng": 15.39328,
+  "start": "2026-08-23T18:39:37.57Z",
+  "end": "2026-08-23T21:00:34.617Z",
+  "ts": "2026-08-23T18:41:06.48Z"
+ },
+ {
+  "id": "DARS;871662;f2faae21-0ba3-49d6-a839-0a6d47086b0f",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Razdrto - Nova Gorica, priključek Vipava - pokrit vkop Vipavski Križ v smeri Vrtojbe, Italije, dela, promet poteka po enem voznem pasu v vsako smer.",
+  "loc": "H4, Razdrto - Nova Gorica",
+  "lat": 45.87922,
+  "lng": 13.90565,
+  "start": "2026-08-23T18:38:44.783Z",
+  "end": "2026-12-30T15:00:00Z",
+  "ts": "2026-08-23T18:40:13.543Z"
+ },
+ {
+  "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Nova Gorica - Razdrto, priključek Selo - priključek Vipava v smeri Razdrtega, dela, promet poteka po enem voznem pasu v vsako smer.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.88497,
+  "lng": 13.86159,
+  "start": "2026-06-07T16:16:04.123Z",
+  "end": "2026-12-30T14:00:00Z",
+  "ts": "2026-08-23T18:39:56.1Z"
+ },
+ {
+  "id": "DARS;871661;d0e74512-5c90-4b6c-be30-38c0839cf53c",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Razdrto - Nova Gorica, priključek Vipava - priključek 2 Ajdovščina v smeri Vrtojbe, Italije, dela, zaprt prehitevalni pas.",
+  "loc": "H4, Razdrto - Nova Gorica",
+  "lat": 45.86454,
+  "lng": 13.93518,
+  "start": "2026-08-23T18:26:39.37Z",
+  "end": "2026-08-24T18:00:00Z",
+  "ts": "2026-08-23T18:26:47.73Z"
  },
  {
   "id": "DARS;871653;4531139f-e222-4f55-ab44-0ef2a983ee72",
@@ -46,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-23T16:47:27.767Z",
   "end": "2026-08-23T22:00:00Z",
   "ts": "2026-08-23T16:47:43.103Z"
- },
- {
-  "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Nova Gorica - Razdrto, priključek Selo - priključek Vipava v smeri Razdrtega, dela, zaprt prehitevalni pas.",
-  "loc": "H4, Nova Gorica - Razdrto",
-  "lat": 45.88497,
-  "lng": 13.86159,
-  "start": "2026-06-07T16:16:04.123Z",
-  "end": "2026-12-30T14:00:00Z",
-  "ts": "2026-08-23T14:48:21.18Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -266,28 +288,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T06:12:42.773Z",
   "end": "2027-07-15T21:59:00Z",
   "ts": "2026-08-13T06:13:41.147Z"
- },
- {
-  "id": "DARS;866206;86dd5309-50c6-419a-a6b6-24c079355c32",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, priključek 2 Ajdovščina - pokrit vkop Vipavski Križ v smeri Vrtojbe, Italije, dela, zaprt vozni pas.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.88124,
-  "lng": 13.89762,
-  "start": "2026-07-28T09:43:56.123Z",
-  "end": "2026-12-30T21:00:00Z",
-  "ts": "2026-08-12T12:04:05.59Z"
- },
- {
-  "id": "DARS;855706;30f43462-8ba1-4ecf-bfbe-c0a33e6844f6",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, priključek Vipava - priključek 2 Ajdovščina v smeri Vrtojbe, Italije, dela, promet poteka po enem voznem pasu v vsako smer.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.8616,
-  "lng": 13.93817,
-  "start": "2026-06-07T19:12:55.377Z",
-  "end": "2026-12-30T14:00:00Z",
-  "ts": "2026-08-12T12:03:34.093Z"
  },
  {
   "id": "DARS;869213;d868237c-da32-4743-b395-5a01e43c2b8f",
