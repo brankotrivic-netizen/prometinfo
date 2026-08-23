@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T17:54:31.954Z";
+export const PROMET_SI_UPDATED = "2026-08-23T18:12:52.536Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871648;7303fc9d-ff05-41cb-99b1-b4305b204a3d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Kastelec, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.57453,
+  "lng": 13.87028,
+  "start": "2026-08-23T17:26:35.53Z",
+  "end": "2026-08-23T21:00:00Z",
+  "ts": "2026-08-23T18:07:23.25Z"
+ },
  {
   "id": "DARS;871653;4531139f-e222-4f55-ab44-0ef2a983ee72",
   "type": "MaintenanceWorks",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-23T17:52:53.397Z",
   "end": "2026-08-23T20:00:22.17Z",
   "ts": "2026-08-23T17:53:01.177Z"
- },
- {
-  "id": "DARS;871648;7303fc9d-ff05-41cb-99b1-b4305b204a3d",
-  "type": "MaintenanceWorks",
-  "desc": "R2-409, Črni Kal - Kastelec, dela, oviran promet.",
-  "loc": "R2-409, Priključek Kastelec",
-  "lat": 45.57448,
-  "lng": 13.87026,
-  "start": "2026-08-23T17:26:35.53Z",
-  "end": "2026-08-23T21:00:00Z",
-  "ts": "2026-08-23T17:27:01.667Z"
  },
  {
   "id": "DARS;871646;1065ca2d-43cf-4f2d-b0d6-f2f71a8e09a0",
