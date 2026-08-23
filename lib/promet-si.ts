@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T15:55:56.896Z";
+export const PROMET_SI_UPDATED = "2026-08-23T16:13:21.704Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
@@ -68,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-22T04:14:03.117Z",
   "end": "2026-08-24T17:00:00Z",
   "ts": "2026-08-22T04:14:35.03Z"
- },
- {
-  "id": "DARS;871349;d462bf2f-9c80-45f5-94a3-999b35bba0f9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Brnik, izmenično enosmerni promet, asfaltiranje, do 23. 8. 2026.",
-  "loc": "G2-104, Kranj - Spodnji Brnik",
-  "lat": 46.23626,
-  "lng": 14.43165,
-  "start": "2026-08-22T04:07:17.293Z",
-  "end": "2026-08-23T16:00:00Z",
-  "ts": "2026-08-22T04:08:05.677Z"
  },
  {
   "id": "DARS;870113;2b42dc48-93f7-41a9-9d7d-591472fb9b97",
