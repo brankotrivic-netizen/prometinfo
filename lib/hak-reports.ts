@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "23.8.2026. 06:52",
-  "text": "U priobalju puše jaka bura, zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više u popisu cesta). Na ostalim cestama većinom se vozi uz povoljne vremenske uvjete, a povremeni zastoji mogući su na dionicama gdje su u tijeku radovi. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: predmet na autocesti A1 u tunelu Plasina u smjeru Dubrovnika, vozi se jednim prometnim trakom uz ograničenje brzine 80 km/h životinja (divlja svinja) na autocesti A3 između čvorova Popovača i Kutina, v ozi se uz ograničenje brzine 60 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna …"
+  "updated": "23.8.2026. 07:23",
+  "text": "U priobalju puše jaka bura, zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više u popisu cesta). Na ostalim cestama većinom se vozi uz povoljne vremenske uvjete, a povremeni zastoji mogući su na dionicama gdje su u tijeku radovi. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: životinja (divlja svinja) na autocesti A3 između čvorova Popovača i Kutina, v ozi se uz ograničenje brzine 60 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagr…"
  },
  {
   "title": "Granični prijelazi",
