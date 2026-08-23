@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T17:00:46.551Z";
+export const PROMET_SI_UPDATED = "2026-08-23T17:32:12.778Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871648;7303fc9d-ff05-41cb-99b1-b4305b204a3d",
+  "type": "MaintenanceWorks",
+  "desc": "R2-409, Črni Kal - Kastelec, dela, oviran promet.",
+  "loc": "R2-409, Priključek Kastelec",
+  "lat": 45.57448,
+  "lng": 13.87026,
+  "start": "2026-08-23T17:26:35.53Z",
+  "end": "2026-08-23T21:00:00Z",
+  "ts": "2026-08-23T17:27:01.667Z"
+ },
+ {
+  "id": "DARS;871646;1065ca2d-43cf-4f2d-b0d6-f2f71a8e09a0",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Škofije - Koper, priključek Srmin v smeri Kopra, dela, oviran promet.",
+  "loc": "G1-11, Škofije - Koper",
+  "lat": 45.56066,
+  "lng": 13.78489,
+  "start": "2026-08-23T17:12:00.99Z",
+  "end": "2026-08-23T23:00:00Z",
+  "ts": "2026-08-23T17:13:25.77Z"
+ },
  {
   "id": "DARS;871639;04a30ad7-2fc7-4e46-9962-fa9908908865",
   "type": "MaintenanceWorks",
