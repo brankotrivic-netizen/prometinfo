@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "23.8.2026. 09:43",
+  "updated": "23.8.2026. 09:56",
   "text": "U priobalju puše jaka bura, zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više u popisu cesta). Na ostalim cestama većinom se vozi uz povoljne vremenske uvjete, a povremeni zastoji mogući su na dionicama gdje su u tijeku radovi. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti, osobito na autocestama, na cestama u priobalju te na većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A2 Zagreb-Macelj zbog povećanog priljeva vozila zabranjen je promet za teretna vozila i autobuse između čvorova Krapina i Đurmanec u oba …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "23.8.2026. 09:29",
+  "updated": "23.8.2026. 09:56",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "23.8.2026. 09:29",
+  "updated": "23.8.2026. 09:56",
   "text": "Katamaranska linija Jadrolinije Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab-Lun u prekidu zbog nepovoljnih vremenskih uvjeta. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ub…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "22.8.2026. 21:45",
-  "text": "Prometna prognoza za Hrvatsku za 23. kolovoza 2026. Vozit će se uz uglavnom povoljne vremenske uvjete u većem dijelu zemlje. Na cestama podno Velebita zbog olujne bure moguća su ograničenja i zabrane za pojedine skupine vozila. Pojačan promet očekuje se na većini cesta, osobito u smjeru unutrašnjosti. Kolone i zastoji su mogući na autocesti A1 osobito između čvorova Ogulin i Lučko, riječkoj obilaznici, Istarskom ipsilonu, na Krčkom mostu i otoku Krku te na prilazima turističkim mjestima na obali. Na autocestama vožnja u koloni i zastoji očekuju se posebice u zonama odmorišta, naplata i tunela. Pojačan promet putničkih vozila očekuje se na pojedinim graničnim prijelazima s Bosnom i Hercegovin…"
+  "updated": "23.8.2026. 09:53",
+  "text": "Prometna prognoza za Hrvatsku za 24. kolovoza 2026. Vozit će se uz uglavnom povoljne vremenske uvjete u većem dijelu zemlje. Na cestama podno Velebita zbog olujne bure moguća su ograničenja i zabrane za pojedine skupine vozila. Pojačan promet očekuje se na većini cesta, osobito u smjeru unutrašnjosti. Kolone i zastoji su mogući na autocesti A1 osobito između čvorova Ogulin i Lučko, riječkoj obilaznici, Istarskom ipsilonu, na Krčkom mostu i otoku Krku te na prilazima turističkim mjestima na obali. Na autocestama vožnja u koloni i zastoji očekuju se posebice u zonama odmorišta, naplata i tunela. Pojačan promet putničkih vozila očekuje se na pojedinim graničnim prijelazima s Bosnom i Hercegovin…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
