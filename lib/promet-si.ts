@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T19:53:43.300Z";
+export const PROMET_SI_UPDATED = "2026-08-23T20:09:45.297Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871669;95446eba-5162-40c0-bdbe-0d357bcdc671",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - uvoz Vodice v smeri Jesenic, dela, zaprt vozni pas, barvanje talnih označb.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.15052,
+  "lng": 14.47764,
+  "start": "2026-08-23T19:53:16.247Z",
+  "end": "2026-08-24T03:00:16.677Z",
+  "ts": "2026-08-23T19:53:27.477Z"
+ },
  {
   "id": "DARS;871662;f2faae21-0ba3-49d6-a839-0a6d47086b0f",
   "type": "MaintenanceWorks",
