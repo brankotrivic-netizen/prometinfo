@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T18:47:30.452Z";
+export const PROMET_SI_UPDATED = "2026-08-23T19:14:20.142Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;871659;57f80e4c-0e04-424f-b114-53624918f88e",
@@ -57,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-23T17:52:53.397Z",
   "end": "2026-08-23T20:00:22.17Z",
   "ts": "2026-08-23T17:53:01.177Z"
- },
- {
-  "id": "DARS;871646;1065ca2d-43cf-4f2d-b0d6-f2f71a8e09a0",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, priključek Srmin v smeri Kopra, dela, oviran promet.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.56066,
-  "lng": 13.78489,
-  "start": "2026-08-23T17:12:00.99Z",
-  "end": "2026-08-23T23:00:00Z",
-  "ts": "2026-08-23T17:13:25.77Z"
- },
- {
-  "id": "DARS;871639;04a30ad7-2fc7-4e46-9962-fa9908908865",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, pred uvozom Šentrupert v smeri Maribora, dela, zaprt odstavni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25911,
-  "lng": 15.06826,
-  "start": "2026-08-23T16:47:27.767Z",
-  "end": "2026-08-23T22:00:00Z",
-  "ts": "2026-08-23T16:47:43.103Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
