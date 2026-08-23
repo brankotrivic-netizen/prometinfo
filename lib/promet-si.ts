@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T13:07:58.763Z";
+export const PROMET_SI_UPDATED = "2026-08-23T13:43:30.619Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871609;92b02615-6dbc-41be-951a-d2d8f7c6d1e0",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Nova Gorica - Razdrto, uvoz Vogrsko - izvoz Selo v smeri Razdrtega, dela, pomična zapora voznega pasu.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.91807,
+  "lng": 13.71499,
+  "start": "2026-08-23T13:07:27.103Z",
+  "end": "2026-08-23T19:00:00Z",
+  "ts": "2026-08-23T13:07:43.353Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",

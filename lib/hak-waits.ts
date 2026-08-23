@@ -63,6 +63,26 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-08-23T13:49:41+02:00"
  },
  {
+  "id": "ba-brcko",
+  "name": "Gunja (Brčko)",
+  "ulazMin": 12,
+  "izlazMin": null,
+  "ulazTxt": "&gt;12 sati",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 12,
+  "ulazTs": "23.8.2026. 15:41:43",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-08-23T15:41:43+02:00",
+  "izlazTsISO": "",
+  "ts": "23.8.2026. 15:41:43",
+  "tsISO": "2026-08-23T15:41:43+02:00"
+ },
+ {
   "id": "ba-brod",
   "name": "Slavonski Brod (Bosanski Brod)",
   "ulazMin": 60,

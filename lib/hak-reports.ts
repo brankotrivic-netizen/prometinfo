@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "23.8.2026. 15:07",
-  "text": "U priobalju puše jaka bura, zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više u popisu cesta). Na ostalim cestama većinom se vozi uz povoljne vremenske uvjete. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru unutrašnjosti, osobito na autocestama, na cestama u priobalju te većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići vozilo u kvaru u tunelu Mala Kapela u smjeru Dubrovnika, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h između čvora Posedarje i tunela Čelinka te tunela Mala Kapela i čvora…"
+  "updated": "23.8.2026. 15:42",
+  "text": "U priobalju puše jaka bura, zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više u popisu cesta). Na ostalim cestama većinom se vozi uz povoljne vremenske uvjete. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru unutrašnjosti, osobito na autocestama, na cestama u priobalju te većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići vozilo u kvaru u tunelu Mala Kapela u smjeru Dubrovnika, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h požar na vozilu na 247. km između čvorova Rovanjska i Posedarje u smj…"
  },
  {
   "title": "Granični prijelazi",
