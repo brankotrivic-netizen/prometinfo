@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T19:34:40.526Z";
+export const PROMET_SI_UPDATED = "2026-08-23T19:53:43.300Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;871659;57f80e4c-0e04-424f-b114-53624918f88e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Dramlje - predor Pletovarje v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.26376,
-  "lng": 15.39328,
-  "start": "2026-08-23T18:39:37.57Z",
-  "end": "2026-08-23T21:00:34.617Z",
-  "ts": "2026-08-23T18:41:06.48Z"
- },
  {
   "id": "DARS;871662;f2faae21-0ba3-49d6-a839-0a6d47086b0f",
   "type": "MaintenanceWorks",
@@ -46,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-23T18:26:39.37Z",
   "end": "2026-08-24T18:00:00Z",
   "ts": "2026-08-23T18:26:47.73Z"
- },
- {
-  "id": "DARS;871653;4531139f-e222-4f55-ab44-0ef2a983ee72",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, uvoz Vodice - priključek Brnik v smeri Jesenic, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.18286,
-  "lng": 14.48394,
-  "start": "2026-08-23T17:52:53.397Z",
-  "end": "2026-08-23T20:00:22.17Z",
-  "ts": "2026-08-23T17:53:01.177Z"
  },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
