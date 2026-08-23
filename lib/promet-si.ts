@@ -1,30 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T11:55:56.451Z";
+export const PROMET_SI_UPDATED = "2026-08-23T12:18:43.012Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;871548;e0bf8ae0-d19a-4df7-91a6-4d6fa7695275",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Maribor - Gruškovje (Hrvaška), počivališče Podlehnik - prehod Gruškovje v smeri Hrvaške, dela, oviran promet.",
-  "loc": "A4-E59, Maribor - Gruškovje (Hrvaška)",
-  "lat": 46.31346,
-  "lng": 15.86894,
-  "start": "2026-08-23T06:15:46.773Z",
-  "end": "2026-08-23T12:00:00Z",
-  "ts": "2026-08-23T06:16:10.34Z"
- },
- {
-  "id": "DARS;871539;702ffbb8-6557-4e6f-b0b4-5c76bc1db630",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, izvoz 47 Kozina - uvoz Kozina iz smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.61122,
-  "lng": 13.93272,
-  "start": "2026-08-23T04:50:00.467Z",
-  "end": "2026-08-23T12:00:00Z",
-  "ts": "2026-08-23T04:50:15.693Z"
- },
  {
   "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
   "type": "MaintenanceWorks",
