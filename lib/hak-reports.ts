@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "23.8.2026. 07:50",
-  "text": "U priobalju puše jaka bura, zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više u popisu cesta). Na ostalim cestama većinom se vozi uz povoljne vremenske uvjete, a povremeni zastoji mogući su na dionicama gdje su u tijeku radovi. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do čvora Bisko (A1) A2 Zagreb-Macelj vozi se samo voznim trakom: od 17.+500 do 13.+750 km u smjeru Maclja (dionica Krapina – Đurmanec) i od 6.…"
+  "updated": "23.8.2026. 08:14",
+  "text": "U priobalju puše jaka bura, zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više u popisu cesta). Na ostalim cestama većinom se vozi uz povoljne vremenske uvjete, a povremeni zastoji mogući su na dionicama gdje su u tijeku radovi. Povećana je gustoća prometa na važnijim cestovnim pravcima u smjeru mora i unutrašnjosti, na cestama u priobalju te na većini graničnih prijelaza. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići …"
  },
  {
   "title": "Granični prijelazi",
