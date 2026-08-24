@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T08:02:57.646Z";
+export const PROMET_SI_UPDATED = "2026-08-24T09:01:28.105Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871815;64a08b3c-d2d7-422e-9d96-5513b0f36078",
+  "type": "MaintenanceWorks",
+  "desc": "R2-430, Hoče - Pesnica, izvoz 5 Maribor center, dela, oviran promet, strojno pometanje.",
+  "loc": "R2-430, Hoče - Pesnica",
+  "lat": 46.5582,
+  "lng": 15.6608,
+  "start": "2026-08-24T08:21:41.303Z",
+  "end": "2026-08-24T14:00:00Z",
+  "ts": "2026-08-24T08:21:48.633Z"
+ },
  {
   "id": "DARS;871810;845a8d36-8170-44dc-bc3a-4fddee27d828",
   "type": "MaintenanceWorks",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T07:58:21.71Z",
   "end": "2026-08-24T13:00:00Z",
   "ts": "2026-08-24T07:58:28.923Z"
- },
- {
-  "id": "DARS;871807;54c87d32-6e38-4b5d-8b9b-b7c1de3e7124",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Hoče - Pesnica, pokrit vkop Maribor - uvoz Maribor center v smeri Šentilja, Avstrije, dela, oviran promet.",
-  "loc": "R2-430, Hoče - Pesnica",
-  "lat": 46.55182,
-  "lng": 15.66102,
-  "start": "2026-08-24T07:47:56.02Z",
-  "end": "2026-08-24T09:00:50.477Z",
-  "ts": "2026-08-24T07:48:11.023Z"
  },
  {
   "id": "DARS;871794;b56dad56-aaa3-4329-a8e2-31d17fdc9a3c",
@@ -189,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T06:03:52.327Z",
   "end": "2026-08-24T12:00:57.307Z",
   "ts": "2026-08-24T06:03:54.697Z"
- },
- {
-  "id": "DARS;871763;1e4ec1e6-3664-44fd-a14f-4bda81e87a28",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Domžale - uvoz Blagovica v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.15395,
-  "lng": 14.65199,
-  "start": "2026-08-24T06:01:26.18Z",
-  "end": "2026-08-24T09:00:00Z",
-  "ts": "2026-08-24T06:01:55.84Z"
  },
  {
   "id": "DARS;871761;b3d99d49-3228-4cca-9420-203e5758e1e1",
