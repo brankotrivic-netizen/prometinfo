@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T11:06:03.735Z";
+export const PROMET_SI_UPDATED = "2026-08-24T11:41:29.591Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;871845;b8e264c7-8820-437b-bc3b-e0fce8ebfd01",
@@ -147,17 +147,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-24T06:37:47.517Z"
  },
  {
-  "id": "DARS;871777;10895b04-4c8e-4c71-82ba-4f4f239ba3d2",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - priključek Celje center v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25816,
-  "lng": 15.2352,
-  "start": "2026-08-24T06:36:26.327Z",
-  "end": "2026-08-24T12:00:30.94Z",
-  "ts": "2026-08-24T06:36:32.29Z"
- },
- {
   "id": "DARS;871775;9980d5fd-5311-4413-8207-9c8440b8c1d1",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G1-1, Maribor - Dravograd, pri Vurmatu, izmenično enosmerni promet, kratkotrajne popolne zapore (do 15 minut), sečnje in spravila lesa, do 31. 8. 2026, kratkotrajne popolne zapore med 8:30 in 15. uro.",
@@ -268,28 +257,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-24T05:38:18.5Z"
  },
  {
-  "id": "DARS;871745;6db7f719-0003-40f5-98ef-d5a06f62ffe1",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Turnišče - razcep Dolga vas v smeri Lendave, dela, pomična zapora voznega pasu.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.59742,
-  "lng": 16.35758,
-  "start": "2026-08-24T05:36:24.203Z",
-  "end": "2026-08-24T12:00:56.327Z",
-  "ts": "2026-08-24T05:36:31.11Z"
- },
- {
-  "id": "DARS;871741;aca9a578-025b-4899-b0a6-1e807c63857d",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, razcep Srmin - pokrit vkop Škofije v smeri Škofij, Italije, dela, zaprt vozni pas.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.55753,
-  "lng": 13.78451,
-  "start": "2026-08-24T05:32:13.933Z",
-  "end": "2026-08-24T11:30:35.977Z",
-  "ts": "2026-08-24T05:32:21.583Z"
- },
- {
   "id": "DARS;871740;f302dc18-d826-42bb-a209-6bd339f918f1",
   "type": "MaintenanceWorks",
   "desc": "R2-439, Križevci - Žihlava, Logarovci - Kokoriči, oviran promet, krpanje udarnih jam, do 15:00.",
@@ -321,28 +288,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T05:27:35.06Z",
   "end": "2026-08-24T13:00:00Z",
   "ts": "2026-08-24T05:29:16.473Z"
- },
- {
-  "id": "DARS;871736;fb94e389-2b7a-4794-bda8-fbe9b4780e2b",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Pletovarje - uvoz Žalec v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.27394,
-  "lng": 15.4147,
-  "start": "2026-08-24T05:27:41.047Z",
-  "end": "2026-08-24T12:00:17.483Z",
-  "ts": "2026-08-24T05:27:50.963Z"
- },
- {
-  "id": "DARS;871734;d972f930-fbaf-45a7-905d-ad49f197b793",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, počivališče Ravne v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.60297,
-  "lng": 13.92822,
-  "start": "2026-08-24T05:25:40.083Z",
-  "end": "2026-08-24T12:00:00Z",
-  "ts": "2026-08-24T05:26:25.073Z"
  },
  {
   "id": "DARS;871733;8cdca2af-7f4c-4bb4-99f0-c4cbedf086c6",
