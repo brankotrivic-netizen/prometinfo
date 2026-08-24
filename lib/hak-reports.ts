@@ -3,12 +3,12 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "24.8.2026. 07:02",
-  "text": "Na većini cesta vozi se bez ograničenja, osim na cestama gdje su u tijeku radovi. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog veće gustoće prometa na autocesti A2 Zagreb-Macelj kolona je na čvoru Zagreb zapad u smjeru Zagreba duga 4 km na autocesti A4 na prilazu zoni radova na 91+800 km između čvora Popovec i čvora Zagreb istok u smjeru Zagreba kolona je duga 2 km ŽC6040 Debeljak-Sukošan zatvorena je zbog prometne nesreće AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići (A1) do…"
+  "updated": "24.8.2026. 07:57",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vožnja u koloni i kraći zastoji mogući su na pojedinim dionicama autocesta, duž jadranske obale na prilazima turističkim središtima i mjestima. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: požar raslinja unutar pojasa autoceste na A1 na 25+000 km između čvora Karlovac i čvora Jastrebarsko na kolniku u smjeru Zagreba. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h. Molimo korisnike za oprez. prometna nesreća na zagrebačkoj obilaz…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "24.8.2026. 06:55",
+  "updated": "24.8.2026. 07:24",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "24.8.2026. 07:17",
-  "text": "Prometna prognoza za Hrvatsku za 25. kolovoza 2026. Vozit će se po mjestimice mokrim te vlažnim i skliskim kolnicima. Pojačan promet očekuje se na većini cesta, osobito u smjeru unutrašnjosti. Kolone i zastoji su mogući na autocesti A1 osobito između čvorova Ogulin i Lučko, riječkoj obilaznici, Istarskom ipsilonu, na Krčkom mostu i otoku Krku te na prilazima turističkim mjestima na obali. Na autocestama vožnja u koloni i zastoji očekuju se posebice u zonama odmorišta, naplata i tunela. Pojačan promet putničkih vozila očekuje se na pojedinim graničnim prijelazima s Bosnom i Hercegovinom, Srbijom i Crnom Gorom. U pomorskom prometu ne očekuju se poteškoće. Zbog povećane gustoće prometa moguća s…"
+  "updated": "24.8.2026. 07:23",
+  "text": "Prometna prognoza za Hrvatsku za 25. kolovoza 2026. Vozit će se po mjestimice mokrim te vlažnim i skliskim kolnicima. Zbog povećane gustoće prometa u kolonama u pokretu uz povremene zastoje vozit će se osobito u jutarnjim satima na gradskim cestama i obilaznicama, posebice zagrebačkoj (A3) između čvorova Zagreb zapad i Lučko u oba smjera i čvorova Zagreb istok i Kosnica u smjeru Bregane, autocesti A2 Zagreb-Macelj na čvoru Zagreb zapad u smjeru Zagreba, autocesti A4 Goričan-Zagreb između čvorova Popovec i Zagreb istok, u zoni radova, u smjeru Zagreba, riječkoj obilaznici i na Jadranskoj magistrali (DC8) na prilazima Splitu iz smjera Podstrane i Solina. Tijekom dana zastoji su mogući u zonama…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
