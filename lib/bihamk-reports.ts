@@ -15,6 +15,51 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   ]
  },
  {
+  "label": "Magistralne ceste",
+  "items": [
+   {
+    "title": "Tuzla-Bijeljina (Banj brdo)",
+    "text": "Na dionici Simin Han-Lopare (Banj brdo) zbog sanacionih radova putnička vozila saobraćaju naizmjenično, jednom trakom, dok teretna vozila preko 3,5 t i autobusi saobraćaju pravcem Simin Han-Lopare-Priboj."
+   },
+   {
+    "title": "Ozimica-Topčić Polje (Papratnica)",
+    "text": "Zbog radova na rekonstrukciji raskrsnice na M-17 Ozimica-Topčić Polje na lokalitetu Papratnica svaki dan, osim nedjelje) od 07 do 16:30 sati saobraća se jednom trakom, naizmjenično."
+   },
+   {
+    "title": "Podromanija-Sumbulovac (prevoj Romanija)",
+    "text": "Zbog radova na izgradnji dodatne trake za spora vozila na magistralnom putu Podromanija-Sumbulovac, prevoj Romanija (uspon iz pravca Podromanije) dolazit će do povremenih obustava saobraćaja."
+   },
+   {
+    "title": "Crna Rijeka- Jajce (Podmilačje)",
+    "text": "Zbog izvođenja radova obustavljen je saobraćaj za sva vozila na magistralnoj cesti Jajce–Crna Rijeka, u naselju Podmilačje. Za vrijeme obustave, vozila će biti preusmjeravana alternativnim pravcem preko Mrkonjić Grada."
+   },
+   {
+    "title": "Sarajevo-Lapišnica",
+    "text": "Na magistralnoj cesti Sarajevo-Lapišnica, zbog postavljanja rasvjete u tunelu Vratnik svakog radnog dana od 07 do 16 sati saobraća se usporeno, jednom trakom."
+   },
+   {
+    "title": "Bugojno-Novi Travnik",
+    "text": "U toku su sanacioni radovi na Rostovu, zbog čega se svakim radnim danom od 07 do 16:30 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
+   },
+   {
+    "title": "Jablanica-Blidinje",
+    "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
+   },
+   {
+    "title": "Dobro Polje-Miljevina",
+    "text": "15. 05. 2026. godine - Kako smo upravo obaviješteni, od danas je počelo saobraćanje vozila do 3,5 tone na magistralnoj cesti Dobro Polje-Miljevina. Za vozila preko 3,5 tone i dalje je na snazi zabrana, pa moraju i dalje koristiti alternativne pravce."
+   },
+   {
+    "title": "Brod na Drini-GP Hum/Šćepan Polje",
+    "text": "Zbog brojnih odrona i opasnosti od klizišta na magistralnom putu Brod na Drini-GP Hum/Šćepan Polje putnička vozila saobraćaju otežano, dok teretna ne mogu proći."
+   },
+   {
+    "title": "Bileća-Trebinje",
+    "text": "Na lokalitetu Žudojevići u toku su radovi na sananaciji kosina, zbog čega se saobraća usporeno, jednom trakom (u dužini 300 m)."
+   }
+  ]
+ },
+ {
   "label": "Regionalne ceste",
   "items": [
    {

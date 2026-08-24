@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T21:41:39.015Z";
+export const PROMET_SI_UPDATED = "2026-08-24T21:59:51.037Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;871968;6e273811-d70a-43ca-b31e-07730484cbbe",
+  "id": "DARS;871971;4a5b3755-8ae9-4d8c-a2b0-10646ac6fd66",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - počivališče Barje v smeri Kozarij, dela, pomična zapora voznega pasu, barvanje talnih označb.",
+  "desc": "A1, Ljubljana - južna obvoznica, pred razcepom Kozarje v smeri Kozarij, dela, pomična zapora, barvanje talnih označb.",
   "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02601,
-  "lng": 14.49617,
-  "start": "2026-08-24T21:20:51.103Z",
+  "lat": 46.03556,
+  "lng": 14.46289,
+  "start": "2026-08-24T21:58:37.79Z",
   "end": "2026-08-25T03:00:00Z",
-  "ts": "2026-08-24T21:20:57.457Z"
+  "ts": "2026-08-24T21:58:44.813Z"
+ },
+ {
+  "id": "DARS;871970;fe7c6a79-2e73-49a3-abda-9d970f36c455",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Šentilj, priključek Šentilj - priključek Šentilj v smeri Šentilja, Avstrije, dela, zaprt počasni pas.",
+  "loc": "A1-E57, E59, Maribor - Šentilj",
+  "lat": 46.67381,
+  "lng": 15.64639,
+  "start": "2026-08-24T21:43:28.59Z",
+  "end": "2026-08-25T03:00:59.29Z",
+  "ts": "2026-08-24T21:43:34.88Z"
  },
  {
   "id": "DARS;871959;fc42b9ec-aa9e-4e8c-8fd9-68b154a3d19b",
@@ -125,17 +136,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-24T06:35:46.727Z"
  },
  {
-  "id": "DARS;870589;993c01e2-54c9-4a2c-97bf-c7b057abc473",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Žaga - Kobarid - Tolmin, na Volarjah, izmenično enosmerni promet, sanacije drsnih vozišč, do 23:59.",
-  "loc": "G2-102, Idrsko - Peršeti",
-  "lat": 46.20435,
-  "lng": 13.65956,
-  "start": "2026-08-19T06:48:11.563Z",
-  "end": "2026-08-24T21:59:00Z",
-  "ts": "2026-08-24T06:23:49.127Z"
- },
- {
   "id": "DARS;871769;9c7014c1-e6e2-4ab4-ad1d-37fc9eb01fca",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-679, Breg - Sevnica - Brestanica, pri Brestanici, izmenično enosmerni promet, sanacija obodnega zidu, do 31. 8. 2026.",
@@ -189,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T05:44:54.387Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-24T05:45:47.063Z"
- },
- {
-  "id": "DARS;871733;8cdca2af-7f4c-4bb4-99f0-c4cbedf086c6",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-210, Predvor - Sp. Jezersko - Jezerski vrh, pri Podlebelci, izmenično enosmerni promet, popravilo vozišča.",
-  "loc": "R1-210, Spodnje Jezersko - Preddvor",
-  "lat": 46.31959,
-  "lng": 14.49779,
-  "start": "2026-08-24T05:23:03.373Z",
-  "end": "2026-08-24T21:59:00Z",
-  "ts": "2026-08-24T05:26:18.173Z"
  },
  {
   "id": "DARS;871662;f2faae21-0ba3-49d6-a839-0a6d47086b0f",
