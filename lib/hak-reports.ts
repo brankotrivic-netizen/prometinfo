@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "24.8.2026. 16:40",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozi se u kolonama i uz kraće zastoje na pojedinim dionicama autocesta, osobito u zonama tunela, odmorišta i naplatnih postaja. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići zbog veće gustoće prometa povremeno se vozi usporeno, u kolonama u pokretu, između čvora Bosiljevo 2 i naplate Lučko u oba smjera nakon prometne nesreće kolona između Karlovca i Draganića u smjeru Zagreba duga je je 1 km autobus u kvaru na 184. km izm…"
+  "updated": "24.8.2026. 17:14",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozi se u kolonama i uz kraće zastoje na pojedinim dionicama autocesta, osobito u zonama tunela, odmorišta i naplatnih postaja. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići zbog veće gustoće prometa povremeno se vozi usporeno, u kolonama u pokretu, između čvora Bosiljevo 2 i naplate Lučko u oba smjera A3 Bregana-Lipovac: prometna nesreća kod čvora Lučko u smjeru Bregane, vozi se ograničenje brzine od 60 km/h. na zagrebač…"
  },
  {
   "title": "Granični prijelazi",

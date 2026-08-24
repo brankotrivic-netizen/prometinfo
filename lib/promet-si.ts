@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T14:42:53.369Z";
+export const PROMET_SI_UPDATED = "2026-08-24T15:21:47.047Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-24T13:00:32.703Z"
- },
- {
-  "id": "DARS;871831;9e5dd223-2f25-4fe4-9fa2-f7ed7080f65d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Blagovica - počivališče Lukovica v smeri Ljubljane, dela, oviran promet, košnja.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.16713,
-  "lng": 14.76848,
-  "start": "2026-08-24T09:09:08.783Z",
-  "end": "2026-08-24T15:00:00Z",
-  "ts": "2026-08-24T09:09:39.137Z"
  },
  {
   "id": "DARS;871691;dd363287-d8c2-4df6-a62c-a4871c55d8df",
@@ -125,17 +114,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-24T05:45:47.063Z"
  },
  {
-  "id": "DARS;871750;587232f2-4090-4754-a893-474859744ce4",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-614, Vrtojba - Gornji Miren, izmenično enosmerni promet, pomična zapora, košnja, do 17:00.",
-  "loc": "R3-614, Vrtojba - Gornji Miren",
-  "lat": 45.90861,
-  "lng": 13.62628,
-  "start": "2026-08-24T05:38:56.16Z",
-  "end": "2026-08-24T15:00:00Z",
-  "ts": "2026-08-24T05:39:36.057Z"
- },
- {
   "id": "DARS;871733;8cdca2af-7f4c-4bb4-99f0-c4cbedf086c6",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-210, Predvor - Sp. Jezersko - Jezerski vrh, pri Podlebelci, izmenično enosmerni promet, popravilo vozišča.",
@@ -145,28 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T05:23:03.373Z",
   "end": "2026-08-24T21:59:00Z",
   "ts": "2026-08-24T05:26:18.173Z"
- },
- {
-  "id": "DARS;871732;4c42e2bf-36d8-4986-b776-2a831c9b5a2b",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Tolmin - Sp. Idrija, v Spodnji Idriji, izmenično enosmerni promet, spravilo lesa, do 17:00.",
-  "loc": "G2-102, Želin - Spodnja Idrija",
-  "lat": 46.03466,
-  "lng": 14.02201,
-  "start": "2026-08-24T05:30:00Z",
-  "end": "2026-08-24T15:00:00Z",
-  "ts": "2026-08-24T05:22:19.163Z"
- },
- {
-  "id": "DARS;871684;a4f7c100-44ce-4235-8ad2-c8c2abcc2ac1",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Srmin - izvoz Luka Koper v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55609,
-  "lng": 13.79741,
-  "start": "2026-08-24T03:30:57.82Z",
-  "end": "2026-08-24T15:00:11.517Z",
-  "ts": "2026-08-24T04:06:31.293Z"
  },
  {
   "id": "DARS;871687;df9202d2-b4bb-4f51-afc0-57ae7594eb84",
