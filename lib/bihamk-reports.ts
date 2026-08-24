@@ -38,6 +38,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Sarajevo-Lapišnica, zbog postavljanja rasvjete u tunelu Vratnik svakog radnog dana od 07 do 16 sati saobraća se usporeno, jednom trakom."
    },
    {
+    "title": "Bugojno-Novi Travnik",
+    "text": "U toku su sanacioni radovi na Rostovu, zbog čega se svakim radnim danom od 07 do 16:30 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
+   },
+   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },
@@ -97,10 +101,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Bare-Hrenovica",
     "text": "Na regionalnoj cesti R-448 Goražde-Hrenovica (Bare-Hrenovica), zbog asfaltiranje od 08 do 18 sati vozila će saobraćati uspotreno, jednom trakom, uz moguće obustave ne duže od 1 sat. Dana 21.08. biće na snazi potpuna obustava za teretni saobraćaj."
-   },
-   {
-    "title": "Donji Vakuf-Prusac-Poriče",
-    "text": "Na regionalnoj cesti R-481 Donji Vakuf-Prusac-Poriče (Mehinac-Magrdžijine kuće) zbog aktuelnih radova obustavlja se saobraćaj od 07 do 19 sati u subotu (22.08.) i ponedjeljak (24.08.)."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
