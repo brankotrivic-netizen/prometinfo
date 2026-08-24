@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "24.8.2026. 08:58",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vožnja u koloni i kraći zastoji mogući su na pojedinim dionicama autocesta te duž jadranske obale na prilazima turističkim središtima i mjestima. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog veće gustoće prometa na autocesti A2 Zagreb-Macelj kolona je na čvoru Zagreb zapad u smjeru Zagreba duga 5 km prometna nesreća na zagrebačkoj obilaznici (A3) na 32.+500 km, između čvora Otok Svibovski i mosta Sava u smjeru Bregane kolona je duga 4 km rasuti ter…"
+  "updated": "24.8.2026. 09:59",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vožnja u koloni i kraći zastoji mogući su na pojedinim dionicama autocesta te duž jadranske obale na prilazima turističkim središtima i mjestima. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog veće gustoće prometa na autocesti A2 Zagreb-Macelj kolona je na čvoru Zagreb zapad u smjeru Zagreba duga 5 km na zagrebačkoj obilaznici (A3) između čvora Lučko i čvora Zagreb zapad u smjeru Bregane na prilazu zoni radova vozi se u koloni u pokretu, uz kraće zas…"
  },
  {
   "title": "Granični prijelazi",
