@@ -1,18 +1,106 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-23T21:55:55.614Z";
+export const PROMET_SI_UPDATED = "2026-08-24T04:34:07.373Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;871669;95446eba-5162-40c0-bdbe-0d357bcdc671",
+  "id": "DARS;871700;3a46385a-9c48-4d45-a5a3-ecbb3eaaa295",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-696, Velenje - Škale, Hrastovec - Škale, izmenično enosmerni promet, popravilo bankin, do 14:15.",
+  "loc": "R3-696, Velenje - Škale",
+  "lat": 46.3858,
+  "lng": 15.10572,
+  "start": "2026-08-24T04:28:28.597Z",
+  "end": "2026-08-24T12:15:00Z",
+  "ts": "2026-08-24T04:29:41.187Z"
+ },
+ {
+  "id": "DARS;871695;6b15e73d-9c91-40cd-95b5-e71350e469b9",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "RT-914, Postojna - Rakov Škocjan, pri Ravbarkomandi, izmenično enosmerni promet, popravilo bankin, do 14:00.",
+  "loc": "RT-914, Postojna - Rakov Škocjan",
+  "lat": 45.79526,
+  "lng": 14.24475,
+  "start": "2026-08-24T04:10:14.683Z",
+  "end": "2026-08-24T12:00:00Z",
+  "ts": "2026-08-24T04:12:12.35Z"
+ },
+ {
+  "id": "DARS;871694;2064a29a-619d-4e08-a916-82a98ba1d78e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-409, Postojna - Razdrto, Postojna - Studenec, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "R2-409, Postojna - Razdrto",
+  "lat": 45.76973,
+  "lng": 14.19219,
+  "start": "2026-08-24T04:08:41.843Z",
+  "end": "2026-08-24T12:00:00Z",
+  "ts": "2026-08-24T04:09:39.557Z"
+ },
+ {
+  "id": "DARS;871684;a4f7c100-44ce-4235-8ad2-c8c2abcc2ac1",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - uvoz Vodice v smeri Jesenic, dela, zaprt vozni pas, barvanje talnih označb.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.15052,
-  "lng": 14.47764,
-  "start": "2026-08-23T19:53:16.247Z",
-  "end": "2026-08-24T03:00:16.677Z",
-  "ts": "2026-08-23T19:53:27.477Z"
+  "desc": "A1, Ljubljana - Koper, razcep Srmin - izvoz Luka Koper v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55609,
+  "lng": 13.79741,
+  "start": "2026-08-24T03:30:57.82Z",
+  "end": "2026-08-24T15:00:11.517Z",
+  "ts": "2026-08-24T04:06:31.293Z"
+ },
+ {
+  "id": "DARS;871691;dd363287-d8c2-4df6-a62c-a4871c55d8df",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-745, Dolge Njive - Spodnji Duplek, v Spodnjem Dupleku, pri osnovni šoli, izmenično enosmerni promet, asfaltiranje, do 25. 8. 2026.",
+  "loc": "R3-745, Dolge Njive - Spodnji Duplek",
+  "lat": 46.50499,
+  "lng": 15.75694,
+  "start": "2026-08-24T03:58:27.787Z",
+  "end": "2026-08-25T17:00:00Z",
+  "ts": "2026-08-24T04:00:19.217Z"
+ },
+ {
+  "id": "DARS;871690;ee1b9732-c738-4077-9574-13a149188ee0",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "RT-928, Mozirje - Golte, pri Brezjah, izmenično enosmerni promet, čiščenje cestišča, do 14:00.",
+  "loc": "RT-928, Mozirje - Golte",
+  "lat": 46.35246,
+  "lng": 14.94579,
+  "start": "2026-08-24T04:00:00Z",
+  "end": "2026-08-24T12:00:00Z",
+  "ts": "2026-08-24T03:56:20.797Z"
+ },
+ {
+  "id": "DARS;871688;d6463501-b9a1-4c8a-a593-438be0edda72",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-225, Črnivec - Radmirje, v Tiroseku, izmenično enosmerni promet, vzdrževalna dela, do 14:00.",
+  "loc": "R1-225, Črnivec - Radmirje",
+  "lat": 46.27195,
+  "lng": 14.72053,
+  "start": "2026-08-24T04:00:00Z",
+  "end": "2026-08-24T12:00:00Z",
+  "ts": "2026-08-24T03:53:35.597Z"
+ },
+ {
+  "id": "DARS;871687;df9202d2-b4bb-4f51-afc0-57ae7594eb84",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-408, Žiri - Trebija, na Trebiji, izmenično enosmerni promet, vzdrževalna dela, do 18:00.",
+  "loc": "NK-408, Žiri - Trebija",
+  "lat": 46.09157,
+  "lng": 14.0986,
+  "start": "2026-08-24T04:00:00Z",
+  "end": "2026-08-24T16:00:00Z",
+  "ts": "2026-08-24T03:50:42.773Z"
+ },
+ {
+  "id": "DARS;870113;2b42dc48-93f7-41a9-9d7d-591472fb9b97",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-614, Opatje selo - Komen, pri Vojščici, občasno promet urejen izmenično enosmerno, ureditve vodovodnega priključka, do 19:00.",
+  "loc": "R3-614, Opatje Selo - Komen",
+  "lat": 45.82842,
+  "lng": 13.66887,
+  "start": "2026-08-17T05:36:25.073Z",
+  "end": "2026-08-24T17:00:00Z",
+  "ts": "2026-08-24T03:38:32.727Z"
  },
  {
   "id": "DARS;871662;f2faae21-0ba3-49d6-a839-0a6d47086b0f",
@@ -101,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-22T04:14:03.117Z",
   "end": "2026-08-24T17:00:00Z",
   "ts": "2026-08-22T04:14:35.03Z"
- },
- {
-  "id": "DARS;870113;2b42dc48-93f7-41a9-9d7d-591472fb9b97",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-614, Opatje selo - Komen, pri Vojščici, občasno promet urejen izmenično enosmerno, ureditve vodovodnega priključka, do 24. 8. 2026.",
-  "loc": "R3-614, Opatje Selo - Komen",
-  "lat": 45.82842,
-  "lng": 13.66887,
-  "start": "2026-08-17T05:36:25.073Z",
-  "end": "2026-08-24T15:00:00Z",
-  "ts": "2026-08-21T06:35:17.88Z"
  },
  {
   "id": "DARS;823378;9ed2b8d7-7f5e-40fd-9ced-de3ceb59ea8a",
