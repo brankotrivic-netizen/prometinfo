@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T20:00:20.295Z";
+export const PROMET_SI_UPDATED = "2026-08-24T20:32:15.934Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871964;02561c73-f39c-4069-b57e-b26c4a93bf4d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Koseze v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.02514,
+  "lng": 14.43224,
+  "start": "2026-08-24T20:14:08.36Z",
+  "end": "2026-08-24T21:30:41.633Z",
+  "ts": "2026-08-24T20:14:09.757Z"
+ },
  {
   "id": "DARS;871959;fc42b9ec-aa9e-4e8c-8fd9-68b154a3d19b",
   "type": "MaintenanceWorks",
@@ -37,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-24T17:47:39.92Z"
  },
  {
-  "id": "DARS;871952;3cbe177b-7b2e-4268-adec-8a4994da9b5d",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, priključek Škofije, Ankaran, dela, oviran promet.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.56611,
-  "lng": 13.78521,
-  "start": "2026-08-24T17:36:58.707Z",
-  "end": "2026-08-24T23:00:00Z",
-  "ts": "2026-08-24T17:37:03.62Z"
- },
- {
   "id": "DARS;871951;4c993660-2ef2-434e-b01b-dc972b21d945",
   "type": "MaintenanceWorks",
   "desc": "A1, Maribor - Ljubljana, pred priključkom Blagovica - priključek Domžale v smeri Ljubljane, dela, oviran promet, košnja.",
@@ -79,6 +79,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-24T13:00:32.703Z"
+ },
+ {
+  "id": "DARS;871784;dcb6b59a-31c7-4de7-b6b2-b18b718add02",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-437, Šentilj - prehod Šentilj, pri AC priključku Šentilj, izmenično enosmerni promet, rekonstrukcija viaduktov Šentilj, med 22:30 in 5:30.",
+  "loc": "R2-437, Šentilj",
+  "lat": 46.6802,
+  "lng": 15.65139,
+  "start": "2026-08-24T20:30:00Z",
+  "end": "2026-08-29T21:59:00Z",
+  "ts": "2026-08-24T06:45:07.49Z"
  },
  {
   "id": "DARS;871691;dd363287-d8c2-4df6-a62c-a4871c55d8df",
