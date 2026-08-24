@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T19:07:40.336Z";
+export const PROMET_SI_UPDATED = "2026-08-24T19:40:31.897Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;871959;fc42b9ec-aa9e-4e8c-8fd9-68b154a3d19b",
@@ -68,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T17:28:02.617Z",
   "end": "2026-08-24T23:00:00Z",
   "ts": "2026-08-24T17:29:10.093Z"
- },
- {
-  "id": "DARS;871950;15570f57-b670-408c-933f-b647a55e18ec",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, razcep Gabrk - razcep Gabrk v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.68939,
-  "lng": 13.97798,
-  "start": "2026-08-24T17:11:26.127Z",
-  "end": "2026-08-24T21:00:00Z",
-  "ts": "2026-08-24T17:11:30.117Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
