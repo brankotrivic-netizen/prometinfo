@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T15:21:47.047Z";
+export const PROMET_SI_UPDATED = "2026-08-24T16:01:53.061Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-09-25T21:59:00Z",
+  "ts": "2026-08-24T16:00:04.543Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -123,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T05:23:03.373Z",
   "end": "2026-08-24T21:59:00Z",
   "ts": "2026-08-24T05:26:18.173Z"
- },
- {
-  "id": "DARS;871687;df9202d2-b4bb-4f51-afc0-57ae7594eb84",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-408, Žiri - Trebija, na Trebiji, izmenično enosmerni promet, vzdrževalna dela, do 18:00.",
-  "loc": "NK-408, Žiri - Trebija",
-  "lat": 46.09157,
-  "lng": 14.0986,
-  "start": "2026-08-24T04:00:00Z",
-  "end": "2026-08-24T16:00:00Z",
-  "ts": "2026-08-24T03:50:42.773Z"
  },
  {
   "id": "DARS;871662;f2faae21-0ba3-49d6-a839-0a6d47086b0f",
