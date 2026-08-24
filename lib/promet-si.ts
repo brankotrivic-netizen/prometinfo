@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T17:54:31.101Z";
+export const PROMET_SI_UPDATED = "2026-08-24T18:22:34.654Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871959;fc42b9ec-aa9e-4e8c-8fd9-68b154a3d19b",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, uvoz Novo mesto vzhod - priključek Smednik, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.82954,
+  "lng": 15.18003,
+  "start": "2026-08-24T17:59:13.543Z",
+  "end": "2026-08-25T01:00:17.377Z",
+  "ts": "2026-08-24T17:59:56.893Z"
+ },
  {
   "id": "DARS;871956;df747bcf-7e6a-44c9-8e9b-015d9bac5079",
   "type": "MaintenanceWorks",
@@ -222,17 +233,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-07T16:16:04.123Z",
   "end": "2026-12-30T14:00:00Z",
   "ts": "2026-08-23T18:39:56.1Z"
- },
- {
-  "id": "DARS;871661;d0e74512-5c90-4b6c-be30-38c0839cf53c",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, priključek Vipava - priključek 2 Ajdovščina v smeri Vrtojbe, Italije, dela, zaprt prehitevalni pas.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.86454,
-  "lng": 13.93518,
-  "start": "2026-08-23T18:26:39.37Z",
-  "end": "2026-08-24T18:00:00Z",
-  "ts": "2026-08-23T18:26:47.73Z"
  },
  {
   "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
