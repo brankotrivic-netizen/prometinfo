@@ -1,8 +1,85 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T04:34:07.373Z";
+export const PROMET_SI_UPDATED = "2026-08-24T05:23:34.858Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871727;7e33098b-f822-4938-9a93-f87397893fae",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Obrežje, Mokrice - priključek Brežice v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.87424,
+  "lng": 15.65225,
+  "start": "2026-08-24T05:16:13.467Z",
+  "end": "2026-08-24T13:00:00Z",
+  "ts": "2026-08-24T05:21:19.727Z"
+ },
+ {
+  "id": "DARS;871730;90305302-b015-41cd-985e-a3a36101f110",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, uvoz Divača - priključek Senožeče v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.66738,
+  "lng": 13.96818,
+  "start": "2026-08-24T05:18:19.59Z",
+  "end": "2026-08-24T12:00:00Z",
+  "ts": "2026-08-24T05:18:30.75Z"
+ },
+ {
+  "id": "DARS;871723;07e34b06-9983-4ec6-bd8b-86cdf219f939",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-614, Opatje selo - Komen, Vojščica - Preserje pri Komnu, izmenično enosmerni promet, pomična zapora, košnja, do 15:00.",
+  "loc": "R3-614, Opatje Selo - Komen",
+  "lat": 45.82197,
+  "lng": 13.68449,
+  "start": "2026-08-24T05:06:46.06Z",
+  "end": "2026-08-24T13:00:00Z",
+  "ts": "2026-08-24T05:08:23.663Z"
+ },
+ {
+  "id": "DARS;871719;a8317dd1-528f-4597-b6c9-b19c62f11273",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, pred predorom Ločica v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.21818,
+  "lng": 14.93839,
+  "start": "2026-08-24T04:58:13.447Z",
+  "end": "2026-08-24T10:00:50.9Z",
+  "ts": "2026-08-24T04:58:50.473Z"
+ },
+ {
+  "id": "DARS;871707;12679523-40c9-4277-a157-116c30f1aef2",
+  "type": "MaintenanceWorks",
+  "desc": "R2-404, Ilirska Bistrica - Knežak - Pivka, Šembije - Ilirska Bistrica, oviran promet, čiščenje koritnic, do 14:00.",
+  "loc": "NK-404, Ilirska Bistrica - Pivka",
+  "lat": 45.59168,
+  "lng": 14.23287,
+  "start": "2026-08-24T04:39:20.143Z",
+  "end": "2026-08-24T12:00:00Z",
+  "ts": "2026-08-24T04:40:27.483Z"
+ },
+ {
+  "id": "DARS;871705;a7202587-8798-4daf-842a-52d7de45e7b2",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-404, Podgrad - Ilirska Bistrica, pri Zalčih, izmenično enosmerni promet, popravilo vozišča, do 10:00.",
+  "loc": "R2-404, Podgrad - Ilirska Bistrica",
+  "lat": 45.54697,
+  "lng": 14.18366,
+  "start": "2026-08-24T04:36:40.47Z",
+  "end": "2026-08-24T08:00:00Z",
+  "ts": "2026-08-24T04:38:16.28Z"
+ },
+ {
+  "id": "DARS;871703;e0bb7054-527c-41e6-9d7b-91f72d2d02f9",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-7, Podgrad - Obrov, Podgrad - Male Loče, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "G1-7, Podgrad - Obrov",
+  "lat": 45.52035,
+  "lng": 14.14967,
+  "start": "2026-08-24T04:34:40.8Z",
+  "end": "2026-08-24T12:00:00Z",
+  "ts": "2026-08-24T04:36:07.127Z"
+ },
  {
   "id": "DARS;871700;3a46385a-9c48-4d45-a5a3-ecbb3eaaa295",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -134,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-23T18:26:39.37Z",
   "end": "2026-08-24T18:00:00Z",
   "ts": "2026-08-23T18:26:47.73Z"
- },
- {
-  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
-  "type": "MaintenanceWorks",
-  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
-  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
-  "lat": 46.20334,
-  "lng": 15.25907,
-  "start": "2026-07-29T13:00:00Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-23T13:00:44.247Z"
  },
  {
   "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
