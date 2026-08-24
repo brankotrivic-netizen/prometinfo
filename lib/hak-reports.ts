@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "24.8.2026. 10:54",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vožnja u koloni i kraći zastoji mogući su na pojedinim dionicama autocesta te duž jadranske obale na prilazima turističkim središtima i mjestima. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: osobno vozilo u kvaru na autocesti A1 u tunelu Plasina u smjeru Zagreba, vozi se uz ograničenje brzine od 80 km/h kolona na autocesti A3 ispred naplatne postaje Lučko (A1) u smjeru mora duga je 1 km zbog veće gustoće prometa na autocesti A2 Zagreb-Macelj kolona je n…"
+  "updated": "24.8.2026. 11:54",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vožnja u koloni i kraći zastoji mogući su na pojedinim dionicama autocesta, osobito u zonama tunela, odmorišta i naplatnih postaja. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići zbog veće gustoće prometa povremeno se vozi usporeno između naplatne postaje Lučko i čvora Bosiljevo 2 u oba smjera prometna nesreća na 28. km između čvora Karlovac i čvora Jastrebarsko u smjeru Zagreba, vozi se jednim trakom, uz ograničenje brzin…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "24.8.2026. 10:20",
-  "text": "Trajektna linija 606 Trogir (Soline) - Drvenik Mali - Drvenik Veli u prekidu. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
+  "updated": "24.8.2026. 11:07",
+  "text": "Trajektna linija 606 Trogir (Soline) - Drvenik Mali - Drvenik Veli u prekidu. Uspostavlja se u 14:00 sati iz luke Drvenik Mali. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis,…"
  },
  {
   "title": "Željeznički promet",
