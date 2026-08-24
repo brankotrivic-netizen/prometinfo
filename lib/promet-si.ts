@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T10:38:48.643Z";
+export const PROMET_SI_UPDATED = "2026-08-24T11:06:03.735Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;871845;b8e264c7-8820-437b-bc3b-e0fce8ebfd01",
@@ -13,28 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T09:51:37.527Z",
   "end": "2026-08-24T13:00:58.75Z",
   "ts": "2026-08-24T09:51:41.343Z"
- },
- {
-  "id": "DARS;871834;4577a355-27f9-452b-91a1-e3dbca146249",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Pesnica - Hoče, uvoz Maribor center - pokrit vkop Maribor iz smeri Šentilja, Avstrije, dela, oviran promet.",
-  "loc": "R2-430, Pesnica - Hoče",
-  "lat": 46.56206,
-  "lng": 15.66243,
-  "start": "2026-08-24T09:25:53.713Z",
-  "end": "2026-08-24T12:00:42.42Z",
-  "ts": "2026-08-24T09:25:58.263Z"
- },
- {
-  "id": "DARS;871832;4e4a8307-0771-4112-8c89-35dd4fc503d1",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Vodice - priključek Ljubljana, Šmartno v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.17509,
-  "lng": 14.48609,
-  "start": "2026-08-24T09:18:08.393Z",
-  "end": "2026-08-24T12:00:48.53Z",
-  "ts": "2026-08-24T09:18:14.747Z"
  },
  {
   "id": "DARS;871831;9e5dd223-2f25-4fe4-9fa2-f7ed7080f65d",
@@ -213,17 +191,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-24T06:09:22.323Z"
  },
  {
-  "id": "DARS;871764;03179dd0-a6d9-4d2c-9742-946178f6fa78",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Drnovo - priključek Dobruška vas v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.9118,
-  "lng": 15.47463,
-  "start": "2026-08-24T06:03:52.327Z",
-  "end": "2026-08-24T12:00:57.307Z",
-  "ts": "2026-08-24T06:03:54.697Z"
- },
- {
   "id": "DARS;871761;b3d99d49-3228-4cca-9420-203e5758e1e1",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-412, Kranj, v Kranju, na Stari cesti na mostu čez Savo, dela, izmenično enosmerni promet, do 30. 8. 2026.",
@@ -312,17 +279,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-24T05:36:31.11Z"
  },
  {
-  "id": "DARS;871744;39ec9abe-5112-4f9d-b282-31fc7f4afb1e",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, počivališče Starine - priključek Dobruška vas v smeri Obrežja, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.85003,
-  "lng": 15.24136,
-  "start": "2026-08-24T05:34:32.007Z",
-  "end": "2026-08-24T12:00:40.103Z",
-  "ts": "2026-08-24T05:34:56.867Z"
- },
- {
   "id": "DARS;871741;aca9a578-025b-4899-b0a6-1e807c63857d",
   "type": "MaintenanceWorks",
   "desc": "G1-11, Koper - Škofije, razcep Srmin - pokrit vkop Škofije v smeri Škofij, Italije, dela, zaprt vozni pas.",
@@ -409,17 +365,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T05:30:00Z",
   "end": "2026-08-24T15:00:00Z",
   "ts": "2026-08-24T05:22:19.163Z"
- },
- {
-  "id": "DARS;871727;7e33098b-f822-4938-9a93-f87397893fae",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Obrežje, Mokrice - priključek Brežice v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.87424,
-  "lng": 15.65225,
-  "start": "2026-08-24T05:16:13.467Z",
-  "end": "2026-08-24T13:00:00Z",
-  "ts": "2026-08-24T05:21:19.727Z"
  },
  {
   "id": "DARS;871730;90305302-b015-41cd-985e-a3a36101f110",
