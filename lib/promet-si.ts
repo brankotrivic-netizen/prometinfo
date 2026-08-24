@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T21:03:38.338Z";
+export const PROMET_SI_UPDATED = "2026-08-24T21:41:39.015Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;871964;02561c73-f39c-4069-b57e-b26c4a93bf4d",
+  "id": "DARS;871968;6e273811-d70a-43ca-b31e-07730484cbbe",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Koseze v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.02514,
-  "lng": 14.43224,
-  "start": "2026-08-24T20:14:08.36Z",
-  "end": "2026-08-24T21:30:41.633Z",
-  "ts": "2026-08-24T20:14:09.757Z"
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - počivališče Barje v smeri Kozarij, dela, pomična zapora voznega pasu, barvanje talnih označb.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02601,
+  "lng": 14.49617,
+  "start": "2026-08-24T21:20:51.103Z",
+  "end": "2026-08-25T03:00:00Z",
+  "ts": "2026-08-24T21:20:57.457Z"
  },
  {
   "id": "DARS;871959;fc42b9ec-aa9e-4e8c-8fd9-68b154a3d19b",
