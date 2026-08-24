@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T16:53:25.780Z";
+export const PROMET_SI_UPDATED = "2026-08-24T17:21:09.698Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871950;15570f57-b670-408c-933f-b647a55e18ec",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, razcep Gabrk - razcep Gabrk v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.68939,
+  "lng": 13.97798,
+  "start": "2026-08-24T17:11:26.127Z",
+  "end": "2026-08-24T21:00:00Z",
+  "ts": "2026-08-24T17:11:30.117Z"
+ },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -200,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-22T11:01:24.46Z"
- },
- {
-  "id": "DARS;871351;dbf066b5-197c-450f-ac52-512ac8f07e4a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-710, Maribor - Vurberk - Ptuj, pri Dogošah, izmenično enosmerni promet, popravilo vozišča, do 24. 8. 2026.",
-  "loc": "R3-710, Maribor - Vurberk - Ptuj",
-  "lat": 46.5272,
-  "lng": 15.69953,
-  "start": "2026-08-22T04:14:03.117Z",
-  "end": "2026-08-24T17:00:00Z",
-  "ts": "2026-08-22T04:14:35.03Z"
  },
  {
   "id": "DARS;823378;9ed2b8d7-7f5e-40fd-9ced-de3ceb59ea8a",
