@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-24T14:00:03.438Z";
+export const PROMET_SI_UPDATED = "2026-08-24T14:42:53.369Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-29T13:00:00Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-24T13:00:32.703Z"
- },
- {
-  "id": "DARS;871845;b8e264c7-8820-437b-bc3b-e0fce8ebfd01",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, pokrit vkop Karteljevo - priključek Mirna Peč v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.86077,
-  "lng": 15.1408,
-  "start": "2026-08-24T09:51:37.527Z",
-  "end": "2026-08-24T15:00:00Z",
-  "ts": "2026-08-24T12:33:02.64Z"
  },
  {
   "id": "DARS;871831;9e5dd223-2f25-4fe4-9fa2-f7ed7080f65d",
