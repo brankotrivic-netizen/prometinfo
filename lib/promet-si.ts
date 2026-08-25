@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T07:06:02.209Z";
+export const PROMET_SI_UPDATED = "2026-08-25T07:55:53.342Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872050;a2316d67-92d9-46c1-b049-2425b07da361",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, počivališče Starine - priključek Kronovo v smeri Obrežja, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.85003,
+  "lng": 15.24136,
+  "start": "2026-08-25T07:10:53.61Z",
+  "end": "2026-08-25T12:00:46.78Z",
+  "ts": "2026-08-25T07:11:20.65Z"
+ },
  {
   "id": "DARS;872048;b235f1c7-8a28-4e03-a319-300d1e2dc2e5",
   "type": "MaintenanceWorks",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T07:00:07.93Z",
   "end": "2026-08-25T08:00:38.63Z",
   "ts": "2026-08-25T07:00:12.393Z"
- },
- {
-  "id": "DARS;872046;eb4cbf86-3536-46b7-b035-ba0596dea48a",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, počivališče Povodje - priključek Ljubljana, Šmartno v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.13711,
-  "lng": 14.47795,
-  "start": "2026-08-25T06:55:03.383Z",
-  "end": "2026-08-25T07:30:29.34Z",
-  "ts": "2026-08-25T06:55:06.253Z"
  },
  {
   "id": "DARS;872045;500a7cd7-02d3-4027-9777-444a0da51c20",
