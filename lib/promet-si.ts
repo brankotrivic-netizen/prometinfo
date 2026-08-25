@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T16:28:01.898Z";
+export const PROMET_SI_UPDATED = "2026-08-25T17:04:37.012Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872234;66ce8123-94b1-4e99-b6a3-1aa4d1b7b48f",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, uvoz Letališče Maribor v smeri Maribora, dela, oviran promet.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.47389,
+  "lng": 15.67766,
+  "start": "2026-08-25T16:47:01.607Z",
+  "end": "2026-08-25T22:00:00Z",
+  "ts": "2026-08-25T16:47:03.237Z"
+ },
+ {
+  "id": "DARS;872233;856e5524-308c-4ad5-a816-8d5c0b70a017",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, izvoz 1 Letališče Maribor iz smeri Ptuja, dela, oviran promet.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.47332,
+  "lng": 15.67861,
+  "start": "2026-08-25T16:46:54.393Z",
+  "end": "2026-08-25T22:00:00Z",
+  "ts": "2026-08-25T16:46:57.13Z"
+ },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",
