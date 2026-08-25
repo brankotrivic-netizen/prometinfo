@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T05:45:19.943Z";
+export const PROMET_SI_UPDATED = "2026-08-25T06:04:06.445Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872030;017bf818-6f89-4e7d-b62c-7429597cad24",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, priključek Lendava - priključek Pince v smeri Madžarske, dela, pomična zapora voznega pasu.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.53555,
+  "lng": 16.44498,
+  "start": "2026-08-25T05:55:16.213Z",
+  "end": "2026-08-25T12:00:41.997Z",
+  "ts": "2026-08-25T05:55:56.41Z"
+ },
+ {
+  "id": "DARS;872029;ce1c4988-6f9d-4d04-b51b-0812f34daec6",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, priključek Lendava - prehod Pince v smeri Madžarske, dela, zaprt vozni pas.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.55259,
+  "lng": 16.44456,
+  "start": "2026-08-25T05:55:03.507Z",
+  "end": "2026-08-25T08:00:37.407Z",
+  "ts": "2026-08-25T05:55:07.837Z"
+ },
+ {
+  "id": "DARS;872026;6760c24f-e484-4c53-bd84-0277104b3c86",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-725, Sebeborci - Fokovci, pri Andrejcih, izmenično enosmerni promet, čiščenje jarkov, do 15:00.",
+  "loc": "R3-725, Sebeborci - Trakšarov Breg",
+  "lat": 46.71416,
+  "lng": 16.21706,
+  "start": "2026-08-25T05:51:43.193Z",
+  "end": "2026-08-25T13:00:00Z",
+  "ts": "2026-08-25T05:52:17.323Z"
+ },
+ {
+  "id": "DARS;871081;f109633c-5963-4157-b590-a400e05d0fd7",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-711, Rače - Kungota - Kidričevo, v Račah, izmenično enosmerni promet, izgradnje kablovoda, do 31. 8. 2026.",
+  "loc": "R3-711, Rače - Kungota - Kidričevo",
+  "lat": 46.45258,
+  "lng": 15.68885,
+  "start": "2026-08-21T05:45:32.4Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-08-25T05:44:23.453Z"
+ },
  {
   "id": "DARS;872020;75c4a856-e7ef-44fc-bc4d-d6e93646e132",
   "type": "MaintenanceWorks",
@@ -376,17 +420,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-11-19T12:04:18.903Z",
   "end": "2027-02-22T22:59:00Z",
   "ts": "2026-08-21T06:21:41.447Z"
- },
- {
-  "id": "DARS;871081;f109633c-5963-4157-b590-a400e05d0fd7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-711, Rače - Kungota - Kidričevo, v Račah, izmenično enosmerni promet, izgradnje kablovoda, do 25. 8. 2026.",
-  "loc": "R3-711, Rače - Kungota - Kidričevo",
-  "lat": 46.45258,
-  "lng": 15.68885,
-  "start": "2026-08-21T05:45:32.4Z",
-  "end": "2026-08-25T21:59:00Z",
-  "ts": "2026-08-21T05:45:52.37Z"
  },
  {
   "id": "DARS;871074;a4b637af-52dc-4c7c-b59e-37d947e39102",
