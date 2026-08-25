@@ -119,7 +119,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇭🇷",
   "p95": "1,660 EUR",
   "p98": "2,120 EUR",
-  "diesel": "1,960 EUR",
+  "diesel": "1,860 EUR",
   "date": "25. 8. 2026"
  },
  {
