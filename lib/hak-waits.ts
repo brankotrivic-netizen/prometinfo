@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "",
-  "name": "Karasovići (Sutorina)",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "25.8.2026. 16:40:13",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-08-25T16:40:13+02:00",
-  "izlazTsISO": "",
-  "ts": "25.8.2026. 16:40:13",
-  "tsISO": "2026-08-25T16:40:13+02:00"
- },
- {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
   "ulazMin": 120,
@@ -30,16 +10,16 @@ export const HAK_WAITS: HakWait[] = [
   "ulazTxt": "2 h",
   "izlazTxt": "do 30 min.",
   "truckUlazMin": 240,
-  "truckIzlazMin": 60,
+  "truckIzlazMin": null,
   "truckUlazTxt": "4 h",
-  "truckIzlazTxt": "1 h",
+  "truckIzlazTxt": "-",
   "level": "high",
   "waitMinutes": 120,
-  "ulazTs": "25.8.2026. 20:40:08",
-  "izlazTs": "25.8.2026. 20:40:42",
+  "ulazTs": "25.08.2026 20:40:08",
+  "izlazTs": "25.08.2026 20:40:42",
   "ulazTsISO": "2026-08-25T20:40:08+02:00",
   "izlazTsISO": "2026-08-25T20:40:42+02:00",
-  "ts": "25.8.2026. 20:40:08",
+  "ts": "25.08.2026 20:40:08",
   "tsISO": "2026-08-25T20:40:08+02:00"
  },
  {
@@ -55,11 +35,11 @@ export const HAK_WAITS: HakWait[] = [
   "truckIzlazTxt": "1 h",
   "level": "low",
   "waitMinutes": 30,
-  "ulazTs": "25.8.2026. 19:20:45",
+  "ulazTs": "25.08.2026 19:20:45",
   "izlazTs": "Nema podataka",
   "ulazTsISO": "2026-08-25T19:20:45+02:00",
   "izlazTsISO": "",
-  "ts": "25.8.2026. 19:20:45",
+  "ts": "25.08.2026 19:20:45",
   "tsISO": "2026-08-25T19:20:45+02:00"
  }
 ];
