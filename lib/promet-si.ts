@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T10:20:28.664Z";
+export const PROMET_SI_UPDATED = "2026-08-25T10:56:59.750Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872106;5f6f4463-6eed-43b4-a73e-0de6b245d884",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, pred priključkom Ljubljana Nove Jarše v smeri Kosez, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.06762,
+  "lng": 14.56741,
+  "start": "2026-08-25T10:39:04.197Z",
+  "end": "2026-08-25T16:00:00Z",
+  "ts": "2026-08-25T10:41:45.133Z"
+ },
+ {
+  "id": "DARS;872032;d8ed7ce0-f2c5-4c7f-8817-d6f22065d184",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj zahod v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.23559,
+  "lng": 14.4065,
+  "start": "2026-08-25T06:10:00.027Z",
+  "end": "2026-08-25T13:00:00Z",
+  "ts": "2026-08-25T10:40:56.797Z"
+ },
  {
   "id": "DARS;872093;558e8fdd-6da0-4653-805b-8aaffca911fe",
   "type": "MaintenanceWorks",
@@ -13,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T10:01:00.58Z",
   "end": "2026-08-25T12:00:08.16Z",
   "ts": "2026-08-25T10:01:07.9Z"
- },
- {
-  "id": "DARS;872088;b412409a-6ba3-48ba-aa8e-2e83cb6187e8",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, pokrit vkop Strmec - priključek Ljubljana Bizovik v smeri Zadobrove, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.03556,
-  "lng": 14.5726,
-  "start": "2026-08-25T09:46:35.967Z",
-  "end": "2026-08-25T11:00:53.567Z",
-  "ts": "2026-08-25T09:46:46.41Z"
  },
  {
   "id": "DARS;872085;83debb2f-5383-46b3-8d7d-0181d8d34782",
@@ -158,17 +169,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-25T06:11:36.177Z"
  },
  {
-  "id": "DARS;872032;d8ed7ce0-f2c5-4c7f-8817-d6f22065d184",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj zahod v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.23559,
-  "lng": 14.4065,
-  "start": "2026-08-25T06:10:00.027Z",
-  "end": "2026-08-25T12:00:18.813Z",
-  "ts": "2026-08-25T06:10:04.16Z"
- },
- {
   "id": "DARS;872026;6760c24f-e484-4c53-bd84-0277104b3c86",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-725, Sebeborci - Fokovci, pri Andrejcih, izmenično enosmerni promet, čiščenje jarkov, do 15:00.",
@@ -266,17 +266,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T04:58:58.057Z",
   "end": "2026-08-25T14:00:00Z",
   "ts": "2026-08-25T05:00:00.97Z"
- },
- {
-  "id": "DARS;871994;95e11cf3-68b8-4e98-9a6a-b85f59ce0f58",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, razcep Dragučova iz Šentilja proti Slivnici, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.58915,
-  "lng": 15.68493,
-  "start": "2026-08-25T04:54:38.793Z",
-  "end": "2026-08-25T11:00:45.457Z",
-  "ts": "2026-08-25T04:54:52.633Z"
  },
  {
   "id": "DARS;871989;1107a32a-3fcd-4789-a856-8215673a9214",
