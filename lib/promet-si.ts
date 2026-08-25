@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T14:11:31.590Z";
+export const PROMET_SI_UPDATED = "2026-08-25T15:02:23.330Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;872160;71004514-005a-4551-948d-51be1cab9832",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, uvoz Ljubljana jug v smeri Malenc, dela, oviran promet.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.01374,
-  "lng": 14.54505,
-  "start": "2026-08-25T13:41:34.297Z",
-  "end": "2026-08-25T19:00:00Z",
-  "ts": "2026-08-25T13:41:39.4Z"
- },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -79,39 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:45:32.4Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-25T05:44:23.453Z"
- },
- {
-  "id": "DARS;872019;3b2be5e1-3211-4960-9e93-76ac5129889f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-664, Gaber - Uršna Sela - Novo mesto, na Uršnih Selih, izmenično enosmerni promet, rušenje objekta, do 17:00.",
-  "loc": "R3-664, Gaber - Uršna Sela - Novo mesto",
-  "lat": 45.71814,
-  "lng": 15.12582,
-  "start": "2026-08-25T05:36:41.123Z",
-  "end": "2026-08-25T15:00:00Z",
-  "ts": "2026-08-25T05:37:36.563Z"
- },
- {
-  "id": "DARS;871976;d91d938a-fa8a-41ea-b82a-efc7d1946535",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-919, Vinica - Žuniči, pri Dolnjih Ziljah, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 17:00.",
-  "loc": "RT-919, Žuniči - Vinica",
-  "lat": 45.45909,
-  "lng": 15.3214,
-  "start": "2026-08-25T05:00:00Z",
-  "end": "2026-08-25T15:00:00Z",
-  "ts": "2026-08-25T03:34:25.697Z"
- },
- {
-  "id": "DARS;871975;6ae94a78-0225-479d-93ab-634ea8783e30",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-409, Črni Kal - Rižana, pri Kortinah, izmenično enosmerni promet, pomična zapora, krpanje udarnih jam, do 17:00.",
-  "loc": "R2-409, Kortine - Rižana",
-  "lat": 45.5434,
-  "lng": 13.85697,
-  "start": "2026-08-25T03:30:28.61Z",
-  "end": "2026-08-25T15:00:00Z",
-  "ts": "2026-08-25T03:31:01.27Z"
  },
  {
   "id": "DARS;871691;dd363287-d8c2-4df6-a62c-a4871c55d8df",
