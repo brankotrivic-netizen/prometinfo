@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T09:08:50.443Z";
+export const PROMET_SI_UPDATED = "2026-08-25T09:49:16.401Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872088;b412409a-6ba3-48ba-aa8e-2e83cb6187e8",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, pokrit vkop Strmec - priključek Ljubljana Bizovik v smeri Zadobrove, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.03556,
+  "lng": 14.5726,
+  "start": "2026-08-25T09:46:35.967Z",
+  "end": "2026-08-25T11:00:53.567Z",
+  "ts": "2026-08-25T09:46:46.41Z"
+ },
+ {
+  "id": "DARS;872085;83debb2f-5383-46b3-8d7d-0181d8d34782",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Dramlje - predor Pletovarje v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.26466,
+  "lng": 15.396,
+  "start": "2026-08-25T09:40:14.1Z",
+  "end": "2026-08-25T12:00:40.507Z",
+  "ts": "2026-08-25T09:40:21.037Z"
+ },
+ {
+  "id": "DARS;872083;7fac260d-dc86-442b-a61f-131427f9884a",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Maribor - Pince, razcep Dragučova - razcep Dragučova iz smeri Maribora, dela, zaprt vozni pas.",
+  "loc": "A5, Maribor - Pince",
+  "lat": 46.58366,
+  "lng": 15.68935,
+  "start": "2026-08-25T09:34:09.823Z",
+  "end": "2026-08-25T12:00:16.15Z",
+  "ts": "2026-08-25T09:34:12.527Z"
+ },
+ {
+  "id": "DARS;872081;d1260959-eb25-41da-87cf-d2f9a999474b",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, izvoz Vransko - izvoz Vransko v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.24162,
+  "lng": 14.95976,
+  "start": "2026-08-25T09:29:38.797Z",
+  "end": "2026-08-25T14:00:00Z",
+  "ts": "2026-08-25T09:29:51.423Z"
+ },
+ {
+  "id": "DARS;872079;17d2a496-5a70-4f4d-96db-39def12d47a2",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, priključek Lendava - razcep Dolga vas v smeri razcepa Dolga vas, dela, oviran promet.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.57094,
+  "lng": 16.44357,
+  "start": "2026-08-25T09:24:07.143Z",
+  "end": "2026-08-25T15:00:00Z",
+  "ts": "2026-08-25T09:24:12.543Z"
+ },
  {
   "id": "DARS;872071;306423a5-7674-487f-98f1-c76ab617e4c5",
   "type": "MaintenanceWorks",

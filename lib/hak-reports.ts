@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "25.8.2026. 11:07",
-  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Pojačan je promet na gradskim prometnicama, obilaznicama i pojedinim dionicama autocesta. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik nakon prometne nesreće između čvorova Posedarje i Rovanjska na mostu Maslenica (243. km + 200) u smjeru Zagreba kolona je oko 3 km, vozi se po dva traka, ograničenje brzine je 40 km/h A3 Bregana-Lipovac zbog povećane gustoće prometa vozi se usporeno, u kolonama u pokretu, na zagrebačkoj obilaznic…"
+  "updated": "25.8.2026. 11:46",
+  "text": "Pojačan je promet na gradskim prometnicama, obilaznicama i pojedinim dionicama autocesta. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između čvorova Lučko i Bosiljevo II u oba smjera, vozi se bez zastoja nakon prometne nesreće između čvorova Posedarje i Rovanjska na mostu Maslenica (243. km + 200) u smjeru Zagreba kolona je oko 2 km, vozi se po dva traka, ograničenje brzine je 40 km/h A3 Bregana-Lipovac zbog povećane gustoće prometa vozi se usporeno…"
  },
  {
   "title": "Granični prijelazi",
