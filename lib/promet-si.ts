@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T09:49:16.401Z";
+export const PROMET_SI_UPDATED = "2026-08-25T10:20:28.664Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872093;558e8fdd-6da0-4653-805b-8aaffca911fe",
+  "type": "MaintenanceWorks",
+  "desc": "R2-430, Hoče - Pesnica, izvoz Maribor, Pobrežje v smeri Šentilja, Avstrije, dela, oviran promet.",
+  "loc": "R2-430, Hoče - Pesnica",
+  "lat": 46.5478,
+  "lng": 15.66207,
+  "start": "2026-08-25T10:01:00.58Z",
+  "end": "2026-08-25T12:00:08.16Z",
+  "ts": "2026-08-25T10:01:07.9Z"
+ },
  {
   "id": "DARS;872088;b412409a-6ba3-48ba-aa8e-2e83cb6187e8",
   "type": "MaintenanceWorks",
@@ -70,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-25T08:59:11.407Z"
  },
  {
-  "id": "DARS;872059;4da0cd7d-2bea-4f47-bc10-adf2d44f20e9",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Hoče - Pesnica, priključek Maribor Pobrežje, Zrkovska cesta - izvoz Maribor, Pobrežje v smeri Šentilja, Avstrije, dela, oviran promet.",
-  "loc": "R2-430, Hoče - Pesnica",
-  "lat": 46.54449,
-  "lng": 15.66132,
-  "start": "2026-08-25T07:57:46.81Z",
-  "end": "2026-08-25T10:00:41.62Z",
-  "ts": "2026-08-25T07:57:52.9Z"
- },
- {
   "id": "DARS;872057;36ea9689-0a57-4a96-a8a6-ab491fcc6b37",
   "type": "MaintenanceWorks",
   "desc": "A2, Obrežje - Ljubljana, priključek Grosuplje vzhod - priključek Grosuplje zahod, Cikava v smeri Ljubljane, dela, oviran promet.",
@@ -103,15 +103,15 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-25T07:11:20.65Z"
  },
  {
-  "id": "DARS;872045;500a7cd7-02d3-4027-9777-444a0da51c20",
+  "id": "DARS;872047;2ad25981-628a-48cd-bb90-40d8c53be8f6",
   "type": "MaintenanceWorks",
-  "desc": "G2-106, Žlebič - Kočevje, v Koblarjih, oviran promet, čiščenje cestišča, do 12:00.",
-  "loc": "G2-106, Žlebič - Kočevje",
-  "lat": 45.6921,
-  "lng": 14.78334,
-  "start": "2026-08-25T06:53:41.047Z",
-  "end": "2026-08-25T10:00:00Z",
-  "ts": "2026-08-25T06:54:19.72Z"
+  "desc": "R1-214, Kočevje - Stari Log, pri Kočevju, oviran promet, čiščenje cestišča, do 15:00.",
+  "loc": "R1-214, Kočevje - Stari Log",
+  "lat": 45.65291,
+  "lng": 14.85148,
+  "start": "2026-08-25T10:00:00Z",
+  "end": "2026-08-25T13:00:00Z",
+  "ts": "2026-08-25T06:55:06.463Z"
  },
  {
   "id": "DARS;872038;1a19bb38-8a05-4863-885c-1bf190daf2e2",
