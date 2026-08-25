@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T12:23:47.226Z";
+export const PROMET_SI_UPDATED = "2026-08-25T13:25:48.256Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;872125;a49cae01-2721-496e-a495-82309a814a39",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-440, Petanjci - Gederovci, pri Petanjcih, izmenično enosmerni promet, asfaltiranje, do 15:00.",
-  "loc": "R2-440, Petanjci - Gederovci",
-  "lat": 46.65452,
-  "lng": 16.05766,
-  "start": "2026-08-25T11:56:02.233Z",
-  "end": "2026-08-25T13:00:00Z",
-  "ts": "2026-08-25T11:57:38.953Z"
+  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
+  "type": "MaintenanceWorks",
+  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
+  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
+  "lat": 46.20334,
+  "lng": 15.25907,
+  "start": "2026-07-29T13:00:00Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-08-25T13:00:36.52Z"
  },
  {
   "id": "DARS;872081;d1260959-eb25-41da-87cf-d2f9a999474b",
@@ -22,30 +22,8 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 46.24162,
   "lng": 14.95976,
   "start": "2026-08-25T09:29:38.797Z",
-  "end": "2026-08-25T14:00:00Z",
-  "ts": "2026-08-25T09:29:51.423Z"
- },
- {
-  "id": "DARS;872057;36ea9689-0a57-4a96-a8a6-ab491fcc6b37",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Grosuplje vzhod - priključek Grosuplje zahod, Cikava v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.96904,
-  "lng": 14.65445,
-  "start": "2026-08-25T07:55:39.43Z",
-  "end": "2026-08-25T12:29:41.537Z",
-  "ts": "2026-08-25T07:56:21.977Z"
- },
- {
-  "id": "DARS;872047;2ad25981-628a-48cd-bb90-40d8c53be8f6",
-  "type": "MaintenanceWorks",
-  "desc": "R1-214, Kočevje - Stari Log, pri Kočevju, oviran promet, čiščenje cestišča, do 15:00.",
-  "loc": "R1-214, Kočevje - Stari Log",
-  "lat": 45.65291,
-  "lng": 14.85148,
-  "start": "2026-08-25T10:00:00Z",
-  "end": "2026-08-25T13:00:00Z",
-  "ts": "2026-08-25T06:55:06.463Z"
+  "end": "2026-08-25T17:00:00Z",
+  "ts": "2026-08-25T12:36:53.13Z"
  },
  {
   "id": "DARS;872038;1a19bb38-8a05-4863-885c-1bf190daf2e2",
@@ -81,17 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-25T06:11:36.177Z"
  },
  {
-  "id": "DARS;872026;6760c24f-e484-4c53-bd84-0277104b3c86",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-725, Sebeborci - Fokovci, pri Andrejcih, izmenično enosmerni promet, čiščenje jarkov, do 15:00.",
-  "loc": "R3-725, Sebeborci - Trakšarov Breg",
-  "lat": 46.71416,
-  "lng": 16.21706,
-  "start": "2026-08-25T05:51:43.193Z",
-  "end": "2026-08-25T13:00:00Z",
-  "ts": "2026-08-25T05:52:17.323Z"
- },
- {
   "id": "DARS;871081;f109633c-5963-4157-b590-a400e05d0fd7",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-711, Rače - Kungota - Kidričevo, v Račah, izmenično enosmerni promet, izgradnje kablovoda, do 31. 8. 2026.",
@@ -114,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-25T05:37:36.563Z"
  },
  {
-  "id": "DARS;872015;3bcfc7cf-c880-471d-bcfa-2873de4a3ca2",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-230, Radenci - Vučja vas, pri kraju Hrastje-Mota, izmenično enosmerni promet, pomična zapora, vzdrževalna dela, do 15:00.",
-  "loc": "R1-230, Radenci - Vučja Vas",
-  "lat": 46.62139,
-  "lng": 16.07133,
-  "start": "2026-08-25T05:29:28.007Z",
-  "end": "2026-08-25T13:00:00Z",
-  "ts": "2026-08-25T05:30:11.463Z"
- },
- {
   "id": "DARS;872011;434abde0-3869-494c-aece-6bc82ec20bab",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-409, Postojna - Razdrto, pri Hraščah, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
@@ -134,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T05:20:55.903Z",
   "end": "2026-08-25T14:00:00Z",
   "ts": "2026-08-25T05:21:33.857Z"
- },
- {
-  "id": "DARS;872007;dba5cf9e-8333-49a0-bc96-b344845143e5",
-  "type": "MaintenanceWorks",
-  "desc": "R2-439, Križevci - Žihlava, pri Logarovcih, oviran promet, krpanje udarnih jam, do 15:00.",
-  "loc": "R2-439, Križevci - Žihlava",
-  "lat": 46.54339,
-  "lng": 16.12476,
-  "start": "2026-08-25T05:13:53.183Z",
-  "end": "2026-08-25T13:00:00Z",
-  "ts": "2026-08-25T05:14:27.313Z"
  },
  {
   "id": "DARS;871996;8c797928-6e46-4471-bde5-979c6ba5f550",
