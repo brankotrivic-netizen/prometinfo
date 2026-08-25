@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T08:30:19.406Z";
+export const PROMET_SI_UPDATED = "2026-08-25T09:08:50.443Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872071;306423a5-7674-487f-98f1-c76ab617e4c5",
+  "type": "MaintenanceWorks",
+  "desc": "RT-934, Sežana - Lipica, v Lokvah, oviran promet, barvanje talnih označb, do 14:00.",
+  "loc": "RT-934, Lipica - Lokev",
+  "lat": 45.68163,
+  "lng": 13.886,
+  "start": "2026-08-25T08:58:26.623Z",
+  "end": "2026-08-25T12:00:00Z",
+  "ts": "2026-08-25T08:59:11.407Z"
+ },
  {
   "id": "DARS;872059;4da0cd7d-2bea-4f47-bc10-adf2d44f20e9",
   "type": "MaintenanceWorks",
