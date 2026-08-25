@@ -1,8 +1,96 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T05:04:12.538Z";
+export const PROMET_SI_UPDATED = "2026-08-25T05:45:19.943Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872020;75c4a856-e7ef-44fc-bc4d-d6e93646e132",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana vzhod - razcep Zadobrova iz smeri Zaloške proti Sneberjam, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.06169,
+  "lng": 14.57478,
+  "start": "2026-08-25T05:37:40.85Z",
+  "end": "2026-08-25T11:30:13.32Z",
+  "ts": "2026-08-25T05:38:26.123Z"
+ },
+ {
+  "id": "DARS;872019;3b2be5e1-3211-4960-9e93-76ac5129889f",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-664, Gaber - Uršna Sela - Novo mesto, na Uršnih Selih, izmenično enosmerni promet, rušenje objekta, do 17:00.",
+  "loc": "R3-664, Gaber - Uršna Sela - Novo mesto",
+  "lat": 45.71814,
+  "lng": 15.12582,
+  "start": "2026-08-25T05:36:41.123Z",
+  "end": "2026-08-25T15:00:00Z",
+  "ts": "2026-08-25T05:37:36.563Z"
+ },
+ {
+  "id": "DARS;872015;3bcfc7cf-c880-471d-bcfa-2873de4a3ca2",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-230, Radenci - Vučja vas, pri kraju Hrastje-Mota, izmenično enosmerni promet, pomična zapora, vzdrževalna dela, do 15:00.",
+  "loc": "R1-230, Radenci - Vučja Vas",
+  "lat": 46.62139,
+  "lng": 16.07133,
+  "start": "2026-08-25T05:29:28.007Z",
+  "end": "2026-08-25T13:00:00Z",
+  "ts": "2026-08-25T05:30:11.463Z"
+ },
+ {
+  "id": "DARS;872012;3e0a8495-26cf-4d17-8375-227f08db3efb",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "RT-914, Postojna - Rakov Škocjan, pri Ravbarkomandi, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 14:00.",
+  "loc": "RT-914, Postojna - Rakov Škocjan",
+  "lat": 45.79524,
+  "lng": 14.24468,
+  "start": "2026-08-25T05:21:47.58Z",
+  "end": "2026-08-25T12:00:00Z",
+  "ts": "2026-08-25T05:22:20.453Z"
+ },
+ {
+  "id": "DARS;872011;434abde0-3869-494c-aece-6bc82ec20bab",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-409, Postojna - Razdrto, pri Hraščah, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
+  "loc": "R2-409, Postojna - Razdrto",
+  "lat": 45.77571,
+  "lng": 14.15617,
+  "start": "2026-08-25T05:20:55.903Z",
+  "end": "2026-08-25T14:00:00Z",
+  "ts": "2026-08-25T05:21:33.857Z"
+ },
+ {
+  "id": "DARS;872007;dba5cf9e-8333-49a0-bc96-b344845143e5",
+  "type": "MaintenanceWorks",
+  "desc": "R2-439, Križevci - Žihlava, pri Logarovcih, oviran promet, krpanje udarnih jam, do 15:00.",
+  "loc": "R2-439, Križevci - Žihlava",
+  "lat": 46.54339,
+  "lng": 16.12476,
+  "start": "2026-08-25T05:13:53.183Z",
+  "end": "2026-08-25T13:00:00Z",
+  "ts": "2026-08-25T05:14:27.313Z"
+ },
+ {
+  "id": "DARS;872006;a73f1e27-2878-474e-bb32-709ed1f0fe7e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Ločica - priključek Vransko v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.22846,
+  "lng": 14.94904,
+  "start": "2026-08-25T05:13:16.24Z",
+  "end": "2026-08-25T10:00:00Z",
+  "ts": "2026-08-25T05:13:25.857Z"
+ },
+ {
+  "id": "DARS;872003;54da3740-2e0e-42fb-94c7-70688032e379",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, počivališče Podlehnik - razcep Draženci v smeri Maribora, dela, oviran promet.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.32729,
+  "lng": 15.87933,
+  "start": "2026-08-25T05:04:59.42Z",
+  "end": "2026-08-25T12:00:11.107Z",
+  "ts": "2026-08-25T05:05:08.687Z"
+ },
  {
   "id": "DARS;871996;8c797928-6e46-4471-bde5-979c6ba5f550",
   "type": "RoadOrCarriagewayOrLaneManagement",
