@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T07:55:53.342Z";
+export const PROMET_SI_UPDATED = "2026-08-25T08:30:19.406Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872059;4da0cd7d-2bea-4f47-bc10-adf2d44f20e9",
+  "type": "MaintenanceWorks",
+  "desc": "R2-430, Hoče - Pesnica, priključek Maribor Pobrežje, Zrkovska cesta - izvoz Maribor, Pobrežje v smeri Šentilja, Avstrije, dela, oviran promet.",
+  "loc": "R2-430, Hoče - Pesnica",
+  "lat": 46.54449,
+  "lng": 15.66132,
+  "start": "2026-08-25T07:57:46.81Z",
+  "end": "2026-08-25T10:00:41.62Z",
+  "ts": "2026-08-25T07:57:52.9Z"
+ },
+ {
+  "id": "DARS;872057;36ea9689-0a57-4a96-a8a6-ab491fcc6b37",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Grosuplje vzhod - priključek Grosuplje zahod, Cikava v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.96904,
+  "lng": 14.65445,
+  "start": "2026-08-25T07:55:39.43Z",
+  "end": "2026-08-25T12:29:41.537Z",
+  "ts": "2026-08-25T07:56:21.977Z"
+ },
  {
   "id": "DARS;872050;a2316d67-92d9-46c1-b049-2425b07da361",
   "type": "MaintenanceWorks",
@@ -15,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-25T07:11:20.65Z"
  },
  {
-  "id": "DARS;872048;b235f1c7-8a28-4e03-a319-300d1e2dc2e5",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Pesnica - Hoče, uvoz Maribor, Pobrežje - priključek Maribor vzhod, Ptujska cesta v smeri Maribora, dela, oviran promet.",
-  "loc": "R2-430, Pesnica - Hoče",
-  "lat": 46.5474,
-  "lng": 15.66135,
-  "start": "2026-08-25T07:00:07.93Z",
-  "end": "2026-08-25T08:00:38.63Z",
-  "ts": "2026-08-25T07:00:12.393Z"
- },
- {
   "id": "DARS;872045;500a7cd7-02d3-4027-9777-444a0da51c20",
   "type": "MaintenanceWorks",
   "desc": "G2-106, Žlebič - Kočevje, v Koblarjih, oviran promet, čiščenje cestišča, do 12:00.",
@@ -35,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T06:53:41.047Z",
   "end": "2026-08-25T10:00:00Z",
   "ts": "2026-08-25T06:54:19.72Z"
- },
- {
-  "id": "DARS;872020;75c4a856-e7ef-44fc-bc4d-d6e93646e132",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Zadobrova iz smeri Zaloške proti Sneberjam, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.06383,
-  "lng": 14.57549,
-  "start": "2026-08-25T05:37:40.85Z",
-  "end": "2026-08-25T09:00:00Z",
-  "ts": "2026-08-25T06:47:39.907Z"
  },
  {
   "id": "DARS;872038;1a19bb38-8a05-4863-885c-1bf190daf2e2",
@@ -101,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T06:10:00.027Z",
   "end": "2026-08-25T12:00:18.813Z",
   "ts": "2026-08-25T06:10:04.16Z"
- },
- {
-  "id": "DARS;872031;70023f7f-8efa-4856-b459-10791c528cfb",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, počivališče Zima - priključek Dramlje v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25902,
-  "lng": 15.37402,
-  "start": "2026-08-25T06:06:12.92Z",
-  "end": "2026-08-25T12:00:40.83Z",
-  "ts": "2026-08-25T06:06:52.383Z"
  },
  {
   "id": "DARS;872026;6760c24f-e484-4c53-bd84-0277104b3c86",
@@ -233,6 +222,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T04:13:35.903Z",
   "end": "2026-08-25T12:00:00Z",
   "ts": "2026-08-25T04:14:02.22Z"
+ },
+ {
+  "id": "DARS;871988;10dffaf3-6ab7-49f1-a589-22dea7339656",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-7, Kozina - Starod, pri Hrušici, izmenično enosmerni promet, pomična zapora, košnja, do 14:00.",
+  "loc": "G1-7, Podgrad - Obrov",
+  "lat": 45.53173,
+  "lng": 14.12426,
+  "start": "2026-08-25T08:00:00Z",
+  "end": "2026-08-25T12:00:00Z",
+  "ts": "2026-08-25T04:13:17.953Z"
  },
  {
   "id": "DARS;871987;2620fe33-3ea0-46f1-a909-422ff305bb5f",
