@@ -15,40 +15,40 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇦🇩",
   "p95": "1,490 EUR",
   "p98": "1,639 EUR",
-  "diesel": "1,590 EUR",
-  "date": "18. 8. 2026"
+  "diesel": "1,630 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Avstrija",
   "flag": "🇦🇹",
-  "p95": "1,844 EUR",
-  "p98": "2,079 EUR",
-  "diesel": "2,083 EUR",
-  "date": "18. 8. 2026"
+  "p95": "1,849 EUR",
+  "p98": "2,092 EUR",
+  "diesel": "2,093 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Belgija",
   "flag": "🇧🇪",
-  "p95": "1,896 EUR",
-  "p98": "2,068 EUR",
-  "diesel": "2,219 EUR",
-  "date": "18. 8. 2026"
+  "p95": "1,920 EUR",
+  "p98": "2,108 EUR",
+  "diesel": "2,261 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Belorusija",
   "flag": "🇧🇾",
-  "p95": "2,785 BYN (0,84 EUR)",
+  "p95": "2,761 BYN (0,83 EUR)",
   "p98": "",
-  "diesel": "2,785 BYN (0,84 EUR)",
-  "date": "18. 8. 2026"
+  "diesel": "2,761 BYN (0,83 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "BIH",
   "flag": "🇧🇦",
-  "p95": "2,870 BAM (1,47 EUR)",
-  "p98": "3,070 BAM (1,57 EUR)",
-  "diesel": "3,240 BAM (1,66 EUR)",
-  "date": "18. 8. 2026"
+  "p95": "3,010 BAM (1,54 EUR)",
+  "p98": "3,180 BAM (1,63 EUR)",
+  "diesel": "3,380 BAM (1,73 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Bolgarija",
@@ -117,98 +117,98 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Hrvaška",
   "flag": "🇭🇷",
-  "p95": "1,630 EUR",
-  "p98": "2,190 EUR",
-  "diesel": "1,800 EUR",
-  "date": "18. 8. 2026"
+  "p95": "1,660 EUR",
+  "p98": "2,120 EUR",
+  "diesel": "1,960 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Irska",
   "flag": "🇮🇪",
-  "p95": "1,808 EUR",
+  "p95": "1,832 EUR",
   "p98": "",
-  "diesel": "1,836 EUR",
-  "date": "18. 8. 2026"
+  "diesel": "1,893 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Islandija",
   "flag": "🇮🇸",
-  "p95": "218,690 ISK (1,54 EUR)",
+  "p95": "219,890 ISK (1,55 EUR)",
   "p98": "",
-  "diesel": "245,030 ISK (1,73 EUR)",
-  "date": "15. 8. 2026"
+  "diesel": "248,630 ISK (1,76 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Italija",
   "flag": "🇮🇹",
-  "p95": "2,080 EUR",
-  "p98": "2,304 EUR",
-  "diesel": "2,180 EUR",
-  "date": "18. 8. 2026"
+  "p95": "2,100 EUR",
+  "p98": "2,329 EUR",
+  "diesel": "2,219 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Kosovo",
   "flag": "🇽🇰",
-  "p95": "1,360 EUR",
+  "p95": "1,364 EUR",
   "p98": "",
-  "diesel": "1,542 EUR",
-  "date": "18. 8. 2026"
+  "diesel": "1,558 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Latvija",
   "flag": "🇱🇻",
-  "p95": "1,809 EUR",
-  "p98": "1,895 EUR",
-  "diesel": "1,894 EUR",
-  "date": "18. 8. 2026"
+  "p95": "1,813 EUR",
+  "p98": "1,909 EUR",
+  "diesel": "1,914 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Liechtenstein",
   "flag": "🇱🇮",
-  "p95": "1,965 CHF (2,10 EUR)",
+  "p95": "1,989 CHF (2,13 EUR)",
   "p98": "",
-  "diesel": "2,177 CHF (2,33 EUR)",
-  "date": "18. 8. 2026"
+  "diesel": "2,215 CHF (2,37 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Litva",
   "flag": "🇱🇹",
-  "p95": "1,759 EUR",
-  "p98": "1,856 EUR",
-  "diesel": "1,992 EUR",
-  "date": "18. 8. 2026"
+  "p95": "1,770 EUR",
+  "p98": "1,868 EUR",
+  "diesel": "2,011 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Luksemburg",
   "flag": "🇱🇺",
-  "p95": "1,650 EUR",
+  "p95": "1,720 EUR",
   "p98": "",
-  "diesel": "1,850 EUR",
-  "date": "18. 8. 2026"
+  "diesel": "1,910 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Madžarska",
   "flag": "🇭🇺",
-  "p95": "613,300 HUF (1,69 EUR)",
+  "p95": "614,700 HUF (1,69 EUR)",
   "p98": "",
-  "diesel": "671,400 HUF (1,85 EUR)",
-  "date": "18. 8. 2026"
+  "diesel": "693,800 HUF (1,91 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Moldavija",
   "flag": "🇲🇩",
-  "p95": "29,970 MDL (1,49 EUR)",
+  "p95": "30,120 MDL (1,50 EUR)",
   "p98": "",
-  "diesel": "32,040 MDL (1,59 EUR)",
-  "date": "15. 8. 2026"
+  "diesel": "31,980 MDL (1,59 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Nemčija",
   "flag": "🇩🇪",
-  "p95": "2,204 EUR",
-  "p98": "2,294 EUR",
-  "diesel": "2,219 EUR",
-  "date": "18. 8. 2026"
+  "p95": "2,210 EUR",
+  "p98": "2,296 EUR",
+  "diesel": "2,242 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Nizozemska",
@@ -221,10 +221,10 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Norveška",
   "flag": "🇳🇴",
-  "p95": "21,780 NOK (2,00 EUR)",
+  "p95": "22,110 NOK (2,03 EUR)",
   "p98": "",
-  "diesel": "21,410 NOK (1,97 EUR)",
-  "date": "15. 8. 2026"
+  "diesel": "21,990 NOK (2,02 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Poljska",
@@ -237,34 +237,34 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Portugalska",
   "flag": "🇵🇹",
-  "p95": "2,063 EUR",
+  "p95": "2,048 EUR",
   "p98": "",
-  "diesel": "2,089 EUR",
-  "date": "18. 8. 2026"
+  "diesel": "2,103 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Romunija",
   "flag": "🇷🇴",
-  "p95": "9,140 RON (1,74 EUR)",
-  "p98": "10,000 RON (1,90 EUR)",
-  "diesel": "10,530 RON (2,00 EUR)",
-  "date": "18. 8. 2026"
+  "p95": "9,160 RON (1,74 EUR)",
+  "p98": "10,010 RON (1,90 EUR)",
+  "diesel": "10,500 RON (2,00 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Rusija",
   "flag": "🇷🇺",
-  "p95": "77,699 RUB (0,87 EUR)",
+  "p95": "73,328 RUB (0,82 EUR)",
   "p98": "",
-  "diesel": "87,534 RUB (0,97 EUR)",
-  "date": "18. 8. 2026"
+  "diesel": "81,150 RUB (0,90 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Severna Makedonija",
   "flag": "🇲🇰",
-  "p95": "87,000 MKD (1,41 EUR)",
-  "p98": "89,000 MKD (1,45 EUR)",
-  "diesel": "91,500 MKD (1,49 EUR)",
-  "date": "15. 8. 2026"
+  "p95": "91,500 MKD (1,49 EUR)",
+  "p98": "93,500 MKD (1,52 EUR)",
+  "diesel": "98,000 MKD (1,59 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Slovaška",
@@ -277,65 +277,65 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Slovenija",
   "flag": "🇸🇮",
-  "p95": "1,582 EUR",
-  "p98": "1,932 EUR",
-  "diesel": "1,857 EUR",
-  "date": "18. 8. 2026"
+  "p95": "1,608 EUR",
+  "p98": "1,969 EUR",
+  "diesel": "1,903 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Španija",
   "flag": "🇪🇸",
-  "p95": "1,770 EUR",
-  "p98": "1,914 EUR",
-  "diesel": "1,898 EUR",
-  "date": "18. 8. 2026"
+  "p95": "1,787 EUR",
+  "p98": "1,935 EUR",
+  "diesel": "1,934 EUR",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Srbija",
   "flag": "🇷🇸",
-  "p95": "200,750 RSD (1,71 EUR)",
+  "p95": "201,100 RSD (1,71 EUR)",
   "p98": "",
-  "diesel": "227,940 RSD (1,94 EUR)",
-  "date": "18. 8. 2026"
+  "diesel": "229,680 RSD (1,96 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Švedska",
   "flag": "🇸🇪",
-  "p95": "15,290 SEK (1,38 EUR)",
-  "p98": "16,207 SEK (1,47 EUR)",
-  "diesel": "19,840 SEK (1,79 EUR)",
-  "date": "18. 8. 2026"
+  "p95": "15,690 SEK (1,42 EUR)",
+  "p98": "16,631 SEK (1,50 EUR)",
+  "diesel": "20,140 SEK (1,82 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Švica",
   "flag": "🇨🇭",
-  "p95": "1,975 CHF (2,11 EUR)",
+  "p95": "1,999 CHF (2,14 EUR)",
   "p98": "",
-  "diesel": "2,187 CHF (2,34 EUR)",
-  "date": "18. 8. 2026"
+  "diesel": "2,225 CHF (2,38 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Turčija",
   "flag": "🇹🇷",
-  "p95": "69,920 TRY (1,24 EUR)",
-  "p98": "75,514 TRY (1,34 EUR)",
-  "diesel": "80,060 TRY (1,42 EUR)",
-  "date": "18. 8. 2026"
+  "p95": "71,440 TRY (1,27 EUR)",
+  "p98": "77,155 TRY (1,37 EUR)",
+  "diesel": "79,680 TRY (1,42 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "Ukrajina",
   "flag": "🇺🇦",
-  "p95": "82,300 UAH (1,62 EUR)",
-  "p98": "88,884 UAH (1,75 EUR)",
-  "diesel": "94,070 UAH (1,85 EUR)",
-  "date": "18. 8. 2026"
+  "p95": "81,590 UAH (1,60 EUR)",
+  "p98": "88,117 UAH (1,73 EUR)",
+  "diesel": "93,950 UAH (1,85 EUR)",
+  "date": "25. 8. 2026"
  },
  {
   "country": "V. Britanija",
   "flag": "🇬🇧",
-  "p95": "1,620 GBP (1,89 EUR)",
-  "p98": "1,780 GBP (2,08 EUR)",
-  "diesel": "1,820 GBP (2,12 EUR)",
-  "date": "18. 8. 2026"
+  "p95": "1,610 GBP (1,88 EUR)",
+  "p98": "1,770 GBP (2,07 EUR)",
+  "diesel": "1,810 GBP (2,11 EUR)",
+  "date": "25. 8. 2026"
  }
 ];
