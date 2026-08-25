@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "25.8.2026. 18:38",
-  "text": "Kolnici su mjestimice mokri i skliski. Pojačan je promet na gradskim prometnicama, obilaznicama i pojedinim dionicama autocesta. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići vozi se bez gužvi i zastoja, na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja A3 Bregana-Lipovac na zagrebačkoj obilaznici zbog povećane gustoće prometa vozi se usporeno, u kolonama u pokretu, između čvorova Buzin i Zagreb zapad u smjeru Bregane A4 Goričan-Zagreb prometna nesre…"
+  "updated": "25.8.2026. 19:31",
+  "text": "Kolnici su mjestimice mokri i skliski. Pojačan je promet na gradskim prometnicama i obilaznicama. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Ploče-Karamatići vozi se bez gužvi i zastoja, na naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja Jadranska magistrala (DC8) prometna nesreća u mjestu Bibinje, vozi se uz ograničenje brzine 30 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se n…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "25.8.2026. 18:55",
+  "updated": "25.8.2026. 19:31",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "25.8.2026. 18:55",
+  "updated": "25.8.2026. 19:31",
   "text": "U pomorskom prometu nema poteškoća. U prekidu je katamaranska linija Kraljevica-Crikvenica-Senj-Baška-Lopar-Rab (Jadrolinija) . Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis,…"
  },
  {
