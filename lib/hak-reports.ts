@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "25.8.2026. 15:22",
-  "text": "Kolnici su mjestimice mokri i skliski. Pojačan je promet na gradskim prometnicama, obilaznicama i pojedinim dionicama autocesta. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između čvorova Lučko i Bosiljevo II u oba smjera A3 Bregana-Lipovac zbog povećane gustoće prometa vozi se usporeno, u kolonama u pokretu, na zagrebačkoj obilaznici između čvorova Buzin i Zagreb zapad u smjeru Bregane te između čvorova Lučko i Buzin u smjeru Lipovca prometna nesre…"
+  "updated": "25.8.2026. 16:10",
+  "text": "Kolnici su mjestimice mokri i skliski. Pojačan je promet na gradskim prometnicama, obilaznicama i pojedinim dionicama autocesta. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između čvorova Lučko i Bosiljevo II u oba smjera na naplati Lučko u smjeru Zagreba kolona je oko 1 km A3 Bregana-Lipovac zbog povećane gustoće prometa vozi se usporeno, u kolonama u pokretu, na pojedinim dionicama zagrebačke obilaznice između čvorova Zagreb zapad i Zagreb istok u…"
  },
  {
   "title": "Granični prijelazi",

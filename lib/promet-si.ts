@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T13:25:48.256Z";
+export const PROMET_SI_UPDATED = "2026-08-25T14:11:31.590Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872160;71004514-005a-4551-948d-51be1cab9832",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, uvoz Ljubljana jug v smeri Malenc, dela, oviran promet.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.01374,
+  "lng": 14.54505,
+  "start": "2026-08-25T13:41:34.297Z",
+  "end": "2026-08-25T19:00:00Z",
+  "ts": "2026-08-25T13:41:39.4Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -79,39 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T05:36:41.123Z",
   "end": "2026-08-25T15:00:00Z",
   "ts": "2026-08-25T05:37:36.563Z"
- },
- {
-  "id": "DARS;872011;434abde0-3869-494c-aece-6bc82ec20bab",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-409, Postojna - Razdrto, pri Hraščah, izmenično enosmerni promet, pomična zapora, košnja, do 16:00.",
-  "loc": "R2-409, Postojna - Razdrto",
-  "lat": 45.77571,
-  "lng": 14.15617,
-  "start": "2026-08-25T05:20:55.903Z",
-  "end": "2026-08-25T14:00:00Z",
-  "ts": "2026-08-25T05:21:33.857Z"
- },
- {
-  "id": "DARS;871996;8c797928-6e46-4471-bde5-979c6ba5f550",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-439, Križevci - Žihlava, pri Žihlavi, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 16:00.",
-  "loc": "R2-439, Križevci - Žihlava",
-  "lat": 46.55162,
-  "lng": 16.0563,
-  "start": "2026-08-25T04:58:58.057Z",
-  "end": "2026-08-25T14:00:00Z",
-  "ts": "2026-08-25T05:00:00.97Z"
- },
- {
-  "id": "DARS;871978;69bebf96-86be-4bdc-b0b2-a0529285c7f2",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, uvoz Jesenice zahod - predor Karavanke v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.44537,
-  "lng": 14.01212,
-  "start": "2026-08-25T03:36:59.643Z",
-  "end": "2026-08-25T15:43:23.787Z",
-  "ts": "2026-08-25T03:37:06.667Z"
  },
  {
   "id": "DARS;871976;d91d938a-fa8a-41ea-b82a-efc7d1946535",
