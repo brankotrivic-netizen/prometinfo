@@ -1,29 +1,117 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T06:04:06.445Z";
+export const PROMET_SI_UPDATED = "2026-08-25T07:06:02.209Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;872030;017bf818-6f89-4e7d-b62c-7429597cad24",
+  "id": "DARS;872048;b235f1c7-8a28-4e03-a319-300d1e2dc2e5",
   "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Lendava - priključek Pince v smeri Madžarske, dela, pomična zapora voznega pasu.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.53555,
-  "lng": 16.44498,
-  "start": "2026-08-25T05:55:16.213Z",
-  "end": "2026-08-25T12:00:41.997Z",
-  "ts": "2026-08-25T05:55:56.41Z"
+  "desc": "R2-430, Pesnica - Hoče, uvoz Maribor, Pobrežje - priključek Maribor vzhod, Ptujska cesta v smeri Maribora, dela, oviran promet.",
+  "loc": "R2-430, Pesnica - Hoče",
+  "lat": 46.5474,
+  "lng": 15.66135,
+  "start": "2026-08-25T07:00:07.93Z",
+  "end": "2026-08-25T08:00:38.63Z",
+  "ts": "2026-08-25T07:00:12.393Z"
  },
  {
-  "id": "DARS;872029;ce1c4988-6f9d-4d04-b51b-0812f34daec6",
+  "id": "DARS;872046;eb4cbf86-3536-46b7-b035-ba0596dea48a",
   "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, priključek Lendava - prehod Pince v smeri Madžarske, dela, zaprt vozni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.55259,
-  "lng": 16.44456,
-  "start": "2026-08-25T05:55:03.507Z",
-  "end": "2026-08-25T08:00:37.407Z",
-  "ts": "2026-08-25T05:55:07.837Z"
+  "desc": "A2, Karavanke - Ljubljana, počivališče Povodje - priključek Ljubljana, Šmartno v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.13711,
+  "lng": 14.47795,
+  "start": "2026-08-25T06:55:03.383Z",
+  "end": "2026-08-25T07:30:29.34Z",
+  "ts": "2026-08-25T06:55:06.253Z"
+ },
+ {
+  "id": "DARS;872045;500a7cd7-02d3-4027-9777-444a0da51c20",
+  "type": "MaintenanceWorks",
+  "desc": "G2-106, Žlebič - Kočevje, v Koblarjih, oviran promet, čiščenje cestišča, do 12:00.",
+  "loc": "G2-106, Žlebič - Kočevje",
+  "lat": 45.6921,
+  "lng": 14.78334,
+  "start": "2026-08-25T06:53:41.047Z",
+  "end": "2026-08-25T10:00:00Z",
+  "ts": "2026-08-25T06:54:19.72Z"
+ },
+ {
+  "id": "DARS;872020;75c4a856-e7ef-44fc-bc4d-d6e93646e132",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Zadobrova iz smeri Zaloške proti Sneberjam, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.06383,
+  "lng": 14.57549,
+  "start": "2026-08-25T05:37:40.85Z",
+  "end": "2026-08-25T09:00:00Z",
+  "ts": "2026-08-25T06:47:39.907Z"
+ },
+ {
+  "id": "DARS;872038;1a19bb38-8a05-4863-885c-1bf190daf2e2",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-702, Trbonje - Vuhred, pri Sv. Vidu, izmenično enosmerni promet, rekonstrukcija ceste, do 31. 10. 2026.",
+  "loc": "R3-702, Trbonje - Vuhred",
+  "lat": 46.60105,
+  "lng": 15.20028,
+  "start": "2026-08-25T06:16:34.97Z",
+  "end": "2026-10-31T22:59:00Z",
+  "ts": "2026-08-25T06:17:01.033Z"
+ },
+ {
+  "id": "DARS;872006;a73f1e27-2878-474e-bb32-709ed1f0fe7e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Ločica - priključek Vransko v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.22846,
+  "lng": 14.94904,
+  "start": "2026-08-25T05:13:16.24Z",
+  "end": "2026-08-25T13:00:00Z",
+  "ts": "2026-08-25T06:14:50.83Z"
+ },
+ {
+  "id": "DARS;872035;199db030-83bb-4b8f-98ce-39d3352ea382",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-708, Zg. Kungota - Plač, pri Podigracu, izmenično enosmerni promet, gradnja kablovoda, do 30. 9. 2026.",
+  "loc": "R3-708, Zgornja Kungota - Plač (Mejni Prehod)",
+  "lat": 46.66918,
+  "lng": 15.60971,
+  "start": "2026-08-25T06:12:35.16Z",
+  "end": "2026-09-30T21:59:00Z",
+  "ts": "2026-08-25T06:13:10.403Z"
+ },
+ {
+  "id": "DARS;845243;89a5a7e9-77f2-471a-8c9a-b01e3f62db26",
+  "type": "MaintenanceWorks",
+  "desc": "G2-108, Litija - Ljubljana, v Šentjakobu pri AC priključku, oviran promet, obnova AC priključka Šentjakob, do 31. 10. 2026.",
+  "loc": "G2-108, Šentjakob - Ribče",
+  "lat": 46.09132,
+  "lng": 14.58893,
+  "start": "2026-04-18T04:54:16.757Z",
+  "end": "2026-10-31T22:59:00Z",
+  "ts": "2026-08-25T06:11:36.177Z"
+ },
+ {
+  "id": "DARS;872032;d8ed7ce0-f2c5-4c7f-8817-d6f22065d184",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj zahod v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.23559,
+  "lng": 14.4065,
+  "start": "2026-08-25T06:10:00.027Z",
+  "end": "2026-08-25T12:00:18.813Z",
+  "ts": "2026-08-25T06:10:04.16Z"
+ },
+ {
+  "id": "DARS;872031;70023f7f-8efa-4856-b459-10791c528cfb",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Zima - priključek Dramlje v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25902,
+  "lng": 15.37402,
+  "start": "2026-08-25T06:06:12.92Z",
+  "end": "2026-08-25T12:00:40.83Z",
+  "ts": "2026-08-25T06:06:52.383Z"
  },
  {
   "id": "DARS;872026;6760c24f-e484-4c53-bd84-0277104b3c86",
@@ -46,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:45:32.4Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-25T05:44:23.453Z"
- },
- {
-  "id": "DARS;872020;75c4a856-e7ef-44fc-bc4d-d6e93646e132",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana vzhod - razcep Zadobrova iz smeri Zaloške proti Sneberjam, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.06169,
-  "lng": 14.57478,
-  "start": "2026-08-25T05:37:40.85Z",
-  "end": "2026-08-25T11:30:13.32Z",
-  "ts": "2026-08-25T05:38:26.123Z"
  },
  {
   "id": "DARS;872019;3b2be5e1-3211-4960-9e93-76ac5129889f",
@@ -112,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T05:13:53.183Z",
   "end": "2026-08-25T13:00:00Z",
   "ts": "2026-08-25T05:14:27.313Z"
- },
- {
-  "id": "DARS;872006;a73f1e27-2878-474e-bb32-709ed1f0fe7e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, predor Ločica - priključek Vransko v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.22846,
-  "lng": 14.94904,
-  "start": "2026-08-25T05:13:16.24Z",
-  "end": "2026-08-25T10:00:00Z",
-  "ts": "2026-08-25T05:13:25.857Z"
  },
  {
   "id": "DARS;872003;54da3740-2e0e-42fb-94c7-70688032e379",
@@ -1498,17 +1564,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-20T05:06:17.077Z",
   "end": "2026-12-24T22:59:00Z",
   "ts": "2026-04-20T05:08:12.733Z"
- },
- {
-  "id": "DARS;845243;89a5a7e9-77f2-471a-8c9a-b01e3f62db26",
-  "type": "MaintenanceWorks",
-  "desc": "G2-108, Litija - Ljubljana, v Šentjakobu pri AC priključku, oviran promet, obnova AC priključka Šentjakob, do 25. 8. 2026.",
-  "loc": "G2-108, Šentjakob - Ribče",
-  "lat": 46.09132,
-  "lng": 14.58893,
-  "start": "2026-04-18T04:54:16.757Z",
-  "end": "2026-08-25T21:59:00Z",
-  "ts": "2026-04-18T04:57:27.26Z"
  },
  {
   "id": "DARS;761009;a3681a8b-dbca-4e0a-b28f-f3065619b9eb",
