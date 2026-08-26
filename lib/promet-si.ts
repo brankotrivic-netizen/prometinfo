@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-26T13:31:51.509Z";
+export const PROMET_SI_UPDATED = "2026-08-26T14:23:46.288Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -24,28 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T11:17:37.903Z",
   "end": "2026-08-26T17:00:00Z",
   "ts": "2026-08-26T11:17:39.767Z"
- },
- {
-  "id": "DARS;872381;878ef706-342a-44f7-a0ff-c8d458a93c19",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-1, Dravograd - Maribor, pri Dravogradu, izmenično enosmerni promet, pomična zapora, zalivanje reg in razpok, do 16:00.",
-  "loc": "G1-1, Dravograd - Radlje",
-  "lat": 46.59769,
-  "lng": 15.04337,
-  "start": "2026-08-26T10:27:22.663Z",
-  "end": "2026-08-26T14:00:00Z",
-  "ts": "2026-08-26T10:28:17.6Z"
- },
- {
-  "id": "DARS;872361;8c764b98-59ee-4e68-ab9f-4ce5026561b5",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Vransko - predor Jasovnik v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.2538,
-  "lng": 14.97675,
-  "start": "2026-08-26T09:24:13.69Z",
-  "end": "2026-08-26T14:00:00Z",
-  "ts": "2026-08-26T09:24:36.173Z"
  },
  {
   "id": "DARS;872358;f87fe934-8f12-440d-b65d-93fa365baef3",
@@ -90,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-15T06:19:31.58Z",
   "end": "2026-09-02T17:00:00Z",
   "ts": "2026-08-26T06:11:23.793Z"
- },
- {
-  "id": "DARS;872296;5c996267-fe4b-4090-9b29-0c4930e40f90",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-439, Bratonci - Križevci, Banovci - Križevci, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 16:00.",
-  "loc": "R2-439, Bratonci - Križevci",
-  "lat": 46.57098,
-  "lng": 16.15185,
-  "start": "2026-08-26T05:33:10.317Z",
-  "end": "2026-08-26T14:00:00Z",
-  "ts": "2026-08-26T05:34:28.273Z"
  },
  {
   "id": "DARS;872291;3fff9c2f-c270-4b9c-a745-bd1faa696a4f",
