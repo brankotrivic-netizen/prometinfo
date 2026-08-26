@@ -107,6 +107,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-473 Nemila-Bistričak (od kraja asfalta na Bistričaku prema Tesliću), zbog sanacionih radova od 26. do 28. 08. od 07 do 18 sati vozila će saobraćati uz obustave do 45 minuta (15 minuta propuštanja vozila)."
    },
    {
+    "title": "Tomislavgrad-Blidinje",
+    "text": "Danas i naredna dva dana (26., 27. i 28.08.) zbog sanacionih radova obustavljen je saobraćaj na regionalnoj cesti Tomislavgrad-Blidinje."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
