@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-26T09:39:55.905Z";
+export const PROMET_SI_UPDATED = "2026-08-26T10:17:15.971Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872378;49b61b7f-fc18-458b-85d5-6954a02013c9",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Bežigrad - priključek Ljubljana Tomačevo v smeri Zadobrove, dela, zaprt prehitevalni pas.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.08259,
+  "lng": 14.52264,
+  "start": "2026-08-26T10:13:35.807Z",
+  "end": "2026-08-26T16:00:00Z",
+  "ts": "2026-08-26T10:13:38.847Z"
+ },
+ {
+  "id": "DARS;872319;4c8e6403-de98-4fd0-b05e-509f2fcd4511",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Naklo - priključek Podtabor v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.28194,
+  "lng": 14.29212,
+  "start": "2026-08-26T09:01:14.623Z",
+  "end": "2026-08-26T18:00:00Z",
+  "ts": "2026-08-26T10:10:30.673Z"
+ },
+ {
+  "id": "DARS;872377;9ac44d11-be88-4f58-90d6-d39688ecdeea",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Naklo v smeri Karavank, Avstrije, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.28187,
+  "lng": 14.29297,
+  "start": "2026-08-26T10:09:42.183Z",
+  "end": "2026-08-26T16:00:00Z",
+  "ts": "2026-08-26T10:09:47.24Z"
+ },
  {
   "id": "DARS;872367;9fa8d42e-9328-49b5-8e87-6ae96288d02f",
   "type": "MaintenanceWorks",
@@ -48,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-26T09:06:44.62Z"
  },
  {
-  "id": "DARS;872319;4c8e6403-de98-4fd0-b05e-509f2fcd4511",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj zahod - priključek Naklo v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.2675,
-  "lng": 14.33598,
-  "start": "2026-08-26T09:01:14.623Z",
-  "end": "2026-08-26T18:00:00Z",
-  "ts": "2026-08-26T09:01:40.967Z"
- },
- {
   "id": "DARS;872356;07d61957-d374-4ce4-af06-7267d781c501",
   "type": "MaintenanceWorks",
   "desc": "A2, Ljubljana - Obrežje, priključek Kronovo - priključek Dobruška vas v smeri Obrežja, dela, oviran promet.",
@@ -68,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T09:01:28.6Z",
   "end": "2026-08-26T13:00:59.503Z",
   "ts": "2026-08-26T09:01:33.797Z"
- },
- {
-  "id": "DARS;872352;c9859bb0-1442-48a2-ac4c-0b0de3c8f66f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.17768,
-  "lng": 14.48586,
-  "start": "2026-08-26T08:51:15.967Z",
-  "end": "2026-08-26T14:00:00Z",
-  "ts": "2026-08-26T08:51:21.757Z"
  },
  {
   "id": "DARS;872343;e7b391f2-8f9f-4d36-9c1d-8d1bb5906494",
