@@ -1,40 +1,51 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-25T21:49:55.310Z";
+export const PROMET_SI_UPDATED = "2026-08-26T04:28:57.897Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;872251;db9daa44-ce00-4d14-a572-7d2497768e98",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - zahodna obvoznica, razcep Koseze - uvoz Ljubljana center iz smeri Kosez, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - zah. obvoznica",
-  "lat": 46.06496,
-  "lng": 14.45637,
-  "start": "2026-08-25T21:02:25.87Z",
-  "end": "2026-08-26T03:00:00Z",
-  "ts": "2026-08-25T21:11:56.13Z"
- },
- {
-  "id": "DARS;871784;dcb6b59a-31c7-4de7-b6b2-b18b718add02",
+  "id": "DARS;872261;58c24867-36cf-41cf-8967-372d92f97af1",
   "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-437, Šentilj - prehod Šentilj, pri AC priključku Šentilj, izmenično enosmerni promet, rekonstrukcija viaduktov Šentilj, med 22:30 in 5:30.",
-  "loc": "R2-437, Šentilj",
-  "lat": 46.6802,
-  "lng": 15.65139,
-  "start": "2026-08-24T20:30:00Z",
-  "end": "2026-08-29T21:59:00Z",
-  "ts": "2026-08-25T20:30:29.067Z"
+  "desc": "RT-914, Postojna - Rakov Škocjan, pri Ravbarkomandi, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 14:00.",
+  "loc": "RT-914, Postojna - Rakov Škocjan",
+  "lat": 45.79509,
+  "lng": 14.2387,
+  "start": "2026-08-26T04:10:30.12Z",
+  "end": "2026-08-26T12:00:00Z",
+  "ts": "2026-08-26T04:11:01.313Z"
  },
  {
-  "id": "DARS;872243;86fdc416-f09c-435f-aeba-2fb8fc862b47",
+  "id": "DARS;872257;940354b1-0d56-4e3a-9590-ae42ec8ad82a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-225, Črnivec - Radmirje, v Tiroseku, dela, izmenično enosmerni promet, do 14:00.",
+  "loc": "R1-225, Črnivec - Radmirje",
+  "lat": 46.27464,
+  "lng": 14.72722,
+  "start": "2026-08-26T03:59:40.573Z",
+  "end": "2026-08-26T12:00:00Z",
+  "ts": "2026-08-26T04:01:02.26Z"
+ },
+ {
+  "id": "DARS;864545;3f090035-f3fd-4556-b6e0-79417bc24fc8",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25512,
-  "lng": 14.9805,
-  "start": "2026-08-25T19:37:26.99Z",
-  "end": "2026-08-26T03:30:00Z",
-  "ts": "2026-08-25T19:37:53.557Z"
+  "desc": "G2-108, Litija - Zagorje, pri Šklendrovcu, oviran promet, gradnje krožišča in rekonstrukcija mostu, do 2. 12. 2026.",
+  "loc": "G2-108, Litija - Zagorje",
+  "lat": 46.11874,
+  "lng": 14.99241,
+  "start": "2026-07-20T06:16:20.997Z",
+  "end": "2026-12-02T22:59:00Z",
+  "ts": "2026-08-26T03:42:38.02Z"
+ },
+ {
+  "id": "DARS;872254;e1edebd9-54db-422e-92e5-a10888041108",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Jesenice zahod - predor Karavanke v smeri Karavank, Avstrije, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.44541,
+  "lng": 14.01198,
+  "start": "2026-08-26T03:29:41.497Z",
+  "end": "2026-08-26T15:45:06.977Z",
+  "ts": "2026-08-26T03:32:45.057Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -739,17 +750,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-20T07:06:28.867Z",
   "end": "2026-09-11T21:59:00Z",
   "ts": "2026-07-20T07:07:44.2Z"
- },
- {
-  "id": "DARS;864545;3f090035-f3fd-4556-b6e0-79417bc24fc8",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-108, Litija - Zagorje, pri Šklendrovcu, izmenično enosmerni promet, gradnje krožišča in rekonstrukcija mostu, do 2. 12. 2026.",
-  "loc": "G2-108, Litija - Zagorje",
-  "lat": 46.11874,
-  "lng": 14.99241,
-  "start": "2026-07-20T06:16:20.997Z",
-  "end": "2026-12-02T22:59:00Z",
-  "ts": "2026-07-20T06:16:40.237Z"
  },
  {
   "id": "DARS;764167;a5a17448-1069-4b3a-b72f-97ced7c87e9f",
