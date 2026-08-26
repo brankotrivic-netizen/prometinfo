@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.8.2026. 22:03",
-  "text": "Povećana je gustoća prometa na gradskim cestama i obilaznicama. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A6 na čvoru Oštrovica (isključni krak prema NP Oštrovica) na kolniku u smjeru Rijeke, vozi se jednim trakom otežano uz ograničenje brzine od 40 km/h. AUTOCESTE A1 Zagreb-Split-Dubrovnik NAJAVA RADOVA 28./29. kolovoza od 22:00 do 5:00 sati ujutro zbog izvođenja radova podizanja i implementacije portala novog sustava naplate cestarine u zonama naplatnih postaja Brinje,…"
+  "updated": "26.8.2026. 23:12",
+  "text": "Povećana je gustoća prometa na gradskim cestama i obilaznicama. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik NAJAVA RADOVA 28./29. kolovoza od 22:00 do 5:00 sati ujutro zbog izvođenja radova podizanja i implementacije portala novog sustava naplate cestarine u zonama naplatnih postaja Brinje, Perušić i Gospić, provest će se privremena zaustavljanja prometa, 3 (tri) puta po lokaciji u maksimalnim trajanjima do 15 (petnaest) minuta po zaustavljanju. IZVANREDNI PRIJEVOZ d…"
  },
  {
   "title": "Granični prijelazi",
