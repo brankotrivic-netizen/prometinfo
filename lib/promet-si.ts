@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-26T14:23:46.288Z";
+export const PROMET_SI_UPDATED = "2026-08-26T15:56:58.907Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
@@ -15,50 +15,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-26T13:00:05.593Z"
  },
  {
-  "id": "DARS;872389;deef4f9c-c242-4dd5-88d6-e5ab572728ed",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.93413,
-  "lng": 14.82887,
-  "start": "2026-08-26T11:17:37.903Z",
-  "end": "2026-08-26T17:00:00Z",
-  "ts": "2026-08-26T11:17:39.767Z"
- },
- {
-  "id": "DARS;872358;f87fe934-8f12-440d-b65d-93fa365baef3",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, izvoz 33 Ljubljana Rudnik iz smeri Malenc, dela, oviran promet, košnja.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.01751,
-  "lng": 14.52498,
-  "start": "2026-08-26T09:06:41.053Z",
-  "end": "2026-08-26T15:00:00Z",
-  "ts": "2026-08-26T09:06:44.62Z"
- },
- {
-  "id": "DARS;872343;e7b391f2-8f9f-4d36-9c1d-8d1bb5906494",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-409, Črni Kal - Rižana, pri Krnici, dela, izmenično enosmerni promet, do 17:00.",
-  "loc": "R2-409, Kortine - Rižana",
-  "lat": 45.54335,
-  "lng": 13.85685,
-  "start": "2026-08-26T07:55:37.123Z",
-  "end": "2026-08-26T15:00:00Z",
-  "ts": "2026-08-26T07:56:18.41Z"
- },
- {
-  "id": "DARS;872340;96cc1e17-9ce4-4078-884c-6ac173f07ac0",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-106, Livold - Brezovica, pri Fari, izmenično enosmerni promet, pomična zapora, krpanje udarnih jam, do 17:00.",
-  "loc": "G2-106, Livold - Fara",
-  "lat": 45.48254,
-  "lng": 14.88024,
-  "start": "2026-08-26T07:39:43.233Z",
-  "end": "2026-08-26T15:00:00Z",
-  "ts": "2026-08-26T07:40:13.177Z"
- },
- {
   "id": "DARS;857354;2bd24ed5-9663-4beb-beb1-4aacf36bb740",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-601, Borjana - Robidišče, pri Podbeli, izmenično enosmerni promet, izvedba omrežja GOŠO6, do 2. 9. 2026.",
@@ -68,39 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-15T06:19:31.58Z",
   "end": "2026-09-02T17:00:00Z",
   "ts": "2026-08-26T06:11:23.793Z"
- },
- {
-  "id": "DARS;872291;3fff9c2f-c270-4b9c-a745-bd1faa696a4f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Brnik - priključek Vodice v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.21816,
-  "lng": 14.43977,
-  "start": "2026-08-26T05:28:56.68Z",
-  "end": "2026-08-26T15:00:45.64Z",
-  "ts": "2026-08-26T05:29:03.243Z"
- },
- {
-  "id": "DARS;872283;fbb552d9-59c5-47d3-a89e-e4319032b667",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-919, Vinica - Žuniči, pri Balkovcih, izmenično enosmerni promet, pomična zapora, sanacija brežin, do 17:00.",
-  "loc": "RT-919, Žuniči - Vinica",
-  "lat": 45.45903,
-  "lng": 15.32174,
-  "start": "2026-08-26T05:10:07.663Z",
-  "end": "2026-08-26T15:00:00Z",
-  "ts": "2026-08-26T05:11:10.913Z"
- },
- {
-  "id": "DARS;872282;bcec1859-1e5a-4572-82d2-a9b81415989d",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj zahod - priključek Naklo v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.26757,
-  "lng": 14.33581,
-  "start": "2026-08-26T05:10:34.413Z",
-  "end": "2026-08-26T15:00:12.72Z",
-  "ts": "2026-08-26T05:10:45.977Z"
  },
  {
   "id": "DARS;872276;b7a3d9be-2da2-4655-b9c6-b8d1a9d2e876",
