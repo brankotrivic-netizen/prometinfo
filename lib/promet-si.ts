@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-26T11:25:00.977Z";
+export const PROMET_SI_UPDATED = "2026-08-26T11:53:01.662Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;872389;deef4f9c-c242-4dd5-88d6-e5ab572728ed",
@@ -35,28 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T09:01:14.623Z",
   "end": "2026-08-26T18:00:00Z",
   "ts": "2026-08-26T10:10:30.673Z"
- },
- {
-  "id": "DARS;872377;9ac44d11-be88-4f58-90d6-d39688ecdeea",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, uvoz Naklo v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.28187,
-  "lng": 14.29297,
-  "start": "2026-08-26T10:09:42.183Z",
-  "end": "2026-08-26T16:00:00Z",
-  "ts": "2026-08-26T10:09:47.24Z"
- },
- {
-  "id": "DARS;872305;1262a366-95a1-4c05-8180-0060fe4786b1",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, priključek Murska Sobota - priključek Vučja vas v smeri Maribora, dela, pomična zapora voznega pasu.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.63371,
-  "lng": 16.1542,
-  "start": "2026-08-26T05:51:38.223Z",
-  "end": "2026-08-26T12:00:03.993Z",
-  "ts": "2026-08-26T09:28:56.237Z"
  },
  {
   "id": "DARS;872361;8c764b98-59ee-4e68-ab9f-4ce5026561b5",
@@ -169,17 +147,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-26T06:09:24.74Z"
  },
  {
-  "id": "DARS;872313;fb8c4c9a-7460-4b1b-800b-57c7030d3829",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Maribor - Pince, predor Cenkova - priključek Sveti Jurij ob Ščavnici v smeri Murske Sobote, dela, zaprt vozni pas.",
-  "loc": "A5, Maribor - Pince",
-  "lat": 46.57516,
-  "lng": 15.93525,
-  "start": "2026-08-26T06:02:06.677Z",
-  "end": "2026-08-26T12:00:05.387Z",
-  "ts": "2026-08-26T06:02:09.17Z"
- },
- {
   "id": "DARS;872311;6f855c14-5aa0-4e05-bf04-8eee0c0a0655",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-725, Sebeborci - Fokovci, pri Andrejcih, izmenično enosmerni promet, pomična zapora, čiščenje jarkov, do 15:00.",
@@ -222,17 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T05:42:33.45Z",
   "end": "2026-08-26T12:00:00Z",
   "ts": "2026-08-26T05:43:19.373Z"
- },
- {
-  "id": "DARS;872298;4ceee349-ccaa-4400-b7bf-4498151407d5",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, priključek Podlehnik - priključek Zlatoličje v smeri Maribora, dela, oviran promet.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.3563,
-  "lng": 15.86832,
-  "start": "2026-08-26T05:35:49.323Z",
-  "end": "2026-08-26T12:00:40.26Z",
-  "ts": "2026-08-26T05:35:57.583Z"
  },
  {
   "id": "DARS;872297;9430a97a-785f-4f4d-8789-fe229d8c9189",
@@ -365,17 +321,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T04:10:30.12Z",
   "end": "2026-08-26T12:00:00Z",
   "ts": "2026-08-26T04:11:01.313Z"
- },
- {
-  "id": "DARS;872259;8d4f7176-c998-4920-94b5-a40b03aedb1c",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-106, Ljubljana - Kočevje - Petrina, Kočevje - Livold, izmenično enosmerni promet, pomična zapora, čiščenje cestišča, do 13:30.",
-  "loc": "G2-106, Kočevje - Livold",
-  "lat": 45.64558,
-  "lng": 14.85708,
-  "start": "2026-08-26T04:30:00Z",
-  "end": "2026-08-26T11:30:00Z",
-  "ts": "2026-08-26T04:03:29.727Z"
  },
  {
   "id": "DARS;872257;940354b1-0d56-4e3a-9590-ae42ec8ad82a",
