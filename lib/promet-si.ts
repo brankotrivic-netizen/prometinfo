@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-26T08:05:53.116Z";
+export const PROMET_SI_UPDATED = "2026-08-26T08:59:25.867Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;872344;958592ea-e148-403c-8d00-13308f62a8d5",
+  "id": "DARS;872352;c9859bb0-1442-48a2-ac4c-0b0de3c8f66f",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Malence iz smeri Golovca proti Rudniku, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.01354,
-  "lng": 14.55312,
-  "start": "2026-08-26T07:57:33.447Z",
-  "end": "2026-08-26T13:00:00Z",
-  "ts": "2026-08-26T07:57:36.35Z"
+  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.17768,
+  "lng": 14.48586,
+  "start": "2026-08-26T08:51:15.967Z",
+  "end": "2026-08-26T14:00:00Z",
+  "ts": "2026-08-26T08:51:21.757Z"
+ },
+ {
+  "id": "DARS;872350;122298e4-3db0-46a2-91ca-f04fc8a0d1f7",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Vodice - počivališče Povodje v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.17592,
+  "lng": 14.48601,
+  "start": "2026-08-26T08:48:34.46Z",
+  "end": "2026-08-26T11:20:29.34Z",
+  "ts": "2026-08-26T08:48:39.007Z"
  },
  {
   "id": "DARS;872343;e7b391f2-8f9f-4d36-9c1d-8d1bb5906494",
@@ -35,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T07:39:43.233Z",
   "end": "2026-08-26T15:00:00Z",
   "ts": "2026-08-26T07:40:13.177Z"
- },
- {
-  "id": "DARS;872338;488e51b5-82fb-4184-814b-720ec278b77d",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, razcep Malence - priključek Ljubljana jug iz smeri Debelega hriba proti Rudniku, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 46.01342,
-  "lng": 14.55308,
-  "start": "2026-08-26T07:13:06.03Z",
-  "end": "2026-08-26T09:30:11.563Z",
-  "ts": "2026-08-26T07:13:09.273Z"
- },
- {
-  "id": "DARS;872333;322a04b1-66e0-4801-81ee-9f7fdbd73400",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Obrežje, Mokrice - priključek Brežice v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.87437,
-  "lng": 15.65191,
-  "start": "2026-08-26T06:41:22.067Z",
-  "end": "2026-08-26T12:00:00Z",
-  "ts": "2026-08-26T06:41:23.637Z"
  },
  {
   "id": "DARS;872278;0938a413-798a-4f98-a261-f7ee67d2e96b",
@@ -90,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T06:28:11.163Z",
   "end": "2026-08-26T10:00:44.367Z",
   "ts": "2026-08-26T06:28:17.343Z"
- },
- {
-  "id": "DARS;872323;8b89ba7d-89e0-4dc6-a1cb-747bc024a7eb",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, pred priključkom Ljubljana Šmartno v smeri Jesenic, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.11716,
-  "lng": 14.47576,
-  "start": "2026-08-26T06:19:00.66Z",
-  "end": "2026-08-26T12:00:00Z",
-  "ts": "2026-08-26T06:19:13.533Z"
  },
  {
   "id": "DARS;872320;5bc476cd-6c14-4f0b-aac6-f84cd61a287c",
@@ -277,17 +255,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T05:28:56.68Z",
   "end": "2026-08-26T15:00:45.64Z",
   "ts": "2026-08-26T05:29:03.243Z"
- },
- {
-  "id": "DARS;872287;88a8e954-27fe-4ff0-87fb-b2565f997d9f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, izvoz 18 Grosuplje zahod, Cikava - izvoz 18 Grosuplje zahod, Cikava v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.96904,
-  "lng": 14.65445,
-  "start": "2026-08-26T05:18:43.843Z",
-  "end": "2026-08-26T12:32:19.583Z",
-  "ts": "2026-08-26T05:18:47.127Z"
  },
  {
   "id": "DARS;872286;a8931c90-a08a-4059-8c5b-aafee69162e6",
