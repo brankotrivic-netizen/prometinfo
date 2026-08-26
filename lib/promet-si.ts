@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-26T11:53:01.662Z";
+export const PROMET_SI_UPDATED = "2026-08-26T12:26:26.490Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;872389;deef4f9c-c242-4dd5-88d6-e5ab572728ed",
@@ -59,17 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-26T09:06:44.62Z"
  },
  {
-  "id": "DARS;872356;07d61957-d374-4ce4-af06-7267d781c501",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Kronovo - priključek Dobruška vas v smeri Obrežja, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.87543,
-  "lng": 15.30441,
-  "start": "2026-08-26T09:01:28.6Z",
-  "end": "2026-08-26T13:00:59.503Z",
-  "ts": "2026-08-26T09:01:33.797Z"
- },
- {
   "id": "DARS;872343;e7b391f2-8f9f-4d36-9c1d-8d1bb5906494",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-409, Črni Kal - Rižana, pri Krnici, dela, izmenično enosmerni promet, do 17:00.",
@@ -90,39 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T07:39:43.233Z",
   "end": "2026-08-26T15:00:00Z",
   "ts": "2026-08-26T07:40:13.177Z"
- },
- {
-  "id": "DARS;872328;44022aef-2190-4599-8ce1-acdc2b4e0844",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, počivališče Lukovica - priključek Šentrupert v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.17047,
-  "lng": 14.71867,
-  "start": "2026-08-26T06:34:49.707Z",
-  "end": "2026-08-26T12:00:00Z",
-  "ts": "2026-08-26T06:35:17.73Z"
- },
- {
-  "id": "DARS;872320;5bc476cd-6c14-4f0b-aac6-f84cd61a287c",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, prehod Obrežje - priključek Dobruška vas v smeri Novega mesta, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.84685,
-  "lng": 15.69265,
-  "start": "2026-08-26T06:15:37.6Z",
-  "end": "2026-08-26T12:00:51.833Z",
-  "ts": "2026-08-26T06:15:39.23Z"
- },
- {
-  "id": "DARS;872318;fa6806f8-c0cb-413b-a3c3-ff1d4ca75ed2",
-  "type": "MaintenanceWorks",
-  "desc": "RT-934, Sežana - Lipica, Lokev - Lipica, oviran promet, barvanje talnih označb, do 14:00.",
-  "loc": "RT-934, Lipica - Lokev",
-  "lat": 45.67822,
-  "lng": 13.8972,
-  "start": "2026-08-26T06:10:26.103Z",
-  "end": "2026-08-26T12:00:00Z",
-  "ts": "2026-08-26T06:11:38.58Z"
  },
  {
   "id": "DARS;857354;2bd24ed5-9663-4beb-beb1-4aacf36bb740",
@@ -178,28 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T05:54:38.267Z",
   "end": "2026-08-26T13:00:00Z",
   "ts": "2026-08-26T05:55:09.353Z"
- },
- {
-  "id": "DARS;872301;d9c83a93-0b05-44f0-9139-a2b343173c86",
-  "type": "MaintenanceWorks",
-  "desc": "R2-404, Podgrad - Ilirska Bistrica, Podgrad - Harije, oviran promet, košnja, do 14:00.",
-  "loc": "R2-404, Podgrad - Ilirska Bistrica",
-  "lat": 45.52486,
-  "lng": 14.16072,
-  "start": "2026-08-26T05:42:33.45Z",
-  "end": "2026-08-26T12:00:00Z",
-  "ts": "2026-08-26T05:43:19.373Z"
- },
- {
-  "id": "DARS;872297;9430a97a-785f-4f4d-8789-fe229d8c9189",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, počivališče Starine - priključek Dobruška vas v smeri Obrežja, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.85003,
-  "lng": 15.24136,
-  "start": "2026-08-26T05:35:09.367Z",
-  "end": "2026-08-26T12:00:25.583Z",
-  "ts": "2026-08-26T05:35:12.07Z"
  },
  {
   "id": "DARS;872296;5c996267-fe4b-4090-9b29-0c4930e40f90",
@@ -310,28 +244,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T05:30:00Z",
   "end": "2026-08-26T13:00:00Z",
   "ts": "2026-08-26T04:49:01.833Z"
- },
- {
-  "id": "DARS;872261;58c24867-36cf-41cf-8967-372d92f97af1",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-914, Postojna - Rakov Škocjan, pri Ravbarkomandi, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 14:00.",
-  "loc": "RT-914, Postojna - Rakov Škocjan",
-  "lat": 45.79509,
-  "lng": 14.2387,
-  "start": "2026-08-26T04:10:30.12Z",
-  "end": "2026-08-26T12:00:00Z",
-  "ts": "2026-08-26T04:11:01.313Z"
- },
- {
-  "id": "DARS;872257;940354b1-0d56-4e3a-9590-ae42ec8ad82a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-225, Črnivec - Radmirje, v Tiroseku, dela, izmenično enosmerni promet, do 14:00.",
-  "loc": "R1-225, Črnivec - Radmirje",
-  "lat": 46.27464,
-  "lng": 14.72722,
-  "start": "2026-08-26T03:59:40.573Z",
-  "end": "2026-08-26T12:00:00Z",
-  "ts": "2026-08-26T04:01:02.26Z"
  },
  {
   "id": "DARS;864545;3f090035-f3fd-4556-b6e0-79417bc24fc8",
