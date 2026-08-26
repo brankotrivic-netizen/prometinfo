@@ -103,6 +103,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-448 Goražde-Hrenovica (Bare-Hrenovica), zbog asfaltiranje od 08 do 18 sati vozila će saobraćati uspotreno, jednom trakom, uz moguće obustave ne duže od 1 sat. Dana 21.08. biće na snazi potpuna obustava za teretni saobraćaj."
    },
    {
+    "title": "Nemila-Bistričak",
+    "text": "Na regionalnoj cesti R-473 Nemila-Bistričak (od kraja asfalta na Bistričaku prema Tesliću), zbog sanacionih radova od 26. do 28. 08. od 07 do 18 sati vozila će saobraćati uz obustave do 45 minuta (15 minuta propuštanja vozila)."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
