@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-26T16:43:13.070Z";
+export const PROMET_SI_UPDATED = "2026-08-26T18:23:27.631Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872490;16ed7b5f-f4e1-4dd5-9e25-5e3f8e22cbf3",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Trebnje zahod - izvoz Novo mesto vzhod v smeri Novega mesta, dela, premična zapora prehitevalnega pasu.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.9096,
+  "lng": 14.96847,
+  "start": "2026-08-26T18:13:59.19Z",
+  "end": "2026-08-27T01:00:40.343Z",
+  "ts": "2026-08-26T18:17:03.137Z"
+ },
+ {
+  "id": "DARS;872489;f44e67cd-4262-4332-ba4e-6a48800d4115",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, predor Kastelec - priključek Kozina v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.58397,
+  "lng": 13.90066,
+  "start": "2026-08-26T18:07:37.907Z",
+  "end": "2026-08-26T21:00:00Z",
+  "ts": "2026-08-26T18:07:52.87Z"
+ },
+ {
+  "id": "DARS;872477;299d2ea0-72a3-429b-8911-f5e3668f979b",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Divača - razcep Gabrk v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.68301,
+  "lng": 13.97693,
+  "start": "2026-08-26T17:15:13.72Z",
+  "end": "2026-08-27T02:00:00Z",
+  "ts": "2026-08-26T17:15:18.657Z"
+ },
+ {
+  "id": "DARS;870149;70c21209-26e3-4bed-a2d0-7c6507fee028",
+  "type": "MaintenanceWorks",
+  "desc": "Ljubljana, LZ-212760, Kavadarska cesta, med Regentovo cesto in Celovško cesto, zaprt en prometni pas, obnova nadhoda, do 28. 8. 2026. Obvoz: po mestnih ulicah.",
+  "loc": "LZ-212760, Kavadarska cesta",
+  "lat": 46.07746,
+  "lng": 14.47695,
+  "start": "2026-08-17T06:47:25.55Z",
+  "end": "2026-08-28T21:59:00Z",
+  "ts": "2026-08-26T16:44:26.26Z"
+ },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -35,28 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-15T06:19:31.58Z",
   "end": "2026-09-02T17:00:00Z",
   "ts": "2026-08-26T06:11:23.793Z"
- },
- {
-  "id": "DARS;872276;b7a3d9be-2da2-4655-b9c6-b8d1a9d2e876",
-  "type": "MaintenanceWorks",
-  "desc": "R3-662, Metlika - Božakovo, oviran promet, košnja, do 19:00.",
-  "loc": "R3-662, Metlika - Božakovo",
-  "lat": 45.6488,
-  "lng": 15.32805,
-  "start": "2026-08-26T04:52:24.113Z",
-  "end": "2026-08-26T17:00:00Z",
-  "ts": "2026-08-26T04:53:06.39Z"
- },
- {
-  "id": "DARS;872275;c330de8f-94ec-492a-8d5c-7cf37cdffb1e",
-  "type": "MaintenanceWorks",
-  "desc": "R3-658, Dobliče - Sv. Ana - Stari trg, oviran promet, košnja, do 19:00.",
-  "loc": "R3-658, Dobliče - Sveta Ana - Stari Trg",
-  "lat": 45.54046,
-  "lng": 15.14335,
-  "start": "2026-08-26T05:00:00Z",
-  "end": "2026-08-26T17:00:00Z",
-  "ts": "2026-08-26T04:51:04.367Z"
  },
  {
   "id": "DARS;864545;3f090035-f3fd-4556-b6e0-79417bc24fc8",

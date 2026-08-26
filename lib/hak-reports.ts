@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.8.2026. 18:22",
-  "text": "Povećana je gustoća prometa na gradskim cestama i obilaznicama. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: na zagrebačkoj obilaznici (A3) između čvorova Buzin i Zagreb zapad u smjeru Bregane vozi se usporeno uz povremene zastoje zbog prometne nesreće na državnoj cesti DC8 u Splitu (izlaz prema Poljičkoj cesti i Lovačkom putu) vozi se uz privremenu regulaciju prometa do daljnjeg AUTOCESTE A1 Zagreb-Split-Dubrovnik NAJAVA RADOVA 28./29. kolovoza od 22:00 do 5:00 sati ujutro zbog izvođenja radova podizan…"
+  "updated": "26.8.2026. 20:11",
+  "text": "Povećana je gustoća prometa na gradskim cestama i obilaznicama. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 između odmorišta Prokljan i čvora Vodice u smjeru Zagreba (302+000 km), vozi se uz ograničenje brzine od 100 km/h osobno vozilo u kvaru na autocesti A1 ispred tunela Grič u smjeru Dubrovnika, vozi se uz uz ograničenje brzine od 80 km/h. AUTOCESTE A1 Zagreb-Split-Dubrovnik NAJAVA RADOVA 28./29. kolovoza od 22:00 do 5:00 sati ujutro zbog izvođenja radova podizanja i…"
  },
  {
   "title": "Granični prijelazi",
