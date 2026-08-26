@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-26T10:57:58.127Z";
+export const PROMET_SI_UPDATED = "2026-08-26T11:25:00.977Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;872389;deef4f9c-c242-4dd5-88d6-e5ab572728ed",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.93413,
+  "lng": 14.82887,
+  "start": "2026-08-26T11:17:37.903Z",
+  "end": "2026-08-26T17:00:00Z",
+  "ts": "2026-08-26T11:17:39.767Z"
+ },
  {
   "id": "DARS;872381;878ef706-342a-44f7-a0ff-c8d458a93c19",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T10:27:22.663Z",
   "end": "2026-08-26T14:00:00Z",
   "ts": "2026-08-26T10:28:17.6Z"
- },
- {
-  "id": "DARS;872304;2ac59786-1a60-4f37-b24a-418303d6c38a",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, uvoz Šmarje Sap - uvoz Šmarje Sap v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.97988,
-  "lng": 14.6043,
-  "start": "2026-08-26T05:48:04.967Z",
-  "end": "2026-08-26T12:00:00Z",
-  "ts": "2026-08-26T10:21:42.623Z"
  },
  {
   "id": "DARS;872319;4c8e6403-de98-4fd0-b05e-509f2fcd4511",
