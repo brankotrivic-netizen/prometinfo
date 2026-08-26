@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-26T10:17:15.971Z";
+export const PROMET_SI_UPDATED = "2026-08-26T10:57:58.127Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;872378;49b61b7f-fc18-458b-85d5-6954a02013c9",
+  "id": "DARS;872381;878ef706-342a-44f7-a0ff-c8d458a93c19",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-1, Dravograd - Maribor, pri Dravogradu, izmenično enosmerni promet, pomična zapora, zalivanje reg in razpok, do 16:00.",
+  "loc": "G1-1, Dravograd - Radlje",
+  "lat": 46.59769,
+  "lng": 15.04337,
+  "start": "2026-08-26T10:27:22.663Z",
+  "end": "2026-08-26T14:00:00Z",
+  "ts": "2026-08-26T10:28:17.6Z"
+ },
+ {
+  "id": "DARS;872304;2ac59786-1a60-4f37-b24a-418303d6c38a",
   "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Bežigrad - priključek Ljubljana Tomačevo v smeri Zadobrove, dela, zaprt prehitevalni pas.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.08259,
-  "lng": 14.52264,
-  "start": "2026-08-26T10:13:35.807Z",
-  "end": "2026-08-26T16:00:00Z",
-  "ts": "2026-08-26T10:13:38.847Z"
+  "desc": "A2, Obrežje - Ljubljana, uvoz Šmarje Sap - uvoz Šmarje Sap v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.97988,
+  "lng": 14.6043,
+  "start": "2026-08-26T05:48:04.967Z",
+  "end": "2026-08-26T12:00:00Z",
+  "ts": "2026-08-26T10:21:42.623Z"
  },
  {
   "id": "DARS;872319;4c8e6403-de98-4fd0-b05e-509f2fcd4511",
@@ -35,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T10:09:42.183Z",
   "end": "2026-08-26T16:00:00Z",
   "ts": "2026-08-26T10:09:47.24Z"
- },
- {
-  "id": "DARS;872367;9fa8d42e-9328-49b5-8e87-6ae96288d02f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Dobruška vas - priključek Smednik v smeri Obrežja, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.8922,
-  "lng": 15.31528,
-  "start": "2026-08-26T09:38:02.577Z",
-  "end": "2026-08-26T12:00:11.913Z",
-  "ts": "2026-08-26T09:38:04.123Z"
  },
  {
   "id": "DARS;872305;1262a366-95a1-4c05-8180-0060fe4786b1",
@@ -112,17 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T07:39:43.233Z",
   "end": "2026-08-26T15:00:00Z",
   "ts": "2026-08-26T07:40:13.177Z"
- },
- {
-  "id": "DARS;872278;0938a413-798a-4f98-a261-f7ee67d2e96b",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, predor Ločica - predor Ločica v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.21787,
-  "lng": 14.92358,
-  "start": "2026-08-26T05:01:24.73Z",
-  "end": "2026-08-26T12:00:00Z",
-  "ts": "2026-08-26T06:35:36.297Z"
  },
  {
   "id": "DARS;872328;44022aef-2190-4599-8ce1-acdc2b4e0844",
@@ -222,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-26T05:54:38.267Z",
   "end": "2026-08-26T13:00:00Z",
   "ts": "2026-08-26T05:55:09.353Z"
- },
- {
-  "id": "DARS;872304;2ac59786-1a60-4f37-b24a-418303d6c38a",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, uvoz Šmarje Sap - uvoz Šmarje Sap v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.97988,
-  "lng": 14.6043,
-  "start": "2026-08-26T05:48:04.967Z",
-  "end": "2026-08-26T11:00:39Z",
-  "ts": "2026-08-26T05:48:06.767Z"
  },
  {
   "id": "DARS;872301;d9c83a93-0b05-44f0-9139-a2b343173c86",
