@@ -76,6 +76,18 @@ paket in ga je treba na vsakem stroju namestiti posebej. Po kloniranju repozitor
 npm run graphify:setup   # namesti CLI (uv/pipx/pip) + zgradi graf
 ```
 
+Če skripta javi, da ne najde ne `uv`, ne `pipx`, ne Pythona, najprej namesti
+`uv` in odpri **novo** okno terminala:
+
+```powershell
+# Windows PowerShell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+```bash
+# Mac / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 Nato: `graphify query "<vprasanje>"`, `graphify affected "<funkcija>"` (kaj se
 podre ob spremembi), `graphify path "A" "B"`, ali `/graphify .` v Claude Code.
 Graf je v `graphify-out/` (v `.gitignore`, ker je generiran) — po večjih
