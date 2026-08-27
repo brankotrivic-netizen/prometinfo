@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "27.8.2026. 12:27",
-  "text": "Povećana je gustoća prometa na gradskim cestama i obilaznicama. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između Zadra i Zagreba u smjeru unutrašnjosti povećan je priljev vozila pred naplatama Demerje i Lučko u smjeru Zagreba A3 Bregana-Lipovac na zagrebačkoj obilaznici (A3) između čvorova Buzin i Zagreb zapad usporeno uz povremene zastoje A7 Rupa-Rijeka-Šmrika na čvoru Učka u smjeru Istre/Opatije kolona je oko 2 km Istarski ipsilon (A8) usporeno …"
+  "updated": "27.8.2026. 12:31",
+  "text": "Povećana je gustoća prometa na gradskim cestama i obilaznicama. Vožnja u koloni i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik povećana je gustoća prometa između Zadra i Zagreba u smjeru unutrašnjosti povećan je priljev vozila pred naplatama Demerje i Lučko u smjeru Zagreba A3 Bregana-Lipovac na zagrebačkoj obilaznici (A3) između čvorova Buzin i Zagreb zapad u smjeru Bregane vozi se usporeno uz povremene zastoje A7 Rupa-Rijeka-Šmrika na čvoru Učka u smjeru Istre/Opatije kolona je oko 2 km Istars…"
  },
  {
   "title": "Granični prijelazi",
