@@ -66,3 +66,17 @@ npm run dev      # http://localhost:3000  +  http://localhost:3000/api/borders
 3. Ločen cron worker + trajna shramba (Vercel KV / Postgres) za zgodovino čakanj.
 4. Kamere (JPEG/MJPEG posnetki), gostota prometa, novice (Telegram/RSS namesto FB).
 5. Mobilna aplikacija (Expo) — uporabi isti `/api/borders`.
+
+## Graf znanja (graphify)
+
+Skill za AI asistente je v `.claude/skills/graphify/`, sam CLI pa je Python
+paket in ga je treba na vsakem stroju namestiti posebej. Po kloniranju repozitorija:
+
+```bash
+npm run graphify:setup   # namesti CLI (uv/pipx/pip) + zgradi graf
+```
+
+Nato: `graphify query "<vprasanje>"`, `graphify affected "<funkcija>"` (kaj se
+podre ob spremembi), `graphify path "A" "B"`, ali `/graphify .` v Claude Code.
+Graf je v `graphify-out/` (v `.gitignore`, ker je generiran) — po večjih
+spremembah kode ga osveži z `graphify update .`.
