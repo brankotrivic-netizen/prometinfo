@@ -34,10 +34,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog izvođenja radova obustavljen je saobraćaj za sva vozila na magistralnoj cesti Jajce–Crna Rijeka, u naselju Podmilačje. Za vrijeme obustave, vozila će biti preusmjeravana alternativnim pravcem preko Mrkonjić Grada."
    },
    {
-    "title": "Sarajevo-Lapišnica",
-    "text": "Na magistralnoj cesti Sarajevo-Lapišnica, zbog postavljanja rasvjete u tunelu Vratnik svakog radnog dana od 07 do 16 sati saobraća se usporeno, jednom trakom."
-   },
-   {
     "title": "Bugojno-Novi Travnik",
     "text": "U toku su sanacioni radovi na Rostovu, zbog čega se svakim radnim danom od 07 do 16:30 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
    },
@@ -93,10 +89,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Hadžići-Donja Grkarica",
     "text": "Na regionalnoj cesti R-442a Hadžići-Donja Grkarica (dionica od spoja sa lokalnom cestom za Igmansku džamiju do kružne raskrsnice kod Doma policije), zbog sanacionih radova saobraća se usporeno, jednom trakom."
-   },
-   {
-    "title": "Zavidovići-Kamenica",
-    "text": "Zbog sanacije kolovoza svakog radnog dana od 7 do 16 sati saobraća se usporeno, uz povremene obustave."
    },
    {
     "title": "Bare-Hrenovica",
