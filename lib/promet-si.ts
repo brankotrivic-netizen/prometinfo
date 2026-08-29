@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-28T15:45:27.858Z";
+export const PROMET_SI_UPDATED = "2026-08-29T00:07:49.809Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-09-25T21:59:00Z",
+  "ts": "2026-08-28T16:00:37.907Z"
+ },
  {
   "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
@@ -37,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-08-28T06:18:06.57Z"
  },
  {
-  "id": "DARS;856024;bd43bb62-13af-47c7-8edb-2582ee0874c7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-218, Metlika - Podzemelj, v Primostku, izmenično enosmerni promet, sanacija mostu, do 19:00.",
-  "loc": "R1-218, Metlika - Podzemelj",
-  "lat": 45.62827,
-  "lng": 15.29585,
-  "start": "2026-06-09T04:47:05.84Z",
-  "end": "2026-08-28T17:00:00Z",
-  "ts": "2026-08-28T06:02:47.443Z"
- },
- {
   "id": "DARS;835765;6529bc59-be3f-4377-9338-636eb895a53d",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-215, Trebnje - Mokronog, v Puščavi, izmenično enosmerni promet, pomična zapora, rekonstrukcije ceste, do 31. 12. 2026.",
@@ -57,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-02-23T07:31:20.66Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-08-28T05:48:23.147Z"
- },
- {
-  "id": "DARS;872862;da15d3bb-883e-481a-9b2c-6f3adc9665a1",
-  "type": "MaintenanceWorks",
-  "desc": "R3-671, Šutna - Planina v Podbočju, pri Šutni, oviran promet, košnja, do 18:00.",
-  "loc": "R3-671, Šutna - Planina v Podbočju",
-  "lat": 45.85595,
-  "lng": 15.49351,
-  "start": "2026-08-28T05:27:17.717Z",
-  "end": "2026-08-28T16:00:00Z",
-  "ts": "2026-08-28T05:27:37.083Z"
- },
- {
-  "id": "DARS;872859;340450d5-58c6-4d23-9adc-ec5160882566",
-  "type": "MaintenanceWorks",
-  "desc": "R3-671, Križaj - Podbočje - Šutna, pri Brodu v Podbočju, oviran promet, košnja, do 19:00.",
-  "loc": "R3-671, Križaj - Podbočje - Šutna",
-  "lat": 45.8678,
-  "lng": 15.45185,
-  "start": "2026-08-28T05:26:45.587Z",
-  "end": "2026-08-28T17:00:00Z",
-  "ts": "2026-08-28T05:27:02.297Z"
  },
  {
   "id": "DARS;872857;2be1f90b-00e2-4e8e-9466-25023038850b",
@@ -112,28 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-28T05:12:19.617Z"
- },
- {
-  "id": "DARS;872838;584932bd-e15f-42ee-a1a4-92d87fdf0a7f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-658, Dobliče - Sv. Ana - Stari trg, pri Tanči Gori, izmenično enosmerni promet, pomična zapora, košnja, do 19:00.",
-  "loc": "R3-658, Dobliče - Sveta Ana - Stari Trg",
-  "lat": 45.5474,
-  "lng": 15.14478,
-  "start": "2026-08-28T04:28:19.003Z",
-  "end": "2026-08-28T17:00:00Z",
-  "ts": "2026-08-28T04:28:50.56Z"
- },
- {
-  "id": "DARS;872835;825189bb-2698-420a-b865-a5d8adbd9333",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-664, Gaber - Uršna Sela - Novo mesto, pri Rožnem Dolu, izmenično enosmerni promet, pomična zapora, košnja, do 19:30.",
-  "loc": "R3-664, Gaber - Uršna Sela - Novo mesto",
-  "lat": 45.66922,
-  "lng": 15.15515,
-  "start": "2026-08-28T04:26:05.887Z",
-  "end": "2026-08-28T17:30:00Z",
-  "ts": "2026-08-28T04:26:46.687Z"
  },
  {
   "id": "DARS;866199;8a0faa39-c0ad-4ef2-8e03-a36c7105551b",
@@ -728,17 +684,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-27T06:25:42.103Z",
   "end": "2026-10-30T22:59:00Z",
   "ts": "2026-07-27T06:27:34.42Z"
- },
- {
-  "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-2, Slovenska Bistrica - Pragersko, pri AC priključku Slovenska Bistrica sever, izmenično enosmerni promet, kratkotrajne popolne zapore (do 15 minut), novogradnje AC viadukta Devina, do 31. 10. 2026.",
-  "loc": "G1-2, Slovenska Bistrica - Pragersko",
-  "lat": 46.3989,
-  "lng": 15.60226,
-  "start": "2026-07-06T05:00:00Z",
-  "end": "2026-10-31T18:00:00Z",
-  "ts": "2026-07-24T07:28:37.253Z"
  },
  {
   "id": "DARS;865005;f941f0c0-08bf-45c6-b928-91ddd22da777",
