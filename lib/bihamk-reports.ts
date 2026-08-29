@@ -91,6 +91,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-442a Hadžići-Donja Grkarica (dionica od spoja sa lokalnom cestom za Igmansku džamiju do kružne raskrsnice kod Doma policije), zbog sanacionih radova saobraća se usporeno, jednom trakom."
    },
    {
+    "title": "Zavidovići-Kamenica",
+    "text": "Zbog sanacije kolovoza, danas (29. 08.) od 7 do 16 sati obustavit će se saobraćaj."
+   },
+   {
     "title": "Bare-Hrenovica",
     "text": "Na regionalnoj cesti R-448 Goražde-Hrenovica (Bare-Hrenovica), zbog asfaltiranje od 08 do 18 sati vozila će saobraćati uspotreno, jednom trakom, uz moguće obustave ne duže od 1 sat. Dana 21.08. biće na snazi potpuna obustava za teretni saobraćaj."
    },
