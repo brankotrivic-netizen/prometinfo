@@ -71,10 +71,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-456a Kalesija-Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Čajdraš-Ovnak",
-    "text": "Na lokalitetu Jagodića u toku su sanacioni radovi, zbog čega se u vremenu od 7 do 16 sati saobraća usporeno, jednom trakom."
-   },
-   {
     "title": "Gračanica-Srnice",
     "text": "U mjestu Bukva izvode se radovi zbog čega se u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
    },
@@ -89,10 +85,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Hadžići-Donja Grkarica",
     "text": "Na regionalnoj cesti R-442a Hadžići-Donja Grkarica (dionica od spoja sa lokalnom cestom za Igmansku džamiju do kružne raskrsnice kod Doma policije), zbog sanacionih radova saobraća se usporeno, jednom trakom."
-   },
-   {
-    "title": "Zavidovići-Kamenica",
-    "text": "Zbog sanacije kolovoza, danas (29. 08.) od 7 do 16 sati obustavit će se saobraćaj."
    },
    {
     "title": "Bare-Hrenovica",
