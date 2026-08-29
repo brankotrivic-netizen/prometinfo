@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-29T18:42:24.211Z";
+export const PROMET_SI_UPDATED = "2026-08-29T21:13:21.954Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;873252;09c03e90-c816-4668-ae00-08c216b87dc1",
-  "type": "MaintenanceWorks",
-  "desc": "G2-111, Koper - Izola, priključek Izola v smeri Portoroža, dela, pomična zapora voznega pasu.",
-  "loc": "G2-111, Koper - Izola",
-  "lat": 45.53934,
-  "lng": 13.68902,
-  "start": "2026-08-29T18:21:22.343Z",
-  "end": "2026-08-29T21:00:00Z",
-  "ts": "2026-08-29T18:21:24.607Z"
- },
  {
   "id": "DARS;873251;96eadb7d-e3ee-4f3b-b4ab-9735f667d8f0",
   "type": "MaintenanceWorks",
