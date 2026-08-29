@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "29.8.2026. 23:06",
-  "text": "Pojačan je promet na cestama u smjeru unutrašnjosti, osobito na autocestama. Zastoji su povremeno u zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Split-Dubrovnik pred naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja teretno vozilo u kvaru na 86. km između čvorova Ogulin i Bosiljevo 2 u smjeru Zagreba, vozi se uz ograničenje brzine 80 km/h prometna nesreća na 273. km između čvorova Benkovac i Zadar istok u smjeru Zagreba, promet je privremeno prekinut AUTOCESTE A1 Zagreb-Split-Dubrovnik NAJAVA RADOVA 01/02. rujna od 22:00 do 01:30 bit će zatvorena dionica između čvorova Benkovac i Vo…"
+  "updated": "30.8.2026. 01:14",
+  "text": "Pojačan je promet na cestama u smjeru unutrašnjosti, osobito na autocestama. Zastoji su povremeno u zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Split-Dubrovnik zabrana prometa zbog prometne nesreće između čvorova Benkovac i Zadar istok u smjeru Zagreba. Obilazak: silazak na čvoru Benkovac (A1) - DC27 - DC56 - DC424 - čvor Zadar istok (A1) prometna nesreća na 273. km između čvorova Benkovac i Zadar istok u smjeru Zagreba, promet je privremeno prekinut, kolona je duga oko 5 km pred naplatama Lučko u oba smjera i Demerje u smjeru Zagreba nema dužih čekanja AUTOCESTE A1 Zagreb-Split-Dubrovnik NAJAVA RADOVA 01/…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "29.8.2026. 23:05",
+  "updated": "30.8.2026. 01:14",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "29.8.2026. 23:05",
+  "updated": "30.8.2026. 01:14",
   "text": "U pomorskom prometu nema poteškoća. U ponedjeljak (31. kolovoza) trajekt će u povratnoj liniji 433 Ist - Molat - Zverinac - Sestrunj - Rivanj - Zadar (Gaženica) iz Molata isploviti u 17:30 umjesto u 17:00 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi …"
  },
  {
