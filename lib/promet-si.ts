@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-29T15:18:44.943Z";
+export const PROMET_SI_UPDATED = "2026-08-29T18:42:24.211Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;873252;09c03e90-c816-4668-ae00-08c216b87dc1",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Koper - Izola, priključek Izola v smeri Portoroža, dela, pomična zapora voznega pasu.",
+  "loc": "G2-111, Koper - Izola",
+  "lat": 45.53934,
+  "lng": 13.68902,
+  "start": "2026-08-29T18:21:22.343Z",
+  "end": "2026-08-29T21:00:00Z",
+  "ts": "2026-08-29T18:21:24.607Z"
+ },
+ {
+  "id": "DARS;873251;96eadb7d-e3ee-4f3b-b4ab-9735f667d8f0",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, pred priključkom Dramlje v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.26807,
+  "lng": 15.40418,
+  "start": "2026-08-29T18:13:40.43Z",
+  "end": "2026-08-30T00:00:00Z",
+  "ts": "2026-08-29T18:13:45.667Z"
+ },
+ {
+  "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G1-2, Slovenska Bistrica - Pragersko, pri AC priključku Slovenska Bistrica sever, izmenično enosmerni promet, kratkotrajne popolne zapore (do 15 minut), novogradnje AC viadukta Devina, do 31. 10. 2026.",
+  "loc": "G1-2, Slovenska Bistrica - Pragersko",
+  "lat": 46.3989,
+  "lng": 15.60226,
+  "start": "2026-07-06T05:00:00Z",
+  "end": "2026-10-31T18:00:00Z",
+  "ts": "2026-08-29T16:00:08.693Z"
+ },
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-09-25T21:59:00Z",
+  "ts": "2026-08-29T16:00:08.12Z"
+ },
  {
   "id": "DARS;835764;df3bd28e-c2b1-47f1-b12e-06e1a5893464",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -57,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T10:27:58.043Z",
   "end": "2026-09-05T21:59:00Z",
   "ts": "2026-08-29T10:08:59.327Z"
- },
- {
-  "id": "DARS;873103;c245143b-0083-411a-827a-662f75c3b094",
-  "type": "MaintenanceWorks",
-  "desc": "R3-658, Dobliče - Sv. Ana - Stari trg, oviran promet, košnja, do 19:00.",
-  "loc": "R3-658, Dobliče - Sveta Ana - Stari Trg",
-  "lat": 45.52519,
-  "lng": 15.13423,
-  "start": "2026-08-29T05:37:24.947Z",
-  "end": "2026-08-29T17:00:00Z",
-  "ts": "2026-08-29T05:38:41.013Z"
  },
  {
   "id": "DARS;872857;2be1f90b-00e2-4e8e-9466-25023038850b",
