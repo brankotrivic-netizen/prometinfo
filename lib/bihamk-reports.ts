@@ -95,10 +95,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Danas i naredna dva dana (26., 27. i 28.08.) zbog sanacionih radova obustavljen je saobraćaj na regionalnoj cesti Tomislavgrad-Blidinje."
    },
    {
-    "title": "Obustava saobraćaja na Bjelašnici, zbog auto-trke",
-    "text": "Zbog održavanja auto trke na regionalnoj cesti R-442b (od skretanja prema Bjelašnici sa regionalne ceste koja vodi prema Dejčićima parkinga ispred hotela Maršal), obustavit će se saobraćaj u vremenu od 10 do 17:30 sati."
-   },
-   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
