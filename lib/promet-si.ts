@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-30T09:32:27.390Z";
+export const PROMET_SI_UPDATED = "2026-08-30T14:30:45.011Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;873278;90fb91d5-5c4c-4251-b6cc-f831486b9b36",
+  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Višnja Gora - priključek Ivančna Gorica v smeri Novega mesta, dela, oviran promet, košnja.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.95893,
-  "lng": 14.74094,
-  "start": "2026-08-30T06:44:05.847Z",
-  "end": "2026-08-30T12:00:00Z",
-  "ts": "2026-08-30T06:44:09.93Z"
+  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
+  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
+  "lat": 46.20334,
+  "lng": 15.25907,
+  "start": "2026-07-29T13:00:00Z",
+  "end": "2026-08-31T21:59:00Z",
+  "ts": "2026-08-30T13:00:48.643Z"
  },
  {
   "id": "DARS;873270;4fe77104-fe2a-4de0-9112-306fca9f9cf1",
@@ -24,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-30T04:47:42.153Z",
   "end": "2026-08-30T17:00:00Z",
   "ts": "2026-08-30T04:49:00.36Z"
- },
- {
-  "id": "DARS;873267;32a833dd-98d2-4655-b443-cb8b28f10711",
-  "type": "MaintenanceWorks",
-  "desc": "R3-658, Stari trg - Brezovica, Močile - Paka pri Predgradu, oviran promet, košnja, do 14:00.",
-  "loc": "R3-658, Stari Trg - Brezovica",
-  "lat": 45.4964,
-  "lng": 15.07839,
-  "start": "2026-08-30T08:00:00Z",
-  "end": "2026-08-30T12:00:00Z",
-  "ts": "2026-08-30T03:40:38.183Z"
  },
  {
   "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
