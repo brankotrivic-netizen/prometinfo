@@ -1,18 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-29T23:18:40.785Z";
+export const PROMET_SI_UPDATED = "2026-08-30T09:32:27.390Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;873251;96eadb7d-e3ee-4f3b-b4ab-9735f667d8f0",
+  "id": "DARS;873278;90fb91d5-5c4c-4251-b6cc-f831486b9b36",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, pred priključkom Dramlje v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26807,
-  "lng": 15.40418,
-  "start": "2026-08-29T18:13:40.43Z",
-  "end": "2026-08-30T00:00:00Z",
-  "ts": "2026-08-29T18:13:45.667Z"
+  "desc": "A2, Ljubljana - Obrežje, priključek Višnja Gora - priključek Ivančna Gorica v smeri Novega mesta, dela, oviran promet, košnja.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.95893,
+  "lng": 14.74094,
+  "start": "2026-08-30T06:44:05.847Z",
+  "end": "2026-08-30T12:00:00Z",
+  "ts": "2026-08-30T06:44:09.93Z"
+ },
+ {
+  "id": "DARS;873270;4fe77104-fe2a-4de0-9112-306fca9f9cf1",
+  "type": "MaintenanceWorks",
+  "desc": "R3-658, Dobliče - Sv. Ana - Stari trg, pri Močilah, oviran promet, košnja, do 19:00.",
+  "loc": "R3-658, Dobliče - Sveta Ana - Stari Trg",
+  "lat": 45.50111,
+  "lng": 15.13174,
+  "start": "2026-08-30T04:47:42.153Z",
+  "end": "2026-08-30T17:00:00Z",
+  "ts": "2026-08-30T04:49:00.36Z"
+ },
+ {
+  "id": "DARS;873267;32a833dd-98d2-4655-b443-cb8b28f10711",
+  "type": "MaintenanceWorks",
+  "desc": "R3-658, Stari trg - Brezovica, Močile - Paka pri Predgradu, oviran promet, košnja, do 14:00.",
+  "loc": "R3-658, Stari Trg - Brezovica",
+  "lat": 45.4964,
+  "lng": 15.07839,
+  "start": "2026-08-30T08:00:00Z",
+  "end": "2026-08-30T12:00:00Z",
+  "ts": "2026-08-30T03:40:38.183Z"
  },
  {
   "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
@@ -24,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-06T05:00:00Z",
   "end": "2026-10-31T18:00:00Z",
   "ts": "2026-08-29T16:00:08.693Z"
- },
- {
-  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
-  "loc": "R3-608, Lokve - Čepovan",
-  "lat": 46.03221,
-  "lng": 13.78913,
-  "start": "2026-08-24T05:33:20.253Z",
-  "end": "2026-09-25T21:59:00Z",
-  "ts": "2026-08-29T16:00:08.12Z"
  },
  {
   "id": "DARS;835764;df3bd28e-c2b1-47f1-b12e-06e1a5893464",
@@ -57,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-02-16T07:00:00Z",
   "end": "2026-12-02T22:59:00Z",
   "ts": "2026-08-29T13:00:34.223Z"
- },
- {
-  "id": "DARS;866340;00156024-9820-418e-8cb2-c8eef604a2db",
-  "type": "MaintenanceWorks",
-  "desc": "Celje, Zagrad - Pečovnik - Celjska koča, oviran promet, sanacija brežine, do 31. 8. 2026, dnevno med 7. in 15. uro bo popolna zapora.",
-  "loc": "LC-036010, Zagrad - Pečovnik - Celjska Koča - Požnica",
-  "lat": 46.20334,
-  "lng": 15.25907,
-  "start": "2026-07-29T13:00:00Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-29T13:00:33.863Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
@@ -244,17 +244,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T06:07:40.6Z",
   "end": "2026-08-31T21:59:00Z",
   "ts": "2026-08-24T06:09:22.323Z"
- },
- {
-  "id": "DARS;871761;b3d99d49-3228-4cca-9420-203e5758e1e1",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-412, Kranj, v Kranju, na Stari cesti na mostu čez Savo, dela, izmenično enosmerni promet, do 30. 8. 2026.",
-  "loc": "R2-412, Kr (Kidričeva cesta - Iskra)",
-  "lat": 46.24191,
-  "lng": 14.3502,
-  "start": "2026-08-24T05:54:58.727Z",
-  "end": "2026-08-30T21:59:00Z",
-  "ts": "2026-08-24T05:58:35.743Z"
  },
  {
   "id": "DARS;774313;281b8e62-2abe-46d4-9277-00e01cd5238f",
