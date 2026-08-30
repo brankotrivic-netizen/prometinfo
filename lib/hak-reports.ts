@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "30.8.2026. 20:06",
-  "text": "Veća je gustoća prometa na glavnim cestama u smjeru unutrašnjosti. Na pojedinim dionicama autocesta vozi se u kolonama u pokretu i uz kraće zastoje, osobito u zonama tunela, odmorišta i naplatnih postaja. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Split-Dubrovnik: u kolonama u pokretu uz zastoje vozi se između čvorova Bosiljevo 2 i Lučko u smjeru Zagreba A3 Bregana-Lipovac: na zagrebačkoj obilaznici, zastoji su povremeno u zoni radova između čvorova Lučko i Zagreb zapad (u smjeru Bregane) Krčki most (DC102) veća je gustoća prometa u smjeru kopna, kolona je od Njivica AUTOCES…"
+  "updated": "30.8.2026. 22:56",
+  "text": "Veća je gustoća prometa na glavnim cestama u smjeru unutrašnjosti. Na pojedinim dionicama autocesta vozi se u kolonama u pokretu i uz kraće zastoje, osobito u zonama tunela, odmorišta i naplatnih postaja. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Split-Dubrovnik: u kolonama u pokretu uz zastoje vozi se između čvorova Karlovac i Lučko u smjeru Zagreba A3 Bregana-Lipovac: OPREZ: životinja (srna) na 97. km između čvora Kutina i čvora Popovača na kolniku u smjeru Bregane. Vozi se uz ograničenje brzine od 60 km/h. prometna nesreća na čvoru Zagreb zapad u smjeru Bregane. Vozi se …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "30.8.2026. 19:25",
+  "updated": "30.8.2026. 22:07",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "30.8.2026. 19:24",
+  "updated": "30.8.2026. 22:07",
   "text": "U pomorskom prometu nema poteškoća. U ponedjeljak (31. kolovoza) trajekt će u povratnoj liniji 433 Ist - Molat - Zverinac - Sestrunj - Rivanj - Zadar (Gaženica) iz Molata isploviti u 17:30 umjesto u 17:00 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi …"
  },
  {
   "title": "Željeznički promet",
-  "updated": "30.8.2026. 19:24",
+  "updated": "30.8.2026. 20:43",
   "text": "Stanje u željezničkom putničkom prometu 28. kolovoza 2026. u 8.00 sati Od 1. srpnja do 31. kolovoza 2026. između kolodvora Knin i Perković umjesto vlakova 5801, 5800, 5803 i 5802 od ponedjeljka do petka, osim blagdana, te između kolodvora Knin i Šibenik umjesto vlakova 5809, 5806, 5081 i 5802 voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Prečec i Dugo Selo na pruzi Dugo Selo – Novska - između kolodvora Križevc…"
  },
  {
