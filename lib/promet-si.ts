@@ -1,29 +1,62 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-08-31T17:36:41.415Z";
+export const PROMET_SI_UPDATED = "2026-08-31T22:02:12.977Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;873672;0bc2776d-5f64-4f3c-b2ae-4874ff08acb9",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Dramlje - priključek Sl. Konjice v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.27346,
+  "lng": 15.41419,
+  "start": "2026-08-31T21:53:04.133Z",
+  "end": "2026-11-01T22:59:00Z",
+  "ts": "2026-08-31T21:53:26.423Z"
+ },
+ {
+  "id": "DARS;873671;9fe4ff42-c867-4421-b478-cd5ceefa3307",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, uvoz Šmarje Sap - priključek Grosuplje vzhod v smeri Novega mesta, dela, zaprt vozni pas, barvanje talnih označb.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.97786,
+  "lng": 14.60923,
+  "start": "2026-08-31T21:29:20.963Z",
+  "end": "2026-09-01T01:25:27.797Z",
+  "ts": "2026-08-31T21:29:29.723Z"
+ },
  {
   "id": "DARS;873653;7c4abbcc-577d-4a53-b7e8-b05ef824ee41",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Sl. Konjice - predor Golo Rebro v smeri Ljubljane, dela, zaprt vozni pas.",
+  "desc": "A1, Maribor - Ljubljana, uvoz Sl. Konjice - predor Golo Rebro v smeri Ljubljane, dela, zaprt prehitevalni pas.",
   "loc": "A1-E57, Maribor - Ljubljana",
   "lat": 46.34194,
   "lng": 15.47951,
   "start": "2026-08-31T17:31:08.827Z",
   "end": "2026-09-01T02:00:38.463Z",
-  "ts": "2026-08-31T17:31:13.033Z"
+  "ts": "2026-08-31T21:17:39.74Z"
  },
  {
-  "id": "DARS;873652;f33e0107-2d83-40ee-85e9-b334373d8777",
+  "id": "DARS;873661;0020adc4-9f40-4af9-98d7-324e8c2fc6f9",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Dramlje - predor Pletovarje v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "desc": "A1, Ljubljana - Maribor, predor Golo Rebro - počivališče Tepanje v smeri Maribora, dela, zaprt prehitevalni pas.",
   "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.27335,
-  "lng": 15.41402,
-  "start": "2026-08-31T17:26:41.683Z",
-  "end": "2026-08-31T21:00:02.357Z",
-  "ts": "2026-08-31T17:26:44.45Z"
+  "lat": 46.33761,
+  "lng": 15.47495,
+  "start": "2026-08-31T18:51:01.657Z",
+  "end": "2026-09-01T01:00:35.567Z",
+  "ts": "2026-08-31T18:51:03.533Z"
+ },
+ {
+  "id": "DARS;852281;0b663114-378e-4cd5-97ac-ddce78be0a76",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Konjice - priključek Dramlje v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.34192,
+  "lng": 15.47948,
+  "start": "2026-05-25T01:08:34.777Z",
+  "end": "2026-09-01T04:00:00Z",
+  "ts": "2026-08-31T18:37:10.477Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -68,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-10T05:13:34.95Z",
   "end": "2026-10-31T15:00:00Z",
   "ts": "2026-08-31T13:12:54.307Z"
- },
- {
-  "id": "DARS;852281;0b663114-378e-4cd5-97ac-ddce78be0a76",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Konjice - priključek Dramlje v smeri Ljubljane, dela, promet poteka po enem voznem pasu v vsako smer.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.34192,
-  "lng": 15.47948,
-  "start": "2026-05-25T01:08:34.777Z",
-  "end": "2026-09-01T04:00:00Z",
-  "ts": "2026-08-31T09:26:04.787Z"
  },
  {
   "id": "DARS;873521;735092e2-119f-41a0-89bc-2d83b07c02e9",
@@ -365,17 +387,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-18T04:54:16.757Z",
   "end": "2026-10-31T22:59:00Z",
   "ts": "2026-08-25T06:11:36.177Z"
- },
- {
-  "id": "DARS;871081;f109633c-5963-4157-b590-a400e05d0fd7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-711, Rače - Kungota - Kidričevo, v Račah, izmenično enosmerni promet, izgradnje kablovoda, do 31. 8. 2026.",
-  "loc": "R3-711, Rače - Kungota - Kidričevo",
-  "lat": 46.45258,
-  "lng": 15.68885,
-  "start": "2026-08-21T05:45:32.4Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-08-25T05:44:23.453Z"
  },
  {
   "id": "DARS;774313;281b8e62-2abe-46d4-9277-00e01cd5238f",
@@ -785,17 +796,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-07-27T06:27:34.42Z"
  },
  {
-  "id": "DARS;865005;f941f0c0-08bf-45c6-b928-91ddd22da777",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-104, Mengeš - Trzin, v Trzinu, Mengeška cesta, izmenično enosmerni promet, gradnje TP Loka jug, do 31. 8. 2026.",
-  "loc": "G2-104, Mengeš (Kolodvorska cesta) - Trzin",
-  "lat": 46.14521,
-  "lng": 14.56474,
-  "start": "2026-07-22T05:50:11.943Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-07-22T05:53:41.023Z"
- },
- {
   "id": "DARS;864569;5234fa72-7bf2-4271-bec5-adef83b3e3da",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-912, Zali log - Davča - Novaki, pri Davči, izmenično enosmerni promet, kratkotrajne popolne zapore (do 20 minut), izvedbe zaščite ceste pred padajočim kamenjem, do 11. 9. 2026.",
@@ -1069,28 +1069,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-15T07:04:33.64Z",
   "end": "2026-09-07T15:00:00Z",
   "ts": "2026-06-15T07:05:37.66Z"
- },
- {
-  "id": "DARS;770907;67e3cf48-89aa-4294-8248-8cb7533e5044",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-112, Ravne - Dravograd, pri Dobrijah, izmenično enosmerni promet, rekonstrukcija ceste in ureditev kolesarske poti, do 31. 8. 2026.",
-  "loc": "G2-112, Ravne - Dravograd",
-  "lat": 46.5592,
-  "lng": 14.98915,
-  "start": "2025-04-22T06:05:04.49Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-06-12T05:47:24.013Z"
- },
- {
-  "id": "DARS;850219;e603cf67-7b0a-416b-855d-fbc64d4f7e78",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Dramlje - priključek Sl. Konjice v smeri Maribora, dela, promet poteka po enem voznem pasu v vsako smer, po drugi polovici avtoceste.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.27335,
-  "lng": 15.41402,
-  "start": "2026-05-14T18:33:58.72Z",
-  "end": "2026-08-31T21:59:00Z",
-  "ts": "2026-06-11T04:35:29.107Z"
  },
  {
   "id": "DARS;855803;f82780ed-439c-42f8-ae73-f85edfc83331",
