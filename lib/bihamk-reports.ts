@@ -18,10 +18,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "label": "Magistralne ceste",
   "items": [
    {
-    "title": "Tuzla-Bijeljina (Banj brdo)",
-    "text": "Na dionici Simin Han-Lopare (Banj brdo) zbog sanacionih radova putnička vozila saobraćaju naizmjenično, jednom trakom, dok teretna vozila preko 3,5 t i autobusi saobraćaju pravcem Simin Han-Lopare-Priboj."
-   },
-   {
     "title": "Ozimica-Topčić Polje (Papratnica)",
     "text": "Zbog radova na rekonstrukciji raskrsnice na M-17 Ozimica-Topčić Polje na lokalitetu Papratnica svaki dan, osim nedjelje) od 07 do 16:30 sati saobraća se jednom trakom, naizmjenično."
    },
