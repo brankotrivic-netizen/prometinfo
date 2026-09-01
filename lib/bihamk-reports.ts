@@ -38,6 +38,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U toku su sanacioni radovi na Rostovu, zbog čega se svakim radnim danom od 07 do 16:30 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
+    "title": "Mostar-Čitluk-brdo Hum",
+    "text": "U toku su sanacioni radovi, zbog čega se svakog dana (osim nedjelje), u vremenu od 7 do 16 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
+   },
+   {
     "title": "Jablanica-Blidinje",
     "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
    },
@@ -61,10 +65,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Zenica-Lašva",
     "text": "Zbog sanacionih radova na regionalnoj cesti Zenica-Lašva od 08 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
-   },
-   {
-    "title": "Svatovac-Živinice (Poljice)",
-    "text": "Na regionalnoj cesti R-455a Svatovac-Živinice (u mjestu Poljice, od stadiona do Svatovca), za vrijeme radova moguće su kraće obustave saobraćaja."
    },
    {
     "title": "Kalesija-Sapna",
