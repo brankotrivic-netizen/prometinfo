@@ -3,6 +3,26 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
+  "id": "ba-orasje",
+  "name": "Županja (Orašje)",
+  "ulazMin": null,
+  "izlazMin": null,
+  "ulazTxt": "-",
+  "izlazTxt": "-",
+  "truckUlazMin": 30,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "do 30 min.",
+  "truckIzlazTxt": "-",
+  "level": "unknown",
+  "waitMinutes": null,
+  "ulazTs": "Nema podataka",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "",
+  "izlazTsISO": "",
+  "ts": "",
+  "tsISO": ""
+ },
+ {
   "id": "ba-brod",
   "name": "Slavonski Brod (Bosanski Brod)",
   "ulazMin": 30,
@@ -41,45 +61,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "2026-09-01T18:30:37+02:00",
   "ts": "1.9.2026. 18:30:27",
   "tsISO": "2026-09-01T18:30:27+02:00"
- },
- {
-  "id": "hr-tovarnik",
-  "name": "Tovarnik (Šid)",
-  "ulazMin": 30,
-  "izlazMin": 30,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "do 30 min.",
-  "truckUlazMin": 0,
-  "truckIzlazMin": 120,
-  "truckUlazTxt": "Višesatna čekanja",
-  "truckIzlazTxt": "2 h",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "1.9.2026. 17:27:14",
-  "izlazTs": "1.9.2026. 17:27:28",
-  "ulazTsISO": "2026-09-01T17:27:14+02:00",
-  "izlazTsISO": "2026-09-01T17:27:28+02:00",
-  "ts": "1.9.2026. 17:27:14",
-  "tsISO": "2026-09-01T17:27:14+02:00"
- },
- {
-  "id": "hr-batina",
-  "name": "Batina (Bezdan)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": 90,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "1 h 30 min.",
-  "truckIzlazTxt": "-",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "",
-  "izlazTsISO": "",
-  "ts": "",
-  "tsISO": ""
  }
 ];
