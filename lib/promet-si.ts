@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-01T20:03:24.080Z";
+export const PROMET_SI_UPDATED = "2026-09-01T22:34:42.412Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;873880;4d00b85e-29b5-4b05-b135-f95ac1b88da4",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Vodice - priključek Ljubljana Brod v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.16091,
+  "lng": 14.48235,
+  "start": "2026-09-01T21:09:59.063Z",
+  "end": "2026-09-02T03:00:36.647Z",
+  "ts": "2026-09-01T21:10:17.743Z"
+ },
+ {
+  "id": "DARS;873662;2271815d-35d7-451b-813b-53c11679e40c",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Vodice - priključek Ljubljana, Šmartno v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.18428,
+  "lng": 14.48296,
+  "start": "2026-09-01T21:09:27.02Z",
+  "end": "2026-09-02T03:00:00Z",
+  "ts": "2026-09-01T21:09:34.153Z"
+ },
  {
   "id": "DARS;853453;3cabafa5-e8ed-4eb5-a974-e06d382d59f6",
   "type": "MaintenanceWorks",
