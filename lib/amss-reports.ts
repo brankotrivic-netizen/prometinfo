@@ -198,10 +198,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Od 31. 8. do 4. 9. 2026. godine, u periodu od 9 do 18 časova, na snazi će biti obustava saobraćaja zbog radova na rekonstrukciji kolovoznog zastora, na državnom putu II A reda broj 217, deonica Knjaževac Sokobanja. Tokom trajanja obustave, saobraćaj će biti preusmeren na sledeći putni pravac: Sokobanja - Boljevac - Knjaževac. Izvor: Putevi Srbije"
  },
  {
-  "title": "Preljina-Konjevići, radovi",
-  "text": "Od ponedeljka 31. 8. do 2. 9. 2026. godine, izvodiće se radovi na rehabilitaciji kolovoza na državnom putu I B reda broj 23, na deonici Preljina Konjevići. Režim saobraćaja tokom izvođenja radova: - 31.8. i 1.9.2026. godine, u periodu od 6 do 18 časova, saobraćaj će se odvijati naizmeničnim propuštanjem vozila, - 2.9.2026. godine, u periodu od 6 do 18 časova, na snazi će biti obustava saobraćaja. Alternativni putni pravac: državni put I B reda broj 22 Preljina - Ljubićska Baluga (Forverk) i drža…"
- },
- {
   "title": "Kuzmin - Kukujevci, radovi",
   "text": "Do 02.9.2026. godine, u toku svetlog dela dana, izvode radovi na sanaciji oštećenog kolovoza na državnom putu II A reda broj 120, Kuzmin - Kukujevci. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  },
@@ -240,5 +236,9 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Kuzmin- Sremska Mitrovica, radovi kod odmorišta Laćarak",
   "text": "Od 21. 8. do 27. 8. 2026. na deonici državnog puta I A reda broj 3, deonica Kuzmin Sremska Mitrovica, izvodiće se radovi na sanaciji asfalta kod odmorišta Laćarak, u smeru ka Beogradu. U zoni radova biće zatvorena zaustavna saobraćajna traka u dužini od 1000 metara kao i odmorište. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Kovilovo-Beograd, radovi",
+  "text": "Od 19. 8. do 8. 9. 2026. godine, u periodu od 7 do 16 časova, izvodiće se radovi na presvlačenju kolovoznog zastora, na državnom putu I B reda broj 13, deonica Beograd (štamparija) - petlja Kovilovo, u smeru ka Kovilovu. *Danas, 18.8.2026. godine, nakon 15 časova biće postavljena privremena saobraćajna signalizacija za radove u smeru ka Kovilovu. Tokom izvođenja radova, saobraćaj će se odvijati krajnjom levom saobraćajnom trakom. Izvor: Putevi Srbije"
  }
 ];
