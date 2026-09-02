@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-02T19:32:47.869Z";
+export const PROMET_SI_UPDATED = "2026-09-02T21:58:06.293Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;874130;0ee8a6ed-0368-4f95-8e83-a02a205cee4a",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Ljubljana Šmartno - počivališče Povodje v smeri Jesenic, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.12345,
+  "lng": 14.48146,
+  "start": "2026-09-02T19:41:38.59Z",
+  "end": "2026-09-03T03:00:49.173Z",
+  "ts": "2026-09-02T19:41:40.483Z"
+ },
  {
   "id": "DARS;874129;5945b666-69d7-4758-8e85-96aa16d764b8",
   "type": "MaintenanceWorks",
@@ -68,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-02T17:25:38.14Z",
   "end": "2026-09-02T23:00:00Z",
   "ts": "2026-09-02T17:25:43.037Z"
- },
- {
-  "id": "DARS;874123;2e25bc6d-2c79-4a23-ab62-ffdd94e6be2f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Lesce - predor Karavanke v smeri Karavank, Avstrije, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.38031,
-  "lng": 14.14964,
-  "start": "2026-09-02T17:07:01.19Z",
-  "end": "2026-09-03T00:26:50.21Z",
-  "ts": "2026-09-02T17:07:11.41Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
