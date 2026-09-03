@@ -2,6 +2,38 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Rogačica - Debelo brdo, radovi",
+  "text": "Od 7. 9. do 10. 9. 2026. godine, u periodu od 7 do 19 časova, na snazi će biti obustava saobraćaja zbog izrade završnog sloja asvalta na delu državnog puta II A reda broj 170, deonica Sedlari - Debelo brdo Rogačica. U periodu od 19 do 7 časova, saobraćaj će se odvijati neometano. Alternativni putni pravac tokom trajanja obustave Valjevo - Osečina - Zavlaka - Krupanj - Mačkov kamen - Gračanica - Ljubovija - Rogačica. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Kovin- Ralja, OBUSTAVA",
+  "text": "Od 4. 9. do 30. 9. 2026.godine, zbog radova na pojačanom održavanju dela državnog puta I B reda broj 14, deonica Kovin Ralja od mosta preko reke Ralja do ukrštanja sa državnim putem II A reda broj 156, doći će do obustave saobraćaja. Alternativni putni pravac tokom trajanja obustave: - iz pravca Smedereva saobraćaj se preusmerava na državni put II A reda broj 153 do petlje Smederevo, pa dalje auto-putem I A reda broj 1 do petlje Požarevac, a zatim državnim putem I M reda broj 7 u smeru ka Požare…"
+ },
+ {
+  "title": "Veliko Gradište-Golubac, Kusiće OBUSTAVA",
+  "text": "Od 11.3.2025. godine, zbog izvođenja radova na izgradnji kraka kružne raskrsnice i uklapanja u postojeći državni put na snazi je obustava saobraćaja na državnom putu I B reda broj 34, deonica Veliko Gradište - Golubac, kod mesta Kusiće, od km 44+380 do km 44+850, (u zoni kružne raskrsnice, na km 54+500 brze saobraćajnice), u skladu sa fazom 2A projekta preusmerenja saobraćaja sa državnog puta I B reda broj 34 na novoizgrađenu trasu brze saobraćajnice. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Selište-Brestovac-Bor, obustava saobraćaja",
+  "text": "Zbog izvođenja radova na rehabilitaciji kolovoza na državnom putu I B reda broj 37, na deonici Selište Brestovac Bor, planirana je obustava saobraćaja na delu trase. Planirani početak obustave saobraćaja je 17. 6. 2026. a obustava će trajati naredna dva meseca. Za vreme obustave saobraćaja, teretni saobraćaj koji dolazi iz pravca državnog puta I B reda broj 36, deonica Paraćin Selište, preusmeravaće se na obilazni pravac preko Zvezdana, i to trasom: državni put I B reda broj 36 Selište Zvezdan, …"
+ },
+ {
+  "title": "Boturići- Vitkovo, OBUSTAVA na mostu preko Kožetinske reke",
+  "text": "Od 8. 5. do 1. 11. 2026. saobraćaj će biti obustavljen zgog radova na popravci mosta preko Kožetinske reke na državnom putu II A reda broj 207, deonica Boturići Vitkovo. Alternativni putni pravac tokom obustave za vozila preko 3,5 tona su: državni putII A reda broj 207 (Vitkovo), državni put II A reda broj 208 (Boturići) i državni put II A reda broj 211 (Brus). Od 6.5. do 8.5.2026. godine, izvršiće se postavljanje privremene saobraćajne signalizacije za potrebe izvođenja radova na popravci mosta…"
+ },
+ {
+  "title": "Markovac-Svilajnac obustava na mostu V.Morava",
+  "text": "Od 07.07.2025. godine, biće postavljena saobraćajna signalizacija i na snazi će biti obustava saobraćaja na deonici državnog puta I B reda broj 27, petlja Markovac - Svilajnac, na mostu preko Velike Morave. Saobraćaj će se preusmeravati na alternativne putne pravce, i to: - za vozila koja se kreću iz pravca Beograda, državni put II A reda broj 147, petlja Velika Plana Žabari, zatim državni put II A reda broj 160, Žabari - Svilajnac, - za vozila koja se kreću iz pravca Niša, državni put II A reda…"
+ },
+ {
+  "title": "Od petlje Požarevac ka Požarevcu, obustava saobraćaja",
+  "text": "Obustava saobraćaja od 5. 5. 2025. od 14 č na državnom putu I B reda broj 33, neposredno nakon naplatne stanice Požarevac, zbog izvođenja radova na izgradnji brze saobraćajnice, državni put I M reda broj 7 (državni put I A reda broj 1, Beograd - Niš (petlja Požarevac) - Požarevac (obilaznica) - Veliko Gradište Golubac ). Tokom izvođenja radova saobraćaj će biti preusmeren na državni put I B reda broj 14 - put ka Smederevu, a zatim preko lokalnog puta ka Vranovu i dalje lokalnim putem ka Maloj Kr…"
+ },
+ {
+  "title": "Orlovat, most preko reke Tamiš, OBUSTAVA",
+  "text": "Od 21.03.2020. godine na snazi je obustava saobraćaja zbog radova na redovnom održavanju, na državnom putu II A reda broj 130, most preko reke Tamiš, kod mesta Orlovat. Alternativni putni pravci za vozila koja se kreću iz pravca Zrenjanina i Perleza ka Tomaševcu, Uzdinu i Kovačice preko mesta Orlovat, upućuju se na državni put II A reda broj 129, Farkaždin -Kovačica, a vozila koja se kreću iz pravca Padine i Kovačice ka mestu Orlovat, i dalje prema Zrenjaninu, upućuju se na državni put II A reda…"
+ },
+ {
   "title": "1GP SREMSKA RAČA",
   "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - od 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na BiH. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po d…"
  },
@@ -178,30 +210,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Prelaz SKELOM - Radi svakog dana od 07,00 do 20,00 sati. - NEPARNIM satima skela kreće iz Srbije, a - PARNIM satima iz Republike Srpske. - Ukupno ima 14 polazaka skele (po 7 sa svake strane). Izvor:UGP"
  },
  {
-  "title": "Veliko Gradište-Golubac, Kusiće OBUSTAVA",
-  "text": "Od 11.3.2025. godine, zbog izvođenja radova na izgradnji kraka kružne raskrsnice i uklapanja u postojeći državni put na snazi je obustava saobraćaja na državnom putu I B reda broj 34, deonica Veliko Gradište - Golubac, kod mesta Kusiće, od km 44+380 do km 44+850, (u zoni kružne raskrsnice, na km 54+500 brze saobraćajnice), u skladu sa fazom 2A projekta preusmerenja saobraćaja sa državnog puta I B reda broj 34 na novoizgrađenu trasu brze saobraćajnice. Izvor: Putevi Srbije"
- },
- {
-  "title": "Selište-Brestovac-Bor, obustava saobraćaja",
-  "text": "Zbog izvođenja radova na rehabilitaciji kolovoza na državnom putu I B reda broj 37, na deonici Selište Brestovac Bor, planirana je obustava saobraćaja na delu trase. Planirani početak obustave saobraćaja je 17. 6. 2026. a obustava će trajati naredna dva meseca. Za vreme obustave saobraćaja, teretni saobraćaj koji dolazi iz pravca državnog puta I B reda broj 36, deonica Paraćin Selište, preusmeravaće se na obilazni pravac preko Zvezdana, i to trasom: državni put I B reda broj 36 Selište Zvezdan, …"
- },
- {
-  "title": "Boturići- Vitkovo, OBUSTAVA na mostu preko Kožetinske reke",
-  "text": "Od 8. 5. do 1. 11. 2026. saobraćaj će biti obustavljen zgog radova na popravci mosta preko Kožetinske reke na državnom putu II A reda broj 207, deonica Boturići Vitkovo. Alternativni putni pravac tokom obustave za vozila preko 3,5 tona su: državni putII A reda broj 207 (Vitkovo), državni put II A reda broj 208 (Boturići) i državni put II A reda broj 211 (Brus). Od 6.5. do 8.5.2026. godine, izvršiće se postavljanje privremene saobraćajne signalizacije za potrebe izvođenja radova na popravci mosta…"
- },
- {
-  "title": "Markovac-Svilajnac obustava na mostu V.Morava",
-  "text": "Od 07.07.2025. godine, biće postavljena saobraćajna signalizacija i na snazi će biti obustava saobraćaja na deonici državnog puta I B reda broj 27, petlja Markovac - Svilajnac, na mostu preko Velike Morave. Saobraćaj će se preusmeravati na alternativne putne pravce, i to: - za vozila koja se kreću iz pravca Beograda, državni put II A reda broj 147, petlja Velika Plana Žabari, zatim državni put II A reda broj 160, Žabari - Svilajnac, - za vozila koja se kreću iz pravca Niša, državni put II A reda…"
- },
- {
-  "title": "Od petlje Požarevac ka Požarevcu, obustava saobraćaja",
-  "text": "Obustava saobraćaja od 5. 5. 2025. od 14 č na državnom putu I B reda broj 33, neposredno nakon naplatne stanice Požarevac, zbog izvođenja radova na izgradnji brze saobraćajnice, državni put I M reda broj 7 (državni put I A reda broj 1, Beograd - Niš (petlja Požarevac) - Požarevac (obilaznica) - Veliko Gradište Golubac ). Tokom izvođenja radova saobraćaj će biti preusmeren na državni put I B reda broj 14 - put ka Smederevu, a zatim preko lokalnog puta ka Vranovu i dalje lokalnim putem ka Maloj Kr…"
- },
- {
-  "title": "Orlovat, most preko reke Tamiš, OBUSTAVA",
-  "text": "Od 21.03.2020. godine na snazi je obustava saobraćaja zbog radova na redovnom održavanju, na državnom putu II A reda broj 130, most preko reke Tamiš, kod mesta Orlovat. Alternativni putni pravci za vozila koja se kreću iz pravca Zrenjanina i Perleza ka Tomaševcu, Uzdinu i Kovačice preko mesta Orlovat, upućuju se na državni put II A reda broj 129, Farkaždin -Kovačica, a vozila koja se kreću iz pravca Padine i Kovačice ka mestu Orlovat, i dalje prema Zrenjaninu, upućuju se na državni put II A reda…"
- },
- {
   "title": "Kuzmin - Kukujevci, radovi",
   "text": "Do 03.9.2026. godine, u toku svetlog dela dana, izvode radovi na sanaciji oštećenog kolovoza na državnom putu II A reda broj 120, Kuzmin - Kukujevci. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  },
@@ -232,13 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Zona petlje ruma, radovi",
   "text": "U toku su radovi na sanaciji kolovozne konstrukcije u zoni petlje Ruma centar (veza državnih puteva I B reda broj 21 i II A reda broj 126). Radovi će se izvoditi u fazama sledećom dinamikom: u I fazi radova, do 5.9.2026. godine, obustavljen je saobraćaj na isključenju sa državnog puta II A reda broj 126 na državni put I B reda broj 21, ka Novom Sadu, kao i na uključenju sa državnog puta I B reda broj 21 na državni put II A reda broj 126, u smeru ka Rumi i Inđiji. u II fazi radova, u periodu od 5…"
- },
- {
-  "title": "Ruma-Šabac, radovi",
-  "text": "Do 29. 8. 2026.godine, u toku svetlog dela dana, izvode se radovi na popravci sigurnosno zaštitne ogradena deonici Ruma - Šabac, u oba smera. Tokom izvođenja radova, u zavisnosti od lokacije na kojoj se radovi izvode (bankina ili srednji pojas), za saobraćaj zatvorena preticajna ili zaustavna saobraćajna traka, u dužini do 200 metara. Izvor: Putevi Srbije"
- },
- {
-  "title": "Lazarevac-Darosava, mesto Kruševica, radovi na klizištu",
-  "text": "Od 27. 8. 2026. od 8 č, do 26. 12. 2026. do 16 č, na snazi biti obustava saobraćaja zbog radova na sanaciji klizišta, na državnom putu I B reda broj 27, deonica Lazarevac Darosava (Belanovica), mesto Kruševica. Saobraćaj će biti preusmeren na sledeći putni pravac: državni put II B reda broj 364 (Lazarevac Belanovica), dalje na II B reda broj 365 (Belanovica Darosava). Radovi će biti obezbeđeni adekvatnom saobraćajnom signalizacijom i opremom. Putevi Srbije"
  }
 ];
