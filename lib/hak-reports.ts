@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "4.9.2026. 18:31",
-  "text": "Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Split-Dubrovnik: zbog veće gustoće prometa vozi se u kolonama u pokretu i uz kraće zastoje između naplate Lučko i čvora Donja Zdenčina u smjeru mora na naplatnim postajama Lučko i Demerje u oba smjera nema dužih čekanja prometna nesreća između čvorova Brinje i Ogulin (108. km + 700) u smjeru Zagreba. Ograničenje brzine je 80 km/h, vozi se po dva traka A3 Bregana-Lipovac vozi se u kolonama u …"
+  "updated": "4.9.2026. 20:33",
+  "text": "Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Split-Dubrovnik: na naplatnim postajama Lučko i Demerje u oba smjera nema dužih čekanja autobus u kvaru na 456+000 km između čvora Vrgorac i čvora Ravča u smjeru Zagreba, vozi se uz ograničenje brzine od 60 km/h. DC1 Krapina-Zagreb-Karlovac-Knin-Split prekid prometa između Zaprešića i Pojatnog zbog prometne nesreće DC102 otok Krk zbog prometne nesreće na dionici Malinska-Krk vozi se otežano …"
  },
  {
   "title": "Granični prijelazi",

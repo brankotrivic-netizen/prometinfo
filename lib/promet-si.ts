@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-04T16:38:37.187Z";
+export const PROMET_SI_UPDATED = "2026-09-04T19:07:36.986Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;874662;80d51e2f-439f-4221-8e9c-450cd6ebc884",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, uvoz Sl. Bistrica sever v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.3961,
+  "lng": 15.59896,
+  "start": "2026-09-04T18:20:56.663Z",
+  "end": "2026-09-05T00:00:00Z",
+  "ts": "2026-09-04T18:21:03.343Z"
+ },
+ {
+  "id": "DARS;874656;0f12c3ea-b62a-4e1f-aad0-4f19227945ce",
+  "type": "MaintenanceWorks",
+  "desc": "A5, Pince - Maribor, priključek Vučja vas - priključek Cerkvenjak v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A5, Pince - Maribor",
+  "lat": 46.58709,
+  "lng": 16.09465,
+  "start": "2026-09-04T17:17:14.59Z",
+  "end": "2026-09-05T00:00:30.577Z",
+  "ts": "2026-09-04T17:17:16.9Z"
+ },
+ {
+  "id": "DARS;874655;14e96698-81ff-4c56-a14f-50354c923cce",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Ločica - priključek Trojane v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.22774,
+  "lng": 14.94875,
+  "start": "2026-09-04T17:12:25.87Z",
+  "end": "2026-09-04T21:00:00Z",
+  "ts": "2026-09-04T17:12:50.853Z"
+ },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",
