@@ -18,6 +18,14 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "label": "Magistralne ceste",
   "items": [
    {
+    "title": "Dobro Polje-Miljevina",
+    "text": "15. 05. 2026. godine - Kako smo upravo obaviješteni, od danas je počelo saobraćanje vozila do 3,5 tone na magistralnoj cesti Dobro Polje-Miljevina. Za vozila preko 3,5 tone i dalje je na snazi zabrana, pa moraju i dalje koristiti alternativne pravce."
+   },
+   {
+    "title": "Jablanica-Blidinje",
+    "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
+   },
+   {
     "title": "Ozimica-Topčić Polje (Papratnica)",
     "text": "Zbog radova na rekonstrukciji raskrsnice na M-17 Ozimica-Topčić Polje na lokalitetu Papratnica svaki dan, osim nedjelje) od 07 do 16:30 sati saobraća se jednom trakom, naizmjenično."
    },
@@ -36,14 +44,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Mostar-Čitluk-brdo Hum",
     "text": "U toku su sanacioni radovi, zbog čega se svakog dana (osim nedjelje), u vremenu od 7 do 16 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
-   },
-   {
-    "title": "Jablanica-Blidinje",
-    "text": "Dozvoljen je saobraćaj za vozila do 3,5 tone, dok je za vozila preko 3,5 t saobraćaj i dalje obustavljen."
-   },
-   {
-    "title": "Dobro Polje-Miljevina",
-    "text": "15. 05. 2026. godine - Kako smo upravo obaviješteni, od danas je počelo saobraćanje vozila do 3,5 tone na magistralnoj cesti Dobro Polje-Miljevina. Za vozila preko 3,5 tone i dalje je na snazi zabrana, pa moraju i dalje koristiti alternativne pravce."
    },
    {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
