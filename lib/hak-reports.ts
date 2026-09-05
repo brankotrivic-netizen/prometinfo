@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.9.2026. 20:04",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: zbog prometne nesreće prekinut je promet na državnoj cesti DC1 između Đurmanca i Podgore Krapinske. Obilazak je lokalnim cestama. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići do čvora Bisko od 05. do 14. rujna od 23:00 do 05:00 sati ujutro zbog prolaska izvanrednog prijevoza zaustavljat će se promet u zoni čvorova Lučko i Split, nekoliko puta na najviše petnaest minuta od 05. do 30. rujna od 22…"
+  "updated": "5.9.2026. 22:19",
+  "text": "Zbog jakog vjetra ograničenja su za pojedine skupine vozila na Jadranskoj magistrali (DC8)-opširinje niže u izvješću. Usporeno se vozi na dionicama cesta gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i održavaju sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Split-Dubrovnik vozilo u kvaru (osobno vozilo) na autocesti A1 između tunela Bristovac i Čelinka u smjeru Dubrovnika. Vozi se uz ograničenje brzine 80 km/h prometna nesreća između 307.+500 km i čvora Skradin u smjeru Dubrovnika. Promet se vodi jednom prometnom trakom uz ograničenje brzine 40 km/h predmet između čvora Skradin i odmorišta Prokljan u smjeru Zagreba. Prom…"
  },
  {
   "title": "Granični prijelazi",

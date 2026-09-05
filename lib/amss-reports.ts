@@ -2,6 +2,14 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Zona petlje Smederevo-radovi",
+  "text": "Do 14.9.2026.godine, do 12 časova, izvodiće se radovi na popravci stubova, na mostu (krak za isključenje iz smera Niša ka Smederevu) u zoni petlje Smederevo, na državnom putu I A reda broj 1, u smeru ka Beogradu. U zoni radova, za saobraćaj će biti zatvorena zaustavna saobraćajna traka, dok će se saobraćaj odvijati voznom i preticajnom saobraćajnom trakom. Putevi Srbije"
+ },
+ {
+  "title": "Petlja Mala Krsna - Ralja",
+  "text": "20.8.2026. godine, od 10 časova, na snazi će biti nova izmena režima saobraćaja na državnom putu I M reda broj 7, od naplatne stanice Požarevac, do petlje za Malu Krsnu. Saobraćaj će se odvijati na sledeći način: -U smeru ka Požarevcu vozila će se kretati desnom kolovoznom trakom, do prvog kružnog toka, nakon čega će biti preusmerena u levu kolovoznu traku uz dvosmerno odvijanje saobraćaja u dužini od jednog kilometra. Ponovnim vraćanjem preko službenog prolaza ispred isključenja za Malu Krsnu, …"
+ },
+ {
   "title": "Ugrinovci - Rudnik, radovi na rekonstrukciji mosta preko potoka Garibovac",
   "text": "Od 15.11.2025. godine, zbog radova na rekonstrukciji mosta preko potoka Garibovac ( Lukića most na Rudniku) izmenjen je režim saobraćaja na delu državnog puta I B reda broj 22, na deonici Ugrinovci Rudnik, u smeru ka Rudniku.U zoni radova, u smeru Ugrinovci - Rudnik, za saobraćaj je zatvorena krajnja leva saobraćajna traka, u dužini od oko 150 metara, a saobraćaj se odvija slobodnim saobraćajnim trakama. Izvor: Putevi Srbije"
  },
@@ -30,10 +38,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Do 5. 10 .2026. na snazi izmena režima saobraćaja na državnom putu I B reda broj 19, deonica Kuzmin (Sr.Mitrovica) - granica SRB/BiH (Sremska Rača), zbog izvođenja radova na izgradnji novog graničnog prelaza na državnom putu I A reda broj 7. Za vreme izvođenja radova postavljena je signalizacija koja blagovremeno upozorava na opasnost zbog spajanja sporednog puta sa državnim putem i na suženje kolovoza. Izvor: Putevi Srbije"
  },
  {
-  "title": "Kuzmin - Kukujevci, radovi",
-  "text": "Do 03.9.2026. godine, u toku svetlog dela dana, izvode radovi na sanaciji oštećenog kolovoza na državnom putu II A reda broj 120, Kuzmin - Kukujevci. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
- },
- {
   "title": "GP Batrovci - Kuzmin 1 - radovi na auto-putu",
   "text": "Do 15. 10. 2026. do 18 č, izvode radovi na uklapanju ulivnih i izlivnih rampi novog auto-puta Kuzmin Sremska Rača, (spoj sa državnim putem I A reda broj 3), na državnom putu I A reda broj 3, petlja Adaševci - petlja Kuzmin, zona buduće petlje Kuzmin zapad u smeru ka Beogradu. Radovi se izvode uz zauzeće vozne i zaustavne saobraćajne trake, dok se saobraćaj odvija preticajnom saobraćajnom trakom. Izvor Putevi Srbije"
  },
@@ -48,10 +52,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Adrani- petlja Preljina, radovi",
   "text": "Od 3. 9. do 18. 9. 2026. izvodiće se radovi na sanaciji temelja niskih portala, na državnom putu I A reda broj 5, na deonici petlja Adrani petlja Preljina jug, u oba smera. Tokom izvođenja radova na bankini, za saobraćaj će biti zatvorena zaustavna saobraćajna traka, dok će tokom izvođenja radova u razdelnom pojasu, za saobraćaj biti zatvorena preticajna saobraćajna traka, dok se saobraćaj odvija voznom i zaustavnom saobraćajnom trakom. Izvor: Putevi Srbije"
- },
- {
-  "title": "Ražanj - Pojate, radovi",
-  "text": "Do 29.8.2026.godine, do 18 časova, izvode se radovi na rekonstrukciji kolovoznog zastora na državnom putu II A reda broj 158, deonica Ražanj - Pojate. U zoni radova saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
  },
  {
   "title": "Zona petlje ruma, radovi",
@@ -80,10 +80,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Petlja Batočina - petlja Pojate, radovi",
   "text": "Od 24. 8. do 27. 8. 2026. u periodu od 9 do 16 časova, izvodiće se radovi na montaži i zameni signalizacije na objektima na državnom putu I A reda broj 1, petlja Batočina - petlja Pojate, u oba smera. Radovi će se izvoditi u pokretu, od objekta do objekta, bez izmene u režimu saobraćaja i biće obezbeđeni adekvatnom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
- },
- {
-  "title": "Kuzmin- Sremska Mitrovica, radovi kod odmorišta Laćarak",
-  "text": "Od 21. 8. do 27. 8. 2026. na deonici državnog puta I A reda broj 3, deonica Kuzmin Sremska Mitrovica, izvodiće se radovi na sanaciji asfalta kod odmorišta Laćarak, u smeru ka Beogradu. U zoni radova biće zatvorena zaustavna saobraćajna traka u dužini od 1000 metara kao i odmorište. Izvor: Putevi Srbije"
  },
  {
   "title": "Kovilovo-Beograd, radovi",
@@ -182,10 +178,6 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "U okviru preostalih radova na pojačanom održavanju državnog puta I B reda broj 21, deonica Požega - Ivanjica, od km 209+141.00 do km 248+079.38, u periodu od 19.10.2025. do 01.10.2026. godine, izvodiće se radovi na asfaltiranju kolovoza na deonicama Arilje - Prilike i Prilike Ivanjica. Saobraćaj se odvija naizmeničnim propuštanjem vozila, shodno semaforskoj signalizaciji. Izvor: Putevi Srbije"
  },
  {
-  "title": "Petlja Mala Krsna - Ralja",
-  "text": "Obustava saobraćaja od 05.05.2025.godine od 14 časova na državnom putu I B reda broj 33, neposredno nakon naplatne stanice Požarevac, zbog izvođenja radova na izgradnji brze saobraćajnice, državni put I M reda broj 7 (državni put I A reda broj 1, Beograd - Niš (petlja Požarevac) - Požarevac (obilaznica) - Veliko Gradište Golubac ). Tokom izvođenja radova saobraćaj će biti preusmeren na državni put I B reda broj 14 - put ka Smederevu, a zatim preko lokalnog puta ka Vranovu i dalje lokalnim putem …"
- },
- {
   "title": "1GP BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 min. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 240 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policije R…"
  },
@@ -240,5 +232,13 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "1GP BAČKI VINOGRADI",
   "text": "Prema poslednjim informacijama Uprave granične Policije RS ,zadržavanja putničkih vozila na našim graničnim prelazima pri prelasku granice: 1. Izlaz iz Srbije- oko 30 min. radi se u 2 trake. 2. Ulaz u Srbiju- oko 30 minuta . Granicni prelaz je isključivo za PUTNIČKA VOZILA. Granični prelaz Bački Vinogradi od 1.5.2026. biće otvoren 24h Ovaj GP prelaz,osim državljana srpske i mađarske nacionalnosti,mogu da koriste i putnici iz EU, švajcarske, Norveške i Islanda. Novo vreme zadržavanja na ovom gran…"
+ },
+ {
+  "title": "1GP BAČKA PALANKA sa Hrvatske strane ILOK",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta . Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na GP Bačka Palanka normalizovan je saobraćaj za PMV, kao i za TMV ukupne mase do 3,5 tone, dok je za autobuse i dalje na snazi obustava saobraćaja, iz razloga što je došlo do oštećenja mosta na Dunavu. Radno vreme ovog graničnog prelaza …"
+ },
+ {
+  "title": "1GP BADOVINCI (PAVLOVIĆA ĆUPRIJA)",
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Teretna motorna vozila na ovom graničnom prelazu mogu da ulaze u Srbiju PUNA i PRAZNA, dok na izlazu iz Srbije ka Bosni i Hercegovine teretna vozila mogu da prolaze samo PRAZNA. Radno vreme ovog graničnog prela…"
  }
 ];
