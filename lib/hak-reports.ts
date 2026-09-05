@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.9.2026. 09:53",
-  "text": "Povremeno je pojačan promet na važnijim cestama te pojedinim graničnim prijelazima. Zastoji su povremeno, u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa između Zagreba i Bosilljeva u smjeru mora između čvorova Karlovac i Novigrad na 41. km u smjeru mora vozi se jednim trakom, usporeno. Kolona je duga oko 4 km (završen očevid prometne nesreće) A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagreba kolona je oko 1 km Krčki most (DC102) prema otoku kolona je od rotora Šmrika prema kopnu ko…"
+  "updated": "5.9.2026. 13:25",
+  "text": "Povremeno je pojačan promet na važnijim cestama te pojedinim graničnim prijelazima. Zastoji su povremeno, u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa između Zagreba i Zadra u oba smjera u smjeru mora - kod naplatnih postaja Lučko kolone su iz smjera čvora Buzin (2 km) i čvora Zagreb zapad (1 km) u smjeru Zagreba - kolone su pred naplatama Demerje (2 km) te Lučko (2 km) zbog prometne nesreće između čvorova Karlovac i Novigrad, u tunelu Sveti Marko u smjeru mora, vozi se jednim trakom u k…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "5.9.2026. 09:49",
+  "updated": "5.9.2026. 13:14",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "5.9.2026. 09:49",
+  "updated": "5.9.2026. 13:14",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
-  "updated": "5.9.2026. 09:47",
+  "updated": "5.9.2026. 13:14",
   "text": "Stanje u željezničkom putničkom prometu 4. rujna 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Škrljevo i Rijeka na pruzi Zagreb GK – Rijeka - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Zabok – Varaždin – Čakovec i Kotoriba - između kolodvora Prečec i Dugo Selo na pruzi Dugo Selo – Novska - između kolodvora Pleternica i Bl…"
  },
  {

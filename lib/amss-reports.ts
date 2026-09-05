@@ -2,16 +2,16 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
-  "title": "1GP BEZDAN ( Srbija- Hrvatska ) M-18",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće promenjeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Radno vreme ovog graničnog prelaza…"
- },
- {
   "title": "1GP BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 min. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 240 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policije R…"
  },
  {
   "title": "1GP SREMSKA RAČA",
-  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - od 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 300 minuta. 2. Ulaz u Srbiju - oko 180 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na BiH. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po…"
+  "text": "Prema poslednjim informacijama Uprave granične policije RS, zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - od 30 min. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 300 minuta. 2. Ulaz u Srbiju - oko 120 minuta. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na BiH. Radno vreme ovog graničnog prelaza je 00-24č. Novo vreme zadržavanja na ovom graničnom prelazu biće postavljeno odmah po…"
+ },
+ {
+  "title": "1GP BEZDAN ( Srbija- Hrvatska ) M-18",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 minuta. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Novo vreme zadržavanja na ovom graničnom prelazu biće promenjeno odmah po dobijanju informacije od Uprave granične policije RS kada se to vreme zadržavanja bude razlikovalo od trenutno prikazanog na mapi. Radno vreme ovog graničnog prelaza…"
  },
  {
   "title": "1GP GRADINA (Dimitrovgrad Srbija Bugarska AP E80)",
@@ -178,6 +178,18 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Prelaz SKELOM - Radi svakog dana od 07,00 do 20,00 sati. - NEPARNIM satima skela kreće iz Srbije, a - PARNIM satima iz Republike Srpske. - Ukupno ima 14 polazaka skele (po 7 sa svake strane). Izvor:UGP"
  },
  {
+  "title": "Kikinda, put I B reda broj 15, radovi",
+  "text": "Do 12. 9. 2026. godine, u periodu od 7 do 17 časova, izvodiće se radovi na sanaciji kolovoza, na državnom putu I B reda broj 15, Kikinda. Tokom izvođenja radova saobraćaj se odvija naizmeničnim propuštanjem. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Čoka - Crna Bara, radovi",
+  "text": "Do 12. 9. 2026. godine, u periodu od 7 do 17 časova, izvodiće se radovi na rekonstrukciji na delu državnog puta II A reda broj 105, na deonici Čoka Crna Bara. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Vrnjačka banja - Trstenik, radovi",
+  "text": "Od 10. 9. do 26. 9. 2026. godine, izvoditi radovi na nasipanju i razastiranju humusnog sloja na državnom putu I A reda broj 5, deonica petlja Trstenik - petlja Vrnjačka Banja, u smeru ka Vrnjačkoj Banji. Tokom izvođenja radova, sukcesivno u dužini od 1000 metara zatvaraće se vozna/preticajna ili zaustavna saobraćajna traka, dok će se saobraćaj odvijati slobodnom saobraćajnom trakom. Izvor: Putevi Srbije"
+ },
+ {
   "title": "Kuzmin (Sr.Mitrovica) - granica SRB/BiH (Sremska Rača), radovi",
   "text": "Do 5. 10 .2026. na snazi izmena režima saobraćaja na državnom putu I B reda broj 19, deonica Kuzmin (Sr.Mitrovica) - granica SRB/BiH (Sremska Rača), zbog izvođenja radova na izgradnji novog graničnog prelaza na državnom putu I A reda broj 7. Za vreme izvođenja radova postavljena je signalizacija koja blagovremeno upozorava na opasnost zbog spajanja sporednog puta sa državnim putem i na suženje kolovoza. Izvor: Putevi Srbije"
  },
@@ -228,17 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "petlja Subotica Jug- petlja Žednik, radovi",
   "text": "Dana 25. 8. i 26. 8. 2026. godine, izvodiće se radovi na odmorištu, na deonici petlja Subotica jug petlja Žednik u smeru ka Beogradu. Radovi će se izvoditi uz zauzeće zaustavne saobraćajne trake. Izvor: Putevi Srbije"
- },
- {
-  "title": "Petlja Batočina - petlja Pojate, radovi",
-  "text": "Od 24. 8. do 27. 8. 2026. u periodu od 9 do 16 časova, izvodiće se radovi na montaži i zameni signalizacije na objektima na državnom putu I A reda broj 1, petlja Batočina - petlja Pojate, u oba smera. Radovi će se izvoditi u pokretu, od objekta do objekta, bez izmene u režimu saobraćaja i biće obezbeđeni adekvatnom saobraćajnom signalizacijom i opremom. Izvor: Putevi Srbije"
- },
- {
-  "title": "Kuzmin- Sremska Mitrovica, radovi kod odmorišta Laćarak",
-  "text": "Od 21. 8. do 27. 8. 2026. na deonici državnog puta I A reda broj 3, deonica Kuzmin Sremska Mitrovica, izvodiće se radovi na sanaciji asfalta kod odmorišta Laćarak, u smeru ka Beogradu. U zoni radova biće zatvorena zaustavna saobraćajna traka u dužini od 1000 metara kao i odmorište. Izvor: Putevi Srbije"
- },
- {
-  "title": "Kovilovo-Beograd, radovi",
-  "text": "Od 19. 8. do 8. 9. 2026. godine, u periodu od 7 do 16 časova, izvodiće se radovi na presvlačenju kolovoznog zastora, na državnom putu I B reda broj 13, deonica Beograd (štamparija) - petlja Kovilovo, u smeru ka Kovilovu. *Danas, 18.8.2026. godine, nakon 15 časova biće postavljena privremena saobraćajna signalizacija za radove u smeru ka Kovilovu. Tokom izvođenja radova, saobraćaj će se odvijati krajnjom levom saobraćajnom trakom. Izvor: Putevi Srbije"
  }
 ];
