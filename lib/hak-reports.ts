@@ -3,33 +3,33 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.9.2026. 00:42",
-  "text": "Pojačan je promet na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji su u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići do čvora Bisko od 05. do 14. rujna od 23:00 do 05:00 sati ujutro zbog prolaska izvanrednog prijevoza zaustavljat će se promet u zoni čvorova Lučko i Split, nekoliko puta na najviše petnaest minuta od 05. do 30. rujna od 22:00 do 05:00 sati pri…"
+  "updated": "5.9.2026. 09:53",
+  "text": "Povremeno je pojačan promet na važnijim cestama te pojedinim graničnim prijelazima. Zastoji su povremeno, u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa između Zagreba i Bosilljeva u smjeru mora između čvorova Karlovac i Novigrad na 41. km u smjeru mora vozi se jednim trakom, usporeno. Kolona je duga oko 4 km (završen očevid prometne nesreće) A2 Zagreb-Macelj pred naplatom Trakošćan u smjeru Zagreba kolona je oko 1 km Krčki most (DC102) prema otoku kolona je od rotora Šmrika prema kopnu ko…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "5.9.2026. 00:29",
+  "updated": "5.9.2026. 09:49",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "5.9.2026. 00:29",
+  "updated": "5.9.2026. 09:49",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
-  "updated": "4.9.2026. 17:11",
+  "updated": "5.9.2026. 09:47",
   "text": "Stanje u željezničkom putničkom prometu 4. rujna 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Škrljevo i Rijeka na pruzi Zagreb GK – Rijeka - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Zabok – Varaždin – Čakovec i Kotoriba - između kolodvora Prečec i Dugo Selo na pruzi Dugo Selo – Novska - između kolodvora Pleternica i Bl…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "4.9.2026. 17:11",
+  "updated": "5.9.2026. 09:49",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "4.9.2026. 17:11",
-  "text": "Prometna prognoza za Hrvatsku za 05. rujna 2026. Gužve i zastoje tijekom sutrašnjeg dana očekujemo na autocestama A1 između čvorova Lučko i Bosiljevo 2, A2 pred naplatom Trakošćan, na zagrebačkoj (A3) i riječkoj (A7) obilaznici, Istarskom ipsilonu, brzoj cesti Solin-Klis (DC1), Krčkom mostu, državnoj cesti DC1 između Gračaca i Knina, te na prilazima turističkim središtima. Zabrana prometa za teretna motorna vozila najveće dopuštene mase iznad 7,5 t na pojedinim državnim cestama u priobalju sutra je od 04:00 do 14:00. Čekanja u putničkom prometu očekujemo na graničnim prijelazima Gornji Varoš, Ličko Petrovo Selo, Svilaj, Bajakovo, Karasovići i Tovarnik. U pomorskom prometu ne očekuju se poteš…"
+  "updated": "5.9.2026. 07:28",
+  "text": "Prometna prognoza za Hrvatsku za 6. rujna 2026. Tijekom noći i jutra u većem dijelu unutrašnjosti moguća je magla. Na mjestima pod maglom kolnici su vlažni i skliski. Zbog jake bure u priobalju, posebice na sjevernom Jadranu, moguća su ograničenja za pojedine skupine vozila. Tijekom dana očekujemo pojačan promet na većini cesta u smjeru unutrašnjosti pa vozačima savjetujemo da održavaju sigurnosni razmak između vozila. Ljetna zabrana prometa za teretna motorna vozila najveće dopuštene mase iznad 7,5 t na pojedinim državnim cestama u Istri i priobalju (osim na autocestama i državnoj cesti DC1) bit će sutra, u nedjelju, od 12 do 23 sata. Čekanja u putničkom prometu očekujemo na većini granični…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
