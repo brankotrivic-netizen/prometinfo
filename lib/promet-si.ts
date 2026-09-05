@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-05T11:27:18.135Z";
+export const PROMET_SI_UPDATED = "2026-09-05T13:57:21.051Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;874777;165b6890-df74-4472-864a-2043be703d2c",
+  "id": "DARS;874696;31cf39f2-c9d7-4bef-9c5c-00dc4978b05f",
   "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Naklo - priključek Kranj zahod v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.28024,
-  "lng": 14.29577,
-  "start": "2026-09-05T11:13:10.273Z",
-  "end": "2026-09-05T11:45:52.46Z",
-  "ts": "2026-09-05T11:13:16.217Z"
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.39756,
+  "lng": 15.60151,
+  "start": "2026-09-05T05:52:50.317Z",
+  "end": "2026-09-05T17:00:00Z",
+  "ts": "2026-09-05T12:45:56.65Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -46,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-28T18:08:19.213Z",
   "end": "2026-09-22T20:00:00Z",
   "ts": "2026-09-05T06:09:31.347Z"
- },
- {
-  "id": "DARS;874696;31cf39f2-c9d7-4bef-9c5c-00dc4978b05f",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.39756,
-  "lng": 15.60151,
-  "start": "2026-09-05T05:52:50.317Z",
-  "end": "2026-09-05T13:00:00Z",
-  "ts": "2026-09-05T05:53:20.103Z"
- },
- {
-  "id": "DARS;874686;95ad46b0-bfac-49fe-b22d-7de96a42b568",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Pesnica - Hoče, pokrit vkop Maribor - priključek Maribor Pobrežje, Zrkovska cesta iz smeri Šentilja, Avstrije, dela, zaprt vozni pas.",
-  "loc": "R2-430, Pesnica - Hoče",
-  "lat": 46.5549,
-  "lng": 15.6606,
-  "start": "2026-09-05T04:59:28.237Z",
-  "end": "2026-09-05T16:00:00Z",
-  "ts": "2026-09-05T05:00:03.563Z"
  },
  {
   "id": "DARS;874678;dc774639-b06a-4e5b-9900-a5774fae83a9",
