@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "5.9.2026. 15:54",
-  "text": "Pojačan je promet na važnijim cestama te pojedinim graničnim prijelazima. Zastoji su povremeno, u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: A1 Zagreb-Ploče-Karamatići povećana je gustoća prometa između čvora Bosiljevo 2 i naplate Lučko u oba smjera u smjeru mora kolona pred naplatom Lučko je oko 1 km u smjeru Zagreba kolone su pred naplatama Demerje (1 km) i Lučko (1 km) A2 Zagreb-Macelj zbog povećanog priljeva vozila od 15:00 sati zabranjeno je prometovanje za teretna vozila i autobuse od čvora Krapina do čvora Đurmanec u oba smjera A3 Bre…"
+  "updated": "5.9.2026. 18:00",
+  "text": "Pojačan je promet na gradskim cestama, obilaznicama, pojedinim dionicama autocesta i graničnim prijelazima. Zastoji su povremeno u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: - AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 05. rujna od 22:00 sata do 05:00 sati izvanredni prijevoz kretat će se na relaciji od ČCNP Karamatići do čvora Bisko od 05. do 14. rujna od 23:00 do 05:00 sati ujutro zbog prolaska izvanrednog prijevoza zaustavljat će se promet u zoni čvorova Lučko i Split, nekoliko puta na najviše petnaest minuta od 05. do 30.…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "5.9.2026. 14:30",
+  "updated": "5.9.2026. 17:24",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "5.9.2026. 14:30",
+  "updated": "5.9.2026. 17:24",
   "text": "U pomorskom prometu nema poteškoća. 05.09. 2026., plovidba P Line na liniji br. 9808 Dubrovnik – Korčula – Ubli, s polaskom iz luke Dubrovnik u 14:00 sati, odgađa zbog manjeg tehničkog problema na HSC-u Jadera. Putnici će biti prevezeni HSC-om Puntamika do Korčule. Putnici koji putuju prema luci Ubli bit će upućeni na Vela Luku, a troškove prijevoza do Vele Luke snosi prijevoznik. Očekivano uspostavljenje linije iz luke Ubli 06.09.2026 u 07:00h. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o gr…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "5.9.2026. 14:30",
+  "updated": "5.9.2026. 17:24",
   "text": "Stanje u željezničkom putničkom prometu 4. rujna 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Škrljevo i Rijeka na pruzi Zagreb GK – Rijeka - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Zabok – Varaždin – Čakovec i Kotoriba - između kolodvora Prečec i Dugo Selo na pruzi Dugo Selo – Novska - između kolodvora Pleternica i Bl…"
  },
  {
