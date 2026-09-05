@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-05T16:28:03.671Z";
+export const PROMET_SI_UPDATED = "2026-09-05T18:29:04.105Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;874816;8dc5238f-80d3-466b-b60d-4bb3ad2dab7d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Konjice - priključek Dramlje v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.34133,
+  "lng": 15.4788,
+  "start": "2026-09-05T17:38:31.953Z",
+  "end": "2026-09-05T23:00:00Z",
+  "ts": "2026-09-05T17:38:44.26Z"
+ },
+ {
+  "id": "DARS;874815;7244bb1e-df30-4247-8ab0-8168d889ba9d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Trojane - priključek Blagovica v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.19028,
+  "lng": 14.89752,
+  "start": "2026-09-05T17:09:39.757Z",
+  "end": "2026-09-05T21:59:00Z",
+  "ts": "2026-09-05T17:09:54.29Z"
+ },
  {
   "id": "DARS;874696;31cf39f2-c9d7-4bef-9c5c-00dc4978b05f",
   "type": "MaintenanceWorks",
@@ -266,17 +288,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-01T04:13:28.65Z",
   "end": "2026-09-25T21:59:00Z",
   "ts": "2026-09-01T04:19:45.27Z"
- },
- {
-  "id": "DARS;873675;fa68e38e-d881-4105-ac21-7a2f964883f6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, izvoz Sl. Konjice - uvoz Sl. Konjice v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.34137,
-  "lng": 15.47885,
-  "start": "2026-08-31T23:48:18.39Z",
-  "end": "2026-11-01T22:59:00Z",
-  "ts": "2026-08-31T23:48:46.447Z"
  },
  {
   "id": "DARS;873672;0bc2776d-5f64-4f3c-b2ae-4874ff08acb9",
