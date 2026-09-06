@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "6.9.2026. 23:02",
-  "text": "Pojačan je promet na većini cesta u smjeru unutrašnjosti. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: DC1 stara karlovačka cesta zbog prometne nesreće u Rakovom Potoku promet je obustavljen i odvija se obilazno uz regulaciju prometne policije POČETAK NASTAVNE GODINE: Sutra, 7. rujna, početak je nastavne godine, zbog čega će na cestama biti velik broj školaraca. S obzirom da su pješaci, osobito djeca, najosjetljiviji sudionici u prometu, od vozača se očekuje pojačan oprez i izuzetno oprezna vožnja u blizini škola i vrtića, ali i na svim ostalim cestama koje vode prema njima. Vozači, pr…"
+  "updated": "7.9.2026. 00:18",
+  "text": "Pojačan je promet na većini cesta u smjeru unutrašnjosti. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: DC1 stara karlovačka cesta zbog prometne nesreće u Rakovom Potoku promet je obustavljen i odvija se obilazno uz regulaciju prometne policije POČETAK NASTAVNE GODINE: Danas, 7. rujna, početak je nastavne godine, zbog čega će na cestama biti velik broj školaraca. S obzirom da su pješaci, osobito djeca, najosjetljiviji sudionici u prometu, od vozača se očekuje pojačan oprez i izuzetno oprezna vožnja u blizini škola i vrtića, ali i na svim ostalim cestama koje vode prema njima. Vozači, pr…"
  },
  {
   "title": "Granični prijelazi",
