@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-06T12:07:33.389Z";
+export const PROMET_SI_UPDATED = "2026-09-06T15:25:05.181Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-09-06T15:00:12.8Z"
+ },
+ {
+  "id": "DARS;874696;31cf39f2-c9d7-4bef-9c5c-00dc4978b05f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih, do 20. 9. 2026.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.39756,
+  "lng": 15.60151,
+  "start": "2026-09-05T05:52:50.317Z",
+  "end": "2026-09-20T21:00:00Z",
+  "ts": "2026-09-06T13:23:20.74Z"
+ },
+ {
+  "id": "DARS;874905;8ac4a3f8-0a07-45b2-8f0c-89c673335399",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica jug - priključek Sl. Bistrica sever v smeri Maribora, dela, promet poteka po dveh zoženih pasovih v vsako smer, do 20. 9. 2026.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.38361,
+  "lng": 15.57464,
+  "start": "2026-09-06T13:21:39.91Z",
+  "end": "2026-09-20T21:59:00Z",
+  "ts": "2026-09-06T13:22:23.083Z"
+ },
  {
   "id": "DARS;874816;8dc5238f-80d3-466b-b60d-4bb3ad2dab7d",
   "type": "MaintenanceWorks",
@@ -13,50 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-05T17:38:31.953Z",
   "end": "2026-09-06T20:30:00Z",
   "ts": "2026-09-06T10:07:07.983Z"
- },
- {
-  "id": "DARS;874801;8318e197-3d35-4f9d-8123-6505d3ffc794",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, uvoz Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.39591,
-  "lng": 15.5991,
-  "start": "2026-09-05T14:16:35.81Z",
-  "end": "2026-09-06T20:30:00Z",
-  "ts": "2026-09-06T10:05:12.813Z"
- },
- {
-  "id": "DARS;874804;ccc9d9d6-0bf5-448a-bfe7-66f45bdfdfd6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, izvoz Sl. Bistrica jug - priključek Sl. Bistrica sever v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.38276,
-  "lng": 15.57232,
-  "start": "2026-09-05T15:01:09.777Z",
-  "end": "2026-09-06T19:30:00Z",
-  "ts": "2026-09-06T09:56:28.52Z"
- },
- {
-  "id": "DARS;874696;31cf39f2-c9d7-4bef-9c5c-00dc4978b05f",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.39756,
-  "lng": 15.60151,
-  "start": "2026-09-05T05:52:50.317Z",
-  "end": "2026-09-06T21:00:00Z",
-  "ts": "2026-09-06T05:29:11.483Z"
- },
- {
-  "id": "DARS;874839;412eddd7-227f-473f-bc1c-f1f82bbb7bf4",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.97098,
-  "lng": 14.66722,
-  "start": "2026-09-06T05:15:08.583Z",
-  "end": "2026-09-06T17:00:00.58Z",
-  "ts": "2026-09-06T05:15:14.28Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
