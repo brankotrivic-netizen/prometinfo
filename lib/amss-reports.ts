@@ -2,6 +2,10 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "1GP ŠID sa hrvatske strane GP Tovarnik",
+  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min . Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 60 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri ut…"
+ },
+ {
   "title": "1GP BATROVCI sa Hrvatske strane GP BAJAKOVO Lipovac, na AP E70",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 minuta. 2. Ulaz u Srbiju - oko 30 min. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 240 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č Izvor: Uprava granične policije R…"
  },
@@ -20,10 +24,6 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "1GP KELEBIJA Srbija-Mađarska",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije -oko 30 minuta. 2. Ulaz u Srbiju - oko 30 min. Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na mađarskim terminalima, a koje je često dosta duže u odnosu na vreme zadržavanja na našim prelazima Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. .2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Podsećamo da …"
- },
- {
-  "title": "1GP ŠID sa hrvatske strane GP Tovarnik",
-  "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min . Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri ut…"
  },
  {
   "title": "1GP HORGOŠ SRBIJA MAĐARSKA AP A1, E-75",
@@ -170,6 +170,30 @@ export const AMSS_REPORTS: AmssReport[] = [
   "text": "Prelaz SKELOM - Radi svakog dana od 07,00 do 20,00 sati. - NEPARNIM satima skela kreće iz Srbije, a - PARNIM satima iz Republike Srpske. - Ukupno ima 14 polazaka skele (po 7 sa svake strane). Izvor:UGP"
  },
  {
+  "title": "Vlase- petlja Vranje jug, radovi",
+  "text": "Izmenjen je režim saobraćaja usled aktiviranja klizišta na državnom putu II A reda broj 227, deonica Vlase - petlja Vranje Jug, kod mesta Drenovac, leva strana puta u smeru ka Vranju. Saobraćaj se odvija naizmeničnim propuštanjem vozila, dok je na snazi zabrana saobraćaja za teretna motorna vozila preko 10 t. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Radovi na proširenju čeone naplatne stanice Preševo",
+  "text": "Od 16.12.2025. godine ukoliko vremenski uslovi to dozvole, izvodiće se radovi na proširenju čeone naplatne stanice Preševo na državnom putu I A reda broj 1, u smeru ka Nišu. Tokom izvođenja radova, za saobraćaj će biti zatvorena krajnja desna traka. Napomena: Tokom izvođenja radova elektropunjač neće biti u funkciji. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Novi Pazar-Ribariće- RADOVI",
+  "text": "Od 13. 7. 2026. do 19. 11. 2027. godine, izvodiće se radovi na pojačanom održavanju , na deonici Novi Pazar (Brđani) - Ribariće. Saobraćaj će se odvijati naizmeničnim propuštanjem vozila. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "petlja Trstenik - petlja Vrnjačka Banja",
+  "text": "Od 10.9. do 26.9.2026. godine, izvodiće se radovi na nasipanju i razastiranju humusnog sloja na državnom putu I A reda broj 5, deonica petlja Trstenik - petlja Vrnjačka Banja, u smeru ka Vrnjačkoj Banji. Tokom izvođenja radova, sukcesivno u dužini od 1000 metara zatvaraće se vozna/preticajna ili zaustavna saobraćajna traka, dok će se saobraćaj odvijati slobodnom saobraćajnom trakom."
+ },
+ {
+  "title": "Petlja Surčin jug -petlja Ostružnica, petlja Ekspo, radovi",
+  "text": "Izmenjen je režim saobraćaja zbog radova na centralnim stubovima mosta i temeljima za portale u razdelnom pojasu, na državnom putu I A reda broj 1, petlja Surčin jug petlja Ostružnica, buduća petlja Ekspo. Radovi obuhvataju izvođenje radova u razdelnom pojasu sa zauzećem preticajnih traka za potrebe izgradnje nove petlje Ekspo. Smer: Surčin jug Ostružnica za saobraćaj će se u zoni radova zatvarati preticajna saobraćajna traka. Saobraćaj će se realizovati normalno izuzimajući zonu radova gde će s…"
+ },
+ {
+  "title": "Petlja Pećinci, radovi",
+  "text": "Na snazi je izmena režima saobraćaja na državnom putu I A reda broj 3, u zoni petlje Pećinci zbog izvođenja radova na rekonstrukciji natputnjaka. Tokom izvođenja radova saobraćaj se u smeru ka Beogradu odvija normalno, dok je u suprotnom smeru za saobraćaj zatvorena preticajna saobraćajna traka i saobraćaj se odvija voznom i zaustavnom saobraćajnom trakom. Takođe za saobraćaj je zatvoreno isključenje na petlji Pećinci iz pravca Beograda i uključenje sa petlje Pećinci prema Sremskoj Mitrovici i š…"
+ },
+ {
   "title": "Zona petlje Smederevo-radovi",
   "text": "Do 14.9.2026.godine, do 12 časova, izvodiće se radovi na popravci stubova, na mostu (krak za isključenje iz smera Niša ka Smederevu) u zoni petlje Smederevo, na državnom putu I A reda broj 1, u smeru ka Beogradu. U zoni radova, za saobraćaj će biti zatvorena zaustavna saobraćajna traka, dok će se saobraćaj odvijati voznom i preticajnom saobraćajnom trakom. Putevi Srbije"
  },
@@ -216,29 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Ruma- Sremska Mitrovica, radovi na autoputu",
   "text": "Do 15. 9. 2026. izvode se radovi na izgradnji cevovoda na državnom putu I A reda broj 3, deonica Ruma - Sremska Mitrovica, u smeru ka Sremskoj Mitrovici. Radovi se izvode na bankini u desnoj zaustavnoj saobraćajnoj traci. Putevi Srbije"
- },
- {
-  "title": "Petlja Adrani- petlja Preljina, radovi",
-  "text": "Od 3. 9. do 18. 9. 2026. izvodiće se radovi na sanaciji temelja niskih portala, na državnom putu I A reda broj 5, na deonici petlja Adrani petlja Preljina jug, u oba smera. Tokom izvođenja radova na bankini, za saobraćaj će biti zatvorena zaustavna saobraćajna traka, dok će tokom izvođenja radova u razdelnom pojasu, za saobraćaj biti zatvorena preticajna saobraćajna traka, dok se saobraćaj odvija voznom i zaustavnom saobraćajnom trakom. Izvor: Putevi Srbije"
- },
- {
-  "title": "Zona petlje ruma, radovi",
-  "text": "U toku su radovi na sanaciji kolovozne konstrukcije u zoni petlje Ruma centar (veza državnih puteva I B reda broj 21 i II A reda broj 126). Radovi će se izvoditi u fazama sledećom dinamikom: u I fazi radova, do 5.9.2026. godine, obustavljen je saobraćaj na isključenju sa državnog puta II A reda broj 126 na državni put I B reda broj 21, ka Novom Sadu, kao i na uključenju sa državnog puta I B reda broj 21 na državni put II A reda broj 126, u smeru ka Rumi i Inđiji. u II fazi radova, u periodu od 5…"
- },
- {
-  "title": "Ruma-Šabac, radovi",
-  "text": "Do 29. 8. 2026.godine, u toku svetlog dela dana, izvode se radovi na popravci sigurnosno zaštitne ogradena deonici Ruma - Šabac, u oba smera. Tokom izvođenja radova, u zavisnosti od lokacije na kojoj se radovi izvode (bankina ili srednji pojas), za saobraćaj zatvorena preticajna ili zaustavna saobraćajna traka, u dužini do 200 metara. Izvor: Putevi Srbije"
- },
- {
-  "title": "Lazarevac-Darosava, mesto Kruševica, radovi na klizištu",
-  "text": "Od 27. 8. 2026. od 8 č, do 26. 12. 2026. do 16 č, na snazi biti obustava saobraćaja zbog radova na sanaciji klizišta, na državnom putu I B reda broj 27, deonica Lazarevac Darosava (Belanovica), mesto Kruševica. Saobraćaj će biti preusmeren na sledeći putni pravac: državni put II B reda broj 364 (Lazarevac Belanovica), dalje na II B reda broj 365 (Belanovica Darosava). Radovi će biti obezbeđeni adekvatnom saobraćajnom signalizacijom i opremom. Putevi Srbije"
- },
- {
-  "title": "Deonica Kolovrat-Jabuka, radovi",
-  "text": "Dana 25, 26. i 27. 8. 2026. godine, u periodu od 8 do 16 časova, izvodiće se istražni radovi za potrebe rehabilitacije puta na delu državnog puta I B reda broj 29, granica sa Crnom Gorom (Jabuka) Kolovrat. Tokom izvođenja radova saobraćaj će se odvijati uz naizmenično propuštanje vozila iz oba smera. Zadržavanje vozila na jednom mestu, zbog izvođenja istražnih radova (istražnih jama), trajaće maksimalno 20 do 25 minuta. Putevi Srbije"
- },
- {
-  "title": "Gornji Milanovac(Nevade)-Bare, radovi",
-  "text": "Do 21. 9. 2026. godine izvode se radovi na rehabilitaciji kolovoza i pločastog propusta u mestu Gornja Vrbava, na deonici Gornji Milanovac (Nevade) Bare. Tokom izvođenja radova, saobraćaj se odvija naizmeničnim propuštanjem vozila. Izvor:Putevi Srbije"
  }
 ];

@@ -1,29 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-06T08:11:25.002Z";
+export const PROMET_SI_UPDATED = "2026-09-06T12:07:33.389Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;874845;e94bcda4-6fd6-47d0-9280-d9ad97355be1",
+  "id": "DARS;874816;8dc5238f-80d3-466b-b60d-4bb3ad2dab7d",
   "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, predor Šentvid - priključek Ljubljana Podutik v smeri Kosez, dela, zaprt odstavni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.08705,
-  "lng": 14.46012,
-  "start": "2026-09-06T06:59:24.84Z",
-  "end": "2026-09-06T12:00:00Z",
-  "ts": "2026-09-06T06:59:27.72Z"
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Konjice - priključek Dramlje v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.34133,
+  "lng": 15.4788,
+  "start": "2026-09-05T17:38:31.953Z",
+  "end": "2026-09-06T20:30:00Z",
+  "ts": "2026-09-06T10:07:07.983Z"
  },
  {
-  "id": "DARS;874843;ed375313-e67e-4dd7-81ba-c20d660ce58e",
+  "id": "DARS;874801;8318e197-3d35-4f9d-8123-6505d3ffc794",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - razcep Kozarje v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.98684,
-  "lng": 14.32061,
-  "start": "2026-09-06T06:45:31.993Z",
-  "end": "2026-09-06T18:00:00Z",
-  "ts": "2026-09-06T06:46:06.893Z"
+  "desc": "A1, Ljubljana - Maribor, uvoz Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.39591,
+  "lng": 15.5991,
+  "start": "2026-09-05T14:16:35.81Z",
+  "end": "2026-09-06T20:30:00Z",
+  "ts": "2026-09-06T10:05:12.813Z"
+ },
+ {
+  "id": "DARS;874804;ccc9d9d6-0bf5-448a-bfe7-66f45bdfdfd6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, izvoz Sl. Bistrica jug - priključek Sl. Bistrica sever v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.38276,
+  "lng": 15.57232,
+  "start": "2026-09-05T15:01:09.777Z",
+  "end": "2026-09-06T19:30:00Z",
+  "ts": "2026-09-06T09:56:28.52Z"
  },
  {
   "id": "DARS;874696;31cf39f2-c9d7-4bef-9c5c-00dc4978b05f",
@@ -37,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-06T05:29:11.483Z"
  },
  {
-  "id": "DARS;874801;8318e197-3d35-4f9d-8123-6505d3ffc794",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, uvoz Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.39591,
-  "lng": 15.5991,
-  "start": "2026-09-05T14:16:35.81Z",
-  "end": "2026-09-06T14:00:00Z",
-  "ts": "2026-09-06T05:26:30.447Z"
- },
- {
   "id": "DARS;874839;412eddd7-227f-473f-bc1c-f1f82bbb7bf4",
   "type": "MaintenanceWorks",
   "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt vozni pas.",
@@ -57,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-06T05:15:08.583Z",
   "end": "2026-09-06T17:00:00.58Z",
   "ts": "2026-09-06T05:15:14.28Z"
- },
- {
-  "id": "DARS;874816;8dc5238f-80d3-466b-b60d-4bb3ad2dab7d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Konjice - priključek Dramlje v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.34133,
-  "lng": 15.4788,
-  "start": "2026-09-05T17:38:31.953Z",
-  "end": "2026-09-06T10:30:00Z",
-  "ts": "2026-09-06T04:24:24.647Z"
- },
- {
-  "id": "DARS;874804;ccc9d9d6-0bf5-448a-bfe7-66f45bdfdfd6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, izvoz Sl. Bistrica jug - priključek Sl. Bistrica sever v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.38276,
-  "lng": 15.57232,
-  "start": "2026-09-05T15:01:09.777Z",
-  "end": "2026-09-06T10:00:00Z",
-  "ts": "2026-09-06T04:23:47.013Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
