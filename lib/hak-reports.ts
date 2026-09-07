@@ -3,23 +3,23 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "7.9.2026. 00:18",
-  "text": "Pojačan je promet na većini cesta u smjeru unutrašnjosti. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNE PROMETNE SITUACIJE: DC1 stara karlovačka cesta zbog prometne nesreće u Rakovom Potoku promet je obustavljen i odvija se obilazno uz regulaciju prometne policije POČETAK NASTAVNE GODINE: Danas, 7. rujna, početak je nastavne godine, zbog čega će na cestama biti velik broj školaraca. S obzirom da su pješaci, osobito djeca, najosjetljiviji sudionici u prometu, od vozača se očekuje pojačan oprez i izuzetno oprezna vožnja u blizini škola i vrtića, ali i na svim ostalim cestama koje vode prema njima. Vozači, pr…"
+  "updated": "7.9.2026. 10:30",
+  "text": "Na većini cesta promet teče bez smetnji i posebnih ograničenja, uz uglavnom povoljne uvjete za vožnju. Pojačan je promet na gradskim cestama i obilaznicama. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNE PROMETNE SITUACIJE: zbog prometnih nesreća na zagrebačkoj obilaznici (A3), vozi se po dva traka uz ograničenje brzine: između čvorova Zagreb zapad i Lučko, na 15. km u smjeru Lipovca između Mosta Sava i čvora Kosnica, na 36.+200 km u smjeru Bregane povećana je gustoća prometa, vozi se usporeno uz povremene zastoje: na zagrebačkoj obilaznici (A3) između čvorova Buzin i Zagreb zapad u smjeru Bregane na Jadranskoj magistrali (DC8) u Solinu i Stobreču POČ…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "6.9.2026. 22:56",
+  "updated": "7.9.2026. 10:10",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "6.9.2026. 20:47",
+  "updated": "7.9.2026. 10:10",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
-  "updated": "6.9.2026. 20:47",
-  "text": "Stanje u željezničkom putničkom prometu 4. rujna 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Škrljevo i Rijeka na pruzi Zagreb GK – Rijeka - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Zabok – Varaždin – Čakovec i Kotoriba - između kolodvora Prečec i Dugo Selo na pruzi Dugo Selo – Novska - između kolodvora Pleternica i Bl…"
+  "updated": "7.9.2026. 10:10",
+  "text": "Stanje u željezničkom putničkom prometu 7. rujna 2026. u 8.00 sati Putnike prevoze autobusi umjesto sljedećih vlakova: 5802 Šibenik 8.31 – Perković 9.00 5803 Perković 9.04 – Šibenik 9.34 5822 Šibenik 11.10 – Perković 11.39 5823 Perković 13.01 – Šibenik 13.31 5824 Šibenik 14.27 – Perković 14.56 5825 Perković 15.18 – Šibenik 15.47 5804 Šibenik 16.03 – Perković 16.32 5805 Perković 16.42 – Šibenik 17.12 5806 Šibenik 20.31 – Perković 21.00 5807 Perković 21.02 – Šibenik 21.32. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autob…"
  },
  {
   "title": "Ograničenja za teretna vozila",
