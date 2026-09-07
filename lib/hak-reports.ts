@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "7.9.2026. 20:42",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNE PROMETNE SITUACIJE: životinja (pas) na autocesti A7 između čvora Križišće i tunela Burlica POČETAK NASTAVNE GODINE: Dana, 7. rujna, početak je nastavne godine, zbog čega će u prometu biti velik broj školaraca. S obzirom da su pješaci, osobito djeca, najosjetljiviji sudionici u prometu, od vozača se očekuje pojačan oprez i izuzetno oprezna vožnja u blizini škola i vrtića, ali i na svim ostalim cestama koje vode prema njima. Vozači, pridržavajte se prometnih propisa i pravila i poštuje prometne znakove. Pazite na djecu koja hodaju uz cestu jer su zaigrana kao da su još na odmoru i nisu usredot…"
+  "updated": "7.9.2026. 23:47",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNE PROMETNE SITUACIJE: - POČETAK NASTAVNE GODINE: Dana, 7. rujna, početak je nastavne godine, zbog čega će u prometu biti velik broj školaraca. S obzirom da su pješaci, osobito djeca, najosjetljiviji sudionici u prometu, od vozača se očekuje pojačan oprez i izuzetno oprezna vožnja u blizini škola i vrtića, ali i na svim ostalim cestama koje vode prema njima. Vozači, pridržavajte se prometnih propisa i pravila i poštuje prometne znakove. Pazite na djecu koja hodaju uz cestu jer su zaigrana kao da su još na odmoru i nisu usredotočena na promet. Podsjećamo vas da je brzina u blizini škola i vrtića…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "7.9.2026. 19:04",
+  "updated": "7.9.2026. 23:47",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "7.9.2026. 19:04",
+  "updated": "7.9.2026. 23:47",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: od 09. rujna do 23. rujna trajket na liniji L433 Zadar/Gaženica - Rivanj - Sestrunj - Zverinac - Molat - Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prom…"
  },
  {

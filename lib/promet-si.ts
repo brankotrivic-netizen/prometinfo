@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-07T18:47:38.629Z";
+export const PROMET_SI_UPDATED = "2026-09-07T21:49:45.586Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;875262;ae5568c4-35aa-4c13-ac6f-5ff361ca0e82",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana, Ind. cona Šiška - uvoz Ljubljana Savlje v smeri Kosez, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.08425,
+  "lng": 14.49853,
+  "start": "2026-09-07T20:45:46.4Z",
+  "end": "2026-09-08T03:30:00Z",
+  "ts": "2026-09-07T20:46:25.393Z"
+ },
+ {
+  "id": "DARS;875261;39d369c0-88c3-432c-882d-92650460594f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, pred priključkom Unec v smeri Kopra, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.83452,
+  "lng": 14.29491,
+  "start": "2026-09-07T20:36:45.437Z",
+  "end": "2026-09-08T01:00:00Z",
+  "ts": "2026-09-07T20:36:48.397Z"
+ },
  {
   "id": "DARS;875247;f6b3de68-de5c-4b18-bd40-f012a0dc2218",
   "type": "MaintenanceWorks",
@@ -24,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-07T17:39:00.863Z",
   "end": "2026-09-08T03:00:00Z",
   "ts": "2026-09-07T17:44:25.043Z"
- },
- {
-  "id": "DARS;875241;6898afb4-1f2f-45cc-a942-ed91bb8e1709",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Unec - počivališče Lom v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.83884,
-  "lng": 14.29402,
-  "start": "2026-09-07T17:32:25.27Z",
-  "end": "2026-09-07T23:00:00Z",
-  "ts": "2026-09-07T17:33:45.62Z"
  },
  {
   "id": "DARS;875240;6ecc464b-c2ad-49e8-834d-5b9eb8c91d30",
