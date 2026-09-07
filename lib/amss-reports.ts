@@ -2,6 +2,38 @@
 export interface AmssReport { title: string; text: string }
 export const AMSS_REPORTS: AmssReport[] = [
  {
+  "title": "Bor - Slatina, obustava saobraćaja",
+  "text": "U utorak 8. 9. 2026. u periodu od 13 do 15 č, zbog radova na pripremi terena za izgradnju transformatorske stanice, biće obustavljen saobraćaj na deonici državnog puta II A reda broj 166, Bor Slatina, u dužini od oko 500 m. Saobraćaj na raskrsnici sa državnim putem II B reda broj 393, Bor - Jasikovo odvijaće se normalno. Putevi Srbije"
+ },
+ {
+  "title": "Batočina-Jagodina, Bagrdan, OBUSTAVA",
+  "text": "Od 25.3.2025. godine, od 12 časova, na snazi će biti obustava saobraćaja na državnom putu II A reda broj 158, na deonici Batočina Jagodina, u mestu Bagrdan, na mostu preko Račničke reke, na km 63+414. Alternativni putni pravac je državni put I A reda broj 1, petlja Batočina petlja Jagodina. Izvor:JP Putevi Srbije"
+ },
+ {
+  "title": "Kovin- Ralja, OBUSTAVA",
+  "text": "Od 4. 9. do 30. 9. 2026.godine, zbog radova na pojačanom održavanju dela državnog puta I B reda broj 14, deonica Kovin Ralja od mosta preko reke Ralja do ukrštanja sa državnim putem II A reda broj 156, doći će do obustave saobraćaja. Alternativni putni pravac tokom trajanja obustave: - iz pravca Smedereva saobraćaj se preusmerava na državni put II A reda broj 153 do petlje Smederevo, pa dalje auto-putem I A reda broj 1 do petlje Požarevac, a zatim državnim putem I M reda broj 7 u smeru ka Požare…"
+ },
+ {
+  "title": "Veliko Gradište-Golubac, Kusiće OBUSTAVA",
+  "text": "Od 11.3.2025. godine, zbog izvođenja radova na izgradnji kraka kružne raskrsnice i uklapanja u postojeći državni put na snazi je obustava saobraćaja na državnom putu I B reda broj 34, deonica Veliko Gradište - Golubac, kod mesta Kusiće, od km 44+380 do km 44+850, (u zoni kružne raskrsnice, na km 54+500 brze saobraćajnice), u skladu sa fazom 2A projekta preusmerenja saobraćaja sa državnog puta I B reda broj 34 na novoizgrađenu trasu brze saobraćajnice. Izvor: Putevi Srbije"
+ },
+ {
+  "title": "Selište-Brestovac-Bor, obustava saobraćaja",
+  "text": "Zbog izvođenja radova na rehabilitaciji kolovoza na državnom putu I B reda broj 37, na deonici Selište Brestovac Bor, planirana je obustava saobraćaja na delu trase. Planirani početak obustave saobraćaja je 17. 6. 2026. a obustava će trajati naredna dva meseca. Za vreme obustave saobraćaja, teretni saobraćaj koji dolazi iz pravca državnog puta I B reda broj 36, deonica Paraćin Selište, preusmeravaće se na obilazni pravac preko Zvezdana, i to trasom: državni put I B reda broj 36 Selište Zvezdan, …"
+ },
+ {
+  "title": "Boturići- Vitkovo, OBUSTAVA na mostu preko Kožetinske reke",
+  "text": "Od 8. 5. do 1. 11. 2026. saobraćaj će biti obustavljen zgog radova na popravci mosta preko Kožetinske reke na državnom putu II A reda broj 207, deonica Boturići Vitkovo. Alternativni putni pravac tokom obustave za vozila preko 3,5 tona su: državni putII A reda broj 207 (Vitkovo), državni put II A reda broj 208 (Boturići) i državni put II A reda broj 211 (Brus). Od 6.5. do 8.5.2026. godine, izvršiće se postavljanje privremene saobraćajne signalizacije za potrebe izvođenja radova na popravci mosta…"
+ },
+ {
+  "title": "Markovac-Svilajnac obustava na mostu V.Morava",
+  "text": "Od 07.07.2025. godine, biće postavljena saobraćajna signalizacija i na snazi će biti obustava saobraćaja na deonici državnog puta I B reda broj 27, petlja Markovac - Svilajnac, na mostu preko Velike Morave. Saobraćaj će se preusmeravati na alternativne putne pravce, i to: - za vozila koja se kreću iz pravca Beograda, državni put II A reda broj 147, petlja Velika Plana Žabari, zatim državni put II A reda broj 160, Žabari - Svilajnac, - za vozila koja se kreću iz pravca Niša, državni put II A reda…"
+ },
+ {
+  "title": "Orlovat, most preko reke Tamiš, OBUSTAVA",
+  "text": "Od 21.03.2020. godine na snazi je obustava saobraćaja zbog radova na redovnom održavanju, na državnom putu II A reda broj 130, most preko reke Tamiš, kod mesta Orlovat. Alternativni putni pravci za vozila koja se kreću iz pravca Zrenjanina i Perleza ka Tomaševcu, Uzdinu i Kovačice preko mesta Orlovat, upućuju se na državni put II A reda broj 129, Farkaždin -Kovačica, a vozila koja se kreću iz pravca Padine i Kovačice ka mestu Orlovat, i dalje prema Zrenjaninu, upućuju se na državni put II A reda…"
+ },
+ {
   "title": "1GP ŠID sa hrvatske strane GP Tovarnik",
   "text": "Prema poslednjim informacijama zadržavanja na našim graničnim prelazima su: Na PUTNIČKIM terminalima: 1. Izlaz iz Srbije - oko 30 min. 2. Ulaz u Srbiju - oko 30 min . Podsećamo da je ovom vremenu zadržavanja potrebno dodati i vreme koje se provodi na hrvatskim terminalima, a koje je uvek dosta duže od onog na našim terminalima. Na TERETNIM terminalima: 1. Izlaz iz Srbije - oko 180 min. 2. Ulaz u Srbiju - oko 30 min. Radno vreme ovog graničnog prelaza je 00-24č. Na brzinu prolaza u velikoj meri u…"
  },
@@ -208,37 +240,5 @@ export const AMSS_REPORTS: AmssReport[] = [
  {
   "title": "Stremska Mitrovica-Ruma , radovi na autoputu ispod nadvožnjaka",
   "text": "Od 7. 9. do 9. 9. 2026. izvoditi radovi na sanaciji asfaltnih dilatacija na natputnjaku, na državnom putu I A reda broj 3, na deonici petlja Sremska Mitrovica petlja Ruma, u smeru ka Beogradu. Tokom izvođenja radova, za saobraćaj će biti zatvorene vozna i zaustavna saobraćajna traka u dužini od 1000 metara, dok će se saobraćaj odvijati preticajnom saobraćajnom trakom. Putevi Srbije"
- },
- {
-  "title": "Adrani-Preljina jug radovi",
-  "text": "Od 8. 9. 2026. izvodiće se radovi na merenju deformacija, na državnom putu I A reda broj 5, na deonici petlja Adrani petlja Preljina jug, u smeru ka Preljini. Tokom izvođenja radova, za saobraćaj će biti zatvorena vozna i zaustavna saobraćajna traka u dužini od 940 m, dok će se saobraćaj odvijati preticajnom saobraćajnom trakom. Putevi Srbije"
- },
- {
-  "title": "Kikinda, put I B reda broj 15, radovi",
-  "text": "Do 12. 9. 2026. godine, u periodu od 7 do 17 časova, izvodiće se radovi na sanaciji kolovoza, na državnom putu I B reda broj 15, Kikinda. Tokom izvođenja radova saobraćaj se odvija naizmeničnim propuštanjem. Izvor: Putevi Srbije"
- },
- {
-  "title": "Čoka - Crna Bara, radovi",
-  "text": "Do 12. 9. 2026. godine, u periodu od 7 do 17 časova, izvodiće se radovi na rekonstrukciji na delu državnog puta II A reda broj 105, na deonici Čoka Crna Bara. Izvor: Putevi Srbije"
- },
- {
-  "title": "Vrnjačka banja - Trstenik, radovi",
-  "text": "Od 10. 9. do 26. 9. 2026. godine, izvoditi radovi na nasipanju i razastiranju humusnog sloja na državnom putu I A reda broj 5, deonica petlja Trstenik - petlja Vrnjačka Banja, u smeru ka Vrnjačkoj Banji. Tokom izvođenja radova, sukcesivno u dužini od 1000 metara zatvaraće se vozna/preticajna ili zaustavna saobraćajna traka, dok će se saobraćaj odvijati slobodnom saobraćajnom trakom. Izvor: Putevi Srbije"
- },
- {
-  "title": "Kuzmin (Sr.Mitrovica) - granica SRB/BiH (Sremska Rača), radovi",
-  "text": "Do 5. 10 .2026. na snazi izmena režima saobraćaja na državnom putu I B reda broj 19, deonica Kuzmin (Sr.Mitrovica) - granica SRB/BiH (Sremska Rača), zbog izvođenja radova na izgradnji novog graničnog prelaza na državnom putu I A reda broj 7. Za vreme izvođenja radova postavljena je signalizacija koja blagovremeno upozorava na opasnost zbog spajanja sporednog puta sa državnim putem i na suženje kolovoza. Izvor: Putevi Srbije"
- },
- {
-  "title": "GP Batrovci - Kuzmin 1 - radovi na auto-putu",
-  "text": "Do 15. 10. 2026. do 18 č, izvode radovi na uklapanju ulivnih i izlivnih rampi novog auto-puta Kuzmin Sremska Rača, (spoj sa državnim putem I A reda broj 3), na državnom putu I A reda broj 3, petlja Adaševci - petlja Kuzmin, zona buduće petlje Kuzmin zapad u smeru ka Beogradu. Radovi se izvode uz zauzeće vozne i zaustavne saobraćajne trake, dok se saobraćaj odvija preticajnom saobraćajnom trakom. Izvor Putevi Srbije"
- },
- {
-  "title": "Petrovaradin-Sremski Karlovci, radovi",
-  "text": "Do 30. 9. 2026. godine izvode se radovi u okviru VI faze na sanaciji klizišta Puckaroš, na deonici Petrovaradin Sremski Karlovci. Za vreme izvođenja radova, saobraćaj se odvija dvosmerno, uz povremeno naizmeničnim propuštanjem vozila prema ručnoj regulaciji, tokom svetlog dela dana. Izvor: Putevi Srbije"
- },
- {
-  "title": "Ruma- Sremska Mitrovica, radovi na autoputu",
-  "text": "Do 15. 9. 2026. izvode se radovi na izgradnji cevovoda na državnom putu I A reda broj 3, deonica Ruma - Sremska Mitrovica, u smeru ka Sremskoj Mitrovici. Radovi se izvode na bankini u desnoj zaustavnoj saobraćajnoj traci. Putevi Srbije"
  }
 ];

@@ -67,10 +67,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-456a Kalesija-Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Gračanica-Srnice",
-    "text": "U mjestu Bukva izvode se radovi zbog čega se u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
-   },
-   {
     "title": "Šibošnica-Lovački dom",
     "text": "Na regionalnoj cesti R-459 Šibošnica-Lovački dom zbog sanacionih radova od 07 do 17 sati saobraća se usporeno, jednom trakom svaki dan osim nedjelje."
    },
