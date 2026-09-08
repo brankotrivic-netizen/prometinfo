@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.9.2026. 10:16",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na gradskim cestama i obilaznicama. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNE PROMETNE SITUACIJE: zbog prometne nesreće na zagrebačkoj obilaznici (A3) između čvorova Buzin i Lučko, na 20. km u smjeru Bregane, vozi se po dva traka usporeno zbog prometne nesreće na autocesti A5 između čvorova Čepin i Đakovo, na 39.+200 km u smjeru BIH, vozi se jednim trakom usporeno povećana je gustoća prometa, vozi se usporeno uz povremene zastoje: na zagrebačkoj obilaznici (A3) između čvorova Lučko i Zagreb zapad u oba smjera na Jadranskoj magistrali (DC8)…"
+  "updated": "8.9.2026. 14:40",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. Pojačan je promet na gradskim cestama i obilaznicama. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNE PROMETNE SITUACIJE: povećana je gustoća prometa, vozi se usporeno uz povremene zastoje: na zagrebačkoj obilaznici (A3) između čvorova Zagreb zapad i Buzin u oba smjera te Buzin i Zagreb istok u smjeru Lipovca na Jadranskoj magistrali (DC8) u Trogiru, Solinu, Splitu, Stobreču i Omišu POČETAK NASTAVNE GODINE: Počela je nova nastavna godina, zbog čega je u prometu velik broj školaraca. S obzirom da su pješaci, osobito djeca, najosjetljiviji sudionici u prometu, od v…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "8.9.2026. 10:16",
+  "updated": "8.9.2026. 14:26",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "8.9.2026. 10:16",
+  "updated": "8.9.2026. 14:27",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: od 09. rujna do 23. rujna trajket na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Ri…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "8.9.2026. 10:16",
+  "updated": "8.9.2026. 14:27",
   "text": "Stanje u željezničkom putničkom prometu 8. rujna 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Perković i Šibenik - između kolodvora Prečec i Dugo Selo na pruzi Dugo Selo – Novska - između kolodvora Blacko Jakšić i Požega na pruzi Pleternica – Velika - između kolodvora Budinščina i Novi Marof na pruzi Zaprešić – Čakovec - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – K…"
  },
  {
@@ -28,7 +28,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "8.9.2026. 08:34",
+  "updated": "8.9.2026. 12:16",
   "text": "Prometna prognoza za Hrvatsku za 09. rujna 2026. Vozit će se po mjestimice mokrim te vlažnim i skliskim kolnicima, osobito poslijepodne i navečer kada su u pojedinim krajevima moguće obilnije padaline te će se zadržavati veća količina vode na kolnicima. Na cestama sjevernog dijela Jadrana, osobito na Jadranskoj magistrali (DC8), zbog bure kasnije tijekom dana, za pojedine skupine vozila moguća je zabrana prometa. Pojačan promet očekuje se na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji su tijekom dana mogući u zonama radova i privremene regulacije prometa, osobito na zagrebačkoj obilaznici (A3), Istarskom ipsilonu (A8) između čvora i tunela Učka i pojedinim dioni…"
  },
  {
