@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-08T19:41:35.176Z";
+export const PROMET_SI_UPDATED = "2026-09-08T22:01:20.763Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;875545;54d8ce44-d8ed-4640-9b33-2a689ebceabd",
+  "id": "DARS;875535;89f54651-a6df-4012-a666-906b45caae6a",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Konjice - uvoz Sl. Konjice v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.3481,
-  "lng": 15.48727,
-  "start": "2026-09-08T19:40:41.503Z",
-  "end": "2026-09-09T01:00:00Z",
-  "ts": "2026-09-08T19:40:47.023Z"
+  "desc": "A2, Karavanke - Ljubljana, počivališče Povodje - priključek Ljubljana, Šmartno v smeri Ljubljane, dela, oviran promet, barvanje talnih označb.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.14466,
+  "lng": 14.4759,
+  "start": "2026-09-08T20:38:35.533Z",
+  "end": "2026-09-09T03:00:06.87Z",
+  "ts": "2026-09-08T20:38:38.173Z"
+ },
+ {
+  "id": "DARS;875548;68a527be-a42e-4ce3-adce-cd92bf6faf25",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, predor Kastelec - počivališče Ravne v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.59393,
+  "lng": 13.92974,
+  "start": "2026-09-08T20:37:15.413Z",
+  "end": "2026-09-09T05:30:00Z",
+  "ts": "2026-09-08T20:37:27.66Z"
  },
  {
   "id": "DARS;875544;aa66316d-2916-4d37-b710-cb5c994e50bc",
@@ -35,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-08T17:34:54.977Z",
   "end": "2026-09-09T03:00:40.483Z",
   "ts": "2026-09-08T19:36:48.553Z"
- },
- {
-  "id": "DARS;875543;eedef565-bc61-4f55-af16-a46f82ce2296",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, predor Debeli hrib - predor Mali Vrh v smeri Novega mesta, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 46.00392,
-  "lng": 14.57381,
-  "start": "2026-09-08T19:19:38.26Z",
-  "end": "2026-09-08T21:00:58.967Z",
-  "ts": "2026-09-08T19:29:33.207Z"
  },
  {
   "id": "DARS;875541;9d7dd7a4-ab3f-4298-ab60-1ab59b4ab05f",
@@ -167,17 +167,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-08T06:06:27.04Z",
   "end": "2026-11-13T16:00:00Z",
   "ts": "2026-09-08T06:08:01.147Z"
- },
- {
-  "id": "DARS;875332;f4534b86-5fa4-42df-83a8-88f7d060f468",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-721, Petrovci - Kuzma, pri Sotini, izmenično enosmerni promet, vzdrževalna dela, do 23:59.",
-  "loc": "R3-721, Petrovci - Kuzma",
-  "lat": 46.83399,
-  "lng": 16.05333,
-  "start": "2026-09-08T05:47:59.72Z",
-  "end": "2026-09-08T21:59:00Z",
-  "ts": "2026-09-08T05:48:33.627Z"
  },
  {
   "id": "DARS;875271;7d0e12e0-a61a-4753-b33d-570af7d59a01",
