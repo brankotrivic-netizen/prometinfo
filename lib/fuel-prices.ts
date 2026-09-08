@@ -64,15 +64,15 @@ export const FUEL_PRICES: FuelRow[] = [
   "p95": "41,910 CZK (1,73 EUR)",
   "p98": "48,616 CZK (2,01 EUR)",
   "diesel": "45,760 CZK (1,89 EUR)",
-  "date": "7. 9. 2026"
+  "date": "8. 9. 2026"
  },
  {
   "country": "Črna gora",
   "flag": "🇲🇪",
-  "p95": "1,740 EUR",
-  "p98": "1,780 EUR",
+  "p95": "1,720 EUR",
+  "p98": "1,760 EUR",
   "diesel": "1,870 EUR",
-  "date": "7. 9. 2026"
+  "date": "8. 9. 2026"
  },
  {
   "country": "Danska",
@@ -118,9 +118,9 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "Hrvaška",
   "flag": "🇭🇷",
   "p95": "1,670 EUR",
-  "p98": "2,210 EUR",
+  "p98": "2,230 EUR",
   "diesel": "1,790 EUR",
-  "date": "7. 9. 2026"
+  "date": "8. 9. 2026"
  },
  {
   "country": "Irska",
@@ -191,7 +191,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇭🇺",
   "p95": "593,000 HUF (1,63 EUR)",
   "p98": "",
-  "diesel": "681,000 HUF (1,87 EUR)",
+  "diesel": "681,000 HUF (1,88 EUR)",
   "date": "7. 9. 2026"
  },
  {
@@ -208,7 +208,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "p95": "2,200 EUR",
   "p98": "2,486 EUR",
   "diesel": "2,250 EUR",
-  "date": "7. 9. 2026"
+  "date": "8. 9. 2026"
  },
  {
   "country": "Nizozemska",
@@ -221,9 +221,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Norveška",
   "flag": "🇳🇴",
-  "p95": "27,640 NOK (2,56 EUR)",
+  "p95": "27,640 NOK (2,57 EUR)",
   "p98": "",
-  "diesel": "26,460 NOK (2,45 EUR)",
+  "diesel": "26,460 NOK (2,46 EUR)",
   "date": "7. 9. 2026"
  },
  {
@@ -277,10 +277,10 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Slovenija",
   "flag": "🇸🇮",
-  "p95": "1,623 EUR",
-  "p98": "1,988 EUR",
-  "diesel": "1,811 EUR",
-  "date": "7. 9. 2026"
+  "p95": "1,674 EUR",
+  "p98": "2,039 EUR",
+  "diesel": "1,939 EUR",
+  "date": "8. 9. 2026"
  },
  {
   "country": "Španija",
@@ -301,9 +301,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Švedska",
   "flag": "🇸🇪",
-  "p95": "16,890 SEK (1,52 EUR)",
-  "p98": "17,903 SEK (1,61 EUR)",
-  "diesel": "20,090 SEK (1,81 EUR)",
+  "p95": "16,890 SEK (1,51 EUR)",
+  "p98": "17,903 SEK (1,60 EUR)",
+  "diesel": "20,090 SEK (1,80 EUR)",
   "date": "7. 9. 2026"
  },
  {
