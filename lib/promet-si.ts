@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-09T19:44:52.294Z";
+export const PROMET_SI_UPDATED = "2026-09-09T21:57:36.794Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;875863;d7e591ac-db0d-4736-b6c4-46b6d76eb0e6",
+  "id": "DARS;875869;8c7d193f-a97a-4ff7-82de-990598a026bd",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - zahodna obvoznica, pred razcepom Kozarje v smeri Kozarij, dela, oviran promet, strojno pometanje.",
-  "loc": "A2-E61, Ljubljana - zah. obvoznica",
-  "lat": 46.05179,
-  "lng": 14.45103,
-  "start": "2026-09-09T19:19:10.003Z",
-  "end": "2026-09-10T01:00:00Z",
-  "ts": "2026-09-09T19:19:32.777Z"
+  "desc": "A1, Koper - Ljubljana, razcep Kozarje - priključek Ljubljana zahod, Vič v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.03459,
+  "lng": 14.44789,
+  "start": "2026-09-09T21:05:20.493Z",
+  "end": "2026-09-10T03:00:00Z",
+  "ts": "2026-09-09T21:05:21.987Z"
  },
  {
   "id": "DARS;875862;0219e5c1-6f2b-4d2a-ae53-ed2ddaae430a",
