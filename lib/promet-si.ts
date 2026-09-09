@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-09T17:08:37.470Z";
+export const PROMET_SI_UPDATED = "2026-09-09T19:44:52.294Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;875863;d7e591ac-db0d-4736-b6c4-46b6d76eb0e6",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - zahodna obvoznica, pred razcepom Kozarje v smeri Kozarij, dela, oviran promet, strojno pometanje.",
+  "loc": "A2-E61, Ljubljana - zah. obvoznica",
+  "lat": 46.05179,
+  "lng": 14.45103,
+  "start": "2026-09-09T19:19:10.003Z",
+  "end": "2026-09-10T01:00:00Z",
+  "ts": "2026-09-09T19:19:32.777Z"
+ },
+ {
+  "id": "DARS;875862;0219e5c1-6f2b-4d2a-ae53-ed2ddaae430a",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Ljubljana Podutik - predor Šentvid v smeri Jesenic, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.08093,
+  "lng": 14.46055,
+  "start": "2026-09-09T19:12:34.053Z",
+  "end": "2026-09-10T03:00:06.71Z",
+  "ts": "2026-09-09T19:12:35.42Z"
+ },
+ {
+  "id": "DARS;875861;7602a4d4-aa8f-4e60-8a97-f2a98dc7d326",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Ljubljana Brod - predor Šentvid v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.10743,
+  "lng": 14.47063,
+  "start": "2026-09-09T18:59:22.287Z",
+  "end": "2026-09-10T03:00:17.217Z",
+  "ts": "2026-09-09T18:59:24.937Z"
+ },
+ {
+  "id": "DARS;875860;b2ee8970-ce05-4adf-ae2d-5d3188618148",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.97107,
+  "lng": 14.66744,
+  "start": "2026-09-09T18:51:52.117Z",
+  "end": "2026-09-10T02:09:16.847Z",
+  "ts": "2026-09-09T18:51:56.147Z"
+ },
+ {
+  "id": "DARS;875854;4cb83db5-773d-48ff-a308-c5ca92f2effe",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Jasovnik - priključek Vransko v smeri Maribora, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.20007,
+  "lng": 14.90081,
+  "start": "2026-09-09T17:57:22.073Z",
+  "end": "2026-09-10T03:00:37.927Z",
+  "ts": "2026-09-09T17:59:07.923Z"
+ },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",
