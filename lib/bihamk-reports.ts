@@ -87,6 +87,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Danas i naredna dva dana (26., 27. i 28.08.) zbog sanacionih radova obustavljen je saobraćaj na regionalnoj cesti Tomislavgrad-Blidinje."
    },
    {
+    "title": "Stara Bila-Gluha Bukovica",
+    "text": "Zbog izvođenja radova na dionici regionalne ceste Han Bila-Pode, danas će od 08 do 16 sati, biti obustavljen saobraćaj. Za vrijeme obustave alternativni pravac je preko benzinske pumpe Kasumović-Han Bila-Omladinski dom Pode-stadion Han Bila ili dionica Lager-Kraban-Han Bila- Travnik."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
