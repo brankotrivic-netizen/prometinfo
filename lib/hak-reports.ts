@@ -3,23 +3,23 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "10.9.2026. 20:49",
-  "text": "Ceste su mjestimice mokre i skliske. Mogući su odroni. U priobalju puše jak vjetar, zabrana je prometa za pojedine skupine vozila ( opširnije u izvješću ). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: večeras od 22:00 do 05:00 sati bit će zatvorene dionice između čvorova Danilo i Prgomet te Prgomet i Split u oba smjera. Dionice će se zatvarati pojedinačno, odnosno prvo jedna, potom druga dionica. Obilazak za dionicu Danilo i Prgomet: čvor Danilo (A1)- DC531-DC58- DC551 - čvor Prgomet (A1), a za dionicu Prgomet-Split: čvor Prgomet (A1)-DC551- DC58-DC8-DC1-čvor …"
+  "updated": "10.9.2026. 22:58",
+  "text": "Ceste su mjestimice mokre i skliske. Mogući su odroni. U priobalju puše jak vjetar, zabrana je prometa za pojedine skupine vozila ( opširnije u izvješću ). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: do 05:00 ujutro zatvorena je dionica između čvorova Danilo i Prgomet u oba smjera. Obilazak: čvor Danilo (A1)- DC531-DC58- DC551 - čvor Prgomet (A1) A7 Rupa-Rijeka-Šmrika zbog vjetra, zabrana je prometa za prvu skupinu vozila - autobusi na kat, motocikli i vozila s priključnim vozilom između čvora Rijeka istok i čvora Šmrika AUTOCESTE A1 Zagreb-Split-Dubrovnik IZ…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "10.9.2026. 17:55",
+  "updated": "10.9.2026. 21:46",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "10.9.2026. 17:42",
+  "updated": "10.9.2026. 21:46",
   "text": "Zbog vjetra u prekidu su katamaranske linije: Rijeka-Cres-Martinšćica-Unije-Susak-Ilovik-Mali Lošinj i Rijeka-Rab-Novalja. Izmjene u plovidbenom redu: dana 10. rujna 2026, četvrtak, trajekt će u povratnom putovanju iz luke Molat krenuti u 16:00 sati (umjesto u 18:15 sati), iz luke Zverinac u 16:30 (umjesto u 18:45 sati), iz luke Sestrunj u 17:10 sati (umjesto u 19:25 sati) i iz luke Rivanj u 17:40 sati (umjesto u 19:55 sati) te dolazi u luku Zadar/Gaženica u 19:00 sati radi meteo uvjeta (Jadrolinija). do 23. rujna trajket na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://ww…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "10.9.2026. 17:42",
-  "text": "Stanje u željezničkom putničkom prometu 10. rujna 2026. u 8.00 sati Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Šibenik 9.34 5822 Šibenik 11.10 – Unešić 11.57 5823 Unešić 12.03 – Šibenik 13.31 5824 Šibenik 14.27 – Perković 14.56 5825 Perković 15.18 – Šibenik 15.47 5804 Šibenik 16.03 – Knin 17.43 5807 Knin 19.56 – Šibenik 21.32. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od p…"
+  "updated": "10.9.2026. 21:46",
+  "text": "Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Šibenik 9.34 5822 Šibenik 11.10 – Unešić 11.57 5823 Unešić 12.03 – Šibenik 13.31 5824 Šibenik 14.27 – Perković 14.56 5825 Perković 15.18 – Šibenik 15.47 5804 Šibenik 16.03 – Knin 17.43 5807 Knin 19.56 – Šibenik 21.32. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. I…"
  },
  {
   "title": "Ograničenja za teretna vozila",
@@ -28,7 +28,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "10.9.2026. 17:42",
+  "updated": "10.9.2026. 21:46",
   "text": "Prometna prognoza za Hrvatsku za 11. rujna 2026. Mokri i skliski kolnici bit će sutra u većem djelu zemlje. Gužve i zastoje očekujemo na gradskim prometnicama, osobito u blizinama škola te na dionicama cesta gdje traju radovi. Večeras (10./11. rujna) od 22:00 do 05:00 ujutro na autocesti A1 bit će za sav promet zatvarane dionice između čvorova Danilo, Prgomet i Split u oba smjera. Čekanja u putničkom prometu očekujemo na graničnim prijelazima Gornji Varoš, Ličko Petrovo Selo, Svilaj, Bajakovo, Karasovići i Tovarnik. U pomorskom prometu očekuju se poteškoće zbog jakog vjetra. Hrvatski autoklub želi vam sretan i ugodan put. Savjeti HAK-a: prije polaska provjerite stanje na cestama putem HAK-ov…"
  },
  {
