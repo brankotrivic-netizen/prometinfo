@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "10.9.2026. 22:58",
-  "text": "Ceste su mjestimice mokre i skliske. Mogući su odroni. U priobalju puše jak vjetar, zabrana je prometa za pojedine skupine vozila ( opširnije u izvješću ). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: do 05:00 ujutro zatvorena je dionica između čvorova Danilo i Prgomet u oba smjera. Obilazak: čvor Danilo (A1)- DC531-DC58- DC551 - čvor Prgomet (A1) A7 Rupa-Rijeka-Šmrika zbog vjetra, zabrana je prometa za prvu skupinu vozila - autobusi na kat, motocikli i vozila s priključnim vozilom između čvora Rijeka istok i čvora Šmrika AUTOCESTE A1 Zagreb-Split-Dubrovnik IZ…"
+  "updated": "10.9.2026. 23:55",
+  "text": "Ceste su mjestimice mokre i skliske. Mogući su odroni. U priobalju puše jak vjetar, zabrana je prometa za pojedine skupine vozila ( opširnije u izvješću ). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: do 05:00 ujutro zatvorena je dionica između čvorova Danilo i Split u oba smjera. Obilazak: čvor Danilo (A1)- DC531-DC58- DC551 - čvor Prgomet (A1) A7 Rupa-Rijeka-Šmrika zbog vjetra, zabrana je prometa za prvu skupinu vozila - autobusi na kat, motocikli i vozila s priključnim vozilom između čvora Rijeka istok i čvora Šmrika AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVA…"
  },
  {
   "title": "Granični prijelazi",
