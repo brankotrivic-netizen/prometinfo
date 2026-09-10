@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-10T16:55:22.818Z";
+export const PROMET_SI_UPDATED = "2026-09-10T19:19:47.018Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;876130;437fa0e4-d5d9-4642-8247-d3be85e6c4f6",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, predor Šentvid - priključek Ljubljana Podutik v smeri Kosez, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.08711,
+  "lng": 14.46011,
+  "start": "2026-09-10T19:02:54.073Z",
+  "end": "2026-09-11T02:00:35.847Z",
+  "ts": "2026-09-10T19:03:00.973Z"
+ },
+ {
+  "id": "DARS;876124;4551af5f-6e15-4c04-b0f3-53f4d776bf73",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Brnik - priključek Vodice v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.18467,
+  "lng": 14.48271,
+  "start": "2026-09-10T17:51:32.87Z",
+  "end": "2026-09-10T23:00:00Z",
+  "ts": "2026-09-10T17:51:40.51Z"
+ },
+ {
+  "id": "DARS;876123;b11bf12c-e3b1-410a-9bab-cdb5707cd76c",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Jasovnik - priključek Vransko v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.2001,
+  "lng": 14.9008,
+  "start": "2026-09-10T17:32:50.663Z",
+  "end": "2026-09-11T04:00:00Z",
+  "ts": "2026-09-10T17:33:28.65Z"
+ },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -24,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-10-02T05:56:02.493Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-09-10T15:00:04.29Z"
- },
- {
-  "id": "DARS;875991;9c9f0daf-af3d-4d38-8b7a-3a13c5bffbdf",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, priključek Šempeter v smeri Vrtojbe, Italije, dela, oviran promet, strojno pometanje.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.92136,
-  "lng": 13.65215,
-  "start": "2026-09-10T09:40:52.923Z",
-  "end": "2026-09-10T17:00:00Z",
-  "ts": "2026-09-10T09:41:15.557Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",

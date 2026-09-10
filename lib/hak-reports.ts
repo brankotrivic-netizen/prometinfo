@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "10.9.2026. 18:40",
-  "text": "Ceste su mjestimice mokre i skliske. Mogući su odroni. U priobalju puše jak vjetar, zabrana je prometa za pojedine skupine vozila samo na autocesti A7 ( opširnije u izvješću ). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: večeras od 22:00 do 05:00 sati bit će zatvorene dionice između čvorova Danilo i Prgomet te Prgomet i Split u oba smjera. Dionice će se zatvarati pojedinačno, odnosno prvo jedna, potom druga dionica. Obilazak za dionicu Danilo i Prgomet: čvor Danilo (A1)- DC531-DC58- DC551 - čvor Prgomet (A1), a za dionicu Prgomet-Split: čvor Prgomet (A1)-DC55…"
+  "updated": "10.9.2026. 20:49",
+  "text": "Ceste su mjestimice mokre i skliske. Mogući su odroni. U priobalju puše jak vjetar, zabrana je prometa za pojedine skupine vozila ( opširnije u izvješću ). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik: večeras od 22:00 do 05:00 sati bit će zatvorene dionice između čvorova Danilo i Prgomet te Prgomet i Split u oba smjera. Dionice će se zatvarati pojedinačno, odnosno prvo jedna, potom druga dionica. Obilazak za dionicu Danilo i Prgomet: čvor Danilo (A1)- DC531-DC58- DC551 - čvor Prgomet (A1), a za dionicu Prgomet-Split: čvor Prgomet (A1)-DC551- DC58-DC8-DC1-čvor …"
  },
  {
   "title": "Granični prijelazi",
