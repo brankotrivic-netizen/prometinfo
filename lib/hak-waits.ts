@@ -3,6 +3,26 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
+  "id": "ba-gradiska",
+  "name": "Gornji Varoš (Gradiška (novi most))",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "10.09.2026 16:30:29",
+  "izlazTs": "10.09.2026 16:31:06",
+  "ulazTsISO": "2026-09-10T16:30:29+02:00",
+  "izlazTsISO": "2026-09-10T16:31:06+02:00",
+  "ts": "10.09.2026 16:30:29",
+  "tsISO": "2026-09-10T16:30:29+02:00"
+ },
+ {
   "id": "ba-brod",
   "name": "Slavonski Brod (Bosanski Brod)",
   "ulazMin": null,
@@ -21,6 +41,26 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "",
   "tsISO": ""
+ },
+ {
+  "id": "hr-bajakovo",
+  "name": "Bajakovo (Batrovci)",
+  "ulazMin": 60,
+  "izlazMin": 30,
+  "ulazTxt": "1 h",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": 300,
+  "truckIzlazMin": 120,
+  "truckUlazTxt": "5 h",
+  "truckIzlazTxt": "2 h",
+  "level": "moderate",
+  "waitMinutes": 60,
+  "ulazTs": "10.09.2026 17:55:11",
+  "izlazTs": "10.09.2026 17:55:41",
+  "ulazTsISO": "2026-09-10T17:55:11+02:00",
+  "izlazTsISO": "2026-09-10T17:55:41+02:00",
+  "ts": "10.09.2026 17:55:11",
+  "tsISO": "2026-09-10T17:55:11+02:00"
  },
  {
   "id": "hr-tovarnik",

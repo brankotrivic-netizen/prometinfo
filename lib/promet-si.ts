@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-10T13:00:23.132Z";
+export const PROMET_SI_UPDATED = "2026-09-10T16:55:22.818Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-09-25T21:59:00Z",
+  "ts": "2026-09-10T16:00:36.807Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-09-10T15:00:04.29Z"
+ },
  {
   "id": "DARS;875991;9c9f0daf-af3d-4d38-8b7a-3a13c5bffbdf",
   "type": "MaintenanceWorks",
@@ -79,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T06:24:34.19Z",
   "end": "2026-09-17T14:00:00Z",
   "ts": "2026-09-10T05:47:20.013Z"
- },
- {
-  "id": "DARS;875893;6bd7eb33-0ffa-4fc8-9fda-900034c17628",
-  "type": "MaintenanceWorks",
-  "desc": "R2-424, Boštanj - Planina, oviran promet, košnja, do 16:00.",
-  "loc": "R2-424, Boštanj - Planina",
-  "lat": 46.05918,
-  "lng": 15.35669,
-  "start": "2026-09-10T05:04:05.803Z",
-  "end": "2026-09-10T14:00:00Z",
-  "ts": "2026-09-10T05:04:20.753Z"
  },
  {
   "id": "DARS;875882;21212ba2-bf4f-43ab-b2d2-a6455066959f",
