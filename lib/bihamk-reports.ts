@@ -46,6 +46,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U toku su sanacioni radovi, zbog čega se svakog dana (osim nedjelje), u vremenu od 7 do 16 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
+    "title": "Brčko-Bijeljina",
+    "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
+   },
+   {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
     "text": "Zbog brojnih odrona i opasnosti od klizišta na magistralnom putu Brod na Drini-GP Hum/Šćepan Polje putnička vozila saobraćaju otežano, dok teretna ne mogu proći."
    },
