@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "11.9.2026. 18:32",
-  "text": "Kolnici su mjestimice mokri i skliski. u priobalju puše jak vjetar i ograničenja su na Jadranskoj magistrali (opširnije u izvješću) . Pojačan je promet na gradskim prometnicama i obilaznicama, a zastoji su na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac: vozi se usporeno uz kraće zastoje na prilazu zoni radova na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u smjeru Bregane te između čvorova Kosnica i Zagreb istok u smjeru Lipovca A6 Rijeka-Zagreb: prometna nesreća na čvoru Orehovica na ulaznom kraku u smjeru Rijeke. Vozi se jednim trakom, uz ograničenje brzine od 4…"
+  "updated": "11.9.2026. 21:17",
+  "text": "Kolnici su mjestimice mokri i skliski. U priobalju puše jak vjetar i ograničenja su na Jadranskoj magistrali (opširnije u izvješću) . Pojačan je promet na gradskim prometnicama i obilaznicama, a zastoji su na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac: vozi se usporeno uz kraće zastoje na prilazu zoni radova na zagrebačkoj obilaznici kod čvora Zagreb zapad u smjeru Bregane prometna nesreća na 167. km između čvora Okučani i čvora Nova Gradiška u smjeru Lipovca kolona je 6 km, a u smjeru Bregane između čvora Lužani i čvora Okučani kolona je 3 km A7 Rupa-Rijeka-Križišće: zbog veće…"
  },
  {
   "title": "Granični prijelazi",
