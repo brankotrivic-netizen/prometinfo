@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-12T08:11:40.347Z";
+export const PROMET_SI_UPDATED = "2026-09-12T12:09:04.372Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;876563;e48acd12-65d5-4f69-9994-581283ae2bf6",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, uvoz Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, oviran promet, strojno pometanje.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.92427,
+  "lng": 14.88616,
+  "start": "2026-09-12T11:36:56.237Z",
+  "end": "2026-09-12T17:00:00Z",
+  "ts": "2026-09-12T11:37:04.403Z"
+ },
+ {
+  "id": "DARS;876553;ac4ccb34-a3ba-4103-84be-f56133e514f4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.18145,
+  "lng": 14.85132,
+  "start": "2026-09-12T10:53:31.877Z",
+  "end": "2026-09-13T13:00:27.22Z",
+  "ts": "2026-09-12T10:53:37.497Z"
+ },
+ {
+  "id": "DARS;876546;36d2a6e5-68c0-479e-8673-e160dbfa7473",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Trojane - uvoz Trojane v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.20286,
+  "lng": 14.89987,
+  "start": "2026-09-12T09:47:38.13Z",
+  "end": "2026-09-13T13:00:26.523Z",
+  "ts": "2026-09-12T09:47:50.827Z"
+ },
+ {
+  "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Šentilj v smeri Maribora, dela, promet poteka po enem voznem pasu.",
+  "loc": "A1-E57, E59, Šentilj - Maribor",
+  "lat": 46.68921,
+  "lng": 15.64654,
+  "start": "2026-04-13T12:05:47.197Z",
+  "end": "2026-09-26T21:59:00Z",
+  "ts": "2026-09-12T08:42:01.913Z"
+ },
+ {
+  "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Šentilj, priključek Maribor sever - prehod Šentilj v smeri Šentilja, Avstrije, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E57, E59, Maribor - Šentilj",
+  "lat": 46.67439,
+  "lng": 15.64669,
+  "start": "2026-04-13T10:27:58.043Z",
+  "end": "2026-09-26T21:59:00Z",
+  "ts": "2026-09-12T08:41:49.39Z"
+ },
  {
   "id": "DARS;876520;da84db47-6a2e-4665-a3d9-780be1bf3596",
   "type": "MaintenanceWorks",
@@ -13,39 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-12T07:59:20.54Z",
   "end": "2026-09-12T21:59:00Z",
   "ts": "2026-09-12T07:59:48.59Z"
- },
- {
-  "id": "DARS;876513;32e6acbc-0aab-4d24-9dc8-b28c59a8e450",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Ivančna Gorica - izvoz Višnja Gora v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.93474,
-  "lng": 14.80301,
-  "start": "2026-09-12T06:04:50.33Z",
-  "end": "2026-09-12T10:18:24.593Z",
-  "ts": "2026-09-12T06:04:57.067Z"
- },
- {
-  "id": "DARS;876510;9aed743c-572f-4ba8-b282-388056fc10fc",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, priključek Bertoki - priključek Koper center, Slavček v smeri Kopra, dela, oviran promet.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.54673,
-  "lng": 13.76291,
-  "start": "2026-09-12T05:39:15.06Z",
-  "end": "2026-09-12T11:00:50.117Z",
-  "ts": "2026-09-12T05:39:17.76Z"
- },
- {
-  "id": "DARS;876508;6e42cc3d-06d0-4a82-a398-be57025052ae",
-  "type": "MaintenanceWorks",
-  "desc": "A3, Fernetiči - razcep Gabrk, priključek Sežana vzhod - počivališče Povir v smeri Gabrka, dela, oviran promet.",
-  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
-  "lat": 45.71348,
-  "lng": 13.89667,
-  "start": "2026-09-12T05:30:52.093Z",
-  "end": "2026-09-12T13:00:00Z",
-  "ts": "2026-09-12T05:30:55.643Z"
  },
  {
   "id": "DARS;876500;f87992b7-3851-48d5-933b-deacdec9c4ac",
@@ -167,28 +189,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-06-15T06:19:31.58Z",
   "end": "2026-09-18T17:00:00Z",
   "ts": "2026-09-11T06:58:46.623Z"
- },
- {
-  "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Šentilj v smeri Maribora, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, E59, Šentilj - Maribor",
-  "lat": 46.68921,
-  "lng": 15.64654,
-  "start": "2026-04-13T12:05:47.197Z",
-  "end": "2026-09-26T21:59:00Z",
-  "ts": "2026-09-10T09:40:42.31Z"
- },
- {
-  "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Šentilj, priključek Maribor sever - prehod Šentilj v smeri Šentilja, Avstrije, dela, promet poteka po enem voznem pasu.",
-  "loc": "A1-E57, E59, Maribor - Šentilj",
-  "lat": 46.67439,
-  "lng": 15.64669,
-  "start": "2026-04-13T10:27:58.043Z",
-  "end": "2026-09-26T21:59:00Z",
-  "ts": "2026-09-10T09:40:24.3Z"
  },
  {
   "id": "DARS;875931;e2a37f12-9560-4c1c-bfa3-cec0c0081dd8",
