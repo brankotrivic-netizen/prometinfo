@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.9.2026. 21:46",
-  "text": "U priobalju puše bura i ograničenja za pojedine skupine vozila su na dijelovima Jadranske magistrale (opširnije u izvješću) . Pojačan je promet na važnijim cestama te pojedinim graničnim prijelazima. Molimo vozače da prilagode brzinu i način vožnje uvjetima na cestama, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI: na Jadranskoj magistrali (DC8) između mjesta Dramalj i Jadranovo vozi se usporeno u koloni na Krčkom mostu (DC102) povećana je gustoća prometa u oba smjera zbog požara na otoku Braču zatvorena je županijska cesta ŽC6191 između raskrižja za Vidovu goru i mjesta Vela Farska (od 1. do 10. km) AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 14. r…"
+  "updated": "12.9.2026. 23:36",
+  "text": "U priobalju puše bura i ograničenja za pojedine skupine vozila (opširnije u izvješću) . Pojačan je promet na važnijim cestama te pojedinim graničnim prijelazima. Molimo vozače da prilagode brzinu i način vožnje uvjetima na cestama, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A7 u tunelu Škurinje I na kolniku u smjeru Rupe - promet se vodi jednom prometnom trakom uz ograničenje brzine od 40 km/h u koloni od oko 2 km prometna nesreća na autocesti A7 između tunela Draga i čvora Rijeka istok na kolniku u smjeru Rupe - vozi se po dva traka uz ograničenje brzine od 60 km/h na Krčkom mostu (DC102) povećana je gustoća prometa u oba smjera …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "12.9.2026. 21:46",
+  "updated": "12.9.2026. 23:36",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.9.2026. 21:46",
+  "updated": "12.9.2026. 23:36",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: trajekt na liniji 634 Orebić-Dominče iznimno će u ponedjeljak ( 14.09.) isploviti iz luke Orebić za luku Dominče u 01:15 umjesto u 00:30 do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republ…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "12.9.2026. 21:46",
+  "updated": "12.9.2026. 23:36",
   "text": "Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Šibenik 9.34 5822 Šibenik 11.10 – Unešić 11.57 5823 Unešić 12.03 – Šibenik 13.31 5824 Šibenik 14.27 – Perković 14.56 5825 Perković 15.18 – Šibenik 15.47 5804 Šibenik 16.03 – Knin 17.43 5807 Knin 19.56 – Šibenik 21.32. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. I…"
  },
  {
