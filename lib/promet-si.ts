@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-12T12:09:04.372Z";
+export const PROMET_SI_UPDATED = "2026-09-12T15:28:57.068Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;876563;e48acd12-65d5-4f69-9994-581283ae2bf6",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, uvoz Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, oviran promet, strojno pometanje.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.92427,
-  "lng": 14.88616,
-  "start": "2026-09-12T11:36:56.237Z",
-  "end": "2026-09-12T17:00:00Z",
-  "ts": "2026-09-12T11:37:04.403Z"
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-09-12T15:00:14.51Z"
  },
  {
   "id": "DARS;876553;ac4ccb34-a3ba-4103-84be-f56133e514f4",
@@ -59,28 +59,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-12T08:41:49.39Z"
  },
  {
-  "id": "DARS;876520;da84db47-6a2e-4665-a3d9-780be1bf3596",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Koper - Škofije, priključek Plavje, Hrvatini - prehod Škofije v smeri Škofij, Italije, dela, zaprt prehitevalni pas.",
-  "loc": "G1-11, Koper - Škofije",
-  "lat": 45.57954,
-  "lng": 13.79666,
-  "start": "2026-09-12T07:59:20.54Z",
-  "end": "2026-09-12T21:59:00Z",
-  "ts": "2026-09-12T07:59:48.59Z"
- },
- {
-  "id": "DARS;876500;f87992b7-3851-48d5-933b-deacdec9c4ac",
-  "type": "MaintenanceWorks",
-  "desc": "R3-719, Rogašovci - Kramarovci, pri Rogašovcih, oviran promet, košnja, do 17:00.",
-  "loc": "R3-719, Rogašovci - Kramarovci",
-  "lat": 46.80557,
-  "lng": 16.03446,
-  "start": "2026-09-12T04:05:50.37Z",
-  "end": "2026-09-12T15:00:00Z",
-  "ts": "2026-09-12T04:06:12.483Z"
- },
- {
   "id": "DARS;876318;f0bae317-f96b-46c9-ad10-eb4599504dae",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-409, Logatec - Vrhnika, na Vrhniki, na Tržaški cesti, izmenično enosmerni promet, asfaltiranje.",
@@ -101,28 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-12T05:00:00Z",
   "end": "2026-09-12T16:00:00Z",
   "ts": "2026-09-12T03:50:12.483Z"
- },
- {
-  "id": "DARS;876498;8a82946f-a408-4593-87a0-1b371ba80baf",
-  "type": "MaintenanceWorks",
-  "desc": "R3-718, Pertoča - Fikšinci, pri Pertoči, oviran promet, košnja, do 16:00.",
-  "loc": "R3-718, Pertoča - Fikšinci",
-  "lat": 46.77086,
-  "lng": 16.03725,
-  "start": "2026-09-12T03:48:50.14Z",
-  "end": "2026-09-12T14:00:00Z",
-  "ts": "2026-09-12T03:49:15.533Z"
- },
- {
-  "id": "DARS;876497;fc6633e7-8306-4e19-8472-746807866793",
-  "type": "MaintenanceWorks",
-  "desc": "R2-440, Cankova - Kuzma, pri Cankovi, oviran promet, košnja, do 16:00.",
-  "loc": "R2-440, Cankova - Kuzma",
-  "lat": 46.7165,
-  "lng": 16.02063,
-  "start": "2026-09-12T03:48:12.71Z",
-  "end": "2026-09-12T14:00:00Z",
-  "ts": "2026-09-12T03:48:35.307Z"
  },
  {
   "id": "DARS;873672;0bc2776d-5f64-4f3c-b2ae-4874ff08acb9",
@@ -200,17 +156,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-10T06:05:38.88Z",
   "end": "2026-09-30T21:59:00Z",
   "ts": "2026-09-10T06:07:03.73Z"
- },
- {
-  "id": "DARS;840302;9afdd477-15d4-4c82-9794-cd8187afe028",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-447, Želodnik - Domžale, v Domžalah na Šaranovičevi cesti, izmenično enosmerni promet, rehabilitacije mostu v Domžalah (Ujma 2023), do 12. 9. 2026.",
-  "loc": "R2-447, Želodnik - Domžale",
-  "lat": 46.14703,
-  "lng": 14.60456,
-  "start": "2026-03-23T07:36:01.033Z",
-  "end": "2026-09-12T15:00:00Z",
-  "ts": "2026-09-10T06:00:01.747Z"
  },
  {
   "id": "DARS;863053;9e9e00dd-7995-4163-ac84-3ba452223cdd",
