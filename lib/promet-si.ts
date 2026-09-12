@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-12T17:47:12.697Z";
+export const PROMET_SI_UPDATED = "2026-09-12T19:48:41.201Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;876597;1e1f2b3f-b716-46ea-8109-1c7075b622a7",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Golo Rebro - priključek Sl. Konjice v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.32661,
+  "lng": 15.46538,
+  "start": "2026-09-12T18:48:44.3Z",
+  "end": "2026-09-13T05:00:00Z",
+  "ts": "2026-09-12T19:34:57.937Z"
+ },
+ {
+  "id": "DARS;876599;9cc84998-9dd6-4d83-afef-9becc0b0bf28",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, uvoz s Celovške ceste v smeri Kosez, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.07772,
+  "lng": 14.47641,
+  "start": "2026-09-12T19:23:08.07Z",
+  "end": "2026-09-13T01:00:00Z",
+  "ts": "2026-09-12T19:23:13.733Z"
+ },
+ {
+  "id": "DARS;876598;4a341cc2-6317-4b1a-b3f9-a19ceb07ee72",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, uvoz Ljubljana sever - priključek Ljubljana Podutik v smeri Kosez, dela, zaprt vozni pas.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.0776,
+  "lng": 14.47613,
+  "start": "2026-09-12T19:11:22.187Z",
+  "end": "2026-09-12T21:00:03.743Z",
+  "ts": "2026-09-12T19:11:56.6Z"
+ },
+ {
+  "id": "DARS;876594;5685404b-633c-4552-8548-dc3696eceb1f",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, izvoz 5 Ljubljana sever v smeri Zadobrove, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.07721,
+  "lng": 14.47506,
+  "start": "2026-09-12T17:54:54.097Z",
+  "end": "2026-09-12T20:00:07.58Z",
+  "ts": "2026-09-12T17:57:53.377Z"
+ },
  {
   "id": "DARS;876593;c7071405-67f9-4f36-9a85-1494400792e1",
   "type": "MaintenanceWorks",
