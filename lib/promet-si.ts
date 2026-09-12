@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-12T15:28:57.068Z";
+export const PROMET_SI_UPDATED = "2026-09-12T17:47:12.697Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;876593;c7071405-67f9-4f36-9a85-1494400792e1",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, pred priključkom Sl. Konjice v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.34488,
+  "lng": 15.48306,
+  "start": "2026-09-12T17:39:48.227Z",
+  "end": "2026-09-12T23:00:00Z",
+  "ts": "2026-09-12T17:39:51.113Z"
+ },
+ {
+  "id": "DARS;876592;0d9aba27-9249-4327-8253-23d7ea8b5225",
+  "type": "MaintenanceWorks",
+  "desc": "A3, Fernetiči - razcep Gabrk, priključek Sežana vzhod - razcep Gabrk v smeri Gabrka, dela, oviran promet.",
+  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
+  "lat": 45.71153,
+  "lng": 13.91362,
+  "start": "2026-09-12T17:30:45.78Z",
+  "end": "2026-09-12T21:00:00Z",
+  "ts": "2026-09-12T17:31:17.813Z"
+ },
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-09-25T21:59:00Z",
+  "ts": "2026-09-12T16:00:43.39Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -57,28 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T10:27:58.043Z",
   "end": "2026-09-26T21:59:00Z",
   "ts": "2026-09-12T08:41:49.39Z"
- },
- {
-  "id": "DARS;876318;f0bae317-f96b-46c9-ad10-eb4599504dae",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-409, Logatec - Vrhnika, na Vrhniki, na Tržaški cesti, izmenično enosmerni promet, asfaltiranje.",
-  "loc": "R2-409, Vrhnika - Logatec",
-  "lat": 45.96231,
-  "lng": 14.29552,
-  "start": "2026-09-11T04:00:00Z",
-  "end": "2026-09-13T17:00:00Z",
-  "ts": "2026-09-12T04:00:38.037Z"
- },
- {
-  "id": "DARS;876499;dd0ded92-f119-4dc6-9c5f-7fa0d3509261",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-422, Podsreda - Brestanica, v Brestanici, izmenično enosmerni promet, čiščenje cestišča, do 18:00.",
-  "loc": "R2-422, Podsreda - Brestanica",
-  "lat": 45.99018,
-  "lng": 15.46787,
-  "start": "2026-09-12T05:00:00Z",
-  "end": "2026-09-12T16:00:00Z",
-  "ts": "2026-09-12T03:50:12.483Z"
  },
  {
   "id": "DARS;873672;0bc2776d-5f64-4f3c-b2ae-4874ff08acb9",
