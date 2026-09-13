@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-13T08:36:20.729Z";
+export const PROMET_SI_UPDATED = "2026-09-13T13:27:57.191Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;876553;ac4ccb34-a3ba-4103-84be-f56133e514f4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.18145,
+  "lng": 14.85132,
+  "start": "2026-09-12T10:53:31.877Z",
+  "end": "2026-09-13T14:00:00Z",
+  "ts": "2026-09-13T13:10:02.92Z"
+ },
  {
   "id": "DARS;876624;0ba30f9c-8f0d-4a59-9a13-7384ba6d38f2",
   "type": "MaintenanceWorks",
@@ -15,28 +26,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-13T06:52:04.83Z"
  },
  {
-  "id": "DARS;876620;35913d6d-30da-4b39-a0f8-6594a192411e",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.9713,
-  "lng": 14.66799,
-  "start": "2026-09-13T06:20:37.93Z",
-  "end": "2026-09-13T16:00:00Z",
-  "ts": "2026-09-13T06:20:48.22Z"
- },
- {
-  "id": "DARS;876617;7ad25eae-7e48-4b6c-8c90-593a8b97d162",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Brezovica - uvoz Vrhnika v smeri Kopra, dela, oviran promet.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.02573,
-  "lng": 14.4341,
-  "start": "2026-09-13T05:44:56.707Z",
-  "end": "2026-09-13T10:00:00Z",
-  "ts": "2026-09-13T05:45:04.277Z"
- },
- {
   "id": "DARS;876318;f0bae317-f96b-46c9-ad10-eb4599504dae",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-409, Logatec - Vrhnika, na Vrhniki, na Tržaški cesti, izmenično enosmerni promet, asfaltiranje.",
@@ -46,50 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-11T04:00:00Z",
   "end": "2026-09-13T17:00:00Z",
   "ts": "2026-09-13T04:00:41.38Z"
- },
- {
-  "id": "DARS;876612;829afb25-2f52-49a8-865e-e797b3036bee",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.40156,
-  "lng": 15.6076,
-  "start": "2026-09-13T03:37:50.097Z",
-  "end": "2026-09-13T13:00:00Z",
-  "ts": "2026-09-13T03:38:04.607Z"
- },
- {
-  "id": "DARS;876611;46711751-14eb-4a67-815e-0d6c159750c0",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Senožeče - razcep Nanos v smeri Ljubljane, dela, zaprta vozni in počasni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.73598,
-  "lng": 14.02364,
-  "start": "2026-09-13T03:36:57.38Z",
-  "end": "2026-09-13T15:00:00Z",
-  "ts": "2026-09-13T03:37:21.85Z"
- },
- {
-  "id": "DARS;876553;ac4ccb34-a3ba-4103-84be-f56133e514f4",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.18145,
-  "lng": 14.85132,
-  "start": "2026-09-12T10:53:31.877Z",
-  "end": "2026-09-13T13:00:27.22Z",
-  "ts": "2026-09-12T10:53:37.497Z"
- },
- {
-  "id": "DARS;876546;36d2a6e5-68c0-479e-8673-e160dbfa7473",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Trojane - uvoz Trojane v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.20286,
-  "lng": 14.89987,
-  "start": "2026-09-12T09:47:38.13Z",
-  "end": "2026-09-13T13:00:26.523Z",
-  "ts": "2026-09-12T09:47:50.827Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
