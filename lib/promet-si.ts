@@ -1,18 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-13T13:27:57.191Z";
+export const PROMET_SI_UPDATED = "2026-09-13T17:00:26.052Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;876553;ac4ccb34-a3ba-4103-84be-f56133e514f4",
+  "id": "DARS;876701;b0dfe5e8-291d-416a-b329-f1cc771ce682",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.18145,
-  "lng": 14.85132,
-  "start": "2026-09-12T10:53:31.877Z",
-  "end": "2026-09-13T14:00:00Z",
-  "ts": "2026-09-13T13:10:02.92Z"
+  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, oviran promet, strojno pometanje.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.92829,
+  "lng": 14.85357,
+  "start": "2026-09-13T16:51:48.073Z",
+  "end": "2026-09-13T22:00:00Z",
+  "ts": "2026-09-13T16:51:56.163Z"
+ },
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-09-25T21:59:00Z",
+  "ts": "2026-09-13T16:00:25.133Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-09-13T15:00:51.697Z"
  },
  {
   "id": "DARS;876624;0ba30f9c-8f0d-4a59-9a13-7384ba6d38f2",
@@ -24,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-13T06:50:21.823Z",
   "end": "2026-09-14T17:00:15.667Z",
   "ts": "2026-09-13T06:52:04.83Z"
- },
- {
-  "id": "DARS;876318;f0bae317-f96b-46c9-ad10-eb4599504dae",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-409, Logatec - Vrhnika, na Vrhniki, na Tržaški cesti, izmenično enosmerni promet, asfaltiranje.",
-  "loc": "R2-409, Vrhnika - Logatec",
-  "lat": 45.96231,
-  "lng": 14.29552,
-  "start": "2026-09-11T04:00:00Z",
-  "end": "2026-09-13T17:00:00Z",
-  "ts": "2026-09-13T04:00:41.38Z"
  },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
