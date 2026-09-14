@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-14T15:56:35.026Z";
+export const PROMET_SI_UPDATED = "2026-09-14T20:04:41.588Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;876993;aaf37039-ae84-459e-b886-91716fbfc5ab",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Žalec, Arja vas - priključek Šempeter v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.27114,
+  "lng": 15.14058,
+  "start": "2026-09-14T19:45:39.54Z",
+  "end": "2026-09-15T01:00:00Z",
+  "ts": "2026-09-14T19:46:03.85Z"
+ },
+ {
+  "id": "DARS;876990;98f19976-564a-45d8-afff-b4a813a0ce5c",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, pred priključkom Vodice v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.18993,
+  "lng": 14.47824,
+  "start": "2026-09-14T19:29:02.363Z",
+  "end": "2026-09-15T01:00:00Z",
+  "ts": "2026-09-14T19:29:23.703Z"
+ },
+ {
+  "id": "DARS;876981;5a109284-4874-4587-8bed-4634a6122184",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.9713,
+  "lng": 14.66799,
+  "start": "2026-09-14T17:48:20.36Z",
+  "end": "2026-09-15T00:31:13.487Z",
+  "ts": "2026-09-14T17:48:32.243Z"
+ },
+ {
+  "id": "DARS;876973;f70e768c-38ca-42c8-9217-7fb85d4bee6e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.40222,
+  "lng": 15.60849,
+  "start": "2026-09-14T16:57:35.813Z",
+  "end": "2026-09-14T23:00:52.33Z",
+  "ts": "2026-09-14T16:57:46.413Z"
+ },
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-09-25T21:59:00Z",
+  "ts": "2026-09-14T16:00:59.193Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -90,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-14T06:17:29.79Z",
   "end": "2027-05-28T21:59:00Z",
   "ts": "2026-09-14T06:18:34.3Z"
- },
- {
-  "id": "DARS;876814;90fac273-7323-4b97-a98b-335b9ee82d8f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-716, Lemerje - Grad, pri Radovcih, izmenično enosmerni promet, vzdrževalna dela, do 18:00.",
-  "loc": "R3-716, Lemerje - Grad",
-  "lat": 46.78131,
-  "lng": 16.09756,
-  "start": "2026-09-14T06:15:09.61Z",
-  "end": "2026-09-14T16:00:00Z",
-  "ts": "2026-09-14T06:15:25.69Z"
  },
  {
   "id": "DARS;876812;1d37fccf-fa4b-4e75-b8a2-8cf0fe909c7d",
