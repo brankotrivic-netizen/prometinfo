@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-14T20:04:41.588Z";
+export const PROMET_SI_UPDATED = "2026-09-14T23:06:36.284Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;876993;aaf37039-ae84-459e-b886-91716fbfc5ab",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Žalec, Arja vas - priključek Šempeter v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.27114,
-  "lng": 15.14058,
-  "start": "2026-09-14T19:45:39.54Z",
-  "end": "2026-09-15T01:00:00Z",
-  "ts": "2026-09-14T19:46:03.85Z"
- },
  {
   "id": "DARS;876990;98f19976-564a-45d8-afff-b4a813a0ce5c",
   "type": "MaintenanceWorks",
@@ -24,28 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-14T19:29:02.363Z",
   "end": "2026-09-15T01:00:00Z",
   "ts": "2026-09-14T19:29:23.703Z"
- },
- {
-  "id": "DARS;876981;5a109284-4874-4587-8bed-4634a6122184",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.9713,
-  "lng": 14.66799,
-  "start": "2026-09-14T17:48:20.36Z",
-  "end": "2026-09-15T00:31:13.487Z",
-  "ts": "2026-09-14T17:48:32.243Z"
- },
- {
-  "id": "DARS;876973;f70e768c-38ca-42c8-9217-7fb85d4bee6e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.40222,
-  "lng": 15.60849,
-  "start": "2026-09-14T16:57:35.813Z",
-  "end": "2026-09-14T23:00:52.33Z",
-  "ts": "2026-09-14T16:57:46.413Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -81,17 +48,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-14T08:10:12.477Z"
  },
  {
-  "id": "DARS;876830;cc8cbba5-97f3-481c-b2bc-47200ffec22a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-107, Celje - Rogaška Slatina, Mala Pristava, izmenično enosmerni promet, vzdrževalnih del na območju nivojskega prehoda.",
-  "loc": "G2-107, Šentjur - Mestinje",
-  "lat": 46.2331,
-  "lng": 15.53204,
-  "start": "2026-09-14T06:45:56.043Z",
-  "end": "2026-09-14T21:59:00Z",
-  "ts": "2026-09-14T06:46:41.457Z"
- },
- {
   "id": "DARS;864569;5234fa72-7bf2-4271-bec5-adef83b3e3da",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-912, Zali log - Davča - Novaki, pri Davči, izmenično enosmerni promet, kratkotrajne popolne zapore (do 20 minut), izvedbe zaščite ceste pred padajočim kamenjem, do 15. 9. 2026.",
@@ -112,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-14T06:41:14.967Z",
   "end": "2026-09-19T21:59:00Z",
   "ts": "2026-09-14T06:42:50.503Z"
- },
- {
-  "id": "DARS;876823;d0609953-c333-469a-9a6e-5c42fdbea36d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Žalec, Arja vas - počivališče Lukovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26869,
-  "lng": 15.18552,
-  "start": "2026-09-14T06:34:48.693Z",
-  "end": "2026-09-18T14:00:00Z",
-  "ts": "2026-09-14T06:35:11.223Z"
  },
  {
   "id": "DARS;858095;d421a96c-ca30-4443-9b9d-480765d9ea10",
@@ -255,17 +200,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-13T06:24:34.19Z",
   "end": "2026-09-17T14:00:00Z",
   "ts": "2026-09-10T05:47:20.013Z"
- },
- {
-  "id": "DARS;873961;8289d6e2-ec6c-45b7-afd8-322c16a62bf6",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-210, Kranj - Škofja Loka, v Zgornjih Bitnjah, izmenično enosmerni promet, ureditev avtobusnih postajališč, do 14. 9. 2026.",
-  "loc": "R1-210, Kranj - Škofja Loka",
-  "lat": 46.22052,
-  "lng": 14.33948,
-  "start": "2026-09-02T05:57:37.5Z",
-  "end": "2026-09-14T21:59:00Z",
-  "ts": "2026-09-09T06:55:53.72Z"
  },
  {
   "id": "DARS;875675;3b2b5f7d-3465-442a-b5d4-b1fbd723131a",
