@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-15T21:32:49.795Z";
+export const PROMET_SI_UPDATED = "2026-09-15T23:41:21.802Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;877267;8a2caeca-77f4-4fa2-8b16-fe56cb52b601",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Vodice - priključek Ljubljana, Šentvid v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.12566,
+  "lng": 14.48203,
+  "start": "2026-09-15T21:33:37.02Z",
+  "end": "2026-09-16T03:00:08.157Z",
+  "ts": "2026-09-15T21:34:12.067Z"
+ },
  {
   "id": "DARS;877259;1d5d113e-ee40-4301-9641-ccddf59a5203",
   "type": "MaintenanceWorks",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-15T18:00:42.99Z",
   "end": "2026-09-16T03:00:00Z",
   "ts": "2026-09-15T18:01:57.03Z"
- },
- {
-  "id": "DARS;877255;25a75ddd-1945-453f-9329-1480f0cab200",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.97107,
-  "lng": 14.66744,
-  "start": "2026-09-15T17:26:10.47Z",
-  "end": "2026-09-16T03:00:00Z",
-  "ts": "2026-09-15T17:26:23.02Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -145,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-09T06:42:55.207Z",
   "end": "2026-10-16T15:00:00Z",
   "ts": "2026-09-14T08:10:12.477Z"
- },
- {
-  "id": "DARS;864569;5234fa72-7bf2-4271-bec5-adef83b3e3da",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-912, Zali log - Davča - Novaki, pri Davči, izmenično enosmerni promet, kratkotrajne popolne zapore (do 20 minut), izvedbe zaščite ceste pred padajočim kamenjem, do 15. 9. 2026.",
-  "loc": "RT-912, Zali Log - Davča",
-  "lat": 46.18764,
-  "lng": 14.0568,
-  "start": "2026-07-20T07:06:28.867Z",
-  "end": "2026-09-15T21:59:00Z",
-  "ts": "2026-09-14T06:44:44.657Z"
  },
  {
   "id": "DARS;876829;7aeb3c37-ac60-4f5b-a1e8-c783823ed5a2",
