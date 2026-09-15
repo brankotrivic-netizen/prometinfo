@@ -87,6 +87,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Danas i naredna dva dana (26., 27. i 28.08.) zbog sanacionih radova obustavljen je saobraćaj na regionalnoj cesti Tomislavgrad-Blidinje."
    },
    {
+    "title": "Priboj-Sapna (Goduš)",
+    "text": "Zbog asfaltiranja na regionalnoj cesti R-456 Priboj-Sapna (Goduš), od 15. do 18.09.najavljena je obustava saobraćaja u periodu od 08 do 19 sati. Tokom trajanja obustave, vozačima se preporučuje korištenje alternativnog pravca: Priboj-Simin Han-Kalesija-Sapna-Goduš-Rastošnica."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }

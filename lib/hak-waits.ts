@@ -3,15 +3,15 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "hr-bajakovo",
-  "name": "Bajakovo (Batrovci)",
+  "id": "ba-orasje",
+  "name": "Županja (Orašje)",
   "ulazMin": null,
   "izlazMin": null,
   "ulazTxt": "-",
   "izlazTxt": "-",
-  "truckUlazMin": 360,
+  "truckUlazMin": 90,
   "truckIzlazMin": null,
-  "truckUlazTxt": "6 h",
+  "truckUlazTxt": "1 h 30 min.",
   "truckIzlazTxt": "-",
   "level": "unknown",
   "waitMinutes": null,
@@ -21,6 +21,26 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "",
   "tsISO": ""
+ },
+ {
+  "id": "hr-bajakovo",
+  "name": "Bajakovo (Batrovci)",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": 300,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "5 h",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "15.9.2026. 8:49:53",
+  "izlazTs": "15.9.2026. 8:50:00",
+  "ulazTsISO": "2026-09-15T08:49:53+02:00",
+  "izlazTsISO": "2026-09-15T08:50:00+02:00",
+  "ts": "15.9.2026. 8:49:53",
+  "tsISO": "2026-09-15T08:49:53+02:00"
  },
  {
   "id": "hr-tovarnik",
@@ -43,23 +63,23 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": ""
  },
  {
-  "id": "hr-batina",
-  "name": "Batina (Bezdan)",
-  "ulazMin": null,
+  "id": "",
+  "name": "Principovac",
+  "ulazMin": 30,
   "izlazMin": null,
-  "ulazTxt": "-",
+  "ulazTxt": "do 30 min.",
   "izlazTxt": "-",
-  "truckUlazMin": 120,
+  "truckUlazMin": 60,
   "truckIzlazMin": null,
-  "truckUlazTxt": "2 h",
+  "truckUlazTxt": "1 h",
   "truckIzlazTxt": "-",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ulazTs": "Nema podataka",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "15.9.2026. 7:33:10",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "",
+  "ulazTsISO": "2026-09-15T07:33:10+02:00",
   "izlazTsISO": "",
-  "ts": "",
-  "tsISO": ""
+  "ts": "15.9.2026. 7:33:10",
+  "tsISO": "2026-09-15T07:33:10+02:00"
  }
 ];
