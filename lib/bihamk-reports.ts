@@ -42,6 +42,14 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U toku su sanacioni radovi, zbog čega se svakog dana (osim nedjelje), u vremenu od 7 do 16 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
+    "title": "Grude-Privalj",
+    "text": "Na magistralnoj cesti Grude-Privalj, zbog radova na izgradnji pješačke staze svaki dan osim nedjelje od 05 do 16 sati saobraća se naizmjenično, jednom trakom."
+   },
+   {
+    "title": "Orašje-Šamac (Domaljevac)",
+    "text": "Na magistralnoj cesti Orašje-Šamac (Domaljevac), zbog radova na izgradnji pješačke staze svaki dan osim nedjelje od 07 do 17 sati saobraća se naizmjenično, jednom trakom."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },
@@ -83,16 +91,16 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-448 Goražde-Hrenovica (Bare-Hrenovica), zbog asfaltiranje od 08 do 18 sati vozila će saobraćati uspotreno, jednom trakom, uz moguće obustave ne duže od 1 sat. Dana 21.08. biće na snazi potpuna obustava za teretni saobraćaj."
    },
    {
+    "title": "Nemila-Bistričak",
+    "text": "Na regionalnoj cesti R-473 Nemila-Bistričak zbog sanacionih radova svaki dan osim nedjelje od 07 do 16 sati saobraća se naizmjenično, jednom trakom."
+   },
+   {
     "title": "Tomislavgrad-Blidinje",
     "text": "Danas i naredna dva dana (26., 27. i 28.08.) zbog sanacionih radova obustavljen je saobraćaj na regionalnoj cesti Tomislavgrad-Blidinje."
    },
    {
     "title": "Priboj-Sapna (Goduš)",
     "text": "Zbog asfaltiranja na regionalnoj cesti R-456 Priboj-Sapna (Goduš), od 15. do 18.09.najavljena je obustava saobraćaja u periodu od 08 do 19 sati. Tokom trajanja obustave, vozačima se preporučuje korištenje alternativnog pravca: Priboj-Simin Han-Kalesija-Sapna-Goduš-Rastošnica."
-   },
-   {
-    "title": "Kalibunar–Galica- Babanovac",
-    "text": "Zbog održavanja manifestacije danas od 10 do 14 sati doći će do obustave saobraćaja u mjestu Galica."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
