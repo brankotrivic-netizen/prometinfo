@@ -1,62 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-16T20:34:25.123Z";
+export const PROMET_SI_UPDATED = "2026-09-16T23:14:27.767Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;877517;7989668e-c4a9-47f5-a805-b203d70cfc9a",
+  "id": "DARS;877501;5a559363-378f-470e-904d-9b3732c1f0a2",
   "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, počivališče Povodje - priključek Ljubljana, Šmartno v smeri Ljubljane, dela, zaprt vozni pas.",
+  "desc": "A2, Karavanke - Ljubljana, priključek Ljubljana, Šmartno - priključek Ljubljana Brod v smeri Ljubljane, dela, zaprt vozni pas, barvanje talnih označb.",
   "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.1484,
-  "lng": 14.4766,
-  "start": "2026-09-16T19:52:37.093Z",
-  "end": "2026-09-16T21:00:36.107Z",
-  "ts": "2026-09-16T19:52:38.997Z"
+  "lat": 46.12483,
+  "lng": 14.48181,
+  "start": "2026-09-16T22:35:19.187Z",
+  "end": "2026-09-17T02:00:00Z",
+  "ts": "2026-09-16T22:35:45.28Z"
  },
  {
-  "id": "DARS;877516;1db8c6cc-0ecc-4ede-ab4b-46c65229fe4c",
+  "id": "DARS;877528;3ff5e085-56d6-4250-86c9-01413ac96bc4",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Vransko - priključek Šentrupert v smeri Maribora, dela, oviran promet, strojno pometanje.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.2516,
-  "lng": 14.97287,
-  "start": "2026-09-16T19:42:01.307Z",
-  "end": "2026-09-17T01:00:00Z",
-  "ts": "2026-09-16T19:43:15.44Z"
- },
- {
-  "id": "DARS;877514;f02fc2ba-f82a-4285-8205-1dd80ee8cbc4",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, izvoz 18 Grosuplje zahod, Cikava - predor Mali Vrh v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.96898,
-  "lng": 14.65574,
-  "start": "2026-09-16T19:31:17.02Z",
-  "end": "2026-09-17T02:40:34.327Z",
-  "ts": "2026-09-16T19:31:23.013Z"
- },
- {
-  "id": "DARS;877509;536a98f6-9962-4387-bb29-072bd9236873",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Unec - priključek Vrhnika v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.85791,
-  "lng": 14.27733,
-  "start": "2026-09-16T18:10:42.837Z",
-  "end": "2026-09-16T23:00:00Z",
-  "ts": "2026-09-16T18:12:17.773Z"
- },
- {
-  "id": "DARS;877503;1dbcde4a-67da-48b1-a6a4-c1cf89fe6849",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Krtina - priključek Krtina v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.15463,
-  "lng": 14.65595,
-  "start": "2026-09-16T17:26:37.243Z",
-  "end": "2026-09-17T00:00:26.387Z",
-  "ts": "2026-09-16T17:26:38.9Z"
+  "desc": "A1, Ljubljana - Koper, uvoz Logatec - uvoz Unec v smeri Kopra, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.9084,
+  "lng": 14.25785,
+  "start": "2026-09-16T22:11:54.667Z",
+  "end": "2026-09-17T03:00:00Z",
+  "ts": "2026-09-16T22:11:57.183Z"
  },
  {
   "id": "DARS;877497;371c50bb-3b0f-4dbe-b558-51a5cb144862",
@@ -68,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-16T17:21:44.84Z",
   "end": "2026-09-17T02:00:00Z",
   "ts": "2026-09-16T17:21:49.273Z"
- },
- {
-  "id": "DARS;877495;4529d6aa-d917-4c91-bf9d-f402a9d36ee2",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.97107,
-  "lng": 14.66744,
-  "start": "2026-09-16T17:03:39.237Z",
-  "end": "2026-09-17T00:09:44.867Z",
-  "ts": "2026-09-16T17:03:42.543Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",

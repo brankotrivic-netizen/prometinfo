@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "16.9.2026. 22:33",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: do 5:00 sati ujutro sati zbog radova zatvorena je dionica autoceste A2 Zagreb-Macelj između čvorova Krapina i Trakošćan, u oba smjera. Obilazak je državnom cestom DC1 zbog prometne nesreće raskrižju državne ceste DC76 i ulazno izlaznog kraka prema autocesti A1 (prema naplatama Zagvozd), vozi se otežano uz regulaciju prometne policije zbog prometne nesreće na državnoj cesti DC8 u mjestu Mučići vozi se u…"
+  "updated": "17.9.2026. 01:10",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: do 5:00 sati ujutro sati zbog radova zatvorena je dionica autoceste A2 Zagreb-Macelj između čvorova Krapina i Trakošćan, u oba smjera. Obilazak je državnom cestom DC1 prometna nesreća na autocesti A3 na 267+350 km između čvora Babina Greda i čvora Županja na kolniku u smjeru Lipovca - promet se vodi jednom prometnom trakom uz ograničenje brzine od 80 km/h predmet na autocesti A6 između tunela Tuhobić i…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "16.9.2026. 22:33",
-  "text": "Zbog tehničkih poteškoća na GP Dalj vozi se otežano u oba smjera. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i mog…"
+  "updated": "17.9.2026. 01:10",
+  "text": "Zbog tehničkih poteškoća prekinut je promet tertnih vozila na GP Erdut i GP Ličko Petrovo Selo u oba smjera. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili i…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "16.9.2026. 22:34",
+  "updated": "17.9.2026. 01:10",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 17. rujna na liniji Dubrovnik-Koločep-Lopud-Suđurađ neće voziti brod Adriana (s polaskom iz Dubrovnika u 10:00 sati i povratkom sa Suđurđa u 11:55) , već će trajekt Hanibal Lucić na liniji Dubrovnik-Koločep-Lopud-Suđurađ isploviti iz Dubrovnika u 10:00 (umjesto u 09:30), s povratkom u 14:00 sati do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i br…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "16.9.2026. 22:34",
+  "updated": "17.9.2026. 01:10",
   "text": "Stanje u željezničkom putničkom prometu 16. rujna 2026. u 8:00 sati Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Šibenik 9.34 5822 Šibenik 11.10 – Unešić 11.57 5823 Unešić 12.03 – Šibenik 13.31 5824 Šibenik 14.27 – Perković 14.56 5825 Perković 15.18 – Šibenik 15.47 5804 Šibenik 16.03 – Knin 17.43 5807 Knin 19.56 – Šibenik 21.32. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od p…"
  },
  {
