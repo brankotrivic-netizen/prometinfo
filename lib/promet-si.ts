@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-17T14:06:23.147Z";
+export const PROMET_SI_UPDATED = "2026-09-17T18:10:06.558Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;877806;0799607f-6e75-4f01-98aa-5b412d4f1679",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.17582,
+  "lng": 14.80973,
+  "start": "2026-09-17T18:01:40.747Z",
+  "end": "2026-09-17T21:00:02.863Z",
+  "ts": "2026-09-17T18:01:44.6Z"
+ },
+ {
+  "id": "DARS;877803;e46136ec-a1c2-423d-95ee-c52bca52a884",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, razcep Koseze - razcep Zadobrova v smeri Zadobrove, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.07148,
+  "lng": 14.46096,
+  "start": "2026-09-17T17:32:46.58Z",
+  "end": "2026-09-17T23:00:00Z",
+  "ts": "2026-09-17T17:33:14.107Z"
+ },
+ {
+  "id": "DARS;877802;f865a91a-4ace-4f99-8780-35ba577c8058",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.14276,
+  "lng": 14.47612,
+  "start": "2026-09-17T17:30:08.367Z",
+  "end": "2026-09-17T20:00:11.533Z",
+  "ts": "2026-09-17T17:30:17.043Z"
+ },
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-09-25T21:59:00Z",
+  "ts": "2026-09-17T16:00:16.083Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-09-17T15:00:42.71Z"
+ },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
   "type": "MaintenanceWorks",
@@ -26,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-17T09:45:31.063Z"
  },
  {
-  "id": "DARS;877660;791da718-47b7-447f-b8f6-6f13744d1760",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, pred priključkom Kranj vzhod v smeri Karavank, Avstrije, dela, zaprt odstavni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.23665,
-  "lng": 14.40483,
-  "start": "2026-09-17T09:29:13.79Z",
-  "end": "2026-09-17T15:00:00Z",
-  "ts": "2026-09-17T09:29:21.137Z"
- },
- {
   "id": "DARS;877654;4ca442fc-5648-4996-a514-4c908d367401",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-718, Pertoča - Fikšinci, pri Pertoči, izmenično enosmerni promet, sanacija brežine, do 30. 9. 2026.",
@@ -48,17 +92,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-17T09:14:38.087Z"
  },
  {
-  "id": "DARS;877614;3c4f79e7-5bd4-420c-a51b-556d54242055",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-715, Murska Sobota - Skakovci, v Puževcih, izmenično enosmerni promet, pomična zapora, vzdrževalna dela, do 18:00.",
-  "loc": "R3-715, Murska Sobota - Skakovci",
-  "lat": 46.70703,
-  "lng": 16.08146,
-  "start": "2026-09-17T07:25:15.287Z",
-  "end": "2026-09-17T16:00:00Z",
-  "ts": "2026-09-17T07:26:59.923Z"
- },
- {
   "id": "DARS;869420;36c7de5e-a007-4bce-858f-14356813a1a3",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-230, Križevci - Ljutomer, Ljutomer, Slavka Osterca ulica, izmenično enosmerni promet, rekonstrukcije križišča, do 31. 1. 2027.",
@@ -68,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-13T06:31:25.93Z",
   "end": "2027-01-31T16:00:00Z",
   "ts": "2026-09-17T05:57:07.863Z"
- },
- {
-  "id": "DARS;877538;422faf1d-c037-4449-9f01-871cb4cc7644",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-661, Črnomelj - Metlika - Krmačina, izmenično enosmerni promet, občasne popolne zapore (do 60 minut), asfaltiranje, do 17:00.",
-  "loc": "R3-661, Krmačina - Drašiči - Metlika",
-  "lat": 45.667,
-  "lng": 15.39129,
-  "start": "2026-09-17T05:00:00Z",
-  "end": "2026-09-17T15:00:00Z",
-  "ts": "2026-09-17T03:46:00.457Z"
  },
  {
   "id": "DARS;877398;491bef98-8f54-45cf-b4ab-26c3623df584",
@@ -169,17 +191,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-15T06:47:22.28Z"
  },
  {
-  "id": "DARS;877109;ff303b14-6563-4d40-98aa-b25bc9926d8d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-232, Hodoš - Petrovci, izmenično enosmerni promet, pomična zapora, vzdrževalna dela, do 17. 9. 2026, dnevno med 6. in 18. uro.",
-  "loc": "R1-232, Hodoš - Petrovci",
-  "lat": 46.823,
-  "lng": 16.31472,
-  "start": "2026-09-15T06:31:04.373Z",
-  "end": "2026-09-17T16:00:00Z",
-  "ts": "2026-09-15T06:31:55.777Z"
- },
- {
   "id": "DARS;877104;2fff222c-e525-42a6-886a-81cdb979d237",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-936, Col - Predmeja, pri Predmeji, izmenično enosmerni promet, vzdrževalna dela, do 30. 9. 2026, dnevno med 7. in 17. uro.",
@@ -266,17 +277,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-14T06:17:29.79Z",
   "end": "2027-05-28T21:59:00Z",
   "ts": "2026-09-14T06:18:34.3Z"
- },
- {
-  "id": "DARS;876812;1d37fccf-fa4b-4e75-b8a2-8cf0fe909c7d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-632, Ilirska Bistrica - Novokračine, v Zabičah, izmenično enosmerni promet, popravilo vozišča, do 17. 9. 2026, dnevno med 7. in 17. uro.",
-  "loc": "R3-632, Ilirska Bistrica - Novokračine",
-  "lat": 45.5123,
-  "lng": 14.34485,
-  "start": "2026-09-14T06:12:39.65Z",
-  "end": "2026-09-17T15:00:00Z",
-  "ts": "2026-09-14T06:13:24.887Z"
  },
  {
   "id": "DARS;876809;901cf518-34ab-496d-b11b-313216771533",
