@@ -3,52 +3,52 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.9.2026. 01:10",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: do 5:00 sati ujutro sati zbog radova zatvorena je dionica autoceste A2 Zagreb-Macelj između čvorova Krapina i Trakošćan, u oba smjera. Obilazak je državnom cestom DC1 prometna nesreća na autocesti A3 na 267+350 km između čvora Babina Greda i čvora Županja na kolniku u smjeru Lipovca - promet se vodi jednom prometnom trakom uz ograničenje brzine od 80 km/h predmet na autocesti A6 između tunela Tuhobić i…"
+  "updated": "17.9.2026. 10:51",
+  "text": "Kolnici su mokri i skliski u sjeverozapadnoj Hrvatskoj, Gorskom kotaru, Hrvatskom primorju i u Istri. Zbog jakih pljuskova ponegdje se zadržala veća količina vode. Pozivamo vozače da brzinu i način vožnje prilagode trenutačnim vremenskim uvjetima, pripaze na sigurnosnu udaljenost između vozila te i danju voze s uključenim kratkim svjetlima. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! prometna nesreća na autocesti A3 između čvora Novska i čvora Okučani u smjeru Lipovca (140+900 km). Vozi se uz ograničenje brzine od 80 k…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "17.9.2026. 01:10",
-  "text": "Zbog tehničkih poteškoća prekinut je promet tertnih vozila na GP Erdut i GP Ličko Petrovo Selo u oba smjera. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili i…"
+  "updated": "17.9.2026. 06:13",
+  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "17.9.2026. 01:10",
+  "updated": "17.9.2026. 06:13",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 17. rujna na liniji Dubrovnik-Koločep-Lopud-Suđurađ neće voziti brod Adriana (s polaskom iz Dubrovnika u 10:00 sati i povratkom sa Suđurđa u 11:55) , već će trajekt Hanibal Lucić na liniji Dubrovnik-Koločep-Lopud-Suđurađ isploviti iz Dubrovnika u 10:00 (umjesto u 09:30), s povratkom u 14:00 sati do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i br…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "17.9.2026. 01:10",
-  "text": "Stanje u željezničkom putničkom prometu 16. rujna 2026. u 8:00 sati Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Šibenik 9.34 5822 Šibenik 11.10 – Unešić 11.57 5823 Unešić 12.03 – Šibenik 13.31 5824 Šibenik 14.27 – Perković 14.56 5825 Perković 15.18 – Šibenik 15.47 5804 Šibenik 16.03 – Knin 17.43 5807 Knin 19.56 – Šibenik 21.32. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od p…"
+  "updated": "17.9.2026. 09:02",
+  "text": "Stanje u željezničkom putničkom prometu 17. rujna 2026. u 8.30 sati Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Šibenik 9.34 5822 Šibenik 11.10 – Unešić 11.57 5823 Unešić 12.03 – Šibenik 13.31 5824 Šibenik 14.27 – Perković 14.56 5825 Perković 15.18 – Šibenik 15.47 5804 Šibenik 16.03 – Knin 17.43 5807 Knin 19.56 – Šibenik 21.32. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od p…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "16.9.2026. 17:54",
+  "updated": "17.9.2026. 06:13",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "16.9.2026. 17:55",
-  "text": "Prometna prognoza za Hrvatsku za 17. rujna 2026. Zbog obilne kiše i izraženih lokalnih pljuskova s grmljavinom vozit će se po mokrim i skliskim kolnicima. Zbog mjestimice obilnijih oborina, osobito na Sjevernom Jadranu i u Gorskom kotaru, moguće je zadržavanje veće količine vode na kolniku. Mogući su odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Pojačan promet očekuje se na gradskim cestama, riječkoj i zagrebačkoj obilaznici, a zastoji i kolone mogući su u zonama radova, osobito tijekom jutra i poslijepodneva. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama, izbjegavaju nagla kočenja i održavaju sigurnosni razmak između vozila. Posebno oprezno…"
+  "updated": "17.9.2026. 07:51",
+  "text": "Prometna prognoza za Hrvatsku za 18. rujna 2026. Zbog obilne kiše i izraženih lokalnih pljuskova s grmljavinom vozit će se po mokrim i skliskim kolnicima. Zbog mjestimice obilnijih oborina, posebice na Jadranu i u Gorskom kotaru, moguće je zadržavanje veće količine vode na kolniku. Mogući su odroni, posebice na cestama u gorju i duž Jadranske magistrale (DC8). Pojačan promet očekuje se na gradskim cestama, riječkoj i zagrebačkoj obilaznici, a zastoji i kolone mogući su u zonama radova, osobito tijekom jutra i poslijepodneva. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama, izbjegavaju nagla kočenja i održavaju sigurnosni razmak između vozila. Posebno oprezno vozite …"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
-  "updated": "16.9.2026. 17:55",
+  "updated": "17.9.2026. 06:14",
   "text": "Kod vožnje po mokrim i skliskim kolnicima, savjetujemo Vam: provjeriti stanje guma i metlica brisača, obvezno uključiti kratka svjetla i danju, bez obzira na vidljivost, držati propisani sigurnosni razmak između vozila, osobito kod vožnje u koloni, izbjegavati nagla kočenja, voziti opreznije, ne precjenjujte svoje vozačke sposobnosti i ne dovodite bespotrebno u opasnost sebe, svoje suputnike i sve ostale sudionike u prometu. Video - HAK savjetnik za zimu - vožnja po mokrim i skliskim kolnicima"
  },
  {
   "title": "Savjeti za sigurnu vožnju",
-  "updated": "16.9.2026. 17:55",
+  "updated": "17.9.2026. 06:14",
   "text": "Prije svakog kretanja na put: planirajte put i uzmite u obzir alternativne pravce - najkraći put na karti nije nužno i najbrži odmorite se - umorni vozači gube koncentraciju pa se na dužim putovanjima treba češće odmarati provjerite ulje, rashladnu, kočionu i tekućinu za pranje vjetrobranskog stakla - ako je razina niska rashladna tekućina može se dopuniti destiliranom vodom ili vodom iz slavine (ne više od 3 dcl) provjerite tlak u gumama, stanje i dubinu utora na njima (barem 3 mm) ponesite nešto za jelo i (osvježavajuće) piće. Katkad putovanje traje duže od očekivanog provjerite imate li rezervni kotač, rezervne žaruljice i osigurače provjerite imate li sigurnosnu opremu (reflektirajući pr…"
  },
  {
   "title": "Savjeti MUP-a i HAK-a motociklistima",
-  "updated": "16.9.2026. 17:55",
+  "updated": "17.9.2026. 06:14",
   "text": "Savjeti MUP-a i HAK-a motociklistima: uvijek nosite zaštitnu kacigu i ostalu opremu (jakna, hlače, štitnici, čizme i rukavice) očistite vizir kacige i pravilno je zategnite preporuka je da nosite svjetliju odjeću i kacigu, \"življih\" boja, odnosno s reflektirajućim detaljima provjerite tlak u gumama upalite dnevno ili kratko svjetlo ne upravljajte pod utjecajem alkohola ili droga poštujte dopuštena ograničenja brzine ne precjenjujte svoje vozačke sposobnosti vozite s upaljenim svjetlima, tako ste uočljiviji drugima nemojte pretjecati gdje nije dopušteno ili je rizično prilagodite brzinu vožnje uvjetima na cesti (stanju i karakteristikama ceste) prilikom vožnje u skupini, vozite u slijedu jeda…"
  },
  {
   "title": "Vožnja ljeti pod velikim vrućinama",
-  "updated": "16.9.2026. 05:51",
+  "updated": "17.9.2026. 06:13",
   "text": "Izlaganje visokim temperaturama nepovoljno utječe na opće zdravstveno stanje, a kod vozača može utjecati na kognitivno funkcioniranje. Stoga je u svakodnevnom životu potrebno pratiti upute nadležnih službi (DHMZ, HZHM, Hrvatski Crveni križ, HGSS), a za putovanje slijedite sljedeće preporuke: planirajte vrijeme putovanja tijekom noći, ranih jutarnjih sati ili kasnije poslijepodne i navečer. Izbjegavajte vožnju sredinom dana kada temperature dosežu svoj maksimum jer će svaka izvanredna situacija u prometu (zastoji zbog veće gustoće prometa, prometne nesreće ili radovi) rezultirati povremenim stajanjem u mjestu koje će biti neugodno unatoč rashladnom uređaju u vozilu ako vozite na dužim relacij…"
  }
 ];
