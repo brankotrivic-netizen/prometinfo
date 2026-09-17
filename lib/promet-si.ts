@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-17T21:18:37.129Z";
+export const PROMET_SI_UPDATED = "2026-09-17T23:35:25.946Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;877809;f838d8c4-daf0-4a82-8518-47ba58e5739b",
+  "id": "DARS;877821;d14b765a-8db9-4b0b-84f2-c47975a14f6d",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Logatec - počivališče Ravbarkomanda v smeri Kopra, dela, pomična zapora prehitevalnega pasu.",
+  "desc": "A1, Ljubljana - Koper, priključek Postojna - razcep Nanos v smeri Kopra, dela, pomična zapora prehitevalnega pasu.",
   "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.9084,
-  "lng": 14.25785,
-  "start": "2026-09-17T18:15:07.203Z",
+  "lat": 45.75967,
+  "lng": 14.17632,
+  "start": "2026-09-17T21:39:26.1Z",
   "end": "2026-09-18T03:00:00Z",
-  "ts": "2026-09-17T20:45:48.253Z"
+  "ts": "2026-09-17T21:40:00.387Z"
  },
  {
   "id": "DARS;877816;823b9b93-f54c-4fb9-b033-d1c9310360f3",
@@ -24,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-17T20:10:40.907Z",
   "end": "2026-09-18T01:00:03.98Z",
   "ts": "2026-09-17T20:12:45.413Z"
- },
- {
-  "id": "DARS;877803;e46136ec-a1c2-423d-95ee-c52bca52a884",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, razcep Koseze - razcep Zadobrova v smeri Zadobrove, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07148,
-  "lng": 14.46096,
-  "start": "2026-09-17T17:32:46.58Z",
-  "end": "2026-09-17T23:00:00Z",
-  "ts": "2026-09-17T17:33:14.107Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
