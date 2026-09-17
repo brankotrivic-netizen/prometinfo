@@ -71,14 +71,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog sanacionih radova na regionalnoj cesti Zenica-Lašva od 08 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
    },
    {
-    "title": "Kalesija-Sapna",
-    "text": "Na regionalnoj cesti R-456a Kalesija-Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
-   },
-   {
-    "title": "Šibošnica-Lovački dom",
-    "text": "Na regionalnoj cesti R-459 Šibošnica-Lovački dom zbog sanacionih radova od 07 do 17 sati saobraća se usporeno, jednom trakom svaki dan osim nedjelje."
-   },
-   {
     "title": "Priboj–Sapna",
     "text": "Na regionalnoj cesti R-456 Priboj–Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
