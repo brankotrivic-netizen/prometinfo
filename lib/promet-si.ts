@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-17T18:10:06.558Z";
+export const PROMET_SI_UPDATED = "2026-09-17T21:18:37.129Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;877806;0799607f-6e75-4f01-98aa-5b412d4f1679",
+  "id": "DARS;877809;f838d8c4-daf0-4a82-8518-47ba58e5739b",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.17582,
-  "lng": 14.80973,
-  "start": "2026-09-17T18:01:40.747Z",
-  "end": "2026-09-17T21:00:02.863Z",
-  "ts": "2026-09-17T18:01:44.6Z"
+  "desc": "A1, Ljubljana - Koper, uvoz Logatec - počivališče Ravbarkomanda v smeri Kopra, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.9084,
+  "lng": 14.25785,
+  "start": "2026-09-17T18:15:07.203Z",
+  "end": "2026-09-18T03:00:00Z",
+  "ts": "2026-09-17T20:45:48.253Z"
+ },
+ {
+  "id": "DARS;877816;823b9b93-f54c-4fb9-b033-d1c9310360f3",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.17989,
+  "lng": 14.48523,
+  "start": "2026-09-17T20:10:40.907Z",
+  "end": "2026-09-18T01:00:03.98Z",
+  "ts": "2026-09-17T20:12:45.413Z"
  },
  {
   "id": "DARS;877803;e46136ec-a1c2-423d-95ee-c52bca52a884",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-17T17:32:46.58Z",
   "end": "2026-09-17T23:00:00Z",
   "ts": "2026-09-17T17:33:14.107Z"
- },
- {
-  "id": "DARS;877802;f865a91a-4ace-4f99-8780-35ba577c8058",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.14276,
-  "lng": 14.47612,
-  "start": "2026-09-17T17:30:08.367Z",
-  "end": "2026-09-17T20:00:11.533Z",
-  "ts": "2026-09-17T17:30:17.043Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
