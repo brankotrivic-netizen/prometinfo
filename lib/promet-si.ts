@@ -1,8 +1,63 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-18T17:03:44.119Z";
+export const PROMET_SI_UPDATED = "2026-09-18T19:34:22.349Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;878080;b69e9091-0ff8-4115-a2cf-221bf0546a4c",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, uvoz Dragomer - uvoz Vrhnika v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 46.02151,
+  "lng": 14.41178,
+  "start": "2026-09-18T19:23:41.867Z",
+  "end": "2026-09-18T23:00:00Z",
+  "ts": "2026-09-18T19:23:59.48Z"
+ },
+ {
+  "id": "DARS;878079;b2296ee3-b2d6-418f-baf7-422d27ea33eb",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Lukovica - predor Trojane v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.16945,
+  "lng": 14.77396,
+  "start": "2026-09-18T19:17:12.72Z",
+  "end": "2026-09-19T01:00:00Z",
+  "ts": "2026-09-18T19:21:55.997Z"
+ },
+ {
+  "id": "DARS;878071;50b78bdc-6dba-49bb-a7ea-0207b1ec21ce",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25471,
+  "lng": 14.97893,
+  "start": "2026-09-18T18:43:30.25Z",
+  "end": "2026-09-19T06:30:00Z",
+  "ts": "2026-09-18T18:44:03.05Z"
+ },
+ {
+  "id": "DARS;878058;4f7324f8-fe39-46bf-8a8f-c07b1b4716fa",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, predor Šentvid - priključek Ljubljana Brod v smeri Jesenic, dela, promet poteka po enem pasu.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.10274,
+  "lng": 14.46792,
+  "start": "2026-09-18T17:16:21.943Z",
+  "end": "2026-09-18T21:00:47.3Z",
+  "ts": "2026-09-18T18:23:21.9Z"
+ },
+ {
+  "id": "DARS;878062;6f5cb294-837a-4719-8e3d-52211c87c666",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, uvoz Ljubljana Savlje v smeri Kosez, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.08435,
+  "lng": 14.49883,
+  "start": "2026-09-18T17:41:07.047Z",
+  "end": "2026-09-18T23:00:00Z",
+  "ts": "2026-09-18T17:41:12.237Z"
+ },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",
