@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.9.2026. 21:23",
-  "text": "Zastoji su na gradskim prometnicama, obilaznicama i zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A1 Zagreb-Split-Dubrovnik zbog naftne mrlje na kolniku između između čvorova Gornja Ploča i Perušić (182.+200 km i 181.+220 km) u smjeru Zagreba vozi se jednim prometnim trakom uz ograničenje brzine od 60 km/h A3 Bregana-Lipovac zbog radova između čvorova Križ i Kutina u smjeru Lipovca kolona je oko 9 km A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 30. rujna u noćnim satima od 22:00 do 05:00 sati privremeno i višekratno na maksimalno 15 minuta prekidat će se promet u zoni čvora Bisko u oba smjera NAJAVA RADOVA/ZATVARAN…"
+  "updated": "18.9.2026. 23:17",
+  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: A3 Bregana-Lipovac povremeno se vozi usporeno u zonama radova između čvorova Zagreb zapad i Lučko te Popovača i Kutina Jadranska magistrala (DC8) zbog prometne nesreće u Kaštel Lukšiću vozi se uz ručnu regulaciju prometa A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 30. rujna u noćnim satima od 22:00 do 05:00 sati privremeno i višekratno na maksimalno 15 minuta prekidat će se promet u zoni čvora Bisko u oba smjera NAJAVA RADOVA/ZATVARANJA: 22. rujna između 13:00 i 13:30 zbog radova kod čvo…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,12 +13,12 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "18.9.2026. 18:25",
+  "updated": "18.9.2026. 23:17",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 18.9. brod Adriana isplovit će u 16:30 iz Dubrovnika u svojoj redovnoj liniji 807 Dubrovnik-Koločep-Lopud-Suđurađ do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. sije…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "18.9.2026. 17:41",
+  "updated": "18.9.2026. 23:40",
   "text": "Stanje u željezničkom putničkom prometu 17. rujna 2026. u 8.30 sati Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Šibenik 9.34 5822 Šibenik 11.10 – Unešić 11.57 5823 Unešić 12.03 – Šibenik 13.31 5824 Šibenik 14.27 – Perković 14.56 5825 Perković 15.18 – Šibenik 15.47 5804 Šibenik 16.03 – Knin 17.43 5807 Knin 19.56 – Šibenik 21.32. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od p…"
  },
  {
