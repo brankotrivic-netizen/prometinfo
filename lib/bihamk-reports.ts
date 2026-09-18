@@ -34,10 +34,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog izvođenja radova obustavljen je saobraćaj za sva vozila na magistralnoj cesti Jajce–Crna Rijeka, u naselju Podmilačje. Za vrijeme obustave, vozila će biti preusmjeravana alternativnim pravcem preko Mrkonjić Grada."
    },
    {
-    "title": "Bugojno-Novi Travnik",
-    "text": "U toku su sanacioni radovi na Rostovu, zbog čega se svakim radnim danom od 07 do 16:30 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
-   },
-   {
     "title": "Mostar-Čitluk-brdo Hum",
     "text": "U toku su sanacioni radovi, zbog čega se svakog dana (osim nedjelje), u vremenu od 7 do 16 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
    },
@@ -89,10 +85,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Tomislavgrad-Blidinje",
     "text": "Danas i naredna dva dana (26., 27. i 28.08.) zbog sanacionih radova obustavljen je saobraćaj na regionalnoj cesti Tomislavgrad-Blidinje."
-   },
-   {
-    "title": "Priboj-Sapna (Goduš)",
-    "text": "Zbog asfaltiranja na regionalnoj cesti R-456 Priboj-Sapna (Goduš), od 15. do 18.09.najavljena je obustava saobraćaja u periodu od 08 do 19 sati. Tokom trajanja obustave, vozačima se preporučuje korištenje alternativnog pravca: Priboj-Simin Han-Kalesija-Sapna-Goduš-Rastošnica."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
