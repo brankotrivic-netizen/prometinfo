@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.9.2026. 20:27",
-  "text": "Kolnici su mjestimice mokri i skliski. Povećana je gustoća prometa na gradskim cestama, obilaznicama, pojedinim dionicama autocesta i graničnim prijelazima, a kolone i zastoji su u zonama radova i privremene regulacije prometa. Vozače pozivamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: pješak na autocesti A3 na čvoru Kosnica na kolniku u smjeru Lipovca. Vozi se uz ograničenje brzine od 60 km/h. AUTOCESTE A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 30. rujna u noćnim satima od 22:00 do 05:00 sati privremeno i višekratno na maksimalno 15 minuta prekida se promet u zoni čvora Bisko u oba smjera NAJAVA R…"
+  "updated": "19.9.2026. 22:06",
+  "text": "Kolnici su mjestimice mokri i skliski. Povećana je gustoća prometa na gradskim cestama, obilaznicama, pojedinim dionicama autocesta i graničnim prijelazima, a kolone i zastoji su u zonama radova i privremene regulacije prometa. Vozače pozivamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: životinja (srna) na autocesti A3 između čvora Ivanić Grad i čvora Križ . Promet se vodi po dvije prometne trake u oba smjera uz ograničenje brzine od 80 km/h. Jadranska magistrala (DC8) Liburnijska ulica, Krnjevo, Rijeka dvije lakše prometne nezgode, vozi se usporeno jednom kolničkom trakom u oba smjera zbog naleta vozila n…"
  },
  {
   "title": "Granični prijelazi",
