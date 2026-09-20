@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-20T19:09:43.004Z";
+export const PROMET_SI_UPDATED = "2026-09-20T21:30:15.365Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;878343;812b2971-78f9-46cf-9107-b5474357a9ac",
+  "id": "DARS;878352;a21e273c-8d2a-4052-b780-9b666ca46218",
   "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, uvoz Ljubljana Podutik v smeri Zadobrove, dela, oviran promet.",
+  "desc": "H3, Ljubljana - severna obvoznica, razcep Koseze - priključek Dravlje v smeri Zadobrove, dela, oviran promet.",
   "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07451,
-  "lng": 14.46657,
-  "start": "2026-09-20T18:52:02.753Z",
-  "end": "2026-09-21T00:00:00Z",
-  "ts": "2026-09-20T18:52:05.677Z"
+  "lat": 46.07587,
+  "lng": 14.47026,
+  "start": "2026-09-20T20:49:12.717Z",
+  "end": "2026-09-21T02:00:00Z",
+  "ts": "2026-09-20T20:49:34.13Z"
+ },
+ {
+  "id": "DARS;878347;b803a26e-80f0-4a37-8ae6-fa82034f1347",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Jasovnik - predor Ločica v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.20209,
+  "lng": 14.90014,
+  "start": "2026-09-20T19:17:54.36Z",
+  "end": "2026-09-21T01:30:00Z",
+  "ts": "2026-09-20T19:26:09.073Z"
  },
  {
   "id": "DARS;878332;97e87233-fc67-4f35-bfab-a06c50594b80",
