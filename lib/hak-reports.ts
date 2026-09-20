@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.9.2026. 23:19",
-  "text": "Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Na mjestima pod maglom kolnici su vlažni i skliski. IZVANREDNI PROMETNI DOGAĐAJI Prometna nesreća na autocesti A7 u tunelu Trsat na kolniku u smjeru Rupe. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 40 km/h A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 30. rujna u noćnim satima od 22:00 do 05:00 sati privremeno i višekratno na maksimalno 15 minuta prekida se promet u zoni čvora Bisko u oba smjera NAJAVA RADOVA/ZATVARANJA: od 21. do 25. rujna bit će zatvoren tunel Brinje (na dionici Brinje-Žuta Lokva) u smjeru Zagreba. Vozit će se dvosmjerno, jednim trakom u oba smjera, tunelskom cijevi u smjeru Dubrovnika…"
+  "updated": "21.9.2026. 01:18",
+  "text": "Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Na mjestima pod maglom kolnici su vlažni i skliski. IZVANREDNI PROMETNI DOGAĐAJI - A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 30. rujna u noćnim satima od 22:00 do 05:00 sati privremeno i višekratno na maksimalno 15 minuta prekida se promet u zoni čvora Bisko u oba smjera NAJAVA RADOVA/ZATVARANJA: od 21. do 25. rujna bit će zatvoren tunel Brinje (na dionici Brinje-Žuta Lokva) u smjeru Zagreba. Vozit će se dvosmjerno, jednim trakom u oba smjera, tunelskom cijevi u smjeru Dubrovnika od 21. rujna do 08. listopada bit će zatvoren tunel Brezik u smjeru Zagreba (na dionici Otočac – Perušić). Vozit će se dvosmjerno jednim trakom…"
  },
  {
   "title": "Granični prijelazi",
