@@ -1,3 +1,65 @@
-// SAMODEJNO ZAJETO: zive cakalne dobe HAK/MUP. Trenutno brez objavljenih cakanj.
+// SAMODEJNO ZAJETO: zive cakalne dobe na mejnih prehodih (HAK / MUP RH).
+// Objavljeni le prehodi s trenutnim cakanjem. ulaz=vstop v HR, izlaz=izstop iz HR (osebna vozila).
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
-export const HAK_WAITS: HakWait[] = [];
+export const HAK_WAITS: HakWait[] = [
+ {
+  "id": "ba-gradiska",
+  "name": "Stara Gradiška (Bosanska Gradiška)",
+  "ulazMin": 90,
+  "izlazMin": null,
+  "ulazTxt": "1 h 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "high",
+  "waitMinutes": 90,
+  "ulazTs": "20.9.2026. 7:21:01",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-09-20T07:21:01+02:00",
+  "izlazTsISO": "",
+  "ts": "20.9.2026. 7:21:01",
+  "tsISO": "2026-09-20T07:21:01+02:00"
+ },
+ {
+  "id": "ba-orasje",
+  "name": "Županja (Orašje)",
+  "ulazMin": 30,
+  "izlazMin": null,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "-",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "20.9.2026. 8:42:19",
+  "izlazTs": "Nema podataka",
+  "ulazTsISO": "2026-09-20T08:42:19+02:00",
+  "izlazTsISO": "",
+  "ts": "20.9.2026. 8:42:19",
+  "tsISO": "2026-09-20T08:42:19+02:00"
+ },
+ {
+  "id": "ba-brod",
+  "name": "Slavonski Brod (Bosanski Brod)",
+  "ulazMin": 30,
+  "izlazMin": 30,
+  "ulazTxt": "do 30 min.",
+  "izlazTxt": "do 30 min.",
+  "truckUlazMin": null,
+  "truckIzlazMin": null,
+  "truckUlazTxt": "-",
+  "truckIzlazTxt": "-",
+  "level": "low",
+  "waitMinutes": 30,
+  "ulazTs": "20.9.2026. 10:30:06",
+  "izlazTs": "20.9.2026. 10:30:20",
+  "ulazTsISO": "2026-09-20T10:30:06+02:00",
+  "izlazTsISO": "2026-09-20T10:30:20+02:00",
+  "ts": "20.9.2026. 10:30:06",
+  "tsISO": "2026-09-20T10:30:06+02:00"
+ }
+];

@@ -1,40 +1,84 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-19T22:41:31.877Z";
+export const PROMET_SI_UPDATED = "2026-09-20T08:53:45.564Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;878186;c6715d52-cf58-4330-942d-68839a9af82c",
+  "id": "DARS;878248;2bf410a3-64b2-4214-90e8-0e4c1396803c",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "desc": "A1, Maribor - Ljubljana, predor Podmilj v smeri Ljubljane, dela, zaprt vozni pas.",
   "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25438,
-  "lng": 14.97795,
-  "start": "2026-09-19T16:40:41.463Z",
-  "end": "2026-09-20T08:30:00Z",
-  "ts": "2026-09-19T16:42:31.51Z"
+  "lat": 46.18161,
+  "lng": 14.84905,
+  "start": "2026-09-20T07:37:36.68Z",
+  "end": "2026-09-20T18:00:00Z",
+  "ts": "2026-09-20T07:41:54.24Z"
  },
  {
-  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
-  "loc": "R3-608, Lokve - Čepovan",
-  "lat": 46.03221,
-  "lng": 13.78913,
-  "start": "2026-08-24T05:33:20.253Z",
-  "end": "2026-09-25T21:59:00Z",
-  "ts": "2026-09-19T16:00:31.413Z"
+  "id": "DARS;878245;a939c917-4afd-4c22-ba0f-b2c602a193da",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, razcep Gabrk - priključek Divača v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.69472,
+  "lng": 13.97974,
+  "start": "2026-09-20T07:34:36.55Z",
+  "end": "2026-09-20T13:00:00Z",
+  "ts": "2026-09-20T07:34:40.95Z"
  },
  {
-  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 45.96375,
-  "lng": 15.5243,
-  "start": "2025-10-02T05:56:02.493Z",
-  "end": "2026-12-31T22:59:00Z",
-  "ts": "2026-09-19T15:00:02.667Z"
+  "id": "DARS;878226;fe57acda-a65e-44d6-9d63-cf1363faeda5",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Šentilj - Maribor, izvoz Šentilj - priključek Maribor sever v smeri Maribora, dela, zaprt vozni pas.",
+  "loc": "A1-E57, E59, Šentilj - Maribor",
+  "lat": 46.67973,
+  "lng": 15.65046,
+  "start": "2026-09-20T07:04:28.457Z",
+  "end": "2026-09-20T16:30:46.913Z",
+  "ts": "2026-09-20T07:04:34.727Z"
+ },
+ {
+  "id": "DARS;878238;f55d673a-9374-4f68-9582-1d2287b72026",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana sever - priključek Dravlje v smeri Kosez, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.07919,
+  "lng": 14.48178,
+  "start": "2026-09-20T06:41:05.273Z",
+  "end": "2026-09-20T12:00:00Z",
+  "ts": "2026-09-20T06:41:17.203Z"
+ },
+ {
+  "id": "DARS;878237;661a462d-2ff2-4a68-9fcf-8294ad7c4069",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Brnik - predor Šentvid v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.19034,
+  "lng": 14.47782,
+  "start": "2026-09-20T06:20:19.06Z",
+  "end": "2026-09-20T09:00:24.877Z",
+  "ts": "2026-09-20T06:20:21.337Z"
+ },
+ {
+  "id": "DARS;878236;d383afd9-959a-4888-ad0f-3c53a6a1d9e1",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, priključek Višnja Gora - izvoz 19 Grosuplje vzhod v smeri Ljubljane, dela, zaprt počasni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.96039,
+  "lng": 14.73717,
+  "start": "2026-09-20T06:14:24.833Z",
+  "end": "2026-09-20T12:00:00Z",
+  "ts": "2026-09-20T06:14:26.94Z"
+ },
+ {
+  "id": "DARS;878216;39c4aaf2-74d4-4f14-adc9-511ee8b7c20d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, pred izvozom Vransko v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.24532,
+  "lng": 14.96533,
+  "start": "2026-09-20T03:40:21.813Z",
+  "end": "2026-09-20T11:00:00Z",
+  "ts": "2026-09-20T03:40:28.55Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
