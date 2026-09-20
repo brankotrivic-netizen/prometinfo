@@ -1,29 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-20T13:16:23.659Z";
+export const PROMET_SI_UPDATED = "2026-09-20T16:53:39.082Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;878295;d04e17fb-a877-4d24-a72a-fd7dbf03ac29",
+  "id": "DARS;878321;a59e4f44-a428-4a3c-a0b7-8888e83a97cf",
   "type": "MaintenanceWorks",
-  "desc": "A1, Šentilj - Maribor, izvoz Šentilj - priključek Maribor sever v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, E59, Šentilj - Maribor",
-  "lat": 46.68011,
-  "lng": 15.65067,
-  "start": "2026-09-20T12:59:37.63Z",
-  "end": "2026-09-20T16:50:27.227Z",
-  "ts": "2026-09-20T12:59:40.98Z"
+  "desc": "A1, Koper - Ljubljana, izvoz 47 Kozina - uvoz Kozina iz smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.61134,
+  "lng": 13.93301,
+  "start": "2026-09-20T16:49:15.073Z",
+  "end": "2026-09-20T21:00:00Z",
+  "ts": "2026-09-20T16:49:17.44Z"
  },
  {
-  "id": "DARS;878238;f55d673a-9374-4f68-9582-1d2287b72026",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana sever - priključek Dravlje v smeri Kosez, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07919,
-  "lng": 14.48178,
-  "start": "2026-09-20T06:41:05.273Z",
-  "end": "2026-09-20T15:00:00Z",
-  "ts": "2026-09-20T12:56:20.227Z"
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-09-25T21:59:00Z",
+  "ts": "2026-09-20T16:00:05.153Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-09-20T15:00:34.853Z"
  },
  {
   "id": "DARS;878248;2bf410a3-64b2-4214-90e8-0e4c1396803c",
