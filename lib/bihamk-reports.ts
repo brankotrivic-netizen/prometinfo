@@ -31,7 +31,11 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    },
    {
     "title": "Crna Rijeka- Jajce (Podmilačje)",
-    "text": "Zbog izvođenja radova obustavljen je saobraćaj za sva vozila na magistralnoj cesti Jajce–Crna Rijeka, u naselju Podmilačje. Za vrijeme obustave, vozila će biti preusmjeravana alternativnim pravcem preko Mrkonjić Grada."
+    "text": "Zbog izvođenja radova na magistralnoj cesti Jajce-Crna Rijeka (u naselju Podmilačje) saobraća se usporeno-naizmjeničnim propuštanjem vozila."
+   },
+   {
+    "title": "Bugojno-Novi Travnik",
+    "text": "Zbog asfaltiranja od 21. do 24.09.2026. obustavlja se saobraćaj na magistralnoj cesti Bugojno-Novi Travnik (Rostovo). Za vrijeme obustave saobraćaj se preusmjerava na magistralnu cestu Bugojno-Donji Vakuf-Travnik i obratno."
    },
    {
     "title": "Mostar-Čitluk-brdo Hum",
@@ -85,6 +89,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Tomislavgrad-Blidinje",
     "text": "Danas i naredna dva dana (26., 27. i 28.08.) zbog sanacionih radova obustavljen je saobraćaj na regionalnoj cesti Tomislavgrad-Blidinje."
+   },
+   {
+    "title": "Kakanj-Visoko",
+    "text": "R- 445 Kakanj - Visoko, u toku su radovi od mosta u naselju Doboj do skretanje za Ćatiće."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",

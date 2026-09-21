@@ -3,32 +3,32 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.9.2026. 01:18",
-  "text": "Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Na mjestima pod maglom kolnici su vlažni i skliski. IZVANREDNI PROMETNI DOGAĐAJI - A1 Zagreb-Split-Dubrovnik IZVANREDNI PRIJEVOZ do 30. rujna u noćnim satima od 22:00 do 05:00 sati privremeno i višekratno na maksimalno 15 minuta prekida se promet u zoni čvora Bisko u oba smjera NAJAVA RADOVA/ZATVARANJA: od 21. do 25. rujna bit će zatvoren tunel Brinje (na dionici Brinje-Žuta Lokva) u smjeru Zagreba. Vozit će se dvosmjerno, jednim trakom u oba smjera, tunelskom cijevi u smjeru Dubrovnika od 21. rujna do 08. listopada bit će zatvoren tunel Brezik u smjeru Zagreba (na dionici Otočac – Perušić). Vozit će se dvosmjerno jednim trakom…"
+  "updated": "21.9.2026. 10:52",
+  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više informacija u popisu cesta). Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI zbog prometne nesreća na autocesti A3 Bregana-Lipovac na 175.+000 km između čvorova Nova Gradiška i Lužani u smjeru Lipovca, vozi se jednim trakom uz ograničenje brzine od 80 km/h zbog prometne nesreće na Jadranskoj magistrali (DC8) u Kaštel Sućurcu vozi se uz ručnu regulaciju prometa usporeno se vozi na zagrebačkoj obilaznici (A3) u zoni radova između čvorova Lučko i Zagreb zapad u smjeru …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "20.9.2026. 22:17",
+  "updated": "21.9.2026. 10:05",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "20.9.2026. 22:17",
+  "updated": "21.9.2026. 08:24",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, …"
  },
  {
   "title": "Željeznički promet",
-  "updated": "20.9.2026. 21:13",
-  "text": "Stanje u željezničkom putničkom prometu Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Šibenik 9.34 5822 Šibenik 11.10 – Unešić 11.57 5823 Unešić 12.03 – Šibenik 13.31 5824 Šibenik 14.27 – Perković 14.56 5825 Perković 15.18 – Šibenik 15.47 5804 Šibenik 16.03 – Knin 17.43 5807 Knin 19.56 – Šibenik 21.32. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto …"
+  "updated": "21.9.2026. 08:24",
+  "text": "Stanje u željezničkom putničkom prometu 21. rujna 2026. u 8.00 sati. Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 - Perković 9.03 5802 Perković 9.26 - Knin 10.28. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka …"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "20.9.2026. 15:15",
+  "updated": "21.9.2026. 08:24",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "20.9.2026. 15:16",
+  "updated": "21.9.2026. 08:24",
   "text": "Prometna prognoza za Hrvatsku za 21. rujna 2026. Na cestama u unutrašnjosti u jutarnjim satima vidljivost će biti smanjena zbog magle. Vozit će se po mjestimice mokrim i skliskim kolnicima u unutrašnjosti, ponajprije na istoku zemlje, a poslijepodne mjestimice i na cestama na Jadranu. Pojačan promet očekuje se na gradskim cestama, obilaznicama te na pojedinim dionicama autocesta, a zastoji i kolone mogući su u zonama radova, osobito na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad, autocesti A4 Goričan-Zagreb između čvorova Sesvete i Zagreb istok, riječkoj obilaznici između čvorova Rijeka zapad i Učka u smjeru Istre/Rupe, Istarskom ipislonu između čvora i tunela Učka i pojedinim…"
  },
  {
@@ -48,7 +48,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Vožnja ljeti pod velikim vrućinama",
-  "updated": "20.9.2026. 15:16",
+  "updated": "21.9.2026. 05:28",
   "text": "Izlaganje visokim temperaturama nepovoljno utječe na opće zdravstveno stanje, a kod vozača može utjecati na kognitivno funkcioniranje. Stoga je u svakodnevnom životu potrebno pratiti upute nadležnih službi (DHMZ, HZHM, Hrvatski Crveni križ, HGSS), a za putovanje slijedite sljedeće preporuke: planirajte vrijeme putovanja tijekom noći, ranih jutarnjih sati ili kasnije poslijepodne i navečer. Izbjegavajte vožnju sredinom dana kada temperature dosežu svoj maksimum jer će svaka izvanredna situacija u prometu (zastoji zbog veće gustoće prometa, prometne nesreće ili radovi) rezultirati povremenim stajanjem u mjestu koje će biti neugodno unatoč rashladnom uređaju u vozilu ako vozite na dužim relacij…"
  }
 ];
