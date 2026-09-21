@@ -189,10 +189,10 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Madžarska",
   "flag": "🇭🇺",
-  "p95": "597,000 HUF (1,64 EUR)",
+  "p95": "620,000 HUF (1,70 EUR)",
   "p98": "",
-  "diesel": "677,000 HUF (1,86 EUR)",
-  "date": "14. 9. 2026"
+  "diesel": "696,000 HUF (1,91 EUR)",
+  "date": "21. 9. 2026"
  },
  {
   "country": "Moldavija",
