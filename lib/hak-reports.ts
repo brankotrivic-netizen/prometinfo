@@ -3,37 +3,37 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "21.9.2026. 17:54",
-  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali (više informacija u popisu cesta). Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na zagrebačkoj obilaznici (A3) između čvora Lučko i čvora Zagreb zapad (na 19.km) u smjeru Bregane, vozi se po dvije prometne trake uz ograničenje brzine usporeno se vozi na zagrebačkoj obilaznici u zoni radova između čvorova Buzin i Zagreb zapad (A3) u smjeru Bregane zbog radova na autocesti A4 zastoji su na čvoru Zagreb istok u smjeru Goričana. AUTOCESTE A1 Zagreb-Split-D…"
+  "updated": "21.9.2026. 22:12",
+  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na Jadranskoj magistrali i omiškoj obilaznici-DC553 (više informacija u popisu cesta) . Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI prometna nesreća na autocesti A3 na 68.km između čvora Križ i čvora Ivanić Grad u smjeru Bregane. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h vozilo u kvaru (teretno vozilo) na autocesti A1 između tunela Bristovac i tunela Čelinka na kolniku u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 40 km AUTOCESTE A1 Zagreb-Split-Dubrovnik do 25. rujna kroz tunel Brinje i do 08. listopada kroz …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "21.9.2026. 17:41",
+  "updated": "21.9.2026. 21:24",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "21.9.2026. 17:41",
+  "updated": "21.9.2026. 21:24",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 26. rujna trajekt će iz luke Vele Luke za luku Ubli isploviti u 08:00 umjesto u 09:00 sati do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni gran…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "21.9.2026. 17:41",
+  "updated": "21.9.2026. 18:52",
   "text": "Stanje u željezničkom putničkom prometu 21. rujna 2026. u 8.00 sati. Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 - Perković 9.03 5802 Perković 9.26 - Knin 10.28. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka …"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "21.9.2026. 08:24",
+  "updated": "21.9.2026. 18:52",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "21.9.2026. 14:14",
+  "updated": "21.9.2026. 18:52",
   "text": "Prometna prognoza za Hrvatsku za 22. rujna 2026. U drugom dijelu dana vozit će se po mokrim i skliskim kolnicima u središnjoj i istočnoj Hrvatskoj. Zbog bure na Jadranu moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Ovisno o gustoći prometa, zastoje očekujemo na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A2 na prilazu čvoru Zagreb zapad, na autocesti A4 između čvorova Popovec i Zagreb istok, Istarskom ipsilonu i na Jadranskoj magistrali (DC8) na prilazima Splitu, osobito tijekom jutra i poslijepodneva. Zbog održavanja biciklističke utrke, između 14:00 i 16:00 sati na autocesti A1 bit će zatvoreni ulaz i izlaz s čvora Prgomet. Poja…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
-  "updated": "20.9.2026. 15:16",
+  "updated": "21.9.2026. 18:52",
   "text": "Kod vožnje po mokrim i skliskim kolnicima, savjetujemo Vam: provjeriti stanje guma i metlica brisača, obvezno uključiti kratka svjetla i danju, bez obzira na vidljivost, držati propisani sigurnosni razmak između vozila, osobito kod vožnje u koloni, izbjegavati nagla kočenja, voziti opreznije, ne precjenjujte svoje vozačke sposobnosti i ne dovodite bespotrebno u opasnost sebe, svoje suputnike i sve ostale sudionike u prometu. Video - HAK savjetnik za zimu - vožnja po mokrim i skliskim kolnicima"
  },
  {
@@ -43,12 +43,12 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Savjeti MUP-a i HAK-a motociklistima",
-  "updated": "20.9.2026. 15:16",
+  "updated": "21.9.2026. 18:52",
   "text": "Savjeti MUP-a i HAK-a motociklistima: uvijek nosite zaštitnu kacigu i ostalu opremu (jakna, hlače, štitnici, čizme i rukavice) očistite vizir kacige i pravilno je zategnite preporuka je da nosite svjetliju odjeću i kacigu, \"življih\" boja, odnosno s reflektirajućim detaljima provjerite tlak u gumama upalite dnevno ili kratko svjetlo ne upravljajte pod utjecajem alkohola ili droga poštujte dopuštena ograničenja brzine ne precjenjujte svoje vozačke sposobnosti vozite s upaljenim svjetlima, tako ste uočljiviji drugima nemojte pretjecati gdje nije dopušteno ili je rizično prilagodite brzinu vožnje uvjetima na cesti (stanju i karakteristikama ceste) prilikom vožnje u skupini, vozite u slijedu jeda…"
  },
  {
   "title": "Vožnja ljeti pod velikim vrućinama",
-  "updated": "21.9.2026. 05:28",
+  "updated": "21.9.2026. 18:52",
   "text": "Izlaganje visokim temperaturama nepovoljno utječe na opće zdravstveno stanje, a kod vozača može utjecati na kognitivno funkcioniranje. Stoga je u svakodnevnom životu potrebno pratiti upute nadležnih službi (DHMZ, HZHM, Hrvatski Crveni križ, HGSS), a za putovanje slijedite sljedeće preporuke: planirajte vrijeme putovanja tijekom noći, ranih jutarnjih sati ili kasnije poslijepodne i navečer. Izbjegavajte vožnju sredinom dana kada temperature dosežu svoj maksimum jer će svaka izvanredna situacija u prometu (zastoji zbog veće gustoće prometa, prometne nesreće ili radovi) rezultirati povremenim stajanjem u mjestu koje će biti neugodno unatoč rashladnom uređaju u vozilu ako vozite na dužim relacij…"
  }
 ];
