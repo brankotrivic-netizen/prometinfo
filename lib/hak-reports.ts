@@ -3,32 +3,32 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.9.2026. 10:48",
-  "text": "Autocesta A1 između čvora Sveti Rok i čvora Posedarje otvorena je za sve skupine vozila (od 09:36 sati), brzina je ograničena na 80 km/h. Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog jakog vjetra samo za osobna vozila otvoreni su omiška obilaznica (DC553) i Dubrovački most (DC8), a na J adranskoj magistrali (DC8) između Senja i Svete Marije Magdalene zabrana je pr…"
+  "updated": "22.9.2026. 15:38",
+  "text": "Autocesta A1 između čvora Sveti Rok i čvora Posedarje otvorena je za sve skupine vozila (od 09:36 sati). Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! prometna nesreća na autocesti A1 između čvora Brinje i čvora Ogulin (98. km) u smjeru Zagreba. Vozi se uz ograničenje brzine od 80 km/h. zbog jakog vjetra samo za osobna vozila otvorena je omiška obilaznica (DC553)…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "22.9.2026. 10:21",
+  "updated": "22.9.2026. 14:48",
   "text": "Zbog nestanka električne energije na GP Šid (Srbija) od 09:50 prekinut je promet teretnih vozila na izlazu na graničnom prijelazu Tovarnik (špedicije ne mogu podnositi nove deklaracije, mogu se odrađivati samo provozni dokumenti). Promet teretnih vozila na ulazu u RH odvija se usporeno, a promet osobnih vozila odvija se normalno. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "22.9.2026. 06:51",
-  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu je trajektna linija Sumartin-Makarska. Katamaran na liniji Korčula -Prigradica(Korčula) - Hvar-Split plovi prema redu plovidbe bez pristajanja u luku Prigradica (Korčula). Izmjene u plovidbenom redu: 26. rujna trajekt će iz luke Vele Luke za luku Ubli isploviti u 08:00 umjesto u 09:00 sati do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi …"
+  "updated": "22.9.2026. 15:17",
+  "text": "Izmjene u plovidbenom redu: otkazuje se katamarska linija Split-Rogač s polaskom iz Splita u 16:15. katamaran na liniji Korčula-Prigradica (Korčula)-Hvar-Split plovi prema redu plovidbe bez pristajanja u luku Prigradica (Korčula). 26. rujna trajekt će iz luke Vele Luke za luku Ubli isploviti u 08:00 umjesto u 09:00 sati do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cje…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "22.9.2026. 08:05",
+  "updated": "22.9.2026. 14:48",
   "text": "Stanje u željezničkom putničkom prometu 22. rujna 2026. u 8.00 sati Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 - Perković 9.03 5802 Perković 9.26 - Knin 10.28. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka p…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "22.9.2026. 04:58",
+  "updated": "22.9.2026. 14:48",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "22.9.2026. 07:22",
+  "updated": "22.9.2026. 14:48",
   "text": "Prometna prognoza za Hrvatsku za 23. rujna 2026. Zbog jake bure na Jadranu moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Ovisno o gustoći prometa, zastoje očekujemo na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A2 Zagreb-Macelj na prilazu čvoru Zagreb zapad, na autocesti A4 Goričan-Zagreb kod čvora Sveta Helena te između čvorova Popovec i Zagreb istok, Istarskom ipsilonu i na Jadranskoj magistrali (DC8) na prilazima Splitu, osobito tijekom jutra i poslijepodneva. Pojačan promet teretnih vozila očekuje se na graničnim prijelazima Bajakovo, Tovarnik, Batina i Svilaj, osobito na ulasku u zemlju. U pomorskom prometu mogući su poremeć…"
  },
  {
