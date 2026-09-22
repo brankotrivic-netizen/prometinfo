@@ -3,37 +3,37 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.9.2026. 01:10",
-  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI do 05:00 sati zatvorena je DC1 brza cesta Solin-Klis u smjeru Klisa. Obilazak je starom kliškom cestom Zbog jakog vjetra: samo za osobna vozila otvoreni su : autocesta A1 između čvorova Sveti Rok i Rovanjska (obilazak za ostale skupine je državnom cestom DC54 Maslenica-Zaton Obrovački), omiška obilaznica (DC553) i Paški most (DC106) na Jadranskoj magistrali (DC8) između Bakra i Svete Marije Magdalene, državnoj cesti DC99 između mjesta i čvora Križišće i lokalnoj cesti LC58107 Kraljevica-Križišće zabrana je prom…"
+  "updated": "22.9.2026. 10:48",
+  "text": "Autocesta A1 između čvora Sveti Rok i čvora Posedarje otvorena je za sve skupine vozila (od 09:36 sati), brzina je ograničena na 80 km/h. Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog jakog vjetra samo za osobna vozila otvoreni su omiška obilaznica (DC553) i Dubrovački most (DC8), a na J adranskoj magistrali (DC8) između Senja i Svete Marije Magdalene zabrana je pr…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "21.9.2026. 23:47",
-  "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
+  "updated": "22.9.2026. 10:21",
+  "text": "Zbog nestanka električne energije na GP Šid (Srbija) od 09:50 prekinut je promet teretnih vozila na izlazu na graničnom prijelazu Tovarnik (špedicije ne mogu podnositi nove deklaracije, mogu se odrađivati samo provozni dokumenti). Promet teretnih vozila na ulazu u RH odvija se usporeno, a promet osobnih vozila odvija se normalno. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "21.9.2026. 23:47",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 26. rujna trajekt će iz luke Vele Luke za luku Ubli isploviti u 08:00 umjesto u 09:00 sati do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni gran…"
+  "updated": "22.9.2026. 06:51",
+  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu je trajektna linija Sumartin-Makarska. Katamaran na liniji Korčula -Prigradica(Korčula) - Hvar-Split plovi prema redu plovidbe bez pristajanja u luku Prigradica (Korčula). Izmjene u plovidbenom redu: 26. rujna trajekt će iz luke Vele Luke za luku Ubli isploviti u 08:00 umjesto u 09:00 sati do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi …"
  },
  {
   "title": "Željeznički promet",
-  "updated": "21.9.2026. 18:52",
-  "text": "Stanje u željezničkom putničkom prometu 21. rujna 2026. u 8.00 sati. Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 - Perković 9.03 5802 Perković 9.26 - Knin 10.28. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka …"
+  "updated": "22.9.2026. 08:05",
+  "text": "Stanje u željezničkom putničkom prometu 22. rujna 2026. u 8.00 sati Putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 - Perković 9.03 5802 Perković 9.26 - Knin 10.28. Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka p…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "21.9.2026. 18:52",
+  "updated": "22.9.2026. 04:58",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "21.9.2026. 18:52",
-  "text": "Prometna prognoza za Hrvatsku za 22. rujna 2026. U drugom dijelu dana vozit će se po mokrim i skliskim kolnicima u središnjoj i istočnoj Hrvatskoj. Zbog bure na Jadranu moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Ovisno o gustoći prometa, zastoje očekujemo na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A2 na prilazu čvoru Zagreb zapad, na autocesti A4 između čvorova Popovec i Zagreb istok, Istarskom ipsilonu i na Jadranskoj magistrali (DC8) na prilazima Splitu, osobito tijekom jutra i poslijepodneva. Zbog održavanja biciklističke utrke, između 14:00 i 16:00 sati na autocesti A1 bit će zatvoreni ulaz i izlaz s čvora Prgomet. Poja…"
+  "updated": "22.9.2026. 07:22",
+  "text": "Prometna prognoza za Hrvatsku za 23. rujna 2026. Zbog jake bure na Jadranu moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Ovisno o gustoći prometa, zastoje očekujemo na zagrebačkoj (A3) i riječkoj (A7) obilaznici, autocesti A2 Zagreb-Macelj na prilazu čvoru Zagreb zapad, na autocesti A4 Goričan-Zagreb kod čvora Sveta Helena te između čvorova Popovec i Zagreb istok, Istarskom ipsilonu i na Jadranskoj magistrali (DC8) na prilazima Splitu, osobito tijekom jutra i poslijepodneva. Pojačan promet teretnih vozila očekuje se na graničnim prijelazima Bajakovo, Tovarnik, Batina i Svilaj, osobito na ulasku u zemlju. U pomorskom prometu mogući su poremeć…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
-  "updated": "21.9.2026. 18:52",
+  "updated": "22.9.2026. 04:58",
   "text": "Kod vožnje po mokrim i skliskim kolnicima, savjetujemo Vam: provjeriti stanje guma i metlica brisača, obvezno uključiti kratka svjetla i danju, bez obzira na vidljivost, držati propisani sigurnosni razmak između vozila, osobito kod vožnje u koloni, izbjegavati nagla kočenja, voziti opreznije, ne precjenjujte svoje vozačke sposobnosti i ne dovodite bespotrebno u opasnost sebe, svoje suputnike i sve ostale sudionike u prometu. Video - HAK savjetnik za zimu - vožnja po mokrim i skliskim kolnicima"
  },
  {
@@ -43,12 +43,12 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Savjeti MUP-a i HAK-a motociklistima",
-  "updated": "21.9.2026. 18:52",
+  "updated": "22.9.2026. 04:58",
   "text": "Savjeti MUP-a i HAK-a motociklistima: uvijek nosite zaštitnu kacigu i ostalu opremu (jakna, hlače, štitnici, čizme i rukavice) očistite vizir kacige i pravilno je zategnite preporuka je da nosite svjetliju odjeću i kacigu, \"življih\" boja, odnosno s reflektirajućim detaljima provjerite tlak u gumama upalite dnevno ili kratko svjetlo ne upravljajte pod utjecajem alkohola ili droga poštujte dopuštena ograničenja brzine ne precjenjujte svoje vozačke sposobnosti vozite s upaljenim svjetlima, tako ste uočljiviji drugima nemojte pretjecati gdje nije dopušteno ili je rizično prilagodite brzinu vožnje uvjetima na cesti (stanju i karakteristikama ceste) prilikom vožnje u skupini, vozite u slijedu jeda…"
  },
  {
   "title": "Vožnja ljeti pod velikim vrućinama",
-  "updated": "21.9.2026. 18:52",
+  "updated": "22.9.2026. 04:58",
   "text": "Izlaganje visokim temperaturama nepovoljno utječe na opće zdravstveno stanje, a kod vozača može utjecati na kognitivno funkcioniranje. Stoga je u svakodnevnom životu potrebno pratiti upute nadležnih službi (DHMZ, HZHM, Hrvatski Crveni križ, HGSS), a za putovanje slijedite sljedeće preporuke: planirajte vrijeme putovanja tijekom noći, ranih jutarnjih sati ili kasnije poslijepodne i navečer. Izbjegavajte vožnju sredinom dana kada temperature dosežu svoj maksimum jer će svaka izvanredna situacija u prometu (zastoji zbog veće gustoće prometa, prometne nesreće ili radovi) rezultirati povremenim stajanjem u mjestu koje će biti neugodno unatoč rashladnom uređaju u vozilu ako vozite na dužim relacij…"
  }
 ];

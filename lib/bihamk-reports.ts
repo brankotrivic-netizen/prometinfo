@@ -50,6 +50,14 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Orašje-Šamac (Domaljevac), zbog radova na izgradnji pješačke staze svaki dan osim nedjelje od 07 do 17 sati saobraća se naizmjenično, jednom trakom."
    },
    {
+    "title": "Nević Polje-Kaonik (Ahmići)",
+    "text": "Na magistralnoj cesti Nević Polje-Kaonik (Ahmići), zbog zbog sanacionih radova od 07 do 16 sati saobraća se naizmjenično, jednom trakom."
+   },
+   {
+    "title": "Jablanica-Kosne Luke",
+    "text": "Na magistralnoj cesti Jablanica-Blidinje, na dionici Jablanica-Kosne Luke, zbog radova svakog dana (osim nedjelje) od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },
