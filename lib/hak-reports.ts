@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.9.2026. 22:30",
-  "text": "Autocesta A1 između čvora Sveti Rok i čvora Posedarje otvorena je za sve skupine vozila (od 09:36 sati). Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: životinja (divlja svinja) na autocesti A6 na 3+000 km, vozi se uz ograničenje brzine od 80 km/h zabrana prometa zbog radova na autocesti A6 Rijeka-Zagreb između čvorova Vrbovsko i Ravna Gora u smjeru Rijeke, obilazak: čvo…"
+  "updated": "23.9.2026. 00:21",
+  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama i pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zabrana prometa zbog radova na autocesti A6 Rijeka-Zagreb između čvorova Vrbovsko i Ravna Gora u smjeru Rijeke, obilazak: čvor Vrbovsko (A6) – DC 42 – DC 3 – ŽC 5034 – čvor Ravna Gora (A6) zbog jakog vjetra na Jadranskoj magistrali (DC8) između Senja i Svete Marije Magdalene zabrana je prometa za autobuse na kat, vozila s prikolicama i motocikle (I. skupina), a na omiškoj obilaznici dodatno je zabrana i za dostavna i vozila s natkrivenim teretnim prostorom (II. sku…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "22.9.2026. 22:30",
+  "updated": "23.9.2026. 00:21",
   "text": "Zbog nestanka električne energije na GP Šid (Srbija) od 09:50 prekinut je promet teretnih vozila na izlazu na graničnom prijelazu Tovarnik (špedicije ne mogu podnositi nove deklaracije, mogu se odrađivati samo provozni dokumenti). Promet teretnih vozila na ulazu u RH odvija se usporeno, a promet osobnih vozila odvija se normalno. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "22.9.2026. 22:30",
+  "updated": "23.9.2026. 00:21",
   "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu je trajektna linija Sumartin-Makarska (Jadrolinija). Izmjene u plovidbenom redu: katamaranska linija Jelsa-Bol-Split (Jadrolinija) u 06:00 sati polazi iz luke Stari Grad, bez uplovljavanja u luku Jelsa. Konačna informacija o pristajanju u luku Bol bit će poznata u 05:30 sati ovisno o vremenskim prilikama 26. rujna trajekt će iz luke Vele Luke za luku Ubli isploviti u 08:00 umjesto u 09:00 sati do 23. rujna trajekt na liniji L433 Zadar/Gaženica-Rivanj-Sestrunj-Zverinac-Molat-Ist i obratno plovit će po izmijenjenom u redu plovidbe. Privremeni red plovidbe možete pogledati na https://www.jadrolinija.hr/hr/putovanja Jadrolinijin red plovidbe za 2026. …"
  },
  {

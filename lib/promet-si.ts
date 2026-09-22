@@ -1,41 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-22T20:36:46.250Z";
+export const PROMET_SI_UPDATED = "2026-09-22T23:15:36.792Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;878902;6d180fab-d8e5-4ae0-b598-3376a0523bca",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Višnja Gora - priključek Grosuplje vzhod v smeri Ljubljane, dela, pomična zapora počasnega pasu.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.97168,
-  "lng": 14.72028,
-  "start": "2026-09-22T20:04:57.973Z",
-  "end": "2026-09-23T02:00:00Z",
-  "ts": "2026-09-22T20:19:17.11Z"
- },
- {
-  "id": "DARS;878893;a0785f67-abdb-4c60-8c21-daa26d201dd6",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Višnja Gora - priključek Grosuplje vzhod v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.97176,
-  "lng": 14.72009,
-  "start": "2026-09-22T19:20:10.697Z",
-  "end": "2026-09-23T01:00:00Z",
-  "ts": "2026-09-22T20:19:02.11Z"
- },
- {
-  "id": "DARS;878900;a1cd7a2f-8dcd-4b31-95bc-2566faf8999c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Pletovarje - priključek Dramlje v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.2999,
-  "lng": 15.44352,
-  "start": "2026-09-22T19:56:00.27Z",
-  "end": "2026-09-22T22:00:09.837Z",
-  "ts": "2026-09-22T19:56:04.283Z"
- },
  {
   "id": "DARS;878887;2ff167a0-8abf-4428-8a78-484804cdf487",
   "type": "MaintenanceWorks",
@@ -46,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-22T18:24:55.537Z",
   "end": "2026-09-23T03:00:00Z",
   "ts": "2026-09-22T18:25:14.717Z"
- },
- {
-  "id": "DARS;878590;e292ca7a-2f02-4169-a6a0-cf3e7a569138",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.9713,
-  "lng": 14.66799,
-  "start": "2026-09-22T17:09:49.223Z",
-  "end": "2026-09-23T01:00:00Z",
-  "ts": "2026-09-22T17:10:05.11Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -134,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-22T06:32:22.74Z",
   "end": "2026-12-01T16:00:00Z",
   "ts": "2026-09-22T06:33:09.087Z"
- },
- {
-  "id": "DARS;878686;98cb22ff-7fdf-4c28-8e96-73a87c0be44a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-7, Starod - Kozina, pri Starodu, izmenično enosmerni promet, sanacija pokrova.",
-  "loc": "G1-7, Starod - Podgrad",
-  "lat": 45.49328,
-  "lng": 14.20748,
-  "start": "2026-09-22T05:57:19.87Z",
-  "end": "2026-09-22T21:59:00Z",
-  "ts": "2026-09-22T05:57:53.263Z"
  },
  {
   "id": "DARS;878682;96432183-b081-4df2-9195-2b4f989cba58",
