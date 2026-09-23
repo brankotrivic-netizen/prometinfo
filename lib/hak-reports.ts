@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "23.9.2026. 22:46",
-  "text": "Na većini cesta promet teče bez smetnji i posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: od 22:00 do 05:00 sati zatvorena je dionica autoceste A6 između čvora Vrbovsko i čvora Ravna Gora u smjeru Rijeke. Obilazak: čvor Vrbovsko (A6) – DC 42 – DC3 – ŽC5034 – čvor Ravna Gora (A6) prometna nesreća na autocesti A5 na 27+400 km između čvora Beli Manastir i čvora Osijek na kolniku u smjeru BiH, vozi se uz ograničenje brzine od 80 km/h. nalet vozila na životinju na autocesti A1 između 17+000 km i 18+000 km, između…"
+  "updated": "23.9.2026. 23:29",
+  "text": "Na većini cesta promet teče bez smetnji i posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: od 22:00 do 05:00 sati zatvorena je dionica autoceste A6 između čvora Vrbovsko i čvora Ravna Gora u smjeru Rijeke. Obilazak: čvor Vrbovsko (A6) – DC 42 – DC3 – ŽC5034 – čvor Ravna Gora (A6) nalet vozila na životinju na autocesti A1 između 17+000 km i 18+000 km, između čvora Donja Zdenčina i čvora Jastrebarsko u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h. AUTOCESTE A1 Zagre…"
  },
  {
   "title": "Granični prijelazi",
