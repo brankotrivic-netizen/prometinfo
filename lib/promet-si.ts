@@ -1,18 +1,62 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-23T18:06:07.772Z";
+export const PROMET_SI_UPDATED = "2026-09-23T21:27:36.651Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;879163;aec0d0fc-d334-4506-a9cb-de62485c3161",
+  "id": "DARS;879178;e9ed2e5c-0b27-4721-8c2c-efa3ef43fa1b",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, pred izvozom Luka Koper v smeri Kopra, dela, oviran promet.",
+  "desc": "A2, Ljubljana - Obrežje, priključek Višnja Gora - priključek Ivančna Gorica v smeri Novega mesta, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.95942,
+  "lng": 14.73929,
+  "start": "2026-09-23T20:24:19.233Z",
+  "end": "2026-09-24T03:30:00Z",
+  "ts": "2026-09-23T20:24:43.79Z"
+ },
+ {
+  "id": "DARS;879171;5f4d3eda-6070-43d6-8626-b2943a89ad9c",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, uvoz Ljubljana Šentvid, Celovška cesta v smeri Jesenic, dela, oviran promet.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.09866,
+  "lng": 14.46453,
+  "start": "2026-09-23T19:10:33.72Z",
+  "end": "2026-09-24T04:30:00Z",
+  "ts": "2026-09-23T19:11:02.603Z"
+ },
+ {
+  "id": "DARS;879169;60a60dde-3d3e-441a-8bda-51609fe119e1",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, predor Šentvid - izvoz 13 Ljubljana Brod v smeri Jesenic, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.08694,
+  "lng": 14.46046,
+  "start": "2026-09-23T19:00:45.7Z",
+  "end": "2026-09-23T21:55:15.207Z",
+  "ts": "2026-09-23T19:00:55.213Z"
+ },
+ {
+  "id": "DARS;879168;0dd74a1e-8d63-4e0d-8272-206232cbaf7e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Senožeče - izvoz Razdrto v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.75176,
+  "lng": 14.04484,
+  "start": "2026-09-23T18:50:52.233Z",
+  "end": "2026-09-23T21:59:00Z",
+  "ts": "2026-09-23T18:51:02.453Z"
+ },
+ {
+  "id": "DARS;879165;0f000fae-1c5a-469e-96d4-8a5f8b6aa0f5",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, uvoz Brezovica - priključek Vrhnika v smeri Kopra, dela, pomična zapora prehitevalnega pasu.",
   "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.55875,
-  "lng": 13.79136,
-  "start": "2026-09-23T17:56:36.277Z",
-  "end": "2026-09-23T23:00:00Z",
-  "ts": "2026-09-23T17:56:42.487Z"
+  "lat": 46.02561,
+  "lng": 14.43363,
+  "start": "2026-09-23T18:12:44.283Z",
+  "end": "2026-09-24T03:00:00.8Z",
+  "ts": "2026-09-23T18:12:53.813Z"
  },
  {
   "id": "DARS;879159;04a3aa4b-bdb4-472f-972d-b25d9d25ffda",
@@ -26,28 +70,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-23T17:45:10.79Z"
  },
  {
-  "id": "DARS;879153;9a0412e9-48a2-480a-9a3d-b1bf180449e9",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, predor Šentvid - predor Šentvid v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.10312,
-  "lng": 14.46803,
-  "start": "2026-09-23T17:21:44.13Z",
-  "end": "2026-09-23T21:00:00Z",
-  "ts": "2026-09-23T17:21:53.903Z"
- },
- {
-  "id": "DARS;879150;2d879c6d-cd2d-42de-94a3-dfc85d1eb175",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, počivališče Zima - uvoz Žalec v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26147,
-  "lng": 15.38484,
-  "start": "2026-09-23T17:02:35.163Z",
-  "end": "2026-09-23T21:59:06.75Z",
-  "ts": "2026-09-23T17:02:46.24Z"
- },
- {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 25. 9. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
@@ -57,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-24T05:33:20.253Z",
   "end": "2026-09-25T21:59:00Z",
   "ts": "2026-09-23T16:00:47.623Z"
- },
- {
-  "id": "DARS;879143;f5fc197e-dfb4-4b65-9f75-1e62a696eefd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Senožeče - izvoz Razdrto v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.75176,
-  "lng": 14.04484,
-  "start": "2026-09-23T15:52:47.297Z",
-  "end": "2026-09-23T21:00:00Z",
-  "ts": "2026-09-23T15:53:07.16Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
