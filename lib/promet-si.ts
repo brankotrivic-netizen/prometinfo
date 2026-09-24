@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-24T21:28:16.616Z";
+export const PROMET_SI_UPDATED = "2026-09-24T23:57:08.408Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;879475;eca3266d-1c9b-4695-aead-48ca4cd5ceb5",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-24T21:09:47.29Z",
   "end": "2026-09-25T20:00:02.527Z",
   "ts": "2026-09-24T21:09:56.52Z"
- },
- {
-  "id": "DARS;879472;2455ad0e-81c6-4c19-b4d8-b8f3717b1995",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, razcep Slivnica - priključek Fram iz smeri Dragučove proti Ljubljani, dela, pomična zapora prehitevalnega pasu, košnja.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.48215,
-  "lng": 15.65791,
-  "start": "2026-09-24T20:13:46.94Z",
-  "end": "2026-09-25T02:00:00Z",
-  "ts": "2026-09-24T20:14:02.263Z"
  },
  {
   "id": "DARS;879470;8ed3c54c-973f-4a77-bf06-f87d797a7f0b",
@@ -46,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-24T19:23:03.103Z",
   "end": "2026-09-25T03:00:01.43Z",
   "ts": "2026-09-24T19:23:14.143Z"
- },
- {
-  "id": "DARS;879465;4d22e37b-9c34-4488-8fc0-ed102a36c98c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Senožeče - priključek Postojna v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.72458,
-  "lng": 14.01371,
-  "start": "2026-09-24T18:21:53.713Z",
-  "end": "2026-09-25T03:00:00Z",
-  "ts": "2026-09-24T18:22:01.493Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -156,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-24T05:40:17.887Z",
   "end": "2026-09-28T21:59:00Z",
   "ts": "2026-09-24T05:42:44.353Z"
- },
- {
-  "id": "DARS;878916;e06c355a-3f81-40d5-a4b9-6289329567ef",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-405, Famlje - Ribnica, izmenično enosmerni promet, vzdrževalna dela.",
-  "loc": "R2-405, Famlje - Ribnica",
-  "lat": 45.64151,
-  "lng": 14.11786,
-  "start": "2026-09-23T05:00:00Z",
-  "end": "2026-09-24T21:59:00Z",
-  "ts": "2026-09-24T04:41:44.74Z"
  },
  {
   "id": "DARS;868803;ecefdba7-cf35-4a9d-b2e5-ebe2666d6b1e",
