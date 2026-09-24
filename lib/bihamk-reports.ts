@@ -107,6 +107,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "R- 445 Kakanj - Visoko, u toku su radovi od mosta u naselju Doboj do skretanje za Ćatiće."
    },
    {
+    "title": "Čelić-Pukiš",
+    "text": "U toku su sanacioni radovi na regionalnom putu R-458 Čelić-Pukiš, zbog čega se svakim danom (osim nedjelje) u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
