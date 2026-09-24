@@ -34,10 +34,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog izvođenja radova na magistralnoj cesti Jajce-Crna Rijeka (u naselju Podmilačje) saobraća se usporeno-naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Bugojno-Novi Travnik",
-    "text": "Zbog asfaltiranja od 21. do 24.09.2026. obustavlja se saobraćaj na magistralnoj cesti Bugojno-Novi Travnik (Rostovo). Za vrijeme obustave saobraćaj se preusmjerava na magistralnu cestu Bugojno-Donji Vakuf-Travnik i obratno."
-   },
-   {
     "title": "Mostar-Čitluk-brdo Hum",
     "text": "U toku su sanacioni radovi, zbog čega se svakog dana (osim nedjelje), u vremenu od 7 do 16 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
    },
