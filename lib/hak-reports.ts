@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "25.9.2026. 10:31",
-  "text": "U priobalju puše jaka bura, mjestimice s olujnim udarima. Zabrana je prometa za određene skupine vozila na pojedinim cestama (vidjeti niže!). Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Kolnici su ponegdje mokri ili vlažni i skliski. Mogući su odroni. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: povećana je gustoća prometa, vozi se usporeno uz povremene zastoje: na zagrebačkoj obilaznici (A3) između čvorova Zagreb zapad i Luč…"
+  "updated": "25.9.2026. 16:29",
+  "text": "Od 12:45 autocesta A1 između čvorova Sveti Rok i Posedarje otvorena je za sve skupine vozila. U priobalju puše jaka bura. Zabrana je prometa za pojedine skupine vozila na Jadranskoj magistrali (vidjeti niže!). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: životinja (srna) na autocesti A6 na 18. km između čvorova Vrbovsko i Ravna Gora, vozi se po dva prometna traka u oba smjera uz ograničenje brzine 60 km/h povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa: na zagrebačkoj obilaznici (A3) između čvo…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "25.9.2026. 10:31",
+  "updated": "25.9.2026. 15:34",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "25.9.2026. 10:31",
-  "text": "U prekidu su trajektna linija Sumartin-Makarska i katamaranska linija Pula-Zadar-Pula (zamjenska plovidba je u subotu u 7h ujutro iz Pule, 26. rujna). Izmjene u plovidbenom redu: za trajektnu liniju 604 Vela Luka - Split 27.09.2026 (nedjelja) uvodi se dodatno putovanje s polaskom iz luke Vela Luka za luku Split u 21:15 sati od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosirača će u 17:00 sati, odnosno iz luke Molat u 18:15 sati. Red plovidbe subotom i nedjeljom ostaje nepromijenjen (Jadrolinija) 26. rujna trajekt će iz luke Vele Luke …"
+  "updated": "25.9.2026. 15:34",
+  "text": "U prekidu su trajektna linija Sumartin-Makarska i katamaranska linija Pula-Zadar-Pula (zamjenska plovidba je u subotu u 7h ujutro iz Pule, 26. rujna). Izmjene u plovidbenom redu: državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 26.09.2026 od KSC Jaffa preuzima HSC Kolovare u luci Ubli isplovljenjem u 07:00h za trajektnu liniju 604 Vela Luka - Split 27.09.2026 (nedjelja) uvodi se dodatno putovanje s polaskom iz luke Vela Luka za luku Split u 21:15 sati od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosi…"
  },
  {
   "title": "Željeznički promet",
