@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-26T17:19:34.994Z";
+export const PROMET_SI_UPDATED = "2026-09-26T19:59:54.577Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;879803;0c690327-f9af-419a-8cd3-7d52af936c5e",
+  "id": "DARS;879811;70c81fa5-1345-4501-99fe-34ef10e9e3cf",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, uvoz Ljubljana vzhod - priključek Ljubljana Bizovik v smeri Malenc, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.05605,
-  "lng": 14.57354,
-  "start": "2026-09-26T16:57:27.677Z",
-  "end": "2026-09-26T21:30:04.303Z",
-  "ts": "2026-09-26T16:57:29.867Z"
- },
- {
-  "id": "DARS;879801;56d14f8b-fa85-448f-ab57-f208fb8d31c2",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, priključek Koper center, Slavček v smeri Izole, dela, oviran promet, košnja.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.53759,
-  "lng": 13.73971,
-  "start": "2026-09-26T16:46:17.973Z",
-  "end": "2026-09-26T21:30:00Z",
-  "ts": "2026-09-26T16:46:47.227Z"
+  "desc": "A1, Maribor - Ljubljana, priključek Šempeter - priključek Šentrupert v smeri Ljubljane, dela, zaprt odstavni pas, košnja.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25979,
+  "lng": 15.09927,
+  "start": "2026-09-26T19:00:05.07Z",
+  "end": "2026-09-27T01:00:00Z",
+  "ts": "2026-09-26T19:01:01.07Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -79,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-26T03:34:08.643Z",
   "end": "2026-09-30T21:59:00Z",
   "ts": "2026-09-26T03:34:44.12Z"
- },
- {
-  "id": "DARS;879734;9bdd215e-b92c-4df0-84f7-609175862bbb",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica jug - počivališče Tepanje v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.38035,
-  "lng": 15.56512,
-  "start": "2026-09-26T01:20:25.71Z",
-  "end": "2026-09-26T20:00:24.363Z",
-  "ts": "2026-09-26T01:20:30.83Z"
  },
  {
   "id": "DARS;879722;42ccdb3d-b6e5-4240-ae97-14a428f48e57",
