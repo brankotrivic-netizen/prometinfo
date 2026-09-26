@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.9.2026. 10:35",
-  "text": "Na cestama u unutrašnjosti ponegdje ima magle. Povremeno je pojačan promet na važnijim cestama te pojedinim graničnim prijelazima. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: vozilo u kvaru (teretno vozilo) na autocesti A1 na 468+000 km između čvora Vrgorac i čvora Ploče na kolniku u smjeru Dubrovnika - promet se vodi jednom prometnom trakom uz ograničenje brzine od 80 km/h Povećana je gustoća prometa, vozi se usporeno u zonama radova: na autocesti A1 kod čvora Sveti Rok u smjeru Zagreba na autocesti A4 Goričan-Zagreb između čvorova Zagreb istok i …"
+  "updated": "26.9.2026. 15:18",
+  "text": "Pojačan je promet na važnijim cestama te pojedinim graničnim prijelazima. Zastoji su povremeno u zonama radova. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: predmet na autocesti A1 između tunela Čelinka i tunela Ledenik na kolniku u smjeru Zagreba - promet se vodi jednom prometnom trakom uz ograničenje brzine od 60 km/h zbog prometne nesreće na autocesti A1 između čvorova Perušić i Otočac, na 153. km u u smjeru Zagreba, vozi se uz ograničenje brzine zbog prometne nesreće prekinut je promet na županijskoj cesti ŽC4100 Požega-Biškupci Povećana je gustoća prometa, vozi se usporeno u zonama…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "26.9.2026. 10:29",
+  "updated": "26.9.2026. 15:18",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "26.9.2026. 10:29",
+  "updated": "26.9.2026. 15:18",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 26.09.2026 od KSC Jaffa preuzima HSC Kolovare u luci Ubli isplovljenjem u 07:00h za trajektnu liniju 604 Vela Luka - Split 27.09.2026 (nedjelja) uvodi se dodatno putovanje s polaskom iz luke Vela Luka za luku Split u 21:15 sati od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosirača će u 17:00 sati, odnosno iz luke Molat u 18:15 sati. Red plovidbe subotom i nedjeljom ostaje nepromijenjen (Ja…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "26.9.2026. 10:29",
+  "updated": "26.9.2026. 15:18",
   "text": "Stanje u željezničkom putničkom prometu 25. rujna 2026. u 8.00 sati Od 10. do 25. rujna 2026., od ponedjeljka do petka, između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 vozi autobus. Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dion…"
  },
  {

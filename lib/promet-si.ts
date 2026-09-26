@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-26T08:54:02.967Z";
+export const PROMET_SI_UPDATED = "2026-09-26T13:27:17.992Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;879777;b1fd6db1-6e53-416e-893e-23147ef5e860",
+  "id": "DARS;879795;878b7d49-c651-4e9e-93ca-841000e0dc91",
   "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.92559,
-  "lng": 14.87132,
-  "start": "2026-09-26T08:33:39.57Z",
-  "end": "2026-09-26T16:00:00Z",
-  "ts": "2026-09-26T08:33:56.17Z"
+  "desc": "A1, Maribor - vzhodna obvoznica, priključek Rogoza - razcep Slivnica iz smeri Dragučove proti Ljubljani, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.48991,
+  "lng": 15.66523,
+  "start": "2026-09-26T12:01:56.63Z",
+  "end": "2026-09-26T22:00:30.4Z",
+  "ts": "2026-09-26T12:02:42.057Z"
+ },
+ {
+  "id": "DARS;879786;1610efa0-0464-48fa-8a97-7ed48195a823",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Divača - priključek Senožeče v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.66774,
+  "lng": 13.96838,
+  "start": "2026-09-26T10:36:52.187Z",
+  "end": "2026-09-26T14:00:00Z",
+  "ts": "2026-09-26T10:36:55.24Z"
  },
  {
   "id": "DARS;879754;d70397ea-47d8-472b-9770-7d4bab958405",
@@ -46,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-26T03:34:08.643Z",
   "end": "2026-09-30T21:59:00Z",
   "ts": "2026-09-26T03:34:44.12Z"
- },
- {
-  "id": "DARS;879738;338c36b8-7934-4aeb-8c41-ee6cf8591e0e",
-  "type": "MaintenanceWorks",
-  "desc": "R2-428, Radmirje - Luče, pri Savini, oviran promet, košnja, do 15:00.",
-  "loc": "R2-428, Radmirje - Luče",
-  "lat": 46.3347,
-  "lng": 14.85546,
-  "start": "2026-09-26T05:00:00Z",
-  "end": "2026-09-26T13:00:00Z",
-  "ts": "2026-09-26T03:33:10.173Z"
- },
- {
-  "id": "DARS;879737;6c163b5f-2e4e-4c31-b4ed-27e9fdb572b4",
-  "type": "MaintenanceWorks",
-  "desc": "R1-225, Črnivec - Radmirje, pri Novi Štifti, oviran promet, košnja, do 15:00.",
-  "loc": "R1-225, Črnivec - Radmirje",
-  "lat": 46.26073,
-  "lng": 14.70232,
-  "start": "2026-09-26T05:00:00Z",
-  "end": "2026-09-26T13:00:00Z",
-  "ts": "2026-09-26T03:32:01.147Z"
  },
  {
   "id": "DARS;879734;9bdd215e-b92c-4df0-84f7-609175862bbb",
