@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-26T13:27:17.992Z";
+export const PROMET_SI_UPDATED = "2026-09-26T17:19:34.994Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;879803;0c690327-f9af-419a-8cd3-7d52af936c5e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, uvoz Ljubljana vzhod - priključek Ljubljana Bizovik v smeri Malenc, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.05605,
+  "lng": 14.57354,
+  "start": "2026-09-26T16:57:27.677Z",
+  "end": "2026-09-26T21:30:04.303Z",
+  "ts": "2026-09-26T16:57:29.867Z"
+ },
+ {
+  "id": "DARS;879801;56d14f8b-fa85-448f-ab57-f208fb8d31c2",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Škofije - Koper, priključek Koper center, Slavček v smeri Izole, dela, oviran promet, košnja.",
+  "loc": "G1-11, Škofije - Koper",
+  "lat": 45.53759,
+  "lng": 13.73971,
+  "start": "2026-09-26T16:46:17.973Z",
+  "end": "2026-09-26T21:30:00Z",
+  "ts": "2026-09-26T16:46:47.227Z"
+ },
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 16. 10. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-10-16T21:59:00Z",
+  "ts": "2026-09-26T16:00:51.813Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-09-26T15:00:18.803Z"
+ },
  {
   "id": "DARS;879795;878b7d49-c651-4e9e-93ca-841000e0dc91",
   "type": "MaintenanceWorks",
@@ -13,28 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-26T12:01:56.63Z",
   "end": "2026-09-26T22:00:30.4Z",
   "ts": "2026-09-26T12:02:42.057Z"
- },
- {
-  "id": "DARS;879786;1610efa0-0464-48fa-8a97-7ed48195a823",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Divača - priključek Senožeče v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.66774,
-  "lng": 13.96838,
-  "start": "2026-09-26T10:36:52.187Z",
-  "end": "2026-09-26T14:00:00Z",
-  "ts": "2026-09-26T10:36:55.24Z"
- },
- {
-  "id": "DARS;879754;d70397ea-47d8-472b-9770-7d4bab958405",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana sever - razcep Koseze v smeri Kosez, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07986,
-  "lng": 14.48352,
-  "start": "2026-09-26T05:40:59.02Z",
-  "end": "2026-09-26T15:00:12.67Z",
-  "ts": "2026-09-26T05:41:11.543Z"
  },
  {
   "id": "DARS;879740;81a020e8-e501-4295-a25b-26b125d23e01",
@@ -81,17 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-25T19:20:55.557Z"
  },
  {
-  "id": "DARS;879582;baecc0e6-f01a-45c8-8544-ff72d643af6e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-209, Bled - Bohinj, pri Bohinjski Beli, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 26. 9. 2026, dnevno med 7. in 17. uro.",
-  "loc": "R1-209, Bled - Soteska",
-  "lat": 46.33672,
-  "lng": 14.06368,
-  "start": "2026-09-25T09:09:24.607Z",
-  "end": "2026-09-26T15:00:00Z",
-  "ts": "2026-09-25T09:10:24.08Z"
- },
- {
   "id": "DARS;877874;2cae7ef7-b4d7-4ff9-a025-93268a216b41",
   "type": "MaintenanceWorks",
   "desc": "G2-102, Robič - Staro selo, pri Robiču, oviran promet, občasno promet urejen izmenično enosmerno, izvedbe optičnega omrežja GOŠO6 - 2. faza, do 2. 10. 2026.",
@@ -134,17 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-01T04:13:28.65Z",
   "end": "2026-10-19T15:00:00Z",
   "ts": "2026-09-25T06:22:25.36Z"
- },
- {
-  "id": "DARS;877322;397f088f-faa2-4b7f-b0eb-8975dcd0846a",
-  "type": "MaintenanceWorks",
-  "desc": "R2-445, Sežana - Fernetiči, v Sežani na Pertizanski cesti, oviran promet, zapore levozavijalnega pasu - asfaltiranje občinske ceste, do 26. 9. 2026.",
-  "loc": "R2-445, Sežana - Fernetiči",
-  "lat": 45.70328,
-  "lng": 13.84653,
-  "start": "2026-09-16T05:33:43.95Z",
-  "end": "2026-09-26T15:00:00Z",
-  "ts": "2026-09-25T05:47:03.84Z"
  },
  {
   "id": "DARS;845440;9f339f47-f3c5-4156-a1a0-ea3285130880",
