@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-26T19:59:54.577Z";
+export const PROMET_SI_UPDATED = "2026-09-26T22:25:10.116Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;879811;70c81fa5-1345-4501-99fe-34ef10e9e3cf",
+  "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šempeter - priključek Šentrupert v smeri Ljubljane, dela, zaprt odstavni pas, košnja.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25979,
-  "lng": 15.09927,
-  "start": "2026-09-26T19:00:05.07Z",
-  "end": "2026-09-27T01:00:00Z",
-  "ts": "2026-09-26T19:01:01.07Z"
+  "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Šentilj v smeri Maribora, dela, promet poteka po enem voznem pasu.",
+  "loc": "A1-E57, E59, Šentilj - Maribor",
+  "lat": 46.68921,
+  "lng": 15.64654,
+  "start": "2026-04-13T12:05:47.197Z",
+  "end": "2026-10-16T21:59:00Z",
+  "ts": "2026-09-26T21:57:28.157Z"
+ },
+ {
+  "id": "DARS;879795;878b7d49-c651-4e9e-93ca-841000e0dc91",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - vzhodna obvoznica, priključek Rogoza - razcep Slivnica iz smeri Dragučove proti Ljubljani, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.48991,
+  "lng": 15.66523,
+  "start": "2026-09-26T12:01:56.63Z",
+  "end": "2026-09-27T22:00:00Z",
+  "ts": "2026-09-26T21:57:19.503Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -35,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-10-02T05:56:02.493Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-09-26T15:00:18.803Z"
- },
- {
-  "id": "DARS;879795;878b7d49-c651-4e9e-93ca-841000e0dc91",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, priključek Rogoza - razcep Slivnica iz smeri Dragučove proti Ljubljani, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.48991,
-  "lng": 15.66523,
-  "start": "2026-09-26T12:01:56.63Z",
-  "end": "2026-09-26T22:00:30.4Z",
-  "ts": "2026-09-26T12:02:42.057Z"
  },
  {
   "id": "DARS;879740;81a020e8-e501-4295-a25b-26b125d23e01",
@@ -332,17 +332,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-06T13:21:39.91Z",
   "end": "2026-09-30T21:59:00Z",
   "ts": "2026-09-20T17:16:27.78Z"
- },
- {
-  "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Šentilj v smeri Maribora, dela, promet poteka po enem voznem pasu.",
-  "loc": "A1-E57, E59, Šentilj - Maribor",
-  "lat": 46.68921,
-  "lng": 15.64654,
-  "start": "2026-04-13T12:05:47.197Z",
-  "end": "2026-09-26T21:59:00Z",
-  "ts": "2026-09-19T00:30:10.987Z"
  },
  {
   "id": "DARS;877654;4ca442fc-5648-4996-a514-4c908d367401",

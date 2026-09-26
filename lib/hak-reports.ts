@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.9.2026. 21:51",
-  "text": "Jak vjetar puše u priobalju, zabrana je prometa za pojedine skupine vozila samo na omiškoj obilaznici-DC553 (vidjeti niže!). Na većini ostalih cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 8. listopada kroz tunel Brezik vozi se jednom tunelskom cijevi, dvosmjerno do 2. listopada radovi na održavanju između 209+400 km i 209+850 km, između čvora Gornja Ploča i čvora Sveti Rok na kolniku u smjeru Dubrovnika. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 80 km/h do 2. listopada radovi na održavanju između 210+300 km i 209+500 km na kolniku u smjeru Zagreba. Promet se vodi j…"
+  "updated": "26.9.2026. 23:38",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 8. listopada kroz tunel Brezik vozi se jednom tunelskom cijevi, dvosmjerno do 2. listopada radovi na održavanju između 209+400 km i 209+850 km, između čvora Gornja Ploča i čvora Sveti Rok na kolniku u smjeru Dubrovnika. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 80 km/h do 2. listopada radovi na održavanju između 210+300 km i 209+500 km na kolniku u smjeru Zagreba. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 80 km/h do 2. listopada zadovi na održavanju između 204+250 km i 205+000 km , između …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "26.9.2026. 20:21",
+  "updated": "26.9.2026. 23:33",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "26.9.2026. 20:21",
+  "updated": "26.9.2026. 23:33",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: državnu liniju br.9604 Ubli (Lastovo) -Vela Luka (Korčula) - Hvar - Split i obratno 26.09.2026 od KSC Jaffa preuzima HSC Kolovare u luci Ubli isplovljenjem u 07:00h za trajektnu liniju 604 Vela Luka - Split 27.09.2026 (nedjelja) uvodi se dodatno putovanje s polaskom iz luke Vela Luka za luku Split u 21:15 sati od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosirača će u 17:00 sati, odnosno iz luke Molat u 18:15 sati. Red plovidbe subotom i nedjeljom ostaje nepromijenjen (Ja…"
  },
  {
