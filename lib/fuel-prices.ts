@@ -61,9 +61,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Češka",
   "flag": "🇨🇿",
-  "p95": "43,710 CZK (1,79 EUR)",
+  "p95": "43,710 CZK (1,80 EUR)",
   "p98": "50,704 CZK (2,08 EUR)",
-  "diesel": "47,390 CZK (1,94 EUR)",
+  "diesel": "47,390 CZK (1,95 EUR)",
   "date": "18. 9. 2026"
  },
  {
@@ -133,9 +133,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Islandija",
   "flag": "🇮🇸",
-  "p95": "253,580 ISK (1,84 EUR)",
+  "p95": "253,580 ISK (1,86 EUR)",
   "p98": "",
-  "diesel": "288,600 ISK (2,09 EUR)",
+  "diesel": "288,600 ISK (2,11 EUR)",
   "date": "18. 9. 2026"
  },
  {
@@ -165,9 +165,9 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Liechtenstein",
   "flag": "🇱🇮",
-  "p95": "2,020 CHF (2,15 EUR)",
+  "p95": "2,020 CHF (2,14 EUR)",
   "p98": "",
-  "diesel": "2,320 CHF (2,47 EUR)",
+  "diesel": "2,320 CHF (2,46 EUR)",
   "date": "18. 9. 2026"
  },
  {
@@ -221,15 +221,15 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Norveška",
   "flag": "🇳🇴",
-  "p95": "29,560 NOK (2,74 EUR)",
+  "p95": "29,560 NOK (2,73 EUR)",
   "p98": "",
-  "diesel": "28,360 NOK (2,63 EUR)",
+  "diesel": "28,360 NOK (2,62 EUR)",
   "date": "18. 9. 2026"
  },
  {
   "country": "Poljska",
   "flag": "🇵🇱",
-  "p95": "7,810 PLN (1,78 EUR)",
+  "p95": "7,810 PLN (1,79 EUR)",
   "p98": "8,982 PLN (2,05 EUR)",
   "diesel": "8,540 PLN (1,95 EUR)",
   "date": "18. 9. 2026"
@@ -301,25 +301,25 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Švedska",
   "flag": "🇸🇪",
-  "p95": "18,540 SEK (1,65 EUR)",
+  "p95": "18,540 SEK (1,64 EUR)",
   "p98": "19,652 SEK (1,74 EUR)",
-  "diesel": "23,040 SEK (2,05 EUR)",
+  "diesel": "23,040 SEK (2,04 EUR)",
   "date": "18. 9. 2026"
  },
  {
   "country": "Švica",
   "flag": "🇨🇭",
-  "p95": "2,030 CHF (2,16 EUR)",
-  "p98": "2,335 CHF (2,48 EUR)",
-  "diesel": "2,330 CHF (2,48 EUR)",
+  "p95": "2,030 CHF (2,15 EUR)",
+  "p98": "2,335 CHF (2,47 EUR)",
+  "diesel": "2,330 CHF (2,47 EUR)",
   "date": "18. 9. 2026"
  },
  {
   "country": "Turčija",
   "flag": "🇹🇷",
-  "p95": "80,290 TRY (1,45 EUR)",
-  "p98": "86,713 TRY (1,56 EUR)",
-  "diesel": "95,640 TRY (1,72 EUR)",
+  "p95": "80,290 TRY (1,44 EUR)",
+  "p98": "86,713 TRY (1,55 EUR)",
+  "diesel": "95,640 TRY (1,71 EUR)",
   "date": "18. 9. 2026"
  },
  {
