@@ -1,18 +1,51 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-27T14:49:07.019Z";
+export const PROMET_SI_UPDATED = "2026-09-27T18:45:03.389Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;879880;fc156a5a-92f0-4a1c-8232-55a851732708",
+  "id": "DARS;879924;3e3bcccf-140c-4c0f-a067-47b653d442c6",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Kastelec - predor Dekani v smeri Kopra, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.56203,
-  "lng": 13.87115,
-  "start": "2026-09-27T12:12:27.203Z",
-  "end": "2026-09-27T19:00:40.637Z",
-  "ts": "2026-09-27T12:12:42.493Z"
+  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana, Ind. cona Šiška - priključek Ljubljana Podutik v smeri Kosez, dela, oviran promet.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.08364,
+  "lng": 14.4941,
+  "start": "2026-09-27T16:53:47.673Z",
+  "end": "2026-09-27T21:40:09.957Z",
+  "ts": "2026-09-27T16:53:56.95Z"
+ },
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 16. 10. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-10-16T21:59:00Z",
+  "ts": "2026-09-27T16:00:24.653Z"
+ },
+ {
+  "id": "DARS;878961;5434a3e9-c781-4549-b160-ac43a4634d8c",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-201, Kranjska Gora - Mojstrana - Dovje, pri Logu, pri Kranjski Gori/Log, izmenično enosmerni promet, ureditve pločnika in prehoda za pešce, do 25. 11. 2026.",
+  "loc": "R1-201, Kr. Gora - Mojstrana - Dovje",
+  "lat": 46.4869,
+  "lng": 13.80481,
+  "start": "2026-09-23T05:39:24.953Z",
+  "end": "2026-11-25T16:00:00Z",
+  "ts": "2026-09-27T15:15:30.98Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-09-27T15:00:50.53Z"
  },
  {
   "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
@@ -167,17 +200,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-23T05:45:27.333Z",
   "end": "2026-10-16T15:00:00Z",
   "ts": "2026-09-23T05:48:12.093Z"
- },
- {
-  "id": "DARS;878961;5434a3e9-c781-4549-b160-ac43a4634d8c",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-201, Kranjska Gora - Mojstrana - Dovje, pri Logu, pri Kranji Gora/Log, izmenično enosmerni promet, ureditve pločnika in prehoda za pešce, do 25. 11. 2026.",
-  "loc": "R1-201, Kr. Gora - Mojstrana - Dovje",
-  "lat": 46.4869,
-  "lng": 13.80481,
-  "start": "2026-09-23T05:39:24.953Z",
-  "end": "2026-11-25T16:00:00Z",
-  "ts": "2026-09-23T05:41:27.313Z"
  },
  {
   "id": "DARS;878431;44041f22-7bc5-4073-8208-bb6f2b5f6346",

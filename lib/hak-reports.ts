@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "27.9.2026. 16:47",
-  "text": "Vremenski uvjeti u većem dijelu zemlje povoljni su za vožnju. Povremena su usporavanja zbog veće gustoće prometa na pojedinim dionicama autocesta, gradskim prometnicama i obilaznicama, osobito zagrebačkoj i riječkoj te u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog radova na autocesti A1 na 145. km između čvorova Perušić i Otočac u smjeru Zagreba kolona je duga oko 4 km, povremeno se iz sigurnosnih razloga prekida promet kroz tunel Grič zbog prometne nesreće prekinut je promet na državnoj cesti DC34 Slatina-Donji Miholjac u naselju Šaš…"
+  "updated": "27.9.2026. 20:42",
+  "text": "Vremenski uvjeti u većem dijelu zemlje povoljni su za vožnju. Povremena su usporavanja zbog veće gustoće prometa na pojedinim dionicama autocesta, gradskim prometnicama i obilaznicama, osobito zagrebačkoj i riječkoj te u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da održavaju sigurnosni razmak između vozila, a u slučaju zastoja formiraju hitni koridor. IZVANREDNI PROMETNI DOGAĐAJI: Autocesta A1 Zagreb-Split-Dubrovnik zbog vrlo gustog prometa u zoni radova i dvosmjernog prometa na autocesti A1 na 145. km između čvorova Perušić i Otočac u smjeru Zagreba kolona je duga oko 6 km povremeno se iz sigurnosnih razloga prekida promet kroz tunele Plasina i Grič (kako bi se spr…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "27.9.2026. 16:39",
+  "updated": "27.9.2026. 17:46",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "27.9.2026. 16:39",
+  "updated": "27.9.2026. 17:46",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 28.9. ujutro u 10:00 s polaskom iz Sobre, liniju 832 Prapratno-Sobra preuzima trajekt Sv. Krševan umjesto trajekta Valun za trajektnu liniju 604 Vela Luka - Split 27.09.2026 (nedjelja) uvodi se dodatno putovanje s polaskom iz luke Vela Luka za luku Split u 21:15 sati od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosirača će u 17:00 sati, odnosno iz luke Molat u 18:15 sati. Red plovidbe subotom i nedjeljom ostaje nepromijenjen (Jadrolinija) Jadrolinijin red plovidbe za 2026…"
  },
  {
