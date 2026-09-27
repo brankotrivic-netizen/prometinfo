@@ -58,10 +58,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Skokovi-Srbljani (Kličići), zbog radova na izgradnji pješačke staze svaki dan osim nedjelje od 07 do 17 sati saobraća se naizmjenično, jednom trakom."
    },
    {
-    "title": "Goražde-Ustikolina-Foča-Goražde",
-    "text": "Danas u periodu od 11:30 do 14:00 sati, doći će do izmjena u saobraćaju na dionici Goražde-Ustikolina-Foča-Goražde zbog održavanja biciklističke trke Premijer lige Bosne i Hercegovine. Saobraćaj će regulisati policija, a vozačima se savjetuje da u ovom periodu planiraju alternativne putne pravce i prate uputstva ovlaštenih lica iz pratnje."
-   },
-   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },

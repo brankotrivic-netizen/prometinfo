@@ -1,40 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-27T09:37:32.183Z";
+export const PROMET_SI_UPDATED = "2026-09-27T14:49:07.019Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;879857;e940c447-395a-4d29-94af-fbdc82b14cde",
+  "id": "DARS;879880;fc156a5a-92f0-4a1c-8232-55a851732708",
   "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, razcep Zadobrova v smeri Zadobrove, dela, oviran promet, strojno pometanje.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.06764,
-  "lng": 14.57251,
-  "start": "2026-09-27T08:56:13.5Z",
-  "end": "2026-09-27T14:00:00Z",
-  "ts": "2026-09-27T08:56:18.703Z"
- },
- {
-  "id": "DARS;879855;5ed1b2a7-a597-444c-aed8-5f55bb741640",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Divača - razcep Gabrk v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.66777,
-  "lng": 13.96839,
-  "start": "2026-09-27T08:40:19.327Z",
-  "end": "2026-09-27T14:00:00Z",
-  "ts": "2026-09-27T08:40:23.543Z"
- },
- {
-  "id": "DARS;879851;3541d94c-7fd2-4d19-8d2a-b38b901d1b33",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Naklo - priključek Kranj zahod v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.27795,
-  "lng": 14.30966,
-  "start": "2026-09-27T08:23:04.76Z",
-  "end": "2026-09-27T14:00:00Z",
-  "ts": "2026-09-27T08:23:07.07Z"
+  "desc": "A1, Ljubljana - Koper, priključek Kastelec - predor Dekani v smeri Kopra, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.56203,
+  "lng": 13.87115,
+  "start": "2026-09-27T12:12:27.203Z",
+  "end": "2026-09-27T19:00:40.637Z",
+  "ts": "2026-09-27T12:12:42.493Z"
  },
  {
   "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
@@ -57,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-10-16T21:59:00Z",
   "ts": "2026-09-26T21:57:28.157Z"
- },
- {
-  "id": "DARS;879795;878b7d49-c651-4e9e-93ca-841000e0dc91",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, priključek Rogoza - razcep Slivnica iz smeri Dragučove proti Ljubljani, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.48991,
-  "lng": 15.66523,
-  "start": "2026-09-26T12:01:56.63Z",
-  "end": "2026-09-27T22:00:00Z",
-  "ts": "2026-09-26T21:57:19.503Z"
  },
  {
   "id": "DARS;879740;81a020e8-e501-4295-a25b-26b125d23e01",
