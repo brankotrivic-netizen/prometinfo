@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-26T22:25:10.116Z";
+export const PROMET_SI_UPDATED = "2026-09-27T09:37:32.183Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;879857;e940c447-395a-4d29-94af-fbdc82b14cde",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, razcep Zadobrova v smeri Zadobrove, dela, oviran promet, strojno pometanje.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.06764,
+  "lng": 14.57251,
+  "start": "2026-09-27T08:56:13.5Z",
+  "end": "2026-09-27T14:00:00Z",
+  "ts": "2026-09-27T08:56:18.703Z"
+ },
+ {
+  "id": "DARS;879855;5ed1b2a7-a597-444c-aed8-5f55bb741640",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Divača - razcep Gabrk v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.66777,
+  "lng": 13.96839,
+  "start": "2026-09-27T08:40:19.327Z",
+  "end": "2026-09-27T14:00:00Z",
+  "ts": "2026-09-27T08:40:23.543Z"
+ },
+ {
+  "id": "DARS;879851;3541d94c-7fd2-4d19-8d2a-b38b901d1b33",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Naklo - priključek Kranj zahod v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.27795,
+  "lng": 14.30966,
+  "start": "2026-09-27T08:23:04.76Z",
+  "end": "2026-09-27T14:00:00Z",
+  "ts": "2026-09-27T08:23:07.07Z"
+ },
+ {
+  "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Nova Gorica - Razdrto, priključek Selo - priključek Vipava v smeri Razdrtega, dela, promet poteka po enem voznem pasu v vsako smer, do 30. 12. 2026.",
+  "loc": "H4, Nova Gorica - Razdrto",
+  "lat": 45.88497,
+  "lng": 13.86159,
+  "start": "2026-06-07T16:16:04.123Z",
+  "end": "2026-12-30T14:00:00Z",
+  "ts": "2026-09-27T03:38:31.907Z"
+ },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
   "type": "MaintenanceWorks",
@@ -26,28 +70,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-26T21:57:19.503Z"
  },
  {
-  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 16. 10. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
-  "loc": "R3-608, Lokve - Čepovan",
-  "lat": 46.03221,
-  "lng": 13.78913,
-  "start": "2026-08-24T05:33:20.253Z",
-  "end": "2026-10-16T21:59:00Z",
-  "ts": "2026-09-26T16:00:51.813Z"
- },
- {
-  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 45.96375,
-  "lng": 15.5243,
-  "start": "2025-10-02T05:56:02.493Z",
-  "end": "2026-12-31T22:59:00Z",
-  "ts": "2026-09-26T15:00:18.803Z"
- },
- {
   "id": "DARS;879740;81a020e8-e501-4295-a25b-26b125d23e01",
   "type": "MaintenanceWorks",
   "desc": "R3-626, Gračišče - Brezovica, pri Brezovici pri Gradinu, oviran promet, vzdrževalna dela, do 28. 9. 2026.",
@@ -68,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-26T03:34:08.643Z",
   "end": "2026-09-30T21:59:00Z",
   "ts": "2026-09-26T03:34:44.12Z"
- },
- {
-  "id": "DARS;879722;42ccdb3d-b6e5-4240-ae97-14a428f48e57",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, počivališče Studenec - priključek Postojna v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.76041,
-  "lng": 14.16462,
-  "start": "2026-09-25T18:40:58.03Z",
-  "end": "2026-09-27T10:00:00Z",
-  "ts": "2026-09-25T19:20:55.557Z"
  },
  {
   "id": "DARS;877874;2cae7ef7-b4d7-4ff9-a025-93268a216b41",
