@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-28T18:12:21.860Z";
+export const PROMET_SI_UPDATED = "2026-09-28T23:14:23.723Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;880207;71df7546-36a0-409e-a9b8-ebbcc8fef13e",
+  "id": "DARS;880217;c3db06df-db08-4574-b4c2-aed894831e38",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.15323,
-  "lng": 14.4789,
-  "start": "2026-09-28T17:26:39.753Z",
-  "end": "2026-09-29T03:00:03.32Z",
-  "ts": "2026-09-28T17:26:41.223Z"
+  "desc": "A2, Ljubljana - zahodna obvoznica, razcep Kozarje - razcep Koseze v smeri Kosez, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A2-E61, Ljubljana - zah. obvoznica",
+  "lat": 46.05206,
+  "lng": 14.45142,
+  "start": "2026-09-28T21:55:14.147Z",
+  "end": "2026-09-29T01:00:10.65Z",
+  "ts": "2026-09-28T21:55:16.153Z"
+ },
+ {
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 22. 10. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-10-22T21:59:00Z",
+  "ts": "2026-09-28T19:00:19.357Z"
  },
  {
   "id": "DARS;880204;1546705a-a9c8-4fa0-96b9-b0f194bf0491",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-28T17:17:44.123Z",
   "end": "2026-09-29T04:00:16.823Z",
   "ts": "2026-09-28T17:17:47.803Z"
- },
- {
-  "id": "DARS;880203;0145e410-6ea0-4762-9dec-6e4b0e4b6baa",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.9713,
-  "lng": 14.66799,
-  "start": "2026-09-28T17:15:17.553Z",
-  "end": "2026-09-28T23:58:10.58Z",
-  "ts": "2026-09-28T17:15:21.763Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -81,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-28T12:09:31.543Z"
  },
  {
-  "id": "DARS;880089;bb71577c-42e6-4746-b5dd-61f287016b38",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-228, Spuhlja - Zavrč, pri Zavrču, izmenično enosmerni promet, popravilo varnostne ograje.",
-  "loc": "R1-228, Spuhlja - Zavrč",
-  "lat": 46.38332,
-  "lng": 16.02676,
-  "start": "2026-09-28T08:31:38.303Z",
-  "end": "2026-09-28T21:59:00Z",
-  "ts": "2026-09-28T08:32:08.68Z"
- },
- {
   "id": "DARS;879948;645c2250-028f-4a2e-a894-60e061a373c6",
   "type": "MaintenanceWorks",
   "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, odstavni pas.",
@@ -101,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-28T02:55:30.897Z",
   "end": "2026-10-01T01:00:03.433Z",
   "ts": "2026-09-28T07:28:28.347Z"
- },
- {
-  "id": "DARS;880054;cdeb7e44-a4e8-4333-9cad-25d5d5f8602e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-235, Murska Sobota (Gaj) - Priključek Murska Sobota, pri Pušči, izmenično enosmerni promet, košnja.",
-  "loc": "R1-235, Ms (Gaj) - Priključek Murska Sobota",
-  "lat": 46.64785,
-  "lng": 16.14569,
-  "start": "2026-09-28T06:53:54.533Z",
-  "end": "2026-09-28T21:59:00Z",
-  "ts": "2026-09-28T06:54:14.057Z"
  },
  {
   "id": "DARS;880043;51d24184-2007-4d1a-b303-a0be77c7e321",
@@ -233,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-04-13T12:05:47.197Z",
   "end": "2026-10-16T21:59:00Z",
   "ts": "2026-09-26T21:57:28.157Z"
- },
- {
-  "id": "DARS;879740;81a020e8-e501-4295-a25b-26b125d23e01",
-  "type": "MaintenanceWorks",
-  "desc": "R3-626, Gračišče - Brezovica, pri Brezovici pri Gradinu, oviran promet, vzdrževalna dela, do 28. 9. 2026.",
-  "loc": "R3-626, Gračišče - Brezovica",
-  "lat": 45.46056,
-  "lng": 13.86035,
-  "start": "2026-09-26T03:36:12.817Z",
-  "end": "2026-09-28T21:59:00Z",
-  "ts": "2026-09-26T03:37:03.733Z"
  },
  {
   "id": "DARS;879739;f8174e60-5a48-4679-b7d4-e7839a5c6819",

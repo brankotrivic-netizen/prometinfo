@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "28.9.2026. 19:59",
-  "text": "Pojačan je promet na gradskim cestama i obilaznicama. U zonama radova mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! životinja (jelen) na autocesti A7 između tunela Katarina i čvora Orehovica - vozi se uz ograničenje brzine od 40 km/h zbog prometne nesreće na autocesti A3 Bregana-Lipovac između čvora Popovača i odmorišta Gračenica u smjeru Lipovca, vozi se uz ograničenje brzine od 80 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik do 02. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gornja Ploča i Sveti Rok: od 204.+250 km do 205. km te između 209.+400 km i 209.+850 km u …"
+  "updated": "29.9.2026. 01:07",
+  "text": "IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 02. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gornja Ploča i Sveti Rok: od 204.+250 km do 205. km te između 209.+400 km i 209.+850 km u smjeru Dubrovnika te između 210.+300 km i 209.+500 km u smjeru Zagreba do 8. listopada između 139. i 145. km (dionica Otočac-Perušić), uključujući i tunel Brezik, vozi se dvosmjerno, jednim kolnikom do 8. listopada zbog radova u tunelu Mala Kapela vozi se dvosmjerno jednom tunelskom cijevi (zatvorena cijev u smjeru Dubrovnika) IZVANREDNI PRIJEVOZ do 30. rujna u noćnim satima od 22:00 do 05:00 sati privremeno i višekratno na maksimalno 15 minuta prekida se prom…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "28.9.2026. 18:43",
+  "updated": "29.9.2026. 00:49",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "28.9.2026. 18:43",
+  "updated": "29.9.2026. 00:17",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 29. rujna trajekt iz luke Vis za luku Split isplovit će u 16:00 sati (umjesto u 15:30 sati). za trajektnu liniju 604 Vela Luka - Split 27.09.2026 (nedjelja) uvodi se dodatno putovanje s polaskom iz luke Vela Luka za luku Split u 21:15 sati od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosirača će u 17:00 sati, odnosno iz luke Molat u 18:15 sati. Red plovidbe subotom i nedjeljom ostaje nepromijenjen (Jadrolinija) Jadrolinijin red plovidbe za 2026. godinu https://www.jadroli…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "28.9.2026. 18:43",
+  "updated": "29.9.2026. 00:17",
   "text": "Stanje u željezničkom putničkom prometu 28. rujna 2026. u 8.30 sati Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Novska i Lipovljani na pruzi Dugo Selo – Novska - između kolodvora Bjelovar i Kloštar na pruzi Kri…"
  },
  {
