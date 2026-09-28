@@ -107,6 +107,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U toku su sanacioni radovi na regionalnom putu R-458 Čelić-Pukiš, zbog čega se svakim danom (osim nedjelje) u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
    },
    {
+    "title": "Turbe-Skender Vakuf/Kneževo (Šešići-Smet)",
+    "text": "U toku su sanacioni radovi, zbog čega se svakim danom (osim nedjelje) u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
