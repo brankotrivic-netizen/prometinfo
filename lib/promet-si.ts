@@ -1,8 +1,85 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-29T16:29:58.347Z";
+export const PROMET_SI_UPDATED = "2026-09-29T20:58:05.449Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;880458;a22ca517-d5da-434b-8b3d-12b34513e97e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, počivališče Studenec - priključek Unec v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.75959,
+  "lng": 14.17541,
+  "start": "2026-09-29T20:07:30.52Z",
+  "end": "2026-09-30T02:00:00Z",
+  "ts": "2026-09-29T20:07:36.337Z"
+ },
+ {
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 22. 10. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-10-22T21:59:00Z",
+  "ts": "2026-09-29T19:00:48.117Z"
+ },
+ {
+  "id": "DARS;880455;39d98216-cfb5-4c2a-9862-de4ad19bc733",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - priključek Ljubljana center v smeri Kozarij, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02546,
+  "lng": 14.5002,
+  "start": "2026-09-29T18:52:11.98Z",
+  "end": "2026-09-30T03:00:15.853Z",
+  "ts": "2026-09-29T18:52:14.553Z"
+ },
+ {
+  "id": "DARS;880204;1546705a-a9c8-4fa0-96b9-b0f194bf0491",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, predor Dekani v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.55499,
+  "lng": 13.80048,
+  "start": "2026-09-29T18:44:37.113Z",
+  "end": "2026-09-30T06:00:00Z",
+  "ts": "2026-09-29T18:45:24.773Z"
+ },
+ {
+  "id": "DARS;880453;5318a09b-c1b1-47c0-8212-f7e072a16aac",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, uvoz Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.02572,
+  "lng": 14.49768,
+  "start": "2026-09-29T18:38:27.403Z",
+  "end": "2026-09-30T03:00:30.353Z",
+  "ts": "2026-09-29T18:38:30.71Z"
+ },
+ {
+  "id": "DARS;880448;edf8c321-73c5-4769-b45b-efc24d068321",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt vozni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.9713,
+  "lng": 14.66799,
+  "start": "2026-09-29T17:35:32.203Z",
+  "end": "2026-09-29T23:58:10.58Z",
+  "ts": "2026-09-29T17:35:35.543Z"
+ },
+ {
+  "id": "DARS;880446;d9e519c3-dba6-4fb5-80fe-c58e22416339",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.15283,
+  "lng": 14.47871,
+  "start": "2026-09-29T17:30:03.24Z",
+  "end": "2026-09-30T03:00:58.17Z",
+  "ts": "2026-09-29T17:30:06.017Z"
+ },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -59,17 +136,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-29T06:21:38.99Z"
  },
  {
-  "id": "DARS;880295;3689d5ee-8d93-41c2-b9f2-f045618ad94d",
-  "type": "MaintenanceWorks",
-  "desc": "R1-209, Bled - Bohinj, Mlino, oviran promet, snemanja resničnostnega šova »Destination X«, do 21:00. Med 13. in 21. uro bo proibližno 3 ure zaprto avtobusno postajališče.",
-  "loc": "R1-209, Bled - Soteska",
-  "lat": 46.35967,
-  "lng": 14.09892,
-  "start": "2026-09-29T11:00:00Z",
-  "end": "2026-09-29T19:00:00Z",
-  "ts": "2026-09-29T06:14:29.7Z"
- },
- {
   "id": "DARS;880291;52e4e52e-f551-4372-bd85-593ccc4257cc",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-644, Šentjakob - Domžale, V Domžalah, Savska cesta, izmenično enosmerni promet, ureditve cestnega priključka in priklopa komunalnih vodov, do 30. 9. 2026.",
@@ -112,17 +178,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-29T05:26:29.937Z",
   "end": "2026-09-30T18:00:00Z",
   "ts": "2026-09-29T05:28:33.16Z"
- },
- {
-  "id": "DARS;880223;f1a218e6-9720-4216-8dc7-5c1ff6979de7",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-214, Kočevje - Žužemberk, pri Jami pri Dvoru, izmenično enosmerni promet, preplastitev, do 20:00.",
-  "loc": "R1-214, Stari Log - Dvor",
-  "lat": 45.80768,
-  "lng": 14.96006,
-  "start": "2026-09-29T03:50:20.967Z",
-  "end": "2026-09-29T18:00:00Z",
-  "ts": "2026-09-29T03:51:02.313Z"
  },
  {
   "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
