@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-09-29T20:58:05.449Z";
+export const PROMET_SI_UPDATED = "2026-09-30T00:02:30.302Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;880458;a22ca517-d5da-434b-8b3d-12b34513e97e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, počivališče Studenec - priključek Unec v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.75959,
-  "lng": 14.17541,
-  "start": "2026-09-29T20:07:30.52Z",
-  "end": "2026-09-30T02:00:00Z",
-  "ts": "2026-09-29T20:07:36.337Z"
- },
  {
   "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -26,17 +15,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-29T19:00:48.117Z"
  },
  {
-  "id": "DARS;880455;39d98216-cfb5-4c2a-9862-de4ad19bc733",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana Rudnik - priključek Ljubljana center v smeri Kozarij, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02546,
-  "lng": 14.5002,
-  "start": "2026-09-29T18:52:11.98Z",
-  "end": "2026-09-30T03:00:15.853Z",
-  "ts": "2026-09-29T18:52:14.553Z"
- },
- {
   "id": "DARS;880204;1546705a-a9c8-4fa0-96b9-b0f194bf0491",
   "type": "MaintenanceWorks",
   "desc": "A1, Koper - Ljubljana, predor Dekani v smeri Ljubljane, dela, zaprt vozni pas.",
@@ -46,39 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-29T18:44:37.113Z",
   "end": "2026-09-30T06:00:00Z",
   "ts": "2026-09-29T18:45:24.773Z"
- },
- {
-  "id": "DARS;880453;5318a09b-c1b1-47c0-8212-f7e072a16aac",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, uvoz Ljubljana center - priključek Ljubljana Rudnik v smeri Malenc, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02572,
-  "lng": 14.49768,
-  "start": "2026-09-29T18:38:27.403Z",
-  "end": "2026-09-30T03:00:30.353Z",
-  "ts": "2026-09-29T18:38:30.71Z"
- },
- {
-  "id": "DARS;880448;edf8c321-73c5-4769-b45b-efc24d068321",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.9713,
-  "lng": 14.66799,
-  "start": "2026-09-29T17:35:32.203Z",
-  "end": "2026-09-29T23:58:10.58Z",
-  "ts": "2026-09-29T17:35:35.543Z"
- },
- {
-  "id": "DARS;880446;d9e519c3-dba6-4fb5-80fe-c58e22416339",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.15283,
-  "lng": 14.47871,
-  "start": "2026-09-29T17:30:03.24Z",
-  "end": "2026-09-30T03:00:58.17Z",
-  "ts": "2026-09-29T17:30:06.017Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
