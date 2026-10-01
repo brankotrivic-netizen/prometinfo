@@ -35,7 +35,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    },
    {
     "title": "Mostar-Čitluk-brdo Hum",
-    "text": "U toku su sanacioni radovi, zbog čega se svakog dana (osim nedjelje), u vremenu od 7 do 16 sati saobraća usporeno, naizmjeničnim propuštanjem vozila."
+    "text": "U toku su sanacioni radovi, zbog čega se svakog dana (osim nedjelje), saobraća usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
     "title": "Grude-Privalj",

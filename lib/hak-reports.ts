@@ -3,23 +3,23 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "1.10.2026. 02:11",
-  "text": "Vremenski su uvjeti povoljni za vožnju. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: životinja (divlja svinja) na autocesti A1 između čvora Šestanovac i čvora Zagvozd (između 423+000 km i 425+000 km), vozi se uz ograničenje brzine od 60 km/h pješak na autocesti A3 između čvora Okučani i čvora Nova Gradiška (na 155+000 km) u u smjeru Lipovca, vozi se po dvije prometne trake uz ograničenje brzine od 60 km/h. PREKID PROMETA VEČERAS (30. rujna/01. listopada): od 00:00 do 05:00 ujutro na autocesti A1 prekida se promet na dionici Donja Zdenčina-Jastrebarsko-Karlovac u oba smjera (…"
+  "updated": "1.10.2026. 12:30",
+  "text": "Na većini cesta vozi se uz povoljne vremenske uvjete i bez posebnih ograničenja. Povremena su usporavanja zbog veće gustoće prometa na pojedinim dionicama autocesta, gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: - Povećana je gustoća prometa, povremeno se vozi usporeno u zonama radova: na autocesti A4 Goričan-Zagreb između čvorova Zagreb istok i Sesvete u smjeru Goričana na riječkoj obilaznici (A7) između čvorova Rijeka zapad i Učka u smeru Rupe na Istarskom ipsilonu (A8) između čvora i tunela Učka u…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "30.9.2026. 22:55",
+  "updated": "1.10.2026. 12:15",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "30.9.2026. 22:55",
-  "text": "U prekidu je katamaranska linija 641 Split–Hvar (Jadrolinija). Izmjene u plovidbenom redu: trajekt na liniji Orebić-Dominče 7. listopada (srijeda), isploviti će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 trajekt na liniji 832 Prapratno-Sobra dana 08.10.2026, isplovit će iz luke Sobra za luku Prapratno u 11:30 sati (umjesto u 10:00 sati) te će iz luke Prapratno za luku Sobra isploviti u 12:30 sati (umjesto u 12:00 sati), Jadrolinija od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosirača će u 17:00 sati, odnosno iz luke Molat…"
+  "updated": "1.10.2026. 12:15",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: trajekt na liniji Orebić-Dominče 7. listopada (srijeda), isploviti će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 trajekt na liniji 832 Prapratno-Sobra dana 08.10.2026, isplovit će iz luke Sobra za luku Prapratno u 11:30 sati (umjesto u 10:00 sati) te će iz luke Prapratno za luku Sobra isploviti u 12:30 sati (umjesto u 12:00 sati), Jadrolinija od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosirača će u 17:00 sati, odnosno iz luke Molat u 18:15 sati. Red plovidbe…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "30.9.2026. 22:40",
-  "text": "Stanje u željezničkom putničkom prometu 30. rujna 2026. u 8.00 sati Od 1. do 30. rujna 2026., od ponedjeljka do petka, između kolodvora Varaždin i Koprivnica umjesto vlaka br. 793 (Čakovec 4.53 - Varaždin 5.06 – Lubreg 5.30 – Koprivnica 5.49) voze autobusi. Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Novska i Lipovljani na pruzi Dugo Selo – Novska - između kolodvora Bjelovar i Kloštar na pruzi Kri…"
+  "updated": "1.10.2026. 12:15",
+  "text": "Stanje u željezničkom putničkom prometu 1. listopada 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Josipovac i Koška na pruzi Varaždin – Dalj - između kolodvora Novska i Lipovljani na pruzi Dugo Selo – Novska - između kolodvora Bjelovar i Kloštar na pruzi Križevci – Bjelovar – Kloštar GK - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloš…"
  },
  {
   "title": "Ograničenja za teretna vozila",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "30.9.2026. 19:00",
-  "text": "Prometna prognoza za Hrvatsku za 1. listopada 2026. Na cestama u unutrašnjosti sutra u jutarnjim satima vidljivost će mjestimice biti smanjena zbog magle. Pojačan promet očekuje se na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone mogući su u zonama radova, osobito tijekom jutra i poslijepodneva. Večeras od ponoći do 5 sati ujutro zbog radova na autocesti A1 bit će zatvorena dionca između čvorova Donja Zdenčina i Jastrebarsko u oba smjera, a po završetku radova na tom dijelu, bit će zatvorena i dionica između čvorova Jastrebarsko i Karlovac u oba smjera. Večeras od 22 do 04 sata ujutro bit će zatvorena autocesta A6 između čvorova Vrbovsko i Ravna Gora u ob…"
+  "updated": "1.10.2026. 08:53",
+  "text": "Prometna prognoza za Hrvatsku za 2. listopada 2026. Na cestama u unutrašnjosti u jutarnjim satima vidljivost će mjestimice biti smanjena zbog magle. Povremena su usporavanja moguća zbog veće gustoće prometa na pojedinim dionicama autocesta, gradskim prometnicama i obilaznicama, osobito zagrebačkoj i riječkoj te u zonama radova i privremene regulacije prometa, posebice na autocesti A4 Goričan-Zagreb između čvorova Sveta Helena i Popovec, Istarskom ipsilonu (A8) između čvora i tunela Učka, državnoj cesti DC1 između Luke i Pojatnog te na Jadranskoj magistrali (DC8) u Crikvenici, kod Solina, između Podstrane i Stobreča te na dubrovačkom području. Gužve u putničkom i teretnom prometu očekuju se n…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
