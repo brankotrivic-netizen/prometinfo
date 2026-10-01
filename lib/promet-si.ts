@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-01T17:08:17.899Z";
+export const PROMET_SI_UPDATED = "2026-10-01T21:47:37.272Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 22. 10. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-10-22T21:59:00Z",
+  "ts": "2026-10-01T19:00:28.07Z"
+ },
+ {
+  "id": "DARS;878682;96432183-b081-4df2-9195-2b4f989cba58",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-738, Tržišče - Hotemež, pri Sredniku, izmenično enosmerni promet, krpanje vozišča, do 9. 10. 2026, dnevno med 7. in 15. uro.",
+  "loc": "R3-738, Tržišče - Hotemež",
+  "lat": 46.02698,
+  "lng": 15.17484,
+  "start": "2026-09-22T05:49:24.12Z",
+  "end": "2026-10-09T21:59:00Z",
+  "ts": "2026-10-01T18:00:55.893Z"
+ },
+ {
+  "id": "DARS;881002;08f917ea-ce51-47c5-8d31-a1278a598538",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, razcep Srmin - priključek Črni Kal v smeri Ljubljane, dela, zaprta vozni in počasni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.55754,
+  "lng": 13.7938,
+  "start": "2026-10-01T17:45:04.323Z",
+  "end": "2026-10-02T08:00:16.83Z",
+  "ts": "2026-10-01T17:45:49.013Z"
+ },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
   "type": "RoadOrCarriagewayOrLaneManagement",

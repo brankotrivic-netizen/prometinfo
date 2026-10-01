@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "1.10.2026. 18:59",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 02. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gospić i Gornja Ploča od 204.+250 km do 205. km u smjeru Dubrovnika te između čvorova Gornja Ploča i Sveti Rok: između 209.+400 km i 209.+850 km u smjeru Dubrovnika te između 210.+300 km i 209.+500 km u smjeru Zagreba do 8. listopada na dionici Otočac-Perušić, između 139. i 145. km, uključujući i tunel Brezik, vozi se dvosmjerno, jednim kolnikom do 8. listopada zbog radova u tunelu Mala Kapela vozi se dvosmjerno jednom tunelskom cijevi (zatvorena cijev u smje…"
+  "updated": "1.10.2026. 23:16",
+  "text": "Jak vjetar puše u priobalju. Zabrana je prometa za pojedine skupine vozila samo na Jadranskoj magistrali-DC8 (vidjeti niže!). Na većini ostalih cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: Životinja (pas) na autocesti A5 oko 72+000 km između čvora Đakovo i čvora Sredanci . požar na vozilu na autocesti A2 Zagreb-Macelj između čvorova Zagreb zapad i Zaprešić u smjeru Maclja. Vozi se usporeno AUTOCESTE A1 Zagreb-Split-Dubrovnik do 02. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gospić i Gornja Ploča od 204.+250 km do 205. km u smjeru Dubrovnika te između čvorova Gornja Ploča i Sveti Rok: između 209.+400…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "1.10.2026. 18:55",
+  "updated": "1.10.2026. 20:21",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "1.10.2026. 18:55",
+  "updated": "1.10.2026. 20:21",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: trajekt na liniji Orebić-Dominče 7. listopada (srijeda), isploviti će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 trajekt na liniji 832 Prapratno-Sobra dana 08.10.2026, isplovit će iz luke Sobra za luku Prapratno u 11:30 sati (umjesto u 10:00 sati) te će iz luke Prapratno za luku Sobra isploviti u 12:30 sati (umjesto u 12:00 sati), Jadrolinija od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosirača će u 17:00 sati, odnosno iz luke Molat u 18:15 sati. Red plovidbe…"
  },
  {
