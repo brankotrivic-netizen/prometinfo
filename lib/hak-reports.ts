@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "30.9.2026. 22:51",
-  "text": "Vremenski su uvjeti povoljni za vožnju. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: PREKID PROMETA VEČERAS (30. rujna/01. listopada): od 00:00 do 05:00 ujutro na autocesti A1 prekida se promet na dionici Donja Zdenčina-Jastrebarsko-Karlovac u oba smjera (obilazak državnom cestom DC1) od 22:00 do 04:00 ujutro na autocesti A6 Rijeka-Zagreb bit će zatvorena dionica između čvorova Vrbovsko i Ravna Gora u oba smjera (obilazak državnom cestom DC3). AUTOCESTE A1 Zagreb-Split-Dubrovnik do 02. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gospić i Gornja Plo…"
+  "updated": "1.10.2026. 02:11",
+  "text": "Vremenski su uvjeti povoljni za vožnju. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: životinja (divlja svinja) na autocesti A1 između čvora Šestanovac i čvora Zagvozd (između 423+000 km i 425+000 km), vozi se uz ograničenje brzine od 60 km/h pješak na autocesti A3 između čvora Okučani i čvora Nova Gradiška (na 155+000 km) u u smjeru Lipovca, vozi se po dvije prometne trake uz ograničenje brzine od 60 km/h. PREKID PROMETA VEČERAS (30. rujna/01. listopada): od 00:00 do 05:00 ujutro na autocesti A1 prekida se promet na dionici Donja Zdenčina-Jastrebarsko-Karlovac u oba smjera (…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "30.9.2026. 22:40",
+  "updated": "30.9.2026. 22:55",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "30.9.2026. 22:40",
+  "updated": "30.9.2026. 22:55",
   "text": "U prekidu je katamaranska linija 641 Split–Hvar (Jadrolinija). Izmjene u plovidbenom redu: trajekt na liniji Orebić-Dominče 7. listopada (srijeda), isploviti će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 trajekt na liniji 832 Prapratno-Sobra dana 08.10.2026, isplovit će iz luke Sobra za luku Prapratno u 11:30 sati (umjesto u 10:00 sati) te će iz luke Prapratno za luku Sobra isploviti u 12:30 sati (umjesto u 12:00 sati), Jadrolinija od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti u 10:00 sati, a iz luke Ist/Kosirača će u 17:00 sati, odnosno iz luke Molat…"
  },
  {
