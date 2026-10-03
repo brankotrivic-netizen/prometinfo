@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-03T21:10:49.924Z";
+export const PROMET_SI_UPDATED = "2026-10-03T23:45:53.617Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;881360;666e380f-9c04-4af2-a8eb-58bb5371cf5a",
@@ -422,17 +422,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-09-28T14:08:25.82Z"
  },
  {
-  "id": "DARS;880043;51d24184-2007-4d1a-b303-a0be77c7e321",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-454, Maribor - Ptuj, pri Hajdošah, izmenično enosmerni promet, dograditev kanalizacije, do 3. 10. 2026.",
-  "loc": "R2-454, Miklavž - Hajdina",
-  "lat": 46.43401,
-  "lng": 15.81894,
-  "start": "2026-09-28T06:10:51.393Z",
-  "end": "2026-10-03T21:59:00Z",
-  "ts": "2026-09-28T06:11:52.91Z"
- },
- {
   "id": "DARS;863053;9e9e00dd-7995-4163-ac84-3ba452223cdd",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-666, Sopota - Podkum - Zagorje, pri Šklendrovcu, izmenično enosmerni promet, sanacija brežin, do 31. 10. 2026.",
@@ -464,17 +453,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-24T05:40:17.887Z",
   "end": "2026-10-05T21:59:00Z",
   "ts": "2026-09-28T05:16:18.92Z"
- },
- {
-  "id": "DARS;879998;4c520bcc-3126-46ed-a19f-e8675f541b05",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-906, Mrzli Studenec - Rudno polje, pri Krašcah, izmenično enosmerni promet, vzdrževalna dela, do 3. 10. 2026.",
-  "loc": "RT-906, Mrzli Studenec - Rudno Polje",
-  "lat": 46.34952,
-  "lng": 13.92775,
-  "start": "2026-09-28T05:08:49.77Z",
-  "end": "2026-10-03T21:59:00Z",
-  "ts": "2026-09-28T05:09:32.493Z"
  },
  {
   "id": "DARS;878961;5434a3e9-c781-4549-b160-ac43a4634d8c",
