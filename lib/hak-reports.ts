@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "3.10.2026. 11:26",
-  "text": "U priobalju puše jak vjetar. Zabrana je prometa za pojedine skupine vozila na Jadranskoj magistrali (DC8) ( opširnije u izvješću ). Vozačima savjetujemo da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog radova na zagrebačkoj obilaznici (A3) između čvorova Jakuševec i Kosnica u smjeru Lipovca vozi se jednim trakom, uz kraće zastoje i u koloni od 3 km zbog veće gustoće prometa na riječkoj obilaznici (A7) na prilazu zoni radova kod čvora Učka u smjeru Rupe, Istre i Opatije kolona je 2 km AUTOCESTE A1 Zagreb-Split-Dubrovnik do 05. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gornj…"
+  "updated": "3.10.2026. 16:14",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama, obilaznicama i pojedinim dionicama autocesta. U zonama radova i privremene regulacije prometa vozi se u kolonama u pokretu i uz kraće zastoje. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: zbog požara je zatvorena ŽC6293 između mjesta Seget Gornji i Donji prometna nesreća na autocesti A3 na 16+000 km između čvora Zagreb zapad i čvora Lučko u smjeru Lipovca, vozi se uz ograničenje brzine od 60 km/h. prometna nesreća na autocesti A1 kod odmorišta Sitno u smjeru Zagreba, vozi se uz ograničenje brzine od 60 km/h. zbog radova na zagrebačkoj obilaznici (A3) između čvorova Jakuševec i Kosnica u smje…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "3.10.2026. 11:26",
+  "updated": "3.10.2026. 14:11",
   "text": "Kolona teretnih vozila na autocesti A3 ispred graničnog prijelaza Bajakovo u smjeru Lipovca duga je 2 km. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izla…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "3.10.2026. 11:26",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 6. listopada trajekt će iz luke Split za luku Stari Grad isploviti u 23:15 sati (umjesto u 20:30 sati) trajekt na liniji Orebić-Dominče 7. listopada (srijeda), isploviti će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 trajekt na liniji 832 Prapratno-Sobra dana 08.10.2026, isplovit će iz luke Sobra za luku Prapratno u 11:30 sati (umjesto u 10:00 sati) te će iz luke Prapratno za luku Sobra isploviti u 12:30 sati (umjesto u 12:00 sati), Jadrolinija od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti…"
+  "updated": "3.10.2026. 14:11",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: trajektnu liniju Prapratno-Sobra, 3. listopada u 15:00 sati, s polaskom iz Sobre, preuzima trajekt \"Valun\", a trajekt Sv. Krševan vraća se na liniju Orebić-Dominče 6. listopada trajekt će iz luke Split za luku Stari Grad isploviti u 23:15 sati (umjesto u 20:30 sati) trajekt na liniji Orebić-Dominče 7. listopada (srijeda), isploviti će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 trajekt na liniji 832 Prapratno-Sobra dana 08.10.2026, isplovit će iz luke Sobra za luku Prapratno u 11:30 sati (umjesto u 10:00 sati) te će iz luke Prapratno za luku Sobra isploviti u 12:30 sati (umjesto u 12:00 sati), Jadrolinija od ponedjelj…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "3.10.2026. 06:33",
+  "updated": "3.10.2026. 12:33",
   "text": "Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Josipovac i Koška na pruzi Varaždin – Dalj - između kolodvora Bjelovar i Kloštar na pruzi Križevci – Bjelovar – Kloštar GK - između kolodvora Varaždin i Koprivnica na pruzi Varaždin – Koprivnica - između kolodvora Kloštar i Koprivnica na pruzi Koprivnica – Dalj - između…"
  },
  {
