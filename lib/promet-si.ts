@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-02T20:45:49.618Z";
+export const PROMET_SI_UPDATED = "2026-10-03T00:03:17.063Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;881256;6caa3a7a-b08d-4106-8b01-8030d1f885dd",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, pred predorom Karavanke v smeri Karavank, Avstrije, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.44618,
-  "lng": 14.00934,
-  "start": "2026-10-02T20:14:37.06Z",
-  "end": "2026-10-02T22:40:32.69Z",
-  "ts": "2026-10-02T20:15:09.43Z"
- },
  {
   "id": "DARS;881214;ee50e501-f514-4ec6-bab1-331c6b80b1ab",
   "type": "MaintenanceWorks",
@@ -24,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-02T15:20:42.553Z",
   "end": "2026-10-22T21:00:00Z",
   "ts": "2026-10-02T20:01:37.1Z"
- },
- {
-  "id": "DARS;881251;60da355e-d172-47ad-8c09-32c05af2e86d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana jug - razcep Zadobrova iz smeri Rudnika proti Golovcu, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.01434,
-  "lng": 14.54021,
-  "start": "2026-10-02T19:31:22.153Z",
-  "end": "2026-10-02T21:59:00Z",
-  "ts": "2026-10-02T19:57:02.877Z"
  },
  {
   "id": "DARS;881252;be16615d-4a85-4e79-9c82-23fcb512d286",
