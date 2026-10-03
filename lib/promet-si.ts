@@ -1,8 +1,74 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-03T14:23:20.233Z";
+export const PROMET_SI_UPDATED = "2026-10-03T18:02:48.220Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;881350;418199ec-74a3-4d26-997a-f3bd75fdb667",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, predor Mali Vrh - uvoz Ljubljana jug v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.97838,
+  "lng": 14.60796,
+  "start": "2026-10-03T17:58:38.54Z",
+  "end": "2026-10-03T21:55:23.8Z",
+  "ts": "2026-10-03T17:58:45.28Z"
+ },
+ {
+  "id": "DARS;880750;4341866b-bc44-40e8-b470-ca3377982c87",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - predor Ločica v smeri Ljubljane, dela, odstavni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25351,
+  "lng": 14.97584,
+  "start": "2026-09-30T21:08:08.99Z",
+  "end": "2026-10-04T18:00:00Z",
+  "ts": "2026-10-03T17:57:37.29Z"
+ },
+ {
+  "id": "DARS;881323;e8b5fdb9-28d4-4fce-ab66-79dcd88183e5",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.93412,
+  "lng": 14.79612,
+  "start": "2026-10-03T11:15:40.177Z",
+  "end": "2026-10-03T21:59:00Z",
+  "ts": "2026-10-03T17:46:40.943Z"
+ },
+ {
+  "id": "DARS;881345;bce7f080-2ad6-46f4-9dec-365f920760b8",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, izvoz 46 Divača - izvoz 46 Divača iz smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.66852,
+  "lng": 13.96855,
+  "start": "2026-10-03T16:52:47.117Z",
+  "end": "2026-10-03T21:00:00Z",
+  "ts": "2026-10-03T16:53:25.143Z"
+ },
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 16. 10. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-10-16T21:59:00Z",
+  "ts": "2026-10-03T16:00:38.213Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-10-03T15:00:06.977Z"
+ },
  {
   "id": "DARS;874696;31cf39f2-c9d7-4bef-9c5c-00dc4978b05f",
   "type": "MaintenanceWorks",
@@ -26,17 +92,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-03T14:00:40.047Z"
  },
  {
-  "id": "DARS;881338;0da6c3c1-a441-4cd5-b45b-8d79bd1003c7",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, razcep Koseze iz smeri Dravelj proti Šentvidu, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.0719,
-  "lng": 14.46118,
-  "start": "2026-10-03T13:45:36.603Z",
-  "end": "2026-10-03T19:00:00Z",
-  "ts": "2026-10-03T13:45:40.973Z"
- },
- {
   "id": "DARS;881329;405f9af4-4fc2-4307-9114-4017a2790c1a",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - Koper, počivališče Studenec - priključek Razdrto v smeri Kopra, dela, zaprt vozni pas.",
@@ -48,17 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-03T12:33:16.023Z"
  },
  {
-  "id": "DARS;881323;e8b5fdb9-28d4-4fce-ab66-79dcd88183e5",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.93412,
-  "lng": 14.79612,
-  "start": "2026-10-03T11:15:40.177Z",
-  "end": "2026-10-03T16:31:44.707Z",
-  "ts": "2026-10-03T11:15:56.287Z"
- },
- {
   "id": "DARS;871074;a4b637af-52dc-4c7c-b59e-37d947e39102",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G1-4, Velenje - Slovenj Gradec, pri Paki pri Velenju, izmenično enosmerni promet, preplastitev vozišča, do 5. 10. 2026.",
@@ -68,17 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-21T05:38:14.02Z",
   "end": "2026-10-05T21:59:00Z",
   "ts": "2026-10-03T04:37:05.49Z"
- },
- {
-  "id": "DARS;881214;ee50e501-f514-4ec6-bab1-331c6b80b1ab",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Bič - priključek Ivančna Gorica v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.92644,
-  "lng": 14.86302,
-  "start": "2026-10-02T15:20:42.553Z",
-  "end": "2026-10-22T21:00:00Z",
-  "ts": "2026-10-02T20:01:37.1Z"
  },
  {
   "id": "DARS;865957;111ccac2-4aa8-4e72-8cb3-0ae5cd887f66",
@@ -178,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-01T04:14:58.93Z",
   "end": "2026-10-22T21:59:00Z",
   "ts": "2026-10-01T04:16:21.303Z"
- },
- {
-  "id": "DARS;880750;4341866b-bc44-40e8-b470-ca3377982c87",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - predor Ločica v smeri Ljubljane, dela, odstavni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25351,
-  "lng": 14.97584,
-  "start": "2026-09-30T21:08:08.99Z",
-  "end": "2026-10-03T18:00:39.203Z",
-  "ts": "2026-09-30T21:09:02.733Z"
  },
  {
   "id": "DARS;880733;9dde930e-a29f-4200-9ca8-8b68585189cc",

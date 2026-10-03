@@ -54,6 +54,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Skokovi-Srbljani (Kličići), zbog radova na izgradnji pješačke staze svaki dan osim nedjelje od 07 do 17 sati saobraća se naizmjenično, jednom trakom."
    },
    {
+    "title": "M-17 Ilidža (Lužani)",
+    "text": "Zbog radova na izgradnji dva kružna toka (spoj magistralnog puta M-17 sa ulicom Samira Ćatovića Kobre i spoj magistralnog puta M-17 sa ulicom Željeznička-Emira Bogunića Čarlija), saobraćaj je obustavljen do okončanja radova. Vozila se preusmjeravaju na alternativne pravce Blažuj-Ilidža i Ilidža-Blažuj. Molimo vozače za oprez i poštivanje privremene signalizacije."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },
