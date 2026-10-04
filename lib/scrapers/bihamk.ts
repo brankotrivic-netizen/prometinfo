@@ -58,7 +58,10 @@ export async function scrapeBihamk(): Promise<SourceResult> {
       if (!status) status = "Ni podatka o cakanju.";
 
       const parsed = parseWaitText(status);
-      const id = `ba-${slug(crossing)}`;
+      let id = `ba-${slug(crossing)}`;
+      // BIHAMK: "Gradiška" = stari most, "Gradiška novi most" = nas ba-gradiska (Gornji Varoš)
+      if (id === "ba-gradiska") id = "ba-gradiska-stari-most";
+      else if (id === "ba-gradiska-novi-most") id = "ba-gradiska";
       const meta = metaForId(id);
 
       reports.push({

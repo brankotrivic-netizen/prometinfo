@@ -557,6 +557,9 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .fold>summary{cursor:pointer;font-weight:600;font-size:14px}
 .rmore{margin-top:8px;border-top:1px dashed var(--line,#e2e8f0);padding-top:6px}
 .rmore>summary{cursor:pointer;font-size:13px;font-weight:600;color:#1d4ed8}
+.livesrc{font-size:12px;color:#15803d;margin:-4px 0 8px}
+.liveline{font-size:13px;line-height:1.45;margin:6px 0 2px;padding:6px 9px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px}
+@media(prefers-color-scheme:dark){.liveline{background:#052e16;border-color:#14532d}}
 .fbbtn{display:inline-block;background:#1877f2;color:#fff!important;text-decoration:none;border-radius:7px;padding:3px 9px;font-size:13px;font-weight:600;margin:2px 0 4px}
 .alertbox{background:#fef2f2;border:2px solid #dc2626;color:#7f1d1d;border-radius:10px;padding:10px 12px;margin:0 0 10px;font-size:13.5px;line-height:1.5;display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .alertbox button{flex:none;background:none;border:none;color:#7f1d1d;font-size:16px;cursor:pointer}
@@ -1346,6 +1349,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function scoreCrossing(p, role){
     // Ocena mora uporabljati smer poti, ne najslabše čakalne dobe v nasprotni smeri.
     var s=50, w=paxTruck(p).pax;
+    if(bihQueueMine(p)) w=Math.max(w==null?0:w,61);
     if(w!=null){ if(w<=15)s+=35; else if(w<=30)s+=25; else if(w<=60)s+=5; else s-=25; }
     else { s+=(LVLNUM[p.level]!=null?LVLNUM[p.level]:-15); }
     if(p.images&&p.images.length) s+=10;
@@ -1732,6 +1736,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var pt=paxTruck(p), px=pt.pax, tr=pt.truck;
     var s=socSplit(p.id), cc=ccLast(p.id), tt=TTRES[p.id];
     var notes=[], likelyTruck=false;
+    if(bihQueueMine(p)){ px=Math.max(px==null?0:px,61); notes.push('⚠ BIHAMK javlja dolgo kolono osebnih vozil v tvoji smeri (brez točnih minut) — računaj z več kot 1 h ali preveri kamero.'); }
     var hakAge=hakDirAge(p);
     if(hakAge!=null&&hakAge>90){
       var fb=p.hak&&p.hak.bihamkFallbackWaitMin;
@@ -1811,7 +1816,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +' · <button class="linklike" onclick="addSocial(\\''+id+'\\')">➕ dodaj</button>'
       +' · <button class="linklike" onclick="shareCrossing(\\''+id+'\\')">📤 deli</button>';
     var cn=conclude(p);
-    var vehLines='<div class="vehrow" style="color:'+cn.pax.c+'">🚗 Osebna vozila: <b>'+cn.pax.e+' '+cn.pax.t+'</b>'+(cn.paxMin!=null?' <span class="meta">(~'+cn.paxMin+' min)</span>':'')+'</div>'
+    var vehLines='<div class="vehrow" style="color:'+cn.pax.c+'">🚗 Osebna vozila: <b>'+cn.pax.e+' '+cn.pax.t+'</b>'+(cn.paxMin!=null?' <span class="meta">('+(cn.paxMin===61&&bihQueueMine(p)?'več kot 1 h':'~'+cn.paxMin+' min')+')</span>':'')+'</div>'
       +'<div class="vehrow" style="color:'+cn.truck.c+'">🚚 Tovorna vozila: <b>'+cn.truck.e+' '+cn.truck.t+'</b>'+(cn.truckMin!=null?' <span class="meta">(~'+cn.truckMin+' min)</span>':'')+(cn.likelyTruck?' <span class="ttag">verjetno kamionska kolona</span>':'')+'</div>';
     var cc=ccLast(id);
     var camBlock='<div class="camver">📷 Kamera preverjanje: '
@@ -1824,6 +1829,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">Ocena '+sc+'/100</span></div>'
       +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
       +vehLines
+      +liveLine(p)
       +'<details class="rmore"'+(foldOpen('card-'+id)?' open':'')+' ontoggle="foldSave(\\'card-'+id+'\\',this.open)"><summary>Podrobnosti · smeri, kamere, Waze, FB</summary>'
       +'<div class="rdir">'+dirWaits(p)+'</div>'
       +'<div id="wx-'+id+'" class="wxslot"></div>'
@@ -1930,7 +1936,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function borderFresh(p){
     if(!p)return 'ni mejnega podatka'; var parts=[];
     if(p.hak){ var iso=hakDirIso(p),a=iso?Math.round((Date.now()-Date.parse(iso))/60000):null; parts.push('HAK'+(a!=null?' pred '+a+' min':'')); }
-    if(p.hasLive)parts.push('BIHAMK paket pred '+Math.max(0,Math.round((Date.now()-Date.parse(PAGE_BUILT_AT))/60000))+' min');
+    if(p.hasLive)parts.push('BIHAMK pred '+Math.max(0,Math.round((Date.now()-Date.parse(LIVEW.at||PAGE_BUILT_AT))/60000))+' min');
     if(p.amss&&p.amss.ts){var aa=Math.round((Date.now()-Date.parse(p.amss.ts))/60000);parts.push('AMSS pred '+aa+' min');}
     return parts.length?parts.join(' · '):'čas meritve ni objavljen';
   }
@@ -2019,10 +2025,91 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<div class="meta" style="font-size:11px;margin-top:4px">Ocena iz praznikov in šolskih počitnic (SI, HR, BiH, RS, MNE, AT, DE, CH, IT); diaspora tja ob začetku, nazaj ob koncu. Ni meritev v živo.</div>'
       +'</details>';
   }
+  // ---- ZIVE CAKALNE DOBE prek Cloudflare Workerja (server/live-worker.js) ----
+  // Vire (HAK, BIHAMK, AMSS) pobere v zivo; brez tega so podatki stari kolikor je star zadnji cron (3-5 h).
+  var LIVE_URL='https://prometinfo-live.branko-trivic.workers.dev/waits', LIVEW={at:null,ok:{},err:false,sig:''};
+  function lvlOf(m){ return m==null?'unknown':m<=0?'none':m<=30?'low':m<=60?'moderate':m<=120?'high':'severe'; }
+  function liveAgeMin(){ return LIVEW.at?Math.max(0,Math.round((Date.now()-Date.parse(LIVEW.at))/60000)):null; }
+  function applyLiveWaits(d){
+    var hm={}, bm={}, am={};
+    if(d.hak&&d.hak.ok) d.hak.items.forEach(function(i){ if(i.id) hm[i.id]=i; });
+    if(d.bihamk&&d.bihamk.ok) d.bihamk.items.forEach(function(i){ bm[i.id]=i; });
+    if(d.amss&&d.amss.ok) d.amss.items.forEach(function(i){ am[i.id]=i; });
+    PTS.forEach(function(p){
+      if(p.lat==null) return;
+      // BIHAMK obojesmerna ocena: nova iz zivega vira, sicer tista iz zadnje osvezitve
+      var bihMin=p.bih?p.bih.min:(p.hak?p.hak.bihamkFallbackWaitMin:(p.hasLive?p.waitMinutes:null));
+      if(d.bihamk&&d.bihamk.ok){ var b=bm[p.id]; if(b){ p.hasLive=true; p.bih={min:b.waitMinutes,status:b.status}; bihMin=b.waitMinutes; } }
+      var touched=!!(p.hak||p.hasLive||p.amss);
+      if(d.hak&&d.hak.ok){
+        var w=hm[p.id];
+        if(w) p.hak={ulazMin:w.ulazMin,izlazMin:w.izlazMin,ulazTxt:w.ulazTxt,izlazTxt:w.izlazTxt,truckUlazMin:w.truckUlazMin,truckIzlazMin:w.truckIzlazMin,truckUlazTxt:w.truckUlazTxt,truckIzlazTxt:w.truckIzlazTxt,bihamkFallbackWaitMin:p.hasLive?bihMin:null,ulazTsISO:w.ulazTsISO||w.tsISO,izlazTsISO:w.izlazTsISO||w.tsISO,tsISO:w.tsISO,ulazTs:w.ulazTs,izlazTs:w.izlazTs};
+        else if(p.hak) delete p.hak; // HAK objavi le prehode, ki trenutno imajo cakanje
+      }
+      if(d.amss&&d.amss.ok){ var a=am[p.id]; if(a) p.amss={ulazMin:a.ulazMin,izlazMin:a.izlazMin,ulazTxt:a.ulazTxt,izlazTxt:a.izlazTxt,truckUlazMin:a.truckUlazMin,truckIzlazMin:a.truckIzlazMin,truckUlazTxt:a.truckUlazTxt,truckIzlazTxt:a.truckIzlazTxt,ts:a.ts}; else if(p.amss) delete p.amss; }
+      if(!touched && !(p.hak||p.hasLive||p.amss)) return;
+      // isto kot pri gradnji strani (build-preview.ts, HAK/AMSS blok)
+      if(p.hak){
+        var f=[], h=p.hak;
+        [[h.ulazMin,h.ulazTsISO],[h.izlazMin,h.izlazTsISO]].forEach(function(x){ if(x[0]!=null&&x[1]&&(Date.now()-Date.parse(x[1]))/60000<=90) f.push(x[0]); });
+        if(h.bihamkFallbackWaitMin!=null) f.push(h.bihamkFallbackWaitMin);
+        p.waitMinutes=f.length?Math.max.apply(null,f):null;
+        var parts=[]; if(h.ulazMin!=null) parts.push('vstop v HR '+h.ulazTxt+(h.ulazTs?' ('+h.ulazTs+')':'')); if(h.izlazMin!=null) parts.push('izstop iz HR '+h.izlazTxt+(h.izlazTs?' ('+h.izlazTs+')':''));
+        p.rawStatus='🇭🇷 HAK/MUP: '+parts.join(', ');
+      } else if(p.hasLive){
+        p.waitMinutes=bihMin; p.rawStatus=p.bih?('🇧🇦 BIHAMK: '+p.bih.status):p.rawStatus;
+      } else if(p.amss){
+        var wst=Math.max(p.amss.ulazMin==null?-1:p.amss.ulazMin,p.amss.izlazMin==null?-1:p.amss.izlazMin);
+        p.waitMinutes=wst>=0?wst:null;
+        p.rawStatus='🇷🇸 AMSS: '+[p.amss.ulazMin!=null?'vstop v Srbijo '+p.amss.ulazTxt:'',p.amss.izlazMin!=null?'izstop iz Srbije '+p.amss.izlazTxt:''].filter(Boolean).join(', ');
+      } else { p.waitMinutes=null; p.rawStatus='Čakanje: ni objavljeno — preveri kamero.'; }
+      p.level=lvlOf(p.waitMinutes);
+    });
+  }
+  function liveSrcLine(){
+    var a=liveAgeMin();
+    if(!LIVEW.at) return LIVEW.err?'⚠️ Strežnik za žive čakalne dobe ni dosegljiv — prikazujem zadnjo osvežitev.':'⏳ Pobiram žive čakalne dobe…';
+    var src=['hak','bihamk','amss'].map(function(k){ return (LIVEW.ok[k]?'✓ ':'✗ ')+({hak:'HAK',bihamk:'BIHAMK',amss:'AMSS'})[k]; }).join(' · ');
+    return '⚡ Čakalne dobe v živo · pobrano pred '+(a<1?'manj kot 1':a)+' min · '+src;
+  }
+  // BIHAMK opisno: "Duga je kolona putnickih vozila na izlazu iz BiH" -> kolona v smeri izlaz/ulaz (BiH strani)
+  function bihQueueDir(p){
+    if(!p.bih||!p.bih.status||p.id.indexOf('ba-')!==0) return null;
+    var hit=null;
+    p.bih.status.split(/[.]/).forEach(function(sn){ var t=sn.toLowerCase();
+      if(/(dug|velik|duz)[a-zčšž]* +(je +)?kolon|guzv|gužv/.test(t) && /putni/.test(t)){ if(/izlaz/.test(t)) hit=hit||'izlaz'; else if(/ulaz/.test(t)) hit=hit||'ulaz'; else hit=hit||'oba'; } });
+    return hit;
+  }
+  function bihQueueMine(p){ var d=bihQueueDir(p); if(!d) return false; return d==='oba' || d===(REV?'izlaz':'ulaz'); }
+  function liveLine(p){
+    if(!LIVEW.at) return '';
+    var t=[];
+    if(p.hak){ var hi=REV?p.hak.ulazTsISO:p.hak.izlazTsISO, ht=REV?p.hak.ulazTs:p.hak.izlazTs, hv=REV?p.hak.ulazTxt:p.hak.izlazTxt;
+      if(hi) t.push('🇭🇷 HAK '+(REV?'vstop v HR':'izstop iz HR')+': <b>'+safeHtml(hv||'-')+'</b> <span class="meta">(objava '+Math.round((Date.now()-Date.parse(hi))/60000)+' min nazaj)</span>'); }
+    if(p.bih&&p.bih.status) t.push((bihQueueMine(p)?'<b style="color:#dc2626">⚠ Duga kolona v tvoji smeri</b><br>':'')+'🇧🇦 BIHAMK: '+safeHtml(p.bih.status));
+    if(p.amss) t.push('🇷🇸 AMSS: '+(REV?'izstop':'vstop')+' '+safeHtml((REV?p.amss.izlazTxt:p.amss.ulazTxt)||'-'));
+    return t.length?'<div class="liveline">⚡ '+t.join('<br>')+'</div>':'';
+  }
+  function fetchLiveWaits(force){
+    if(document.visibilityState==='hidden' && !force) return;
+    fetch(LIVE_URL+(force===true?'?fresh=1':''),{cache:'no-store'}).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(d){
+      var sig=JSON.stringify([d.hak&&d.hak.items,d.bihamk&&d.bihamk.items,d.amss&&d.amss.items].map(function(x){ return (x||[]).map(function(i){ return [i.id,i.ulazMin,i.izlazMin,i.waitMinutes,i.ulazTsISO,i.izlazTsISO]; }); }));
+      LIVEW.at=d.ts; LIVEW.err=false; LIVEW.ok={hak:!!(d.hak&&d.hak.ok),bihamk:!!(d.bihamk&&d.bihamk.ok),amss:!!(d.amss&&d.amss.ok)};
+      var changed=sig!==LIVEW.sig; LIVEW.sig=sig;
+      if(changed){ applyLiveWaits(d); if(CURRENT_ROUTE){ var y=window.scrollY; renderRoute(CURRENT_ROUTE); try{ renderLiveAnswer(); }catch(e){} window.scrollTo(0,y); } }
+      var el=document.getElementById('liveSrc'); if(el) el.textContent=liveSrcLine();
+    }).catch(function(){ LIVEW.err=true; var el=document.getElementById('liveSrc'); if(el) el.textContent=liveSrcLine(); });
+  }
+  window.fetchLiveWaits=fetchLiveWaits;
+  setTimeout(function(){ fetchLiveWaits('init'); },300);
+  setInterval(function(){ fetchLiveWaits(false); },120000);
+  setInterval(function(){ var el=document.getElementById('liveSrc'); if(el) el.textContent=liveSrcLine(); },30000);
+  document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='visible' && (!LIVEW.at || liveAgeMin()>=2)) fetchLiveWaits(false); });
   function renderRoute(pr){
     CURRENT_ROUTE=pr; window._curRoute=pr;
     var res=document.getElementById('routeResult');
     var html='<h2>Moja pot: '+rFrom(pr)+' → '+rTo(pr)+'</h2>';
+    html+='<div id="liveSrc" class="livesrc">'+liveSrcLine()+'</div>';
     html+=alertsBanner(pr);
     html+='<div id="liveAnswer" class="liveanswer" style="display:none"></div>';
     html+='<div id="locBanner" class="locbanner" style="display:none"></div>';
