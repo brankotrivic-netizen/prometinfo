@@ -15,7 +15,8 @@ function loadArr(rel, name) {
   if (!existsSync(p)) return [];
   try {
     const t = readFileSync(p, "utf8");
-    const m = new RegExp(name + "\\s*=\\s*(\\[[\\s\\S]*\\]);\\s*$", "m").exec(t);
+    // dovoli tipizirano deklaracijo "NAME: Tip[] = [...]" (tako pišejo vsi scraperji)
+    const m = new RegExp(name + "\\s*(?::[^=]*)?=\\s*(\\[[\\s\\S]*\\]);?\\s*$", "m").exec(t);
     return m ? JSON.parse(m[1]) : [];
   } catch (e) { console.warn("  bran " + rel + " ni uspel:", e.message); return []; }
 }
@@ -30,9 +31,12 @@ for (const w of loadArr("lib/hak-waits.ts", "HAK_WAITS")) {
   const k = (w.truckUlazMin != null || w.truckIzlazMin != null) ? Math.max(w.truckUlazMin || 0, w.truckIzlazMin || 0) : null;
   if (p != null || k != null) snap.set(w.id, { p, k });
 }
-// AMSS
+// AMSS — preskoci zastarele vnose (ko je vir blokiran, scraper obdrzi stare podatke;
+// teh ne smemo beleziti kot sveze, sicer pokvarijo napoved)
+const MAX_STALE = 6 * 3600 * 1000;
 for (const w of loadArr("lib/amss-waits.ts", "AMSS_WAITS")) {
   if (!w.id || snap.has(w.id)) continue;
+  if (!w.ts || now - Date.parse(w.ts) > MAX_STALE) continue;
   const p = (w.ulazMin != null || w.izlazMin != null) ? Math.max(w.ulazMin || 0, w.izlazMin || 0) : null;
   const k = (w.truckUlazMin != null || w.truckIzlazMin != null) ? Math.max(w.truckUlazMin || 0, w.truckIzlazMin || 0) : null;
   if (p != null || k != null) snap.set(w.id, { p, k });
