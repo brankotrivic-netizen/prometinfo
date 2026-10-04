@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-04T10:33:03.263Z";
+export const PROMET_SI_UPDATED = "2026-10-04T15:26:33.190Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;881370;ec98e0a6-a2e5-4264-974f-ef89cb79926c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, predor Ločica - izvoz Vransko v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.21839,
-  "lng": 14.93975,
-  "start": "2026-10-04T05:20:01.55Z",
-  "end": "2026-10-04T13:00:00Z",
-  "ts": "2026-10-04T05:20:13.883Z"
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-10-04T15:00:31.167Z"
  },
  {
   "id": "DARS;865957;111ccac2-4aa8-4e72-8cb3-0ae5cd887f66",
@@ -24,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-27T06:25:42.103Z",
   "end": "2026-10-30T22:59:00Z",
   "ts": "2026-10-04T03:45:50.153Z"
- },
- {
-  "id": "DARS;881362;3d6960b9-a09b-4b8f-9995-e069bd3c0229",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, predor Pletovarje - priključek Sl. Konjice v smeri Maribora, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.29142,
-  "lng": 15.43847,
-  "start": "2026-10-04T03:10:56.93Z",
-  "end": "2026-10-04T11:00:53.943Z",
-  "ts": "2026-10-04T03:11:05.787Z"
  },
  {
   "id": "DARS;877398;491bef98-8f54-45cf-b4ab-26c3623df584",
