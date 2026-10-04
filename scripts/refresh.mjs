@@ -16,6 +16,7 @@ const steps = [
   ["Črpalke OSM (1x/teden)", "node", ["scripts/build-fuel-stations.mjs"]],
   ["SI kamere (NAP/DARS)", "node", ["scripts/refresh-si-cams.mjs"]],
   ["Zgodovina čakanj (napoved)", "node", ["scripts/build-wait-history.mjs"]],
+  ["Prometni koledar (1x/dan)", "node", ["scripts/build-traffic-calendar.mjs"]],
 ];
 
 let failed = 0;
