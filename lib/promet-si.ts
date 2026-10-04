@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-04T10:16:58.159Z";
+export const PROMET_SI_UPDATED = "2026-10-04T10:33:03.263Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;881370;ec98e0a6-a2e5-4264-974f-ef89cb79926c",
@@ -13,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-04T05:20:01.55Z",
   "end": "2026-10-04T13:00:00Z",
   "ts": "2026-10-04T05:20:13.883Z"
- },
- {
-  "id": "DARS;881369;d58880f4-ce29-4f6f-9a0c-44f32bebe2b2",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.93412,
-  "lng": 14.79612,
-  "start": "2026-10-04T05:05:25.237Z",
-  "end": "2026-10-04T17:00:12.26Z",
-  "ts": "2026-10-04T05:05:40.127Z"
  },
  {
   "id": "DARS;865957;111ccac2-4aa8-4e72-8cb3-0ae5cd887f66",
