@@ -9,10 +9,15 @@ const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 
 // slug -> [ime, lat, lng]  (koordinate iz registra prehodov)
 const GP = {
+<<<<<<< HEAD
   // Novi prehod Gornji Varoš–Gradiška; koordinate morajo ustrezati ba-gradiska,
   // da se obe kameri AMS-RS prikažeta tudi na kartici poti.
   "gradiska": ["Gornji Varoš–Gradiška (novi most)", 45.148, 17.204],
   "gradina-gradina-donja": ["GP Gradina (Donja Gradina)", 45.27, 16.93],
+=======
+  "gradiska": ["GP Gradiška", 45.136, 17.203], // NOVI most (Bosanska Gradiška); star prehod je zaprt,
+  "gradina-gradina-donja": ["GP Gradina (Donja Gradina)", 45.2654, 16.919],
+>>>>>>> f96ffbf (Popravek: AMS-RS kamere novega prehoda Gradiska spet pripete)
   "raca": ["GP Rača", 44.90, 19.32],
   "zupci": ["GP Zupci", 42.68, 18.40],
   "brod": ["GP Brod", 45.14, 17.99],
