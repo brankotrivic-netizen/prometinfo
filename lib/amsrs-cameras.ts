@@ -4,39 +4,29 @@ export const AMSRS_CAMS: AmsrsCam[] = [
  {
   "name": "Gornji Varoš–Gradiška (novi most) · vstop v BiH",
   "image": "https://gp.satwork.net/AMSRS_17_GP_CA02/slika.jpg",
-<<<<<<< HEAD
   "lat": 45.148,
   "lng": 17.204,
-=======
-  "lat": 45.136,
-  "lng": 17.203,
->>>>>>> f96ffbf (Popravek: AMS-RS kamere novega prehoda Gradiska spet pripete)
   "dir": "vstop"
  },
  {
   "name": "Gornji Varoš–Gradiška (novi most) · izstop iz BiH",
   "image": "https://gp.satwork.net/AMSRS_17_GP_CA01/slika.jpg",
-<<<<<<< HEAD
   "lat": 45.148,
   "lng": 17.204,
-=======
-  "lat": 45.136,
-  "lng": 17.203,
->>>>>>> f96ffbf (Popravek: AMS-RS kamere novega prehoda Gradiska spet pripete)
   "dir": "izstop"
  },
  {
   "name": "GP Gradina (Donja Gradina) · vstop v BiH",
   "image": "https://gp.satwork.net/AMSRS_08_GP_GD02/slika.jpg",
-  "lat": 45.2654,
-  "lng": 16.919,
+  "lat": 45.27,
+  "lng": 16.93,
   "dir": "vstop"
  },
  {
   "name": "GP Gradina (Donja Gradina) · izstop iz BiH",
   "image": "https://gp.satwork.net/AMSRS_08_GP_GD01/slika.jpg",
-  "lat": 45.2654,
-  "lng": 16.919,
+  "lat": 45.27,
+  "lng": 16.93,
   "dir": "izstop"
  },
  {
