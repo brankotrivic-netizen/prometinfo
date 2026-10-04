@@ -1,29 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-04T18:43:03.086Z";
+export const PROMET_SI_UPDATED = "2026-10-04T21:56:25.421Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;881450;2238ac7f-e89e-4915-ab62-9154bdc9e480",
+  "id": "DARS;880750;4341866b-bc44-40e8-b470-ca3377982c87",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, predor Šentvid - počivališče Povodje v smeri Jesenic, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.10206,
-  "lng": 14.46738,
-  "start": "2026-10-04T17:50:12.037Z",
-  "end": "2026-10-04T20:00:47.813Z",
-  "ts": "2026-10-04T17:50:22.607Z"
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - predor Ločica v smeri Ljubljane, dela, odstavni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25351,
+  "lng": 14.97584,
+  "start": "2026-09-30T21:08:08.99Z",
+  "end": "2026-10-10T18:00:00Z",
+  "ts": "2026-10-04T21:09:53.373Z"
  },
  {
-  "id": "DARS;881449;bd162513-07fa-405d-bcf6-4beff21454bf",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Žalec - uvoz Šentrupert v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26832,
-  "lng": 15.19079,
-  "start": "2026-10-04T17:47:49.49Z",
-  "end": "2026-10-04T21:59:35.49Z",
-  "ts": "2026-10-04T17:48:03.87Z"
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 22. 10. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-10-22T21:59:00Z",
+  "ts": "2026-10-04T19:00:47.763Z"
  },
  {
   "id": "DARS;881445;7a4613b8-0368-4178-bc45-3262e993d1f3",
@@ -123,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-06T13:21:39.91Z",
   "end": "2026-10-31T22:59:00Z",
   "ts": "2026-10-03T14:00:40.047Z"
- },
- {
-  "id": "DARS;881329;405f9af4-4fc2-4307-9114-4017a2790c1a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Studenec - priključek Razdrto v smeri Kopra, dela, zaprt vozni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.76364,
-  "lng": 14.1106,
-  "start": "2026-10-03T12:32:51.573Z",
-  "end": "2026-10-05T01:00:00Z",
-  "ts": "2026-10-03T12:33:16.023Z"
  },
  {
   "id": "DARS;871074;a4b637af-52dc-4c7c-b59e-37d947e39102",
