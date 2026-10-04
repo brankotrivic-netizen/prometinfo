@@ -544,7 +544,8 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .tcd b{display:block;font-size:13px}
 .tcd.m1{border-top:3px solid #64748b}
 .tcd.sel{outline:2px solid #1d4ed8}
-.tl0{background:#dcfce7}.tl1{background:#fef9c3}.tl2{background:#fed7aa}.tl3{background:#fecaca}
+.tl0{background:#22c55e;color:#fff!important}.tl1{background:#f97316;color:#fff!important}.tl2{background:#ef4444;color:#fff!important}.tl3{background:#b91c1c;color:#fff!important}
+.tpill{padding:1px 7px;border-radius:5px;font-weight:700;white-space:nowrap;display:inline-block;margin:1px 0}
 .tcalleg{font-size:11px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
 .tcalleg i{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:-1px;margin-right:3px}
 .tcaldet{font-size:13px;margin-top:6px;line-height:1.5}
@@ -552,6 +553,10 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .wazebox iframe{display:block;width:100%;height:340px;border:0}
 @media(max-width:600px){.wazebox iframe{height:420px}}
 .wazeapp{display:block;padding:7px 10px;font-size:13px;font-weight:600;text-decoration:none;background:#33ccff;color:#0f172a!important}
+.fold{margin:10px 0;border:1px solid var(--line,#e2e8f0);border-radius:10px;padding:8px 10px}
+.fold>summary{cursor:pointer;font-weight:600;font-size:14px}
+.rmore{margin-top:8px;border-top:1px dashed var(--line,#e2e8f0);padding-top:6px}
+.rmore>summary{cursor:pointer;font-size:13px;font-weight:600;color:#1d4ed8}
 .fbbtn{display:inline-block;background:#1877f2;color:#fff!important;text-decoration:none;border-radius:7px;padding:3px 9px;font-size:13px;font-weight:600;margin:2px 0 4px}
 .alertbox{background:#fef2f2;border:2px solid #dc2626;color:#7f1d1d;border-radius:10px;padding:10px 12px;margin:0 0 10px;font-size:13.5px;line-height:1.5;display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .alertbox button{flex:none;background:none;border:none;color:#7f1d1d;font-size:16px;cursor:pointer}
@@ -1819,6 +1824,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">Ocena '+sc+'/100</span></div>'
       +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
       +vehLines
+      +'<details class="rmore"'+(foldOpen('card-'+id)?' open':'')+' ontoggle="foldSave(\\'card-'+id+'\\',this.open)"><summary>Podrobnosti · smeri, kamere, Waze, FB</summary>'
       +'<div class="rdir">'+dirWaits(p)+'</div>'
       +'<div id="wx-'+id+'" class="wxslot"></div>'
       +predictLine(p)
@@ -1832,6 +1838,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +'<div class="ract"><button class="cam" onclick="reloadAll(\\''+id+'\\')">🔄 Osveži prehod</button> '+cam+' <button class="cam" onclick="toggleWaze(\\''+id+'\\')">🚦 Waze v živo</button> <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button> <a class="cam" style="text-decoration:none" href="'+googleMapsDir(p)+'" target="_blank" rel="noopener noreferrer">📍 Google Maps pot</a></div>'
       +wazeBlock(p)
       +camGrid
+      +'</details>'
       +'</div>';
   }
   // Waze karta v zivo (kolone + prijave voznikov). Nalozi se sele ob kliku (mobilni podatki); stanje zapomni.
@@ -1939,18 +1946,20 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(!LIVE_DATA){box.style.display='none';return;}
     var d=LIVE_DATA, rows=d.routes.slice().sort(function(a,b){return a.totalMin-b.totalMin;}), best=rows[0], alerts=liveAlerts(d.pr,best), p=best&&best.id?CBYID[best.id]:null;
     var html='<div class="livehead"><strong><span class="livepulse"></span>Trenutno stanje poti</strong><div class="liveclock">preverjeno '+clockHMS(d.checkedAt)+'<br><span id="liveCountdown">'+(LIVE_AUTO?'naslednji pregled čez 60 s':'samodejno preverjanje izklopljeno')+'</span></div></div>';
+    var more='', notable=[];
     if(best){
       var arrive=best.arrival?new Date(best.arrival):new Date(Date.now()+best.totalMin*60000), traffic=best.delayMin>0?('zamuda zaradi prometa ~'+best.delayMin+' min'):'brez večje prometne zamude';
       html+='<div class="livebest">✅ Trenutno najhitreje: <b>'+safeHtml(best.name)+'</b><br>🚗 '+best.km+' km · vožnja '+fmtHM(best.driveMin)+' · '+traffic+(best.wait!=null?' · meja ~'+best.wait+' min':'')+'<br>🕒 Predviden prihod <b>'+('0'+arrive.getHours()).slice(-2)+':'+('0'+arrive.getMinutes()).slice(-2)+'</b></div>';
-      html+='<div class="livegrid">'+rows.map(function(r,i){var inc=r.sections.filter(function(s){return (s.delayInSeconds||0)>0||s.simpleCategory==='ROAD_WORK';});return '<div class="liveopt'+(i===0?' best':'')+'"><b>'+(i===0?'✅ ':'')+safeHtml(r.name)+'</b><br>Skupaj ~'+fmtHM(r.totalMin)+(r.wait!=null?' · meja '+r.wait+' min':'')+'<br><span class="meta">prometna zamuda '+r.delayMin+' min'+(inc.length?' · '+inc.length+' dogodkov':'')+'</span></div>';}).join('')+'</div>';
+      var more='<div class="livegrid">'+rows.map(function(r,i){var inc=r.sections.filter(function(s){return (s.delayInSeconds||0)>0||s.simpleCategory==='ROAD_WORK';});return '<div class="liveopt'+(i===0?' best':'')+'"><b>'+(i===0?'✅ ':'')+safeHtml(r.name)+'</b><br>Skupaj ~'+fmtHM(r.totalMin)+(r.wait!=null?' · meja '+r.wait+' min':'')+'<br><span class="meta">prometna zamuda '+r.delayMin+' min'+(inc.length?' · '+inc.length+' dogodkov':'')+'</span></div>';}).join('')+'</div>';
       var notable=best.sections.filter(function(s){return (s.delayInSeconds||0)>0||s.simpleCategory==='ROAD_WORK';}).slice(0,5);
-      if(notable.length)html+='<div class="livealerts"><b>🚧 TomTom dogodki na izbrani poti</b><ul>'+notable.map(function(s){return '<li>'+incidentLabel(s)+(s.delayInSeconds>0?' · zamuda '+Math.max(1,Math.round(s.delayInSeconds/60))+' min':'')+'</li>';}).join('')+'</ul></div>';
+      if(notable.length)more+='<div class="livealerts"><b>🚧 TomTom dogodki na izbrani poti</b><ul>'+notable.map(function(s){return '<li>'+incidentLabel(s)+(s.delayInSeconds>0?' · zamuda '+Math.max(1,Math.round(s.delayInSeconds/60))+' min':'')+'</li>';}).join('')+'</ul></div>';
     }
-    if(alerts.length)html+='<div class="livealerts"><b>📢 Uradna obvestila ob poti</b><ul>'+alerts.map(function(a){return '<li><b>'+safeHtml(a.source)+':</b> '+safeHtml(a.text)+(a.updated?' <span class="meta">('+safeHtml(a.updated)+')</span>':'')+'</li>';}).join('')+'</ul></div>';
-    html+='<div class="livenote">Mejni podatki: '+safeHtml(borderFresh(p))+' · Promet TomTom je preverjen zdaj. Kamera je osvežena zdaj, vendar sama brez potrditve ne določa minut čakanja.</div>';
+    if(alerts.length)more+='<div class="livealerts"><b>📢 Uradna obvestila ob poti</b><ul>'+alerts.map(function(a){return '<li><b>'+safeHtml(a.source)+':</b> '+safeHtml(a.text)+(a.updated?' <span class="meta">('+safeHtml(a.updated)+')</span>':'')+'</li>';}).join('')+'</ul></div>';
+    more+='<div class="livenote">Mejni podatki: '+safeHtml(borderFresh(p))+' · Promet TomTom je preverjen zdaj. Kamera je osvežena zdaj, vendar sama brez potrditve ne določa minut čakanja.</div>';
+    html+=fold('livemore','Primerjava prehodov · dogodki ('+notable.length+') · obvestila ('+alerts.length+')',more);
     html+='<div class="liveactions"><button onclick="refreshLiveRoute(true)">🔄 Preveri zdaj</button><button onclick="setLiveAuto('+(LIVE_AUTO?'false':'true')+')">'+(LIVE_AUTO?'⏸ Ustavi minutno preverjanje':'▶ Preverjaj vsako minuto')+'</button><button onclick="speakLiveAnswer()">🔊 Preberi povzetek</button></div>';
     box.style.display='block'; box.innerHTML=html;
-    var eta=document.getElementById('routeEta'); if(eta&&best){eta.innerHTML='📡 <b>Promet v živo:</b> '+best.km+' km · vožnja '+fmtHM(best.driveMin)+(best.wait!=null?' · meja ~'+best.wait+' min':'')+' · skupaj <b>'+fmtHM(best.totalMin)+'</b>';}
+    var eta=document.getElementById('routeEta'); if(eta&&best){eta.style.display='none';eta.innerHTML='📡 <b>Promet v živo:</b> '+best.km+' km · vožnja '+fmtHM(best.driveMin)+(best.wait!=null?' · meja ~'+best.wait+' min':'')+' · skupaj <b>'+fmtHM(best.totalMin)+'</b>';}
   }
   window.speakLiveAnswer=function(){ if(!LIVE_DATA||!LIVE_DATA.routes.length)return; var b=LIVE_DATA.routes.slice().sort(function(a,b){return a.totalMin-b.totalMin;})[0]; speak('Trenutno najhitrejša pot je preko prehoda '+b.name+'. Vožnja približno '+b.driveMin+' minut'+(b.wait!=null?', čakanje na meji približno '+b.wait+' minut':'')+'. Skupaj približno '+b.totalMin+' minut.'); };
   function liveTick(){ var el=document.getElementById('liveCountdown'); if(!el||!LIVE_AUTO)return; var s=Math.max(0,Math.ceil((LIVE_NEXT-Date.now())/1000)); el.textContent='naslednji pregled čez '+s+' s'; }
@@ -1971,7 +1980,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function rTo(pr){ return REV?pr.from:pr.to; }
   window.swapDir=function(){ REV=!REV; if(CURRENT_ROUTE){ var pr=CURRENT_ROUTE; renderRoute(pr); startLiveRoute(pr,true); } };
   // ---- Prometni koledar (napoved gnece po dnevih, smer glede na REV) ----
-  var TCLV=['normalno','povečano','gneča','velika gneča'], TCDOW=['ne','po','to','sr','če','pe','so'];
+  var TCLV=['ni gneče','manjša gneča','gneča','velika gneča'], TCDOW=['ne','po','to','sr','če','pe','so'];
   function tcalDir(){ return REV?'n':'s'; }
   function tcalToday(){ var d=new Date(); return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2); }
   function tcalDays(){ var t=tcalToday(); return TCAL.filter(function(x){ return x.d>=t; }).slice(0,60); }
@@ -1982,26 +1991,30 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     document.querySelectorAll('.tcd').forEach(function(b,j){ b.classList.toggle('sel',j===i); });
     var o=dir==='s'?'n':'s', lv=x[dir], lo=x[o];
     var el=document.getElementById('tcalDet'); if(!el) return;
-    el.innerHTML='<b>'+tcalFmt(x.d)+'</b> — '+(dir==='s'?'tja (jug)':'nazaj (sever)')+': <b class="tl'+lv+'" style="padding:0 5px;border-radius:4px;color:#0f172a">'+TCLV[lv]+'</b><br>• '+tcalWhy(x,dir)
+    el.innerHTML='<b>'+tcalFmt(x.d)+'</b> — '+(dir==='s'?'tja (jug)':'nazaj (sever)')+': <b class="tpill tl'+lv+'">'+TCLV[lv]+'</b><br>• '+tcalWhy(x,dir)
       +'<div class="meta" style="margin-top:4px">Nasprotna smer: '+TCLV[lo]+'</div>';
   };
+  // zlozljiv razdelek z zapomnjenim stanjem (promet_fold {kljuc:1})
+  function foldOpen(k){ try{ return !!(JSON.parse(localStorage.getItem('promet_fold'))||{})[k]; }catch(e){ return false; } }
+  window.foldSave=function(k,o){ try{ var f=JSON.parse(localStorage.getItem('promet_fold'))||{}; if(o) f[k]=1; else delete f[k]; localStorage.setItem('promet_fold',JSON.stringify(f)); }catch(e){} };
+  function fold(k,title,inner){ return '<details class="fold"'+(foldOpen(k)?' open':'')+' ontoggle="foldSave(\\''+k+'\\',this.open)"><summary>'+title+'</summary>'+inner+'</details>'; }
   function calBlock(){
     var days=tcalDays(); if(!days.length) return '';
     var dir=tcalDir(), d0=days[0], d1=days[1];
     var calm=null; for(var i=1;i<days.length&&i<21;i++){ if(days[i][dir]===0 && new Date(days[i].d).getDay()!==0){ calm=days[i]; break; } }
     var hot=days.filter(function(x){ return x[dir]>=2; }).slice(0,3);
-    var sum='Danes <b class="tl'+d0[dir]+'" style="padding:0 5px;border-radius:4px;color:#0f172a">'+TCLV[d0[dir]]+'</b>'
-      +(d1?' · jutri <b class="tl'+d1[dir]+'" style="padding:0 5px;border-radius:4px;color:#0f172a">'+TCLV[d1[dir]]+'</b>':'')
-      +(hot.length?'<br>⚠️ Gneča pričakovana: '+hot.map(function(x){ return tcalFmt(x.d); }).join(', '):'')
-      +(calm?'<br>🟢 Prvi miren dan: '+tcalFmt(calm.d):'');
+    var pill=function(l){ return '<b class="tpill tl'+l+'">'+TCLV[l]+'</b>'; };
+    var head='danes '+pill(d0[dir])+(d1?' · jutri '+pill(d1[dir]):'');
+    var sum=(hot.length?'Gneča pričakovana: <b>'+hot.map(function(x){ return tcalFmt(x.d); }).join(', ')+'</b>':'V naslednjih 60 dneh ni večje gneče.')
+      +(calm?'<br>Prvi dan brez gneče: <b>'+tcalFmt(calm.d)+'</b>':'');
     var strip=days.map(function(x,i){ var dt=new Date(x.d); var dd=+x.d.slice(8);
       return '<button class="tcd tl'+x[dir]+(dd===1?' m1':'')+'" onclick="tcalPick('+i+')" title="'+x.d+'">'+TCDOW[dt.getDay()]+'<b>'+dd+'</b>'+(dd===1||i===0?(+x.d.slice(5,7))+'.':'&nbsp;')+'</button>'; }).join('');
-    var open=true; try{ open=localStorage.getItem('promet_tcal_open')!=='0'; }catch(e){}
+    var open=false; try{ open=localStorage.getItem('promet_tcal_open')==='1'; }catch(e){}
     return '<details class="tcal"'+(open?' open':'')+' ontoggle="try{localStorage.setItem(\\'promet_tcal_open\\',this.open?\\'1\\':\\'0\\')}catch(e){}">'
-      +'<summary>📅 Prometni koledar — '+(dir==='s'?'smer tja (jug)':'smer nazaj (sever)')+'</summary>'
+      +'<summary>📅 Koledar ('+(dir==='s'?'tja':'nazaj')+'): '+head+'</summary>'
       +'<div class="tcalsum">'+sum+'</div>'
       +'<div class="tcalstrip">'+strip+'</div>'
-      +'<div class="tcalleg"><span><i class="tl0"></i>normalno</span><span><i class="tl1"></i>povečano</span><span><i class="tl2"></i>gneča</span><span><i class="tl3"></i>velika gneča</span></div>'
+      +'<div class="tcalleg"><span><i class="tl0"></i>ni gneče</span><span><i class="tl1"></i>manjša gneča</span><span><i class="tl2"></i>gneča</span><span><i class="tl3"></i>velika gneča</span></div>'
       +'<div id="tcalDet" class="tcaldet meta">Klikni dan za razloge.</div>'
       +'<div class="meta" style="font-size:11px;margin-top:4px">Ocena iz praznikov in šolskih počitnic (SI, HR, BiH, RS, MNE, AT, DE, CH, IT); diaspora tja ob začetku, nazaj ob koncu. Ni meritev v živo.</div>'
       +'</details>';
@@ -2027,11 +2040,10 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     }
     var cams=routeCams(pr);
     if(cams.length){
-      html+='<h3 class="rsub">📷 Kamere za to pot</h3>';
-      html+='<div class="camgrid cardcams">'+cams.slice(0,12).map(function(im){ return '<a class="camshot" href="'+im.url+'" data-name="'+(im.name||'')+'"><img class="snap" data-base="'+im.url+'" src="'+im.url+'" loading="lazy" referrerpolicy="no-referrer" alt="'+(im.name||'')+'"><span>'+(im.name||'')+'</span></a>'; }).join('')+'</div>';
-      html+='<button class="cam" onclick="showView(\\'cams\\')" style="margin-top:4px">Odpri vse kamere ↗</button>';
+      html+=fold('routecams','📷 Kamere za to pot ('+Math.min(cams.length,12)+')','<div class="camgrid cardcams">'+cams.slice(0,12).map(function(im){ return '<a class="camshot" href="'+im.url+'" data-name="'+(im.name||'')+'"><img class="snap" data-base="'+im.url+'" src="'+im.url+'" loading="lazy" referrerpolicy="no-referrer" alt="'+(im.name||'')+'"><span>'+(im.name||'')+'</span></a>'; }).join('')+'</div>'
+        +'<button class="cam" onclick="showView(\\'cams\\')" style="margin-top:4px">Odpri vse kamere ↗</button>');
     }
-    if(pr.fuelCountries&&pr.fuelCountries.length){ html+=fuelBlock(pr); }
+    if(pr.fuelCountries&&pr.fuelCountries.length){ html+=fold('fuel','⛽ Gorivo na poti',fuelBlock(pr).replace('<h3 class="rsub">⛽ Gorivo na poti</h3>','')); }
     html+='<div class="ract" style="margin-top:12px"><button class="cam" onclick="shareState()">📋 Pošlji stanje</button><button class="cam" onclick="openManual()">➕ Dodaj moj podatek</button></div>';
     res.innerHTML=html; res.style.display='';
     if(!window._autoload){ try{ res.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){} }
