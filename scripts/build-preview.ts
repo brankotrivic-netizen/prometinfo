@@ -536,7 +536,7 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .ttrow{font-size:12px;margin:5px 0;line-height:1.6}
 .predrow{font-size:12px;margin:5px 0;line-height:1.55;background:var(--panel-2);border-radius:7px;padding:6px 9px}
 .etarow{font-size:13px;margin:2px 0 10px;background:#eff6ff;border:1px solid #dbeafe;border-radius:9px;padding:8px 11px;line-height:1.5}
-.tcal{margin:0 0 12px;border:1px solid var(--line,#e2e8f0);border-radius:10px;padding:8px 10px}
+.tcal{contain:inline-size;min-width:0;max-width:100%;margin:0 0 12px;border:1px solid var(--line,#e2e8f0);border-radius:10px;padding:8px 10px}
 .tcal summary{cursor:pointer;font-weight:600;font-size:14px}
 .tcalsum{font-size:13px;margin:6px 0;line-height:1.5}
 .tcalstrip{display:flex;gap:3px;overflow-x:auto;padding:4px 0 6px;-webkit-overflow-scrolling:touch}
@@ -548,6 +548,10 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .tcalleg{font-size:11px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
 .tcalleg i{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:-1px;margin-right:3px}
 .tcaldet{font-size:13px;margin-top:6px;line-height:1.5}
+.wazebox{margin-top:9px;border-radius:10px;overflow:hidden;border:1px solid var(--line,#e2e8f0)}
+.wazebox iframe{display:block;width:100%;height:340px;border:0}
+@media(max-width:600px){.wazebox iframe{height:420px}}
+.wazeapp{display:block;padding:7px 10px;font-size:13px;font-weight:600;text-decoration:none;background:#33ccff;color:#0f172a!important}
 .fbbtn{display:inline-block;background:#1877f2;color:#fff!important;text-decoration:none;border-radius:7px;padding:3px 9px;font-size:13px;font-weight:600;margin:2px 0 4px}
 .alertbox{background:#fef2f2;border:2px solid #dc2626;color:#7f1d1d;border-radius:10px;padding:10px 12px;margin:0 0 10px;font-size:13.5px;line-height:1.5;display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .alertbox button{flex:none;background:none;border:none;color:#7f1d1d;font-size:16px;cursor:pointer}
@@ -1825,9 +1829,28 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +manLine(id)
       +'<div class="rsoc">'+fbCrossLine(p)+'<br>'+socLine+'</div>'
       +notesHtml
-      +'<div class="ract"><button class="cam" onclick="reloadAll(\\''+id+'\\')">🔄 Osveži prehod</button> '+cam+' <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button> <a class="cam" style="text-decoration:none" href="'+googleMapsDir(p)+'" target="_blank" rel="noopener noreferrer">📍 Google Maps pot</a></div>'
+      +'<div class="ract"><button class="cam" onclick="reloadAll(\\''+id+'\\')">🔄 Osveži prehod</button> '+cam+' <button class="cam" onclick="toggleWaze(\\''+id+'\\')">🚦 Waze v živo</button> <button class="cam" onclick="focusCrossing(\\''+id+'\\')">🗺️ Na zemljevidu</button> <a class="cam" style="text-decoration:none" href="'+googleMapsDir(p)+'" target="_blank" rel="noopener noreferrer">📍 Google Maps pot</a></div>'
+      +wazeBlock(p)
       +camGrid
       +'</div>';
+  }
+  // Waze karta v zivo (kolone + prijave voznikov). Nalozi se sele ob kliku (mobilni podatki); stanje zapomni.
+  function wazeOpenSet(){ try{ return JSON.parse(localStorage.getItem('promet_waze'))||{}; }catch(e){ return {}; } }
+  function wazeSrc(p){ return 'https://embed.waze.com/iframe?zoom=15&lat='+p.lat+'&lon='+p.lng+'&ct=livemap'; }
+  function wazeFrame(p){ return '<iframe src="'+wazeSrc(p)+'" loading="lazy" allowfullscreen title="Waze v živo"></iframe>'
+    +'<a class="wazeapp" href="https://waze.com/ul?ll='+p.lat+','+p.lng+'&zoom=15" target="_blank" rel="noopener noreferrer">🚦 Odpri v aplikaciji Waze (cel zaslon) ↗</a>'; }
+  window.toggleWaze=function(id){
+    var d=document.getElementById('waze-'+id), p=CBYID[id]; if(!d||!p) return;
+    var open=d.style.display==='none';
+    if(open && !d.firstChild) d.innerHTML=wazeFrame(p);
+    d.style.display=open?'block':'none';
+    var o=wazeOpenSet(); if(open) o[id]=1; else delete o[id]; try{ localStorage.setItem('promet_waze',JSON.stringify(o)); }catch(e){}
+    if(open) try{ d.scrollIntoView({behavior:'smooth',block:'nearest'}); }catch(e){}
+  };
+  function wazeBlock(p){
+    if(p.lat==null||p.lng==null) return '';
+    var open=!!wazeOpenSet()[p.id];
+    return '<div id="waze-'+p.id+'" class="wazebox" style="display:'+(open?'block':'none')+'">'+(open?wazeFrame(p):'')+'</div>';
   }
   window.toggleCardCams=function(id){ var d=document.getElementById('ccams-'+id); if(!d)return; d.style.display=(d.style.display==='none')?'grid':'none'; try{ d.scrollIntoView({behavior:'smooth',block:'nearest'}); }catch(e){} };
   function routeCams(pr){
