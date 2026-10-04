@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "4.10.2026. 11:59",
-  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: zagrebačka obilaznica (A3): u zoni radova između čvorova Jakuševec i Kosnica u smjeru Lipovca/istoka vozi se usporeno, kolona je duga oko 2 km pješak na autocesti A1 na čvoru Posedarje na kolniku u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 40 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik do 5. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gornja Ploča i Sveti Rok od 204.+250 km do 205. km u oba smjera te između 209.+400 km i 209.+850 km u smjeru Dubrovnika A2 Zagreb-Macelj do 08. listopada zbog radova na zapadnom…"
+  "updated": "4.10.2026. 12:10",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: zagrebačka obilaznica (A3): u zoni radova između čvorova Jakuševec i Kosnica u smjeru Lipovca/istoka vozi se usporeno, kolona je duga oko 2 km AUTOCESTE A1 Zagreb-Split-Dubrovnik do 5. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gornja Ploča i Sveti Rok od 204.+250 km do 205. km u oba smjera te između 209.+400 km i 209.+850 km u smjeru Dubrovnika A2 Zagreb-Macelj do 08. listopada zbog radova na zapadnom kolniku u smjeru Zagreba od 25.+500 km do 28.+800 km vozi se pretjecajnim trakom do 15. listopada zbog radova na sanaciji objekta u čvoru Đurmane…"
  },
  {
   "title": "Granični prijelazi",
