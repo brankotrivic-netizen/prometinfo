@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "4.10.2026. 07:57",
-  "text": "Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Na mjestima pod maglom kolnici su vlažni i skliski. IZVANREDNI PROMETNI DOGAĐAJI: zagrebačka obilaznica (A3): tijekom dana uz veću gustoću prometa u zoni radova između čvorova Jakuševec i Kosnica u smjeru Lipovca/istoka vozit će se usporeno (moguće kolone i povremeni zastoji) AUTOCESTE A1 Zagreb-Split-Dubrovnik do 5. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gornja Ploča i Sveti Rok od 204.+250 km do 205. km u oba smjera te između 209.+400 km i 209.+850 km u smjeru Dubrovnika A2 Zagreb-Macelj do 08. listopada zbog radova na zapadnom kolniku u smjeru Zagreba od 25.+500 km do 28.+800 km vozi se pretje…"
+  "updated": "4.10.2026. 11:59",
+  "text": "Na većini cesta promet teče bez posebnih ograničenja, osim na dionicama gdje traju radovi. IZVANREDNI PROMETNI DOGAĐAJI: zagrebačka obilaznica (A3): u zoni radova između čvorova Jakuševec i Kosnica u smjeru Lipovca/istoka vozi se usporeno, kolona je duga oko 2 km pješak na autocesti A1 na čvoru Posedarje na kolniku u smjeru Dubrovnika. Promet se vodi po dvije prometne trake uz ograničenje brzine od 40 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik do 5. listopada vozi se jednim trakom, uz ograničenje brzine, između čvorova Gornja Ploča i Sveti Rok od 204.+250 km do 205. km u oba smjera te između 209.+400 km i 209.+850 km u smjeru Dubrovnika A2 Zagreb-Macelj do 08. listopada zbog radova na zapadnom…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "4.10.2026. 06:30",
+  "updated": "4.10.2026. 11:58",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "4.10.2026. 06:30",
+  "updated": "4.10.2026. 11:28",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 6. listopada trajekt će iz luke Split za luku Stari Grad isploviti u 23:15 sati (umjesto u 20:30 sati) trajekt na liniji Orebić-Dominče 7. listopada (srijeda), isploviti će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 trajekt na liniji 832 Prapratno-Sobra dana 08.10.2026, isplovit će iz luke Sobra za luku Prapratno u 11:30 sati (umjesto u 10:00 sati) te će iz luke Prapratno za luku Sobra isploviti u 12:30 sati (umjesto u 12:00 sati), Jadrolinija od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. godine trajekt će iz luke Zadar/Gaženica isploviti…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "4.10.2026. 05:12",
-  "text": "Prometna prognoza za Hrvatsku za 4. listopada 2026. Na cestama u unutrašnjosti u jutarnjim satima vidljivost će mjestimice biti smanjena zbog magle. U noći i ujutro zbog bure moguće su zabrane za pojedine skupine vozila na cestama podno Velebita. Povremena su usporavanja moguća zbog veće gustoće prometa na pojedinim dionicama autocesta, gradskim prometnicama i obilaznicama, posebice u zonama radova i privremene regulacije prometa. Gužve u putničkom i teretnom prometu očekuju se na graničnim prijelazima s Bosnom i Hercegovinom, Srbijom i Crnom Gorom. U pomorskom prometu ne očekuju se poteškoće. Hrvatski autoklub želi vam sretan i ugodan put. Savjeti HAK-a: prije polaska provjerite stanje na c…"
+  "updated": "4.10.2026. 10:51",
+  "text": "Prometna prognoza za Hrvatsku za 05. listopada 2026. Na cestama u unutrašnjosti u jutarnjim satima vidljivost će mjestimice biti smanjena zbog magle. U krajevima s maglom kolnici će biti vlažni i skliski. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama, pripaze na sigurnosnu udaljenost između vozila te i danju, u krajevima s maglom, voze s uključenim kratkim svjetlima. Povremena usporavanja zbog veće gustoće prometa već će ujutro biti na gradskim prometnicama i obilaznicama, a kasnije, tijekom danana, i na pojedinim dionicama autocesta te na međugradskim dionicama državnih i županijskih cesta. U zonama radova i privremene regulacije prometa moguće su smetnje i kraći za…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
