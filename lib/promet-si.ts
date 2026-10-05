@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-05T05:28:21.524Z";
+export const PROMET_SI_UPDATED = "2026-10-05T05:33:33.868Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;881534;5b0b7a08-1c7b-4c87-9143-c45ad784ee5f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Črni Kal - priključek Kastelec v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.55276,
+  "lng": 13.85935,
+  "start": "2026-10-05T05:27:19.977Z",
+  "end": "2026-10-05T08:00:00Z",
+  "ts": "2026-10-05T05:32:26.12Z"
+ },
+ {
+  "id": "DARS;881533;4391fe37-8c92-4f64-9e17-30c04410b689",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Logatec - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.92266,
+  "lng": 14.26805,
+  "start": "2026-10-05T05:29:23.813Z",
+  "end": "2026-10-05T11:31:51.487Z",
+  "ts": "2026-10-05T05:30:11.813Z"
+ },
+ {
+  "id": "DARS;881531;f8f24785-4094-4aab-9cc8-dcdbb1d15822",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-613, Ajševica - Nova Gorica, pri Novi Gorici, izmenično enosmerni promet, vzdrževalna dela, do 16:00.",
+  "loc": "R3-613, Ajševica - Nova Gorica",
+  "lat": 45.95772,
+  "lng": 13.65571,
+  "start": "2026-10-05T05:28:47.123Z",
+  "end": "2026-10-05T14:00:00Z",
+  "ts": "2026-10-05T05:29:30.687Z"
+ },
  {
   "id": "DARS;881530;698df18a-b0df-4967-afc9-c8c3ab8fdeba",
   "type": "RoadOrCarriagewayOrLaneManagement",
