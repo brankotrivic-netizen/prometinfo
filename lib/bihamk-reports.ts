@@ -58,6 +58,14 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji dva kružna toka (spoj magistralnog puta M-17 sa ulicom Samira Ćatovića Kobre i spoj magistralnog puta M-17 sa ulicom Željeznička-Emira Bogunića Čarlija), saobraćaj je obustavljen do okončanja radova. Vozila se preusmjeravaju na alternativne pravce Blažuj-Ilidža i Ilidža-Blažuj. Molimo vozače za oprez i poštivanje privremene signalizacije."
    },
    {
+    "title": "Gromiljak-Blažuj",
+    "text": "Zbog izvođenja radova na sanaciji prijelaza na mostu preko rijeke Lepenice, na samom ulazu u Kiseljak iz pravca Sarajeva (od Paleške ćuprije do kružnog toka), saobraća se usporeno naizmjeničnim propuštanjem vozila."
+   },
+   {
+    "title": "Šićki Brod – Tuzla",
+    "text": "Od Siporex-a do Bingo City Centra, zbog radova, saobraća se usporeno."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },

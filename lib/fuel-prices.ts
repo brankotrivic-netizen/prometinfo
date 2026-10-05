@@ -45,10 +45,10 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "BIH",
   "flag": "🇧🇦",
-  "p95": "3,380 BAM (1,73 EUR)",
-  "p98": "3,480 BAM (1,78 EUR)",
-  "diesel": "3,800 BAM (1,94 EUR)",
-  "date": "1. 10. 2026"
+  "p95": "3,400 BAM (1,74 EUR)",
+  "p98": "3,520 BAM (1,80 EUR)",
+  "diesel": "3,780 BAM (1,93 EUR)",
+  "date": "5. 10. 2026"
  },
  {
   "country": "Bolgarija",
