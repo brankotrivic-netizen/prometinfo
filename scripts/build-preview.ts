@@ -1450,7 +1450,8 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   };
   // Glavna FB skupina (uporabnik: "Granični prelaz Maljevac" ima najboljše informacije) — en gumb na Moji poti
   var FB_MAIN_NAME='Granični prelaz Maljevac';
-  function fbMainUrl(){ try{ return localStorage.getItem('promet_fbmain')||''; }catch(e){ return ''; } }
+  var FB_MAIN_DEFAULT='https://www.facebook.com/GPMaljevac';
+  function fbMainUrl(){ try{ return localStorage.getItem('promet_fbmain')||FB_MAIN_DEFAULT; }catch(e){ return FB_MAIN_DEFAULT; } }
   window.fbMainSet=function(){
     var u=prompt('Prilepi povezavo skupine »'+FB_MAIN_NAME+'«.\\nNa Facebooku odpri skupino → Deli → Kopiraj povezavo.\\nPrazno = odstrani.', fbMainUrl());
     if(u===null) return; u=u.trim();
