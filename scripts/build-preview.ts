@@ -31,6 +31,7 @@ import { BIHAMK_REPORTS } from "../lib/bihamk-reports";
 import { TRUCK_PARKING } from "../lib/truck-parking";
 import { FUEL_PRICES, FUEL_UPDATED } from "../lib/fuel-prices";
 import { levelFromMinutes } from "../lib/parse";
+const BUILT_AT = new Date().toISOString();
 import { COUNTRY_NAMES, type Country, type WaitLevel, type CameraLink } from "../lib/types";
 
 const FLAG: Record<Country, string> = {
@@ -56,6 +57,25 @@ interface Item {
   id: string; name: string; country: Country; neighbor: Country;
   lat: number | null; lng: number | null; cameras: CameraLink[]; streams: StreamLink[];
   level: WaitLevel; waitMinutes: number | null; rawStatus: string; hasLive: boolean;
+}
+
+// Trenutne cene dizla v EUR po drzavah iz AMZS tabele (posodablja se tedensko).
+// Stara lib/diesel-prices.ts ostane le kot rezerva za drzave, ki jih v tabeli ni.
+function dieselNow(): Record<string, number> {
+  const CC: Record<string, string> = {
+    "slovenija": "SI", "hrvaška": "HR", "bih": "BA", "bosna in hercegovina": "BA", "srbija": "RS", "črna gora": "ME",
+    "avstrija": "AT", "nemčija": "DE", "italija": "IT", "švica": "CH", "madžarska": "HU", "severna makedonija": "MK",
+    "makedonija": "MK", "kosovo": "XK", "albanija": "AL", "bolgarija": "BG", "romunija": "RO", "grčija": "GR",
+  };
+  const out: Record<string, number> = Object.fromEntries(DIESEL_PRICES.map((d) => [d.country, d.eur]));
+  for (const r of FUEL_PRICES) {
+    const cc = CC[r.country.toLowerCase()];
+    if (!cc || !r.diesel) continue;
+    const m = /\(([\d.,]+)\s*EUR\)/.exec(r.diesel) || /^([\d.,]+)\s*EUR/.exec(r.diesel.trim());
+    const v = m ? parseFloat(m[1].replace(",", ".")) : NaN;
+    if (v > 0.5 && v < 4) out[cc] = v;
+  }
+  return out;
 }
 
 async function main() {
@@ -560,6 +580,7 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .livesrc{font-size:12px;color:#15803d;margin:-4px 0 8px}
 .liveline{font-size:13px;line-height:1.45;margin:6px 0 2px;padding:6px 9px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px}
 @media(prefers-color-scheme:dark){.liveline{background:#052e16;border-color:#14532d}}
+.fbmain{margin:0 0 10px}
 .fbbtn{display:inline-block;background:#1877f2;color:#fff!important;text-decoration:none;border-radius:7px;padding:3px 9px;font-size:13px;font-weight:600;margin:2px 0 4px}
 .alertbox{background:#fef2f2;border:2px solid #dc2626;color:#7f1d1d;border-radius:10px;padding:10px 12px;margin:0 0 10px;font-size:13.5px;line-height:1.5;display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .alertbox button{flex:none;background:none;border:none;color:#7f1d1d;font-size:16px;cursor:pointer}
@@ -806,7 +827,7 @@ h1{font-size:24px}
 footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-top:1px solid var(--border);padding-top:16px}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#08111c}.leaflet-popup-content a{color:#1a55c8;font-weight:600}
 </style></head><body><div class="wrap">
-<div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px"><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><button class="reloadbtn" onclick="reloadAll()">🔄 Osveži vse</button><button id="installBtn" style="display:none" class="drivebtn" onclick="doInstall()">⬇️ Namesti na telefon</button></div><span class="meta">osveženo · ${new Date().toLocaleString("sl-SI")}</span></div></div>
+<div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px"><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><button class="reloadbtn" onclick="reloadAll()">🔄 Osveži vse</button><button id="installBtn" style="display:none" class="drivebtn" onclick="doInstall()">⬇️ Namesti na telefon</button></div><span class="meta" id="builtAt"></span></div></div>
 <div class="layout">
 <aside class="sidebar"><div class="countrytiles">${tiles}</div></aside>
 <div class="main">
@@ -1024,13 +1045,13 @@ const COL={none:"#2dd4a7",low:"#5fd35f",moderate:"#e7c84b",high:"#f29c3e",severe
 const FLAGJS=${JSON.stringify(FLAG)};
 const CNAMES=${JSON.stringify(COUNTRY_NAMES)};
 const ROUTES=${JSON.stringify(ROUTE_PRESETS)};
-const DIESEL=${JSON.stringify(Object.fromEntries(DIESEL_PRICES.map((d) => [d.country, d.eur])))};
-const DIESEL_UPD=${JSON.stringify(DIESEL_UPDATED)};
+const DIESEL=${JSON.stringify(dieselNow())};
+const DIESEL_UPD=${JSON.stringify(FUEL_UPDATED || DIESEL_UPDATED)};
 const SOC_KW=${JSON.stringify(SOCIAL_KEYWORDS)};
 const FUELPTS=${JSON.stringify(FUEL_STATIONS)};
 const HISTPTS=${JSON.stringify(WAIT_HISTORY)};
 const TCAL=${JSON.stringify(TRAFFIC_CAL)}, TCAL_UPD=${JSON.stringify(TRAFFIC_CAL_UPDATED)};
-const PAGE_BUILT_AT=${JSON.stringify(new Date().toISOString())};
+const PAGE_BUILT_AT=${JSON.stringify(BUILT_AT)};
 const SIROADEVENTS=${JSON.stringify(PROMET_SI.slice(0, 180).map((e) => ({ type: e.type, desc: e.desc, lat: e.lat, lng: e.lng, ts: e.ts, start: e.start, end: e.end })))};
 const ROUTEOFFICIAL=${JSON.stringify(routeOfficialAlerts)};
 const SOC_PAGES=${JSON.stringify(SOCIAL_PAGES)};
@@ -1427,8 +1448,26 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     toast(u?'FB skupina shranjena — odslej en klik.':'FB skupina odstranjena.');
     if(window._curRoute) try{ renderRoute(window._curRoute); }catch(e){}
   };
+  // Glavna FB skupina (uporabnik: "Granični prelaz Maljevac" ima najboljše informacije) — en gumb na Moji poti
+  var FB_MAIN_NAME='Granični prelaz Maljevac';
+  function fbMainUrl(){ try{ return localStorage.getItem('promet_fbmain')||''; }catch(e){ return ''; } }
+  window.fbMainSet=function(){
+    var u=prompt('Prilepi povezavo skupine »'+FB_MAIN_NAME+'«.\\nNa Facebooku odpri skupino → Deli → Kopiraj povezavo.\\nPrazno = odstrani.', fbMainUrl());
+    if(u===null) return; u=u.trim();
+    if(u && !/^https:\\/\\/(www|m|web)?\\.?facebook.com|^https:\\/\\/fb.(com|me)\\//i.test(u)){ toast('To ni Facebook povezava.'); return; }
+    try{ if(u) localStorage.setItem('promet_fbmain',u); else localStorage.removeItem('promet_fbmain'); }catch(e){}
+    toast(u?'Skupina shranjena — odslej en klik.':'Skupina odstranjena.');
+    if(window._curRoute) try{ renderRoute(window._curRoute); }catch(e){}
+  };
+  function fbMainBtn(){
+    var u=fbMainUrl();
+    if(u) return '<div class="fbmain"><a class="fbbtn" href="'+u.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener noreferrer">👥 '+FB_MAIN_NAME+' ↗</a> <button class="linklike" title="Spremeni povezavo" onclick="fbMainSet()">✎</button></div>';
+    return '<div class="fbmain"><a class="fbbtn" href="https://www.facebook.com/search/groups/?q='+encodeURIComponent(FB_MAIN_NAME)+'" target="_blank" rel="noopener noreferrer">👥 Poišči: '+FB_MAIN_NAME+' ↗</a> <button class="linklike" onclick="fbMainSet()">➕ shrani povezavo</button>'
+      +'<div class="meta" style="font-size:12px">Enkrat odpri skupino, kopiraj povezavo (Deli → Kopiraj povezavo) in jo shrani — potem gumb odpre skupino neposredno.</div></div>';
+  }
   function fbCrossLine(p){
     var u=fbCrossGet(p.id);
+    if(!u && fbMainUrl()) return '<a class="fbbtn" href="'+fbMainUrl().replace(/"/g,'&quot;')+'" target="_blank" rel="noopener noreferrer">👥 '+FB_MAIN_NAME+' ↗</a> <button class="linklike" title="Posebna skupina za ta prehod" onclick="fbCrossSet(\\''+p.id+'\\')">➕ druga skupina</button>';
     if(u) return '<a class="fbbtn" href="'+u.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener noreferrer">👥 FB skupina ↗</a> <button class="linklike" title="Spremeni povezavo" onclick="fbCrossSet(\\''+p.id+'\\')">✎</button>';
     return '<a class="fbbtn" href="'+fbGroupSearch(p)+'" target="_blank" rel="noopener noreferrer">👥 Poišči FB skupino ↗</a> <button class="linklike" onclick="fbCrossSet(\\''+p.id+'\\')">➕ shrani povezavo</button>';
   }
@@ -2097,10 +2136,33 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       LIVEW.at=d.ts; LIVEW.err=false; LIVEW.ok={hak:!!(d.hak&&d.hak.ok),bihamk:!!(d.bihamk&&d.bihamk.ok),amss:!!(d.amss&&d.amss.ok)};
       var changed=sig!==LIVEW.sig; LIVEW.sig=sig;
       if(changed){ applyLiveWaits(d); if(CURRENT_ROUTE){ var y=window.scrollY; renderRoute(CURRENT_ROUTE); try{ renderLiveAnswer(); }catch(e){} window.scrollTo(0,y); } }
-      var el=document.getElementById('liveSrc'); if(el) el.textContent=liveSrcLine();
+      var el=document.getElementById('liveSrc'); if(el) el.textContent=liveSrcLine(); updBuiltAt();
     }).catch(function(){ LIVEW.err=true; var el=document.getElementById('liveSrc'); if(el) el.textContent=liveSrcLine(); });
   }
   window.fetchLiveWaits=fetchLiveWaits;
+  function agoTxt(iso){ var m=Math.max(0,Math.round((Date.now()-Date.parse(iso))/60000)); return m<1?'pravkar':m<60?'pred '+m+' min':'pred '+Math.floor(m/60)+' h '+(m%60)+' min'; }
+  function hm(iso){ var d=new Date(iso); return ('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2); }
+  function updBuiltAt(){
+    var el=document.getElementById('builtAt'); if(!el) return;
+    var d=new Date(PAGE_BUILT_AT);
+    el.textContent='podatki: '+d.getDate()+'. '+(d.getMonth()+1)+'. ob '+hm(PAGE_BUILT_AT)+' ('+agoTxt(PAGE_BUILT_AT)+')'+(LIVEW.at?' · čakanja v živo '+hm(LIVEW.at):'');
+  }
+  function checkNewVersion(){
+    if(document.visibilityState==='hidden') return;
+    var dm=document.getElementById('driveMode'); if(dm&&dm.style.display==='flex') return; // med voznjo ne prekinjaj
+    fetch('version.json?t='+Date.now(),{cache:'no-store'}).then(function(r){ return r.ok?r.json():null; }).then(function(v){
+      if(!v||!v.built) return;
+      if(Date.parse(v.built)-Date.parse(PAGE_BUILT_AT)<60000) return;
+      var last=0; try{ last=+sessionStorage.getItem('promet_autoreload')||0; }catch(e){}
+      if(Date.now()-last<10*60000) return; // varovalo pred zanko
+      try{ sessionStorage.setItem('promet_autoreload',String(Date.now())); }catch(e){}
+      try{ toast('🔄 Novi podatki — osvežujem…'); }catch(e){}
+      setTimeout(function(){ reloadAll(); },800);
+    }).catch(function(){});
+  }
+  updBuiltAt(); setInterval(updBuiltAt,30000);
+  setTimeout(checkNewVersion,5000); setInterval(checkNewVersion,5*60000);
+  document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='visible'){ updBuiltAt(); checkNewVersion(); } });
   setTimeout(function(){ fetchLiveWaits('init'); },300);
   setInterval(function(){ fetchLiveWaits(false); },120000);
   setInterval(function(){ var el=document.getElementById('liveSrc'); if(el) el.textContent=liveSrcLine(); },30000);
@@ -2118,6 +2180,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var all=pr.recommended.concat(pr.alternative, pr.avoid);
     if(all.length) html+='<button class="drivebtn" onclick="enterDrive()">🚗 Vozim</button>';
     if(all.length) html+=calBlock();
+    if(all.length) html+=fbMainBtn();
     if(pr.note) html+='<p class="meta">ℹ️ '+pr.note+'</p>';
     if(!all.length){ html+='<p class="meta">Na tej poti ni mejne kontrole (Schengen) — preveri le gostoto prometa na zemljevidu.</p>'; }
     else {
@@ -2563,6 +2626,7 @@ self.addEventListener('fetch',function(e){ var req=e.request; if(req.method!=='G
   if(u.origin===location.origin && /\\.(webmanifest|svg)$/.test(u.pathname)){ e.respondWith(fetch(req,{cache:'no-cache'}).then(function(r){ if(r.ok)caches.open(CACHE).then(function(c){c.put(req,r.clone());}); return r; }).catch(function(){return caches.match(req);})); }
 });`;
   writeFileSync(resolve(process.cwd(), "sw.js"), sw, "utf8");
+  writeFileSync(resolve(process.cwd(), "version.json"), JSON.stringify({ built: BUILT_AT }), "utf8");
 
   console.log("OSNUTEK ZAPISAN:", out, "(+ manifest.webmanifest, sw.js, icon.svg)");
   console.log(`Prehodov skupaj: ${items.length} | na zemljevidu: ${points.length} | s kamero: ${items.filter((i) => i.cameras.length).length} | dvojnih kamer: ${items.filter((i) => i.cameras.length > 1).length}`);
