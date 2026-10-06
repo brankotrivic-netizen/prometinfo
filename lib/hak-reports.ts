@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "6.10.2026. 12:50",
-  "text": "Na većini cesta vozi se uz povoljne vremenske uvjete. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: požar na vozilu na autocesti A1 na naplatnoj postaji Rovanjska zbog vozila u kvaru na autocesti A1 između čvorova Novigrad i Karlovac, između 42. km i 43. km u smjeru Zagreba, vozi se jednim trakom uz ograničenje brzine Povećana je gustoća prometa, vozi se usporeno: na Istarskom ipsilonu (A8) između čvora i tunela Učka u oba smjera AUTOCESTE A1 Zagreb-Split-Dubrovnik do 14. prosinca zbog radova na sanaciji mos…"
+  "updated": "6.10.2026. 18:36",
+  "text": "Na većini cesta vozi se uz povoljne vremenske uvjete. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! teretno vozilo u kvaru na autocesti A6 u tunelu Tuhobić u smjeru Zagreba, vozi se jednim trakom uz ograničenje brzine od 60 km/h od 20:00 do 05:00 ujutro zatvara se dionica autoceste A2 Zagreb-Macelj između čvorova Krapina i Trakošćan, u oba smjera. Obilazak je državnom cestom DC1 od 22:00 do 06:00 ujutro zbog radova u tunelima Kamenice i Debeli Brijeg zatvara se dionica Jadranske magistrale (DC8) izmeđ…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "6.10.2026. 12:50",
+  "updated": "6.10.2026. 17:22",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "6.10.2026. 12:50",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 6. listopada (utorak), trajekt će iz luke Split za luku Stari Grad isploviti u 23:15 sati (umjesto u 20:30 sati) 7. listopada (srijeda), trajekt na liniji Orebić-Dominče isplovit će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 7. listopada trajekt na liniji Zadar-Rivanj-Sestrunj-Zverinac-Molat-Ist plovit će prema izmijenjenom redu plovidbe (putovanje planirano za 8. listopada) Polazak iz luke Zadar/Gaženica biti će u 10:00 sati, a iz luke Molat u 18:30 sati, a 8. listopada, u četvrtak, planirano putovanje neće se održati 8. listopada (četvrtak), trajekt na liniji 832 Prapratno-Sobra dana isplovit će iz luke Sobra za lu…"
+  "updated": "6.10.2026. 17:22",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: uvodi se dodatno putovanje u nedjelju, 11. listopada 2026, na liniji 635 Split - Stari Grad - Split, s polaskom iz luke Split u 16:00 sati te povratkom iz luke Stari Grad u 19:00 sati 6. listopada (utorak), trajekt će iz luke Split za luku Stari Grad isploviti u 23:15 sati (umjesto u 20:30 sati) 7. listopada (srijeda), trajekt na liniji Orebić-Dominče isplovit će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 7. listopada trajekt na liniji Zadar-Rivanj-Sestrunj-Zverinac-Molat-Ist plovit će prema izmijenjenom redu plovidbe (putovanje planirano za 8. listopada) Polazak iz luke Zadar/Gaženica biti će u 10:00 sati, a iz luke…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "6.10.2026. 12:50",
+  "updated": "6.10.2026. 17:22",
   "text": "Stanje u željezničkom putničkom prometu 5. listopada 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Erdut i Dalj na pruzi Vukovar-Borovo naselje – Erdut – državna granica - između kolodvora Karlovac i Oštarije na pruzi Zagreb GK – Rijeka - između kolodvora Pleternica i Blacko Jakšić na pruzi Pleter…"
  },
  {
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "5.10.2026. 14:45",
-  "text": "Prometna prognoza za Hrvatsku za 06. listopada 2026. Na cestama u unutrašnjosti sutra u jutarnjim satima vidljivost će mjestimice biti smanjena zbog magle. U ostatku dana vremenski uvjeti bit će povoljni za vožnju. Gužve i zastoje očekujemo na gradskim prometnicama, osobito u blizinama škola te na dionicama cesta gdje traju radovi. Zbog radova večeras (5./6. listopada) od 22:00 do 06:00 ujutro na Jadranskoj magistrali (DC8) bit će zatvorena dionica između čvorova Brijesta i Zaradeže. Čekanja u putničkom prometu očekujemo na graničnim prijelazima Gornji Varoš, Ličko Petrovo Selo, Svilaj, Bajakovo, Karasovići i Tovarnik. U pomorskom prometu ne očekujemo poteškoće. Hrvatski autoklub želi vam sr…"
+  "updated": "6.10.2026. 13:36",
+  "text": "Prometna prognoza za Hrvatsku za 07. listopada 2026. Na cestama u unutrašnjosti sutra u jutarnjim satima vidljivost će mjestimice biti smanjena zbog magle. Gužve i zastoje očekujemo na gradskim prometnicama, osobito u blizinama škola te na dionicama cesta gdje traju radovi. Zbog radova večeras (06./07. listopada): - na autocesti A2 Zagreb-Macelj od 20:00 do 05:00 ujutro bit će zatvorena dionica između čvorova Krapina i Trakošćan u oba smjera - na Jadranskoj magistrali (DC8) od 22:00 do 06:00 ujutro bit će zatvorena dionica između čvorova Brijesta i Zaradeže. Čekanja u putničkom prometu očekujemo na graničnim prijelazima Gornji Varoš, Ličko Petrovo Selo, Svilaj, Bajakovo, Karasovići i Tovarni…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
