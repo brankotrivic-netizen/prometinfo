@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "6.10.2026. 18:36",
-  "text": "Na većini cesta vozi se uz povoljne vremenske uvjete. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! teretno vozilo u kvaru na autocesti A6 u tunelu Tuhobić u smjeru Zagreba, vozi se jednim trakom uz ograničenje brzine od 60 km/h od 20:00 do 05:00 ujutro zatvara se dionica autoceste A2 Zagreb-Macelj između čvorova Krapina i Trakošćan, u oba smjera. Obilazak je državnom cestom DC1 od 22:00 do 06:00 ujutro zbog radova u tunelima Kamenice i Debeli Brijeg zatvara se dionica Jadranske magistrale (DC8) izmeđ…"
+  "updated": "6.10.2026. 22:23",
+  "text": "Na većini cesta vozi se uz povoljne vremenske uvjete. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće zatvorena je ŽC6224 Bračak - Hum Zabočki od 20:00 do 05:00 ujutro zatvara se dionica autoceste A2 Zagreb-Macelj između čvorova Krapina i Trakošćan, u oba smjera. Obilazak je državnom cestom DC1 od 22:00 do 06:00 ujutro zbog radova u tunelima Kamenice i Debeli Brijeg zatvara se dionica Jadranske magistrale (DC8) između čvorova Brijesta i Zaradeže AUTOCESTE A1 Zagreb-Split-Dubrovnik do 14. …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "6.10.2026. 17:22",
+  "updated": "6.10.2026. 21:12",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "6.10.2026. 17:22",
+  "updated": "6.10.2026. 21:12",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: uvodi se dodatno putovanje u nedjelju, 11. listopada 2026, na liniji 635 Split - Stari Grad - Split, s polaskom iz luke Split u 16:00 sati te povratkom iz luke Stari Grad u 19:00 sati 6. listopada (utorak), trajekt će iz luke Split za luku Stari Grad isploviti u 23:15 sati (umjesto u 20:30 sati) 7. listopada (srijeda), trajekt na liniji Orebić-Dominče isplovit će iz luke Orebić za luku Dominče u 02:00 umjesto u 00:30 7. listopada trajekt na liniji Zadar-Rivanj-Sestrunj-Zverinac-Molat-Ist plovit će prema izmijenjenom redu plovidbe (putovanje planirano za 8. listopada) Polazak iz luke Zadar/Gaženica biti će u 10:00 sati, a iz luke…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "6.10.2026. 17:22",
+  "updated": "6.10.2026. 21:12",
   "text": "Stanje u željezničkom putničkom prometu 5. listopada 2026. u 8.00 sati Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Erdut i Dalj na pruzi Vukovar-Borovo naselje – Erdut – državna granica - između kolodvora Karlovac i Oštarije na pruzi Zagreb GK – Rijeka - između kolodvora Pleternica i Blacko Jakšić na pruzi Pleter…"
  },
  {
