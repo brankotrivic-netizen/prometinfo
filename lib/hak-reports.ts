@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "6.10.2026. 22:23",
-  "text": "Na većini cesta vozi se uz povoljne vremenske uvjete. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće zatvorena je ŽC6224 Bračak - Hum Zabočki od 20:00 do 05:00 ujutro zatvara se dionica autoceste A2 Zagreb-Macelj između čvorova Krapina i Trakošćan, u oba smjera. Obilazak je državnom cestom DC1 od 22:00 do 06:00 ujutro zbog radova u tunelima Kamenice i Debeli Brijeg zatvara se dionica Jadranske magistrale (DC8) između čvorova Brijesta i Zaradeže AUTOCESTE A1 Zagreb-Split-Dubrovnik do 14. …"
+  "updated": "7.10.2026. 00:58",
+  "text": "Na većini cesta vozi se uz povoljne vremenske uvjete. Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: do 05:00 ujutro zatvara se dionica autoceste A2 Zagreb-Macelj između čvorova Krapina i Trakošćan, u oba smjera. Obilazak je državnom cestom DC1 do 06:00 ujutro zbog radova u tunelima Kamenice i Debeli Brijeg zatvara se dionica Jadranske magistrale (DC8) između čvorova Brijesta i Zaradeže AUTOCESTE A1 Zagreb-Split-Dubrovnik do 14. prosinca zbog radova na sanaciji mosta Grabara i Ričica na dionici čvor Gornja Pl…"
  },
  {
   "title": "Granični prijelazi",

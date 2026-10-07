@@ -1,40 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-06T21:26:35.918Z";
+export const PROMET_SI_UPDATED = "2026-10-07T00:52:00.175Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;881914;835ea803-e86a-4b99-a713-fee26a895629",
+  "id": "DARS;881917;e89739b0-dca8-4e09-b28a-758c8c87b326",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Celje vzhod - priključek Celje center v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
+  "desc": "A1, Maribor - Ljubljana, priključek Blagovica - počivališče Lukovica v smeri Ljubljane, dela, odstavni pas.",
   "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25428,
-  "lng": 15.30713,
-  "start": "2026-10-06T20:46:05.447Z",
-  "end": "2026-10-07T02:00:00Z",
-  "ts": "2026-10-06T20:46:09.09Z"
- },
- {
-  "id": "DARS;881906;c6f643e8-d2a5-4d8e-87b6-aa8dd6626f2b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Ivančna Gorica - priključek Grosuplje vzhod v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu, barvanje talnih označb.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.93474,
-  "lng": 14.80301,
-  "start": "2026-10-06T19:46:07.79Z",
-  "end": "2026-10-06T21:55:19.8Z",
-  "ts": "2026-10-06T19:46:15.92Z"
- },
- {
-  "id": "DARS;881905;c7342cb5-4038-4c3d-bc64-b0e3a5b3fbec",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Celje center iz smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25531,
-  "lng": 15.28335,
-  "start": "2026-10-06T19:40:28.29Z",
-  "end": "2026-10-07T01:00:00Z",
-  "ts": "2026-10-06T19:40:35.497Z"
+  "lat": 46.16441,
+  "lng": 14.75756,
+  "start": "2026-10-06T22:10:13.507Z",
+  "end": "2026-10-07T14:00:00Z",
+  "ts": "2026-10-06T22:10:41.263Z"
  },
  {
   "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
@@ -68,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-06T18:21:01.34Z",
   "end": "2026-10-07T03:00:26.347Z",
   "ts": "2026-10-06T18:21:16.25Z"
- },
- {
-  "id": "DARS;881895;1cd56670-0b49-471f-be5a-9a796954eb31",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Višnja Gora - uvoz Višnja Gora v smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.96189,
-  "lng": 14.71823,
-  "start": "2026-10-06T17:45:27.263Z",
-  "end": "2026-10-06T23:57:43.7Z",
-  "ts": "2026-10-06T17:45:34.123Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -224,17 +191,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-06T06:03:05.667Z"
  },
  {
-  "id": "DARS;881775;0c8549d7-7d56-4481-904d-b2185e01ac30",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-443, Lipovci - Bratonci, v Lipovcih, izmenično enosmerni promet, vzdrževalna dela, do 23:59.",
-  "loc": "R2-443, Lipovci - Bratonci",
-  "lat": 46.62463,
-  "lng": 16.21529,
-  "start": "2026-10-06T06:01:30.913Z",
-  "end": "2026-10-06T21:59:00Z",
-  "ts": "2026-10-06T06:02:10.873Z"
- },
- {
   "id": "DARS;881701;58be7e51-57e0-49c7-bac9-cbf1ca151ea5",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-650, Žužemberk - Pluska, Žužemberk - Dobrava, izmenično enosmerni promet, pomična zapora, popravilo bankin, do 7. 10. 2026, med 7. in 15. uro.",
@@ -277,17 +233,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-28T05:29:26.563Z",
   "end": "2026-12-11T18:00:00Z",
   "ts": "2026-10-05T07:02:03.963Z"
- },
- {
-  "id": "DARS;881556;eb404532-9632-452b-992c-ee49b12e7aad",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Celje - Vojnik, v Škofji vasi, oviran promet, izgradnje gradbiščnega priključka, asfaltiranje, do 6. 10. 2026.",
-  "loc": "R2-430, Višnja vas - Celje",
-  "lat": 46.2737,
-  "lng": 15.29531,
-  "start": "2026-10-05T05:54:19.657Z",
-  "end": "2026-10-06T21:59:00Z",
-  "ts": "2026-10-05T05:55:24.49Z"
  },
  {
   "id": "DARS;871074;a4b637af-52dc-4c7c-b59e-37d947e39102",
