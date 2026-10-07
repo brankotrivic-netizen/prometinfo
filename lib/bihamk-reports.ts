@@ -66,6 +66,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Od Siporex-a do Bingo City Centra, zbog radova, saobraća se usporeno."
    },
    {
+    "title": "Lončari-Pelagićevo",
+    "text": "U toku je izgradnja kružne raskrsnice, zbog čega se putnička vozila usmjeravaju na alernativni pravac, dok teretna vozila prolaze kroz raskrsnicu. Obavezno je poštivanje postavljene signalizacije."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },
@@ -89,10 +93,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Priboj–Sapna",
     "text": "Na regionalnoj cesti R-456 Priboj–Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
-   },
-   {
-    "title": "Hadžići-Donja Grkarica",
-    "text": "Na regionalnoj cesti R-442a Hadžići-Donja Grkarica (dionica od spoja sa lokalnom cestom za Igmansku džamiju do kružne raskrsnice kod Doma policije), zbog sanacionih radova saobraća se usporeno, jednom trakom."
    },
    {
     "title": "Bare-Hrenovica",
@@ -121,6 +121,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Zenica-Arnauti",
     "text": "U toku su sanacioni radovi, zbog čega se svakim radnim danom u periodu od 7 do 17 sati saobraća usporeno, jednom trakom na regionalnoj cesti R-457 Zenica-Arnauti."
+   },
+   {
+    "title": "Hadžići-Gornja Grkarica",
+    "text": "Zbog izvođenja radova, danas će u periodu od 07 do 18 sati biti obustavljen saobraćaj na dijelu regionalne ceste R-442A, od spoja sa lokalnom cestom za Igmansku džamiju do kružne raskrsnice kod Doma policije. Za vrijeme obustave vozila će koristiti cestu, preko Krupca."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
