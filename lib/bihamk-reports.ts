@@ -54,8 +54,8 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Skokovi-Srbljani (Kličići), zbog radova na izgradnji pješačke staze svaki dan osim nedjelje od 07 do 17 sati saobraća se naizmjenično, jednom trakom."
    },
    {
-    "title": "M-17 Ilidža (Lužani)",
-    "text": "Zbog radova na izgradnji dva kružna toka (spoj magistralnog puta M-17 sa ulicom Samira Ćatovića Kobre i spoj magistralnog puta M-17 sa ulicom Željeznička-Emira Bogunića Čarlija), saobraćaj je obustavljen do okončanja radova. Vozila se preusmjeravaju na alternativne pravce Blažuj-Ilidža i Ilidža-Blažuj. Molimo vozače za oprez i poštivanje privremene signalizacije."
+    "title": "M-17 Ilidža",
+    "text": "Zbog radova na izgradnji dva kružna toka (spoj magistralnog puta M-17 sa ulicom Samira Ćatovića Kobre i spoj magistralnog puta M-17 sa ulicom Željeznička-Emira Bogunića Čarlija), saobraćaj je preusmjeren na alternativne pravce. Molimo vozače za oprez i poštivanje privremene signalizacije."
    },
    {
     "title": "Gromiljak-Blažuj",
@@ -78,7 +78,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog izvođenja radova na magistralnoj cesti M-4.2, u mjestu Gnjilavac, saobraća se uspredno, svakog dana, osim nedjelje, u vremenu od 07 do 17 sati."
    },
    {
-    "title": "Izmjena režima saobraćaja u ulici Jablanska (Bihać)",
+    "title": "Ulica Jablanska (Bihać)",
     "text": "Zbog sanacije kolovoza u ulici Jablanska, u vremenu od 07 do 17 sati, saobraća se naizmjenično, jednom trakom."
    },
    {
