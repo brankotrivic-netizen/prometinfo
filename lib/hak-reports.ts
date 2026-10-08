@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "8.10.2026. 19:35",
-  "text": "Kolnici su mjestimice mokri i skliski. Zbog ponegdje obilnije kiše moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama i obilaznicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na DC33 Drniš-Knin kod Siverića, obilazak je županijskim cestama preko Oklaja ili Kadine Glavice AUTOCESTE A1 Zagreb-Split-Dubrovnik do 14. prosinca zbog radova na sanaciji mosta Grabara i Ričica na dionici čvor Gornja Ploča-čvor Sv. Rok (204+800 do…"
+  "updated": "9.10.2026. 00:31",
+  "text": "Kolnici su mjestimice mokri i skliski. Zbog ponegdje obilnije kiše moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama i obilaznicama. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 14. prosinca zbog radova na sanaciji mosta Grabara i Ričica na dionici čvor Gornja Ploča-čvor Sv. Rok (204+800 do 209+800 km) vozi se dvosmjerno, jednom stranom autoceste, kolnikom u smjeru Dubrovnika radovi između 139. i 145. km između čvora Otočac…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "8.10.2026. 19:21",
+  "updated": "9.10.2026. 00:31",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "8.10.2026. 19:21",
-  "text": "Zb og nepovoljnih vremenskih uvjeta u prekidu su: k atamaranske linije Pula-Zadar-Pula, Split-Milna-Hvar-Korčula-Dubrovnik , Split-Dubrovnik, Mali Lošinj-Cres-Rijeka i Novalja -Rab-Rijeka brodska linija Dubrovnik-Koločep-Lopud-Suđurađ. Izmjene u plovidbenom redu: 8. listopada trajekt \"Valun\" na liniji 832 Prapratno-Sobra isplovit će iz Sobre u 19:30, umjesto u 19:00 sati zbog loših vremenskih uvjeta 9. listopada trajektna linija 831 Suđurađ-Lopud-Koločep-Dubrovnik s polaskom u 07:00 bit će u prekidu 9. listopada trajektna linija 431 Zadar (Gaženica) - Preko iz Gaženice umjesto u 23:00 sata isplovit će u 23:59 uvodi se dodatno putovanje u nedjelju, 11. listopada 2026, na liniji 635 Split - St…"
+  "updated": "9.10.2026. 00:31",
+  "text": "Zb og nepovoljnih vremenskih uvjeta u prekidu su: trajektna linija Prapratno-Sobra u prekidu od 06:00 , Suđurađ-Lopud-Koločep-Dubrovnik u prekidu od 07:00 sati k atamaranske linije Pula-Zadar-Pula,Mali Lošinj-Cres-Rijeka i Novalja -Rab-Rijeka brodska linija Suđurađ-Lopud-Koločep-Dubrovnik Izmjene u plovidbenom redu: 9. listopada trajektna linija 431 Zadar (Gaženica) - Preko iz Gaženice umjesto u 23:00 sata isplovit će u 23:59 uvodi se dodatno putovanje u nedjelju, 11. listopada 2026, na liniji 635 Split - Stari Grad - Split, s polaskom iz luke Split u 16:00 sati te povratkom iz luke Stari Grad u 19:00 sati 12. listopada trajekt će iz luke Split za luku Vis isploviti u 19:30 sati (umjesto u 1…"
  },
  {
   "title": "Željeznički promet",

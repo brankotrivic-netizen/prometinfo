@@ -1,29 +1,51 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-08T17:46:24.315Z";
+export const PROMET_SI_UPDATED = "2026-10-08T22:36:30.433Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;882376;eb88c442-2190-444e-90f7-a240ce0d9a4c",
+  "id": "DARS;882400;47ada919-9729-4d4c-aec5-2c6e872059ea",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Celje center - priključek Žalec, Arja vas v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25506,
-  "lng": 15.24937,
-  "start": "2026-10-08T17:41:13.41Z",
-  "end": "2026-10-09T00:30:55.933Z",
-  "ts": "2026-10-08T17:41:15.573Z"
+  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - izvoz 14 Celje center v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.26794,
+  "lng": 15.19388,
+  "start": "2026-10-08T21:29:48.35Z",
+  "end": "2026-10-09T00:30:03.13Z",
+  "ts": "2026-10-08T21:29:53.077Z"
  },
  {
-  "id": "DARS;882373;ea9f645b-a17c-40d6-b4f8-851224433f61",
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 22. 10. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-10-22T21:59:00Z",
+  "ts": "2026-10-08T19:00:31.527Z"
+ },
+ {
+  "id": "DARS;882383;51a2da14-02a4-429c-904b-96f0ffcb1bdc",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Vodice - priključek Brnik v smeri Karavank, Avstrije, dela, oviran promet, strojno pometanje.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.18709,
-  "lng": 14.48109,
-  "start": "2026-10-08T17:25:37.847Z",
-  "end": "2026-10-08T23:00:00Z",
-  "ts": "2026-10-08T17:25:44.47Z"
+  "desc": "A2, Karavanke - Ljubljana, pred predorom Šentvid v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.10312,
+  "lng": 14.46803,
+  "start": "2026-10-08T18:08:47.557Z",
+  "end": "2026-10-09T03:00:00Z",
+  "ts": "2026-10-08T18:26:56.26Z"
+ },
+ {
+  "id": "DARS;882377;a896e99b-9e85-4076-b0ad-04405bf7c35c",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - zahodna obvoznica, priključek Ljubljana Brdo - razcep Koseze v smeri Kosez, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - zah. obvoznica",
+  "lat": 46.06479,
+  "lng": 14.4565,
+  "start": "2026-10-08T17:45:58.46Z",
+  "end": "2026-10-09T03:00:00Z",
+  "ts": "2026-10-08T18:04:45.39Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
