@@ -1,29 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-09T17:20:41.905Z";
+export const PROMET_SI_UPDATED = "2026-10-09T21:47:42.151Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;882613;f35fd8fb-bc36-4a2c-84dc-28a9b6e4188f",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Brezje - priključek Naklo v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.32639,
-  "lng": 14.22098,
-  "start": "2026-10-09T16:57:13.287Z",
-  "end": "2026-10-09T22:00:00Z",
-  "ts": "2026-10-09T17:06:54.843Z"
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 22. 10. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-10-22T21:59:00Z",
+  "ts": "2026-10-09T19:00:47.18Z"
  },
  {
-  "id": "DARS;882612;d5541cf6-a5a7-4636-af54-9a925b483bfb",
+  "id": "DARS;882624;52d1d030-84e8-4621-91f2-34d3a74e52c0",
   "type": "MaintenanceWorks",
-  "desc": "A3, razcep Gabrk - Fernetiči, izvoz Sežana vzhod - uvoz Sežana vzhod iz smeri Gabrka, dela, oviran promet.",
-  "loc": "A3-E70, E61, razcep Gabrk - Fernetiči",
-  "lat": 45.71374,
-  "lng": 13.88532,
-  "start": "2026-10-09T16:56:23.797Z",
-  "end": "2026-10-09T21:00:00Z",
-  "ts": "2026-10-09T16:56:27.023Z"
+  "desc": "A1, Ljubljana - južna obvoznica, razcep Kozarje iz smeri Viča proti Brdu, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.03897,
+  "lng": 14.45191,
+  "start": "2026-10-09T18:26:05.12Z",
+  "end": "2026-10-10T00:00:00Z",
+  "ts": "2026-10-09T18:26:08.243Z"
+ },
+ {
+  "id": "DARS;882622;74c9f2f8-b433-4fd8-81ce-d0e37fd5d548",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - priključek Celje center v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.25779,
+  "lng": 15.2368,
+  "start": "2026-10-09T18:09:30.887Z",
+  "end": "2026-10-10T00:00:00Z",
+  "ts": "2026-10-09T18:09:49.77Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
