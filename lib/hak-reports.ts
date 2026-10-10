@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "10.10.2026. 17:50",
-  "text": "Kolnici su mjestimice mokri i skliski. Zbog ponegdje obilnije kiše moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Ponegdje ima i magle. Povremena usporavanja, kolone u pokretu i kraći zastoji mogući su na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: životinja (srna) na autocesti A1 na čvoru Blato na Cetini na kolniku u smjeru Dubrovnika - promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h mo…"
+  "updated": "10.10.2026. 21:30",
+  "text": "Kolnici su mokri i skliski u većem dijelu zemlje. Zbog mjestimice obilnijih oborina moguće je zadržavanje veće količine vode na kolniku. Mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Ponegdje ima i magle. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama, povećaju razmak između vozila te izbjegavaju nagla kočenja i nagle pokrete upravljačem. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 14. prosinca zbog radova na sanaciji mosta Grabara i Ričica na dionici čvor Gornja Ploča-čvor Sv. Rok (204.+800 do 209.+800 km) vozi se dvosmjerno, jednom stranom autoceste, kolnikom u smjeru Dubrovnika radovi između 139. i 14…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "10.10.2026. 17:50",
+  "updated": "10.10.2026. 19:26",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "10.10.2026. 17:50",
+  "updated": "10.10.2026. 19:26",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 10. listopada trajekt Valun na liniji 832 Prapratno-Sobra isploviti će iz Sobre u 19:50 umjesto u 19:00 zbog loših vremenskih uvjeta u luci Prapratno 10. listopada linija 842: Dubrovnik - Korčula - Hvar - Milna - Split dana kasnit će 45 minuta po voznom rasporedu u jutarnjem putovanju prema Splitu 11. listopada uvodi se dodatno putovanje na liniji 635 Split - Stari Grad - Split, s polaskom iz luke Split u 16:00 sati te povratkom iz luke Stari Grad u 19:00 sati 12. listopada trajekt će iz luke Split za luku Vis isploviti u 19:30 sati (umjesto u 18:30 sati) od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrt…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "10.10.2026. 17:09",
+  "updated": "10.10.2026. 19:26",
   "text": "Stanje u željezničkom putničkom prometu 9. listopada 2026. u 8.00 sati Danas, 9. listopada 2026. putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Perković 9.03 5802 Perković 9.26 – Knin 10.28 Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Erdut i Dalj na pruzi Vukovar-Borovo naselje – Erdut – državna grani…"
  },
  {

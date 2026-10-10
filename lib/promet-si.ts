@@ -1,8 +1,74 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-10T15:51:51.491Z";
+export const PROMET_SI_UPDATED = "2026-10-10T19:36:59.890Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 22. 10. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-10-22T21:59:00Z",
+  "ts": "2026-10-10T19:00:53.43Z"
+ },
+ {
+  "id": "DARS;882715;dc72ef7d-80b9-4e74-be67-9f226550a039",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Celje zahod - priključek Sl. Konjice v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.26797,
+  "lng": 15.19359,
+  "start": "2026-10-10T18:39:06.127Z",
+  "end": "2026-10-11T00:00:33.757Z",
+  "ts": "2026-10-10T18:39:09.53Z"
+ },
+ {
+  "id": "DARS;882712;cf3f4180-e271-4bfc-a25e-bdfd6d4f7ff3",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, počivališče Povodje - priključek Vodice v smeri Jesenic, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.16242,
+  "lng": 14.48321,
+  "start": "2026-10-10T17:39:58.86Z",
+  "end": "2026-10-11T03:00:00Z",
+  "ts": "2026-10-10T17:57:48.423Z"
+ },
+ {
+  "id": "DARS;882713;b1a5961c-f60e-4842-8883-3e7a2b34f5a2",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Vodice - počivališče Povodje v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.16329,
+  "lng": 14.48346,
+  "start": "2026-10-10T17:57:05.217Z",
+  "end": "2026-10-11T03:00:00Z",
+  "ts": "2026-10-10T17:57:21.087Z"
+ },
+ {
+  "id": "DARS;880750;4341866b-bc44-40e8-b470-ca3377982c87",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - predor Ločica v smeri Ljubljane, dela, odstavni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25351,
+  "lng": 14.97584,
+  "start": "2026-09-30T21:08:08.99Z",
+  "end": "2026-10-11T18:00:00Z",
+  "ts": "2026-10-10T16:22:19.887Z"
+ },
+ {
+  "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-608, Lokve - Čepovan, pri Čepovanu, izmenično enosmerni promet, izgradnja optične povezave, do 16. 10. 2026, med 18. in 7. uro. Popolna zapora je v dnevnem času med 7. in 18. uro.",
+  "loc": "R3-608, Lokve - Čepovan",
+  "lat": 46.03221,
+  "lng": 13.78913,
+  "start": "2026-08-24T05:33:20.253Z",
+  "end": "2026-10-16T21:59:00Z",
+  "ts": "2026-10-10T16:00:22.073Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -68,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-09T07:01:16.34Z",
   "end": "2026-10-16T13:15:00Z",
   "ts": "2026-10-09T07:05:11.637Z"
- },
- {
-  "id": "DARS;882485;a3341010-1efe-4e96-a798-81d1cc499260",
-  "type": "MaintenanceWorks",
-  "desc": "G2-104, Kranj - Sp. Brnik, v križišču pri avtocestnem priključku, oviran promet, postavitve portalov (gradnja krožišča), do 10. 10. 2026.",
-  "loc": "G2-104, Kranj - Spodnji Brnik",
-  "lat": 46.23619,
-  "lng": 14.43267,
-  "start": "2026-10-10T04:00:00Z",
-  "end": "2026-10-10T18:00:00Z",
-  "ts": "2026-10-09T06:31:19.267Z"
  },
  {
   "id": "DARS;877874;2cae7ef7-b4d7-4ff9-a025-93268a216b41",
@@ -409,17 +464,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-31T06:09:26.953Z",
   "end": "2026-11-27T16:30:00Z",
   "ts": "2026-10-05T04:37:20.42Z"
- },
- {
-  "id": "DARS;880750;4341866b-bc44-40e8-b470-ca3377982c87",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - predor Ločica v smeri Ljubljane, dela, odstavni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25351,
-  "lng": 14.97584,
-  "start": "2026-09-30T21:08:08.99Z",
-  "end": "2026-10-10T18:00:00Z",
-  "ts": "2026-10-04T21:09:53.373Z"
  },
  {
   "id": "DARS;865957;111ccac2-4aa8-4e72-8cb3-0ae5cd887f66",
