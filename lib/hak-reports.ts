@@ -3,33 +3,33 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "9.10.2026. 23:44",
-  "text": "Kolnici su mjestimice mokri i skliski. Zastoji su povremeno u zonama radova. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik do 14. prosinca zbog radova na sanaciji mosta Grabara i Ričica na dionici čvor Gornja Ploča-čvor Sv. Rok (204.+800 do 209.+800 km) vozi se dvosmjerno, jednom stranom autoceste, kolnikom u smjeru Dubrovnika radovi između 139. i 145. km između čvora Otočac i čvora Perušić na kolniku u smjeru Dubrovnika. Promet se vodi dvosmjerno smjerom Zagreb dok je smjer Dubrovnik zatvoren za promet zbog radova u tunelu Brezik. Predviđeno trajanje radova je do 16.10.2026. A2 Zagreb-Macelj do 29…"
+  "updated": "10.10.2026. 12:04",
+  "text": "Kolnici su mjestimice mokri i skliski. Zbog ponegdje obilnije kiše moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Ponegdje ima i magle. Povremena usporavanja, kolone u pokretu i kraći zastoji mogući su na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na državnoj cesti DC404 od čvora Drage prema Vežici vozi se preticajnim trakom most dr. Franja Tuđmana u Dubrovniku privremeno je zatvoren zbog…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "9.10.2026. 23:13",
+  "updated": "10.10.2026. 11:55",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "9.10.2026. 23:13",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 10. listopada trajekt Valun na liniji 832 Prapratno-Sobra isploviti će iz Sobre u 06:20 umjesto u 06:00 zbog loših vremenskih uvjeta u luci Prapratno 9. listopada trajektna linija 431 Zadar (Gaženica) - Preko iz Gaženice umjesto u 23:00 sata isplovit će u 23:59 10. listopada uvodi se zamjensko putovanje na katamaranskoj liniji Zadar-Pula (Krilo Lux) u 16:00 11. listopada uvodi se dodatno putovanje na liniji 635 Split - Stari Grad - Split, s polaskom iz luke Split u 16:00 sati te povratkom iz luke Stari Grad u 19:00 sati 12. listopada trajekt će iz luke Split za luku Vis isploviti u 19:30 sati (umjesto u 18:30 sati) od ponedjeljk…"
+  "updated": "10.10.2026. 11:55",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 10. listopada linija 842: Dubrovnik - Korčula - Hvar - Milna - Split dana kasnit će 45 minuta po voznom rasporedu u jutarnjem putovanju prema Splitu 10. listopada uvodi se zamjensko putovanje na katamaranskoj liniji Zadar-Pula (Krilo Lux) u 16:00 11. listopada uvodi se dodatno putovanje na liniji 635 Split - Stari Grad - Split, s polaskom iz luke Split u 16:00 sati te povratkom iz luke Stari Grad u 19:00 sati 12. listopada trajekt će iz luke Split za luku Vis isploviti u 19:30 sati (umjesto u 18:30 sati) od ponedjeljka do petka do 27. rujna 2026. godine te ponedjeljkom i četvrtkom u razdoblju od 28. rujna do 07. listopada 2026. …"
  },
  {
   "title": "Željeznički promet",
-  "updated": "9.10.2026. 21:47",
+  "updated": "10.10.2026. 11:55",
   "text": "Stanje u željezničkom putničkom prometu 9. listopada 2026. u 8.00 sati Danas, 9. listopada 2026. putnike prevoze autobusi umjesto vlakova: 5803 Knin 8.05 – Perković 9.03 5802 Perković 9.26 – Knin 10.28 Između kolodvora Pleternica i Čaglin od ponedjeljka do petka umjesto vlakova br. 6703 i 6702 voze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Botovo – Dugo Selo - između kolodvora Erdut i Dalj na pruzi Vukovar-Borovo naselje – Erdut – državna grani…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "9.10.2026. 17:42",
+  "updated": "10.10.2026. 03:23",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "9.10.2026. 10:41",
-  "text": "Prometna prognoza za Hrvatsku za 10. listopada 2026. Vozit će se po mokrim i skliskim kolnicima u većem dijelu zemlje. Zbog mjestimice obilnijih oborina, moguće je zadržavanje veće količine vode na kolniku. Bit će veća opasnost od odrona na cestama u gorju. Zbog jake bure u priobalju moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Zbog promjenjive vremenske situacije savjetujemo vozačima da se prije polaska na put informiraju o stanju i prohodnosti cesta na mrežnim stranicama ili mobilnoj aplikaciji Hrvatskog autokluba. Pojačan promet očekuje se na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone mogući su u z…"
+  "updated": "10.10.2026. 08:38",
+  "text": "Prometna prognoza za Hrvatsku za 11. listopada 2026. Tijekom noći i jutra vozit će se po mokrim i skliskim kolnicima u većem dijelu zemlje. Zbog mjestimice obilnijih oborina, osobito u Lici i Dalmaciji, moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Zbog jake bure u priobalju moguća su ograničenja za pojedine skupine vozila, posebice na cestama u podvelebitskom području. Zbog promjenjive vremenske situacije savjetujemo vozačima da se prije polaska na put informiraju o stanju i prohodnosti cesta na internetskim stranicama ili mobilnoj aplikaciji Hrvatskog autokluba. Povremena usporavanja, kolone u pokretu…"
  },
  {
   "title": "Obaveza zimske opreme",

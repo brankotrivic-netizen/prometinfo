@@ -133,7 +133,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Islandija",
   "flag": "🇮🇸",
-  "p95": "271,770 ISK (1,98 EUR)",
+  "p95": "271,770 ISK (1,99 EUR)",
   "p98": "",
   "diesel": "311,940 ISK (2,28 EUR)",
   "date": "1. 10. 2026"
@@ -165,7 +165,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Liechtenstein",
   "flag": "🇱🇮",
-  "p95": "2,130 CHF (2,28 EUR)",
+  "p95": "2,130 CHF (2,29 EUR)",
   "p98": "",
   "diesel": "2,470 CHF (2,65 EUR)",
   "date": "1. 10. 2026"
@@ -189,7 +189,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Madžarska",
   "flag": "🇭🇺",
-  "p95": "635,000 HUF (1,73 EUR)",
+  "p95": "635,000 HUF (1,74 EUR)",
   "p98": "",
   "diesel": "709,000 HUF (1,94 EUR)",
   "date": "1. 10. 2026"
@@ -309,7 +309,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Švica",
   "flag": "🇨🇭",
-  "p95": "2,140 CHF (2,29 EUR)",
+  "p95": "2,140 CHF (2,30 EUR)",
   "p98": "2,461 CHF (2,64 EUR)",
   "diesel": "2,480 CHF (2,66 EUR)",
   "date": "1. 10. 2026"
