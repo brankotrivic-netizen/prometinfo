@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-11T20:25:12.890Z";
+export const PROMET_SI_UPDATED = "2026-10-11T23:46:38.337Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;882808;271e5601-6070-4ec3-88a9-0c5652e85e01",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, odstavni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.17691,
+  "lng": 14.81726,
+  "start": "2026-10-11T20:28:15.553Z",
+  "end": "2026-10-14T21:00:00Z",
+  "ts": "2026-10-11T20:28:32.53Z"
+ },
  {
   "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -26,28 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-11T18:50:15.117Z"
  },
  {
-  "id": "DARS;882804;3c86f3d7-a2f5-4890-9606-03f166fb4ef1",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana zahod, Vič, dela, oviran promet.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.03657,
-  "lng": 14.46618,
-  "start": "2026-10-11T18:06:37.247Z",
-  "end": "2026-10-11T21:00:10.317Z",
-  "ts": "2026-10-11T18:06:42.793Z"
- },
- {
-  "id": "DARS;882803;07c57d47-1f34-4463-810c-ed857b41b6c8",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, priključek Ljubljana center - počivališče Barje v smeri Kozarij, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.02663,
-  "lng": 14.49083,
-  "start": "2026-10-11T18:02:23.987Z",
-  "end": "2026-10-20T21:00:14.987Z",
-  "ts": "2026-10-11T18:02:29.513Z"
- },
- {
   "id": "DARS;882802;bd269503-15c6-4bde-9719-02c559d4691d",
   "type": "MaintenanceWorks",
   "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, odstavni pas.",
@@ -68,17 +57,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-11T18:00:30.813Z",
   "end": "2026-10-13T21:00:00Z",
   "ts": "2026-10-11T18:01:33Z"
- },
- {
-  "id": "DARS;882797;2a7309fc-2a59-4c36-8c4b-f10142770150",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Maribor jug, Slivnica - priključek Sl. Konjice v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.47741,
-  "lng": 15.65726,
-  "start": "2026-10-11T17:37:15.023Z",
-  "end": "2026-10-12T00:00:38.873Z",
-  "ts": "2026-10-11T17:37:22.583Z"
  },
  {
   "id": "DARS;882691;c91a7193-aca1-489e-bca2-4f47bd2f4737",
