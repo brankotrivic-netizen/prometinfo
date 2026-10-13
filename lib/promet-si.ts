@@ -1,29 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-12T20:21:29.711Z";
+export const PROMET_SI_UPDATED = "2026-10-13T02:08:25.944Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;882691;c91a7193-aca1-489e-bca2-4f47bd2f4737",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - vzhodna obvoznica, priključek Maribor center - razcep Slivnica v smeri Ljubljane, dela, promet poteka po enem voznem pasu.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.50077,
+  "lng": 15.66967,
+  "start": "2026-10-10T12:26:23.617Z",
+  "end": "2026-11-10T18:00:00Z",
+  "ts": "2026-10-12T23:32:00.3Z"
+ },
+ {
+  "id": "DARS;882755;375defe6-214d-48cf-89ba-7682fa5827e1",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, razcep Slivnica - priključek Rogoza v smeri Dragučove, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.47686,
+  "lng": 15.65757,
+  "start": "2026-10-11T10:10:52.413Z",
+  "end": "2026-11-10T22:00:00Z",
+  "ts": "2026-10-12T23:31:50.803Z"
+ },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Šentilj, krožišče Pesnica - priključek Šentilj v smeri Šentilja, Avstrije, dela, promet poteka po enem voznem pasu v vsako smer, po drugi strani avtoceste.",
+  "desc": "A1, Maribor - Šentilj, krožišče Pesnica - priključek Šentilj v smeri Šentilja, Avstrije, dela, promet poteka po dveh zoženih pasovih, po drugi strani avtoceste.",
   "loc": "A1-E57, E59, Maribor - Šentilj",
   "lat": 46.64675,
   "lng": 15.64951,
   "start": "2026-04-13T10:27:58.043Z",
   "end": "2026-10-16T21:59:00Z",
-  "ts": "2026-10-12T20:07:51.757Z"
- },
- {
-  "id": "DARS;883047;e4be650a-7b47-438d-b671-abec91258a12",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Ivančna Gorica - izvoz Višnja Gora v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.93474,
-  "lng": 14.80301,
-  "start": "2026-10-12T20:03:12.907Z",
-  "end": "2026-10-13T00:30:59.513Z",
-  "ts": "2026-10-12T20:03:18.48Z"
+  "ts": "2026-10-12T21:10:37.487Z"
  },
  {
   "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
@@ -35,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-28T19:00:00Z",
   "end": "2026-10-22T21:59:00Z",
   "ts": "2026-10-12T19:00:15.42Z"
- },
- {
-  "id": "DARS;882797;2a7309fc-2a59-4c36-8c4b-f10142770150",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Maribor jug, Slivnica - priključek Sl. Konjice v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.47741,
-  "lng": 15.65726,
-  "start": "2026-10-12T18:48:46.34Z",
-  "end": "2026-10-13T02:30:00Z",
-  "ts": "2026-10-12T18:49:11.247Z"
- },
- {
-  "id": "DARS;883036;dfffef5b-b709-41f2-b2a8-7ef4c289d993",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Višnja Gora - uvoz Višnja Gora v smeri Novega mesta, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.96211,
-  "lng": 14.71698,
-  "start": "2026-10-12T17:19:08.543Z",
-  "end": "2026-10-13T01:00:00Z",
-  "ts": "2026-10-12T17:19:29.637Z"
  },
  {
   "id": "DARS;871746;59e343bc-168e-4844-866c-845ec84aa70a",
@@ -112,28 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-09T06:12:18.24Z",
   "end": "2026-10-16T16:00:00Z",
   "ts": "2026-10-12T12:26:09.67Z"
- },
- {
-  "id": "DARS;882691;c91a7193-aca1-489e-bca2-4f47bd2f4737",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, priključek Maribor center - razcep Slivnica v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.50077,
-  "lng": 15.66967,
-  "start": "2026-10-10T12:26:23.617Z",
-  "end": "2026-11-10T18:00:00Z",
-  "ts": "2026-10-12T10:30:06.377Z"
- },
- {
-  "id": "DARS;882755;375defe6-214d-48cf-89ba-7682fa5827e1",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, razcep Slivnica - priključek Rogoza v smeri Dragučove, dela, promet poteka po enem voznem pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.47686,
-  "lng": 15.65757,
-  "start": "2026-10-11T10:10:52.413Z",
-  "end": "2026-11-10T22:00:00Z",
-  "ts": "2026-10-12T10:29:27.303Z"
  },
  {
   "id": "DARS;882906;ee887bfc-2984-4a41-b598-b8d6e151405a",

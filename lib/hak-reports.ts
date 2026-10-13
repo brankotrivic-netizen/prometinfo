@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.10.2026. 22:10",
-  "text": "Zbog jakog vjetra zabrana je prometa za pojedine skupine vozila na pojedinim cestama u priobalju (opširnije u izvješću). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: do 5:00 sati zbog radova zatvorena je autocesta A6 Rijeka-Zagreb između čvorova Ravna Gora i Delnice u smjeru Zagreba, zbog radova u tunelima. Obilazak smjer Rijeka-Zagreb: čvor Delnice (A6)-DC3-ŽC5034- čvor Ravna Gora (A6) do 5:00 sati zbog radova zatvorena je brza cesta DC1 Solin-Klis u oba smjera, a obilazak je starom kliškom cestom (ŽC6253) do 5:00 sati zbog radova zatvorena je omiška obilaznica (DC553). Obilazak je: Ja…"
+  "updated": "13.10.2026. 03:42",
+  "text": "Zbog jakog vjetra zabrana je prometa za pojedine skupine vozila na pojedinim cestama u priobalju (opširnije u izvješću). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: životinja (srna) na autocesti A1 između 60+000 km i 61+000 km , između čvora Novigrad i čvora Bosiljevo 1. Vozi se uz ograničenje brzine od 60 km/h do 5:00 sati zbog radova zatvorena je autocesta A6 Rijeka-Zagreb između čvorova Ravna Gora i Delnice u smjeru Zagreba, zbog radova u tunelima. Obilazak smjer Rijeka-Zagreb: čvor Delnice (A6)-DC3-ŽC5034- čvor Ravna Gora (A6) do 5:00 sati zbog radova zatvorena je brza cesta DC1 So…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "12.10.2026. 22:10",
+  "updated": "13.10.2026. 03:43",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.10.2026. 22:10",
+  "updated": "13.10.2026. 02:05",
   "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu je trajektna linija Prizna-Žigljen. Izmjene u plovidbenom redu: 12. listopada trajekt će iz luke Split za luku Vis isploviti u 19:30 sati (umjesto u 18:30 sati) 13. listopada katamaran na liniji 9603 Jelsa-Bol-Split s polaskom iz luke Jelsa u 06:00 isploviti će iz luke Stari Grad. Informacija o uplovu u luku Bol će biti dostupna 45 minuta prije polaska katamarana ovisno o vremenskim neprilikama 15. listopada trajekt će iz luke Split za luku Rogač isploviti u 21:30 sati (umjesto u 20:30 sati). 15. listopada (četvrtak) trajekt će iz luke Split isploviti u 21:30 sati (umjesto u 21:00 sati). Jadrolinijin red plovidbe za 2026. godinu https://www.jadrol…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "12.10.2026. 22:10",
+  "updated": "13.10.2026. 02:05",
   "text": "Stanje u željezničkom putničkom prometu 12. listopada 2026. u 8.00 sati Zbog izvanrednog događaja u kolodvoru Meja promet vlakova je u prekidu, a putnike između kolodvora Rijeka i Plase u oba smjera prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno umjesto vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim blagdana, putnike prevoze autobusi. Između umjesto Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim blagdana, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Između kolodvora Vrbovec i Križevci, na pruzi državna granica – Botovo – Dugo Selo, zbog radova…"
  },
  {
