@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-13T11:15:19.748Z";
+export const PROMET_SI_UPDATED = "2026-10-13T11:26:23.071Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;883159;2bfef575-376c-4ffd-a7a0-3e3bc313fa55",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.00481,
+  "lng": 14.35711,
+  "start": "2026-10-13T06:37:11.283Z",
+  "end": "2026-10-13T14:00:00Z",
+  "ts": "2026-10-13T11:18:29.39Z"
+ },
  {
   "id": "DARS;883105;bbe1479d-6bbf-4f90-8011-1031df02ba11",
   "type": "MaintenanceWorks",
@@ -246,17 +257,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-13T07:03:44.793Z"
  },
  {
-  "id": "DARS;883159;2bfef575-376c-4ffd-a7a0-3e3bc313fa55",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.00481,
-  "lng": 14.35711,
-  "start": "2026-10-13T06:37:11.283Z",
-  "end": "2026-10-13T12:00:00Z",
-  "ts": "2026-10-13T06:38:04.197Z"
- },
- {
   "id": "DARS;882220;3e7b439c-c448-4f45-aa32-f4377621144e",
   "type": "MaintenanceWorks",
   "desc": "R2-421, Štrekljevec - Jugorje, v Selah pri Jugorju, kratkotrajne popolne zapore (do 30 minut), dela na elektro omrežju, do 15. 10. 2026.",
@@ -321,17 +321,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-12T06:30:44.073Z",
   "end": "2026-10-13T12:30:00Z",
   "ts": "2026-10-13T06:04:17.627Z"
- },
- {
-  "id": "DARS;883136;9c06a3b6-66eb-46ca-abeb-b2475ef415a7",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, predor Kastelec v smeri Kopra, dela, zaprt vozni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.58389,
-  "lng": 13.90216,
-  "start": "2026-10-13T05:47:37.29Z",
-  "end": "2026-10-13T12:00:00Z",
-  "ts": "2026-10-13T05:52:15.7Z"
  },
  {
   "id": "DARS;883135;a35512ee-aa7b-4513-a946-559a2c142c16",
@@ -409,17 +398,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-13T05:45:40.153Z",
   "end": "2026-10-13T13:00:00Z",
   "ts": "2026-10-13T05:45:59.97Z"
- },
- {
-  "id": "DARS;883124;f9a05c7d-f360-49a8-bce3-7be1d7546b2b",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, priključek Vučja vas - predor Cenkova v smeri Maribora, dela, pomična zapora voznega pasu.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.5793,
-  "lng": 16.04302,
-  "start": "2026-10-13T05:45:22.49Z",
-  "end": "2026-10-13T12:00:54.413Z",
-  "ts": "2026-10-13T05:45:26.05Z"
  },
  {
   "id": "DARS;883123;4b8b4e5b-edd7-4d13-a1aa-b0ffd4966dee",
