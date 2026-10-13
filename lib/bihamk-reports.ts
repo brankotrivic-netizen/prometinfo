@@ -86,6 +86,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "zbog sanacije kolovoza, u vremenu od 07 do 17 sati, saobraća se naizmjenično, jednom trakom."
    },
    {
+    "title": "Kaonik-Gromiljak (Kaćuni-Gromiljak)",
+    "text": "Zbog sanacionih radova na magistralnoj cesti Kaonik-Gromiljak (Kaćuni-Gromiljak) svaki dan osim nedjelje od 07 do 17 sati saobraća se naizmjenično, jednom trakom (postavljeni semafori)."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },
