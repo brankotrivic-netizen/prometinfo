@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-13T11:00:01.232Z";
+export const PROMET_SI_UPDATED = "2026-10-13T11:15:19.748Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;883105;bbe1479d-6bbf-4f90-8011-1031df02ba11",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, priključek Lancova vas - priključek Zlatoličje v smeri Maribora, dela, oviran promet.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.39234,
+  "lng": 15.85665,
+  "start": "2026-10-13T05:27:12.993Z",
+  "end": "2026-10-13T17:00:00Z",
+  "ts": "2026-10-13T11:12:11.99Z"
+ },
+ {
+  "id": "DARS;883226;59794901-7a8f-4a15-a508-2d745edd1b1e",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, pred predorom Šentvid v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.10235,
+  "lng": 14.46743,
+  "start": "2026-10-13T11:11:18.623Z",
+  "end": "2026-10-13T17:00:00Z",
+  "ts": "2026-10-13T11:11:20Z"
+ },
  {
   "id": "DARS;883118;be2280fc-7a71-4731-a285-309e55bcdad2",
   "type": "MaintenanceWorks",
@@ -15,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-13T10:56:09.65Z"
  },
  {
-  "id": "DARS;883220;39527cf7-395a-455e-8613-70435858d96d",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, pred izvozom 13 Ljubljana Brod v smeri Jesenic, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.10154,
-  "lng": 14.46694,
-  "start": "2026-10-13T10:48:00.333Z",
-  "end": "2026-10-13T16:00:00Z",
-  "ts": "2026-10-13T10:48:01.63Z"
- },
- {
   "id": "DARS;883219;678d1011-7321-4783-bb31-6d0afcace34f",
   "type": "MaintenanceWorks",
   "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - priključek Sl. Bistrica jug v smeri Maribora, dela, zaprt prehitevalni pas.",
@@ -35,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-13T10:47:32.463Z",
   "end": "2026-10-13T17:00:00Z",
   "ts": "2026-10-13T10:47:37.39Z"
- },
- {
-  "id": "DARS;883218;ed043cd5-7dbf-4ccc-aa2f-3f1927aaf10e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Črni Kal - predor Kastelec v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.55277,
-  "lng": 13.85926,
-  "start": "2026-10-13T10:47:20.793Z",
-  "end": "2026-10-13T12:00:37.38Z",
-  "ts": "2026-10-13T10:47:23.307Z"
  },
  {
   "id": "DARS;882691;c91a7193-aca1-489e-bca2-4f47bd2f4737",
@@ -123,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-13T08:44:07.38Z",
   "end": "2026-10-13T13:00:00Z",
   "ts": "2026-10-13T08:44:21.92Z"
- },
- {
-  "id": "DARS;883187;5278ac58-3cfd-41eb-ac0b-a857b4b105ad",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Ivančna Gorica - počivališče Podsmreka v smeri Ljubljane, dela, zaprt vozni pas, strojna sečnja dreves.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.93465,
-  "lng": 14.79146,
-  "start": "2026-10-13T08:26:36.993Z",
-  "end": "2026-10-13T11:30:16.223Z",
-  "ts": "2026-10-13T08:26:59.62Z"
  },
  {
   "id": "DARS;883181;14411701-4cd8-4d4c-8def-deafb1b17321",
@@ -530,17 +519,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-13T05:30:51.527Z",
   "end": "2026-10-14T15:30:00Z",
   "ts": "2026-10-13T05:31:22.423Z"
- },
- {
-  "id": "DARS;883105;bbe1479d-6bbf-4f90-8011-1031df02ba11",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, priključek Lancova vas - priključek Hajdina v smeri Maribora, dela, oviran promet.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.39234,
-  "lng": 15.85665,
-  "start": "2026-10-13T05:27:12.993Z",
-  "end": "2026-10-13T17:00:00Z",
-  "ts": "2026-10-13T05:28:01.52Z"
  },
  {
   "id": "DARS;883098;19002b8f-8fcf-4086-9dfa-692a8fab2268",
