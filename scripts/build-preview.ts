@@ -139,7 +139,7 @@ async function main() {
       (w as { izlazTsISO?: string }).izlazTsISO || w.tsISO,
     ].filter(Boolean).map((iso) => Math.round((Date.now() - Date.parse(iso)) / 60000));
     const stale = dirAges.some((age) => age > 90) ? " · ⚠ vsaj ena smer je starejša od 90 min" : "";
-    it.rawStatus = `🇭🇷 HAK/MUP: ${parts.join(", ")}${stale}`;
+    if (parts.length) it.rawStatus = `🇭🇷 HAK/MUP: ${parts.join(", ")}${stale}`;
     // shrani za smer + zanesljivost (kasnejše faze)
     (it as unknown as { hak: unknown }).hak = {
       ulazMin: w.ulazMin, izlazMin: w.izlazMin, ulazTxt: w.ulazTxt, izlazTxt: w.izlazTxt,
@@ -276,6 +276,22 @@ async function main() {
     return live || links ? `<div class="cams">${live}${links}</div>` : "";
   };
 
+  // Pošten prikaz na kartici prehoda: "do 30 min" je splošna ocena, "Duga je kolona ... na izlazu" je dolga kolona.
+  const genTxt = (t: string) => /\bdo\s*30\b|nisu\s+du[žz]a\s+od\s+30/i.test(t || "");
+  const queueTxt = (t: string): string | null => {
+    let hit: string | null = null;
+    for (const sn of String(t || "").toLowerCase().split(/[.]/)) {
+      if (/(dug|velik|duz)[a-zčšž]* +(je +)?kolon|guzv|gužv/.test(sn) && /putni/.test(sn)) hit = hit || (/izlaz/.test(sn) ? "izstop iz BiH" : /ulaz/.test(sn) ? "vstop v BiH" : "obe smeri");
+    }
+    return hit;
+  };
+  const waitBadge = (it: Item) => {
+    const q = queueTxt(it.rawStatus);
+    if (q) return `<span class="badge b-high">Dolga kolona</span><span>${q}</span>`;
+    if ((genTxt(it.rawStatus) && (it.waitMinutes == null || it.waitMinutes <= 30)) || (/AMSS/.test(it.rawStatus) && it.waitMinutes === 30)) return `<span class="badge b-none">Ni kolone</span><span>uradno do 30 min</span>`;
+    return `<span class="badge b-${it.level}">${LEVEL_LABEL[it.level]}</span>${it.level === "unknown" || it.waitMinutes == null ? "" : `<span>Čakanje: ${waitText(it.waitMinutes)}</span>`}`;
+  };
+
   const sections = groupArr.map((g) => `
     <section class="country-group" data-countries="${g.a} ${g.b}">
       <h2>${FLAG[g.a]} ${COUNTRY_NAMES[g.a]} ↔ ${FLAG[g.b]} ${COUNTRY_NAMES[g.b]} <span class="cnt">${g.list.length}</span></h2>
@@ -283,7 +299,7 @@ async function main() {
         ${[...g.list].sort((a, b) => (b.waitMinutes ?? -1) - (a.waitMinutes ?? -1)).map((it) => `
           <article class="card lvl-${it.level}">
             <div class="name">${it.name}<button class="cfav" data-cid="${it.id}" title="Dodaj med priljubljene prehode">☆</button></div>
-            <div class="wait"><span class="badge b-${it.level}">${LEVEL_LABEL[it.level]}</span>${it.level === "unknown" || it.waitMinutes == null ? "" : `<span>Čakanje: ${waitText(it.waitMinutes)}</span>`}</div>
+            <div class="wait">${waitBadge(it)}</div>
             <div class="raw">${it.rawStatus}</div>
             ${cardCams((it as unknown as { images?: { name: string; url: string }[] }).images)}
             ${camBtn(it.cameras, it.streams, it.id)}
@@ -579,12 +595,10 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .rmore>summary{cursor:pointer;font-size:13px;font-weight:600;color:#1d4ed8}
 .livesrc{font-size:12px;color:#15803d;margin:-4px 0 8px}
 .liveline{font-size:13px;line-height:1.45;margin:6px 0 2px;padding:6px 9px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px}
-@media(prefers-color-scheme:dark){.liveline{background:#052e16;border-color:#14532d}}
 .fbmain{margin:0 0 10px}
 .fbbtn{display:inline-block;background:#1877f2;color:#fff!important;text-decoration:none;border-radius:7px;padding:3px 9px;font-size:13px;font-weight:600;margin:2px 0 4px}
 .alertbox{background:#fef2f2;border:2px solid #dc2626;color:#7f1d1d;border-radius:10px;padding:10px 12px;margin:0 0 10px;font-size:13.5px;line-height:1.5;display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .alertbox button{flex:none;background:none;border:none;color:#7f1d1d;font-size:16px;cursor:pointer}
-@media(prefers-color-scheme:dark){.etarow{background:#0b2138;border-color:#1e3a5f}}
 .camver{font-size:12.5px;margin:5px 0;background:var(--panel-2);border-radius:7px;padding:6px 9px}
 .cchk{font-size:12px;margin:8px 0 6px;text-align:left;background:#eff6ff;border-radius:7px;padding:7px 9px;line-height:1.5}
 .ccbtns,.dccbtns{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
@@ -691,7 +705,6 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .wxrow{font-size:12.5px;margin:5px 0;background:var(--panel-2);border-radius:7px;padding:6px 9px;line-height:1.5}
 .wxrow.meta{color:var(--muted)}
 .locbanner{background:#ecfdf5;border:2px solid #10b981;color:#065f46;border-radius:10px;padding:10px 12px;margin:0 0 10px;font-size:13.5px;line-height:1.6}
-@media(prefers-color-scheme:dark){.locbanner{background:#052e23;border-color:#10b981;color:#a7f3d0}}
 .reloadbtn{background:#0f766e;color:#fff;border:none;border-radius:9px;padding:9px 15px;font:inherit;font-weight:700;font-size:14px;cursor:pointer;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.15)}
 .reloadbtn:hover{background:#0d635c}
 .reloadbtn:active{transform:scale(.97)}
@@ -826,8 +839,38 @@ h1{font-size:24px}
 .lvl-severe{border-left-color:var(--severe)}.b-severe{background:var(--severe);color:#fff}.lvl-unknown{border-left-color:var(--unknown)}.b-unknown{background:var(--unknown);color:#16202b}
 footer{margin-top:40px;color:var(--muted);font-size:12px;line-height:1.5;border-top:1px solid var(--border);padding-top:16px}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#08111c}.leaflet-popup-content a{color:#1a55c8;font-weight:600}
-</style></head><body><div class="wrap">
-<div class="top"><div><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px"><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><button class="reloadbtn" onclick="reloadAll()">🔄 Osveži vse</button><button id="installBtn" style="display:none" class="drivebtn" onclick="doInstall()">⬇️ Namesti na telefon</button></div><span class="meta" id="builtAt"></span></div></div>
+/* ===== PRENOVA VIDEZA (okt 2026): manj nereda, telefon na prvem mestu ===== */
+.top{align-items:center;row-gap:4px}
+.top .brand h1{margin:0}
+.topact{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.toptime{flex-basis:100%;font-size:12px}
+.tab[data-view="truck"]{display:none}
+body[data-view="route"] .sidebar{display:none}
+.ractrow{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 8px}
+.ractrow .cam{margin:0}
+.rcard{border-radius:14px;box-shadow:0 1px 3px rgba(16,32,43,.06),0 4px 14px rgba(16,32,43,.04)}
+.rhead{align-items:flex-start;gap:8px}
+.rscore{font-size:12px;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.vehrow{font-size:14.5px;margin:3px 0}
+.liveline{font-size:12.5px}
+.mpalert{font-size:13px;padding:8px 12px}
+@media(max-width:640px){
+ .top{flex-wrap:nowrap;flex-direction:row;flex-wrap:wrap;margin-bottom:6px}
+ .top .brand{flex:1;min-width:0}
+ .subtitle{display:none}
+ .reloadbtn{padding:7px 12px;font-size:13px}
+ .toptime{font-size:11px}
+ /* drzave: vodoravni drsni trak namesto mreže, ki je zasedla pol zaslona */
+ .countrytiles{display:flex!important;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:6px;padding:2px 1px 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+ .countrytiles::-webkit-scrollbar{display:none}
+ .ctile{flex:0 0 auto!important;width:auto;display:flex;align-items:center;gap:6px;padding:6px 12px!important;border-radius:999px!important}
+ .ctile .cflag{font-size:15px!important}
+ .ctile .cname{font-size:12.5px!important;white-space:nowrap}
+ .ctile .cstat{display:none}
+ .rhead{font-size:15px}
+}
+</style></head><body data-view="route"><div class="wrap">
+<div class="top"><div class="brand"><h1>Promet<span>Info</span></h1><p class="subtitle">Mejni prehodi · čakanje + žive kamere · bivša Jugoslavija</p></div><div class="topact"><button class="reloadbtn" onclick="reloadAll()">🔄 Osveži vse</button><button id="installBtn" style="display:none" class="drivebtn" onclick="doInstall()">⬇️ Namesti na telefon</button></div><span class="meta toptime" id="builtAt"></span></div>
 <div class="layout">
 <aside class="sidebar"><div class="countrytiles">${tiles}</div></aside>
 <div class="main">
@@ -901,6 +944,7 @@ ${fuelHtml}
 <div class="view" id="view-settings" style="display:none">
   <section class="country-group">
     <h2>⚙️ Nastavitve</h2>
+    <p class="meta">Zavihek za tovorni promet je skrit: <button class="linklike" onclick="showView('truck')">🚛 odpri Tovornjaki</button></p>
     <h3 class="rsub">🚗 Moje vozilo</h3>
     <div class="manform" style="max-width:440px">
       <label>Ime vozila<input id="setVehName" type="text" placeholder="BMW X3 2.0d"></label>
@@ -1255,6 +1299,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Enter'){ var t=e.ta
 function showView(v, btn){
  var tabs=document.querySelectorAll('.tab'); for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
  if(btn){ btn.classList.add('active'); } else { var tb=document.querySelector('.tab[data-view="'+v+'"]'); if(tb) tb.classList.add('active'); }
+ document.body.setAttribute('data-view',v);
  ['route','map','borders','cams','reports','truck','fuel','settings'].forEach(function(name){ var el=document.getElementById('view-'+name); if(el) el.style.display=(v===name)?'':'none'; });
  if(v==='settings' && window.renderSocial){ try{ window.renderSocial(); }catch(e){} }
  if(v==='map'){ setTimeout(function(){ map.invalidateSize(); }, 60); }
@@ -1329,18 +1374,29 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   var RANK={severe:5,high:4,moderate:3,low:2,none:1,unknown:0};
   function waitTxt(m){ if(m==null)return ''; if(m<=0)return 'brez zadrževanja'; if(m<60)return '~'+m+' min'; var h=Math.floor(m/60),mm=m%60; return '~'+h+' h'+(mm?' '+mm+' min':''); }
   var PBYID={}; PTS.forEach(function(p){ PBYID[p.id]=p; });
-  function crossRow(p){ var w=waitTxt(p.waitMinutes); return '<div class="busyrow lvl-'+p.level+'" onclick="focusCrossing(\\''+p.id+'\\')"><span class="busyname">'+(FLAGJS[p.country]||'')+(FLAGJS[p.neighbor]||'')+' '+p.name+'</span><span class="busymeta"><span class="badge b-'+p.level+'">'+(LBL[p.level]||'')+'</span>'+(w?'<span class="busywait">'+w+'</span>':'')+'</span></span></div>'; }
-  // najbolj obremenjeni
-  // dejansko cakanje = znan nivo cakanja (Kratko in vec) ALI minute > 0
-  var busy=PTS.filter(function(p){ return RANK[p.level]>=2 || (p.waitMinutes!=null&&p.waitMinutes>0); });
-  busy.sort(function(a,b){ var aw=a.waitMinutes==null?-1:a.waitMinutes, bw=b.waitMinutes==null?-1:b.waitMinutes; return (bw-aw)||(RANK[b.level]-RANK[a.level]); });
-  var bl=document.getElementById('busiestList'), bc=document.getElementById('busiestCnt'), bh=document.getElementById('busiestHint');
-  if(bl){
-    var majors=busy.filter(function(p){ return (p.waitMinutes!=null&&p.waitMinutes>30)||RANK[p.level]>=3; });
-    if(bh)bh.style.display='none';
-    if(majors.length){ bl.innerHTML=majors.slice(0,12).map(crossRow).join(''); if(bc)bc.textContent=majors.length; }
-    else { bl.innerHTML='<p class="meta" style="margin:2px 0 8px">✅ Ni večjih zastojev nad 30 min. Največja zaznana čakanja:</p>'+busy.slice(0,8).map(crossRow).join(''); if(bc)bc.textContent=majors.length; }
+  // BIHAMK/MUP besedilo: "do 30 min" je splošna ocena; "Duga je kolona ... na izlazu" je dolga kolona (brez minut)
+  function stTxt(p){ return (p.bih&&p.bih.status)||p.rawStatus||''; }
+  function genP(p){ if(/AMSS/.test(stTxt(p))&&p.waitMinutes===30) return true; return /\\bdo\\s*30\\b|nisu\\s+du[žz]a\\s+od\\s+30/i.test(stTxt(p)) && (p.waitMinutes==null||p.waitMinutes<=30); }
+  function qDir(p){ var hit=null; String(stTxt(p)).toLowerCase().split(/[.]/).forEach(function(sn){ if(/(dug|velik|duz)[a-zčšž]* +(je +)?kolon|guzv|gužv/.test(sn)&&/putni/.test(sn)){ hit=hit||(/izlaz/.test(sn)?'izstop iz BiH':/ulaz/.test(sn)?'vstop v BiH':'obe smeri'); } }); return hit; }
+  function crossRow(p){
+    var q=qDir(p), g=!q&&genP(p), w=waitTxt(p.waitMinutes);
+    var badge=q?'<span class="badge b-high">Dolga kolona</span>':g?'<span class="badge b-none">Ni kolone</span>':'<span class="badge b-'+p.level+'">'+(LBL[p.level]||'')+'</span>';
+    var wt=q?q:g?'do 30 min':w;
+    return '<div class="busyrow lvl-'+(q?'high':g?'none':p.level)+'" onclick="focusCrossing(\\''+p.id+'\\')"><span class="busyname">'+(FLAGJS[p.country]||'')+(FLAGJS[p.neighbor]||'')+' '+p.name+'</span><span class="busymeta">'+badge+(wt?'<span class="busywait">'+wt+'</span>':'')+'</span></div>';
   }
+  window.renderBusiest=function(){
+    var bl=document.getElementById('busiestList'), bc=document.getElementById('busiestCnt'), bh=document.getElementById('busiestHint');
+    if(!bl) return;
+    // dejanska gneča: dolga kolona (BIHAMK) ali izmerjeno več kot 30 min; splošni "do 30 min" ni gneča
+    var busy=PTS.filter(function(p){ return qDir(p) || (!genP(p) && p.waitMinutes!=null && p.waitMinutes>0); });
+    busy.sort(function(a,b){ var aq=qDir(a)?1:0, bq=qDir(b)?1:0; var aw=a.waitMinutes==null?-1:a.waitMinutes, bw=b.waitMinutes==null?-1:b.waitMinutes; return (bq-aq)||(bw-aw)||(RANK[b.level]-RANK[a.level]); });
+    var majors=busy.filter(function(p){ return qDir(p)||(p.waitMinutes!=null&&p.waitMinutes>30); });
+    if(bh)bh.style.display='none';
+    if(majors.length){ bl.innerHTML=majors.slice(0,12).map(crossRow).join(''); }
+    else { bl.innerHTML='<p class="meta" style="margin:2px 0 8px">✅ Trenutno ni javljenih kolon. Uradni viri povsod navajajo le splošno »do 30 min«.</p>'+busy.slice(0,6).map(crossRow).join(''); }
+    if(bc)bc.textContent=majors.length;
+  };
+  renderBusiest();
   // priljubljeni prehodi
   var FCKEY='promet_fav_cross';
   function fcGet(){ try{ return JSON.parse(localStorage.getItem(FCKEY)||'[]'); }catch(e){ return []; } }
@@ -1932,7 +1988,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +' · <button class="linklike" onclick="shareCrossing(\\''+id+'\\')">📤 deli</button>';
     var cn=conclude(p);
     var vehLines=(cn.gen
-        ?'<div class="vehrow" style="color:#16a34a">🚗 Čakanje: <b>🟢 brez javljene kolone</b> <span class="meta">(uradno »do 30 min« — splošna ocena)</span></div>'
+        ?'<div class="vehrow" style="color:#16a34a">🚗 <b>🟢 Brez javljene kolone</b> <span class="meta">· uradno le »do 30 min«</span></div>'
         :'<div class="vehrow" style="color:'+cn.pax.c+'">🚗 Čakanje: <b>'+cn.pax.e+' '+cn.pax.t+'</b>'+(cn.paxMin!=null?' <span class="meta">('+(cn.paxMin===61&&bihQueueMine(p)?'več kot 1 h':'~'+cn.paxMin+' min')+')</span>':'')+'</div>')
       +queueLine(cn.q);
     var cc=ccLast(id);
@@ -1944,7 +2000,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var notesHtml=cn.notes.length?('<div class="rnote">🤖 '+cn.notes.join('<br>')+'</div>'):'';
     return '<div class="rcard" id="crossing-'+id+'" style="border-left:5px solid '+col+';scroll-margin-top:12px">'
       +'<div class="rhead"><span>'+icon+' <b>'+p.name+'</b> <span class="rrole">'+roleLbl+'</span></span><span class="rscore" style="background:'+col+'">Ocena '+sc+'/100</span></div>'
-      +'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>'
+      +(cn.gen?'':'<div class="rconf" style="color:'+cf.col+'">'+cf.dot+' '+cf.txt+'</div>')
       +vehLines
       +liveLine(p)
       +'<details class="rmore"'+(foldOpen('card-'+id)?' open':'')+' ontoggle="foldSave(\\'card-'+id+'\\',this.open)"><summary>Podrobnosti · smeri, kamere, Waze, FB</summary>'
@@ -2178,7 +2234,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
         if(h.bihamkFallbackWaitMin!=null) f.push(h.bihamkFallbackWaitMin);
         p.waitMinutes=f.length?Math.max.apply(null,f):null;
         var parts=[]; if(h.ulazMin!=null) parts.push('vstop v HR '+h.ulazTxt+(h.ulazTs?' ('+h.ulazTs+')':'')); if(h.izlazMin!=null) parts.push('izstop iz HR '+h.izlazTxt+(h.izlazTs?' ('+h.izlazTs+')':''));
-        p.rawStatus='🇭🇷 HAK/MUP: '+parts.join(', ');
+        if(parts.length) p.rawStatus='🇭🇷 HAK/MUP: '+parts.join(', '); else if(p.bih) p.rawStatus='🇧🇦 BIHAMK: '+p.bih.status;
       } else if(p.hasLive){
         p.waitMinutes=bihMin; p.rawStatus=p.bih?('🇧🇦 BIHAMK: '+p.bih.status):p.rawStatus;
       } else if(p.amss){
@@ -2209,7 +2265,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var t=[];
     if(p.hak){ var hi=REV?p.hak.ulazTsISO:p.hak.izlazTsISO, ht=REV?p.hak.ulazTs:p.hak.izlazTs, hv=REV?p.hak.ulazTxt:p.hak.izlazTxt;
       if(hi) t.push('🇭🇷 HAK '+(REV?'vstop v HR':'izstop iz HR')+': <b>'+safeHtml(hv||'-')+'</b> <span class="meta">(objava '+Math.round((Date.now()-Date.parse(hi))/60000)+' min nazaj)</span>'); }
-    if(p.bih&&p.bih.status) t.push((bihQueueMine(p)?'<b style="color:#dc2626">⚠ Duga kolona v tvoji smeri</b><br>':'')+'🇧🇦 BIHAMK: '+safeHtml(p.bih.status));
+    if(p.bih&&p.bih.status&&!(isGenTxt(p.bih.status)&&!bihQueueDir(p))) t.push((bihQueueMine(p)?'<b style="color:#dc2626">⚠ Duga kolona v tvoji smeri</b><br>':'')+'🇧🇦 BIHAMK: '+safeHtml(p.bih.status));
     if(p.amss) t.push('🇷🇸 AMSS: '+(REV?'izstop':'vstop')+' '+safeHtml((REV?p.amss.izlazTxt:p.amss.ulazTxt)||'-'));
     return t.length?'<div class="liveline">⚡ '+t.join('<br>')+'</div>':'';
   }
@@ -2219,7 +2275,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       var sig=JSON.stringify([d.hak&&d.hak.items,d.bihamk&&d.bihamk.items,d.amss&&d.amss.items].map(function(x){ return (x||[]).map(function(i){ return [i.id,i.ulazMin,i.izlazMin,i.waitMinutes,i.ulazTsISO,i.izlazTsISO]; }); }));
       LIVEW.at=d.ts; LIVEW.err=false; LIVEW.ok={hak:!!(d.hak&&d.hak.ok),bihamk:!!(d.bihamk&&d.bihamk.ok),amss:!!(d.amss&&d.amss.ok)};
       var changed=sig!==LIVEW.sig; LIVEW.sig=sig;
-      if(changed){ applyLiveWaits(d); if(CURRENT_ROUTE){ var y=window.scrollY; renderRoute(CURRENT_ROUTE); try{ renderLiveAnswer(); }catch(e){} window.scrollTo(0,y); } }
+      if(changed){ applyLiveWaits(d); try{ renderBusiest(); }catch(e){} if(CURRENT_ROUTE){ var y=window.scrollY; renderRoute(CURRENT_ROUTE); try{ renderLiveAnswer(); }catch(e){} window.scrollTo(0,y); } }
       var el=document.getElementById('liveSrc'); if(el) el.textContent=liveSrcLine(); updBuiltAt();
     }).catch(function(){ LIVEW.err=true; var el=document.getElementById('liveSrc'); if(el) el.textContent=liveSrcLine(); });
   }
@@ -2259,7 +2315,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     html+=alertsBanner(pr);
     html+='<div id="liveAnswer" class="liveanswer" style="display:none"></div>';
     html+='<div id="locBanner" class="locbanner" style="display:none"></div>';
-    html+='<button class="cam" onclick="locateMe()">📍 Kje sem (najbližji prehod)</button> <button class="cam" onclick="swapDir()" style="margin-bottom:8px">⇄ Obrni smer ('+rTo(pr)+' → '+rFrom(pr)+')</button>';
+    html+='<div class="ractrow"><button class="cam" onclick="locateMe()">📍 Kje sem</button><button class="cam" onclick="swapDir()">⇄ Obrni smer</button></div>';
     html+='<div id="routeEta" class="etarow"><span class="meta">Računam pot in čas prihoda…</span></div>';
     var all=pr.recommended.concat(pr.alternative, pr.avoid);
     if(all.length) html+='<button class="drivebtn" onclick="enterDrive()">🚗 Vozim</button>';
@@ -2553,7 +2609,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var html='';
     var wr=weekendRadar();
     var col=wr.lvl==='visoko'?'#dc2626':(wr.lvl==='srednje'?'#ca8a04':'#16a34a');
-    html+='<div class="mpalert" style="border-left:5px solid '+col+'"><b>📅 Napoved tveganja: '+wr.lvl.toUpperCase()+'</b>'+(wr.why.length?'<br><span class="meta">Razlog: '+wr.why.join(' + ')+'</span>':'<br><span class="meta">Trenutno ni posebnih dejavnikov.</span>')+'</div>';
+    if(wr.lvl!=='nizko'||wr.why.length) html+='<div class="mpalert" style="border-left:5px solid '+col+'"><b>📅 Napoved tveganja: '+wr.lvl.toUpperCase()+'</b>'+(wr.why.length?'<br><span class="meta">Razlog: '+wr.why.join(' + ')+'</span>':'<br><span class="meta">Trenutno ni posebnih dejavnikov.</span>')+'</div>';
     var fired=checkAlarms();
     if(fired.length){ html+='<div class="mpalert" style="border-left:5px solid #dc2626"><b>🔔 Alarmi</b><br><span class="meta">'+fired.join('<br>')+'</span></div>'; }
     box.innerHTML=html;
