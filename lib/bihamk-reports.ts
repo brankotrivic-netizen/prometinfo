@@ -7,6 +7,18 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Sarajevo zapad-Lepenica",
     "text": "Zbog izvođenja neophodnih radova na A-1 Sarajevo zapad-Lepenica, saobraćaj je preusmjeren u preticajnu traku."
+   },
+   {
+    "title": "Zvirovići-Počitelj",
+    "text": "U toku su radovi u tunelu Hercegovina, kao i na dionici od umjetnog tunela Počitelj do mosta Hercegovina, zbog čega se saobraća usporeno, jednom trakom."
+   },
+   {
+    "title": "Kakanj-Lašva",
+    "text": "Za saobraćaj svih vozila zatvorena je ova dionica autoceste A-1 , a saobraćaj je preusmjeren dvosmjerno, suprotnom stranom autoceste."
+   },
+   {
+    "title": "Zenica jug-Zenica sjever",
+    "text": "Zbog sanacije potpornog zida na ulazu u tunel Klopče, saobraća se usporeno, a radovi se izvode u desnoj traci."
    }
   ]
  },
