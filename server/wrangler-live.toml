@@ -1,5 +1,6 @@
-# PrometInfo — zive cakalne dobe (HAK, BIHAMK, AMSS). Brezplacni plan.
+# PrometInfo — zive cakalne dobe (HAK, BIHAMK, AMSS) + zgodovina v D1. Brezplacni plan.
 # Namestitev (v mapi server/):  npx wrangler deploy -c wrangler-live.toml
+# Shema baze (enkrat):          npx wrangler d1 execute prometinfo-hist --remote --file=schema-hist.sql
 
 name = "prometinfo-live"
 main = "live-worker.js"
@@ -7,3 +8,12 @@ compatibility_date = "2024-09-23"
 
 [vars]
 ALLOW_ORIGIN = "https://brankotrivic-netizen.github.io"
+
+# vsakih 15 min zapis cakanj v zgodovino
+[triggers]
+crons = ["*/15 * * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "prometinfo-hist"
+database_id = "74ff0e07-a311-4fd3-84b7-26f19890beba"

@@ -169,6 +169,85 @@ async function amss() {
 
 const wrap = (p) => p.then((items) => ({ ok: true, items }), (e) => ({ ok: false, error: String(e && e.message || e), items: [] }));
 
+async function snapshot() {
+  const [H, B, A] = await Promise.all([wrap(hak()), wrap(bihamk()), wrap(amss())]);
+  return { ts: new Date().toISOString(), hak: H, bihamk: B, amss: A };
+}
+
+// ---------- ZGODOVINA (D1) ----------
+// "do 30 min" / "nisu duza od 30 minuta" je splosna zgornja meja, ne meritev.
+const isGenericTxt = (t) => /\bdo\s*30\b|nisu\s+du[žz]a\s+od\s+30|ne\s+du[žz]e\s+od\s+30/i.test(String(t || ""));
+// BIHAMK: "Duga je kolona putnickih vozila na izlazu iz BiH" -> smer kolone (BiH stran)
+function bihQueueDir(status) {
+  let hit = null;
+  for (const sn of String(status || "").toLowerCase().split(/[.]/)) {
+    if (/(dug|velik|duz)[a-zčšž]* +(je +)?kolon|guzv|gužv/.test(sn) && /putni/.test(sn)) {
+      hit = hit || (/izlaz/.test(sn) ? "izlaz" : /ulaz/.test(sn) ? "ulaz" : "oba");
+    }
+  }
+  return hit;
+}
+function localDH(ms) {
+  const d = new Date(ms), off = cetOffset(d.getUTCFullYear(), d.getUTCMonth() + 1, d.getUTCDate()) === "+02:00" ? 2 : 1;
+  const l = new Date(ms + off * 3600000);
+  return [l.getUTCDay(), l.getUTCHours()];
+}
+// En zapis na prehod: s = tja (jug), n = nazaj (sever).
+// BiH prehodi: tja = izlaz iz HR (HAK) + ulaz u BiH (BIHAMK); nazaj = izlaz iz BiH + ulaz u HR.
+function histRows(snap) {
+  const now = Date.now(), fresh = (iso) => iso && now - Date.parse(iso) <= 90 * 60000;
+  const acc = {};
+  const put = (id, dir, min, gen) => { if (!id || min == null) return; (acc[id] = acc[id] || { s: [], n: [] })[dir].push([min, !!gen]); };
+  if (snap.hak.ok) for (const w of snap.hak.items) {
+    if (fresh(w.izlazTsISO)) put(w.id, "s", w.izlazMin, isGenericTxt(w.izlazTxt));
+    if (fresh(w.ulazTsISO)) put(w.id, "n", w.ulazMin, isGenericTxt(w.ulazTxt));
+  }
+  if (snap.bihamk.ok) for (const b of snap.bihamk.items) {
+    const q = bihQueueDir(b.status);
+    if (b.waitMinutes == null && !q) continue;
+    const gen = isGenericTxt(b.status);
+    const qs = q === "ulaz" || q === "oba", qn = q === "izlaz" || q === "oba";
+    put(b.id, "s", qs ? 75 : b.waitMinutes, gen && !qs);
+    put(b.id, "n", qn ? 75 : b.waitMinutes, gen && !qn);
+  }
+  if (snap.amss.ok) for (const a of snap.amss.items) {
+    put(a.id, "s", a.ulazMin, a.ulazMin === 30);
+    put(a.id, "n", a.izlazMin, a.izlazMin === 30);
+  }
+  const [dw, hr] = localDH(now), rows = [];
+  for (const [id, v] of Object.entries(acc)) {
+    // vec virov za isto smer: vzemi najslabsega; "splosno" le, ce so vsi splosni
+    const pick = (arr) => arr.length ? [Math.max(...arr.map((x) => x[0])), arr.every((x) => x[1])] : [null, false];
+    const [s, sg] = pick(v.s), [n, ng] = pick(v.n);
+    if (s == null && n == null) continue;
+    rows.push([id, now, dw, hr, s, n, (sg ? 1 : 0) | (ng ? 2 : 0)]);
+  }
+  return rows;
+}
+async function collect(env) {
+  const rows = histRows(await snapshot());
+  if (!rows.length) return 0;
+  const st = env.DB.prepare("INSERT INTO w (i,t,dw,hr,s,n,g) VALUES (?,?,?,?,?,?,?)");
+  await env.DB.batch(rows.map((r) => st.bind(...r)));
+  await env.DB.prepare("DELETE FROM w WHERE t < ?").bind(Date.now() - 120 * 86400000).run(); // hrani 120 dni
+  return rows.length;
+}
+// Statistika za izbrane prehode zadnjih 8 tednov po dnevu v tednu in uri (lokalni cas).
+// Vrstica: [dw, hr, cs, avs, qs, gs, cn, avn, qn, gn] — c=stevilo, av=povprecje, q=koliko >=60 min, g=koliko splosnih ocen.
+async function stats(env, ids) {
+  const since = Date.now() - 56 * 86400000;
+  const q = "SELECT i, dw, hr, COUNT(s) cs, ROUND(AVG(s)) avs, SUM(CASE WHEN s>=60 THEN 1 ELSE 0 END) qs, SUM(CASE WHEN s IS NOT NULL AND (g&1)=1 THEN 1 ELSE 0 END) gs, "
+    + "COUNT(n) cn, ROUND(AVG(n)) avn, SUM(CASE WHEN n>=60 THEN 1 ELSE 0 END) qn, SUM(CASE WHEN n IS NOT NULL AND (g&2)=2 THEN 1 ELSE 0 END) gn "
+    + "FROM w WHERE t > ? AND i IN (" + ids.map(() => "?").join(",") + ") GROUP BY i, dw, hr";
+  const r = await env.DB.prepare(q).bind(since, ...ids).all();
+  const out = {};
+  for (const x of r.results || []) (out[x.i] = out[x.i] || []).push([x.dw, x.hr, x.cs, x.avs, x.qs, x.gs, x.cn, x.avn, x.qn, x.gn]);
+  const first = await env.DB.prepare("SELECT MIN(t) t, COUNT(*) c FROM w").first();
+  return { ts: new Date().toISOString(), since: first && first.t ? new Date(first.t).toISOString() : null, rows: first ? first.c : 0, ids: out };
+}
+
+const json = (obj, maxAge) => new Response(JSON.stringify(obj), { headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=" + maxAge } });
+
 function cors(req, env) {
   const o = req.headers.get("Origin") || "";
   const allow = (env.ALLOW_ORIGIN || "").split(",").map((s) => s.trim());
@@ -181,17 +260,27 @@ export default {
     const url = new URL(req.url);
     const h = cors(req, env);
     if (req.method === "OPTIONS") return new Response(null, { headers: { ...h, "Access-Control-Allow-Methods": "GET", "Access-Control-Max-Age": "86400" } });
-    if (url.pathname !== "/waits") return new Response("PrometInfo live: /waits", { headers: h });
-    const cache = caches.default, key = new Request(url.origin + "/waits");
-    let res = url.searchParams.has("fresh") ? null : await cache.match(key);
-    if (!res) {
-      const [H, B, A] = await Promise.all([wrap(hak()), wrap(bihamk()), wrap(amss())]);
-      const body = JSON.stringify({ ts: new Date().toISOString(), hak: H, bihamk: B, amss: A });
-      res = new Response(body, { headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": `public, max-age=${CACHE_S}` } });
-      ctx.waitUntil(cache.put(key, res.clone()));
+    const cache = caches.default;
+    let res;
+    if (url.pathname === "/waits") {
+      const key = new Request(url.origin + "/waits");
+      res = url.searchParams.has("fresh") ? null : await cache.match(key);
+      if (!res) { res = json(await snapshot(), CACHE_S); ctx.waitUntil(cache.put(key, res.clone())); }
+    } else if (url.pathname === "/stats") {
+      const ids = (url.searchParams.get("ids") || "").split(",").map((x) => x.trim()).filter((x) => /^[a-z]{2}-[a-z0-9-]{2,40}$/.test(x)).slice(0, 12).sort();
+      if (!ids.length) return new Response("ids?", { status: 400, headers: h });
+      const key = new Request(url.origin + "/stats?ids=" + ids.join(","));
+      res = await cache.match(key);
+      if (!res) { res = json(await stats(env, ids), 900); ctx.waitUntil(cache.put(key, res.clone())); }
+    } else {
+      return new Response("PrometInfo live: /waits, /stats?ids=", { headers: h });
     }
     const out = new Response(res.body, res);
     for (const [k, v] of Object.entries(h)) out.headers.set(k, v);
     return out;
+  },
+  // vsakih 15 min (wrangler-live.toml [triggers]) zapise posnetek cakanj osebnih vozil v D1
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(collect(env).then((n) => console.log("zgodovina +" + n), (e) => console.log("zgodovina napaka", e && e.message)));
   },
 };
