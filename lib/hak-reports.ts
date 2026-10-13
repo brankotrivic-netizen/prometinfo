@@ -3,12 +3,12 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "13.10.2026. 20:05",
-  "text": "Zbog jakog vjetra na Jadranskoj magistrali (DC8) između Karlobaga i Svete Marije Magdalene zabrana je prometa za autobuse na kat, vozila s prikolicama i motocikle (I. skupina). Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI zbog prometne nesreće na državnoj cesti DC2 između mjesta Virovitica i Suhopolje promet je prekinut. Obilazak: Markovac-Rezovac-Borova-Suhopolje i obratno, uz regulaciju prometne policije. prometna nesreća na autocesti A1 na 115+800 km između čvora Žuta Lokva i čvora Brinje u smjeru Zagreba, vozi se jednim tra…"
+  "updated": "14.10.2026. 00:57",
+  "text": "Zbog jakog vjetra na Jadranskoj magistrali (DC8) između Karlobaga i Svete Marije Magdalene zabrana je prometa za autobuse na kat, vozila s prikolicama i motocikle (I. skupina), a na DC553 Omiškoj obilaznici promet je dopušten samo osobnim vozilima. Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI do 05:00 ujutro autocesta A2 Zagreb-Macelj zatvara se na dionici između čvorova Krapina i Trakošćan, u oba smjera. Obilazak je državnom cestom DC1 do 05:00 sati zatvara se donica autoceste A6 Rijeka-Zagreb između čvorova Ravna Gora i Delni…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "13.10.2026. 17:56",
+  "updated": "13.10.2026. 22:11",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
@@ -28,7 +28,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "13.10.2026. 09:19",
+  "updated": "13.10.2026. 22:11",
   "text": "Prometna prognoza za Hrvatsku za 14. listopada 2026. Kratkotrajna magla mjestimice će smanjivati vidljivost na cestama u unutrašnjosti. Zbog jake bure, ponegdje s olujnim udarima na cestama u priobalju tijekom jutra moguće su zabrane i ograničenja za pojedine skupine vozila, osobito na Jadranskoj magistrali (DC8). Zbog promjenjive vremenske situacije savjetujemo vozačima da se prije polaska na put informiraju o stanju i prohodnosti cesta na internetskim stranicama ili mobilnoj aplikaciji Hrvatskog autokluba. Pojačan promet očekuje se na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone mogući su u zonama radova, osobito tijekom jutra i poslijepodneva. Gužve i…"
  },
  {
