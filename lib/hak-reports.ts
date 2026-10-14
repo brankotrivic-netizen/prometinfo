@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.10.2026. 11:00",
-  "text": "Zbog jakog vjetra zabrane su za pojedine skupine vozila samo na Jadranskoj magistrali (DC8) na poluotoku Pelješcu (opširnije u izvješću) . Pojačan je promet na gradskim cestama i obilaznicama, a usporeno u kolonama u pokretu vozi se u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI zbog prometne nesreće na autocesti A1 između čvorova Perušić i Otočac, na 145. km, u smjeru Zagreba, vozi se jednim trakom uz ograničenje brzine Povećana je gustoća prometa, vozi se usporeno uz povremene zastoje: na riječkoj obilaznici (A7) između čvorova Rijeka zapa…"
+  "updated": "14.10.2026. 16:19",
+  "text": "Pojačan je promet na gradskim cestama i obilaznicama, a usporeno u kolonama u pokretu vozi se u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI zbog prometne nesreće na autocesti A7 u zoni radova između čvorova Rijeka zapad i Učka, kod odmorišta Vrata Jadrana sjever, u smjeru Rupe, vozi se suženim kolnikom uz ograničenje brzine zbog prometne nesreće na autocesti A7 na čvoru Učka (vijedukt Živice) iz smjera Opatija/Istra u smjeru riječka obilaznice (A7) - promet se vodi usporeno suženim kolnikom Povećana je gustoća prometa, vozi se usporeno uz p…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "14.10.2026. 10:47",
+  "updated": "14.10.2026. 16:20",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "14.10.2026. 10:47",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 14. listopada katamaranska linija 9603 Split - Bol - Jelsa će biti uspostavljena po redu plovidbe od 16:30 s polaskom iz luke Split 15. listopada trajekt će iz luke Split za luku Rogač isploviti u 21:30 sati (umjesto u 20:30 sati). 15. listopada (četvrtak) trajekt će iz luke Split isploviti u 21:30 sati (umjesto u 21:00 sati). Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 202…"
+  "updated": "14.10.2026. 16:19",
+  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: 14. listopada katamaranska linija 9603 Split - Bol - Jelsa će biti uspostavljena po redu plovidbe od 16:30 s polaskom iz luke Split ¸ 15. listopada katamaranska linija 9603 Jelsa - Bol - Split s polaskom iz luke Jelsa u 06:00 isploviti će iz luke Stari Grad. Informacija o uplovu u luku Bol će biti dostupna 45 minuta prije polaska katamarana ovisno o vremenskim neprilikama 15. listopada trajekt će iz luke Split isploviti u 21:30 za luke: Rogač (umjesto u 20:30 sati), Supetar (umjesto u 21:00 sati) i Stari Grad (umjesto u 20:30 sati). Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne traj…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "14.10.2026. 10:23",
+  "updated": "14.10.2026. 16:05",
   "text": "Stanje u željezničkom putničkom prometu 14. listopada 2026. u 8.00 sati Između kolodvora Križevci i Sveti Ivan Žabno umjesto vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim blagdana, putnike prevoze autobusi. Između umjesto Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim blagdana, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Između kolodvora Vrbovec i Križevci, na pruzi državna granica – Botovo – Dugo Selo, zbog radova od 12. listopada u 9.00 sati do 11. studenoga 2026. u 23.00 sata promet će teći jednim kolosijekom te se očekuju kašnjenja. Zbog radova i zamjen…"
  },
  {
