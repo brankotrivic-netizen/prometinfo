@@ -1,29 +1,62 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-14T18:48:04.103Z";
+export const PROMET_SI_UPDATED = "2026-10-14T21:58:56.001Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;883521;6e0f300e-26e5-46a3-b57d-8d792f8ef205",
+  "id": "DARS;883537;153b1525-315a-44c5-936d-c1b580df2649",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, počivališče Ravbarkomanda v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.79811,
-  "lng": 14.25119,
-  "start": "2026-10-14T18:01:26.71Z",
-  "end": "2026-10-15T03:00:23.587Z",
-  "ts": "2026-10-14T18:01:33.81Z"
+  "desc": "A2, Obrežje - Ljubljana, počivališče Podsmreka - priključek Grosuplje vzhod v smeri Ljubljane, dela, zaprt počasni pas, barvanje talnih označb.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.95289,
+  "lng": 14.75643,
+  "start": "2026-10-14T20:35:54.06Z",
+  "end": "2026-10-14T23:58:37.577Z",
+  "ts": "2026-10-14T21:57:44.857Z"
  },
  {
-  "id": "DARS;883520;239c155b-11ca-46e4-b5a2-2325cd06451f",
+  "id": "DARS;875055;120d7465-cc98-4654-86cd-191d67de6f27",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, predor Golovec - pokrit vkop Strmec v smeri Zadobrove, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.01716,
-  "lng": 14.5588,
-  "start": "2026-10-14T17:49:40.58Z",
-  "end": "2026-10-14T20:00:15.143Z",
-  "ts": "2026-10-14T17:49:44.667Z"
+  "desc": "R2-454, Maribor - Ptuj, pri Miklavžu na Dravskem Polju, oviran promet, novogradnje KB 10 (20) kV TP Miklavž šola.",
+  "loc": "R2-454, Miklavž - Hajdina",
+  "lat": 46.49625,
+  "lng": 15.7136,
+  "start": "2026-09-07T05:53:25.413Z",
+  "end": "2026-10-16T21:59:00Z",
+  "ts": "2026-10-14T21:56:35.563Z"
+ },
+ {
+  "id": "DARS;883534;f2b32701-7fb9-470d-9cac-f65324c51c09",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, predor Jasovnik - predor Jasovnik v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.19971,
+  "lng": 14.901,
+  "start": "2026-10-14T20:16:48.633Z",
+  "end": "2026-10-15T02:00:00Z",
+  "ts": "2026-10-14T20:16:56.017Z"
+ },
+ {
+  "id": "DARS;883527;d0888188-d315-44e9-b536-d781b04a5209",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - priključek Vransko v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.25473,
+  "lng": 14.97901,
+  "start": "2026-10-14T19:42:32.153Z",
+  "end": "2026-10-15T03:00:00Z",
+  "ts": "2026-10-14T19:42:50.657Z"
+ },
+ {
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 22. 10. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-10-22T21:59:00Z",
+  "ts": "2026-10-14T19:00:57.503Z"
  },
  {
   "id": "DARS;883519;548b7f4e-bc61-4a13-a74b-ea4f10b0187a",
@@ -35,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-14T17:48:38.467Z",
   "end": "2026-10-14T23:50:42.203Z",
   "ts": "2026-10-14T17:48:46.203Z"
- },
- {
-  "id": "DARS;883341;299e0491-7f17-4e81-ab91-564568f480a2",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, počivališče Studenec - priključek Postojna v smeri Ljubljane, dela, odstavni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.76193,
-  "lng": 14.15344,
-  "start": "2026-10-14T05:25:00.487Z",
-  "end": "2026-10-15T17:00:00Z",
-  "ts": "2026-10-14T16:00:40.423Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -640,17 +662,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-06T13:21:39.91Z",
   "end": "2026-10-31T22:59:00Z",
   "ts": "2026-10-03T14:00:40.047Z"
- },
- {
-  "id": "DARS;875055;120d7465-cc98-4654-86cd-191d67de6f27",
-  "type": "MaintenanceWorks",
-  "desc": "R2-454, Maribor - Ptuj, pri Miklavžu na Dravskem Polju, oviran promet, novogradnje KB 10 (20) kV TP Miklavž šola, do 14. 10. 2026.",
-  "loc": "R2-454, Miklavž - Hajdina",
-  "lat": 46.49625,
-  "lng": 15.7136,
-  "start": "2026-09-07T05:53:25.413Z",
-  "end": "2026-10-14T21:59:00Z",
-  "ts": "2026-10-02T05:11:11.47Z"
  },
  {
   "id": "DARS;880552;06270a9d-ac1d-47ea-a2fb-a8e757c274f1",
