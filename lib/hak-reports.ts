@@ -3,32 +3,32 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "15.10.2026. 19:38",
-  "text": "PREKID PROMETA NA AUTOCESTAMA ZBOG RADOVA VEČERAS (14./15. listopada): na autocesti A2 Zagreb-Macelj od 20:00 do 05:00 ujutro zatvorena je dionica između čvorova Krapina i Trakošćan u oba smjera na autocesti A6 Rijeka-Zagreb od 22:00 do 05:00 ujutro bit će zatvorena dionica između čvorova Bosiljevo II i Vrbovsko u smjeru Rijeke (obilazak je preko čvor Bosiljevo 1 državnim cestama DC204- DC3-DC42 do čvor Vrbovsko) od 22:00 do 05:00 ujutro bit će zatvorena brza cesta Solin-Klis (DC1) u oba smjera od 23:00 do 05:00 ujutro bit će zatvoren tunel Selca-Dubovica na državnoj cesti Hvar-Stari Grad ( DC116), a obilazak je cestom Hvar-Brusje-Stari Grad. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na…"
+  "updated": "15.10.2026. 22:24",
+  "text": "PREKID PROMETA ZBOG RADOVA VEČERAS (15./16. listopada): na autocesti A2 Zagreb-Macelj od 20:00 do 05:00 ujutro zatvorena je dionica između čvorova Krapina i Trakošćan u oba smjera na autocesti A6 Rijeka-Zagreb od 22:00 do 05:00 ujutro zatvorena je dionica između čvorova Bosiljevo II i Vrbovsko u smjeru Rijeke (obilazak je preko čvor Bosiljevo 1 državnim cestama DC204- DC3-DC42 do čvor Vrbovsko) od 22:00 do 05:00 ujutro zatvorena je brza cesta Solin-Klis (DC1) u smjeru Splita od 23:00 do 05:00 ujutro zatvoren je tunel Selca-Dubovica na državnoj cesti Hvar-Stari Grad ( DC116), a obilazak je cestom Hvar-Brusje-Stari Grad. IZVANREDNI PROMETNI DOGAĐAJI: opasnost od naleta na životinju (pas) na au…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "15.10.2026. 19:33",
+  "updated": "15.10.2026. 20:12",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "15.10.2026. 19:33",
+  "updated": "15.10.2026. 20:12",
   "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: danas će trajekt na liniji 832 Prapratno-Sobra isploviti iz luke Sobra u 16:00, umjesto u 15:00 sati 15. listopada trajekt će iz luke Split isploviti u 21:30 za luke: Rogač (umjesto u 20:30 sati), Supetar (umjesto u 21:00 sati) i Stari Grad (umjesto u 20:30 sati). Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i ro…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "15.10.2026. 19:33",
+  "updated": "15.10.2026. 20:12",
   "text": "Stanje u željezničkom putničkom prometu 15. listopada 2026. u 8.00 sati Između kolodvora Križevci i Sveti Ivan Žabno umjesto vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim blagdana, putnike prevoze autobusi. Između umjesto Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim blagdana, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Između kolodvora Vrbovec i Križevci, na pruzi državna granica – Botovo – Dugo Selo, zbog radova od 12. listopada u 9.00 sati do 11. studenoga 2026. u 23.00 sata promet će teći jednim kolosijekom te se očekuju kašnjenja. Zbog radova i zamjen…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "15.10.2026. 19:33",
+  "updated": "15.10.2026. 20:11",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "15.10.2026. 19:33",
+  "updated": "15.10.2026. 20:11",
   "text": "Prometna prognoza za Hrvatsku za 16. listopada 2026. U jutranjim satima magla će smanjivati vidljivost mjestimice na cestama u unutrašnjosti. Pojačan promet očekuje se na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone mogući su u zonama radova, osobito tijekom jutra i poslijepodneva na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u oba smjera, A4 Goričan-Zagreb između čvorova Sesvete i Zagreb istok, autocesti A7 između čvorova Rijeka zapd i Učka u smjeru Rupe, Istarskom ipsilonu (A8) između čvora i tunela Učka, državnoj cesti DC1 kod Zaprešića te na Jadranskoj magistrali (DC8) na splitskom i na dubrovačkom području. Gužve u prometu teretnih i…"
  },
  {
