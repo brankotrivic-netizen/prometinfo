@@ -1,52 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-15T20:39:01.379Z";
+export const PROMET_SI_UPDATED = "2026-10-15T23:17:03.180Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;883773;87ef81fc-97d3-4960-87ac-a0784fe4668b",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, predor Debeli hrib - uvoz Šmarje Sap v smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.98634,
-  "lng": 14.59602,
-  "start": "2026-10-15T20:17:39.753Z",
-  "end": "2026-10-16T10:00:00Z",
-  "ts": "2026-10-15T20:34:14.93Z"
- },
- {
-  "id": "DARS;883775;31d79c30-c69d-4e23-b030-cc392dece3a7",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Višnja Gora - priključek Ivančna Gorica v smeri Novega mesta, dela, pomična zapora voznega pasu.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.95972,
-  "lng": 14.73818,
-  "start": "2026-10-15T20:28:02.473Z",
-  "end": "2026-10-16T02:00:00Z",
-  "ts": "2026-10-15T20:28:03.567Z"
- },
- {
-  "id": "DARS;883774;5b559eb0-9fde-4d6f-a228-c1dd83e774f8",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Unec - počivališče Ravbarkomanda v smeri Kopra, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.82673,
-  "lng": 14.28947,
-  "start": "2026-10-15T20:20:28.193Z",
-  "end": "2026-10-16T03:00:42.833Z",
-  "ts": "2026-10-15T20:21:18.74Z"
- },
- {
-  "id": "DARS;883753;67357f9c-8b13-4257-b52e-e9154b1b35e8",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Grosuplje vzhod - priključek Višnja Gora v smeri Novega mesta, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.97107,
-  "lng": 14.66744,
-  "start": "2026-10-15T17:10:31.93Z",
-  "end": "2026-10-16T03:00:00Z",
-  "ts": "2026-10-15T17:10:43.673Z"
- },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -277,17 +233,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-18T06:00:12.717Z",
   "end": "2026-10-21T21:59:00Z",
   "ts": "2026-10-14T06:58:29.84Z"
- },
- {
-  "id": "DARS;882808;271e5601-6070-4ec3-88a9-0c5652e85e01",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Podmilj - priključek Blagovica v smeri Ljubljane, dela, odstavni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.17691,
-  "lng": 14.81726,
-  "start": "2026-10-11T20:28:15.553Z",
-  "end": "2026-10-15T21:00:00Z",
-  "ts": "2026-10-14T06:55:22.36Z"
  },
  {
   "id": "DARS;883392;674747eb-31d5-426e-ab9c-df2d212b8673",
