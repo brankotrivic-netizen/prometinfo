@@ -165,7 +165,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Liechtenstein",
   "flag": "🇱🇮",
-  "p95": "2,110 CHF (2,26 EUR)",
+  "p95": "2,110 CHF (2,27 EUR)",
   "p98": "",
   "diesel": "2,440 CHF (2,62 EUR)",
   "date": "14. 10. 2026"
@@ -221,15 +221,15 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Norveška",
   "flag": "🇳🇴",
-  "p95": "29,790 NOK (2,81 EUR)",
+  "p95": "29,790 NOK (2,80 EUR)",
   "p98": "",
-  "diesel": "28,310 NOK (2,67 EUR)",
+  "diesel": "28,310 NOK (2,66 EUR)",
   "date": "14. 10. 2026"
  },
  {
   "country": "Poljska",
   "flag": "🇵🇱",
-  "p95": "6,660 PLN (1,53 EUR)",
+  "p95": "6,660 PLN (1,52 EUR)",
   "p98": "7,659 PLN (1,75 EUR)",
   "diesel": "7,730 PLN (1,77 EUR)",
   "date": "14. 10. 2026"
@@ -246,7 +246,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "country": "Romunija",
   "flag": "🇷🇴",
   "p95": "10,140 RON (1,90 EUR)",
-  "p98": "11,560 RON (2,16 EUR)",
+  "p98": "11,560 RON (2,17 EUR)",
   "diesel": "10,900 RON (2,04 EUR)",
   "date": "14. 10. 2026"
  },
@@ -301,7 +301,7 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Švedska",
   "flag": "🇸🇪",
-  "p95": "19,490 SEK (1,75 EUR)",
+  "p95": "19,490 SEK (1,74 EUR)",
   "p98": "20,659 SEK (1,85 EUR)",
   "diesel": "23,010 SEK (2,06 EUR)",
   "date": "14. 10. 2026"
@@ -309,17 +309,17 @@ export const FUEL_PRICES: FuelRow[] = [
  {
   "country": "Švica",
   "flag": "🇨🇭",
-  "p95": "2,120 CHF (2,27 EUR)",
-  "p98": "2,438 CHF (2,61 EUR)",
+  "p95": "2,120 CHF (2,28 EUR)",
+  "p98": "2,438 CHF (2,62 EUR)",
   "diesel": "2,450 CHF (2,63 EUR)",
   "date": "14. 10. 2026"
  },
  {
   "country": "Turčija",
   "flag": "🇹🇷",
-  "p95": "83,790 TRY (1,52 EUR)",
-  "p98": "90,493 TRY (1,64 EUR)",
-  "diesel": "96,610 TRY (1,75 EUR)",
+  "p95": "83,790 TRY (1,51 EUR)",
+  "p98": "90,493 TRY (1,63 EUR)",
+  "diesel": "96,610 TRY (1,74 EUR)",
   "date": "14. 10. 2026"
  },
  {
@@ -335,7 +335,7 @@ export const FUEL_PRICES: FuelRow[] = [
   "flag": "🇬🇧",
   "p95": "1,750 GBP (2,07 EUR)",
   "p98": "1,910 GBP (2,26 EUR)",
-  "diesel": "2,000 GBP (2,37 EUR)",
+  "diesel": "2,000 GBP (2,36 EUR)",
   "date": "14. 10. 2026"
  }
 ];
