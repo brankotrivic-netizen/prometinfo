@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "16.10.2026. 10:32",
-  "text": "Mjestimično smanjena vidljivost zbog magle je na cestama u Lici. Pojačan je promet na gradskim prometnicama, a povremena usporavanja i kraći zastoji mogući su u zonama radova i privremene regulacije prometa. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A4 na 76+800 km između čvora Sveta Helena i čvora Komin na kolniku u smjeru Goričana. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 40 km/h. danas tijekom dana, na više lokacija duž nekih autocesta i cesta, obavljaju se radovi na održavanju okoliša i zelenog pojasa. Promet se tim dijelovima vodi suženim kolnikom uz ograničenje brzine. Po…"
+  "updated": "16.10.2026. 15:29",
+  "text": "Pojačan je promet na gradskim prometnicama i obilaznicama, a povremena usporavanja i kraći zastoji mogući su u zonama radova i privremene regulacije prometa ( detaljnije, po cestama, niže u izvješću ). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: Opasnost je od naleta na psa na autocesti A1 kod čvora Benkovac! Promet se vodi po dvije prometne trake uz ograničenje brzine od 40 km/h. vozilo u kvaru na cesti DC1 ispred tunela Mihovilovići u smjeru Klisa vozi se uz privremenu regulaciju prometa prometna nesreća na autocesti A4 na 55+000 km između čvora Breznički Hum i čvora Novi Marof na kolniku u smjeru Goričana. Vozi se uz ograničenje…"
  },
  {
   "title": "Granični prijelazi",
@@ -13,8 +13,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Pomorski promet",
-  "updated": "16.10.2026. 05:52",
-  "text": "U pomorskom prometu nema poteškoća. Izmjene u plovidbenom redu: katamaran na liniji Split-Bol -Jelsa plovi bez pristajanja u luku Bol. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošin…"
+  "updated": "16.10.2026. 10:58",
+  "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
