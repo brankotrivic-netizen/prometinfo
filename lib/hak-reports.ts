@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "16.10.2026. 19:27",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! prometna nesreća na autocesti A3 između čvora Kutina i čvora Lipovljani (108+500 km) u smjeru Lipovca kolona vozila u zoni radova na riječkoj obilaznici (A7) između čvora Rijeka zapad i čvora Učka u smjeru Rupe, Istre i Opatije duga je 1 km, a usporeno se vozi i na Istarskom ipsilonu (A8) između čvora Veprinac i čvora Matulji večeras od 22:00 do 05:00 sati ujutro dionica autoceste A1 zatvara se od čvora Rovanjska do čvora Posedarje u oba smjera, a triput će se u tom periodu n…"
+  "updated": "16.10.2026. 22:02",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Potreban je dodatan oprez i strpljenje. IZVANREDNI PROMETNI DOGAĐAJI: OPREZ! zbog prometne nesreće prekinut je promet na DC5 između mjesta Terezino Polje i mjesta Gornje Bazje. Obilazak: Gornje Bazje - Veliko Polje - Terezino Polje AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba autocestom do čvora Split vozi se nesmetano, a dalje u smjeru Dubrovnika vozila izlaze s autoceste na čvoru Split (napl…"
  },
  {
   "title": "Granični prijelazi",

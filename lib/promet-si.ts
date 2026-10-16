@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-16T17:41:20.474Z";
+export const PROMET_SI_UPDATED = "2026-10-16T20:04:07.286Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;884014;36823486-dd1a-4c80-b978-4bed98f38262",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Kozarje v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.02522,
+  "lng": 14.43258,
+  "start": "2026-10-16T19:25:23.91Z",
+  "end": "2026-10-16T21:50:58.223Z",
+  "ts": "2026-10-16T19:25:25.317Z"
+ },
  {
   "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
   "type": "MaintenanceWorks",
@@ -59,6 +70,28 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-16T12:30:35.143Z"
  },
  {
+  "id": "DARS;883887;3a158d29-11d6-41b0-a840-65d0dd6bc918",
+  "type": "MaintenanceWorks",
+  "desc": "R2-454, Maribor - Ptuj, v Miklavžu na Dravskem Polju, oviran promet, barvanje talnih označb, do 17. 10. 2026.",
+  "loc": "R2-454, Miklavž - Hajdina",
+  "lat": 46.50109,
+  "lng": 15.70402,
+  "start": "2026-10-16T18:00:00Z",
+  "end": "2026-10-17T02:00:00Z",
+  "ts": "2026-10-16T09:57:26.27Z"
+ },
+ {
+  "id": "DARS;883886;433ecbdf-d334-484b-9a8f-740941c2023b",
+  "type": "MaintenanceWorks",
+  "desc": "G1-1, Maribor - Dravograd, v Mariboru, Ulica heroja Šercerja, oviran promet, barvanje talnih označb, do 17. 10. 2026.",
+  "loc": "G1-1, Maribor (Koroški Most - cesta Proletarskih Brigad)",
+  "lat": 46.54871,
+  "lng": 15.621,
+  "start": "2026-10-16T18:00:00Z",
+  "end": "2026-10-17T02:00:00Z",
+  "ts": "2026-10-16T09:56:25.82Z"
+ },
+ {
   "id": "DARS;883843;a96878b6-6ab9-42e4-acb2-2d45cd634f68",
   "type": "MaintenanceWorks",
   "desc": "RT-929, Hoče - Pohorska vzpenjača - Areh, Rondo Hoče, oviran promet, vzdrževalna dela, do 17. 10. 2026.",
@@ -68,6 +101,17 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-16T06:09:24.583Z",
   "end": "2026-10-17T02:00:00Z",
   "ts": "2026-10-16T09:51:39.093Z"
+ },
+ {
+  "id": "DARS;883884;868faee3-2240-4d74-98c0-78acd25f4224",
+  "type": "MaintenanceWorks",
+  "desc": "R2-435, Maribor - Ruše, v Limbušu, oviran promet, barvanje talnih označb, do 17. 10. 2026.",
+  "loc": "NK-435, Maribor - Ruše",
+  "lat": 46.55504,
+  "lng": 15.58489,
+  "start": "2026-10-16T18:00:00Z",
+  "end": "2026-10-17T02:00:00Z",
+  "ts": "2026-10-16T09:51:08.25Z"
  },
  {
   "id": "DARS;883860;cfe7f3aa-0ddc-4a82-b0c1-71ff9e6441b5",
