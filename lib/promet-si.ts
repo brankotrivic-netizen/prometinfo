@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-17T19:47:29.748Z";
+export const PROMET_SI_UPDATED = "2026-10-17T21:49:53.996Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;884096;6976f1da-1b63-4372-927b-bf7b4777eecd",
-  "type": "MaintenanceWorks",
-  "desc": "R2-430, Pesnica - Hoče, izvoz 5 Maribor center - uvoz Maribor center v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "R2-430, Pesnica - Hoče",
-  "lat": 46.56512,
-  "lng": 15.66155,
-  "start": "2026-10-17T19:01:07.62Z",
-  "end": "2026-10-17T21:00:00Z",
-  "ts": "2026-10-17T19:01:34.213Z"
- },
  {
   "id": "DARS;884095;b47d7104-9479-4159-b314-ab1e7c243294",
   "type": "MaintenanceWorks",

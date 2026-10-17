@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.10.2026. 21:44",
-  "text": "Vremenski su uvjeti povoljni za vožnju. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba autocestom do čvora Split vozi se nesmetano, a dalje u smjeru Dubrovnika vozila izlaze s autoceste na čvoru Split (naplata Dugopolje), polukružno se okreću na kružnom toku (DC1- ŽC6145) i vraćaju se na autocestu prolaskom kroz naplatu Dugopolje u smjeru Dubrovnika; do 14. prosinca zbog r…"
+  "updated": "17.10.2026. 23:35",
+  "text": "Na cestama u unutrašnjosti ponegdje ima magle. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zabrana prometa za sva vozila zbog radova na autocesti A1 između čvora Posedarje i čvora Zadar istok (uključujući i čvor Zadar centar) u oba smjera. Za vrijeme izvođenja radova promet se vodi obilaznim pravcima, kako slijedi: smjer Dubrovnik: čvor Posedarje - D106 - D8 - D539 - D502 - D424 - čvor Zadar istok ; smjer Zagreb: čvor Zadar istok (A1) - D421 - D502 - D539 - D8 - D106 - čvor Posedarje (A1). uočena je srna na autocesti A2 Zagreb-Macelj na čvoru Zagreb zapad, vozi se uz ograničenje brzine životinja (pas) na autocesti A1 na čvoru Vodic…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "17.10.2026. 21:44",
+  "updated": "17.10.2026. 23:35",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "17.10.2026. 21:44",
+  "updated": "17.10.2026. 23:35",
   "text": "U pomorskom prometu nema poteškoća. IZMJENE U REDU PLOVIDBE: 18. listopada uplovljenjem u luku Split u 20:00 sati HSC Puntamika završava s redovnim održavanjem komercijalne linije br. 654. 18. listopada trajekt će iz luke Split za luku Vela Luka isploviti u 18:00 sati (umjesto u 17:00 sati) dok će iz luke Vela Luka za luku Ubli isploviti u 21:00 sat (umjesto u 20:15 sati). Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granič…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "17.10.2026. 21:44",
+  "updated": "17.10.2026. 23:35",
   "text": "Stanje u željezničkom putničkom prometu 16. listopada 2026. u 8.00 sati Između umjesto Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim blagdana, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka prevoze autobusi. Između kolodvora Vrbovec i Križevci, na pruzi državna granica – Botovo – Dugo Selo, zbog radova od 12. listopada u 9.00 sati do 11. studenoga 2026. u 23.00 sata promet će teći jednim kolosijekom te se očekuju kašnjenja. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Križevci i Gyekenyes na pruzi državna granica – Bo…"
  },
  {
