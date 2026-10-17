@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-17T15:28:42.887Z";
+export const PROMET_SI_UPDATED = "2026-10-17T17:53:27.096Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;884091;3a0b5b42-419b-4f0a-8c8b-28775bee77d4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, uvoz Ljubljana Bizovik - priključek Ljubljana vzhod v smeri Zadobrove, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.04316,
+  "lng": 14.57678,
+  "start": "2026-10-17T17:19:59.39Z",
+  "end": "2026-10-20T02:00:18.77Z",
+  "ts": "2026-10-17T17:25:11.473Z"
+ },
+ {
+  "id": "DARS;884092;bbaffd30-fd25-4472-9890-ac7b941bd457",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana, Ind. cona Moste - priključek Ljubljana Bizovik v smeri Malenc, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.06145,
+  "lng": 14.5745,
+  "start": "2026-10-17T17:22:49.39Z",
+  "end": "2026-10-17T21:00:44.637Z",
+  "ts": "2026-10-17T17:23:39.387Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -46,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-11T15:35:49.023Z",
   "end": "2026-10-31T09:30:00Z",
   "ts": "2026-10-17T08:26:07.593Z"
- },
- {
-  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 13. 12. 2026.",
-  "loc": "G2-104, Kranj - Spodnji Brnik",
-  "lat": 46.24124,
-  "lng": 14.39817,
-  "start": "2026-09-28T19:00:00Z",
-  "end": "2026-12-13T22:59:00Z",
-  "ts": "2026-10-17T05:00:01.937Z"
  },
  {
   "id": "DARS;884033;633ccd80-2c0d-4023-b280-929de1915030",
