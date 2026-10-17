@@ -1,29 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-17T17:53:27.096Z";
+export const PROMET_SI_UPDATED = "2026-10-17T19:47:29.748Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;884091;3a0b5b42-419b-4f0a-8c8b-28775bee77d4",
+  "id": "DARS;884096;6976f1da-1b63-4372-927b-bf7b4777eecd",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, uvoz Ljubljana Bizovik - priključek Ljubljana vzhod v smeri Zadobrove, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.04316,
-  "lng": 14.57678,
-  "start": "2026-10-17T17:19:59.39Z",
-  "end": "2026-10-20T02:00:18.77Z",
-  "ts": "2026-10-17T17:25:11.473Z"
+  "desc": "R2-430, Pesnica - Hoče, izvoz 5 Maribor center - uvoz Maribor center v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "R2-430, Pesnica - Hoče",
+  "lat": 46.56512,
+  "lng": 15.66155,
+  "start": "2026-10-17T19:01:07.62Z",
+  "end": "2026-10-17T21:00:00Z",
+  "ts": "2026-10-17T19:01:34.213Z"
  },
  {
-  "id": "DARS;884092;bbaffd30-fd25-4472-9890-ac7b941bd457",
+  "id": "DARS;884095;b47d7104-9479-4159-b314-ab1e7c243294",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana, Ind. cona Moste - priključek Ljubljana Bizovik v smeri Malenc, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.06145,
-  "lng": 14.5745,
-  "start": "2026-10-17T17:22:49.39Z",
-  "end": "2026-10-17T21:00:44.637Z",
-  "ts": "2026-10-17T17:23:39.387Z"
+  "desc": "A1, Ljubljana - Maribor, priključek Domžale - predor Podmilj v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.13663,
+  "lng": 14.62058,
+  "start": "2026-10-17T18:03:02.877Z",
+  "end": "2026-10-17T23:00:06.647Z",
+  "ts": "2026-10-17T18:03:10.793Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -134,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-22T06:32:22.74Z",
   "end": "2026-11-14T16:00:00Z",
   "ts": "2026-10-16T05:40:50.773Z"
- },
- {
-  "id": "DARS;883825;11001219-3b62-4364-bcaa-31ce0ac7115f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Kobarid - Nova Gorica, Idrsko, izmenično enosmerni promet, popravilo jaška, do 17. 10. 2026.",
-  "loc": "G2-102, Idrsko - Peršeti",
-  "lat": 46.23107,
-  "lng": 13.59436,
-  "start": "2026-10-16T05:30:40.303Z",
-  "end": "2026-10-17T18:00:00Z",
-  "ts": "2026-10-16T05:37:54.563Z"
  },
  {
   "id": "DARS;875053;183c4c35-3005-4414-bc9a-c4acc533606e",
