@@ -28,6 +28,8 @@ const HAK_NAME2ID = {
   "hrvatska kostajnica": "ba-kostajnica", "maljevac": "ba-velika-kladusa",
   "licko petrovo selo": "ba-izacic", "kamensko": "ba-kamensko",
   "nova sela": "ba-bijaca", "metkovic": "ba-doljani", "klek": "ba-neum-i",
+  "hrvatska dubica": "ba-kozarska-dubica", "bosanska dubica": "ba-kozarska-dubica",
+  "dvor": "ba-novi-grad", "bosanski novi": "ba-novi-grad",
 };
 function hakMin(txt) {
   const t = deacc(txt);

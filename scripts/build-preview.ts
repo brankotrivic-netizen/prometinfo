@@ -854,6 +854,7 @@ body[data-view="route"] .sidebar{display:none}
 .vehrow{font-size:14.5px;margin:3px 0}
 .liveline{font-size:12.5px}
 .mpalert{font-size:13px;padding:8px 12px}
+.opprow{font-size:13px;color:#64748b}
 @media(max-width:640px){
  .top{flex-wrap:nowrap;flex-direction:row;flex-wrap:wrap;margin-bottom:6px}
  .top .brand{flex:1;min-width:0}
@@ -1960,6 +1961,12 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     return '<div class="dirrow" style="color:var(--muted)">Smerni podatek ni na voljo — preveri kamero / uradni vir.</div>';
   }
   function paxShort(cn){ return cn.gen?'🟢 brez javljene kolone (uradno do 30 min)':(cn.pax.e+' '+cn.pax.t+(cn.paxMin!=null?' (~'+cn.paxMin+' min)':'')); }
+  function oppLine(p){
+    REV=!REV; var o; try{ o=paxEst(p); } finally { REV=!REV; }
+    if(!o||o.px==null||o.gen||o.px<45) return '';
+    var lbl=REV?'tja':'nazaj', hak=p.hak&&(REV?p.hak.izlazTxt:p.hak.ulazTxt);
+    return '<div class="vehrow opprow">↩ Nasprotna smer ('+lbl+'): <b>'+vcls(o.px).e+' '+(o.px>=60&&o.px%60===0?'~'+(o.px/60)+' h':o.px>=60?'~'+Math.floor(o.px/60)+' h '+(o.px%60)+' min':'~'+o.px+' min')+'</b>'+(hak?' <span class="meta">(HAK)</span>':'')+'</div>';
+  }
   function queueLine(q){
     if(!q) return '';
     var ago=Math.max(0,Math.round((Date.now()-q.at)/60000)), t=' <span class="meta">(TomTom, '+(ago<1?'zdaj':'pred '+ago+' min')+')</span>';
@@ -1990,7 +1997,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var vehLines=(cn.gen
         ?'<div class="vehrow" style="color:#16a34a">🚗 <b>🟢 Brez javljene kolone</b> <span class="meta">· uradno le »do 30 min«</span></div>'
         :'<div class="vehrow" style="color:'+cn.pax.c+'">🚗 Čakanje: <b>'+cn.pax.e+' '+cn.pax.t+'</b>'+(cn.paxMin!=null?' <span class="meta">('+(cn.paxMin===61&&bihQueueMine(p)?'več kot 1 h':'~'+cn.paxMin+' min')+')</span>':'')+'</div>')
-      +queueLine(cn.q);
+      +queueLine(cn.q)+oppLine(p);
     var cc=ccLast(id);
     var camBlock='<div class="camver">📷 Kamera preverjanje: '
       +(cc?('<b>'+(CCLBL[cc.cameraStatus]||cc.cameraStatus)+'</b> <span class="meta">('+Math.round((Date.now()-Date.parse(cc.checkedAt))/60000)+' min nazaj)</span>'):'<span class="meta">še ni preverjeno</span>')
@@ -2163,7 +2170,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   function startLiveRoute(pr,force){ LIVE_SEQ++; CURRENT_ROUTE=pr; LIVE_DATA=null; LIVE_BUSY=false; setLiveAuto(true); refreshLiveRoute(!!force); }
   function rFrom(pr){ return REV?pr.to:pr.from; }
   function rTo(pr){ return REV?pr.from:pr.to; }
-  window.swapDir=function(){ REV=!REV; if(CURRENT_ROUTE){ var pr=CURRENT_ROUTE; renderRoute(pr); startLiveRoute(pr,true); } };
+  window.swapDir=function(){ REV=!REV; try{ localStorage.setItem('promet_rev',REV?'1':'0'); }catch(e){} if(CURRENT_ROUTE){ var pr=CURRENT_ROUTE; renderRoute(pr); startLiveRoute(pr,true); } };
   // ---- Prometni koledar (napoved gnece po dnevih, smer glede na REV) ----
   var TCLV=['ni gneče','manjša gneča','gneča','velika gneča'], TCDOW=['ne','po','to','sr','če','pe','so'];
   function tcalDir(){ return REV?'n':'s'; }
@@ -2573,7 +2580,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var box=document.getElementById('quickRoutes'); if(!box) return;
     box.innerHTML=ROUTES.map(function(r){ return '<button class="qroute" onclick="selectRoute(\\''+r.id+'\\')">'+r.from+' → '+r.to+'</button>'; }).join('');
   }
-  window.selectRoute=function(id){ var pr=ROUTES.filter(function(r){return r.id===id;})[0]; if(!pr)return; REV=false; try{ localStorage.setItem('promet_lastroute',id); }catch(e){} var a=document.getElementById('mpFrom'),b=document.getElementById('mpTo'); if(a)a.value=pr.from; if(b)b.value=pr.to; showView('route'); renderRoute(pr); if(!window._autoload)startLiveRoute(pr,true); };
+  window.selectRoute=function(id){ var pr=ROUTES.filter(function(r){return r.id===id;})[0]; if(!pr)return; REV=false; if(window._autoload){ try{ REV=localStorage.getItem('promet_rev')==='1'; }catch(e){} } try{ localStorage.setItem('promet_lastroute',id); localStorage.setItem('promet_rev',REV?'1':'0'); }catch(e){} var a=document.getElementById('mpFrom'),b=document.getElementById('mpTo'); if(a)a.value=pr.from; if(b)b.value=pr.to; showView('route'); renderRoute(pr); startLiveRoute(pr,!window._autoload); };
   window.checkRoute=function(){
     var a=(document.getElementById('mpFrom').value||'').trim(), b=(document.getElementById('mpTo').value||'').trim();
     var res=document.getElementById('routeResult');
