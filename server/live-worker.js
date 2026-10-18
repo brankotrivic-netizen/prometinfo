@@ -248,6 +248,87 @@ async function stats(env, ids) {
   return { ts: new Date().toISOString(), since: first && first.t ? new Date(first.t).toISOString() : null, rows: first ? first.c : 0, ids: out };
 }
 
+// ---------- GOOGLE ROUTES (podatki telefonov Android) ----------
+// Zadnjih ~4 km do meje + 1 km za njo, po smeri: s = tja (HR -> BiH), n = nazaj (BiH -> HR).
+// Zamuda = duration (s prometom) - staticDuration (brez prometa); kolona = odseki TRAFFIC_JAM/SLOW na poti.
+// Razred "Compute Routes Pro" (TRAFFIC_AWARE*): 5.000 brezplacnih klicev/mesec -> varovalo G_CAP.
+// Kljuc: GOOGLE_ROUTES_KEY (wrangler secret put GOOGLE_ROUTES_KEY). Brez kljuca je ta del izklopljen.
+// Google podatki se ne arhivirajo (le zadnja meritev na prehod in smer).
+const G_CAP = 4500;
+const GQ = {
+  "ba-gradiska": { s: { o: [45.18177, 17.214], d: [45.13802, 17.20403] }, n: { o: [45.11305, 17.19212], d: [45.15675, 17.20474] } },
+  "ba-gradina": { s: { o: [45.28533, 16.93351], d: [45.25762, 16.91575] }, n: { o: [45.22946, 16.90657], d: [45.26974, 16.9135] } },
+  "ba-kozarska-dubica": { s: { o: [45.19788, 16.77065], d: [45.17539, 16.81084] }, n: { o: [45.15595, 16.79562], d: [45.18845, 16.80437] } },
+};
+function decodePolyline(str) {
+  const pts = []; let i = 0, lat = 0, lng = 0;
+  while (i < str.length) {
+    for (const k of [0, 1]) {
+      let b, shift = 0, res = 0;
+      do { b = str.charCodeAt(i++) - 63; res |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+      const v = res & 1 ? ~(res >> 1) : res >> 1;
+      if (k === 0) lat += v; else lng += v;
+    }
+    pts.push([lat / 1e5, lng / 1e5]);
+  }
+  return pts;
+}
+const hav = (a, b) => { const x = (b[0] - a[0]) * Math.PI / 180, y = (b[1] - a[1]) * Math.PI / 180; const s = Math.sin(x / 2) ** 2 + Math.cos(a[0] * Math.PI / 180) * Math.cos(b[0] * Math.PI / 180) * Math.sin(y / 2) ** 2; return 6371 * 2 * Math.atan2(Math.sqrt(s), Math.sqrt(1 - s)); };
+async function gEnsure(env) {
+  await env.DB.batch([
+    env.DB.prepare("CREATE TABLE IF NOT EXISTS gq (i TEXT NOT NULL, dir TEXT NOT NULL, t INTEGER NOT NULL, delay INTEGER, jam REAL, slow REAL, PRIMARY KEY (i, dir))"),
+    env.DB.prepare("CREATE TABLE IF NOT EXISTS gusage (m TEXT PRIMARY KEY, n INTEGER NOT NULL)"),
+  ]);
+}
+const gMonth = () => new Date().toISOString().slice(0, 7);
+async function gUsed(env) { const r = await env.DB.prepare("SELECT n FROM gusage WHERE m=?").bind(gMonth()).first(); return r ? r.n : 0; }
+async function gMeasure(env, id, dir) {
+  const seg = GQ[id] && GQ[id][dir]; if (!seg) return null;
+  const ll = (p) => ({ location: { latLng: { latitude: p[0], longitude: p[1] } } });
+  await env.DB.prepare("INSERT INTO gusage (m,n) VALUES (?,1) ON CONFLICT(m) DO UPDATE SET n=n+1").bind(gMonth()).run();
+  const r = await fetch("https://routes.googleapis.com/directions/v2:computeRoutes", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "X-Goog-Api-Key": env.GOOGLE_ROUTES_KEY, "X-Goog-FieldMask": "routes.duration,routes.staticDuration,routes.polyline.encodedPolyline,routes.travelAdvisory.speedReadingIntervals" },
+    body: JSON.stringify({ origin: ll(seg.o), destination: ll(seg.d), travelMode: "DRIVE", routingPreference: "TRAFFIC_AWARE_OPTIMAL", extraComputations: ["TRAFFIC_ON_POLYLINE"] }),
+  });
+  if (!r.ok) throw new Error("Google HTTP " + r.status + " " + (await r.text()).slice(0, 160));
+  const rt = ((await r.json()).routes || [])[0]; if (!rt) return null;
+  const sec = (x) => parseInt(String(x || "0").replace("s", ""), 10) || 0;
+  const pts = rt.polyline && rt.polyline.encodedPolyline ? decodePolyline(rt.polyline.encodedPolyline) : [];
+  let jam = 0, slow = 0;
+  for (const iv of (rt.travelAdvisory && rt.travelAdvisory.speedReadingIntervals) || []) {
+    const a = iv.startPolylinePointIndex || 0, b = iv.endPolylinePointIndex || 0;
+    let km = 0; for (let k = a; k < b && k + 1 < pts.length; k++) km += hav(pts[k], pts[k + 1]);
+    if (iv.speed === "TRAFFIC_JAM") jam += km; else if (iv.speed === "SLOW") slow += km;
+  }
+  const row = { i: id, dir, t: Date.now(), delay: Math.max(0, sec(rt.duration) - sec(rt.staticDuration)), jam: Math.round(jam * 10) / 10, slow: Math.round(slow * 10) / 10 };
+  await env.DB.prepare("INSERT INTO gq (i,dir,t,delay,jam,slow) VALUES (?,?,?,?,?,?) ON CONFLICT(i,dir) DO UPDATE SET t=excluded.t, delay=excluded.delay, jam=excluded.jam, slow=excluded.slow")
+    .bind(row.i, row.dir, row.t, row.delay, row.jam, row.slow).run();
+  return row;
+}
+// osvezi meritve, ki so starejse od maxAgeMin (najvec "limit" klicev naenkrat, nikoli cez mesecno varovalo)
+async function gRefresh(env, ids, maxAgeMin, limit) {
+  if (!env.GOOGLE_ROUTES_KEY) return 0;
+  await gEnsure(env);
+  const have = await env.DB.prepare("SELECT i,dir,t FROM gq WHERE i IN (" + ids.map(() => "?").join(",") + ")").bind(...ids).all();
+  const age = {}; for (const x of have.results || []) age[x.i + "|" + x.dir] = x.t;
+  let used = await gUsed(env), n = 0;
+  for (const id of ids) for (const dir of ["s", "n"]) {
+    if (!GQ[id] || n >= limit || used >= G_CAP) continue;
+    if (age[id + "|" + dir] && Date.now() - age[id + "|" + dir] < maxAgeMin * 60000) continue;
+    try { await gMeasure(env, id, dir); } catch (e) { console.log("google", id, dir, e.message); }
+    n++; used++;
+  }
+  return n;
+}
+async function gRead(env, ids) {
+  if (!env.GOOGLE_ROUTES_KEY) return { enabled: false };
+  await gEnsure(env);
+  const r = await env.DB.prepare("SELECT i,dir,t,delay,jam,slow FROM gq WHERE i IN (" + ids.map(() => "?").join(",") + ")").bind(...ids).all();
+  const out = {}; for (const x of r.results || []) (out[x.i] = out[x.i] || {})[x.dir] = { t: x.t, delay: x.delay, jam: x.jam, slow: x.slow };
+  return { enabled: true, used: await gUsed(env), cap: G_CAP, ids: out };
+}
+
 const json = (obj, maxAge) => new Response(JSON.stringify(obj), { headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=" + maxAge } });
 
 function cors(req, env) {
@@ -274,8 +355,15 @@ export default {
       const key = new Request(url.origin + "/stats?ids=" + ids.join(","));
       res = await cache.match(key);
       if (!res) { res = json(await stats(env, ids), 900); ctx.waitUntil(cache.put(key, res.clone())); }
+    } else if (url.pathname === "/gq") {
+      // Google kolona pred mejo; ob odprtju aplikacije osvezi meritve, starejse od 15 min
+      const ids = (url.searchParams.get("ids") || "").split(",").map((x) => x.trim()).filter((x) => GQ[x]).slice(0, 3).sort();
+      if (!ids.length) return json({ enabled: !!env.GOOGLE_ROUTES_KEY, ids: {} }, 60);
+      const key = new Request(url.origin + "/gq?ids=" + ids.join(","));
+      res = await cache.match(key);
+      if (!res) { await gRefresh(env, ids, 15, 6); res = json(await gRead(env, ids), 120); ctx.waitUntil(cache.put(key, res.clone())); }
     } else {
-      return new Response("PrometInfo live: /waits, /stats?ids=", { headers: h });
+      return new Response("PrometInfo live: /waits, /stats?ids=, /gq?ids=", { headers: h });
     }
     const out = new Response(res.body, res);
     for (const [k, v] of Object.entries(h)) out.headers.set(k, v);
@@ -284,5 +372,8 @@ export default {
   // vsakih 15 min (wrangler-live.toml [triggers]) zapise posnetek cakanj osebnih vozil v D1
   async scheduled(event, env, ctx) {
     ctx.waitUntil(collect(env).then((n) => console.log("zgodovina +" + n), (e) => console.log("zgodovina napaka", e && e.message)));
+    // Google: enkrat na uro med 6. in 22. uro po lokalnem casu (~3.100 klicev/mesec), le ce je kljuc nastavljen
+    const [, hr] = localDH(Date.now()), min = new Date().getUTCMinutes();
+    if (env.GOOGLE_ROUTES_KEY && min < 15 && hr >= 6 && hr <= 22) ctx.waitUntil(gRefresh(env, Object.keys(GQ), 50, 6).then((n) => console.log("google +" + n), (e) => console.log("google napaka", e && e.message)));
   },
 };

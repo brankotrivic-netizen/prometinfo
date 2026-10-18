@@ -632,6 +632,13 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .dwait{font-size:23px;font-weight:700}
 .dfresh{font-size:15px;color:#cbd5e1;margin-top:4px}
 .dcam{margin-top:14px;background:#2563eb;color:#fff;border:none;border-radius:12px;padding:14px 20px;font-size:18px;font-weight:800;cursor:pointer;width:100%;font-family:inherit}
+.watchbox{background:#1e1b4b;border-radius:14px;padding:12px 14px;margin-bottom:10px}
+.wtop{display:flex;justify-content:space-between;align-items:center;font-size:17px;margin-bottom:6px}
+.wstop{background:#334155;color:#fff;border:none;border-radius:9px;padding:7px 12px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.wline{font-size:14px;color:#cbd5e1;margin-top:6px}
+.wwarn{background:#7f1d1d;border-radius:11px;padding:11px 12px;font-size:18px;line-height:1.35}
+.wok{background:#14532d;border-radius:11px;padding:10px 12px;font-size:17px}
+.wqueue{background:#3f3a14;border-radius:11px;padding:10px 12px;font-size:17px;margin-top:8px;line-height:1.4}
 .dalt{background:#3f3a14;border-radius:12px;padding:15px 16px;font-size:19px}
 .davoid{background:#4c1d1d;border-radius:12px;padding:15px 16px;font-size:19px}
 #mpBanner{margin-bottom:12px}
@@ -1611,9 +1618,28 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     });
     return {km:Math.round(km*10)/10, delayMin:Math.round(delay/60), cat:cat, at:Date.now(), rev:REV};
   }
-  // Ocena čakanja za OSEBNA vozila v tvoji smeri: uradni vir + BIHAMK "duga kolona" + TomTom kolona pred mejo.
+  /* Google Routes (hitrosti telefonov Android) prek strežnika /gq — zadnji ~4 km pred mejo po smeri */
+  var GQD={enabled:false,ids:{}}, GQ_AT=0, GQ_BUSY=false;
+  function fetchGq(ids){
+    ids=ids.filter(Boolean); if(!ids.length||GQ_BUSY||Date.now()-GQ_AT<5*60000) return;
+    GQ_BUSY=true;
+    fetch(LIVE_URL.replace('/waits','/gq')+'?ids='+ids.join(','),{cache:'no-store'}).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(d){
+      var sig=JSON.stringify(d.ids||{}), old=JSON.stringify(GQD.ids||{}); GQD={enabled:!!d.enabled,ids:d.ids||{}}; GQ_AT=Date.now(); GQ_BUSY=false;
+      if(sig!==old && CURRENT_ROUTE){ var y=window.scrollY; renderRoute(CURRENT_ROUTE); try{ renderLiveAnswer(); }catch(e){} window.scrollTo(0,y); }
+    }).catch(function(){ GQ_BUSY=false; GQ_AT=Date.now(); });
+  }
+  function gFor(p){ var d=GQD.ids&&GQD.ids[p.id]&&GQD.ids[p.id][REV?'n':'s']; if(!d||Date.now()-d.t>75*60000) return null; return {delayMin:Math.round((d.delay||0)/60), jam:d.jam||0, slow:d.slow||0, t:d.t}; }
+  function gHasQueue(g){ return !!g && (g.delayMin>=3 || g.jam>=0.3); }
+  function gLine(p){
+    var g=gFor(p); if(!g) return '';
+    var ago=Math.max(0,Math.round((Date.now()-g.t)/60000)), t=' <span class="meta">(Google/Android, '+(ago<1?'zdaj':'pred '+ago+' min')+')</span>';
+    if(gHasQueue(g)) return '<div class="vehrow" style="color:'+(g.delayMin>=30?'#dc2626':'#ea580c')+'">🛰 Kolona'+((g.jam+g.slow)>=0.1?': <b>~'+(g.jam+g.slow).toFixed(1).replace('.',',')+' km</b> ·':':')+' zamuda <b>~'+Math.max(1,g.delayMin)+' min</b>'+t+'</div>';
+    return '<div class="vehrow" style="color:#16a34a">🛰 Pred mejo ni zastoja'+t+'</div>';
+  }
+  // Ocena čakanja za OSEBNA vozila v tvoji smeri: uradni vir + BIHAMK "duga kolona" + Google (Android) + TomTom kolona pred mejo.
   function paxEst(p){
-    var pt=paxTruck(p), px=pt.pax, gen=pt.gen, q=queueFor(p);
+    var pt=paxTruck(p), px=pt.pax, gen=pt.gen, q=queueFor(p), g=gFor(p);
+    if(gHasQueue(g)){ px=(px==null||gen)?Math.max(1,g.delayMin):Math.max(px,g.delayMin); gen=false; }
     if(bihQueueMine(p)){ px=Math.max(px==null?0:px,61); gen=false; }
     if(q && (q.delayMin>=3 || q.km>=0.3)){ var m=Math.max(q.delayMin,1); px=(px==null||gen)?m:Math.max(px,m); gen=false; }
     return {px:px, gen:!!(gen&&px!=null&&px<=30), q:q, truck:pt.truck};
@@ -1997,7 +2023,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var vehLines=(cn.gen
         ?'<div class="vehrow" style="color:#16a34a">🚗 <b>🟢 Brez javljene kolone</b> <span class="meta">· uradno le »do 30 min«</span></div>'
         :'<div class="vehrow" style="color:'+cn.pax.c+'">🚗 Čakanje: <b>'+cn.pax.e+' '+cn.pax.t+'</b>'+(cn.paxMin!=null?' <span class="meta">('+(cn.paxMin===61&&bihQueueMine(p)?'več kot 1 h':'~'+cn.paxMin+' min')+')</span>':'')+'</div>')
-      +queueLine(cn.q)+oppLine(p);
+      +gLine(p)+(gFor(p)?'':queueLine(cn.q))+oppLine(p);
     var cc=ccLast(id);
     var camBlock='<div class="camver">📷 Kamera preverjanje: '
       +(cc?('<b>'+(CCLBL[cc.cameraStatus]||cc.cameraStatus)+'</b> <span class="meta">('+Math.round((Date.now()-Date.parse(cc.checkedAt))/60000)+' min nazaj)</span>'):'<span class="meta">še ni preverjeno</span>')
@@ -2350,6 +2376,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     // samodejni TomTom pregled kolone za priporoceni + alternativni prehod (ce se ni preverjeno)
     pr.recommended.concat(pr.alternative).forEach(function(id){ if(TTQ[id] && !TTRES[id]){ try{ checkTomTom(id); }catch(e){} } });
     try{ fetchStats(pr.recommended.concat(pr.alternative, pr.avoid)); }catch(e){}
+    try{ fetchGq(pr.recommended.concat(pr.alternative)); }catch(e){}
     // vreme za priporoceni + alternativni prehod
     pr.recommended.concat(pr.alternative).forEach(function(id){ try{ loadWeather(id); }catch(e){} });
   }
@@ -2545,6 +2572,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     var recId=ranked.length&&ranked[0].id?ranked[0].id:pr.recommended[0], altId=pr.alternative.filter(function(id){return id!==recId;})[0]||pr.recommended.filter(function(id){return id!==recId;})[0], avId=pr.avoid[0];
     var rec=recId?CBYID[recId]:null, alt=altId?CBYID[altId]:null, av=avId?CBYID[avId]:null;
     var h='<div class="droute">'+rFrom(pr)+' → '+rTo(pr)+'</div>';
+    h+='<div id="watchBox" class="watchbox">'+watchInner()+'</div>';
     if(LIVE_DATA&&LIVE_DATA.pr===pr) h+='<div class="dfresh" style="text-align:center">📡 Celotna pot preverjena '+clockHMS(LIVE_DATA.checkedAt)+' · samodejno vsako minuto</div>';
     if(rec){
       var cn=conclude(rec);
@@ -2575,7 +2603,114 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     body.innerHTML=h; dm.style.display='flex';
     if(voiceOn()) setTimeout(speakDrive,400);
   };
-  window.exitDrive=function(){ var dm=document.getElementById('driveMode'); if(dm)dm.style.display='none'; };
+  window.exitDrive=function(){ var dm=document.getElementById('driveMode'); if(dm)dm.style.display='none'; stopWatch(); };
+  /* ===== 🛰 SPREMLJANJE POTI: vsaki 2 min preveri 20 km pred tabo (TomTom), opozori in predlagaj obvoz ===== */
+  var WATCH={on:false,gid:null,pos:null,hist:[],timer:null,res:null,err:null,alerted:{},wake:null,passed:{},rt:0,dst:null};
+  function wakeOn(){ try{ if(navigator.wakeLock&&WATCH.on) navigator.wakeLock.request('screen').then(function(w){ WATCH.wake=w; }).catch(function(){}); }catch(e){} }
+  document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='visible'&&WATCH.on){ wakeOn(); watchTick(); } });
+  function watchCross(){
+    var pr=CURRENT_ROUTE; if(!pr) return null;
+    var ranked=LIVE_DATA&&LIVE_DATA.pr===pr?LIVE_DATA.routes.slice().sort(function(a,b){return a.totalMin-b.totalMin;}):[];
+    var ids=(ranked.length?ranked.map(function(r){return r.id;}):[]).concat(pr.recommended,pr.alternative).filter(Boolean);
+    for(var i=0;i<ids.length;i++){ if(WATCH.passed[ids[i]]) return null; }
+    var c=ids.length?CBYID[ids[0]]:null; return (c&&c.lat!=null)?c:null;
+  }
+  window.startWatch=function(){
+    if(!navigator.geolocation){ toast('Naprava ne podpira lokacije.'); return; }
+    WATCH.on=true; WATCH.err=null; WATCH.res=null; WATCH.hist=[]; WATCH.alerted={}; WATCH.pos=null; WATCH.passed={};
+    WATCH.gid=navigator.geolocation.watchPosition(onWatchPos,function(e){ WATCH.err=e.code===1?'Ni dovoljenja za lokacijo.':'Lokacije ni bilo mogoče dobiti.'; renderWatch(); },{enableHighAccuracy:true,maximumAge:10000,timeout:25000});
+    WATCH.timer=setInterval(watchTick,120000); wakeOn();
+    speak('Spremljam pot. Opozoril te bom na zastoje v naslednjih dvajsetih kilometrih.');
+    renderWatch();
+  };
+  function stopWatch(){
+    if(WATCH.gid!=null&&navigator.geolocation) navigator.geolocation.clearWatch(WATCH.gid);
+    if(WATCH.timer) clearInterval(WATCH.timer);
+    try{ if(WATCH.wake) WATCH.wake.release(); }catch(e){}
+    WATCH.on=false; WATCH.gid=null; WATCH.timer=null; WATCH.wake=null; renderWatch();
+  }
+  window.stopWatch=stopWatch;
+  function onWatchPos(pos){
+    var first=!WATCH.pos;
+    WATCH.pos={lat:pos.coords.latitude,lng:pos.coords.longitude,heading:pos.coords.heading,speed:pos.coords.speed,t:Date.now()};
+    var c=watchCross();
+    if(c){ var d=distKm(WATCH.pos.lat,WATCH.pos.lng,c.lat,c.lng);
+      if(d<0.3) WATCH.passed[c.id]=true;
+      var last=WATCH.hist[WATCH.hist.length-1];
+      if(!last||Date.now()-last.t>=15000) WATCH.hist.push({t:Date.now(),d:d,id:c.id});
+      WATCH.hist=WATCH.hist.filter(function(h){ return Date.now()-h.t<40*60000 && h.id===c.id; });
+    }
+    if(first) watchTick(); else if(Date.now()-WATCH.rt>5000){ WATCH.rt=Date.now(); renderWatch(); }
+  }
+  // hitrost kolone iz lastnega GPS (zadnjih ~10 min), ko si manj kot 5 km pred mejo
+  function queueSpeed(){
+    var c=watchCross(); if(!c||!WATCH.pos) return null;
+    var d=distKm(WATCH.pos.lat,WATCH.pos.lng,c.lat,c.lng); if(d>5) return null;
+    var old=null; for(var i=0;i<WATCH.hist.length;i++){ if(Date.now()-WATCH.hist[i].t>=8*60000) old=WATCH.hist[i]; }
+    if(!old) return {d:d,name:c.name,wait:true};
+    var mins=(Date.now()-old.t)/60000, moved=Math.max(0,old.d-d), kmh=moved/mins*60;
+    if(kmh>15) return null; // ne stojiš v koloni
+    return {d:d,name:c.name,per10:Math.round(moved/mins*10*1000),eta:moved>0.005?Math.round(d/(moved/mins)):null};
+  }
+  function fmtMin(m){ return m>=60?Math.floor(m/60)+' h'+(m%60?' '+(m%60)+' min':''):m+' min'; }
+  function watchTick(){
+    if(!WATCH.on){ renderWatch(); return; }
+    if(!WATCH.pos||!CURRENT_ROUTE){ renderWatch(); return; }
+    var pos=WATCH.pos, c=watchCross();
+    var dstP=c?Promise.resolve({lat:c.lat,lng:c.lng}):(WATCH.dst?Promise.resolve(WATCH.dst):geocode(rTo(CURRENT_ROUTE)).then(function(g){ WATCH.dst=g; return g; }));
+    dstP.then(function(dst){
+      var url='https://api.tomtom.com/routing/1/calculateRoute/'+pos.lat.toFixed(5)+','+pos.lng.toFixed(5)+':'+dst.lat+','+dst.lng+'/json?key='+TOMTOM_KEY+'&traffic=true&travelMode=car&routeType=fastest&computeTravelTimeFor=all&sectionType=traffic&departAt=now&maxAlternatives=1'+(pos.heading!=null&&!isNaN(pos.heading)?'&vehicleHeading='+Math.round(pos.heading):'');
+      return fetch(url,{cache:'no-store',signal:AbortSignal.timeout(15000)}).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){
+        var rts=j.routes||[], main=rts[0]; if(!main) throw 0;
+        var pts=(main.legs||[]).reduce(function(o,l){ return o.concat(l.points||[]); },[]);
+        var cum=[0]; for(var i=1;i<pts.length;i++) cum.push(cum[i-1]+distKm(pts[i-1].latitude,pts[i-1].longitude,pts[i].latitude,pts[i].longitude));
+        var ahead=(main.sections||[]).filter(function(x){ return x.sectionType==='TRAFFIC' && cum[x.startPointIndex]<=20 && ((x.delayInSeconds||0)>=120 || /JAM|ROAD_CLOSED|ACCIDENT/.test(x.simpleCategory||'')); })
+          .map(function(x){ var b=Math.min(x.endPointIndex,pts.length-1); return {at:cum[x.startPointIndex],km:cum[b]-cum[x.startPointIndex],delayMin:Math.round((x.delayInSeconds||0)/60),cat:x.simpleCategory||'',lat:pts[x.startPointIndex].latitude,lng:pts[x.startPointIndex].longitude}; })
+          .sort(function(a,b){ return a.at-b.at; });
+        var alt=null;
+        if(rts[1]){ var ap=(rts[1].legs||[]).reduce(function(o,l){ return o.concat(l.points||[]); },[]), via=null, far=0;
+          var ms=pts.filter(function(_,k){ return k%4===0; });
+          for(var a=0;a<ap.length;a+=6){ var md=1e9; for(var m=0;m<ms.length;m++){ var dd=distKm(ap[a].latitude,ap[a].longitude,ms[m].latitude,ms[m].longitude); if(dd<md) md=dd; if(md<0.5) break; } if(md>far){ far=md; via=ap[a]; } }
+          alt={min:Math.round(rts[1].summary.travelTimeInSeconds/60),via:(via&&far>1)?via:null}; }
+        WATCH.res={at:Date.now(),ahead:ahead,mainMin:Math.round(main.summary.travelTimeInSeconds/60),remKm:Math.round(main.summary.lengthInMeters/100)/10,alt:alt,cross:c?c.name:'',crossId:c?c.id:'',dst:dst};
+        WATCH.err=null; watchAlert(); renderWatch();
+      });
+    }).catch(function(){ WATCH.err='TomTom trenutno ni dosegljiv — poskusim čez 2 min.'; renderWatch(); });
+  }
+  function watchAlert(){
+    var r=WATCH.res; if(!r) return;
+    var j=r.ahead[0], altGain=(r.alt&&r.alt.via)?r.mainMin-r.alt.min:0;
+    if(j){ var key=Math.round(j.lat*50)+','+Math.round(j.lng*50), prev=WATCH.alerted[key];
+      if(prev==null||j.delayMin-prev>=10){ WATCH.alerted[key]=j.delayMin;
+        var msg='Pozor, '+(j.cat==='ROAD_CLOSED'?'zaprta cesta':j.cat==='ACCIDENT'?'nesreča':'zastoj')+' čez '+(j.at<1?'manj kot kilometer':Math.round(j.at)+' kilometrov')+(j.delayMin?', zamuda približno '+j.delayMin+' minut':'')+'.'+(altGain>=5?' Obvoz je hitrejši za '+altGain+' minut.':'');
+        speak(msg); try{ navigator.vibrate&&navigator.vibrate([300,150,300]); }catch(e){} toast('⚠ '+msg);
+      } }
+    if(r.crossId && r.remKm<=30 && !WATCH.alerted['b'+r.crossId]){ WATCH.alerted['b'+r.crossId]=1;
+      var cp=CBYID[r.crossId], cn=cp?conclude(cp):null;
+      if(cn) speak('Do meje '+cp.name+' še '+Math.round(r.remKm)+' kilometrov. '+(cn.gen?'Kolona ni javljena.':'Čakanje '+cn.pax.t+(cn.paxMin!=null?', približno '+fmtMin(cn.paxMin):'')+'.'));
+    }
+  }
+  function watchInner(){
+    if(!WATCH.on) return '<button class="dcam" style="background:#7c3aed;margin-top:0" onclick="startWatch()">🛰 Spremljaj pot (20 km naprej)</button><div class="dfresh" style="text-align:center;font-size:13px">Opozori na zastoje pred tabo in predlaga obvoz. Aplikacija mora ostati odprta na zaslonu.</div>';
+    var h='<div class="wtop"><b>🛰 Spremljam pot</b><button class="wstop" onclick="stopWatch()">⏹ Ustavi</button></div>', r=WATCH.res;
+    if(WATCH.err) h+='<div class="wline" style="color:#fca5a5">'+WATCH.err+'</div>';
+    if(!WATCH.pos) h+='<div class="wline">📍 Čakam na GPS…</div>';
+    else if(!r) h+='<div class="wline">🔎 Preverjam promet pred tabo…</div>';
+    else {
+      var j=r.ahead[0];
+      if(j) h+='<div class="wwarn">⚠ '+(j.cat==='ROAD_CLOSED'?'Zaprta cesta':j.cat==='ACCIDENT'?'Nesreča':'Zastoj')+' čez <b>'+(j.at<1?Math.round(j.at*1000)+' m':j.at.toFixed(1).replace('.',',')+' km')+'</b>'+(j.km>=0.1?' · dolg '+j.km.toFixed(1).replace('.',',')+' km':'')+(j.delayMin?' · zamuda <b>~'+j.delayMin+' min</b>':'')+(r.ahead.length>1?'<br><span style="font-size:14px">+ še '+(r.ahead.length-1)+' v 20 km</span>':'')+'</div>';
+      else h+='<div class="wok">✅ V naslednjih 20 km ni zastojev</div>';
+      if(r.alt&&r.alt.via){ var gain=r.mainMin-r.alt.min;
+        if(gain>=5) h+='<a class="dcam" style="background:#ea580c;display:block;text-align:center;text-decoration:none;margin-top:8px" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/?api=1&origin='+WATCH.pos.lat.toFixed(5)+','+WATCH.pos.lng.toFixed(5)+'&destination='+r.dst.lat+','+r.dst.lng+'&waypoints='+r.alt.via.latitude.toFixed(5)+','+r.alt.via.longitude.toFixed(5)+'&travelmode=driving">🔀 Obvoz hitrejši za '+gain+' min — odpri v Google Maps</a>';
+        else if(j) h+='<div class="wline">Obvoz ni hitrejši (razlika '+gain+' min) — ostani na poti.</div>'; }
+      h+='<div class="wline">'+(r.cross?'Do meje '+r.cross:'Do cilja')+': '+String(r.remKm).replace('.',',')+' km · ~'+fmtMin(r.mainMin)+' · pregled '+('0'+new Date(r.at).getHours()).slice(-2)+':'+('0'+new Date(r.at).getMinutes()).slice(-2)+'</div>';
+    }
+    var qs=queueSpeed();
+    if(qs){ h+='<div class="wqueue">🐢 Kolona pred mejo '+qs.name+': do meje <b>'+(qs.d<1?Math.round(qs.d*1000)+' m':qs.d.toFixed(1).replace('.',',')+' km')+'</b>'
+      +(qs.wait?'<br><span style="font-size:14px">Merim hitrost kolone (potrebujem ~10 min)…</span>':'<br>pomika se <b>~'+qs.per10+' m / 10 min</b>'+(qs.eta!=null?' · do meje še <b>~'+fmtMin(qs.eta)+'</b>':' · kolona stoji'))+'</div>'; }
+    return h;
+  }
+  function renderWatch(){ var el=document.getElementById('watchBox'); if(el) el.innerHTML=watchInner(); }
   function renderQuick(){
     var box=document.getElementById('quickRoutes'); if(!box) return;
     box.innerHTML=ROUTES.map(function(r){ return '<button class="qroute" onclick="selectRoute(\\''+r.id+'\\')">'+r.from+' → '+r.to+'</button>'; }).join('');
