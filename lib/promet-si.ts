@@ -1,40 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-18T12:40:45.283Z";
+export const PROMET_SI_UPDATED = "2026-10-18T16:08:05.383Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;884127;c2ca2da4-1a40-4f1f-add5-69d3af1b64d3",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, razcep Zadobrova - predor Golovec v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.06996,
-  "lng": 14.57747,
-  "start": "2026-10-18T11:12:09.577Z",
-  "end": "2026-10-18T17:00:00Z",
-  "ts": "2026-10-18T11:12:12.69Z"
- },
- {
-  "id": "DARS;884108;d2125924-92ec-458b-804f-100a3f2e4510",
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-926, Solčava - Podolševa - Sleme, izmenično enosmerni promet, pomična zapora, čiščenje jarkov, do 15:00.",
-  "loc": "RT-926, Solčava - Podolševa - Sleme",
-  "lat": 46.43932,
-  "lng": 14.73179,
-  "start": "2026-10-18T05:22:34.913Z",
-  "end": "2026-10-18T13:00:00Z",
-  "ts": "2026-10-18T05:23:21.863Z"
- },
- {
-  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 13. 12. 2026.",
-  "loc": "G2-104, Kranj - Spodnji Brnik",
-  "lat": 46.24124,
-  "lng": 14.39817,
-  "start": "2026-09-28T19:00:00Z",
-  "end": "2026-12-13T22:59:00Z",
-  "ts": "2026-10-18T05:00:23.747Z"
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-10-18T15:01:00.84Z"
  },
  {
   "id": "DARS;863053;9e9e00dd-7995-4163-ac84-3ba452223cdd",
@@ -244,17 +222,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-09T06:47:42.163Z",
   "end": "2026-10-30T22:59:00Z",
   "ts": "2026-10-15T06:14:46.063Z"
- },
- {
-  "id": "DARS;883625;5047b896-4613-4e2a-9271-60bdeec2870f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, pri Marofu, izmenično enosmerni promet, izvedba priključka meteorne kanalizacije in vodovoda, do 18. 10. 2026.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 46.00246,
-  "lng": 15.64202,
-  "start": "2026-10-16T05:00:00Z",
-  "end": "2026-10-18T15:00:00Z",
-  "ts": "2026-10-15T06:01:20.067Z"
  },
  {
   "id": "DARS;883554;2a283151-459f-471d-ae98-7ac75ee5111b",
