@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.10.2026. 22:44",
-  "text": "Vremenski uvjeti povoljni su za vožnju. Promet je povremeno pojačan na gradskim cestama, obilaznicama, pojedinim dionicama autocesta i graničnim prijelazima. Na većini cesta vozi se bez poteškoća, osim na dionicama gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: večeras od 22:00 do 05:00 sati ujutro zbog implementacije i podizanja portala novog sustava naplate cestarine zatvara se dionica autoceste A1 između čvorova Karlovac i Bosiljevo 1 (uključujući i čvor Novigrad) u oba smjera, u smjeru Zagreba na naplati Bosiljevo kolona je 1 km zbog veće gustoće prometa u zoni rado…"
+  "updated": "19.10.2026. 00:59",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Promet je povremeno pojačan na gradskim cestama, obilaznicama, pojedinim dionicama autocesta i graničnim prijelazima. Na većini cesta vozi se bez poteškoća, osim na dionicama gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: noćas u 01:00 sat završili su radovi i za sav je promet otvorena dionica autoceste A1 između čvorova Karlovac i Bosiljevo 1 u oba smjera od 19. listopada od 00:00 sati do 21. prosinca zbog radova bit će zatvoren tunel Sveti Ilija (DC76). Promet se odvija označenim obilaznim pravcima. AUTOCESTE A1 Zagreb-Split-Dub…"
  },
  {
   "title": "Granični prijelazi",
