@@ -143,26 +143,6 @@ export const HAK_WAITS: HakWait[] = [
   "tsISO": "2026-10-18T17:45:09+02:00"
  },
  {
-  "id": "ba-kozarska-dubica",
-  "name": "Hrvatska Dubica (Bosanska Dubica)",
-  "ulazMin": 60,
-  "izlazMin": null,
-  "ulazTxt": "1 h",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "-",
-  "level": "moderate",
-  "waitMinutes": 60,
-  "ulazTs": "18.10.2026. 18:07:48",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-10-18T18:07:48+02:00",
-  "izlazTsISO": "",
-  "ts": "18.10.2026. 18:07:48",
-  "tsISO": "2026-10-18T18:07:48+02:00"
- },
- {
   "id": "ba-kostajnica",
   "name": "Hrvatska Kostajnica (Bosanska Kostajnica)",
   "ulazMin": 60,
