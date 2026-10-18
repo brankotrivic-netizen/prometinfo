@@ -1,29 +1,84 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-17T21:49:53.996Z";
+export const PROMET_SI_UPDATED = "2026-10-18T08:23:44.924Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;884095;b47d7104-9479-4159-b314-ab1e7c243294",
+  "id": "DARS;884120;0917ecfa-fc57-49c3-a10a-16a8e99c8875",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Domžale - predor Podmilj v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.13663,
-  "lng": 14.62058,
-  "start": "2026-10-17T18:03:02.877Z",
-  "end": "2026-10-17T23:00:06.647Z",
-  "ts": "2026-10-17T18:03:10.793Z"
+  "desc": "A1, Maribor - vzhodna obvoznica, pred izvozom 5 Maribor center v smeri Dragučove, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.50581,
+  "lng": 15.66868,
+  "start": "2026-10-18T07:39:22.89Z",
+  "end": "2026-10-18T13:00:00Z",
+  "ts": "2026-10-18T07:39:32.25Z"
  },
  {
-  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "id": "DARS;884118;69591036-b26a-4cf3-b762-6bee8544a5d8",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Koper - Izola, uvoz Koper center, Slavček - priključek Semedela v smeri Portoroža, dela, oviran promet.",
+  "loc": "G2-111, Koper - Izola",
+  "lat": 45.53851,
+  "lng": 13.73294,
+  "start": "2026-10-18T07:16:04.597Z",
+  "end": "2026-10-18T11:00:37.333Z",
+  "ts": "2026-10-18T07:16:08.35Z"
+ },
+ {
+  "id": "DARS;884115;85f7316f-f714-4298-b80c-cf706318a84a",
+  "type": "MaintenanceWorks",
+  "desc": "A4, Gruškovje (Hrvaška) - Maribor, počivališče Dravsko polje - priključek Letališče Maribor v smeri Maribora, dela, oviran promet.",
+  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
+  "lat": 46.43218,
+  "lng": 15.79227,
+  "start": "2026-10-18T06:45:01.487Z",
+  "end": "2026-10-18T12:00:00Z",
+  "ts": "2026-10-18T06:45:06.813Z"
+ },
+ {
+  "id": "DARS;884110;7fc818c1-4ef0-40e8-90f9-6462d22874bd",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, predor Kastelec - priključek Kozina v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.58351,
+  "lng": 13.9025,
+  "start": "2026-10-18T05:40:42.937Z",
+  "end": "2026-10-18T13:00:00Z",
+  "ts": "2026-10-18T05:40:52.603Z"
+ },
+ {
+  "id": "DARS;884108;d2125924-92ec-458b-804f-100a3f2e4510",
   "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 45.96375,
-  "lng": 15.5243,
-  "start": "2025-10-02T05:56:02.493Z",
-  "end": "2026-12-31T22:59:00Z",
-  "ts": "2026-10-17T15:00:22.677Z"
+  "desc": "RT-926, Solčava - Podolševa - Sleme, izmenično enosmerni promet, pomična zapora, čiščenje jarkov, do 15:00.",
+  "loc": "RT-926, Solčava - Podolševa - Sleme",
+  "lat": 46.43932,
+  "lng": 14.73179,
+  "start": "2026-10-18T05:22:34.913Z",
+  "end": "2026-10-18T13:00:00Z",
+  "ts": "2026-10-18T05:23:21.863Z"
+ },
+ {
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 13. 12. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-12-13T22:59:00Z",
+  "ts": "2026-10-18T05:00:23.747Z"
+ },
+ {
+  "id": "DARS;863053;9e9e00dd-7995-4163-ac84-3ba452223cdd",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-666, Sopota - Podkum - Zagorje, pri Šklendrovcu, izmenično enosmerni promet, sanacija brežin, do 31. 10. 2026.",
+  "loc": "R3-666, Sopota - Podkum - Zagorje",
+  "lat": 46.11021,
+  "lng": 14.99802,
+  "start": "2026-09-18T07:00:00Z",
+  "end": "2026-10-31T22:59:00Z",
+  "ts": "2026-10-18T04:13:29.743Z"
  },
  {
   "id": "DARS;884077;33b5fac6-164d-4431-83cb-1d1661ff6400",
