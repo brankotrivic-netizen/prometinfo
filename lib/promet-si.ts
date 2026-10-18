@@ -1,41 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-18T18:36:20.519Z";
+export const PROMET_SI_UPDATED = "2026-10-18T21:01:14.360Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;884148;d6ffeb64-a424-425d-bd5c-9de6325ce969",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, izvoz Šempeter iz smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25925,
-  "lng": 15.09646,
-  "start": "2026-10-18T17:36:00.637Z",
-  "end": "2026-10-18T23:00:00Z",
-  "ts": "2026-10-18T17:36:05.487Z"
- },
- {
-  "id": "DARS;884146;b569bbe6-f529-4287-9b9e-fe4bfe62fc4b",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Konjice - priključek Sl. Bistrica jug v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.34042,
-  "lng": 15.47799,
-  "start": "2026-10-18T17:31:50.23Z",
-  "end": "2026-10-19T00:00:34.903Z",
-  "ts": "2026-10-18T17:31:55.86Z"
- },
- {
-  "id": "DARS;884143;54b484d3-6460-4d36-805b-b19747b6c5c3",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, priključek na Celovško cesto - izvoz 5 Ljubljana, Ind. cona Šiška v smeri Zadobrove, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07614,
-  "lng": 14.4712,
-  "start": "2026-10-18T17:15:22.91Z",
-  "end": "2026-10-18T20:00:46.267Z",
-  "ts": "2026-10-18T17:15:24.397Z"
- },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
