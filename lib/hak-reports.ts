@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "18.10.2026. 20:11",
+  "updated": "18.10.2026. 20:31",
   "text": "Vremenski uvjeti povoljni su za vožnju. Promet je povremeno pojačan na gradskim cestama, obilaznicama, pojedinim dionicama autocesta i graničnim prijelazima. Na većini cesta vozi se bez poteškoća, osim na dionicama gdje traju radovi. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog veće gustoće prometa u zoni radova na Istarskom ipsilonu (A8) između čvora i tunela Učka u oba smjera i riječkoj obilaznici (A7) između čvorova Rijeka zapad i Učka u smjeru Rupe, Opatije i Istre vozi se usporeno, u koloni u pokretu i uz kraće zastoje OPREZ! vozilo u kvaru (osobno vozilo) na autocesti A1 u tu…"
  },
  {
