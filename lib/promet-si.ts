@@ -1,51 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-18T08:23:44.924Z";
+export const PROMET_SI_UPDATED = "2026-10-18T12:40:45.283Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;884120;0917ecfa-fc57-49c3-a10a-16a8e99c8875",
+  "id": "DARS;884127;c2ca2da4-1a40-4f1f-add5-69d3af1b64d3",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, pred izvozom 5 Maribor center v smeri Dragučove, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.50581,
-  "lng": 15.66868,
-  "start": "2026-10-18T07:39:22.89Z",
-  "end": "2026-10-18T13:00:00Z",
-  "ts": "2026-10-18T07:39:32.25Z"
- },
- {
-  "id": "DARS;884118;69591036-b26a-4cf3-b762-6bee8544a5d8",
-  "type": "MaintenanceWorks",
-  "desc": "G2-111, Koper - Izola, uvoz Koper center, Slavček - priključek Semedela v smeri Portoroža, dela, oviran promet.",
-  "loc": "G2-111, Koper - Izola",
-  "lat": 45.53851,
-  "lng": 13.73294,
-  "start": "2026-10-18T07:16:04.597Z",
-  "end": "2026-10-18T11:00:37.333Z",
-  "ts": "2026-10-18T07:16:08.35Z"
- },
- {
-  "id": "DARS;884115;85f7316f-f714-4298-b80c-cf706318a84a",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, počivališče Dravsko polje - priključek Letališče Maribor v smeri Maribora, dela, oviran promet.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.43218,
-  "lng": 15.79227,
-  "start": "2026-10-18T06:45:01.487Z",
-  "end": "2026-10-18T12:00:00Z",
-  "ts": "2026-10-18T06:45:06.813Z"
- },
- {
-  "id": "DARS;884110;7fc818c1-4ef0-40e8-90f9-6462d22874bd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, predor Kastelec - priključek Kozina v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.58351,
-  "lng": 13.9025,
-  "start": "2026-10-18T05:40:42.937Z",
-  "end": "2026-10-18T13:00:00Z",
-  "ts": "2026-10-18T05:40:52.603Z"
+  "desc": "A1, Maribor - Ljubljana, razcep Zadobrova - predor Golovec v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.06996,
+  "lng": 14.57747,
+  "start": "2026-10-18T11:12:09.577Z",
+  "end": "2026-10-18T17:00:00Z",
+  "ts": "2026-10-18T11:12:12.69Z"
  },
  {
   "id": "DARS;884108;d2125924-92ec-458b-804f-100a3f2e4510",
