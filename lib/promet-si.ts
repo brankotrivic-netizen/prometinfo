@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-19T16:37:09.381Z";
+export const PROMET_SI_UPDATED = "2026-10-19T21:14:29.226Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;884402;ffe85ebb-2bec-4671-b071-2894b4212ff0",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, izvoz 30 Ljubljana Bizovik - uvoz Ljubljana Bizovik v smeri Malenc, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.04407,
+  "lng": 14.5765,
+  "start": "2026-10-19T18:56:24.967Z",
+  "end": "2026-10-20T02:00:10.383Z",
+  "ts": "2026-10-19T18:56:34.95Z"
+ },
+ {
+  "id": "DARS;884091;3a0b5b42-419b-4f0a-8c8b-28775bee77d4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, izvoz 30 Ljubljana Bizovik - uvoz Ljubljana Bizovik v smeri Zadobrove, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.04316,
+  "lng": 14.57678,
+  "start": "2026-10-19T18:48:42.04Z",
+  "end": "2026-10-20T02:00:18.77Z",
+  "ts": "2026-10-19T18:48:58.25Z"
+ },
+ {
+  "id": "DARS;884400;be08a766-0c1e-4260-be18-1c6c315a3bb8",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R2-404, Podgrad - Ilirska Bistrica, pri Rečici, izmenično enosmerni promet, sanacija meteorne kanalizacije, do 21. 10. 2026.",
+  "loc": "R2-404, Podgrad - Ilirska Bistrica",
+  "lat": 45.57142,
+  "lng": 14.22554,
+  "start": "2026-10-19T18:38:13.753Z",
+  "end": "2026-10-21T21:59:00Z",
+  "ts": "2026-10-19T18:39:26.58Z"
+ },
+ {
+  "id": "DARS;884389;6c65909b-dec4-45fa-95ed-337670f159f4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, pred počivališčem Studenec v smeri Kopra, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.75967,
+  "lng": 14.17632,
+  "start": "2026-10-19T17:16:28.447Z",
+  "end": "2026-10-20T01:00:36.993Z",
+  "ts": "2026-10-19T17:16:44.283Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
