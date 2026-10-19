@@ -254,7 +254,7 @@ async function stats(env, ids) {
 // Razred "Compute Routes Pro" (TRAFFIC_AWARE*): 5.000 brezplacnih klicev/mesec -> varovalo G_CAP.
 // Kljuc: GOOGLE_ROUTES_KEY (wrangler secret put GOOGLE_ROUTES_KEY). Brez kljuca je ta del izklopljen.
 // Google podatki se ne arhivirajo (le zadnja meritev na prehod in smer).
-const G_CAP = 4500;
+const G_CAP = 4900; // 100 rezerve pod brezplacnimi 5.000 (stevec steje tudi neuspesne klice)
 const GQ = {
   "ba-gradiska": { s: { o: [45.18177, 17.214], d: [45.13802, 17.20403] }, n: { o: [45.11305, 17.19212], d: [45.15675, 17.20474] } },
   "ba-gradina": { s: { o: [45.28533, 16.93351], d: [45.25762, 16.91575] }, n: { o: [45.22946, 16.90657], d: [45.26974, 16.9135] } },
@@ -280,7 +280,28 @@ async function gEnsure(env) {
     env.DB.prepare("CREATE TABLE IF NOT EXISTS gusage (m TEXT PRIMARY KEY, n INTEGER NOT NULL)"),
   ]);
 }
-const gMonth = () => new Date().toISOString().slice(0, 7);
+// Google obracunava po pacifiskem casu -> mesec in dni do konca meseca stejemo enako, da se stevca ne razideta
+function gPacific() {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", hourCycle: "h23" })
+    .formatToParts(new Date()).map((x) => [x.type, x.value]));
+  const y = +p.year, m = +p.month, d = +p.day, h = +p.hour, dim = new Date(Date.UTC(y, m, 0)).getUTCDate();
+  return { key: p.year + "-" + p.month, daysLeft: (dim - d) + (24 - h) / 24 };
+}
+const gMonth = () => gPacific().key;
+// Pameten urnik: brezplacni mesecni obrok razporedi do konca meseca, konice (pet popoldne, sob, ned) pogosteje.
+// Ena meritev = 6 klicev (3 prehodi x 2 smeri). Za odpiranje aplikacije ostane ~20 klicev/dan.
+async function gScheduleDue(env) {
+  const [dw, hr] = localDH(Date.now()), minOfDay = hr * 60 + new Date().getUTCMinutes();
+  if (hr < 6 || hr > 22) return 0;
+  const peak = dw === 6 || dw === 0 || (dw === 5 && hr >= 13);
+  const perDay = (G_CAP - await gUsed(env)) / Math.max(0.5, gPacific().daysLeft) - 20;
+  let every = peak ? 30 : 60;                    // obicajno: ~4.800/mesec skupaj z odpiranjem aplikacije
+  if (perDay < 110) every = peak ? 60 : 120;     // obrok pojenja -> redkeje
+  if (perDay < 50) every = peak ? 120 : 0;       // skoraj porabljeno -> le konice
+  if (perDay > 230) every = peak ? 15 : 30;      // ostalo veliko -> pogosteje
+  if (!every || minOfDay % every >= 15) return 0;
+  return every;
+}
 async function gUsed(env) { const r = await env.DB.prepare("SELECT n FROM gusage WHERE m=?").bind(gMonth()).first(); return r ? r.n : 0; }
 async function gMeasure(env, id, dir) {
   const seg = GQ[id] && GQ[id][dir]; if (!seg) return null;
@@ -372,8 +393,11 @@ export default {
   // vsakih 15 min (wrangler-live.toml [triggers]) zapise posnetek cakanj osebnih vozil v D1
   async scheduled(event, env, ctx) {
     ctx.waitUntil(collect(env).then((n) => console.log("zgodovina +" + n), (e) => console.log("zgodovina napaka", e && e.message)));
-    // Google: enkrat na uro med 6. in 22. uro po lokalnem casu (~3.100 klicev/mesec), le ce je kljuc nastavljen
-    const [, hr] = localDH(Date.now()), min = new Date().getUTCMinutes();
-    if (env.GOOGLE_ROUTES_KEY && min < 15 && hr >= 6 && hr <= 22) ctx.waitUntil(gRefresh(env, Object.keys(GQ), 50, 6).then((n) => console.log("google +" + n), (e) => console.log("google napaka", e && e.message)));
+    // Google: po pametnem urniku (gScheduleDue), le ce je kljuc nastavljen
+    if (env.GOOGLE_ROUTES_KEY) ctx.waitUntil((async () => {
+      await gEnsure(env);
+      const every = await gScheduleDue(env);
+      if (every) console.log("google +" + await gRefresh(env, Object.keys(GQ), every - 5, 6) + " (vsakih " + every + " min)");
+    })().catch((e) => console.log("google napaka", e && e.message)));
   },
 };
