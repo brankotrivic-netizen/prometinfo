@@ -1637,17 +1637,19 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     }).catch(function(){ GQ_BUSY=false; GQ_AT=Date.now(); });
   }
   function gFor(p){ var d=GQD.ids&&GQD.ids[p.id]&&GQD.ids[p.id][REV?'n':'s']; if(!d||Date.now()-d.t>75*60000) return null; return {delayMin:Math.round((d.delay||0)/60), jam:d.jam||0, slow:d.slow||0, t:d.t}; }
-  function gHasQueue(g){ return !!g && (g.delayMin>=3 || g.jam>=0.3); }
+  function gHasQueue(g){ return !!g && (g.delayMin>=3 || g.jam>=0.5); }
+  function gQueueKm(g){ return g.delayMin>=3 ? g.jam+g.slow : g.jam; }
   function gLine(p){
     var g=gFor(p); if(!g) return '';
     var ago=Math.max(0,Math.round((Date.now()-g.t)/60000)), t=' <span class="meta">(Google/Android, '+(ago<1?'zdaj':'pred '+ago+' min')+')</span>';
-    if(gHasQueue(g)) return '<div class="vehrow" style="color:'+(g.delayMin>=30?'#dc2626':'#ea580c')+'">🛰 Kolona'+((g.jam+g.slow)>=0.1?': <b>~'+(g.jam+g.slow).toFixed(1).replace('.',',')+' km</b> ·':':')+' zamuda <b>~'+Math.max(1,g.delayMin)+' min</b>'+t+'</div>';
+    if(gHasQueue(g)&&g.delayMin<10&&g.jam<0.5) return '<div class="vehrow" style="color:#16a34a">🛰 Pred mejo rahlo upočasnjeno (~'+g.delayMin+' min)'+t+'</div>';
+    if(gHasQueue(g)) return '<div class="vehrow" style="color:'+(g.delayMin>=30?'#dc2626':'#ea580c')+'">🛰 Kolona'+(gQueueKm(g)>=0.1?': <b>~'+gQueueKm(g).toFixed(1).replace('.',',')+' km</b> ·':':')+' zamuda <b>~'+Math.max(1,g.delayMin)+' min</b>'+t+'</div>';
     return '<div class="vehrow" style="color:#16a34a">🛰 Pred mejo ni zastoja'+t+'</div>';
   }
   // Ocena čakanja za OSEBNA vozila v tvoji smeri: uradni vir + BIHAMK "duga kolona" + Google (Android) + TomTom kolona pred mejo.
   function paxEst(p){
     var pt=paxTruck(p), px=pt.pax, gen=pt.gen, q=queueFor(p), g=gFor(p);
-    if(gHasQueue(g)){ px=(px==null||gen)?Math.max(1,g.delayMin):Math.max(px,g.delayMin); gen=false; }
+    if(g && g.delayMin>=3){ px=(px==null||gen)?g.delayMin:Math.max(px,g.delayMin); gen=false; }
     if(bihQueueMine(p)){ px=Math.max(px==null?0:px,61); gen=false; }
     if(q && (q.delayMin>=3 || q.km>=0.3)){ var m=Math.max(q.delayMin,1); px=(px==null||gen)?m:Math.max(px,m); gen=false; }
     return {px:px, gen:!!(gen&&px!=null&&px<=30), q:q, truck:pt.truck};
