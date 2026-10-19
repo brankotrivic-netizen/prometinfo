@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.10.2026. 11:14",
-  "text": "Promet teće normalno na većini prometnica. Usporeno se vozi zbog povećane gustoće prometa na gradskim cestama te u zonama radova na Istarskom ipsilonu od tunela Učka do čvora Učka u oba smjera, povremeno na riječkoj obilaznici između čvorova Rijeka zapad i Učka u smjeru Rupe/Istre i na Jadranskoj magistrali (DC8) kod Crikvenice. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A3 na 50. km +700 između čvorova Rugvica i Ivanić Grad u smjeru Lipovca. Vozi se po dva traka uz ograničenje brzine od 80 km/h danas tijekom dana, na više lokacija duž autocesta, obavljaju se radovi uređenja okoliša. Promet je tamo usporen, pa treba voziti opreznije kod nailaska na iste. AUTOCESTE A1 Zagreb-…"
+  "updated": "19.10.2026. 12:36",
+  "text": "Promet teće normalno na većini prometnica. Usporeno se vozi zbog povećane gustoće prometa na gradskim cestama te u zonama radova na Istarskom ipsilonu od tunela Učka do čvora Učka u oba smjera i na Jadranskoj magistrali (DC8) kod Crikvenice. IZVANREDNI PROMETNI DOGAĐAJI: Životinja (srna) na autocesti A3 na čvoru Sredanci na kolniku u smjeru Lipovca. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h. zbog prometne nesreće prekinut je promet na državnoj cesti DC517 Beli Manastir-Belišće kod skretanja za Novi Bezdan. prometna nesreća na državnoj cesti DC1, prije nadvožnjaka Klis -Grlo, u smjeru Dugopolja, vozi se uz ograničenje brzine od 40 km/h u smjeru Klisa. prometna ne…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "19.10.2026. 10:48",
+  "updated": "19.10.2026. 11:40",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "19.10.2026. 10:48",
+  "updated": "19.10.2026. 11:41",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
@@ -23,12 +23,12 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "19.10.2026. 10:48",
+  "updated": "19.10.2026. 11:40",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "19.10.2026. 11:19",
+  "updated": "19.10.2026. 11:41",
   "text": "Prometna prognoza za Hrvatsku za 20. listopada 2026. U jutarnjim satima magla će smanjivati vidljivost mjestimice na cestama u unutrašnjosti. Pojačan promet očekuje se na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone mogući su u zonama radova, osobito tijekom jutra i poslijepodneva na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u oba smjera, autocesti A7 između čvorova Rijeka zapad i Učka u smjeru Rupe, Istarskom ipsilonu (A8) između čvora i tunela Učka, državnoj cesti DC1 kod Zaprešića te na Jadranskoj magistrali (DC8) na splitskom i na dubrovačkom području. Gužve u prometu teretnih i osobnih vozila očekuju se na pojedinim graničnim prijel…"
  },
  {
