@@ -18,3 +18,4 @@ scripts/.*
 # graphify: generiran graf znanja (zgradi se z "graphify update .")
 /graphify-out/
 version.json
+server/.wrangler/
