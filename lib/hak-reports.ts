@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.10.2026. 07:39",
-  "text": "Magla smanjuje vidljivost ponegdje na cestama u unutrašnjosti. Promet je pojačan u gradovima i na gradskim obilaznicama, na cesti D1 kod Zaprešića, na istarskom ipsilonu od tunela Učka do čvora Učka u oba smjera, te na Jadranskoj magistrali kod Solina, Stobreča i Podstrane. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: Životinja (pas) na autocesti A1! Između čvora Sveti Rok i 213. km. Promet se vodi po dvije prometne trake u oba smjera uz ograničenje brzine od 60 km/h. Kolona vozila od 4 km u povećavanju i to zbog prometne nesreće na autocesti A3 na 62+000 km između čvora Ivanić Grad i č…"
+  "updated": "19.10.2026. 07:59",
+  "text": "Magla smanjuje vidljivost ponegdje na cestama u unutrašnjosti. Promet je pojačan u gradovima i na gradskim obilaznicama, na cesti D1 kod Zaprešića, na istarskom ipsilonu od tunela Učka do čvora Učka u oba smjera, te na Jadranskoj magistrali kod Solina, Stobreča i Podstrane. Pozivamo vozače da brzinu i način vožnje prilagode uvjetima na cestama te pripaze na sigurnosnu udaljenost između vozila. IZVANREDNI PROMETNI DOGAĐAJI: Životinja (jelen) na autocesti A6 na 25+000 km između čvora Vrbovsko i čvora Ravna Gora. Promet se vodi po dvije prometne trake u oba smjera uz ograničenje brzine od 80 km/h. Životinja (pas) na autocesti A1! Između čvora Sveti Rok i 213. km. Promet se vodi po dvije prometn…"
  },
  {
   "title": "Granični prijelazi",
