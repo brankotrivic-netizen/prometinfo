@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.10.2026. 12:36",
-  "text": "Promet teće normalno na većini prometnica. Usporeno se vozi zbog povećane gustoće prometa na gradskim cestama te u zonama radova na Istarskom ipsilonu od tunela Učka do čvora Učka u oba smjera i na Jadranskoj magistrali (DC8) kod Crikvenice. IZVANREDNI PROMETNI DOGAĐAJI: Životinja (srna) na autocesti A3 na čvoru Sredanci na kolniku u smjeru Lipovca. Promet se vodi po dvije prometne trake uz ograničenje brzine od 60 km/h. zbog prometne nesreće prekinut je promet na državnoj cesti DC517 Beli Manastir-Belišće kod skretanja za Novi Bezdan. prometna nesreća na državnoj cesti DC1, prije nadvožnjaka Klis -Grlo, u smjeru Dugopolja, vozi se uz ograničenje brzine od 40 km/h u smjeru Klisa. prometna ne…"
+  "updated": "19.10.2026. 18:20",
+  "text": "Vremenski uvjeti povoljni su za vožnju. Zastoji su povremeno na dionicama cesta gdje traju radovi te na gradskim prometnicama, osobito na Istarskom ipsilonu između tunela i čvora Učka i na Jadranskoj magistrali (DC8) kod Crikvenice, Stobreča i Podstrane. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba autocestom do čvora Split vozi se nesmetano, a dalje u smjeru Dubrovnika vozila izlaze …"
  },
  {
   "title": "Granični prijelazi",
