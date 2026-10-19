@@ -328,13 +328,13 @@ async function gMeasure(env, id, dir) {
   return row;
 }
 // osvezi meritve, ki so starejse od maxAgeMin (najvec "limit" klicev naenkrat, nikoli cez mesecno varovalo)
-async function gRefresh(env, ids, maxAgeMin, limit) {
+async function gRefresh(env, ids, maxAgeMin, limit, dirs) {
   if (!env.GOOGLE_ROUTES_KEY) return 0;
   await gEnsure(env);
   const have = await env.DB.prepare("SELECT i,dir,t FROM gq WHERE i IN (" + ids.map(() => "?").join(",") + ")").bind(...ids).all();
   const age = {}; for (const x of have.results || []) age[x.i + "|" + x.dir] = x.t;
   let used = await gUsed(env), n = 0;
-  for (const id of ids) for (const dir of ["s", "n"]) {
+  for (const id of ids) for (const dir of (dirs || ["s", "n"])) {
     if (!GQ[id] || n >= limit || used >= G_CAP) continue;
     if (age[id + "|" + dir] && Date.now() - age[id + "|" + dir] < maxAgeMin * 60000) continue;
     try { await gMeasure(env, id, dir); } catch (e) { console.log("google", id, dir, e.message); }
@@ -377,12 +377,17 @@ export default {
       res = await cache.match(key);
       if (!res) { res = json(await stats(env, ids), 900); ctx.waitUntil(cache.put(key, res.clone())); }
     } else if (url.pathname === "/gq") {
-      // Google kolona pred mejo; ob odprtju aplikacije osvezi meritve, starejse od 15 min
+      // Google kolona pred mejo; ob odprtju aplikacije osvezi meritve, starejse od 15 min.
+      // Potovalni nacin (?trip=s|n): med voznjo le tvoja smer, meritve starejse od 9 min (aplikacija klice na 10 min).
       const ids = (url.searchParams.get("ids") || "").split(",").map((x) => x.trim()).filter((x) => GQ[x]).slice(0, 3).sort();
       if (!ids.length) return json({ enabled: !!env.GOOGLE_ROUTES_KEY, ids: {} }, 60);
-      const key = new Request(url.origin + "/gq?ids=" + ids.join(","));
+      const trip = /^[sn]$/.test(url.searchParams.get("trip") || "") ? url.searchParams.get("trip") : "";
+      const key = new Request(url.origin + "/gq?ids=" + ids.join(",") + (trip ? "&trip=" + trip : ""));
       res = await cache.match(key);
-      if (!res) { await gRefresh(env, ids, 15, 6); res = json(await gRead(env, ids), 120); ctx.waitUntil(cache.put(key, res.clone())); }
+      if (!res) {
+        if (trip) await gRefresh(env, ids, 9, 3, [trip]); else await gRefresh(env, ids, 15, 6);
+        res = json(await gRead(env, ids), trip ? 60 : 120); ctx.waitUntil(cache.put(key, res.clone()));
+      }
     } else {
       return new Response("PrometInfo live: /waits, /stats?ids=, /gq?ids=", { headers: h });
     }
