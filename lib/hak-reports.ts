@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.10.2026. 14:45",
+  "updated": "20.10.2026. 14:51",
   "text": "Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: osobno vozilo u kvaru na autocesti A1 na 366+700 km između čvorova Vučevica i Split u smjeru Dubrovnika - promet se vodi jednom prometnom trakom uz ograničenje brzine od 80 km/h osobno vozilo u kvaru na autocesti A3 Bregana-Lipovac na 7+300 km između čvorova Sveta Nedelja i Samobor u smjeru Bregane - vozi se jednim trakom uz ograničenje brzine od 40 km/h zbog prometne nesreće na državnoj cesti DC414 kod mjesta Popova Luka, vozi se otežano jednom prometnom trakom,…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "20.10.2026. 14:45",
+  "updated": "20.10.2026. 14:52",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "20.10.2026. 14:45",
+  "updated": "20.10.2026. 14:52",
   "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: trajektna linija 401 Zadar/Gaženica-Ist/Kosirača - Olib - Silba - Premuda - Mali Lošinj; katamaranske linije: Rijeka-Cres-Mali Lošinj te Rijeka-Rab-Novalja. Izmjene reda plovidbe: HSC Puntamika preuzet će od HSC Jazine održavanje komercijalne linije br. 652, počevši s isplovljenjem iz luke Split 20.10.2026 u 15:45h Brzobrodska linija 9403 Ist – Zapuntel – Brgulje – Molat – Zadar za srijedu (21.10.2026.) s polaskom u 06:00 sati će isploviti iz luke Ist (Kosirača) umjesto iz luke Ist(Široka). Trajektna linija 401 Zadar/Gaženica-Ist/Kosirača - Olib - Silba - Premuda - Mali Lošinj u prekidu. Ista će biti prebačena za četvrtak (22.10.2026.) po redu…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "20.10.2026. 14:45",
+  "updated": "20.10.2026. 14:52",
   "text": "Stanje u željezničkom putničkom prometu 20. listopada 2026. u 8.00 sati Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstup…"
  },
  {
