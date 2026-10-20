@@ -3,27 +3,27 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "20.10.2026. 16:00",
-  "text": "Pojačan je promet na gradskim cestama i obilaznicama. Na cestama gdje su u tijeku radovi mogući su zastoji i vožnja u koloni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A1 između naplate Lučko i čvora Donja Zdenčina, na 2.+100 km u smjeru Dubrovnika, vozi se jednim trakom usporeno zbog prometne nesreće na zagrebačkoj obilaznici (A3) između čvorova Jakuševec i Kosnica, na 34.+900 km u smjeru Lipovca, vozi se jednim trakom usporeno u koloni od oko 2 km predmet na autocesti A3 na čvoru Rugvica na kolniku u smjeru Bregane - promet se vodi po dvije prometne trake uz ograničenje brzine od 80 km/h pje…"
+  "updated": "20.10.2026. 20:11",
+  "text": "PREKID PROMETA ZBOG RADOVA VEČERAS (20./21. listopada): na autocesti A1 od 22:00 do 05:00 ujutro bit će zatvorene dionice između čvorova Bosiljevo II-Ogulin-Brinje u oba smjera (OBILAZAK: čvor Karlovac-DC3 Duga Resa-DC23 Generalski Stol-Josipdol-čvor Ogulin i obratno) na autocesti A2 Zagreb-Macelj od 20:00 do 05:00 ujutro zatvorena je dionica između čvorova Krapina i Trakošćan u oba smjera na autocesti A6 Rijeka-Zagreb od 22:00 do 05:00 ujutro bit će zatvorena dionica između čvorova Kikovica i Delnice u smjeru Zagreba od 22:30 do 5:30 ujutro bit će zatvoren tunel Podmurvice na državnoj cesti DC403 u Rijeci. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 između čvorova Sveti R…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "20.10.2026. 15:52",
+  "updated": "20.10.2026. 18:29",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "20.10.2026. 15:52",
-  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: trajektna linija 401 Zadar/Gaženica-Ist/Kosirača - Olib - Silba - Premuda - Mali Lošinj; katamaranske linije: Rijeka-Cres-Mali Lošinj te Rijeka-Rab-Novalja. Izmjene reda plovidbe: HSC Puntamika preuzet će od HSC Jazine održavanje komercijalne linije br. 652, počevši s isplovljenjem iz luke Split 20.10.2026 u 15:45h Državnu liniju br. 9808 Ubli (Lastovo) - Korčula - Sobra (Mljet) - Dubrovnik i obratno 21.10.2026 od HSC Jadera preuzima HSC Jazine u luci Ubli isplovljenjem u 06:00h Molimo vas da stavite obavijest da katamaranska linija br.9502 Žirje-Kaprije-Šibenik sutra 21.10.2026.g biti u prekidu od 6:15 do 12:50 sati Brzobrodska linija 9403 Is…"
+  "updated": "20.10.2026. 19:19",
+  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: katamaranske linije: Rijeka-Cres-Mali Lošinj te Rijeka-Rab-Novalja. Izmjene reda plovidbe: 21.listopada brodska linija 505 Vodice - Šepurine - Zlarin - Šibenik bez linije iz Vodica u 04:35 sati. Ako vremenski uvjeti dozvole linija će se uspostaviti u 05:50 sati iz luke Šibenik. Državnu liniju br. 9808 Ubli (Lastovo) - Korčula - Sobra (Mljet) - Dubrovnik i obratno 21.10.2026 od HSC Jadera preuzima HSC Jazine u luci Ubli isplovljenjem u 06:00h 21. listopada katamaranska linija 9603 Jelsa - Bol - Split s polaskom iz luke Jelsa u 06:00 sati, informacija o uplovu katamarana u luku Bol će biti donesena 45 minuta prije polaska katamarana iz luke Jels…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "20.10.2026. 15:46",
+  "updated": "20.10.2026. 18:29",
   "text": "Stanje u željezničkom putničkom prometu 20. listopada 2026. u 8.00 sati Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstup…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "20.10.2026. 07:42",
+  "updated": "20.10.2026. 18:30",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
