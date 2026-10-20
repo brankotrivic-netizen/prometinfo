@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.10.2026. 22:52",
-  "text": "Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 na 309.+600 km između čvorova Skradin i Vodice u smjeru Zagreba, vozi se jednim prometnim trakom uz ograničenje brzine 40 km/h prometna nesreća na autocesti A1 na 309.+600 km između čvorova Vodice i Skradin u smjeru Dubrovnika, vozi se po dva prometna traka uz ograničenje brzine 60 km/h prometna nesreća na autocesti A11 na 3.+500 km između čvorova Velika Gorica jug i Velika Gorica sjever u …"
+  "updated": "20.10.2026. 02:17",
+  "text": "Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da brzinu i način vožnje prilagode uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na DC43 u mjestu Rakitovec. AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba autocestom do čvora Split vozi se nesmetano, a dalje u smjeru Dubrovnika vozila izlaze s autoceste na čvoru Split (naplata Dugopolje), polukružno se ok…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "19.10.2026. 22:52",
+  "updated": "20.10.2026. 02:18",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "19.10.2026. 22:52",
+  "updated": "20.10.2026. 02:18",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
