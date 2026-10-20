@@ -159,6 +159,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "u toku su sanacioni radovi, zbog čega se svakim danom (osim nedjelje) u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom"
    },
    {
+    "title": "Most Ostrožac",
+    "text": "na regionalnoj cesti R-437 na mostu Ostrožac, zbog radova od 08 do 16 sati svakog radnog dana, povremeno se obustavlja saobraćaj (jedan sat obustava, jedan sat propuštanje vozila)."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
