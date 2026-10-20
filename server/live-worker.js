@@ -228,11 +228,11 @@ function histRows(snap) {
 }
 async function collect(env) {
   const rows = histRows(await snapshot());
-  if (!rows.length) return 0;
+  if (!rows.length) return rows;
   const st = env.DB.prepare("INSERT INTO w (i,t,dw,hr,s,n,g) VALUES (?,?,?,?,?,?,?)");
   await env.DB.batch(rows.map((r) => st.bind(...r)));
   await env.DB.prepare("DELETE FROM w WHERE t < ?").bind(Date.now() - 120 * 86400000).run(); // hrani 120 dni
-  return rows.length;
+  return rows;
 }
 // Statistika za izbrane prehode zadnjih 8 tednov po dnevu v tednu in uri (lokalni cas).
 // Vrstica: [dw, hr, cs, avs, qs, gs, cn, avn, qn, gn] — c=stevilo, av=povprecje, q=koliko >=60 min, g=koliko splosnih ocen.
@@ -350,6 +350,101 @@ async function gRead(env, ids) {
   return { enabled: true, used: await gUsed(env), cap: G_CAP, ids: out };
 }
 
+// ---------- OBVESTILA NA TELEFON (Web Push: RFC 8291 aes128gcm + VAPID, brez knjiznic) ----------
+// Narocnine (subs) shranijo telefon + nastavitve (prehodi, smeri, prag). Cron vsakih 15 min izracuna cakanje
+// po smeri in poslje obvestilo le ob SPREMEMBI: cez prag (kolona) in nazaj pod prag-20 (sprostitev).
+// Zasebni kljuc: secret VAPID_JWK; javni kljuc je v aplikaciji (VAPID_PUB).
+const te = new TextEncoder();
+const b64e = (buf) => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+const b64d = (s) => { s = String(s).replace(/-/g, "+").replace(/_/g, "/"); while (s.length % 4) s += "="; const b = atob(s), u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; };
+const cat = (...a) => { const o = new Uint8Array(a.reduce((n, x) => n + x.length, 0)); let i = 0; for (const x of a) { o.set(x, i); i += x.length; } return o; };
+async function hkdf(salt, ikm, info, len) {
+  const k = await crypto.subtle.importKey("raw", ikm, "HKDF", false, ["deriveBits"]);
+  return new Uint8Array(await crypto.subtle.deriveBits({ name: "HKDF", hash: "SHA-256", salt, info }, k, len * 8));
+}
+async function pushEncrypt(sub, text) {
+  const uaPub = b64d(sub.keys.p256dh), auth = b64d(sub.keys.auth);
+  const kp = await crypto.subtle.generateKey({ name: "ECDH", namedCurve: "P-256" }, true, ["deriveBits"]);
+  const asPub = new Uint8Array(await crypto.subtle.exportKey("raw", kp.publicKey));
+  const uaKey = await crypto.subtle.importKey("raw", uaPub, { name: "ECDH", namedCurve: "P-256" }, false, []);
+  const ecdh = new Uint8Array(await crypto.subtle.deriveBits({ name: "ECDH", public: uaKey }, kp.privateKey, 256));
+  const ikm = await hkdf(auth, ecdh, cat(te.encode("WebPush: info\0"), uaPub, asPub), 32);
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const cek = await hkdf(salt, ikm, te.encode("Content-Encoding: aes128gcm\0"), 16);
+  const nonce = await hkdf(salt, ikm, te.encode("Content-Encoding: nonce\0"), 12);
+  const key = await crypto.subtle.importKey("raw", cek, "AES-GCM", false, ["encrypt"]);
+  const ct = new Uint8Array(await crypto.subtle.encrypt({ name: "AES-GCM", iv: nonce }, key, cat(te.encode(text), new Uint8Array([2]))));
+  return cat(salt, new Uint8Array([0, 0, 16, 0]), new Uint8Array([65]), asPub, ct);
+}
+async function vapidAuth(env, endpoint) {
+  const j = JSON.parse(env.VAPID_JWK);
+  const key = await crypto.subtle.importKey("jwk", { kty: "EC", crv: "P-256", d: j.d, x: j.x, y: j.y, ext: true }, { name: "ECDSA", namedCurve: "P-256" }, false, ["sign"]);
+  const h = b64e(te.encode(JSON.stringify({ typ: "JWT", alg: "ES256" })));
+  const p = b64e(te.encode(JSON.stringify({ aud: new URL(endpoint).origin, exp: Math.floor(Date.now() / 1000) + 12 * 3600, sub: "https://brankotrivic-netizen.github.io/prometinfo/" })));
+  const sig = await crypto.subtle.sign({ name: "ECDSA", hash: "SHA-256" }, key, te.encode(h + "." + p));
+  return "vapid t=" + h + "." + p + "." + b64e(sig) + ", k=" + b64e(cat(new Uint8Array([4]), b64d(j.x), b64d(j.y)));
+}
+// vrne HTTP status; 404/410 = narocnina ne obstaja vec
+async function pushSend(env, sub, msg) {
+  const r = await fetch(sub.endpoint, {
+    method: "POST",
+    headers: { "Content-Encoding": "aes128gcm", "Content-Type": "application/octet-stream", TTL: "3600", Urgency: "high", Authorization: await vapidAuth(env, sub.endpoint) },
+    body: await pushEncrypt(sub, JSON.stringify(msg)),
+  });
+  return r.status;
+}
+const PUSH_HOSTS = /^https:\/\/([a-z0-9.-]+\.)?(fcm\.googleapis\.com|push\.services\.mozilla\.com|push\.apple\.com|notify\.windows\.com|android\.googleapis\.com)\//i;
+async function subEnsure(env) { await env.DB.prepare("CREATE TABLE IF NOT EXISTS subs (id TEXT PRIMARY KEY, sub TEXT NOT NULL, prefs TEXT NOT NULL, state TEXT NOT NULL DEFAULT '{}', t INTEGER NOT NULL)").run(); }
+async function subId(endpoint) { return b64e(await crypto.subtle.digest("SHA-256", te.encode(endpoint))).slice(0, 24); }
+function cleanPrefs(p) {
+  p = p || {};
+  const ids = (Array.isArray(p.ids) ? p.ids : []).filter((x) => /^[a-z]{2}-[a-z0-9-]{2,40}$/.test(x)).slice(0, 6);
+  const dirs = (Array.isArray(p.dirs) ? p.dirs : []).filter((x) => x === "s" || x === "n");
+  const names = {}; for (const id of ids) names[id] = String((p.names || {})[id] || id).slice(0, 60);
+  const thr = [30, 45, 60, 90, 120].includes(+p.thr) ? +p.thr : 60;
+  return { ids, dirs: dirs.length ? dirs : ["s", "n"], names, thr, lbl: { s: String((p.lbl || {}).s || "tja").slice(0, 30), n: String((p.lbl || {}).n || "nazaj").slice(0, 30) } };
+}
+const fmtM = (m) => m >= 60 ? Math.floor(m / 60) + " h" + (m % 60 ? " " + (m % 60) + " min" : "") : m + " min";
+// trenutno cakanje po prehodu in smeri: izmerjeno (HAK svezi, BIHAMK duga kolona, AMSS) + Google zamuda >= 3 min
+async function currentWaits(env, rows) {
+  const w = {};
+  for (const [id, , , , s, n, g] of rows) { w[id + "|s"] = { m: s, gen: !!(g & 1), src: "uradno" }; w[id + "|n"] = { m: n, gen: !!(g & 2), src: "uradno" }; }
+  if (env.GOOGLE_ROUTES_KEY) {
+    await gEnsure(env);
+    const r = await env.DB.prepare("SELECT i,dir,t,delay FROM gq").all();
+    for (const x of r.results || []) {
+      if (Date.now() - x.t > 75 * 60000) continue;
+      const k = x.i + "|" + x.dir, gm = Math.round((x.delay || 0) / 60), cur = w[k];
+      if (!cur || cur.m == null || cur.gen || gm >= 3 && gm > cur.m) w[k] = { m: gm, gen: false, src: "Google" };
+    }
+  }
+  return w;
+}
+async function notifyAll(env, rows) {
+  if (!env.VAPID_JWK) return 0;
+  await subEnsure(env);
+  const subs = (await env.DB.prepare("SELECT id,sub,prefs,state FROM subs").all()).results || [];
+  if (!subs.length) return 0;
+  const waits = await currentWaits(env, rows);
+  let sent = 0;
+  for (const row of subs) {
+    const sub = JSON.parse(row.sub), p = JSON.parse(row.prefs), st = JSON.parse(row.state || "{}");
+    const msgs = [];
+    for (const id of p.ids) for (const dir of p.dirs) {
+      const k = id + "|" + dir, x = waits[k]; if (!x || x.m == null) continue;
+      const m = x.gen ? 15 : x.m, was = st[k] || 0;
+      if (!was && m >= p.thr) { st[k] = 1; msgs.push({ title: "🔴 " + p.names[id] + " (" + p.lbl[dir] + ")", body: "Čakanje ~" + fmtM(m) + " (" + x.src + "). Odpri PrometInfo za drug prehod ali uro odhoda.", tag: k }); }
+      else if (was && m <= p.thr - 20) { st[k] = 0; msgs.push({ title: "🟢 " + p.names[id] + " (" + p.lbl[dir] + ")", body: x.gen ? "Kolona se je sprostila — uradno do 30 min." : "Čakanje spet ~" + fmtM(m) + " (" + x.src + ").", tag: k }); }
+    }
+    for (const msg of msgs.slice(0, 3)) {
+      try { const code = await pushSend(env, sub, { ...msg, url: "./" }); if (code === 404 || code === 410) { await env.DB.prepare("DELETE FROM subs WHERE id=?").bind(row.id).run(); break; } sent++; }
+      catch (e) { console.log("push napaka", e && e.message); }
+    }
+    if (msgs.length) await env.DB.prepare("UPDATE subs SET state=? WHERE id=?").bind(JSON.stringify(st), row.id).run();
+  }
+  return sent;
+}
+
 const json = (obj, maxAge) => new Response(JSON.stringify(obj), { headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=" + maxAge } });
 
 function cors(req, env) {
@@ -363,9 +458,31 @@ export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
     const h = cors(req, env);
-    if (req.method === "OPTIONS") return new Response(null, { headers: { ...h, "Access-Control-Allow-Methods": "GET", "Access-Control-Max-Age": "86400" } });
+    if (req.method === "OPTIONS") return new Response(null, { headers: { ...h, "Access-Control-Allow-Methods": "GET, POST", "Access-Control-Allow-Headers": "Content-Type", "Access-Control-Max-Age": "86400" } });
     const cache = caches.default;
     let res;
+    if (req.method === "POST" && ["/sub", "/unsub", "/testpush"].includes(url.pathname)) {
+      // obvestila: prijava / odjava / preizkus (le znani push strezniki, najvec 20 narocnin)
+      if (!env.VAPID_JWK) return new Response("push ni nastavljen", { status: 503, headers: h });
+      let b = {}; try { b = await req.json(); } catch (e) {}
+      const sub = b.sub || {}, ep = String(sub.endpoint || b.endpoint || "");
+      if (!PUSH_HOSTS.test(ep)) return new Response("neveljaven endpoint", { status: 400, headers: h });
+      await subEnsure(env);
+      const id = await subId(ep);
+      if (url.pathname === "/unsub") { await env.DB.prepare("DELETE FROM subs WHERE id=?").bind(id).run(); return new Response(JSON.stringify({ ok: true }), { headers: { ...h, "Content-Type": "application/json" } }); }
+      if (url.pathname === "/sub") {
+        if (!sub.keys || !sub.keys.p256dh || !sub.keys.auth) return new Response("kljuci?", { status: 400, headers: h });
+        const n = await env.DB.prepare("SELECT COUNT(*) c FROM subs WHERE id<>?").bind(id).first();
+        if (n && n.c >= 20) return new Response("prevec narocnin", { status: 429, headers: h });
+        await env.DB.prepare("INSERT INTO subs (id,sub,prefs,state,t) VALUES (?,?,?,'{}',?) ON CONFLICT(id) DO UPDATE SET sub=excluded.sub, prefs=excluded.prefs, state='{}', t=excluded.t")
+          .bind(id, JSON.stringify({ endpoint: ep, keys: { p256dh: sub.keys.p256dh, auth: sub.keys.auth } }), JSON.stringify(cleanPrefs(b.prefs)), Date.now()).run();
+        return new Response(JSON.stringify({ ok: true }), { headers: { ...h, "Content-Type": "application/json" } });
+      }
+      const row = await env.DB.prepare("SELECT sub FROM subs WHERE id=?").bind(id).first();
+      if (!row) return new Response("ni prijave", { status: 404, headers: h });
+      const code = await pushSend(env, JSON.parse(row.sub), { title: "✅ PrometInfo", body: "Obvestila delujejo. Javim, ko se na tvojem prehodu naredi kolona.", tag: "test", url: "./" });
+      return new Response(JSON.stringify({ ok: code < 300, code }), { headers: { ...h, "Content-Type": "application/json" } });
+    }
     if (url.pathname === "/waits") {
       const key = new Request(url.origin + "/waits");
       res = url.searchParams.has("fresh") ? null : await cache.match(key);
@@ -397,12 +514,15 @@ export default {
   },
   // vsakih 15 min (wrangler-live.toml [triggers]) zapise posnetek cakanj osebnih vozil v D1
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(collect(env).then((n) => console.log("zgodovina +" + n), (e) => console.log("zgodovina napaka", e && e.message)));
-    // Google: po pametnem urniku (gScheduleDue), le ce je kljuc nastavljen
-    if (env.GOOGLE_ROUTES_KEY) ctx.waitUntil((async () => {
-      await gEnsure(env);
-      const every = await gScheduleDue(env);
-      if (every) console.log("google +" + await gRefresh(env, Object.keys(GQ), every - 5, 6) + " (vsakih " + every + " min)");
-    })().catch((e) => console.log("google napaka", e && e.message)));
+    // zaporedno: zgodovina -> Google (po pametnem urniku, ce je kljuc) -> obvestila na telefon
+    ctx.waitUntil((async () => {
+      let rows = [];
+      try { rows = await collect(env); console.log("zgodovina +" + rows.length); } catch (e) { console.log("zgodovina napaka", e && e.message); }
+      if (env.GOOGLE_ROUTES_KEY) {
+        try { await gEnsure(env); const every = await gScheduleDue(env); if (every) console.log("google +" + await gRefresh(env, Object.keys(GQ), every - 5, 6) + " (vsakih " + every + " min)"); }
+        catch (e) { console.log("google napaka", e && e.message); }
+      }
+      try { const n = await notifyAll(env, rows); if (n) console.log("obvestila +" + n); } catch (e) { console.log("obvestila napaka", e && e.message); }
+    })());
   },
 };

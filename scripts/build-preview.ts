@@ -596,6 +596,8 @@ h1{font-size:22px;margin:0;letter-spacing:-.02em}h1 span{color:var(--accent)}
 .livesug{margin:8px 0;padding:8px 11px;border-radius:9px;font-size:13.5px;background:#eef2ff;color:#1e1b4b}
 .livesug.warn{background:#fff7ed;border:1px solid #fdba74}
 .livesug.ok{background:#f0fdf4;border:1px solid #bbf7d0}
+.pushform{display:flex;flex-direction:column;gap:7px;font-size:14px}
+.pushform select{margin-left:6px;font:inherit;padding:4px 6px;border-radius:7px;border:1px solid var(--border,#cbd5e1)}
 .deplist{display:flex;flex-direction:column;gap:3px}
 .deprow{display:flex;justify-content:space-between;gap:8px;font-size:13.5px;padding:5px 8px;border-radius:8px;background:var(--panel-2,#f1f5f9)}
 .deprow.best{outline:2px solid #16a34a;background:#f0fdf4}
@@ -2278,6 +2280,47 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       +rows.map(function(x){ var L=lvl(x); return '<div class="deprow'+(x===best?' best':'')+'"><span>'+day(x.dep)+'<b>'+hm(x.dep)+'</b> → meja '+hm(x.atB)+'</span><span style="color:'+col[L]+'">'+dot[L]+' '+wtxt(x)+'</span></div>'; }).join('')+'</div>';
     return '<div id="departBox">'+fold('depart',sum,body)+'</div>';
   }
+  /* ===== 🔔 OBVESTILA NA TELEFON (Web Push prek strežnika; delujejo tudi, ko je aplikacija zaprta) ===== */
+  var VAPID_PUB='BIZJzT56p5m8eriGw2N8rfaxeQFrEm8_FpTYRPF693424WroKhpQ1zxnpikVpG2eYhUmxMf1UQefoN1X3HC5a5k';
+  function pushApi(){ return LIVE_URL.replace('/waits',''); }
+  function pushOn(){ try{ return JSON.parse(localStorage.getItem('promet_push')); }catch(e){ return null; } }
+  function isIOS(){ return /iphone|ipad|ipod/i.test(navigator.userAgent); }
+  function isStandalone(){ return (window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true; }
+  function u8(b){ var x=b.replace(/-/g,'+').replace(/_/g,'/'); while(x.length%4) x+='='; var r=atob(x), o=new Uint8Array(r.length); for(var i=0;i<r.length;i++) o[i]=r.charCodeAt(i); return o; }
+  function pushRerender(){ if(CURRENT_ROUTE){ var y=window.scrollY; renderRoute(CURRENT_ROUTE); try{ renderLiveAnswer(); }catch(e){} window.scrollTo(0,y); } }
+  function pushBlock(pr){
+    var all=pr.recommended.concat(pr.alternative); if(!all.length) return '';
+    var on=pushOn(), sup=('serviceWorker' in navigator)&&('PushManager' in window)&&('Notification' in window), body;
+    var dirTxt=function(d){ return d.length>1?'obe smeri':(d[0]==='n'?'nazaj ('+pr.to+' → '+pr.from+')':'tja ('+pr.from+' → '+pr.to+')'); };
+    if(isIOS()&&!isStandalone()) body='<div class="meta">Na iPhonu obvestila delujejo le, ko je PrometInfo nameščen na začetni zaslon (Safari → Deli → Dodaj na začetni zaslon). Nato ga odpri z ikone in vklopi obvestila tukaj.</div>';
+    else if(!sup) body='<div class="meta">Ta brskalnik ne podpira obvestil.</div>';
+    else if(on&&!window._pushEdit) body='<div class="meta">Spremljam <b>'+on.ids.map(function(id){ return CBYID[id]?CBYID[id].name:id; }).join(', ')+'</b> · <b>'+dirTxt(on.dirs)+'</b> · prag <b>'+on.thr+' min</b>. Obvestilo dobiš, ko čakanje preseže prag, in ko se kolona sprosti — tudi ko je aplikacija zaprta.</div>'
+      +'<div class="ractrow" style="margin-top:7px"><button class="cam" onclick="pushTest()">🔔 Preizkusi</button><button class="cam" onclick="pushEdit()">⚙ Spremeni</button><button class="cam" onclick="pushOff()">🔕 Izklopi</button></div>';
+    else { var dv=on?(on.dirs.length>1?'sn':on.dirs[0]):(REV?'n':'s'), th=on?on.thr:60;
+      body='<div class="pushform"><label>Smer <select id="pushDir">'
+        +[['n','nazaj ('+pr.to+' → '+pr.from+')'],['s','tja ('+pr.from+' → '+pr.to+')'],['sn','obe smeri']].map(function(o){ return '<option value="'+o[0]+'"'+(o[0]===dv?' selected':'')+'>'+o[1]+'</option>'; }).join('')+'</select></label>'
+        +'<label>Opozori, ko čakanje preseže <select id="pushThr">'+[45,60,90,120].map(function(v){ return '<option value="'+v+'"'+(v===th?' selected':'')+'>'+v+' min</option>'; }).join('')+'</select></label>'
+        +'<div class="meta">Prehodi: '+all.map(function(id){ return CBYID[id]?CBYID[id].name:id; }).join(', ')+'. Strežnik preverja vsakih 15 min (HAK, BIHAMK, Google).</div>'
+        +'<button class="mybtn" onclick="pushEnable()">🔔 Vklopi obvestila</button></div>'; }
+    return fold('push','🔔 Obvestila na telefon'+(on?' · <span style="color:#16a34a">vklopljena</span>':''),body);
+  }
+  window.pushEdit=function(){ window._pushEdit=true; try{ foldSave('push',true); }catch(e){} pushRerender(); };
+  window.pushEnable=function(){
+    var pr=CURRENT_ROUTE; if(!pr) return;
+    var dv=(document.getElementById('pushDir')||{}).value||(REV?'n':'s'), thr=+((document.getElementById('pushThr')||{}).value||60);
+    var ids=pr.recommended.concat(pr.alternative), names={}; ids.forEach(function(id){ names[id]=CBYID[id]?CBYID[id].name:id; });
+    var prefs={route:pr.id,ids:ids,dirs:dv==='sn'?['s','n']:[dv],thr:thr,names:names,lbl:{s:'tja',n:'nazaj'}};
+    Notification.requestPermission().then(function(pm){ if(pm!=='granted') throw new Error('perm'); return navigator.serviceWorker.ready; })
+      .then(function(reg){ return reg.pushManager.getSubscription().then(function(x){ return x||reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:u8(VAPID_PUB)}); }); })
+      .then(function(sub){ return fetch(pushApi()+'/sub',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sub:sub.toJSON(),prefs:prefs})}).then(function(r){ if(!r.ok) throw new Error('strežnik '+r.status); }); })
+      .then(function(){ try{ localStorage.setItem('promet_push',JSON.stringify(prefs)); }catch(e){} window._pushEdit=false; toast('🔔 Obvestila vklopljena'); pushRerender(); })
+      .catch(function(e){ toast(e&&e.message==='perm'?'Obvestila niso dovoljena — dovoli jih v nastavitvah telefona za PrometInfo.':'Obvestil ni bilo mogoče vklopiti ('+((e&&e.message)||'napaka')+').'); });
+  };
+  function pushSub(){ return navigator.serviceWorker.ready.then(function(reg){ return reg.pushManager.getSubscription(); }); }
+  window.pushTest=function(){ pushSub().then(function(sub){ if(!sub) throw new Error('ni prijave'); return fetch(pushApi()+'/testpush',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({endpoint:sub.endpoint})}); })
+    .then(function(r){ return r.json(); }).then(function(d){ toast(d.ok?'🔔 Testno obvestilo poslano.':'Pošiljanje ni uspelo ('+d.code+').'); }).catch(function(e){ toast('Preizkus ni uspel: '+((e&&e.message)||'napaka')); }); };
+  window.pushOff=function(){ pushSub().then(function(sub){ if(!sub) return; return fetch(pushApi()+'/unsub',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({endpoint:sub.endpoint})}).then(function(){ return sub.unsubscribe(); }); })
+    .catch(function(){}).then(function(){ try{ localStorage.removeItem('promet_push'); }catch(e){} toast('🔕 Obvestila izklopljena.'); pushRerender(); }); };
   function calBlock(){
     var days=tcalDays(); if(!days.length) return '';
     var dir=tcalDir(), d0=days[0], d1=days[1];
@@ -2416,6 +2459,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
     if(all.length) html+='<button class="drivebtn" onclick="enterDrive()">🚗 Vozim</button>';
     if(all.length) html+=calBlock();
     if(all.length) html+=departBlock(pr);
+    if(all.length) html+=pushBlock(pr);
     if(all.length) html+=fbMainBtn();
     if(pr.note) html+='<p class="meta">ℹ️ '+pr.note+'</p>';
     if(!all.length){ html+='<p class="meta">Na tej poti ni mejne kontrole (Schengen) — preveri le gostoto prometa na zemljevidu.</p>'; }
@@ -2939,7 +2983,7 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
       location.reload();
     });
     window.addEventListener('load',function(){
-      navigator.serviceWorker.register('sw.js?v=9',{updateViaCache:'none'}).then(function(reg){
+      navigator.serviceWorker.register('sw.js?v=10',{updateViaCache:'none'}).then(function(reg){
         reg.update().catch(function(){});
         if(reg.waiting)reg.waiting.postMessage('SKIP_WAITING');
         setInterval(function(){reg.update().catch(function(){});},5*60000);
@@ -3026,11 +3070,15 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCam()
   writeFileSync(resolve(process.cwd(), "manifest.webmanifest"), JSON.stringify(manifest, null, 2), "utf8");
   // Service worker: network-first za navigacijo (offline fallback na predpomnjeni index),
   // ostalo (slike kamer, tiles, API) gre mimo predpomnilnika (vedno sveže / brez balasta).
-  const sw = `var CACHE='prometinfo-v9';
+  const sw = `var CACHE='prometinfo-v10';
 var ASSETS=['./index.html','./manifest.webmanifest','./icon.svg','./icon-180.png','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',function(e){ self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(function(c){ return Promise.all(ASSETS.map(function(u){ return fetch(u,{cache:'reload'}).then(function(r){ if(r.ok)return c.put(u,r); }).catch(function(){}); })); })); });
 self.addEventListener('activate',function(e){ e.waitUntil(caches.keys().then(function(ks){ return Promise.all(ks.map(function(k){ if(k!==CACHE) return caches.delete(k); })); }).then(function(){ return self.clients.claim(); })); });
 self.addEventListener('message',function(e){ if(e.data==='SKIP_WAITING')self.skipWaiting(); });
+self.addEventListener('push',function(e){ var d={}; try{ d=e.data?e.data.json():{}; }catch(x){ d={title:'PrometInfo',body:e.data?e.data.text():''}; }
+  e.waitUntil(self.registration.showNotification(d.title||'PrometInfo',{body:d.body||'',icon:'icon-192.png',badge:'icon-192.png',tag:d.tag||'prometinfo',renotify:true,data:{url:d.url||'./'}})); });
+self.addEventListener('notificationclick',function(e){ e.notification.close(); var u=(e.notification.data&&e.notification.data.url)||'./';
+  e.waitUntil(clients.matchAll({type:'window',includeUncontrolled:true}).then(function(ws){ for(var i=0;i<ws.length;i++){ if('focus' in ws[i]) return ws[i].focus(); } return clients.openWindow(u); })); });
 self.addEventListener('fetch',function(e){ var req=e.request; if(req.method!=='GET') return;
   if(req.mode==='navigate'){ e.respondWith(fetch(req,{cache:'no-store'}).then(function(r){ if(r.ok)caches.open(CACHE).then(function(c){ c.put('./index.html',r.clone()); }); return r; }).catch(function(){ return caches.match('./index.html'); })); return; }
   var u=new URL(req.url);
