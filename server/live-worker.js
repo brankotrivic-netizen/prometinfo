@@ -231,7 +231,9 @@ async function collect(env) {
   if (!rows.length) return rows;
   const st = env.DB.prepare("INSERT INTO w (i,t,dw,hr,s,n,g) VALUES (?,?,?,?,?,?,?)");
   await env.DB.batch(rows.map((r) => st.bind(...r)));
-  await env.DB.prepare("DELETE FROM w WHERE t < ?").bind(Date.now() - 120 * 86400000).run(); // hrani 120 dni
+  // hrani 120 dni; ciscenje le enkrat na dan (ob 3h lokalno), indeks w_t
+  const [, hr] = localDH(Date.now());
+  if (hr === 3 && new Date().getUTCMinutes() < 15) await env.DB.prepare("DELETE FROM w WHERE t < ?").bind(Date.now() - 120 * 86400000).run();
   return rows;
 }
 // Statistika za izbrane prehode zadnjih 8 tednov po dnevu v tednu in uri (lokalni cas).
@@ -242,10 +244,10 @@ async function stats(env, ids) {
     + "COUNT(n) cn, ROUND(AVG(n)) avn, SUM(CASE WHEN n>=60 THEN 1 ELSE 0 END) qn, SUM(CASE WHEN n IS NOT NULL AND (g&2)=2 THEN 1 ELSE 0 END) gn "
     + "FROM w WHERE t > ? AND i IN (" + ids.map(() => "?").join(",") + ") GROUP BY i, dw, hr";
   const r = await env.DB.prepare(q).bind(since, ...ids).all();
-  const out = {};
-  for (const x of r.results || []) (out[x.i] = out[x.i] || []).push([x.dw, x.hr, x.cs, x.avs, x.qs, x.gs, x.cn, x.avn, x.qn, x.gn]);
-  const first = await env.DB.prepare("SELECT MIN(t) t, COUNT(*) c FROM w").first();
-  return { ts: new Date().toISOString(), since: first && first.t ? new Date(first.t).toISOString() : null, rows: first ? first.c : 0, ids: out };
+  const out = {}; let rows = 0;
+  for (const x of r.results || []) { (out[x.i] = out[x.i] || []).push([x.dw, x.hr, x.cs, x.avs, x.qs, x.gs, x.cn, x.avn, x.qn, x.gn]); rows += (x.cs || 0) + (x.cn || 0); }
+  const first = await env.DB.prepare("SELECT MIN(t) t FROM w").first(); // indeks w_t, ~1 vrstica
+  return { ts: new Date().toISOString(), since: first && first.t ? new Date(first.t).toISOString() : null, rows, ids: out };
 }
 
 // ---------- GOOGLE ROUTES (podatki telefonov Android) ----------
