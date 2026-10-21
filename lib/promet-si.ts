@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-21T18:47:11.336Z";
+export const PROMET_SI_UPDATED = "2026-10-21T22:01:48.509Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;884868;79ddabe8-b4a2-4bcb-b3a7-b9dd879f134d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, pomična zapora prehitevalnega pasu, strojno pometanje.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.40794,
+  "lng": 15.61561,
+  "start": "2026-10-21T16:42:27.55Z",
+  "end": "2026-10-22T00:00:00Z",
+  "ts": "2026-10-21T21:56:03.253Z"
+ },
+ {
+  "id": "DARS;884878;a08cff03-1de0-409e-831d-30d3231efa09",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Lukovica - priključek Blagovica v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.17283,
+  "lng": 14.78799,
+  "start": "2026-10-21T19:39:38.783Z",
+  "end": "2026-10-22T03:30:00Z",
+  "ts": "2026-10-21T19:39:58.837Z"
+ },
  {
   "id": "DARS;884875;2a407c9d-10f2-47be-b23f-282bdfa8ce07",
   "type": "MaintenanceWorks",
@@ -15,17 +37,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-21T18:46:00.667Z"
  },
  {
-  "id": "DARS;884868;79ddabe8-b4a2-4bcb-b3a7-b9dd879f134d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, pomična zapora prehitevalnega pasu, strojno pometanje.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.40794,
-  "lng": 15.61561,
-  "start": "2026-10-21T16:42:27.55Z",
-  "end": "2026-10-21T22:00:00Z",
-  "ts": "2026-10-21T16:42:37.25Z"
- },
- {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
@@ -35,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-10-02T05:56:02.493Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-10-21T15:00:07.15Z"
- },
- {
-  "id": "DARS;884631;86c68267-024f-4ebc-a1ae-82c61d52c874",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Kranj vzhod - počivališče Voklo v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.23805,
-  "lng": 14.40257,
-  "start": "2026-10-21T14:59:08.54Z",
-  "end": "2026-10-22T03:00:00Z",
-  "ts": "2026-10-21T14:59:36.26Z"
  },
  {
   "id": "DARS;884845;25825a5b-45e7-45ff-a8d2-5fd8adbb8769",
@@ -112,17 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-21T07:33:46.847Z",
   "end": "2027-03-10T16:00:00Z",
   "ts": "2026-10-21T07:35:23.183Z"
- },
- {
-  "id": "DARS;884710;40181f0f-89f1-4b4e-959b-53b0968dfe29",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-428, Radmirje - Luče, pri Primožu pri Ljubnem, izmenično enosmerni promet, pomična zapora, različna vzdrževalna dela.",
-  "loc": "R2-428, Radmirje - Luče",
-  "lat": 46.35257,
-  "lng": 14.81963,
-  "start": "2026-10-21T05:31:52.78Z",
-  "end": "2026-10-21T21:59:00Z",
-  "ts": "2026-10-21T05:33:17.09Z"
  },
  {
   "id": "DARS;882808;271e5601-6070-4ec3-88a9-0c5652e85e01",
@@ -288,17 +277,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-20T04:09:55.043Z",
   "end": "2026-10-22T13:00:00Z",
   "ts": "2026-10-20T04:12:46.4Z"
- },
- {
-  "id": "DARS;884400;be08a766-0c1e-4260-be18-1c6c315a3bb8",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-404, Podgrad - Ilirska Bistrica, pri Rečici, izmenično enosmerni promet, sanacija meteorne kanalizacije, do 21. 10. 2026.",
-  "loc": "R2-404, Podgrad - Ilirska Bistrica",
-  "lat": 45.57142,
-  "lng": 14.22554,
-  "start": "2026-10-19T18:38:13.753Z",
-  "end": "2026-10-21T21:59:00Z",
-  "ts": "2026-10-19T18:39:26.58Z"
  },
  {
   "id": "DARS;884277;2f547e86-70e4-4d06-bef3-7fe970aae4b5",
