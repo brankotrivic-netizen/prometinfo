@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-21T14:17:10.422Z";
+export const PROMET_SI_UPDATED = "2026-10-21T18:47:11.336Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;884875;2a407c9d-10f2-47be-b23f-282bdfa8ce07",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, uvoz Ljubljana Bizovik - uvoz Ljubljana Bizovik v smeri Malenc, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.04418,
+  "lng": 14.57648,
+  "start": "2026-10-21T18:45:40.12Z",
+  "end": "2026-10-22T02:00:54.54Z",
+  "ts": "2026-10-21T18:46:00.667Z"
+ },
+ {
+  "id": "DARS;884868;79ddabe8-b4a2-4bcb-b3a7-b9dd879f134d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica sever - počivališče Polskava v smeri Maribora, dela, pomična zapora prehitevalnega pasu, strojno pometanje.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.40794,
+  "lng": 15.61561,
+  "start": "2026-10-21T16:42:27.55Z",
+  "end": "2026-10-21T22:00:00Z",
+  "ts": "2026-10-21T16:42:37.25Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-10-21T15:00:07.15Z"
+ },
+ {
+  "id": "DARS;884631;86c68267-024f-4ebc-a1ae-82c61d52c874",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Kranj vzhod - počivališče Voklo v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.23805,
+  "lng": 14.40257,
+  "start": "2026-10-21T14:59:08.54Z",
+  "end": "2026-10-22T03:00:00Z",
+  "ts": "2026-10-21T14:59:36.26Z"
+ },
  {
   "id": "DARS;884845;25825a5b-45e7-45ff-a8d2-5fd8adbb8769",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -68,28 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-21T07:33:46.847Z",
   "end": "2027-03-10T16:00:00Z",
   "ts": "2026-10-21T07:35:23.183Z"
- },
- {
-  "id": "DARS;884757;51f7872b-4f7c-46e9-b029-72c01ea507fa",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-216, Soteska - Črmošnjice - Črnomelj, Vrčice, izmenično enosmerni promet, pomična zapora, obrezovanje rastlinja, do 17:00.",
-  "loc": "R1-216, Črmošnjice - Črnomelj",
-  "lat": 45.64715,
-  "lng": 15.14742,
-  "start": "2026-10-21T06:46:36.477Z",
-  "end": "2026-10-21T15:00:00Z",
-  "ts": "2026-10-21T06:48:24.057Z"
- },
- {
-  "id": "DARS;884756;a232db61-16ae-4e0f-b45f-762713cafb2f",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-105, Novo mesto - Metlika, pri Jugorju pri Metliki, izmenično enosmerni promet, pomična zapora, mulčenje, do 17:00.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.70306,
-  "lng": 15.24929,
-  "start": "2026-10-21T06:44:36.54Z",
-  "end": "2026-10-21T15:00:00Z",
-  "ts": "2026-10-21T06:45:41.353Z"
  },
  {
   "id": "DARS;884710;40181f0f-89f1-4b4e-959b-53b0968dfe29",
@@ -464,17 +486,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-07T05:49:21.943Z",
   "end": "2026-10-23T21:59:00Z",
   "ts": "2026-10-16T05:30:49.287Z"
- },
- {
-  "id": "DARS;883820;7b0c2942-7ecf-49c0-90cc-83d839b87359",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-409, Logatec - Planina, Grčarevec - Liplje, izmenično enosmerni promet, asfaltiranje, do 21. 10. 2026, dnevno med 7. in 19. uro.",
-  "loc": "R2-409, Kalce - Planina",
-  "lat": 45.87376,
-  "lng": 14.21285,
-  "start": "2026-10-16T05:25:49.523Z",
-  "end": "2026-10-21T17:00:00Z",
-  "ts": "2026-10-16T05:28:06.52Z"
  },
  {
   "id": "DARS;883648;eb17c50e-6a5b-4a18-ba6d-13d01b2ba65c",
@@ -948,17 +959,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-30T06:47:14.397Z",
   "end": "2026-12-05T16:00:00Z",
   "ts": "2026-09-30T06:48:49.473Z"
- },
- {
-  "id": "DARS;842423;fb27deaa-4292-4bdc-b396-c56c94a7d0f5",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-645, Zadvor - Šmartno pri Litiji, pri Besnici, izmenično enosmerni promet, novogradnja prepusta, do 21. 10. 2026. Dela potekajo na več odsekih.",
-  "loc": "R3-645, Zadvor - Šmartno Pri Litiji",
-  "lat": 46.03269,
-  "lng": 14.68156,
-  "start": "2026-04-03T05:57:13.48Z",
-  "end": "2026-10-21T15:00:00Z",
-  "ts": "2026-09-30T06:33:09.597Z"
  },
  {
   "id": "DARS;880287;adbfc72c-94a2-43bc-948b-b037d3ba15bf",
