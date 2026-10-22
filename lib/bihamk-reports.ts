@@ -110,6 +110,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na lokalitetu Orljani, u toku su radovi, zbog čega se radnim danima saobraća usporedno, jednom trakom."
    },
    {
+    "title": "Bužim",
+    "text": "Na magistralnoj cesti M-4.3 u Bužimu, zbog urušavanja potpornog zida i pješačke staze na dionici između Doma zdravlja i Osnovne škole u Bužimu ( dužini od 35 metara) putnička vozila saobraćaju naizmjenično, jednom trakom, dok je saobaćaj obustavljen za teretna vozila."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },
