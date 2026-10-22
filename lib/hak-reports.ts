@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "22.10.2026. 20:35",
-  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Zbog jakog vjetra ograničenja su za pojedine skupine vozila samo na Jadranskoj magistrali (opširnije u izvješću) . Mogući su odroni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. Pojačan je promet na gradskim cestama i obilaznicama, a usporeno, u kolonama u pokretu uz zastoje, se vozi u zonama radova i privremene regulacije prometa, osobito na: Istarskom ipsilonu (A8) između čvorova Veprinac i Matulji u oba smjera na Jadranskoj magistrali (DC8) kod Crikvenice IZVANREDNI PROMETNI DOGAĐAJI: - RADOVI VEČERAS: od 20:00 do 05:00 sati na autocesti A2 Zagreb-Macelj bit će za…"
+  "updated": "22.10.2026. 23:41",
+  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Zbog jakog vjetra ograničenja su za pojedine skupine vozila samo na Jadranskoj magistrali (opširnije u izvješću) . Mogući su odroni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. Pojačan je promet na gradskim cestama i obilaznicama, a usporeno, u kolonama u pokretu uz zastoje, se vozi u zonama radova i privremene regulacije prometa, osobito na: Istarskom ipsilonu (A8) između čvorova Veprinac i Matulji u oba smjera na Jadranskoj magistrali (DC8) kod Crikvenice IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 na 205+000 km između čvora Sveti Rok i čvora Go…"
  },
  {
   "title": "Granični prijelazi",
