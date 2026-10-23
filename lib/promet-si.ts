@@ -1,29 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-23T18:00:34.429Z";
+export const PROMET_SI_UPDATED = "2026-10-23T21:20:56.305Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;885294;0d01e019-20af-47d9-ba06-17880531fcea",
+  "id": "DARS;885304;e196cc3f-0591-40dc-b567-929910d4d4a8",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, izvoz 30 Ljubljana Bizovik - uvoz Ljubljana Bizovik v smeri Zadobrove, dela, zaprt prehitevalni pas.",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, izvoz 30 Ljubljana Bizovik - uvoz Ljubljana Bizovik v smeri Zadobrove, dela, zaprt vozni pas.",
   "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.04304,
+  "lat": 46.04299,
   "lng": 14.57678,
-  "start": "2026-10-23T17:51:30.983Z",
-  "end": "2026-10-23T20:00:51.157Z",
-  "ts": "2026-10-23T17:51:44.36Z"
- },
- {
-  "id": "DARS;885293;334b12cd-0da6-4ab3-90d7-c2c8eb7ef593",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, razcep Koseze - krožišče Tomačevo v smeri Zadobrove, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.07482,
-  "lng": 14.46711,
-  "start": "2026-10-23T17:35:01.387Z",
-  "end": "2026-10-23T23:00:00Z",
-  "ts": "2026-10-23T17:35:08Z"
+  "start": "2026-10-23T20:30:49.087Z",
+  "end": "2026-10-24T02:00:27.32Z",
+  "ts": "2026-10-23T20:31:03.613Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -112,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-23T04:15:02.75Z",
   "end": "2026-10-30T16:00:00Z",
   "ts": "2026-10-23T04:16:54.023Z"
- },
- {
-  "id": "DARS;880884;e80c3ed2-5749-4aa5-9816-7d3f29ea5da6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Nanos - priključek Senožeče v smeri Kopra, dela, zaprt počasni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.75851,
-  "lng": 14.05626,
-  "start": "2026-10-01T09:00:15.33Z",
-  "end": "2026-10-24T15:00:00Z",
-  "ts": "2026-10-22T19:03:48.127Z"
  },
  {
   "id": "DARS;874816;8dc5238f-80d3-466b-b60d-4bb3ad2dab7d",
@@ -222,17 +200,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-21T05:00:00Z",
   "end": "2027-01-15T16:00:00Z",
   "ts": "2026-10-21T04:25:37.663Z"
- },
- {
-  "id": "DARS;884669;a3a0686a-0f51-4ed4-9acb-896f0b445ea2",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Kastelec - priključek Črni Kal v smeri Kopra, dela, zaprt odstavni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.57276,
-  "lng": 13.87046,
-  "start": "2026-10-21T03:45:01.117Z",
-  "end": "2026-10-23T19:00:00Z",
-  "ts": "2026-10-21T03:45:30.397Z"
  },
  {
   "id": "DARS;874905;8ac4a3f8-0a07-45b2-8f0c-89c673335399",
@@ -948,17 +915,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-24T11:30:26.847Z",
   "end": "2026-11-13T16:00:00Z",
   "ts": "2026-09-24T11:33:05.797Z"
- },
- {
-  "id": "DARS;879309;86327f4e-8b17-4747-911a-6dc21935993a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Senožeče - razcep Nanos v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.75528,
-  "lng": 14.05108,
-  "start": "2026-09-24T07:42:19.94Z",
-  "end": "2026-10-23T21:59:00Z",
-  "ts": "2026-09-24T07:44:50.58Z"
  },
  {
   "id": "DARS;868803;ecefdba7-cf35-4a9d-b2e5-ebe2666d6b1e",
