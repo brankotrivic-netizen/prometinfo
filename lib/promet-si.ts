@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-23T21:20:56.305Z";
+export const PROMET_SI_UPDATED = "2026-10-23T23:53:34.370Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;885304;e196cc3f-0591-40dc-b567-929910d4d4a8",
@@ -114,17 +114,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-22T18:40:31.06Z"
  },
  {
-  "id": "DARS;884472;7dda32ae-b5d4-4f92-ac6a-c0cd6b974cce",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-683, Golobinjek - Lesično, Golobinjek ob Sotli, izmenično enosmerni promet, pomična zapora, izgradnja TP Golobinjek, do 23. 10. 2026.",
-  "loc": "R3-683, Lesično - Golobinjek",
-  "lat": 46.12207,
-  "lng": 15.59608,
-  "start": "2026-10-20T05:44:46.053Z",
-  "end": "2026-10-23T21:59:00Z",
-  "ts": "2026-10-22T05:19:01.443Z"
- },
- {
   "id": "DARS;875675;3b2b5f7d-3465-442a-b5d4-b1fbd723131a",
   "type": "MaintenanceWorks",
   "desc": "G1-1, Maribor - Dravograd, v Bresternici, oviran promet, gradnje TP Bresternica 5 in SN kablovodov, do 15. 11. 2026. Zapora pločnika in kolesarske steze.",
@@ -134,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-09T06:47:42.163Z",
   "end": "2026-11-15T22:59:00Z",
   "ts": "2026-10-22T05:18:24.143Z"
- },
- {
-  "id": "DARS;884920;114fa539-6f9a-4917-9629-1881034a42ec",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-108, Ljubljana - Litija, v Zgornjem Hotiču, izmenično enosmerni promet, preplastitev vozišča, do 23. 10. 2026.",
-  "loc": "G2-108, Ribče - Litija",
-  "lat": 46.09005,
-  "lng": 14.81048,
-  "start": "2026-10-22T04:42:35.297Z",
-  "end": "2026-10-23T21:59:00Z",
-  "ts": "2026-10-22T05:04:05.833Z"
  },
  {
   "id": "DARS;884764;4822a0d3-7432-4eb1-b44a-9a2a2bdf64c4",
