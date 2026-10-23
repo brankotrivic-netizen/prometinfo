@@ -139,16 +139,8 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-456 Priboj–Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Bare-Hrenovica",
-    "text": "Na regionalnoj cesti R-448 Goražde-Hrenovica (Bare-Hrenovica), zbog asfaltiranje od 08 do 18 sati vozila će saobraćati uspotreno, jednom trakom, uz moguće obustave ne duže od 1 sat. Dana 21.08. biće na snazi potpuna obustava za teretni saobraćaj."
-   },
-   {
     "title": "Nemila-Bistričak",
     "text": "Na regionalnoj cesti R-473 Nemila-Bistričak zbog sanacionih radova svaki dan osim nedjelje od 07 do 16 sati saobraća se naizmjenično, jednom trakom."
-   },
-   {
-    "title": "Tomislavgrad-Blidinje",
-    "text": "Danas i naredna dva dana (26., 27. i 28.08.) zbog sanacionih radova obustavljen je saobraćaj na regionalnoj cesti Tomislavgrad-Blidinje."
    },
    {
     "title": "Kakanj-Visoko",
@@ -173,6 +165,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Most Ostrožac",
     "text": "na regionalnoj cesti R-437 na mostu Ostrožac, zbog radova od 08 do 16 sati svakog radnog dana, povremeno se obustavlja saobraćaj (jedan sat obustava, jedan sat propuštanje vozila)."
+   },
+   {
+    "title": "Kladanj-Milankovići",
+    "text": "Zbog izgradnje mosta, izmijenjen je režim saobraćaja na mostu preko rijeke Drinjače. Vozila se usmjeravaju preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
