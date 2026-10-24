@@ -3,23 +3,23 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "24.10.2026. 10:07",
-  "text": "Kolnici su mokri ili vlažni i skliski u većem dijelu zemlje. Zbog mjestimice obilnijih pljuskova moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A1 između čvorova Sveti Rok i Rovanjska, na 241.+500 km u smjeru Dubrovnika, vozi se jednim trakom uz ograničenje brzine od 40 km/h AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba…"
+  "updated": "24.10.2026. 14:47",
+  "text": "Uočeno je vozilo koje se kreće u suprotnom smjeru na dionici Istarskog ipsilona (A8) između Pazina i Kanfanara. Vozi se uz ogreničenje brzine. Molimo vozače za dodatan oprez. Kolnici su mokri ili vlažni i skliski u većem dijelu zemlje. Zbog mjestimice obilnijih pljuskova moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Zbog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju ( vidjeti niže u izvješću ). Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće na autocesti A1 između čvorova Vučevica i Split, na 365.+500 km…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "24.10.2026. 10:07",
+  "updated": "24.10.2026. 14:47",
   "text": "Kolona teretnih vozila na autocesti A3 ispred graničnog prijelaza Bajakovo u smjeru Lipovca duga je 3 km. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izla…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "24.10.2026. 10:07",
+  "updated": "24.10.2026. 14:47",
   "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu je katamaranska linija 9308 Mali Lošinj-Cres-Rijeka. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
-  "updated": "24.10.2026. 10:07",
-  "text": "Stanje u željezničkom putničkom prometu 23. listopada 2026. u 8.00 sati. Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstu…"
+  "updated": "24.10.2026. 14:47",
+  "text": "Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na dionicama: - između kolodvora Dugo Selo…"
  },
  {
   "title": "Ograničenja za teretna vozila",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "24.10.2026. 05:48",
-  "text": "Prometna prognoza za Hrvatsku za 24. listopada 2026. U jutarnjim satima magla će smanjivati vidljivost mjestimice na cestama u unutrašnjosti. Vozit će se po mjestimice vlažnim kolnicima. Zbog olujne bure očekuju se zabrane i ograničenja prometa za pojedine skupine vozila na cestama u podvelebitskom području. Pojačan promet očekuje se na gradskim cestama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone mogući su u zonama radova, osobito na autocesti A7 između čvorova Rijeka zapad i Učka u smjeru Rupe, Istarskom ipsilonu (A8) između čvora i tunela Učka te na Jadranskoj magistrali (DC8) na splitskom području. Gužve u prometu teretnih i osobnih vozila očekuju se na pojedinim gra…"
+  "updated": "24.10.2026. 11:07",
+  "text": "Prometna prognoza za Hrvatsku za 25. listopada 2026. Tijekom noći i ujutro zbog jake bure s olujnim udarima bit će poteškoća u cestovnom i pomorskom prometu te zabrane prometa za pojedine skupine vozila na Jadranskoj magistrali (DC8) podno Velebita. Zbog niskih jutarnjih temperatura na vlažnim cestama u unutrašnjosti moguća je poledica, a ponegdje će vidljivost biti smanjena zbog magle. Pozivamo vozače da smanje brzinu i povećaju razmak između vozila te i danju voze s uključenim kratkim svjetlima. Zbog promjenjive vremenske situacije savjetujemo vozačima da se prije polaska na put informiraju o stanju i prohodnosti cesta na mrežnim stranicama ili mobilnoj aplikaciji Hrvatskog autokluba. U zo…"
  },
  {
   "title": "Obaveza zimske opreme",
