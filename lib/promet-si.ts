@@ -1,29 +1,51 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-23T23:53:34.370Z";
+export const PROMET_SI_UPDATED = "2026-10-24T08:28:06.996Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;885304;e196cc3f-0591-40dc-b567-929910d4d4a8",
+  "id": "DARS;885317;a89adafc-3522-4d26-8e7b-855e1181eb5f",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, izvoz 30 Ljubljana Bizovik - uvoz Ljubljana Bizovik v smeri Zadobrove, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.04299,
-  "lng": 14.57678,
-  "start": "2026-10-23T20:30:49.087Z",
-  "end": "2026-10-24T02:00:27.32Z",
-  "ts": "2026-10-23T20:31:03.613Z"
+  "desc": "A1, Ljubljana - Koper, razcep Srmin, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55429,
+  "lng": 13.77625,
+  "start": "2026-10-24T05:16:25.4Z",
+  "end": "2026-10-24T11:00:46.68Z",
+  "ts": "2026-10-24T05:16:39.6Z"
  },
  {
-  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "id": "DARS;884513;cbfcb65a-f27c-460a-867a-ac76b4486120",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, predor Kastelec - priključek Črni Kal v smeri Kopra, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.57669,
+  "lng": 13.87293,
+  "start": "2026-10-20T07:05:37.237Z",
+  "end": "2026-11-29T13:00:00Z",
+  "ts": "2026-10-24T05:05:40.497Z"
+ },
+ {
+  "id": "DARS;885311;d31f255e-4f55-465d-8e41-a456d37a9a48",
   "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 45.96375,
-  "lng": 15.5243,
-  "start": "2025-10-02T05:56:02.493Z",
-  "end": "2026-12-31T22:59:00Z",
-  "ts": "2026-10-23T15:00:59.84Z"
+  "desc": "R2-411, Kokrica - Polica, pri avtocestnem priključku Kranj zahod, izmenično enosmerni promet, sanacija podvoza, do 25. 10. 2026.",
+  "loc": "R2-411, Kranj Z - Polica",
+  "lat": 46.26706,
+  "lng": 14.33795,
+  "start": "2026-10-24T03:45:14.267Z",
+  "end": "2026-10-25T22:59:00Z",
+  "ts": "2026-10-24T05:00:59.367Z"
+ },
+ {
+  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 13. 12. 2026.",
+  "loc": "G2-104, Kranj - Spodnji Brnik",
+  "lat": 46.24124,
+  "lng": 14.39817,
+  "start": "2026-09-28T19:00:00Z",
+  "end": "2026-12-13T22:59:00Z",
+  "ts": "2026-10-24T05:00:59.053Z"
  },
  {
   "id": "DARS;885192;5de839f9-1e54-4a85-91d8-e0486acd6915",
