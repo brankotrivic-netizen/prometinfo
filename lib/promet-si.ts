@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-24T12:50:29.639Z";
+export const PROMET_SI_UPDATED = "2026-10-24T16:19:46.155Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-10-24T15:00:07.6Z"
+ },
  {
   "id": "DARS;885346;88f46675-df77-439a-9a90-dda44a895df0",
   "type": "MaintenanceWorks",
@@ -13,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-24T11:01:17.9Z",
   "end": "2026-10-25T21:00:50.667Z",
   "ts": "2026-10-24T11:01:22.753Z"
- },
- {
-  "id": "DARS;885340;b7050ea3-325e-4437-9e62-c14b6f1282d2",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-5, Celje - Krško, pri Artem, izmenično enosmerni promet, obrezovanje rastlinja, do 18:00.",
-  "loc": "G1-5, Impoljca - Brestanica",
-  "lat": 45.98635,
-  "lng": 15.39033,
-  "start": "2026-10-24T10:39:29.073Z",
-  "end": "2026-10-24T16:00:00Z",
-  "ts": "2026-10-24T10:39:51.64Z"
  },
  {
   "id": "DARS;883181;14411701-4cd8-4d4c-8def-deafb1b17321",
@@ -79,28 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-20T07:05:37.237Z",
   "end": "2026-11-29T13:00:00Z",
   "ts": "2026-10-24T05:05:40.497Z"
- },
- {
-  "id": "DARS;885311;d31f255e-4f55-465d-8e41-a456d37a9a48",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-411, Kokrica - Polica, pri avtocestnem priključku Kranj zahod, izmenično enosmerni promet, sanacija podvoza, do 25. 10. 2026.",
-  "loc": "R2-411, Kranj Z - Polica",
-  "lat": 46.26706,
-  "lng": 14.33795,
-  "start": "2026-10-24T03:45:14.267Z",
-  "end": "2026-10-25T22:59:00Z",
-  "ts": "2026-10-24T05:00:59.367Z"
- },
- {
-  "id": "DARS;880016;8a775912-2253-4138-b0d2-98b48180170e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-104, Kranj - Sp. Brnik, pri avtocestnem priključku Kranj vzhod, izmenično enosmerni promet, sanacija podvoza, do 13. 12. 2026.",
-  "loc": "G2-104, Kranj - Spodnji Brnik",
-  "lat": 46.24124,
-  "lng": 14.39817,
-  "start": "2026-09-28T19:00:00Z",
-  "end": "2026-12-13T22:59:00Z",
-  "ts": "2026-10-24T05:00:59.053Z"
  },
  {
   "id": "DARS;885192;5de839f9-1e54-4a85-91d8-e0486acd6915",
