@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-24T16:19:46.155Z";
+export const PROMET_SI_UPDATED = "2026-10-24T18:53:20.723Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;885374;82a7ac72-7169-4d62-8590-6d955144f938",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, izvoz 30 Ljubljana Bizovik - uvoz Ljubljana Bizovik v smeri Zadobrove, dela, zaprt vozni pas.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.04311,
+  "lng": 14.57678,
+  "start": "2026-10-24T17:46:00.783Z",
+  "end": "2026-10-25T03:00:27.323Z",
+  "ts": "2026-10-24T17:46:15.627Z"
+ },
+ {
+  "id": "DARS;885368;d71280c2-765b-4cc7-b7a7-159f5919dc6b",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica jug - priključek Sl. Bistrica sever v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.38316,
+  "lng": 15.57345,
+  "start": "2026-10-24T16:54:27.54Z",
+  "end": "2026-10-24T21:00:03.647Z",
+  "ts": "2026-10-24T16:54:40.917Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -849,17 +871,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-29T05:55:02.827Z",
   "end": "2026-11-06T16:00:00Z",
   "ts": "2026-09-29T05:57:17.633Z"
- },
- {
-  "id": "DARS;880280;1a14eeee-a406-490a-9854-6576b1a160aa",
-  "type": "MaintenanceWorks",
-  "desc": "R2-406, Ankaran - Lazaret, v Ankaranu, Jadranska cesta, oviran promet, rekonstrukcije fekalne in meteorne kanalizacije, do 24. 10. 2026.",
-  "loc": "R2-406, Škofije - Lazaret",
-  "lat": 45.57281,
-  "lng": 13.74568,
-  "start": "2026-09-29T05:46:30.933Z",
-  "end": "2026-10-24T17:00:00Z",
-  "ts": "2026-09-29T05:47:54.67Z"
  },
  {
   "id": "DARS;855677;fecf0206-870a-4983-b404-eccef19d0123",
