@@ -3,12 +3,12 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "24.10.2026. 23:05",
-  "text": "Zbog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju ( detaljnije u popisu cesta ). Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba autocestom do čvora Split vozi se nesmetano, a dalje u smjeru Dubrovnika vozila izlaze s autoceste na čvoru Split (naplata Dugopolje), polukružno se okreću na kružnom toku (DC1- ŽC6145) i…"
+  "updated": "25.10.2026. 01:12",
+  "text": "Zbog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju ( detaljnije u popisu cesta ). Kolnici su mjestimice mokri i skliski. Zastoji su povremeno na dionicama cesta gdje traju radovi. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A6 između čvora Kikovica i čvora Oštrovica ( na 64+500 km) u smjeru Zagreba. AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba autocestom do čvora Split vozi se nesmetano, a dalje u smjeru Dubrovnika vozila …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "24.10.2026. 22:53",
+  "updated": "25.10.2026. 01:05",
   "text": "Kolona teretnih vozila na autocesti A3 ispred graničnog prijelaza Bajakovo u smjeru Lipovca duga je 3 km. Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izla…"
  },
  {

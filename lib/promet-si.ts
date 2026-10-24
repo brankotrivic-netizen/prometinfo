@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-24T21:17:42.415Z";
+export const PROMET_SI_UPDATED = "2026-10-24T23:27:26.407Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;885374;82a7ac72-7169-4d62-8590-6d955144f938",
@@ -1201,17 +1201,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-05-12T07:16:48.243Z",
   "end": "2027-03-27T22:59:00Z",
   "ts": "2026-08-24T05:54:27.03Z"
- },
- {
-  "id": "DARS;871757;2f55f9bf-ebfc-4794-a398-102637f29e86",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-216, Ivančna Gorica - Krka, pri avtocestnem priključku Ivančna Gorica, izmenično enosmerni promet, obnova vozišča, do 24. 10. 2026.",
-  "loc": "R1-216, Ivančna Gorica - Krka",
-  "lat": 45.93439,
-  "lng": 14.8034,
-  "start": "2026-08-24T05:49:01.377Z",
-  "end": "2026-10-24T21:59:00Z",
-  "ts": "2026-08-24T05:50:20.15Z"
  },
  {
   "id": "DARS;871662;f2faae21-0ba3-49d6-a839-0a6d47086b0f",
