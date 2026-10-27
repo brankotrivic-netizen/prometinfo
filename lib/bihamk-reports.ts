@@ -42,10 +42,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji dodatne trake za spora vozila na magistralnom putu Podromanija-Sumbulovac, prevoj Romanija (uspon iz pravca Podromanije) dolazit će do povremenih obustava saobraćaja."
    },
    {
-    "title": "Crna Rijeka- Jajce (Podmilačje)",
-    "text": "Zbog izvođenja radova na magistralnoj cesti Jajce-Crna Rijeka (u naselju Podmilačje) saobraća se usporeno-naizmjeničnim propuštanjem vozila."
-   },
-   {
     "title": "Mostar-Čitluk-brdo Hum",
     "text": "U toku su sanacioni radovi, zbog čega se svakog dana (osim nedjelje), saobraća usporeno, naizmjeničnim propuštanjem vozila."
    },
