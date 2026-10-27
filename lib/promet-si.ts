@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-26T21:00:55.844Z";
+export const PROMET_SI_UPDATED = "2026-10-27T00:23:38.581Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;885636;19f3ec40-bb66-477c-8f15-142803cded95",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, uvoz Vodice v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.18232,
-  "lng": 14.4839,
-  "start": "2026-10-26T20:49:36.057Z",
-  "end": "2026-10-27T02:00:00Z",
-  "ts": "2026-10-26T20:49:39.35Z"
- },
  {
   "id": "DARS;885630;00ecc263-dce2-4cff-bdd4-8e6a06b6a420",
   "type": "MaintenanceWorks",
@@ -24,28 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-26T19:54:21.14Z",
   "end": "2026-10-27T01:00:00Z",
   "ts": "2026-10-26T19:54:37.7Z"
- },
- {
-  "id": "DARS;885629;9761b657-e72d-440a-a0ed-e0b7386c3295",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, počivališče Ravbarkomanda - priključek Unec v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.78194,
-  "lng": 14.22219,
-  "start": "2026-10-26T19:52:35.357Z",
-  "end": "2026-10-26T22:00:48.443Z",
-  "ts": "2026-10-26T19:52:40.797Z"
- },
- {
-  "id": "DARS;885618;41b859be-dde0-4afc-ab6f-3eade201de02",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.38708,
-  "lng": 15.58263,
-  "start": "2026-10-26T17:59:37.223Z",
-  "end": "2026-10-26T22:59:01.81Z",
-  "ts": "2026-10-26T17:59:50.347Z"
  },
  {
   "id": "DARS;885609;93d7e3ac-7e84-4f13-bdb3-07464d75fd1b",

@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.10.2026. 21:53",
-  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: - Radovi noćas 27. listopada: noćas od 00:00 do 05:00 sati ujutro bit će zatvorena dionica autoceste A6 Rijeka-Zagreb između čvorova Bosiljevo 2 i Vrbovsko, u oba smjera. Obilazak: smjer Rijeka-Zagreb: čvor Vrbovsko (A6) - DC 42 - DC 3 - DC 204 - čvor Bosiljevo 1 (A1), - smjer Zagreb-Rijeka: čvor Bosiljevo 1 (A1) - DC 204 - DC 3 - DC 42 - čvor Vrbovsko (A6), - smjer Split-Rijeka: čvor Bosiljevo 2 (A1) …"
+  "updated": "27.10.2026. 00:13",
+  "text": "Povremena su usporavanja zbog veće gustoće prometa na gradskim prometnicama i obilaznicama te u zonama radova i privremene regulacije prometa. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: - Radovi noćas 27. listopada: do 05:00 sati ujutro zatvorena je dionica autoceste A6 Rijeka-Zagreb između čvorova Bosiljevo 2 i Vrbovsko, u oba smjera. Obilazak: smjer Rijeka-Zagreb: čvor Vrbovsko (A6) - DC 42 - DC 3 - DC 204 - čvor Bosiljevo 1 (A1), - smjer Zagreb-Rijeka: čvor Bosiljevo 1 (A1) - DC 204 - DC 3 - DC 42 - čvor Vrbovsko (A6), - smjer Split-Rijeka: čvor Bosiljevo 2 (A1) - čvor Bosiljevo 1 …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "26.10.2026. 21:51",
+  "updated": "27.10.2026. 00:13",
   "text": "Zbog oštećenja mosta između graničnih prijelaza Stara Gradiška (HR) i Gradiška (BiH) prekinut je promet u oba smjera. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, podaci o putnim ispravama te datumi i vremena ulaska ili izlaska državljana trećih zemalja, kao i moguća odbijanja ulaska u Republiku Hrvatsku, odnosno schengenski pro…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "26.10.2026. 21:51",
+  "updated": "27.10.2026. 00:13",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
-  "updated": "26.10.2026. 21:51",
+  "updated": "27.10.2026. 00:13",
   "text": "Stanje u željezničkom putničkom prometu 26. listopada 2026. u 8.00 sati Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstup…"
  },
  {
