@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-27T20:09:42.778Z";
+export const PROMET_SI_UPDATED = "2026-10-27T23:44:15.224Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;885850;7e0cfa1a-9c7c-4ff2-8404-a0e753d6a54d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, počivališče Studenec - priključek Razdrto v smeri Kopra, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.76513,
+  "lng": 14.12632,
+  "start": "2026-10-27T19:42:59.773Z",
+  "end": "2026-10-28T05:00:00Z",
+  "ts": "2026-10-27T22:55:19.873Z"
+ },
+ {
+  "id": "DARS;880733;9dde930e-a29f-4200-9ca8-8b68585189cc",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Domžale - priključek Ljubljana Šentjakob v smeri Ljubljane, dela, oviran promet, zaprt odstavni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.13422,
+  "lng": 14.61446,
+  "start": "2026-09-30T18:19:26.287Z",
+  "end": "2026-10-31T08:00:00Z",
+  "ts": "2026-10-27T20:43:39.717Z"
+ },
  {
   "id": "DARS;885852;b75be08f-ade4-49f6-96b0-ff6cf63f252a",
   "type": "MaintenanceWorks",
@@ -13,39 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-27T20:05:11.69Z",
   "end": "2026-10-28T02:00:00Z",
   "ts": "2026-10-27T20:05:13.413Z"
- },
- {
-  "id": "DARS;885851;4f3c0ff5-bc9d-485d-934e-bb6b2782e655",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, izvoz Višnja Gora - predor Mali Vrh iz smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.95781,
-  "lng": 14.74591,
-  "start": "2026-10-27T19:45:56.51Z",
-  "end": "2026-10-27T21:00:56.463Z",
-  "ts": "2026-10-27T19:45:59.803Z"
- },
- {
-  "id": "DARS;885850;7e0cfa1a-9c7c-4ff2-8404-a0e753d6a54d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, počivališče Studenec - priključek Razdrto v smeri Kopra, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.76513,
-  "lng": 14.12632,
-  "start": "2026-10-27T19:42:59.773Z",
-  "end": "2026-10-28T01:00:00Z",
-  "ts": "2026-10-27T19:43:04.47Z"
- },
- {
-  "id": "DARS;885846;7ff27446-c29a-495b-8c8b-27c394cd6191",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, razcep Slivnica - priključek Maribor jug, Slivnica iz smeri Ljubljane proti Dragučovi, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.47716,
-  "lng": 15.65754,
-  "start": "2026-10-27T18:55:19.613Z",
-  "end": "2026-10-28T01:30:59.74Z",
-  "ts": "2026-10-27T18:55:23.547Z"
  },
  {
   "id": "DARS;882734;5516fd03-4f2d-41dc-b8ca-c6d0a3207374",
@@ -90,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-27T18:22:58.513Z",
   "end": "2026-10-28T04:00:00Z",
   "ts": "2026-10-27T18:23:24.877Z"
- },
- {
-  "id": "DARS;885833;3586ce85-d104-4312-a32b-fbcf38f07364",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, počivališče Voklo - priključek Kranj vzhod v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.23494,
-  "lng": 14.40756,
-  "start": "2026-10-27T16:45:26.54Z",
-  "end": "2026-10-28T05:00:17.103Z",
-  "ts": "2026-10-27T16:45:42.55Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -849,17 +827,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-30T06:00:17.61Z",
   "end": "2026-12-18T16:00:00Z",
   "ts": "2026-10-01T13:50:10.79Z"
- },
- {
-  "id": "DARS;880733;9dde930e-a29f-4200-9ca8-8b68585189cc",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, pred uvozom Domžale v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.13508,
-  "lng": 14.61651,
-  "start": "2026-09-30T18:19:26.287Z",
-  "end": "2026-10-31T08:00:00Z",
-  "ts": "2026-09-30T18:20:00.67Z"
  },
  {
   "id": "DARS;866043;3950ccaa-75d5-4fff-9b32-8811b5af5810",
