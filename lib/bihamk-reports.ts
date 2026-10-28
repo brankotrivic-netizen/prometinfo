@@ -135,10 +135,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "label": "Regionalne ceste",
   "items": [
    {
-    "title": "Čajdraš-Ovnak (Kozarci)",
-    "text": "Na regionalnoj cesti R-413a Čajdraš-Ovnak (lokalitet Kozarci) zbog sanacionih radova u srijedu (28.10.) od 07 do 16 sati doći će do obustave saobraćaja. Alternativni pravac je Ovnak-Han Bila-Bila-Vitez."
-   },
-   {
     "title": "Zenica-Lašva",
     "text": "Zbog sanacionih radova na regionalnoj cesti Zenica-Lašva od 08 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
    },
