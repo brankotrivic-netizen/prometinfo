@@ -9,8 +9,8 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog izvođenja neophodnih radova na A-1 Sarajevo zapad-Lepenica, saobraćaj je preusmjeren u preticajnu traku."
    },
    {
-    "title": "Zvirovići-Počitelj",
-    "text": "U toku su radovi u tunelu Hercegovina, kao i na dionici od umjetnog tunela Počitelj do mosta Hercegovina, zbog čega se saobraća usporeno, jednom trakom."
+    "title": "Bijača-Počitelj",
+    "text": "Zbog radova na zaštiti kosina, za saobraćaj je zatvoren most Hercegovina (na autocesti A-1, u smjeru Počitelj-Bijača), a saobraća se dvosmjerno, suprotnom stranom autoceste (smjer Bijača-Počitelj). Također, zbog radova u tunelu Hercegovina (u smjeru Bijača-Počitelj) zatvorena je preticajna traka, pa se saobraća samo voznom trakom."
    },
    {
     "title": "Kakanj-Lašva",
@@ -135,6 +135,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "label": "Regionalne ceste",
   "items": [
    {
+    "title": "Čajdraš-Ovnak (Kozarci)",
+    "text": "Na regionalnoj cesti R-413a Čajdraš-Ovnak (lokalitet Kozarci) zbog sanacionih radova u srijedu (28.10.) od 07 do 16 sati doći će do obustave saobraćaja. Alternativni pravac je Ovnak-Han Bila-Bila-Vitez."
+   },
+   {
     "title": "Zenica-Lašva",
     "text": "Zbog sanacionih radova na regionalnoj cesti Zenica-Lašva od 08 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
    },
@@ -157,10 +161,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Turbe-Skender Vakuf/Kneževo (Šešići-Smet)",
     "text": "U toku su sanacioni radovi, zbog čega se svakim danom (osim nedjelje) u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
-   },
-   {
-    "title": "Zenica-Arnauti",
-    "text": "U toku su sanacioni radovi, zbog čega se svakim radnim danom u periodu od 7 do 17 sati saobraća usporeno, jednom trakom na regionalnoj cesti R-457 Zenica-Arnauti."
    },
    {
     "title": "Ciljuge-Dubrave Donje",
