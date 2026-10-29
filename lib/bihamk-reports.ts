@@ -171,6 +171,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog izgradnje mosta, izmijenjen je režim saobraćaja na mostu preko rijeke Drinjače. Vozila se usmjeravaju preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta."
    },
    {
+    "title": "Lepenica-Kreševo",
+    "text": "Zbog asfaltiranja saobraćajnice bit će obustavljan saobraćaj na regionalnoj cesti R-443a Lepenica-Kreševo (skretanje za Zabašće). Za vrijeme obustave saobraćaj će se odvijati alternativnim pravcima Lepenica-Kiseljak i Kreševo-Kiseljak."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
