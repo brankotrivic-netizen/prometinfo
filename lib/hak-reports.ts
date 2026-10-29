@@ -3,8 +3,8 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "28.10.2026. 21:29",
-  "text": "OPREZ! Vožnja u suprotnom smjeru na autocesti A1 između čvora Karlovac i naplatne postaje ČCP Lučko na kolniku u smjeru Dubrovnika. Vozi se uz ograničenje brzine od 40 km/h. Molimo korisnike za oprez. U priobalju puše jaka bura i ograničenja su za pojedine skupine vozila na Jadranskoj magistrali (DC8), Omiškoj obilaznici (DC553) i Paškom mostu (DC106) ( opširnije u tekstu). Pozivamo vozače da brzinu i način vožnje prila gode uvjetima na cestama te pripaze na siguran razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: večeras od 22:00 do 5:00 ujutro zatvara se autocesta A1 od čvora Rovanjska do čvora Posedarje u oba smjera te od čvora Split do čvora Bisko u smjeru Dubrovnika na autocesti A2 Z…"
+  "updated": "29.10.2026. 00:38",
+  "text": "U priobalju puše jaka bura i ograničenja su za pojedine skupine vozila na Jadranskoj magistrali (DC8), Omiškoj obilaznici (DC553) i Paškom mostu (DC106) ( opširnije u tekstu). Pozivamo vozače da brzinu i način vožnje prila gode uvjetima na cestama te pripaze na siguran razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: večeras od 22:00 do 5:00 ujutro zatvara se autocesta A1 od čvora Split do čvora Bisko u smjeru Dubrovnika na autocesti A2 Zagreb-Macelj od 20 do 5 sati ujutro zatvara se dionica između čvorova Krapina i Trakošćan na državnoj cesti DC404 od 22:30 do 5:30 sati ujutro bit će zatvorena dionica od čvora Vežica do kružnog raskrižja AUTOCESTE A1 Zagreb-Split-Dubrovnik večeras od čvo…"
  },
  {
   "title": "Granični prijelazi",
