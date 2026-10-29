@@ -1,8 +1,30 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-29T17:03:59.370Z";
+export const PROMET_SI_UPDATED = "2026-10-29T21:46:01.246Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;886240;c8431f13-9b1c-4274-a3d4-3d40abad7ce7",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, priključek Razdrto - razcep Nanos v smeri Kopra, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.76076,
+  "lng": 14.09789,
+  "start": "2026-10-29T17:56:50.9Z",
+  "end": "2026-10-30T05:00:00Z",
+  "ts": "2026-10-29T21:06:48.363Z"
+ },
+ {
+  "id": "DARS;886241;7dfb26a6-8061-4c0d-9ce2-d0f16a634d84",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - vzhodna obvoznica, razcep Zadobrova - priključek Domžale v smeri Celja, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.07027,
+  "lng": 14.57777,
+  "start": "2026-10-29T18:05:20.75Z",
+  "end": "2026-10-30T04:00:13.503Z",
+  "ts": "2026-10-29T18:09:54.62Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -101,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-19T06:20:44.383Z",
   "end": "2026-10-30T16:00:00Z",
   "ts": "2026-10-29T08:22:25.527Z"
- },
- {
-  "id": "DARS;886140;a0573c69-1447-4f89-a07f-2f08efa49bb2",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Brezovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.91075,
-  "lng": 14.25931,
-  "start": "2026-10-29T07:56:18.167Z",
-  "end": "2026-10-29T18:00:00Z",
-  "ts": "2026-10-29T07:56:53.49Z"
  },
  {
   "id": "DARS;834721;7ad93a40-4883-4787-84e4-3a7a83bd6aed",
@@ -519,17 +530,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-19T05:27:40.267Z",
   "end": "2026-11-07T22:59:00Z",
   "ts": "2026-10-19T05:28:38.48Z"
- },
- {
-  "id": "DARS;869124;3f17bac3-3ceb-4e80-b069-4fe1eb5678d0",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, razcep Zadobrova - priključek Domžale v smeri Celja, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.07218,
-  "lng": 14.57852,
-  "start": "2026-08-11T15:35:49.023Z",
-  "end": "2026-10-31T09:30:00Z",
-  "ts": "2026-10-17T08:26:07.593Z"
  },
  {
   "id": "DARS;884033;633ccd80-2c0d-4023-b280-929de1915030",
