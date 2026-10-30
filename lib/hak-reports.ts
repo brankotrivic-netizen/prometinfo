@@ -3,32 +3,32 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "30.10.2026. 11:16",
-  "text": "Kolnici su mjestimice mokri i skliski. U priobalju puše jaka bura i ograničenja su za pojedine skupine vozila ( vidjeti u popisu cesta ). Pozivamo vozače da brzinu i način vožnje prila gode uvjetima na cestama te drže sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: predmet na autocesti A1 između čvora Skradin i čvora Šibenik (na 313+000 km) u smjeru Dubrovnika, vozi se jednom prometnom trakom uz ograničenje brzine od 60 km/h teretno vozilo u kvaru na autocesti A2 između čvorova Krapina i Sveti Križ Začretje (na 18+900 km), vozi se uz ograničenje brzinae zastoji su povremeno na zagrebačkoj (A3) i riječkoj (A7) obilaznici, Istarskom ipsilonu na čvoru Matulji te na više dionica J…"
+  "updated": "30.10.2026. 17:46",
+  "text": "Za sve skupine vozila otvoreni su: autocesta A1 Zagreb-Split-Dubrovnik (na dionici tunel Sveti Rok-tunel Čelinka vozi se uz ograničenje brzine od 40 km/h) državna cesta Maslenica-Zaton Obrovački (DC54) Paški most Krčki most U priobalju puše bura i ograničenja su za određene skupine vozila na pojedinim cestama ( vidjeti niže u popisu cesta! ). Vo začima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: na zagrebačkoj obilaznici (A3) između čvorova Zagreb zapad i Zagreb istok u smjeru Lipovca vozi se usporeno u kolonama uz povremene zastoje zbog ulja na kolniku na državnoj cesti Korenica-Gospić (DC25) …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "30.10.2026. 10:32",
+  "updated": "30.10.2026. 17:46",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "30.10.2026. 10:06",
-  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: trajektna linija Prizna-Žigljen; katamaranska linija Pula-Zadar. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat…"
+  "updated": "30.10.2026. 17:47",
+  "text": "Zbog vjetra u prekidu je katamaranska linija Pula-Zadar. Dana 02. studenog 2026. godine (ponedjeljak) uvodi se dodatno polazno - povratno putovanje na trajektnoj liniji 435 Zadar/Gaženica - Iž Mali/Bršanj - Rava - Mala Rava i obratno, te će trajekt iz luke Zadar/Gaženica za luku Iž Mali/Bršanj isploviti u 08:00 sati, a iz luke Iž Mali/Bršanj za luku Zadar/Gaženica u 10:00 sati. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni g…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "30.10.2026. 10:06",
+  "updated": "30.10.2026. 16:34",
   "text": "Stanje u željezničkom putničkom prometu 30. listopada 2026. u 8.00 sati. Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstu…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "30.10.2026. 10:06",
+  "updated": "30.10.2026. 16:27",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "30.10.2026. 10:06",
+  "updated": "30.10.2026. 16:27",
   "text": "Prometna prognoza za Hrvatsku za 31. listopada 2026. Vozit će se po mjestimice mokrim ili samo vlažnim i skliskim kolnicima, uglavnom u Gorskoj Hrvatskoj i istočnim predjelima. Zbog bure moguća su ograničenja za pojedine skupine vozila na cestama u priobalju. Pojačan promet očekuje se na gradskim prometnicama, obilaznicama i pojedinim dionicama autocesta, a zastoji i kolone mogući su u zonama radova, osobito tijekom jutra i poslijepodneva na zagrebačkoj obilaznici između čvorova Lučko i Zagreb zapad u oba smjera, autocesti A7 između čvorova Rijeka zapad i Učka u smjeru Rupe te Istarskom ipsilonu (A8) između čvora i tunela Učka. Gužve u prometu teretnih i osobnih vozila očekuju se na pojedini…"
  },
  {
