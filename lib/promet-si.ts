@@ -1,29 +1,51 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-30T16:49:13.451Z";
+export const PROMET_SI_UPDATED = "2026-10-30T21:11:59.011Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Šentilj v smeri Maribora, dela, zaprt prehitevalni pas, promet poteka po dveh zožanih pasovih.",
-  "loc": "A1-E57, E59, Šentilj - Maribor",
-  "lat": 46.68921,
-  "lng": 15.64654,
-  "start": "2026-04-13T12:05:47.197Z",
-  "end": "2026-11-15T22:59:00Z",
-  "ts": "2026-10-30T16:19:59.117Z"
- },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Šentilj, krožišče Pesnica - priključek Šentilj v smeri Šentilja, Avstrije, dela, zaprt prehitevalni pas, promet poteka po dveh zožanih pasovih.",
+  "desc": "A1, Maribor - Šentilj, krožišče Pesnica - priključek Šentilj v smeri Šentilja, Avstrije, dela, promet poteka po dveh zoženih pasovih.",
   "loc": "A1-E57, E59, Maribor - Šentilj",
   "lat": 46.64675,
   "lng": 15.64951,
   "start": "2026-04-13T10:27:58.043Z",
   "end": "2026-11-15T22:59:00Z",
-  "ts": "2026-10-30T16:18:20.88Z"
+  "ts": "2026-10-30T19:15:16.737Z"
+ },
+ {
+  "id": "DARS;844117;3eea2b2f-d968-4d2a-b3fb-9a52fc708ddd",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Šentilj v smeri Maribora, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E57, E59, Šentilj - Maribor",
+  "lat": 46.68921,
+  "lng": 15.64654,
+  "start": "2026-04-13T12:05:47.197Z",
+  "end": "2026-11-15T22:59:00Z",
+  "ts": "2026-10-30T19:15:03.187Z"
+ },
+ {
+  "id": "DARS;886441;09d71e8f-7f5c-416e-8ad6-84640e448e13",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - zahodna obvoznica, razcep Kozarje - izvoz 37 Brezovica iz smeri Brda proti Brezovici, dela, zaprt počasni pas.",
+  "loc": "A2-E61, Ljubljana - zah. obvoznica",
+  "lat": 46.04022,
+  "lng": 14.44817,
+  "start": "2026-10-30T18:02:55.017Z",
+  "end": "2026-10-30T22:50:36.93Z",
+  "ts": "2026-10-30T18:02:59.163Z"
+ },
+ {
+  "id": "DARS;886302;2613bc99-2ef1-4a0d-9b06-689c0eea4efb",
+  "type": "MaintenanceWorks",
+  "desc": "G1-11, Škofije - Koper, razcep Srmin - uvoz Bertoki v smeri Kopra, dela, oviran promet.",
+  "loc": "G1-11, Škofije - Koper",
+  "lat": 45.54982,
+  "lng": 13.77223,
+  "start": "2026-10-30T06:35:10.61Z",
+  "end": "2026-11-01T06:00:00Z",
+  "ts": "2026-10-30T17:28:49.853Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -136,17 +158,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-30T07:28:11.393Z"
  },
  {
-  "id": "DARS;886309;81eceac4-5882-40e3-a316-ae4352b83a3e",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-716, Grad - Kuzma, pri Kuzmi, dela, izmenično enosmerni promet, pomična zapora, do 18:00.",
-  "loc": "R3-716, Grad - Kuzma",
-  "lat": 46.81986,
-  "lng": 16.0883,
-  "start": "2026-10-30T06:58:56.22Z",
-  "end": "2026-10-30T17:00:00Z",
-  "ts": "2026-10-30T07:00:14.78Z"
- },
- {
   "id": "DARS;884244;134f7c3d-441c-4660-8710-e0561e352fb6",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R1-207, Col - Ajdovščina, pri Colu, izmenično enosmerni promet, popravilo zidu, do 15. 11. 2026, dnevno med 7. in 17. uro.",
@@ -156,17 +167,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-19T06:00:34.64Z",
   "end": "2026-11-15T16:00:00Z",
   "ts": "2026-10-30T06:36:39.933Z"
- },
- {
-  "id": "DARS;886302;2613bc99-2ef1-4a0d-9b06-689c0eea4efb",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, razcep Srmin - uvoz Bertoki v smeri Kopra, dela, oviran promet.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.54982,
-  "lng": 13.77223,
-  "start": "2026-10-30T06:35:10.61Z",
-  "end": "2026-10-31T06:00:02.877Z",
-  "ts": "2026-10-30T06:35:18.17Z"
  },
  {
   "id": "DARS;886263;a8984756-60cf-4cb6-bdd3-74b0073b8522",
