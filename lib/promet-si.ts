@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-31T10:00:24.900Z";
+export const PROMET_SI_UPDATED = "2026-10-31T15:42:43.638Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;886469;349d9015-5e36-46db-8d3a-bb55181689e1",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, oviran promet.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.93474,
+  "lng": 14.80696,
+  "start": "2026-10-31T06:24:48.243Z",
+  "end": "2026-10-31T16:00:00Z",
+  "ts": "2026-10-31T14:56:25.583Z"
+ },
+ {
+  "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-203, Predel - Bovec, pri trdnjavi Kluže, izmenično enosmerni promet, sanacija brežine, do 24. 12. 2026. Popolne zapore vsak dan med 8. in 14.30. uro. To soboto in nedeljo popolne zapore ne bo.",
+  "loc": "R1-203, Predel - Bovec",
+  "lat": 46.36006,
+  "lng": 13.58984,
+  "start": "2026-10-05T07:34:00Z",
+  "end": "2026-12-24T16:00:00Z",
+  "ts": "2026-10-31T13:30:57.307Z"
+ },
+ {
+  "id": "DARS;831671;3f4960c9-4c68-4720-9572-5468562fdc5a",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "G2-105, Novo mesto - Metlika, v Bereči vasi, izmenično enosmerni promet, poškodovana bankina, do 31. 12. 2026.",
+  "loc": "G2-105, Nm (Revoz) - Metlika",
+  "lat": 45.69012,
+  "lng": 15.26904,
+  "start": "2026-01-24T08:24:07.857Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-10-31T10:53:28.203Z"
+ },
  {
   "id": "DARS;885456;41a4112d-5eee-4e51-b038-7a25e8df0657",
   "type": "MaintenanceWorks",
@@ -48,17 +81,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-31T07:09:47.527Z"
  },
  {
-  "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-203, Predel - Bovec, pri trdnjavi Kluže, izmenično enosmerni promet, sanacija brežine, do 24. 12. 2026. Popolne zapore vsak dan med 8. in 14.30. uro. To soboto in nedeljo popolne zapore ne bo.",
-  "loc": "R1-203, Predel - Bovec",
-  "lat": 46.36006,
-  "lng": 13.58984,
-  "start": "2026-10-05T07:34:00Z",
-  "end": "2026-12-24T16:00:00Z",
-  "ts": "2026-10-31T07:00:30.137Z"
- },
- {
   "id": "DARS;886473;d7b98624-071e-425a-ab7a-3109e38f5bdf",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-926, Solčava - Podolševa - Sleme, izmenično enosmerni promet, pomična zapora, čiščenje jarkov.",
@@ -68,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-31T06:39:28.15Z",
   "end": "2026-10-31T22:59:00Z",
   "ts": "2026-10-31T06:40:17.973Z"
- },
- {
-  "id": "DARS;886469;349d9015-5e36-46db-8d3a-bb55181689e1",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.93474,
-  "lng": 14.80696,
-  "start": "2026-10-31T06:24:48.243Z",
-  "end": "2026-10-31T14:00:18.173Z",
-  "ts": "2026-10-31T06:24:51.41Z"
  },
  {
   "id": "DARS;846501;6ba6dd34-6cb3-440b-9c31-7a5b525c87e4",
@@ -156,17 +167,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-10T12:26:23.617Z",
   "end": "2026-11-10T18:00:00Z",
   "ts": "2026-10-30T12:08:25.47Z"
- },
- {
-  "id": "DARS;831671;3f4960c9-4c68-4720-9572-5468562fdc5a",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-105, Novo mesto - Metlika, v Bereči vasi, izmenično enosmerni promet, poškodovana bankina, do 2. 11. 2026.",
-  "loc": "G2-105, Nm (Revoz) - Metlika",
-  "lat": 45.69012,
-  "lng": 15.26904,
-  "start": "2026-01-24T08:24:07.857Z",
-  "end": "2026-11-02T22:59:00Z",
-  "ts": "2026-10-30T08:58:54.587Z"
  },
  {
   "id": "DARS;882906;ee887bfc-2984-4a41-b598-b8d6e151405a",
