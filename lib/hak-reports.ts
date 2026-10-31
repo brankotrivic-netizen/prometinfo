@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "30.10.2026. 22:06",
+  "updated": "30.10.2026. 23:03",
   "text": "Za sve skupine vozila otvoreni su: autocesta A1 Zagreb-Split-Dubrovnik (na dionici tunel Sveti Rok-tunel Čelinka vozi se uz ograničenje brzine od 40 km/h) autocesta A6 Rijeka-Zagreb Paški most Krčki most Most dr. Franja Tuđmana u Dubrovniku U priobalju puše bura i ograničenja su za određene skupine vozila na pojedinim cestama ( vidjeti niže u popisu cesta! ). Kolnici su mjestimice mokri ili samo vlažni i skliski u Lici. Vo začima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog ulja na kolniku na državnoj cesti Korenica-Gospić (DC25) između Korenice i mjesta Vrpile vozi se uz ograničenje brzine…"
  },
  {
