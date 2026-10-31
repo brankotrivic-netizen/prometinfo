@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-31T15:42:43.638Z";
+export const PROMET_SI_UPDATED = "2026-10-31T19:32:45.331Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;886469;349d9015-5e36-46db-8d3a-bb55181689e1",
+  "id": "DARS;886519;386ce308-842f-465d-a458-cd6b2a453b0c",
   "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, oviran promet.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.93474,
-  "lng": 14.80696,
-  "start": "2026-10-31T06:24:48.243Z",
-  "end": "2026-10-31T16:00:00Z",
-  "ts": "2026-10-31T14:56:25.583Z"
+  "desc": "A1, Maribor - Ljubljana, uvoz Maribor jug - uvoz Sl. Konjice iz smeri Hoč proti Ljubljani, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.49126,
+  "lng": 15.65248,
+  "start": "2026-10-31T18:56:28.707Z",
+  "end": "2026-11-01T01:30:53.65Z",
+  "ts": "2026-10-31T18:56:37.233Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-10-31T16:00:16.583Z"
  },
  {
   "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
@@ -90,17 +101,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-31T06:39:28.15Z",
   "end": "2026-10-31T22:59:00Z",
   "ts": "2026-10-31T06:40:17.973Z"
- },
- {
-  "id": "DARS;846501;6ba6dd34-6cb3-440b-9c31-7a5b525c87e4",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-221, Zagorje - Bevško, v Zagorju ob Savi, na Cesti 9. avgusta, izmenično enosmerni promet, obnova objekta (postavitev odra), do 17:00.",
-  "loc": "R1-221, Zagorje - Bevško",
-  "lat": 46.13411,
-  "lng": 14.99729,
-  "start": "2026-04-24T05:33:24.433Z",
-  "end": "2026-10-31T16:00:00Z",
-  "ts": "2026-10-31T04:33:03.143Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -1058,17 +1058,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-12T09:46:51.487Z",
   "end": "2027-06-16T21:59:00Z",
   "ts": "2026-08-31T06:20:19.637Z"
- },
- {
-  "id": "DARS;836625;55ab8954-f89b-4044-914f-7e65be3f98cc",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G1-2, Slovenska Bistrica - Pragersko, pri AC priključku Slovenska Bistrica sever, izmenično enosmerni promet, kratkotrajne popolne zapore (do 15 minut), novogradnje AC viadukta Devina, do 31. 10. 2026.",
-  "loc": "G1-2, Slovenska Bistrica - Pragersko",
-  "lat": 46.3989,
-  "lng": 15.60226,
-  "start": "2026-07-06T05:00:00Z",
-  "end": "2026-10-31T18:00:00Z",
-  "ts": "2026-08-29T16:00:08.693Z"
  },
  {
   "id": "DARS;834710;ea6e85b0-2c26-45f2-a80f-5b62d32baeb0",
