@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-31T19:32:45.331Z";
+export const PROMET_SI_UPDATED = "2026-10-31T22:49:05.103Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;886519;386ce308-842f-465d-a458-cd6b2a453b0c",
+  "id": "DARS;874905;8ac4a3f8-0a07-45b2-8f0c-89c673335399",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Maribor jug - uvoz Sl. Konjice iz smeri Hoč proti Ljubljani, dela, oviran promet.",
+  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica jug - priključek Sl. Bistrica sever v smeri Maribora, dela, promet poteka po dveh zoženih pasovih.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.38361,
+  "lng": 15.57464,
+  "start": "2026-09-06T13:21:39.91Z",
+  "end": "2026-11-30T22:59:00Z",
+  "ts": "2026-10-31T21:57:43.027Z"
+ },
+ {
+  "id": "DARS;874696;31cf39f2-c9d7-4bef-9c5c-00dc4978b05f",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
   "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.49126,
-  "lng": 15.65248,
-  "start": "2026-10-31T18:56:28.707Z",
-  "end": "2026-11-01T01:30:53.65Z",
-  "ts": "2026-10-31T18:56:37.233Z"
+  "lat": 46.39756,
+  "lng": 15.60151,
+  "start": "2026-09-05T05:52:50.317Z",
+  "end": "2026-11-30T22:00:00Z",
+  "ts": "2026-10-31T21:56:39.113Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -433,17 +444,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-10-21T04:25:37.663Z"
  },
  {
-  "id": "DARS;874905;8ac4a3f8-0a07-45b2-8f0c-89c673335399",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica jug - priključek Sl. Bistrica sever v smeri Maribora, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.38361,
-  "lng": 15.57464,
-  "start": "2026-09-06T13:21:39.91Z",
-  "end": "2026-10-31T22:59:00Z",
-  "ts": "2026-10-20T19:03:48.053Z"
- },
- {
   "id": "DARS;759775;bbad9525-3d72-4f31-93a6-15e8c29c3e18",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-103, Nova Gorica - Tolmin, pri Doblarju na dveh lokacijah, izmenično enosmerni promet, rekonstrukcija 110 kV stikališča HE Doblar in sanacija podpornih vencev in zidov, do 29. 12. 2026.",
@@ -783,17 +783,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-07-05T17:05:19.937Z",
   "end": "2026-11-16T14:00:00Z",
   "ts": "2026-10-03T18:53:58.453Z"
- },
- {
-  "id": "DARS;874696;31cf39f2-c9d7-4bef-9c5c-00dc4978b05f",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, promet poteka po dveh zoženih pasovih.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.39756,
-  "lng": 15.60151,
-  "start": "2026-09-05T05:52:50.317Z",
-  "end": "2026-10-31T22:00:00Z",
-  "ts": "2026-10-03T14:01:14.59Z"
  },
  {
   "id": "DARS;880552;06270a9d-ac1d-47ea-a2fb-a8e757c274f1",
