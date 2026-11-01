@@ -1,8 +1,74 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-10-31T22:49:05.103Z";
+export const PROMET_SI_UPDATED = "2026-11-01T10:52:27.544Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;886555;93b66736-4bbf-49f1-9543-98929cbc9781",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, uvoz Črni Kal - predor Kastelec v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 45.55307,
+  "lng": 13.85783,
+  "start": "2026-11-01T10:44:25.603Z",
+  "end": "2026-11-01T12:00:48.31Z",
+  "ts": "2026-11-01T10:44:27.507Z"
+ },
+ {
+  "id": "DARS;885312;960b9d0f-3335-4f14-a4fc-17a14f618c52",
+  "type": "MaintenanceWorks",
+  "desc": "Ljubljana, Barjanska cesta, med Rihtarjevo ulico in Cesto dveh cesarjev, oviran promet, rekonstrukcija ceste, do 2. 11. 2026.",
+  "loc": "LG-211040, Barjanska cesta",
+  "lat": 46.03665,
+  "lng": 14.49995,
+  "start": "2026-10-24T03:52:33.493Z",
+  "end": "2026-11-02T22:59:00Z",
+  "ts": "2026-11-01T09:02:24.153Z"
+ },
+ {
+  "id": "DARS;886541;7ac328ae-b773-4d8d-b9e3-fbab9a87a1d3",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Karavanke - Ljubljana, priključek Kranj zahod - priključek Kranj vzhod v smeri Ljubljane, dela, zaprt odstavni pas.",
+  "loc": "A2-E61, Karavanke - Ljubljana",
+  "lat": 46.26312,
+  "lng": 14.34986,
+  "start": "2026-11-01T08:31:04.233Z",
+  "end": "2026-11-01T14:00:00Z",
+  "ts": "2026-11-01T08:31:18.777Z"
+ },
+ {
+  "id": "DARS;886532;66fb695e-287b-4830-853d-ba0c19bc34c4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Logatec - priključek Vrhnika v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.91198,
+  "lng": 14.2601,
+  "start": "2026-11-01T07:30:41.84Z",
+  "end": "2026-11-01T13:00:00Z",
+  "ts": "2026-11-01T07:31:36.597Z"
+ },
+ {
+  "id": "DARS;886530;6809188b-8f60-446e-9bdf-85becad98ccf",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Konjice - priključek Žalec, Arja vas v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.33812,
+  "lng": 15.47531,
+  "start": "2026-11-01T07:14:07.877Z",
+  "end": "2026-11-01T16:00:40.727Z",
+  "ts": "2026-11-01T07:14:12.657Z"
+ },
+ {
+  "id": "DARS;886527;46960130-e644-48d2-8d08-f41d158f5dff",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, zaprt odstavni pas.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.93455,
+  "lng": 14.81481,
+  "start": "2026-11-01T05:59:06.89Z",
+  "end": "2026-11-01T17:00:00Z",
+  "ts": "2026-11-01T05:59:22.377Z"
+ },
  {
   "id": "DARS;874905;8ac4a3f8-0a07-45b2-8f0c-89c673335399",
   "type": "MaintenanceWorks",
@@ -24,17 +90,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-05T05:52:50.317Z",
   "end": "2026-11-30T22:00:00Z",
   "ts": "2026-10-31T21:56:39.113Z"
- },
- {
-  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 45.96375,
-  "lng": 15.5243,
-  "start": "2025-10-02T05:56:02.493Z",
-  "end": "2026-12-31T22:59:00Z",
-  "ts": "2026-10-31T16:00:16.583Z"
  },
  {
   "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
@@ -101,17 +156,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-31T07:06:02.763Z",
   "end": "2026-11-06T22:59:00Z",
   "ts": "2026-10-31T07:09:47.527Z"
- },
- {
-  "id": "DARS;886473;d7b98624-071e-425a-ab7a-3109e38f5bdf",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "RT-926, Solčava - Podolševa - Sleme, izmenično enosmerni promet, pomična zapora, čiščenje jarkov.",
-  "loc": "RT-926, Solčava - Podolševa - Sleme",
-  "lat": 46.43934,
-  "lng": 14.73173,
-  "start": "2026-10-31T06:39:28.15Z",
-  "end": "2026-10-31T22:59:00Z",
-  "ts": "2026-10-31T06:40:17.973Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -332,17 +376,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-25T06:16:34.97Z",
   "end": "2027-02-11T22:59:00Z",
   "ts": "2026-10-29T07:11:19.673Z"
- },
- {
-  "id": "DARS;885312;960b9d0f-3335-4f14-a4fc-17a14f618c52",
-  "type": "MaintenanceWorks",
-  "desc": "Ljubljana, Barjanska cesta, med Rihtarjevo ulico in Cesto dveh cesarjev, oviran promet, rekonstrukcija ceste, do 2. 11. 2026.",
-  "loc": "LG-211040, Barjanska cesta",
-  "lat": 46.03665,
-  "lng": 14.49995,
-  "start": "2026-10-24T03:52:33.493Z",
-  "end": "2026-11-02T22:59:00Z",
-  "ts": "2026-10-29T06:53:15.01Z"
  },
  {
   "id": "DARS;884513;cbfcb65a-f27c-460a-867a-ac76b4486120",
