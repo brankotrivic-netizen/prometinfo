@@ -3,32 +3,32 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "2.11.2026. 00:08",
-  "text": "Zbog vjetra, samo za osobna vozila otvoreni su: na autocesti A1 Zagreb-Split-Dubrovnik dionica između čvorova Sveti Rok i Posedarje. Obilazak za ostale skupine vozila je državnim cestama preko Gračaca, Obrovca i Karina na autocesti A6 Rijeka-Zagreb dionica između čvorova Kikovica i Delnice. Obilazak za ostale skupine vozila je državnom cestom-DC3 Paški most Jadranska magistrala (DC8) između Senja i Svete Marije Magdalene državna cesta DC54 Maslenica-Zaton Obrovački Otok Pag : prema otoku i obrnuto mogu prometovati samo osobna vozila preko Paškog mosta (trajektna linija u prekidu, a most otvoren samo za osobna vozila zbog vjetra) Kolnici su mjestimice mokri ili samo vlažni i skliski od kiše. …"
+  "updated": "2.11.2026. 12:46",
+  "text": "Zbog orkanskog vjetra autocesta A1 između čvorova Sveti Rok i Posedarje zatvorena je za sve skupine vozila, preporuka za obilazak je državnim cestama preko Gračaca, Obrovca i Karina (DC50-DC27). Samo za osobna vozila otvoreni su: autocesta A6 Rijeka-Zagreb između čvorova Kikovica i Delnice, obilazak za ostale skupine je državnom cestom kroz Gorski kotar (DC3) Paški most Jadranska magistrala (DC8) između Senja i Svete Marije Magdalene državna cesta Maslenica-Zaton Obrovački (DC54) Kolnici su mokri ili vlažni i skliski u većem dijelu zemlje. Zbog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju (vidjeti niže u izvješću! ). Mogući su odroni. U prekidu su pojedine trajektne, k…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "2.11.2026. 00:08",
+  "updated": "2.11.2026. 12:28",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "2.11.2026. 00:08",
-  "text": "Zbog vjetra u prekidu su: trajektne linije: Stinica-Mišnjak i Prizna-Žigljen katamaranske linije: Rijeka-Rab-Novalja, Rijeka-Cres-Mali Lošinj, Pula-Zadar i Olib-Silba-Premuda-Zadar brodska linija Mali Lošinj-Unije-Susak Linije u prekidu dana 2. studenog: trajektna linija: Zadar/Gaženica - Ist/Kosirača - Olib - Silba - Premuda/Krijal - Mali Lošinj (ako vremenski uvjeti dopuste putovanje će se održati u utorak, 03. studenog) katamaranske linije: Novalja-Rab-Rijeka, Mali Lošinj-Cres-Rijeka i Pula-Zadar Izmjene u redu plovidbe: 1. studenog, katamaran na liniji 9403 Ist/Široka-Zapuntel-Brgulje-Molat-Zadar s polaskom iz luke Ist/Široka u 17:30 sati i s polaskom iz luke Zadar u 19:30 sati plovi bez…"
+  "updated": "2.11.2026. 12:39",
+  "text": "Zbog vjetra u prekidu su: trajektne linije: Prizna-Žigljen i Zadar/Gaženica-Ist/Kosirača-Olib-Silba-Premuda/Krijal-Mali Lošinj, Trogir-Drvenik Mali-Drvenik Veli s polaskom iz luke Trogir u 19:30, Ploče-Trpanj katamaranske linije: Novalja-Rab-Rijeka , Mali Lošinj-Cres-Rijeka , Pula-Zadar, Olib-Silba-Premuda-Zadar, Split-Stari Grad-Split, Šibenik-Kaprije-Žirje, Split-Bol-Jelsa , Split-Omiš-Postira-Pučišća (povratno putovanje) brodska linija Mali Lošinj-Unije-Susak Izmjene u redu plovidbe: trajektna linija 532 Šibenik-Kaprije-Žirje bez pristajanja u luku Žirje katamaranska linija 9403 Zadar-Molat-Brgulje-Zapuntel-Ist bez pristajanja u luku Zapuntel 2. studenog, uvodi se dodatno polazno-povratno…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "1.11.2026. 16:45",
-  "text": "Stanje u željezničkom putničkom prometu Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupanja od voznog reda moguća su na…"
+  "updated": "2.11.2026. 08:13",
+  "text": "Stanje u željezničkom putničkom prometu 2. studenoga 2026. u 8.00 sati Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupa…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "1.11.2026. 16:45",
+  "updated": "2.11.2026. 05:12",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "1.11.2026. 16:46",
+  "updated": "2.11.2026. 05:12",
   "text": "Prometna prognoza za Hrvatsku za 02. studenoga 2026. Kiša i mokri kolnici usporavat će promet na većini cesta. U najvišim predjelima može biti susnježice ili snijega. Zbog niskih jutarnjih temperatura na vlažnim cestama u unutrašnjosti moguća je poledica. Pozivamo vozače da smanje brzinu i povećaju razmak između vozila, a obavezno je i danju voziti s uključenim kratkim svjetlima. Zbog jake bure s olujnim udarima bit će poteškoća u cestovnom i pomorskom prometu te zabrane prometa za pojedine skupine vozila na Jadranskoj magistrali (DC8) podno Velebita. Zbog promjenjive vremenske situacije pratite aktualne informacije o stanju u prometu na mrežnim stranicama ili mobilnoj aplikaciji HAK-a. U zo…"
  },
  {
