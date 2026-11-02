@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "1.11.2026. 21:37",
+  "updated": "2.11.2026. 00:08",
   "text": "Zbog vjetra, samo za osobna vozila otvoreni su: na autocesti A1 Zagreb-Split-Dubrovnik dionica između čvorova Sveti Rok i Posedarje. Obilazak za ostale skupine vozila je državnim cestama preko Gračaca, Obrovca i Karina na autocesti A6 Rijeka-Zagreb dionica između čvorova Kikovica i Delnice. Obilazak za ostale skupine vozila je državnom cestom-DC3 Paški most Jadranska magistrala (DC8) između Senja i Svete Marije Magdalene državna cesta DC54 Maslenica-Zaton Obrovački Otok Pag : prema otoku i obrnuto mogu prometovati samo osobna vozila preko Paškog mosta (trajektna linija u prekidu, a most otvoren samo za osobna vozila zbog vjetra) Kolnici su mjestimice mokri ili samo vlažni i skliski od kiše. …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "1.11.2026. 21:47",
+  "updated": "2.11.2026. 00:08",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "1.11.2026. 21:31",
+  "updated": "2.11.2026. 00:08",
   "text": "Zbog vjetra u prekidu su: trajektne linije: Stinica-Mišnjak i Prizna-Žigljen katamaranske linije: Rijeka-Rab-Novalja, Rijeka-Cres-Mali Lošinj, Pula-Zadar i Olib-Silba-Premuda-Zadar brodska linija Mali Lošinj-Unije-Susak Linije u prekidu dana 2. studenog: trajektna linija: Zadar/Gaženica - Ist/Kosirača - Olib - Silba - Premuda/Krijal - Mali Lošinj (ako vremenski uvjeti dopuste putovanje će se održati u utorak, 03. studenog) katamaranske linije: Novalja-Rab-Rijeka, Mali Lošinj-Cres-Rijeka i Pula-Zadar Izmjene u redu plovidbe: 1. studenog, katamaran na liniji 9403 Ist/Široka-Zapuntel-Brgulje-Molat-Zadar s polaskom iz luke Ist/Široka u 17:30 sati i s polaskom iz luke Zadar u 19:30 sati plovi bez…"
  },
  {
