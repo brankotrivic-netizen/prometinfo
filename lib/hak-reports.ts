@@ -3,23 +3,23 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "3.11.2026. 03:25",
-  "text": "Zbog orkanskog vjetra za sve skupine vozila zatvoreni su: autocesta A1 između čvorova Sveti Rok i Posedarje, obilazak samo za osobna vozila je: čvor Zadar istok (A1)-DC27 Karin-Obrovac-Gračac-DC50 čvor Sveti Rok (A1), a za sve ostale skupine: čvor Benkovac (A1)-DC59-Kistanje-DC1 Knin-Gračac-DC50-čvor Sveti Rok (A1) državna cesta Maslenica-Zaton Obrovački (DC54), Jadranska magistrala (DC8) između Senja i Svete Marije Magdalene Paški most (DC106) Samo za osobna vozila otvoreni su: autocesta A6 Rijeka-Zagreb između čvorova Kikovica i Delnice, obilazak za ostale skupine je državnom cestom kroz Gorski kotar (DC3) DC27 Gračac-Donji Karin omiška obilaznica (DC553). Zbog jakog vjetra na Jadranskoj m…"
+  "updated": "3.11.2026. 11:47",
+  "text": "Zbog orkanskog vjetra za sve skupine vozila zatvoreni su: autocesta A1 između čvorova Sveti Rok i Posedarje, obilazak samo za osobna vozila je: čvor Zadar istok (A1)-DC27 Karin-Obrovac-Gračac-DC50 čvor Sveti Rok (A1), a za sve ostale skupine: čvor Benkovac (A1)-DC59-Kistanje-DC1 Knin-Gračac-DC50-čvor Sveti Rok (A1) državna cesta Maslenica-Zaton Obrovački (DC54), Jadranska magistrala (DC8) između Senja i Svete Marije Magdalene Paški most (DC106) Samo za osobna vozila otvoreni su: autocesta A6 Rijeka-Zagreb između čvorova Kikovica i Delnice, obilazak za ostale skupine je državnom cestom kroz Gorski kotar (DC3) državna cesta DC27 Gračac-Donji Karin omiška obilaznica (DC553) Zbog jakog vjetra: n…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "3.11.2026. 03:26",
+  "updated": "3.11.2026. 11:47",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "3.11.2026. 03:26",
-  "text": "Zbog vjetra u prekidu su: trajektne linije : Stinica-Mišnjak, Prizna-Žigljen, Lopar-Valbiska, Zadar/Gaženica-Ist/Kosirača-Olib-Silba-Premuda/Krijal-Mali Lošinj, Trogir-Drvenik Mali-Drvenik Veli s polaskom iz luke Trogir u 19:30, Sumartin-Makarska, Ploče-Trpanj katamaranske linije : Novalja-Rab-Rijeka, Mali Lošinj-Cres-Rijeka, Olib-Silba-Premuda-Zadar, Split-Stari Grad-Split, Šibenik-Kaprije-Žirje, Split-Bol-Jelsa, Split-Omiš-Postira-Pučišća (povratno putovanje). Linije u prekidu 3. studenog: trajektne linije: Ploče-Trpanj, Drvenik Veli - Drvenik Mali - Trogir s polaskom iz luke Drvenik Veli u 06:00 katamaranske linije: Jelsa - Bol - Split, Mali Lošinj-Cres-Rijeka i Novalja-Rab-Rijeka. Izmjen…"
+  "updated": "3.11.2026. 11:47",
+  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: trajektne linije : Prizna-Žigljen, Ploče-Trpanj katamaranske linije : Pučišća-Postira-Omiš-Split (isplovit će od 16:30 sati), Mali Lošinj-Cres-Rijeka i Novalja-Rab-Rijeka Izmjene u redu plovidbe: 3. studenog trajekt Vis-Split će u drugom polaznom putovanju iz luke Vis za luku Split isploviti u 14:30 sati (umjesto u 15:30 sati), a u povratnom putovanju iz luke Split za luku Vis u 19:30 sati (umjesto u 18:30 sati) zbog loših vremenskih prilika dana 03.11.2026. (utorak) brodar uvodi raniji povratak M/B Sv.Salvestar na državnoj liniji br. 612 s polaskom u 12:00h iz uvale Porat > Salbunara> Mezoporat> Luka Komiža. Jadrolinijin red plovidbe za 2026.…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "3.11.2026. 02:23",
-  "text": "Stanje u željezničkom putničkom prometu 2. studenoga 2026. u 8.00 sati Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupa…"
+  "updated": "3.11.2026. 11:47",
+  "text": "Stanje u željezničkom putničkom prometu 3. studenoga 2026. u 8.00 sati Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstupa…"
  },
  {
   "title": "Ograničenja za teretna vozila",
@@ -28,8 +28,8 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "3.11.2026. 00:02",
-  "text": "Prometna prognoza za Hrvatsku za 03. studenog 2026. Zbog olujne bure sutra ujutro očekujemo poteškoće i zabrane za pojedine skupine vozila na cestama u primorju, osobito podno Velebita. Kiša i mokri kolnici usporavat će promet na većini cesta u unutrašnjosti, a u najvišim predjelima može biti susnježice ili snijega. Zbog promjenjive vremenske situacije pratite aktualne informacije o stanju u prometu na mrežnim stranicama ili mobilnoj aplikaciji HAK-a. Gužve i zastoje očekujemo na gradskim prometnicama te na dionicama cesta gdje traju radovi. Čekanja u putničkom prometu očekujemo na graničnim prijelazima Gornji Varoš, Ličko Petrovo Selo, Svilaj, Bajakovo, Karasovići i Tovarnik. U pomorskom pr…"
+  "updated": "3.11.2026. 10:40",
+  "text": "Prometna prognoza za Hrvatsku za 04. studenoga 2026. Kiše će još prijepodne biti u Lici i Gorskom kotaru. Pozivamo vozače da u vožnji po mokrim i skliskim kolnicima smanje brzinu i povećaju razmak između vozila, osobito u kolonama. Zbog jake bure s olujnim udarima bit će poteškoća u cestovnom i pomorskom prometu te zabrane prometa za pojedine skupine vozila na Jadranskoj magistrali (DC8) podno Velebita. Zbog promjenjive vremenske situacije pratite aktualne informacije o stanju u prometu na mrežnim stranicama ili mobilnoj aplikaciji HAK-a. U zonama radova i privremene regulacije prometa vozit će se usporeno, u kolonama u pokretu i uz kraće zastoje. Duža čekanja na graničnim prijelazima s Bosn…"
  },
  {
   "title": "Obaveza zimske opreme",

@@ -62,10 +62,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji dva kružna toka (spoj magistralnog puta M-17 sa ulicom Samira Ćatovića Kobre i spoj magistralnog puta M-17 sa ulicom Željeznička-Emira Bogunića Čarlija), saobraćaj je preusmjeren na alternativne pravce. Molimo vozače za oprez i poštivanje privremene signalizacije."
    },
    {
-    "title": "Gromiljak-Blažuj",
-    "text": "Zbog izvođenja radova na sanaciji prijelaza na mostu preko rijeke Lepenice, na samom ulazu u Kiseljak iz pravca Sarajeva (od Paleške ćuprije do kružnog toka), saobraća se usporeno naizmjeničnim propuštanjem vozila."
-   },
-   {
     "title": "Šićki Brod – Tuzla",
     "text": "Od Siporex-a do Bingo City Centra, zbog radova, saobraća se usporeno."
    },
@@ -92,10 +88,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Kaonik-Gromiljak (Kaćuni-Gromiljak)",
     "text": "Zbog sanacionih radova na magistralnoj cesti Kaonik-Gromiljak (Kaćuni-Gromiljak) svaki dan osim nedjelje od 07 do 17 sati saobraća se naizmjenično, jednom trakom (postavljeni semafori)."
-   },
-   {
-    "title": "Odžak-Šamac (Prud)",
-    "text": "Zbog radova u mjestu Prud, na magistralnoj cesti Odžak-Šamac, svakog dana, osim nedjelje, u vremenu od 8 do 16 sati saobraća se usporeno, jednom trakom."
    },
    {
     "title": "Bihać -Ripač",
