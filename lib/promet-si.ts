@@ -1,29 +1,40 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-02T20:58:32.037Z";
+export const PROMET_SI_UPDATED = "2026-11-03T02:45:15.942Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;886790;d093fe0b-e328-4830-aed8-b1a91a0f4e48",
+  "id": "DARS;886810;6c9b00c5-1022-4552-9a13-805ddd171e09",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Kozarje iz smeri Brezovice proti Brdu, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 46.03571,
-  "lng": 14.44892,
-  "start": "2026-11-02T18:43:44.56Z",
-  "end": "2026-11-02T21:30:00Z",
-  "ts": "2026-11-02T18:44:08.04Z"
+  "desc": "A1, Maribor - Ljubljana, pred priključkom Sl. Bistrica jug v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.39022,
+  "lng": 15.58898,
+  "start": "2026-11-02T23:09:38.117Z",
+  "end": "2026-11-03T05:00:00Z",
+  "ts": "2026-11-02T23:09:46.297Z"
  },
  {
-  "id": "DARS;886787;c66d026b-172b-4449-b0c8-743014e82e1f",
+  "id": "DARS;886809;2f683d65-d84c-404c-bde1-2368b2186f59",
   "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "desc": "A1, Maribor - Ljubljana, pred priključkom Krtina v smeri Ljubljane, dela, odstavni pas.",
   "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.39469,
-  "lng": 15.59687,
-  "start": "2026-11-02T18:25:36.713Z",
-  "end": "2026-11-03T00:00:40.813Z",
-  "ts": "2026-11-02T18:25:38.887Z"
+  "lat": 46.15478,
+  "lng": 14.65916,
+  "start": "2026-11-02T23:03:55.857Z",
+  "end": "2026-11-06T22:00:00Z",
+  "ts": "2026-11-02T23:04:19.283Z"
+ },
+ {
+  "id": "DARS;886807;da2e6a23-6dda-474f-87b9-399cc1e39e25",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, razcep Kozarje - razcep Kozarje iz smeri Brezovice proti Brdu, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 46.0357,
+  "lng": 14.44892,
+  "start": "2026-11-02T22:27:33.123Z",
+  "end": "2026-11-03T05:00:00Z",
+  "ts": "2026-11-02T22:28:02.363Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
