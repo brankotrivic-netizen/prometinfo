@@ -3,18 +3,18 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "3.11.2026. 19:22",
+  "updated": "4.11.2026. 00:25",
   "text": "Za sve skupine vozila otvoreni su: autocesta A6 Rijeka-Zagreb između čvorova Kikovica i Delnice državna cesta DC27 Gračac-Donji Karin Zbog olujnog vjetra samo za osobna vozila otvoreni su: autocesta A1 između čvorova Sveti Rok i Posedarje, preporučeni obilazak za ostale skupine vozila iz smjera juga prema unutrašnjosti - silazak na čvoru Zadar Istok (A1) - D424 (čvor Tromilja) - D424 (Benkovac) - D56 (čvor Tromilja) - D502 (Smilčić-Pridraga) - D27 (Karin-Obrovac-Gračac) - D50 - čvor Sveti Rok (A1) te obrnuto za vozila koja se kreću iz smjera unutrašnjosti prema jugu Jadranska magistrala (DC8) između Karlobaga i Svete Marije Magdalene državna cesta DC54 Maslenica-Zaton Obrovački Paški most (D…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "3.11.2026. 19:13",
+  "updated": "4.11.2026. 00:25",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "3.11.2026. 19:13",
-  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: trajektne linije : Prizna-Žigljen katamaranske linije : Mali Lošinj-Cres-Rijeka i Novalja-Rab-Rijeka Izmjene u redu plovidbe: trajektnu liniju 633 Ploče-Trpanj od 17:15 s polaskom iz Trpnja preuzima trajekt Sv. Krševan umjesto Sv. Juraja 3. studenog trajekt Vis-Split će u drugom polaznom putovanju iz luke Vis za luku Split isploviti u 14:30 sati (umjesto u 15:30 sati), a u povratnom putovanju iz luke Split za luku Vis u 19:30 sati (umjesto u 18:30 sati) linija 9603 Split-Bol-Jelsa obavit će putovanje bez pristajanja u luci Bol i luci Jelsa. Polazak iz luke Split je u 16:30 sati 4. studenog katamaranska linija 9603 Jelsa - Bol - Split s polasko…"
+  "updated": "4.11.2026. 00:25",
+  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: trajektne linije : Prizna-Žigljen katamaranske linije : Mali Lošinj-Cres-Rijeka i Novalja-Rab-Rijeka Izmjene u redu plovidbe: 4. studenog katamaranska linija 9603 Jelsa - Bol - Split s polaskom iz luke Jelsa u 06:00 isploviti će iz luke Stari Grad. Informacija o uplovu u luku Bol će biti dostupna 45 minuta prije polaska katamarana ovisno o vremenskim neprilikama Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvats…"
  },
  {
   "title": "Željeznički promet",
