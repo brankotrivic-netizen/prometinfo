@@ -1,29 +1,51 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-04T18:51:57.120Z";
+export const PROMET_SI_UPDATED = "2026-11-05T00:01:57.726Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;887217;b730ec71-e4bf-447e-91ee-4237cc7c1928",
+  "id": "DARS;887228;ff6ca7ea-16ae-4edd-b84b-f607ab843b3d",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Unec v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.81473,
-  "lng": 14.28628,
-  "start": "2026-11-04T17:20:43.04Z",
-  "end": "2026-11-04T22:55:00Z",
-  "ts": "2026-11-04T18:49:29.023Z"
- },
- {
-  "id": "DARS;887219;452775c7-8701-4854-9f26-9de9b599fd64",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "desc": "A1, Maribor - Ljubljana, priključek Sl. Bistrica sever - priključek Sl. Bistrica jug v smeri Ljubljane, dela, zaprt vozni pas.",
   "loc": "A1-E57, Maribor - Ljubljana",
   "lat": 46.39905,
   "lng": 15.60378,
-  "start": "2026-11-04T18:37:13.477Z",
-  "end": "2026-11-04T22:59:05.16Z",
-  "ts": "2026-11-04T18:37:17.183Z"
+  "start": "2026-11-04T21:36:15.793Z",
+  "end": "2026-11-05T03:00:05.16Z",
+  "ts": "2026-11-04T21:36:21.537Z"
+ },
+ {
+  "id": "DARS;887224;4f809c77-cc61-4c4d-b88f-05d5079826be",
+  "type": "MaintenanceWorks",
+  "desc": "G2-108, Ljubljana - Litija, v Litiji, na Zasavski cesti, dela, oviran promet, do 6. 11. 2026.",
+  "loc": "G2-108, Ribče - Litija",
+  "lat": 46.05681,
+  "lng": 14.82921,
+  "start": "2026-11-04T20:29:10.083Z",
+  "end": "2026-11-06T22:59:00Z",
+  "ts": "2026-11-04T20:41:32.123Z"
+ },
+ {
+  "id": "DARS;887223;646025c8-1dd7-4fd9-bd2f-94a6a1be7bb6",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Krtina - priključek Domžale v smeri Ljubljane, dela, odstavni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.15067,
+  "lng": 14.64264,
+  "start": "2026-11-04T19:05:35.553Z",
+  "end": "2026-11-11T22:00:00Z",
+  "ts": "2026-11-04T20:12:16.067Z"
+ },
+ {
+  "id": "DARS;887221;c0705d97-0631-47a8-a1c5-4bba99e4d974",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, priključek Unec v smeri Ljubljane, dela, pomična zapora prehitevalnega pasu.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.82354,
+  "lng": 14.28671,
+  "start": "2026-11-04T19:33:48.24Z",
+  "end": "2026-11-05T04:00:00Z",
+  "ts": "2026-11-04T19:33:52.787Z"
  },
  {
   "id": "DARS;887142;29075cf7-f0c9-473f-a8df-0e88711c89d7",
@@ -112,17 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-04T05:41:08.46Z",
   "end": "2026-11-30T11:00:00Z",
   "ts": "2026-11-04T05:41:46.76Z"
- },
- {
-  "id": "DARS;886913;857c6339-c6b0-42d4-aee3-4a4f132bfac4",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-647, Grosuplje - Mlačevo, pri Velikem Mlačevem, izmenično enosmerni promet, vzdrževalna dela, do 4. 11. 2026.",
-  "loc": "R3-647, Grosuplje - Mlačevo",
-  "lat": 45.94064,
-  "lng": 14.67146,
-  "start": "2026-11-03T08:31:49.557Z",
-  "end": "2026-11-04T22:59:00Z",
-  "ts": "2026-11-03T08:32:09.777Z"
  },
  {
   "id": "DARS;886263;a8984756-60cf-4cb6-bdd3-74b0073b8522",

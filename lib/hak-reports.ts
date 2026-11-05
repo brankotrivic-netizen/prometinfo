@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "4.11.2026. 19:41",
-  "text": "Kolnici su mjestimice mokri ili samo vlažni i skliski. Zbog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju ( vidjeti niže u izvješću ). Mogući su odroni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog nafte na kolniku na državnoj cesti DC23 između mjesta Žuta Lokva i Senj vozi se uz ograničenje brzine od 40 km/h zbog nafte na kolniku na državnoj cesti DC30 između mjesta Blinja i Hrvatska Kostajnica vozi se usporeno Podsjećamo vozače da je sukladno članku 102. Zakona o sigurnosti prometa na cestama (NN 70/2019) od 1. studenog do 31. ožujka i danju na motornim vozi…"
+  "updated": "5.11.2026. 00:54",
+  "text": "Kolnici su mjestimice mokri ili samo vlažni i skliski. Zbog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju ( vidjeti niže u izvješću ). Mogući su odroni. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog nafte na kolniku na državnoj cesti DC23 između mjesta Žuta Lokva i Senj vozi se uz ograničenje brzine od 40 km/h zbog nafte na kolniku na državnoj cesti DC30 između mjesta Blinja i Hrvatska Kostajnica vozi se usporeno Radovi noćas 4./5. studenog: do 4:00 sata ujutro zbog vježbe u tunelu Vrtlinovec prekinut je promet između čvorova Varaždin i Novi Marof uključujući i…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "4.11.2026. 19:41",
+  "updated": "5.11.2026. 00:54",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "4.11.2026. 19:41",
+  "updated": "5.11.2026. 00:54",
   "text": "U pomorskom prometu nema poteškoća. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
   "title": "Željeznički promet",
-  "updated": "4.11.2026. 19:41",
+  "updated": "5.11.2026. 00:54",
   "text": "Stanje u željezničkom putničkom prometu 4. studenoga 2026. u 8.00 sati Zbog tehničkih poteškoća putnici sljedećih vlakova bit će prevezeni autobusima: 4802 Rijeka 10.33 – Permani 11.17 4803 Permani 11.31 – Rijeka 12.13 4804 Rijeka 12.33 – Permani 13.07 4805 Permani 13.18 – Rijeka 13.52 4806 Rijeka 14.40 – Permani 15.14 4807 Permani 15.25 – Rijeka 15.59 4808 Rijeka 16.33 – Permani 17.07 4809 Permani 17.16 – Rijeka 17.50. Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autob…"
  },
  {
