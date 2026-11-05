@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-brod",
-  "name": "Slavonski Brod (Bosanski Brod)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": null,
-  "truckIzlazMin": 60,
-  "truckUlazTxt": "-",
-  "truckIzlazTxt": "1 h",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "",
-  "izlazTsISO": "",
-  "ts": "",
-  "tsISO": ""
- },
- {
   "id": "hr-bajakovo",
   "name": "Bajakovo (Batrovci)",
   "ulazMin": null,
@@ -30,9 +10,9 @@ export const HAK_WAITS: HakWait[] = [
   "ulazTxt": "-",
   "izlazTxt": "-",
   "truckUlazMin": null,
-  "truckIzlazMin": 180,
+  "truckIzlazMin": 120,
   "truckUlazTxt": "-",
-  "truckIzlazTxt": "3 h",
+  "truckIzlazTxt": "2 h",
   "level": "unknown",
   "waitMinutes": null,
   "ulazTs": "Nema podataka",
