@@ -54,10 +54,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Jablanica-Blidinje, na dionici Jablanica-Kosne Luke, zbog radova svakog dana (osim nedjelje) od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Skokovi-Srbljani",
-    "text": "Na magistralnoj cesti Skokovi-Srbljani (Kličići), zbog radova na izgradnji pješačke staze svaki dan osim nedjelje od 07 do 17 sati saobraća se naizmjenično, jednom trakom."
-   },
-   {
     "title": "M-17 Ilidža",
     "text": "Zbog radova na izgradnji dva kružna toka (spoj magistralnog puta M-17 sa ulicom Samira Ćatovića Kobre i spoj magistralnog puta M-17 sa ulicom Željeznička-Emira Bogunića Čarlija), saobraćaj je preusmjeren na alternativne pravce. Molimo vozače za oprez i poštivanje privremene signalizacije."
    },
