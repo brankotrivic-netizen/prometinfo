@@ -167,6 +167,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog izgradnje mosta, izmijenjen je režim saobraćaja na mostu preko rijeke Drinjače. Vozila se usmjeravaju preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta."
    },
    {
+    "title": "Visoko-Podlugovi",
+    "text": "Kod betonskog mosta u Visokom, zbog sanacionih radova saobraćaj je potpuno obustavljen. Dok traje obustava alternativni pravac je Čajengradska-Ozrakovići-kružni tok."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
