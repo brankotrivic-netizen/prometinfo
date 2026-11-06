@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-06T18:26:23.209Z";
+export const PROMET_SI_UPDATED = "2026-11-06T23:20:35.301Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;887597;ee5c44fe-87bc-4f01-8cf1-c05a2cf7c6a1",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Obrežje - Ljubljana, predor Mali Vrh - predor Debeli hrib v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A2-E70, Obrežje - Ljubljana",
+  "lat": 45.99595,
+  "lng": 14.58878,
+  "start": "2026-11-06T18:45:54.323Z",
+  "end": "2026-11-08T15:00:45.703Z",
+  "ts": "2026-11-06T18:46:01.307Z"
+ },
+ {
+  "id": "DARS;887596;74029a2e-212f-49fb-b06b-1aa917af164e",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, počivališče Lukovica - priključek Krtina v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.15879,
+  "lng": 14.67749,
+  "start": "2026-11-06T18:33:22.43Z",
+  "end": "2026-11-08T14:00:00Z",
+  "ts": "2026-11-06T18:35:01.4Z"
+ },
+ {
+  "id": "DARS;887595;633c2c5e-57c3-4807-b829-842286d45018",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Obrežje, počivališče Čatež v smeri Obrežja, dela, zaprt izvoz na počivališče.",
+  "loc": "A2-E70, Ljubljana - Obrežje",
+  "lat": 45.89232,
+  "lng": 15.59533,
+  "start": "2026-11-06T18:32:16.387Z",
+  "end": "2026-11-21T00:00:00Z",
+  "ts": "2026-11-06T18:33:22.643Z"
+ },
  {
   "id": "DARS;882691;c91a7193-aca1-489e-bca2-4f47bd2f4737",
   "type": "MaintenanceWorks",
@@ -191,17 +224,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-11-05T07:34:41.433Z"
  },
  {
-  "id": "DARS;887262;0f6699ee-d0eb-41d1-a6f1-36ad41010b3d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-207, Col - Črni Vrh - Godovič, pri Godoviču, izmenično enosmerni promet, pomična zapora, med 7.30 in15.00, do 6. 11. 2026.",
-  "loc": "R1-207, Godovič - Črni Vrh",
-  "lat": 45.95144,
-  "lng": 14.07928,
-  "start": "2026-11-05T06:32:32.067Z",
-  "end": "2026-11-06T22:59:00Z",
-  "ts": "2026-11-05T06:33:46.557Z"
- },
- {
   "id": "DARS;887257;b56775f4-12c7-41f1-8351-e370e8ac638d",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "G2-102, Most na Soči - Bača pri Modreju, v Mostu na Soči, izmenično enosmerni promet, pomična zapora, zamenjava JVO, do 7. 11. 2026.",
@@ -222,17 +244,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-05T06:05:43.697Z",
   "end": "2026-11-28T12:00:00Z",
   "ts": "2026-11-05T06:07:01.14Z"
- },
- {
-  "id": "DARS;887225;640ab55d-1824-45f3-b7ed-f84e3402370c",
-  "type": "MaintenanceWorks",
-  "desc": "G2-108, Litija - Zagorje, pri Bregu pri Litiji, dela, oviran promet, do 6. 11. 2026.",
-  "loc": "G2-108, Litija - Zagorje",
-  "lat": 46.06139,
-  "lng": 14.84416,
-  "start": "2026-11-04T20:44:39.107Z",
-  "end": "2026-11-06T22:59:00Z",
-  "ts": "2026-11-05T04:24:04.527Z"
  },
  {
   "id": "DARS;887223;646025c8-1dd7-4fd9-bd2f-94a6a1be7bb6",
@@ -398,28 +409,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-01-24T08:24:07.857Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-10-31T10:53:28.203Z"
- },
- {
-  "id": "DARS;886475;ce5e3920-58fa-4365-a58a-1b3273dd33fc",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, uvoz Bertoki v smeri Kopra, dela, oviran promet.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.54758,
-  "lng": 13.76371,
-  "start": "2026-10-31T07:04:46.033Z",
-  "end": "2026-11-06T22:59:00Z",
-  "ts": "2026-10-31T07:10:38.717Z"
- },
- {
-  "id": "DARS;886476;931d7155-2bc4-4a98-80e5-5be138d4196c",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, izvoz 4 Bertoki - uvoz Bertoki v smeri Kopra, dela, oviran promet.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.54772,
-  "lng": 13.7659,
-  "start": "2026-10-31T07:06:02.763Z",
-  "end": "2026-11-06T22:59:00Z",
-  "ts": "2026-10-31T07:09:47.527Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
