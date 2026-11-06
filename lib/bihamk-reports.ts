@@ -110,6 +110,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog sanacionih radova, svakim radnim danom saobraća se usporeno, jednom trakom."
    },
    {
+    "title": "Goražde",
+    "text": "U toku su radovi na semaforizaciji raskrsnice magistralne ceste M-20 i ulice Seada Sofovića Sofe. Obavezeno je poštivanje saobraćajne signalizacije."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },
