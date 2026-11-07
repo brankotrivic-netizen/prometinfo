@@ -1,8 +1,52 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-07T20:29:11.855Z";
+export const PROMET_SI_UPDATED = "2026-11-07T23:48:30.474Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;887716;e48d94a7-14e8-4696-9c19-7b3eeb3cb9a8",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, pred priključkom Sl. Konjice v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.34422,
+  "lng": 15.48225,
+  "start": "2026-11-07T23:44:14.733Z",
+  "end": "2026-11-08T05:00:00Z",
+  "ts": "2026-11-07T23:44:16.09Z"
+ },
+ {
+  "id": "DARS;887715;b3a9b636-7ebb-4ef2-9420-4af3abf01cf0",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, pred izvozom 14 Celje center v smeri Maribora, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.2542,
+  "lng": 15.27461,
+  "start": "2026-11-07T23:35:08.53Z",
+  "end": "2026-11-08T05:00:00Z",
+  "ts": "2026-11-07T23:35:10.207Z"
+ },
+ {
+  "id": "DARS;887713;1d9846a8-1213-4fb2-af00-bfbc7b922855",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - zahodna obvoznica, razcep Kozarje iz smeri Brda proti Brezovici, dela, zaprt vozni pas.",
+  "loc": "A2-E61, Ljubljana - zah. obvoznica",
+  "lat": 46.0393,
+  "lng": 14.44839,
+  "start": "2026-11-07T22:52:47.463Z",
+  "end": "2026-11-08T20:00:00Z",
+  "ts": "2026-11-07T22:52:56.78Z"
+ },
+ {
+  "id": "DARS;887712;0533203a-4e4b-4568-9b18-a3d0a7aa0c70",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, razcep Kozarje iz smeri Viča proti Brezovici, dela, zaprt vozni pas.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.03778,
+  "lng": 14.4531,
+  "start": "2026-11-07T22:52:28.513Z",
+  "end": "2026-11-08T20:00:00Z",
+  "ts": "2026-11-07T22:52:40.92Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -101,28 +145,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-03-19T08:54:12.133Z",
   "end": "2026-11-09T22:59:00Z",
   "ts": "2026-11-07T04:40:11.15Z"
- },
- {
-  "id": "DARS;887620;8544350c-fdc6-47ce-9bb5-2f412251b222",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, razcep Kozarje iz smeri Viča proti Brezovici, dela, zaprt vozni pas.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.0376,
-  "lng": 14.45152,
-  "start": "2026-11-07T01:26:58.737Z",
-  "end": "2026-11-07T22:30:00Z",
-  "ts": "2026-11-07T01:27:07.897Z"
- },
- {
-  "id": "DARS;887619;3680cff7-8731-40da-97c8-599b3690d543",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - zahodna obvoznica, razcep Kozarje - priključek Brezovica iz smeri Brda proti Brezovici, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - zah. obvoznica",
-  "lat": 46.03582,
-  "lng": 14.448,
-  "start": "2026-11-07T01:11:37.057Z",
-  "end": "2026-11-07T22:30:00Z",
-  "ts": "2026-11-07T01:12:03.1Z"
  },
  {
   "id": "DARS;887597;ee5c44fe-87bc-4f01-8cf1-c05a2cf7c6a1",
@@ -277,17 +299,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-05T08:54:51.043Z",
   "end": "2026-11-17T22:59:00Z",
   "ts": "2026-11-05T08:59:44.897Z"
- },
- {
-  "id": "DARS;887257;b56775f4-12c7-41f1-8351-e370e8ac638d",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "G2-102, Most na Soči - Bača pri Modreju, v Mostu na Soči, izmenično enosmerni promet, pomična zapora, zamenjava JVO, do 7. 11. 2026.",
-  "loc": "G2-102, Most Na Soči - Bača",
-  "lat": 46.15093,
-  "lng": 13.75038,
-  "start": "2026-11-05T06:26:25.663Z",
-  "end": "2026-11-07T22:59:00Z",
-  "ts": "2026-11-05T06:27:27.747Z"
  },
  {
   "id": "DARS;887047;c018b41e-ea30-4855-ab16-9e1bac85b8d8",

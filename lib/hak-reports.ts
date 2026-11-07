@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "7.11.2026. 20:45",
-  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Zbog jakog vjetra na Jadranskoj magistrali (DC8) između Novog Vinodolskog i Svete Marije Magdalene zabrana je prometa za motocikle, vozila s prikolicama i autobuse na kat (I. skupina). Pozivamo vozače da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: prometna nesreća na autocesti A1 na 67+700 km između čvora Bosiljevo 2 i čvora Ogulin u smjeru Dubrovnika. Promet se vodi jednom prometnom trakom uz ograničenje brzine od 40 km/h. AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilaz…"
+  "updated": "7.11.2026. 22:53",
+  "text": "Kolnici su mjestimice mokri ili vlažni i skliski. Zbog jakog vjetra na Jadranskoj magistrali (DC8) između Novog Vinodolskog i Svete Marije Magdalene zabrana je prometa za motocikle, vozila s prikolicama i autobuse na kat (I. skupina). Pozivamo vozače da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: . AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba autocestom do čvora Split vozi se nesmetano, a dalje u smjeru Dubrovnika vozila izlaze s autoceste na čvoru Sp…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "7.11.2026. 20:26",
+  "updated": "7.11.2026. 22:53",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "7.11.2026. 20:26",
+  "updated": "7.11.2026. 21:29",
   "text": "U prekidu je trajektna linija Ploče-Trpanj (bit će uspostavljena 8. studenog s polaskom iz Ploča u 14:15 sati). Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu su: Umag, Pula, Mali Lošinj, Vis, Ubli i Cavtat."
  },
  {
