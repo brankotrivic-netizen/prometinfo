@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-07T16:40:23.525Z";
+export const PROMET_SI_UPDATED = "2026-11-07T20:29:11.855Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -257,17 +257,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-11-05T17:47:35.027Z"
  },
  {
-  "id": "DARS;885456;41a4112d-5eee-4e51-b038-7a25e8df0657",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Blagovica - počivališče Lukovica v smeri Ljubljane, dela, odstavni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.16635,
-  "lng": 14.76664,
-  "start": "2026-10-26T00:53:24.307Z",
-  "end": "2026-11-11T22:00:00Z",
-  "ts": "2026-11-05T17:47:11.307Z"
- },
- {
   "id": "DARS;887318;dd87edb7-caa2-4f9c-bf5f-2e2523d32d01",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R3-648, Pri Cerkvi - Struge - Smuka, v kraju Pri Cerkvi - Struge, izmenično enosmerni promet, obnova vodovoda, do 18. 12. 2026.",
@@ -299,17 +288,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-05T06:26:25.663Z",
   "end": "2026-11-07T22:59:00Z",
   "ts": "2026-11-05T06:27:27.747Z"
- },
- {
-  "id": "DARS;887223;646025c8-1dd7-4fd9-bd2f-94a6a1be7bb6",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Krtina - priključek Domžale v smeri Ljubljane, dela, odstavni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.15067,
-  "lng": 14.64264,
-  "start": "2026-11-04T19:05:35.553Z",
-  "end": "2026-11-11T22:00:00Z",
-  "ts": "2026-11-04T20:12:16.067Z"
  },
  {
   "id": "DARS;887047;c018b41e-ea30-4855-ab16-9e1bac85b8d8",
