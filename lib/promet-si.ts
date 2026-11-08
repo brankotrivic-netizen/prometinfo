@@ -1,51 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-08T10:50:42.893Z";
+export const PROMET_SI_UPDATED = "2026-11-08T16:49:22.717Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;887753;e0e02e06-44e5-43de-8d02-af790ec7ac4d",
+  "id": "DARS;887665;2d724add-46dd-4c41-9f35-ce4d56208bc2",
   "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, priključek Višnja Gora - priključek Grosuplje vzhod v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.97396,
-  "lng": 14.7108,
-  "start": "2026-11-08T10:11:43.81Z",
-  "end": "2026-11-08T16:00:00Z",
-  "ts": "2026-11-08T10:41:41.993Z"
- },
- {
-  "id": "DARS;887757;e072f908-d2a2-42e1-927e-a6b59fb496b2",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Logatec - priključek Senožeče v smeri Kopra, dela, pomična zapora prehitevalnega pasu.",
+  "desc": "A1, Ljubljana - Koper, razcep Kozarje - priključek Brezovica v smeri Kopra, dela, zaprta vozni in počasni pas.",
   "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.9084,
-  "lng": 14.25785,
-  "start": "2026-11-08T10:39:23.91Z",
-  "end": "2026-11-08T11:00:00Z",
-  "ts": "2026-11-08T10:39:39.853Z"
+  "lat": 46.0325,
+  "lng": 14.44654,
+  "start": "2026-11-07T10:44:23.913Z",
+  "end": "2026-11-08T20:30:00Z",
+  "ts": "2026-11-08T16:41:10.687Z"
  },
  {
-  "id": "DARS;887736;21b00a2a-d57c-44b3-aad2-878d2fa2c35a",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, prehod Gruškovje - razcep Slivnica v smeri Maribora, dela, oviran promet.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.27986,
-  "lng": 15.8617,
-  "start": "2026-11-08T06:50:32.95Z",
-  "end": "2026-11-08T15:00:47.8Z",
-  "ts": "2026-11-08T06:50:37.963Z"
- },
- {
-  "id": "DARS;887732;dc74e2b0-da21-46b9-a216-6ae8c807fcd6",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, pred priključkom Kranj zahod v smeri Karavank, Avstrije, dela, oviran promet.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.26376,
-  "lng": 14.3475,
-  "start": "2026-11-08T05:59:57.817Z",
-  "end": "2026-11-08T14:00:00Z",
-  "ts": "2026-11-08T06:00:11.02Z"
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-11-08T16:00:48.467Z"
  },
  {
   "id": "DARS;873485;3e237a8c-0abb-41f0-a7f1-2143370c2c7d",
@@ -57,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-31T06:09:26.953Z",
   "end": "2026-11-27T16:30:00Z",
   "ts": "2026-11-08T05:20:39.543Z"
- },
- {
-  "id": "DARS;887727;7a68219c-eafb-44f3-9182-b68e9025c950",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, priključek Ivančna Gorica - priključek Bič v smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.93336,
-  "lng": 14.82324,
-  "start": "2026-11-08T04:08:12.753Z",
-  "end": "2026-11-08T16:00:03.747Z",
-  "ts": "2026-11-08T04:08:16.483Z"
  },
  {
   "id": "DARS;887713;1d9846a8-1213-4fb2-af00-bfbc7b922855",
@@ -112,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-07T11:08:12.723Z",
   "end": "2026-11-09T02:00:00Z",
   "ts": "2026-11-07T11:08:33.21Z"
- },
- {
-  "id": "DARS;887665;2d724add-46dd-4c41-9f35-ce4d56208bc2",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Kozarje - priključek Brezovica v smeri Kopra, dela, zaprta vozni in počasni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.0325,
-  "lng": 14.44654,
-  "start": "2026-11-07T10:44:23.913Z",
-  "end": "2026-11-08T20:00:15.38Z",
-  "ts": "2026-11-07T10:44:32.943Z"
  },
  {
   "id": "DARS;887293;66482367-32af-4c7b-8323-9d223bb4e3d2",
@@ -178,28 +134,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-03-19T08:54:12.133Z",
   "end": "2026-11-09T22:59:00Z",
   "ts": "2026-11-07T04:40:11.15Z"
- },
- {
-  "id": "DARS;887597;ee5c44fe-87bc-4f01-8cf1-c05a2cf7c6a1",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Obrežje - Ljubljana, predor Mali Vrh - predor Debeli hrib v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A2-E70, Obrežje - Ljubljana",
-  "lat": 45.99595,
-  "lng": 14.58878,
-  "start": "2026-11-06T18:45:54.323Z",
-  "end": "2026-11-08T15:00:45.703Z",
-  "ts": "2026-11-06T18:46:01.307Z"
- },
- {
-  "id": "DARS;887596;74029a2e-212f-49fb-b06b-1aa917af164e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, počivališče Lukovica - priključek Krtina v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.15879,
-  "lng": 14.67749,
-  "start": "2026-11-06T18:33:22.43Z",
-  "end": "2026-11-08T14:00:00Z",
-  "ts": "2026-11-06T18:35:01.4Z"
  },
  {
   "id": "DARS;887595;633c2c5e-57c3-4807-b829-842286d45018",
