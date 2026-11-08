@@ -1,18 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-08T16:49:22.717Z";
+export const PROMET_SI_UPDATED = "2026-11-08T20:51:09.699Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;887665;2d724add-46dd-4c41-9f35-ce4d56208bc2",
+  "id": "DARS;887797;772b6332-3166-4931-9e54-dadb6cca633c",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, razcep Kozarje - priključek Brezovica v smeri Kopra, dela, zaprta vozni in počasni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.0325,
-  "lng": 14.44654,
-  "start": "2026-11-07T10:44:23.913Z",
-  "end": "2026-11-08T20:30:00Z",
-  "ts": "2026-11-08T16:41:10.687Z"
+  "desc": "A1, Maribor - Ljubljana, razcep Slivnica - priključek Sl. Bistrica sever v smeri Ljubljane, dela, oviran promet.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.46584,
+  "lng": 15.65774,
+  "start": "2026-11-08T19:23:12.43Z",
+  "end": "2026-11-09T01:00:00Z",
+  "ts": "2026-11-08T19:23:26.163Z"
+ },
+ {
+  "id": "DARS;879544;2a2e2e95-4aec-47bc-8c44-e376e1176fdb",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-642, Vrhnika - Podpeč, pri Kamniku pod Krimom, izmenično enosmerni promet, gradnje novega AB podvoza, do 23. 11. 2026. Obvoz: za vozila, ki presegajo višino 3,60 m na relaciji Podpeč - Dragomer - Vrhnika in obratno.",
+  "loc": "NK-642, Vrhnika - Podpeč",
+  "lat": 45.96631,
+  "lng": 14.39717,
+  "start": "2026-11-07T06:00:00Z",
+  "end": "2026-11-23T19:00:00Z",
+  "ts": "2026-11-08T18:58:46.9Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -35,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-08-31T06:09:26.953Z",
   "end": "2026-11-27T16:30:00Z",
   "ts": "2026-11-08T05:20:39.543Z"
- },
- {
-  "id": "DARS;887713;1d9846a8-1213-4fb2-af00-bfbc7b922855",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - zahodna obvoznica, razcep Kozarje iz smeri Brda proti Brezovici, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - zah. obvoznica",
-  "lat": 46.0393,
-  "lng": 14.44839,
-  "start": "2026-11-07T22:52:47.463Z",
-  "end": "2026-11-08T20:00:00Z",
-  "ts": "2026-11-07T22:52:56.78Z"
- },
- {
-  "id": "DARS;887712;0533203a-4e4b-4568-9b18-a3d0a7aa0c70",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - južna obvoznica, razcep Kozarje iz smeri Viča proti Brezovici, dela, zaprt vozni pas.",
-  "loc": "A1-E70, Ljubljana - juž. obvoznica",
-  "lat": 46.03778,
-  "lng": 14.4531,
-  "start": "2026-11-07T22:52:28.513Z",
-  "end": "2026-11-08T20:00:00Z",
-  "ts": "2026-11-07T22:52:40.92Z"
  },
  {
   "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
