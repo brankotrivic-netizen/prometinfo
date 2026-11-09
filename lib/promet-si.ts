@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-08T20:51:09.699Z";
+export const PROMET_SI_UPDATED = "2026-11-09T00:14:49.905Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;887797;772b6332-3166-4931-9e54-dadb6cca633c",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, razcep Slivnica - priključek Sl. Bistrica sever v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.46584,
-  "lng": 15.65774,
-  "start": "2026-11-08T19:23:12.43Z",
-  "end": "2026-11-09T01:00:00Z",
-  "ts": "2026-11-08T19:23:26.163Z"
- },
  {
   "id": "DARS;879544;2a2e2e95-4aec-47bc-8c44-e376e1176fdb",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -57,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-05T07:34:00Z",
   "end": "2026-12-24T16:00:00Z",
   "ts": "2026-11-07T13:30:58.9Z"
- },
- {
-  "id": "DARS;887671;062841db-f4e1-4d8f-93d6-44a59629d439",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Unec - počivališče Ravbarkomanda v smeri Kopra, dela, zaprta vozni in počasni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 45.82366,
-  "lng": 14.28659,
-  "start": "2026-11-07T11:08:12.723Z",
-  "end": "2026-11-09T02:00:00Z",
-  "ts": "2026-11-07T11:08:33.21Z"
  },
  {
   "id": "DARS;887293;66482367-32af-4c7b-8323-9d223bb4e3d2",
