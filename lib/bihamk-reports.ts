@@ -27,7 +27,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
   "items": [
    {
     "title": "Dobro Polje-Miljevina",
-    "text": "15. 05. 2026. godine - Kako smo upravo obaviješteni, od danas je počelo saobraćanje vozila do 3,5 tone na magistralnoj cesti Dobro Polje-Miljevina. Za vozila preko 3,5 tone i dalje je na snazi zabrana, pa moraju i dalje koristiti alternativne pravce."
+    "text": "09.11.2026. godine - Kako smo upravo obaviješteni iz Policijske stanice Foča, počelo je saobraćanje vozila do 30 tona na magistralnoj cesti Dobro Polje-Miljevina."
    },
    {
     "title": "Jablanica-Blidinje",
