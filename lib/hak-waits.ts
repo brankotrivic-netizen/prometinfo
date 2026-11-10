@@ -3,26 +3,6 @@
 export interface HakWait { id: string; name: string; ulazMin: number | null; izlazMin: number | null; ulazTxt: string; izlazTxt: string; truckUlazMin: number | null; truckIzlazMin: number | null; truckUlazTxt: string; truckIzlazTxt: string; level: string; waitMinutes: number | null; ulazTs: string; izlazTs: string; ulazTsISO: string; izlazTsISO: string; ts: string; tsISO: string }
 export const HAK_WAITS: HakWait[] = [
  {
-  "id": "ba-gradina",
-  "name": "Jasenovac (Donja Gradina)",
-  "ulazMin": null,
-  "izlazMin": null,
-  "ulazTxt": "-",
-  "izlazTxt": "-",
-  "truckUlazMin": 240,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "4 h",
-  "truckIzlazTxt": "-",
-  "level": "unknown",
-  "waitMinutes": null,
-  "ulazTs": "Nema podataka",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "",
-  "izlazTsISO": "",
-  "ts": "",
-  "tsISO": ""
- },
- {
   "id": "ba-svilaj",
   "name": "Svilaj",
   "ulazMin": null,
@@ -50,17 +30,17 @@ export const HAK_WAITS: HakWait[] = [
   "ulazTxt": "1 h",
   "izlazTxt": "-",
   "truckUlazMin": 180,
-  "truckIzlazMin": 180,
+  "truckIzlazMin": 30,
   "truckUlazTxt": "3 h",
-  "truckIzlazTxt": "3 h",
+  "truckIzlazTxt": "do 30 min.",
   "level": "moderate",
   "waitMinutes": 60,
-  "ulazTs": "10.11.2026. 17:56:38",
+  "ulazTs": "10.11.2026. 21:55:50",
   "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-11-10T17:56:38+02:00",
+  "ulazTsISO": "2026-11-10T21:55:50+02:00",
   "izlazTsISO": "",
-  "ts": "10.11.2026. 17:56:38",
-  "tsISO": "2026-11-10T17:56:38+02:00"
+  "ts": "10.11.2026. 21:55:50",
+  "tsISO": "2026-11-10T21:55:50+02:00"
  },
  {
   "id": "hr-tovarnik",
@@ -70,9 +50,9 @@ export const HAK_WAITS: HakWait[] = [
   "ulazTxt": "-",
   "izlazTxt": "-",
   "truckUlazMin": 420,
-  "truckIzlazMin": 180,
+  "truckIzlazMin": 120,
   "truckUlazTxt": "7 h",
-  "truckIzlazTxt": "3 h",
+  "truckIzlazTxt": "2 h",
   "level": "unknown",
   "waitMinutes": null,
   "ulazTs": "Nema podataka",
@@ -81,25 +61,5 @@ export const HAK_WAITS: HakWait[] = [
   "izlazTsISO": "",
   "ts": "",
   "tsISO": ""
- },
- {
-  "id": "",
-  "name": "Principovac",
-  "ulazMin": 30,
-  "izlazMin": null,
-  "ulazTxt": "do 30 min.",
-  "izlazTxt": "-",
-  "truckUlazMin": 30,
-  "truckIzlazMin": null,
-  "truckUlazTxt": "do 30 min.",
-  "truckIzlazTxt": "-",
-  "level": "low",
-  "waitMinutes": 30,
-  "ulazTs": "L: 0,5 km T: 10.11.2026. 15:59:36",
-  "izlazTs": "Nema podataka",
-  "ulazTsISO": "2026-11-10T15:59:36+02:00",
-  "izlazTsISO": "",
-  "ts": "L: 0,5 km T: 10.11.2026. 15:59:36",
-  "tsISO": "2026-11-10T15:59:36+02:00"
  }
 ];

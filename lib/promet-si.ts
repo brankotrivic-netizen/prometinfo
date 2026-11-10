@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-10T19:00:28.601Z";
+export const PROMET_SI_UPDATED = "2026-11-10T23:55:49.709Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;888215;1bc00a76-bbe4-461a-acc9-7f8367ca8230",
+  "id": "DARS;888220;224c7c4a-2448-4ca3-82b8-9310fa21c4a8",
   "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Krtina - priključek Blagovica v smeri Maribora, dela, oviran promet, košnja.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.15439,
-  "lng": 14.65464,
-  "start": "2026-11-10T18:57:25.823Z",
-  "end": "2026-11-10T22:30:11.64Z",
-  "ts": "2026-11-10T18:57:33.037Z"
+  "desc": "A1, Ljubljana - vzhodna obvoznica, priključek Ljubljana Bizovik - pokrit vkop Strmec v smeri Malenc, dela, zaprt počasni pas.",
+  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
+  "lat": 46.03079,
+  "lng": 14.56947,
+  "start": "2026-11-10T19:31:43.893Z",
+  "end": "2026-11-11T03:55:16.657Z",
+  "ts": "2026-11-10T19:32:10.69Z"
  },
  {
   "id": "DARS;888212;2d22036f-c3e9-47c4-8491-3f7b88c6c818",
@@ -24,17 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-10T18:47:35.61Z",
   "end": "2026-11-11T03:03:57.25Z",
   "ts": "2026-11-10T18:51:20.853Z"
- },
- {
-  "id": "DARS;888210;20f5901b-2c32-4159-b089-2a896062a3f6",
-  "type": "MaintenanceWorks",
-  "desc": "A5, Pince - Maribor, priključek Lenart - priključek Pernica v smeri Maribora, dela, pomična zapora voznega pasu.",
-  "loc": "A5, Pince - Maribor",
-  "lat": 46.57673,
-  "lng": 15.80804,
-  "start": "2026-11-10T18:37:29.087Z",
-  "end": "2026-11-11T00:00:00Z",
-  "ts": "2026-11-10T18:37:38.433Z"
  },
  {
   "id": "DARS;888200;dd4cf63e-dce5-4065-8974-b3164f8078c1",
@@ -871,17 +860,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-12T06:57:56.977Z",
   "end": "2026-11-30T22:59:00Z",
   "ts": "2026-10-12T06:59:05.663Z"
- },
- {
-  "id": "DARS;854083;ec22c7ed-0ca9-46ce-ad2a-b4a66e97b8a9",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-690, Majšperk - Jurovci, v Jurovcih, izmenično enosmerni promet, dograditev kanalizacije in izgradnja pločnika, do 10. 11. 2026.",
-  "loc": "NK-690, Majšperk - Jurovci",
-  "lat": 46.35619,
-  "lng": 15.86142,
-  "start": "2026-06-01T08:43:40.28Z",
-  "end": "2026-11-10T22:59:00Z",
-  "ts": "2026-10-09T06:07:45.08Z"
  },
  {
   "id": "DARS;849203;4d0827f0-77be-4e11-a5a6-ee34d424ff09",

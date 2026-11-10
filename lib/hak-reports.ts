@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "10.11.2026. 19:52",
-  "text": "Kolnici su mokri ili vlažni i skliski u većem dijelu zemlje. Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. Zbog povećane gustoće prometa vozi se usporeno na gradskim cestama, obilaznicama i u zonama radova. IZVANREDNI PROMETNI DOGAĐAJI: - RADOVI 10./11. STUDENOG: od 22:00 do 05:00 sati bit će zatvorena autocesta A1 između čvorova Ravča i Vrgorac u oba smjera (obilazak je državnim i županijskim cestama: DC535, DC62 i ŽC6208); od 22:00 do 05:00 sati bit će zatvorena autocesta A7 između čvorova Orehovica i Rujevica (uključujući i čvor Škurinje) u smjeru Rupe…"
+  "updated": "11.11.2026. 00:51",
+  "text": "Kolnici su mokri ili vlažni i skliski u većem dijelu zemlje. Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Vozače upozoravamo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: - RADOVI 10./11. STUDENOG: od 22:00 do 05:00 sati bit će zatvorena autocesta A1 između čvorova Ravča i Vrgorac u oba smjera (obilazak je državnim i županijskim cestama: DC535, DC62 i ŽC6208); od 22:00 do 05:00 sati bit će zatvorena autocesta A7 između čvorova Orehovica i Rujevica (uključujući i čvor Škurinje) u smjeru Rupe, zbog radova u tunelima Trsat i Škurinje II. Obilazak je gradskim cestama; od 22:00 do 06:00 sati, …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "10.11.2026. 19:46",
+  "updated": "11.11.2026. 00:51",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "10.11.2026. 19:46",
+  "updated": "11.11.2026. 00:51",
   "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu je: brodska linija: Zadar-Sali-Zaglav-Zadar. Izmjene u redu plovidbe: brodska linija Vodice-Prvić Šepurine-Zlarin-Šibenik s polaskom 11. studenog u 04:35 sati iz luke Vodice u prekidu, linija će se uspostaviti s polaskom iz luke Šibenik u 05:50 sati trajektna linija Suđurađ-Lopud-Koločep-Dubrovnik je u prekidu 11. studenog od 07:00 sati, a bit će uspostavljena u 09:00 s polaskom iz Dubrovnika 13. studenog trajekt će iz luke Split za luku Rogač isploviti u 21:00 sati (umjesto u 20:30 sati). Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicim…"
  },
  {
