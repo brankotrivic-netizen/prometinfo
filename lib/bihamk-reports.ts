@@ -102,16 +102,16 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na dionici Jančica-Bobanovo zbog sanacionih radova, svakog radnog dana u vremenu od 07 do 16 sati, saobraća se usporeno-jednom trakom."
    },
    {
-    "title": "Konjic-Jablanica",
-    "text": "U toku su radovi na dilataciji mosta u mjestu Ribići, zbog čega se saobraća usporeno, naizmjeničnim propuštanjem vozila."
-   },
-   {
     "title": "Stup-Jošanica",
     "text": "Zbog sanacionih radova, svakim radnim danom saobraća se usporeno, jednom trakom."
    },
    {
     "title": "Goražde",
     "text": "U toku su radovi na semaforizaciji raskrsnice magistralne ceste M-20 i ulice Seada Sofovića Sofe. Obavezeno je poštivanje saobraćajne signalizacije."
+   },
+   {
+    "title": "Turbe-Nević Polje",
+    "text": "Na magistralnoj cesti Turbe-Nević Polje zbog neophodnih radova svakog radnog dana od 07 do 16 sati na mjestu radova saobraća se naizmjenično, jednom trakom."
    },
    {
     "title": "Brčko-Bijeljina",
@@ -140,7 +140,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    },
    {
     "title": "Nemila-Bistričak",
-    "text": "Na regionalnoj cesti R-473 Nemila-Bistričak zbog sanacionih radova svaki dan osim nedjelje od 07 do 16 sati saobraća se naizmjenično, jednom trakom."
+    "text": "Na regionalnoj cesti R-473 Nemila-Bistričak zbog sanacionih radova svaki dan osim nedjelje od 07 do 16 sati saobraća se naizmjenično, jednom trakom. U srijedu 11.11 od 09 do 16 sati obustavlja se saobraćaj."
    },
    {
     "title": "Kakanj-Visoko",
