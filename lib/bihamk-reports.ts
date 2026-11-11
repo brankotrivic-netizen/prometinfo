@@ -106,10 +106,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog sanacionih radova, svakim radnim danom saobraća se usporeno, jednom trakom."
    },
    {
-    "title": "Goražde",
-    "text": "U toku su radovi na semaforizaciji raskrsnice magistralne ceste M-20 i ulice Seada Sofovića Sofe. Obavezeno je poštivanje saobraćajne signalizacije."
-   },
-   {
     "title": "Turbe-Nević Polje",
     "text": "Na magistralnoj cesti Turbe-Nević Polje zbog neophodnih radova svakog radnog dana od 07 do 16 sati na mjestu radova saobraća se naizmjenično, jednom trakom."
    },
@@ -165,10 +161,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Kladanj-Milankovići",
     "text": "Zbog izgradnje mosta, izmijenjen je režim saobraćaja na mostu preko rijeke Drinjače. Vozila se usmjeravaju preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta."
-   },
-   {
-    "title": "Visoko-Podlugovi",
-    "text": "Kod betonskog mosta u Visokom, zbog sanacionih radova saobraćaj je potpuno obustavljen. Dok traje obustava alternativni pravac je Čajengradska-Ozrakovići-kružni tok."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
