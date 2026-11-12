@@ -110,6 +110,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Turbe-Nević Polje zbog neophodnih radova svakog radnog dana od 07 do 16 sati na mjestu radova saobraća se naizmjenično, jednom trakom."
    },
    {
+    "title": "Husino-Šićki Brod",
+    "text": "Na magistralnoj cesti Husino-Šićki Brod zbog radova saobraća se usporeno od 07 do 16 sati, uz regulaciju semafora."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },
