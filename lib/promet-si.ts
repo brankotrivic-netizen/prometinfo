@@ -1,29 +1,29 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-13T18:44:53.516Z";
+export const PROMET_SI_UPDATED = "2026-11-13T23:53:22.217Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;888856;8a9ca6a1-20e0-4cfd-b02f-61554fef75c8",
+  "id": "DARS;888658;bc53cfab-af45-4534-9e85-fd8c624efc03",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, pred priključkom Kastelec v smeri Ljubljane, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.56422,
-  "lng": 13.87015,
-  "start": "2026-11-13T18:43:52.727Z",
-  "end": "2026-11-14T00:00:00Z",
-  "ts": "2026-11-13T18:43:55.723Z"
+  "desc": "A1, Maribor - vzhodna obvoznica, razcep Slivnica - priključek Rogoza v smeri Dragučove, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - vzhodna obvoznica",
+  "lat": 46.48862,
+  "lng": 15.66367,
+  "start": "2026-11-13T03:05:07.3Z",
+  "end": "2026-11-15T22:59:00Z",
+  "ts": "2026-11-13T22:57:53.543Z"
  },
  {
-  "id": "DARS;888855;a89f678b-3d27-4bd6-a894-b4a4524ca7d4",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - počivališče Polskava v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.35915,
-  "lng": 15.50419,
-  "start": "2026-11-13T18:35:13.307Z",
-  "end": "2026-11-13T22:59:00Z",
-  "ts": "2026-11-13T18:35:21.073Z"
+  "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-203, Predel - Bovec, pri trdnjavi Kluže, izmenično enosmerni promet, sanacija brežine, do 24. 12. 2026. Popolne zapore vsak dan med 8. in 14.30. uro.",
+  "loc": "R1-203, Predel - Bovec",
+  "lat": 46.36006,
+  "lng": 13.58984,
+  "start": "2026-10-05T07:34:00Z",
+  "end": "2026-12-24T16:00:00Z",
+  "ts": "2026-11-13T20:03:19.63Z"
  },
  {
   "id": "DARS;888854;a12e4847-af0c-4cce-8537-bce55b627b39",
@@ -46,28 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-10-02T05:56:02.493Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-11-13T16:00:25.847Z"
- },
- {
-  "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-203, Predel - Bovec, pri trdnjavi Kluže, izmenično enosmerni promet, sanacija brežine, do 24. 12. 2026. Popolne zapore vsak dan med 8. in 14.30. uro. Dne 13.11. ne bo popolne zapore.",
-  "loc": "R1-203, Predel - Bovec",
-  "lat": 46.36006,
-  "lng": 13.58984,
-  "start": "2026-10-05T07:34:00Z",
-  "end": "2026-12-24T16:00:00Z",
-  "ts": "2026-11-13T13:30:04.16Z"
- },
- {
-  "id": "DARS;888658;bc53cfab-af45-4534-9e85-fd8c624efc03",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - vzhodna obvoznica, razcep Slivnica - priključek Rogoza v smeri Dragučove, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Maribor - vzhodna obvoznica",
-  "lat": 46.48862,
-  "lng": 15.66367,
-  "start": "2026-11-13T03:05:07.3Z",
-  "end": "2026-11-13T22:59:00Z",
-  "ts": "2026-11-13T08:59:25.173Z"
  },
  {
   "id": "DARS;888701;a796d3db-d8ce-48f3-aa49-a5c239aea63b",
