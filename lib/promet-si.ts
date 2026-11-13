@@ -1,18 +1,62 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-13T11:40:44.185Z";
+export const PROMET_SI_UPDATED = "2026-11-13T18:44:53.516Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;888686;f4545d18-df28-11f1-a42c-062d615a2095",
+  "id": "DARS;888856;8a9ca6a1-20e0-4cfd-b02f-61554fef75c8",
   "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, predor Dekani v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "desc": "A1, Koper - Ljubljana, pred priključkom Kastelec v smeri Ljubljane, dela, zaprt prehitevalni pas.",
   "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.55393,
-  "lng": 13.80793,
-  "start": "2026-11-13T06:12:19.863Z",
-  "end": "2026-11-13T14:00:00Z",
-  "ts": "2026-11-13T11:29:13.58Z"
+  "lat": 45.56422,
+  "lng": 13.87015,
+  "start": "2026-11-13T18:43:52.727Z",
+  "end": "2026-11-14T00:00:00Z",
+  "ts": "2026-11-13T18:43:55.723Z"
+ },
+ {
+  "id": "DARS;888855;a89f678b-3d27-4bd6-a894-b4a4524ca7d4",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - počivališče Polskava v smeri Maribora, dela, oviran promet.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.35915,
+  "lng": 15.50419,
+  "start": "2026-11-13T18:35:13.307Z",
+  "end": "2026-11-13T22:59:00Z",
+  "ts": "2026-11-13T18:35:21.073Z"
+ },
+ {
+  "id": "DARS;888854;a12e4847-af0c-4cce-8537-bce55b627b39",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Maribor - Ljubljana, priključek Domžale - priključek Domžale v smeri Ljubljane, dela, zaprt prehitevalni pas.",
+  "loc": "A1-E57, Maribor - Ljubljana",
+  "lat": 46.1452,
+  "lng": 14.63518,
+  "start": "2026-11-13T18:21:36.237Z",
+  "end": "2026-11-15T14:00:12.447Z",
+  "ts": "2026-11-13T18:21:42.707Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-11-13T16:00:25.847Z"
+ },
+ {
+  "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-203, Predel - Bovec, pri trdnjavi Kluže, izmenično enosmerni promet, sanacija brežine, do 24. 12. 2026. Popolne zapore vsak dan med 8. in 14.30. uro. Dne 13.11. ne bo popolne zapore.",
+  "loc": "R1-203, Predel - Bovec",
+  "lat": 46.36006,
+  "lng": 13.58984,
+  "start": "2026-10-05T07:34:00Z",
+  "end": "2026-12-24T16:00:00Z",
+  "ts": "2026-11-13T13:30:04.16Z"
  },
  {
   "id": "DARS;888658;bc53cfab-af45-4534-9e85-fd8c624efc03",
@@ -24,17 +68,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-13T03:05:07.3Z",
   "end": "2026-11-13T22:59:00Z",
   "ts": "2026-11-13T08:59:25.173Z"
- },
- {
-  "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-203, Predel - Bovec, pri trdnjavi Kluže, izmenično enosmerni promet, sanacija brežine, do 24. 12. 2026. Popolne zapore vsak dan med 8. in 14.30. uro. Dne 13.11. ne bo popolne zapore.",
-  "loc": "R1-203, Predel - Bovec",
-  "lat": 46.36006,
-  "lng": 13.58984,
-  "start": "2026-10-05T07:34:00Z",
-  "end": "2026-12-24T16:00:00Z",
-  "ts": "2026-11-13T07:00:25.623Z"
  },
  {
   "id": "DARS;888701;a796d3db-d8ce-48f3-aa49-a5c239aea63b",
@@ -70,17 +103,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-11-13T06:28:39.7Z"
  },
  {
-  "id": "DARS;888678;4f99f1f3-1ffb-4be8-a776-6160e5321c94",
-  "type": "MaintenanceWorks",
-  "desc": "RT-926, Solčava - Podolševa - Sleme, pri Podolševi, oviran promet, vzdrževalna dela, do 15:00.",
-  "loc": "RT-926, Solčava - Podolševa - Sleme",
-  "lat": 46.43758,
-  "lng": 14.73015,
-  "start": "2026-11-13T06:00:00Z",
-  "end": "2026-11-13T14:00:00Z",
-  "ts": "2026-11-13T05:48:12.587Z"
- },
- {
   "id": "DARS;888670;f767f0bf-572e-497c-b1e4-7da798d25642",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "RT-912, Novaki - Cerkno, pri Poljanah, izmenično enosmerni promet, sanacija prepusta, do 15. 12. 2026.",
@@ -90,17 +112,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-13T06:00:00Z",
   "end": "2026-12-15T22:59:00Z",
   "ts": "2026-11-13T05:24:46.75Z"
- },
- {
-  "id": "DARS;888669;981520bb-6ee9-4eb1-8587-da6dbbd25fd6",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-644, Šentjakob - Domžale, v Podgorici, izmenično enosmerni promet, ureditev cestnega priključka, do 14. 11. 2026.",
-  "loc": "R3-644, Šentjakob - Domžale",
-  "lat": 46.09734,
-  "lng": 14.58634,
-  "start": "2026-11-13T08:00:00Z",
-  "end": "2026-11-14T06:00:00Z",
-  "ts": "2026-11-13T05:22:56.487Z"
  },
  {
   "id": "DARS;888666;a2f070ec-604d-4beb-af09-fdee6062dba1",
