@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "12.11.2026. 20:15",
-  "text": "Kolnici su mokri ili vlažni i skliski u većem dijelu zemlje, a lokalno je zbog obilnijih pljuskova moguće zadržavanje veće količine vode na kolniku. Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Veća je opasnost od odrona, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: prolivena tekućina na autocesti A7 na kraku 3 čvora Rijeka istok na kolniku u smjeru Križišća Radovi večeras 12./13. studenog: do 6:00 sati ujutro zatvorena je dionica autoceste A6 Rijeka-Zagreb između čvorova Vrbovsko i Ravna Gora u smjeru Rijeke. Obilazak: za smjer Rijeka: čvor Vrbovsko …"
+  "updated": "13.11.2026. 01:17",
+  "text": "Kolnici su mokri ili vlažni i skliski u većem dijelu zemlje, a lokalno je zbog obilnijih pljuskova moguće zadržavanje veće količine vode na kolniku. Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Zbog jakog vjetra zabrane su prometa za pojedine skupine vozila na cestama u priobalju (vidjeti niže). Veća je opasnost od odrona, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama. IZVANREDNI PROMETNI DOGAĐAJI: - Zbog vjetra: samo za osobna vozila otvorena je dionica Jadranske magistrale (DC8) Ston-Zaton Doli; na autocesti A7 između čvorova Rijeka istok i Šmrika zabrana je prometa za I. i II. sk…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "12.11.2026. 20:15",
+  "updated": "13.11.2026. 01:17",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "12.11.2026. 20:15",
-  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: trajektne linije: Porozina-Brestova, Valbiska-Lopar, Šibenik - Zlarin - Kaprije - Žirje, Sumartin - Makarska, Sućuraj-Drvenik , Dubrovnik-Koločep-Lopud-Suđurađ i Prapratno-Sobra katamaranske linije: Zadar-Sali-Zaglav-Iž Bršanj, Pula-Zadar-Pula, Rijeka-Cres-Mali Lošinj, Rijeka-Rab-Novalja, Zadar-Sali-Zaglav-Iž-Bršanj, Ubli -Vela Luka-Hvar Split i Ubli - Korčula -Dubrovnik , Korčula-Split i Dubrovnik-Šipan-Mljet brodske linije: Šibenik - Zlarin - Šepurine - Vodice Mali Lošinj-Unije-Susak Izmjene u redu plovidbe: trajekt na liniji Trogir (Soline) - Drvenik Mali - Drvenik Veli s polaskom iz luke Trogir (Soline) u 19:30 sati plovi bez pristajanja u…"
+  "updated": "13.11.2026. 01:17",
+  "text": "Zbog nepovoljnih vremenskih uvjeta u prekidu su: trajektne linije: Valbiska-Merag, Šibenik - Zlarin - Kaprije - Žirje, Sumartin - Makarska, Sućuraj-Drvenik , Dubrovnik-Koločep-Lopud-Suđurađ i Prapratno-Sobra katamaranske linije: Zadar-Sali-Zaglav-Iž Bršanj, Pula-Zadar-Pula, Rijeka-Cres-Mali Lošinj, Rijeka-Rab-Novalja, Zadar-Sali-Zaglav-Iž-Bršanj, Ubli -Vela Luka-Hvar Split i Ubli - Korčula -Dubrovnik , Korčula-Split i Dubrovnik-Šipan-Mljet brodske linije: Zadar-Preko, Šibenik - Zlarin - Šepurine - Vodice Mali Lošinj-Unije-Susak Izmjene u redu plovidbe: 13. studenog od 7:00 sati u prekidu trajektna linija Dubrovnik-Koločep-Lopud-Suđurađ 13. studenoga trajekt na liniji Šibenik - Zlarin - Kapri…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "12.11.2026. 20:15",
+  "updated": "13.11.2026. 01:17",
   "text": "Stanje u željezničkom putničkom prometu 12. studenoga 2026. u 8.00 sati Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstup…"
  },
  {

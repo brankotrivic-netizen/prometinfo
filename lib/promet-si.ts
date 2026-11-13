@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-12T19:27:24.474Z";
+export const PROMET_SI_UPDATED = "2026-11-13T00:36:48.881Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;888642;9d73302b-454b-43eb-85f7-30f0928ec560",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, predor Trojane - počivališče Lukovica v smeri Ljubljane, dela, oviran promet.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.19318,
-  "lng": 14.90127,
-  "start": "2026-11-12T19:03:00.997Z",
-  "end": "2026-11-13T01:00:10.767Z",
-  "ts": "2026-11-12T19:03:14.787Z"
- },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -213,17 +202,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "ts": "2026-11-12T05:37:56.427Z"
  },
  {
-  "id": "DARS;882755;375defe6-214d-48cf-89ba-7682fa5827e1",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, razcep Slivnica - priključek Rogoza v smeri Dragučove, dela, promet poteka po dveh zoženih pasovih, fizično ločenih.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.47686,
-  "lng": 15.65757,
-  "start": "2026-10-11T10:10:52.413Z",
-  "end": "2026-11-15T22:00:00Z",
-  "ts": "2026-11-12T03:50:11.787Z"
- },
- {
   "id": "DARS;886691;e6e06023-43f7-4198-8ab8-c51ff0d98d8f",
   "type": "RoadOrCarriagewayOrLaneManagement",
   "desc": "R2-413, Vodice - Moste, izmenično enosmerni promet, rekonstrukcije ceste, do 28. 2. 2027.",
@@ -233,17 +211,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-02T08:06:06.19Z",
   "end": "2027-02-28T22:59:00Z",
   "ts": "2026-11-11T08:39:47.67Z"
- },
- {
-  "id": "DARS;882734;5516fd03-4f2d-41dc-b8ca-c6d0a3207374",
-  "type": "MaintenanceWorks",
-  "desc": "A4, Gruškovje (Hrvaška) - Maribor, razcep Slivnica iz smeri Ptuja proti Dragučovi, dela, zaprt vozni pas.",
-  "loc": "A4-E59, Gruškovje (Hrvaška) - Maribor",
-  "lat": 46.47928,
-  "lng": 15.66271,
-  "start": "2026-10-11T06:13:43.103Z",
-  "end": "2026-11-15T21:30:00Z",
-  "ts": "2026-11-10T13:36:33.967Z"
  },
  {
   "id": "DARS;839556;fa74180b-a261-4830-9225-be082192db4a",
