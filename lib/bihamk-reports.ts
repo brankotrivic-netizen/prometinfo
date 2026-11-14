@@ -66,10 +66,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "U toku je izgradnja kružne raskrsnice, zbog čega se putnička vozila usmjeravaju na alernativni pravac, dok teretna vozila prolaze kroz raskrsnicu. Obavezno je poštivanje postavljene signalizacije."
    },
    {
-    "title": "Izačić-Bihać",
-    "text": "Zbog sanacionih radova, na magistralnoj cesti M-5, u mjestu Papari, od 07 do 17 sati, svakog radog dana, saobraća se usporeno, jednom trakom."
-   },
-   {
     "title": "Cazin–Srbljani",
     "text": "Zbog izvođenja radova na magistralnoj cesti M-4.2, u mjestu Gnjilavac, saobraća se uspredno, svakog dana, osim nedjelje, u vremenu od 07 do 17 sati."
    },
@@ -161,6 +157,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Kladanj-Milankovići",
     "text": "Zbog izgradnje mosta, izmijenjen je režim saobraćaja na mostu preko rijeke Drinjače. Vozila se usmjeravaju preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta."
+   },
+   {
+    "title": "Kladanj-Brateljevići",
+    "text": "Na regionalnoj cesti R-467 Kladanj- Brateljevići (lokalitet Muška Voda) došlo je do plavljenja mosta, zbog čega je saobraćaj obustavljen za sva vozila. Kao alternativni pravac može se koristiti makadamski put, ali je isti u lošem stanju, pa se vozačima preporučuje oprez i prilagođavanje brzine uslovima na putu."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
