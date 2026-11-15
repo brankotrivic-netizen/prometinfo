@@ -131,10 +131,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-456 Priboj–Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Nemila-Bistričak",
-    "text": "Na regionalnoj cesti R-473 Nemila-Bistričak zbog sanacionih radova svaki dan osim nedjelje od 07 do 16 sati saobraća se naizmjenično, jednom trakom. U srijedu 11.11 od 09 do 16 sati obustavlja se saobraćaj."
-   },
-   {
     "title": "Kakanj-Visoko",
     "text": "R- 445 Kakanj - Visoko, u toku su radovi od mosta u naselju Doboj do skretanje za Ćatiće."
    },
