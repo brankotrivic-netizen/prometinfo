@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-15T17:58:28.989Z";
+export const PROMET_SI_UPDATED = "2026-11-15T22:27:19.592Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;889029;35f75ccc-d7d9-458a-82a5-4e34cdd646ab",
+  "type": "MaintenanceWorks",
+  "desc": "H4, Razdrto - Nova Gorica, pred priključkom Vipava v smeri Vrtojbe, Italije, dela, zaprt prehitevalni pas.",
+  "loc": "H4, Razdrto - Nova Gorica",
+  "lat": 45.83366,
+  "lng": 13.95533,
+  "start": "2026-11-15T19:46:23.78Z",
+  "end": "2026-12-31T01:00:00Z",
+  "ts": "2026-11-15T19:47:05.003Z"
+ },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -915,17 +926,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-09-28T05:29:26.563Z",
   "end": "2026-12-11T18:00:00Z",
   "ts": "2026-10-05T07:02:03.963Z"
- },
- {
-  "id": "DARS;824250;ac0836a9-0101-491e-a4be-62a2f32eee61",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Nova Gorica - Razdrto, pred priključkom Vipava v smeri Razdrtega, dela, zaprt prehitevalni pas.",
-  "loc": "H4, Nova Gorica - Razdrto",
-  "lat": 45.83965,
-  "lng": 13.95278,
-  "start": "2025-11-25T22:34:17.297Z",
-  "end": "2026-11-16T17:00:00Z",
-  "ts": "2026-10-03T18:55:11.153Z"
  },
  {
   "id": "DARS;880552;06270a9d-ac1d-47ea-a2fb-a8e757c274f1",
