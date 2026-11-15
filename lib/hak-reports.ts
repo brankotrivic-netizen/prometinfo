@@ -3,7 +3,7 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "14.11.2026. 22:20",
+  "updated": "15.11.2026. 00:01",
   "text": "Za sve skupine vozila otvoreni su: autocesta A1 Zagreb-Split-Dubrovnik autocesta A6 Rijeka-Zagreb državna cesta DC1 stara cesta kroz Gorski kotar - DC3 državna cesta Maslenica-Zaton Obrovački (DC54) Paški most Krčki most U priobalju puše bura, zabrana je prometa za pojedine skupine vozila samo na pojedinim dionicama Jadranske magistrale-DC8 (vidjeti niže!). Kolnici su mjestimice mokri ili samo vlažni i skliski. Mogući su odroni. Zbog niskih temperatura tijekom noći i jutra moguća je poledica, posebice na mostovima i nadvožnjacima. IZVANREDNI PROMETNI DOGAĐAJI: Lešina na autocesti A7 na čvoru Škurinje na kolniku u smjeru Križišća. Promet se vodi po dvije prometne trake uz ograničenje brzine o…"
  },
  {

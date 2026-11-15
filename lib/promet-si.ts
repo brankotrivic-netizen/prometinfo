@@ -1,41 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-14T21:25:29.806Z";
+export const PROMET_SI_UPDATED = "2026-11-15T01:08:31.179Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;888957;12dfbdb5-38b0-49b2-8d63-0d5d635f4244",
-  "type": "MaintenanceWorks",
-  "desc": "H3, Ljubljana - severna obvoznica, uvoz Ljubljana Nove Jarše - priključek Ljubljana Tomačevo v smeri Kosez, dela, oviran promet.",
-  "loc": "H3, Ljubljana - severna obvoznica",
-  "lat": 46.06757,
-  "lng": 14.55994,
-  "start": "2026-11-14T20:35:11.467Z",
-  "end": "2026-11-15T02:00:00Z",
-  "ts": "2026-11-14T20:35:29.26Z"
- },
- {
-  "id": "DARS;888954;f36bf68d-358f-45e2-844a-523975281259",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Sl. Bistrica sever - priključek Fram v smeri Maribora, dela, zaprt prehitevalni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.40092,
-  "lng": 15.6067,
-  "start": "2026-11-14T19:45:12.403Z",
-  "end": "2026-11-15T04:00:00.82Z",
-  "ts": "2026-11-14T19:45:19.887Z"
- },
- {
-  "id": "DARS;888924;3b3530fa-befa-425f-a522-2de189ed8540",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, pred priključkom Ivančna Gorica v smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 45.93423,
-  "lng": 14.79869,
-  "start": "2026-11-14T13:45:00.163Z",
-  "end": "2026-11-14T22:30:00Z",
-  "ts": "2026-11-14T19:25:40.443Z"
- },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -79,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-05T07:34:00Z",
   "end": "2026-12-24T16:00:00Z",
   "ts": "2026-11-14T13:30:28.3Z"
- },
- {
-  "id": "DARS;888889;8005d1af-e2f1-4448-8c86-b922355595ce",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, pred predorom Pletovarje v smeri Maribora, dela, zaprta vozni in počasni pas.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.28619,
-  "lng": 15.43026,
-  "start": "2026-11-14T07:23:11.7Z",
-  "end": "2026-11-14T22:00:36.297Z",
-  "ts": "2026-11-14T07:23:26.23Z"
  },
  {
   "id": "DARS;888876;20837ac5-e9e0-48c2-a82b-afd02f0b2d26",
@@ -167,17 +123,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-13T06:00:00Z",
   "end": "2026-12-15T22:59:00Z",
   "ts": "2026-11-13T05:24:46.75Z"
- },
- {
-  "id": "DARS;888666;a2f070ec-604d-4beb-af09-fdee6062dba1",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R2-429, Pristova - Dobrna, odcep v Dobrno, izmenično enosmerni promet, zamenjava strehe na objektu, do 14. 11. 2026.",
-  "loc": "R2-429, Odcep V Dobrno",
-  "lat": 46.33509,
-  "lng": 15.22467,
-  "start": "2026-11-13T06:00:00Z",
-  "end": "2026-11-14T22:59:00Z",
-  "ts": "2026-11-13T05:19:44.373Z"
  },
  {
   "id": "DARS;860395;050a14dc-842d-418a-8d29-194ec6306d63",
@@ -486,17 +431,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-05T06:05:43.697Z",
   "end": "2026-11-28T12:00:00Z",
   "ts": "2026-11-07T09:18:30.763Z"
- },
- {
-  "id": "DARS;886475;ce5e3920-58fa-4365-a58a-1b3273dd33fc",
-  "type": "MaintenanceWorks",
-  "desc": "G1-11, Škofije - Koper, uvoz Bertoki v smeri Kopra, dela, oviran promet.",
-  "loc": "G1-11, Škofije - Koper",
-  "lat": 45.54758,
-  "lng": 13.76371,
-  "start": "2026-10-31T07:04:46.033Z",
-  "end": "2026-11-14T22:59:00Z",
-  "ts": "2026-11-07T05:27:58.237Z"
  },
  {
   "id": "DARS;886476;931d7155-2bc4-4a98-80e5-5be138d4196c",
