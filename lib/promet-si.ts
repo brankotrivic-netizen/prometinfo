@@ -1,18 +1,128 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-15T01:08:31.179Z";
+export const PROMET_SI_UPDATED = "2026-11-15T11:36:39.522Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "id": "DARS;889006;8e08758b-bc38-4ba4-8bbd-6b5f31b8145d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - južna obvoznica, izvoz 35 Ljubljana zahod - razcep Zadobrova v smeri Zadobrove, dela, pomična zapora voznega pasu.",
+  "loc": "A1-E70, Ljubljana - juž. obvoznica",
+  "lat": 46.03466,
+  "lng": 14.46552,
+  "start": "2026-11-15T11:26:41.297Z",
+  "end": "2026-11-15T17:00:00Z",
+  "ts": "2026-11-15T11:27:08.26Z"
+ },
+ {
+  "id": "DARS;889004;61d5bfc7-b79a-4b00-9a1b-a674fa423884",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Izola - Koper, priključek Semedela iz smeri Portoroža, dela, oviran promet, košnja.",
+  "loc": "G2-111, Izola - Koper",
+  "lat": 45.54123,
+  "lng": 13.72181,
+  "start": "2026-11-15T10:57:20.457Z",
+  "end": "2026-11-15T15:00:35.197Z",
+  "ts": "2026-11-15T10:58:01.26Z"
+ },
+ {
+  "id": "DARS;888992;bc9758e4-5b7b-4100-89bb-d0048bd99d18",
+  "type": "MaintenanceWorks",
+  "desc": "A3, Fernetiči - razcep Gabrk, razcep Gabrk iz smeri Kopra proti Fernetičem, Italiji, dela, zaprt odstavni pas.",
+  "loc": "A3-E70, E61, Fernetiči - razcep Gabrk",
+  "lat": 45.69482,
+  "lng": 13.98022,
+  "start": "2026-11-15T08:34:56.713Z",
+  "end": "2026-11-15T14:00:00Z",
+  "ts": "2026-11-15T10:48:29.52Z"
+ },
+ {
+  "id": "DARS;889001;3449f2a8-e0db-11f1-9d11-0647df2ca497",
+  "type": "MaintenanceWorks",
+  "desc": "G2-111, Izola - Koper, predor Markovec v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "G2-111, Izola - Koper",
+  "lat": 45.54009,
+  "lng": 13.69446,
+  "start": "2026-11-15T09:59:10.493Z",
+  "end": "2026-11-15T19:59:10.493Z",
+  "ts": "2026-11-15T09:59:10.73Z"
+ },
+ {
+  "id": "DARS;888981;101bdbb2-44f1-4336-8f18-a507a3c26ba1",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Šentilj - Maribor, prehod Šentilj - priključek Maribor sever v smeri Maribora, dela, zaprt vozni pas.",
+  "loc": "A1-E57, E59, Šentilj - Maribor",
+  "lat": 46.68962,
+  "lng": 15.64615,
+  "start": "2026-11-15T07:03:16.62Z",
+  "end": "2026-11-15T16:00:54.777Z",
+  "ts": "2026-11-15T07:03:20.937Z"
+ },
+ {
+  "id": "DARS;888977;7da01c82-0310-4e9b-9883-a896089af804",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Koper - Ljubljana, pred razcepom Gabrk v smeri Ljubljane, dela, zaprt vozni pas.",
+  "loc": "A1-E61, E70, Koper - Ljubljana",
+  "lat": 45.69118,
+  "lng": 13.97829,
+  "start": "2026-11-15T06:16:46.383Z",
+  "end": "2026-11-15T15:00:00Z",
+  "ts": "2026-11-15T06:30:36.097Z"
+ },
+ {
+  "id": "DARS;888974;03a3f14f-c01c-48ad-9d70-39bfb6f6b84c",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, priključek Ljubljana Nove Jarše - uvoz Ljubljana Tomačevo v smeri Kosez, dela, zaprt prehitevalni pas.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.07556,
+  "lng": 14.54278,
+  "start": "2026-11-15T04:45:58.383Z",
+  "end": "2026-11-15T17:00:00Z",
+  "ts": "2026-11-15T04:47:55.283Z"
+ },
+ {
+  "id": "DARS;888973;24eae73b-cc7d-407c-9cbd-ab2b7f20e033",
   "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 45.96375,
-  "lng": 15.5243,
-  "start": "2025-10-02T05:56:02.493Z",
-  "end": "2026-12-31T22:59:00Z",
-  "ts": "2026-11-14T16:00:48.783Z"
+  "desc": "R1-232, Murska Sobota, na Industrijski ulici, izmenično enosmerni promet, vzdrževalna dela, do 16. 11. 2026, med 13. in 15. uro.",
+  "loc": "R1-232, Murska Sobota",
+  "lat": 46.66045,
+  "lng": 16.17341,
+  "start": "2026-11-15T04:43:59.673Z",
+  "end": "2026-11-16T22:59:00Z",
+  "ts": "2026-11-15T04:47:50.577Z"
+ },
+ {
+  "id": "DARS;888669;981520bb-6ee9-4eb1-8587-da6dbbd25fd6",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-644, Šentjakob - Domžale, v Podgorici, izmenično enosmerni promet, ureditev cestnega priključka.",
+  "loc": "R3-644, Šentjakob - Domžale",
+  "lat": 46.09734,
+  "lng": 14.58634,
+  "start": "2026-11-13T08:00:00Z",
+  "end": "2026-12-06T22:59:00Z",
+  "ts": "2026-11-15T04:38:34.77Z"
+ },
+ {
+  "id": "DARS;888971;bc20a0a3-2e95-4d59-83d4-5d685d041500",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, pred predorom Pletovarje v smeri Maribora, dela, zaprta vozni in prehitevalni pas.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.28619,
+  "lng": 15.43026,
+  "start": "2026-11-15T04:17:28.223Z",
+  "end": "2026-11-15T16:00:36.297Z",
+  "ts": "2026-11-15T04:17:40.25Z"
+ },
+ {
+  "id": "DARS;888970;a2a88d98-5009-44db-8cb0-1eeaca57466f",
+  "type": "MaintenanceWorks",
+  "desc": "H3, Ljubljana - severna obvoznica, uvoz Ljubljana Tomačevo - priključek Ljubljana Nove Jarše v smeri Zadobrove, dela, zaprt prehitevalni pas.",
+  "loc": "H3, Ljubljana - severna obvoznica",
+  "lat": 46.08172,
+  "lng": 14.52603,
+  "start": "2026-11-15T04:14:24.057Z",
+  "end": "2026-11-15T15:30:00Z",
+  "ts": "2026-11-15T04:15:02.713Z"
  },
  {
   "id": "DARS;844097;1addcd4d-0dcb-4073-85a4-b71265730037",
@@ -926,17 +1036,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-11-25T22:34:17.297Z",
   "end": "2026-11-16T17:00:00Z",
   "ts": "2026-10-03T18:55:11.153Z"
- },
- {
-  "id": "DARS;861495;d1a3eeaa-15e0-49ee-af00-9aaded198ae4",
-  "type": "MaintenanceWorks",
-  "desc": "H4, Razdrto - Nova Gorica, razcep Nanos - priključek Vipava v smeri Vrtojbe, Italije, dela, promet poteka po enem pasu.",
-  "loc": "H4, Razdrto - Nova Gorica",
-  "lat": 45.75713,
-  "lng": 14.05059,
-  "start": "2026-07-05T17:05:19.937Z",
-  "end": "2026-11-16T14:00:00Z",
-  "ts": "2026-10-03T18:53:58.453Z"
  },
  {
   "id": "DARS;880552;06270a9d-ac1d-47ea-a2fb-a8e757c274f1",
