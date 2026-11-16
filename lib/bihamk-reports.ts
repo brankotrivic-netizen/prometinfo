@@ -58,10 +58,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Zbog radova na izgradnji dva kružna toka (spoj magistralnog puta M-17 sa ulicom Samira Ćatovića Kobre i spoj magistralnog puta M-17 sa ulicom Željeznička-Emira Bogunića Čarlija), saobraćaj je preusmjeren na alternativne pravce. Molimo vozače za oprez i poštivanje privremene signalizacije."
    },
    {
-    "title": "Šićki Brod – Tuzla",
-    "text": "Od Siporex-a do Bingo City Centra, zbog radova, saobraća se usporeno."
-   },
-   {
     "title": "Lončari-Pelagićevo",
     "text": "U toku je izgradnja kružne raskrsnice, zbog čega se putnička vozila usmjeravaju na alernativni pravac, dok teretna vozila prolaze kroz raskrsnicu. Obavezno je poštivanje postavljene signalizacije."
    },
