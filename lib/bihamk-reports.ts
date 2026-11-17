@@ -108,10 +108,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Brod na Drini-GP Hum/Šćepan Polje",
     "text": "Zbog brojnih odrona i opasnosti od klizišta na magistralnom putu Brod na Drini-GP Hum/Šćepan Polje putnička vozila saobraćaju otežano, dok teretna ne mogu proći."
-   },
-   {
-    "title": "Bileća-Trebinje",
-    "text": "Na lokalitetu Žudojevići u toku su radovi na sananaciji kosina, zbog čega se saobraća usporeno, jednom trakom (u dužini 300 m)."
    }
   ]
  },
@@ -153,6 +149,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Kladanj-Brateljevići",
     "text": "Na regionalnoj cesti R-467 Kladanj- Brateljevići (lokalitet Muška Voda) došlo je do plavljenja mosta, zbog čega je saobraćaj obustavljen za sva vozila. Kao alternativni pravac može se koristiti makadamski put, ali je isti u lošem stanju, pa se vozačima preporučuje oprez i prilagođavanje brzine uslovima na putu."
+   },
+   {
+    "title": "Visoko-Kiseljak",
+    "text": "Na regionalnoj cesti R-443 Visoko-Kiseljak (dionica od skretanja za Tušnjiće prema Kiseljaku) zbog sanacionih radova od 10 do 15:30 sati saobraća se usporeno, jednom trakom (osim nedjelje)."
    },
    {
     "title": "Rudo-Granični prelaz Uvac",
