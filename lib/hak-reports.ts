@@ -3,22 +3,22 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "17.11.2026. 13:30",
-  "text": "Kolnici su mokri ili samo vlažni skliski u većem dijelu zemlje. Ponegdje ima i magle, mjestimice vrlo gusta. Mogući su odroni. Zbog povremeno jakih pljuskova kiše moguće je naići na veću količinu vode koja se zadržava na kolniku. Pojačan je promet u gradovima, na prilaznim i obilaznim cestama. Vozačima savjetujemo da prilagode brzinu i način vožnje uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: privremeno su prekinuti radovi na državnoj cesti DC2 između Osijeka i Vukovara (cesta je otvorena za sav promet). Radovi se nastavljaju 20. studenog predmet na autocesti A6 na 35. km između čvora Delnice i čvora Ravna Gora na kolniku u smjeru Zagreba. P…"
+  "updated": "17.11.2026. 20:44",
+  "text": "Kolnici su mjestimice mokri ili vlažni i skliski, a ponegdje ima i magle, lokalno vrlo guste. Zbog mjestimice obilnije kiše moguće je zadržavanje veće količine vode na kolniku, a mogući su i odroni, osobito na cestama u gorju i na Jadranskoj magistrali (DC8). Vozačima savjetujemo da brzinu i način vožnje prilagode uvjetima na cestama te održavaju sigurnosni razmak između vozila. IZVANREDNI PROMETNI DOGAĐAJI: zbog prometne nesreće prekinut je promet na državnoj cesti DC28 između mjesta Cugovec i Škrinjari privremeno su prekinuti radovi na državnoj cesti DC2 između Osijeka i Vukovara (cesta je otvorena za sav promet). Radovi se nastavljaju 20. studenog ZABRANE ZA TERETNA VOZILA (Dan sjećanja n…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "17.11.2026. 12:35",
+  "updated": "17.11.2026. 21:06",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "17.11.2026. 12:35",
-  "text": "Zbog vjetra u prekidu su: brodska linija 310 Mali Lošinj-Unije-Susak katamaranske linije: Rijeka-Cres-Mali Lošinj i Rijeka-Rab-Novalja Izmjene u redu plovidbe: - Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunarodni promet putnika i roba u pomorskom prometu su: Rijeka, Ploče, Zadar, Šibenik, Split, Dubrovnik i Raša-Bršica, a stalni granični prijelazi za međunarodni promet putnika u pomorskom prometu…"
+  "updated": "17.11.2026. 21:58",
+  "text": "Zbog vjetra u prekidu su: trajektna linija Brestova-Porozina brodska linija Mali Lošinj-Unije-Susak katamaranske linije Rijeka-Cres-Mali Lošinj i Rijeka-Rab-Novalja Izmjene u redu plovidbe: brodska linija 505 Vodice-Prvić Šepurine-Zlarin-Šibenik bez polaska iz Vodica u 18:00 sati, linija polazi iz luke Prvić Šepurine u 18:10 sati (dana 17. prosinca) Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utovanja . Državne trajektne, brodske i brzobrodske linije (redovi plovidbe s cjenicima za 2026. godinu) https://agencija-zolpp.hr/linije / Prema Uredbi o izmjenama Uredbe o graničnim prijelazima Republike Hrvatske od 2. siječnja 2023. »Stalni granični prijelazi za međunaro…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "17.11.2026. 10:31",
+  "updated": "17.11.2026. 17:21",
   "text": "Stanje u željezničkom putničkom prometu 17. studenoga 2026. u 8.00 sati Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstup…"
  },
  {
@@ -28,7 +28,7 @@ export const HAK_REPORTS: HakReport[] = [
  },
  {
   "title": "Prometna prognoza",
-  "updated": "17.11.2026. 10:16",
+  "updated": "17.11.2026. 15:29",
   "text": "Prometna prognoza za Hrvatsku za 18. studenog 2026. U većem dijelu zemlje vozit će se po mokrim i skliskim kolnicima. Na cestama u gorju i duž Jadranske magistrale (DC8) bit će veća opasnost od odrona. Povremena usporavanja moguća su u zonama radova, na gradskim cestama i obilaznicama. Povremena usporavanja moguća su u zonama radova, na gradskim cestama i obilaznicama. Na prilazima Vukovaru i Škabrnji očekuje se veći broj biciklista, motociklista te osobito pješaka pa ostale sudionike u prometu pozivamo na pojačan oprez. Pojačan promet putničkih vozila očekuje se na većni graničnih prijelaza s Bosnom i Hercegovinom i Srbijom te pojedinim granicama s Crnom Gorom, a u teretnom prometu moguća s…"
  },
  {
