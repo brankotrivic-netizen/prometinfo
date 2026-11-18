@@ -1,7 +1,7 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-17T21:18:58.361Z";
+export const PROMET_SI_UPDATED = "2026-11-18T02:59:06.850Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
   "id": "DARS;889470;81388179-609a-470d-91c2-2253aa7ca777",
@@ -11,19 +11,8 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 46.34651,
   "lng": 15.48514,
   "start": "2026-11-17T20:18:56.19Z",
-  "end": "2026-11-18T02:00:00Z",
-  "ts": "2026-11-17T20:19:00.17Z"
- },
- {
-  "id": "DARS;889467;8b5e9e35-fd32-4a57-ae4a-aaeec66d1a3e",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, priključek Šentrupert - predor Trojane v smeri Ljubljane, dela, oviran promet, strojno pometanje.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.25917,
-  "lng": 15.06667,
-  "start": "2026-11-17T19:38:15.21Z",
-  "end": "2026-11-17T22:00:00Z",
-  "ts": "2026-11-17T19:38:29.753Z"
+  "end": "2026-11-18T04:00:00Z",
+  "ts": "2026-11-18T01:56:33.777Z"
  },
  {
   "id": "DARS;889241;7818f312-40db-4be4-b248-9f1fa231f042",
@@ -607,17 +596,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-05T09:17:01.773Z",
   "end": "2026-12-18T22:59:00Z",
   "ts": "2026-11-05T09:19:15.513Z"
- },
- {
-  "id": "DARS;887317;3d23709e-f7dc-441c-946f-06e210126ffd",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-646, Šmarje Sap - Cikava, Šmarje Sap, Ljubljanska cesta, izmenično enosmerni promet, obnova javne poti Gregorčičeva ulica, do 17. 11. 2026.",
-  "loc": "R3-646, Šmarje Sap - Cikava",
-  "lat": 45.97518,
-  "lng": 14.61497,
-  "start": "2026-11-05T08:54:51.043Z",
-  "end": "2026-11-17T22:59:00Z",
-  "ts": "2026-11-05T08:59:44.897Z"
  },
  {
   "id": "DARS;887047;c018b41e-ea30-4855-ab16-9e1bac85b8d8",
