@@ -1,63 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-18T20:45:27.444Z";
+export const PROMET_SI_UPDATED = "2026-11-19T02:06:02.313Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;889686;f87755bd-230b-4692-95b7-53133ae6e62d",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, počivališče Tepanje - priključek Sl. Bistrica sever v smeri Maribora, dela, pomična zapora prehitevalnega pasu.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.37425,
-  "lng": 15.54585,
-  "start": "2026-11-18T20:39:08.16Z",
-  "end": "2026-11-18T22:00:28.433Z",
-  "ts": "2026-11-18T20:39:09.817Z"
- },
- {
-  "id": "DARS;889684;b8061cca-f219-44a1-b8db-dbc98b958cf9",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Naklo - priključek Kranj zahod v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.27781,
-  "lng": 14.3105,
-  "start": "2026-11-18T19:26:10.63Z",
-  "end": "2026-11-19T04:00:00Z",
-  "ts": "2026-11-18T19:26:18.723Z"
- },
- {
-  "id": "DARS;889682;2f11cb9d-5dbb-4229-b936-fd66042293c7",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Domžale - uvoz Trojane v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.13476,
-  "lng": 14.61602,
-  "start": "2026-11-18T18:51:56.507Z",
-  "end": "2026-11-18T22:30:31.357Z",
-  "ts": "2026-11-18T18:52:34.41Z"
- },
- {
-  "id": "DARS;889484;10e4b9ea-5aff-4381-b6e1-e046bbe120a1",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, priključek Dragomer - priključek Vrhnika v smeri Kopra, dela, zaprt vozni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.01568,
-  "lng": 14.38434,
-  "start": "2026-11-18T18:47:34.823Z",
-  "end": "2026-11-19T05:30:00Z",
-  "ts": "2026-11-18T18:47:50.157Z"
- },
- {
-  "id": "DARS;889672;83e23af3-156e-498a-877e-b60ea2f03edc",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Kranj vzhod - priključek Brnik v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.23535,
-  "lng": 14.40664,
-  "start": "2026-11-18T16:18:42.207Z",
-  "end": "2026-11-18T22:00:37.3Z",
-  "ts": "2026-11-18T16:19:13.933Z"
- },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -68,17 +13,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-10-02T05:56:02.493Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-11-18T16:00:03.597Z"
- },
- {
-  "id": "DARS;889661;48ddf99d-e89d-4dfd-baa2-ee5874baf953",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, priključek Kranj zahod - priključek Kranj vzhod v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.24829,
-  "lng": 14.39123,
-  "start": "2026-11-18T15:32:38.873Z",
-  "end": "2026-11-18T22:00:18.797Z",
-  "ts": "2026-11-18T15:34:19.64Z"
  },
  {
   "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
