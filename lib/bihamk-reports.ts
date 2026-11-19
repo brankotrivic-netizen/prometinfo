@@ -159,6 +159,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-443 Visoko-Kiseljak (dionica od skretanja za Tušnjiće prema Kiseljaku) zbog sanacionih radova od 10 do 15:30 sati saobraća se usporeno, jednom trakom (osim nedjelje)."
    },
    {
+    "title": "Čajdraš-Ovnak (Jagodići)",
+    "text": "Na regionalnoj cesti R-413a Čajdraš-Ovnak (Jagodići), zbog sanacionih radova od 08 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
+   },
+   {
     "title": "Rudo-Granični prelaz Uvac",
     "text": "Zbog oštećenja mosta, zabranjen je saobraćaj za teretna vozila i autobuse, dok je za putnička vozila brzina kretanja na mostu ograničena na 20 km/h."
    }
