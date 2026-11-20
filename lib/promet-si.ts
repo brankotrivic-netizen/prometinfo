@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-19T20:50:58.520Z";
+export const PROMET_SI_UPDATED = "2026-11-20T01:56:17.724Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;889887;97ddaf61-f183-4579-9b33-4a2f16fdba26",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, pokrit vkop Strmec - predor Golovec v smeri Malenc, dela, zaprt počasni pas.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.03062,
-  "lng": 14.56937,
-  "start": "2026-11-19T18:51:15.813Z",
-  "end": "2026-11-20T04:00:24.54Z",
-  "ts": "2026-11-19T18:51:22.953Z"
- },
  {
   "id": "DARS;889886;1d94a352-07b6-4499-8826-b0e2a32ccbbd",
   "type": "MaintenanceWorks",
@@ -22,41 +11,8 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lat": 46.01591,
   "lng": 14.38487,
   "start": "2026-11-19T18:40:57.023Z",
-  "end": "2026-11-20T00:00:00Z",
-  "ts": "2026-11-19T18:41:04.697Z"
- },
- {
-  "id": "DARS;889883;03602d34-f35c-4425-8309-9caed94af116",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Koper, uvoz Brezovica - uvoz Vrhnika v smeri Kopra, dela, zaprt vozni pas.",
-  "loc": "A1-E61, E70, Ljubljana - Koper",
-  "lat": 46.02573,
-  "lng": 14.4341,
-  "start": "2026-11-19T18:35:26.647Z",
-  "end": "2026-11-20T00:00:00Z",
-  "ts": "2026-11-19T18:35:38.253Z"
- },
- {
-  "id": "DARS;889881;b8a5a55d-98c3-4ca3-9f8e-889749866756",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, priključek Vransko - priključek Šempeter v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.25125,
-  "lng": 14.97244,
-  "start": "2026-11-19T18:27:20.907Z",
-  "end": "2026-11-20T01:00:44.6Z",
-  "ts": "2026-11-19T18:27:24.63Z"
- },
- {
-  "id": "DARS;889878;690f46d0-aa09-4dee-b89f-9029b06cac92",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Karavanke, priključek Kranj vzhod - priključek Kranj vzhod v smeri Karavank, Avstrije, dela, zaprt vozni pas.",
-  "loc": "A2-E61, Ljubljana - Karavanke",
-  "lat": 46.23145,
-  "lng": 14.41415,
-  "start": "2026-11-19T17:57:10.783Z",
-  "end": "2026-11-19T22:00:52.94Z",
-  "ts": "2026-11-19T17:57:15.14Z"
+  "end": "2026-11-20T02:30:00Z",
+  "ts": "2026-11-19T23:55:35.157Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
@@ -1432,17 +1388,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-05-23T06:30:00Z",
   "end": "2026-12-30T12:30:00Z",
   "ts": "2026-05-26T05:26:10.513Z"
- },
- {
-  "id": "DARS;837348;a0e3690e-f79f-4803-bba9-aa7a17f71ee0",
-  "type": "MaintenanceWorks",
-  "desc": "G2-108, Ljubljana - Litija, pri Beričevem, oviran promet, rehabilitacija mostu po Ujmi 2023, do 19. 11. 2026.",
-  "loc": "G2-108, Šentjakob - Ribče",
-  "lat": 46.08964,
-  "lng": 14.62422,
-  "start": "2026-03-05T04:59:12.57Z",
-  "end": "2026-11-19T22:59:00Z",
-  "ts": "2026-05-25T13:33:46.587Z"
  },
  {
   "id": "DARS;832048;6996ef9a-302f-4f94-a4e3-a4137ad66594",

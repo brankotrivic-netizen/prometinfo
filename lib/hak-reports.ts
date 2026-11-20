@@ -3,17 +3,17 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "19.11.2026. 21:41",
-  "text": "A4 Goričan-Zagreb: od 19:12 sati normaliziran je promet između čvorova Breznički Hum i Novi Marof u smjeru Goričana, nakon uklanjanja teretnog vozila Kolnici su mokri ili samo vlažni i skliski u većem dijelu zemlje. Zbog povremeno jakih pljuskova kiše moguće je naići na veću količinu vode koja se zadržava na kolniku. Mogući su odroni. Zbog vjetra u prekidu su pojedine trajektne, katamaranske i brodske linije. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba autocestom do čvora Split vozi se nesmetano, a da…"
+  "updated": "20.11.2026. 02:52",
+  "text": "Kolnici su mokri ili samo vlažni i skliski u većem dijelu zemlje. Zbog povremeno jakih pljuskova kiše moguće je naići na veću količinu vode koja se zadržava na kolniku. Mogući su odroni. Zbog vjetra u prekidu su pojedine trajektne, katamaranske i brodske linije. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba autocestom do čvora Split vozi se nesmetano, a dalje u smjeru Dubrovnika vozila izlaze s autoceste na čvoru Split (naplata Dugopolje), polukružno se okreću na kružnom toku (DC1- ŽC6145) i vraćaju se …"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "19.11.2026. 20:55",
+  "updated": "20.11.2026. 02:52",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "19.11.2026. 21:41",
+  "updated": "20.11.2026. 02:52",
   "text": "Zbog vjetra u prekidu su: trajektne linije: Prapratno-Sobra, Sućuraj-Drvenik , Sumartin-Makarska katamaranske linije: Rijeka-Cres-Mali Lošinj, Rijeka-Rab-Novalja , Zadar-Sali-Zaglav-Iž, Olib-Silba-Premuda-Zadar, Ubli-Korčula-Dubrovnik , Split- Hvar- Vela Luka- Ubli , Korčula-Hvar-Split , Zadar–Rivanj–Sestrunj–Zverinac–Božava (Dugi otok) – Brbinj (Dugi otok), Zadar-Mali Iž-Veli Iž-Mala Rava-Rava brodske linije: Mali Lošinj-Unije-Susak, Zadar-Sali-Zaglav-Zadar , Zadar-Preko, Dubrovnik-Koločep-Lopud-Suđurađ Brodska linija 505 Šibenik - Zlarin - Šepurine - Vodice u 15:30 sati bez pristajanja u luke Šepurine i Vodice. Jadrolinijin red plovidbe za 2026. godinu https://www.jadrolinija.hr/hr/p utova…"
  },
  {
