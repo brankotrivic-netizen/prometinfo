@@ -1,19 +1,8 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-21T18:24:31.590Z";
+export const PROMET_SI_UPDATED = "2026-11-21T23:29:57.308Z";
 export const PROMET_SI: PrometSiEvent[] = [
- {
-  "id": "DARS;890251;d2728dd5-1ff7-4c60-9143-cc012a6bf1c5",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Karavanke - Ljubljana, počivališče Jesenice - priključek Brezje v smeri Ljubljane, dela, oviran promet, strojno pometanje.",
-  "loc": "A2-E61, Karavanke - Ljubljana",
-  "lat": 46.43904,
-  "lng": 14.03411,
-  "start": "2026-11-21T17:50:20.09Z",
-  "end": "2026-11-21T23:00:00Z",
-  "ts": "2026-11-21T17:50:33.7Z"
- },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -46,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-20T23:47:27.757Z",
   "end": "2026-11-22T19:00:00Z",
   "ts": "2026-11-20T23:50:56.61Z"
- },
- {
-  "id": "DARS;890122;4d5dd016-bc15-4d4f-bf72-69e0245210a5",
-  "type": "MaintenanceWorks",
-  "desc": "A2, Ljubljana - Obrežje, predor Debeli hrib - predor Mali Vrh v smeri Novega mesta, dela, zaprt vozni pas.",
-  "loc": "A2-E70, Ljubljana - Obrežje",
-  "lat": 46.00256,
-  "lng": 14.57886,
-  "start": "2026-11-20T19:50:04.823Z",
-  "end": "2026-11-22T22:30:00Z",
-  "ts": "2026-11-20T19:52:37.98Z"
  },
  {
   "id": "DARS;887595;633c2c5e-57c3-4807-b829-842286d45018",
