@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-20T20:35:28.076Z";
+export const PROMET_SI_UPDATED = "2026-11-21T01:44:19.057Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;890139;bdf1dabe-0da5-4879-b3e1-92c52dc1f17d",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Koper, razcep Kozarje - priključek Brezovica v smeri Kopra, dela, zaprta vozni in počasni pas.",
+  "loc": "A1-E61, E70, Ljubljana - Koper",
+  "lat": 46.03237,
+  "lng": 14.44649,
+  "start": "2026-11-20T23:47:27.757Z",
+  "end": "2026-11-22T19:00:00Z",
+  "ts": "2026-11-20T23:50:56.61Z"
+ },
  {
   "id": "DARS;890122;4d5dd016-bc15-4d4f-bf72-69e0245210a5",
   "type": "MaintenanceWorks",
@@ -13,39 +24,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-20T19:50:04.823Z",
   "end": "2026-11-22T22:30:00Z",
   "ts": "2026-11-20T19:52:37.98Z"
- },
- {
-  "id": "DARS;890123;69d3c4d5-cdf7-437d-8ac5-469fb961f77a",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Maribor - Ljubljana, uvoz Dramlje - uvoz Celje center v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E57, Maribor - Ljubljana",
-  "lat": 46.26329,
-  "lng": 15.39138,
-  "start": "2026-11-20T19:51:44.317Z",
-  "end": "2026-11-21T01:30:13.13Z",
-  "ts": "2026-11-20T19:51:46.673Z"
- },
- {
-  "id": "DARS;890115;a4e5fce1-7641-44b5-8f05-fa8bf62a34a8",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Koper - Ljubljana, priključek Vrhnika - priključek Dragomer v smeri Ljubljane, dela, zaprt vozni pas.",
-  "loc": "A1-E61, E70, Koper - Ljubljana",
-  "lat": 45.97779,
-  "lng": 14.31005,
-  "start": "2026-11-20T19:03:19.13Z",
-  "end": "2026-11-21T04:00:00Z",
-  "ts": "2026-11-20T19:03:31.73Z"
- },
- {
-  "id": "DARS;890114;437b7411-c236-4db4-a7a2-3e355b1bc7ca",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - vzhodna obvoznica, pokrit vkop Strmec - predor Golovec v smeri Malenc, dela, zaprt počasni pas.",
-  "loc": "A1-E57, Ljubljana - vzh. obvoznica",
-  "lat": 46.03053,
-  "lng": 14.56932,
-  "start": "2026-11-20T18:47:41.277Z",
-  "end": "2026-11-21T04:00:47.277Z",
-  "ts": "2026-11-20T18:47:48.433Z"
  },
  {
   "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
