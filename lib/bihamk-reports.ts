@@ -147,10 +147,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "na regionalnoj cesti R-437 na mostu Ostrožac, zbog radova od 08 do 16 sati svakog radnog dana, povremeno se obustavlja saobraćaj (jedan sat obustava, jedan sat propuštanje vozila)."
    },
    {
-    "title": "Kladanj-Milankovići",
-    "text": "Zbog izgradnje mosta, izmijenjen je režim saobraćaja na mostu preko rijeke Drinjače. Vozila se usmjeravaju preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta."
-   },
-   {
     "title": "Kladanj-Brateljevići",
     "text": "Na regionalnoj cesti R-467 Kladanj- Brateljevići (lokalitet Muška Voda) došlo je do plavljenja mosta, zbog čega je saobraćaj obustavljen za sva vozila. Kao alternativni pravac može se koristiti makadamski put, ali je isti u lošem stanju, pa se vozačima preporučuje oprez i prilagođavanje brzine uslovima na putu."
    },
