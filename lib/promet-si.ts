@@ -1,8 +1,19 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-22T19:30:50.013Z";
+export const PROMET_SI_UPDATED = "2026-11-23T00:28:15.136Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;890317;35730357-6e27-4925-8e00-bfb9c9c08151",
+  "type": "MaintenanceWorks",
+  "desc": "A1, Ljubljana - Maribor, priključek Blagovica - priključek Vransko v smeri Maribora, dela, oviran promet, soljenje cestišča.",
+  "loc": "A1-E57, Ljubljana - Maribor",
+  "lat": 46.17425,
+  "lng": 14.79873,
+  "start": "2026-11-23T00:20:05.247Z",
+  "end": "2026-11-23T06:00:00Z",
+  "ts": "2026-11-23T00:20:31.873Z"
+ },
  {
   "id": "DARS;879544;2a2e2e95-4aec-47bc-8c44-e376e1176fdb",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -24,17 +35,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2025-10-02T05:56:02.493Z",
   "end": "2026-12-31T22:59:00Z",
   "ts": "2026-11-22T16:00:49.153Z"
- },
- {
-  "id": "DARS;890303;6c517b87-e45f-422e-bb31-cc17006eeb9f",
-  "type": "MaintenanceWorks",
-  "desc": "A1, Ljubljana - Maribor, pred priključkom Sl. Bistrica sever v smeri Maribora, dela, oviran promet.",
-  "loc": "A1-E57, Ljubljana - Maribor",
-  "lat": 46.39572,
-  "lng": 15.59879,
-  "start": "2026-11-22T14:30:08.093Z",
-  "end": "2026-11-22T20:00:00Z",
-  "ts": "2026-11-22T14:30:28.02Z"
  },
  {
   "id": "DARS;860395;050a14dc-842d-418a-8d29-194ec6306d63",
