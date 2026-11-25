@@ -3,57 +3,57 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "25.11.2026. 14:07",
-  "text": "Kolnici su mokri ili samo vlažni i skliski u većem dijelu zemlje. Zbog mjestimice obilnijih oborina moguće je zadržavanje veće količine vode na kolniku. Zbog niskih temperatura moguća je poledica, posebice na mostovima i nadvožnjacima. Na cestama u gorju mogući su odroni, a ponegdje ima i magle. Vozačima savjetujemo da brzinu i način vožnje prilagode uvjetima na cestama, održavaju sigurnosni razmak između vozila i ne kreću na put bez obavezne zimske opreme. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba. Obilazak: čvor Bisko (A1)-DC220-ŽC6260-čvor Split (A1). Iz smjera Zagreba …"
+  "updated": "25.11.2026. 23:22",
+  "text": "Magla mjestimice smanjuje vidljivost na cestama u unutrašnjosti. Kolnici su mjestimice mokri ili vlažni i skliski. Zbog ponegdje obilnijih oborina moguće je zadržavanje veće količine vode na kolniku. Zbog niskih temperatura moguća je poledica, osobito na cestama u gorju te na vlažnim dijelovima kolnika poput mostova i nadvožnjaka. Na cestama u gorju mogući su i odroni. Vozačima savjetujemo da brzinu i način vožnje prilagode uvjetima na cestama, održavaju sigurnosni razmak između vozila i na put ne kreću bez obavezne zimske opreme. IZVANREDNI PROMETNI DOGAĐAJI: - AUTOCESTE A1 Zagreb-Split-Dubrovnik do 18. prosinca zbog radova zatvorena je dionica između čvorova Bisko i Split u smjeru Zagreba.…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "25.11.2026. 14:07",
-  "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
+  "updated": "25.11.2026. 23:20",
+  "text": "Prekinut je promet teretnih vozila na GP Ličko Petrovo Selo na izlasku iz zemlje zbog popunjenosti terminala na BiH strani. Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske …"
  },
  {
   "title": "Pomorski promet",
-  "updated": "25.11.2026. 14:33",
-  "text": "Zbog vjetra u prekidu su: trajektne linije: Šibenik-Zlarin-Kaprije-Žirje, Sumartin-Makarska i Dubrovnik-Koločep-Lopud-Suđurađ katamaranske linije: Novalja-Rab-Rijeka, Mali Lošinj-Cres-Rijeka, Žirje-Kaprije-Šibenik , Korčula-Hvar-Split i Split - Bol - Jelsa brodske linije: Mali Lošinj-Unije-Susak i Zadar-Preko Izmjene u plovidbenom redu 25. i 26. studenog 25.11. katamaranska linija 9404 Zadar - Rivanj - Sestrunj - Zverinac - Božava - Brbinj bez pristajanja u luke Rivanj i Božava 25.11. katamaranska linija 9604 Ubli- Vela Luka- Hvar- Split iz luke Split u 14.00 sati bit će otkazana 25.11. katamaranska linija Ubli - Korčula -Dubrovnik i obratno s polaskom u 13:00 iz Dubrovnika otkazana je zbog …"
+  "updated": "25.11.2026. 23:22",
+  "text": "Zbog vjetra u prekidu su: trajektne linije: Brestova-Porozina, Šibenik-Zlarin-Kaprije-Žirje, Sumartin-Makarska i Dubrovnik-Koločep-Lopud-Suđurađ katamaranske linije: Žirje-Kaprije-Šibenik , Korčula-Hvar-Split i Split-Bol-Jelsa brodske linije: Mali Lošinj-Unije-Susak, Zadar-Preko i Dubrovnik-Koločep-Lopud-Suđurađ Izmjene u plovidbenom redu 25. i 26. studenog 26.11. trajekt na liniji 832 Prapratno-Sobra isplovit će iz Sobre u 06:20, umjesto u 06:00 26.11. brodska linija 505 Vodice-Šepurine-Zlarin-Šibenik bez polaska iz Vodica u 04:35 sati, linija će se uspostaviti iz luke Šibenik u 05:50 sati 26.11. katamaran na liniji 9403 Ist - Zapuntel - Brgulje - Molat - Zadar polazi u 06:00 sati iz luke K…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "25.11.2026. 14:07",
+  "updated": "25.11.2026. 17:38",
   "text": "Stanje u željezničkom putničkom prometu 25. studenoga 2026. u 8.00 sati Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Zbog radova i zamjenskog prijevoza autobusima odstup…"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "25.11.2026. 13:20",
+  "updated": "25.11.2026. 17:38",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
   "title": "Prometna prognoza",
-  "updated": "25.11.2026. 10:46",
+  "updated": "25.11.2026. 15:06",
   "text": "Prometna prognoza za Hrvatsku za 26. studenoga 2026. U većem dijelu zemlje vozit će se po mokrim i skliskim kolnicima. Zbog mjestimice obilnijih oborina moguće je zadržavanje veće količine vode na kolniku te će promet biti usporen i otežan. Zbog veće opasnosti od odrona, osobito na cestama u gorju i na Jadranskoj magistrali (DC8) potreban je dodatan oprez. U Gorskoj Hrvatskoj te na sjeverozapadu moguć je snijeg, a zbog zimskih uvjeta na pojedinim cestama bit će zabrane za kamione s prikolicama i tegljače s poluprikolicama. Pozivamo vozače da voze sigurnom brzinom, prilagođenoj vremenskim uvjetima, pripaze na razmak, izbjegavaju nagla kočenja i ne kreću na put bez obavezne zimske opreme. Povr…"
  },
  {
   "title": "Obaveza zimske opreme",
-  "updated": "24.11.2026. 05:23",
+  "updated": "25.11.2026. 15:28",
   "text": "Podsjećamo vozače da je sukladno članku 102. Zakona o sigurnosti prometa na cestama (NN 70/2019) od 1. studenog do 31. ožujka i danju na motornim vozilima obavezno korištenje dnevnih ili kratkih svjetala. Kod motociklista i mopedista ovo pravilo vrijedi kroz cijelu godinu. Obveza paljenja svjetala samo u razdoblju zimskog računanja vremena pravda se ekološkim razlozima (smanjenje ukupne potrošnje, a time i manja emisija CO2), dok prometni stručnjaci smatraju kako je svakako bolje imati upaljena svjetla tijekom svake vožnje, jer i za sunčanih dana upaljena svjetla doprinose većoj vidljivosti, a time i sigurnosti prometa, odnosno smanjenju broja prometnih nesreća. Nekoliko litara više potrošen…"
  },
  {
   "title": "Vožnja po mokrim i skliskim kolnicima",
-  "updated": "24.11.2026. 05:23",
+  "updated": "25.11.2026. 15:28",
   "text": "Kod vožnje po mokrim i skliskim kolnicima, savjetujemo Vam: provjeriti stanje guma i metlica brisača, obvezno uključiti kratka svjetla i danju, bez obzira na vidljivost, držati propisani sigurnosni razmak između vozila, osobito kod vožnje u koloni, izbjegavati nagla kočenja, voziti opreznije, ne precjenjujte svoje vozačke sposobnosti i ne dovodite bespotrebno u opasnost sebe, svoje suputnike i sve ostale sudionike u prometu. Video - HAK savjetnik za zimu - vožnja po mokrim i skliskim kolnicima Podsjećamo vozače da je sukladno članku 102. Zakona o sigurnosti prometa na cestama (NN 70/2019) od 1. studenog do 31. ožujka i danju na motornim vozilima obavezno korištenje dnevnih ili kratkih svjeta…"
  },
  {
   "title": "Vožnja zimi, po magli ili poledici",
-  "updated": "24.11.2026. 05:23",
+  "updated": "25.11.2026. 15:28",
   "text": "Savjeti za vožnju zimi i u uvjetima smanjene vidljivosti na cestama: informirajte se prije polaska na put o stanju i prohodnosti cestapodsjetite se na obvezu korištenja zimske opreme, na zimskim dionicama određenih cesta u Hrvatskoj od 15.11. do 15.4. provjerite pripremljenost Vašeg vozila za vožnju zimi - zimska oprema, rashladna tekućina, tekućina za stakla, metlice brisača, rasvjeta i sl. nemojte voziti brzo, povećajte razmak između vozila i prilagodite brzinu uvjetima na cesti. Sigurna brzina vožnje u uvjetima snijega, leda ili magle uvijek je niža od najveće dopuštene brzine na toj dionici opreznije vozite na hladnijim mjestima gdje je moguća poledica - mostovi, nadvožnjaci i sl. vozite…"
  },
  {
   "title": "Savjeti za sigurnu vožnju",
-  "updated": "24.11.2026. 05:23",
+  "updated": "25.11.2026. 15:28",
   "text": "Prije svakog kretanja na put: planirajte put i uzmite u obzir alternativne pravce - najkraći put na karti nije nužno i najbrži odmorite se - umorni vozači gube koncentraciju pa se na dužim putovanjima treba češće odmarati provjerite ulje, rashladnu, kočionu i tekućinu za pranje vjetrobranskog stakla - ako je razina niska rashladna tekućina može se dopuniti destiliranom vodom ili vodom iz slavine (ne više od 3 dcl) provjerite tlak u gumama, stanje i dubinu utora na njima (barem 3 mm) ponesite nešto za jelo i (osvježavajuće) piće. Katkad putovanje traje duže od očekivanog provjerite imate li rezervni kotač, rezervne žaruljice i osigurače provjerite imate li sigurnosnu opremu (reflektirajući pr…"
  },
  {
   "title": "Savjeti MUP-a i HAK-a motociklistima",
-  "updated": "24.11.2026. 05:23",
+  "updated": "25.11.2026. 15:28",
   "text": "Savjeti MUP-a i HAK-a motociklistima: uvijek nosite zaštitnu kacigu i ostalu opremu (jakna, hlače, štitnici, čizme i rukavice) očistite vizir kacige i pravilno je zategnite preporuka je da nosite svjetliju odjeću i kacigu, \"življih\" boja, odnosno s reflektirajućim detaljima provjerite tlak u gumama upalite dnevno ili kratko svjetlo ne upravljajte pod utjecajem alkohola ili droga poštujte dopuštena ograničenja brzine ne precjenjujte svoje vozačke sposobnosti vozite s upaljenim svjetlima, tako ste uočljiviji drugima nemojte pretjecati gdje nije dopušteno ili je rizično prilagodite brzinu vožnje uvjetima na cesti (stanju i karakteristikama ceste) prilikom vožnje u skupini, vozite u slijedu jeda…"
  }
 ];
