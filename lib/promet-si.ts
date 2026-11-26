@@ -1,8 +1,41 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-26T13:19:44.758Z";
+export const PROMET_SI_UPDATED = "2026-11-26T22:28:22.815Z";
 export const PROMET_SI: PrometSiEvent[] = [
+ {
+  "id": "DARS;891351;9245caaa-3088-427a-a7ab-60cf4044d3df",
+  "type": "MaintenanceWorks",
+  "desc": "A2, Ljubljana - Karavanke, priključek Jesenice vzhod - počivališče Jesenice v smeri Karavank, Avstrije, dela, pomična zapora voznega pasu.",
+  "loc": "A2-E61, Ljubljana - Karavanke",
+  "lat": 46.41711,
+  "lng": 14.09057,
+  "start": "2026-11-26T21:02:26.343Z",
+  "end": "2026-11-27T05:00:00Z",
+  "ts": "2026-11-26T21:47:12.713Z"
+ },
+ {
+  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
+  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
+  "lat": 45.96375,
+  "lng": 15.5243,
+  "start": "2025-10-02T05:56:02.493Z",
+  "end": "2026-12-31T22:59:00Z",
+  "ts": "2026-11-26T16:00:07.977Z"
+ },
+ {
+  "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
+  "type": "RoadOrCarriagewayOrLaneManagement",
+  "desc": "R1-203, Predel - Bovec, pri trdnjavi Kluže, izmenično enosmerni promet, sanacija brežine, do 24. 12. 2026. V četrtek, 26. 11. in v petek, 27. 11. 2026, popolne zapore ne bo.",
+  "loc": "R1-203, Predel - Bovec",
+  "lat": 46.36006,
+  "lng": 13.58984,
+  "start": "2026-10-05T07:34:00Z",
+  "end": "2026-12-24T16:00:00Z",
+  "ts": "2026-11-26T13:53:18.547Z"
+ },
  {
   "id": "DARS;891047;ffeff9bb-3edc-45f3-b9e7-ad8e1af98373",
   "type": "RoadOrCarriagewayOrLaneManagement",
@@ -13,17 +46,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-26T07:16:19.967Z",
   "end": "2026-11-26T22:59:00Z",
   "ts": "2026-11-26T07:17:26.02Z"
- },
- {
-  "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-203, Predel - Bovec, pri trdnjavi Kluže, izmenično enosmerni promet, sanacija brežine, do 24. 12. 2026. V četrtek, 26. 11. 2026, popolne zapore ne bo.",
-  "loc": "R1-203, Predel - Bovec",
-  "lat": 46.36006,
-  "lng": 13.58984,
-  "start": "2026-10-05T07:34:00Z",
-  "end": "2026-12-24T16:00:00Z",
-  "ts": "2026-11-26T07:00:51.7Z"
  },
  {
   "id": "DARS;839549;c2fb3fde-5b97-4a9f-beda-20f15fb6f642",
@@ -57,17 +79,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-11-24T12:00:53.493Z",
   "end": "2026-11-30T16:00:00Z",
   "ts": "2026-11-24T12:01:58.857Z"
- },
- {
-  "id": "DARS;890582;592ddc61-c2f8-4eeb-9f5c-fd43095582ff",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-219, Bizeljsko - Čatež, pri Selah pri Dobovi, izmenično enosmerni promet, izvedba cestnega priključka, do 26. 11. 2026.",
-  "loc": "R1-219, Bizeljsko - Čatež",
-  "lat": 45.91887,
-  "lng": 15.63112,
-  "start": "2026-11-25T06:00:00Z",
-  "end": "2026-11-26T16:00:00Z",
-  "ts": "2026-11-24T06:47:30.923Z"
  },
  {
   "id": "DARS;890581;ac004356-38eb-4aa2-8e1e-a78b3ef1664e",

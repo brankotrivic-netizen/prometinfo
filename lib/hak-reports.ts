@@ -3,27 +3,27 @@ export interface HakReport { title: string; updated: string; text: string }
 export const HAK_REPORTS: HakReport[] = [
  {
   "title": "Prohodnost cesta",
-  "updated": "26.11.2026. 14:19",
-  "text": "Kolnici su mokri ili vlažni i skliski u većem dijelu zemlje. Zbog niskih temperatura na cestama u unutrašnjosti moguća je poledica. Mogući su i odroni, a mjestimice ima i magle. Zbog jakog vjetra vozi se uz zabrane i ograničenja za pojedine skupine vozila na cestama u priobalju (vidi niže u izvješću). Vozačima savjetujemo da brzinu i način vožnje prilagode uvjetima na cestama, održavaju sigurnosni razmak između vozila i na put ne kreću bez obavezne zimske opreme. IZVANREDNI PROMETNI DOGAĐAJI: - Zbog vjetra: na autocesti A7 između čvorova Rijeka istok i Šmrika zabrana je prometa za I. skupinu vozila (autobusi na kat, motocikli, vozila s priključnim vozilom) Zbog zimskih uvjeta zabrana je prom…"
+  "updated": "26.11.2026. 23:24",
+  "text": "Kolnici su mokri ili vlažni i skliski u većem dijelu zemlje. Zbog mjestimice obilnijih oborina moguće je zadržavanje veće količine vode na kolniku. U Gorskom kotaru i Lici povremeno pada ledena kiša. Zbog zimskih uvjeta zabrana je prometa za vozila koja nemaju propisanu zimsku opremu i za teretna motorna vozila s priključnim vozilom na većini cesta u Gorskom kotaru uključujući i državnu cestu DC3 Stubica-Delnice-Kikovica te na pojedinim cestama u Lici. Zbog niskih temperatura na cestama u unutrašnjosti moguća je poledica. Mogući su i odroni, a mjestimice ima i magle. Zbog jakog vjetra vozi se uz zabrane i ograničenja za pojedine skupine vozila na cestama u priobalju ( vidi niže u izvješću ).…"
  },
  {
   "title": "Granični prijelazi",
-  "updated": "26.11.2026. 14:14",
+  "updated": "26.11.2026. 23:23",
   "text": "Granični prijelaz Stara Gradiška (HR) i Gradiška (BiH) otvoren je za osobna vozila i teretna vozila koja ne podliježu carinskom pregledu i teretna vozila čija ukupna masa ne prelazi 20 tona. Sva vozila koja podliježu carinskom pregledu upućuju se na granični prijelaz Gornji Varoš. Od 19. svibnja otvoren je granični prijelaz Gornji Varoš (HR)-Gradiška (BiH). Novi sustav ulaska/izlaska (Entry/Exit System - EES) Europske unije primjenjuje se na svim međunarodnim graničnim prijelazima, kao i na onim pograničnim prijelazima koji su temeljem Ugovora između Republike Hrvatske i Bosne i Hercegovine privremeno određeni za međunarodni promet. Njegovom primjenom automatski se bilježe osobni podaci, pod…"
  },
  {
   "title": "Pomorski promet",
-  "updated": "26.11.2026. 14:14",
-  "text": "Zbog vjetra u prekidu su: trajektne linije: Dubrovnik-Koločep-Lopud-Suđurađ katamaranske linije: Sobra-Šipanska luka-Dubrovnik, Ubli- Vela Luka- Hvar- Split i Ubli - Korčula -Dubrovnik brodska linija: Dubrovnik-Koločep-Lopud-Suđurađ Brodska linija 310 Mali Lošinj-Unije-Susak s polaskom u 13:30 iz Malog Lošinja bez uplovljavanja u luku Unije. Trajektna linija 831 Dubrovnik-Koločep-Lopud-Suđurađ uspostaviti će se sutra (27.11.) u 07:00 s polaskom iz luke Suđurađ. Trajekt na liniji 832 Prapratno-Sobra isploviti će iz Sobre u 16:20 umjesto u 15:00 sati zbog loših vremenskih uvjeta. Katamaranska linija linija Korčula - Hvar - Split i obratno dana 26.11.2026. uspostavlja se prema redu plovidbe iz …"
+  "updated": "26.11.2026. 23:23",
+  "text": "Zbog vjetra u prekidu su: trajektne linije: Dubrovnik-Koločep-Lopud-Suđurađ katamaranske linije: Sobra-Šipanska luka-Dubrovnik, Ubli- Vela Luka- Hvar- Split i Ubli - Korčula -Dubrovnik, Pula-Zadar-Pula brodska linija: Dubrovnik-Koločep-Lopud-Suđurađ Izmjene u plovidbenom redu za 26. i 27. studenog brodska linija 807 Dubrovnik-Koločep-Lopud-Suđurađ uspostavit će se u petak (27.11) u 06:00 s polaskom iz luke Suđurađ trajektna linija 831 Dubrovnik-Koločep-Lopud-Suđurađ uspostavit će se sutra (27.11.) u 07:00 s polaskom iz luke Suđurađ katamaranska linija 9807 Sobra (Mljet)-Šipanska luka-Dubrovnik uspostavit će se sutra (27.11.) prema redu plovidbe iz luke Sobra u 06:15 sati Jadrolinijin red plo…"
  },
  {
   "title": "Željeznički promet",
-  "updated": "26.11.2026. 14:15",
+  "updated": "26.11.2026. 21:00",
   "text": "Stanje u željezničkom putničkom prometu 26. studenoga 2026. u 8.00 sati Od 26. studenoga do 11. prosinca 2026., od ponedjeljka do petka, uvodi se vlak 18250 Sesvete 7.05 – Zagreb GK 7.22. Između kolodvora Koprivnica i Varaždin umjesto vlaka 3604 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Pleternica i Čaglin umjesto vlakova 6703 i 6702 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Koprivnica umjesto vlaka 2251 od ponedjeljka do petka, osim praznikom i blagdanom, putnike prevoze autobusi. Između kolodvora Križevci i Sveti Ivan Žabno putnike vlakova 2381, 2383 i 2385 od ponedjeljka …"
  },
  {
   "title": "Ograničenja za teretna vozila",
-  "updated": "26.11.2026. 10:56",
+  "updated": "26.11.2026. 21:00",
   "text": "NAREDBU O OGRANIČENJU PROMETA NA CESTAMA I. Ograničava se promet teretnim automobilima s ili bez prikolice čija najveća dopuštena masa prelazi 7,5 tona, vozilima koja su sama ili s priključnim vozilima dulja od 14 m (u daljnjem tekstu: teretni automobili), traktorima, zaprežnim vozilima, radnim vozilima i drugim strojevima te vozilima koji se na ravnoj cesti ne mogu kretati brzinom većom od 40 km/sat i vozilima za osposobljavanje kandidata za vozače (kada se obavlja obuka iz nastavnog predmeta upravljanje vozilom), na državnim trajektnim lukama Split i Zadar te na sljedećim državnim cestama: 1. na dijelu državne ceste D8, na relaciji: raskrižje s D40 (čvor Bakar) – Zadar – Split – granični p…"
  },
  {
