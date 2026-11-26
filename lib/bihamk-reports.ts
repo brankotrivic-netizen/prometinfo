@@ -120,7 +120,7 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    },
    {
     "title": "Kakanj-Visoko",
-    "text": "R- 445 Kakanj - Visoko, u toku su radovi od mosta u naselju Doboj do skretanje za Ćatiće."
+    "text": "Na regionalnoj cesti R-445 Kakanj-Visoko, zbog sanacionih radova od 07 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
    },
    {
     "title": "Čelić-Pukiš",
@@ -137,10 +137,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
    {
     "title": "Most Ostrožac",
     "text": "na regionalnoj cesti R-437 na mostu Ostrožac, zbog radova od 08 do 16 sati svakog radnog dana, povremeno se obustavlja saobraćaj (jedan sat obustava, jedan sat propuštanje vozila)."
-   },
-   {
-    "title": "Kladanj-Brateljevići",
-    "text": "Na regionalnoj cesti R-467 Kladanj- Brateljevići (lokalitet Muška Voda) došlo je do plavljenja mosta, zbog čega je saobraćaj obustavljen za sva vozila. Kao alternativni pravac može se koristiti makadamski put, ali je isti u lošem stanju, pa se vozačima preporučuje oprez i prilagođavanje brzine uslovima na putu."
    },
    {
     "title": "Visoko-Kiseljak",

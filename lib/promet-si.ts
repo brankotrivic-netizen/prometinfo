@@ -1,18 +1,18 @@
 // SAMODEJNO ZAJETO: promet.si / NAP (DARS) — slovenski prometni dogodki/dela (DATEX II).
 // Prikazani le trenutno veljavni. Vir: b2b.nap.si (DARS). desc = uradni slovenski opis.
 export interface PrometSiEvent { id: string; type: string; desc: string; loc: string; lat: number | null; lng: number | null; start: string; end: string; ts: string }
-export const PROMET_SI_UPDATED = "2026-11-25T22:45:13.947Z";
+export const PROMET_SI_UPDATED = "2026-11-26T13:19:44.758Z";
 export const PROMET_SI: PrometSiEvent[] = [
  {
-  "id": "DARS;815489;4d2873e7-b889-4a83-8711-55d412b61653",
+  "id": "DARS;891047;ffeff9bb-3edc-45f3-b9e7-ad8e1af98373",
   "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-677, Pišece - Zg. Pohanca - Krško, Zdole - Krško, izmenično enosmerni promet, pomična zapora, rekonstrukcija vozišča, do 31. 12. 2026, med 17. in 8. uro. Popolna zapora dnevno med 8. in 17. uro.",
-  "loc": "R3-677, Pišece - Zgornja Pohanca - Krško",
-  "lat": 45.96375,
-  "lng": 15.5243,
-  "start": "2025-10-02T05:56:02.493Z",
-  "end": "2026-12-31T22:59:00Z",
-  "ts": "2026-11-25T16:00:56.78Z"
+  "desc": "G2-111, Strunjan - Izola, izmenično enosmerni promet, odstranjevanje plazu.",
+  "loc": "G2-111, Jagodje - Valeta",
+  "lat": 45.52754,
+  "lng": 13.62156,
+  "start": "2026-11-26T07:16:19.967Z",
+  "end": "2026-11-26T22:59:00Z",
+  "ts": "2026-11-26T07:17:26.02Z"
  },
  {
   "id": "DARS;881585;23dec5b7-3887-4f5d-8027-f04b5b5d6802",
@@ -23,18 +23,7 @@ export const PROMET_SI: PrometSiEvent[] = [
   "lng": 13.58984,
   "start": "2026-10-05T07:34:00Z",
   "end": "2026-12-24T16:00:00Z",
-  "ts": "2026-11-25T13:30:39.923Z"
- },
- {
-  "id": "DARS;890814;56a0c924-d594-4197-977a-172dd70f12e0",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R1-216, Soteska - Črmošnjice - Črnomelj, Občice - Črmošnjice, izmenično enosmerni promet, pomična zapora, mulčenje rastlinja.",
-  "loc": "R1-216, Soteska - Črmošnjice",
-  "lat": 45.70859,
-  "lng": 15.07307,
-  "start": "2026-11-25T07:59:05.84Z",
-  "end": "2026-11-25T22:59:00Z",
-  "ts": "2026-11-25T08:06:25.287Z"
+  "ts": "2026-11-26T07:00:51.7Z"
  },
  {
   "id": "DARS;839549;c2fb3fde-5b97-4a9f-beda-20f15fb6f642",
@@ -860,17 +849,6 @@ export const PROMET_SI: PrometSiEvent[] = [
   "start": "2026-10-14T06:44:20.74Z",
   "end": "2026-12-12T22:59:00Z",
   "ts": "2026-10-14T06:46:39.747Z"
- },
- {
-  "id": "DARS;883380;c4c1dc62-8d04-4bdd-a326-600f5a0f5798",
-  "type": "RoadOrCarriagewayOrLaneManagement",
-  "desc": "R3-737, Rače - Šikole, Rače - Brezula, izmenično enosmerni promet, izgradnja NN omrežja, do 26. 11. 2026.",
-  "loc": "R3-737, Rače - Šikole",
-  "lat": 46.44611,
-  "lng": 15.69041,
-  "start": "2026-10-14T06:11:55.36Z",
-  "end": "2026-11-26T22:59:00Z",
-  "ts": "2026-10-14T06:13:13.733Z"
  },
  {
   "id": "DARS;883378;ced0991e-cb35-4560-803e-ec8d0f91e996",
