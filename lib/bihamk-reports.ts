@@ -123,10 +123,6 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na regionalnoj cesti R-456 Priboj–Sapna zbog sanacionih radova svakog dana (osim nedjelje) u vremenu od 7 do 17 sati saobraća se usporeno, naizmjeničnim propuštanjem vozila."
    },
    {
-    "title": "Kakanj-Visoko",
-    "text": "Na regionalnoj cesti R-445 Kakanj-Visoko, zbog sanacionih radova od 07 do 17 sati, svaki dan osim nedjelje, saobraća se usporeno, jednom trakom."
-   },
-   {
     "title": "Čelić-Pukiš",
     "text": "U toku su sanacioni radovi na regionalnom putu R-458 Čelić-Pukiš, zbog čega se svakim danom (osim nedjelje) u vremenu od 7 do 17 sati saobraća usporeno, jednom trakom."
    },
