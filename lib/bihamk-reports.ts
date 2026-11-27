@@ -98,6 +98,10 @@ export const BIHAMK_REPORTS: BihReportGroup[] = [
     "text": "Na magistralnoj cesti Srbljani-Bosanska Krupa, zabranjen je saobraćaj za vozila čija ukupna masa prelazi 20 tona. Na istoj dionici, na lokaciji mosta preko rijeke Une (u blizini lokaliteta Crno Jezero) vozila saobraćaju naizmjenično, jednom trakom, uz postavljene semafore."
    },
    {
+    "title": "Busovača",
+    "text": "zbog neophodnih radova svakog radnog dana od 07 do 17 sati na mjestu radova saobraća se naizmjenično, jednom trakom."
+   },
+   {
     "title": "Brčko-Bijeljina",
     "text": "Zbog radova na proširenju mosta, izmijenjen je režim saobraćaja na ulazu u Bijeljinu. Vozila ukupne mase do 3,5 tone usmjeravaju se preko privremene obilaznice koja se nalazi u neposrednoj blizini gradilišta, dok se vozila preko 3,5 tone ukupne mase usmjeravaju kroz naselje Velika Obarska."
    },
